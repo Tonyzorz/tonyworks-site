@@ -1,0 +1,15 @@
+{
+  "author": "Tony",
+  "apps": [
+    {
+      "id": "infinite-loot-loop",
+      "name": "Infinite Loot-Loop",
+      "tagline": "Mobile roguelike RPG — endless loops of monsters, loot and bosses.",
+      "icon": "⚔️",
+      "iconImage": "apps/infinite-loot-loop/assets/img/app_icon.png",
+      "path": "apps/infinite-loot-loop/index.html",
+      "status": "Wiki",
+      "accent": "#7c9cff"
+    }
+  ]
+}

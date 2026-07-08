@@ -212,8 +212,49 @@ table.data tr:hover td { background: var(--panel); }
   text-align: center; padding: 2rem 1rem; margin-top: 2rem; }
 .footer a { color: var(--muted); }
 
+/* ---- portal (app list) ---- */
+.app-list {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem; max-width: 900px; margin: 1.5rem auto 0;
+}
+.app-tile {
+  display: flex; align-items: center; gap: 1rem; color: var(--text);
+  background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1rem 1.1rem; transition: .15s ease; position: relative; overflow: hidden;
+}
+.app-tile::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  background: var(--tile-accent, var(--accent));
+}
+.app-tile:hover { transform: translateY(-3px); border-color: var(--tile-accent, var(--accent));
+  box-shadow: var(--shadow); text-decoration: none; }
+.app-icon {
+  flex: 0 0 auto; width: 72px; height: 72px; border-radius: 16px; overflow: hidden;
+  background: linear-gradient(135deg, var(--bg-2), var(--panel-2));
+  border: 1px solid var(--border); display: grid; place-items: center;
+}
+.app-icon img { width: 100%; height: 100%; object-fit: contain; padding: 8%; image-rendering: auto; }
+.app-icon span { font-size: 2rem; }
+.app-info { flex: 1; min-width: 0; }
+.app-info h2 { margin: 0 0 .2rem; font-size: 1.2rem; display: flex; align-items: center; gap: .5rem; }
+.app-info p { margin: 0; color: var(--muted); font-size: .9rem; }
+.app-status {
+  font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px;
+  color: var(--tile-accent, var(--accent)); border: 1px solid var(--border);
+  padding: .05rem .4rem; border-radius: 999px;
+}
+.app-go { color: var(--faint); font-size: 1.4rem; flex: 0 0 auto; transition: .15s ease; }
+.app-tile:hover .app-go { color: var(--tile-accent, var(--accent)); transform: translateX(3px); }
+
+/* back-to-portal link in app header */
+.nav .portal-back {
+  color: var(--faint); font-size: .8rem; margin-right: .2rem; white-space: nowrap;
+}
+.nav .portal-back:hover { color: var(--text); text-decoration: none; }
+
 @media (max-width: 640px) {
   .detail { grid-template-columns: 1fr; }
   .detail .portrait { max-width: 240px; margin: 0 auto; }
   .nav-links { width: 100%; overflow-x: auto; }
+  .app-list { grid-template-columns: 1fr; }
 }

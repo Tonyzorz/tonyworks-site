@@ -84,9 +84,10 @@
       }).join("");
       header.innerHTML =
         '<div class="nav">' +
+          '<a class="portal-back" href="../../index.html">◂ TonyWorks</a>' +
           '<a class="brand" href="index.html" style="color:inherit">' +
-            '<span class="logo">TW</span>' +
-            '<span>TonyWorks <small>· Infinite Loot-Loop</small></span>' +
+            '<span class="logo">IL</span>' +
+            '<span>Infinite Loot-Loop</span>' +
           "</a>" +
           '<nav class="nav-links">' + links + "</nav>" +
         "</div>";
