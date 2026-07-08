@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-07-09T00:00:00Z",
+  "game": "Infinite Loot-Loop",
+  "counts": { "enemies": 3, "bosses": 1, "items": 4, "maps": 1, "zones": 2, "characters": 3, "achievements": 3 },
+  "enemies": [
+    {
+      "id": "GreenSlime", "name": "Green Slime", "image": "", "isBoss": false,
+      "minLevel": 1, "maxLevel": 10, "baseHP": 100, "baseATK": 10, "baseEXP": 50, "baseGold": 20,
+      "hpScaling": 0.5, "atkScaling": 0.3, "expScaling": 0.4, "goldScaling": 0.2, "permanentBPReward": 0,
+      "drops": [ { "itemId": "WoodenSword", "itemName": "Wooden Sword", "chance": 5 } ]
+    },
+    {
+      "id": "ForestWolf", "name": "Forest Wolf", "image": "", "isBoss": false,
+      "minLevel": 12, "maxLevel": 22, "baseHP": 900, "baseATK": 80, "baseEXP": 220, "baseGold": 140,
+      "hpScaling": 0.45, "atkScaling": 0.32, "expScaling": 0.4, "goldScaling": 0.25, "permanentBPReward": 0,
+      "drops": [ { "itemId": "HunterBow", "itemName": "Hunter Bow", "chance": 3 } ]
+    },
+    {
+      "id": "AbyssalKing", "name": "Abyssal King", "image": "", "isBoss": false,
+      "minLevel": 486, "maxLevel": 500, "baseHP": 33044628, "baseATK": 550044, "baseEXP": 2432, "baseGold": 7639,
+      "hpScaling": 0.03, "atkScaling": 0.05, "expScaling": 0.4, "goldScaling": 0.5, "permanentBPReward": 0,
+      "drops": [ { "itemId": "AbyssalBlade", "itemName": "Abyssal Blade", "chance": 3 } ]
+    }
+  ],
+  "bosses": [
+    {
+      "id": "AncientGolem", "name": "Ancient Golem", "image": "", "mapId": "Grassland_Map",
+      "level": 10, "hp": 5000, "atk": 120, "hardModeHp": 15000, "hardModeAtk": 340, "exp": 2000,
+      "dropItemId": "GolemHeart", "dropItemName": "Golem Heart",
+      "hardModeDropItemId": "", "bonusDropItemId": ""
+    }
+  ],
+  "items": [
+    {
+      "id": "WoodenSword", "name": "Wooden Sword", "description": "A humble starter blade.", "image": "",
+      "rarity": "Common", "type": "Weapon", "setName": "", "isUnique": false, "shopUnavailable": false,
+      "isHardModeItem": false, "isBossItem": false, "bonusHP": 0, "bonusATK": 8, "bonusDEF": 0,
+      "bonusAGI": 0, "bonusLUC": 0, "buyPrice": 100, "maxCopies": 20, "effects": [ "ATK +8" ]
+    },
+    {
+      "id": "HunterBow", "name": "Hunter Bow", "description": "Favored by forest scouts.", "image": "",
+      "rarity": "Uncommon", "type": "Weapon", "setName": "Hunter", "isUnique": false, "shopUnavailable": false,
+      "isHardModeItem": false, "isBossItem": false, "bonusHP": 0, "bonusATK": 40, "bonusDEF": 0,
+      "bonusAGI": 12, "bonusLUC": 5, "buyPrice": 900, "maxCopies": 20, "effects": [ "ATK +40", "AGI +12", "LUC +5" ]
+    },
+    {
+      "id": "GolemHeart", "name": "Golem Heart", "description": "Pulsing core of an ancient guardian.", "image": "",
+      "rarity": "Epic", "type": "Accessory", "setName": "", "isUnique": true, "shopUnavailable": true,
+      "isHardModeItem": false, "isBossItem": true, "bonusHP": 2000, "bonusATK": 0, "bonusDEF": 60,
+      "bonusAGI": 0, "bonusLUC": 0, "buyPrice": 0, "maxCopies": 3, "effects": [ "HP +2000", "DEF +60", "Auto Revive" ]
+    },
+    {
+      "id": "AbyssalBlade", "name": "Abyssal Blade", "description": "Forged in the deep dark.", "image": "",
+      "rarity": "Legendary", "type": "Weapon", "setName": "Abyssal", "isUnique": true, "shopUnavailable": true,
+      "isHardModeItem": true, "isBossItem": false, "bonusHP": 0, "bonusATK": 250000, "bonusDEF": 0,
+      "bonusAGI": 0, "bonusLUC": 0, "buyPrice": 0, "maxCopies": 20, "effects": [ "ATK +250000", "Lifesteal 3%" ]
+    }
+  ],
+  "maps": [
+    {
+      "id": "Grassland_Map", "name": "Grassland_Map", "image": "",
+      "gridWidth": 96, "gridHeight": 96, "dataVersion": 1, "walkableCells": 7200, "blockedCells": 1968
+    }
+  ],
+  "zones": [
+    {
+      "id": "GL_Zone1", "name": "Green Meadow", "color": "#5cb85c", "bossEnemyId": "",
+      "zoneTier": 1, "minEnemyLevel": 1, "maxEnemyLevel": 10, "goldMultiplier": 1,
+      "enemies": [ { "enemyId": "GreenSlime", "enemyName": "Green Slime", "spawnWeight": 70 } ],
+      "shopItems": [ "WoodenSword" ]
+    },
+    {
+      "id": "FR_Zone1", "name": "Forest Edge", "color": "#3d8b40", "bossEnemyId": "",
+      "zoneTier": 2, "minEnemyLevel": 12, "maxEnemyLevel": 22, "goldMultiplier": 1.5,
+      "enemies": [ { "enemyId": "ForestWolf", "enemyName": "Forest Wolf", "spawnWeight": 60 } ],
+      "shopItems": [ "HunterBow" ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "hero", "name": "Hero", "description": "The balanced default adventurer.", "image": "",
+      "iapProductId": "", "unlockAchievementID": "",
+      "hpMultiplier": 1, "atkMultiplier": 1, "defMultiplier": 1, "agiMultiplier": 1, "lucMultiplier": 1,
+      "ownedBonusDropRatePct": 0, "ownedBonusGoldPct": 0, "purchasePrice": 0,
+      "ownedBonusHP": 0, "ownedBonusATK": 0, "ownedBonusDEF": 0, "ownedBonusAGI": 0, "ownedBonusLUC": 0,
+      "isPremium": false, "unlockedByDefault": true
+    },
+    {
+      "id": "titan", "name": "Titan", "description": "A hulking bruiser who boosts item drop rate while owned.", "image": "",
+      "iapProductId": "char_lucky_hunter", "unlockAchievementID": "",
+      "hpMultiplier": 1.4, "atkMultiplier": 1.1, "defMultiplier": 1.3, "agiMultiplier": 0.8, "lucMultiplier": 1,
+      "ownedBonusDropRatePct": 0.5, "ownedBonusGoldPct": 0, "purchasePrice": 0,
+      "ownedBonusHP": 0, "ownedBonusATK": 0, "ownedBonusDEF": 0, "ownedBonusAGI": 0, "ownedBonusLUC": 0,
+      "isPremium": true, "unlockedByDefault": false
+    },
+    {
+      "id": "pirate", "name": "Pirate Captain", "description": "Plunders extra gold from every battle while owned.", "image": "",
+      "iapProductId": "char_gold_baron", "unlockAchievementID": "",
+      "hpMultiplier": 1.1, "atkMultiplier": 1.2, "defMultiplier": 1, "agiMultiplier": 1.1, "lucMultiplier": 1.2,
+      "ownedBonusDropRatePct": 0, "ownedBonusGoldPct": 10, "purchasePrice": 0,
+      "ownedBonusHP": 0, "ownedBonusATK": 0, "ownedBonusDEF": 0, "ownedBonusAGI": 0, "ownedBonusLUC": 0,
+      "isPremium": true, "unlockedByDefault": false
+    }
+  ],
+  "achievements": [
+    {
+      "id": "kills_100", "name": "Monster Hunter", "description": "Defeat 100 monsters.",
+      "type": "TotalKills", "modeRequirement": "Any", "rewardType": "BonusATK", "characterRewardId": "",
+      "targetValue": 100, "statBonus": 5
+    },
+    {
+      "id": "boss_golem", "name": "Golem Slayer", "description": "Defeat the Ancient Golem.",
+      "type": "BossKills", "modeRequirement": "Any", "rewardType": "UnlockCharacter", "characterRewardId": "titan",
+      "targetValue": 1, "statBonus": 0
+    },
+    {
+      "id": "gold_1m", "name": "Treasure Hoarder", "description": "Earn 1,000,000 gold in total.",
+      "type": "GoldEarned", "modeRequirement": "Any", "rewardType": "BonusLUC", "characterRewardId": "",
+      "targetValue": 1000000, "statBonus": 3
+    }
+  ]
+}

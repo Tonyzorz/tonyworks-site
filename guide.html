@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guide — TonyWorks</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="guide">
+  <header class="site-header" id="site-header"></header>
+  <main class="wrap">
+    <div class="page-head">
+      <h1>Guide</h1>
+      <p>Strategy, systems, and tips for Infinite Loot-Loop.</p>
+    </div>
+    <article class="prose">
+      <div class="callout">
+        This is a starter guide seeded from the game's core systems. Tell me your own tips and
+        strategy and I'll expand each section — this page is meant to grow.
+      </div>
+
+      <h2>The Battle Point (BP) loop</h2>
+      <p>BP is your run currency — the loop that ties everything together.</p>
+      <ul>
+        <li>You start each game with <strong>30 BP</strong> (plus any permanent BP bonuses).</li>
+        <li>A <strong>normal win</strong> costs <strong>1 BP</strong>.</li>
+        <li><strong>Dying</strong> costs <strong>4 BP</strong> (Normal) or <strong>6 BP</strong> (Hard Mode).</li>
+        <li>Beating a <strong>boss</strong> refunds <strong>+3 BP</strong> for the current run.</li>
+        <li>Death does <em>not</em> reset your level, EXP, or gold — only a full game over (hitting 0 BP) does.</li>
+      </ul>
+      <div class="callout">
+        <strong>Tip:</strong> Because bosses give +3 BP, clearing bosses is how you extend a run
+        indefinitely. Farming trash costs net BP; boss kills pay you back.
+      </div>
+
+      <h2>Combat math worth knowing</h2>
+      <ul>
+        <li><strong>Defense:</strong> damage reduction is <code>min(0.80, DEF / (DEF + 100))</code> — capped at 80%. Stacking DEF has diminishing returns.</li>
+        <li><strong>Level up:</strong> the EXP needed for the next level is <code>currentLevel × 150</code>.</li>
+        <li><strong>Revives:</strong> capped at 3 per run; an ad-revive is BP-neutral (you already paid the death cost).</li>
+      </ul>
+
+      <h2>Loot &amp; drop rates</h2>
+      <ul>
+        <li>Each enemy has a drop table with per-item chances. Higher <strong>zone tiers</strong> apply a drop-rate penalty (roughly −5% per tier).</li>
+        <li><strong>Duplicate falloff:</strong> the more copies of an item you already own, the sharply lower the chance of another — so early copies come fast, then taper off hard.</li>
+        <li><strong>LUC</strong> adds drop chance (about +0.2% per point, capped around +2%). Drop-rate gear, set bonuses, and certain characters stack on top.</li>
+        <li><strong>Boss drops</strong> are rare: about <strong>1%</strong> in Normal and <strong>0.75%</strong> in Hard Mode before bonuses.</li>
+      </ul>
+
+      <h2>Shops &amp; sets</h2>
+      <ul>
+        <li>The shop pulls from <em>all</em> registered zones, not just your current map.</li>
+        <li>Items with a <strong>set name</strong> grant a set bonus (including bonus drop rate) when worn together — check an item's page for its set mates.</li>
+      </ul>
+
+      <h2>Characters</h2>
+      <p>Characters apply <strong>stat multipliers</strong> while active and some grant a
+        <strong>permanent owned bonus</strong> that applies in every run just for owning them
+        (for example, drop-rate and gold-gain specialists). See the
+        <a href="characters.html">Characters</a> page for the full roster.</p>
+
+      <h2>Hard Mode</h2>
+      <p>Hard Mode raises boss HP/ATK to per-tier targets and changes drops (some bosses have a
+        distinct Hard Mode drop). Death costs more BP (6 vs 4), so it rewards clean, well-geared runs.</p>
+
+      <div class="callout">
+        <strong>Your turn:</strong> what routes, gear breakpoints, or boss tricks do you want
+        documented? Send them over and I'll turn them into proper sections here.
+      </div>
+    </article>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
