@@ -355,10 +355,16 @@ table.data tr:hover td { background: var(--panel); }
 .wm-conn.h { width:100%; height:2px; background:var(--border); align-self:center; }
 .wm-conn.v { height:100%; min-height:24px; width:2px; background:var(--border); justify-self:center; }
 .wm-conn.dashed { background:repeating-linear-gradient(90deg,var(--border) 0 5px,transparent 5px 10px); }
-@media (max-width:720px){
-  .wm-grid{ display:flex; flex-direction:column; gap:.55rem; width:auto;
-    grid-template-columns:none; grid-template-rows:none; grid-template-areas:none; }
-  .wm-conn{ display:none; }
+/* Mobile: keep the real compass (with connectors) but shrink nodes; .worldmap scrolls
+   horizontally so the layout stays connected instead of collapsing to a straight list. */
+@media (max-width:640px){
+  .worldmap { padding-bottom:.75rem; }
+  .wm-grid { gap:4px; grid-template-columns: auto 16px auto 16px auto 16px auto 16px auto; }
+  .worldmap .wnode { width:108px; padding:.6rem .45rem; gap:.1rem; }
+  .worldmap .wnode .wicon { font-size:1.5rem; }
+  .worldmap .wnode .wname { font-size:.88rem; }
+  .worldmap .wnode .wmeta { font-size:.68rem; }
+  .mtier .mnode { flex-basis:150px; }
 }
 
 /* ---- side ad rails (AdSense-ready 3-column layout) ---- */
