@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-09T12:50:23Z",
+  "generatedAt": "2026-07-09T14:24:08Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 295,
     "bosses": 20,
-    "items": 276,
+    "items": 311,
     "maps": 22,
     "zones": 270,
     "characters": 25,
@@ -18,14 +18,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1677270,
+      "hpMax": 1677270,
+      "atkMin": 167670,
+      "atkMax": 167670,
+      "expMin": 6976,
+      "expMax": 6976,
+      "goldMin": 323760,
+      "goldMax": 323760,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -48,14 +48,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1311240,
+      "hpMax": 1311240,
+      "atkMin": 136320,
+      "atkMax": 136320,
+      "expMin": 7968,
+      "expMax": 7968,
+      "goldMin": 340479,
+      "goldMax": 340479,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -78,14 +78,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1536150,
+      "hpMax": 1536150,
+      "atkMin": 164040,
+      "atkMax": 164040,
+      "expMin": 7295,
+      "expMax": 7295,
+      "goldMin": 430160,
+      "goldMax": 430160,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -108,14 +108,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1619939,
+      "hpMax": 1619939,
+      "atkMin": 155130,
+      "atkMax": 155130,
+      "expMin": 9216,
+      "expMax": 9216,
+      "goldMin": 322240,
+      "goldMax": 322240,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -138,14 +138,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1320060,
+      "hpMax": 1320060,
+      "atkMin": 147540,
+      "atkMax": 147540,
+      "expMin": 8895,
+      "expMax": 8895,
+      "goldMin": 437759,
+      "goldMax": 437759,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -168,14 +168,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1439130,
+      "hpMax": 1439130,
+      "atkMin": 150510,
+      "atkMax": 150510,
+      "expMin": 7648,
+      "expMax": 7648,
+      "goldMin": 358720,
+      "goldMax": 358720,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -198,14 +198,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1390620,
+      "hpMax": 1390620,
+      "atkMin": 160410,
+      "atkMax": 160410,
+      "expMin": 8992,
+      "expMax": 8992,
+      "goldMin": 343519,
+      "goldMax": 343519,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -228,14 +228,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1377390,
+      "hpMax": 1377390,
+      "atkMin": 149190,
+      "atkMax": 149190,
+      "expMin": 9408,
+      "expMax": 9408,
+      "goldMin": 370880,
+      "goldMax": 370880,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -258,14 +258,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1544970,
+      "hpMax": 1544970,
+      "atkMin": 153150,
+      "atkMax": 153150,
+      "expMin": 8672,
+      "expMax": 8672,
+      "goldMin": 375440,
+      "goldMax": 375440,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -288,14 +288,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1562610,
+      "hpMax": 1562610,
+      "atkMin": 142590,
+      "atkMax": 142590,
+      "expMin": 7776,
+      "expMax": 7776,
+      "goldMin": 334399,
+      "goldMax": 334399,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -318,14 +318,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1395030,
+      "hpMax": 1395030,
+      "atkMin": 138630,
+      "atkMax": 138630,
+      "expMin": 6688,
+      "expMax": 6688,
+      "goldMin": 384560,
+      "goldMax": 384560,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -378,14 +378,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1505280,
+      "hpMax": 1505280,
+      "atkMin": 141270,
+      "atkMax": 141270,
+      "expMin": 8192,
+      "expMax": 8192,
+      "goldMin": 387600,
+      "goldMax": 387600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -462,6 +462,41 @@
           "itemId": "Silver_Ring_H",
           "itemName": "Silver Ring H",
           "chance": 1
+        },
+        {
+          "itemId": "Fury_Iron_Sword_H",
+          "itemName": "Fury Iron Sword H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Edge_Iron_Sword_H",
+          "itemName": "Edge Iron Sword H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Aegis_Iron_Chestplate_H",
+          "itemName": "Aegis Iron Chestplate H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Seer_Iron_Helmet_H",
+          "itemName": "Seer Iron Helmet H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Swift_Iron_Greaves_H",
+          "itemName": "Swift Iron Greaves H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Vigor_Silver_Ring_H",
+          "itemName": "Vigor Silver Ring H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Fortune_Silver_Ring_H",
+          "itemName": "Fortune Silver Ring H",
+          "chance": 0.4
         }
       ],
       "worlds": [],
@@ -474,14 +509,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1456770,
+      "hpMax": 1456770,
+      "atkMin": 139950,
+      "atkMax": 139950,
+      "expMin": 9056,
+      "expMax": 9056,
+      "goldMin": 413440,
+      "goldMax": 413440,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -504,14 +539,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1359750,
+      "hpMax": 1359750,
+      "atkMin": 148530,
+      "atkMax": 148530,
+      "expMin": 8032,
+      "expMax": 8032,
+      "goldMin": 314640,
+      "goldMax": 314640,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -560,14 +595,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1447950,
+      "hpMax": 1447950,
+      "atkMin": 161730,
+      "atkMax": 161730,
+      "expMin": 9504,
+      "expMax": 9504,
+      "goldMin": 456000,
+      "goldMax": 456000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -647,14 +682,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1584659,
+      "hpMax": 1584659,
+      "atkMin": 165360,
+      "atkMax": 165360,
+      "expMin": 8256,
+      "expMax": 8256,
+      "goldMin": 349600,
+      "goldMax": 349600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -703,14 +738,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1567020,
+      "hpMax": 1567020,
+      "atkMin": 153810,
+      "atkMax": 153810,
+      "expMin": 7327,
+      "expMax": 7327,
+      "goldMin": 445360,
+      "goldMax": 445360,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -733,14 +768,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1417080,
+      "hpMax": 1417080,
+      "atkMin": 138960,
+      "atkMax": 138960,
+      "expMin": 6720,
+      "expMax": 6720,
+      "goldMin": 454480,
+      "goldMax": 454480,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -763,14 +798,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1553790,
+      "hpMax": 1553790,
+      "atkMin": 142590,
+      "atkMax": 142590,
+      "expMin": 9152,
+      "expMax": 9152,
+      "goldMin": 389120,
+      "goldMax": 389120,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -793,14 +828,14 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 60,
-      "hpMin": 1470000,
-      "hpMax": 1470000,
-      "atkMin": 150000,
-      "atkMax": 150000,
-      "expMin": 8000,
-      "expMax": 8000,
-      "goldMin": 380000,
-      "goldMax": 380000,
+      "hpMin": 1478820,
+      "hpMax": 1478820,
+      "atkMin": 151500,
+      "atkMax": 151500,
+      "expMin": 8608,
+      "expMax": 8608,
+      "goldMin": 387600,
+      "goldMax": 387600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2335,14 +2370,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2092999,
+      "hpMax": 2092999,
+      "atkMin": 228300,
+      "atkMax": 228300,
+      "expMin": 35160,
+      "expMax": 35160,
+      "goldMin": 1267200,
+      "goldMax": 1267200,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2365,14 +2400,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 1955000,
+      "hpMax": 1955000,
+      "atkMin": 261299,
+      "atkMax": 261299,
+      "expMin": 27960,
+      "expMax": 27960,
+      "goldMin": 941600,
+      "goldMax": 941600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2395,14 +2430,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2237900,
+      "hpMax": 2237900,
+      "atkMin": 250850,
+      "atkMax": 250850,
+      "expMin": 30360,
+      "expMax": 30360,
+      "goldMin": 1117600,
+      "goldMax": 1117600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2425,14 +2460,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2534599,
+      "hpMax": 2534599,
+      "atkMin": 276700,
+      "atkMax": 276700,
+      "expMin": 36240,
+      "expMax": 36240,
+      "goldMin": 1135200,
+      "goldMax": 1135200,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2455,14 +2490,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2258600,
+      "hpMax": 2258600,
+      "atkMin": 232700,
+      "atkMax": 232700,
+      "expMin": 26999,
+      "expMax": 26999,
+      "goldMin": 998799,
+      "goldMax": 998799,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2486,14 +2521,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2258600,
+      "hpMax": 2258600,
+      "atkMin": 269550,
+      "atkMax": 269550,
+      "expMin": 33840,
+      "expMax": 33840,
+      "goldMin": 919600,
+      "goldMax": 919600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2516,14 +2551,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2182700,
+      "hpMax": 2182700,
+      "atkMin": 231050,
+      "atkMax": 231050,
+      "expMin": 30240,
+      "expMax": 30240,
+      "goldMin": 954800,
+      "goldMax": 954800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2548,14 +2583,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2355200,
+      "hpMax": 2355200,
+      "atkMin": 253600,
+      "atkMax": 253600,
+      "expMin": 32400,
+      "expMax": 32400,
+      "goldMin": 1245200,
+      "goldMax": 1245200,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2604,14 +2639,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2631200,
+      "hpMax": 2631200,
+      "atkMin": 261299,
+      "atkMax": 261299,
+      "expMin": 29640,
+      "expMax": 29640,
+      "goldMin": 1139600,
+      "goldMax": 1139600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2634,14 +2669,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2465600,
+      "hpMax": 2465600,
+      "atkMin": 256900,
+      "atkMax": 256900,
+      "expMin": 32640,
+      "expMax": 32640,
+      "goldMin": 1209999,
+      "goldMax": 1209999,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2666,14 +2701,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2396600,
+      "hpMax": 2396600,
+      "atkMin": 236550,
+      "atkMax": 236550,
+      "expMin": 30840,
+      "expMax": 30840,
+      "goldMin": 1245200,
+      "goldMax": 1245200,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2696,14 +2731,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2127500,
+      "hpMax": 2127500,
+      "atkMin": 247550,
+      "atkMax": 247550,
+      "expMin": 26639,
+      "expMax": 26639,
+      "goldMin": 989999,
+      "goldMax": 989999,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2780,6 +2815,41 @@
           "itemId": "Gold_Ring_H",
           "itemName": "Gold Ring H",
           "chance": 1
+        },
+        {
+          "itemId": "Fury_Shadow_Dagger_H",
+          "itemName": "Fury Shadow Dagger H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Edge_Shadow_Dagger_H",
+          "itemName": "Edge Shadow Dagger H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Aegis_Knight_Armor_H",
+          "itemName": "Aegis Knight Armor H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Seer_Knight_Helmet_H",
+          "itemName": "Seer Knight Helmet H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Swift_Chain_Boots_H",
+          "itemName": "Swift Chain Boots H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Vigor_Gold_Ring_H",
+          "itemName": "Vigor Gold Ring H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Fortune_Gold_Ring_H",
+          "itemName": "Fortune Gold Ring H",
+          "chance": 0.4
         }
       ],
       "worlds": [],
@@ -2792,14 +2862,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2348300,
+      "hpMax": 2348300,
+      "atkMin": 271750,
+      "atkMax": 271750,
+      "expMin": 28920,
+      "expMax": 28920,
+      "goldMin": 1284800,
+      "goldMax": 1284800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2822,14 +2892,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2320699,
+      "hpMax": 2320699,
+      "atkMin": 271200,
+      "atkMax": 271200,
+      "expMin": 28920,
+      "expMax": 28920,
+      "goldMin": 1280400,
+      "goldMax": 1280400,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2852,14 +2922,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2037800,
+      "hpMax": 2037800,
+      "atkMin": 227200,
+      "atkMax": 227200,
+      "expMin": 26519,
+      "expMax": 26519,
+      "goldMin": 1104400,
+      "goldMax": 1104400,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2882,14 +2952,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2251700,
+      "hpMax": 2251700,
+      "atkMin": 269550,
+      "atkMax": 269550,
+      "expMin": 28680,
+      "expMax": 28680,
+      "goldMin": 1038400,
+      "goldMax": 1038400,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2912,14 +2982,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 1996400,
+      "hpMax": 1996400,
+      "atkMin": 262400,
+      "atkMax": 262400,
+      "expMin": 31560,
+      "expMax": 31560,
+      "goldMin": 941600,
+      "goldMax": 941600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2942,12 +3012,12 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
+      "hpMin": 1975700,
+      "hpMax": 1975700,
+      "atkMin": 225550,
+      "atkMax": 225550,
+      "expMin": 26280,
+      "expMax": 26280,
       "goldMin": 1100000,
       "goldMax": 1100000,
       "permanentBPReward": 0,
@@ -2972,14 +3042,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2244800,
+      "hpMax": 2244800,
+      "atkMin": 232700,
+      "atkMax": 232700,
+      "expMin": 30360,
+      "expMax": 30360,
+      "goldMin": 915200,
+      "goldMax": 915200,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3002,14 +3072,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2403500,
+      "hpMax": 2403500,
+      "atkMin": 236550,
+      "atkMax": 236550,
+      "expMin": 27359,
+      "expMax": 27359,
+      "goldMin": 967999,
+      "goldMax": 967999,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3032,14 +3102,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2010200,
+      "hpMax": 2010200,
+      "atkMin": 226100,
+      "atkMax": 226100,
+      "expMin": 29880,
+      "expMax": 29880,
+      "goldMin": 1183600,
+      "goldMax": 1183600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3062,14 +3132,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2493200,
+      "hpMax": 2493200,
+      "atkMin": 239300,
+      "atkMax": 239300,
+      "expMin": 27599,
+      "expMax": 27599,
+      "goldMin": 1051600,
+      "goldMax": 1051600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3092,14 +3162,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 1968800,
+      "hpMax": 1968800,
+      "atkMin": 243700,
+      "atkMax": 243700,
+      "expMin": 29760,
+      "expMax": 29760,
+      "goldMin": 1218799,
+      "goldMax": 1218799,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3122,14 +3192,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2576000,
+      "hpMax": 2576000,
+      "atkMin": 259650,
+      "atkMax": 259650,
+      "expMin": 31200,
+      "expMax": 31200,
+      "goldMin": 1214399,
+      "goldMax": 1214399,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3152,14 +3222,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
+      "hpMin": 2072300,
+      "hpMax": 2072300,
+      "atkMin": 264600,
+      "atkMax": 264600,
       "expMin": 30000,
       "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "goldMin": 1064800,
+      "goldMax": 1064800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3182,14 +3252,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 1996400,
+      "hpMax": 1996400,
+      "atkMin": 244250,
+      "atkMax": 244250,
+      "expMin": 29760,
+      "expMax": 29760,
+      "goldMin": 1262800,
+      "goldMax": 1262800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3212,14 +3282,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2265500,
+      "hpMax": 2265500,
+      "atkMin": 251400,
+      "atkMax": 251400,
+      "expMin": 35640,
+      "expMax": 35640,
+      "goldMin": 1038400,
+      "goldMax": 1038400,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3272,14 +3342,14 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 150,
-      "hpMin": 2300000,
-      "hpMax": 2300000,
-      "atkMin": 250000,
-      "atkMax": 250000,
-      "expMin": 30000,
-      "expMax": 30000,
-      "goldMin": 1100000,
-      "goldMax": 1100000,
+      "hpMin": 2244800,
+      "hpMax": 2244800,
+      "atkMin": 269000,
+      "atkMax": 269000,
+      "expMin": 30360,
+      "expMax": 30360,
+      "goldMin": 1078000,
+      "goldMax": 1078000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4522,14 +4592,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
+      "hpMin": 2819250,
+      "hpMax": 2819250,
+      "atkMin": 373768,
+      "atkMax": 373768,
       "expMin": 100000,
       "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "goldMin": 2808000,
+      "goldMax": 2808000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4552,14 +4622,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3537450,
+      "hpMax": 3537450,
+      "atkMin": 367080,
+      "atkMax": 367080,
+      "expMin": 109999,
+      "expMax": 109999,
+      "goldMin": 3283200,
+      "goldMax": 3283200,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4584,14 +4654,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 2989350,
+      "hpMax": 2989350,
+      "atkMin": 351196,
+      "atkMax": 351196,
+      "expMin": 100800,
+      "expMax": 100800,
+      "goldMin": 2732400,
+      "goldMax": 2732400,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4616,14 +4686,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 2866499,
+      "hpMax": 2866499,
+      "atkMin": 403028,
+      "atkMax": 403028,
+      "expMin": 94400,
+      "expMax": 94400,
+      "goldMin": 3207600,
+      "goldMax": 3207600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4646,14 +4716,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3376800,
+      "hpMax": 3376800,
+      "atkMin": 418076,
+      "atkMax": 418076,
+      "expMin": 91599,
+      "expMax": 91599,
+      "goldMin": 2678400,
+      "goldMax": 2678400,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4676,14 +4746,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3386250,
+      "hpMax": 3386250,
+      "atkMin": 362900,
+      "atkMax": 362900,
+      "expMin": 120400,
+      "expMax": 120400,
+      "goldMin": 2872800,
+      "goldMax": 2872800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4706,14 +4776,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 2800350,
+      "hpMax": 2800350,
+      "atkMin": 372932,
+      "atkMax": 372932,
+      "expMin": 116799,
+      "expMax": 116799,
+      "goldMin": 2613600,
+      "goldMax": 2613600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4736,14 +4806,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3310650,
+      "hpMax": 3310650,
+      "atkMin": 360392,
+      "atkMax": 360392,
+      "expMin": 108400,
+      "expMax": 108400,
+      "goldMin": 2278800,
+      "goldMax": 2278800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4820,6 +4890,41 @@
           "itemId": "Shadow_Amulet_H",
           "itemName": "Shadow Amulet H",
           "chance": 1
+        },
+        {
+          "itemId": "Fury_Void_Shard_H",
+          "itemName": "Fury Void Shard H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Edge_Void_Shard_H",
+          "itemName": "Edge Void Shard H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Aegis_Abyss_Mail_H",
+          "itemName": "Aegis Abyss Mail H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Seer_Bone_Crown_H",
+          "itemName": "Seer Bone Crown H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Swift_Spirit_Greaves_H",
+          "itemName": "Swift Spirit Greaves H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Vigor_Shadow_Amulet_H",
+          "itemName": "Vigor Shadow Amulet H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Fortune_Shadow_Amulet_H",
+          "itemName": "Fortune Shadow Amulet H",
+          "chance": 0.4
         }
       ],
       "worlds": [],
@@ -4832,14 +4937,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3159449,
+      "hpMax": 3159449,
+      "atkMin": 383800,
+      "atkMax": 383800,
+      "expMin": 119200,
+      "expMax": 119200,
+      "goldMin": 2754000,
+      "goldMax": 2754000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4862,14 +4967,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3509099,
+      "hpMax": 3509099,
+      "atkMin": 393832,
+      "atkMax": 393832,
+      "expMin": 98400,
+      "expMax": 98400,
+      "goldMin": 2592000,
+      "goldMax": 2592000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4892,14 +4997,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 2696400,
+      "hpMax": 2696400,
+      "atkMin": 370424,
+      "atkMax": 370424,
+      "expMin": 99200,
+      "expMax": 99200,
+      "goldMin": 2505600,
+      "goldMax": 2505600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4922,14 +5027,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3235049,
+      "hpMax": 3235049,
+      "atkMin": 357884,
+      "atkMax": 357884,
+      "expMin": 113600,
+      "expMax": 113600,
+      "goldMin": 2365200,
+      "goldMax": 2365200,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4952,14 +5057,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3064950,
+      "hpMax": 3064950,
+      "atkMin": 352868,
+      "atkMax": 352868,
+      "expMin": 101200,
+      "expMax": 101200,
+      "goldMin": 3034800,
+      "goldMax": 3034800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4982,14 +5087,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 2724750,
+      "hpMax": 2724750,
+      "atkMin": 371260,
+      "atkMax": 371260,
+      "expMin": 99200,
+      "expMax": 99200,
+      "goldMin": 2408399,
+      "goldMax": 2408399,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5012,14 +5117,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3301200,
+      "hpMax": 3301200,
+      "atkMin": 387980,
+      "atkMax": 387980,
+      "expMin": 91199,
+      "expMax": 91199,
+      "goldMin": 3250800,
+      "goldMax": 3250800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5042,14 +5147,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 2970450,
+      "hpMax": 2970450,
+      "atkMin": 350360,
+      "atkMax": 350360,
+      "expMin": 95200,
+      "expMax": 95200,
+      "goldMin": 2440800,
+      "goldMax": 2440800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5072,14 +5177,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3480750,
+      "hpMax": 3480750,
+      "atkMin": 392996,
+      "atkMax": 392996,
+      "expMin": 92400,
+      "expMax": 92400,
+      "goldMin": 2883600,
+      "goldMax": 2883600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5102,14 +5207,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3055500,
+      "hpMax": 3055500,
+      "atkMin": 408880,
+      "atkMax": 408880,
+      "expMin": 101200,
+      "expMax": 101200,
+      "goldMin": 3034800,
+      "goldMax": 3034800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5132,14 +5237,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 2705850,
+      "hpMax": 2705850,
+      "atkMin": 398012,
+      "atkMax": 398012,
+      "expMin": 82000,
+      "expMax": 82000,
+      "goldMin": 2894400,
+      "goldMax": 2894400,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5164,14 +5269,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3556350,
+      "hpMax": 3556350,
+      "atkMin": 395504,
+      "atkMax": 395504,
+      "expMin": 104400,
+      "expMax": 104400,
+      "goldMin": 3088800,
+      "goldMax": 3088800,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5194,14 +5299,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 2894850,
+      "hpMax": 2894850,
+      "atkMin": 347852,
+      "atkMax": 347852,
+      "expMin": 117600,
+      "expMax": 117600,
+      "goldMin": 2429999,
+      "goldMax": 2429999,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5224,14 +5329,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 2923200,
+      "hpMax": 2923200,
+      "atkMin": 377112,
+      "atkMax": 377112,
+      "expMin": 117600,
+      "expMax": 117600,
+      "goldMin": 2624400,
+      "goldMax": 2624400,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5254,14 +5359,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 2715300,
+      "hpMax": 2715300,
+      "atkMin": 370424,
+      "atkMax": 370424,
+      "expMin": 82000,
+      "expMax": 82000,
+      "goldMin": 2311200,
+      "goldMax": 2311200,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5284,14 +5389,14 @@
       "isBoss": false,
       "minLevel": 160,
       "maxLevel": 280,
-      "hpMin": 3150000,
-      "hpMax": 3150000,
-      "atkMin": 380000,
-      "atkMax": 380000,
-      "expMin": 100000,
-      "expMax": 100000,
-      "goldMin": 2700000,
-      "goldMax": 2700000,
+      "hpMin": 3301200,
+      "hpMax": 3301200,
+      "atkMin": 415567,
+      "atkMax": 415567,
+      "expMin": 85600,
+      "expMax": 85600,
+      "goldMin": 2473200,
+      "goldMax": 2473200,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6372,14 +6477,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 4685000,
+      "hpMax": 4685000,
+      "atkMin": 551880,
+      "atkMax": 551880,
+      "expMin": 319200,
+      "expMax": 319200,
+      "goldMin": 5962000,
+      "goldMax": 5962000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6402,14 +6507,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5240000,
+      "hpMax": 5240000,
+      "atkMin": 569040,
+      "atkMax": 569040,
+      "expMin": 325200,
+      "expMax": 325200,
+      "goldMin": 5038000,
+      "goldMax": 5038000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6432,14 +6537,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5420000,
+      "hpMax": 5420000,
+      "atkMin": 617880,
+      "atkMax": 617880,
+      "expMin": 259200,
+      "expMax": 259200,
+      "goldMin": 5060000,
+      "goldMax": 5060000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6462,14 +6567,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 4715000,
+      "hpMax": 4715000,
+      "atkMin": 641640,
+      "atkMax": 641640,
+      "expMin": 250800,
+      "expMax": 250800,
+      "goldMin": 5962000,
+      "goldMax": 5962000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6492,14 +6597,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5479999,
+      "hpMax": 5479999,
+      "atkMin": 664080,
+      "atkMax": 664080,
+      "expMin": 277200,
+      "expMax": 277200,
+      "goldMin": 5060000,
+      "goldMax": 5060000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6522,14 +6627,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5300000,
+      "hpMax": 5300000,
+      "atkMin": 570360,
+      "atkMax": 570360,
+      "expMin": 308400,
+      "expMax": 308400,
+      "goldMin": 6446000,
+      "goldMax": 6446000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6552,14 +6657,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 4625000,
+      "hpMax": 4625000,
+      "atkMin": 550560,
+      "atkMax": 550560,
+      "expMin": 352800,
+      "expMax": 352800,
+      "goldMin": 4752000,
+      "goldMax": 4752000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6582,14 +6687,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 4520000,
+      "hpMax": 4520000,
+      "atkMin": 547920,
+      "atkMax": 547920,
+      "expMin": 351600,
+      "expMax": 351600,
+      "goldMin": 6335999,
+      "goldMax": 6335999,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6612,14 +6717,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5270000,
+      "hpMax": 5270000,
+      "atkMin": 569040,
+      "atkMax": 569040,
+      "expMin": 308400,
+      "expMax": 308400,
+      "goldMin": 5434000,
+      "goldMax": 5434000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6696,6 +6801,41 @@
           "itemId": "Sapphire_Ring_H",
           "itemName": "Sapphire Ring H",
           "chance": 1
+        },
+        {
+          "itemId": "Fury_Coral_Trident_H",
+          "itemName": "Fury Coral Trident H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Edge_Coral_Trident_H",
+          "itemName": "Edge Coral Trident H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Aegis_Sea_Armor_H",
+          "itemName": "Aegis Sea Armor H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Seer_Gold_Helmet_H",
+          "itemName": "Seer Gold Helmet H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Swift_Speed_Boots_H",
+          "itemName": "Swift Speed Boots H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Vigor_Sapphire_Ring_H",
+          "itemName": "Vigor Sapphire Ring H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Fortune_Sapphire_Ring_H",
+          "itemName": "Fortune Sapphire Ring H",
+          "chance": 0.4
         }
       ],
       "worlds": [
@@ -6712,14 +6852,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 4325000,
+      "hpMax": 4325000,
+      "atkMin": 541320,
+      "atkMax": 541320,
+      "expMin": 332399,
+      "expMax": 332399,
+      "goldMin": 5918000,
+      "goldMax": 5918000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6742,14 +6882,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5330000,
+      "hpMax": 5330000,
+      "atkMin": 571680,
+      "atkMax": 571680,
+      "expMin": 291600,
+      "expMax": 291600,
+      "goldMin": 5852000,
+      "goldMax": 5852000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6772,14 +6912,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5285000,
+      "hpMax": 5285000,
+      "atkMin": 613920,
+      "atkMax": 613920,
+      "expMin": 360000,
+      "expMax": 360000,
+      "goldMin": 4642000,
+      "goldMax": 4642000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6802,14 +6942,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 4445000,
+      "hpMax": 4445000,
+      "atkMin": 633720,
+      "atkMax": 633720,
+      "expMin": 298800,
+      "expMax": 298800,
+      "goldMin": 5720000,
+      "goldMax": 5720000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6832,14 +6972,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5090000,
+      "hpMax": 5090000,
+      "atkMin": 652200,
+      "atkMax": 652200,
+      "expMin": 289200,
+      "expMax": 289200,
+      "goldMin": 5016000,
+      "goldMax": 5016000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6862,14 +7002,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5165000,
+      "hpMax": 5165000,
+      "atkMin": 654840,
+      "atkMax": 654840,
+      "expMin": 290400,
+      "expMax": 290400,
+      "goldMin": 6027999,
+      "goldMax": 6027999,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6892,14 +7032,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 4715000,
+      "hpMax": 4715000,
+      "atkMin": 641640,
+      "atkMax": 641640,
+      "expMin": 319200,
+      "expMax": 319200,
+      "goldMin": 6160000,
+      "goldMax": 6160000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6922,14 +7062,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5030000,
+      "hpMax": 5030000,
+      "atkMin": 562440,
+      "atkMax": 562440,
+      "expMin": 254400,
+      "expMax": 254400,
+      "goldMin": 5808000,
+      "goldMax": 5808000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6952,14 +7092,14 @@
       "isBoss": false,
       "minLevel": 290,
       "maxLevel": 430,
-      "hpMin": 5000000,
-      "hpMax": 5000000,
-      "atkMin": 600000,
-      "atkMax": 600000,
-      "expMin": 300000,
-      "expMax": 300000,
-      "goldMin": 5500000,
-      "goldMax": 5500000,
+      "hpMin": 5719999,
+      "hpMax": 5719999,
+      "atkMin": 627120,
+      "atkMax": 627120,
+      "expMin": 364800,
+      "expMax": 364800,
+      "goldMin": 6093999,
+      "goldMax": 6093999,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7799,14 +7939,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 7040000,
+      "hpMax": 7040000,
+      "atkMin": 906600,
+      "atkMax": 906600,
+      "expMin": 697200,
+      "expMax": 697200,
+      "goldMin": 8199999,
+      "goldMax": 8199999,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7829,14 +7969,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 8311999,
+      "hpMax": 8311999,
+      "atkMin": 1018799,
+      "atkMax": 1018799,
+      "expMin": 837200,
+      "expMax": 837200,
+      "goldMin": 10240000,
+      "goldMax": 10240000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7913,6 +8053,41 @@
           "itemId": "Abyss_Orb_H",
           "itemName": "Abyss Orb H",
           "chance": 1
+        },
+        {
+          "itemId": "Fury_Void_Lance_H",
+          "itemName": "Fury Void Lance H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Edge_Void_Lance_H",
+          "itemName": "Edge Void Lance H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Aegis_Cursed_Armor_H",
+          "itemName": "Aegis Cursed Armor H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Seer_Demon_Helm_H",
+          "itemName": "Seer Demon Helm H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Swift_Abyss_Soles_H",
+          "itemName": "Swift Abyss Soles H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Vigor_Abyss_Orb_H",
+          "itemName": "Vigor Abyss Orb H",
+          "chance": 0.4
+        },
+        {
+          "itemId": "Fortune_Abyss_Orb_H",
+          "itemName": "Fortune Abyss Orb H",
+          "chance": 0.4
         }
       ],
       "worlds": [
@@ -7930,14 +8105,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 9176000,
+      "hpMax": 9176000,
+      "atkMin": 1117800,
+      "atkMax": 1117800,
+      "expMin": 613200,
+      "expMax": 613200,
+      "goldMin": 11800000,
+      "goldMax": 11800000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7960,14 +8135,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 6872000,
+      "hpMax": 6872000,
+      "atkMin": 974800,
+      "atkMax": 974800,
+      "expMin": 613200,
+      "expMax": 613200,
+      "goldMin": 11480000,
+      "goldMax": 11480000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7990,14 +8165,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 8864000,
+      "hpMax": 8864000,
+      "atkMin": 1109000,
+      "atkMax": 1109000,
+      "expMin": 767199,
+      "expMax": 767199,
+      "goldMin": 9960000,
+      "goldMax": 9960000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8020,14 +8195,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 8263999,
+      "hpMax": 8263999,
+      "atkMin": 944000,
+      "atkMax": 944000,
+      "expMin": 677600,
+      "expMax": 677600,
+      "goldMin": 11680000,
+      "goldMax": 11680000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8050,14 +8225,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 8384000,
+      "hpMax": 8384000,
+      "atkMin": 948400,
+      "atkMax": 948400,
+      "expMin": 638400,
+      "expMax": 638400,
+      "goldMin": 8440000,
+      "goldMax": 8440000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8080,14 +8255,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 7640000,
+      "hpMax": 7640000,
+      "atkMin": 924200,
+      "atkMax": 924200,
+      "expMin": 588000,
+      "expMax": 588000,
+      "goldMin": 9400000,
+      "goldMax": 9400000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8110,14 +8285,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 8119999,
+      "hpMax": 8119999,
+      "atkMin": 1087000,
+      "atkMax": 1087000,
+      "expMin": 756000,
+      "expMax": 756000,
+      "goldMin": 9120000,
+      "goldMax": 9120000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8140,14 +8315,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 8576000,
+      "hpMax": 8576000,
+      "atkMin": 1027600,
+      "atkMax": 1027600,
+      "expMin": 683200,
+      "expMax": 683200,
+      "goldMin": 8440000,
+      "goldMax": 8440000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8170,14 +8345,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 8552000,
+      "hpMax": 8552000,
+      "atkMin": 1100200,
+      "atkMax": 1100200,
+      "expMin": 800800,
+      "expMax": 800800,
+      "goldMin": 12080000,
+      "goldMax": 12080000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8200,14 +8375,14 @@
       "isBoss": false,
       "minLevel": 440,
       "maxLevel": 560,
-      "hpMin": 8000000,
-      "hpMax": 8000000,
-      "atkMin": 1000000,
-      "atkMax": 1000000,
-      "expMin": 700000,
-      "expMax": 700000,
-      "goldMin": 10000000,
-      "goldMax": 10000000,
+      "hpMin": 7399999,
+      "hpMax": 7399999,
+      "atkMin": 917600,
+      "atkMax": 917600,
+      "expMin": 663600,
+      "expMax": 663600,
+      "goldMin": 9000000,
+      "goldMax": 9000000,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -10074,7 +10249,7 @@
       "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
-        "AGI +0%",
+        "AGI +15%",
         "BP +1"
       ]
     },
@@ -10098,7 +10273,7 @@
       "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
-        "AGI +0%",
+        "AGI +15%",
         "BP +2"
       ]
     },
@@ -10262,7 +10437,7 @@
       "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
-        "HP +0%"
+        "HP +10%"
       ]
     },
     {
@@ -10308,7 +10483,7 @@
       "buyPrice": 0,
       "maxCopies": 5,
       "effects": [
-        "DEF +0%"
+        "DEF +15%"
       ]
     },
     {
@@ -10446,7 +10621,7 @@
       "buyPrice": 0,
       "maxCopies": 5,
       "effects": [
-        "ATK +0%"
+        "ATK +15%"
       ]
     },
     {
@@ -10492,7 +10667,7 @@
       "buyPrice": 0,
       "maxCopies": 5,
       "effects": [
-        "LUC +0%"
+        "LUC +15%"
       ]
     },
     {
@@ -10538,7 +10713,7 @@
       "buyPrice": 0,
       "maxCopies": 20,
       "effects": [
-        "DEF +0%"
+        "DEF +15%"
       ]
     },
     {
@@ -10630,7 +10805,7 @@
       "buyPrice": 0,
       "maxCopies": 20,
       "effects": [
-        "ATK +0%"
+        "ATK +15%"
       ]
     },
     {
@@ -12121,12 +12296,12 @@
       "bonusHP": 0,
       "bonusATK": 0,
       "bonusDEF": 0,
-      "bonusAGI": 2,
+      "bonusAGI": 9,
       "bonusLUC": 0,
       "buyPrice": 120,
       "maxCopies": -1,
       "effects": [
-        "AGI +2"
+        "AGI +9"
       ]
     },
     {
@@ -12417,6 +12592,126 @@
       ]
     },
     {
+      "id": "Aegis_Abyss_Mail_H",
+      "name": "Aegis Abyss Mail H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 72760,
+      "bonusATK": 0,
+      "bonusDEF": 13639,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 120000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +72760",
+        "DEF +13639"
+      ]
+    },
+    {
+      "id": "Aegis_Cursed_Armor_H",
+      "name": "Aegis Cursed Armor H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 183600,
+      "bonusATK": 0,
+      "bonusDEF": 34099,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 1200000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +183600",
+        "DEF +34099"
+      ]
+    },
+    {
+      "id": "Aegis_Iron_Chestplate_H",
+      "name": "Aegis Iron Chestplate H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 28560,
+      "bonusATK": 0,
+      "bonusDEF": 5424,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 5000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +28560",
+        "DEF +5424"
+      ]
+    },
+    {
+      "id": "Aegis_Knight_Armor_H",
+      "name": "Aegis Knight Armor H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 45560,
+      "bonusATK": 0,
+      "bonusDEF": 8524,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 30000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +45560",
+        "DEF +8524"
+      ]
+    },
+    {
+      "id": "Aegis_Sea_Armor_H",
+      "name": "Aegis Sea Armor H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 115600,
+      "bonusATK": 0,
+      "bonusDEF": 21699,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 400000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +115600",
+        "DEF +21699"
+      ]
+    },
+    {
       "id": "Bone_Crown_H",
       "name": "Bone Crown H",
       "description": "",
@@ -12537,6 +12832,361 @@
         "HP +135000",
         "DEF +27000",
         "LUC +1700"
+      ]
+    },
+    {
+      "id": "Edge_Coral_Trident_H",
+      "name": "Edge Coral Trident H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 55759,
+      "bonusDEF": 0,
+      "bonusAGI": 6480,
+      "bonusLUC": 0,
+      "buyPrice": 400000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +55759",
+        "AGI +6480"
+      ]
+    },
+    {
+      "id": "Edge_Iron_Sword_H",
+      "name": "Edge Iron Sword H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 11971,
+      "bonusDEF": 0,
+      "bonusAGI": 3600,
+      "bonusLUC": 0,
+      "buyPrice": 5000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +11971",
+        "AGI +3600"
+      ]
+    },
+    {
+      "id": "Edge_Shadow_Dagger_H",
+      "name": "Edge Shadow Dagger H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 19679,
+      "bonusDEF": 0,
+      "bonusAGI": 4320,
+      "bonusLUC": 0,
+      "buyPrice": 30000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +19679",
+        "AGI +4320"
+      ]
+    },
+    {
+      "id": "Edge_Void_Lance_H",
+      "name": "Edge Void Lance H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 91839,
+      "bonusDEF": 0,
+      "bonusAGI": 7920,
+      "bonusLUC": 0,
+      "buyPrice": 1200000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +91839",
+        "AGI +7920"
+      ]
+    },
+    {
+      "id": "Edge_Void_Shard_H",
+      "name": "Edge Void Shard H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 32799,
+      "bonusDEF": 0,
+      "bonusAGI": 5280,
+      "bonusLUC": 0,
+      "buyPrice": 120000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +32799",
+        "AGI +5280"
+      ]
+    },
+    {
+      "id": "Fortune_Abyss_Orb_H",
+      "name": "Fortune Abyss Orb H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 81000,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 4620,
+      "buyPrice": 1200000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +81000",
+        "LUC +4620"
+      ]
+    },
+    {
+      "id": "Fortune_Gold_Ring_H",
+      "name": "Fortune Gold Ring H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 19800,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 2420,
+      "buyPrice": 30000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +19800",
+        "LUC +2420"
+      ]
+    },
+    {
+      "id": "Fortune_Sapphire_Ring_H",
+      "name": "Fortune Sapphire Ring H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 51000,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 3740,
+      "buyPrice": 400000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +51000",
+        "LUC +3740"
+      ]
+    },
+    {
+      "id": "Fortune_Shadow_Amulet_H",
+      "name": "Fortune Shadow Amulet H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 31800,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 3080,
+      "buyPrice": 120000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +31800",
+        "LUC +3080"
+      ]
+    },
+    {
+      "id": "Fortune_Silver_Ring_H",
+      "name": "Fortune Silver Ring H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 12600,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 1980,
+      "buyPrice": 5000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +12600",
+        "LUC +1980"
+      ]
+    },
+    {
+      "id": "Fury_Coral_Trident_H",
+      "name": "Fury Coral Trident H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 78199,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 400000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +78199"
+      ]
+    },
+    {
+      "id": "Fury_Iron_Sword_H",
+      "name": "Fury Iron Sword H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 16789,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 5000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +16789"
+      ]
+    },
+    {
+      "id": "Fury_Shadow_Dagger_H",
+      "name": "Fury Shadow Dagger H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 27599,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 30000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +27599"
+      ]
+    },
+    {
+      "id": "Fury_Void_Lance_H",
+      "name": "Fury Void Lance H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 128799,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 1200000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +128799"
+      ]
+    },
+    {
+      "id": "Fury_Void_Shard_H",
+      "name": "Fury Void Shard H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 45999,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 120000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +45999"
       ]
     },
     {
@@ -12784,6 +13434,131 @@
       ]
     },
     {
+      "id": "Seer_Bone_Crown_H",
+      "name": "Seer Bone Crown H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Helmet",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 40559,
+      "bonusATK": 0,
+      "bonusDEF": 7699,
+      "bonusAGI": 0,
+      "bonusLUC": 1819,
+      "buyPrice": 120000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +40559",
+        "DEF +7699",
+        "LUC +1819"
+      ]
+    },
+    {
+      "id": "Seer_Demon_Helm_H",
+      "name": "Seer Demon Helm H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Helmet",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 105299,
+      "bonusATK": 0,
+      "bonusDEF": 18899,
+      "bonusAGI": 0,
+      "bonusLUC": 4419,
+      "buyPrice": 1200000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +105299",
+        "DEF +18899",
+        "LUC +4419"
+      ]
+    },
+    {
+      "id": "Seer_Gold_Helmet_H",
+      "name": "Seer Gold Helmet H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Helmet",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 65519,
+      "bonusATK": 0,
+      "bonusDEF": 11899,
+      "bonusAGI": 0,
+      "bonusLUC": 2859,
+      "buyPrice": 400000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +65519",
+        "DEF +11899",
+        "LUC +2859"
+      ]
+    },
+    {
+      "id": "Seer_Iron_Helmet_H",
+      "name": "Seer Iron Helmet H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Helmet",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 15599,
+      "bonusATK": 0,
+      "bonusDEF": 3149,
+      "bonusAGI": 0,
+      "bonusLUC": 779,
+      "buyPrice": 5000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +15599",
+        "DEF +3149",
+        "LUC +779"
+      ]
+    },
+    {
+      "id": "Seer_Knight_Helmet_H",
+      "name": "Seer Knight Helmet H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Helmet",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 24959,
+      "bonusATK": 0,
+      "bonusDEF": 4899,
+      "bonusAGI": 0,
+      "bonusLUC": 1169,
+      "buyPrice": 30000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +24959",
+        "DEF +4899",
+        "LUC +1169"
+      ]
+    },
+    {
       "id": "Shadow_Amulet_H",
       "name": "Shadow Amulet H",
       "description": "",
@@ -12903,6 +13678,246 @@
         "HP +86000",
         "DEF +12800",
         "AGI +1100"
+      ]
+    },
+    {
+      "id": "Swift_Abyss_Soles_H",
+      "name": "Swift Abyss Soles H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 149600,
+      "bonusATK": 0,
+      "bonusDEF": 25600,
+      "bonusAGI": 3740,
+      "bonusLUC": 0,
+      "buyPrice": 1200000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +149600",
+        "DEF +25600",
+        "AGI +3740"
+      ]
+    },
+    {
+      "id": "Swift_Chain_Boots_H",
+      "name": "Swift Chain Boots H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 36720,
+      "bonusATK": 0,
+      "bonusDEF": 6400,
+      "bonusAGI": 1980,
+      "bonusLUC": 0,
+      "buyPrice": 30000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +36720",
+        "DEF +6400",
+        "AGI +1980"
+      ]
+    },
+    {
+      "id": "Swift_Iron_Greaves_H",
+      "name": "Swift Iron Greaves H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 23120,
+      "bonusATK": 0,
+      "bonusDEF": 4000,
+      "bonusAGI": 1540,
+      "bonusLUC": 0,
+      "buyPrice": 5000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +23120",
+        "DEF +4000",
+        "AGI +1540"
+      ]
+    },
+    {
+      "id": "Swift_Speed_Boots_H",
+      "name": "Swift Speed Boots H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 93840,
+      "bonusATK": 0,
+      "bonusDEF": 16000,
+      "bonusAGI": 3080,
+      "bonusLUC": 0,
+      "buyPrice": 400000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +93840",
+        "DEF +16000",
+        "AGI +3080"
+      ]
+    },
+    {
+      "id": "Swift_Spirit_Greaves_H",
+      "name": "Swift Spirit Greaves H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 58480,
+      "bonusATK": 0,
+      "bonusDEF": 10240,
+      "bonusAGI": 2420,
+      "bonusLUC": 0,
+      "buyPrice": 120000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +58480",
+        "DEF +10240",
+        "AGI +2420"
+      ]
+    },
+    {
+      "id": "Vigor_Abyss_Orb_H",
+      "name": "Vigor Abyss Orb H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 216000,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 1200000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +216000"
+      ]
+    },
+    {
+      "id": "Vigor_Gold_Ring_H",
+      "name": "Vigor Gold Ring H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 52800,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 30000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +52800"
+      ]
+    },
+    {
+      "id": "Vigor_Sapphire_Ring_H",
+      "name": "Vigor Sapphire Ring H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 136000,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 400000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +136000"
+      ]
+    },
+    {
+      "id": "Vigor_Shadow_Amulet_H",
+      "name": "Vigor Shadow Amulet H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 84800,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 120000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +84800"
+      ]
+    },
+    {
+      "id": "Vigor_Silver_Ring_H",
+      "name": "Vigor Silver Ring H",
+      "description": "",
+      "image": "",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 33600,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 5000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +33600"
       ]
     },
     {
@@ -14650,13 +15665,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 1,
+      "bonusDEF": 6,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 40,
       "maxCopies": -1,
       "effects": [
-        "DEF +1"
+        "DEF +6"
       ]
     },
     {
@@ -14839,12 +15854,12 @@
       "bonusHP": 0,
       "bonusATK": 0,
       "bonusDEF": 0,
-      "bonusAGI": 2,
+      "bonusAGI": 9,
       "bonusLUC": 0,
       "buyPrice": 100,
       "maxCopies": -1,
       "effects": [
-        "AGI +2"
+        "AGI +9"
       ]
     },
     {
@@ -18179,7 +19194,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18203,7 +19225,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18227,7 +19256,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18251,7 +19287,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18275,7 +19318,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18299,7 +19349,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18323,7 +19380,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18347,7 +19411,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18371,7 +19442,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18395,7 +19473,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18419,7 +19504,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18443,7 +19535,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18467,7 +19566,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18491,7 +19597,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18515,7 +19628,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18539,7 +19659,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18563,7 +19690,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18587,7 +19721,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18611,7 +19752,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18635,7 +19783,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18659,7 +19814,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18683,7 +19845,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18707,7 +19876,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18731,7 +19907,14 @@
         "Abyss_Mail_H",
         "Bone_Crown_H",
         "Spirit_Greaves_H",
-        "Shadow_Amulet_H"
+        "Shadow_Amulet_H",
+        "Fury_Void_Shard_H",
+        "Edge_Void_Shard_H",
+        "Aegis_Abyss_Mail_H",
+        "Seer_Bone_Crown_H",
+        "Swift_Spirit_Greaves_H",
+        "Vigor_Shadow_Amulet_H",
+        "Fortune_Shadow_Amulet_H"
       ]
     },
     {
@@ -18755,7 +19938,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -18779,7 +19969,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -18803,7 +20000,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -18827,7 +20031,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -18851,7 +20062,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -18875,7 +20093,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -18899,7 +20124,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -18923,7 +20155,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -18947,7 +20186,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -18971,7 +20217,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -18995,7 +20248,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19019,7 +20279,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19043,7 +20310,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19067,7 +20341,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19091,7 +20372,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19115,7 +20403,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19139,7 +20434,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19163,7 +20465,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19187,7 +20496,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19211,7 +20527,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19235,7 +20558,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19259,7 +20589,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19283,7 +20620,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19307,7 +20651,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19331,7 +20682,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -19355,7 +20713,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -19379,7 +20744,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -19403,7 +20775,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -19427,7 +20806,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -19451,7 +20837,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -19475,7 +20868,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19499,7 +20899,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19523,7 +20930,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19547,7 +20961,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19571,7 +20992,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19595,7 +21023,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19619,7 +21054,14 @@
         "Iron_Chestplate_H",
         "Iron_Helmet_H",
         "Iron_Greaves_H",
-        "Silver_Ring_H"
+        "Silver_Ring_H",
+        "Fury_Iron_Sword_H",
+        "Edge_Iron_Sword_H",
+        "Aegis_Iron_Chestplate_H",
+        "Seer_Iron_Helmet_H",
+        "Swift_Iron_Greaves_H",
+        "Vigor_Silver_Ring_H",
+        "Fortune_Silver_Ring_H"
       ]
     },
     {
@@ -19643,7 +21085,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19667,7 +21116,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19691,7 +21147,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19715,7 +21178,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19739,7 +21209,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19763,7 +21240,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19787,7 +21271,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19811,7 +21302,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19835,7 +21333,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19859,7 +21364,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19883,7 +21395,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19907,7 +21426,14 @@
         "Sea_Armor_H",
         "Gold_Helmet_H",
         "Speed_Boots_H",
-        "Sapphire_Ring_H"
+        "Sapphire_Ring_H",
+        "Fury_Coral_Trident_H",
+        "Edge_Coral_Trident_H",
+        "Aegis_Sea_Armor_H",
+        "Seer_Gold_Helmet_H",
+        "Swift_Speed_Boots_H",
+        "Vigor_Sapphire_Ring_H",
+        "Fortune_Sapphire_Ring_H"
       ]
     },
     {
@@ -19931,7 +21457,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -19955,7 +21488,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -19979,7 +21519,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20003,7 +21550,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20027,7 +21581,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20051,7 +21612,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20075,7 +21643,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20099,7 +21674,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20123,7 +21705,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20147,7 +21736,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20171,7 +21767,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20195,7 +21798,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20219,7 +21829,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20243,7 +21860,14 @@
         "Cursed_Armor_H",
         "Demon_Helm_H",
         "Abyss_Soles_H",
-        "Abyss_Orb_H"
+        "Abyss_Orb_H",
+        "Fury_Void_Lance_H",
+        "Edge_Void_Lance_H",
+        "Aegis_Cursed_Armor_H",
+        "Seer_Demon_Helm_H",
+        "Swift_Abyss_Soles_H",
+        "Vigor_Abyss_Orb_H",
+        "Fortune_Abyss_Orb_H"
       ]
     },
     {
@@ -20267,7 +21891,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20291,7 +21922,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20315,7 +21953,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20339,7 +21984,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20363,7 +22015,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20387,7 +22046,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20411,7 +22077,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20435,7 +22108,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20459,7 +22139,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20483,7 +22170,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20507,7 +22201,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20531,7 +22232,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20555,7 +22263,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20579,7 +22294,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20603,7 +22325,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20627,7 +22356,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20651,7 +22387,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20675,7 +22418,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20699,7 +22449,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20723,7 +22480,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20747,7 +22511,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20771,7 +22542,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20795,7 +22573,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -20819,7 +22604,14 @@
         "Knight_Armor_H",
         "Knight_Helmet_H",
         "Chain_Boots_H",
-        "Gold_Ring_H"
+        "Gold_Ring_H",
+        "Fury_Shadow_Dagger_H",
+        "Edge_Shadow_Dagger_H",
+        "Aegis_Knight_Armor_H",
+        "Seer_Knight_Helmet_H",
+        "Swift_Chain_Boots_H",
+        "Vigor_Gold_Ring_H",
+        "Fortune_Gold_Ring_H"
       ]
     },
     {
@@ -22087,11 +23879,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 22000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 4,
+      "ownedBonusHP": 18000,
+      "ownedBonusATK": 5000,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 0,
-      "ownedBonusLUC": 6,
+      "ownedBonusAGI": 30,
+      "ownedBonusLUC": 110,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22110,11 +23902,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 50000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 0,
+      "ownedBonusHP": 12000,
+      "ownedBonusATK": 3000,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 4,
-      "ownedBonusLUC": 0,
+      "ownedBonusAGI": 45,
+      "ownedBonusLUC": 20,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22133,11 +23925,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 95000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 0,
+      "ownedBonusHP": 30000,
+      "ownedBonusATK": 5500,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 3,
-      "ownedBonusLUC": 5,
+      "ownedBonusAGI": 130,
+      "ownedBonusLUC": 130,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22156,11 +23948,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 46000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 8,
+      "ownedBonusHP": 25000,
+      "ownedBonusATK": 9000,
       "ownedBonusDEF": 0,
       "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusLUC": 30,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22179,11 +23971,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 2600000000000,
-      "ownedBonusHP": 50,
-      "ownedBonusATK": 7,
-      "ownedBonusDEF": 0,
+      "ownedBonusHP": 95000,
+      "ownedBonusATK": 11500,
+      "ownedBonusDEF": 40,
       "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusLUC": 20,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22202,11 +23994,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 7700000000000,
-      "ownedBonusHP": 80,
-      "ownedBonusATK": 6,
-      "ownedBonusDEF": 0,
+      "ownedBonusHP": 130000,
+      "ownedBonusATK": 11500,
+      "ownedBonusDEF": 80,
       "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusLUC": 40,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22225,11 +24017,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 420000000000,
-      "ownedBonusHP": 30,
-      "ownedBonusATK": 5,
-      "ownedBonusDEF": 0,
+      "ownedBonusHP": 80000,
+      "ownedBonusATK": 8000,
+      "ownedBonusDEF": 60,
       "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusLUC": 30,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22248,11 +24040,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 600000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 0,
+      "ownedBonusHP": 35000,
+      "ownedBonusATK": 8000,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 7,
-      "ownedBonusLUC": 0,
+      "ownedBonusAGI": 220,
+      "ownedBonusLUC": 60,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22271,11 +24063,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 870000000000,
-      "ownedBonusHP": 30,
-      "ownedBonusATK": 4,
-      "ownedBonusDEF": 3,
+      "ownedBonusHP": 90000,
+      "ownedBonusATK": 8500,
+      "ownedBonusDEF": 150,
       "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusLUC": 50,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22294,11 +24086,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 3000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 6,
+      "ownedBonusHP": 12000,
+      "ownedBonusATK": 8000,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusAGI": 30,
+      "ownedBonusLUC": 120,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22317,11 +24109,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 140000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 0,
+      "ownedBonusHP": 22000,
+      "ownedBonusATK": 6500,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 8,
-      "ownedBonusLUC": 5,
+      "ownedBonusAGI": 210,
+      "ownedBonusLUC": 90,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22340,11 +24132,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 11000000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 0,
+      "ownedBonusHP": 50000,
+      "ownedBonusATK": 5000,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 0,
-      "ownedBonusLUC": 12,
+      "ownedBonusAGI": 60,
+      "ownedBonusLUC": 400,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22363,9 +24155,9 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 6000000000,
-      "ownedBonusHP": 40,
-      "ownedBonusATK": 0,
-      "ownedBonusDEF": 5,
+      "ownedBonusHP": 60000,
+      "ownedBonusATK": 2500,
+      "ownedBonusDEF": 150,
       "ownedBonusAGI": 0,
       "ownedBonusLUC": 0,
       "isPremium": false,
@@ -22386,11 +24178,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 100,
       "purchasePrice": 0,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 0,
+      "ownedBonusHP": 20000,
+      "ownedBonusATK": 5000,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusAGI": 60,
+      "ownedBonusLUC": 180,
       "isPremium": true,
       "unlockedByDefault": false
     },
@@ -22409,11 +24201,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 15000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 0,
+      "ownedBonusHP": 15000,
+      "ownedBonusATK": 3400,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 5,
-      "ownedBonusLUC": 4,
+      "ownedBonusAGI": 90,
+      "ownedBonusLUC": 75,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22432,11 +24224,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 1250000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 7,
-      "ownedBonusDEF": 3,
+      "ownedBonusHP": 60000,
+      "ownedBonusATK": 11000,
+      "ownedBonusDEF": 120,
       "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusLUC": 30,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22455,11 +24247,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 200000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 0,
+      "ownedBonusHP": 45000,
+      "ownedBonusATK": 4500,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 0,
-      "ownedBonusLUC": 7,
+      "ownedBonusAGI": 40,
+      "ownedBonusLUC": 220,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22478,11 +24270,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 290000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 0,
+      "ownedBonusHP": 40000,
+      "ownedBonusATK": 5000,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 0,
-      "ownedBonusLUC": 6,
+      "ownedBonusAGI": 40,
+      "ownedBonusLUC": 200,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22501,11 +24293,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 32000000000,
-      "ownedBonusHP": 20,
-      "ownedBonusATK": 0,
-      "ownedBonusDEF": 4,
+      "ownedBonusHP": 40000,
+      "ownedBonusATK": 4000,
+      "ownedBonusDEF": 100,
       "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusLUC": 40,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22524,11 +24316,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 3700000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 0,
+      "ownedBonusHP": 40000,
+      "ownedBonusATK": 8000,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 5,
-      "ownedBonusLUC": 8,
+      "ownedBonusAGI": 200,
+      "ownedBonusLUC": 240,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22547,9 +24339,9 @@
       "ownedBonusDropRatePct": 0.5,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 0,
-      "ownedBonusHP": 150,
-      "ownedBonusATK": 0,
-      "ownedBonusDEF": 5,
+      "ownedBonusHP": 100000,
+      "ownedBonusATK": 4000,
+      "ownedBonusDEF": 200,
       "ownedBonusAGI": 0,
       "ownedBonusLUC": 0,
       "isPremium": true,
@@ -22570,11 +24362,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 1800000000000,
-      "ownedBonusHP": 40,
-      "ownedBonusATK": 0,
-      "ownedBonusDEF": 4,
+      "ownedBonusHP": 110000,
+      "ownedBonusATK": 5000,
+      "ownedBonusDEF": 200,
       "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusLUC": 40,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22593,11 +24385,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 5400000000000,
-      "ownedBonusHP": 60,
-      "ownedBonusATK": 5,
+      "ownedBonusHP": 130000,
+      "ownedBonusATK": 11000,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 0,
-      "ownedBonusLUC": 0,
+      "ownedBonusAGI": 40,
+      "ownedBonusLUC": 30,
       "isPremium": false,
       "unlockedByDefault": false
     },
@@ -22639,11 +24431,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 66000000000,
-      "ownedBonusHP": 0,
-      "ownedBonusATK": 7,
+      "ownedBonusHP": 25000,
+      "ownedBonusATK": 7500,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 0,
-      "ownedBonusLUC": 5,
+      "ownedBonusAGI": 40,
+      "ownedBonusLUC": 150,
       "isPremium": false,
       "unlockedByDefault": false
     }
