@@ -496,26 +496,27 @@
     var meta = WORLD_META[w] || { color: "var(--accent)" };
     var route = WORLD_ROUTES[w];
     var byId = {}; s.maps.forEach(function (m) { byId[m.id] = m; });
-    // Depth of each map from the route root (BFS) -> group into tiers so branches (and
-    // convergences) appear as multiple maps on one row, connected like the world map.
-    var depth = {};
+    // Depth + BFS discovery order from the route root, so each tier lists its maps grouped
+    // under the parent they branch from (keeps siblings adjacent and connectors untangled).
+    var depth = {}, order = [];
     if (route && byId[route.root]) {
-      depth[route.root] = 0;
+      depth[route.root] = 0; order.push(route.root);
       var queue = [route.root], guard = 0;
       while (queue.length && guard++ < 999) {
         var cur = queue.shift();
         (route.edges[cur] || []).forEach(function (k) {
-          if (byId[k]) { var nd = depth[cur] + 1; if (depth[k] == null || nd > depth[k]) depth[k] = nd; queue.push(k); }
+          if (byId[k] && depth[k] == null) { depth[k] = depth[cur] + 1; order.push(k); queue.push(k); }
         });
       }
     }
     var maxD = 0; s.maps.forEach(function (m) { if (depth[m.id] != null) maxD = Math.max(maxD, depth[m.id]); });
     var tiers = [];
-    s.maps.forEach(function (m) { var dd = (depth[m.id] == null) ? maxD + 1 : depth[m.id]; (tiers[dd] = tiers[dd] || []).push(m); });
+    order.forEach(function (idk) { (tiers[depth[idk]] = tiers[depth[idk]] || []).push(byId[idk]); });
+    s.maps.forEach(function (m) { if (depth[m.id] == null) (tiers[maxD + 1] = tiers[maxD + 1] || []).push(m); });
     function mnode(m) {
       var mb = d.bosses.filter(function (b) { return b.mapId === m.id; });
       var sub = mb.length ? ("&#9760;&#65039; " + mb.map(function (b) { return esc(b.name); }).join(", ")) : "No boss";
-      return '<a class="mnode" href="maps.html?id=' + encodeURIComponent(m.id) + '" style="--wc:' + meta.color + '">' +
+      return '<a class="mnode" data-mid="' + esc(m.id) + '" href="maps.html?id=' + encodeURIComponent(m.id) + '" style="--wc:' + meta.color + '">' +
         thumb(m.image, m.name) +
         '<div class="mnode-body"><h4>' + esc(m.name) + '</h4><div class="meta">' + sub + '</div></div></a>';
     }
@@ -530,14 +531,49 @@
     var rows = [];
     tiers.forEach(function (row) { if (row && row.length) rows.push(row); });
     if (reverse) rows.reverse();
-    var conn = horizontal ? '<div class="route-conn h"></div>' : '<div class="route-conn v"></div>';
-    var html = rows.map(function (row, i) {
-      return (i > 0 ? conn : "") + '<div class="mtier">' + row.map(mnode).join("") + "</div>";
+    var html = rows.map(function (row) {
+      return '<div class="mtier">' + row.map(mnode).join("") + "</div>";
     }).join("");
     app.innerHTML =
       '<a class="back" href="maps.html">&#8592; World Map</a>' +
       '<div class="page-head"><h1>' + esc(w) + '</h1><p>' + s.maps.length + ' map' + (s.maps.length !== 1 ? 's' : '') + ' &#183; connected in travel order</p></div>' +
-      '<div class="mchain' + (horizontal ? " h" : "") + '">' + html + '</div>';
+      '<div class="mchain' + (horizontal ? " h" : "") + '" style="--wc:' + meta.color + '"><svg class="mconn-svg" aria-hidden="true"></svg>' + html + '</div>';
+    drawRouteConnectors(app, route);
+  }
+  // Draw one line per route edge, from parent node centre to child node centre, on an SVG
+  // overlay behind the (opaque) map cards. Uses offset coords so it survives horizontal scroll,
+  // and redraws on resize / after thumbnails load. This is what makes every branch visible
+  // (e.g. Shallow Coral Reef -> Coral Maze / Sunken Temple Gate / Deep Trench), not just a chain.
+  function drawRouteConnectors(app, route) {
+    var chain = app.querySelector(".mchain");
+    if (!chain || !route) return;
+    var svg = chain.querySelector(".mconn-svg");
+    if (!svg) return;
+    function centre(id) {
+      var el = chain.querySelector('[data-mid="' + id + '"]');
+      return el ? { x: el.offsetLeft + el.offsetWidth / 2, y: el.offsetTop + el.offsetHeight / 2 } : null;
+    }
+    function draw() {
+      var W = chain.scrollWidth, H = chain.scrollHeight;
+      svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+      svg.style.width = W + "px"; svg.style.height = H + "px";
+      var lines = "";
+      Object.keys(route.edges || {}).forEach(function (p) {
+        var pc = centre(p); if (!pc) return;
+        (route.edges[p] || []).forEach(function (c) {
+          var cc = centre(c); if (!cc) return;
+          lines += '<line x1="' + pc.x + '" y1="' + pc.y + '" x2="' + cc.x + '" y2="' + cc.y + '"/>';
+        });
+      });
+      svg.innerHTML = lines;
+    }
+    requestAnimationFrame(draw);
+    Array.prototype.forEach.call(chain.querySelectorAll("img"), function (im) {
+      if (!im.complete) im.addEventListener("load", function () { requestAnimationFrame(draw); }, { once: true });
+    });
+    if (drawRouteConnectors._rz) window.removeEventListener("resize", drawRouteConnectors._rz);
+    var t; drawRouteConnectors._rz = function () { clearTimeout(t); t = setTimeout(draw, 120); };
+    window.addEventListener("resize", drawRouteConnectors._rz);
   }
   function mapDetail(app, d, m) {
     if (!m) return notFound(app, "maps.html", "Maps");

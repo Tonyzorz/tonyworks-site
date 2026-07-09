@@ -369,8 +369,10 @@ table.data tr:hover td { background: var(--panel); }
 
 
 /* ---- per-world map chain (travel order) ---- */
-.mchain { display:flex; flex-direction:column; align-items:center; margin:1rem 0; }
-.mnode { display:flex; align-items:center; gap:.8rem; width:100%; max-width:480px; text-decoration:none;
+.mchain { display:flex; flex-direction:column; align-items:center; margin:1rem 0; position:relative; gap:34px; }
+.mconn-svg { position:absolute; top:0; left:0; pointer-events:none; z-index:0; overflow:visible; }
+.mconn-svg line { stroke:var(--wc,var(--accent)); stroke-width:2.5; stroke-linecap:round; opacity:.55; }
+.mnode { display:flex; align-items:center; gap:.8rem; width:100%; max-width:480px; text-decoration:none; position:relative; z-index:1;
   background:var(--panel); border:1px solid var(--border); border-left:3px solid var(--wc,var(--accent));
   border-radius:var(--radius); padding:.55rem .8rem; color:var(--text); box-shadow:var(--shadow);
   transition:transform .12s ease, border-color .12s ease; }
