@@ -177,40 +177,28 @@ const zones = loadCategory("Zones").map((a) => {
   };
 });
 
-const ZONE_PALETTE = [[92,184,92],[158,192,77],[217,199,71],[230,148,61],[209,82,71],[158,87,184],[87,128,209],[77,184,189]];
-function crc32(buf) { let c = ~0; for (let i = 0; i < buf.length; i++) { c ^= buf[i]; for (let k = 0; k < 8; k++) c = (c >>> 1) ^ (0xEDB88320 & -(c & 1)); } return (~c) >>> 0; }
-function chunk(type, data) {
-  const len = Buffer.alloc(4); len.writeUInt32BE(data.length, 0);
-  const t = Buffer.from(type, "ascii");
-  const crc = Buffer.alloc(4); crc.writeUInt32BE(crc32(Buffer.concat([t, data])), 0);
-  return Buffer.concat([len, t, data, crc]);
-}
-function writePng(file, w, h, rgb) {
-  const sig = Buffer.from([137,80,78,71,13,10,26,10]);
-  const ihdr = Buffer.alloc(13); ihdr.writeUInt32BE(w, 0); ihdr.writeUInt32BE(h, 4); ihdr[8] = 8; ihdr[9] = 2;
-  const stride = w * 3, raw = Buffer.alloc((stride + 1) * h);
-  for (let y = 0; y < h; y++) { raw[y * (stride + 1)] = 0; rgb.copy(raw, y * (stride + 1) + 1, y * stride, y * stride + stride); }
-  fs.writeFileSync(file, Buffer.concat([sig, chunk("IHDR", ihdr), chunk("IDAT", zlib.deflateSync(raw, { level: 9 })), chunk("IEND", Buffer.alloc(0))]));
+// Map asset id -> in-game visual sprite base name. Most transform cleanly from
+// camelCase; these six differ from the plain transform (verified vs the setup tools).
+const MAP_VISUAL = {
+  AshenForest_Map: "Ashen Forest Pass", DeepForest_Map: "Deep Dark Forest",
+  Grassland_Map: "Grassland Plains", LavaCore_Map: "Lava Core Boss Chamber",
+  SunBuriedCave_Map: "Sun-Buried Cave", WorldGate_Map: "World Gate Entrance"
+};
+const mapDisplayName = (id) => MAP_VISUAL[id] || id.replace(/_Map$/, "").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
+function copyMapVisual(id) {
+  const src = path.join(SPR, "Map", "visual", mapDisplayName(id) + " visual.png");
+  if (!fs.existsSync(src)) return "";
+  const file = "map_" + safe(id) + ".png";
+  fs.copyFileSync(src, path.join(IMG, file)); imagesWritten++;
+  return file;
 }
 const maps = loadCategory("Maps").map((a) => {
   const t = a.text; const gw = num(t, "gridWidth"), gh = num(t, "gridHeight"); const hex = field(t, "cells");
-  let walkable = 0, blocked = 0, image = "";
+  let walkable = 0, blocked = 0;
   if (hex && hex.length === gw * gh * 2) {
-    const cells = new Uint8Array(gw * gh);
-    for (let i = 0; i < cells.length; i++) cells[i] = parseInt(hex.substr(i * 2, 2), 16);
-    for (const v of cells) { if (v === 0) blocked++; else walkable++; }
-    const scale = 5, W = gw * scale, H = gh * scale, rgb = Buffer.alloc(W * H * 3);
-    for (let cy = 0; cy < gh; cy++) for (let cx = 0; cx < gw; cx++) {
-      const v = cells[cy * gw + cx];
-      const col = v === 0 ? [20,23,28] : v === 255 ? [71,77,87] : ZONE_PALETTE[(v - 1) % ZONE_PALETTE.length];
-      const iy = gh - 1 - cy;
-      for (let sy = 0; sy < scale; sy++) for (let sx = 0; sx < scale; sx++) {
-        const px = ((iy * scale + sy) * W + (cx * scale + sx)) * 3; rgb[px] = col[0]; rgb[px + 1] = col[1]; rgb[px + 2] = col[2];
-      }
-    }
-    image = `map_${safe(a.id)}.png`; writePng(path.join(IMG, image), W, H, rgb); imagesWritten++;
+    for (let i = 0; i < gw * gh; i++) { const v = parseInt(hex.substr(i * 2, 2), 16); if (v === 0) blocked++; else walkable++; }
   }
-  return { id: a.id, name: a.id, image, gridWidth: gw, gridHeight: gh, dataVersion: num(t, "dataVersion"), walkableCells: walkable, blockedCells: blocked };
+  return { id: a.id, name: mapDisplayName(a.id), image: copyMapVisual(a.id), gridWidth: gw, gridHeight: gh, dataVersion: num(t, "dataVersion"), walkableCells: walkable, blockedCells: blocked };
 });
 
 enemies.sort((a, b) => a.minLevel - b.minLevel);

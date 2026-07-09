@@ -1,4 +1,4 @@
-/* TonyWorks — shared site logic. Loads data/data.json and renders pages. */
+/* TonyWorks &#8212; shared site logic. Loads data/data.json and renders pages. */
 (function () {
   "use strict";
 
@@ -84,7 +84,7 @@
       }).join("");
       header.innerHTML =
         '<div class="nav">' +
-          '<a class="portal-back" href="../../index.html">◂ TonyWorks</a>' +
+          '<a class="portal-back" href="../../index.html">&#9666; TonyWorks</a>' +
           '<a class="brand" href="index.html" style="color:inherit">' +
             '<span class="logo">IL</span>' +
             '<span>Infinite Loot-Loop</span>' +
@@ -95,8 +95,8 @@
     var footer = $("#site-footer");
     if (footer) {
       footer.innerHTML =
-        'TonyWorks — companion wiki for <strong>Infinite Loot-Loop</strong>. ' +
-        'Data exported from the game. · <a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>';
+        'TonyWorks &#8212; companion wiki for <strong>Infinite Loot-Loop</strong>. ' +
+        'Data exported from the game. &#183; <a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>';
     }
   }
 
@@ -122,7 +122,7 @@
   function fail(app, err) {
     app.innerHTML =
       '<div class="notice"><strong>No data yet.</strong><br>' +
-      'This page reads <code>data/data.json</code>. Run <strong>Dev → Export Site Data</strong> ' +
+      'This page reads <code>data/data.json</code>. Run <strong>Dev &#8594; Export Site Data</strong> ' +
       'in the Unity editor, then commit &amp; push.<br><span style="color:var(--faint)">(' +
       esc(err && err.message ? err.message : err) + ")</span></div>";
   }
@@ -140,20 +140,20 @@
   PAGES.home = function (app, d) {
     var c = d.counts || {};
     var cards = [
-      ["monsters.html", "👾", "Monsters", c.enemies, "Every enemy, stats & drops"],
-      ["bosses.html", "☠️", "Bosses", c.bosses, "Boss stats, hard mode & rewards"],
-      ["items.html", "⚔️", "Items", c.items, "Gear, effects & sets"],
-      ["maps.html", "🗺️", "Maps", c.maps, "Zone layouts & routes"],
-      ["characters.html", "🧑", "Characters", c.characters, "Roster & stat multipliers"],
-      ["achievements.html", "🏆", "Achievements", c.achievements, "Goals & rewards"],
-      ["guide.html", "📖", "Guide", null, "Tips & strategy"],
-      ["patch.html", "📝", "Patch Notes", null, "What changed"],
-      ["faq.html", "❓", "FAQ", null, "Common questions"]
+      ["monsters.html", "&#128126;", "Monsters", c.enemies, "Every enemy, stats & drops"],
+      ["bosses.html", "&#9760;&#65039;", "Bosses", c.bosses, "Boss stats, hard mode & rewards"],
+      ["items.html", "&#9876;&#65039;", "Items", c.items, "Gear, effects & sets"],
+      ["maps.html", "&#128506;&#65039;", "Maps", c.maps, "Zone layouts & routes"],
+      ["characters.html", "&#129489;", "Characters", c.characters, "Roster & stat multipliers"],
+      ["achievements.html", "&#127942;", "Achievements", c.achievements, "Goals & rewards"],
+      ["guide.html", "&#128214;", "Guide", null, "Tips & strategy"],
+      ["patch.html", "&#128221;", "Patch Notes", null, "What changed"],
+      ["faq.html", "&#10067;", "FAQ", null, "Common questions"]
     ];
     app.innerHTML =
       '<section class="hero">' +
         '<h1>Tony<span class="grad">Works</span></h1>' +
-        "<p>The companion wiki for <strong>Infinite Loot-Loop</strong> — browse every monster, boss, item, map and character straight from the game data.</p>" +
+        "<p>The companion wiki for <strong>Infinite Loot-Loop</strong> &#8212; browse every monster, boss, item, map and character straight from the game data.</p>" +
       "</section>" +
       '<div class="stat-strip">' +
         stat(c.enemies, "Monsters") + stat(c.bosses, "Bosses") + stat(c.items, "Items") +
@@ -178,13 +178,17 @@
     if (id) return monsterDetail(app, d, d._enemyById[id]);
     var list = d.enemies.slice().sort(function (a, b) { return a.minLevel - b.minLevel; });
     listView(app, d, {
-      items: list, page: "monsters.html", title: "Monsters", subtitle: d.enemies.length + " enemies",
+      items: list, page: "monsters.html", title: "Monsters", subtitle: d.enemies.length + " enemies (Normal + Hard)",
+      tabs: [
+        { label: "Normal", test: function (e) { return !/_H$/.test(e.id); } },
+        { label: "Hard Mode", test: function (e) { return /_H$/.test(e.id); } }
+      ],
       search: function (e) { return e.name + " " + e.id; },
       card: function (e) {
         return cardShell("monsters.html", e.id, e.image, e.name,
-          '<span class="badge">Lv ' + e.minLevel + "–" + e.maxLevel + "</span>" +
+          '<span class="badge">Lv ' + e.minLevel + "&#8211;" + e.maxLevel + "</span>" +
           (e.isBoss ? '<span class="badge" style="color:var(--bad)">Boss</span>' : "") +
-          '<span class="meta">HP ' + fmt(e.baseHP) + " · ATK " + fmt(e.baseATK) + "</span>");
+          '<span class="meta">HP ' + fmt(e.baseHP) + " &#183; ATK " + fmt(e.baseATK) + "</span>");
       }
     });
   };
@@ -197,7 +201,7 @@
     app.innerHTML = backLink("monsters.html", "Monsters") +
       '<div class="detail">' + portrait(e.image, e.name) +
       "<div><h1>" + esc(e.name) + "</h1>" +
-      '<div class="tags"><span class="pill">Level ' + e.minLevel + "–" + e.maxLevel + "</span>" +
+      '<div class="tags"><span class="pill">Level ' + e.minLevel + "&#8211;" + e.maxLevel + "</span>" +
         (e.isBoss ? '<span class="pill" style="color:var(--bad)">Boss</span>' : "") +
         (e.permanentBPReward ? '<span class="pill">+' + e.permanentBPReward + " BP</span>" : "") + "</div>" +
       '<div class="statgrid">' +
@@ -221,11 +225,16 @@
     var list = d.bosses.slice().sort(function (a, b) { return a.level - b.level; });
     listView(app, d, {
       items: list, page: "bosses.html", title: "Bosses", subtitle: d.bosses.length + " bosses",
+      tabs: [ { label: "Normal", mode: "normal" }, { label: "Hard Mode", mode: "hard" } ],
       search: function (b) { return b.name + " " + b.id + " " + b.mapId; },
-      card: function (b) {
+      card: function (b, tab) {
+        var hard = tab && tab.mode === "hard";
+        var hp = hard && b.hardModeHp ? b.hardModeHp : b.hp;
+        var atk = hard && b.hardModeAtk ? b.hardModeAtk : b.atk;
         return cardShell("bosses.html", b.id, b.image, b.name,
           '<span class="badge">Lv ' + b.level + "</span>" +
-          '<span class="meta">HP ' + fmt(b.hp) + " · ATK " + fmt(b.atk) + "</span>");
+          (hard ? '<span class="badge" style="color:var(--bad)">Hard</span>' : "") +
+          '<span class="meta">HP ' + fmt(hp) + " &#183; ATK " + fmt(atk) + "</span>");
       }
     });
   };
@@ -233,21 +242,34 @@
     if (!b) return notFound(app, "bosses.html", "Bosses");
     var map = d._mapById[b.mapId];
     function itemLink(id) { var it = d._itemById[id]; return it ? link("items.html", id, it.name) : esc(id); }
+    var hasHard = b.hardModeHp || b.hardModeAtk || b.hardModeDropItemId;
+    function stats(mode) {
+      var hard = mode === "hard";
+      var hp = hard && b.hardModeHp ? b.hardModeHp : b.hp;
+      var atk = hard && b.hardModeAtk ? b.hardModeAtk : b.atk;
+      var dropId = (hard && b.hardModeDropItemId) ? b.hardModeDropItemId : b.dropItemId;
+      return '<div class="statgrid">' + sb("HP", fmt(hp)) + sb("ATK", fmt(atk)) + "</div>" +
+        '<div class="section-title">Drop</div><table class="data">' +
+          (dropId ? "<tr><td>" + (hard ? "Hard Mode" : "Normal") + "</td><td>" + itemLink(dropId) + "</td></tr>" : "") +
+          (b.bonusDropItemId ? "<tr><td>Bonus</td><td>" + itemLink(b.bonusDropItemId) + "</td></tr>" : "") +
+        "</table>";
+    }
     app.innerHTML = backLink("bosses.html", "Bosses") +
       '<div class="detail">' + portrait(b.image, b.name) +
       "<div><h1>" + esc(b.name) + "</h1>" +
       '<div class="tags"><span class="pill">Level ' + b.level + "</span>" +
-        (b.mapId ? '<span class="pill">' + (map ? link("maps.html", b.mapId, b.mapId) : esc(b.mapId)) + "</span>" : "") +
+        (b.mapId ? '<span class="pill">' + (map ? link("maps.html", b.mapId, map.name) : esc(b.mapId)) + "</span>" : "") +
         '<span class="pill">EXP ' + fmt(b.exp) + "</span></div>" +
-      '<div class="section-title">Normal</div><div class="statgrid">' +
-        sb("HP", fmt(b.hp)) + sb("ATK", fmt(b.atk)) + "</div>" +
-      ((b.hardModeHp || b.hardModeAtk) ? '<div class="section-title">Hard Mode</div><div class="statgrid">' +
-        sb("HP", fmt(b.hardModeHp)) + sb("ATK", fmt(b.hardModeAtk)) + "</div>" : "") +
-      '<div class="section-title">Drops</div><table class="data">' +
-        (b.dropItemId ? "<tr><td>Normal</td><td>" + itemLink(b.dropItemId) + "</td></tr>" : "") +
-        (b.hardModeDropItemId ? "<tr><td>Hard Mode</td><td>" + itemLink(b.hardModeDropItemId) + "</td></tr>" : "") +
-        (b.bonusDropItemId ? "<tr><td>Bonus</td><td>" + itemLink(b.bonusDropItemId) + "</td></tr>" : "") +
-      "</table></div></div>";
+      (hasHard ? '<div class="tabs" id="btabs"><button class="tab active" data-m="normal">Normal</button><button class="tab" data-m="hard">Hard Mode</button></div>' : "") +
+      '<div id="bstats">' + stats("normal") + "</div>" +
+      "</div></div>";
+    if (hasHard) Array.prototype.forEach.call(app.querySelectorAll("#btabs .tab"), function (btn) {
+      btn.addEventListener("click", function () {
+        Array.prototype.forEach.call(app.querySelectorAll("#btabs .tab"), function (x) { x.classList.remove("active"); });
+        btn.classList.add("active");
+        $("#bstats", app).innerHTML = stats(btn.getAttribute("data-m"));
+      });
+    });
   }
 
   /* ---- Items ---- */
@@ -264,10 +286,10 @@
         { key: "type", label: "Type", values: types, get: function (i) { return i.type; } }
       ],
       card: function (i) {
-        var eff = (i.effects || []).slice(0, 2).join(" · ");
+        var eff = (i.effects || []).slice(0, 2).join(" &#183; ");
         return '<a class="card rar" href="items.html?id=' + encodeURIComponent(i.id) + '" style="border-top-color:' + rarColor(i.rarity) + '">' +
           thumb(i.image, i.name) + '<div class="body"><h4>' + esc(i.name) + "</h4>" +
-          '<div class="meta"><span style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span> · " + esc(i.type) + "</div>" +
+          '<div class="meta"><span style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span> &#183; " + esc(i.type) + "</div>" +
           (eff ? '<div class="meta" style="margin-top:.25rem">' + esc(eff) + "</div>" : "") + "</div></a>";
       }
     });
@@ -311,10 +333,11 @@
     if (id) return mapDetail(app, d, d._mapById[id]);
     listView(app, d, {
       items: d.maps, page: "maps.html", title: "Maps", subtitle: d.maps.length + " maps",
-      search: function (m) { return m.name; },
+      search: function (m) { return m.name + " " + m.id; },
       card: function (m) {
+        var bc = d.bosses.filter(function (b) { return b.mapId === m.id; }).length;
         return cardShell("maps.html", m.id, m.image, m.name,
-          '<span class="meta">' + m.gridWidth + "×" + m.gridHeight + " grid</span>");
+          '<span class="meta">' + (bc ? bc + " boss" + (bc > 1 ? "es" : "") : "Map") + "</span>");
       }
     });
   };
@@ -322,16 +345,16 @@
     if (!m) return notFound(app, "maps.html", "Maps");
     var bosses = d.bosses.filter(function (b) { return b.mapId === m.id; });
     app.innerHTML = backLink("maps.html", "Maps") +
-      '<div class="detail">' + portrait(m.image, m.name) +
-      "<div><h1>" + esc(m.name) + "</h1>" +
+      "<h1>" + esc(m.name) + "</h1>" +
+      '<div class="map-art">' +
+        (m.image ? '<img src="' + IMG_BASE + esc(m.image) + '" alt="' + esc(m.name) + '">' : '<div class="empty">No map art available.</div>') +
+      "</div>" +
       '<div class="statgrid">' +
-        sb("Grid", m.gridWidth + "×" + m.gridHeight) +
-        sb("Walkable", fmt(m.walkableCells)) + sb("Blocked", fmt(m.blockedCells)) +
+        sb("Walkable tiles", fmt(m.walkableCells)) + sb("Blocked tiles", fmt(m.blockedCells)) +
+        sb("Grid", m.gridWidth + "&#215;" + m.gridHeight) +
       "</div>" +
       (bosses.length ? '<div class="section-title">Bosses here</div><div class="effect-list">' +
-        bosses.map(function (b) { return '<span class="fx">' + link("bosses.html", b.id, b.name) + "</span>"; }).join("") + "</div>" : "") +
-      '<p style="color:var(--faint);margin-top:1rem">Tiles are colored by zone tier. Dark = impassable.</p>' +
-      "</div></div>";
+        bosses.map(function (b) { return '<span class="fx">' + link("bosses.html", b.id, b.name) + "</span>"; }).join("") + "</div>" : "");
   }
 
   /* ---- Characters ---- */
@@ -351,7 +374,7 @@
   };
   function charDetail(app, d, c) {
     if (!c) return notFound(app, "characters.html", "Characters");
-    function mult(v) { return "×" + Number(v).toFixed(2).replace(/\.?0+$/, ""); }
+    function mult(v) { return "&#215;" + Number(v).toFixed(2).replace(/\.?0+$/, ""); }
     var owned = [];
     if (c.ownedBonusHP)  owned.push("HP +" + fmt(c.ownedBonusHP));
     if (c.ownedBonusATK) owned.push("ATK +" + fmt(c.ownedBonusATK));
@@ -390,7 +413,7 @@
     });
     app.innerHTML =
       '<div class="page-head"><h1>Achievements</h1><p>' + d.achievements.length + " goals &amp; rewards</p></div>" +
-      '<div class="toolbar"><input type="search" id="q" placeholder="Search achievements…"></div>' +
+      '<div class="toolbar"><input type="search" id="q" placeholder="Search achievements&#8230;"></div>' +
       '<table class="data" id="tbl"><tr><th>Achievement</th><th>Mode</th><th>Reward</th></tr>' +
       rows.map(function (r) { return r.html; }).join("") + "</table>";
     var q = $("#q"), tbl = $("#tbl");
@@ -406,7 +429,7 @@
   /* ---------- shared list view ---------- */
   function sb(k, v) { return '<div class="statbox"><div class="k">' + k + '</div><div class="v">' + v + "</div></div>"; }
   function pct(f) { return Math.round((f || 0) * 100) + "%"; }
-  function backLink(page, label) { return '<a class="back" href="' + page + '">← All ' + label + "</a>"; }
+  function backLink(page, label) { return '<a class="back" href="' + page + '">&#8592; All ' + label + "</a>"; }
   function cardShell(page, id, image, name, metaHtml) {
     return '<a class="card" href="' + page + "?id=" + encodeURIComponent(id) + '">' +
       thumb(image, name) + '<div class="body"><h4>' + esc(name) + "</h4>" +
@@ -418,11 +441,15 @@
 
   function listView(app, d, cfg) {
     var active = {}; (cfg.filters || []).forEach(function (f) { active[f.key] = null; });
-    var q = "";
+    var q = "", tabIdx = 0;
+    var tabsHtml = cfg.tabs ? '<div class="tabs" id="tabs">' + cfg.tabs.map(function (t, i) {
+      return '<button class="tab' + (i === 0 ? " active" : "") + '" data-i="' + i + '">' + esc(t.label) + "</button>";
+    }).join("") + "</div>" : "";
     app.innerHTML =
       '<div class="page-head"><h1>' + esc(cfg.title) + "</h1><p>" + esc(cfg.subtitle) + "</p></div>" +
+      tabsHtml +
       '<div class="toolbar">' +
-        (cfg.search ? '<input type="search" id="q" placeholder="Search…">' : "") +
+        (cfg.search ? '<input type="search" id="q" placeholder="Search&#8230;">' : "") +
         (cfg.filters || []).map(function (f) {
           return '<select data-key="' + f.key + '"><option value="">' + f.label + ': All</option>' +
             f.values.map(function (v) { return '<option value="' + esc(v) + '">' + esc(v) + "</option>"; }).join("") + "</select>";
@@ -433,7 +460,9 @@
 
     var grid = $("#grid", app), rc = $("#rc", app);
     function apply() {
-      var out = cfg.items.filter(function (x) {
+      var tab = cfg.tabs ? cfg.tabs[tabIdx] : null;
+      var base = (tab && tab.test) ? cfg.items.filter(tab.test) : cfg.items;
+      var out = base.filter(function (x) {
         if (q && cfg.search(x).toLowerCase().indexOf(q) < 0) return false;
         for (var key in active) if (active[key] && cfg.filters) {
           var f = cfg.filters.filter(function (ff) { return ff.key === key; })[0];
@@ -441,20 +470,46 @@
         }
         return true;
       });
-      grid.innerHTML = out.length ? out.map(cfg.card).join("") : '<div class="empty" style="grid-column:1/-1">No matches.</div>';
-      rc.textContent = out.length + " / " + cfg.items.length;
+      grid.innerHTML = out.length ? out.map(function (x) { return cfg.card(x, tab); }).join("") : '<div class="empty" style="grid-column:1/-1">No matches.</div>';
+      rc.textContent = out.length + " / " + base.length;
     }
     var qi = $("#q", app);
     if (qi) qi.addEventListener("input", function () { q = qi.value.toLowerCase(); apply(); });
     Array.prototype.forEach.call(app.querySelectorAll("select[data-key]"), function (sel) {
       sel.addEventListener("change", function () { active[sel.getAttribute("data-key")] = sel.value || null; apply(); });
     });
+    Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (btn) {
+      btn.addEventListener("click", function () {
+        tabIdx = +btn.getAttribute("data-i");
+        Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (b) { b.classList.remove("active"); });
+        btn.classList.add("active"); apply();
+      });
+    });
     apply();
+  }
+
+  /* ---------- theme toggle ---------- */
+  var SUN = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19"/></svg>';
+  var MOON = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>';
+  function curTheme() { return document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark"; }
+  function applyTheme(t) {
+    document.documentElement.setAttribute("data-theme", t);
+    try { localStorage.setItem("tw-theme", t); } catch (e) {}
+    var b = document.getElementById("themeToggle"); if (b) b.innerHTML = t === "dark" ? SUN : MOON;
+  }
+  function mountTheme() {
+    var b = document.createElement("button");
+    b.id = "themeToggle"; b.className = "theme-toggle"; b.type = "button";
+    b.setAttribute("aria-label", "Toggle light and dark theme");
+    b.innerHTML = curTheme() === "dark" ? SUN : MOON;
+    b.addEventListener("click", function () { applyTheme(curTheme() === "dark" ? "light" : "dark"); });
+    document.body.appendChild(b);
   }
 
   /* ---------- boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     var page = document.body.getAttribute("data-page") || "home";
+    mountTheme();
     buildChrome(page);
     var app = $("#app");
     if (app && PAGES[page]) {
