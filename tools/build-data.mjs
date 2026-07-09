@@ -142,6 +142,15 @@ const bosses = loadCategory("Bosses").map((a) => {
   };
 });
 
+// Boss drops are always accessories in-game (a few have weapon/armor-sounding names but are
+// intended as accessories). Normalize their item type so the site categorizes them correctly.
+{
+  const bossDropIds = new Set();
+  bosses.forEach((b) => [b.dropItemId, b.hardModeDropItemId, b.bonusDropItemId]
+    .forEach((id) => { if (id) bossDropIds.add(id); }));
+  items.forEach((it) => { if (bossDropIds.has(it.id)) it.type = "Accessory"; });
+}
+
 const characters = loadCategory("Characters").map((a) => {
   const t = a.text;
   return {
