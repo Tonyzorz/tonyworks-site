@@ -22,6 +22,16 @@
   /* ---------- helpers ---------- */
   function $(sel, root) { return (root || document).querySelector(sel); }
   function param(name) { return new URLSearchParams(location.search).get(name); }
+  // True only when the page was reached via the browser Back/Forward button (so we restore
+  // scroll then, but start at the top on a fresh navigation / tab click).
+  function isBackNav() {
+    try {
+      var e = performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
+      if (e) return e.type === "back_forward";
+      if (performance.navigation) return performance.navigation.type === 2;
+    } catch (_) {}
+    return false;
+  }
 
   function esc(s) {
     return String(s == null ? "" : s)
@@ -542,10 +552,14 @@
       items: sorted, page: "characters.html", title: "Characters", subtitle: d.characters.length + " characters",
       search: function (c) { return c.name + " " + c.id; },
       card: function (c) {
+        var badge = c.isPremium ? '<span class="badge" style="color:var(--accent-2)">Premium</span>' :
+          c.unlockedByDefault ? '<span class="badge">Starter</span>' :
+          c.purchasePrice > 0 ? '<span class="badge">' + fmt(c.purchasePrice) + " g</span>" : '<span class="badge">Unlock</span>';
+        var top = [["HP", c.hpMultiplier], ["ATK", c.atkMultiplier], ["DEF", c.defMultiplier], ["AGI", c.agiMultiplier], ["LUC", c.lucMultiplier]]
+          .sort(function (a, b) { return b[1] - a[1]; }).slice(0, 2)
+          .map(function (x) { return x[0] + " &#215;" + Number(x[1]).toFixed(1); }).join(" &#183; ");
         return cardShell("characters.html", c.id, c.image, c.name,
-          (c.isPremium ? '<span class="badge" style="color:var(--accent-2)">Premium</span>' :
-            c.unlockedByDefault ? '<span class="badge">Starter</span>' :
-            c.purchasePrice > 0 ? '<span class="badge">' + fmt(c.purchasePrice) + " g</span>" : '<span class="badge">Unlock</span>'));
+          badge + '<span class="meta">' + top + "</span>");
       }
     });
   };
@@ -580,27 +594,45 @@
 
   /* ---- Achievements ---- */
   PAGES.achievements = function (app, d) {
-    var rows = d.achievements.map(function (a) {
-      var reward = a.rewardType === "UnlockCharacter"
-        ? (a.characterRewardId ? "Unlock " + (d._charById[a.characterRewardId] ? link("characters.html", a.characterRewardId, d._charById[a.characterRewardId].name) : esc(a.characterRewardId)) : "Unlock character")
-        : esc(a.rewardType.replace("Bonus", "") + " +" + a.statBonus);
-      return { name: a.name, desc: a.description, mode: a.modeRequirement,
-        html: "<tr><td><strong>" + esc(a.name) + "</strong><br><span style=\"color:var(--muted);font-size:.85rem\">" + esc(a.description) + "</span></td>" +
-          "<td>" + esc(a.modeRequirement) + "</td><td>" + reward + "</td></tr>" };
-    });
+    var list = d.achievements.slice();
+    function reward(a) {
+      if (a.rewardType === "UnlockCharacter") {
+        var c = d._charById[a.characterRewardId];
+        return '<span class="ach-reward unlock">&#128273; ' + (c ? "Unlock " + esc(c.name) : "Unlock character") + "</span>";
+      }
+      return '<span class="ach-reward">' + esc(a.rewardType.replace("Bonus", "")) + " +" + a.statBonus + "</span>";
+    }
+    function card(a) {
+      var mode = (a.modeRequirement && a.modeRequirement !== "Any") ? '<span class="badge">' + esc(a.modeRequirement) + "</span>" : "";
+      return '<div class="ach-card"><div class="ach-ico">&#127942;</div>' +
+        '<div class="ach-body"><h4>' + esc(a.name) + "</h4><p>" + esc(a.description) + "</p>" +
+        '<div class="ach-foot">' + reward(a) + mode + "</div></div></div>";
+    }
+    var modes = ["All", "Normal", "Hard"];
     app.innerHTML =
       '<div class="page-head"><h1>Achievements</h1><p>' + d.achievements.length + " goals &amp; rewards</p></div>" +
-      '<div class="toolbar"><input type="search" id="q" placeholder="Search achievements&#8230;"></div>' +
-      '<table class="data" id="tbl"><tr><th>Achievement</th><th>Mode</th><th>Reward</th></tr>' +
-      rows.map(function (r) { return r.html; }).join("") + "</table>";
-    var q = $("#q"), tbl = $("#tbl");
-    q.addEventListener("input", function () {
-      var t = q.value.toLowerCase();
-      var trs = tbl.querySelectorAll("tr");
-      for (var k = 1; k < trs.length; k++) {
-        trs[k].style.display = trs[k].textContent.toLowerCase().indexOf(t) >= 0 ? "" : "none";
-      }
+      '<div class="tabs" id="tabs">' + modes.map(function (m, i) { return '<button class="tab' + (i === 0 ? " active" : "") + '" data-m="' + m + '">' + m + "</button>"; }).join("") + "</div>" +
+      '<div class="toolbar"><input type="search" id="q" placeholder="Search achievements&#8230;"><span class="result-count" id="rc"></span></div>' +
+      '<div class="ach-grid" id="grid"></div>';
+    var grid = $("#grid", app), rc = $("#rc", app), qi = $("#q", app), mode = "All", q = "";
+    function apply() {
+      var out = list.filter(function (a) {
+        if (q && (a.name + " " + a.description).toLowerCase().indexOf(q) < 0) return false;
+        if (mode === "All") return true;
+        return a.modeRequirement === mode || a.modeRequirement === "Any";
+      });
+      grid.innerHTML = out.length ? out.map(card).join("") : '<div class="empty" style="grid-column:1/-1">No matches.</div>';
+      rc.textContent = out.length + " / " + list.length;
+    }
+    qi.addEventListener("input", function () { q = qi.value.toLowerCase(); apply(); });
+    Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (btn) {
+      btn.addEventListener("click", function () {
+        mode = btn.getAttribute("data-m");
+        Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (b) { b.classList.remove("active"); });
+        btn.classList.add("active"); apply();
+      });
     });
+    apply();
   };
 
   /* ---- Sets ---- */
@@ -698,7 +730,7 @@
       btn.addEventListener("click", function () {
         tabIdx = +btn.getAttribute("data-i");
         Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (b) { b.classList.remove("active"); });
-        btn.classList.add("active"); apply();
+        btn.classList.add("active"); apply(); window.scrollTo(0, 0);
       });
     });
     // Persist the view (incl. scroll) right before navigating into a detail page.
@@ -706,7 +738,8 @@
       try { sessionStorage.setItem(SKEY, JSON.stringify({ tab: tabIdx, q: q, filters: active, scrollY: window.pageYOffset || 0 })); } catch (e) {}
     });
     apply();
-    if (saved.scrollY) { var y = saved.scrollY; requestAnimationFrame(function () { window.scrollTo(0, y); }); }
+    // Only restore scroll when returning via Back/Forward; fresh visits start at the top.
+    if (isBackNav() && saved.scrollY) { var y = saved.scrollY; requestAnimationFrame(function () { window.scrollTo(0, y); }); }
   }
 
   /* ---------- side ad rails (Google AdSense — web) ----------
@@ -714,37 +747,27 @@
      ("ca-pub-XXXXXXXXXXXXXXXX") and the two slot ids. Until then the rails show a
      subtle placeholder on wide screens so the 3-column layout is visible. Rails are
      fixed in the outer margins and hidden below 1600px (they'd overlap content). */
-  var AD_CLIENT = "";       // e.g. "ca-pub-1234567890123456"
-  var AD_SLOT_LEFT = "";    // AdSense ad-unit slot id (left rail)
-  var AD_SLOT_RIGHT = "";   // AdSense ad-unit slot id (right rail)
+  // Google AdSense. The loader <script> lives in each page's <head> (handles verification +
+  // Auto ads). For MANUAL fixed side-rail units, fill in the two slot ids below and mountAds()
+  // renders them on wide screens; otherwise nothing extra is injected (Auto ads does placement).
+  var AD_CLIENT = "ca-pub-1837000267504503";
+  var AD_SLOT_LEFT = "";
+  var AD_SLOT_RIGHT = "";
   function mountAds() {
+    if (!AD_CLIENT || (!AD_SLOT_LEFT && !AD_SLOT_RIGHT)) return;
     if (document.querySelector(".ad-rail")) return;
     function rail(side, slot) {
+      if (!slot) return;
       var r = document.createElement("aside");
       r.className = "ad-rail " + side;
       r.setAttribute("aria-hidden", "true");
-      if (AD_CLIENT && slot) {
-        r.innerHTML = '<ins class="adsbygoogle" style="display:block;width:160px;height:600px"' +
-          ' data-ad-client="' + AD_CLIENT + '" data-ad-slot="' + slot + '"></ins>';
-      } else {
-        r.innerHTML = '<div class="ad-ph"><span>Advertisement</span></div>';
-      }
+      r.innerHTML = '<ins class="adsbygoogle" style="display:block;width:160px;height:600px"' +
+        ' data-ad-client="' + AD_CLIENT + '" data-ad-slot="' + slot + '"></ins>';
       document.body.appendChild(r);
+      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
     }
     rail("left", AD_SLOT_LEFT);
     rail("right", AD_SLOT_RIGHT);
-    if (AD_CLIENT) {
-      var s = document.createElement("script");
-      s.async = true;
-      s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + AD_CLIENT;
-      s.crossOrigin = "anonymous";
-      document.head.appendChild(s);
-      try {
-        window.adsbygoogle = window.adsbygoogle || [];
-        if (AD_SLOT_LEFT) window.adsbygoogle.push({});
-        if (AD_SLOT_RIGHT) window.adsbygoogle.push({});
-      } catch (e) {}
-    }
   }
 
   /* ---------- theme toggle ---------- */

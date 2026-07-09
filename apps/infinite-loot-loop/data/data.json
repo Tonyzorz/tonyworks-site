@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T04:52:17Z",
+  "generatedAt": "2026-07-09T09:19:21Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 295,
@@ -9657,7 +9657,7 @@
     },
     {
       "id": "AbyssalCrown_H",
-      "name": "'Abyssal Crown [H]'",
+      "name": "Abyssal Crown [H]",
       "description": "Crown of the underwater abyss, overflowing with riches.",
       "image": "item_AbyssalCrown_H.png",
       "rarity": "Legendary",
@@ -9703,7 +9703,7 @@
     },
     {
       "id": "AncientBarkShield_H",
-      "name": "'Ancient Bark Shield [H]'",
+      "name": "Ancient Bark Shield [H]",
       "description": "Bark forged over ten thousand years.",
       "image": "item_AncientBarkShield_H.png",
       "rarity": "Legendary",
@@ -9795,7 +9795,7 @@
     },
     {
       "id": "BossItem_IronFortress_H",
-      "name": "'Iron Fortress [H]'",
+      "name": "Iron Fortress [H]",
       "description": "+3000 DEF.",
       "image": "item_BossItem_IronFortress_H.png",
       "rarity": "Legendary",
@@ -9864,7 +9864,7 @@
     },
     {
       "id": "BossItem_LifeRing_H",
-      "name": "'Blood Ring [H]'",
+      "name": "Blood Ring [H]",
       "description": "Heals 2.5% of damage dealt as HP.",
       "image": "item_BossItem_LifeRing_H.png",
       "rarity": "Legendary",
@@ -9914,7 +9914,7 @@
     },
     {
       "id": "BossItem_OmniStone_H",
-      "name": "'Omni Stone [H]'",
+      "name": "Omni Stone [H]",
       "description": "+4000 to all stats.",
       "image": "item_BossItem_OmniStone_H.png",
       "rarity": "Legendary",
@@ -9987,7 +9987,7 @@
     },
     {
       "id": "BossItem_WarCrest_H",
-      "name": "'War Crest [H]'",
+      "name": "War Crest [H]",
       "description": "+3000 ATK.",
       "image": "item_BossItem_WarCrest_H.png",
       "rarity": "Legendary",
@@ -10033,7 +10033,7 @@
     },
     {
       "id": "BossItem_ZenStone_H",
-      "name": "'Zen Stone [H]'",
+      "name": "Zen Stone [H]",
       "description": "Encounter gauge fills 30% slower.",
       "image": "item_BossItem_ZenStone_H.png",
       "rarity": "Legendary",
@@ -10080,7 +10080,7 @@
     },
     {
       "id": "ChaosHeart_H",
-      "name": "'Chaos Heart [H]'",
+      "name": "Chaos Heart [H]",
       "description": "Primordial heart of pure chaos. +15% AGI, +2 BP.",
       "image": "item_ChaosHeart_H.png",
       "rarity": "Legendary",
@@ -10128,7 +10128,7 @@
     },
     {
       "id": "CrystalPrism_H",
-      "name": "'Crystal Prism [H]'",
+      "name": "Crystal Prism [H]",
       "description": "A prism that bends light and luck in your favor.",
       "image": "item_CrystalPrism_H.png",
       "rarity": "Legendary",
@@ -10175,7 +10175,7 @@
     },
     {
       "id": "DragonFangPendant_H",
-      "name": "'Dragon Fang Pendant [H]'",
+      "name": "Dragon Fang Pendant [H]",
       "description": "Carved from the tooth of a forest dragon.",
       "image": "item_DragonFangPendant_H.png",
       "rarity": "Legendary",
@@ -10221,7 +10221,7 @@
     },
     {
       "id": "DrakeScaleSword_H",
-      "name": "'Drake Scale Sword [H]'",
+      "name": "Drake Scale Sword [H]",
       "description": "A blade forged from the scales of the Inferno Drake.",
       "image": "item_DrakeScaleSword_H.png",
       "rarity": "Legendary",
@@ -10267,7 +10267,7 @@
     },
     {
       "id": "GiantClamPearl_H",
-      "name": "'Giant Clam Pearl [H]'",
+      "name": "Giant Clam Pearl [H]",
       "description": "A lustrous pearl that bolsters the bearer's vitality.",
       "image": "item_GiantClamPearl_H.png",
       "rarity": "Legendary",
@@ -10313,7 +10313,7 @@
     },
     {
       "id": "PharaohSpirit_H",
-      "name": "'Pharaoh Spirit [H]'",
+      "name": "Pharaoh Spirit [H]",
       "description": "The eternal soul of a buried pharaoh.",
       "image": "item_PharaohSpirit_H.png",
       "rarity": "Legendary",
@@ -10359,7 +10359,7 @@
     },
     {
       "id": "PharaohsScepter_H",
-      "name": "'Pharaoh''s Scepter [H]'",
+      "name": "Pharaoh's Scepter [H]",
       "description": "Scepter of the Desert Pharaoh, grants great wisdom.",
       "image": "item_PharaohsScepter_H.png",
       "rarity": "Legendary",
@@ -10405,7 +10405,7 @@
     },
     {
       "id": "SoulLantern_H",
-      "name": "'Soul Lantern [H]'",
+      "name": "Soul Lantern [H]",
       "description": "A lantern that burns with the light of captured souls.",
       "image": "item_SoulLantern_H.png",
       "rarity": "Legendary",
@@ -10451,7 +10451,7 @@
     },
     {
       "id": "SunBeastTalon_H",
-      "name": "'Sun Beast Talon [H]'",
+      "name": "Sun Beast Talon [H]",
       "description": "Claw of the primordial sun beast.",
       "image": "item_SunBeastTalon_H.png",
       "rarity": "Legendary",
@@ -10497,7 +10497,7 @@
     },
     {
       "id": "TidalWarden_H",
-      "name": "'Tidal Warden [H]'",
+      "name": "Tidal Warden [H]",
       "description": "Guardian of the underground tides.",
       "image": "item_TidalWarden_H.png",
       "rarity": "Legendary",
@@ -10543,7 +10543,7 @@
     },
     {
       "id": "TitansMagmaPlate_H",
-      "name": "'Titan''s Magma Plate [H]'",
+      "name": "Titan's Magma Plate [H]",
       "description": "Forged from the molten core of a Lava Titan.",
       "image": "item_TitansMagmaPlate_H.png",
       "rarity": "Legendary",
@@ -10589,7 +10589,7 @@
     },
     {
       "id": "WanderersToken_H",
-      "name": "'Wanderer''s Token [H]'",
+      "name": "Wanderer's Token [H]",
       "description": "A battered coin from a forgotten realm.",
       "image": "item_WanderersToken_H.png",
       "rarity": "Legendary",
@@ -10635,7 +10635,7 @@
     },
     {
       "id": "WitchsGrimoire_H",
-      "name": "'Witch''s Grimoire [H]'",
+      "name": "Witch's Grimoire [H]",
       "description": "The Frost Witch's spellbook, crackling with ice magic.",
       "image": "item_WitchsGrimoire_H.png",
       "rarity": "Legendary",
@@ -22827,7 +22827,7 @@
     },
     {
       "id": "hard_apex",
-      "name": "'Hard: Apex'",
+      "name": "Hard: Apex",
       "description": "Reach level 200 in Hard Mode",
       "type": "LevelReached",
       "modeRequirement": "Hard",
@@ -22838,7 +22838,7 @@
     },
     {
       "id": "hard_boss_crusher",
-      "name": "'Hard: Boss Crusher'",
+      "name": "Hard: Boss Crusher",
       "description": "Defeat 8 bosses in Hard Mode",
       "type": "BossKills",
       "modeRequirement": "Hard",
@@ -22849,7 +22849,7 @@
     },
     {
       "id": "hard_boss_first",
-      "name": "'Hard: First Trophy'",
+      "name": "Hard: First Trophy",
       "description": "Defeat your first boss in Hard Mode",
       "type": "BossKills",
       "modeRequirement": "Hard",
@@ -22860,7 +22860,7 @@
     },
     {
       "id": "hard_climber",
-      "name": "'Hard: Climber'",
+      "name": "Hard: Climber",
       "description": "Reach level 75 in Hard Mode",
       "type": "LevelReached",
       "modeRequirement": "Hard",
@@ -22871,7 +22871,7 @@
     },
     {
       "id": "hard_flawless",
-      "name": "'Hard: Flawless'",
+      "name": "Hard: Flawless",
       "description": "Finish a Hard Mode run without dying",
       "type": "NoPenaltyRun",
       "modeRequirement": "Hard",
@@ -22882,7 +22882,7 @@
     },
     {
       "id": "hard_gold_rush",
-      "name": "'Hard: Gold Rush'",
+      "name": "Hard: Gold Rush",
       "description": "Earn 500,000 gold in Hard Mode",
       "type": "GoldEarned",
       "modeRequirement": "Hard",
@@ -22893,7 +22893,7 @@
     },
     {
       "id": "hard_hunter",
-      "name": "'Hard: Hunter'",
+      "name": "Hard: Hunter",
       "description": "Kill 150 enemies in Hard Mode",
       "type": "TotalKills",
       "modeRequirement": "Hard",
@@ -22904,7 +22904,7 @@
     },
     {
       "id": "hard_runner",
-      "name": "'Hard: Return Runner'",
+      "name": "Hard: Return Runner",
       "description": "Complete 4 Hard Mode runs",
       "type": "RunsCompleted",
       "modeRequirement": "Hard",
@@ -22915,7 +22915,7 @@
     },
     {
       "id": "hard_streak_blaze",
-      "name": "'Hard: Streak Blaze'",
+      "name": "Hard: Streak Blaze",
       "description": "Reach a 30-kill streak in Hard Mode",
       "type": "HighestKillStreak",
       "modeRequirement": "Hard",
@@ -22926,7 +22926,7 @@
     },
     {
       "id": "hard_welcome",
-      "name": "'Hard: First Steps'",
+      "name": "Hard: First Steps",
       "description": "Kill 10 enemies in Hard Mode",
       "type": "TotalKills",
       "modeRequirement": "Hard",
@@ -22992,7 +22992,7 @@
     },
     {
       "id": "normal_boss_scout",
-      "name": "'Normal: Boss Scout'",
+      "name": "Normal: Boss Scout",
       "description": "Defeat 2 bosses in Normal Mode",
       "type": "BossKills",
       "modeRequirement": "Normal",
@@ -23003,7 +23003,7 @@
     },
     {
       "id": "normal_first_steps",
-      "name": "'Normal: First Steps'",
+      "name": "Normal: First Steps",
       "description": "Kill 25 enemies in Normal Mode",
       "type": "TotalKills",
       "modeRequirement": "Normal",
@@ -23014,7 +23014,7 @@
     },
     {
       "id": "normal_gold_purse",
-      "name": "'Normal: Gold Purse'",
+      "name": "Normal: Gold Purse",
       "description": "Earn 40,000 gold in Normal Mode",
       "type": "GoldEarned",
       "modeRequirement": "Normal",
@@ -23025,7 +23025,7 @@
     },
     {
       "id": "normal_level_push",
-      "name": "'Normal: Level Push'",
+      "name": "Normal: Level Push",
       "description": "Reach level 100 in Normal Mode",
       "type": "LevelReached",
       "modeRequirement": "Normal",
@@ -23036,7 +23036,7 @@
     },
     {
       "id": "normal_no_penalty",
-      "name": "'Normal: Clean Run'",
+      "name": "Normal: Clean Run",
       "description": "Finish a Normal Mode run without dying",
       "type": "NoPenaltyRun",
       "modeRequirement": "Normal",
@@ -23047,7 +23047,7 @@
     },
     {
       "id": "normal_pathfinder",
-      "name": "'Normal: Pathfinder'",
+      "name": "Normal: Pathfinder",
       "description": "Complete 3 Normal Mode runs",
       "type": "RunsCompleted",
       "modeRequirement": "Normal",
@@ -23058,7 +23058,7 @@
     },
     {
       "id": "normal_route_veteran",
-      "name": "'Normal: Route Veteran'",
+      "name": "Normal: Route Veteran",
       "description": "Complete 12 Normal Mode runs",
       "type": "RunsCompleted",
       "modeRequirement": "Normal",
@@ -23069,7 +23069,7 @@
     },
     {
       "id": "normal_shop_regular",
-      "name": "'Normal: Shop Regular'",
+      "name": "Normal: Shop Regular",
       "description": "Spend 40,000 gold in Normal Mode",
       "type": "TotalGoldSpent",
       "modeRequirement": "Normal",
@@ -23080,7 +23080,7 @@
     },
     {
       "id": "normal_speed_pickoff",
-      "name": "'Normal: Quick Pickoff'",
+      "name": "Normal: Quick Pickoff",
       "description": "Kill a Normal Mode boss below the zone level",
       "type": "SpeedClearBoss",
       "modeRequirement": "Normal",
@@ -23091,7 +23091,7 @@
     },
     {
       "id": "normal_streak_spark",
-      "name": "'Normal: Streak Spark'",
+      "name": "Normal: Streak Spark",
       "description": "Reach a 20-kill streak in Normal Mode",
       "type": "HighestKillStreak",
       "modeRequirement": "Normal",

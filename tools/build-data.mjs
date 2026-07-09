@@ -39,7 +39,15 @@ function metaGuid(metaPath) { const m = read(metaPath).match(/^guid:\s*([0-9a-f]
 for (const meta of walk(SO, (p) => p.endsWith(".asset.meta"))) { const g = metaGuid(meta); if (g) guidToAsset.set(g, path.basename(meta).replace(/\.asset\.meta$/, "")); }
 for (const meta of walk(SPR, (p) => p.endsWith(".png.meta"))) { const g = metaGuid(meta); if (g) guidToPng.set(g, meta.replace(/\.meta$/, "")); }
 
-const field = (t, k) => { const m = t.match(new RegExp("^  " + k + ":\\s?(.*)$", "m")); return m ? m[1].trim() : ""; };
+// Unwrap YAML scalars: single-quoted ('a''b' -> a'b) and double-quoted. Unity single-quotes
+// strings containing special chars (e.g. "[H]") and escapes an inner ' as ''.
+function yamlStr(v) {
+  v = v.trim();
+  if (v.length >= 2 && v[0] === "'" && v[v.length - 1] === "'") return v.slice(1, -1).replace(/''/g, "'");
+  if (v.length >= 2 && v[0] === '"' && v[v.length - 1] === '"') return v.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+  return v;
+}
+const field = (t, k) => { const m = t.match(new RegExp("^  " + k + ":\\s?(.*)$", "m")); return m ? yamlStr(m[1].trim()) : ""; };
 const num   = (t, k) => { const v = field(t, k); return v === "" ? 0 : Number(v); };
 const bool  = (t, k) => field(t, k) === "1";
 function guidOf(t, k) { const m = t.match(new RegExp("^  " + k + ":\\s*\\{[^}]*guid:\\s*([0-9a-f]+)", "m")); return m ? m[1] : null; }

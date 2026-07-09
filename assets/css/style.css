@@ -449,3 +449,16 @@ table.data tr:hover td { background: var(--panel); }
 /* ---- per-world map tiers (branching) ---- */
 .mtier { display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap; width:100%; }
 .mtier .mnode { max-width:300px; flex:1 1 210px; }
+
+/* ---- achievements ---- */
+.ach-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:.8rem; }
+.ach-card { display:flex; gap:.7rem; background:var(--panel); border:1px solid var(--border);
+  border-radius:var(--radius); padding:.8rem .9rem; }
+.ach-ico { font-size:1.6rem; line-height:1; flex:0 0 auto; }
+.ach-body { flex:1; min-width:0; }
+.ach-body h4 { margin:0 0 .2rem; font-size:.98rem; }
+.ach-body p { margin:0 0 .5rem; color:var(--muted); font-size:.85rem; }
+.ach-foot { display:flex; gap:.4rem; flex-wrap:wrap; align-items:center; }
+.ach-reward { display:inline-block; padding:.15rem .5rem; border-radius:6px; font-size:.78rem;
+  font-weight:700; background:var(--panel-2); color:var(--good); border:1px solid var(--border); }
+.ach-reward.unlock { color:var(--accent-2); }
