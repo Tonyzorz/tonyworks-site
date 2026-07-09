@@ -218,7 +218,7 @@ table.data tr:hover td { background: var(--panel); }
 }
 .faq-q { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.1rem; margin: .7rem 0; }
 .faq-q h3 { margin: 0 0 .3rem; font-size: 1.02rem; }
-.faq-q p { margin: 0; color: var(--muted); }
+.faq-q p { margin: 0; color: var(--text); }
 
 .patch { border-left: 2px solid var(--border); padding-left: 1.2rem; margin-left: .3rem; }
 .patch .rel { position: relative; padding-bottom: 1.4rem; }
@@ -227,7 +227,7 @@ table.data tr:hover td { background: var(--panel); }
   border-radius: 50%; background: var(--accent); border: 2px solid var(--bg);
 }
 .patch .rel h3 { margin: 0; }
-.patch .rel .date { color: var(--faint); font-size: .82rem; }
+.patch .rel .date { color: var(--muted); font-size: .82rem; font-weight: 600; }
 
 /* ---- misc ---- */
 .notice {
