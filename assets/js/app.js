@@ -40,6 +40,9 @@
     return (neg ? "-" : "") + out;
   }
 
+  // "A" if equal, else "A–B" — for level/stat ranges across an enemy's level band.
+  function rng(a, b) { return a === b ? fmt(a) : fmt(a) + "&#8211;" + fmt(b); }
+
   function initials(name) {
     var w = String(name || "?").trim().split(/\s+/);
     return ((w[0] ? w[0][0] : "?") + (w[1] ? w[1][0] : "")).toUpperCase();
@@ -140,7 +143,7 @@
   PAGES.home = function (app, d) {
     var c = d.counts || {};
     var cards = [
-      ["monsters.html", "&#128126;", "Monsters", c.enemies, "Every enemy, stats & drops"],
+      ["monsters.html", "&#128126;", "Monsters", c.enemies, "Every enemy — stats, spawn & drops"],
       ["bosses.html", "&#9760;&#65039;", "Bosses", c.bosses, "Boss stats, hard mode & rewards"],
       ["items.html", "&#9876;&#65039;", "Items", c.items, "Gear, effects & sets"],
       ["maps.html", "&#128506;&#65039;", "Maps", c.maps, "Zone layouts & routes"],
@@ -183,38 +186,37 @@
         { label: "Normal", test: function (e) { return !/_H$/.test(e.id); } },
         { label: "Hard Mode", test: function (e) { return /_H$/.test(e.id); } }
       ],
-      search: function (e) { return e.name + " " + e.id; },
+      search: function (e) { return e.name + " " + e.id + " " + (e.worlds || []).join(" "); },
       card: function (e) {
         return cardShell("monsters.html", e.id, e.image, e.name,
-          '<span class="badge">Lv ' + e.minLevel + "&#8211;" + e.maxLevel + "</span>" +
-          (e.isBoss ? '<span class="badge" style="color:var(--bad)">Boss</span>' : "") +
-          '<span class="meta">HP ' + fmt(e.baseHP) + " &#183; ATK " + fmt(e.baseATK) + "</span>");
+          '<span class="badge">Lv ' + rng(e.minLevel, e.maxLevel) + "</span>" +
+          ((e.worlds && e.worlds.length) ? '<span class="badge">' + esc(e.worlds.join(", ")) + "</span>" : "") +
+          '<span class="meta">HP ' + rng(e.hpMin, e.hpMax) + " &#183; ATK " + rng(e.atkMin, e.atkMax) + "</span>");
       }
     });
   };
   function monsterDetail(app, d, e) {
     if (!e) return notFound(app, "monsters.html", "Monsters");
-    var drops = (e.drops || []).map(function (dr) {
-      return "<tr><td>" + link("items.html", dr.itemId, dr.itemName || dr.itemId) +
-        "</td><td>" + dr.chance + "%</td></tr>";
-    }).join("");
+    var worlds = e.worlds || [], zones = e.zoneNames || [], drops = e.drops || [];
+    var lvLabel = e.minLevel === e.maxLevel ? ("Lv " + e.minLevel) : ("Lv " + e.minLevel + "&#8211;" + e.maxLevel);
     app.innerHTML = backLink("monsters.html", "Monsters") +
       '<div class="detail">' + portrait(e.image, e.name) +
       "<div><h1>" + esc(e.name) + "</h1>" +
-      '<div class="tags"><span class="pill">Level ' + e.minLevel + "&#8211;" + e.maxLevel + "</span>" +
+      '<div class="tags"><span class="pill">Level ' + rng(e.minLevel, e.maxLevel) + "</span>" +
         (e.isBoss ? '<span class="pill" style="color:var(--bad)">Boss</span>' : "") +
         (e.permanentBPReward ? '<span class="pill">+' + e.permanentBPReward + " BP</span>" : "") + "</div>" +
+      '<div class="section-title">Stats (' + lvLabel + ")</div>" +
       '<div class="statgrid">' +
-        sb("Base HP", fmt(e.baseHP)) + sb("Base ATK", fmt(e.baseATK)) +
-        sb("Base EXP", fmt(e.baseEXP)) + sb("Base Gold", fmt(e.baseGold)) +
+        sb("HP", rng(e.hpMin, e.hpMax)) + sb("ATK", rng(e.atkMin, e.atkMax)) +
+        sb("EXP", rng(e.expMin, e.expMax)) + sb("Gold", rng(e.goldMin, e.goldMax)) +
       "</div>" +
-      '<div class="section-title">Scaling per level</div>' +
-      '<div class="statgrid">' +
-        sb("HP", "+" + pct(e.hpScaling)) + sb("ATK", "+" + pct(e.atkScaling)) +
-        sb("EXP", "+" + pct(e.expScaling)) + sb("Gold", "+" + pct(e.goldScaling)) +
-      "</div>" +
-      (drops ? '<div class="section-title">Drop table</div><table class="data"><tr><th>Item</th><th>Chance</th></tr>' +
-        drops + "</table>" : '<p style="color:var(--faint)">No drop table.</p>') +
+      (worlds.length
+        ? '<div class="section-title">Appears in</div><div class="effect-list">' +
+            worlds.map(function (w) { return '<span class="fx">' + esc(w) + "</span>"; }).join("") + "</div>" +
+            (zones.length ? '<p style="color:var(--faint);font-size:.85rem;margin-top:.5rem">' + esc(zones.join(" · ")) + "</p>" : "")
+        : "") +
+      (drops.length ? '<div class="section-title">Drops</div><table class="data"><tr><th>Item</th><th>Chance</th></tr>' +
+        drops.map(function (x) { return "<tr><td>" + link("items.html", x.itemId, x.itemName || x.itemId) + "</td><td>" + x.chance + "%</td></tr>"; }).join("") + "</table>" : "") +
       "</div></div>";
   }
 

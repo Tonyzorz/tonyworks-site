@@ -101,17 +101,28 @@ const items = loadCategory("Items").map((a) => {
 });
 const itemName = (id) => itemById.has(id) ? itemById.get(id).name : id;
 
+// Enemy stat at a level: base * (1 + scaling * levelsAboveMin) — matches EnemyData.GetHP/ATK/EXP/Gold.
+// Hard-mode enemies (_H) have scaling 0, so min == max (fixed stats).
+const atLevel = (base, scaling, level, minLevel) =>
+  Math.round(base * (1 + scaling * Math.max(0, level - minLevel)));
 const enemyById = new Map();
 const enemies = loadCategory("Enemies").map((a) => {
-  const t = a.text; const drops = [];
+  const t = a.text;
+  const minLv = num(t, "minLevel"), maxLv = num(t, "maxLevel");
+  const bHP = num(t, "baseHP"), bATK = num(t, "baseATK"), bEXP = num(t, "baseEXP"), bGold = num(t, "baseGold");
+  const sHP = num(t, "hpScaling"), sATK = num(t, "atkScaling"), sEXP = num(t, "expScaling"), sGold = num(t, "goldScaling");
+  const drops = [];
   const re = /- item: \{fileID: \d+, guid: ([0-9a-f]+), type: \d+\}\s*\n\s*dropChance:\s*([\d.]+)/g;
   let m; while ((m = re.exec(t))) { const iid = assetName(m[1]); drops.push({ itemId: iid, itemName: itemName(iid), chance: Number(m[2]) }); }
   const o = {
     id: a.id, name: field(t, "enemyName") || a.id, image: copySprite(guidOf(t, "enemySprite"), "enemy", a.id),
-    isBoss: bool(t, "isBoss"), minLevel: num(t, "minLevel"), maxLevel: num(t, "maxLevel"),
-    baseHP: num(t, "baseHP"), baseATK: num(t, "baseATK"), baseEXP: num(t, "baseEXP"), baseGold: num(t, "baseGold"),
-    hpScaling: num(t, "hpScaling"), atkScaling: num(t, "atkScaling"), expScaling: num(t, "expScaling"), goldScaling: num(t, "goldScaling"),
-    permanentBPReward: num(t, "permanentBPReward"), drops
+    isBoss: bool(t, "isBoss"), minLevel: minLv, maxLevel: maxLv,
+    hpMin:  atLevel(bHP,  sHP,  minLv, minLv), hpMax:  atLevel(bHP,  sHP,  maxLv, minLv),
+    atkMin: atLevel(bATK, sATK, minLv, minLv), atkMax: atLevel(bATK, sATK, maxLv, minLv),
+    expMin: atLevel(bEXP, sEXP, minLv, minLv), expMax: atLevel(bEXP, sEXP, maxLv, minLv),
+    goldMin: atLevel(bGold, sGold, minLv, minLv), goldMax: atLevel(bGold, sGold, maxLv, minLv),
+    permanentBPReward: num(t, "permanentBPReward"), drops,
+    worlds: [], zoneNames: []   // filled after zones are parsed
   };
   enemyById.set(a.id, o); return o;
 });
@@ -200,6 +211,26 @@ const maps = loadCategory("Maps").map((a) => {
   }
   return { id: a.id, name: mapDisplayName(a.id), image: copyMapVisual(a.id), gridWidth: gw, gridHeight: gh, dataVersion: num(t, "dataVersion"), walkableCells: walkable, blockedCells: blocked };
 });
+
+// Attach spawn worlds + zone names to each enemy (LIVE zones only: GL/FR/VO/DS/UW normal
+// {WORLD}##_Zone# + hard {WORLD}##_HM_Z#, plus VoidHunt). Legacy/duplicate zones are ignored.
+const WORLD = { GL: "Grassland", FR: "Forest", VO: "Volcanic", DS: "Desert", UW: "Underwater" };
+function zoneWorld(zid) {
+  const m = zid.match(/^(GL|FR|VO|DS|UW)\d+_(?:Zone|HM_Z)\d+/);
+  if (m) return WORLD[m[1]];
+  if (/^VoidHunt/.test(zid)) return "Void Hunt";
+  return null;
+}
+for (const z of zones) {
+  const w = zoneWorld(z.id);
+  if (!w) continue;
+  for (const en of (z.enemies || [])) {
+    const e = enemyById.get(en.enemyId);
+    if (!e) continue;
+    if (!e.worlds.includes(w)) e.worlds.push(w);
+    if (z.name && !e.zoneNames.includes(z.name)) e.zoneNames.push(z.name);
+  }
+}
 
 enemies.sort((a, b) => a.minLevel - b.minLevel);
 bosses.sort((a, b) => a.level - b.level);
