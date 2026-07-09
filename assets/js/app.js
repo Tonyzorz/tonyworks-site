@@ -400,7 +400,10 @@
       setItems = '<div class="section-title">Set: ' + esc(i.setName) + "</div><div class=\"effect-list\">" +
         mates.map(function (x) { return '<span class="fx">' + link("items.html", x.id, x.name) + "</span>"; }).join("") + "</div>";
     }
+    // Only credit real, named monsters as droppers — skip the internal HM_T* generic tier enemies
+    // (fallback stat-templates) so hard gear reads as dropped by the clearly-Hard "_H" monsters.
     var droppedBy = d.enemies.filter(function (e) {
+      if (/^HM_T/.test(e.id)) return false;
       return (e.drops || []).some(function (dr) { return dr.itemId === i.id; });
     });
     app.innerHTML = detailHead("items.html", "Items", itemList(d), i) +
