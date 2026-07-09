@@ -436,8 +436,20 @@
   PAGES.characters = function (app, d) {
     var id = param("id");
     if (id) return charDetail(app, d, d._charById[id]);
+    // Ascending by how you get them: free starter -> gold-buyable (cheapest first)
+    // -> achievement/other unlocks -> premium (IAP) last.
+    function charRank(c) {
+      if (c.isPremium) return 3e18;
+      if (c.unlockedByDefault) return -1;
+      if (c.purchasePrice > 0) return c.purchasePrice;
+      return 2.9e18;
+    }
+    var sorted = d.characters.slice().sort(function (a, b) {
+      var ra = charRank(a), rb = charRank(b);
+      return ra !== rb ? ra - rb : String(a.name).localeCompare(String(b.name));
+    });
     listView(app, d, {
-      items: d.characters, page: "characters.html", title: "Characters", subtitle: d.characters.length + " characters",
+      items: sorted, page: "characters.html", title: "Characters", subtitle: d.characters.length + " characters",
       search: function (c) { return c.name + " " + c.id; },
       card: function (c) {
         return cardShell("characters.html", c.id, c.image, c.name,
