@@ -529,8 +529,15 @@
   function listView(app, d, cfg) {
     var active = {}; (cfg.filters || []).forEach(function (f) { active[f.key] = null; });
     var q = "", tabIdx = 0;
+    // Remember tab / search / filters / scroll per page so Back returns to the same view.
+    var SKEY = "tw-list:" + cfg.page;
+    var saved = {};
+    try { saved = JSON.parse(sessionStorage.getItem(SKEY) || "{}") || {}; } catch (e) {}
+    if (cfg.tabs && typeof saved.tab === "number" && saved.tab >= 0 && saved.tab < cfg.tabs.length) tabIdx = saved.tab;
+    if (typeof saved.q === "string") q = saved.q;
+    if (saved.filters) for (var fk in saved.filters) if (fk in active) active[fk] = saved.filters[fk];
     var tabsHtml = cfg.tabs ? '<div class="tabs" id="tabs">' + cfg.tabs.map(function (t, i) {
-      return '<button class="tab' + (i === 0 ? " active" : "") + '" data-i="' + i + '">' + esc(t.label) + "</button>";
+      return '<button class="tab' + (i === tabIdx ? " active" : "") + '" data-i="' + i + '">' + esc(t.label) + "</button>";
     }).join("") + "</div>" : "";
     app.innerHTML =
       '<div class="page-head"><h1>' + esc(cfg.title) + "</h1><p>" + esc(cfg.subtitle) + "</p></div>" +
@@ -539,7 +546,7 @@
         (cfg.search ? '<input type="search" id="q" placeholder="Search&#8230;">' : "") +
         (cfg.filters || []).map(function (f) {
           return '<select data-key="' + f.key + '"><option value="">' + f.label + ': All</option>' +
-            f.values.map(function (v) { return '<option value="' + esc(v) + '">' + esc(v) + "</option>"; }).join("") + "</select>";
+            f.values.map(function (v) { return '<option value="' + esc(v) + '"' + (active[f.key] === v ? " selected" : "") + ">" + esc(v) + "</option>"; }).join("") + "</select>";
         }).join("") +
         '<span class="result-count" id="rc"></span>' +
       "</div>" +
@@ -561,7 +568,7 @@
       rc.textContent = out.length + " / " + base.length;
     }
     var qi = $("#q", app);
-    if (qi) qi.addEventListener("input", function () { q = qi.value.toLowerCase(); apply(); });
+    if (qi) { qi.value = q; qi.addEventListener("input", function () { q = qi.value.toLowerCase(); apply(); }); }
     Array.prototype.forEach.call(app.querySelectorAll("select[data-key]"), function (sel) {
       sel.addEventListener("change", function () { active[sel.getAttribute("data-key")] = sel.value || null; apply(); });
     });
@@ -572,7 +579,12 @@
         btn.classList.add("active"); apply();
       });
     });
+    // Persist the view (incl. scroll) right before navigating into a detail page.
+    window.addEventListener("pagehide", function () {
+      try { sessionStorage.setItem(SKEY, JSON.stringify({ tab: tabIdx, q: q, filters: active, scrollY: window.pageYOffset || 0 })); } catch (e) {}
+    });
     apply();
+    if (saved.scrollY) { var y = saved.scrollY; requestAnimationFrame(function () { window.scrollTo(0, y); }); }
   }
 
   /* ---------- side ad rails (Google AdSense — web) ----------
