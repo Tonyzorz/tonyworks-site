@@ -7,6 +7,7 @@
     { id: "monsters",     label: "Monsters",    href: "monsters.html" },
     { id: "bosses",       label: "Bosses",      href: "bosses.html" },
     { id: "items",        label: "Items",       href: "items.html" },
+    { id: "sets",         label: "Sets",        href: "sets.html" },
     { id: "maps",         label: "Maps",        href: "maps.html" },
     { id: "characters",   label: "Characters",  href: "characters.html" },
     { id: "achievements", label: "Achievements",href: "achievements.html" },
@@ -78,6 +79,53 @@
     return '<a href="' + page + '?id=' + encodeURIComponent(id) + '">' + esc(label) + "</a>";
   }
 
+  /* ---------- tier badge ---------- */
+  var WORLD_TIER = { "Grassland": 0, "Forest": 1, "Volcanic": 2, "Desert": 3, "Underwater": 4 };
+  function tierOf(worlds) {
+    var t = null;
+    (worlds || []).forEach(function (w) { if (WORLD_TIER[w] != null) t = (t == null) ? WORLD_TIER[w] : Math.min(t, WORLD_TIER[w]); });
+    return t;
+  }
+  function tierBadge(worlds) { var t = tierOf(worlds); return t == null ? "" : '<span class="badge tier">T' + t + "</span>"; }
+
+  /* ---------- canonical ordered lists (shared by list + detail prev/next) ---------- */
+  function monsterList(d) {
+    var seen = {};
+    return d.enemies.filter(function (e) { return (e.worlds && e.worlds.length) || /_H$/.test(e.id); })
+      .sort(function (a, b) { return (a.minLevel - b.minLevel) || String(a.name).localeCompare(String(b.name)); })
+      .filter(function (e) { var k = e.name; if (seen[k]) return false; seen[k] = 1; return true; });
+  }
+  function bossList(d) { return d.bosses.slice().sort(function (a, b) { return a.level - b.level; }); }
+  function itemList(d) {
+    var rank = { Common: 0, Uncommon: 1, Rare: 2, Epic: 3, Legendary: 4 };
+    return d.items.slice().sort(function (a, b) {
+      var ra = rank[a.rarity] == null ? 9 : rank[a.rarity], rb = rank[b.rarity] == null ? 9 : rank[b.rarity];
+      if (ra !== rb) return ra - rb;
+      var pa = a.buyPrice || 0, pb = b.buyPrice || 0; if (pa !== pb) return pa - pb;
+      return String(a.name).localeCompare(String(b.name));
+    });
+  }
+  function charList(d) {
+    function rank(c) { if (c.isPremium) return 3e18; if (c.unlockedByDefault) return -1; if (c.purchasePrice > 0) return c.purchasePrice; return 2.9e18; }
+    return d.characters.slice().sort(function (a, b) { var ra = rank(a), rb = rank(b); return ra !== rb ? ra - rb : String(a.name).localeCompare(String(b.name)); });
+  }
+
+  /* ---------- detail header: breadcrumb + back + prev/next ---------- */
+  function detailHead(page, cat, list, cur) {
+    var idx = -1, i;
+    for (i = 0; i < list.length; i++) { if (list[i].id === cur.id) { idx = i; break; } }
+    var prev = idx > 0 ? list[idx - 1] : null;
+    var next = (idx >= 0 && idx < list.length - 1) ? list[idx + 1] : null;
+    function pn(it, label) {
+      return it ? '<a href="' + page + '?id=' + encodeURIComponent(it.id) + '" title="' + esc(it.name) + '">' + label + "</a>"
+                : '<span class="pn-off">' + label + "</span>";
+    }
+    return '<div class="crumb"><a href="index.html">Home</a> &#8250; <a href="' + page + '">' + esc(cat) +
+        "</a> &#8250; <span>" + esc(cur.name) + "</span></div>" +
+      '<div class="detail-nav"><a class="back" href="' + page + '">&#8592; All ' + esc(cat) + "</a>" +
+        '<span class="pn">' + pn(prev, "&#8592; Prev") + pn(next, "Next &#8594;") + "</span></div>";
+  }
+
   /* ---------- chrome ---------- */
   function buildChrome(active) {
     var header = $("#site-header");
@@ -92,8 +140,17 @@
             '<span class="logo">IL</span>' +
             '<span>Infinite Loot-Loop</span>' +
           "</a>" +
-          '<nav class="nav-links">' + links + "</nav>" +
+          '<button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">&#9776;</button>' +
+          '<nav class="nav-links" id="navLinks">' + links + "</nav>" +
         "</div>";
+      var tgl = $("#navToggle", header), nl = $("#navLinks", header);
+      if (tgl && nl) {
+        tgl.addEventListener("click", function () {
+          var open = nl.classList.toggle("open");
+          tgl.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        nl.addEventListener("click", function (e) { if (e.target.tagName === "A") nl.classList.remove("open"); });
+      }
     }
     var footer = $("#site-footer");
     if (footer) {
@@ -158,6 +215,7 @@
         '<h1>Tony <span class="grad">Works</span></h1>' +
         "<p>The companion wiki for <strong>Infinite Loot-Loop</strong> &#8212; browse every monster, boss, item, map and character straight from the game data.</p>" +
       "</section>" +
+      '<div class="home-search"><input type="search" id="gsearch" autocomplete="off" placeholder="Search monsters, bosses, items, characters&#8230;"><div class="g-results" id="gresults"></div></div>' +
       '<div class="stat-strip">' +
         stat(c.enemies, "Monsters") + stat(c.bosses, "Bosses") + stat(c.items, "Items") +
         stat(c.maps, "Maps") + stat(c.zones, "Zones") + stat(c.characters, "Characters") +
@@ -173,6 +231,23 @@
       (d.generatedAt ? '<p style="text-align:center;color:var(--faint);margin-top:2rem;font-size:.85rem">Data exported ' +
         esc(d.generatedAt.replace("T", " ").replace("Z", " UTC")) + "</p>" : "");
     function stat(n, l) { return '<div class="stat"><div class="n">' + (n || 0) + '</div><div class="l">' + l + "</div></div>"; }
+    // Global search across the main catalogs.
+    var gi = $("#gsearch"), gr = $("#gresults");
+    if (gi && gr) {
+      var mon = monsterList(d), bos = bossList(d), itm = itemList(d), chr = charList(d);
+      gi.addEventListener("input", function () {
+        var t = gi.value.trim().toLowerCase();
+        if (t.length < 2) { gr.innerHTML = ""; return; }
+        function match(arr) { return arr.filter(function (x) { return String(x.name).toLowerCase().indexOf(t) >= 0; }).slice(0, 8); }
+        function grp(label, page, arr) {
+          return arr.length ? '<div class="g-grp"><h4>' + label + "</h4>" +
+            arr.map(function (x) { return '<a href="' + page + "?id=" + encodeURIComponent(x.id) + '">' + esc(x.name) + "</a>"; }).join("") + "</div>" : "";
+        }
+        var html = grp("Monsters", "monsters.html", match(mon)) + grp("Bosses", "bosses.html", match(bos)) +
+          grp("Items", "items.html", match(itm)) + grp("Characters", "characters.html", match(chr));
+        gr.innerHTML = html || '<div class="g-empty">No matches.</div>';
+      });
+    }
   };
 
   /* ---- Monsters ---- */
@@ -181,12 +256,7 @@
     if (id) return monsterDetail(app, d, d._enemyById[id]);
     // Only real, in-game monsters: those that spawn in a live zone (have a world) plus hard
     // mirrors (_H). Drops the legacy/duplicate & template orphan assets. Then dedupe by name.
-    var seen = {};
-    var list = d.enemies.filter(function (e) {
-      return (e.worlds && e.worlds.length) || /_H$/.test(e.id);
-    }).sort(function (a, b) {
-      return (a.minLevel - b.minLevel) || String(a.name).localeCompare(String(b.name));
-    }).filter(function (e) { var k = e.name; if (seen[k]) return false; seen[k] = 1; return true; });
+    var list = monsterList(d);
     listView(app, d, {
       items: list, page: "monsters.html", title: "Monsters", subtitle: list.length + " monsters (Normal + Hard)",
       tabs: [
@@ -196,6 +266,7 @@
       search: function (e) { return e.name + " " + e.id + " " + (e.worlds || []).join(" "); },
       card: function (e) {
         return cardShell("monsters.html", e.id, e.image, e.name,
+          tierBadge(e.worlds) +
           '<span class="badge">Lv ' + rng(e.minLevel, e.maxLevel) + "</span>" +
           ((e.worlds && e.worlds.length) ? '<span class="badge">' + esc(e.worlds.join(", ")) + "</span>" : "") +
           '<span class="meta">HP ' + rng(e.hpMin, e.hpMax) + " &#183; ATK " + rng(e.atkMin, e.atkMax) + "</span>");
@@ -206,7 +277,7 @@
     if (!e) return notFound(app, "monsters.html", "Monsters");
     var worlds = e.worlds || [], zones = e.zoneNames || [], drops = e.drops || [];
     var lvLabel = e.minLevel === e.maxLevel ? ("Lv " + e.minLevel) : ("Lv " + e.minLevel + "&#8211;" + e.maxLevel);
-    app.innerHTML = backLink("monsters.html", "Monsters") +
+    app.innerHTML = detailHead("monsters.html", "Monsters", monsterList(d), e) +
       '<div class="detail">' + portrait(e.image, e.name) +
       "<div><h1>" + esc(e.name) + "</h1>" +
       '<div class="tags"><span class="pill">Level ' + rng(e.minLevel, e.maxLevel) + "</span>" +
@@ -231,7 +302,7 @@
   PAGES.bosses = function (app, d) {
     var id = param("id");
     if (id) return bossDetail(app, d, d._bossById[id]);
-    var list = d.bosses.slice().sort(function (a, b) { return a.level - b.level; });
+    var list = bossList(d);
     listView(app, d, {
       items: list, page: "bosses.html", title: "Bosses", subtitle: d.bosses.length + " bosses",
       tabs: [ { label: "Normal", mode: "normal" }, { label: "Hard", mode: "hard" } ],
@@ -240,7 +311,9 @@
         var hard = tab && tab.mode === "hard";
         var hp = hard && b.hardModeHp ? b.hardModeHp : b.hp;
         var atk = hard && b.hardModeAtk ? b.hardModeAtk : b.atk;
+        var mw = d._mapById[b.mapId] ? d._mapById[b.mapId].world : null;
         return cardShell("bosses.html", b.id, b.image, b.name,
+          tierBadge(mw ? [mw] : []) +
           '<span class="badge">Lv ' + b.level + "</span>" +
           (hard ? '<span class="badge" style="color:var(--bad)">Hard</span>' : "") +
           '<span class="meta">HP ' + fmt(hp) + " &#183; ATK " + fmt(atk) + "</span>");
@@ -263,7 +336,7 @@
           (b.bonusDropItemId ? "<tr><td>Bonus</td><td>" + itemLink(b.bonusDropItemId) + "</td></tr>" : "") +
         "</table>";
     }
-    app.innerHTML = backLink("bosses.html", "Bosses") +
+    app.innerHTML = detailHead("bosses.html", "Bosses", bossList(d), b) +
       '<div class="detail">' + portrait(b.image, b.name) +
       "<div><h1>" + esc(b.name) + "</h1>" +
       '<div class="tags"><span class="pill">Level ' + b.level + "</span>" +
@@ -286,17 +359,8 @@
     var id = param("id");
     if (id) return itemDetail(app, d, d._itemById[id]);
     var rarities = ["Common", "Uncommon", "Rare", "Epic", "Legendary"];
-    var rarRank = {}; rarities.forEach(function (r, i) { rarRank[r] = i; });
     var types = ["Weapon", "Armor", "Helmet", "Shoes", "Accessory"];
-    // Lowest -> highest tier: by rarity, then buy price, then name.
-    var sorted = d.items.slice().sort(function (a, b) {
-      var ra = rarRank[a.rarity] == null ? 9 : rarRank[a.rarity];
-      var rb = rarRank[b.rarity] == null ? 9 : rarRank[b.rarity];
-      if (ra !== rb) return ra - rb;
-      var pa = a.buyPrice || 0, pb = b.buyPrice || 0;
-      if (pa !== pb) return pa - pb;
-      return String(a.name).localeCompare(String(b.name));
-    });
+    var sorted = itemList(d);
     listView(app, d, {
       items: sorted, page: "items.html", title: "Items", subtitle: d.items.length + " items across 5 categories",
       tabs: types.map(function (tp) { return { label: tp, test: function (i) { return i.type === tp; } }; }),
@@ -325,7 +389,7 @@
     var droppedBy = d.enemies.filter(function (e) {
       return (e.drops || []).some(function (dr) { return dr.itemId === i.id; });
     });
-    app.innerHTML = backLink("items.html", "Items") +
+    app.innerHTML = detailHead("items.html", "Items", itemList(d), i) +
       '<div class="detail">' + portrait(i.image, i.name) +
       "<div><h1>" + esc(i.name) + "</h1>" +
       '<div class="tags"><span class="pill" style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span>" +
@@ -355,6 +419,21 @@
     "Underwater": { icon: "&#127754;", color: "#3aa0e0" },
     "Void Hunt":  { icon: "&#128371;",  color: "#8a5cf0" },
     "World Gate": { icon: "&#128682;", color: "#8a8f98" }
+  };
+  // Real in-game connections per world (documented route). Maps to MapData asset ids.
+  var WORLD_ROUTES = {
+    "Grassland": { root: "Grassland_Map", edges: {} },
+    "Forest": { root: "ForestRoad_Map", edges: {
+      "ForestRoad_Map": ["DarkForest_Map"], "DarkForest_Map": ["DeepForest_Map"], "DeepForest_Map": ["AshenForest_Map"] } },
+    "Volcanic": { root: "VolcanicApproach_Map", edges: {
+      "VolcanicApproach_Map": ["LavaRiverPass_Map"], "LavaRiverPass_Map": ["LavaCore_Map"] } },
+    "Desert": { root: "DesertOutskirts_Map", edges: {
+      "DesertOutskirts_Map": ["DesertCrossroads_Map"],
+      "DesertCrossroads_Map": ["SandstoneTunnel_Map", "AncientBurialPassage_Map", "SunBuriedCave_Map"],
+      "SandstoneTunnel_Map": ["DesertBossRoom_Map"], "AncientBurialPassage_Map": ["DesertBossRoom_Map"], "SunBuriedCave_Map": ["DesertBossRoom_Map"] } },
+    "Underwater": { root: "ShallowCoralReef_Map", edges: {
+      "ShallowCoralReef_Map": ["CoralMaze_Map", "SunkenTempleGate_Map", "DeepTrench_Map"],
+      "CoralMaze_Map": ["GiantClamBossRoom_Map"], "DeepTrench_Map": ["MainUnderwaterBossRoom_Map"] } }
   };
   function worldStats(d, w) {
     var ms = d.maps.filter(function (m) { return m.world === w; });
@@ -401,25 +480,39 @@
     var s = worldStats(d, w);
     if (!s.maps.length) return notFound(app, "maps.html", "Worlds");
     var meta = WORLD_META[w] || { color: "var(--accent)" };
-    // Travel order: sort maps by their boss level (maps without a boss sort last).
-    function order(m) {
-      var bs = d.bosses.filter(function (b) { return b.mapId === m.id; });
-      return bs.length ? Math.min.apply(null, bs.map(function (b) { return b.level; })) : 1e9;
+    var route = WORLD_ROUTES[w];
+    var byId = {}; s.maps.forEach(function (m) { byId[m.id] = m; });
+    // Depth of each map from the route root (BFS) -> group into tiers so branches (and
+    // convergences) appear as multiple maps on one row, connected like the world map.
+    var depth = {};
+    if (route && byId[route.root]) {
+      depth[route.root] = 0;
+      var queue = [route.root], guard = 0;
+      while (queue.length && guard++ < 999) {
+        var cur = queue.shift();
+        (route.edges[cur] || []).forEach(function (k) {
+          if (byId[k]) { var nd = depth[cur] + 1; if (depth[k] == null || nd > depth[k]) depth[k] = nd; queue.push(k); }
+        });
+      }
     }
-    var maps = s.maps.slice().sort(function (a, b) { return order(a) - order(b); });
-    var chain = maps.map(function (m, i) {
+    var maxD = 0; s.maps.forEach(function (m) { if (depth[m.id] != null) maxD = Math.max(maxD, depth[m.id]); });
+    var tiers = [];
+    s.maps.forEach(function (m) { var dd = (depth[m.id] == null) ? maxD + 1 : depth[m.id]; (tiers[dd] = tiers[dd] || []).push(m); });
+    function mnode(m) {
       var mb = d.bosses.filter(function (b) { return b.mapId === m.id; });
       var sub = mb.length ? ("&#9760;&#65039; " + mb.map(function (b) { return esc(b.name); }).join(", ")) : "No boss";
-      var node = '<a class="mnode" href="maps.html?id=' + encodeURIComponent(m.id) + '" style="--wc:' + meta.color + '">' +
+      return '<a class="mnode" href="maps.html?id=' + encodeURIComponent(m.id) + '" style="--wc:' + meta.color + '">' +
         thumb(m.image, m.name) +
-        '<div class="mnode-body"><h4>' + esc(m.name) + '</h4><div class="meta">' + sub + '</div></div>' +
-        '<span class="app-go">&#8594;</span></a>';
-      return node + (i < maps.length - 1 ? '<div class="route-down sm"></div>' : "");
+        '<div class="mnode-body"><h4>' + esc(m.name) + '</h4><div class="meta">' + sub + '</div></div></a>';
+    }
+    var html = tiers.map(function (row, i) {
+      if (!row || !row.length) return "";
+      return (i > 0 ? '<div class="route-down sm"></div>' : "") + '<div class="mtier">' + row.map(mnode).join("") + "</div>";
     }).join("");
     app.innerHTML =
       '<a class="back" href="maps.html">&#8592; World Map</a>' +
-      '<div class="page-head"><h1>' + esc(w) + '</h1><p>' + s.maps.length + ' map' + (s.maps.length !== 1 ? 's' : '') + ' &#183; in travel order</p></div>' +
-      '<div class="mchain">' + chain + '</div>';
+      '<div class="page-head"><h1>' + esc(w) + '</h1><p>' + s.maps.length + ' map' + (s.maps.length !== 1 ? 's' : '') + ' &#183; connected in travel order</p></div>' +
+      '<div class="mchain">' + html + '</div>';
   }
   function mapDetail(app, d, m) {
     if (!m) return notFound(app, "maps.html", "Maps");
@@ -443,18 +536,7 @@
   PAGES.characters = function (app, d) {
     var id = param("id");
     if (id) return charDetail(app, d, d._charById[id]);
-    // Ascending by how you get them: free starter -> gold-buyable (cheapest first)
-    // -> achievement/other unlocks -> premium (IAP) last.
-    function charRank(c) {
-      if (c.isPremium) return 3e18;
-      if (c.unlockedByDefault) return -1;
-      if (c.purchasePrice > 0) return c.purchasePrice;
-      return 2.9e18;
-    }
-    var sorted = d.characters.slice().sort(function (a, b) {
-      var ra = charRank(a), rb = charRank(b);
-      return ra !== rb ? ra - rb : String(a.name).localeCompare(String(b.name));
-    });
+    var sorted = charList(d);
     listView(app, d, {
       items: sorted, page: "characters.html", title: "Characters", subtitle: d.characters.length + " characters",
       search: function (c) { return c.name + " " + c.id; },
@@ -477,7 +559,7 @@
     if (c.ownedBonusLUC) owned.push("LUC +" + fmt(c.ownedBonusLUC));
     if (c.ownedBonusDropRatePct) owned.push("Drop +" + c.ownedBonusDropRatePct + "%");
     if (c.ownedBonusGoldPct) owned.push("Gold +" + c.ownedBonusGoldPct + "%");
-    app.innerHTML = backLink("characters.html", "Characters") +
+    app.innerHTML = detailHead("characters.html", "Characters", charList(d), c) +
       '<div class="detail">' + portrait(c.image, c.name) +
       "<div><h1>" + esc(c.name) + "</h1>" +
       '<div class="tags">' +
@@ -519,6 +601,38 @@
       }
     });
   };
+
+  /* ---- Sets ---- */
+  PAGES.sets = function (app, d) {
+    var groups = {};
+    d.items.forEach(function (it) { if (it.setName) (groups[it.setName] = groups[it.setName] || []).push(it); });
+    var names = Object.keys(groups).sort(function (a, b) { return a.localeCompare(b); });
+    app.innerHTML =
+      '<div class="page-head"><h1>Item Sets</h1><p>' + names.length + " sets &#8212; wearing a set's pieces together grants its bonus (incl. bonus drop rate).</p></div>" +
+      (names.length ? '<div class="set-grid">' + names.map(function (n) {
+        var mates = groups[n];
+        return '<div class="set-card"><h3>' + esc(n) + ' <span class="set-count">' + mates.length + " pieces</span></h3>" +
+          '<div class="effect-list">' + mates.map(function (it) {
+            return '<a class="fx" href="items.html?id=' + encodeURIComponent(it.id) + '">' + esc(it.name) +
+              ' <span style="color:var(--faint)">' + esc(it.type) + "</span></a>";
+          }).join("") + "</div></div>";
+      }).join("") + "</div>" : '<div class="empty">No item sets in the current data.</div>');
+  };
+
+  /* ---------- loading + back-to-top ---------- */
+  function showLoading(app) {
+    app.innerHTML = '<div class="loading"><div class="spinner"></div><p>Loading game data&#8230;</p></div>';
+  }
+  function mountBackToTop() {
+    var b = document.createElement("button");
+    b.id = "toTop"; b.className = "to-top"; b.type = "button";
+    b.setAttribute("aria-label", "Back to top");
+    b.innerHTML = "&#8593;";
+    b.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+    document.body.appendChild(b);
+    function upd() { b.classList.toggle("show", (window.pageYOffset || 0) > 400); }
+    window.addEventListener("scroll", upd, { passive: true }); upd();
+  }
 
   /* ---------- shared list view ---------- */
   function sb(k, v) { return '<div class="statbox"><div class="k">' + k + '</div><div class="v">' + v + "</div></div>"; }
@@ -659,8 +773,10 @@
     document.head.appendChild(fav);
     buildChrome(page);
     mountAds();
+    mountBackToTop();
     var app = $("#app");
     if (app && PAGES[page]) {
+      showLoading(app);
       loadData().then(function (d) { PAGES[page](app, d); }).catch(function (e) { fail(app, e); });
     }
   });

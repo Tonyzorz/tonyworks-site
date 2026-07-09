@@ -386,3 +386,60 @@ table.data tr:hover td { background: var(--panel); }
 .mnode-body h4 { margin:0 0 .12rem; font-size:.98rem; }
 .mnode-body .meta { color:var(--muted); font-size:.82rem; }
 .mnode .app-go { color:var(--faint); font-size:1.15rem; }
+
+/* ---- mobile nav ---- */
+.nav-toggle { display:none; margin-left:auto; background:var(--panel); border:1px solid var(--border);
+  color:var(--text); border-radius:8px; font-size:1.2rem; line-height:1; padding:.35rem .6rem; cursor:pointer; }
+@media (max-width:760px){
+  .nav-toggle { display:inline-block; }
+  .nav-links { display:none; flex-basis:100%; flex-direction:column; margin-left:0; margin-top:.5rem; }
+  .nav-links.open { display:flex; }
+  .nav-links a { padding:.6rem .5rem; }
+}
+
+/* ---- loading + back-to-top ---- */
+.loading { text-align:center; padding:4rem 1rem; color:var(--muted); }
+.spinner { width:34px; height:34px; margin:0 auto 1rem; border:3px solid var(--border);
+  border-top-color:var(--accent); border-radius:50%; animation:tw-spin .8s linear infinite; }
+@keyframes tw-spin { to { transform:rotate(360deg); } }
+.to-top { position:fixed; left:18px; bottom:18px; width:42px; height:42px; border-radius:50%;
+  background:var(--accent); color:var(--on-accent); border:none; font-size:1.3rem; cursor:pointer;
+  box-shadow:var(--shadow); opacity:0; pointer-events:none; transform:translateY(8px); transition:.18s ease; z-index:40; }
+.to-top.show { opacity:1; pointer-events:auto; transform:none; }
+
+/* ---- breadcrumb + detail prev/next ---- */
+.crumb { color:var(--muted); font-size:.85rem; margin-bottom:.6rem; }
+.crumb a { color:var(--muted); } .crumb a:hover { color:var(--text); }
+.crumb span { color:var(--text); }
+.detail-nav { display:flex; align-items:center; justify-content:space-between; gap:.6rem; margin-bottom:1rem; flex-wrap:wrap; }
+.detail-nav .pn { display:flex; gap:.5rem; }
+.detail-nav .pn a, .detail-nav .pn .pn-off { font-size:.85rem; padding:.3rem .6rem; border:1px solid var(--border); border-radius:8px; }
+.detail-nav .pn a { color:var(--text); background:var(--panel); }
+.detail-nav .pn a:hover { border-color:var(--accent); text-decoration:none; }
+.detail-nav .pn .pn-off { color:var(--faint); opacity:.5; }
+
+/* ---- home global search ---- */
+.home-search { max-width:620px; margin:1.4rem auto 0; }
+.home-search input { width:100%; background:var(--panel); border:1px solid var(--border); color:var(--text);
+  padding:.7rem 1rem; border-radius:12px; font-size:1rem; outline:none; }
+.home-search input:focus { border-color:var(--accent); }
+.g-results { margin-top:.6rem; }
+.g-grp { margin-bottom:.5rem; }
+.g-grp h4 { margin:.3rem 0; font-size:.74rem; text-transform:uppercase; letter-spacing:.06em; color:var(--faint); }
+.g-grp a { display:inline-block; margin:.15rem .3rem .15rem 0; padding:.3rem .6rem; background:var(--panel);
+  border:1px solid var(--border); border-radius:8px; color:var(--text); font-size:.88rem; }
+.g-grp a:hover { border-color:var(--accent); text-decoration:none; }
+.g-empty { color:var(--faint); font-size:.9rem; }
+
+/* ---- tier badge ---- */
+.badge.tier { background:var(--accent); color:var(--on-accent); border-color:var(--accent); font-weight:700; }
+
+/* ---- item sets ---- */
+.set-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem; }
+.set-card { background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:1rem 1.1rem; }
+.set-card h3 { margin:0 0 .6rem; font-size:1.05rem; }
+.set-count { color:var(--faint); font-size:.78rem; font-weight:400; }
+
+/* ---- per-world map tiers (branching) ---- */
+.mtier { display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap; width:100%; }
+.mtier .mnode { max-width:300px; flex:1 1 210px; }
