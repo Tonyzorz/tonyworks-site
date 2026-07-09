@@ -87,7 +87,7 @@
       }).join("");
       header.innerHTML =
         '<div class="nav">' +
-          '<a class="portal-back" href="../../index.html">&#9666; TonyWorks</a>' +
+          '<a class="portal-back" href="../../index.html">&#9666; Tony Works</a>' +
           '<a class="brand" href="index.html" style="color:inherit">' +
             '<span class="logo">IL</span>' +
             '<span>Infinite Loot-Loop</span>' +
@@ -98,7 +98,7 @@
     var footer = $("#site-footer");
     if (footer) {
       footer.innerHTML =
-        'TonyWorks &#8212; companion wiki for <strong>Infinite Loot-Loop</strong>. ' +
+        'Tony Works &#8212; companion wiki for <strong>Infinite Loot-Loop</strong>. ' +
         'Data exported from the game. &#183; <a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>';
     }
   }
@@ -155,7 +155,7 @@
     ];
     app.innerHTML =
       '<section class="hero">' +
-        '<h1>Tony<span class="grad">Works</span></h1>' +
+        '<h1>Tony <span class="grad">Works</span></h1>' +
         "<p>The companion wiki for <strong>Infinite Loot-Loop</strong> &#8212; browse every monster, boss, item, map and character straight from the game data.</p>" +
       "</section>" +
       '<div class="stat-strip">' +
@@ -635,6 +635,9 @@
   document.addEventListener("DOMContentLoaded", function () {
     var page = document.body.getAttribute("data-page") || "home";
     mountTheme();
+    var fav = document.createElement("link");
+    fav.rel = "icon"; fav.href = IMG_BASE + "app_icon.png";
+    document.head.appendChild(fav);
     buildChrome(page);
     mountAds();
     var app = $("#app");

@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>try{var t=localStorage.getItem('tw-theme');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark');}catch(e){}</script>
-  <title>TonyWorks</title>
-  <meta name="description" content="TonyWorks - apps and games by Tony. Companion sites, wikis and more.">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var s=localStorage.getItem('tw-theme');var t=s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <title>Tony Works</title>
+  <meta name="description" content="Tony Works - apps and games by Tony. Companion sites, wikis and more.">
+  <link rel="icon" href="apps/infinite-loot-loop/assets/img/app_icon.png">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
 <body data-page="portal">
   <main class="wrap" id="portal"></main>
   <footer class="footer" id="portal-footer"></footer>
-  <script src="assets/js/portal.js"></script>
+  <script src="assets/js/portal.js?v=2"></script>
 </body>
 </html>
