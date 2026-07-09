@@ -747,28 +747,9 @@
      ("ca-pub-XXXXXXXXXXXXXXXX") and the two slot ids. Until then the rails show a
      subtle placeholder on wide screens so the 3-column layout is visible. Rails are
      fixed in the outer margins and hidden below 1600px (they'd overlap content). */
-  // Google AdSense. The loader <script> lives in each page's <head> (handles verification +
-  // Auto ads). For MANUAL fixed side-rail units, fill in the two slot ids below and mountAds()
-  // renders them on wide screens; otherwise nothing extra is injected (Auto ads does placement).
-  var AD_CLIENT = "ca-pub-1837000267504503";
-  var AD_SLOT_LEFT = "";
-  var AD_SLOT_RIGHT = "";
-  function mountAds() {
-    if (!AD_CLIENT || (!AD_SLOT_LEFT && !AD_SLOT_RIGHT)) return;
-    if (document.querySelector(".ad-rail")) return;
-    function rail(side, slot) {
-      if (!slot) return;
-      var r = document.createElement("aside");
-      r.className = "ad-rail " + side;
-      r.setAttribute("aria-hidden", "true");
-      r.innerHTML = '<ins class="adsbygoogle" style="display:block;width:160px;height:600px"' +
-        ' data-ad-client="' + AD_CLIENT + '" data-ad-slot="' + slot + '"></ins>';
-      document.body.appendChild(r);
-      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
-    }
-    rail("left", AD_SLOT_LEFT);
-    rail("right", AD_SLOT_RIGHT);
-  }
+  /* ---------- ads ---------- */
+  // Google AdSense **Auto ads**: the loader <script> (ca-pub-1837000267504503) is in every
+  // page's <head> and Google places ads automatically — no per-unit code needed here.
 
   /* ---------- theme toggle ---------- */
   var SUN = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19"/></svg>';
@@ -796,7 +777,6 @@
     fav.rel = "icon"; fav.href = IMG_BASE + "app_icon.png";
     document.head.appendChild(fav);
     buildChrome(page);
-    mountAds();
     mountBackToTop();
     var app = $("#app");
     if (app && PAGES[page]) {
