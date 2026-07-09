@@ -415,7 +415,7 @@
       (effects ? '<div class="section-title">Effects</div><div class="effect-list">' + effects + "</div>" : "") +
       '<div class="section-title">Details</div><div class="statgrid">' +
         (i.buyPrice > 0 && !i.shopUnavailable ? sb("Buy Price", fmt(i.buyPrice) + " g") : sb("Availability", i.shopUnavailable ? "Drop only" : "Shop")) +
-        (i.maxCopies > 0 ? sb("Max Copies", i.maxCopies) : "") +
+        sb("Max Copies", i.type === "Accessory" ? 3 : 20) +
         (i.setName ? sb("Set", esc(i.setName)) : "") +
       "</div>" +
       setItems +
@@ -735,11 +735,15 @@
     var q = "", tabIdx = 0;
     // Remember tab / search / filters / scroll per page so Back returns to the same view.
     var SKEY = "tw-list:" + cfg.page;
-    var saved = {};
+    var saved = {}, back = isBackNav();
     try { saved = JSON.parse(sessionStorage.getItem(SKEY) || "{}") || {}; } catch (e) {}
-    if (cfg.tabs && typeof saved.tab === "number" && saved.tab >= 0 && saved.tab < cfg.tabs.length) tabIdx = saved.tab;
-    if (typeof saved.q === "string") q = saved.q;
-    if (saved.filters) for (var fk in saved.filters) if (fk in active) active[fk] = saved.filters[fk];
+    // Only restore the saved view (tab / search / filters / scroll) on Back/Forward. A fresh nav
+    // click (e.g. Items -> Monsters) starts clean: default tab, no filters, top of page.
+    if (back) {
+      if (cfg.tabs && typeof saved.tab === "number" && saved.tab >= 0 && saved.tab < cfg.tabs.length) tabIdx = saved.tab;
+      if (typeof saved.q === "string") q = saved.q;
+      if (saved.filters) for (var fk in saved.filters) if (fk in active) active[fk] = saved.filters[fk];
+    }
     var tabsHtml = cfg.tabs ? '<div class="tabs" id="tabs">' + cfg.tabs.map(function (t, i) {
       return '<button class="tab' + (i === tabIdx ? " active" : "") + '" data-i="' + i + '">' + esc(t.label) + "</button>";
     }).join("") + "</div>" : "";
@@ -789,7 +793,8 @@
     });
     apply();
     // Only restore scroll when returning via Back/Forward; fresh visits start at the top.
-    if (isBackNav() && saved.scrollY) { var y = saved.scrollY; requestAnimationFrame(function () { window.scrollTo(0, y); }); }
+    if (back && saved.scrollY) { var y = saved.scrollY; requestAnimationFrame(function () { window.scrollTo(0, y); }); }
+    else window.scrollTo(0, 0);
   }
 
   /* ---------- side ad rails (Google AdSense — web) ----------
