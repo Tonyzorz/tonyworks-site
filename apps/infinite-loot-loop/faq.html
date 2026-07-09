@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>try{var t=localStorage.getItem('tw-theme');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark');}catch(e){}</script>
+  <script>try{var s=localStorage.getItem('tw-theme');var t=s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <title>FAQ &#8212; TonyWorks</title>
-  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/style.css?v=2">
 </head>
 <body data-page="faq">
   <header class="site-header" id="site-header"></header>
@@ -28,9 +28,9 @@
       </div>
       <div class="faq-q">
         <h3>Why won't a rare item drop for me?</h3>
-        <p>Drop chances fall off sharply for items you already own copies of, and higher zone tiers
-          reduce drop rates. Boost your odds with LUC, drop-rate gear/sets, and the drop-rate
-          character. Boss uniques are ~1% (0.75% in Hard Mode) before bonuses.</p>
+        <p>Drop chances fall off sharply for items you already own copies of. Boost your odds with
+          LUC (about +0.2% per point, up to +2%), drop-rate gear/sets, and the drop-rate character.
+          Boss uniques are ~1% (0.75% in Hard Mode) before bonuses.</p>
       </div>
       <div class="faq-q">
         <h3>How do I unlock characters?</h3>
@@ -58,6 +58,6 @@
     </div>
   </main>
   <footer class="footer" id="site-footer"></footer>
-  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/app.js?v=2"></script>
 </body>
 </html>

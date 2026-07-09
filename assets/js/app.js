@@ -191,7 +191,7 @@
       items: list, page: "monsters.html", title: "Monsters", subtitle: list.length + " monsters (Normal + Hard)",
       tabs: [
         { label: "Normal", test: function (e) { return !/_H$/.test(e.id); } },
-        { label: "Hard Mode", test: function (e) { return /_H$/.test(e.id); } }
+        { label: "Hard", test: function (e) { return /_H$/.test(e.id); } }
       ],
       search: function (e) { return e.name + " " + e.id + " " + (e.worlds || []).join(" "); },
       card: function (e) {
@@ -234,7 +234,7 @@
     var list = d.bosses.slice().sort(function (a, b) { return a.level - b.level; });
     listView(app, d, {
       items: list, page: "bosses.html", title: "Bosses", subtitle: d.bosses.length + " bosses",
-      tabs: [ { label: "Normal", mode: "normal" }, { label: "Hard Mode", mode: "hard" } ],
+      tabs: [ { label: "Normal", mode: "normal" }, { label: "Hard", mode: "hard" } ],
       search: function (b) { return b.name + " " + b.id + " " + b.mapId; },
       card: function (b, tab) {
         var hard = tab && tab.mode === "hard";
@@ -259,7 +259,7 @@
       var dropId = (hard && b.hardModeDropItemId) ? b.hardModeDropItemId : b.dropItemId;
       return '<div class="statgrid">' + sb("HP", fmt(hp)) + sb("ATK", fmt(atk)) + "</div>" +
         '<div class="section-title">Drop</div><table class="data">' +
-          (dropId ? "<tr><td>" + (hard ? "Hard Mode" : "Normal") + "</td><td>" + itemLink(dropId) + "</td></tr>" : "") +
+          (dropId ? "<tr><td>" + (hard ? "Hard" : "Normal") + "</td><td>" + itemLink(dropId) + "</td></tr>" : "") +
           (b.bonusDropItemId ? "<tr><td>Bonus</td><td>" + itemLink(b.bonusDropItemId) + "</td></tr>" : "") +
         "</table>";
     }
@@ -269,7 +269,7 @@
       '<div class="tags"><span class="pill">Level ' + b.level + "</span>" +
         (b.mapId ? '<span class="pill">' + (map ? link("maps.html", b.mapId, map.name) : esc(b.mapId)) + "</span>" : "") +
         '<span class="pill">EXP ' + fmt(b.exp) + "</span></div>" +
-      (hasHard ? '<div class="tabs" id="btabs"><button class="tab active" data-m="normal">Normal</button><button class="tab" data-m="hard">Hard Mode</button></div>' : "") +
+      (hasHard ? '<div class="tabs" id="btabs"><button class="tab active" data-m="normal">Normal</button><button class="tab" data-m="hard">Hard</button></div>' : "") +
       '<div id="bstats">' + stats("normal") + "</div>" +
       "</div></div>";
     if (hasHard) Array.prototype.forEach.call(app.querySelectorAll("#btabs .tab"), function (btn) {
@@ -332,7 +332,7 @@
         '<span class="pill">' + esc(i.type) + "</span>" +
         (i.isUnique ? '<span class="pill">Unique</span>' : "") +
         (i.isBossItem ? '<span class="pill">Boss Item</span>' : "") +
-        (i.isHardModeItem ? '<span class="pill">Hard Mode</span>' : "") + "</div>" +
+        (i.isHardModeItem ? '<span class="pill">Hard</span>' : "") + "</div>" +
       (i.description ? "<p>" + esc(i.description) + "</p>" : "") +
       (effects ? '<div class="section-title">Effects</div><div class="effect-list">' + effects + "</div>" : "") +
       '<div class="section-title">Details</div><div class="statgrid">' +
@@ -400,19 +400,26 @@
   function worldView(app, d, w) {
     var s = worldStats(d, w);
     if (!s.maps.length) return notFound(app, "maps.html", "Worlds");
-    var ids = s.maps.map(function (m) { return m.id; });
-    var bosses = d.bosses.filter(function (b) { return ids.indexOf(b.mapId) >= 0; })
-      .sort(function (a, b) { return a.level - b.level; });
+    var meta = WORLD_META[w] || { color: "var(--accent)" };
+    // Travel order: sort maps by their boss level (maps without a boss sort last).
+    function order(m) {
+      var bs = d.bosses.filter(function (b) { return b.mapId === m.id; });
+      return bs.length ? Math.min.apply(null, bs.map(function (b) { return b.level; })) : 1e9;
+    }
+    var maps = s.maps.slice().sort(function (a, b) { return order(a) - order(b); });
+    var chain = maps.map(function (m, i) {
+      var mb = d.bosses.filter(function (b) { return b.mapId === m.id; });
+      var sub = mb.length ? ("&#9760;&#65039; " + mb.map(function (b) { return esc(b.name); }).join(", ")) : "No boss";
+      var node = '<a class="mnode" href="maps.html?id=' + encodeURIComponent(m.id) + '" style="--wc:' + meta.color + '">' +
+        thumb(m.image, m.name) +
+        '<div class="mnode-body"><h4>' + esc(m.name) + '</h4><div class="meta">' + sub + '</div></div>' +
+        '<span class="app-go">&#8594;</span></a>';
+      return node + (i < maps.length - 1 ? '<div class="route-down sm"></div>' : "");
+    }).join("");
     app.innerHTML =
       '<a class="back" href="maps.html">&#8592; World Map</a>' +
-      '<div class="page-head"><h1>' + esc(w) + "</h1><p>" + s.maps.length + " map" + (s.maps.length !== 1 ? "s" : "") + "</p></div>" +
-      '<div class="grid">' + s.maps.map(function (m) {
-        var bc = d.bosses.filter(function (b) { return b.mapId === m.id; }).length;
-        return cardShell("maps.html", m.id, m.image, m.name,
-          '<span class="meta">' + (bc ? bc + " boss" + (bc > 1 ? "es" : "") : "Map") + "</span>");
-      }).join("") + "</div>" +
-      (bosses.length ? '<div class="section-title">Bosses in ' + esc(w) + '</div><div class="effect-list">' +
-        bosses.map(function (b) { return '<span class="fx">' + link("bosses.html", b.id, b.name) + "</span>"; }).join("") + "</div>" : "");
+      '<div class="page-head"><h1>' + esc(w) + '</h1><p>' + s.maps.length + ' map' + (s.maps.length !== 1 ? 's' : '') + ' &#183; in travel order</p></div>' +
+      '<div class="mchain">' + chain + '</div>';
   }
   function mapDetail(app, d, m) {
     if (!m) return notFound(app, "maps.html", "Maps");

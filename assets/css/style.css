@@ -372,3 +372,17 @@ table.data tr:hover td { background: var(--panel); }
   background:var(--panel); display:grid; place-items:center; }
 .ad-ph span { color:var(--faint); font-size:.7rem; letter-spacing:.14em; text-transform:uppercase;
   writing-mode:vertical-rl; transform:rotate(180deg); }
+
+/* ---- per-world map chain (travel order) ---- */
+.mchain { display:flex; flex-direction:column; align-items:center; margin:1rem 0; }
+.mnode { display:flex; align-items:center; gap:.8rem; width:100%; max-width:480px; text-decoration:none;
+  background:var(--panel); border:1px solid var(--border); border-left:3px solid var(--wc,var(--accent));
+  border-radius:var(--radius); padding:.55rem .8rem; color:var(--text); box-shadow:var(--shadow);
+  transition:transform .12s ease, border-color .12s ease; }
+.mnode:hover { transform:translateY(-2px); border-color:var(--wc,var(--accent)); }
+.mnode .thumb { width:56px; height:56px; flex:0 0 56px; aspect-ratio:auto; border-radius:10px; border:1px solid var(--border); }
+.mnode .thumb img { padding:2px; }
+.mnode-body { flex:1; min-width:0; }
+.mnode-body h4 { margin:0 0 .12rem; font-size:.98rem; }
+.mnode-body .meta { color:var(--muted); font-size:.82rem; }
+.mnode .app-go { color:var(--faint); font-size:1.15rem; }
