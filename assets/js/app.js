@@ -101,7 +101,9 @@
   /* ---------- canonical ordered lists (shared by list + detail prev/next) ---------- */
   function monsterList(d) {
     var seen = {};
-    return d.enemies.filter(function (e) { return (e.worlds && e.worlds.length) || /_H$/.test(e.id); })
+    // Only real, in-game monsters: those that spawn in a live zone (have a world). This excludes
+    // legacy/duplicate assets, HM_T* templates, and orphan _H clones (no world) with junk stats.
+    return d.enemies.filter(function (e) { return e.worlds && e.worlds.length; })
       .sort(function (a, b) { return (a.minLevel - b.minLevel) || String(a.name).localeCompare(String(b.name)); })
       .filter(function (e) { var k = e.name; if (seen[k]) return false; seen[k] = 1; return true; });
   }
