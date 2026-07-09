@@ -376,15 +376,11 @@
     var sorted = itemList(d);
     listView(app, d, {
       items: sorted, page: "items.html", title: "Items", subtitle: d.items.length + " items (Normal + Hard)",
-      tabs: [
-        { label: "All" },
-        { label: "Normal", test: function (i) { return !i.isHardModeItem; } },
-        { label: "Hard",   test: function (i) { return i.isHardModeItem; } }
-      ],
+      tabs: types.map(function (tp) { return { label: tp, test: function (i) { return i.type === tp; } }; }),
       search: function (i) { return i.name + " " + i.id + " " + (i.setName || ""); },
       filters: [
-        { key: "type",   label: "Type",   values: types,    get: function (i) { return i.type; } },
-        { key: "rarity", label: "Rarity", values: rarities, get: function (i) { return i.rarity; } }
+        { key: "mode",   label: "Mode",   values: ["Normal", "Hard"], get: function (i) { return i.isHardModeItem ? "Hard" : "Normal"; } },
+        { key: "rarity", label: "Rarity", values: rarities,           get: function (i) { return i.rarity; } }
       ],
       card: function (i) {
         var eff = (i.effects || []).slice(0, 2).join(" · ");
