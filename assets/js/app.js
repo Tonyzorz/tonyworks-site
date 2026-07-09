@@ -101,9 +101,9 @@
   /* ---------- canonical ordered lists (shared by list + detail prev/next) ---------- */
   function monsterList(d) {
     var seen = {};
-    // Only real, in-game monsters: those that spawn in a live zone (have a world). This excludes
-    // legacy/duplicate assets, HM_T* templates, and orphan _H clones (no world) with junk stats.
-    return d.enemies.filter(function (e) { return e.worlds && e.worlds.length; })
+    // Only real, in-game monsters: spawn in a live zone (have a world) and not an HM_T* tier
+    // stat-template (the real hard monsters are the "_H" mirrors). Drops legacy/orphan junk too.
+    return d.enemies.filter(function (e) { return e.worlds && e.worlds.length && !/^HM_T/.test(e.id); })
       .sort(function (a, b) { return (a.minLevel - b.minLevel) || String(a.name).localeCompare(String(b.name)); })
       .filter(function (e) { var k = e.name; if (seen[k]) return false; seen[k] = 1; return true; });
   }
