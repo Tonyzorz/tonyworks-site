@@ -42,6 +42,7 @@
 
     var footer = document.getElementById("portal-footer");
     if (footer) footer.innerHTML = "Tony Works &#183; " + new Date().getFullYear() +
+      ' &#183; <a href="privacy-policy.html">Privacy</a> &#183; <a href="terms.html">Terms</a>' +
       ' &#183; <a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>';
   }
 

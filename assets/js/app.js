@@ -156,7 +156,8 @@
     if (footer) {
       footer.innerHTML =
         'Tony Works &#8212; companion wiki for <strong>Infinite Loot-Loop</strong>. ' +
-        'Data exported from the game. &#183; <a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>';
+        '<a href="/privacy-policy.html">Privacy</a> &#183; <a href="/terms.html">Terms</a> &#183; ' +
+        '<a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>';
     }
   }
 
