@@ -360,3 +360,15 @@ table.data tr:hover td { background: var(--panel); }
     grid-template-columns:none; grid-template-rows:none; grid-template-areas:none; }
   .wm-conn{ display:none; }
 }
+
+/* ---- side ad rails (AdSense-ready 3-column layout) ---- */
+.ad-rail { display:none; }
+@media (min-width:1600px){
+  .ad-rail { display:block; position:fixed; top:88px; width:160px; z-index:15; }
+  .ad-rail.left  { left:24px; }
+  .ad-rail.right { right:24px; }
+}
+.ad-ph { width:160px; height:600px; border:1px dashed var(--border); border-radius:12px;
+  background:var(--panel); display:grid; place-items:center; }
+.ad-ph span { color:var(--faint); font-size:.7rem; letter-spacing:.14em; text-transform:uppercase;
+  writing-mode:vertical-rl; transform:rotate(180deg); }

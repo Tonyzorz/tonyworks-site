@@ -563,6 +563,44 @@
     apply();
   }
 
+  /* ---------- side ad rails (Google AdSense — web) ----------
+     To go live after AdSense approval: set AD_CLIENT to your publisher id
+     ("ca-pub-XXXXXXXXXXXXXXXX") and the two slot ids. Until then the rails show a
+     subtle placeholder on wide screens so the 3-column layout is visible. Rails are
+     fixed in the outer margins and hidden below 1600px (they'd overlap content). */
+  var AD_CLIENT = "";       // e.g. "ca-pub-1234567890123456"
+  var AD_SLOT_LEFT = "";    // AdSense ad-unit slot id (left rail)
+  var AD_SLOT_RIGHT = "";   // AdSense ad-unit slot id (right rail)
+  function mountAds() {
+    if (document.querySelector(".ad-rail")) return;
+    function rail(side, slot) {
+      var r = document.createElement("aside");
+      r.className = "ad-rail " + side;
+      r.setAttribute("aria-hidden", "true");
+      if (AD_CLIENT && slot) {
+        r.innerHTML = '<ins class="adsbygoogle" style="display:block;width:160px;height:600px"' +
+          ' data-ad-client="' + AD_CLIENT + '" data-ad-slot="' + slot + '"></ins>';
+      } else {
+        r.innerHTML = '<div class="ad-ph"><span>Advertisement</span></div>';
+      }
+      document.body.appendChild(r);
+    }
+    rail("left", AD_SLOT_LEFT);
+    rail("right", AD_SLOT_RIGHT);
+    if (AD_CLIENT) {
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + AD_CLIENT;
+      s.crossOrigin = "anonymous";
+      document.head.appendChild(s);
+      try {
+        window.adsbygoogle = window.adsbygoogle || [];
+        if (AD_SLOT_LEFT) window.adsbygoogle.push({});
+        if (AD_SLOT_RIGHT) window.adsbygoogle.push({});
+      } catch (e) {}
+    }
+  }
+
   /* ---------- theme toggle ---------- */
   var SUN = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19"/></svg>';
   var MOON = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>';
@@ -586,6 +624,7 @@
     var page = document.body.getAttribute("data-page") || "home";
     mountTheme();
     buildChrome(page);
+    mountAds();
     var app = $("#app");
     if (app && PAGES[page]) {
       loadData().then(function (d) { PAGES[page](app, d); }).catch(function (e) { fail(app, e); });

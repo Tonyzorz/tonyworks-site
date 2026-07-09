@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>try{var t=localStorage.getItem('tw-theme');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark');}catch(e){}</script>
+  <script>try{var s=localStorage.getItem('tw-theme');var t=s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <title>Guide &#8212; TonyWorks</title>
-  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/style.css?v=2">
 </head>
 <body data-page="guide">
   <header class="site-header" id="site-header"></header>
@@ -33,6 +33,30 @@
         <strong>Tip:</strong> Because bosses give +3 BP, clearing bosses is how you extend a run
         indefinitely. Farming trash costs net BP; boss kills pay you back.
       </div>
+
+      <h2>World tiers &amp; progression</h2>
+      <p>The game is organised into <strong>worlds</strong>, and each world is a difficulty
+        <strong>tier</strong>. Monster level, stats, and loot all climb together as the tier rises, so
+        the tier is shorthand for &#8220;how strong is this area.&#8221; In Normal mode:</p>
+      <ul>
+        <li><strong>T0 &#183; Grassland</strong> &#8212; the starter world (~Lv 1&#8211;25).</li>
+        <li><strong>T1 &#183; Forest</strong> &#8212; ~Lv 25&#8211;100.</li>
+        <li><strong>T2 &#183; Volcanic / Lava</strong> &#8212; ~Lv 105&#8211;195.</li>
+        <li><strong>T3 &#183; Desert</strong> &#8212; ~Lv 205&#8211;380.</li>
+        <li><strong>T4 &#183; Underwater</strong> &#8212; the deepest Normal world (~Lv 400&#8211;560).</li>
+      </ul>
+      <p>From Grassland (the hub) you branch <strong>west</strong> into Forest then Volcanic,
+        <strong>east</strong> into Desert, and <strong>north &#8212; the docks</strong> into Underwater.
+        See the <a href="maps.html">World Map</a> for the full layout.</p>
+      <div class="callout">
+        <strong>Hard Mode is a second lap.</strong> After Normal you re-run the same worlds from level 1
+        against much tougher, fixed-stat monsters &#8212; so it <em>feels</em> a full tier harder even
+        though the raw numbers overlap the late-Normal range. What gates you there is grinding the
+        Hard &#8220;H&#8221; gear, not just bigger monster numbers.
+      </div>
+      <p style="color:var(--muted);font-size:.9rem">How this wiki labels things: every monster and item
+        stat is read straight from the game data, and each monster page lists the world(s) it appears in.
+        The &#8220;T0&#8230;T4&#8221; above is simply the Normal-world order; Hard Mode reuses the same worlds.</p>
 
       <h2>Combat math worth knowing</h2>
       <ul>
@@ -72,6 +96,6 @@
     </article>
   </main>
   <footer class="footer" id="site-footer"></footer>
-  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/app.js?v=2"></script>
 </body>
 </html>
