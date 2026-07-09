@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T10:27:20Z",
+  "generatedAt": "2026-07-09T12:50:23Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 295,
@@ -1880,9 +1880,9 @@
       "zoneNames": []
     },
     {
-      "id": "ShadowHound_FR01",
+      "id": "ShadowHound_FR01 1",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_FR01.png",
+      "image": "enemy_ShadowHound_FR01_1.png",
       "isBoss": false,
       "minLevel": 37,
       "maxLevel": 40,
@@ -2176,9 +2176,9 @@
       "zoneNames": []
     },
     {
-      "id": "DesertScorpion_FR03",
+      "id": "DesertScorpion_FR03 1",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_FR03.png",
+      "image": "enemy_DesertScorpion_FR03_1.png",
       "isBoss": false,
       "minLevel": 60,
       "maxLevel": 67,
@@ -3342,9 +3342,9 @@
       "zoneNames": []
     },
     {
-      "id": "CrystalGolem_FR03",
+      "id": "CrystalGolem_FR03 1",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_FR03.png",
+      "image": "enemy_CrystalGolem_FR03_1.png",
       "isBoss": false,
       "minLevel": 73,
       "maxLevel": 80,
@@ -3490,9 +3490,9 @@
       "zoneNames": []
     },
     {
-      "id": "BloodWraith_FR03",
+      "id": "BloodWraith_FR03 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR03.png",
+      "image": "enemy_BloodWraith_FR03_1.png",
       "isBoss": false,
       "minLevel": 82,
       "maxLevel": 85,
@@ -3572,9 +3572,9 @@
       "zoneNames": []
     },
     {
-      "id": "BloodWraith_FR04",
+      "id": "BloodWraith_FR04 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR04.png",
+      "image": "enemy_BloodWraith_FR04_1.png",
       "isBoss": false,
       "minLevel": 85,
       "maxLevel": 90,
@@ -3659,9 +3659,9 @@
       "zoneNames": []
     },
     {
-      "id": "FlameImp_FR04",
+      "id": "FlameImp_FR04 1",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_FR04.png",
+      "image": "enemy_FlameImp_FR04_1.png",
       "isBoss": false,
       "minLevel": 88,
       "maxLevel": 94,
@@ -3801,9 +3801,9 @@
       "zoneNames": []
     },
     {
-      "id": "ChaosShaman_FR04",
+      "id": "ChaosShaman_FR04 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_FR04.png",
+      "image": "enemy_ChaosShaman_FR04_1.png",
       "isBoss": false,
       "minLevel": 100,
       "maxLevel": 103,
@@ -3943,9 +3943,9 @@
       "zoneNames": []
     },
     {
-      "id": "FlameImp_VO01",
+      "id": "FlameImp_VO01 1",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_VO01.png",
+      "image": "enemy_FlameImp_VO01_1.png",
       "isBoss": false,
       "minLevel": 108,
       "maxLevel": 115,
@@ -4197,9 +4197,9 @@
       "zoneNames": []
     },
     {
-      "id": "ChaosShaman_VO01",
+      "id": "ChaosShaman_VO01 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_VO01.png",
+      "image": "enemy_ChaosShaman_VO01_1.png",
       "isBoss": false,
       "minLevel": 128,
       "maxLevel": 136,
@@ -5803,9 +5803,9 @@
       "zoneNames": []
     },
     {
-      "id": "DesertScorpion_DS01",
+      "id": "DesertScorpion_DS01 1",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_DS01.png",
+      "image": "enemy_DesertScorpion_DS01_1.png",
       "isBoss": false,
       "minLevel": 205,
       "maxLevel": 217,
@@ -6976,9 +6976,9 @@
       ]
     },
     {
-      "id": "ShadowHound_DS03",
+      "id": "ShadowHound_DS03 1",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_DS03.png",
+      "image": "enemy_ShadowHound_DS03_1.png",
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
@@ -7263,9 +7263,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_DS03",
+      "id": "CrystalGolem_DS03 1",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_DS03.png",
+      "image": "enemy_CrystalGolem_DS03_1.png",
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
@@ -8868,8 +8868,8 @@
       "level": 30,
       "hp": 31000,
       "atk": 520,
-      "hardModeHp": 2410000,
-      "hardModeAtk": 150000,
+      "hardModeHp": 2072600,
+      "hardModeAtk": 135000,
       "exp": 12000,
       "dropItemId": "WanderersToken",
       "dropItemName": "Wanderer's Token",
@@ -8884,8 +8884,8 @@
       "level": 45,
       "hp": 140000,
       "atk": 1500,
-      "hardModeHp": 2410000,
-      "hardModeAtk": 150000,
+      "hardModeHp": 2289500,
+      "hardModeAtk": 145500,
       "exp": 24750,
       "dropItemId": "DragonFangPendant",
       "dropItemName": "Dragon Fang Pendant",
@@ -8900,8 +8900,8 @@
       "level": 65,
       "hp": 625000,
       "atk": 7500,
-      "hardModeHp": 2410000,
-      "hardModeAtk": 150000,
+      "hardModeHp": 2554600,
+      "hardModeAtk": 157500,
       "exp": 48750,
       "dropItemId": "AncientBarkShield",
       "dropItemName": "Ancient Bark Shield",
@@ -8916,8 +8916,8 @@
       "level": 90,
       "hp": 1375000,
       "atk": 13500,
-      "hardModeHp": 2410000,
-      "hardModeAtk": 150000,
+      "hardModeHp": 2795600,
+      "hardModeAtk": 170999,
       "exp": 90000,
       "dropItemId": "SoulLantern",
       "dropItemName": "Soul Lantern",
@@ -8932,8 +8932,8 @@
       "level": 110,
       "hp": 6250000,
       "atk": 60000,
-      "hardModeHp": 3770000,
-      "hardModeAtk": 250000,
+      "hardModeHp": 3242200,
+      "hardModeAtk": 225000,
       "exp": 132000,
       "dropItemId": "WitchsGrimoire",
       "dropItemName": "Witch's Grimoire",
@@ -8948,8 +8948,8 @@
       "level": 150,
       "hp": 13750000,
       "atk": 135000,
-      "hardModeHp": 3770000,
-      "hardModeAtk": 250000,
+      "hardModeHp": 3581500,
+      "hardModeAtk": 242500,
       "exp": 240000,
       "dropItemId": "DrakeScaleSword",
       "dropItemName": "Drake Scale Sword",
@@ -8964,8 +8964,8 @@
       "level": 185,
       "hp": 20000000,
       "atk": 195000,
-      "hardModeHp": 3770000,
-      "hardModeAtk": 250000,
+      "hardModeHp": 3996200,
+      "hardModeAtk": 262500,
       "exp": 360750,
       "dropItemId": "TitansMagmaPlate",
       "dropItemName": "Titan's Magma Plate",
@@ -8980,8 +8980,8 @@
       "level": 210,
       "hp": 27500000,
       "atk": 300000,
-      "hardModeHp": 3770000,
-      "hardModeAtk": 250000,
+      "hardModeHp": 4373200,
+      "hardModeAtk": 285000,
       "exp": 462000,
       "dropItemId": "ChaosHeart",
       "dropItemName": "Chaos Heart",
@@ -8996,8 +8996,8 @@
       "level": 220,
       "hp": 69000000,
       "atk": 735000,
-      "hardModeHp": 5170000,
-      "hardModeAtk": 380000,
+      "hardModeHp": 4446200,
+      "hardModeAtk": 342000,
       "exp": 506000,
       "dropItemId": "BossItem_IronFortress",
       "dropItemName": "Iron Fortress",
@@ -9012,8 +9012,8 @@
       "level": 260,
       "hp": 57000000,
       "atk": 630000,
-      "hardModeHp": 5170000,
-      "hardModeAtk": 380000,
+      "hardModeHp": 4911500,
+      "hardModeAtk": 368600,
       "exp": 702000,
       "dropItemId": "CrystalPrism",
       "dropItemName": "Crystal Prism",
@@ -9028,8 +9028,8 @@
       "level": 285,
       "hp": 91000000,
       "atk": 945000,
-      "hardModeHp": 5170000,
-      "hardModeAtk": 380000,
+      "hardModeHp": 5480200,
+      "hardModeAtk": 399000,
       "exp": 840750,
       "dropItemId": "BossItem_WarCrest",
       "dropItemName": "War Crest",
@@ -9044,8 +9044,8 @@
       "level": 360,
       "hp": 88000000,
       "atk": 945000,
-      "hardModeHp": 5170000,
-      "hardModeAtk": 380000,
+      "hardModeHp": 5997200,
+      "hardModeAtk": 433199,
       "exp": 1332000,
       "dropItemId": "BossItem_ZenStone",
       "dropItemName": "Zen Stone",
@@ -9060,8 +9060,8 @@
       "level": 400,
       "hp": 88000000,
       "atk": 945000,
-      "hardModeHp": 8200000,
-      "hardModeAtk": 600000,
+      "hardModeHp": 7052000,
+      "hardModeAtk": 540000,
       "exp": 1640000,
       "dropItemId": "PharaohSpirit",
       "dropItemName": "Pharaoh Spirit",
@@ -9076,8 +9076,8 @@
       "level": 400,
       "hp": 91000000,
       "atk": 945000,
-      "hardModeHp": 8200000,
-      "hardModeAtk": 600000,
+      "hardModeHp": 7790000,
+      "hardModeAtk": 582000,
       "exp": 1640000,
       "dropItemId": "SunBeastTalon",
       "dropItemName": "Sun Beast Talon",
@@ -9092,8 +9092,8 @@
       "level": 400,
       "hp": 88000000,
       "atk": 945000,
-      "hardModeHp": 8200000,
-      "hardModeAtk": 600000,
+      "hardModeHp": 8692000,
+      "hardModeAtk": 630000,
       "exp": 1640000,
       "dropItemId": "TidalWarden",
       "dropItemName": "Tidal Warden",
@@ -9108,8 +9108,8 @@
       "level": 410,
       "hp": 101000000,
       "atk": 1120000,
-      "hardModeHp": 8200000,
-      "hardModeAtk": 600000,
+      "hardModeHp": 9512000,
+      "hardModeAtk": 683999,
       "exp": 1722000,
       "dropItemId": "PharaohsScepter",
       "dropItemName": "Pharaoh's Scepter",
@@ -9124,8 +9124,8 @@
       "level": 450,
       "hp": 105000000,
       "atk": 1155000,
-      "hardModeHp": 13120000,
-      "hardModeAtk": 1000000,
+      "hardModeHp": 11283200,
+      "hardModeAtk": 900000,
       "exp": 2070000,
       "dropItemId": "BossItem_LifeRing",
       "dropItemName": "Blood Ring",
@@ -9140,8 +9140,8 @@
       "level": 520,
       "hp": 120000000,
       "atk": 1365000,
-      "hardModeHp": 13120000,
-      "hardModeAtk": 1000000,
+      "hardModeHp": 12464000,
+      "hardModeAtk": 970000,
       "exp": 2756000,
       "dropItemId": "GiantClamPearl",
       "dropItemName": "Giant Clam Pearl",
@@ -9156,8 +9156,8 @@
       "level": 550,
       "hp": 182000000,
       "atk": 1820000,
-      "hardModeHp": 13120000,
-      "hardModeAtk": 1000000,
+      "hardModeHp": 13907200,
+      "hardModeAtk": 1050000,
       "exp": 3080000,
       "dropItemId": "AbyssalCrown",
       "dropItemName": "Abyssal Crown",
@@ -9172,8 +9172,8 @@
       "level": 550,
       "hp": 154000000,
       "atk": 1680000,
-      "hardModeHp": 13120000,
-      "hardModeAtk": 1000000,
+      "hardModeHp": 15219199,
+      "hardModeAtk": 1140000,
       "exp": 3080000,
       "dropItemId": "BossItem_OmniStone",
       "dropItemName": "Omni Stone",
@@ -16700,7 +16700,7 @@
       "goldMultiplier": 46,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_DS01",
+          "enemyId": "DesertScorpion_DS01 1",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -16860,7 +16860,7 @@
       "goldMultiplier": 70,
       "enemies": [
         {
-          "enemyId": "ShadowHound_DS03",
+          "enemyId": "ShadowHound_DS03 1",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -16900,7 +16900,7 @@
       "goldMultiplier": 74,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_DS03",
+          "enemyId": "CrystalGolem_DS03 1",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -17567,7 +17567,7 @@
       "goldMultiplier": 7.5,
       "enemies": [
         {
-          "enemyId": "ShadowHound_FR01",
+          "enemyId": "ShadowHound_FR01 1",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -17647,7 +17647,7 @@
       "goldMultiplier": 13,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_FR03",
+          "enemyId": "DesertScorpion_FR03 1",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -17707,7 +17707,7 @@
       "goldMultiplier": 16,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_FR03",
+          "enemyId": "CrystalGolem_FR03 1",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -17747,7 +17747,7 @@
       "goldMultiplier": 18,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR03",
+          "enemyId": "BloodWraith_FR03 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -17767,7 +17767,7 @@
       "goldMultiplier": 19,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR04",
+          "enemyId": "BloodWraith_FR04 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -17787,7 +17787,7 @@
       "goldMultiplier": 20,
       "enemies": [
         {
-          "enemyId": "FlameImp_FR04",
+          "enemyId": "FlameImp_FR04 1",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -17847,7 +17847,7 @@
       "goldMultiplier": 23,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_FR04",
+          "enemyId": "ChaosShaman_FR04 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -21377,7 +21377,7 @@
       "goldMultiplier": 32,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_VO01",
+          "enemyId": "ChaosShaman_VO01 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -21477,7 +21477,7 @@
       "goldMultiplier": 27,
       "enemies": [
         {
-          "enemyId": "FlameImp_VO01",
+          "enemyId": "FlameImp_VO01 1",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
