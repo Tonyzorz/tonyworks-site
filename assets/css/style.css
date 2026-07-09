@@ -337,3 +337,26 @@ table.data tr:hover td { background: var(--panel); }
 .wnode.locked { opacity:.55; cursor:default; box-shadow:none; }
 .wnode.secret { border-style:dashed; background:var(--panel-2); }
 @media (max-width:640px){ .route-branches{ gap:.75rem; } .wnode{ width:44vw; max-width:170px; } }
+
+/* ---- World map: spatial compass layout ---- */
+.worldmap { overflow-x:auto; padding:1.25rem 0 .5rem; }
+.wm-grid {
+  display:grid; width:max-content; margin:0 auto; align-items:center; justify-items:center; gap:6px;
+  grid-template-columns: auto 30px auto 30px auto 30px auto 30px auto;
+  grid-template-rows: auto 24px auto 24px auto;
+  grid-template-areas:
+    ".    .  .    .  .      .  uw   .  ."
+    ".    .  .    .  .      .  vu   .  ."
+    "void h1 volc h2 forest h3 gl   h4 desert"
+    ".    .  .    .  .      .  vd   .  ."
+    ".    .  .    .  .      .  gate .  .";
+}
+.wm-cell { display:flex; }
+.wm-conn.h { width:100%; height:2px; background:var(--border); align-self:center; }
+.wm-conn.v { height:100%; min-height:24px; width:2px; background:var(--border); justify-self:center; }
+.wm-conn.dashed { background:repeating-linear-gradient(90deg,var(--border) 0 5px,transparent 5px 10px); }
+@media (max-width:720px){
+  .wm-grid{ display:flex; flex-direction:column; gap:.55rem; width:auto;
+    grid-template-columns:none; grid-template-rows:none; grid-template-areas:none; }
+  .wm-conn{ display:none; }
+}

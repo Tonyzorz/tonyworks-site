@@ -305,7 +305,7 @@
         { key: "rarity", label: "Rarity", values: rarities, get: function (i) { return i.rarity; } }
       ],
       card: function (i) {
-        var eff = (i.effects || []).slice(0, 2).join(" &#183; ");
+        var eff = (i.effects || []).slice(0, 2).join(" · ");
         return '<a class="card rar" href="items.html?id=' + encodeURIComponent(i.id) + '" style="border-top-color:' + rarColor(i.rarity) + '">' +
           thumb(i.image, i.name) + '<div class="body"><h4>' + esc(i.name) + "</h4>" +
           '<div class="meta"><span style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span> &#183; " + esc(i.type) + "</div>" +
@@ -380,19 +380,22 @@
     var world = param("world"); if (world) return worldView(app, d, world);
     app.innerHTML =
       '<div class="page-head"><h1>World Map</h1><p>Every region, connected. Tap a world to see its maps &amp; bosses.</p></div>' +
-      '<div class="route">' +
-        '<div class="route-tier">' + wnode(d, "Grassland") + "</div>" +
-        '<div class="route-down"></div>' +
-        '<div class="route-branches">' +
-          '<div class="branch"><div class="branch-label">West road</div>' + wnode(d, "Forest") +
-            '<div class="route-down sm"></div>' + wnode(d, "Volcanic") +
-            '<div class="route-down sm dashed"></div>' + wnode(d, "Void Hunt", { secret: true }) + "</div>" +
-          '<div class="branch"><div class="branch-label">East road</div>' + wnode(d, "Desert") + "</div>" +
-          '<div class="branch"><div class="branch-label">Docks</div>' + wnode(d, "Underwater") + "</div>" +
-        "</div>" +
-        '<div class="route-gate">' + wnode(d, "World Gate", { locked: true }) + "</div>" +
-      "</div>" +
-      '<p class="route-note">All regions loop back to Grassland. Void Hunt is a secret arena reached from the Volcanic region.</p>';
+      '<div class="worldmap"><div class="wm-grid">' +
+        '<div class="wm-cell" style="grid-area:uw">'     + wnode(d, "Underwater") + '</div>' +
+        '<div class="wm-conn v" style="grid-area:vu"></div>' +
+        '<div class="wm-cell" style="grid-area:void">'   + wnode(d, "Void Hunt", { secret: true }) + '</div>' +
+        '<div class="wm-conn h dashed" style="grid-area:h1"></div>' +
+        '<div class="wm-cell" style="grid-area:volc">'   + wnode(d, "Volcanic") + '</div>' +
+        '<div class="wm-conn h" style="grid-area:h2"></div>' +
+        '<div class="wm-cell" style="grid-area:forest">' + wnode(d, "Forest") + '</div>' +
+        '<div class="wm-conn h" style="grid-area:h3"></div>' +
+        '<div class="wm-cell" style="grid-area:gl">'     + wnode(d, "Grassland") + '</div>' +
+        '<div class="wm-conn h" style="grid-area:h4"></div>' +
+        '<div class="wm-cell" style="grid-area:desert">' + wnode(d, "Desert") + '</div>' +
+        '<div class="wm-conn v" style="grid-area:vd"></div>' +
+        '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate", { locked: true }) + '</div>' +
+      '</div></div>' +
+      '<p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, the World Gate south. Void Hunt is a secret arena reached from Volcanic.</p>';
   };
   function worldView(app, d, w) {
     var s = worldStats(d, w);
