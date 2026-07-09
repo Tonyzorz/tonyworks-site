@@ -15,7 +15,7 @@
   <meta name="twitter:image" content="https://tonyworks.co.kr/apps/infinite-loot-loop/assets/img/app_icon.png">
   <script>try{var s=localStorage.getItem('tw-theme');var t=s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <title>Guide &#8212; Tony Works</title>
-  <link rel="stylesheet" href="../../assets/css/style.css?v=5">
+  <link rel="stylesheet" href="../../assets/css/style.css?v=6">
 </head>
 <body data-page="guide">
   <header class="site-header" id="site-header"></header>
@@ -25,12 +25,26 @@
       <p>Strategy, systems, and tips for Infinite Loot-Loop.</p>
     </div>
     <article class="prose">
-      <div class="callout">
-        This is a starter guide seeded from the game's core systems. Tell me your own tips and
-        strategy and I'll expand each section &#8212; this page is meant to grow.
-      </div>
+      <p style="color:var(--muted);font-size:.92rem;line-height:1.9">
+        A field guide to how <strong>Infinite Loot-Loop</strong> actually works &#8212; pulled from the
+        game's own systems. Jump to:
+        <a href="#start">Quick start</a> &#183; <a href="#loop">BP loop</a> &#183; <a href="#stats">Stats</a> &#183;
+        <a href="#combat">Combat</a> &#183; <a href="#level">Leveling</a> &#183; <a href="#worlds">Worlds</a> &#183;
+        <a href="#loot">Loot</a> &#183; <a href="#gear">Gear</a> &#183; <a href="#economy">Economy</a> &#183;
+        <a href="#chars">Characters</a> &#183; <a href="#bosses">Bosses</a> &#183; <a href="#hard">Hard Mode</a> &#183;
+        <a href="#void">Void Hunt</a> &#183; <a href="#ach">Achievements</a> &#183; <a href="#tips">Tips</a>
+      </p>
 
-      <h2>The Battle Point (BP) loop</h2>
+      <h2 id="start">Quick start</h2>
+      <ol>
+        <li>Pick a character and start a run. You roam a map, bump into enemies, and fight turn-based battles.</li>
+        <li>Wins give <strong>gold</strong>, <strong>EXP</strong>, and the occasional <strong>item</strong> drop.</li>
+        <li>Spend gold in the <strong>shop</strong> on gear; equip it to hit harder and survive longer.</li>
+        <li>Beat a map's <strong>boss</strong> to refund Battle Points and open the next world.</li>
+        <li>At 0 Battle Points it's game over &#8212; but your <strong>level, gear, and gold carry over</strong> to the next game.</li>
+      </ol>
+
+      <h2 id="loop">The Battle Point (BP) loop</h2>
       <p>BP is your run currency &#8212; the loop that ties everything together.</p>
       <ul>
         <li>You start each game with <strong>30 BP</strong> (plus any permanent BP bonuses).</li>
@@ -39,15 +53,51 @@
         <li>Beating a <strong>boss</strong> refunds <strong>+3 BP</strong> for the current run.</li>
         <li>Death does <em>not</em> reset your level, EXP, or gold &#8212; only a full game over (hitting 0 BP) does.</li>
       </ul>
-      <div class="callout">
-        <strong>Tip:</strong> Because bosses give +3 BP, clearing bosses is how you extend a run
-        indefinitely. Farming trash costs net BP; boss kills pay you back.
-      </div>
+      <div class="callout"><strong>Tip:</strong> Bosses give +3 BP, so clearing bosses is how you extend a run
+        indefinitely. Farming trash costs net BP; boss kills pay you back.</div>
 
-      <h2>World tiers &amp; progression</h2>
-      <p>The game is organised into <strong>worlds</strong>, and each world is a difficulty
-        <strong>tier</strong>. Monster level, stats, and loot all climb together as the tier rises, so
-        the tier is shorthand for &#8220;how strong is this area.&#8221; In Normal mode:</p>
+      <h2 id="stats">The five stats</h2>
+      <p>Every stat point you allocate (and every piece of gear) feeds one of five stats:</p>
+      <div class="statgrid">
+        <div class="statbox"><div class="k">HP</div><div class="v">Survivability</div></div>
+        <div class="statbox"><div class="k">ATK</div><div class="v">Damage dealt</div></div>
+        <div class="statbox"><div class="k">DEF</div><div class="v">Damage reduced</div></div>
+        <div class="statbox"><div class="k">AGI</div><div class="v">Crit / combo / dodge</div></div>
+        <div class="statbox"><div class="k">LUC</div><div class="v">Drops / dodge / combo</div></div>
+      </div>
+      <ul>
+        <li><strong>HP</strong> &#8212; your health pool; more HP means more survivable hits, vital against high-ATK bosses.</li>
+        <li><strong>ATK</strong> &#8212; base damage; scales your normal hits, crits, and combo hits.</li>
+        <li><strong>DEF</strong> &#8212; damage reduction via <code>min(0.80, DEF/(DEF+100))</code>, capped at 80% (diminishing returns).</li>
+        <li><strong>AGI</strong> &#8212; the tempo stat: raises <strong>crit chance</strong>, <strong>crit damage</strong> (base 1.5&#215;), <strong>combo</strong> chance, and a little <strong>dodge</strong>.</li>
+        <li><strong>LUC</strong> &#8212; the fortune stat: raises <strong>drop rate</strong> (~+0.2% per point, up to +2%), <strong>dodge</strong>, <strong>combo</strong>, and lifesteal.</li>
+      </ul>
+      <div class="callout"><strong>Erosion:</strong> crit, dodge, and combo are reduced the further an enemy's level is
+        above yours &#8212; so AGI/LUC that shred early zones taper off in deep worlds. Keep your level up to stay ahead.</div>
+
+      <h2 id="combat">Combat mechanics</h2>
+      <ul>
+        <li><strong>Crit</strong> &#8212; hits can crit for bonus damage (base 1.5&#215; and up), driven by AGI.</li>
+        <li><strong>Combo</strong> &#8212; after a hit you can chain extra hits (up to 15), each rolled independently off AGI + LUC.</li>
+        <li><strong>Dodge</strong> &#8212; a chance to avoid an enemy's hit entirely, from LUC + AGI.</li>
+        <li><strong>Defense</strong> &#8212; flat damage reduction, capped at 80%.</li>
+        <li><strong>Lifesteal</strong> &#8212; heal a share of damage dealt (from LUC and certain gear).</li>
+        <li><strong>Revive</strong> &#8212; once per battle you can revive (watch a short ad, or free if ads are removed) and continue where you fell. BP-neutral.</li>
+      </ul>
+
+      <h2 id="level">Leveling &amp; stat points</h2>
+      <ul>
+        <li>EXP to reach the next level = <code>currentLevel &times; 150</code>.</li>
+        <li>Each level grants <strong>4 stat points</strong> to allocate however you like.</li>
+        <li>Level, EXP, and stat points <strong>persist across runs</strong>; only a full reset wipes them.</li>
+      </ul>
+      <div class="callout"><strong>Allocation tip:</strong> lean HP + ATK to clear fights, keep enough AGI/LUC that
+        crit / combo / drops stay relevant, and add DEF to absorb boss spikes. Spread deliberately &#8212; there's no respec.</div>
+
+      <h2 id="worlds">World tiers &amp; progression</h2>
+      <p>The game is organised into <strong>worlds</strong>, and each world is a difficulty <strong>tier</strong>.
+        Monster level, stats, and loot climb together, so the tier is shorthand for &#8220;how strong is this area.&#8221;
+        In Normal mode:</p>
       <ul>
         <li><strong>T0 &#183; Grassland</strong> &#8212; the starter world (~Lv 1&#8211;25).</li>
         <li><strong>T1 &#183; Forest</strong> &#8212; ~Lv 25&#8211;100.</li>
@@ -58,54 +108,76 @@
       <p>From Grassland (the hub) you branch <strong>west</strong> into Forest then Volcanic,
         <strong>east</strong> into Desert, and <strong>north &#8212; the docks</strong> into Underwater.
         See the <a href="maps.html">World Map</a> for the full layout.</p>
-      <div class="callout">
-        <strong>Hard Mode is a second lap.</strong> After Normal you re-run the same worlds from level 1
-        against much tougher, fixed-stat monsters &#8212; so it <em>feels</em> a full tier harder even
-        though the raw numbers overlap the late-Normal range. What gates you there is grinding the
-        Hard &#8220;H&#8221; gear, not just bigger monster numbers.
-      </div>
-      <p style="color:var(--muted);font-size:.9rem">How this wiki labels things: every monster and item
-        stat is read straight from the game data, and each monster page lists the world(s) it appears in.
-        The &#8220;T0&#8230;T4&#8221; above is simply the Normal-world order; Hard Mode reuses the same worlds.</p>
 
-      <h2>Combat math worth knowing</h2>
+      <h2 id="loot">Loot &amp; drop rates</h2>
       <ul>
-        <li><strong>Defense:</strong> damage reduction is <code>min(0.80, DEF / (DEF + 100))</code> &#8212; capped at 80%. Stacking DEF has diminishing returns.</li>
-        <li><strong>Level up:</strong> the EXP needed for the next level is <code>currentLevel &times; 150</code>.</li>
-        <li><strong>Revive:</strong> once per battle &#8212; watch a short ad (or free if you've removed ads) to get back up where you fell. It's BP-neutral; the death cost was already paid.</li>
+        <li>Each enemy has a drop table with per-item chances (most are a few percent).</li>
+        <li><strong>Duplicate falloff:</strong> the more copies of an item you already own, the sharply lower the chance of another &#8212; early copies come fast, then taper off hard.</li>
+        <li><strong>LUC</strong> adds drop chance (~+0.2% per point, capped around +2%). Drop-rate gear, set bonuses, and certain characters stack on top.</li>
+        <li><strong>Boss drops</strong> are rare uniques: ~<strong>1%</strong> in Normal, ~<strong>0.75%</strong> in Hard, before bonuses.</li>
       </ul>
 
-      <h2>Loot &amp; drop rates</h2>
+      <h2 id="gear">Gear &amp; upgrading</h2>
       <ul>
-        <li>Each enemy has a drop table with per-item chances (most are a few percent). Boss uniques are ~1% in Normal, ~0.75% in Hard.</li>
-        <li><strong>Duplicate falloff:</strong> the more copies of an item you already own, the sharply lower the chance of another &#8212; so early copies come fast, then taper off hard.</li>
-        <li><strong>LUC</strong> adds drop chance (about +0.2% per point, capped around +2%). Drop-rate gear, set bonuses, and certain characters stack on top.</li>
-        <li><strong>Boss drops</strong> are rare: about <strong>1%</strong> in Normal and <strong>0.75%</strong> in Hard Mode before bonuses.</li>
+        <li>Five equipment slots: <strong>Weapon, Armor, Helmet, Shoes, Accessory</strong> &#8212; browse them by category on the <a href="items.html">Items</a> page.</li>
+        <li>Items can be <strong>upgraded up to +10</strong>, raising their stats each level.</li>
+        <li><strong>Sets:</strong> wearing pieces of the same set grants a set bonus (often bonus drop rate) &#8212; see the <a href="sets.html">Sets</a> page or any item's set mates.</li>
+        <li><strong>Accessory slots</strong> are a big late-game lever: you start with a few and buy more, with the last slots priced as a deliberate gold sink.</li>
+        <li>The shop pulls from <em>all</em> zones you've unlocked, not just your current map.</li>
       </ul>
 
-      <h2>Shops &amp; sets</h2>
+      <h2 id="economy">Gold &amp; the economy</h2>
       <ul>
-        <li>The shop pulls from <em>all</em> registered zones, not just your current map.</li>
-        <li>Items with a <strong>set name</strong> grant a set bonus (including bonus drop rate) when worn together &#8212; check an item's page for its set mates.</li>
+        <li>Gold comes from kills (scaled by enemy level and a <strong>kill-streak multiplier</strong> up to 2&#215;) and persists across runs.</li>
+        <li>Spend it on gear, upgrades, and accessory-slot expansions.</li>
+        <li><strong>Characters</strong> are the big long-term gold sink &#8212; see below.</li>
       </ul>
 
-      <h2>Characters</h2>
-      <p>Characters apply <strong>stat multipliers</strong> while active and some grant a
-        <strong>permanent owned bonus</strong> that applies in every run just for owning them
-        (for example, drop-rate and gold-gain specialists). See the
-        <a href="characters.html">Characters</a> page for the full roster.</p>
+      <h2 id="chars">Characters</h2>
+      <p>Each character applies <strong>stat multipliers</strong> while active, and some grant a
+        <strong>permanent owned bonus</strong> that applies in every run just for owning them (e.g. drop-rate and
+        gold specialists). Characters are a deliberate <strong>price gate</strong> &#8212; only a few are affordable
+        per world cycle, so choosing who to save for matters. Two are premium (real-money). Full roster + prices on
+        the <a href="characters.html">Characters</a> page.</p>
 
-      <h2>Hard Mode</h2>
-      <p>Hard Mode raises boss HP/ATK to per-tier targets and changes drops (some bosses have a
-        distinct Hard Mode drop). Death costs more BP (6 vs 4), so it rewards clean, well-geared runs.</p>
+      <h2 id="bosses">Bosses</h2>
+      <p>Each map has a boss guarding progression. They hit harder and tank more than field monsters, but a boss kill
+        refunds <strong>+3 BP</strong> and can drop a <strong>unique accessory</strong> (~1% Normal / ~0.75% Hard).
+        Clearing bosses is how a run pays for itself. Per-boss stats (with a Hard tab) are on the
+        <a href="bosses.html">Bosses</a> page.</p>
 
-      <div class="callout">
-        <strong>Your turn:</strong> what routes, gear breakpoints, or boss tricks do you want
-        documented? Send them over and I'll turn them into proper sections here.
-      </div>
+      <h2 id="hard">Hard Mode</h2>
+      <p>Hard Mode is a second lap of the whole world map. You effectively <strong>re-level from the start</strong>
+        against much tougher, fixed-stat monsters, and progress is gated by grinding the exclusive
+        <strong>Hard &#8220;H&#8221; gear</strong> (only the first tier is buyable; the rest are drop-only at ~1%).
+        Death costs <strong>6 BP</strong> instead of 4, and some bosses have Hard-exclusive drops. It rewards clean,
+        well-geared play &#8212; so <strong>max your Normal endgame gear first</strong>.</p>
+
+      <h2 id="void">Void Hunt (secret)</h2>
+      <p>A hidden arena reached from the <strong>top-right of the first Volcanic map</strong>. Inside you re-fight
+        <strong>monsters and bosses you've already defeated</strong> (matched to your current mode) with a small
+        <strong>drop-rate bonus</strong> (+1% monsters / +0.5% bosses) &#8212; a handy farming spot for chasing a
+        specific drop once it's unlocked.</p>
+
+      <h2 id="ach">Achievements</h2>
+      <p>Achievements grant <strong>flat permanent stat bonuses</strong> or <strong>unlock characters</strong>.
+        Some are Any-mode, others are Normal- or Hard-specific &#8212; filter by mode on the
+        <a href="achievements.html">Achievements</a> page.</p>
+
+      <h2 id="tips">Pro tips</h2>
+      <ul>
+        <li>Prioritise <strong>boss kills</strong> &#8212; they're your BP lifeline; don't over-farm trash.</li>
+        <li>Keep gear <strong>current</strong>: a fresh weapon a tier up usually beats extra + levels on an old one.</li>
+        <li>When hunting a specific item, stack <strong>LUC + drop gear + a drop character</strong>, and chase items you own 0&#8211;1 of (dup falloff).</li>
+        <li>Save for the <strong>one affordable character per cycle</strong> instead of spreading gold thin.</li>
+        <li>Don't rush <strong>Hard Mode</strong> &#8212; its T0 wall assumes maxed Normal-endgame gear.</li>
+      </ul>
+
+      <div class="callout"><strong>Want more?</strong> Tell me specific routes, gear breakpoints, or boss strategies
+        and I'll turn them into sections here.</div>
     </article>
   </main>
   <footer class="footer" id="site-footer"></footer>
-  <script src="../../assets/js/app.js?v=5"></script>
+  <script src="../../assets/js/app.js?v=6"></script>
 </body>
 </html>

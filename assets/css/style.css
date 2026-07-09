@@ -451,3 +451,11 @@ table.data tr:hover td { background: var(--panel); }
 .ach-reward { display:inline-block; padding:.15rem .5rem; border-radius:6px; font-size:.78rem;
   font-weight:700; background:var(--panel-2); color:var(--good); border:1px solid var(--border); }
 .ach-reward.unlock { color:var(--accent-2); }
+
+/* ---- oriented per-world chain (direction matches entry from Grassland) ---- */
+.route-conn.v { width:2px; height:20px; background:var(--border); align-self:center; }
+.route-conn.h { width:26px; height:2px; background:var(--border); align-self:center; flex:0 0 26px; }
+.mchain.h { flex-direction:row; align-items:center; justify-content:flex-start; flex-wrap:nowrap;
+  overflow-x:auto; width:100%; padding-bottom:.6rem; }
+.mchain.h .mtier { flex-direction:column; width:auto; flex:0 0 auto; }
+.mchain.h .mnode { width:230px; flex:0 0 auto; max-width:230px; }

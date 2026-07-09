@@ -516,14 +516,25 @@
         thumb(m.image, m.name) +
         '<div class="mnode-body"><h4>' + esc(m.name) + '</h4><div class="meta">' + sub + '</div></div></a>';
     }
-    var html = tiers.map(function (row, i) {
-      if (!row || !row.length) return "";
-      return (i > 0 ? '<div class="route-down sm"></div>' : "") + '<div class="mtier">' + row.map(mnode).join("") + "</div>";
+    // Orient each world's chain to match how you ENTER it from Grassland (compass):
+    //   Desert is east  -> enter from the left, flow left->right (horizontal)
+    //   Underwater is north (docks) -> enter from the bottom, flow bottom->top (reversed vertical)
+    //   Forest/Volcanic are west -> enter from the right, flow right->left (reversed horizontal)
+    var DIR = { Grassland: "v", Forest: "hr", Volcanic: "hr", Desert: "h", Underwater: "vr" };
+    var dir = DIR[w] || "v";
+    var horizontal = (dir === "h" || dir === "hr");
+    var reverse = (dir === "vr" || dir === "hr");
+    var rows = [];
+    tiers.forEach(function (row) { if (row && row.length) rows.push(row); });
+    if (reverse) rows.reverse();
+    var conn = horizontal ? '<div class="route-conn h"></div>' : '<div class="route-conn v"></div>';
+    var html = rows.map(function (row, i) {
+      return (i > 0 ? conn : "") + '<div class="mtier">' + row.map(mnode).join("") + "</div>";
     }).join("");
     app.innerHTML =
       '<a class="back" href="maps.html">&#8592; World Map</a>' +
       '<div class="page-head"><h1>' + esc(w) + '</h1><p>' + s.maps.length + ' map' + (s.maps.length !== 1 ? 's' : '') + ' &#183; connected in travel order</p></div>' +
-      '<div class="mchain">' + html + '</div>';
+      '<div class="mchain' + (horizontal ? " h" : "") + '">' + html + '</div>';
   }
   function mapDetail(app, d, m) {
     if (!m) return notFound(app, "maps.html", "Maps");
@@ -608,7 +619,7 @@
         '<div class="ach-body"><h4>' + esc(a.name) + "</h4><p>" + esc(a.description) + "</p>" +
         '<div class="ach-foot">' + reward(a) + mode + "</div></div></div>";
     }
-    var modes = ["All", "Normal", "Hard"];
+    var modes = ["All", "Normal", "Hard", "Any"];
     app.innerHTML =
       '<div class="page-head"><h1>Achievements</h1><p>' + d.achievements.length + " goals &amp; rewards</p></div>" +
       '<div class="tabs" id="tabs">' + modes.map(function (m, i) { return '<button class="tab' + (i === 0 ? " active" : "") + '" data-m="' + m + '">' + m + "</button>"; }).join("") + "</div>" +
@@ -619,7 +630,7 @@
       var out = list.filter(function (a) {
         if (q && (a.name + " " + a.description).toLowerCase().indexOf(q) < 0) return false;
         if (mode === "All") return true;
-        return a.modeRequirement === mode || a.modeRequirement === "Any";
+        return a.modeRequirement === mode;
       });
       grid.innerHTML = out.length ? out.map(card).join("") : '<div class="empty" style="grid-column:1/-1">No matches.</div>';
       rc.textContent = out.length + " / " + list.length;
