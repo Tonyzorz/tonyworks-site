@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T04:00:33Z",
+  "generatedAt": "2026-07-09T04:17:57Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 295,
@@ -15734,6 +15734,7 @@
     {
       "id": "AncientBurialPassage_Map",
       "name": "Ancient Burial Passage",
+      "world": "Desert",
       "image": "map_AncientBurialPassage_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15744,6 +15745,7 @@
     {
       "id": "AshenForest_Map",
       "name": "Ashen Forest Pass",
+      "world": "Forest",
       "image": "map_AshenForest_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15754,6 +15756,7 @@
     {
       "id": "CoralMaze_Map",
       "name": "Coral Maze",
+      "world": "Underwater",
       "image": "map_CoralMaze_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15764,6 +15767,7 @@
     {
       "id": "DarkForest_Map",
       "name": "Dark Forest",
+      "world": "Forest",
       "image": "map_DarkForest_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15774,6 +15778,7 @@
     {
       "id": "DeepForest_Map",
       "name": "Deep Dark Forest",
+      "world": "Forest",
       "image": "map_DeepForest_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15784,6 +15789,7 @@
     {
       "id": "DeepTrench_Map",
       "name": "Deep Trench",
+      "world": "Underwater",
       "image": "map_DeepTrench_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15794,6 +15800,7 @@
     {
       "id": "DesertBossRoom_Map",
       "name": "Desert Boss Room",
+      "world": "Desert",
       "image": "map_DesertBossRoom_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15804,6 +15811,7 @@
     {
       "id": "DesertCrossroads_Map",
       "name": "Desert Crossroads",
+      "world": "Desert",
       "image": "map_DesertCrossroads_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15814,6 +15822,7 @@
     {
       "id": "DesertOutskirts_Map",
       "name": "Desert Outskirts",
+      "world": "Desert",
       "image": "map_DesertOutskirts_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15824,6 +15833,7 @@
     {
       "id": "ForestRoad_Map",
       "name": "Forest Road",
+      "world": "Forest",
       "image": "map_ForestRoad_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15834,6 +15844,7 @@
     {
       "id": "GiantClamBossRoom_Map",
       "name": "Giant Clam Boss Room",
+      "world": "Underwater",
       "image": "map_GiantClamBossRoom_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15844,6 +15855,7 @@
     {
       "id": "Grassland_Map",
       "name": "Grassland Plains",
+      "world": "Grassland",
       "image": "map_Grassland_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15854,6 +15866,7 @@
     {
       "id": "LavaCore_Map",
       "name": "Lava Core Boss Chamber",
+      "world": "Volcanic",
       "image": "map_LavaCore_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15864,6 +15877,7 @@
     {
       "id": "LavaRiverPass_Map",
       "name": "Lava River Pass",
+      "world": "Volcanic",
       "image": "map_LavaRiverPass_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15874,6 +15888,7 @@
     {
       "id": "MainUnderwaterBossRoom_Map",
       "name": "Main Underwater Boss Room",
+      "world": "Underwater",
       "image": "map_MainUnderwaterBossRoom_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15884,6 +15899,7 @@
     {
       "id": "SandstoneTunnel_Map",
       "name": "Sandstone Tunnel",
+      "world": "Desert",
       "image": "map_SandstoneTunnel_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15894,6 +15910,7 @@
     {
       "id": "ShallowCoralReef_Map",
       "name": "Shallow Coral Reef",
+      "world": "Underwater",
       "image": "map_ShallowCoralReef_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15904,6 +15921,7 @@
     {
       "id": "SunBuriedCave_Map",
       "name": "Sun-Buried Cave",
+      "world": "Desert",
       "image": "map_SunBuriedCave_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15914,6 +15932,7 @@
     {
       "id": "SunkenTempleGate_Map",
       "name": "Sunken Temple Gate",
+      "world": "Underwater",
       "image": "map_SunkenTempleGate_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15924,6 +15943,7 @@
     {
       "id": "VoidHunt_Map",
       "name": "Void Hunt",
+      "world": "Void Hunt",
       "image": "map_VoidHunt_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15934,6 +15954,7 @@
     {
       "id": "VolcanicApproach_Map",
       "name": "Volcanic Approach",
+      "world": "Volcanic",
       "image": "map_VolcanicApproach_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -15944,6 +15965,7 @@
     {
       "id": "WorldGate_Map",
       "name": "World Gate Entrance",
+      "world": "World Gate",
       "image": "map_WorldGate_Map.png",
       "gridWidth": 96,
       "gridHeight": 96,

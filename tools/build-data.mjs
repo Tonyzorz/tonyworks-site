@@ -53,7 +53,10 @@ function copySprite(guid, prefix, id) {
   const src = guidToPng.get(guid);
   if (!src || !fs.existsSync(src)) return "";
   const file = `${prefix}_${safe(id)}.png`;
-  fs.copyFileSync(src, path.join(IMG, file)); imagesWritten++;
+  const dest = path.join(IMG, file);
+  // Skip if already present so we don't clobber resize-images.ps1 output. Delete
+  // assets/img (or the file) to force a fresh copy, then re-run the resize script.
+  if (!fs.existsSync(dest)) { fs.copyFileSync(src, dest); imagesWritten++; }
   return file;
 }
 
@@ -200,8 +203,20 @@ function copyMapVisual(id) {
   const src = path.join(SPR, "Map", "visual", mapDisplayName(id) + " visual.png");
   if (!fs.existsSync(src)) return "";
   const file = "map_" + safe(id) + ".png";
-  fs.copyFileSync(src, path.join(IMG, file)); imagesWritten++;
+  const dest = path.join(IMG, file);
+  if (!fs.existsSync(dest)) { fs.copyFileSync(src, dest); imagesWritten++; }
   return file;
+}
+// Group each map asset into its player-facing world (for the route graph on the Maps page).
+function mapWorld(id) {
+  if (/^Grassland/.test(id))                      return "Grassland";
+  if (/WorldGate/.test(id))                       return "World Gate";
+  if (/Void/.test(id))                            return "Void Hunt";
+  if (/Forest/.test(id))                          return "Forest";
+  if (/Volcanic|Lava/.test(id))                   return "Volcanic";
+  if (/Desert|Sandstone|Burial|SunBuriedCave/.test(id)) return "Desert";
+  if (/Coral|Trench|Temple|Clam|Underwater/.test(id))   return "Underwater";
+  return "Other";
 }
 const maps = loadCategory("Maps").map((a) => {
   const t = a.text; const gw = num(t, "gridWidth"), gh = num(t, "gridHeight"); const hex = field(t, "cells");
@@ -209,7 +224,7 @@ const maps = loadCategory("Maps").map((a) => {
   if (hex && hex.length === gw * gh * 2) {
     for (let i = 0; i < gw * gh; i++) { const v = parseInt(hex.substr(i * 2, 2), 16); if (v === 0) blocked++; else walkable++; }
   }
-  return { id: a.id, name: mapDisplayName(a.id), image: copyMapVisual(a.id), gridWidth: gw, gridHeight: gh, dataVersion: num(t, "dataVersion"), walkableCells: walkable, blockedCells: blocked };
+  return { id: a.id, name: mapDisplayName(a.id), world: mapWorld(a.id), image: copyMapVisual(a.id), gridWidth: gw, gridHeight: gh, dataVersion: num(t, "dataVersion"), walkableCells: walkable, blockedCells: blocked };
 });
 
 // Attach spawn worlds + zone names to each enemy (LIVE zones only: GL/FR/VO/DS/UW normal

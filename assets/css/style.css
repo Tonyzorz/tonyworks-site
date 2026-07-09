@@ -209,7 +209,7 @@ table.data tr:hover td { background: var(--panel); }
 .prose { max-width: 760px; }
 .prose h2 { margin: 2rem 0 .6rem; padding-bottom: .3rem; border-bottom: 1px solid var(--border); }
 .prose h3 { margin: 1.4rem 0 .4rem; }
-.prose p, .prose li { color: #cfd3dc; }
+.prose p, .prose li { color: var(--text); }
 .prose ul, .prose ol { padding-left: 1.3rem; }
 .prose code { background: var(--panel-2); padding: .1rem .4rem; border-radius: 6px; font-size: .9em; }
 .callout {
@@ -314,3 +314,26 @@ table.data tr:hover td { background: var(--panel); }
   .nav-links { width: 100%; overflow-x: auto; }
   .app-list { grid-template-columns: 1fr; }
 }
+
+/* ---- World route graph (Maps page) ---- */
+.route { display:flex; flex-direction:column; align-items:center; margin:1.25rem 0; }
+.route-tier { display:flex; justify-content:center; }
+.route-branches { display:flex; justify-content:center; gap:1.25rem; flex-wrap:wrap; align-items:flex-start; }
+.branch { display:flex; flex-direction:column; align-items:center; }
+.branch-label { font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--faint); margin-bottom:.4rem; }
+.route-down { width:2px; height:26px; background:var(--border); }
+.route-down.sm { height:20px; }
+.route-down.dashed { background:repeating-linear-gradient(var(--border) 0 4px, transparent 4px 8px); }
+.route-gate { margin-top:26px; }
+.route-note { text-align:center; color:var(--faint); font-size:.85rem; margin-top:1rem; }
+.wnode { display:flex; flex-direction:column; align-items:center; gap:.15rem; text-decoration:none;
+  width:152px; padding:.9rem .75rem; border-radius:var(--radius); background:var(--panel);
+  border:1px solid var(--border); border-top:3px solid var(--wc,var(--accent)); color:var(--text);
+  box-shadow:var(--shadow); transition:transform .12s ease, border-color .12s ease; }
+.wnode:hover { transform:translateY(-3px); border-color:var(--wc,var(--accent)); }
+.wnode .wicon { font-size:1.9rem; line-height:1; }
+.wnode .wname { font-weight:700; font-size:1.02rem; }
+.wnode .wmeta { font-size:.78rem; color:var(--muted); text-align:center; }
+.wnode.locked { opacity:.55; cursor:default; box-shadow:none; }
+.wnode.secret { border-style:dashed; background:var(--panel-2); }
+@media (max-width:640px){ .route-branches{ gap:.75rem; } .wnode{ width:44vw; max-width:170px; } }

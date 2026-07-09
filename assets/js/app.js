@@ -179,9 +179,16 @@
   PAGES.monsters = function (app, d) {
     var id = param("id");
     if (id) return monsterDetail(app, d, d._enemyById[id]);
-    var list = d.enemies.slice().sort(function (a, b) { return a.minLevel - b.minLevel; });
+    // Only real, in-game monsters: those that spawn in a live zone (have a world) plus hard
+    // mirrors (_H). Drops the legacy/duplicate & template orphan assets. Then dedupe by name.
+    var seen = {};
+    var list = d.enemies.filter(function (e) {
+      return (e.worlds && e.worlds.length) || /_H$/.test(e.id);
+    }).sort(function (a, b) {
+      return (a.minLevel - b.minLevel) || String(a.name).localeCompare(String(b.name));
+    }).filter(function (e) { var k = e.name; if (seen[k]) return false; seen[k] = 1; return true; });
     listView(app, d, {
-      items: list, page: "monsters.html", title: "Monsters", subtitle: d.enemies.length + " enemies (Normal + Hard)",
+      items: list, page: "monsters.html", title: "Monsters", subtitle: list.length + " monsters (Normal + Hard)",
       tabs: [
         { label: "Normal", test: function (e) { return !/_H$/.test(e.id); } },
         { label: "Hard Mode", test: function (e) { return /_H$/.test(e.id); } }
@@ -279,13 +286,23 @@
     var id = param("id");
     if (id) return itemDetail(app, d, d._itemById[id]);
     var rarities = ["Common", "Uncommon", "Rare", "Epic", "Legendary"];
+    var rarRank = {}; rarities.forEach(function (r, i) { rarRank[r] = i; });
     var types = ["Weapon", "Armor", "Helmet", "Shoes", "Accessory"];
+    // Lowest -> highest tier: by rarity, then buy price, then name.
+    var sorted = d.items.slice().sort(function (a, b) {
+      var ra = rarRank[a.rarity] == null ? 9 : rarRank[a.rarity];
+      var rb = rarRank[b.rarity] == null ? 9 : rarRank[b.rarity];
+      if (ra !== rb) return ra - rb;
+      var pa = a.buyPrice || 0, pb = b.buyPrice || 0;
+      if (pa !== pb) return pa - pb;
+      return String(a.name).localeCompare(String(b.name));
+    });
     listView(app, d, {
-      items: d.items, page: "items.html", title: "Items", subtitle: d.items.length + " items",
+      items: sorted, page: "items.html", title: "Items", subtitle: d.items.length + " items across 5 categories",
+      tabs: types.map(function (tp) { return { label: tp, test: function (i) { return i.type === tp; } }; }),
       search: function (i) { return i.name + " " + i.id + " " + (i.setName || ""); },
       filters: [
-        { key: "rarity", label: "Rarity", values: rarities, get: function (i) { return i.rarity; } },
-        { key: "type", label: "Type", values: types, get: function (i) { return i.type; } }
+        { key: "rarity", label: "Rarity", values: rarities, get: function (i) { return i.rarity; } }
       ],
       card: function (i) {
         var eff = (i.effects || []).slice(0, 2).join(" &#183; ");
@@ -329,25 +346,78 @@
       "</div></div>";
   }
 
-  /* ---- Maps ---- */
+  /* ---- Maps: whole-world route graph -> per-world -> single map ---- */
+  var WORLD_META = {
+    "Grassland":  { icon: "&#127793;", color: "#5cb85c" },
+    "Forest":     { icon: "&#127794;", color: "#3f9d54" },
+    "Volcanic":   { icon: "&#127755;", color: "#e0603a" },
+    "Desert":     { icon: "&#127964;", color: "#d9a441" },
+    "Underwater": { icon: "&#127754;", color: "#3aa0e0" },
+    "Void Hunt":  { icon: "&#128371;",  color: "#8a5cf0" },
+    "World Gate": { icon: "&#128682;", color: "#8a8f98" }
+  };
+  function worldStats(d, w) {
+    var ms = d.maps.filter(function (m) { return m.world === w; });
+    var ids = ms.map(function (m) { return m.id; });
+    var bc = d.bosses.filter(function (b) { return ids.indexOf(b.mapId) >= 0; }).length;
+    return { maps: ms, bosses: bc };
+  }
+  function wnode(d, w, opts) {
+    opts = opts || {};
+    var meta = WORLD_META[w] || { icon: "&#128506;", color: "var(--accent)" };
+    var s = worldStats(d, w);
+    var sub = opts.locked ? "Coming soon"
+      : (s.maps.length + " map" + (s.maps.length !== 1 ? "s" : "") +
+         (s.bosses ? " &#183; " + s.bosses + " boss" + (s.bosses > 1 ? "es" : "") : ""));
+    var inner = '<span class="wicon">' + meta.icon + "</span>" +
+      '<span class="wname">' + esc(w) + "</span><span class=\"wmeta\">" + sub + "</span>";
+    if (opts.locked) return '<div class="wnode locked" style="--wc:' + meta.color + '">' + inner + "</div>";
+    var cls = "wnode" + (opts.secret ? " secret" : "");
+    return '<a class="' + cls + '" style="--wc:' + meta.color + '" href="maps.html?world=' + encodeURIComponent(w) + '">' + inner + "</a>";
+  }
   PAGES.maps = function (app, d) {
-    var id = param("id");
-    if (id) return mapDetail(app, d, d._mapById[id]);
-    listView(app, d, {
-      items: d.maps, page: "maps.html", title: "Maps", subtitle: d.maps.length + " maps",
-      search: function (m) { return m.name + " " + m.id; },
-      card: function (m) {
+    var id = param("id"); if (id) return mapDetail(app, d, d._mapById[id]);
+    var world = param("world"); if (world) return worldView(app, d, world);
+    app.innerHTML =
+      '<div class="page-head"><h1>World Map</h1><p>Every region, connected. Tap a world to see its maps &amp; bosses.</p></div>' +
+      '<div class="route">' +
+        '<div class="route-tier">' + wnode(d, "Grassland") + "</div>" +
+        '<div class="route-down"></div>' +
+        '<div class="route-branches">' +
+          '<div class="branch"><div class="branch-label">West road</div>' + wnode(d, "Forest") +
+            '<div class="route-down sm"></div>' + wnode(d, "Volcanic") +
+            '<div class="route-down sm dashed"></div>' + wnode(d, "Void Hunt", { secret: true }) + "</div>" +
+          '<div class="branch"><div class="branch-label">East road</div>' + wnode(d, "Desert") + "</div>" +
+          '<div class="branch"><div class="branch-label">Docks</div>' + wnode(d, "Underwater") + "</div>" +
+        "</div>" +
+        '<div class="route-gate">' + wnode(d, "World Gate", { locked: true }) + "</div>" +
+      "</div>" +
+      '<p class="route-note">All regions loop back to Grassland. Void Hunt is a secret arena reached from the Volcanic region.</p>';
+  };
+  function worldView(app, d, w) {
+    var s = worldStats(d, w);
+    if (!s.maps.length) return notFound(app, "maps.html", "Worlds");
+    var ids = s.maps.map(function (m) { return m.id; });
+    var bosses = d.bosses.filter(function (b) { return ids.indexOf(b.mapId) >= 0; })
+      .sort(function (a, b) { return a.level - b.level; });
+    app.innerHTML =
+      '<a class="back" href="maps.html">&#8592; World Map</a>' +
+      '<div class="page-head"><h1>' + esc(w) + "</h1><p>" + s.maps.length + " map" + (s.maps.length !== 1 ? "s" : "") + "</p></div>" +
+      '<div class="grid">' + s.maps.map(function (m) {
         var bc = d.bosses.filter(function (b) { return b.mapId === m.id; }).length;
         return cardShell("maps.html", m.id, m.image, m.name,
           '<span class="meta">' + (bc ? bc + " boss" + (bc > 1 ? "es" : "") : "Map") + "</span>");
-      }
-    });
-  };
+      }).join("") + "</div>" +
+      (bosses.length ? '<div class="section-title">Bosses in ' + esc(w) + '</div><div class="effect-list">' +
+        bosses.map(function (b) { return '<span class="fx">' + link("bosses.html", b.id, b.name) + "</span>"; }).join("") + "</div>" : "");
+  }
   function mapDetail(app, d, m) {
     if (!m) return notFound(app, "maps.html", "Maps");
     var bosses = d.bosses.filter(function (b) { return b.mapId === m.id; });
-    app.innerHTML = backLink("maps.html", "Maps") +
+    app.innerHTML =
+      '<a class="back" href="maps.html' + (m.world ? "?world=" + encodeURIComponent(m.world) : "") + '">&#8592; ' + esc(m.world || "Maps") + "</a>" +
       "<h1>" + esc(m.name) + "</h1>" +
+      (m.world ? '<div class="tags"><span class="pill">' + esc(m.world) + "</span></div>" : "") +
       '<div class="map-art">' +
         (m.image ? '<img src="' + IMG_BASE + esc(m.image) + '" alt="' + esc(m.name) + '">' : '<div class="empty">No map art available.</div>') +
       "</div>" +
