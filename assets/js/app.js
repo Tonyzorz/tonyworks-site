@@ -391,9 +391,10 @@
       }
     });
   };
-  // Permanent collection bonus: owning copies grants a permanent, every-run share of the item's flat
-  // stats — +5% at 1 copy scaling to +100% at 20 (PermanentProgressManager.GetCumulativeItemPermRate).
-  function permRate(c) { if (c <= 0) return 0; if (c === 1) return 0.05; return 0.05 + 0.95 * ((Math.min(c, 20) - 1) / 19); }
+  // Permanent collection bonus by copies owned (1..20), with milestone jumps at 10 (50%) and 20
+  // (100%) — mirrors PermanentProgressManager.ItemPermRateByCopy.
+  var PERM_RATES = [2, 5, 8, 11, 14, 18, 22, 26, 30, 50, 53, 56, 59, 62, 65, 68, 72, 76, 80, 100];
+  function permRate(c) { if (c <= 0) return 0; return PERM_RATES[Math.min(c, 20) - 1] / 100; }
   function itemPermTable(i) {
     var flats = [["HP", i.bonusHP], ["ATK", i.bonusATK], ["DEF", i.bonusDEF], ["AGI", i.bonusAGI], ["LUC", i.bonusLUC]]
       .filter(function (x) { return x[1] > 0; });
