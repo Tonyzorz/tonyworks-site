@@ -391,22 +391,25 @@
       }
     });
   };
-  // Permanent collection bonus: owning copies grants a permanent, every-run % of the item's flat
-  // stats — +1% at 1 copy scaling to +3% at 20 (PermanentProgressManager.GetCumulativeItemPermRate).
-  function permRate(c) { if (c <= 0) return 0; if (c === 1) return 0.01; return 0.01 + 0.02 * ((Math.min(c, 20) - 1) / 19); }
+  // Permanent collection bonus: owning copies grants a permanent, every-run share of the item's flat
+  // stats — +5% at 1 copy scaling to +100% at 20 (PermanentProgressManager.GetCumulativeItemPermRate).
+  function permRate(c) { if (c <= 0) return 0; if (c === 1) return 0.05; return 0.05 + 0.95 * ((Math.min(c, 20) - 1) / 19); }
   function itemPermTable(i) {
     var flats = [["HP", i.bonusHP], ["ATK", i.bonusATK], ["DEF", i.bonusDEF], ["AGI", i.bonusAGI], ["LUC", i.bonusLUC]]
       .filter(function (x) { return x[1] > 0; });
     if (!flats.length) return "";
     var head = "<tr><th>Copies</th><th>Permanent</th>" + flats.map(function (f) { return "<th>" + f[0] + "</th>"; }).join("") + "</tr>";
-    var rows = [1, 5, 10, 20].map(function (c) {
+    var rows = "";
+    for (var c = 1; c <= 20; c++) {
       var r = permRate(c);
-      return "<tr><td>" + c + "</td><td>+" + (r * 100).toFixed(2) + "%</td>" +
+      rows += "<tr><td>" + c + "</td><td>+" + Math.round(r * 100) + "%</td>" +
         flats.map(function (f) { return "<td>+" + fmt(Math.round(f[1] * r)) + "</td>"; }).join("") + "</tr>";
-    }).join("");
+    }
+    var table = '<div class="perm-body" style="overflow-x:auto"><table class="data">' + head + rows + "</table></div>";
+    // Full table on desktop; a tap-to-open dropdown on mobile (CSS forces it open on wide screens).
     return '<div class="section-title">Permanent Collection Bonus</div>' +
-      '<p style="color:var(--muted);font-size:.85rem;margin:.2rem 0 .5rem">Owning copies grants a permanent, every-run bonus of this item’s stats &#8212; +1% at 1 copy, scaling to +3% at 20.</p>' +
-      '<div style="overflow-x:auto"><table class="data">' + head + rows + "</table></div>";
+      '<p style="color:var(--muted);font-size:.85rem;margin:.2rem 0 .5rem">Owning copies grants a permanent, every-run bonus of this item’s stats — +5% at 1 copy, scaling to +100% at 20 owned.</p>' +
+      '<details class="perm-details"><summary>Show all 20 levels</summary>' + table + '</details>';
   }
   function itemDetail(app, d, i) {
     if (!i) return notFound(app, "items.html", "Items");
