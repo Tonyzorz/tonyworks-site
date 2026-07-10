@@ -391,6 +391,23 @@
       }
     });
   };
+  // Permanent collection bonus: owning copies grants a permanent, every-run % of the item's flat
+  // stats — +1% at 1 copy scaling to +3% at 20 (PermanentProgressManager.GetCumulativeItemPermRate).
+  function permRate(c) { if (c <= 0) return 0; if (c === 1) return 0.01; return 0.01 + 0.02 * ((Math.min(c, 20) - 1) / 19); }
+  function itemPermTable(i) {
+    var flats = [["HP", i.bonusHP], ["ATK", i.bonusATK], ["DEF", i.bonusDEF], ["AGI", i.bonusAGI], ["LUC", i.bonusLUC]]
+      .filter(function (x) { return x[1] > 0; });
+    if (!flats.length) return "";
+    var head = "<tr><th>Copies</th><th>Permanent</th>" + flats.map(function (f) { return "<th>" + f[0] + "</th>"; }).join("") + "</tr>";
+    var rows = [1, 5, 10, 20].map(function (c) {
+      var r = permRate(c);
+      return "<tr><td>" + c + "</td><td>+" + (r * 100).toFixed(2) + "%</td>" +
+        flats.map(function (f) { return "<td>+" + fmt(Math.round(f[1] * r)) + "</td>"; }).join("") + "</tr>";
+    }).join("");
+    return '<div class="section-title">Permanent Collection Bonus</div>' +
+      '<p style="color:var(--muted);font-size:.85rem;margin:.2rem 0 .5rem">Owning copies grants a permanent, every-run bonus of this item’s stats &#8212; +1% at 1 copy, scaling to +3% at 20.</p>' +
+      '<div style="overflow-x:auto"><table class="data">' + head + rows + "</table></div>";
+  }
   function itemDetail(app, d, i) {
     if (!i) return notFound(app, "items.html", "Items");
     var effects = (i.effects || []).map(function (f) { return '<span class="fx">' + esc(f) + "</span>"; }).join("");
@@ -421,9 +438,14 @@
         sb("Max Copies", i.type === "Accessory" ? 3 : 20) +
         (i.setName ? sb("Set", esc(i.setName)) : "") +
       "</div>" +
+      itemPermTable(i) +
       setItems +
       (droppedBy.length ? '<div class="section-title">Dropped by</div><div class="effect-list">' +
-        droppedBy.map(function (e) { return '<span class="fx">' + link("monsters.html", e.id, e.name) + "</span>"; }).join("") + "</div>" : "") +
+        droppedBy.map(function (e) {
+          var dr = (e.drops || []).filter(function (x) { return x.itemId === i.id; })[0];
+          var ch = dr ? " (" + dr.chance + "%)" : "";
+          return '<span class="fx">' + link("monsters.html", e.id, e.name) + esc(ch) + "</span>";
+        }).join("") + "</div>" : "") +
       "</div></div>";
   }
 
