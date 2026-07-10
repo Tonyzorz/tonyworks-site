@@ -436,9 +436,9 @@ table.data tr:hover td { background: var(--panel); }
 .perm-details > summary::-webkit-details-marker { display:none; }
 .perm-details > summary::before { content:"\25BC"; font-size:.7em; margin-right:.4em; }
 .perm-details[open] > summary::before { content:"\25B2"; }
+/* Desktop: the table renders with the real `open` attribute (JS), so just hide the toggle. */
 @media (min-width:700px){
   .perm-details > summary { display:none; }
-  .perm-details > .perm-body { display:block !important; }
 }
 
 /* ---- item sets ---- */

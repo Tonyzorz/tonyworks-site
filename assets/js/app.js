@@ -407,10 +407,11 @@
         flats.map(function (f) { return "<td>+" + fmt(Math.round(f[1] * r)) + "</td>"; }).join("") + "</tr>";
     }
     var table = '<div class="perm-body" style="overflow-x:auto"><table class="data">' + head + rows + "</table></div>";
-    // Full table on desktop; a tap-to-open dropdown on mobile (CSS forces it open on wide screens).
+    // Desktop: rendered open (summary hidden via CSS) = full table. Mobile: collapsed dropdown.
+    var wide = typeof window !== "undefined" && window.innerWidth >= 700;
     return '<div class="section-title">Permanent Collection Bonus</div>' +
       '<p style="color:var(--muted);font-size:.85rem;margin:.2rem 0 .5rem">Owning copies grants a permanent, every-run bonus of this item’s stats — +5% at 1 copy, scaling to +100% at 20 owned.</p>' +
-      '<details class="perm-details"><summary>Show all 20 levels</summary>' + table + '</details>';
+      '<details class="perm-details"' + (wide ? " open" : "") + '><summary>Show all 20 levels</summary>' + table + '</details>';
   }
   function itemDetail(app, d, i) {
     if (!i) return notFound(app, "items.html", "Items");
