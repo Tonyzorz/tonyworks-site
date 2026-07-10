@@ -15,7 +15,7 @@
   <meta name="twitter:image" content="https://tonyworks.co.kr/apps/infinite-loot-loop/assets/img/app_icon.png">
   <script>try{var s=localStorage.getItem('tw-theme');var t=s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <title>Guide &#8212; Tony Works</title>
-  <link rel="stylesheet" href="../../assets/css/style.css?v=15">
+  <link rel="stylesheet" href="../../assets/css/style.css?v=16">
 </head>
 <body data-page="guide">
   <header class="site-header" id="site-header"></header>
@@ -41,7 +41,7 @@
         <li>Wins give <strong>gold</strong>, <strong>EXP</strong>, and the occasional <strong>item</strong> drop.</li>
         <li>Spend gold in the <strong>shop</strong> on gear; equip it to hit harder and survive longer.</li>
         <li>Beat a map's <strong>boss</strong> to refund Battle Points and open the next world.</li>
-        <li>At 0 Battle Points it's game over &#8212; but your <strong>level, gear, and gold carry over</strong> to the next game.</li>
+        <li>At 0 Battle Points it's game over &#8212; your <strong>level, gold, and allocated stats reset</strong>, but your <strong>gear, unlocked slots, and collection bonuses carry over</strong> to power up the next game.</li>
       </ol>
 
       <h2 id="loop">The Battle Point (BP) loop</h2>
@@ -89,7 +89,7 @@
       <ul>
         <li>EXP to reach the next level = <code>currentLevel &times; 150</code>.</li>
         <li>Each level grants <strong>4 stat points</strong> to allocate however you like.</li>
-        <li>Level, EXP, and stat points <strong>persist across runs</strong>; only a full reset wipes them.</li>
+        <li>Level, EXP, and stat points <strong>persist through a game</strong> (deaths don't reset them) but <strong>reset at game over</strong> (0 BP). Your <strong>gear, expanded slots, and permanent collection bonuses</strong> carry across games &#8212; that's your long-term power.</li>
       </ul>
       <div class="callout"><strong>Allocation tip:</strong> lean HP + ATK to clear fights, keep enough AGI/LUC that
         crit / combo / drops stay relevant, and add DEF to absorb boss spikes. Spread deliberately &#8212; there's no respec.</div>
@@ -178,6 +178,6 @@
     </article>
   </main>
   <footer class="footer" id="site-footer"></footer>
-  <script src="../../assets/js/app.js?v=15"></script>
+  <script src="../../assets/js/app.js?v=16"></script>
 </body>
 </html>
