@@ -395,6 +395,9 @@
   // (100%) — mirrors PermanentProgressManager.ItemPermRateByCopy.
   var PERM_RATES = [2, 5, 8, 11, 14, 18, 22, 26, 30, 50, 53, 56, 59, 62, 65, 68, 72, 76, 80, 100];
   function permRate(c) { if (c <= 0) return 0; return PERM_RATES[Math.min(c, 20) - 1] / 100; }
+  // Copy-count tier colors (mirror the in-game item border): green 1-4, blue 5-9, red 10-14,
+  // purple 15-19, rainbow at 20.
+  function permBand(c) { if (c >= 20) return "rainbow"; if (c >= 15) return "purple"; if (c >= 10) return "red"; if (c >= 5) return "blue"; return "green"; }
   function itemPermTable(i) {
     var flats = [["HP", i.bonusHP], ["ATK", i.bonusATK], ["DEF", i.bonusDEF], ["AGI", i.bonusAGI], ["LUC", i.bonusLUC]]
       .filter(function (x) { return x[1] > 0; });
@@ -403,7 +406,7 @@
     var rows = "";
     for (var c = 1; c <= 20; c++) {
       var r = permRate(c);
-      rows += "<tr><td>" + c + "</td><td>+" + Math.round(r * 100) + "%</td>" +
+      rows += '<tr class="pb-' + permBand(c) + '"><td>' + c + "</td><td>+" + Math.round(r * 100) + "%</td>" +
         flats.map(function (f) { return "<td>+" + fmt(Math.round(f[1] * r)) + "</td>"; }).join("") + "</tr>";
     }
     var table = '<div class="perm-body" style="overflow-x:auto"><table class="data">' + head + rows + "</table></div>";

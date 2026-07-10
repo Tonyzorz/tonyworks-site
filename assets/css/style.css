@@ -440,6 +440,14 @@ table.data tr:hover td { background: var(--panel); }
 @media (min-width:700px){
   .perm-details > summary { display:none; }
 }
+/* Copy-count tier colors (match the in-game item border). */
+.perm-details tr.pb-green  td { color:#2ea043; font-weight:700; }
+.perm-details tr.pb-blue   td { color:#4493f8; font-weight:700; }
+.perm-details tr.pb-red    td { color:#e5534b; font-weight:700; }
+.perm-details tr.pb-purple td { color:#a371f7; font-weight:700; }
+.perm-details tr.pb-rainbow td { font-weight:800;
+  background:linear-gradient(90deg,#e5534b,#e3a008,#2ea043,#4493f8,#a371f7);
+  -webkit-background-clip:text; background-clip:text; color:transparent; }
 
 /* ---- item sets ---- */
 .set-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem; }
