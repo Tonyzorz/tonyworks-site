@@ -401,10 +401,13 @@
   function itemPermTable(i) {
     var flats = [["HP", i.bonusHP], ["ATK", i.bonusATK], ["DEF", i.bonusDEF], ["AGI", i.bonusAGI], ["LUC", i.bonusLUC]]
       .filter(function (x) { return x[1] > 0; });
-    if (!flats.length) return "";
+    if (!flats.length)
+      return '<div class="section-title">Permanent Collection Bonus</div>' +
+        '<p style="color:var(--muted);font-size:.85rem">Percentage / utility effects only (see Effects) — no flat stats to bank, so this item earns no permanent collection bonus.</p>';
+    var maxC = i.type === "Accessory" ? 3 : 20;   // accessories cap at 3 copies, everything else at 20
     var head = "<tr><th>Copies</th><th>Permanent</th>" + flats.map(function (f) { return "<th>" + f[0] + "</th>"; }).join("") + "</tr>";
     var rows = "";
-    for (var c = 1; c <= 20; c++) {
+    for (var c = 1; c <= maxC; c++) {
       var r = permRate(c);
       rows += '<tr class="pb-' + permBand(c) + '"><td>' + c + "</td><td>+" + Math.round(r * 100) + "%</td>" +
         flats.map(function (f) { return "<td>+" + fmt(Math.round(f[1] * r)) + "</td>"; }).join("") + "</tr>";
@@ -412,9 +415,10 @@
     var table = '<div class="perm-body" style="overflow-x:auto"><table class="data">' + head + rows + "</table></div>";
     // Desktop: rendered open (summary hidden via CSS) = full table. Mobile: collapsed dropdown.
     var wide = typeof window !== "undefined" && window.innerWidth >= 700;
+    var cap = "+" + Math.round(permRate(maxC) * 100) + "% at " + maxC + " owned";
     return '<div class="section-title">Permanent Collection Bonus</div>' +
-      '<p style="color:var(--muted);font-size:.85rem;margin:.2rem 0 .5rem">Owning copies grants a permanent, every-run bonus of this item’s stats — +5% at 1 copy, scaling to +100% at 20 owned.</p>' +
-      '<details class="perm-details"' + (wide ? " open" : "") + '><summary>Show all 20 levels</summary>' + table + '</details>';
+      '<p style="color:var(--muted);font-size:.85rem;margin:.2rem 0 .5rem">Owning copies grants a permanent, every-run bonus of this item’s stats — +2% at 1 copy, up to ' + cap + '.</p>' +
+      '<details class="perm-details"' + (wide ? " open" : "") + '><summary>Show all ' + maxC + ' levels</summary>' + table + '</details>';
   }
   function itemDetail(app, d, i) {
     if (!i) return notFound(app, "items.html", "Items");

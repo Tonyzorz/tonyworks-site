@@ -445,7 +445,8 @@ table.data tr:hover td { background: var(--panel); }
 .perm-details tr.pb-blue   td { color:#4493f8; font-weight:700; }
 .perm-details tr.pb-red    td { color:#e5534b; font-weight:700; }
 .perm-details tr.pb-purple td { color:#a371f7; font-weight:700; }
-.perm-details tr.pb-rainbow td { font-weight:800;
+.perm-details tr.pb-rainbow td,
+.perm-details tr.pb-rainbow:hover td { font-weight:800;
   background:linear-gradient(90deg,#e5534b,#e3a008,#2ea043,#4493f8,#a371f7);
   -webkit-background-clip:text; background-clip:text; color:transparent; }
 
