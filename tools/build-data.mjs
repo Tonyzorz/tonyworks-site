@@ -256,25 +256,15 @@ function zoneWorld(zid) {
 for (const z of zones) {
   const w = zoneWorld(z.id);
   if (!w) continue;
-  const isNormalZone = /_Zone\d+$/.test(z.id); // vs hard _HM_Z# (hard's 5x is a separate mode-wide mult)
   for (const en of (z.enemies || [])) {
     const e = enemyById.get(en.enemyId);
     if (!e) continue;
     if (!e.worlds.includes(w)) e.worlds.push(w);
     if (z.name && !e.zoneNames.includes(z.name)) e.zoneNames.push(z.name);
-    // Record the enemy's normal-zone gold multiplier so the displayed gold is what the player
-    // actually earns (base gold x the zone's goldMultiplier), not the raw per-enemy base.
-    if (isNormalZone && z.goldMultiplier > 0 && e._gm == null) e._gm = z.goldMultiplier;
   }
 }
-// Bake the zone gold multiplier into the shown gold per kill.
-for (const e of enemies) {
-  if (e._gm && e._gm !== 1) {
-    e.goldMin = Math.round(e.goldMin * e._gm);
-    e.goldMax = Math.round(e.goldMax * e._gm);
-  }
-  delete e._gm;
-}
+// Gold shown = per-enemy base gold (the game no longer applies the per-zone gold multiplier, so
+// base gold IS the gold per kill — ascends cleanly with level like EXP).
 
 enemies.sort((a, b) => a.minLevel - b.minLevel);
 bosses.sort((a, b) => a.level - b.level);
