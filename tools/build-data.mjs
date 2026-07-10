@@ -266,12 +266,18 @@ for (const z of zones) {
 // Gold shown = per-enemy base gold (the game no longer applies the per-zone gold multiplier, so
 // base gold IS the gold per kill — ascends cleanly with level like EXP).
 
-enemies.sort((a, b) => a.minLevel - b.minLevel);
+// Keep only content players can actually reach: enemies referenced by a LIVE route zone (so orphan
+// duplicate clones like ShadowRat_ForestZone and legacy non-map zone groups are dropped) and the
+// live zones themselves. `worlds` is populated above only from live zones, so empty = unreachable.
+const liveEnemies = enemies.filter((e) => e.worlds.length > 0);
+const liveZones = zones.filter((z) => zoneWorld(z.id));
+
+liveEnemies.sort((a, b) => a.minLevel - b.minLevel);
 bosses.sort((a, b) => a.level - b.level);
 const root = {
   generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop",
-  counts: { enemies: enemies.length, bosses: bosses.length, items: items.length, maps: maps.length, zones: zones.length, characters: characters.length, achievements: achievements.length },
-  enemies, bosses, items, maps, zones, characters, achievements
+  counts: { enemies: liveEnemies.length, bosses: bosses.length, items: items.length, maps: maps.length, zones: liveZones.length, characters: characters.length, achievements: achievements.length },
+  enemies: liveEnemies, bosses, items, maps, zones: liveZones, characters, achievements
 };
 fs.writeFileSync(path.join(DATA, "data.json"), JSON.stringify(root, null, 2));
 console.log("Wrote data.json", root.counts, "images:", imagesWritten);
