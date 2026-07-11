@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T03:50:45Z",
+  "generatedAt": "2026-07-11T04:09:29Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 212,
@@ -1012,6 +1012,36 @@
       ]
     },
     {
+      "id": "DarkWolf",
+      "name": "Flame Hound",
+      "image": "enemy_DarkWolf.png",
+      "isBoss": false,
+      "minLevel": 33,
+      "maxLevel": 38,
+      "hpMin": 3077,
+      "hpMax": 4616,
+      "atkMin": 93,
+      "atkMax": 130,
+      "expMin": 307,
+      "expMax": 921,
+      "goldMin": 115,
+      "goldMax": 403,
+      "permanentBPReward": 0,
+      "drops": [
+        {
+          "itemId": "DesertWrap",
+          "itemName": "Desert Wrap",
+          "chance": 3
+        }
+      ],
+      "worlds": [
+        "Forest"
+      ],
+      "zoneNames": [
+        "Dark Canopy"
+      ]
+    },
+    {
       "id": "MoonWisp",
       "name": "Moon Wisp",
       "image": "enemy_MoonWisp.png",
@@ -1072,50 +1102,20 @@
       ]
     },
     {
-      "id": "DarkWolf",
-      "name": "Flame Hound",
-      "image": "enemy_DarkWolf.png",
-      "isBoss": false,
-      "minLevel": 40,
-      "maxLevel": 50,
-      "hpMin": 2667,
-      "hpMax": 5334,
-      "atkMin": 82,
-      "atkMax": 148,
-      "expMin": 281,
-      "expMax": 1405,
-      "goldMin": 103,
-      "goldMax": 618,
-      "permanentBPReward": 0,
-      "drops": [
-        {
-          "itemId": "DesertWrap",
-          "itemName": "Desert Wrap",
-          "chance": 3
-        }
-      ],
-      "worlds": [
-        "Forest"
-      ],
-      "zoneNames": [
-        "Dark Canopy"
-      ]
-    },
-    {
       "id": "CorruptedKnight",
       "name": "Ghost Knight",
       "image": "enemy_CorruptedKnight.png",
       "isBoss": false,
-      "minLevel": 48,
-      "maxLevel": 58,
-      "hpMin": 3600,
-      "hpMax": 7200,
-      "atkMin": 104,
-      "atkMax": 187,
-      "expMin": 331,
-      "expMax": 1655,
-      "goldMin": 121,
-      "goldMax": 726,
+      "minLevel": 38,
+      "maxLevel": 46,
+      "hpMin": 3857,
+      "hpMax": 6943,
+      "atkMin": 110,
+      "atkMax": 180,
+      "expMin": 303,
+      "expMax": 1273,
+      "goldMin": 112,
+      "goldMax": 560,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1136,16 +1136,16 @@
       "name": "Sea Serpent",
       "image": "enemy_AbyssalSerpent.png",
       "isBoss": false,
-      "minLevel": 54,
-      "maxLevel": 60,
-      "hpMin": 5231,
-      "hpMax": 8370,
-      "atkMin": 141,
-      "atkMax": 209,
-      "expMin": 485,
-      "expMax": 1649,
-      "goldMin": 182,
-      "goldMax": 728,
+      "minLevel": 46,
+      "maxLevel": 54,
+      "hpMin": 4857,
+      "hpMax": 8743,
+      "atkMin": 133,
+      "atkMax": 218,
+      "expMin": 360,
+      "expMax": 1512,
+      "goldMin": 133,
+      "goldMax": 665,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8473,15 +8473,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1937,
+      "bonusATK": 1946,
       "bonusDEF": 0,
-      "bonusAGI": 360,
+      "bonusAGI": 362,
       "bonusLUC": 0,
-      "buyPrice": 110000,
+      "buyPrice": 174442,
       "maxCopies": -1,
       "effects": [
-        "ATK +1937",
-        "AGI +360"
+        "ATK +1946",
+        "AGI +362"
       ]
     },
     {
@@ -8992,13 +8992,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 725,
+      "bonusDEF": 721,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 206933,
+      "buyPrice": 161818,
       "maxCopies": -1,
       "effects": [
-        "DEF +725"
+        "DEF +721"
       ]
     },
     {
@@ -9085,13 +9085,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 333,
+      "bonusDEF": 321,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 109753,
+      "buyPrice": 52481,
       "maxCopies": -1,
       "effects": [
-        "DEF +333"
+        "DEF +321"
       ]
     },
     {
@@ -9853,14 +9853,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 713,
-      "bonusAGI": 155,
+      "bonusDEF": 710,
+      "bonusAGI": 154,
       "bonusLUC": 0,
-      "buyPrice": 98950,
+      "buyPrice": 77377,
       "maxCopies": -1,
       "effects": [
-        "DEF +713",
-        "AGI +155"
+        "DEF +710",
+        "AGI +154"
       ]
     },
     {
@@ -11584,16 +11584,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4781,
+      "bonusHP": 4756,
       "bonusATK": 0,
-      "bonusDEF": 717,
+      "bonusDEF": 713,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 126538,
+      "buyPrice": 98950,
       "maxCopies": -1,
       "effects": [
-        "HP +4781",
-        "DEF +717"
+        "HP +4756",
+        "DEF +713"
       ]
     },
     {
@@ -11919,16 +11919,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4856,
+      "bonusHP": 4832,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 158,
-      "buyPrice": 264627,
+      "bonusLUC": 157,
+      "buyPrice": 206933,
       "maxCopies": -1,
       "effects": [
-        "HP +4856",
-        "LUC +158"
+        "HP +4832",
+        "LUC +157"
       ]
     },
     {
@@ -12179,16 +12179,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4706,
+      "bonusHP": 4856,
       "bonusATK": 0,
-      "bonusDEF": 706,
+      "bonusDEF": 728,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 60508,
+      "buyPrice": 264627,
       "maxCopies": -1,
       "effects": [
-        "HP +4706",
-        "DEF +706"
+        "HP +4856",
+        "DEF +728"
       ]
     },
     {
@@ -12800,15 +12800,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1946,
+      "bonusATK": 1937,
       "bonusDEF": 0,
-      "bonusAGI": 362,
+      "bonusAGI": 360,
       "bonusLUC": 0,
-      "buyPrice": 174442,
+      "buyPrice": 110000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1946",
-        "AGI +362"
+        "ATK +1937",
+        "AGI +360"
       ]
     },
     {
@@ -15326,8 +15326,8 @@
       "color": "#264d1a",
       "bossEnemyId": "",
       "zoneTier": 2,
-      "minEnemyLevel": 40,
-      "maxEnemyLevel": 50,
+      "minEnemyLevel": 33,
+      "maxEnemyLevel": 38,
       "goldMultiplier": 9,
       "enemies": [
         {
@@ -15346,8 +15346,8 @@
       "color": "#1f4014",
       "bossEnemyId": "",
       "zoneTier": 2,
-      "minEnemyLevel": 48,
-      "maxEnemyLevel": 58,
+      "minEnemyLevel": 38,
+      "maxEnemyLevel": 46,
       "goldMultiplier": 10.5,
       "enemies": [
         {
@@ -15366,8 +15366,8 @@
       "color": "#1a330f",
       "bossEnemyId": "",
       "zoneTier": 3,
-      "minEnemyLevel": 54,
-      "maxEnemyLevel": 60,
+      "minEnemyLevel": 46,
+      "maxEnemyLevel": 54,
       "goldMultiplier": 12,
       "enemies": [
         {
