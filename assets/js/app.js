@@ -18,6 +18,7 @@
 
   var IMG_BASE = "assets/img/";
   var DATA_URL = "data/data.json";
+  var WIKI_VERSION = "20";
 
   /* ---------- helpers ---------- */
   function $(sel, root) { return (root || document).querySelector(sel); }
@@ -143,7 +144,7 @@
     var header = $("#site-header");
     if (header) {
       var links = NAV.map(function (n) {
-        return '<a href="' + n.href + '"' + (n.id === active ? ' class="active"' : "") + ">" + n.label + "</a>";
+        return '<a href="' + n.href + '"' + (n.id === active ? ' class="active" aria-current="page"' : "") + ">" + n.label + "</a>";
       }).join("");
       header.innerHTML =
         '<div class="nav">' +
@@ -152,7 +153,7 @@
             '<span class="logo">IL</span>' +
             '<span>Infinite Loot-Loop</span>' +
           "</a>" +
-          '<button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false">&#9776;</button>' +
+          '<button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false">&#9776;</button>' +
           '<nav class="nav-links" id="navLinks">' + links + "</nav>" +
         "</div>";
       var tgl = $("#navToggle", header), nl = $("#navLinks", header);
@@ -224,11 +225,16 @@
       ["faq.html", "&#10067;", "FAQ", null, "Common questions"]
     ];
     app.innerHTML =
-      '<section class="hero">' +
-        '<h1>Tony <span class="grad">Works</span></h1>' +
-        "<p>The companion wiki for <strong>Infinite Loot-Loop</strong> &#8212; browse every monster, boss, item, map and character straight from the game data.</p>" +
+      '<section class="hero game-hero">' +
+        '<div class="hero-copy"><span class="hero-kicker">Official companion wiki</span>' +
+        '<h1>Infinite <span class="grad">Loot-Loop</span></h1>' +
+        "<p>Find drops, explore routes, compare gear and plan your next run with data exported directly from the game.</p></div>" +
       "</section>" +
-      '<div class="home-search"><input type="search" id="gsearch" autocomplete="off" placeholder="Search monsters, bosses, items, characters&#8230;"><div class="g-results" id="gresults"></div></div>' +
+      '<div class="home-search"><label for="gsearch">Search the wiki</label><input type="search" id="gsearch" autocomplete="off" placeholder="Monster, boss, item or character name&#8230;"><div class="g-results" id="gresults" aria-live="polite"></div></div>' +
+      '<aside class="freshness" aria-label="Wiki data status"><div><span class="fresh-label">Game build</span><strong>' + esc(d.gameVersion || "Development") + '</strong></div>' +
+        '<div><span class="fresh-label">Wiki data</span><strong>v' + WIKI_VERSION + '</strong></div>' +
+        '<div><span class="fresh-label">Last updated</span><strong>' + esc(formatDate(d.generatedAt)) + '</strong></div>' +
+        '<a href="patch.html">Latest patch notes &#8594;</a></aside>' +
       '<div class="stat-strip">' +
         stat(c.enemies, "Monsters") + stat(c.bosses, "Bosses") + stat(c.items, "Items") +
         stat(c.maps, "Maps") + stat(c.zones, "Zones") + stat(c.characters, "Characters") +
@@ -241,9 +247,13 @@
           (x[3] != null ? '<div class="count">' + x[3] + " entries</div>" : "") +
           "<p>" + x[4] + "</p></a>";
       }).join("") + "</div>" +
-      (d.generatedAt ? '<p style="text-align:center;color:var(--faint);margin-top:2rem;font-size:.85rem">Data exported ' +
-        esc(d.generatedAt.replace("T", " ").replace("Z", " UTC")) + "</p>" : "");
+      "";
     function stat(n, l) { return '<div class="stat"><div class="n">' + (n || 0) + '</div><div class="l">' + l + "</div></div>"; }
+    function formatDate(value) {
+      if (!value) return "Not available";
+      try { return new Intl.DateTimeFormat(undefined, { year: "numeric", month: "short", day: "numeric" }).format(new Date(value)); }
+      catch (_) { return value; }
+    }
     // Global search across the main catalogs.
     var gi = $("#gsearch"), gr = $("#gresults");
     if (gi && gr) {
@@ -303,7 +313,7 @@
       "</div>" +
       (worlds.length
         ? '<div class="section-title">Appears in</div><div class="effect-list">' +
-            worlds.map(function (w) { return '<span class="fx">' + esc(w) + "</span>"; }).join("") + "</div>" +
+            worlds.map(function (w) { return '<a class="fx region-link" data-region="' + esc(w) + '" href="maps.html?world=' + encodeURIComponent(w) + '">' + esc(w) + "</a>"; }).join("") + "</div>" +
             (zones.length ? '<p style="color:var(--faint);font-size:.85rem;margin-top:.5rem">' + esc(zones.join(" · ")) + "</p>" : "")
         : "") +
       (drops.length ? '<div class="section-title">Drops</div><table class="data"><tr><th>Item</th><th>Chance</th></tr>' +
@@ -435,6 +445,9 @@
       if (/^HM_T/.test(e.id)) return false;
       return (e.drops || []).some(function (dr) { return dr.itemId === i.id; });
     });
+    var bossDrops = d.bosses.filter(function (b) {
+      return b.dropItemId === i.id || b.hardModeDropItemId === i.id || b.bonusDropItemId === i.id;
+    });
     app.innerHTML = detailHead("items.html", "Items", itemList(d), i) +
       '<div class="detail">' + portrait(i.image, i.name) +
       "<div><h1>" + esc(i.name) + "</h1>" +
@@ -443,6 +456,7 @@
         (i.isUnique ? '<span class="pill">Unique</span>' : "") +
         (i.isBossItem ? '<span class="pill">Boss Item</span>' : "") +
         (i.isHardModeItem ? '<span class="pill">Hard</span>' : "") + "</div>" +
+      '<button class="compare-add" type="button" data-compare-id="' + esc(i.id) + '">&#8644; Add to comparison</button>' +
       (i.description ? "<p>" + esc(i.description) + "</p>" : "") +
       (effects ? '<div class="section-title">Effects</div><div class="effect-list">' + effects + "</div>" : "") +
       '<div class="section-title">Details</div><div class="statgrid">' +
@@ -458,8 +472,41 @@
           var ch = dr ? " (" + dr.chance + "%)" : "";
           return '<span class="fx">' + link("monsters.html", e.id, e.name) + esc(ch) + "</span>";
         }).join("") + "</div>" : "") +
+      (bossDrops.length ? '<div class="section-title">Boss rewards</div><div class="effect-list">' +
+        bossDrops.map(function (b) {
+          var mode = b.hardModeDropItemId === i.id ? "Hard" : b.bonusDropItemId === i.id ? "Bonus" : "Normal";
+          return '<span class="fx">' + link("bosses.html", b.id, b.name) + ' <small>' + mode + "</small></span>";
+        }).join("") + "</div>" : "") +
       "</div></div>";
+    mountCompareTray(d, i.id);
   }
+
+  function compareStore() {
+    try { return JSON.parse(localStorage.getItem("tw-compare-items") || "[]"); } catch (_) { return []; }
+  }
+  function saveCompare(ids) { try { localStorage.setItem("tw-compare-items", JSON.stringify(ids)); } catch (_) {} }
+  function mountCompareTray(d, currentId) {
+    var add = document.querySelector("[data-compare-id]");
+    var ids = compareStore().filter(function (id) { return !!d._itemById[id]; }).slice(0, 4);
+    var tray = document.createElement("section"); tray.className = "compare-tray"; tray.setAttribute("aria-label", "Item comparison");
+    document.body.appendChild(tray);
+    function render() {
+      var items = ids.map(function (id) { return d._itemById[id]; }).filter(Boolean);
+      tray.innerHTML = '<div class="compare-head"><strong>Compare items <span>' + items.length + '/4</span></strong><button type="button" data-clear>Clear</button></div>' +
+        (items.length ? '<div class="compare-scroll"><table><tr><th>Stat</th>' + items.map(function (x) { return '<th><a href="items.html?id=' + encodeURIComponent(x.id) + '">' + esc(x.name) + '</a><button type="button" data-remove="' + esc(x.id) + '" aria-label="Remove ' + esc(x.name) + '">&#215;</button></th>'; }).join("") + '</tr>' +
+        compareRow("Rarity", items, function (x) { return x.rarity; }) + compareRow("Type", items, function (x) { return x.type; }) +
+        compareRow("HP", items, function (x) { return fmt(x.bonusHP); }) + compareRow("ATK", items, function (x) { return fmt(x.bonusATK); }) +
+        compareRow("DEF", items, function (x) { return fmt(x.bonusDEF); }) + compareRow("AGI", items, function (x) { return fmt(x.bonusAGI); }) +
+        compareRow("LUC", items, function (x) { return fmt(x.bonusLUC); }) + '</table></div>' : '<p>Select up to four items to compare.</p>');
+      tray.classList.toggle("open", items.length > 0);
+      if (add) { add.disabled = ids.indexOf(currentId) >= 0 || ids.length >= 4; add.textContent = ids.indexOf(currentId) >= 0 ? "Added to comparison" : "⇄ Add to comparison"; }
+      var clear = tray.querySelector("[data-clear]"); if (clear) clear.onclick = function () { ids = []; saveCompare(ids); render(); };
+      Array.prototype.forEach.call(tray.querySelectorAll("[data-remove]"), function (b) { b.onclick = function () { ids = ids.filter(function (id) { return id !== b.getAttribute("data-remove"); }); saveCompare(ids); render(); }; });
+    }
+    if (add) add.onclick = function () { if (ids.indexOf(currentId) < 0 && ids.length < 4) { ids.push(currentId); saveCompare(ids); render(); } };
+    render();
+  }
+  function compareRow(label, items, get) { return '<tr><th>' + label + '</th>' + items.map(function (x) { return '<td>' + esc(get(x)) + '</td>'; }).join("") + '</tr>'; }
 
   /* ---- Maps: whole-world route graph -> per-world -> single map ---- */
   var WORLD_META = {
@@ -508,9 +555,11 @@
   PAGES.maps = function (app, d) {
     var id = param("id"); if (id) return mapDetail(app, d, d._mapById[id]);
     var world = param("world"); if (world) return worldView(app, d, world);
+    var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt"];
     app.innerHTML =
       '<div class="page-head"><h1>World Map</h1><p>Every region, connected. Tap a world to see its maps &amp; bosses.</p></div>' +
-      '<div class="worldmap"><div class="wm-grid">' +
+      '<div class="view-switch" role="group" aria-label="World view"><button type="button" data-view="map">Map</button><button type="button" data-view="list">List</button></div>' +
+      '<div class="world-view" data-panel="map"><div class="worldmap"><div class="wm-grid">' +
         '<div class="wm-cell" style="grid-area:uw">'     + wnode(d, "Underwater") + '</div>' +
         '<div class="wm-conn v" style="grid-area:vu"></div>' +
         '<div class="wm-cell" style="grid-area:void">'   + wnode(d, "Void Hunt", { secret: true }) + '</div>' +
@@ -524,8 +573,16 @@
         '<div class="wm-cell" style="grid-area:desert">' + wnode(d, "Desert") + '</div>' +
         '<div class="wm-conn v" style="grid-area:vd"></div>' +
         '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate", { locked: true }) + '</div>' +
-      '</div></div>' +
-      '<p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, the World Gate south. Void Hunt is a secret arena reached from Volcanic.</p>';
+      '</div></div><p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, the World Gate south. Void Hunt is a secret arena reached from Volcanic.</p></div>' +
+      '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) { return wnode(d, w, { secret: w === "Void Hunt" }); }).join("") + '</div>';
+    var stored; try { stored = localStorage.getItem("tw-map-view"); } catch (_) {}
+    var view = stored || (window.innerWidth <= 640 ? "list" : "map");
+    function setView(v) {
+      view = v; try { localStorage.setItem("tw-map-view", v); } catch (_) {}
+      Array.prototype.forEach.call(app.querySelectorAll("[data-view]"), function (b) { var on = b.getAttribute("data-view") === v; b.classList.toggle("active", on); b.setAttribute("aria-pressed", on ? "true" : "false"); });
+      Array.prototype.forEach.call(app.querySelectorAll("[data-panel]"), function (p) { p.hidden = p.getAttribute("data-panel") !== v; });
+    }
+    Array.prototype.forEach.call(app.querySelectorAll("[data-view]"), function (b) { b.onclick = function () { setView(b.getAttribute("data-view")); }; }); setView(view);
   };
   function worldView(app, d, w) {
     var s = worldStats(d, w);
