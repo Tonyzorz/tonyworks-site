@@ -18,7 +18,7 @@
 
   var IMG_BASE = "assets/img/";
   var DATA_URL = "data/data.json";
-  var WIKI_VERSION = "23";
+  var WIKI_VERSION = "24";
 
   /* ---------- helpers ---------- */
   function $(sel, root) { return (root || document).querySelector(sel); }
@@ -585,7 +585,11 @@
     function setView(v) {
       view = v; try { localStorage.setItem("tw-map-view", v); } catch (_) {}
       Array.prototype.forEach.call(app.querySelectorAll("[data-view]"), function (b) { var on = b.getAttribute("data-view") === v; b.classList.toggle("active", on); b.setAttribute("aria-pressed", on ? "true" : "false"); });
-      Array.prototype.forEach.call(app.querySelectorAll("[data-panel]"), function (p) { p.hidden = p.getAttribute("data-panel") !== v; });
+      Array.prototype.forEach.call(app.querySelectorAll("[data-panel]"), function (p) {
+        var hide = p.getAttribute("data-panel") !== v;
+        p.hidden = hide;
+        p.style.display = hide ? "none" : "";
+      });
     }
     Array.prototype.forEach.call(app.querySelectorAll("[data-view]"), function (b) { b.onclick = function () { setView(b.getAttribute("data-view")); }; }); setView(view);
   };
