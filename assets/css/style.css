@@ -505,6 +505,7 @@ table.data tr:hover td { background: var(--panel); }
 .view-switch { display:inline-flex; gap:.25rem; padding:.25rem; margin:0 0 1rem; background:var(--panel); border:1px solid var(--border); border-radius:11px; }
 .view-switch button { border:0; border-radius:8px; padding:.5rem 1rem; color:var(--muted); background:transparent; font:inherit; font-weight:700; cursor:pointer; }
 .view-switch button.active { color:var(--on-accent); background:var(--accent); }
+.world-view[hidden] { display:none !important; }
 .region-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:.8rem; }
 .region-list .wnode { width:100%; min-height:128px; }
 .region-link[data-region="Grassland"] { border-color:#5cb85c; }
