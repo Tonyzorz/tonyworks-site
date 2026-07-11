@@ -18,7 +18,7 @@
 
   var IMG_BASE = "assets/img/";
   var DATA_URL = "data/data.json";
-  var WIKI_VERSION = "20";
+  var WIKI_VERSION = "21";
 
   /* ---------- helpers ---------- */
   function $(sel, root) { return (root || document).querySelector(sel); }
