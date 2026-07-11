@@ -523,8 +523,12 @@ table.data tr:hover td { background: var(--panel); }
 .compare-tray { display:none; position:fixed; z-index:70; left:50%; bottom:12px; transform:translateX(-50%); width:min(900px,calc(100% - 24px));
   max-height:48vh; overflow:auto; padding:.8rem; color:var(--text); background:var(--panel); border:1px solid var(--accent); border-radius:var(--radius); box-shadow:0 14px 44px rgba(0,0,0,.55); }
 .compare-tray.open { display:block; }
+.compare-tray.collapsed { max-height:none; overflow:hidden; padding:.6rem .8rem; }
+.compare-tray.collapsed .compare-head { margin-bottom:0; }
+.compare-tray.collapsed .compare-scroll,.compare-tray.collapsed > p { display:none; }
 .compare-head { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:.55rem; }
 .compare-head span { color:var(--muted); font-size:.82rem; }
+.compare-actions { display:flex; align-items:center; gap:.4rem; }
 .compare-head button,.compare-tray th button { border:0; background:transparent; color:var(--muted); cursor:pointer; }
 .compare-scroll { overflow-x:auto; }
 .compare-tray table { width:100%; min-width:540px; border-collapse:collapse; font-size:.84rem; }

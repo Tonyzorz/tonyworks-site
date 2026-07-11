@@ -18,7 +18,7 @@
 
   var IMG_BASE = "assets/img/";
   var DATA_URL = "data/data.json";
-  var WIKI_VERSION = "22";
+  var WIKI_VERSION = "23";
 
   /* ---------- helpers ---------- */
   function $(sel, root) { return (root || document).querySelector(sel); }
@@ -488,18 +488,23 @@
   function mountCompareTray(d, currentId) {
     var add = document.querySelector("[data-compare-id]");
     var ids = compareStore().filter(function (id) { return !!d._itemById[id]; }).slice(0, 4);
+    var collapsed = false; try { collapsed = localStorage.getItem("tw-compare-collapsed") === "1"; } catch (_) {}
     var tray = document.createElement("section"); tray.className = "compare-tray"; tray.setAttribute("aria-label", "Item comparison");
     document.body.appendChild(tray);
     function render() {
       var items = ids.map(function (id) { return d._itemById[id]; }).filter(Boolean);
-      tray.innerHTML = '<div class="compare-head"><strong>Compare items <span>' + items.length + '/4</span></strong><button type="button" data-clear>Clear</button></div>' +
+      tray.innerHTML = '<div class="compare-head"><strong>Compare items <span>' + items.length + '/4</span></strong><div class="compare-actions">' +
+        '<button type="button" data-collapse aria-expanded="' + (!collapsed) + '" aria-label="' + (collapsed ? "Expand" : "Minimize") + ' comparison tray">' + (collapsed ? "Expand" : "Minimize") + '</button>' +
+        '<button type="button" data-clear>Clear</button></div></div>' +
         (items.length ? '<div class="compare-scroll"><table><tr><th>Stat</th>' + items.map(function (x) { return '<th><a href="items.html?id=' + encodeURIComponent(x.id) + '">' + esc(x.name) + '</a><button type="button" data-remove="' + esc(x.id) + '" aria-label="Remove ' + esc(x.name) + '">&#215;</button></th>'; }).join("") + '</tr>' +
         compareRow("Rarity", items, function (x) { return x.rarity; }) + compareRow("Type", items, function (x) { return x.type; }) +
         compareRow("HP", items, function (x) { return fmt(x.bonusHP); }) + compareRow("ATK", items, function (x) { return fmt(x.bonusATK); }) +
         compareRow("DEF", items, function (x) { return fmt(x.bonusDEF); }) + compareRow("AGI", items, function (x) { return fmt(x.bonusAGI); }) +
         compareRow("LUC", items, function (x) { return fmt(x.bonusLUC); }) + '</table></div>' : '<p>Select up to four items to compare.</p>');
       tray.classList.toggle("open", items.length > 0);
+      tray.classList.toggle("collapsed", collapsed);
       if (add) { add.disabled = ids.indexOf(currentId) >= 0 || ids.length >= 4; add.textContent = ids.indexOf(currentId) >= 0 ? "Added to comparison" : "⇄ Add to comparison"; }
+      var collapse = tray.querySelector("[data-collapse]"); if (collapse) collapse.onclick = function () { collapsed = !collapsed; try { localStorage.setItem("tw-compare-collapsed", collapsed ? "1" : "0"); } catch (_) {} render(); };
       var clear = tray.querySelector("[data-clear]"); if (clear) clear.onclick = function () { ids = []; saveCompare(ids); render(); };
       Array.prototype.forEach.call(tray.querySelectorAll("[data-remove]"), function (b) { b.onclick = function () { ids = ids.filter(function (id) { return id !== b.getAttribute("data-remove"); }); saveCompare(ids); render(); }; });
     }
