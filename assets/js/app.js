@@ -278,29 +278,33 @@
   PAGES.home = function (app, d) {
     var c = d.counts || {};
     var cards = [
-      ["monsters.html", "&#128126;", "Monsters", c.enemies, "Every enemy — stats, spawn & drops"],
-      ["bosses.html", "&#9760;&#65039;", "Bosses", c.bosses, "Boss stats, hard mode & rewards"],
-      ["items.html", "&#9876;&#65039;", "Items", c.items, "Gear, effects & sets"],
-      ["maps.html", "&#128506;&#65039;", "Maps", c.maps, "Zone layouts & routes"],
-      ["characters.html", "&#129489;", "Characters", c.characters, "Roster & stat multipliers"],
-      ["achievements.html", "&#127942;", "Achievements", c.achievements, "Goals & rewards"],
-      ["guide.html", "&#128214;", "Guide", null, "Tips & strategy"],
-      ["patch.html", "&#128221;", "Patch Notes", null, "What changed"],
-      ["faq.html", "&#10067;", "FAQ", null, "Common questions"]
+      ["monsters.html", "&#128126;", "Monsters", c.enemies, "Stats, locations and drop tables", "#6fd08c"],
+      ["bosses.html", "&#9760;&#65039;", "Bosses", c.bosses, "Normal and Hard Mode rewards", "#ff766d"],
+      ["items.html", "&#9876;&#65039;", "Items", c.items, "Gear, effects and rarity", "#ffcf6b"],
+      ["maps.html", "&#128506;&#65039;", "Maps", c.maps, "World connections and routes", "#64b5f6"],
+      ["characters.html", "&#129489;", "Characters", c.characters, "Roster and stat multipliers", "#62d9d0"],
+      ["guide.html", "&#128214;", "Field Guide", null, "Progression, stats and strategy", "#b994ff"]
+    ];
+    var resources = [
+      ["sets.html", "Item Sets", "Build complete equipment bonuses"],
+      ["achievements.html", "Achievements", "Track goals and permanent rewards"],
+      ["patch.html", "Patch Notes", "See the latest changes"],
+      ["faq.html", "FAQ", "Get quick player answers"]
     ];
     app.innerHTML =
       '<section class="hero game-hero">' +
         '<div class="hero-copy"><span class="hero-kicker">Official companion wiki</span>' +
         '<h1>Infinite <span class="grad">Loot-Loop</span></h1>' +
         '<p>Find drops, explore routes, compare gear and plan your next run with data exported directly from the game.</p>' +
-        '<div class="download-block" aria-labelledby="download-title">' +
-          '<div class="download-heading"><span class="download-dot" aria-hidden="true"></span><span id="download-title">Play on mobile</span></div>' +
-          '<div class="store-buttons">' +
-            storeButton("ios", "Download for", "iPhone & iPad", STORE_LINKS.ios) +
-            storeButton("android", "Download for", "Android", STORE_LINKS.android) +
-          '</div>' +
-        '</div></div>' +
+        '<div class="hero-actions"><a class="hero-primary" href="guide.html">Start with the guide <span aria-hidden="true">&#8594;</span></a>' +
+          '<a class="hero-secondary" href="#explore">Explore the wiki</a></div>' +
+        '<div class="launch-line"><span class="download-dot" aria-hidden="true"></span><strong>Mobile launch:</strong> iOS &amp; Android coming soon</div></div>' +
       "</section>" +
+      '<section class="home-search home-search-featured" aria-labelledby="wiki-search-title"><div class="home-search-copy"><span class="section-kicker">Quick lookup</span>' +
+        '<h2 id="wiki-search-title">What are you looking for?</h2><p>Jump straight to a monster, boss, item or character.</p></div>' +
+        '<div class="home-search-box"><label class="sr-only" for="gsearch">Search the wiki</label><span aria-hidden="true">&#128269;</span>' +
+          '<input type="search" id="gsearch" autocomplete="off" placeholder="Search the wiki&#8230;"></div>' +
+        '<div class="g-results" id="gresults" aria-live="polite"></div></section>' +
       '<section class="starter-panel" aria-labelledby="starter-title">' +
         '<div class="starter-intro"><span class="starter-kicker">First run</span><h2 id="starter-title">New to Infinite Loot-Loop?</h2>' +
         '<p>Learn the essentials, choose your playstyle and enter your first route with a plan.</p></div>' +
@@ -311,23 +315,24 @@
           '<a href="maps.html"><span class="starter-num">04</span><span><strong>Plan your route</strong><small>World connections, zones and bosses</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
         '</div>' +
       '</section>' +
-      '<div class="home-search"><label for="gsearch">Search the wiki</label><input type="search" id="gsearch" autocomplete="off" placeholder="Monster, boss, item or character name&#8230;"><div class="g-results" id="gresults" aria-live="polite"></div></div>' +
-      '<aside class="freshness" aria-label="Wiki data status"><div><span class="fresh-label">Game build</span><strong>' + esc(d.gameVersion || "Development") + '</strong></div>' +
-        '<div><span class="fresh-label">Wiki data</span><strong>v' + WIKI_VERSION + '</strong></div>' +
-        '<div><span class="fresh-label">Last updated</span><strong>' + esc(formatDate(d.generatedAt)) + '</strong></div>' +
-        '<a href="patch.html">Latest patch notes &#8594;</a></aside>' +
-      '<div class="stat-strip">' +
-        stat(c.enemies, "Monsters") + stat(c.bosses, "Bosses") + stat(c.items, "Items") +
-        stat(c.maps, "Maps") + stat(c.zones, "Zones") + stat(c.characters, "Characters") +
-        stat(c.achievements, "Achievements") +
-      "</div>" +
-      '<div class="hub-grid">' + cards.map(function (x) {
-        return '<a class="hub-card" href="' + x[0] + '">' +
+      '<section class="home-explore" id="explore" aria-labelledby="explore-title"><div class="section-head"><div><span class="section-kicker">Game database</span>' +
+        '<h2 id="explore-title">Explore the wiki</h2></div><div class="stat-strip">' +
+        stat(c.enemies, "Monsters") + stat(c.items, "Items") + stat(c.maps, "Maps") + stat(c.characters, "Characters") +
+      '</div></div><div class="hub-grid">' + cards.map(function (x) {
+        return '<a class="hub-card" href="' + x[0] + '" style="--hub-accent:' + x[5] + '">' +
           '<div class="ico">' + x[1] + "</div>" +
-          "<h3>" + x[2] + "</h3>" +
+          '<span class="hub-go" aria-hidden="true">&#8594;</span><h3>' + x[2] + "</h3>" +
           (x[3] != null ? '<div class="count">' + x[3] + " entries</div>" : "") +
           "<p>" + x[4] + "</p></a>";
-      }).join("") + "</div>" +
+      }).join("") + '</div></section>' +
+      '<section class="home-resources" aria-labelledby="resources-title"><div class="section-head compact"><div><span class="section-kicker">Keep exploring</span>' +
+        '<h2 id="resources-title">More resources</h2></div></div><div class="resource-row">' + resources.map(function (x) {
+          return '<a href="' + x[0] + '"><span><strong>' + x[1] + '</strong><small>' + x[2] + '</small></span><span aria-hidden="true">&#8594;</span></a>';
+        }).join("") + '</div></section>' +
+      '<aside class="home-status" aria-label="Game and wiki status"><div><span class="status-dot" aria-hidden="true"></span><span><small>Current game build</small><strong>' + esc(d.gameVersion || "Development") + '</strong></span></div>' +
+        '<div><span><small>Wiki refreshed</small><strong>' + esc(formatDate(d.generatedAt)) + '</strong></span></div>' +
+        '<div><span><small>Mobile release</small><strong>iOS &amp; Android coming soon</strong></span></div>' +
+        '<a href="patch.html">Read latest patch notes &#8594;</a></aside>' +
       "";
     function stat(n, l) { return '<div class="stat"><div class="n">' + (n || 0) + '</div><div class="l">' + l + "</div></div>"; }
     function formatDate(value) {

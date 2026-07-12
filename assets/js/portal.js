@@ -21,24 +21,43 @@
 
   function render(apps) {
     var portal = document.getElementById("portal");
-    var tiles = (apps || []).map(function (app) {
-      var accent = app.accent || "var(--accent)";
-      return '<a class="app-tile" href="' + esc(app.path) + '" style="--tile-accent:' + esc(accent) + '">' +
-        tileIcon(app) +
-        '<div class="app-info">' +
-          '<h2>' + esc(app.name) + (app.status ? ' <span class="app-status">' + esc(app.status) + "</span>" : "") + "</h2>" +
-          (app.tagline ? "<p>" + esc(app.tagline) + "</p>" : "") +
-        "</div>" +
-        '<span class="app-go">&#8594;</span>' +
-      "</a>";
-    }).join("");
+    var featured = (apps || [])[0];
+    if (!featured) {
+      portal.innerHTML = '<div class="empty">No projects yet.</div>';
+      return;
+    }
+    var gamePath = esc(featured.path);
+    var guidePath = esc(featured.path.replace(/index\.html$/, "guide.html"));
+    var patchPath = esc(featured.path.replace(/index\.html$/, "patch.html"));
 
     portal.innerHTML =
-      '<section class="hero">' +
-        '<h1>Tony <span class="grad">Works</span></h1>' +
-        "<p>Apps &amp; games by Tony &#8212; companion sites, wikis and tools.</p>" +
-      "</section>" +
-      '<div class="app-list">' + (tiles || '<div class="empty">No apps yet.</div>') + "</div>";
+      '<header class="portal-nav"><a class="portal-brand" href="index.html"><span>TW</span><strong>Tony Works</strong></a>' +
+        '<nav aria-label="Main navigation"><a href="#game">Game</a><a href="' + guidePath + '">Guide</a><a href="mailto:tonyzorz@naver.com">Contact</a></nav></header>' +
+      '<section class="portal-hero" id="game"><div class="portal-hero-copy"><span class="portal-kicker">Independent game studio</span>' +
+        '<h1>Small worlds.<br><span>Long adventures.</span></h1>' +
+        '<p>Tony Works creates focused games with deep progression, approachable systems, and player-friendly companion tools.</p>' +
+        '<div class="portal-actions"><a class="portal-primary" data-portal-action="game" href="' + gamePath + '">Explore Infinite Loot-Loop <span aria-hidden="true">&#8594;</span></a>' +
+          '<a class="portal-secondary" data-portal-action="guide" href="' + guidePath + '">Read the beginner guide</a></div>' +
+        '<div class="portal-platforms"><span><i aria-hidden="true"></i> In development</span><span>iOS</span><span>Android</span></div></div>' +
+        '<a class="featured-game" data-portal-action="featured_game" href="' + gamePath + '" style="--tile-accent:' + esc(featured.accent || "#7c9cff") + '">' +
+          '<div class="featured-game-art"><span class="featured-badge">Featured game</span></div><div class="featured-game-info">' + tileIcon(featured) +
+          '<div><span class="featured-label">Mobile roguelike RPG</span><h2>' + esc(featured.name) + '</h2><p>' + esc(featured.tagline || "") + '</p></div>' +
+          '<span class="featured-go" aria-hidden="true">&#8594;</span></div></a></section>' +
+      '<section class="portal-strip" aria-label="Tony Works highlights"><div><strong>Unity</strong><span>Built for mobile</span></div>' +
+        '<div><strong>11</strong><span>Supported languages</span></div><div><strong>Live</strong><span>Data-backed wiki</span></div></section>' +
+      '<section class="portal-discover" aria-labelledby="discover-title"><div class="portal-section-head"><span class="portal-kicker">More than a landing page</span>' +
+        '<h2 id="discover-title">Everything for your next run</h2><p>The official companion wiki stays connected to the game data, so planning a build never becomes guesswork.</p></div>' +
+        '<div class="portal-link-grid"><a href="' + gamePath + '"><span class="portal-link-num">01</span><span><strong>Explore the wiki</strong><small>Monsters, bosses, items, maps and characters</small></span><span aria-hidden="true">&#8594;</span></a>' +
+          '<a href="' + guidePath + '"><span class="portal-link-num">02</span><span><strong>Learn the loop</strong><small>A friendly guide from first battle to Hard Mode</small></span><span aria-hidden="true">&#8594;</span></a>' +
+          '<a href="' + patchPath + '"><span class="portal-link-num">03</span><span><strong>Follow development</strong><small>New content, balance changes and fixes</small></span><span aria-hidden="true">&#8594;</span></a></div></section>' +
+      '<section class="portal-contact"><div><span class="portal-kicker">Tony Works</span><h2>Games made with care—and supported after launch.</h2></div>' +
+        '<a data-portal-action="contact" href="mailto:tonyzorz@naver.com">Get in touch &#8594;</a></section>';
+
+    portal.addEventListener("click", function (e) {
+      var target = e.target.closest && e.target.closest("[data-portal-action]");
+      if (!target || typeof window.gtag !== "function") return;
+      window.gtag("event", "portal_action", { action_name: target.getAttribute("data-portal-action") });
+    });
 
     var footer = document.getElementById("portal-footer");
     if (footer) footer.innerHTML = "Tony Works &#183; " + new Date().getFullYear() +
