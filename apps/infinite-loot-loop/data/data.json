@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T10:23:04Z",
+  "generatedAt": "2026-07-12T10:50:21Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 213,
@@ -515,7 +515,7 @@
       "drops": [
         {
           "itemId": "FernBoots",
-          "itemName": "Farm Boots",
+          "itemName": "Fern Boots",
           "chance": 3
         }
       ],
@@ -865,7 +865,7 @@
       "drops": [
         {
           "itemId": "WillowRing",
-          "itemName": "Emerald Ring",
+          "itemName": "Willow Ring",
           "chance": 3
         }
       ],
@@ -937,9 +937,9 @@
       ]
     },
     {
-      "id": "ShadowHound_FR01 1",
+      "id": "ShadowHound_FR01",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_FR01_1.png",
+      "image": "enemy_ShadowHound_FR01.png",
       "isBoss": false,
       "minLevel": 37,
       "maxLevel": 40,
@@ -1132,9 +1132,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_FR03 1",
+      "id": "DesertScorpion_FR03",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_FR03_1.png",
+      "image": "enemy_DesertScorpion_FR03.png",
       "isBoss": false,
       "minLevel": 60,
       "maxLevel": 67,
@@ -1227,9 +1227,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_FR03 1",
+      "id": "CrystalGolem_FR03",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_FR03_1.png",
+      "image": "enemy_CrystalGolem_FR03.png",
       "isBoss": false,
       "minLevel": 73,
       "maxLevel": 80,
@@ -1287,9 +1287,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR03 1",
+      "id": "BloodWraith_FR03",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR03_1.png",
+      "image": "enemy_BloodWraith_FR03.png",
       "isBoss": false,
       "minLevel": 82,
       "maxLevel": 85,
@@ -1387,9 +1387,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR04 1",
+      "id": "BloodWraith_FR04",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR04_1.png",
+      "image": "enemy_BloodWraith_FR04.png",
       "isBoss": false,
       "minLevel": 85,
       "maxLevel": 90,
@@ -1452,9 +1452,9 @@
       ]
     },
     {
-      "id": "FlameImp_FR04 1",
+      "id": "FlameImp_FR04",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_FR04_1.png",
+      "image": "enemy_FlameImp_FR04.png",
       "isBoss": false,
       "minLevel": 88,
       "maxLevel": 94,
@@ -1500,7 +1500,7 @@
       "drops": [
         {
           "itemId": "RuneCrown",
-          "itemName": "Void Helm",
+          "itemName": "Rune Crown",
           "chance": 3
         }
       ],
@@ -1542,9 +1542,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_FR04 1",
+      "id": "ChaosShaman_FR04",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_FR04_1.png",
+      "image": "enemy_ChaosShaman_FR04.png",
       "isBoss": false,
       "minLevel": 100,
       "maxLevel": 103,
@@ -1632,9 +1632,9 @@
       ]
     },
     {
-      "id": "FlameImp_VO01 1",
+      "id": "FlameImp_VO01",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_VO01_1.png",
+      "image": "enemy_FlameImp_VO01.png",
       "isBoss": false,
       "minLevel": 108,
       "maxLevel": 115,
@@ -1923,9 +1923,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_VO01 1",
+      "id": "ChaosShaman_VO01",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_VO01_1.png",
+      "image": "enemy_ChaosShaman_VO01.png",
       "isBoss": false,
       "minLevel": 128,
       "maxLevel": 136,
@@ -2905,7 +2905,7 @@
       "drops": [
         {
           "itemId": "MoltenBand",
-          "itemName": "Blood Gem",
+          "itemName": "Molten Band",
           "chance": 3
         }
       ],
@@ -2995,7 +2995,7 @@
       "drops": [
         {
           "itemId": "TitanVisor",
-          "itemName": "Abyss Visor",
+          "itemName": "Titan Visor",
           "chance": 3
         }
       ],
@@ -3277,9 +3277,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_DS01 1",
+      "id": "DesertScorpion_DS01",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_DS01_1.png",
+      "image": "enemy_DesertScorpion_DS01.png",
       "isBoss": false,
       "minLevel": 205,
       "maxLevel": 217,
@@ -3325,7 +3325,7 @@
       "drops": [
         {
           "itemId": "PlasmaBand",
-          "itemName": "Power Ring",
+          "itemName": "Plasma Band",
           "chance": 3
         }
       ],
@@ -3355,7 +3355,7 @@
       "drops": [
         {
           "itemId": "CactusRing",
-          "itemName": "Desert Crescent",
+          "itemName": "Cactus Ring",
           "chance": 3
         }
       ],
@@ -3390,7 +3390,7 @@
         },
         {
           "itemId": "MirageHelm",
-          "itemName": "Pharaoh Helm",
+          "itemName": "Mirage Helm",
           "chance": 3
         }
       ],
@@ -3932,12 +3932,12 @@
       "drops": [
         {
           "itemId": "DS02Helm",
-          "itemName": "Chaos Hood",
+          "itemName": "Chaos Hood (Desert)",
           "chance": 3
         },
         {
           "itemId": "DS02Helm",
-          "itemName": "Chaos Hood",
+          "itemName": "Chaos Hood (Desert)",
           "chance": 3
         }
       ],
@@ -4263,9 +4263,9 @@
       ]
     },
     {
-      "id": "ShadowHound_DS03 1",
+      "id": "ShadowHound_DS03",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_DS03_1.png",
+      "image": "enemy_ShadowHound_DS03.png",
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
@@ -4708,9 +4708,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_DS03 1",
+      "id": "CrystalGolem_DS03",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_DS03_1.png",
+      "image": "enemy_CrystalGolem_DS03.png",
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
@@ -5066,12 +5066,12 @@
       "drops": [
         {
           "itemId": "DS04Shoes",
-          "itemName": "Wind Boots",
+          "itemName": "Wind Boots (Desert)",
           "chance": 3
         },
         {
           "itemId": "DS04Shoes",
-          "itemName": "Wind Boots",
+          "itemName": "Wind Boots (Desert)",
           "chance": 3
         }
       ],
@@ -5131,12 +5131,12 @@
       "drops": [
         {
           "itemId": "DS03Acc",
-          "itemName": "Void Ring",
+          "itemName": "Void Ring (Desert)",
           "chance": 3
         },
         {
           "itemId": "DS03Acc",
-          "itemName": "Void Ring",
+          "itemName": "Void Ring (Desert)",
           "chance": 3
         }
       ],
@@ -5611,12 +5611,12 @@
       "drops": [
         {
           "itemId": "UW01Helm",
-          "itemName": "Gold Helmet",
+          "itemName": "Gold Helmet (Abyssal)",
           "chance": 3
         },
         {
           "itemId": "UW01Helm",
-          "itemName": "Gold Helmet",
+          "itemName": "Gold Helmet (Abyssal)",
           "chance": 3
         }
       ],
@@ -5856,12 +5856,12 @@
       "drops": [
         {
           "itemId": "UW01Shoes",
-          "itemName": "Speed Boots",
+          "itemName": "Speed Boots (Abyssal)",
           "chance": 3
         },
         {
           "itemId": "UW01Shoes",
-          "itemName": "Speed Boots",
+          "itemName": "Speed Boots (Abyssal)",
           "chance": 3
         }
       ],
@@ -5891,7 +5891,7 @@
       "drops": [
         {
           "itemId": "UW01Acc",
-          "itemName": "Sapphire Ring",
+          "itemName": "Sapphire Ring (Abyssal)",
           "chance": 3
         }
       ],
@@ -6436,7 +6436,7 @@
       "drops": [
         {
           "itemId": "UW04Helm",
-          "itemName": "Demon Helm",
+          "itemName": "Demon Helm (Abyssal)",
           "chance": 3
         }
       ],
@@ -6676,12 +6676,12 @@
       "drops": [
         {
           "itemId": "UW03Shoes",
-          "itemName": "Steel Sabatons",
+          "itemName": "Steel Sabatons (Abyssal)",
           "chance": 3
         },
         {
           "itemId": "UW03Shoes",
-          "itemName": "Steel Sabatons",
+          "itemName": "Steel Sabatons (Abyssal)",
           "chance": 3
         }
       ],
@@ -6746,12 +6746,12 @@
       "drops": [
         {
           "itemId": "UW04Shoes",
-          "itemName": "Abyss Lord Soles",
+          "itemName": "Abyss Lord Soles (Abyssal)",
           "chance": 3
         },
         {
           "itemId": "UW04Shoes",
-          "itemName": "Abyss Lord Soles",
+          "itemName": "Abyss Lord Soles (Abyssal)",
           "chance": 3
         }
       ],
@@ -6911,12 +6911,12 @@
       "drops": [
         {
           "itemId": "UW04Acc",
-          "itemName": "Abyss Orb",
+          "itemName": "Abyss Orb (Abyssal)",
           "chance": 3
         },
         {
           "itemId": "UW04Acc",
-          "itemName": "Abyss Orb",
+          "itemName": "Abyss Orb (Abyssal)",
           "chance": 3
         }
       ],
@@ -7613,7 +7613,7 @@
     },
     {
       "id": "AshEdge",
-      "name": "Bone Sword",
+      "name": "Ash Edge",
       "description": "",
       "image": "item_AshEdge.png",
       "rarity": "Epic",
@@ -7624,20 +7624,20 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1225,
+      "bonusATK": 1264,
       "bonusDEF": 0,
-      "bonusAGI": 89,
+      "bonusAGI": 92,
       "bonusLUC": 0,
       "buyPrice": 22000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1225",
-        "AGI +89"
+        "ATK +1264",
+        "AGI +92"
       ]
     },
     {
       "id": "AshTreads",
-      "name": "Shadow Treads",
+      "name": "Ash Treads",
       "description": "",
       "image": "item_AshTreads.png",
       "rarity": "Epic",
@@ -7649,14 +7649,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 410,
-      "bonusAGI": 96,
+      "bonusDEF": 342,
+      "bonusAGI": 80,
       "bonusLUC": 0,
       "buyPrice": 40685,
       "maxCopies": -1,
       "effects": [
-        "DEF +410",
-        "AGI +96"
+        "DEF +342",
+        "AGI +80"
       ]
     },
     {
@@ -8850,7 +8850,7 @@
     },
     {
       "id": "CactusRing",
-      "name": "Desert Crescent",
+      "name": "Cactus Ring",
       "description": "",
       "image": "item_CactusRing.png",
       "rarity": "Epic",
@@ -8860,16 +8860,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 17371,
+      "bonusHP": 14790,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 317,
+      "bonusLUC": 270,
       "buyPrice": 1103113,
       "maxCopies": -1,
       "effects": [
-        "HP +17371",
-        "LUC +317"
+        "HP +14790",
+        "LUC +270"
       ]
     },
     {
@@ -9651,7 +9651,7 @@
     },
     {
       "id": "DS02Helm",
-      "name": "Chaos Hood",
+      "name": "Chaos Hood (Desert)",
       "description": "",
       "image": "item_DS02Helm.png",
       "rarity": "Epic",
@@ -9661,16 +9661,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 26329,
+      "bonusHP": 22335,
       "bonusATK": 0,
-      "bonusDEF": 1970,
+      "bonusDEF": 1671,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 1205004,
       "maxCopies": -1,
       "effects": [
-        "HP +26329",
-        "DEF +1970"
+        "HP +22335",
+        "DEF +1671"
       ]
     },
     {
@@ -9748,7 +9748,7 @@
     },
     {
       "id": "DS03Acc",
-      "name": "Void Ring",
+      "name": "Void Ring (Desert)",
       "description": "",
       "image": "item_DS03Acc.png",
       "rarity": "Epic",
@@ -9758,16 +9758,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 29597,
+      "bonusHP": 28857,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 521,
+      "bonusLUC": 508,
       "buyPrice": 3160000,
       "maxCopies": -1,
       "effects": [
-        "HP +29597",
-        "LUC +521"
+        "HP +28857",
+        "LUC +508"
       ]
     },
     {
@@ -9941,7 +9941,7 @@
     },
     {
       "id": "DS04Shoes",
-      "name": "Wind Boots",
+      "name": "Wind Boots (Desert)",
       "description": "",
       "image": "item_DS04Shoes.png",
       "rarity": "Epic",
@@ -9951,17 +9951,17 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 26746,
+      "bonusHP": 28759,
       "bonusATK": 0,
-      "bonusDEF": 1932,
-      "bonusAGI": 445,
+      "bonusDEF": 2078,
+      "bonusAGI": 479,
       "bonusLUC": 0,
       "buyPrice": 198674,
       "maxCopies": -1,
       "effects": [
-        "HP +26746",
-        "DEF +1932",
-        "AGI +445"
+        "HP +28759",
+        "DEF +2078",
+        "AGI +479"
       ]
     },
     {
@@ -10300,7 +10300,7 @@
     },
     {
       "id": "FernBoots",
-      "name": "Farm Boots",
+      "name": "Fern Boots",
       "description": "",
       "image": "item_FernBoots.png",
       "rarity": "Uncommon",
@@ -10312,14 +10312,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 97,
-      "bonusAGI": 22,
+      "bonusDEF": 105,
+      "bonusAGI": 23,
       "bonusLUC": 0,
       "buyPrice": 14639,
       "maxCopies": -1,
       "effects": [
-        "DEF +97",
-        "AGI +22"
+        "DEF +105",
+        "AGI +23"
       ]
     },
     {
@@ -15965,7 +15965,7 @@
     },
     {
       "id": "MirageHelm",
-      "name": "Pharaoh Helm",
+      "name": "Mirage Helm",
       "description": "",
       "image": "item_MirageHelm.png",
       "rarity": "Epic",
@@ -15975,16 +15975,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 16038,
+      "bonusHP": 16045,
       "bonusATK": 0,
-      "bonusDEF": 1269,
+      "bonusDEF": 1270,
       "bonusAGI": 0,
       "bonusLUC": 292,
       "buyPrice": 322552,
       "maxCopies": -1,
       "effects": [
-        "HP +16038",
-        "DEF +1269",
+        "HP +16045",
+        "DEF +1270",
         "LUC +292"
       ]
     },
@@ -16037,7 +16037,7 @@
     },
     {
       "id": "MoltenBand",
-      "name": "Blood Gem",
+      "name": "Molten Band",
       "description": "",
       "image": "item_MoltenBand.png",
       "rarity": "Epic",
@@ -16300,7 +16300,7 @@
     },
     {
       "id": "PharaohScepter",
-      "name": "Pharaoh's Scepter",
+      "name": "Pharaoh Scepter",
       "description": "",
       "image": "item_PharaohScepter.png",
       "rarity": "Legendary",
@@ -16324,7 +16324,7 @@
     },
     {
       "id": "PlasmaBand",
-      "name": "Power Ring",
+      "name": "Plasma Band",
       "description": "",
       "image": "item_PlasmaBand.png",
       "rarity": "Epic",
@@ -16334,16 +16334,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 11742,
+      "bonusHP": 11895,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 217,
+      "bonusLUC": 220,
       "buyPrice": 841590,
       "maxCopies": -1,
       "effects": [
-        "HP +11742",
-        "LUC +217"
+        "HP +11895",
+        "LUC +220"
       ]
     },
     {
@@ -16419,7 +16419,7 @@
     },
     {
       "id": "RuneCrown",
-      "name": "Void Helm",
+      "name": "Rune Crown",
       "description": "",
       "image": "item_RuneCrown.png",
       "rarity": "Epic",
@@ -17126,7 +17126,7 @@
     },
     {
       "id": "TitanVisor",
-      "name": "Abyss Visor",
+      "name": "Titan Visor",
       "description": "",
       "image": "item_TitanVisor.png",
       "rarity": "Epic",
@@ -17136,17 +17136,17 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 8531,
+      "bonusHP": 8137,
       "bonusATK": 0,
-      "bonusDEF": 714,
+      "bonusDEF": 681,
       "bonusAGI": 0,
-      "bonusLUC": 165,
+      "bonusLUC": 157,
       "buyPrice": 179804,
       "maxCopies": -1,
       "effects": [
-        "HP +8531",
-        "DEF +714",
-        "LUC +165"
+        "HP +8137",
+        "DEF +681",
+        "LUC +157"
       ]
     },
     {
@@ -17243,7 +17243,7 @@
     },
     {
       "id": "UW01Acc",
-      "name": "Sapphire Ring",
+      "name": "Sapphire Ring (Abyssal)",
       "description": "",
       "image": "item_UW01Acc.png",
       "rarity": "Epic",
@@ -17253,16 +17253,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 33917,
+      "bonusHP": 36329,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 548,
+      "bonusLUC": 587,
       "buyPrice": 1146215,
       "maxCopies": -1,
       "effects": [
-        "HP +33917",
-        "LUC +548"
+        "HP +36329",
+        "LUC +587"
       ]
     },
     {
@@ -17291,7 +17291,7 @@
     },
     {
       "id": "UW01Helm",
-      "name": "Gold Helmet",
+      "name": "Gold Helmet (Abyssal)",
       "description": "",
       "image": "item_UW01Helm.png",
       "rarity": "Epic",
@@ -17301,21 +17301,21 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 32566,
+      "bonusHP": 31475,
       "bonusATK": 0,
-      "bonusDEF": 2356,
+      "bonusDEF": 2277,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 2119708,
       "maxCopies": -1,
       "effects": [
-        "HP +32566",
-        "DEF +2356"
+        "HP +31475",
+        "DEF +2277"
       ]
     },
     {
       "id": "UW01Shoes",
-      "name": "Speed Boots",
+      "name": "Speed Boots (Abyssal)",
       "description": "",
       "image": "item_UW01Shoes.png",
       "rarity": "Epic",
@@ -17327,14 +17327,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 2604,
-      "bonusAGI": 582,
+      "bonusDEF": 2263,
+      "bonusAGI": 506,
       "bonusLUC": 0,
       "buyPrice": 335155,
       "maxCopies": -1,
       "effects": [
-        "DEF +2604",
-        "AGI +582"
+        "DEF +2263",
+        "AGI +506"
       ]
     },
     {
@@ -17579,7 +17579,7 @@
     },
     {
       "id": "UW03Shoes",
-      "name": "Steel Sabatons",
+      "name": "Steel Sabatons (Abyssal)",
       "description": "",
       "image": "item_UW03Shoes.png",
       "rarity": "Epic",
@@ -17591,14 +17591,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 2743,
-      "bonusAGI": 603,
+      "bonusDEF": 2664,
+      "bonusAGI": 585,
       "bonusLUC": 0,
       "buyPrice": 110000,
       "maxCopies": -1,
       "effects": [
-        "DEF +2743",
-        "AGI +603"
+        "DEF +2664",
+        "AGI +585"
       ]
     },
     {
@@ -17627,7 +17627,7 @@
     },
     {
       "id": "UW04Acc",
-      "name": "Abyss Orb",
+      "name": "Abyss Orb (Abyssal)",
       "description": "",
       "image": "item_UW04Acc.png",
       "rarity": "Epic",
@@ -17675,7 +17675,7 @@
     },
     {
       "id": "UW04Helm",
-      "name": "Demon Helm",
+      "name": "Demon Helm (Abyssal)",
       "description": "",
       "image": "item_UW04Helm.png",
       "rarity": "Epic",
@@ -17685,21 +17685,21 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 46576,
+      "bonusHP": 48774,
       "bonusATK": 0,
-      "bonusDEF": 3396,
+      "bonusDEF": 3556,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 4480000,
       "maxCopies": -1,
       "effects": [
-        "HP +46576",
-        "DEF +3396"
+        "HP +48774",
+        "DEF +3556"
       ]
     },
     {
       "id": "UW04Shoes",
-      "name": "Abyss Lord Soles",
+      "name": "Abyss Lord Soles (Abyssal)",
       "description": "",
       "image": "item_UW04Shoes.png",
       "rarity": "Epic",
@@ -17711,14 +17711,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 3236,
-      "bonusAGI": 707,
+      "bonusDEF": 3603,
+      "bonusAGI": 787,
       "bonusLUC": 0,
       "buyPrice": 112000,
       "maxCopies": -1,
       "effects": [
-        "DEF +3236",
-        "AGI +707"
+        "DEF +3603",
+        "AGI +787"
       ]
     },
     {
@@ -17985,7 +17985,7 @@
     },
     {
       "id": "WillowRing",
-      "name": "Emerald Ring",
+      "name": "Willow Ring",
       "description": "",
       "image": "item_WillowRing.png",
       "rarity": "Uncommon",
@@ -17995,16 +17995,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1137,
+      "bonusHP": 997,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 28,
+      "bonusLUC": 25,
       "buyPrice": 44272,
       "maxCopies": -1,
       "effects": [
-        "HP +1137",
-        "LUC +28"
+        "HP +997",
+        "LUC +25"
       ]
     },
     {
@@ -18460,7 +18460,7 @@
       "goldMultiplier": 46,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_DS01 1",
+          "enemyId": "DesertScorpion_DS01",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -18620,7 +18620,7 @@
       "goldMultiplier": 70,
       "enemies": [
         {
-          "enemyId": "ShadowHound_DS03 1",
+          "enemyId": "ShadowHound_DS03",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -18660,7 +18660,7 @@
       "goldMultiplier": 74,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_DS03 1",
+          "enemyId": "CrystalGolem_DS03",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -19132,7 +19132,7 @@
       "goldMultiplier": 7.5,
       "enemies": [
         {
-          "enemyId": "ShadowHound_FR01 1",
+          "enemyId": "ShadowHound_FR01",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -19212,7 +19212,7 @@
       "goldMultiplier": 13,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_FR03 1",
+          "enemyId": "DesertScorpion_FR03",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -19272,7 +19272,7 @@
       "goldMultiplier": 16,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_FR03 1",
+          "enemyId": "CrystalGolem_FR03",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -19312,7 +19312,7 @@
       "goldMultiplier": 18,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR03 1",
+          "enemyId": "BloodWraith_FR03",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -19332,7 +19332,7 @@
       "goldMultiplier": 19,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR04 1",
+          "enemyId": "BloodWraith_FR04",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -19352,7 +19352,7 @@
       "goldMultiplier": 20,
       "enemies": [
         {
-          "enemyId": "FlameImp_FR04 1",
+          "enemyId": "FlameImp_FR04",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -19412,7 +19412,7 @@
       "goldMultiplier": 23,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_FR04 1",
+          "enemyId": "ChaosShaman_FR04",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -23609,7 +23609,7 @@
       "goldMultiplier": 32,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_VO01 1",
+          "enemyId": "ChaosShaman_VO01",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -23709,7 +23709,7 @@
       "goldMultiplier": 27,
       "enemies": [
         {
-          "enemyId": "FlameImp_VO01 1",
+          "enemyId": "FlameImp_VO01",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -24480,7 +24480,7 @@
       "lucMultiplier": 1.2,
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 0,
-      "purchasePrice": 32000000000,
+      "purchasePrice": 350000000,
       "ownedBonusHP": 40000,
       "ownedBonusATK": 4000,
       "ownedBonusDEF": 100,
