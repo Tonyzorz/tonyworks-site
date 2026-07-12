@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-12T10:50:21Z",
+  "generatedAt": "2026-07-12T11:27:40Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 213,
     "bosses": 20,
-    "items": 451,
+    "items": 452,
     "maps": 22,
     "zones": 223,
     "characters": 25,
@@ -136,6 +136,111 @@
         {
           "itemId": "ClothRobe",
           "itemName": "Cloth Robe",
+          "chance": 3
+        },
+        {
+          "itemId": "ChainMail",
+          "itemName": "Chain Mail",
+          "chance": 3
+        },
+        {
+          "itemId": "ClothHood",
+          "itemName": "Cloth Hood",
+          "chance": 3
+        },
+        {
+          "itemId": "ClothSandals",
+          "itemName": "Cloth Sandals",
+          "chance": 3
+        },
+        {
+          "itemId": "CursedRobe",
+          "itemName": "Cursed Robe",
+          "chance": 3
+        },
+        {
+          "itemId": "DragonArmor",
+          "itemName": "Dragon Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "FarmBoots",
+          "itemName": "Farm Boots",
+          "chance": 3
+        },
+        {
+          "itemId": "GoldHelmet",
+          "itemName": "Gold Helmet",
+          "chance": 3
+        },
+        {
+          "itemId": "HellStaff",
+          "itemName": "Hell Staff",
+          "chance": 3
+        },
+        {
+          "itemId": "InfernoSword",
+          "itemName": "Inferno Sword",
+          "chance": 3
+        },
+        {
+          "itemId": "LeatherHelmet",
+          "itemName": "Leather Helmet",
+          "chance": 3
+        },
+        {
+          "itemId": "LuckyRing",
+          "itemName": "Lucky Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "MagmaMantle",
+          "itemName": "Magma Mantle",
+          "chance": 3
+        },
+        {
+          "itemId": "RangerCloak",
+          "itemName": "Ranger Cloak",
+          "chance": 3
+        },
+        {
+          "itemId": "SpeedBoots",
+          "itemName": "Speed Boots",
+          "chance": 3
+        },
+        {
+          "itemId": "SteelSword",
+          "itemName": "Steel Sword",
+          "chance": 3
+        },
+        {
+          "itemId": "StrawHat",
+          "itemName": "Straw Hat",
+          "chance": 3
+        },
+        {
+          "itemId": "TrackerRing",
+          "itemName": "Tracker Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "TraineeBlade",
+          "itemName": "Trainee Blade",
+          "chance": 3
+        },
+        {
+          "itemId": "TravelBoots",
+          "itemName": "Travel Boots",
+          "chance": 3
+        },
+        {
+          "itemId": "WoodenRing",
+          "itemName": "Wooden Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "WoodenSword",
+          "itemName": "Wooden Sword",
           "chance": 3
         }
       ],
@@ -302,6 +407,76 @@
           "itemId": "LeatherBoots",
           "itemName": "Leather Boots",
           "chance": 3
+        },
+        {
+          "itemId": "BoneSword",
+          "itemName": "Bone Sword",
+          "chance": 3
+        },
+        {
+          "itemId": "CursedBlade",
+          "itemName": "Cursed Blade",
+          "chance": 3
+        },
+        {
+          "itemId": "DemonHide",
+          "itemName": "Demon Hide",
+          "chance": 3
+        },
+        {
+          "itemId": "Excalibur",
+          "itemName": "Excalibur",
+          "chance": 3
+        },
+        {
+          "itemId": "HuntersBow",
+          "itemName": "Hunter's Bow",
+          "chance": 3
+        },
+        {
+          "itemId": "InfernoRobe",
+          "itemName": "Inferno Robe",
+          "chance": 3
+        },
+        {
+          "itemId": "IronRing",
+          "itemName": "Iron Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "LeatherArmor",
+          "itemName": "Leather Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "LeatherCap",
+          "itemName": "Leather Cap",
+          "chance": 3
+        },
+        {
+          "itemId": "PowerRing",
+          "itemName": "Power Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "ShadowPlate",
+          "itemName": "Shadow Plate",
+          "chance": 3
+        },
+        {
+          "itemId": "ThiefRing",
+          "itemName": "Thief Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "VoidScythe",
+          "itemName": "Void Scythe",
+          "chance": 3
+        },
+        {
+          "itemId": "WindBoots",
+          "itemName": "Wind Boots",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -331,6 +506,66 @@
         {
           "itemId": "MageRobe",
           "itemName": "Mage Robe",
+          "chance": 3
+        },
+        {
+          "itemId": "AbyssalRing",
+          "itemName": "Abyssal Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "BlazeSpear",
+          "itemName": "Blaze Spear",
+          "chance": 3
+        },
+        {
+          "itemId": "DarkScythe",
+          "itemName": "Dark Scythe",
+          "chance": 3
+        },
+        {
+          "itemId": "DuneEdge",
+          "itemName": "Dune Edge",
+          "chance": 3
+        },
+        {
+          "itemId": "IronChestplate",
+          "itemName": "Iron Chestplate",
+          "chance": 3
+        },
+        {
+          "itemId": "IronGreaves",
+          "itemName": "Iron Greaves",
+          "chance": 3
+        },
+        {
+          "itemId": "IronHelmet",
+          "itemName": "Iron Helmet",
+          "chance": 3
+        },
+        {
+          "itemId": "PharaohScepter",
+          "itemName": "Pharaoh Scepter",
+          "chance": 3
+        },
+        {
+          "itemId": "ShadowStaff",
+          "itemName": "Shadow Staff",
+          "chance": 3
+        },
+        {
+          "itemId": "SilverRing",
+          "itemName": "Silver Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "SteelLongsword",
+          "itemName": "Steel Longsword",
+          "chance": 3
+        },
+        {
+          "itemId": "VoidRing",
+          "itemName": "Void Ring",
           "chance": 3
         }
       ],
@@ -362,6 +597,41 @@
           "itemId": "FlameSword",
           "itemName": "Flame Sword",
           "chance": 3
+        },
+        {
+          "itemId": "AbyssalBlade",
+          "itemName": "Abyssal Blade",
+          "chance": 3
+        },
+        {
+          "itemId": "ChainBoots",
+          "itemName": "Chain Boots",
+          "chance": 3
+        },
+        {
+          "itemId": "CursedBoots",
+          "itemName": "Cursed Boots",
+          "chance": 3
+        },
+        {
+          "itemId": "GoldRing",
+          "itemName": "Gold Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "SapphireRing",
+          "itemName": "Sapphire Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "SteelArmor",
+          "itemName": "Steel Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "SteelHelmet",
+          "itemName": "Steel Helmet",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -392,6 +662,41 @@
           "itemId": "ShortBow",
           "itemName": "Wooden Staff",
           "chance": 3
+        },
+        {
+          "itemId": "BloodStriders",
+          "itemName": "Blood Striders",
+          "chance": 3
+        },
+        {
+          "itemId": "ChaosBlade",
+          "itemName": "Chaos Blade",
+          "chance": 3
+        },
+        {
+          "itemId": "ChaosRobe",
+          "itemName": "Chaos Robe",
+          "chance": 3
+        },
+        {
+          "itemId": "MagmaBlade",
+          "itemName": "Magma Blade",
+          "chance": 3
+        },
+        {
+          "itemId": "RubyRing",
+          "itemName": "Ruby Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "SpectralBow",
+          "itemName": "Spectral Bow",
+          "chance": 3
+        },
+        {
+          "itemId": "WizardHat",
+          "itemName": "Wizard Hat",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -421,6 +726,36 @@
         {
           "itemId": "EmeraldRing",
           "itemName": "Emerald Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "AmethystRing",
+          "itemName": "Amethyst Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "DarkRobe",
+          "itemName": "Dark Robe",
+          "chance": 3
+        },
+        {
+          "itemId": "KnightArmor",
+          "itemName": "Knight Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "KnightHelmet",
+          "itemName": "Knight Helmet",
+          "chance": 3
+        },
+        {
+          "itemId": "ShadowTreads",
+          "itemName": "Shadow Treads",
+          "chance": 3
+        },
+        {
+          "itemId": "ThunderSabre",
+          "itemName": "Thunder Sabre",
           "chance": 3
         }
       ],
@@ -457,6 +792,26 @@
           "itemId": "SteelSabatons",
           "itemName": "Steel Sabatons",
           "chance": 3
+        },
+        {
+          "itemId": "DarkHood",
+          "itemName": "Dark Hood",
+          "chance": 3
+        },
+        {
+          "itemId": "IceBlade",
+          "itemName": "Ice Blade",
+          "chance": 3
+        },
+        {
+          "itemId": "ShadowArmor",
+          "itemName": "Shadow Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "ShadowMask",
+          "itemName": "Shadow Mask",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -486,6 +841,11 @@
         {
           "itemId": "MossyDagger",
           "itemName": "Mossy Dagger",
+          "chance": 3
+        },
+        {
+          "itemId": "DemonSpear",
+          "itemName": "Demon Spear",
           "chance": 3
         }
       ],
@@ -517,6 +877,11 @@
           "itemId": "FernBoots",
           "itemName": "Fern Boots",
           "chance": 3
+        },
+        {
+          "itemId": "DemonHelm",
+          "itemName": "Demon Helm",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -546,6 +911,16 @@
         {
           "itemId": "InfernoGreaves",
           "itemName": "Inferno Greaves",
+          "chance": 3
+        },
+        {
+          "itemId": "BrambleShield",
+          "itemName": "Berserker Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "DemonRing",
+          "itemName": "Demon Ring",
           "chance": 3
         }
       ],
@@ -807,6 +1182,11 @@
           "itemId": "ThornCrown",
           "itemName": "Cursed Hood",
           "chance": 3
+        },
+        {
+          "itemId": "VoidHelm",
+          "itemName": "Void Helm",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -836,6 +1216,106 @@
         {
           "itemId": "CinderPlate",
           "itemName": "Lava Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "GnarledStaff",
+          "itemName": "Gnarled Staff",
+          "chance": 3
+        },
+        {
+          "itemId": "AbyssalArmor",
+          "itemName": "Abyssal Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "AbyssOrb",
+          "itemName": "Abyss Orb",
+          "chance": 3
+        },
+        {
+          "itemId": "AbyssShroud",
+          "itemName": "Abyss Shroud",
+          "chance": 3
+        },
+        {
+          "itemId": "AbyssVisor",
+          "itemName": "Abyss Visor",
+          "chance": 3
+        },
+        {
+          "itemId": "AnkhBlade",
+          "itemName": "Ankh Blade",
+          "chance": 3
+        },
+        {
+          "itemId": "BloodArmor",
+          "itemName": "Blood Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "BloodGem",
+          "itemName": "Blood Gem",
+          "chance": 3
+        },
+        {
+          "itemId": "ChaosHood",
+          "itemName": "Chaos Hood",
+          "chance": 3
+        },
+        {
+          "itemId": "CinderScythe",
+          "itemName": "Cinder Scythe",
+          "chance": 3
+        },
+        {
+          "itemId": "DarkHammer",
+          "itemName": "Dark Hammer",
+          "chance": 3
+        },
+        {
+          "itemId": "InfernoMask",
+          "itemName": "Inferno Mask",
+          "chance": 3
+        },
+        {
+          "itemId": "MoltenArmor",
+          "itemName": "Molten Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "MoltenStriders",
+          "itemName": "Molten Striders",
+          "chance": 3
+        },
+        {
+          "itemId": "PharaohArmor",
+          "itemName": "Pharaoh Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "PharaohHelm",
+          "itemName": "Pharaoh Helm",
+          "chance": 3
+        },
+        {
+          "itemId": "SandstormBlade",
+          "itemName": "Sandstorm Blade",
+          "chance": 3
+        },
+        {
+          "itemId": "SunDisk",
+          "itemName": "Sun Disk",
+          "chance": 3
+        },
+        {
+          "itemId": "TombArmor",
+          "itemName": "Tomb Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "VolcanicPlate",
+          "itemName": "Volcanic Plate",
           "chance": 3
         }
       ],
@@ -897,6 +1377,16 @@
           "itemId": "DesertWrap",
           "itemName": "Desert Wrap",
           "chance": 3
+        },
+        {
+          "itemId": "ShadowEdge",
+          "itemName": "Shadow Edge",
+          "chance": 3
+        },
+        {
+          "itemId": "VoidPlate",
+          "itemName": "Void Plate",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -927,6 +1417,11 @@
           "itemId": "OakArmor",
           "itemName": "Forest Armor",
           "chance": 3
+        },
+        {
+          "itemId": "PhantomBlade",
+          "itemName": "Phantom Blade",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -937,9 +1432,9 @@
       ]
     },
     {
-      "id": "ShadowHound_FR01",
+      "id": "ShadowHound_FR01 1",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_FR01.png",
+      "image": "enemy_ShadowHound_FR01_1.png",
       "isBoss": false,
       "minLevel": 37,
       "maxLevel": 40,
@@ -953,6 +1448,16 @@
       "goldMax": 508,
       "permanentBPReward": 0,
       "drops": [
+        {
+          "itemId": "DS03Weapon",
+          "itemName": "Shadow Fang",
+          "chance": 3
+        },
+        {
+          "itemId": "DS03Weapon",
+          "itemName": "Shadow Fang",
+          "chance": 3
+        },
         {
           "itemId": "DS03Weapon",
           "itemName": "Shadow Fang",
@@ -1016,6 +1521,11 @@
         {
           "itemId": "DarkTreeBark",
           "itemName": "Bone Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "VoidShard",
+          "itemName": "Void Shard",
           "chance": 3
         }
       ],
@@ -1132,9 +1642,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_FR03",
+      "id": "DesertScorpion_FR03 1",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_FR03.png",
+      "image": "enemy_DesertScorpion_FR03_1.png",
       "isBoss": false,
       "minLevel": 60,
       "maxLevel": 67,
@@ -1151,6 +1661,16 @@
         {
           "itemId": "DS05Acc",
           "itemName": "Ankh Pendant",
+          "chance": 3
+        },
+        {
+          "itemId": "DuneMail",
+          "itemName": "Sand Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "DuneMail",
+          "itemName": "Sand Armor",
           "chance": 3
         }
       ],
@@ -1217,6 +1737,11 @@
           "itemId": "BoneCrown",
           "itemName": "Tomb Mask",
           "chance": 3
+        },
+        {
+          "itemId": "ShadowAmulet",
+          "itemName": "Shadow Amulet",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -1227,9 +1752,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_FR03",
+      "id": "CrystalGolem_FR03 1",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_FR03.png",
+      "image": "enemy_CrystalGolem_FR03_1.png",
       "isBoss": false,
       "minLevel": 73,
       "maxLevel": 80,
@@ -1243,6 +1768,11 @@
       "goldMax": 1094,
       "permanentBPReward": 0,
       "drops": [
+        {
+          "itemId": "DS03Helm",
+          "itemName": "Blood Mask",
+          "chance": 3
+        },
         {
           "itemId": "DS03Helm",
           "itemName": "Blood Mask",
@@ -1287,9 +1817,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR03",
+      "id": "BloodWraith_FR03 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR03.png",
+      "image": "enemy_BloodWraith_FR03_1.png",
       "isBoss": false,
       "minLevel": 82,
       "maxLevel": 85,
@@ -1306,6 +1836,16 @@
         {
           "itemId": "ChaosGreaves",
           "itemName": "Chaos Greaves",
+          "chance": 3
+        },
+        {
+          "itemId": "SoulBlade",
+          "itemName": "Holy Sword",
+          "chance": 3
+        },
+        {
+          "itemId": "AshEdge",
+          "itemName": "Ash Edge",
           "chance": 3
         }
       ],
@@ -1387,9 +1927,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR04",
+      "id": "BloodWraith_FR04 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR04.png",
+      "image": "enemy_BloodWraith_FR04_1.png",
       "isBoss": false,
       "minLevel": 85,
       "maxLevel": 90,
@@ -1406,6 +1946,16 @@
         {
           "itemId": "ChaosGreaves",
           "itemName": "Chaos Greaves",
+          "chance": 3
+        },
+        {
+          "itemId": "SoulBlade",
+          "itemName": "Holy Sword",
+          "chance": 3
+        },
+        {
+          "itemId": "AshEdge",
+          "itemName": "Ash Edge",
           "chance": 3
         }
       ],
@@ -1452,9 +2002,9 @@
       ]
     },
     {
-      "id": "FlameImp_FR04",
+      "id": "FlameImp_FR04 1",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_FR04.png",
+      "image": "enemy_FlameImp_FR04_1.png",
       "isBoss": false,
       "minLevel": 88,
       "maxLevel": 94,
@@ -1471,6 +2021,11 @@
         {
           "itemId": "LavaCrown",
           "itemName": "Lava Crown",
+          "chance": 3
+        },
+        {
+          "itemId": "CinderBand",
+          "itemName": "Fire Gem",
           "chance": 3
         }
       ],
@@ -1542,9 +2097,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_FR04",
+      "id": "ChaosShaman_FR04 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_FR04.png",
+      "image": "enemy_ChaosShaman_FR04_1.png",
       "isBoss": false,
       "minLevel": 100,
       "maxLevel": 103,
@@ -1561,6 +2116,16 @@
         {
           "itemId": "FrostAmulet",
           "itemName": "Chaos Amulet",
+          "chance": 3
+        },
+        {
+          "itemId": "AshTreads",
+          "itemName": "Ash Treads",
+          "chance": 3
+        },
+        {
+          "itemId": "DrakeArmor",
+          "itemName": "Dragon Scale Armor",
           "chance": 3
         }
       ],
@@ -1622,6 +2187,11 @@
           "itemId": "SandWeave",
           "itemName": "Sand Weave",
           "chance": 3
+        },
+        {
+          "itemId": "SmokyDagger",
+          "itemName": "Smoky Dagger",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -1632,9 +2202,9 @@
       ]
     },
     {
-      "id": "FlameImp_VO01",
+      "id": "FlameImp_VO01 1",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_VO01.png",
+      "image": "enemy_FlameImp_VO01_1.png",
       "isBoss": false,
       "minLevel": 108,
       "maxLevel": 115,
@@ -1651,6 +2221,11 @@
         {
           "itemId": "LavaCrown",
           "itemName": "Lava Crown",
+          "chance": 3
+        },
+        {
+          "itemId": "CinderBand",
+          "itemName": "Fire Gem",
           "chance": 3
         }
       ],
@@ -1923,9 +2498,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_VO01",
+      "id": "ChaosShaman_VO01 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_VO01.png",
+      "image": "enemy_ChaosShaman_VO01_1.png",
       "isBoss": false,
       "minLevel": 128,
       "maxLevel": 136,
@@ -1942,6 +2517,16 @@
         {
           "itemId": "FrostAmulet",
           "itemName": "Chaos Amulet",
+          "chance": 3
+        },
+        {
+          "itemId": "AshTreads",
+          "itemName": "Ash Treads",
+          "chance": 3
+        },
+        {
+          "itemId": "DrakeArmor",
+          "itemName": "Dragon Scale Armor",
           "chance": 3
         }
       ],
@@ -1972,6 +2557,11 @@
         {
           "itemId": "DuneArmor",
           "itemName": "Dune Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "CinderLance",
+          "itemName": "Cinder Lance",
           "chance": 3
         }
       ],
@@ -2322,6 +2912,11 @@
           "itemId": "EmberRing",
           "itemName": "Inferno Core",
           "chance": 3
+        },
+        {
+          "itemId": "CinderDust",
+          "itemName": "Cinder Dust",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -2501,6 +3096,11 @@
         {
           "itemId": "VulcanBoots",
           "itemName": "Scorched Boots",
+          "chance": 3
+        },
+        {
+          "itemId": "AbyssalMail",
+          "itemName": "Ice Armor",
           "chance": 3
         }
       ],
@@ -3277,9 +3877,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_DS01",
+      "id": "DesertScorpion_DS01 1",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_DS01.png",
+      "image": "enemy_DesertScorpion_DS01_1.png",
       "isBoss": false,
       "minLevel": 205,
       "maxLevel": 217,
@@ -3296,6 +3896,16 @@
         {
           "itemId": "DS05Acc",
           "itemName": "Ankh Pendant",
+          "chance": 3
+        },
+        {
+          "itemId": "DuneMail",
+          "itemName": "Sand Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "DuneMail",
+          "itemName": "Sand Armor",
           "chance": 3
         }
       ],
@@ -3633,6 +4243,11 @@
         {
           "itemId": "DuneTreads",
           "itemName": "Dune Treads",
+          "chance": 3
+        },
+        {
+          "itemId": "PharaohBlade",
+          "itemName": "Pharaoh Blade",
           "chance": 3
         }
       ],
@@ -4263,9 +4878,9 @@
       ]
     },
     {
-      "id": "ShadowHound_DS03",
+      "id": "ShadowHound_DS03 1",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_DS03.png",
+      "image": "enemy_ShadowHound_DS03_1.png",
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
@@ -4279,6 +4894,16 @@
       "goldMax": 4191,
       "permanentBPReward": 0,
       "drops": [
+        {
+          "itemId": "DS03Weapon",
+          "itemName": "Shadow Fang",
+          "chance": 3
+        },
+        {
+          "itemId": "DS03Weapon",
+          "itemName": "Shadow Fang",
+          "chance": 3
+        },
         {
           "itemId": "DS03Weapon",
           "itemName": "Shadow Fang",
@@ -4708,9 +5333,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_DS03",
+      "id": "CrystalGolem_DS03 1",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_DS03.png",
+      "image": "enemy_CrystalGolem_DS03_1.png",
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
@@ -4724,6 +5349,11 @@
       "goldMax": 4917,
       "permanentBPReward": 0,
       "drops": [
+        {
+          "itemId": "DS03Helm",
+          "itemName": "Blood Mask",
+          "chance": 3
+        },
         {
           "itemId": "DS03Helm",
           "itemName": "Blood Mask",
@@ -4965,8 +5595,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Pharaoh's_Scepter_H",
-          "itemName": "Pharaoh's Scepter [H]",
+          "itemId": "Pharaoh_Scepter_H",
+          "itemName": "Pharaoh Scepter [H]",
           "chance": 1
         },
         {
@@ -7365,13 +7995,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 968,
+      "bonusDEF": 108,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 13689,
       "maxCopies": -1,
       "effects": [
-        "DEF +968"
+        "DEF +108"
       ]
     },
     {
@@ -7387,14 +8017,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2973,
+      "bonusATK": 330,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 114244,
+      "buyPrice": 48401,
       "maxCopies": -1,
       "effects": [
-        "ATK +2973"
+        "ATK +330"
       ]
     },
     {
@@ -7433,16 +8063,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 3791,
+      "bonusHP": 340,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 76,
-      "buyPrice": 72931,
+      "bonusLUC": 11,
+      "buyPrice": 27440,
       "maxCopies": -1,
       "effects": [
-        "HP +3791",
-        "LUC +76"
+        "HP +340",
+        "LUC +11"
       ]
     },
     {
@@ -7507,14 +8137,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 919,
+      "bonusDEF": 97,
       "bonusAGI": 0,
-      "bonusLUC": 184,
-      "buyPrice": 2000000,
+      "bonusLUC": 22,
+      "buyPrice": 15308,
       "maxCopies": -1,
       "effects": [
-        "DEF +919",
-        "LUC +184"
+        "DEF +97",
+        "LUC +22"
       ]
     },
     {
@@ -7531,13 +8161,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 911,
+      "bonusDEF": 96,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 17119,
       "maxCopies": -1,
       "effects": [
-        "DEF +911"
+        "DEF +96"
       ]
     },
     {
@@ -7554,13 +8184,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 904,
+      "bonusDEF": 114,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 19144,
       "maxCopies": -1,
       "effects": [
-        "DEF +904"
+        "DEF +114"
       ]
     },
     {
@@ -7600,15 +8230,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1342,
+      "bonusATK": 292,
       "bonusDEF": 0,
-      "bonusAGI": 233,
+      "bonusAGI": 22,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 21408,
       "maxCopies": -1,
       "effects": [
-        "ATK +1342",
-        "AGI +233"
+        "ATK +292",
+        "AGI +22"
       ]
     },
     {
@@ -7624,15 +8254,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1264,
+      "bonusATK": 916,
       "bonusDEF": 0,
-      "bonusAGI": 92,
+      "bonusAGI": 69,
       "bonusLUC": 0,
-      "buyPrice": 22000,
+      "buyPrice": 224849,
       "maxCopies": -1,
       "effects": [
-        "ATK +1264",
-        "AGI +92"
+        "ATK +916",
+        "AGI +69"
       ]
     },
     {
@@ -7649,14 +8279,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 342,
-      "bonusAGI": 80,
+      "bonusDEF": 336,
+      "bonusAGI": 78,
       "bonusLUC": 0,
-      "buyPrice": 40685,
+      "buyPrice": 22000,
       "maxCopies": -1,
       "effects": [
-        "DEF +342",
-        "AGI +80"
+        "DEF +336",
+        "AGI +78"
       ]
     },
     {
@@ -7672,15 +8302,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3000,
+      "bonusATK": 364,
       "bonusDEF": 0,
-      "bonusAGI": 425,
+      "bonusAGI": 11,
       "bonusLUC": 0,
-      "buyPrice": 110000,
+      "buyPrice": 44033,
       "maxCopies": -1,
       "effects": [
-        "ATK +3000",
-        "AGI +425"
+        "ATK +364",
+        "AGI +11"
       ]
     },
     {
@@ -7697,13 +8327,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 896,
+      "bonusDEF": 111,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 23940,
       "maxCopies": -1,
       "effects": [
-        "DEF +896"
+        "DEF +111"
       ]
     },
     {
@@ -7720,13 +8350,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 934,
+      "bonusDEF": 119,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 26771,
       "maxCopies": -1,
       "effects": [
-        "DEF +934"
+        "DEF +119"
       ]
     },
     {
@@ -7743,13 +8373,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 1398,
+      "bonusDEF": 66,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 383905,
+      "buyPrice": 93843,
       "maxCopies": -1,
       "effects": [
-        "DEF +1398"
+        "DEF +66"
       ]
     },
     {
@@ -7764,17 +8394,17 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 3124,
+      "bonusHP": 3072,
       "bonusATK": 0,
-      "bonusDEF": 287,
+      "bonusDEF": 283,
       "bonusAGI": 0,
-      "bonusLUC": 66,
-      "buyPrice": 87594,
+      "bonusLUC": 65,
+      "buyPrice": 51412,
       "maxCopies": -1,
       "effects": [
-        "HP +3124",
-        "DEF +287",
-        "LUC +66"
+        "HP +3072",
+        "DEF +283",
+        "LUC +65"
       ]
     },
     {
@@ -7790,15 +8420,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2460,
+      "bonusATK": 351,
       "bonusDEF": 0,
-      "bonusAGI": 200,
+      "bonusAGI": 11,
       "bonusLUC": 0,
-      "buyPrice": 79000,
+      "buyPrice": 28769,
       "maxCopies": -1,
       "effects": [
-        "ATK +2460",
-        "AGI +200"
+        "ATK +351",
+        "AGI +11"
       ]
     },
     {
@@ -8839,13 +9469,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 121,
+      "bonusDEF": 134,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 21170,
+      "buyPrice": 128035,
       "maxCopies": -1,
       "effects": [
-        "DEF +121"
+        "DEF +134"
       ]
     },
     {
@@ -8860,16 +9490,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 14790,
+      "bonusHP": 14764,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 270,
-      "buyPrice": 1103113,
+      "bonusLUC": 269,
+      "buyPrice": 975480,
       "maxCopies": -1,
       "effects": [
-        "HP +14790",
-        "LUC +270"
+        "HP +14764",
+        "LUC +269"
       ]
     },
     {
@@ -8884,16 +9514,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 313,
+      "bonusHP": 336,
       "bonusATK": 0,
-      "bonusDEF": 53,
+      "bonusDEF": 57,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 40574,
+      "buyPrice": 81430,
       "maxCopies": -1,
       "effects": [
-        "HP +313",
-        "DEF +53"
+        "HP +336",
+        "DEF +57"
       ]
     },
     {
@@ -8910,13 +9540,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 30,
+      "bonusDEF": 41,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2843,
+      "buyPrice": 10656,
       "maxCopies": -1,
       "effects": [
-        "DEF +30"
+        "DEF +41"
       ]
     },
     {
@@ -8932,15 +9562,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3000,
+      "bonusATK": 358,
       "bonusDEF": 0,
-      "bonusAGI": 356,
+      "bonusAGI": 11,
       "bonusLUC": 0,
-      "buyPrice": 174442,
+      "buyPrice": 74081,
       "maxCopies": -1,
       "effects": [
-        "ATK +3000",
-        "AGI +356"
+        "ATK +358",
+        "AGI +11"
       ]
     },
     {
@@ -8984,7 +9614,7 @@
       "bonusDEF": 246,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 25613,
+      "buyPrice": 24584,
       "maxCopies": -1,
       "effects": [
         "DEF +246"
@@ -9004,13 +9634,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 872,
+      "bonusDEF": 117,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 1760407,
+      "buyPrice": 12241,
       "maxCopies": -1,
       "effects": [
-        "DEF +872"
+        "DEF +117"
       ]
     },
     {
@@ -9027,13 +9657,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 1100,
+      "bonusDEF": 62,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 165211,
+      "buyPrice": 61313,
       "maxCopies": -1,
       "effects": [
-        "DEF +1100"
+        "DEF +62"
       ]
     },
     {
@@ -9048,16 +9678,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 5349,
+      "bonusHP": 4005,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 106,
-      "buyPrice": 99179,
+      "bonusLUC": 80,
+      "buyPrice": 181086,
       "maxCopies": -1,
       "effects": [
-        "HP +5349",
-        "LUC +106"
+        "HP +4005",
+        "LUC +80"
       ]
     },
     {
@@ -9097,15 +9727,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1657,
+      "bonusATK": 1654,
       "bonusDEF": 0,
-      "bonusAGI": 120,
+      "bonusAGI": 119,
       "bonusLUC": 0,
-      "buyPrice": 769930,
+      "buyPrice": 684845,
       "maxCopies": -1,
       "effects": [
-        "ATK +1657",
-        "AGI +120"
+        "ATK +1654",
+        "AGI +119"
       ]
     },
     {
@@ -9120,16 +9750,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1185,
+      "bonusHP": 1201,
       "bonusATK": 0,
-      "bonusDEF": 131,
+      "bonusDEF": 133,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 193621,
+      "buyPrice": 250386,
       "maxCopies": -1,
       "effects": [
-        "HP +1185",
-        "DEF +131"
+        "HP +1201",
+        "DEF +133"
       ]
     },
     {
@@ -9144,18 +9774,18 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4000,
-      "bonusATK": 1188,
+      "bonusHP": 1043,
+      "bonusATK": 330,
       "bonusDEF": 0,
-      "bonusAGI": 201,
-      "bonusLUC": 201,
-      "buyPrice": 2000000,
+      "bonusAGI": 26,
+      "bonusLUC": 26,
+      "buyPrice": 29937,
       "maxCopies": -1,
       "effects": [
-        "HP +4000",
-        "ATK +1188",
-        "AGI +201",
-        "LUC +201"
+        "HP +1043",
+        "ATK +330",
+        "AGI +26",
+        "LUC +26"
       ]
     },
     {
@@ -9170,15 +9800,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 217,
+      "bonusHP": 243,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 5524,
+      "buyPrice": 7299,
       "maxCopies": -1,
       "effects": [
-        "HP +217"
+        "HP +243"
       ]
     },
     {
@@ -9195,13 +9825,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 36,
+      "bonusDEF": 38,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 6103,
+      "buyPrice": 7653,
       "maxCopies": -1,
       "effects": [
-        "DEF +36"
+        "DEF +38"
       ]
     },
     {
@@ -9216,16 +9846,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 252,
+      "bonusHP": 268,
       "bonusATK": 0,
-      "bonusDEF": 42,
+      "bonusDEF": 45,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 7450,
+      "buyPrice": 9247,
       "maxCopies": -1,
       "effects": [
-        "HP +252",
-        "DEF +42"
+        "HP +268",
+        "DEF +45"
       ]
     },
     {
@@ -9241,14 +9871,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1722,
+      "bonusATK": 352,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 44000,
+      "buyPrice": 22710,
       "maxCopies": -1,
       "effects": [
-        "ATK +1722"
+        "ATK +352"
       ]
     },
     {
@@ -9265,13 +9895,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 669,
+      "bonusDEF": 58,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 499259,
+      "buyPrice": 98388,
       "maxCopies": -1,
       "effects": [
-        "DEF +669"
+        "DEF +58"
       ]
     },
     {
@@ -9288,13 +9918,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 7,
+      "bonusDEF": 45,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 1404,
+      "buyPrice": 8412,
       "maxCopies": -1,
       "effects": [
-        "DEF +7"
+        "DEF +45"
       ]
     },
     {
@@ -9310,14 +9940,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 880,
+      "bonusATK": 322,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 33478,
       "maxCopies": -1,
       "effects": [
-        "ATK +880"
+        "ATK +322"
       ]
     },
     {
@@ -9332,15 +9962,15 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 409,
+      "bonusHP": 420,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 109960,
+      "buyPrice": 150589,
       "maxCopies": -1,
       "effects": [
-        "HP +409"
+        "HP +420"
       ]
     },
     {
@@ -9357,13 +9987,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 65,
+      "bonusDEF": 67,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 121489,
+      "buyPrice": 157882,
       "maxCopies": -1,
       "effects": [
-        "DEF +65"
+        "DEF +67"
       ]
     },
     {
@@ -9379,15 +10009,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2097,
+      "bonusATK": 320,
       "bonusDEF": 0,
-      "bonusAGI": 171,
+      "bonusAGI": 10,
       "bonusLUC": 0,
-      "buyPrice": 133811,
+      "buyPrice": 55779,
       "maxCopies": -1,
       "effects": [
-        "ATK +2097",
-        "AGI +171"
+        "ATK +320",
+        "AGI +10"
       ]
     },
     {
@@ -9402,16 +10032,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1963,
+      "bonusHP": 1912,
       "bonusATK": 0,
-      "bonusDEF": 182,
+      "bonusDEF": 177,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 480000,
+      "buyPrice": 229525,
       "maxCopies": -1,
       "effects": [
-        "HP +1963",
-        "DEF +182"
+        "HP +1912",
+        "DEF +177"
       ]
     },
     {
@@ -9428,13 +10058,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 685,
+      "bonusDEF": 100,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 791742,
+      "buyPrice": 8754,
       "maxCopies": -1,
       "effects": [
-        "DEF +685"
+        "DEF +100"
       ]
     },
     {
@@ -9451,13 +10081,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 408,
+      "bonusDEF": 55,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 47316,
+      "buyPrice": 24963,
       "maxCopies": -1,
       "effects": [
-        "DEF +408"
+        "DEF +55"
       ]
     },
     {
@@ -9474,13 +10104,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 849,
+      "bonusDEF": 104,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 1012288,
+      "buyPrice": 9789,
       "maxCopies": -1,
       "effects": [
-        "DEF +849"
+        "DEF +104"
       ]
     },
     {
@@ -9496,15 +10126,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 677,
+      "bonusATK": 255,
       "bonusDEF": 0,
-      "bonusAGI": 135,
+      "bonusAGI": 20,
       "bonusLUC": 0,
-      "buyPrice": 628717,
+      "buyPrice": 7828,
       "maxCopies": -1,
       "effects": [
-        "ATK +677",
-        "AGI +135"
+        "ATK +255",
+        "AGI +20"
       ]
     },
     {
@@ -9565,16 +10195,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 383,
+      "bonusHP": 293,
       "bonusATK": 0,
-      "bonusDEF": 96,
+      "bonusDEF": 49,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2000,
+      "buyPrice": 9694,
       "maxCopies": -1,
       "effects": [
-        "HP +383",
-        "DEF +96"
+        "HP +293",
+        "DEF +49"
       ]
     },
     {
@@ -9589,16 +10219,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 6690,
+      "bonusHP": 4964,
       "bonusATK": 0,
-      "bonusDEF": 576,
+      "bonusDEF": 429,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 511028,
+      "buyPrice": 519538,
       "maxCopies": -1,
       "effects": [
-        "HP +6690",
-        "DEF +576"
+        "HP +4964",
+        "DEF +429"
       ]
     },
     {
@@ -9806,16 +10436,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 2920,
+      "bonusHP": 2890,
       "bonusATK": 0,
-      "bonusDEF": 269,
+      "bonusDEF": 266,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 680000,
+      "buyPrice": 470222,
       "maxCopies": -1,
       "effects": [
-        "HP +2920",
-        "DEF +269"
+        "HP +2890",
+        "DEF +266"
       ]
     },
     {
@@ -10000,16 +10630,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 3292,
+      "bonusHP": 3260,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 69,
-      "buyPrice": 451338,
+      "bonusLUC": 68,
+      "buyPrice": 325160,
       "maxCopies": -1,
       "effects": [
-        "HP +3292",
-        "LUC +69"
+        "HP +3260",
+        "LUC +68"
       ]
     },
     {
@@ -10123,13 +10753,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 512,
+      "bonusDEF": 514,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 43692,
+      "buyPrice": 49121,
       "maxCopies": -1,
       "effects": [
-        "DEF +512"
+        "DEF +514"
       ]
     },
     {
@@ -10145,15 +10775,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3000,
+      "bonusATK": 327,
       "bonusDEF": 0,
-      "bonusAGI": 308,
+      "bonusAGI": 10,
       "bonusLUC": 0,
-      "buyPrice": 98000,
+      "buyPrice": 40059,
       "maxCopies": -1,
       "effects": [
-        "ATK +3000",
-        "AGI +308"
+        "ATK +327",
+        "AGI +10"
       ]
     },
     {
@@ -10168,16 +10798,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 14294,
+      "bonusHP": 2769,
       "bonusATK": 0,
-      "bonusDEF": 1131,
+      "bonusDEF": 255,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 174418,
+      "buyPrice": 680000,
       "maxCopies": -1,
       "effects": [
-        "HP +14294",
-        "DEF +1131"
+        "HP +2769",
+        "DEF +255"
       ]
     },
     {
@@ -10216,15 +10846,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 5500,
+      "bonusHP": 5520,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 110,
-      "buyPrice": 339186,
+      "buyPrice": 404321,
       "maxCopies": -1,
       "effects": [
-        "HP +5500",
+        "HP +5520",
         "LUC +110"
       ]
     },
@@ -10240,16 +10870,16 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 417,
+      "bonusHP": 424,
       "bonusATK": 0,
-      "bonusDEF": 71,
+      "bonusDEF": 72,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 134225,
+      "buyPrice": 165529,
       "maxCopies": -1,
       "effects": [
-        "HP +417",
-        "DEF +71"
+        "HP +424",
+        "DEF +72"
       ]
     },
     {
@@ -10265,14 +10895,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 250,
+      "bonusATK": 278,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 12000,
+      "buyPrice": 13499,
       "maxCopies": -1,
       "effects": [
-        "ATK +250"
+        "ATK +278"
       ]
     },
     {
@@ -10290,12 +10920,12 @@
       "bonusHP": 0,
       "bonusATK": 0,
       "bonusDEF": 0,
-      "bonusAGI": 9,
+      "bonusAGI": 7,
       "bonusLUC": 0,
-      "buyPrice": 120,
+      "buyPrice": 5762,
       "maxCopies": -1,
       "effects": [
-        "AGI +9"
+        "AGI +7"
       ]
     },
     {
@@ -10312,14 +10942,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 105,
-      "bonusAGI": 23,
+      "bonusDEF": 119,
+      "bonusAGI": 26,
       "bonusLUC": 0,
-      "buyPrice": 14639,
+      "buyPrice": 114493,
       "maxCopies": -1,
       "effects": [
-        "DEF +105",
-        "AGI +23"
+        "DEF +119",
+        "AGI +26"
       ]
     },
     {
@@ -10359,14 +10989,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 352,
+      "bonusATK": 390,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 22308,
+      "buyPrice": 50745,
       "maxCopies": -1,
       "effects": [
-        "ATK +352"
+        "ATK +390"
       ]
     },
     {
@@ -10381,16 +11011,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4386,
+      "bonusHP": 4298,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 88,
-      "buyPrice": 139140,
+      "bonusLUC": 87,
+      "buyPrice": 63118,
       "maxCopies": -1,
       "effects": [
-        "HP +4386",
-        "LUC +88"
+        "HP +4298",
+        "LUC +87"
       ]
     },
     {
@@ -10406,15 +11036,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1259,
+      "bonusATK": 1232,
       "bonusDEF": 0,
-      "bonusAGI": 92,
+      "bonusAGI": 90,
       "bonusLUC": 0,
-      "buyPrice": 257314,
+      "buyPrice": 106910,
       "maxCopies": -1,
       "effects": [
-        "ATK +1259",
-        "AGI +92"
+        "ATK +1232",
+        "AGI +90"
       ]
     },
     {
@@ -10430,15 +11060,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 365,
+      "bonusATK": 385,
       "bonusDEF": 0,
-      "bonusAGI": 28,
+      "bonusAGI": 30,
       "bonusLUC": 0,
-      "buyPrice": 64023,
+      "buyPrice": 179048,
       "maxCopies": -1,
       "effects": [
-        "ATK +365",
-        "AGI +28"
+        "ATK +385",
+        "AGI +30"
       ]
     },
     {
@@ -10455,13 +11085,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 1195,
+      "bonusDEF": 1191,
       "bonusAGI": 275,
       "bonusLUC": 0,
-      "buyPrice": 596500,
+      "buyPrice": 466451,
       "maxCopies": -1,
       "effects": [
-        "DEF +1195",
+        "DEF +1191",
         "AGI +275"
       ]
     },
@@ -10479,13 +11109,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 104,
+      "bonusDEF": 45,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4183,
+      "buyPrice": 11713,
       "maxCopies": -1,
       "effects": [
-        "DEF +104"
+        "DEF +45"
       ]
     },
     {
@@ -10500,16 +11130,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 329,
+      "bonusHP": 362,
       "bonusATK": 0,
-      "bonusDEF": 55,
+      "bonusDEF": 61,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 24646,
+      "buyPrice": 53202,
       "maxCopies": -1,
       "effects": [
-        "HP +329",
-        "DEF +55"
+        "HP +362",
+        "DEF +61"
       ]
     },
     {
@@ -13753,6 +14383,29 @@
       ]
     },
     {
+      "id": "Pharaoh_Scepter_H",
+      "name": "Pharaoh Scepter [H]",
+      "description": "",
+      "image": "item_Pharaoh_Scepter_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 288649,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 101700000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +288649"
+      ]
+    },
+    {
       "id": "Phoenix_Feather_H",
       "name": "Phoenix Feather [H]",
       "description": "",
@@ -15337,14 +15990,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1184,
+      "bonusATK": 333,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 0,
       "maxCopies": -1,
       "effects": [
-        "ATK +1184"
+        "ATK +333"
       ]
     },
     {
@@ -15360,14 +16013,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 286,
+      "bonusATK": 325,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 25095,
+      "buyPrice": 19706,
       "maxCopies": -1,
       "effects": [
-        "ATK +286"
+        "ATK +325"
       ]
     },
     {
@@ -15383,14 +16036,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 396,
+      "bonusATK": 420,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 60456,
+      "buyPrice": 113386,
       "maxCopies": -1,
       "effects": [
-        "ATK +396"
+        "ATK +420"
       ]
     },
     {
@@ -15405,16 +16058,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 6322,
+      "bonusHP": 6329,
       "bonusATK": 0,
-      "bonusDEF": 544,
+      "bonusDEF": 545,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 225129,
+      "buyPrice": 238705,
       "maxCopies": -1,
       "effects": [
-        "HP +6322",
-        "DEF +544"
+        "HP +6329",
+        "DEF +545"
       ]
     },
     {
@@ -15454,17 +16107,17 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4000,
+      "bonusHP": 970,
       "bonusATK": 0,
-      "bonusDEF": 852,
+      "bonusDEF": 108,
       "bonusAGI": 0,
-      "bonusLUC": 187,
-      "buyPrice": 2000000,
+      "bonusLUC": 23,
+      "buyPrice": 37438,
       "maxCopies": -1,
       "effects": [
-        "HP +4000",
-        "DEF +852",
-        "LUC +187"
+        "HP +970",
+        "DEF +108",
+        "LUC +23"
       ]
     },
     {
@@ -15480,16 +16133,16 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 55,
-      "bonusDEF": 37,
+      "bonusATK": 318,
+      "bonusDEF": 51,
       "bonusAGI": 0,
-      "bonusLUC": 12,
-      "buyPrice": 26000,
+      "bonusLUC": 9,
+      "buyPrice": 20661,
       "maxCopies": -1,
       "effects": [
-        "ATK +55",
-        "DEF +37",
-        "LUC +12"
+        "ATK +318",
+        "DEF +51",
+        "LUC +9"
       ]
     },
     {
@@ -15505,15 +16158,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1184,
+      "bonusATK": 302,
       "bonusDEF": 0,
-      "bonusAGI": 200,
+      "bonusAGI": 9,
       "bonusLUC": 0,
       "buyPrice": 0,
       "maxCopies": -1,
       "effects": [
-        "ATK +1184",
-        "AGI +200"
+        "ATK +302",
+        "AGI +9"
       ]
     },
     {
@@ -15530,13 +16183,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 55,
+      "bonusDEF": 60,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 18275,
+      "buyPrice": 38208,
       "maxCopies": -1,
       "effects": [
-        "DEF +55"
+        "DEF +60"
       ]
     },
     {
@@ -15551,16 +16204,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 332,
+      "bonusHP": 365,
       "bonusATK": 0,
-      "bonusDEF": 56,
+      "bonusDEF": 62,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 20191,
+      "buyPrice": 41999,
       "maxCopies": -1,
       "effects": [
-        "HP +332",
-        "DEF +56"
+        "HP +365",
+        "DEF +62"
       ]
     },
     {
@@ -15575,15 +16228,15 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 302,
+      "bonusHP": 341,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 14971,
+      "buyPrice": 34760,
       "maxCopies": -1,
       "effects": [
-        "HP +302"
+        "HP +341"
       ]
     },
     {
@@ -15598,16 +16251,16 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 270,
+      "bonusHP": 295,
       "bonusATK": 0,
-      "bonusDEF": 45,
+      "bonusDEF": 49,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 10048,
+      "buyPrice": 15556,
       "maxCopies": -1,
       "effects": [
-        "HP +270",
-        "DEF +45"
+        "HP +295",
+        "DEF +49"
       ]
     },
     {
@@ -15623,14 +16276,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 268,
+      "bonusATK": 292,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 11101,
+      "buyPrice": 17928,
       "maxCopies": -1,
       "effects": [
-        "ATK +268"
+        "ATK +292"
       ]
     },
     {
@@ -15647,13 +16300,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 59,
+      "bonusDEF": 62,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 73797,
+      "buyPrice": 124634,
       "maxCopies": -1,
       "effects": [
-        "DEF +59"
+        "DEF +62"
       ]
     },
     {
@@ -15668,15 +16321,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 343,
+      "bonusHP": 362,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 66795,
+      "buyPrice": 118877,
       "maxCopies": -1,
       "effects": [
-        "HP +343"
+        "HP +362"
       ]
     },
     {
@@ -15691,17 +16344,17 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4321,
+      "bonusHP": 4275,
       "bonusATK": 0,
-      "bonusDEF": 374,
+      "bonusDEF": 369,
       "bonusAGI": 0,
-      "bonusLUC": 87,
-      "buyPrice": 475853,
+      "bonusLUC": 86,
+      "buyPrice": 306726,
       "maxCopies": -1,
       "effects": [
-        "HP +4321",
-        "DEF +374",
-        "LUC +87"
+        "HP +4275",
+        "DEF +369",
+        "LUC +86"
       ]
     },
     {
@@ -15766,13 +16419,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 40,
+      "bonusDEF": 44,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 9094,
+      "buyPrice": 14838,
       "maxCopies": -1,
       "effects": [
-        "DEF +40"
+        "DEF +44"
       ]
     },
     {
@@ -15787,16 +16440,16 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 255,
+      "bonusHP": 281,
       "bonusATK": 0,
-      "bonusDEF": 42,
+      "bonusDEF": 47,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 12265,
+      "buyPrice": 21661,
       "maxCopies": -1,
       "effects": [
-        "HP +255",
-        "DEF +42"
+        "HP +281",
+        "DEF +47"
       ]
     },
     {
@@ -15811,15 +16464,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 283,
+      "bonusHP": 317,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 8231,
+      "buyPrice": 14152,
       "maxCopies": -1,
       "effects": [
-        "HP +283"
+        "HP +317"
       ]
     },
     {
@@ -15836,13 +16489,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 6,
+      "bonusDEF": 41,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 1913,
+      "buyPrice": 8819,
       "maxCopies": -1,
       "effects": [
-        "DEF +6"
+        "DEF +41"
       ]
     },
     {
@@ -15857,16 +16510,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 26,
+      "bonusHP": 243,
       "bonusATK": 0,
-      "bonusDEF": 4,
+      "bonusDEF": 41,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 209,
+      "buyPrice": 6041,
       "maxCopies": -1,
       "effects": [
-        "HP +26",
-        "DEF +4"
+        "HP +243",
+        "DEF +41"
       ]
     },
     {
@@ -15883,13 +16536,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 58,
+      "bonusDEF": 64,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 33239,
+      "buyPrice": 70659,
       "maxCopies": -1,
       "effects": [
-        "DEF +58"
+        "DEF +64"
       ]
     },
     {
@@ -15905,15 +16558,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3000,
+      "bonusATK": 374,
       "bonusDEF": 0,
-      "bonusAGI": 238,
+      "bonusAGI": 11,
       "bonusLUC": 0,
-      "buyPrice": 345502,
+      "buyPrice": 89508,
       "maxCopies": -1,
       "effects": [
-        "ATK +3000",
-        "AGI +238"
+        "ATK +374",
+        "AGI +11"
       ]
     },
     {
@@ -15931,13 +16584,13 @@
       "bonusHP": 0,
       "bonusATK": 0,
       "bonusDEF": 579,
-      "bonusAGI": 135,
+      "bonusAGI": 134,
       "bonusLUC": 0,
-      "buyPrice": 149425,
+      "buyPrice": 140927,
       "maxCopies": -1,
       "effects": [
         "DEF +579",
-        "AGI +135"
+        "AGI +134"
       ]
     },
     {
@@ -15954,13 +16607,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 6,
+      "bonusDEF": 45,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4000,
+      "buyPrice": 11172,
       "maxCopies": -1,
       "effects": [
-        "DEF +6"
+        "DEF +45"
       ]
     },
     {
@@ -15975,17 +16628,17 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 16045,
+      "bonusHP": 15957,
       "bonusATK": 0,
-      "bonusDEF": 1270,
+      "bonusDEF": 1263,
       "bonusAGI": 0,
-      "bonusLUC": 292,
-      "buyPrice": 322552,
+      "bonusLUC": 291,
+      "buyPrice": 223046,
       "maxCopies": -1,
       "effects": [
-        "HP +16045",
-        "DEF +1270",
-        "LUC +292"
+        "HP +15957",
+        "DEF +1263",
+        "LUC +291"
       ]
     },
     {
@@ -16000,16 +16653,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1749,
+      "bonusHP": 1732,
       "bonusATK": 0,
-      "bonusDEF": 162,
+      "bonusDEF": 161,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 140353,
+      "buyPrice": 109753,
       "maxCopies": -1,
       "effects": [
-        "HP +1749",
-        "DEF +162"
+        "HP +1732",
+        "DEF +161"
       ]
     },
     {
@@ -16026,13 +16679,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 825,
+      "bonusDEF": 120,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 41865,
       "maxCopies": -1,
       "effects": [
-        "DEF +825"
+        "DEF +120"
       ]
     },
     {
@@ -16073,15 +16726,15 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 834,
-      "bonusAGI": 183,
-      "bonusLUC": 183,
-      "buyPrice": 2000000,
+      "bonusDEF": 125,
+      "bonusAGI": 28,
+      "bonusLUC": 28,
+      "buyPrice": 46817,
       "maxCopies": -1,
       "effects": [
-        "DEF +834",
-        "AGI +183",
-        "LUC +183"
+        "DEF +125",
+        "AGI +28",
+        "LUC +28"
       ]
     },
     {
@@ -16097,14 +16750,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 304,
+      "bonusATK": 351,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 10123,
+      "buyPrice": 102384,
       "maxCopies": -1,
       "effects": [
-        "ATK +304"
+        "ATK +351"
       ]
     },
     {
@@ -16143,16 +16796,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1004,
+      "bonusHP": 1045,
       "bonusATK": 0,
-      "bonusDEF": 111,
+      "bonusDEF": 116,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 92585,
+      "buyPrice": 200224,
       "maxCopies": -1,
       "effects": [
-        "HP +1004",
-        "DEF +111"
+        "HP +1045",
+        "DEF +116"
       ]
     },
     {
@@ -16168,15 +16821,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 339,
+      "bonusATK": 348,
       "bonusDEF": 0,
-      "bonusAGI": 26,
+      "bonusAGI": 27,
       "bonusLUC": 0,
-      "buyPrice": 133889,
+      "buyPrice": 223905,
       "maxCopies": -1,
       "effects": [
-        "ATK +339",
-        "AGI +26"
+        "ATK +348",
+        "AGI +27"
       ]
     },
     {
@@ -16191,16 +16844,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 3156,
+      "bonusHP": 3106,
       "bonusATK": 0,
-      "bonusDEF": 291,
+      "bonusDEF": 285,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 58139,
+      "buyPrice": 35552,
       "maxCopies": -1,
       "effects": [
-        "HP +3156",
-        "DEF +291"
+        "HP +3106",
+        "DEF +285"
       ]
     },
     {
@@ -16217,13 +16870,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 815,
+      "bonusDEF": 108,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 52354,
       "maxCopies": -1,
       "effects": [
-        "DEF +815"
+        "DEF +108"
       ]
     },
     {
@@ -16285,17 +16938,17 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4000,
+      "bonusHP": 1028,
       "bonusATK": 0,
-      "bonusDEF": 1083,
+      "bonusDEF": 114,
       "bonusAGI": 0,
-      "bonusLUC": 235,
-      "buyPrice": 2000000,
+      "bonusLUC": 25,
+      "buyPrice": 58546,
       "maxCopies": -1,
       "effects": [
-        "HP +4000",
-        "DEF +1083",
-        "LUC +235"
+        "HP +1028",
+        "DEF +114",
+        "LUC +25"
       ]
     },
     {
@@ -16311,14 +16964,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3000,
+      "bonusATK": 343,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 112000,
+      "buyPrice": 46165,
       "maxCopies": -1,
       "effects": [
-        "ATK +3000",
+        "ATK +343",
         "EXP +10%"
       ]
     },
@@ -16359,15 +17012,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 131,
+      "bonusATK": 337,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 24,
-      "buyPrice": 18292,
+      "bonusLUC": 10,
+      "buyPrice": 18796,
       "maxCopies": -1,
       "effects": [
-        "ATK +131",
-        "LUC +24"
+        "ATK +337",
+        "LUC +10"
       ]
     },
     {
@@ -16384,13 +17037,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 11,
+      "bonusDEF": 38,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 300,
+      "buyPrice": 6334,
       "maxCopies": -1,
       "effects": [
-        "DEF +11"
+        "DEF +38"
       ]
     },
     {
@@ -16405,16 +17058,16 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 318,
+      "bonusHP": 343,
       "bonusATK": 0,
-      "bonusDEF": 54,
+      "bonusDEF": 57,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 49527,
+      "buyPrice": 103153,
       "maxCopies": -1,
       "effects": [
-        "HP +318",
-        "DEF +54"
+        "HP +343",
+        "DEF +57"
       ]
     },
     {
@@ -16429,17 +17082,17 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 2204,
+      "bonusHP": 2163,
       "bonusATK": 0,
-      "bonusDEF": 630,
+      "bonusDEF": 617,
       "bonusAGI": 0,
-      "bonusLUC": 89,
-      "buyPrice": 75239,
+      "bonusLUC": 87,
+      "buyPrice": 37264,
       "maxCopies": -1,
       "effects": [
-        "HP +2204",
-        "DEF +630",
-        "LUC +89"
+        "HP +2163",
+        "DEF +617",
+        "LUC +87"
       ]
     },
     {
@@ -16455,14 +17108,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 4011,
+      "bonusATK": 4019,
       "bonusDEF": 0,
       "bonusAGI": 297,
       "bonusLUC": 0,
-      "buyPrice": 94315,
+      "buyPrice": 106655,
       "maxCopies": -1,
       "effects": [
-        "ATK +4011",
+        "ATK +4019",
         "AGI +297"
       ]
     },
@@ -16479,15 +17132,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1319,
+      "bonusATK": 330,
       "bonusDEF": 0,
-      "bonusAGI": 229,
+      "bonusAGI": 25,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 65470,
       "maxCopies": -1,
       "effects": [
-        "ATK +1319",
-        "AGI +229"
+        "ATK +330",
+        "AGI +25"
       ]
     },
     {
@@ -16525,16 +17178,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 361,
+      "bonusHP": 377,
       "bonusATK": 0,
-      "bonusDEF": 61,
+      "bonusDEF": 64,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 81534,
+      "buyPrice": 130670,
       "maxCopies": -1,
       "effects": [
-        "HP +361",
-        "DEF +61"
+        "HP +377",
+        "DEF +64"
       ]
     },
     {
@@ -16549,16 +17202,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 2946,
+      "bonusHP": 2891,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 61,
-      "buyPrice": 198833,
+      "bonusLUC": 60,
+      "buyPrice": 107517,
       "maxCopies": -1,
       "effects": [
-        "HP +2946",
-        "LUC +61"
+        "HP +2891",
+        "LUC +60"
       ]
     },
     {
@@ -16575,13 +17228,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 71,
+      "bonusDEF": 72,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 181022,
+      "buyPrice": 190762,
       "maxCopies": -1,
       "effects": [
-        "DEF +71"
+        "DEF +72"
       ]
     },
     {
@@ -16597,15 +17250,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 401,
+      "bonusATK": 415,
       "bonusDEF": 0,
-      "bonusAGI": 12,
+      "bonusAGI": 13,
       "bonusLUC": 0,
-      "buyPrice": 99526,
+      "buyPrice": 143633,
       "maxCopies": -1,
       "effects": [
-        "ATK +401",
-        "AGI +12"
+        "ATK +415",
+        "AGI +13"
       ]
     },
     {
@@ -16621,14 +17274,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 868,
+      "bonusATK": 878,
       "bonusDEF": 0,
       "bonusAGI": 16,
       "bonusLUC": 0,
-      "buyPrice": 41039,
+      "buyPrice": 52481,
       "maxCopies": -1,
       "effects": [
-        "ATK +868",
+        "ATK +878",
         "AGI +16"
       ]
     },
@@ -16644,15 +17297,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 360,
+      "bonusHP": 365,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 148297,
+      "buyPrice": 173545,
       "maxCopies": -1,
       "effects": [
-        "HP +360"
+        "HP +365"
       ]
     },
     {
@@ -16669,13 +17322,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 288,
+      "bonusDEF": 50,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 45989,
+      "buyPrice": 23810,
       "maxCopies": -1,
       "effects": [
-        "DEF +288"
+        "DEF +50"
       ]
     },
     {
@@ -16691,14 +17344,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3000,
+      "bonusATK": 340,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 79000,
+      "buyPrice": 30162,
       "maxCopies": -1,
       "effects": [
-        "ATK +3000"
+        "ATK +340"
       ]
     },
     {
@@ -16713,15 +17366,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 418,
+      "bonusHP": 422,
       "bonusATK": 0,
       "bonusDEF": 71,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 163845,
+      "buyPrice": 181950,
       "maxCopies": -1,
       "effects": [
-        "HP +418",
+        "HP +422",
         "DEF +71"
       ]
     },
@@ -16738,14 +17391,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 332,
+      "bonusATK": 355,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 44828,
+      "buyPrice": 85374,
       "maxCopies": -1,
       "effects": [
-        "ATK +332"
+        "ATK +355"
       ]
     },
     {
@@ -16760,16 +17413,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 315,
+      "bonusHP": 353,
       "bonusATK": 0,
-      "bonusDEF": 53,
+      "bonusDEF": 59,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 16541,
+      "buyPrice": 36443,
       "maxCopies": -1,
       "effects": [
-        "HP +315",
-        "DEF +53"
+        "HP +353",
+        "DEF +59"
       ]
     },
     {
@@ -16785,15 +17438,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1473,
+      "bonusATK": 1481,
       "bonusDEF": 0,
-      "bonusAGI": 106,
+      "bonusAGI": 107,
       "bonusLUC": 0,
-      "buyPrice": 65828,
+      "buyPrice": 83201,
       "maxCopies": -1,
       "effects": [
-        "ATK +1473",
-        "AGI +106"
+        "ATK +1481",
+        "AGI +107"
       ]
     },
     {
@@ -16809,15 +17462,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 905,
+      "bonusATK": 888,
       "bonusDEF": 0,
-      "bonusAGI": 67,
+      "bonusAGI": 66,
       "bonusLUC": 0,
-      "buyPrice": 299568,
+      "buyPrice": 155484,
       "maxCopies": -1,
       "effects": [
-        "ATK +905",
-        "AGI +67"
+        "ATK +888",
+        "AGI +66"
       ]
     },
     {
@@ -16833,15 +17486,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3000,
+      "bonusATK": 407,
       "bonusDEF": 0,
-      "bonusAGI": 455,
+      "bonusAGI": 13,
       "bonusLUC": 0,
-      "buyPrice": 165729,
+      "buyPrice": 67395,
       "maxCopies": -1,
       "effects": [
-        "ATK +3000",
-        "AGI +455"
+        "ATK +407",
+        "AGI +13"
       ]
     },
     {
@@ -16859,12 +17512,12 @@
       "bonusHP": 0,
       "bonusATK": 0,
       "bonusDEF": 0,
-      "bonusAGI": 9,
+      "bonusAGI": 8,
       "bonusLUC": 0,
-      "buyPrice": 1359,
+      "buyPrice": 6962,
       "maxCopies": -1,
       "effects": [
-        "AGI +9"
+        "AGI +8"
       ]
     },
     {
@@ -16881,14 +17534,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 288,
-      "bonusAGI": 66,
+      "bonusDEF": 283,
+      "bonusAGI": 64,
       "bonusLUC": 0,
-      "buyPrice": 131972,
+      "buyPrice": 74349,
       "maxCopies": -1,
       "effects": [
-        "DEF +288",
-        "AGI +66"
+        "DEF +283",
+        "AGI +64"
       ]
     },
     {
@@ -16905,13 +17558,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 51,
+      "bonusDEF": 55,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 36724,
+      "buyPrice": 77669,
       "maxCopies": -1,
       "effects": [
-        "DEF +51"
+        "DEF +55"
       ]
     },
     {
@@ -16926,15 +17579,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 295,
+      "bonusHP": 323,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 27230,
+      "buyPrice": 58480,
       "maxCopies": -1,
       "effects": [
-        "HP +295"
+        "HP +323"
       ]
     },
     {
@@ -16950,14 +17603,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 329,
+      "bonusATK": 376,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 13551,
+      "buyPrice": 33154,
       "maxCopies": -1,
       "effects": [
-        "ATK +329"
+        "ATK +376"
       ]
     },
     {
@@ -16972,16 +17625,16 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 331,
+      "bonusHP": 343,
       "bonusATK": 0,
-      "bonusDEF": 55,
+      "bonusDEF": 58,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 90082,
+      "buyPrice": 136999,
       "maxCopies": -1,
       "effects": [
-        "HP +331",
-        "DEF +55"
+        "HP +343",
+        "DEF +58"
       ]
     },
     {
@@ -16997,14 +17650,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 37,
+      "bonusATK": 249,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 650,
+      "buyPrice": 6641,
       "maxCopies": -1,
       "effects": [
-        "ATK +37"
+        "ATK +249"
       ]
     },
     {
@@ -17021,13 +17674,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 6,
+      "bonusDEF": 39,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 40,
+      "buyPrice": 5242,
       "maxCopies": -1,
       "effects": [
-        "DEF +6"
+        "DEF +39"
       ]
     },
     {
@@ -17042,16 +17695,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4000,
+      "bonusHP": 1061,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 212,
-      "buyPrice": 2000000,
+      "bonusLUC": 26,
+      "buyPrice": 73213,
       "maxCopies": -1,
       "effects": [
-        "HP +4000",
-        "LUC +212"
+        "HP +1061",
+        "LUC +26"
       ]
     },
     {
@@ -17066,15 +17719,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 488,
+      "bonusHP": 287,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 7000,
+      "buyPrice": 12280,
       "maxCopies": -1,
       "effects": [
-        "HP +488"
+        "HP +287"
       ]
     },
     {
@@ -17089,16 +17742,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1104,
+      "bonusHP": 1205,
       "bonusATK": 0,
-      "bonusDEF": 122,
+      "bonusDEF": 133,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 30614,
+      "buyPrice": 143177,
       "maxCopies": -1,
       "effects": [
-        "HP +1104",
-        "DEF +122"
+        "HP +1205",
+        "DEF +133"
       ]
     },
     {
@@ -17114,14 +17767,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 380,
+      "bonusATK": 406,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 54720,
+      "buyPrice": 108148,
       "maxCopies": -1,
       "effects": [
-        "ATK +380"
+        "ATK +406"
       ]
     },
     {
@@ -17163,13 +17816,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 1092,
+      "bonusDEF": 113,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2000000,
+      "buyPrice": 81872,
       "maxCopies": -1,
       "effects": [
-        "DEF +1092"
+        "DEF +113"
       ]
     },
     {
@@ -17188,11 +17841,11 @@
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 5,
-      "buyPrice": 2744,
+      "bonusLUC": 8,
+      "buyPrice": 10164,
       "maxCopies": -1,
       "effects": [
-        "LUC +5"
+        "LUC +8"
       ]
     },
     {
@@ -17233,12 +17886,12 @@
       "bonusHP": 0,
       "bonusATK": 0,
       "bonusDEF": 0,
-      "bonusAGI": 9,
+      "bonusAGI": 7,
       "bonusLUC": 0,
-      "buyPrice": 100,
+      "buyPrice": 5496,
       "maxCopies": -1,
       "effects": [
-        "AGI +9"
+        "AGI +7"
       ]
     },
     {
@@ -17783,13 +18436,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 857,
+      "bonusDEF": 107,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 1217326,
+      "buyPrice": 10947,
       "maxCopies": -1,
       "effects": [
-        "DEF +857"
+        "DEF +107"
       ]
     },
     {
@@ -17806,13 +18459,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 865,
+      "bonusDEF": 173,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 1463895,
+      "buyPrice": 25095,
       "maxCopies": -1,
       "effects": [
-        "DEF +865"
+        "DEF +173"
       ]
     },
     {
@@ -17829,13 +18482,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 1359,
+      "bonusDEF": 58,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 79000,
+      "buyPrice": 31623,
       "maxCopies": -1,
       "effects": [
-        "DEF +1359"
+        "DEF +58"
       ]
     },
     {
@@ -17851,15 +18504,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1218,
+      "bonusATK": 315,
       "bonusDEF": 0,
-      "bonusAGI": 86,
+      "bonusAGI": 10,
       "bonusLUC": 0,
-      "buyPrice": 60508,
+      "buyPrice": 26172,
       "maxCopies": -1,
       "effects": [
-        "ATK +1218",
-        "AGI +86"
+        "ATK +315",
+        "AGI +10"
       ]
     },
     {
@@ -17875,15 +18528,15 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 711,
+      "bonusATK": 498,
       "bonusDEF": 0,
-      "bonusAGI": 53,
+      "bonusAGI": 38,
       "bonusLUC": 0,
-      "buyPrice": 38589,
+      "buyPrice": 480000,
       "maxCopies": -1,
       "effects": [
-        "ATK +711",
-        "AGI +53"
+        "ATK +498",
+        "AGI +38"
       ]
     },
     {
@@ -17924,15 +18577,15 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 843,
-      "bonusAGI": 185,
-      "bonusLUC": 185,
-      "buyPrice": 2000000,
+      "bonusDEF": 125,
+      "bonusAGI": 28,
+      "bonusLUC": 28,
+      "buyPrice": 91556,
       "maxCopies": -1,
       "effects": [
-        "DEF +843",
-        "AGI +185",
-        "LUC +185"
+        "DEF +125",
+        "AGI +28",
+        "LUC +28"
       ]
     },
     {
@@ -17995,16 +18648,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 997,
+      "bonusHP": 1070,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 25,
-      "buyPrice": 44272,
+      "bonusLUC": 26,
+      "buyPrice": 160111,
       "maxCopies": -1,
       "effects": [
-        "HP +997",
-        "LUC +25"
+        "HP +1070",
+        "LUC +26"
       ]
     },
     {
@@ -18022,12 +18675,12 @@
       "bonusHP": 0,
       "bonusATK": 0,
       "bonusDEF": 0,
-      "bonusAGI": 22,
+      "bonusAGI": 9,
       "bonusLUC": 0,
-      "buyPrice": 8747,
+      "buyPrice": 12875,
       "maxCopies": -1,
       "effects": [
-        "AGI +22"
+        "AGI +9"
       ]
     },
     {
@@ -18042,15 +18695,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 289,
+      "bonusHP": 315,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 30085,
+      "buyPrice": 64282,
       "maxCopies": -1,
       "effects": [
-        "HP +289"
+        "HP +315"
       ]
     },
     {
@@ -18065,15 +18718,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 236,
+      "bonusHP": 249,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 6743,
+      "buyPrice": 8023,
       "maxCopies": -1,
       "effects": [
-        "HP +236"
+        "HP +249"
       ]
     },
     {
@@ -18460,7 +19113,7 @@
       "goldMultiplier": 46,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_DS01",
+          "enemyId": "DesertScorpion_DS01 1",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -18620,7 +19273,7 @@
       "goldMultiplier": 70,
       "enemies": [
         {
-          "enemyId": "ShadowHound_DS03",
+          "enemyId": "ShadowHound_DS03 1",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -18660,7 +19313,7 @@
       "goldMultiplier": 74,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_DS03",
+          "enemyId": "CrystalGolem_DS03 1",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -19132,7 +19785,7 @@
       "goldMultiplier": 7.5,
       "enemies": [
         {
-          "enemyId": "ShadowHound_FR01",
+          "enemyId": "ShadowHound_FR01 1",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -19212,7 +19865,7 @@
       "goldMultiplier": 13,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_FR03",
+          "enemyId": "DesertScorpion_FR03 1",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -19272,7 +19925,7 @@
       "goldMultiplier": 16,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_FR03",
+          "enemyId": "CrystalGolem_FR03 1",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -19312,7 +19965,7 @@
       "goldMultiplier": 18,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR03",
+          "enemyId": "BloodWraith_FR03 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -19332,7 +19985,7 @@
       "goldMultiplier": 19,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR04",
+          "enemyId": "BloodWraith_FR04 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -19352,7 +20005,7 @@
       "goldMultiplier": 20,
       "enemies": [
         {
-          "enemyId": "FlameImp_FR04",
+          "enemyId": "FlameImp_FR04 1",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -19412,7 +20065,7 @@
       "goldMultiplier": 23,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_FR04",
+          "enemyId": "ChaosShaman_FR04 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -20379,7 +21032,7 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Pharaoh's_Scepter_H",
+        "Pharaoh_Scepter_H",
         "Sand_Blade_H",
         "Flame_Armor_H",
         "Ankh_Crown_H",
@@ -20410,7 +21063,7 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Pharaoh's_Scepter_H",
+        "Pharaoh_Scepter_H",
         "Sand_Blade_H",
         "Flame_Armor_H",
         "Ankh_Crown_H",
@@ -20441,7 +21094,7 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Pharaoh's_Scepter_H",
+        "Pharaoh_Scepter_H",
         "Sand_Blade_H",
         "Flame_Armor_H",
         "Ankh_Crown_H",
@@ -20472,7 +21125,7 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Pharaoh's_Scepter_H",
+        "Pharaoh_Scepter_H",
         "Sand_Blade_H",
         "Flame_Armor_H",
         "Ankh_Crown_H",
@@ -20503,7 +21156,7 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Pharaoh's_Scepter_H",
+        "Pharaoh_Scepter_H",
         "Sand_Blade_H",
         "Flame_Armor_H",
         "Ankh_Crown_H",
@@ -20534,7 +21187,7 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Pharaoh's_Scepter_H",
+        "Pharaoh_Scepter_H",
         "Sand_Blade_H",
         "Flame_Armor_H",
         "Ankh_Crown_H",
@@ -23609,7 +24262,7 @@
       "goldMultiplier": 32,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_VO01",
+          "enemyId": "ChaosShaman_VO01 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -23709,7 +24362,7 @@
       "goldMultiplier": 27,
       "enemies": [
         {
-          "enemyId": "FlameImp_VO01",
+          "enemyId": "FlameImp_VO01 1",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
