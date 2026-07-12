@@ -121,6 +121,36 @@ img { max-width: 100%; display: block; }
 .game-hero p { color:#d9dde7; }
 .hero-kicker { display:inline-block; color:var(--accent-2); font-size:.78rem; font-weight:800; text-transform:uppercase; letter-spacing:.12em; }
 
+/* ---- mobile download CTA ---- */
+.download-block { margin:1.35rem auto 0; max-width:600px; }
+.download-heading {
+  display:flex; align-items:center; justify-content:center; gap:.45rem; margin-bottom:.65rem;
+  color:#f4f7ff; font-size:.78rem; font-weight:800; text-transform:uppercase; letter-spacing:.1em;
+}
+.download-dot { width:7px; height:7px; border-radius:50%; background:var(--accent-2); box-shadow:0 0 0 4px rgba(255,207,107,.14); }
+.store-buttons { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.65rem; }
+.store-button {
+  min-height:68px; display:flex; align-items:center; gap:.7rem; padding:.65rem .75rem;
+  color:#f4f7ff; text-align:left; border:1px solid rgba(255,255,255,.18); border-radius:13px;
+  background:rgba(8,10,15,.82); box-shadow:0 8px 22px rgba(0,0,0,.28); backdrop-filter:blur(8px);
+}
+.store-button.is-live { transition:transform .15s ease,border-color .15s ease,background .15s ease; }
+.store-button.is-live:hover { transform:translateY(-2px); border-color:var(--accent-2); background:rgba(16,19,28,.94); text-decoration:none; }
+.store-button.is-pending { cursor:default; }
+.store-icon {
+  width:40px; height:40px; flex:0 0 auto; display:grid; place-items:center; border-radius:10px;
+  background:linear-gradient(145deg,rgba(124,156,255,.24),rgba(255,207,107,.16));
+  border:1px solid rgba(255,255,255,.12); font-size:.66rem; font-weight:900; letter-spacing:.04em;
+}
+.store-copy { min-width:0; display:flex; flex-direction:column; line-height:1.2; }
+.store-copy small { color:#aeb5c4; font-size:.67rem; font-weight:600; }
+.store-copy strong { margin-top:.15rem; color:#fff; font-size:.95rem; white-space:nowrap; }
+.store-arrow { margin-left:auto; color:var(--accent-2); font-size:1.15rem; }
+.store-soon {
+  margin-left:auto; padding:.2rem .45rem; border-radius:999px; white-space:nowrap;
+  color:#c8ceda; background:rgba(255,255,255,.08); font-size:.62rem; font-weight:800; text-transform:uppercase; letter-spacing:.05em;
+}
+
 .stat-strip {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: .7rem; max-width: 900px; margin: 1.8rem auto 0;
@@ -325,6 +355,9 @@ table.data tr:hover td { background: var(--panel); }
   .detail .portrait { max-width: 240px; margin: 0 auto; }
   .nav-links { width: 100%; overflow-x: auto; }
   .app-list { grid-template-columns: 1fr; }
+  .game-hero .hero-copy { width:100%; padding:1.35rem .9rem; }
+  .store-buttons { grid-template-columns:1fr; max-width:340px; margin:0 auto; }
+  .store-button { min-height:64px; }
 }
 
 /* ---- World route graph (Maps page) ---- */

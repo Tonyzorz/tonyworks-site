@@ -20,6 +20,13 @@
   var DATA_URL = "data/data.json";
   var WIKI_VERSION = "24";
 
+  // Add the final store listing URLs here when each release is live. Empty URLs
+  // intentionally render as "Coming soon" so visitors never hit a broken page.
+  var STORE_LINKS = {
+    ios: "",
+    android: ""
+  };
+
   /* ---------- helpers ---------- */
   function $(sel, root) { return (root || document).querySelector(sel); }
   function param(name) { return new URLSearchParams(location.search).get(name); }
@@ -88,6 +95,18 @@
 
   function link(page, id, label) {
     return '<a href="' + page + '?id=' + encodeURIComponent(id) + '">' + esc(label) + "</a>";
+  }
+
+  function storeButton(platform, eyebrow, label, url) {
+    var icon = platform === "ios" ? "iOS" : "AOS";
+    var content = '<span class="store-icon" aria-hidden="true">' + icon + '</span>' +
+      '<span class="store-copy"><small>' + eyebrow + '</small><strong>' + label + '</strong></span>' +
+      (url ? '<span class="store-arrow" aria-hidden="true">&#8599;</span>' : '<span class="store-soon">Coming soon</span>');
+    if (url) {
+      return '<a class="store-button is-live" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer" ' +
+        'aria-label="' + esc(label) + ' (opens in a new tab)">' + content + '</a>';
+    }
+    return '<span class="store-button is-pending" aria-label="' + esc(label) + ' coming soon">' + content + '</span>';
   }
 
   /* ---------- tier badge ---------- */
@@ -228,7 +247,14 @@
       '<section class="hero game-hero">' +
         '<div class="hero-copy"><span class="hero-kicker">Official companion wiki</span>' +
         '<h1>Infinite <span class="grad">Loot-Loop</span></h1>' +
-        "<p>Find drops, explore routes, compare gear and plan your next run with data exported directly from the game.</p></div>" +
+        '<p>Find drops, explore routes, compare gear and plan your next run with data exported directly from the game.</p>' +
+        '<div class="download-block" aria-labelledby="download-title">' +
+          '<div class="download-heading"><span class="download-dot" aria-hidden="true"></span><span id="download-title">Play on mobile</span></div>' +
+          '<div class="store-buttons">' +
+            storeButton("ios", "Download for", "iPhone & iPad", STORE_LINKS.ios) +
+            storeButton("android", "Download for", "Android", STORE_LINKS.android) +
+          '</div>' +
+        '</div></div>' +
       "</section>" +
       '<div class="home-search"><label for="gsearch">Search the wiki</label><input type="search" id="gsearch" autocomplete="off" placeholder="Monster, boss, item or character name&#8230;"><div class="g-results" id="gresults" aria-live="polite"></div></div>' +
       '<aside class="freshness" aria-label="Wiki data status"><div><span class="fresh-label">Game build</span><strong>' + esc(d.gameVersion || "Development") + '</strong></div>' +
