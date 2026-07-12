@@ -16,6 +16,17 @@
     { id: "faq",          label: "FAQ",         href: "faq.html" }
   ];
 
+  var PRIMARY_NAV = ["home", "guide", "maps", "items", "monsters"];
+  var PAGE_PRESENTATION = {
+    monsters:     { icon: "&#128058;", kicker: "Bestiary", accent: "#6fd08c" },
+    bosses:       { icon: "&#9760;", kicker: "Boss Archive", accent: "#ff766d" },
+    items:        { icon: "&#9876;", kicker: "Loot Library", accent: "#ffcf6b" },
+    sets:         { icon: "&#10022;", kicker: "Build Workshop", accent: "#b994ff" },
+    maps:         { icon: "&#128506;", kicker: "World Atlas", accent: "#64b5f6" },
+    characters:   { icon: "&#9823;", kicker: "Roster", accent: "#62d9d0" },
+    achievements: { icon: "&#127942;", kicker: "Milestones", accent: "#f3b95f" }
+  };
+
   var IMG_BASE = "assets/img/";
   var DATA_URL = "data/data.json";
   var WIKI_VERSION = "24";
@@ -114,6 +125,17 @@
     return '<span class="store-button is-pending" aria-label="' + esc(label) + ' coming soon">' + content + '</span>';
   }
 
+  function pageHero(page, title, subtitle, count) {
+    var key = String(page || "").replace(/\.html$/, "");
+    var meta = PAGE_PRESENTATION[key] || { icon: "IL", kicker: "Field Index", accent: "var(--accent)" };
+    return '<section class="catalog-head" style="--page-accent:' + meta.accent + '">' +
+      '<div class="catalog-icon" aria-hidden="true">' + meta.icon + '</div>' +
+      '<div class="catalog-copy"><span class="catalog-kicker">' + meta.kicker + '</span>' +
+      '<h1>' + esc(title) + '</h1><p>' + esc(subtitle) + '</p></div>' +
+      (count ? '<div class="catalog-total"><strong>' + esc(count) + '</strong><span>entries</span></div>' : '') +
+      '</section>';
+  }
+
   /* ---------- tier badge ---------- */
   var WORLD_TIER = { "Grassland": 0, "Forest": 1, "Volcanic": 2, "Desert": 3, "Underwater": 4 };
   function tierOf(worlds) {
@@ -167,7 +189,15 @@
   function buildChrome(active) {
     var header = $("#site-header");
     if (header) {
-      var links = NAV.map(function (n) {
+      var primary = NAV.filter(function (n) { return PRIMARY_NAV.indexOf(n.id) >= 0; }).sort(function (a, b) {
+        return PRIMARY_NAV.indexOf(a.id) - PRIMARY_NAV.indexOf(b.id);
+      });
+      var secondary = NAV.filter(function (n) { return PRIMARY_NAV.indexOf(n.id) < 0; });
+      var links = primary.map(function (n) {
+        return '<a href="' + n.href + '"' + (n.id === active ? ' class="active" aria-current="page"' : "") + ">" + n.label + "</a>";
+      }).join("");
+      var secondaryActive = secondary.some(function (n) { return n.id === active; });
+      var moreLinks = secondary.map(function (n) {
         return '<a href="' + n.href + '"' + (n.id === active ? ' class="active" aria-current="page"' : "") + ">" + n.label + "</a>";
       }).join("");
       header.innerHTML =
@@ -178,7 +208,12 @@
             '<span>Infinite Loot-Loop</span>' +
           "</a>" +
           '<button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false">&#9776;</button>' +
-          '<nav class="nav-links" id="navLinks">' + links + "</nav>" +
+          '<nav class="nav-links" id="navLinks" aria-label="Wiki navigation">' + links +
+            '<details class="nav-more"' + (secondaryActive ? ' data-active="true"' : '') + '>' +
+              '<summary>More <span aria-hidden="true">&#9662;</span></summary>' +
+              '<div class="nav-more-menu">' + moreLinks + '</div>' +
+            '</details>' +
+          "</nav>" +
         "</div>";
       var tgl = $("#navToggle", header), nl = $("#navLinks", header);
       if (tgl && nl) {
@@ -186,7 +221,12 @@
           var open = nl.classList.toggle("open");
           tgl.setAttribute("aria-expanded", open ? "true" : "false");
         });
-        nl.addEventListener("click", function (e) { if (e.target.tagName === "A") nl.classList.remove("open"); });
+        nl.addEventListener("click", function (e) {
+          if (e.target.tagName === "A") {
+            nl.classList.remove("open");
+            tgl.setAttribute("aria-expanded", "false");
+          }
+        });
       }
     }
     var footer = $("#site-footer");
@@ -603,7 +643,7 @@
     var world = param("world"); if (world) return worldView(app, d, world);
     var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt"];
     app.innerHTML =
-      '<div class="page-head"><h1>World Map</h1><p>Every region, connected. Tap a world to see its maps &amp; bosses.</p></div>' +
+      pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", d.maps.length) +
       '<div class="view-switch" role="group" aria-label="World view"><button type="button" data-view="map">Map</button><button type="button" data-view="list">List</button></div>' +
       '<div class="world-view" data-panel="map"><div class="worldmap"><div class="wm-grid">' +
         '<div class="wm-cell" style="grid-area:uw">'     + wnode(d, "Underwater") + '</div>' +
@@ -804,9 +844,9 @@
     }
     var modes = ["All", "Normal", "Hard", "Any"];
     app.innerHTML =
-      '<div class="page-head"><h1>Achievements</h1><p>' + d.achievements.length + " goals &amp; rewards</p></div>" +
-      '<div class="tabs" id="tabs">' + modes.map(function (m, i) { return '<button class="tab' + (i === 0 ? " active" : "") + '" data-m="' + m + '">' + m + "</button>"; }).join("") + "</div>" +
-      '<div class="toolbar"><input type="search" id="q" placeholder="Search achievements&#8230;"><span class="result-count" id="rc"></span></div>' +
+      pageHero("achievements.html", "Achievements", "Track goals, permanent rewards, and character unlocks.", d.achievements.length) +
+      '<div class="catalog-controls"><div class="tabs" id="tabs">' + modes.map(function (m, i) { return '<button class="tab' + (i === 0 ? " active" : "") + '" data-m="' + m + '">' + m + "</button>"; }).join("") + "</div>" +
+      '<div class="toolbar"><label class="search-field"><span aria-hidden="true">&#128269;</span><input type="search" id="q" placeholder="Search achievements&#8230;" aria-label="Search achievements"></label><span class="result-count" id="rc"></span></div></div>' +
       '<div class="ach-grid" id="grid"></div>';
     var grid = $("#grid", app), rc = $("#rc", app), qi = $("#q", app), mode = "All", q = "";
     function apply() {
@@ -835,7 +875,7 @@
     d.items.forEach(function (it) { if (it.setName) (groups[it.setName] = groups[it.setName] || []).push(it); });
     var names = Object.keys(groups).sort(function (a, b) { return a.localeCompare(b); });
     app.innerHTML =
-      '<div class="page-head"><h1>Item Sets</h1><p>' + names.length + " sets &#8212; wearing a set's pieces together grants its bonus (incl. bonus drop rate).</p></div>" +
+      pageHero("sets.html", "Item Sets", "Combine matching pieces to activate set bonuses and bonus drop rate.", names.length) +
       (names.length ? '<div class="set-grid">' + names.map(function (n) {
         var mates = groups[n];
         return '<div class="set-card"><h3>' + esc(n) + ' <span class="set-count">' + mates.length + " pieces</span></h3>" +
@@ -868,7 +908,7 @@
   function cardShell(page, id, image, name, metaHtml) {
     return '<a class="card" href="' + page + "?id=" + encodeURIComponent(id) + '">' +
       thumb(image, name) + '<div class="body"><h4>' + esc(name) + "</h4>" +
-      '<div class="meta">' + metaHtml + "</div></div></a>";
+      '<div class="meta">' + metaHtml + '</div><span class="card-go" aria-hidden="true">&#8594;</span></div></a>';
   }
   function notFound(app, page, label) {
     app.innerHTML = backLink(page, label) + '<div class="empty">Not found.</div>';
@@ -891,17 +931,16 @@
     var tabsHtml = cfg.tabs ? '<div class="tabs" id="tabs">' + cfg.tabs.map(function (t, i) {
       return '<button class="tab' + (i === tabIdx ? " active" : "") + '" data-i="' + i + '">' + esc(t.label) + "</button>";
     }).join("") + "</div>" : "";
-    app.innerHTML =
-      '<div class="page-head"><h1>' + esc(cfg.title) + "</h1><p>" + esc(cfg.subtitle) + "</p></div>" +
-      tabsHtml +
+    app.innerHTML = pageHero(cfg.page, cfg.title, cfg.subtitle, cfg.items.length) +
+      '<div class="catalog-controls">' + tabsHtml +
       '<div class="toolbar">' +
-        (cfg.search ? '<input type="search" id="q" placeholder="Search&#8230;">' : "") +
+        (cfg.search ? '<label class="search-field"><span aria-hidden="true">&#128269;</span><input type="search" id="q" placeholder="Search ' + esc(cfg.title.toLowerCase()) + '&#8230;" aria-label="Search ' + esc(cfg.title.toLowerCase()) + '"></label>' : "") +
         (cfg.filters || []).map(function (f) {
           return '<select data-key="' + f.key + '"><option value="">' + f.label + ': All</option>' +
             f.values.map(function (v) { return '<option value="' + esc(v) + '"' + (active[f.key] === v ? " selected" : "") + ">" + esc(v) + "</option>"; }).join("") + "</select>";
         }).join("") +
         '<span class="result-count" id="rc"></span>' +
-      "</div>" +
+      "</div></div>" +
       '<div class="grid" id="grid"></div>';
 
     var grid = $("#grid", app), rc = $("#rc", app);

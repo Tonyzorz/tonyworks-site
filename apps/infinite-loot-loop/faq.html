@@ -15,8 +15,8 @@
   <link rel="icon" href="/apps/infinite-loot-loop/assets/img/app_icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Tony Works">
-  <meta property="og:title" content="FAQ — Tony Works">
-  <meta property="og:description" content="The companion wiki for Infinite Loot-Loop — browse monsters, bosses, items, maps, characters and guides, straight from the game data.">
+  <meta property="og:title" content="Infinite Loot-Loop FAQ — Tony Works">
+  <meta property="og:description" content="Quick answers about runs, Battle Points, drops, characters, saves and support in Infinite Loot-Loop.">
   <meta property="og:image" content="https://tonyworks.co.kr/apps/infinite-loot-loop/assets/img/app_icon.png">
   <meta property="og:url" content="https://tonyworks.co.kr/apps/infinite-loot-loop/faq.html">
   <meta name="twitter:card" content="summary">
@@ -25,59 +25,64 @@
   <title>FAQ &#8212; Tony Works</title>
   <meta name="description" content="Find answers to common Infinite Loot-Loop questions about runs, saves, equipment, ads, purchases and support.">
   <link rel="canonical" href="https://tonyworks.co.kr/apps/infinite-loot-loop/faq.html">
-  <link rel="stylesheet" href="../../assets/css/style.css?v=26">
+  <link rel="stylesheet" href="../../assets/css/style.css?v=28">
 </head>
 <body data-page="faq">
   <header class="site-header" id="site-header"></header>
   <main class="wrap">
-    <div class="page-head">
-      <h1>FAQ</h1>
-      <p>Common questions about Infinite Loot-Loop.</p>
-    </div>
-    <div style="max-width:760px">
-      <div class="faq-q">
-        <h3>What is Infinite Loot-Loop?</h3>
+    <section class="info-hero">
+      <span class="info-kicker">Player Help</span>
+      <h1>Questions, answered.</h1>
+      <p>Fast, practical answers for your run. Open a question below or jump into the full field guide for deeper strategy.</p>
+    </section>
+    <div class="faq-list">
+      <details class="faq-q" open>
+        <summary>What is Infinite Loot-Loop?</summary>
         <p>A mobile roguelike RPG. You loop through zones fighting monsters, collecting loot, and
           beating bosses to extend your run &#8212; chasing rarer gear and higher levels each time.</p>
-      </div>
-      <div class="faq-q">
-        <h3>How do Battle Points (BP) work?</h3>
+      </details>
+      <details class="faq-q">
+        <summary>How do Battle Points (BP) work?</summary>
         <p>You start with 30 BP. A win costs 1, dying costs 4 (or 6 in Hard Mode), and each boss
           kill refunds 3. When BP hits 0 it's game over and your level/EXP/gold reset &#8212; but a plain
           death does not reset those. See the <a href="guide.html">Guide</a> for the full loop.</p>
-      </div>
-      <div class="faq-q">
-        <h3>Why won't a rare item drop for me?</h3>
+      </details>
+      <details class="faq-q">
+        <summary>Why won't a rare item drop for me?</summary>
         <p>Drop chances fall off sharply for items you already own copies of. Boost your odds with
-          LUC (about +0.2% per point, up to +2%), drop-rate gear/sets, and the drop-rate character.
+          LUC (a very small bonus, capped at +0.6%), drop-rate gear/sets, and the drop-rate character.
           Boss uniques are ~1% (0.75% in Hard Mode) before bonuses.</p>
-      </div>
-      <div class="faq-q">
-        <h3>How do I unlock characters?</h3>
+      </details>
+      <details class="faq-q">
+        <summary>How do I unlock characters?</summary>
         <p>Most characters are unlocked with gold or by completing specific achievements; two are
           premium (in-app purchase). Browse them on the <a href="characters.html">Characters</a> page.</p>
-      </div>
-      <div class="faq-q">
-        <h3>What is Hard Mode?</h3>
+      </details>
+      <details class="faq-q">
+        <summary>What is Hard Mode?</summary>
         <p>A tougher variant with stronger bosses and higher death cost (6 BP), offering distinct
           Hard Mode drops. It's meant for well-geared runs.</p>
-      </div>
-      <div class="faq-q">
-        <h3>Is my progress saved across devices?</h3>
-        <p>Yes &#8212; the game has cloud save, so your permanent progress follows your account.</p>
-      </div>
-      <div class="faq-q">
-        <h3>Where does this wiki's data come from?</h3>
+      </details>
+      <details class="faq-q">
+        <summary>Is my progress saved across devices?</summary>
+        <p>The game supports cloud save through its supported platform identity and device setup. Cross-device restore depends on using the same supported platform account; Android's current sign-in setup may remain device-local until platform authentication is configured.</p>
+      </details>
+      <details class="faq-q">
+        <summary>Where does this wiki's data come from?</summary>
         <p>Every monster, boss, item, map and character page is generated directly from the game's
           own data, so it stays accurate to the current build.</p>
-      </div>
-      <div class="faq-q">
-        <h3>How do I report a bug or ask something?</h3>
+      </details>
+      <details class="faq-q">
+        <summary>How do I report a bug or ask something?</summary>
         <p>Email <a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>.</p>
-      </div>
+      </details>
     </div>
+    <aside class="faq-support">
+      <p><strong>Need the full walkthrough?</strong><br>Use the field guide for progression, stats, loot, shops and Hard Mode.</p>
+      <a href="guide.html">Open the guide &#8594;</a>
+    </aside>
   </main>
   <footer class="footer" id="site-footer"></footer>
-  <script src="../../assets/js/app.js?v=26"></script>
+  <script src="../../assets/js/app.js?v=28"></script>
 </body>
 </html>
