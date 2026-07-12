@@ -151,6 +151,30 @@ img { max-width: 100%; display: block; }
   color:#c8ceda; background:rgba(255,255,255,.08); font-size:.62rem; font-weight:800; text-transform:uppercase; letter-spacing:.05em;
 }
 
+/* ---- new-player path ---- */
+.starter-panel {
+  display:grid; grid-template-columns:minmax(220px,.8fr) minmax(0,1.5fr); gap:1rem;
+  margin:1.25rem 0; padding:1rem; background:linear-gradient(135deg,var(--panel),var(--panel-2));
+  border:1px solid var(--border); border-radius:calc(var(--radius) + 2px); box-shadow:var(--shadow);
+}
+.starter-intro { padding:.65rem .7rem; align-self:center; }
+.starter-kicker { color:var(--accent-2); font-size:.7rem; font-weight:800; text-transform:uppercase; letter-spacing:.12em; }
+.starter-intro h2 { margin:.25rem 0 .35rem; font-size:clamp(1.35rem,3vw,1.8rem); }
+.starter-intro p { margin:0; color:var(--muted); font-size:.92rem; }
+.starter-steps { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.55rem; }
+.starter-steps a {
+  min-width:0; display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:.65rem;
+  padding:.7rem; color:var(--text); background:var(--bg-2); border:1px solid var(--border); border-radius:11px;
+  transition:transform .15s ease,border-color .15s ease,background .15s ease;
+}
+.starter-steps a:hover { transform:translateY(-2px); border-color:var(--accent); background:var(--panel); text-decoration:none; }
+.starter-num { color:var(--accent); font-size:.72rem; font-weight:900; }
+.starter-steps strong,.starter-steps small { display:block; }
+.starter-steps strong { font-size:.88rem; }
+.starter-steps small { margin-top:.1rem; color:var(--muted); font-size:.7rem; line-height:1.35; }
+.starter-go { color:var(--faint); transition:transform .15s ease,color .15s ease; }
+.starter-steps a:hover .starter-go { color:var(--accent); transform:translateX(2px); }
+
 .stat-strip {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: .7rem; max-width: 900px; margin: 1.8rem auto 0;
@@ -358,6 +382,9 @@ table.data tr:hover td { background: var(--panel); }
   .game-hero .hero-copy { width:100%; padding:1.35rem .9rem; }
   .store-buttons { grid-template-columns:1fr; max-width:340px; margin:0 auto; }
   .store-button { min-height:64px; }
+  .starter-panel { grid-template-columns:1fr; }
+  .starter-intro { text-align:center; }
+  .starter-steps { grid-template-columns:1fr; }
 }
 
 /* ---- World route graph (Maps page) ---- */

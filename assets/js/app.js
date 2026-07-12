@@ -97,13 +97,18 @@
     return '<a href="' + page + '?id=' + encodeURIComponent(id) + '">' + esc(label) + "</a>";
   }
 
+  function trackEvent(name, params) {
+    if (typeof window.gtag !== "function") return;
+    window.gtag("event", name, params || {});
+  }
+
   function storeButton(platform, eyebrow, label, url) {
     var icon = platform === "ios" ? "iOS" : "AOS";
     var content = '<span class="store-icon" aria-hidden="true">' + icon + '</span>' +
       '<span class="store-copy"><small>' + eyebrow + '</small><strong>' + label + '</strong></span>' +
       (url ? '<span class="store-arrow" aria-hidden="true">&#8599;</span>' : '<span class="store-soon">Coming soon</span>');
     if (url) {
-      return '<a class="store-button is-live" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer" ' +
+      return '<a class="store-button is-live" data-store-platform="' + platform + '" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer" ' +
         'aria-label="' + esc(label) + ' (opens in a new tab)">' + content + '</a>';
     }
     return '<span class="store-button is-pending" aria-label="' + esc(label) + ' coming soon">' + content + '</span>';
@@ -256,6 +261,16 @@
           '</div>' +
         '</div></div>' +
       "</section>" +
+      '<section class="starter-panel" aria-labelledby="starter-title">' +
+        '<div class="starter-intro"><span class="starter-kicker">First run</span><h2 id="starter-title">New to Infinite Loot-Loop?</h2>' +
+        '<p>Learn the essentials, choose your playstyle and enter your first route with a plan.</p></div>' +
+        '<div class="starter-steps">' +
+          '<a href="guide.html"><span class="starter-num">01</span><span><strong>Learn the loop</strong><small>BP, battles, death and permanent progress</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
+          '<a href="characters.html"><span class="starter-num">02</span><span><strong>Choose a character</strong><small>Compare starters and stat multipliers</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
+          '<a href="items.html"><span class="starter-num">03</span><span><strong>Understand gear</strong><small>Stats, rarity, drops and equipment sets</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
+          '<a href="maps.html"><span class="starter-num">04</span><span><strong>Plan your route</strong><small>World connections, zones and bosses</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
+        '</div>' +
+      '</section>' +
       '<div class="home-search"><label for="gsearch">Search the wiki</label><input type="search" id="gsearch" autocomplete="off" placeholder="Monster, boss, item or character name&#8230;"><div class="g-results" id="gresults" aria-live="polite"></div></div>' +
       '<aside class="freshness" aria-label="Wiki data status"><div><span class="fresh-label">Game build</span><strong>' + esc(d.gameVersion || "Development") + '</strong></div>' +
         '<div><span class="fresh-label">Wiki data</span><strong>v' + WIKI_VERSION + '</strong></div>' +
@@ -953,10 +968,40 @@
     document.body.appendChild(b);
   }
 
+  /* ---------- GA4 interaction events ---------- */
+  function mountAnalyticsEvents() {
+    document.addEventListener("click", function (event) {
+      var anchor = event.target.closest && event.target.closest("a");
+      if (!anchor) return;
+      var href = anchor.getAttribute("href") || "";
+      var page = document.body.getAttribute("data-page") || "unknown";
+
+      if (anchor.classList.contains("store-button")) {
+        trackEvent("store_click", {
+          platform: anchor.getAttribute("data-store-platform") || "unknown",
+          link_location: page
+        });
+      } else if (anchor.closest(".g-results")) {
+        trackEvent("wiki_search", {
+          method: "result_click",
+          result_type: (href.split(".html")[0] || "unknown").replace(/[^a-z_]/gi, ""),
+          link_location: page
+        });
+      } else if (/guide\.html(?:$|[?#])/.test(href)) {
+        trackEvent("guide_open", { link_location: page });
+      } else if (/patch\.html(?:$|[?#])/.test(href)) {
+        trackEvent("patch_notes_open", { link_location: page });
+      } else if (/^mailto:/i.test(href)) {
+        trackEvent("support_click", { link_location: page });
+      }
+    });
+  }
+
   /* ---------- boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     var page = document.body.getAttribute("data-page") || "home";
     mountTheme();
+    mountAnalyticsEvents();
     var fav = document.createElement("link");
     fav.rel = "icon"; fav.href = IMG_BASE + "app_icon.png";
     document.head.appendChild(fav);
