@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T13:32:52Z",
+  "generatedAt": "2026-07-13T14:07:33Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 213,
@@ -1282,9 +1282,9 @@
       ]
     },
     {
-      "id": "ShadowHound_FR01 1",
+      "id": "ShadowHound_FR01",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_FR01_1.png",
+      "image": "enemy_ShadowHound_FR01.png",
       "isBoss": false,
       "minLevel": 37,
       "maxLevel": 40,
@@ -1522,9 +1522,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_FR03 1",
+      "id": "DesertScorpion_FR03",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_FR03_1.png",
+      "image": "enemy_DesertScorpion_FR03.png",
       "isBoss": false,
       "minLevel": 60,
       "maxLevel": 67,
@@ -1672,9 +1672,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_FR03 1",
+      "id": "CrystalGolem_FR03",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_FR03_1.png",
+      "image": "enemy_CrystalGolem_FR03.png",
       "isBoss": false,
       "minLevel": 73,
       "maxLevel": 80,
@@ -1767,9 +1767,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR03 1",
+      "id": "BloodWraith_FR03",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR03_1.png",
+      "image": "enemy_BloodWraith_FR03.png",
       "isBoss": false,
       "minLevel": 82,
       "maxLevel": 85,
@@ -1892,9 +1892,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR04 1",
+      "id": "BloodWraith_FR04",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR04_1.png",
+      "image": "enemy_BloodWraith_FR04.png",
       "isBoss": false,
       "minLevel": 85,
       "maxLevel": 90,
@@ -1982,9 +1982,9 @@
       ]
     },
     {
-      "id": "FlameImp_FR04 1",
+      "id": "FlameImp_FR04",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_FR04_1.png",
+      "image": "enemy_FlameImp_FR04.png",
       "isBoss": false,
       "minLevel": 88,
       "maxLevel": 94,
@@ -2122,9 +2122,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_FR04 1",
+      "id": "ChaosShaman_FR04",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_FR04_1.png",
+      "image": "enemy_ChaosShaman_FR04.png",
       "isBoss": false,
       "minLevel": 100,
       "maxLevel": 103,
@@ -2247,9 +2247,9 @@
       ]
     },
     {
-      "id": "FlameImp_VO01 1",
+      "id": "FlameImp_VO01",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_VO01_1.png",
+      "image": "enemy_FlameImp_VO01.png",
       "isBoss": false,
       "minLevel": 108,
       "maxLevel": 115,
@@ -2613,9 +2613,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_VO01 1",
+      "id": "ChaosShaman_VO01",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_VO01_1.png",
+      "image": "enemy_ChaosShaman_VO01.png",
       "isBoss": false,
       "minLevel": 128,
       "maxLevel": 136,
@@ -4277,9 +4277,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_DS01",
+      "id": "DesertScorpion_DS01 1",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_DS01.png",
+      "image": "enemy_DesertScorpion_DS01_1.png",
       "isBoss": false,
       "minLevel": 205,
       "maxLevel": 217,
@@ -5418,9 +5418,9 @@
       ]
     },
     {
-      "id": "ShadowHound_DS03 1",
+      "id": "ShadowHound_DS03",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_DS03_1.png",
+      "image": "enemy_ShadowHound_DS03.png",
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
@@ -5744,8 +5744,8 @@
       "isBoss": false,
       "minLevel": 312,
       "maxLevel": 328,
-      "hpMin": 253333,
-      "hpMax": 658666,
+      "hpMin": 275556,
+      "hpMax": 716446,
       "atkMin": 3393,
       "atkMax": 7736,
       "expMin": 5195,
@@ -5908,9 +5908,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_DS03 1",
+      "id": "CrystalGolem_DS03",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_DS03_1.png",
+      "image": "enemy_CrystalGolem_DS03.png",
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
@@ -5954,8 +5954,8 @@
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
-      "hpMin": 246000,
-      "hpMax": 738000,
+      "hpMin": 286000,
+      "hpMax": 858000,
       "atkMin": 3199,
       "atkMax": 8317,
       "expMin": 4568,
@@ -6204,8 +6204,8 @@
       "isBoss": false,
       "minLevel": 340,
       "maxLevel": 360,
-      "hpMin": 264000,
-      "hpMax": 792000,
+      "hpMin": 324000,
+      "hpMax": 972000,
       "atkMin": 3307,
       "atkMax": 8598,
       "expMin": 4773,
@@ -6324,8 +6324,8 @@
       "isBoss": false,
       "minLevel": 355,
       "maxLevel": 375,
-      "hpMin": 282000,
-      "hpMax": 846000,
+      "hpMin": 362000,
+      "hpMax": 1086000,
       "atkMin": 3414,
       "atkMax": 8876,
       "expMin": 4977,
@@ -6479,8 +6479,8 @@
       "isBoss": false,
       "minLevel": 370,
       "maxLevel": 390,
-      "hpMin": 300000,
-      "hpMax": 900000,
+      "hpMin": 400000,
+      "hpMax": 1200000,
       "atkMin": 3522,
       "atkMax": 9157,
       "expMin": 5182,
@@ -6794,8 +6794,8 @@
       "isBoss": false,
       "minLevel": 400,
       "maxLevel": 415,
-      "hpMin": 333333,
-      "hpMax": 833333,
+      "hpMin": 444444,
+      "hpMax": 1111110,
       "atkMin": 3865,
       "atkMax": 8503,
       "expMin": 6623,
@@ -6839,8 +6839,8 @@
       "isBoss": false,
       "minLevel": 410,
       "maxLevel": 425,
-      "hpMin": 400000,
-      "hpMax": 1000000,
+      "hpMin": 533333,
+      "hpMax": 1333333,
       "atkMin": 4004,
       "atkMax": 8809,
       "expMin": 6785,
@@ -6889,8 +6889,8 @@
       "isBoss": false,
       "minLevel": 420,
       "maxLevel": 435,
-      "hpMin": 466667,
-      "hpMax": 1166668,
+      "hpMin": 622222,
+      "hpMax": 1555555,
       "atkMin": 4143,
       "atkMax": 9115,
       "expMin": 6948,
@@ -7149,8 +7149,8 @@
       "isBoss": false,
       "minLevel": 428,
       "maxLevel": 442,
-      "hpMin": 564706,
-      "hpMax": 1355294,
+      "hpMin": 752941,
+      "hpMax": 1807058,
       "atkMin": 4503,
       "atkMax": 9546,
       "expMin": 7805,
@@ -7199,8 +7199,8 @@
       "isBoss": false,
       "minLevel": 435,
       "maxLevel": 448,
-      "hpMin": 635294,
-      "hpMax": 1461176,
+      "hpMin": 847059,
+      "hpMax": 1948236,
       "atkMin": 4649,
       "atkMax": 9484,
       "expMin": 7931,
@@ -7249,8 +7249,8 @@
       "isBoss": false,
       "minLevel": 442,
       "maxLevel": 455,
-      "hpMin": 750000,
-      "hpMax": 1725000,
+      "hpMin": 1000000,
+      "hpMax": 2300000,
       "atkMin": 5054,
       "atkMax": 10310,
       "expMin": 8984,
@@ -7499,8 +7499,8 @@
       "isBoss": false,
       "minLevel": 455,
       "maxLevel": 468,
-      "hpMin": 991736,
-      "hpMax": 1378513,
+      "hpMin": 1322314,
+      "hpMax": 1838016,
       "atkMin": 5541,
       "atkMax": 9143,
       "expMin": 8289,
@@ -7539,8 +7539,8 @@
       "isBoss": false,
       "minLevel": 455,
       "maxLevel": 468,
-      "hpMin": 1983471,
-      "hpMax": 2757025,
+      "hpMin": 2644628,
+      "hpMax": 3676033,
       "atkMin": 6539,
       "atkMax": 10789,
       "expMin": 8289,
@@ -7579,8 +7579,8 @@
       "isBoss": false,
       "minLevel": 455,
       "maxLevel": 468,
-      "hpMin": 4132231,
-      "hpMax": 5743801,
+      "hpMin": 5289256,
+      "hpMax": 7352066,
       "atkMin": 7716,
       "atkMax": 12731,
       "expMin": 8289,
@@ -7619,8 +7619,8 @@
       "isBoss": false,
       "minLevel": 462,
       "maxLevel": 475,
-      "hpMin": 1220339,
-      "hpMax": 1696271,
+      "hpMin": 1627119,
+      "hpMax": 2261695,
       "atkMin": 5961,
       "atkMax": 9836,
       "expMin": 9385,
@@ -7669,8 +7669,8 @@
       "isBoss": false,
       "minLevel": 462,
       "maxLevel": 475,
-      "hpMin": 2474576,
-      "hpMax": 3439661,
+      "hpMin": 3254237,
+      "hpMax": 4523389,
       "atkMin": 7035,
       "atkMax": 11608,
       "expMin": 9385,
@@ -7719,8 +7719,8 @@
       "isBoss": false,
       "minLevel": 465,
       "maxLevel": 480,
-      "hpMin": 5289256,
-      "hpMax": 7669421,
+      "hpMin": 8198347,
+      "hpMax": 11887603,
       "atkMin": 7993,
       "atkMax": 13988,
       "expMin": 8469,
@@ -7769,8 +7769,8 @@
       "isBoss": false,
       "minLevel": 470,
       "maxLevel": 484,
-      "hpMin": 1388430,
-      "hpMax": 1971571,
+      "hpMin": 1851240,
+      "hpMax": 2628761,
       "atkMin": 5940,
       "atkMax": 10098,
       "expMin": 8558,
@@ -7814,8 +7814,8 @@
       "isBoss": false,
       "minLevel": 470,
       "maxLevel": 484,
-      "hpMin": 2842975,
-      "hpMax": 4037025,
+      "hpMin": 3702479,
+      "hpMax": 5257520,
       "atkMin": 7010,
       "atkMax": 11917,
       "expMin": 8558,
@@ -7859,8 +7859,8 @@
       "isBoss": false,
       "minLevel": 475,
       "maxLevel": 490,
-      "hpMin": 6446281,
-      "hpMax": 9347107,
+      "hpMin": 11107438,
+      "hpMax": 16105785,
       "atkMin": 8271,
       "atkMax": 14474,
       "expMin": 8648,
@@ -8114,8 +8114,8 @@
       "isBoss": false,
       "minLevel": 478,
       "maxLevel": 492,
-      "hpMin": 3272727,
-      "hpMax": 4647272,
+      "hpMin": 4231405,
+      "hpMax": 6008595,
       "atkMin": 7244,
       "atkMax": 12315,
       "expMin": 8702,
@@ -8164,8 +8164,8 @@
       "isBoss": false,
       "minLevel": 478,
       "maxLevel": 492,
-      "hpMin": 1586777,
-      "hpMax": 2253223,
+      "hpMin": 2115702,
+      "hpMax": 3004297,
       "atkMin": 6139,
       "atkMax": 10436,
       "expMin": 8702,
@@ -8214,8 +8214,8 @@
       "isBoss": false,
       "minLevel": 485,
       "maxLevel": 500,
-      "hpMin": 7603306,
-      "hpMax": 11024794,
+      "hpMin": 14016529,
+      "hpMax": 20323967,
       "atkMin": 8548,
       "atkMax": 14959,
       "expMin": 8828,
@@ -8264,8 +8264,8 @@
       "isBoss": false,
       "minLevel": 486,
       "maxLevel": 500,
-      "hpMin": 1785124,
-      "hpMax": 2534876,
+      "hpMin": 2380165,
+      "hpMax": 3379834,
       "atkMin": 6339,
       "atkMax": 10776,
       "expMin": 8846,
@@ -8309,8 +8309,8 @@
       "isBoss": false,
       "minLevel": 486,
       "maxLevel": 500,
-      "hpMin": 3702479,
-      "hpMax": 5257520,
+      "hpMin": 4760331,
+      "hpMax": 6759670,
       "atkMin": 7480,
       "atkMax": 12716,
       "expMin": 8846,
@@ -8354,8 +8354,8 @@
       "isBoss": false,
       "minLevel": 492,
       "maxLevel": 506,
-      "hpMin": 1983471,
-      "hpMax": 2816529,
+      "hpMin": 2644628,
+      "hpMax": 3755372,
       "atkMin": 6539,
       "atkMax": 11116,
       "expMin": 8953,
@@ -8394,8 +8394,8 @@
       "isBoss": false,
       "minLevel": 492,
       "maxLevel": 506,
-      "hpMin": 4132231,
-      "hpMax": 5867768,
+      "hpMin": 5289256,
+      "hpMax": 7510744,
       "atkMin": 7716,
       "atkMax": 13117,
       "expMin": 8953,
@@ -8434,8 +8434,8 @@
       "isBoss": false,
       "minLevel": 495,
       "maxLevel": 510,
-      "hpMin": 8760331,
-      "hpMax": 12702480,
+      "hpMin": 16925620,
+      "hpMax": 24542149,
       "atkMin": 8826,
       "atkMax": 15446,
       "expMin": 9007,
@@ -8514,8 +8514,8 @@
       "isBoss": false,
       "minLevel": 505,
       "maxLevel": 520,
-      "hpMin": 9917355,
-      "hpMax": 14380165,
+      "hpMin": 19834711,
+      "hpMax": 28760331,
       "atkMin": 9104,
       "atkMax": 15932,
       "expMin": 9187,
@@ -20038,7 +20038,7 @@
       "goldMultiplier": 46,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_DS01",
+          "enemyId": "DesertScorpion_DS01 1",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -20198,7 +20198,7 @@
       "goldMultiplier": 70,
       "enemies": [
         {
-          "enemyId": "ShadowHound_DS03 1",
+          "enemyId": "ShadowHound_DS03",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -20238,7 +20238,7 @@
       "goldMultiplier": 74,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_DS03 1",
+          "enemyId": "CrystalGolem_DS03",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -20710,7 +20710,7 @@
       "goldMultiplier": 7.5,
       "enemies": [
         {
-          "enemyId": "ShadowHound_FR01 1",
+          "enemyId": "ShadowHound_FR01",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -20790,7 +20790,7 @@
       "goldMultiplier": 13,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_FR03 1",
+          "enemyId": "DesertScorpion_FR03",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -20850,7 +20850,7 @@
       "goldMultiplier": 16,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_FR03 1",
+          "enemyId": "CrystalGolem_FR03",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -20890,7 +20890,7 @@
       "goldMultiplier": 18,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR03 1",
+          "enemyId": "BloodWraith_FR03",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -20910,7 +20910,7 @@
       "goldMultiplier": 19,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR04 1",
+          "enemyId": "BloodWraith_FR04",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -20930,7 +20930,7 @@
       "goldMultiplier": 20,
       "enemies": [
         {
-          "enemyId": "FlameImp_FR04 1",
+          "enemyId": "FlameImp_FR04",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -20990,7 +20990,7 @@
       "goldMultiplier": 23,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_FR04 1",
+          "enemyId": "ChaosShaman_FR04",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -25187,7 +25187,7 @@
       "goldMultiplier": 32,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_VO01 1",
+          "enemyId": "ChaosShaman_VO01",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -25287,7 +25287,7 @@
       "goldMultiplier": 27,
       "enemies": [
         {
-          "enemyId": "FlameImp_VO01 1",
+          "enemyId": "FlameImp_VO01",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
