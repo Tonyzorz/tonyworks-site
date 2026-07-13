@@ -249,6 +249,7 @@
       d.enemies = d.enemies || []; d.bosses = d.bosses || []; d.items = d.items || [];
       d.maps = d.maps || []; d.zones = d.zones || []; d.characters = d.characters || [];
       d.achievements = d.achievements || [];
+      if (window.TWI18n) window.TWI18n.localizeGameData(d);
       d._itemById = index(d.items); d._enemyById = index(d.enemies);
       d._bossById = index(d.bosses); d._charById = index(d.characters);
       d._mapById = index(d.maps);
@@ -337,7 +338,7 @@
     function stat(n, l) { return '<div class="stat"><div class="n">' + (n || 0) + '</div><div class="l">' + l + "</div></div>"; }
     function formatDate(value) {
       if (!value) return "Not available";
-      try { return new Intl.DateTimeFormat(undefined, { year: "numeric", month: "short", day: "numeric" }).format(new Date(value)); }
+      try { return new Intl.DateTimeFormat(window.TWI18n ? window.TWI18n.code : undefined, { year: "numeric", month: "short", day: "numeric" }).format(new Date(value)); }
       catch (_) { return value; }
     }
     // Global search across the main catalogs.
@@ -1049,12 +1050,15 @@
     var fav = document.createElement("link");
     fav.rel = "icon"; fav.href = IMG_BASE + "app_icon.png";
     document.head.appendChild(fav);
-    buildChrome(page);
-    mountBackToTop();
-    var app = $("#app");
-    if (app && PAGES[page]) {
-      showLoading(app);
-      loadData().then(function (d) { PAGES[page](app, d); }).catch(function (e) { fail(app, e); });
-    }
+    var translationsReady = window.TWI18n ? window.TWI18n.ready : Promise.resolve();
+    translationsReady.then(function () {
+      buildChrome(page);
+      mountBackToTop();
+      var app = $("#app");
+      if (app && PAGES[page]) {
+        showLoading(app);
+        loadData().then(function (d) { PAGES[page](app, d); }).catch(function (e) { fail(app, e); });
+      }
+    });
   });
 })();

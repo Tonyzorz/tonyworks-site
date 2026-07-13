@@ -87,13 +87,16 @@
     var fav = document.createElement("link");
     fav.rel = "icon"; fav.href = "apps/infinite-loot-loop/assets/img/app_icon.png";
     document.head.appendChild(fav);
-    fetch("apps.json", { cache: "no-cache" })
-      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-      .then(function (d) { render(d.apps || []); })
-      .catch(function (e) {
-        document.getElementById("portal").innerHTML =
-          '<section class="hero"><h1>Tony <span class="grad">Works</span></h1></section>' +
-          '<div class="notice">Could not load app list (' + esc(e.message) + ").</div>";
-      });
+    var translationsReady = window.TWI18n ? window.TWI18n.ready : Promise.resolve();
+    translationsReady.then(function () {
+      fetch("apps.json", { cache: "no-cache" })
+        .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+        .then(function (d) { render(d.apps || []); })
+        .catch(function (e) {
+          document.getElementById("portal").innerHTML =
+            '<section class="hero"><h1>Tony <span class="grad">Works</span></h1></section>' +
+            '<div class="notice">Could not load app list (' + esc(e.message) + ").</div>";
+        });
+    });
   });
 })();
