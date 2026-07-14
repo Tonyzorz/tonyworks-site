@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T14:07:33Z",
+  "generatedAt": "2026-07-14T09:16:44Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 213,
@@ -123,10 +123,10 @@
       "isBoss": false,
       "minLevel": 1,
       "maxLevel": 5,
-      "hpMin": 1159,
-      "hpMax": 3941,
-      "atkMin": 7,
-      "atkMax": 10,
+      "hpMin": 293,
+      "hpMax": 996,
+      "atkMin": 3,
+      "atkMax": 4,
       "expMin": 113,
       "expMax": 294,
       "goldMin": 12,
@@ -144,6 +144,16 @@
           "chance": 3
         },
         {
+          "itemId": "TrackerRing",
+          "itemName": "Tracker Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "BloodArmor",
+          "itemName": "Blood Armor",
+          "chance": 3
+        },
+        {
           "itemId": "ClothHood",
           "itemName": "Cloth Hood",
           "chance": 3
@@ -151,16 +161,6 @@
         {
           "itemId": "ClothRobe",
           "itemName": "Cloth Robe",
-          "chance": 3
-        },
-        {
-          "itemId": "WoodenRing",
-          "itemName": "Wooden Ring",
-          "chance": 3
-        },
-        {
-          "itemId": "ClothSandals",
-          "itemName": "Cloth Sandals",
           "chance": 3
         }
       ],
@@ -308,10 +308,10 @@
       "isBoss": false,
       "minLevel": 5,
       "maxLevel": 9,
-      "hpMin": 3646,
-      "hpMax": 6271,
-      "atkMin": 21,
-      "atkMax": 28,
+      "hpMin": 922,
+      "hpMax": 1586,
+      "atkMin": 11,
+      "atkMax": 15,
       "expMin": 265,
       "expMax": 689,
       "goldMin": 28,
@@ -319,13 +319,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "TrackerRing",
-          "itemName": "Tracker Ring",
+          "itemId": "WoodenRing",
+          "itemName": "Wooden Ring",
           "chance": 3
         },
         {
-          "itemId": "BloodArmor",
-          "itemName": "Blood Armor",
+          "itemId": "ClothSandals",
+          "itemName": "Cloth Sandals",
           "chance": 3
         },
         {
@@ -363,10 +363,10 @@
       "isBoss": false,
       "minLevel": 9,
       "maxLevel": 14,
-      "hpMin": 5667,
-      "hpMax": 8501,
-      "atkMin": 35,
-      "atkMax": 46,
+      "hpMin": 1433,
+      "hpMax": 2150,
+      "atkMin": 19,
+      "atkMax": 25,
       "expMin": 372,
       "expMax": 1116,
       "goldMin": 38,
@@ -418,10 +418,10 @@
       "isBoss": false,
       "minLevel": 14,
       "maxLevel": 17,
-      "hpMin": 8575,
-      "hpMax": 10376,
-      "atkMin": 53,
-      "atkMax": 59,
+      "hpMin": 2168,
+      "hpMax": 2623,
+      "atkMin": 31,
+      "atkMax": 35,
       "expMin": 606,
       "expMax": 1333,
       "goldMin": 64,
@@ -473,10 +473,10 @@
       "isBoss": false,
       "minLevel": 17,
       "maxLevel": 19,
-      "hpMin": 11493,
-      "hpMax": 12872,
-      "atkMin": 70,
-      "atkMax": 76,
+      "hpMin": 2908,
+      "hpMax": 3257,
+      "atkMin": 41,
+      "atkMax": 44,
       "expMin": 876,
       "expMax": 1577,
       "goldMin": 96,
@@ -528,10 +528,10 @@
       "isBoss": false,
       "minLevel": 19,
       "maxLevel": 22,
-      "hpMin": 13511,
-      "hpMax": 16754,
-      "atkMin": 86,
-      "atkMax": 96,
+      "hpMin": 3418,
+      "hpMax": 4238,
+      "atkMin": 51,
+      "atkMax": 57,
       "expMin": 974,
       "expMax": 2143,
       "goldMin": 107,
@@ -583,10 +583,10 @@
       "isBoss": false,
       "minLevel": 22,
       "maxLevel": 25,
-      "hpMin": 15179,
-      "hpMax": 17911,
-      "atkMin": 97,
-      "atkMax": 109,
+      "hpMin": 3839,
+      "hpMax": 4530,
+      "atkMin": 58,
+      "atkMax": 65,
       "expMin": 909,
       "expMax": 2000,
       "goldMin": 96,
@@ -633,10 +633,10 @@
       "isBoss": false,
       "minLevel": 25,
       "maxLevel": 29,
-      "hpMin": 14167,
-      "hpMax": 19834,
-      "atkMin": 91,
-      "atkMax": 120,
+      "hpMin": 3583,
+      "hpMax": 5016,
+      "atkMin": 54,
+      "atkMax": 71,
       "expMin": 1022,
       "expMax": 2657,
       "goldMin": 108,
@@ -678,10 +678,10 @@
       "isBoss": false,
       "minLevel": 26,
       "maxLevel": 31,
-      "hpMin": 14881,
-      "hpMax": 22322,
-      "atkMin": 107,
-      "atkMax": 150,
+      "hpMin": 4619,
+      "hpMax": 6929,
+      "atkMin": 57,
+      "atkMax": 80,
       "expMin": 1061,
       "expMax": 3183,
       "goldMin": 112,
@@ -733,10 +733,10 @@
       "isBoss": false,
       "minLevel": 28,
       "maxLevel": 32,
-      "hpMin": 15595,
-      "hpMax": 21833,
-      "atkMin": 124,
-      "atkMax": 164,
+      "hpMin": 5655,
+      "hpMax": 7917,
+      "atkMin": 59,
+      "atkMax": 78,
       "expMin": 1136,
       "expMax": 2954,
       "goldMin": 120,
@@ -1018,10 +1018,10 @@
       "isBoss": false,
       "minLevel": 30,
       "maxLevel": 35,
-      "hpMin": 16309,
-      "hpMax": 24464,
-      "atkMin": 141,
-      "atkMax": 197,
+      "hpMin": 6691,
+      "hpMax": 10037,
+      "atkMin": 62,
+      "atkMax": 87,
       "expMin": 1212,
       "expMax": 3636,
       "goldMin": 128,
@@ -1073,10 +1073,10 @@
       "isBoss": false,
       "minLevel": 32,
       "maxLevel": 36,
-      "hpMin": 17024,
-      "hpMax": 23834,
-      "atkMin": 157,
-      "atkMax": 207,
+      "hpMin": 7726,
+      "hpMax": 10816,
+      "atkMin": 66,
+      "atkMax": 87,
       "expMin": 1288,
       "expMax": 3349,
       "goldMin": 136,
@@ -1128,10 +1128,10 @@
       "isBoss": false,
       "minLevel": 33,
       "maxLevel": 38,
-      "hpMin": 16374,
-      "hpMax": 24561,
-      "atkMin": 162,
-      "atkMax": 227,
+      "hpMin": 8088,
+      "hpMax": 12132,
+      "atkMin": 64,
+      "atkMax": 90,
       "expMin": 1115,
       "expMax": 3345,
       "goldMin": 115,
@@ -1183,10 +1183,10 @@
       "isBoss": false,
       "minLevel": 33,
       "maxLevel": 38,
-      "hpMin": 17692,
-      "hpMax": 26538,
-      "atkMin": 194,
-      "atkMax": 272,
+      "hpMin": 10000,
+      "hpMax": 15000,
+      "atkMin": 69,
+      "atkMax": 97,
       "expMin": 1115,
       "expMax": 3345,
       "goldMin": 115,
@@ -1238,10 +1238,10 @@
       "isBoss": false,
       "minLevel": 35,
       "maxLevel": 39,
-      "hpMin": 18452,
-      "hpMax": 25833,
-      "atkMin": 191,
-      "atkMax": 252,
+      "hpMin": 9797,
+      "hpMax": 13716,
+      "atkMin": 71,
+      "atkMax": 94,
       "expMin": 1401,
       "expMax": 3643,
       "goldMin": 148,
@@ -1282,16 +1282,16 @@
       ]
     },
     {
-      "id": "ShadowHound_FR01",
+      "id": "ShadowHound_FR01 1",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_FR01.png",
+      "image": "enemy_ShadowHound_FR01_1.png",
       "isBoss": false,
       "minLevel": 37,
       "maxLevel": 40,
-      "hpMin": 20909,
-      "hpMax": 27182,
-      "atkMin": 222,
-      "atkMax": 275,
+      "hpMin": 11818,
+      "hpMax": 15363,
+      "atkMin": 79,
+      "atkMax": 98,
       "expMin": 1850,
       "expMax": 4070,
       "goldMin": 203,
@@ -1328,10 +1328,10 @@
       "isBoss": false,
       "minLevel": 38,
       "maxLevel": 46,
-      "hpMin": 19464,
-      "hpMax": 35035,
-      "atkMin": 232,
-      "atkMax": 380,
+      "hpMin": 13929,
+      "hpMax": 25072,
+      "atkMin": 76,
+      "atkMax": 125,
       "expMin": 1101,
       "expMax": 4624,
       "goldMin": 112,
@@ -1383,10 +1383,10 @@
       "isBoss": false,
       "minLevel": 46,
       "maxLevel": 54,
-      "hpMin": 22500,
-      "hpMax": 40500,
-      "atkMin": 283,
-      "atkMax": 464,
+      "hpMin": 18571,
+      "hpMax": 33428,
+      "atkMin": 86,
+      "atkMax": 141,
       "expMin": 1311,
       "expMax": 5506,
       "goldMin": 133,
@@ -1522,16 +1522,16 @@
       ]
     },
     {
-      "id": "DesertScorpion_FR03",
+      "id": "DesertScorpion_FR03 1",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_FR03.png",
+      "image": "enemy_DesertScorpion_FR03_1.png",
       "isBoss": false,
       "minLevel": 60,
       "maxLevel": 67,
-      "hpMin": 22500,
-      "hpMax": 38250,
-      "atkMin": 283,
-      "atkMax": 441,
+      "hpMin": 18571,
+      "hpMax": 31571,
+      "atkMin": 86,
+      "atkMax": 134,
       "expMin": 1678,
       "expMax": 6376,
       "goldMin": 171,
@@ -1578,10 +1578,10 @@
       "isBoss": false,
       "minLevel": 65,
       "maxLevel": 72,
-      "hpMin": 26000,
-      "hpMax": 44200,
-      "atkMin": 323,
-      "atkMax": 504,
+      "hpMin": 24000,
+      "hpMax": 40800,
+      "atkMin": 98,
+      "atkMax": 153,
       "expMin": 2107,
       "expMax": 8007,
       "goldMin": 218,
@@ -1623,10 +1623,10 @@
       "isBoss": false,
       "minLevel": 70,
       "maxLevel": 77,
-      "hpMin": 25786,
-      "hpMax": 43836,
-      "atkMin": 323,
-      "atkMax": 504,
+      "hpMin": 26000,
+      "hpMax": 44200,
+      "atkMin": 98,
+      "atkMax": 153,
       "expMin": 1940,
       "expMax": 7372,
       "goldMin": 197,
@@ -1672,16 +1672,16 @@
       ]
     },
     {
-      "id": "CrystalGolem_FR03",
+      "id": "CrystalGolem_FR03 1",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_FR03.png",
+      "image": "enemy_CrystalGolem_FR03_1.png",
       "isBoss": false,
       "minLevel": 73,
       "maxLevel": 80,
-      "hpMin": 29538,
-      "hpMax": 50215,
-      "atkMin": 365,
-      "atkMax": 569,
+      "hpMin": 32000,
+      "hpMax": 54400,
+      "atkMin": 111,
+      "atkMax": 173,
       "expMin": 2355,
       "expMax": 8949,
       "goldMin": 243,
@@ -1718,10 +1718,10 @@
       "isBoss": false,
       "minLevel": 77,
       "maxLevel": 83,
-      "hpMin": 31308,
-      "hpMax": 50093,
-      "atkMin": 387,
-      "atkMax": 573,
+      "hpMin": 36000,
+      "hpMax": 57600,
+      "atkMin": 118,
+      "atkMax": 175,
       "expMin": 2479,
       "expMax": 8429,
       "goldMin": 256,
@@ -1767,16 +1767,16 @@
       ]
     },
     {
-      "id": "BloodWraith_FR03",
+      "id": "BloodWraith_FR03 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR03.png",
+      "image": "enemy_BloodWraith_FR03_1.png",
       "isBoss": false,
       "minLevel": 82,
       "maxLevel": 85,
-      "hpMin": 35833,
-      "hpMax": 46583,
-      "atkMin": 437,
-      "atkMax": 542,
+      "hpMin": 43333,
+      "hpMax": 56333,
+      "atkMin": 133,
+      "atkMax": 165,
       "expMin": 3182,
       "expMax": 7000,
       "goldMin": 336,
@@ -1892,16 +1892,16 @@
       ]
     },
     {
-      "id": "BloodWraith_FR04",
+      "id": "BloodWraith_FR04 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR04.png",
+      "image": "enemy_BloodWraith_FR04_1.png",
       "isBoss": false,
       "minLevel": 85,
       "maxLevel": 90,
-      "hpMin": 33077,
-      "hpMax": 49616,
-      "atkMin": 409,
-      "atkMax": 573,
+      "hpMin": 40000,
+      "hpMax": 60000,
+      "atkMin": 124,
+      "atkMax": 174,
       "expMin": 2727,
       "expMax": 8181,
       "goldMin": 282,
@@ -1982,16 +1982,16 @@
       ]
     },
     {
-      "id": "FlameImp_FR04",
+      "id": "FlameImp_FR04 1",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_FR04.png",
+      "image": "enemy_FlameImp_FR04_1.png",
       "isBoss": false,
       "minLevel": 88,
       "maxLevel": 94,
-      "hpMin": 35462,
-      "hpMax": 56739,
-      "atkMin": 439,
-      "atkMax": 650,
+      "hpMin": 46615,
+      "hpMax": 74584,
+      "atkMin": 133,
+      "atkMax": 197,
       "expMin": 2820,
       "expMax": 9588,
       "goldMin": 291,
@@ -2033,10 +2033,10 @@
       "isBoss": false,
       "minLevel": 92,
       "maxLevel": 98,
-      "hpMin": 37846,
-      "hpMax": 60554,
-      "atkMin": 469,
-      "atkMax": 694,
+      "hpMin": 53231,
+      "hpMax": 85170,
+      "atkMin": 141,
+      "atkMax": 209,
       "expMin": 2944,
       "expMax": 10010,
       "goldMin": 304,
@@ -2083,10 +2083,10 @@
       "isBoss": false,
       "minLevel": 96,
       "maxLevel": 102,
-      "hpMin": 40231,
-      "hpMax": 64370,
-      "atkMin": 499,
-      "atkMax": 739,
+      "hpMin": 59846,
+      "hpMax": 95754,
+      "atkMin": 150,
+      "atkMax": 222,
       "expMin": 3068,
       "expMax": 10431,
       "goldMin": 317,
@@ -2122,16 +2122,16 @@
       ]
     },
     {
-      "id": "ChaosShaman_FR04",
+      "id": "ChaosShaman_FR04 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_FR04.png",
+      "image": "enemy_ChaosShaman_FR04_1.png",
       "isBoss": false,
       "minLevel": 100,
       "maxLevel": 103,
-      "hpMin": 46167,
-      "hpMax": 60017,
-      "atkMin": 566,
-      "atkMax": 702,
+      "hpMin": 72000,
+      "hpMax": 93600,
+      "atkMin": 169,
+      "atkMax": 210,
       "expMin": 3863,
       "expMax": 8499,
       "goldMin": 408,
@@ -2163,10 +2163,10 @@
       "isBoss": false,
       "minLevel": 102,
       "maxLevel": 105,
-      "hpMin": 48750,
-      "hpMax": 63375,
-      "atkMin": 597,
-      "atkMax": 740,
+      "hpMin": 79167,
+      "hpMax": 102917,
+      "atkMin": 178,
+      "atkMax": 221,
       "expMin": 3939,
       "expMax": 8666,
       "goldMin": 416,
@@ -2208,10 +2208,10 @@
       "isBoss": false,
       "minLevel": 105,
       "maxLevel": 112,
-      "hpMin": 45000,
-      "hpMax": 76500,
-      "atkMin": 559,
-      "atkMax": 872,
+      "hpMin": 73077,
+      "hpMax": 124231,
+      "atkMin": 167,
+      "atkMax": 261,
       "expMin": 3347,
       "expMax": 12719,
       "goldMin": 346,
@@ -2247,16 +2247,16 @@
       ]
     },
     {
-      "id": "FlameImp_VO01",
+      "id": "FlameImp_VO01 1",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_VO01.png",
+      "image": "enemy_FlameImp_VO01_1.png",
       "isBoss": false,
       "minLevel": 108,
       "maxLevel": 115,
-      "hpMin": 43706,
-      "hpMax": 74300,
-      "atkMin": 542,
-      "atkMax": 846,
+      "hpMin": 73661,
+      "hpMax": 125224,
+      "atkMin": 164,
+      "atkMax": 256,
       "expMin": 2937,
       "expMax": 11161,
       "goldMin": 299,
@@ -2298,10 +2298,10 @@
       "isBoss": false,
       "minLevel": 112,
       "maxLevel": 120,
-      "hpMin": 45625,
-      "hpMax": 82125,
-      "atkMin": 558,
-      "atkMax": 915,
+      "hpMin": 79464,
+      "hpMax": 143035,
+      "atkMin": 170,
+      "atkMax": 279,
       "expMin": 3042,
       "expMax": 12776,
       "goldMin": 309,
@@ -2484,10 +2484,10 @@
       "isBoss": false,
       "minLevel": 116,
       "maxLevel": 124,
-      "hpMin": 47544,
-      "hpMax": 85579,
-      "atkMin": 574,
-      "atkMax": 941,
+      "hpMin": 85268,
+      "hpMax": 153482,
+      "atkMin": 177,
+      "atkMax": 290,
       "expMin": 3147,
       "expMax": 13217,
       "goldMin": 320,
@@ -2529,10 +2529,10 @@
       "isBoss": false,
       "minLevel": 120,
       "maxLevel": 128,
-      "hpMin": 49464,
-      "hpMax": 89035,
-      "atkMin": 591,
-      "atkMax": 969,
+      "hpMin": 91071,
+      "hpMax": 163928,
+      "atkMin": 184,
+      "atkMax": 302,
       "expMin": 3252,
       "expMax": 13658,
       "goldMin": 331,
@@ -2574,10 +2574,10 @@
       "isBoss": false,
       "minLevel": 124,
       "maxLevel": 132,
-      "hpMin": 51384,
-      "hpMax": 92491,
-      "atkMin": 608,
-      "atkMax": 997,
+      "hpMin": 96875,
+      "hpMax": 174375,
+      "atkMin": 191,
+      "atkMax": 313,
       "expMin": 3357,
       "expMax": 14099,
       "goldMin": 341,
@@ -2613,16 +2613,16 @@
       ]
     },
     {
-      "id": "ChaosShaman_VO01",
+      "id": "ChaosShaman_VO01 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_VO01.png",
+      "image": "enemy_ChaosShaman_VO01_1.png",
       "isBoss": false,
       "minLevel": 128,
       "maxLevel": 136,
-      "hpMin": 53304,
-      "hpMax": 95947,
-      "atkMin": 624,
-      "atkMax": 1023,
+      "hpMin": 102679,
+      "hpMax": 184822,
+      "atkMin": 198,
+      "atkMax": 325,
       "expMin": 3461,
       "expMax": 14536,
       "goldMin": 352,
@@ -2654,10 +2654,10 @@
       "isBoss": false,
       "minLevel": 132,
       "maxLevel": 140,
-      "hpMin": 55223,
-      "hpMax": 99401,
-      "atkMin": 640,
-      "atkMax": 1050,
+      "hpMin": 108482,
+      "hpMax": 195268,
+      "atkMin": 205,
+      "atkMax": 336,
       "expMin": 3566,
       "expMax": 14977,
       "goldMin": 363,
@@ -2699,10 +2699,10 @@
       "isBoss": false,
       "minLevel": 138,
       "maxLevel": 145,
-      "hpMin": 57143,
-      "hpMax": 97143,
-      "atkMin": 657,
-      "atkMax": 1025,
+      "hpMin": 114286,
+      "hpMax": 194286,
+      "atkMin": 211,
+      "atkMax": 329,
       "expMin": 3723,
       "expMax": 14147,
       "goldMin": 379,
@@ -3023,10 +3023,10 @@
       "isBoss": false,
       "minLevel": 145,
       "maxLevel": 152,
-      "hpMin": 61538,
-      "hpMax": 104615,
-      "atkMin": 699,
-      "atkMax": 1090,
+      "hpMin": 123077,
+      "hpMax": 209231,
+      "atkMin": 225,
+      "atkMax": 351,
       "expMin": 4586,
       "expMax": 17427,
       "goldMin": 474,
@@ -3068,10 +3068,10 @@
       "isBoss": false,
       "minLevel": 149,
       "maxLevel": 157,
-      "hpMin": 59732,
-      "hpMax": 107518,
-      "atkMin": 676,
-      "atkMax": 1109,
+      "hpMin": 142857,
+      "hpMax": 257143,
+      "atkMin": 220,
+      "atkMax": 361,
       "expMin": 4012,
       "expMax": 16850,
       "goldMin": 408,
@@ -3118,10 +3118,10 @@
       "isBoss": false,
       "minLevel": 153,
       "maxLevel": 162,
-      "hpMin": 58167,
-      "hpMax": 110517,
-      "atkMin": 655,
-      "atkMax": 1127,
+      "hpMin": 160000,
+      "hpMax": 304000,
+      "atkMin": 216,
+      "atkMax": 372,
       "expMin": 3591,
       "expMax": 16519,
       "goldMin": 361,
@@ -3168,10 +3168,10 @@
       "isBoss": false,
       "minLevel": 157,
       "maxLevel": 165,
-      "hpMin": 64911,
-      "hpMax": 116840,
-      "atkMin": 714,
-      "atkMax": 1171,
+      "hpMin": 200000,
+      "hpMax": 360000,
+      "atkMin": 239,
+      "atkMax": 392,
       "expMin": 4222,
       "expMax": 17732,
       "goldMin": 429,
@@ -3213,10 +3213,10 @@
       "isBoss": false,
       "minLevel": 161,
       "maxLevel": 170,
-      "hpMin": 63000,
-      "hpMax": 119700,
-      "atkMin": 691,
-      "atkMax": 1189,
+      "hpMin": 213333,
+      "hpMax": 405333,
+      "atkMin": 234,
+      "atkMax": 402,
       "expMin": 3773,
       "expMax": 17356,
       "goldMin": 379,
@@ -3263,10 +3263,10 @@
       "isBoss": false,
       "minLevel": 165,
       "maxLevel": 173,
-      "hpMin": 70089,
-      "hpMax": 126160,
-      "atkMin": 752,
-      "atkMax": 1233,
+      "hpMin": 257143,
+      "hpMax": 462857,
+      "atkMin": 257,
+      "atkMax": 421,
       "expMin": 4432,
       "expMax": 18614,
       "goldMin": 451,
@@ -3308,10 +3308,10 @@
       "isBoss": false,
       "minLevel": 168,
       "maxLevel": 177,
-      "hpMin": 72679,
-      "hpMax": 138090,
-      "atkMin": 770,
-      "atkMax": 1324,
+      "hpMin": 285714,
+      "hpMax": 542857,
+      "atkMin": 266,
+      "atkMax": 458,
       "expMin": 4510,
       "expMax": 20746,
       "goldMin": 459,
@@ -3643,10 +3643,10 @@
       "isBoss": false,
       "minLevel": 172,
       "maxLevel": 179,
-      "hpMin": 75268,
-      "hpMax": 127956,
-      "atkMin": 789,
-      "atkMax": 1231,
+      "hpMin": 314286,
+      "hpMax": 534286,
+      "atkMin": 275,
+      "atkMax": 429,
       "expMin": 4615,
       "expMax": 17537,
       "goldMin": 469,
@@ -3688,10 +3688,10 @@
       "isBoss": false,
       "minLevel": 176,
       "maxLevel": 180,
-      "hpMin": 90833,
-      "hpMax": 127166,
-      "atkMin": 920,
-      "atkMax": 1214,
+      "hpMin": 400000,
+      "hpMax": 560000,
+      "atkMin": 323,
+      "atkMax": 426,
       "expMin": 6742,
       "expMax": 17529,
       "goldMin": 712,
@@ -3728,10 +3728,10 @@
       "isBoss": false,
       "minLevel": 180,
       "maxLevel": 185,
-      "hpMin": 90833,
-      "hpMax": 136250,
-      "atkMin": 920,
-      "atkMax": 1288,
+      "hpMin": 400000,
+      "hpMax": 600000,
+      "atkMin": 323,
+      "atkMax": 452,
       "expMin": 6894,
       "expMax": 20682,
       "goldMin": 728,
@@ -3773,10 +3773,10 @@
       "isBoss": false,
       "minLevel": 182,
       "maxLevel": 188,
-      "hpMin": 89846,
-      "hpMax": 143754,
-      "atkMin": 903,
-      "atkMax": 1336,
+      "hpMin": 435385,
+      "hpMax": 696616,
+      "atkMin": 323,
+      "atkMax": 478,
       "expMin": 5733,
       "expMax": 19492,
       "goldMin": 592,
@@ -3828,10 +3828,10 @@
       "isBoss": false,
       "minLevel": 184,
       "maxLevel": 190,
-      "hpMin": 95846,
-      "hpMax": 153354,
-      "atkMin": 946,
-      "atkMax": 1400,
+      "hpMin": 501538,
+      "hpMax": 802461,
+      "atkMin": 344,
+      "atkMax": 509,
       "expMin": 5795,
       "expMax": 19703,
       "goldMin": 598,
@@ -3883,10 +3883,10 @@
       "isBoss": false,
       "minLevel": 188,
       "maxLevel": 194,
-      "hpMin": 101846,
-      "hpMax": 162954,
-      "atkMin": 990,
-      "atkMax": 1465,
+      "hpMin": 567692,
+      "hpMax": 908307,
+      "atkMin": 365,
+      "atkMax": 540,
       "expMin": 5919,
       "expMax": 20125,
       "goldMin": 611,
@@ -3938,10 +3938,10 @@
       "isBoss": false,
       "minLevel": 190,
       "maxLevel": 196,
-      "hpMin": 107846,
-      "hpMax": 172554,
-      "atkMin": 1032,
-      "atkMax": 1527,
+      "hpMin": 633846,
+      "hpMax": 1014154,
+      "atkMin": 386,
+      "atkMax": 571,
       "expMin": 5981,
       "expMax": 20335,
       "goldMin": 618,
@@ -3988,10 +3988,10 @@
       "isBoss": false,
       "minLevel": 193,
       "maxLevel": 200,
-      "hpMin": 113846,
-      "hpMax": 193538,
-      "atkMin": 1075,
-      "atkMax": 1677,
+      "hpMin": 700000,
+      "hpMax": 1190000,
+      "atkMin": 407,
+      "atkMax": 635,
       "expMin": 6074,
       "expMax": 23081,
       "goldMin": 627,
@@ -4238,10 +4238,10 @@
       "isBoss": false,
       "minLevel": 200,
       "maxLevel": 210,
-      "hpMin": 98667,
-      "hpMax": 197334,
-      "atkMin": 901,
-      "atkMax": 1622,
+      "hpMin": 606667,
+      "hpMax": 1213334,
+      "atkMin": 361,
+      "atkMax": 650,
       "expMin": 4659,
       "expMax": 23295,
       "goldMin": 469,
@@ -4277,16 +4277,16 @@
       ]
     },
     {
-      "id": "DesertScorpion_DS01 1",
+      "id": "DesertScorpion_DS01",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_DS01_1.png",
+      "image": "enemy_DesertScorpion_DS01.png",
       "isBoss": false,
       "minLevel": 205,
       "maxLevel": 217,
-      "hpMin": 100875,
-      "hpMax": 221925,
-      "atkMin": 853,
-      "atkMax": 1672,
+      "hpMin": 817500,
+      "hpMax": 1798500,
+      "atkMin": 365,
+      "atkMax": 715,
       "expMin": 4231,
       "expMax": 24540,
       "goldMin": 422,
@@ -4333,10 +4333,10 @@
       "isBoss": false,
       "minLevel": 210,
       "maxLevel": 222,
-      "hpMin": 109250,
-      "hpMax": 240350,
-      "atkMin": 853,
-      "atkMax": 1672,
+      "hpMin": 1066250,
+      "hpMax": 2345750,
+      "atkMin": 389,
+      "atkMax": 762,
       "expMin": 4331,
       "expMax": 25120,
       "goldMin": 432,
@@ -4378,10 +4378,10 @@
       "isBoss": false,
       "minLevel": 215,
       "maxLevel": 228,
-      "hpMin": 110706,
-      "hpMax": 254624,
-      "atkMin": 809,
-      "atkMax": 1650,
+      "hpMin": 1237647,
+      "hpMax": 2846588,
+      "atkMin": 391,
+      "atkMax": 798,
       "expMin": 3983,
       "expMax": 24695,
       "goldMin": 395,
@@ -4423,10 +4423,10 @@
       "isBoss": false,
       "minLevel": 220,
       "maxLevel": 235,
-      "hpMin": 112000,
-      "hpMax": 280000,
-      "atkMin": 770,
-      "atkMax": 1694,
+      "hpMin": 1390000,
+      "hpMax": 3475000,
+      "atkMin": 393,
+      "atkMax": 865,
       "expMin": 3701,
       "expMax": 25907,
       "goldMin": 365,
@@ -4680,10 +4680,10 @@
       "isBoss": false,
       "minLevel": 230,
       "maxLevel": 250,
-      "hpMin": 107500,
-      "hpMax": 322500,
-      "atkMin": 701,
-      "atkMax": 1823,
+      "hpMin": 1450000,
+      "hpMax": 4350000,
+      "atkMin": 378,
+      "atkMax": 983,
       "expMin": 3273,
       "expMax": 29457,
       "goldMin": 320,
@@ -4715,10 +4715,10 @@
       "isBoss": false,
       "minLevel": 250,
       "maxLevel": 262,
-      "hpMin": 134375,
-      "hpMax": 295625,
-      "atkMin": 901,
-      "atkMax": 1766,
+      "hpMin": 1812500,
+      "hpMax": 3987500,
+      "atkMin": 459,
+      "atkMax": 900,
       "expMin": 5134,
       "expMax": 29777,
       "goldMin": 512,
@@ -4970,10 +4970,10 @@
       "isBoss": false,
       "minLevel": 258,
       "maxLevel": 272,
-      "hpMin": 130588,
-      "hpMax": 313411,
-      "atkMin": 903,
-      "atkMax": 1914,
+      "hpMin": 1905882,
+      "hpMax": 4574117,
+      "atkMin": 466,
+      "atkMax": 988,
       "expMin": 4755,
       "expMax": 31383,
       "goldMin": 471,
@@ -5020,10 +5020,10 @@
       "isBoss": false,
       "minLevel": 265,
       "maxLevel": 280,
-      "hpMin": 134706,
-      "hpMax": 336765,
-      "atkMin": 953,
-      "atkMax": 2097,
+      "hpMin": 2105882,
+      "hpMax": 5264705,
+      "atkMin": 496,
+      "atkMax": 1091,
       "expMin": 4880,
       "expMax": 34160,
       "goldMin": 484,
@@ -5070,10 +5070,10 @@
       "isBoss": false,
       "minLevel": 272,
       "maxLevel": 286,
-      "hpMin": 138824,
-      "hpMax": 333178,
-      "atkMin": 1001,
-      "atkMax": 2122,
+      "hpMin": 2305882,
+      "hpMax": 5534117,
+      "atkMin": 526,
+      "atkMax": 1115,
       "expMin": 5006,
       "expMax": 33040,
       "goldMin": 496,
@@ -5120,10 +5120,10 @@
       "isBoss": false,
       "minLevel": 280,
       "maxLevel": 294,
-      "hpMin": 142941,
-      "hpMax": 343058,
-      "atkMin": 1051,
-      "atkMax": 2228,
+      "hpMin": 2505882,
+      "hpMax": 6014117,
+      "atkMin": 556,
+      "atkMax": 1179,
       "expMin": 5149,
       "expMax": 33983,
       "goldMin": 510,
@@ -5384,10 +5384,10 @@
       "isBoss": false,
       "minLevel": 288,
       "maxLevel": 300,
-      "hpMin": 156250,
-      "hpMax": 343750,
-      "atkMin": 1159,
-      "atkMax": 2272,
+      "hpMin": 2875000,
+      "hpMax": 6325000,
+      "atkMin": 618,
+      "atkMax": 1211,
       "expMin": 5896,
       "expMax": 34197,
       "goldMin": 588,
@@ -5418,16 +5418,16 @@
       ]
     },
     {
-      "id": "ShadowHound_DS03",
+      "id": "ShadowHound_DS03 1",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_DS03.png",
+      "image": "enemy_ShadowHound_DS03_1.png",
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
-      "hpMin": 138889,
-      "hpMax": 347223,
-      "atkMin": 1046,
-      "atkMax": 2301,
+      "hpMin": 2555556,
+      "hpMax": 6388890,
+      "atkMin": 558,
+      "atkMax": 1228,
       "expMin": 5000,
       "expMax": 35000,
       "goldMin": 493,
@@ -5464,10 +5464,10 @@
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
-      "hpMin": 163889,
-      "hpMax": 409723,
-      "atkMin": 1851,
-      "atkMax": 4072,
+      "hpMin": 8333333,
+      "hpMax": 20833333,
+      "atkMin": 750,
+      "atkMax": 1650,
       "expMin": 5000,
       "expMax": 35000,
       "goldMin": 493,
@@ -5499,10 +5499,10 @@
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
-      "hpMin": 233333,
-      "hpMax": 583333,
-      "atkMin": 3276,
-      "atkMax": 7207,
+      "hpMin": 18333333,
+      "hpMax": 45833333,
+      "atkMin": 1012,
+      "atkMax": 2226,
       "expMin": 5000,
       "expMax": 35000,
       "goldMin": 493,
@@ -5744,10 +5744,10 @@
       "isBoss": false,
       "minLevel": 312,
       "maxLevel": 328,
-      "hpMin": 275556,
-      "hpMax": 716446,
-      "atkMin": 3393,
-      "atkMax": 7736,
+      "hpMin": 20444444,
+      "hpMax": 53155554,
+      "atkMin": 1082,
+      "atkMax": 2467,
       "expMin": 5195,
       "expMax": 38443,
       "goldMin": 512,
@@ -5784,10 +5784,10 @@
       "isBoss": false,
       "minLevel": 312,
       "maxLevel": 328,
-      "hpMin": 143889,
-      "hpMax": 374111,
-      "atkMin": 1207,
-      "atkMax": 2752,
+      "hpMin": 3711111,
+      "hpMax": 9648889,
+      "atkMin": 596,
+      "atkMax": 1359,
       "expMin": 5195,
       "expMax": 38443,
       "goldMin": 512,
@@ -5834,10 +5834,10 @@
       "isBoss": false,
       "minLevel": 312,
       "maxLevel": 328,
-      "hpMin": 177778,
-      "hpMax": 462223,
-      "atkMin": 2135,
-      "atkMax": 4868,
+      "hpMin": 10333333,
+      "hpMax": 26866666,
+      "atkMin": 802,
+      "atkMax": 1829,
       "expMin": 5195,
       "expMax": 38443,
       "goldMin": 512,
@@ -5874,10 +5874,10 @@
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
-      "hpMin": 172500,
-      "hpMax": 517500,
-      "atkMin": 2206,
-      "atkMax": 5736,
+      "hpMin": 11100000,
+      "hpMax": 33300000,
+      "atkMin": 779,
+      "atkMax": 2025,
       "expMin": 4568,
       "expMax": 41112,
       "goldMin": 447,
@@ -5908,16 +5908,16 @@
       ]
     },
     {
-      "id": "CrystalGolem_DS03",
+      "id": "CrystalGolem_DS03 1",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_DS03.png",
+      "image": "enemy_CrystalGolem_DS03_1.png",
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
-      "hpMin": 134000,
-      "hpMax": 402000,
-      "atkMin": 1246,
-      "atkMax": 3240,
+      "hpMin": 4380000,
+      "hpMax": 13140000,
+      "atkMin": 578,
+      "atkMax": 1503,
       "expMin": 4568,
       "expMax": 41112,
       "goldMin": 447,
@@ -5954,10 +5954,10 @@
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
-      "hpMin": 286000,
-      "hpMax": 858000,
-      "atkMin": 3199,
-      "atkMax": 8317,
+      "hpMin": 20300000,
+      "hpMax": 60900000,
+      "atkMin": 1049,
+      "atkMax": 2727,
       "expMin": 4568,
       "expMax": 41112,
       "goldMin": 447,
@@ -6204,10 +6204,10 @@
       "isBoss": false,
       "minLevel": 340,
       "maxLevel": 360,
-      "hpMin": 324000,
-      "hpMax": 972000,
-      "atkMin": 3307,
-      "atkMax": 8598,
+      "hpMin": 22200000,
+      "hpMax": 66600000,
+      "atkMin": 1112,
+      "atkMax": 2891,
       "expMin": 4773,
       "expMax": 42957,
       "goldMin": 467,
@@ -6239,10 +6239,10 @@
       "isBoss": false,
       "minLevel": 340,
       "maxLevel": 360,
-      "hpMin": 138500,
-      "hpMax": 415500,
-      "atkMin": 1393,
-      "atkMax": 3622,
+      "hpMin": 5420000,
+      "hpMax": 16260000,
+      "atkMin": 613,
+      "atkMax": 1594,
       "expMin": 4773,
       "expMax": 42957,
       "goldMin": 467,
@@ -6289,10 +6289,10 @@
       "isBoss": false,
       "minLevel": 340,
       "maxLevel": 360,
-      "hpMin": 185000,
-      "hpMax": 555000,
-      "atkMin": 2465,
-      "atkMax": 6409,
+      "hpMin": 12900000,
+      "hpMax": 38700000,
+      "atkMin": 827,
+      "atkMax": 2150,
       "expMin": 4773,
       "expMax": 42957,
       "goldMin": 467,
@@ -6324,10 +6324,10 @@
       "isBoss": false,
       "minLevel": 355,
       "maxLevel": 375,
-      "hpMin": 362000,
-      "hpMax": 1086000,
-      "atkMin": 3414,
-      "atkMax": 8876,
+      "hpMin": 24100000,
+      "hpMax": 72300000,
+      "atkMin": 1176,
+      "atkMax": 3058,
       "expMin": 4977,
       "expMax": 44793,
       "goldMin": 487,
@@ -6359,10 +6359,10 @@
       "isBoss": false,
       "minLevel": 355,
       "maxLevel": 375,
-      "hpMin": 143000,
-      "hpMax": 429000,
-      "atkMin": 1539,
-      "atkMax": 4001,
+      "hpMin": 6460000,
+      "hpMax": 19380000,
+      "atkMin": 648,
+      "atkMax": 1685,
       "expMin": 4977,
       "expMax": 44793,
       "goldMin": 487,
@@ -6409,10 +6409,10 @@
       "isBoss": false,
       "minLevel": 355,
       "maxLevel": 375,
-      "hpMin": 197500,
-      "hpMax": 592500,
-      "atkMin": 2725,
-      "atkMax": 7085,
+      "hpMin": 14700000,
+      "hpMax": 44100000,
+      "atkMin": 874,
+      "atkMax": 2272,
       "expMin": 4977,
       "expMax": 44793,
       "goldMin": 487,
@@ -6479,10 +6479,10 @@
       "isBoss": false,
       "minLevel": 370,
       "maxLevel": 390,
-      "hpMin": 400000,
-      "hpMax": 1200000,
-      "atkMin": 3522,
-      "atkMax": 9157,
+      "hpMin": 26000000,
+      "hpMax": 78000000,
+      "atkMin": 1239,
+      "atkMax": 3221,
       "expMin": 5182,
       "expMax": 46638,
       "goldMin": 507,
@@ -6509,10 +6509,10 @@
       "isBoss": false,
       "minLevel": 370,
       "maxLevel": 390,
-      "hpMin": 147500,
-      "hpMax": 442500,
-      "atkMin": 1686,
-      "atkMax": 4384,
+      "hpMin": 7500000,
+      "hpMax": 22500000,
+      "atkMin": 683,
+      "atkMax": 1776,
       "expMin": 5182,
       "expMax": 46638,
       "goldMin": 507,
@@ -6554,10 +6554,10 @@
       "isBoss": false,
       "minLevel": 370,
       "maxLevel": 390,
-      "hpMin": 210000,
-      "hpMax": 630000,
-      "atkMin": 2984,
-      "atkMax": 7758,
+      "hpMin": 16500000,
+      "hpMax": 49500000,
+      "atkMin": 922,
+      "atkMax": 2397,
       "expMin": 5182,
       "expMax": 46638,
       "goldMin": 507,
@@ -6794,10 +6794,10 @@
       "isBoss": false,
       "minLevel": 400,
       "maxLevel": 415,
-      "hpMin": 444444,
-      "hpMax": 1111110,
-      "atkMin": 3865,
-      "atkMax": 8503,
+      "hpMin": 28888889,
+      "hpMax": 72222223,
+      "atkMin": 1360,
+      "atkMax": 2992,
       "expMin": 6623,
       "expMax": 46361,
       "goldMin": 653,
@@ -6839,10 +6839,10 @@
       "isBoss": false,
       "minLevel": 410,
       "maxLevel": 425,
-      "hpMin": 533333,
-      "hpMax": 1333333,
-      "atkMin": 4004,
-      "atkMax": 8809,
+      "hpMin": 30333333,
+      "hpMax": 75833333,
+      "atkMin": 1454,
+      "atkMax": 3199,
       "expMin": 6785,
       "expMax": 47495,
       "goldMin": 669,
@@ -6889,10 +6889,10 @@
       "isBoss": false,
       "minLevel": 420,
       "maxLevel": 435,
-      "hpMin": 622222,
-      "hpMax": 1555555,
-      "atkMin": 4143,
-      "atkMax": 9115,
+      "hpMin": 31777778,
+      "hpMax": 79444445,
+      "atkMin": 1548,
+      "atkMax": 3406,
       "expMin": 6948,
       "expMax": 48636,
       "goldMin": 685,
@@ -7149,10 +7149,10 @@
       "isBoss": false,
       "minLevel": 428,
       "maxLevel": 442,
-      "hpMin": 752941,
-      "hpMax": 1807058,
-      "atkMin": 4503,
-      "atkMax": 9546,
+      "hpMin": 35176470,
+      "hpMax": 84423528,
+      "atkMin": 1726,
+      "atkMax": 3659,
       "expMin": 7805,
       "expMax": 51513,
       "goldMin": 773,
@@ -7199,10 +7199,10 @@
       "isBoss": false,
       "minLevel": 435,
       "maxLevel": 448,
-      "hpMin": 847059,
-      "hpMax": 1948236,
-      "atkMin": 4649,
-      "atkMax": 9484,
+      "hpMin": 36705882,
+      "hpMax": 84423529,
+      "atkMin": 1824,
+      "atkMax": 3721,
       "expMin": 7931,
       "expMax": 49172,
       "goldMin": 786,
@@ -7249,10 +7249,10 @@
       "isBoss": false,
       "minLevel": 442,
       "maxLevel": 455,
-      "hpMin": 1000000,
-      "hpMax": 2300000,
-      "atkMin": 5054,
-      "atkMax": 10310,
+      "hpMin": 40625000,
+      "hpMax": 93437500,
+      "atkMin": 2027,
+      "atkMax": 4135,
       "expMin": 8984,
       "expMax": 55701,
       "goldMin": 896,
@@ -7499,10 +7499,10 @@
       "isBoss": false,
       "minLevel": 455,
       "maxLevel": 468,
-      "hpMin": 1322314,
-      "hpMax": 1838016,
-      "atkMin": 5541,
-      "atkMax": 9143,
+      "hpMin": 53719008,
+      "hpMax": 74669421,
+      "atkMin": 2222,
+      "atkMax": 3666,
       "expMin": 8289,
       "expMax": 51392,
       "goldMin": 821,
@@ -7539,10 +7539,10 @@
       "isBoss": false,
       "minLevel": 455,
       "maxLevel": 468,
-      "hpMin": 2644628,
-      "hpMax": 3676033,
-      "atkMin": 6539,
-      "atkMax": 10789,
+      "hpMin": 107438017,
+      "hpMax": 149338844,
+      "atkMin": 2993,
+      "atkMax": 4938,
       "expMin": 8289,
       "expMax": 51392,
       "goldMin": 821,
@@ -7579,10 +7579,10 @@
       "isBoss": false,
       "minLevel": 455,
       "maxLevel": 468,
-      "hpMin": 5289256,
-      "hpMax": 7352066,
-      "atkMin": 7716,
-      "atkMax": 12731,
+      "hpMin": 165289257,
+      "hpMax": 229752067,
+      "atkMin": 4030,
+      "atkMax": 6650,
       "expMin": 8289,
       "expMax": 51392,
       "goldMin": 821,
@@ -7619,10 +7619,10 @@
       "isBoss": false,
       "minLevel": 462,
       "maxLevel": 475,
-      "hpMin": 1627119,
-      "hpMax": 2261695,
-      "atkMin": 5961,
-      "atkMax": 9836,
+      "hpMin": 66101695,
+      "hpMax": 91881356,
+      "atkMin": 2468,
+      "atkMax": 4072,
       "expMin": 9385,
       "expMax": 58187,
       "goldMin": 936,
@@ -7669,10 +7669,10 @@
       "isBoss": false,
       "minLevel": 462,
       "maxLevel": 475,
-      "hpMin": 3254237,
-      "hpMax": 4523389,
-      "atkMin": 7035,
-      "atkMax": 11608,
+      "hpMin": 122033899,
+      "hpMax": 169627120,
+      "atkMin": 3323,
+      "atkMax": 5483,
       "expMin": 9385,
       "expMax": 58187,
       "goldMin": 936,
@@ -7719,10 +7719,10 @@
       "isBoss": false,
       "minLevel": 465,
       "maxLevel": 480,
-      "hpMin": 8198347,
-      "hpMax": 11887603,
-      "atkMin": 7993,
-      "atkMax": 13988,
+      "hpMin": 188429753,
+      "hpMax": 273223142,
+      "atkMin": 4316,
+      "atkMax": 7553,
       "expMin": 8469,
       "expMax": 59283,
       "goldMin": 839,
@@ -7769,10 +7769,10 @@
       "isBoss": false,
       "minLevel": 470,
       "maxLevel": 484,
-      "hpMin": 1851240,
-      "hpMax": 2628761,
-      "atkMin": 5940,
-      "atkMax": 10098,
+      "hpMin": 75206612,
+      "hpMax": 106793389,
+      "atkMin": 2530,
+      "atkMax": 4301,
       "expMin": 8558,
       "expMax": 56483,
       "goldMin": 848,
@@ -7814,10 +7814,10 @@
       "isBoss": false,
       "minLevel": 470,
       "maxLevel": 484,
-      "hpMin": 3702479,
-      "hpMax": 5257520,
-      "atkMin": 7010,
-      "atkMax": 11917,
+      "hpMin": 130578513,
+      "hpMax": 185421488,
+      "atkMin": 3407,
+      "atkMax": 5792,
       "expMin": 8558,
       "expMax": 56483,
       "goldMin": 848,
@@ -7859,10 +7859,10 @@
       "isBoss": false,
       "minLevel": 475,
       "maxLevel": 490,
-      "hpMin": 11107438,
-      "hpMax": 16105785,
-      "atkMin": 8271,
-      "atkMax": 14474,
+      "hpMin": 211570249,
+      "hpMax": 306776861,
+      "atkMin": 4601,
+      "atkMax": 8052,
       "expMin": 8648,
       "expMax": 60536,
       "goldMin": 857,
@@ -8114,10 +8114,10 @@
       "isBoss": false,
       "minLevel": 478,
       "maxLevel": 492,
-      "hpMin": 4231405,
-      "hpMax": 6008595,
-      "atkMin": 7244,
-      "atkMax": 12315,
+      "hpMin": 142148761,
+      "hpMax": 201851241,
+      "atkMin": 3615,
+      "atkMax": 6146,
       "expMin": 8702,
       "expMax": 57433,
       "goldMin": 862,
@@ -8164,10 +8164,10 @@
       "isBoss": false,
       "minLevel": 478,
       "maxLevel": 492,
-      "hpMin": 2115702,
-      "hpMax": 3004297,
-      "atkMin": 6139,
-      "atkMax": 10436,
+      "hpMin": 85950414,
+      "hpMax": 122049588,
+      "atkMin": 2684,
+      "atkMax": 4563,
       "expMin": 8702,
       "expMax": 57433,
       "goldMin": 862,
@@ -8214,10 +8214,10 @@
       "isBoss": false,
       "minLevel": 485,
       "maxLevel": 500,
-      "hpMin": 14016529,
-      "hpMax": 20323967,
-      "atkMin": 8548,
-      "atkMax": 14959,
+      "hpMin": 234710745,
+      "hpMax": 340330580,
+      "atkMin": 4887,
+      "atkMax": 8552,
       "expMin": 8828,
       "expMax": 61796,
       "goldMin": 875,
@@ -8264,10 +8264,10 @@
       "isBoss": false,
       "minLevel": 486,
       "maxLevel": 500,
-      "hpMin": 2380165,
-      "hpMax": 3379834,
-      "atkMin": 6339,
-      "atkMax": 10776,
+      "hpMin": 96694215,
+      "hpMax": 137305785,
+      "atkMin": 2839,
+      "atkMax": 4826,
       "expMin": 8846,
       "expMax": 58384,
       "goldMin": 876,
@@ -8309,10 +8309,10 @@
       "isBoss": false,
       "minLevel": 486,
       "maxLevel": 500,
-      "hpMin": 4760331,
-      "hpMax": 6759670,
-      "atkMin": 7480,
-      "atkMax": 12716,
+      "hpMin": 153719009,
+      "hpMax": 218280993,
+      "atkMin": 3822,
+      "atkMax": 6497,
       "expMin": 8846,
       "expMax": 58384,
       "goldMin": 876,
@@ -8354,10 +8354,10 @@
       "isBoss": false,
       "minLevel": 492,
       "maxLevel": 506,
-      "hpMin": 2644628,
-      "hpMax": 3755372,
-      "atkMin": 6539,
-      "atkMax": 11116,
+      "hpMin": 107438017,
+      "hpMax": 152561984,
+      "atkMin": 2993,
+      "atkMax": 5088,
       "expMin": 8953,
       "expMax": 59090,
       "goldMin": 887,
@@ -8394,10 +8394,10 @@
       "isBoss": false,
       "minLevel": 492,
       "maxLevel": 506,
-      "hpMin": 5289256,
-      "hpMax": 7510744,
-      "atkMin": 7716,
-      "atkMax": 13117,
+      "hpMin": 165289257,
+      "hpMax": 234710745,
+      "atkMin": 4030,
+      "atkMax": 6851,
       "expMin": 8953,
       "expMax": 59090,
       "goldMin": 887,
@@ -8434,10 +8434,10 @@
       "isBoss": false,
       "minLevel": 495,
       "maxLevel": 510,
-      "hpMin": 16925620,
-      "hpMax": 24542149,
-      "atkMin": 8826,
-      "atkMax": 15446,
+      "hpMin": 257851241,
+      "hpMax": 373884299,
+      "atkMin": 5173,
+      "atkMax": 9053,
       "expMin": 9007,
       "expMax": 63049,
       "goldMin": 892,
@@ -8514,10 +8514,10 @@
       "isBoss": false,
       "minLevel": 505,
       "maxLevel": 520,
-      "hpMin": 19834711,
-      "hpMax": 28760331,
-      "atkMin": 9104,
-      "atkMax": 15932,
+      "hpMin": 280991737,
+      "hpMax": 407438019,
+      "atkMin": 5459,
+      "atkMax": 9553,
       "expMin": 9187,
       "expMax": 64309,
       "goldMin": 910,
@@ -8590,8 +8590,8 @@
       "image": "boss_AncientGolem.png",
       "mapId": "Grassland_Map",
       "level": 30,
-      "hp": 31000,
-      "atk": 520,
+      "hp": 17200,
+      "atk": 126,
       "hardModeHp": 79200000,
       "hardModeAtk": 560000,
       "exp": 12000,
@@ -8606,8 +8606,8 @@
       "image": "boss_BoneDragonJr.png",
       "mapId": "ForestRoad_Map",
       "level": 45,
-      "hp": 10000,
-      "atk": 175,
+      "hp": 23400,
+      "atk": 97,
       "hardModeHp": 86978960,
       "hardModeAtk": 622500,
       "exp": 24750,
@@ -8622,8 +8622,8 @@
       "image": "boss_DarkTreant.png",
       "mapId": "DarkForest_Map",
       "level": 65,
-      "hp": 17000,
-      "atk": 265,
+      "hp": 46800,
+      "atk": 131,
       "hardModeHp": 95157894,
       "hardModeAtk": 691500,
       "exp": 48750,
@@ -8638,8 +8638,8 @@
       "image": "boss_SoulReaper.png",
       "mapId": "DeepForest_Map",
       "level": 90,
-      "hp": 25000,
-      "atk": 360,
+      "hp": 93600,
+      "atk": 177,
       "hardModeHp": 104897368,
       "hardModeAtk": 768500,
       "exp": 90000,
@@ -8654,8 +8654,8 @@
       "image": "boss_FrostWitch.png",
       "mapId": "AshenForest_Map",
       "level": 110,
-      "hp": 36500,
-      "atk": 480,
+      "hp": 171000,
+      "atk": 238,
       "hardModeHp": 114494736,
       "hardModeAtk": 854500,
       "exp": 132000,
@@ -8670,8 +8670,8 @@
       "image": "boss_InfernoDrake.png",
       "mapId": "VolcanicApproach_Map",
       "level": 150,
-      "hp": 52500,
-      "atk": 650,
+      "hp": 288000,
+      "atk": 320,
       "hardModeHp": 125373684,
       "hardModeAtk": 949500,
       "exp": 240000,
@@ -8686,8 +8686,8 @@
       "image": "boss_LavaTitan.png",
       "mapId": "LavaRiverPass_Map",
       "level": 185,
-      "hp": 75000,
-      "atk": 875,
+      "hp": 864000,
+      "atk": 431,
       "hardModeHp": 136547368,
       "hardModeAtk": 1055000,
       "exp": 360750,
@@ -8702,8 +8702,8 @@
       "image": "boss_ChaosBeast.png",
       "mapId": "LavaCore_Map",
       "level": 210,
-      "hp": 110000,
-      "atk": 1200,
+      "hp": 1638000,
+      "atk": 580,
       "hardModeHp": 148539473,
       "hardModeAtk": 1172500,
       "exp": 462000,
@@ -8718,8 +8718,8 @@
       "image": "boss_CursedArmor.png",
       "mapId": "DesertCrossroads_Map",
       "level": 220,
-      "hp": 178000,
-      "atk": 1750,
+      "hp": 8280000,
+      "atk": 1052,
       "hardModeHp": 161757894,
       "hardModeAtk": 1303000,
       "exp": 506000,
@@ -8734,8 +8734,8 @@
       "image": "boss_CrystalElemental.png",
       "mapId": "DesertOutskirts_Map",
       "level": 260,
-      "hp": 133000,
-      "atk": 1400,
+      "hp": 5220000,
+      "atk": 781,
       "hardModeHp": 175215789,
       "hardModeAtk": 1448500,
       "exp": 702000,
@@ -8750,8 +8750,8 @@
       "image": "boss_ThunderOni.png",
       "mapId": "SunBuriedCave_Map",
       "level": 285,
-      "hp": 234000,
-      "atk": 2200,
+      "hp": 27000000,
+      "atk": 1414,
       "hardModeHp": 189873684,
       "hardModeAtk": 1609500,
       "exp": 840750,
@@ -8766,8 +8766,8 @@
       "image": "boss_GoldenMimic.png",
       "mapId": "SandstoneTunnel_Map",
       "level": 360,
-      "hp": 303000,
-      "atk": 2700,
+      "hp": 59400000,
+      "atk": 1908,
       "hardModeHp": 205297368,
       "hardModeAtk": 1789000,
       "exp": 1332000,
@@ -8782,8 +8782,8 @@
       "image": "boss_EternalKing.png",
       "mapId": "AncientBurialPassage_Map",
       "level": 400,
-      "hp": 388000,
-      "atk": 3250,
+      "hp": 93600000,
+      "atk": 2564,
       "hardModeHp": 221605263,
       "hardModeAtk": 1988000,
       "exp": 1640000,
@@ -8798,8 +8798,8 @@
       "image": "boss_SunBeast.png",
       "mapId": "SunBuriedCave_Map",
       "level": 400,
-      "hp": 234000,
-      "atk": 2200,
+      "hp": 28500000,
+      "atk": 1414,
       "hardModeHp": 238276315,
       "hardModeAtk": 2209500,
       "exp": 1640000,
@@ -8814,8 +8814,8 @@
       "image": "boss_TidalGuardian.png",
       "mapId": "SandstoneTunnel_Map",
       "level": 400,
-      "hp": 303000,
-      "atk": 2700,
+      "hp": 62700000,
+      "atk": 1908,
       "hardModeHp": 255284210,
       "hardModeAtk": 2455500,
       "exp": 1640000,
@@ -8830,8 +8830,8 @@
       "image": "boss_DesertPharaoh.png",
       "mapId": "DesertBossRoom_Map",
       "level": 410,
-      "hp": 434000,
-      "atk": 3600,
+      "hp": 83200000,
+      "atk": 2564,
       "hardModeHp": 272952631,
       "hardModeAtk": 2729000,
       "exp": 1722000,
@@ -8846,8 +8846,8 @@
       "image": "boss_DeepSeaHorror.png",
       "mapId": "ShallowCoralReef_Map",
       "level": 450,
-      "hp": 425000,
-      "atk": 3525,
+      "hp": 117000000,
+      "atk": 3449,
       "hardModeHp": 290500000,
       "hardModeAtk": 3033000,
       "exp": 2070000,
@@ -8862,8 +8862,8 @@
       "image": "boss_GiantClam.png",
       "mapId": "GiantClamBossRoom_Map",
       "level": 520,
-      "hp": 475000,
-      "atk": 3825,
+      "hp": 234000000,
+      "atk": 4646,
       "hardModeHp": 307552631,
       "hardModeAtk": 3370500,
       "exp": 2756000,
@@ -8878,8 +8878,8 @@
       "image": "boss_AquaLiege.png",
       "mapId": "MainUnderwaterBossRoom_Map",
       "level": 550,
-      "hp": 660000,
-      "atk": 4950,
+      "hp": 544000000,
+      "atk": 8475,
       "hardModeHp": 324378947,
       "hardModeAtk": 3746000,
       "exp": 3080000,
@@ -8894,8 +8894,8 @@
       "image": "boss_VoidStalker.png",
       "mapId": "DeepTrench_Map",
       "level": 550,
-      "hp": 588000,
-      "atk": 4425,
+      "hp": 612000000,
+      "atk": 8475,
       "hardModeHp": 339850000,
       "hardModeAtk": 4163000,
       "exp": 3080000,
@@ -8920,13 +8920,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 3308,
+      "bonusDEF": 3310,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 231533,
+      "buyPrice": 232000,
       "maxCopies": -1,
       "effects": [
-        "DEF +3308"
+        "DEF +3310"
       ]
     },
     {
@@ -8942,14 +8942,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 11865,
+      "bonusATK": 5270000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 442686,
+      "buyPrice": 443000,
       "maxCopies": -1,
       "effects": [
-        "ATK +11865"
+        "ATK +5270000"
       ]
     },
     {
@@ -8964,15 +8964,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 7856,
+      "bonusHP": 7860,
       "bonusATK": 0,
       "bonusDEF": 658,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 839056,
+      "buyPrice": 839000,
       "maxCopies": -1,
       "effects": [
-        "HP +7856",
+        "HP +7860",
         "DEF +658"
       ]
     },
@@ -8988,15 +8988,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 84493,
+      "bonusHP": 84500,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 965,
-      "buyPrice": 304299,
+      "buyPrice": 304000,
       "maxCopies": -1,
       "effects": [
-        "HP +84493",
+        "HP +84500",
         "LUC +965"
       ]
     },
@@ -9012,15 +9012,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 11468,
+      "bonusHP": 11500,
       "bonusATK": 0,
       "bonusDEF": 918,
       "bonusAGI": 0,
       "bonusLUC": 212,
-      "buyPrice": 841590,
+      "buyPrice": 842000,
       "maxCopies": -1,
       "effects": [
-        "HP +11468",
+        "HP +11500",
         "DEF +918",
         "LUC +212"
       ]
@@ -9039,13 +9039,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 4839,
+      "bonusDEF": 4840,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 331962,
+      "buyPrice": 332000,
       "maxCopies": -1,
       "effects": [
-        "DEF +4839"
+        "DEF +4840"
       ]
     },
     {
@@ -9062,13 +9062,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 2953,
+      "bonusDEF": 2950,
       "bonusAGI": 0,
       "bonusLUC": 639,
-      "buyPrice": 348835,
+      "buyPrice": 349000,
       "maxCopies": -1,
       "effects": [
-        "DEF +2953",
+        "DEF +2950",
         "LUC +639"
       ]
     },
@@ -9089,7 +9089,7 @@
       "bonusDEF": 3350,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 176027,
+      "buyPrice": 176000,
       "maxCopies": -1,
       "effects": [
         "DEF +3350"
@@ -9109,13 +9109,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 4557,
+      "bonusDEF": 4560,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 191886,
+      "buyPrice": 192000,
       "maxCopies": -1,
       "effects": [
-        "DEF +4557"
+        "DEF +4560"
       ]
     },
     {
@@ -9135,7 +9135,7 @@
       "bonusDEF": 58,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 200000,
+      "buyPrice": 18000,
       "maxCopies": -1,
       "effects": [
         "HP +344",
@@ -9155,14 +9155,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3685,
+      "bonusATK": 91000,
       "bonusDEF": 0,
       "bonusAGI": 273,
       "bonusLUC": 0,
-      "buyPrice": 76838,
+      "buyPrice": 76800,
       "maxCopies": -1,
       "effects": [
-        "ATK +3685",
+        "ATK +91000",
         "AGI +273"
       ]
     },
@@ -9179,14 +9179,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1328,
+      "bonusATK": 2620,
       "bonusDEF": 0,
       "bonusAGI": 97,
       "bonusLUC": 0,
-      "buyPrice": 139140,
+      "buyPrice": 164000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1328",
+        "ATK +2620",
         "AGI +97"
       ]
     },
@@ -9207,7 +9207,7 @@
       "bonusDEF": 360,
       "bonusAGI": 83,
       "bonusLUC": 0,
-      "buyPrice": 290981,
+      "buyPrice": 344000,
       "maxCopies": -1,
       "effects": [
         "DEF +360",
@@ -9227,14 +9227,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1709,
+      "bonusATK": 4520,
       "bonusDEF": 0,
       "bonusAGI": 123,
       "bonusLUC": 0,
-      "buyPrice": 67937,
+      "buyPrice": 72600,
       "maxCopies": -1,
       "effects": [
-        "ATK +1709",
+        "ATK +4520",
         "AGI +123"
       ]
     },
@@ -9252,13 +9252,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 44,
+      "bonusDEF": 39,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 8819,
+      "buyPrice": 544,
       "maxCopies": -1,
       "effects": [
-        "DEF +44"
+        "DEF +39"
       ]
     },
     {
@@ -9278,7 +9278,7 @@
       "bonusDEF": 121,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 34017,
+      "buyPrice": 72900,
       "maxCopies": -1,
       "effects": [
         "DEF +121"
@@ -9301,7 +9301,7 @@
       "bonusDEF": 185,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 47858,
+      "buyPrice": 71800,
       "maxCopies": -1,
       "effects": [
         "DEF +185"
@@ -9319,15 +9319,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 3216,
+      "bonusHP": 3490,
       "bonusATK": 0,
       "bonusDEF": 296,
       "bonusAGI": 0,
       "bonusLUC": 68,
-      "buyPrice": 224849,
+      "buyPrice": 291000,
       "maxCopies": -1,
       "effects": [
-        "HP +3216",
+        "HP +3490",
         "DEF +296",
         "LUC +68"
       ]
@@ -9345,14 +9345,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 311,
+      "bonusATK": 211,
       "bonusDEF": 0,
       "bonusAGI": 24,
       "bonusLUC": 0,
-      "buyPrice": 11857,
+      "buyPrice": 25400,
       "maxCopies": -1,
       "effects": [
-        "ATK +311",
+        "ATK +211",
         "AGI +24"
       ]
     },
@@ -10397,7 +10397,7 @@
       "bonusDEF": 130,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 74988,
+      "buyPrice": 161000,
       "maxCopies": -1,
       "effects": [
         "DEF +130"
@@ -10415,15 +10415,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 14833,
+      "bonusHP": 12400,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 271,
-      "buyPrice": 1354015,
+      "buyPrice": 1350000,
       "maxCopies": -1,
       "effects": [
-        "HP +14833",
+        "HP +12400",
         "LUC +271"
       ]
     },
@@ -10444,7 +10444,7 @@
       "bonusDEF": 53,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 44033,
+      "buyPrice": 3960,
       "maxCopies": -1,
       "effects": [
         "HP +315",
@@ -10468,7 +10468,7 @@
       "bonusDEF": 232,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 17000,
+      "buyPrice": 22000,
       "maxCopies": -1,
       "effects": [
         "DEF +232"
@@ -10487,14 +10487,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 513,
+      "bonusATK": 517,
       "bonusDEF": 0,
       "bonusAGI": 40,
       "bonusLUC": 0,
-      "buyPrice": 120356,
+      "buyPrice": 181000,
       "maxCopies": -1,
       "effects": [
-        "ATK +513",
+        "ATK +517",
         "AGI +40"
       ]
     },
@@ -10511,14 +10511,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2460,
+      "bonusATK": 26300,
       "bonusDEF": 0,
       "bonusAGI": 180,
       "bonusLUC": 0,
-      "buyPrice": 402428,
+      "buyPrice": 402000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2460",
+        "ATK +26300",
         "AGI +180"
       ]
     },
@@ -10539,7 +10539,7 @@
       "bonusDEF": 253,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 51412,
+      "buyPrice": 66500,
       "maxCopies": -1,
       "effects": [
         "DEF +253"
@@ -10562,7 +10562,7 @@
       "bonusDEF": 421,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 46008,
+      "buyPrice": 54400,
       "maxCopies": -1,
       "effects": [
         "DEF +421"
@@ -10585,7 +10585,7 @@
       "bonusDEF": 114,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 20083,
+      "buyPrice": 43000,
       "maxCopies": -1,
       "effects": [
         "DEF +114"
@@ -10603,15 +10603,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 5405,
+      "bonusHP": 5410,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 108,
-      "buyPrice": 159151,
+      "buyPrice": 170000,
       "maxCopies": -1,
       "effects": [
-        "HP +5405",
+        "HP +5410",
         "LUC +108"
       ]
     },
@@ -10628,14 +10628,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2408,
+      "bonusATK": 15900,
       "bonusDEF": 0,
       "bonusAGI": 171,
       "bonusLUC": 0,
-      "buyPrice": 152890,
+      "buyPrice": 153000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2408",
+        "ATK +15900",
         "AGI +171"
       ]
     },
@@ -10652,14 +10652,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1662,
+      "bonusATK": 4400,
       "bonusDEF": 0,
       "bonusAGI": 120,
       "bonusLUC": 0,
-      "buyPrice": 873419,
+      "buyPrice": 934000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1662",
+        "ATK +4400",
         "AGI +120"
       ]
     },
@@ -10675,15 +10675,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4830,
+      "bonusHP": 5110,
       "bonusATK": 0,
       "bonusDEF": 417,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 201214,
+      "buyPrice": 238000,
       "maxCopies": -1,
       "effects": [
-        "HP +4830",
+        "HP +5110",
         "DEF +417"
       ]
     },
@@ -10699,16 +10699,16 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 8192,
-      "bonusATK": 2223,
+      "bonusHP": 8190,
+      "bonusATK": 14700,
       "bonusDEF": 0,
       "bonusAGI": 158,
       "bonusLUC": 158,
-      "buyPrice": 49140,
+      "buyPrice": 49100,
       "maxCopies": -1,
       "effects": [
-        "HP +8192",
-        "ATK +2223",
+        "HP +8190",
+        "ATK +14700",
         "AGI +158",
         "LUC +158"
       ]
@@ -10725,15 +10725,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 217,
+      "bonusHP": 235,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 5496,
+      "buyPrice": 598,
       "maxCopies": -1,
       "effects": [
-        "HP +217"
+        "HP +235"
       ]
     },
     {
@@ -10750,13 +10750,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 36,
+      "bonusDEF": 38,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 6041,
+      "buyPrice": 657,
       "maxCopies": -1,
       "effects": [
-        "DEF +36"
+        "DEF +38"
       ]
     },
     {
@@ -10771,16 +10771,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 251,
+      "bonusHP": 264,
       "bonusATK": 0,
-      "bonusDEF": 42,
+      "bonusDEF": 44,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 7299,
+      "buyPrice": 794,
       "maxCopies": -1,
       "effects": [
-        "HP +251",
-        "DEF +42"
+        "HP +264",
+        "DEF +44"
       ]
     },
     {
@@ -10796,14 +10796,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 547,
+      "bonusATK": 550,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 30178,
+      "buyPrice": 45300,
       "maxCopies": -1,
       "effects": [
-        "ATK +547"
+        "ATK +550"
       ]
     },
     {
@@ -10823,7 +10823,7 @@
       "bonusDEF": 255,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 74349,
+      "buyPrice": 96200,
       "maxCopies": -1,
       "effects": [
         "DEF +255"
@@ -10846,7 +10846,7 @@
       "bonusDEF": 388,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 31815,
+      "buyPrice": 37600,
       "maxCopies": -1,
       "effects": [
         "DEF +388"
@@ -10865,14 +10865,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 306,
+      "bonusATK": 208,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 15431,
+      "buyPrice": 33100,
       "maxCopies": -1,
       "effects": [
-        "ATK +306"
+        "ATK +208"
       ]
     },
     {
@@ -10892,7 +10892,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 113386,
+      "buyPrice": 10200,
       "maxCopies": -1,
       "effects": [
         "HP +410"
@@ -10915,7 +10915,7 @@
       "bonusDEF": 65,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 124634,
+      "buyPrice": 11200,
       "maxCopies": -1,
       "effects": [
         "DEF +65"
@@ -10934,14 +10934,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 464,
+      "bonusATK": 466,
       "bonusDEF": 0,
       "bonusAGI": 36,
       "bonusLUC": 0,
-      "buyPrice": 75895,
+      "buyPrice": 114000,
       "maxCopies": -1,
       "effects": [
-        "ATK +464",
+        "ATK +466",
         "AGI +36"
       ]
     },
@@ -10957,15 +10957,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1963,
+      "bonusHP": 1930,
       "bonusATK": 0,
       "bonusDEF": 182,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 480000,
+      "buyPrice": 720000,
       "maxCopies": -1,
       "effects": [
-        "HP +1963",
+        "HP +1930",
         "DEF +182"
       ]
     },
@@ -10986,7 +10986,7 @@
       "bonusDEF": 255,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 24584,
+      "buyPrice": 31800,
       "maxCopies": -1,
       "effects": [
         "DEF +255"
@@ -11009,7 +11009,7 @@
       "bonusDEF": 395,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 66534,
+      "buyPrice": 78600,
       "maxCopies": -1,
       "effects": [
         "DEF +395"
@@ -11032,7 +11032,7 @@
       "bonusDEF": 103,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 9110,
+      "buyPrice": 19500,
       "maxCopies": -1,
       "effects": [
         "DEF +103"
@@ -11051,14 +11051,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 429,
+      "bonusATK": 432,
       "bonusDEF": 0,
       "bonusAGI": 33,
       "bonusLUC": 0,
-      "buyPrice": 12000,
+      "buyPrice": 18000,
       "maxCopies": -1,
       "effects": [
-        "ATK +429",
+        "ATK +432",
         "AGI +33"
       ]
     },
@@ -11075,14 +11075,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 5436,
+      "bonusATK": 172000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 215457,
+      "buyPrice": 215000,
       "maxCopies": -1,
       "effects": [
-        "ATK +5436"
+        "ATK +172000"
       ]
     },
     {
@@ -11099,13 +11099,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 2004,
+      "bonusDEF": 2000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 96968,
+      "buyPrice": 97000,
       "maxCopies": -1,
       "effects": [
-        "DEF +2004"
+        "DEF +2000"
       ]
     },
     {
@@ -11120,15 +11120,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4709,
+      "bonusHP": 4980,
       "bonusATK": 0,
       "bonusDEF": 407,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 22000,
+      "buyPrice": 26000,
       "maxCopies": -1,
       "effects": [
-        "HP +4709",
+        "HP +4980",
         "DEF +407"
       ]
     },
@@ -11144,15 +11144,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 6725,
+      "bonusHP": 6730,
       "bonusATK": 0,
       "bonusDEF": 579,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 657638,
+      "buyPrice": 703000,
       "maxCopies": -1,
       "effects": [
-        "HP +6725",
+        "HP +6730",
         "DEF +579"
       ]
     },
@@ -11168,15 +11168,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 23453,
+      "bonusHP": 23500,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 408,
-      "buyPrice": 1110164,
+      "buyPrice": 1110000,
       "maxCopies": -1,
       "effects": [
-        "HP +23453",
+        "HP +23500",
         "LUC +408"
       ]
     },
@@ -11192,16 +11192,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 21208,
+      "bonusHP": 21200,
       "bonusATK": 0,
-      "bonusDEF": 1587,
+      "bonusDEF": 1590,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 736852,
+      "buyPrice": 737000,
       "maxCopies": -1,
       "effects": [
-        "HP +21208",
-        "DEF +1587"
+        "HP +21200",
+        "DEF +1590"
       ]
     },
     {
@@ -11216,16 +11216,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 22431,
+      "bonusHP": 22400,
       "bonusATK": 0,
-      "bonusDEF": 1679,
+      "bonusDEF": 1680,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 1672607,
+      "buyPrice": 1670000,
       "maxCopies": -1,
       "effects": [
-        "HP +22431",
-        "DEF +1679"
+        "HP +22400",
+        "DEF +1680"
       ]
     },
     {
@@ -11240,15 +11240,15 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 23289,
+      "bonusHP": 23300,
       "bonusATK": 0,
       "bonusDEF": 783,
       "bonusAGI": 729,
       "bonusLUC": 0,
-      "buyPrice": 489073,
+      "buyPrice": 489000,
       "maxCopies": -1,
       "effects": [
-        "HP +23289",
+        "HP +23300",
         "DEF +783",
         "AGI +729"
       ]
@@ -11266,14 +11266,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 5432,
+      "bonusATK": 172000,
       "bonusDEF": 0,
       "bonusAGI": 421,
       "bonusLUC": 0,
-      "buyPrice": 324614,
+      "buyPrice": 325000,
       "maxCopies": -1,
       "effects": [
-        "ATK +5432",
+        "ATK +172000",
         "AGI +421"
       ]
     },
@@ -11290,14 +11290,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 4774,
+      "bonusATK": 151000,
       "bonusDEF": 0,
       "bonusAGI": 370,
       "bonusLUC": 0,
       "buyPrice": 2520000,
       "maxCopies": -1,
       "effects": [
-        "ATK +4774",
+        "ATK +151000",
         "AGI +370"
       ]
     },
@@ -11313,15 +11313,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 29894,
+      "bonusHP": 29900,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 485,
-      "buyPrice": 1134150,
+      "buyPrice": 1130000,
       "maxCopies": -1,
       "effects": [
-        "HP +29894",
+        "HP +29900",
         "LUC +485"
       ]
     },
@@ -11337,16 +11337,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 30742,
+      "bonusHP": 30700,
       "bonusATK": 0,
-      "bonusDEF": 2183,
+      "bonusDEF": 2180,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 613282,
+      "buyPrice": 613000,
       "maxCopies": -1,
       "effects": [
-        "HP +30742",
-        "DEF +2183"
+        "HP +30700",
+        "DEF +2180"
       ]
     },
     {
@@ -11361,16 +11361,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 27407,
+      "bonusHP": 27400,
       "bonusATK": 0,
-      "bonusDEF": 1947,
+      "bonusDEF": 1950,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2097396,
+      "buyPrice": 2100000,
       "maxCopies": -1,
       "effects": [
-        "HP +27407",
-        "DEF +1947"
+        "HP +27400",
+        "DEF +1950"
       ]
     },
     {
@@ -11385,16 +11385,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 30441,
+      "bonusHP": 30400,
       "bonusATK": 0,
-      "bonusDEF": 2162,
+      "bonusDEF": 2160,
       "bonusAGI": 494,
       "bonusLUC": 0,
-      "buyPrice": 331627,
+      "buyPrice": 332000,
       "maxCopies": -1,
       "effects": [
-        "HP +30441",
-        "DEF +2162",
+        "HP +30400",
+        "DEF +2160",
         "AGI +494"
       ]
     },
@@ -11411,14 +11411,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6533,
+      "bonusATK": 585000,
       "bonusDEF": 0,
       "bonusAGI": 484,
       "bonusLUC": 0,
-      "buyPrice": 179325,
+      "buyPrice": 179000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6533",
+        "ATK +585000",
         "AGI +484"
       ]
     },
@@ -11434,15 +11434,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 30267,
+      "bonusHP": 30300,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 491,
-      "buyPrice": 1708744,
+      "buyPrice": 1710000,
       "maxCopies": -1,
       "effects": [
-        "HP +30267",
+        "HP +30300",
         "LUC +491"
       ]
     },
@@ -11458,16 +11458,16 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 14479,
+      "bonusHP": 14500,
       "bonusATK": 0,
-      "bonusDEF": 3495,
+      "bonusDEF": 3500,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 923990,
+      "buyPrice": 924000,
       "maxCopies": -1,
       "effects": [
-        "HP +14479",
-        "DEF +3495"
+        "HP +14500",
+        "DEF +3500"
       ]
     },
     {
@@ -11482,16 +11482,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 28818,
+      "bonusHP": 28800,
       "bonusATK": 0,
-      "bonusDEF": 2047,
+      "bonusDEF": 2050,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2574446,
+      "buyPrice": 2570000,
       "maxCopies": -1,
       "effects": [
-        "HP +28818",
-        "DEF +2047"
+        "HP +28800",
+        "DEF +2050"
       ]
     },
     {
@@ -11506,16 +11506,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 28375,
+      "bonusHP": 28400,
       "bonusATK": 0,
-      "bonusDEF": 2016,
+      "bonusDEF": 2020,
       "bonusAGI": 460,
       "bonusLUC": 0,
-      "buyPrice": 499640,
+      "buyPrice": 500000,
       "maxCopies": -1,
       "effects": [
-        "HP +28375",
-        "DEF +2016",
+        "HP +28400",
+        "DEF +2020",
         "AGI +460"
       ]
     },
@@ -11532,14 +11532,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6462,
+      "bonusATK": 579000,
       "bonusDEF": 0,
       "bonusAGI": 479,
       "bonusLUC": 0,
-      "buyPrice": 270176,
+      "buyPrice": 270000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6462",
+        "ATK +579000",
         "AGI +479"
       ]
     },
@@ -11560,7 +11560,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 504,
-      "buyPrice": 1392111,
+      "buyPrice": 1390000,
       "maxCopies": -1,
       "effects": [
         "HP +31100",
@@ -11579,16 +11579,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 28788,
+      "bonusHP": 28800,
       "bonusATK": 0,
-      "bonusDEF": 2045,
+      "bonusDEF": 2050,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 752773,
+      "buyPrice": 753000,
       "maxCopies": -1,
       "effects": [
-        "HP +28788",
-        "DEF +2045"
+        "HP +28800",
+        "DEF +2050"
       ]
     },
     {
@@ -11603,16 +11603,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 28521,
+      "bonusHP": 28500,
       "bonusATK": 0,
-      "bonusDEF": 2026,
+      "bonusDEF": 2030,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 3160000,
       "maxCopies": -1,
       "effects": [
-        "HP +28521",
-        "DEF +2026"
+        "HP +28500",
+        "DEF +2030"
       ]
     },
     {
@@ -11627,16 +11627,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 30608,
+      "bonusHP": 30600,
       "bonusATK": 0,
-      "bonusDEF": 2173,
+      "bonusDEF": 2170,
       "bonusAGI": 496,
       "bonusLUC": 0,
-      "buyPrice": 407056,
+      "buyPrice": 407000,
       "maxCopies": -1,
       "effects": [
-        "HP +30608",
-        "DEF +2173",
+        "HP +30600",
+        "DEF +2170",
         "AGI +496"
       ]
     },
@@ -11653,14 +11653,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6774,
+      "bonusATK": 607000,
       "bonusDEF": 0,
       "bonusAGI": 503,
       "bonusLUC": 0,
-      "buyPrice": 220112,
+      "buyPrice": 220000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6774",
+        "ATK +607000",
         "AGI +503"
       ]
     },
@@ -11678,13 +11678,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 2404,
+      "bonusDEF": 2400,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 543912,
+      "buyPrice": 544000,
       "maxCopies": -1,
       "effects": [
-        "DEF +2404"
+        "DEF +2400"
       ]
     },
     {
@@ -11700,14 +11700,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 8476,
+      "bonusATK": 2000000,
       "bonusDEF": 0,
       "bonusAGI": 575,
       "bonusLUC": 0,
-      "buyPrice": 594508,
+      "buyPrice": 595000,
       "maxCopies": -1,
       "effects": [
-        "ATK +8476",
+        "ATK +2000000",
         "AGI +575"
       ]
     },
@@ -11723,16 +11723,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 14470,
+      "bonusHP": 12100,
       "bonusATK": 0,
-      "bonusDEF": 1145,
+      "bonusDEF": 1150,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 395916,
+      "buyPrice": 396000,
       "maxCopies": -1,
       "effects": [
-        "HP +14470",
-        "DEF +1145"
+        "HP +12100",
+        "DEF +1150"
       ]
     },
     {
@@ -11749,13 +11749,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 1173,
+      "bonusDEF": 1170,
       "bonusAGI": 271,
       "bonusLUC": 0,
-      "buyPrice": 115767,
+      "buyPrice": 116000,
       "maxCopies": -1,
       "effects": [
-        "DEF +1173",
+        "DEF +1170",
         "AGI +271"
       ]
     },
@@ -11771,15 +11771,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 5543,
+      "bonusHP": 5540,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 111,
-      "buyPrice": 495167,
+      "buyPrice": 529000,
       "maxCopies": -1,
       "effects": [
-        "HP +5543",
+        "HP +5540",
         "LUC +111"
       ]
     },
@@ -11800,7 +11800,7 @@
       "bonusDEF": 71,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 136999,
+      "buyPrice": 12300,
       "maxCopies": -1,
       "effects": [
         "HP +418",
@@ -11820,14 +11820,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1512,
+      "bonusATK": 4000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 29000,
+      "buyPrice": 31000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1512"
+        "ATK +4000"
       ]
     },
     {
@@ -11870,7 +11870,7 @@
       "bonusDEF": 115,
       "bonusAGI": 25,
       "bonusLUC": 0,
-      "buyPrice": 57618,
+      "buyPrice": 123000,
       "maxCopies": -1,
       "effects": [
         "DEF +115",
@@ -11889,15 +11889,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 8174,
+      "bonusHP": 8170,
       "bonusATK": 0,
       "bonusDEF": 685,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 358166,
+      "buyPrice": 358000,
       "maxCopies": -1,
       "effects": [
-        "HP +8174",
+        "HP +8170",
         "DEF +685"
       ]
     },
@@ -11914,14 +11914,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 357,
+      "bonusATK": 56,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 24963,
+      "buyPrice": 2250,
       "maxCopies": -1,
       "effects": [
-        "ATK +357"
+        "ATK +56"
       ]
     },
     {
@@ -11936,15 +11936,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4548,
+      "bonusHP": 4810,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 92,
-      "buyPrice": 608523,
+      "buyPrice": 719000,
       "maxCopies": -1,
       "effects": [
-        "HP +4548",
+        "HP +4810",
         "LUC +92"
       ]
     },
@@ -11961,14 +11961,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1296,
+      "bonusATK": 2560,
       "bonusDEF": 0,
       "bonusAGI": 95,
       "bonusLUC": 0,
-      "buyPrice": 880000,
+      "buyPrice": 1040000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1296",
+        "ATK +2560",
         "AGI +95"
       ]
     },
@@ -11985,14 +11985,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 384,
+      "bonusATK": 261,
       "bonusDEF": 0,
       "bonusAGI": 30,
       "bonusLUC": 0,
-      "buyPrice": 165307,
+      "buyPrice": 354000,
       "maxCopies": -1,
       "effects": [
-        "ATK +384",
+        "ATK +261",
         "AGI +30"
       ]
     },
@@ -12010,13 +12010,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 1203,
+      "bonusDEF": 1200,
       "bonusAGI": 277,
       "bonusLUC": 0,
-      "buyPrice": 898704,
+      "buyPrice": 899000,
       "maxCopies": -1,
       "effects": [
-        "DEF +1203",
+        "DEF +1200",
         "AGI +277"
       ]
     },
@@ -12060,7 +12060,7 @@
       "bonusDEF": 56,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 27440,
+      "buyPrice": 2470,
       "maxCopies": -1,
       "effects": [
         "HP +334",
@@ -16915,14 +16915,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2909,
+      "bonusATK": 31100,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 0,
       "maxCopies": -1,
       "effects": [
-        "ATK +2909"
+        "ATK +31100"
       ]
     },
     {
@@ -16938,14 +16938,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3971,
+      "bonusATK": 98000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 51000,
       "maxCopies": -1,
       "effects": [
-        "ATK +3971"
+        "ATK +98000"
       ]
     },
     {
@@ -16961,14 +16961,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 394,
+      "bonusATK": 61,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 58480,
+      "buyPrice": 5260,
       "maxCopies": -1,
       "effects": [
-        "ATK +394"
+        "ATK +61"
       ]
     },
     {
@@ -16983,15 +16983,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 6351,
+      "bonusHP": 6350,
       "bonusATK": 0,
       "bonusDEF": 547,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 280725,
+      "buyPrice": 300000,
       "maxCopies": -1,
       "effects": [
-        "HP +6351",
+        "HP +6350",
         "DEF +547"
       ]
     },
@@ -17012,7 +17012,7 @@
       "bonusDEF": 553,
       "bonusAGI": 128,
       "bonusLUC": 128,
-      "buyPrice": 38515,
+      "buyPrice": 41200,
       "maxCopies": -1,
       "effects": [
         "DEF +553",
@@ -17032,15 +17032,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 7556,
+      "bonusHP": 7560,
       "bonusATK": 0,
       "bonusDEF": 633,
       "bonusAGI": 0,
       "bonusLUC": 146,
-      "buyPrice": 65264,
+      "buyPrice": 65300,
       "maxCopies": -1,
       "effects": [
-        "HP +7556",
+        "HP +7560",
         "DEF +633",
         "LUC +146"
       ]
@@ -17058,14 +17058,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2665,
+      "bonusATK": 28500,
       "bonusDEF": 843,
       "bonusAGI": 0,
       "bonusLUC": 195,
-      "buyPrice": 92016,
+      "buyPrice": 92000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2665",
+        "ATK +28500",
         "DEF +843",
         "LUC +195"
       ]
@@ -17083,14 +17083,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1626,
+      "bonusATK": 4300,
       "bonusDEF": 0,
       "bonusAGI": 117,
       "bonusLUC": 0,
       "buyPrice": 0,
       "maxCopies": -1,
       "effects": [
-        "ATK +1626",
+        "ATK +4300",
         "AGI +117"
       ]
     },
@@ -17111,7 +17111,7 @@
       "bonusDEF": 56,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 20661,
+      "buyPrice": 1860,
       "maxCopies": -1,
       "effects": [
         "DEF +56"
@@ -17134,7 +17134,7 @@
       "bonusDEF": 56,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 22710,
+      "buyPrice": 2040,
       "maxCopies": -1,
       "effects": [
         "HP +337",
@@ -17158,7 +17158,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 17100,
+      "buyPrice": 1540,
       "maxCopies": -1,
       "effects": [
         "HP +309"
@@ -17181,7 +17181,7 @@
       "bonusDEF": 47,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 11713,
+      "buyPrice": 1050,
       "maxCopies": -1,
       "effects": [
         "HP +280",
@@ -17201,14 +17201,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 275,
+      "bonusATK": 43,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 12875,
+      "buyPrice": 1160,
       "maxCopies": -1,
       "effects": [
-        "ATK +275"
+        "ATK +43"
       ]
     },
     {
@@ -17228,7 +17228,7 @@
       "bonusDEF": 60,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 77669,
+      "buyPrice": 6990,
       "maxCopies": -1,
       "effects": [
         "DEF +60"
@@ -17251,7 +17251,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 70659,
+      "buyPrice": 6360,
       "maxCopies": -1,
       "effects": [
         "HP +344"
@@ -17269,15 +17269,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 5798,
+      "bonusHP": 5800,
       "bonusATK": 0,
       "bonusDEF": 500,
       "bonusAGI": 0,
       "bonusLUC": 116,
-      "buyPrice": 372835,
+      "buyPrice": 399000,
       "maxCopies": -1,
       "effects": [
-        "HP +5798",
+        "HP +5800",
         "DEF +500",
         "LUC +116"
       ]
@@ -17295,14 +17295,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2246,
+      "bonusATK": 14800,
       "bonusDEF": 0,
       "bonusAGI": 160,
       "bonusLUC": 0,
       "buyPrice": 1480000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2246",
+        "ATK +14800",
         "AGI +160"
       ]
     },
@@ -17318,15 +17318,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 7721,
+      "bonusHP": 7720,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 149,
-      "buyPrice": 203055,
+      "buyPrice": 203000,
       "maxCopies": -1,
       "effects": [
-        "HP +7721",
+        "HP +7720",
         "LUC +149"
       ]
     },
@@ -17347,7 +17347,7 @@
       "bonusDEF": 41,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 10656,
+      "buyPrice": 959,
       "maxCopies": -1,
       "effects": [
         "DEF +41"
@@ -17370,7 +17370,7 @@
       "bonusDEF": 44,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 14152,
+      "buyPrice": 1270,
       "maxCopies": -1,
       "effects": [
         "HP +261",
@@ -17394,7 +17394,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 9694,
+      "buyPrice": 872,
       "maxCopies": -1,
       "effects": [
         "HP +294"
@@ -17435,16 +17435,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 29670,
+      "bonusHP": 29700,
       "bonusATK": 0,
-      "bonusDEF": 2107,
+      "bonusDEF": 2110,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 79000,
       "maxCopies": -1,
       "effects": [
-        "HP +29670",
-        "DEF +2107"
+        "HP +29700",
+        "DEF +2110"
       ]
     },
     {
@@ -17464,7 +17464,7 @@
       "bonusDEF": 60,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 36443,
+      "buyPrice": 3280,
       "maxCopies": -1,
       "effects": [
         "DEF +60"
@@ -17483,14 +17483,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2134,
+      "bonusATK": 14100,
       "bonusDEF": 0,
       "bonusAGI": 152,
       "bonusLUC": 0,
-      "buyPrice": 115118,
+      "buyPrice": 115000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2134",
+        "ATK +14100",
         "AGI +152"
       ]
     },
@@ -17511,7 +17511,7 @@
       "bonusDEF": 584,
       "bonusAGI": 135,
       "bonusLUC": 0,
-      "buyPrice": 211371,
+      "buyPrice": 226000,
       "maxCopies": -1,
       "effects": [
         "DEF +584",
@@ -17535,7 +17535,7 @@
       "bonusDEF": 818,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 63630,
+      "buyPrice": 63600,
       "maxCopies": -1,
       "effects": [
         "DEF +818"
@@ -17553,16 +17553,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 16192,
+      "bonusHP": 13500,
       "bonusATK": 0,
-      "bonusDEF": 1282,
+      "bonusDEF": 1280,
       "bonusAGI": 0,
       "bonusLUC": 295,
-      "buyPrice": 596500,
+      "buyPrice": 597000,
       "maxCopies": -1,
       "effects": [
-        "HP +16192",
-        "DEF +1282",
+        "HP +13500",
+        "DEF +1280",
         "LUC +295"
       ]
     },
@@ -17578,15 +17578,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1800,
+      "bonusHP": 1770,
       "bonusATK": 0,
       "bonusDEF": 167,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 302680,
+      "buyPrice": 454000,
       "maxCopies": -1,
       "effects": [
-        "HP +1800",
+        "HP +1770",
         "DEF +167"
       ]
     },
@@ -17607,7 +17607,7 @@
       "bonusDEF": 544,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 51153,
+      "buyPrice": 54700,
       "maxCopies": -1,
       "effects": [
         "DEF +544"
@@ -17625,15 +17625,15 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 4118,
+      "bonusHP": 4120,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 288,
-      "buyPrice": 631765,
+      "buyPrice": 632000,
       "maxCopies": -1,
       "effects": [
-        "HP +4118",
+        "HP +4120",
         "LUC +288"
       ]
     },
@@ -17654,7 +17654,7 @@
       "bonusDEF": 734,
       "bonusAGI": 170,
       "bonusLUC": 170,
-      "buyPrice": 86678,
+      "buyPrice": 86700,
       "maxCopies": -1,
       "effects": [
         "DEF +734",
@@ -17675,14 +17675,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 335,
+      "bonusATK": 227,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 44272,
+      "buyPrice": 94900,
       "maxCopies": -1,
       "effects": [
-        "ATK +335"
+        "ATK +227"
       ]
     },
     {
@@ -17698,14 +17698,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2947,
+      "bonusATK": 31500,
       "bonusDEF": 0,
       "bonusAGI": 216,
       "bonusLUC": 0,
-      "buyPrice": 278280,
+      "buyPrice": 278000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2947",
+        "ATK +31500",
         "AGI +216"
       ]
     },
@@ -17721,15 +17721,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1049,
+      "bonusHP": 1060,
       "bonusATK": 0,
       "bonusDEF": 116,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 215142,
+      "buyPrice": 461000,
       "maxCopies": -1,
       "effects": [
-        "HP +1049",
+        "HP +1060",
         "DEF +116"
       ]
     },
@@ -17746,14 +17746,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 352,
+      "bonusATK": 239,
       "bonusDEF": 0,
       "bonusAGI": 27,
       "bonusLUC": 0,
-      "buyPrice": 280000,
+      "buyPrice": 600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +352",
+        "ATK +239",
         "AGI +27"
       ]
     },
@@ -17769,15 +17769,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 3255,
+      "bonusHP": 3530,
       "bonusATK": 0,
       "bonusDEF": 300,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 155484,
+      "buyPrice": 201000,
       "maxCopies": -1,
       "effects": [
-        "HP +3255",
+        "HP +3530",
         "DEF +300"
       ]
     },
@@ -17795,13 +17795,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 1611,
+      "bonusDEF": 1610,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 143006,
+      "buyPrice": 143000,
       "maxCopies": -1,
       "effects": [
-        "DEF +1611"
+        "DEF +1610"
       ]
     },
     {
@@ -17817,14 +17817,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 4407,
+      "bonusATK": 109000,
       "bonusDEF": 0,
       "bonusAGI": 326,
       "bonusLUC": 0,
       "buyPrice": 2040000,
       "maxCopies": -1,
       "effects": [
-        "ATK +4407",
+        "ATK +109000",
         "AGI +326"
       ]
     },
@@ -17842,13 +17842,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 2225,
+      "bonusDEF": 2230,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 146096,
+      "buyPrice": 146000,
       "maxCopies": -1,
       "effects": [
-        "DEF +2225"
+        "DEF +2230"
       ]
     },
     {
@@ -17863,16 +17863,16 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 35744,
+      "bonusHP": 35700,
       "bonusATK": 0,
-      "bonusDEF": 2409,
+      "bonusDEF": 2410,
       "bonusAGI": 0,
       "bonusLUC": 541,
       "buyPrice": 3440000,
       "maxCopies": -1,
       "effects": [
-        "HP +35744",
-        "DEF +2409",
+        "HP +35700",
+        "DEF +2410",
         "LUC +541"
       ]
     },
@@ -17889,14 +17889,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 8919,
+      "bonusATK": 2100000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 3760000,
       "maxCopies": -1,
       "effects": [
-        "ATK +8919",
+        "ATK +2100000",
         "EXP +10%"
       ]
     },
@@ -17912,15 +17912,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 11965,
+      "bonusHP": 12000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 221,
-      "buyPrice": 1217045,
+      "buyPrice": 1220000,
       "maxCopies": -1,
       "effects": [
-        "HP +11965",
+        "HP +12000",
         "LUC +221"
       ]
     },
@@ -17937,14 +17937,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 7907,
+      "bonusATK": 1360000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 560,
       "buyPrice": 86000,
       "maxCopies": -1,
       "effects": [
-        "ATK +7907",
+        "ATK +1360000",
         "LUC +560"
       ]
     },
@@ -17962,13 +17962,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 2598,
+      "bonusDEF": 2600,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 94000,
       "maxCopies": -1,
       "effects": [
-        "DEF +2598"
+        "DEF +2600"
       ]
     },
     {
@@ -17988,7 +17988,7 @@
       "bonusDEF": 54,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 53202,
+      "buyPrice": 4790,
       "maxCopies": -1,
       "effects": [
         "HP +321",
@@ -18007,15 +18007,15 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 2302,
+      "bonusHP": 2430,
       "bonusATK": 0,
       "bonusDEF": 656,
       "bonusAGI": 0,
       "bonusLUC": 93,
-      "buyPrice": 420795,
+      "buyPrice": 497000,
       "maxCopies": -1,
       "effects": [
-        "HP +2302",
+        "HP +2430",
         "DEF +656",
         "LUC +93"
       ]
@@ -18033,14 +18033,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 4074,
+      "bonusATK": 101000,
       "bonusDEF": 0,
       "bonusAGI": 302,
       "bonusLUC": 0,
-      "buyPrice": 262783,
+      "buyPrice": 263000,
       "maxCopies": -1,
       "effects": [
-        "ATK +4074",
+        "ATK +101000",
         "AGI +302"
       ]
     },
@@ -18057,14 +18057,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3943,
+      "bonusATK": 97300,
       "bonusDEF": 0,
       "bonusAGI": 293,
       "bonusLUC": 0,
-      "buyPrice": 174418,
+      "buyPrice": 174000,
       "maxCopies": -1,
       "effects": [
-        "ATK +3943",
+        "ATK +97300",
         "AGI +293"
       ]
     },
@@ -18082,13 +18082,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 1671,
+      "bonusDEF": 1670,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 94918,
+      "buyPrice": 94900,
       "maxCopies": -1,
       "effects": [
-        "DEF +1671"
+        "DEF +1670"
       ]
     },
     {
@@ -18108,7 +18108,7 @@
       "bonusDEF": 61,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 85374,
+      "buyPrice": 7680,
       "maxCopies": -1,
       "effects": [
         "HP +363",
@@ -18127,15 +18127,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 3021,
+      "bonusHP": 3280,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 63,
-      "buyPrice": 470222,
+      "buyPrice": 609000,
       "maxCopies": -1,
       "effects": [
-        "HP +3021",
+        "HP +3280",
         "LUC +63"
       ]
     },
@@ -18156,7 +18156,7 @@
       "bonusDEF": 71,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 181950,
+      "buyPrice": 16400,
       "maxCopies": -1,
       "effects": [
         "DEF +71"
@@ -18175,14 +18175,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 402,
+      "bonusATK": 63,
       "bonusDEF": 0,
       "bonusAGI": 12,
       "bonusLUC": 0,
-      "buyPrice": 103153,
+      "buyPrice": 9280,
       "maxCopies": -1,
       "effects": [
-        "ATK +402",
+        "ATK +63",
         "AGI +12"
       ]
     },
@@ -18199,14 +18199,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 924,
+      "bonusATK": 931,
       "bonusDEF": 0,
       "bonusAGI": 16,
       "bonusLUC": 0,
-      "buyPrice": 190865,
+      "buyPrice": 286000,
       "maxCopies": -1,
       "effects": [
-        "ATK +924",
+        "ATK +931",
         "AGI +16"
       ]
     },
@@ -18227,7 +18227,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 150589,
+      "buyPrice": 13600,
       "maxCopies": -1,
       "effects": [
         "HP +361"
@@ -18250,7 +18250,7 @@
       "bonusDEF": 251,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 35552,
+      "buyPrice": 46000,
       "maxCopies": -1,
       "effects": [
         "DEF +251"
@@ -18269,14 +18269,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1228,
+      "bonusATK": 2430,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 96216,
+      "buyPrice": 114000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1228"
+        "ATK +2430"
       ]
     },
     {
@@ -18296,7 +18296,7 @@
       "bonusDEF": 71,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 165529,
+      "buyPrice": 14900,
       "maxCopies": -1,
       "effects": [
         "HP +419",
@@ -18316,14 +18316,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 335,
+      "bonusATK": 52,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 48401,
+      "buyPrice": 4360,
       "maxCopies": -1,
       "effects": [
-        "ATK +335"
+        "ATK +52"
       ]
     },
     {
@@ -18343,7 +18343,7 @@
       "bonusDEF": 54,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 18796,
+      "buyPrice": 1690,
       "maxCopies": -1,
       "effects": [
         "HP +322",
@@ -18363,14 +18363,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1493,
+      "bonusATK": 3950,
       "bonusDEF": 0,
       "bonusAGI": 107,
       "bonusLUC": 0,
-      "buyPrice": 119833,
+      "buyPrice": 128000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1493",
+        "ATK +3950",
         "AGI +107"
       ]
     },
@@ -18387,14 +18387,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 927,
+      "bonusATK": 1340,
       "bonusDEF": 0,
       "bonusAGI": 69,
       "bonusLUC": 0,
-      "buyPrice": 680000,
+      "buyPrice": 880000,
       "maxCopies": -1,
       "effects": [
-        "ATK +927",
+        "ATK +1340",
         "AGI +69"
       ]
     },
@@ -18411,14 +18411,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 345,
+      "bonusATK": 234,
       "bonusDEF": 0,
       "bonusAGI": 27,
       "bonusLUC": 0,
-      "buyPrice": 26137,
+      "buyPrice": 56000,
       "maxCopies": -1,
       "effects": [
-        "ATK +345",
+        "ATK +234",
         "AGI +27"
       ]
     },
@@ -18462,7 +18462,7 @@
       "bonusDEF": 295,
       "bonusAGI": 67,
       "bonusLUC": 0,
-      "buyPrice": 325160,
+      "buyPrice": 421000,
       "maxCopies": -1,
       "effects": [
         "DEF +295",
@@ -18486,7 +18486,7 @@
       "bonusDEF": 51,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 40059,
+      "buyPrice": 3610,
       "maxCopies": -1,
       "effects": [
         "DEF +51"
@@ -18509,7 +18509,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 30162,
+      "buyPrice": 2720,
       "maxCopies": -1,
       "effects": [
         "HP +299"
@@ -18528,14 +18528,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 336,
+      "bonusATK": 52,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 15556,
+      "buyPrice": 1400,
       "maxCopies": -1,
       "effects": [
-        "ATK +336"
+        "ATK +52"
       ]
     },
     {
@@ -18555,7 +18555,7 @@
       "bonusDEF": 56,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 93843,
+      "buyPrice": 8450,
       "maxCopies": -1,
       "effects": [
         "HP +332",
@@ -18575,14 +18575,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 17871,
+      "bonusATK": 15700000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 209330,
+      "buyPrice": 209000,
       "maxCopies": -1,
       "effects": [
-        "ATK +17871"
+        "ATK +15700000"
       ]
     },
     {
@@ -18599,13 +18599,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 4009,
+      "bonusDEF": 4010,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 111000,
       "maxCopies": -1,
       "effects": [
-        "DEF +4009"
+        "DEF +4010"
       ]
     },
     {
@@ -18620,7 +18620,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 78767,
+      "bonusHP": 78800,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -18628,7 +18628,7 @@
       "buyPrice": 121000,
       "maxCopies": -1,
       "effects": [
-        "HP +78767",
+        "HP +78800",
         "LUC +899"
       ]
     },
@@ -18644,7 +18644,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 97798,
+      "bonusHP": 97800,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -18652,7 +18652,7 @@
       "buyPrice": 132000,
       "maxCopies": -1,
       "effects": [
-        "HP +97798"
+        "HP +97800"
       ]
     },
     {
@@ -18667,15 +18667,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1182,
+      "bonusHP": 1190,
       "bonusATK": 0,
       "bonusDEF": 131,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 97595,
+      "buyPrice": 209000,
       "maxCopies": -1,
       "effects": [
-        "HP +1182",
+        "HP +1190",
         "DEF +131"
       ]
     },
@@ -18692,14 +18692,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 386,
+      "bonusATK": 60,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 64282,
+      "buyPrice": 5790,
       "maxCopies": -1,
       "effects": [
-        "ATK +386"
+        "ATK +60"
       ]
     },
     {
@@ -18714,15 +18714,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 8286,
+      "bonusHP": 8290,
       "bonusATK": 0,
       "bonusDEF": 694,
       "bonusAGI": 0,
       "bonusLUC": 160,
-      "buyPrice": 475686,
+      "buyPrice": 476000,
       "maxCopies": -1,
       "effects": [
-        "HP +8286",
+        "HP +8290",
         "DEF +694",
         "LUC +160"
       ]
@@ -18744,7 +18744,7 @@
       "bonusDEF": 1930,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 119024,
+      "buyPrice": 119000,
       "maxCopies": -1,
       "effects": [
         "DEF +1930"
@@ -18766,11 +18766,11 @@
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 8,
-      "buyPrice": 8023,
+      "bonusLUC": 6,
+      "buyPrice": 495,
       "maxCopies": -1,
       "effects": [
-        "LUC +8"
+        "LUC +6"
       ]
     },
     {
@@ -18786,14 +18786,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 120,
+      "bonusATK": 15,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 250,
       "maxCopies": -1,
       "effects": [
-        "ATK +120"
+        "ATK +15"
       ]
     },
     {
@@ -18813,7 +18813,7 @@
       "bonusDEF": 0,
       "bonusAGI": 23,
       "bonusLUC": 0,
-      "buyPrice": 7000,
+      "buyPrice": 15000,
       "maxCopies": -1,
       "effects": [
         "AGI +23"
@@ -18831,15 +18831,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 58051,
+      "bonusHP": 58100,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 763,
-      "buyPrice": 1797409,
+      "buyPrice": 1800000,
       "maxCopies": -1,
       "effects": [
-        "HP +58051",
+        "HP +58100",
         "LUC +763"
       ]
     },
@@ -18855,16 +18855,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 49962,
+      "bonusHP": 50000,
       "bonusATK": 0,
-      "bonusDEF": 3034,
+      "bonusDEF": 3030,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 1192999,
+      "buyPrice": 1190000,
       "maxCopies": -1,
       "effects": [
-        "HP +49962",
-        "DEF +3034"
+        "HP +50000",
+        "DEF +3030"
       ]
     },
     {
@@ -18879,16 +18879,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 50192,
+      "bonusHP": 50200,
       "bonusATK": 0,
-      "bonusDEF": 3048,
+      "bonusDEF": 3050,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2708030,
+      "buyPrice": 2710000,
       "maxCopies": -1,
       "effects": [
-        "HP +50192",
-        "DEF +3048"
+        "HP +50200",
+        "DEF +3050"
       ]
     },
     {
@@ -18905,13 +18905,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 3046,
+      "bonusDEF": 3050,
       "bonusAGI": 659,
       "bonusLUC": 0,
-      "buyPrice": 791833,
+      "buyPrice": 792000,
       "maxCopies": -1,
       "effects": [
-        "DEF +3046",
+        "DEF +3050",
         "AGI +659"
       ]
     },
@@ -18928,14 +18928,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 11782,
+      "bonusATK": 3010000,
       "bonusDEF": 0,
       "bonusAGI": 764,
       "bonusLUC": 0,
-      "buyPrice": 525565,
+      "buyPrice": 526000,
       "maxCopies": -1,
       "effects": [
-        "ATK +11782",
+        "ATK +3010000",
         "AGI +764"
       ]
     },
@@ -18952,14 +18952,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 12261,
+      "bonusATK": 3140000,
       "bonusDEF": 0,
       "bonusAGI": 795,
       "bonusLUC": 0,
       "buyPrice": 4080000,
       "maxCopies": -1,
       "effects": [
-        "ATK +12261",
+        "ATK +3140000",
         "AGI +795"
       ]
     },
@@ -18975,15 +18975,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 66426,
+      "bonusHP": 66400,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 814,
-      "buyPrice": 2799790,
+      "buyPrice": 2800000,
       "maxCopies": -1,
       "effects": [
-        "HP +66426",
+        "HP +66400",
         "LUC +814"
       ]
     },
@@ -18999,15 +18999,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 58998,
+      "bonusHP": 59000,
       "bonusATK": 0,
       "bonusDEF": 3400,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 1765501,
+      "buyPrice": 1770000,
       "maxCopies": -1,
       "effects": [
-        "HP +58998",
+        "HP +59000",
         "DEF +3400"
       ]
     },
@@ -19023,16 +19023,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 71367,
+      "bonusHP": 71400,
       "bonusATK": 0,
-      "bonusDEF": 4113,
+      "bonusDEF": 4110,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 4440000,
       "maxCopies": -1,
       "effects": [
-        "HP +71367",
-        "DEF +4113"
+        "HP +71400",
+        "DEF +4110"
       ]
     },
     {
@@ -19049,13 +19049,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 3498,
+      "bonusDEF": 3500,
       "bonusAGI": 744,
       "bonusLUC": 0,
-      "buyPrice": 702026,
+      "buyPrice": 702000,
       "maxCopies": -1,
       "effects": [
-        "DEF +3498",
+        "DEF +3500",
         "AGI +744"
       ]
     },
@@ -19072,14 +19072,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 12790,
+      "bonusATK": 5680000,
       "bonusDEF": 0,
       "bonusAGI": 794,
       "bonusLUC": 0,
-      "buyPrice": 1113296,
+      "buyPrice": 1110000,
       "maxCopies": -1,
       "effects": [
-        "ATK +12790",
+        "ATK +5680000",
         "AGI +794"
       ]
     },
@@ -19095,15 +19095,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 73106,
+      "bonusHP": 73100,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 835,
-      "buyPrice": 3052023,
+      "buyPrice": 3050000,
       "maxCopies": -1,
       "effects": [
-        "HP +73106",
+        "HP +73100",
         "LUC +835"
       ]
     },
@@ -19119,16 +19119,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 81497,
+      "bonusHP": 81500,
       "bonusATK": 0,
-      "bonusDEF": 4458,
+      "bonusDEF": 4460,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 1924555,
+      "buyPrice": 1920000,
       "maxCopies": -1,
       "effects": [
-        "HP +81497",
-        "DEF +4458"
+        "HP +81500",
+        "DEF +4460"
       ]
     },
     {
@@ -19143,7 +19143,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 74054,
+      "bonusHP": 74100,
       "bonusATK": 0,
       "bonusDEF": 4050,
       "bonusAGI": 0,
@@ -19151,7 +19151,7 @@
       "buyPrice": 4840000,
       "maxCopies": -1,
       "effects": [
-        "HP +74054",
+        "HP +74100",
         "DEF +4050"
       ]
     },
@@ -19169,13 +19169,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 3855,
+      "bonusDEF": 3860,
       "bonusAGI": 804,
       "bonusLUC": 0,
-      "buyPrice": 765271,
+      "buyPrice": 765000,
       "maxCopies": -1,
       "effects": [
-        "DEF +3855",
+        "DEF +3860",
         "AGI +804"
       ]
     },
@@ -19192,14 +19192,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 14327,
+      "bonusATK": 8510000,
       "bonusDEF": 0,
       "bonusAGI": 851,
       "bonusLUC": 0,
-      "buyPrice": 1213592,
+      "buyPrice": 1210000,
       "maxCopies": -1,
       "effects": [
-        "ATK +14327",
+        "ATK +8510000",
         "AGI +851"
       ]
     },
@@ -19215,16 +19215,16 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 48978,
+      "bonusHP": 49000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 1875,
-      "buyPrice": 3329480,
+      "bonusLUC": 1880,
+      "buyPrice": 3330000,
       "maxCopies": -1,
       "effects": [
-        "HP +48978",
-        "LUC +1875"
+        "HP +49000",
+        "LUC +1880"
       ]
     },
     {
@@ -19239,16 +19239,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 92602,
+      "bonusHP": 92600,
       "bonusATK": 0,
-      "bonusDEF": 4808,
+      "bonusDEF": 4810,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2099515,
+      "buyPrice": 2100000,
       "maxCopies": -1,
       "effects": [
-        "HP +92602",
-        "DEF +4808"
+        "HP +92600",
+        "DEF +4810"
       ]
     },
     {
@@ -19263,16 +19263,16 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 101602,
+      "bonusHP": 102000,
       "bonusATK": 0,
-      "bonusDEF": 5275,
+      "bonusDEF": 5280,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 5280000,
       "maxCopies": -1,
       "effects": [
-        "HP +101602",
-        "DEF +5275"
+        "HP +102000",
+        "DEF +5280"
       ]
     },
     {
@@ -19289,14 +19289,14 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 5428,
-      "bonusAGI": 1112,
+      "bonusDEF": 5430,
+      "bonusAGI": 1110,
       "bonusLUC": 0,
-      "buyPrice": 834841,
+      "buyPrice": 835000,
       "maxCopies": -1,
       "effects": [
-        "DEF +5428",
-        "AGI +1112"
+        "DEF +5430",
+        "AGI +1110"
       ]
     },
     {
@@ -19312,14 +19312,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 30066,
+      "bonusATK": 26400000,
       "bonusDEF": 0,
       "bonusAGI": 413,
       "bonusLUC": 0,
-      "buyPrice": 1323919,
+      "buyPrice": 1320000,
       "maxCopies": -1,
       "effects": [
-        "ATK +30066",
+        "ATK +26400000",
         "AGI +413"
       ]
     },
@@ -19335,15 +19335,15 @@
       "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 18557,
+      "bonusHP": 18600,
       "bonusATK": 0,
       "bonusDEF": 392,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 581962,
+      "buyPrice": 582000,
       "maxCopies": -1,
       "effects": [
-        "HP +18557",
+        "HP +18600",
         "DEF +392"
       ]
     },
@@ -19361,13 +19361,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 3288,
+      "bonusDEF": 3290,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 153676,
+      "buyPrice": 154000,
       "maxCopies": -1,
       "effects": [
-        "DEF +3288"
+        "DEF +3290"
       ]
     },
     {
@@ -19384,13 +19384,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 3821,
+      "bonusDEF": 3820,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 279150,
+      "buyPrice": 279000,
       "maxCopies": -1,
       "effects": [
-        "DEF +3821"
+        "DEF +3820"
       ]
     },
     {
@@ -19407,13 +19407,13 @@
       "isBossItem": false,
       "bonusHP": 0,
       "bonusATK": 0,
-      "bonusDEF": 4577,
+      "bonusDEF": 4580,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 482567,
+      "buyPrice": 483000,
       "maxCopies": -1,
       "effects": [
-        "DEF +4577"
+        "DEF +4580"
       ]
     },
     {
@@ -19429,14 +19429,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 17263,
+      "bonusATK": 15200000,
       "bonusDEF": 0,
       "bonusAGI": 979,
       "bonusLUC": 0,
-      "buyPrice": 526437,
+      "buyPrice": 526000,
       "maxCopies": -1,
       "effects": [
-        "ATK +17263",
+        "ATK +15200000",
         "AGI +979"
       ]
     },
@@ -19453,14 +19453,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 735,
+      "bonusATK": 1070,
       "bonusDEF": 0,
       "bonusAGI": 54,
       "bonusLUC": 0,
-      "buyPrice": 107517,
+      "buyPrice": 139000,
       "maxCopies": -1,
       "effects": [
-        "ATK +735",
+        "ATK +1070",
         "AGI +54"
       ]
     },
@@ -19477,14 +19477,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2230,
+      "bonusATK": 14700,
       "bonusDEF": 0,
       "bonusAGI": 159,
       "bonusLUC": 0,
-      "buyPrice": 1114362,
+      "buyPrice": 1110000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2230",
+        "ATK +14700",
         "AGI +159"
       ]
     },
@@ -19505,7 +19505,7 @@
       "bonusDEF": 901,
       "bonusAGI": 208,
       "bonusLUC": 208,
-      "buyPrice": 133067,
+      "buyPrice": 133000,
       "maxCopies": -1,
       "effects": [
         "DEF +901",
@@ -19526,14 +19526,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1815,
+      "bonusATK": 4800,
       "bonusDEF": 0,
       "bonusAGI": 131,
       "bonusLUC": 0,
-      "buyPrice": 1160000,
+      "buyPrice": 1240000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1815",
+        "ATK +4800",
         "AGI +131"
       ]
     },
@@ -19554,7 +19554,7 @@
       "bonusDEF": 669,
       "bonusAGI": 154,
       "bonusLUC": 0,
-      "buyPrice": 269680,
+      "buyPrice": 270000,
       "maxCopies": -1,
       "effects": [
         "DEF +669",
@@ -19573,15 +19573,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1057,
+      "bonusHP": 1060,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 26,
-      "buyPrice": 127016,
+      "buyPrice": 272000,
       "maxCopies": -1,
       "effects": [
-        "HP +1057",
+        "HP +1060",
         "LUC +26"
       ]
     },
@@ -19602,7 +19602,7 @@
       "bonusDEF": 0,
       "bonusAGI": 35,
       "bonusLUC": 0,
-      "buyPrice": 19030,
+      "buyPrice": 28500,
       "maxCopies": -1,
       "effects": [
         "AGI +35"
@@ -19625,7 +19625,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 33154,
+      "buyPrice": 2980,
       "maxCopies": -1,
       "effects": [
         "HP +293"
@@ -19643,15 +19643,15 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 234,
+      "bonusHP": 249,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 6641,
+      "buyPrice": 722,
       "maxCopies": -1,
       "effects": [
-        "HP +234"
+        "HP +249"
       ]
     },
     {
@@ -19667,14 +19667,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 200,
+      "bonusATK": 31,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 5000,
+      "buyPrice": 450,
       "maxCopies": -1,
       "effects": [
-        "ATK +200"
+        "ATK +31"
       ]
     },
     {
@@ -19690,14 +19690,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2609,
+      "bonusATK": 27900,
       "bonusDEF": 0,
       "bonusAGI": 191,
       "bonusLUC": 0,
       "buyPrice": 1760000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2609",
+        "ATK +27900",
         "AGI +191"
       ]
     }
@@ -20038,7 +20038,7 @@
       "goldMultiplier": 46,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_DS01 1",
+          "enemyId": "DesertScorpion_DS01",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -20198,7 +20198,7 @@
       "goldMultiplier": 70,
       "enemies": [
         {
-          "enemyId": "ShadowHound_DS03",
+          "enemyId": "ShadowHound_DS03 1",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -20238,7 +20238,7 @@
       "goldMultiplier": 74,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_DS03",
+          "enemyId": "CrystalGolem_DS03 1",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -20710,7 +20710,7 @@
       "goldMultiplier": 7.5,
       "enemies": [
         {
-          "enemyId": "ShadowHound_FR01",
+          "enemyId": "ShadowHound_FR01 1",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -20790,7 +20790,7 @@
       "goldMultiplier": 13,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_FR03",
+          "enemyId": "DesertScorpion_FR03 1",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -20850,7 +20850,7 @@
       "goldMultiplier": 16,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_FR03",
+          "enemyId": "CrystalGolem_FR03 1",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -20890,7 +20890,7 @@
       "goldMultiplier": 18,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR03",
+          "enemyId": "BloodWraith_FR03 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -20910,7 +20910,7 @@
       "goldMultiplier": 19,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR04",
+          "enemyId": "BloodWraith_FR04 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -20930,7 +20930,7 @@
       "goldMultiplier": 20,
       "enemies": [
         {
-          "enemyId": "FlameImp_FR04",
+          "enemyId": "FlameImp_FR04 1",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -20990,7 +20990,7 @@
       "goldMultiplier": 23,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_FR04",
+          "enemyId": "ChaosShaman_FR04 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -25187,7 +25187,7 @@
       "goldMultiplier": 32,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_VO01",
+          "enemyId": "ChaosShaman_VO01 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -25287,7 +25287,7 @@
       "goldMultiplier": 27,
       "enemies": [
         {
-          "enemyId": "FlameImp_VO01",
+          "enemyId": "FlameImp_VO01 1",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
