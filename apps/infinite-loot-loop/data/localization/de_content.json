@@ -136,7 +136,7 @@
     "char_name_templar":  "Templer",
     "char_desc_templar":  "Heiliger Kreuzritter",
     "char_name_titan":  "Titan",
-    "char_desc_titan":  "Kolosskrieger",
+    "char_desc_titan":  "Kolosskrieger. Erhöht dauerhaft die Gegenstands-Droprate.",
     "char_name_vampire_lord":  "Vampirlord",
     "char_desc_vampire_lord":  "Untoter Jäger",
     "char_name_witch":  "Hexe",
@@ -687,6 +687,6 @@
     "char_name_dark_knight":  "Dunkler Ritter",     "char_desc_dark_knight":  "Verfluchter Krieger. Extreme ATK und HP, verfluchtes Glück.",
     "char_name_time_mage":  "Zeitmagier",     "char_desc_time_mage":  "Zeitzauberer. Hohe AGI und LUC, manipuliert das Schicksal.",
     "char_name_dragon_sage":  "Drachenweiser",      "char_desc_dragon_sage":  "Uralter Drachenmeister. Extreme HP und ATK.",
-    "char_name_pirate_captain":  "Piratenkapitän",     "char_desc_pirate_captain":  "Schatzjäger. Verdoppelt das Gold für alle Charaktere.",
+    "char_name_pirate_captain":  "Piratenkapitän",     "char_desc_pirate_captain":  "Schatzjäger. Verdoppelt dauerhaft das verdiente Gold.",
     "zone_void_rift":  "Leerenriss"
 }

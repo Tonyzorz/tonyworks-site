@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T09:16:44Z",
+  "generatedAt": "2026-07-14T11:11:42Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 213,
@@ -25932,7 +25932,7 @@
     {
       "id": "pirate_captain",
       "name": "Pirate Captain",
-      "description": "Treasure hunter. Doubles gold earned for all characters.",
+      "description": "Treasure hunter. Permanently doubles gold earned.",
       "image": "char_pirate_captain.png",
       "iapProductId": "char_gold_baron",
       "unlockAchievementID": "",
@@ -25944,11 +25944,11 @@
       "ownedBonusDropRatePct": 0,
       "ownedBonusGoldPct": 100,
       "purchasePrice": 0,
-      "ownedBonusHP": 20000,
-      "ownedBonusATK": 5000,
+      "ownedBonusHP": 0,
+      "ownedBonusATK": 0,
       "ownedBonusDEF": 0,
-      "ownedBonusAGI": 60,
-      "ownedBonusLUC": 180,
+      "ownedBonusAGI": 0,
+      "ownedBonusLUC": 0,
       "isPremium": true,
       "unlockedByDefault": false
     },
@@ -26093,7 +26093,7 @@
     {
       "id": "titan",
       "name": "Titan",
-      "description": "Colossus warrior. Permanently boosts item drop rate for all characters.",
+      "description": "Colossus warrior. Permanently increases item drop rate.",
       "image": "char_titan.png",
       "iapProductId": "char_lucky_hunter",
       "unlockAchievementID": "",
@@ -26105,9 +26105,9 @@
       "ownedBonusDropRatePct": 0.5,
       "ownedBonusGoldPct": 0,
       "purchasePrice": 0,
-      "ownedBonusHP": 100000,
-      "ownedBonusATK": 4000,
-      "ownedBonusDEF": 200,
+      "ownedBonusHP": 0,
+      "ownedBonusATK": 0,
+      "ownedBonusDEF": 0,
       "ownedBonusAGI": 0,
       "ownedBonusLUC": 0,
       "isPremium": true,

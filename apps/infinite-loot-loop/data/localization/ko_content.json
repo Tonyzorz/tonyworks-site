@@ -136,7 +136,7 @@
     "char_name_templar":  "템플러",
     "char_desc_templar":  "성전사",
     "char_name_titan":  "타이탄",
-    "char_desc_titan":  "거인 전사",
+    "char_desc_titan":  "거인 전사. 아이템 드롭률을 영구적으로 증가시킵니다.",
     "char_name_vampire_lord":  "뱀파이어 군주",
     "char_desc_vampire_lord":  "불사 포식자",
     "char_name_witch":  "마녀",
@@ -687,6 +687,6 @@
     "char_name_dark_knight":  "다크 나이트",     "char_desc_dark_knight":  "저주받은 전사. 극한의 ATK와 HP, 저주받은 행운.",
     "char_name_time_mage":  "시간 마법사",     "char_desc_time_mage":  "시간의 술사. 높은 AGI와 LUC, 운명을 조작.",
     "char_name_dragon_sage":  "용의 현자",      "char_desc_dragon_sage":  "고대 용의 지배자. 극한의 HP와 ATK.",
-    "char_name_pirate_captain":  "해적 선장",     "char_desc_pirate_captain":  "보물 사냥꾼. 모든 캐릭터의 골드 획득 2배.",
+    "char_name_pirate_captain":  "해적 선장",     "char_desc_pirate_captain":  "보물 사냥꾼. 골드 획득량을 영구적으로 2배로 증가시킵니다.",
     "zone_void_rift":  "공허의 균열"
 }

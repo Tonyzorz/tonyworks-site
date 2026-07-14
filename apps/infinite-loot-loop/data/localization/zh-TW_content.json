@@ -136,7 +136,7 @@
     "char_name_templar":  "聖堂武士",
     "char_desc_templar":  "神聖十字軍",
     "char_name_titan":  "泰坦",
-    "char_desc_titan":  "巨像戰士",
+    "char_desc_titan":  "巨像戰士。永久提高物品掉落率。",
     "char_name_vampire_lord":  "吸血鬼領主",
     "char_desc_vampire_lord":  "不死掠食者",
     "char_name_witch":  "女巫",
@@ -687,6 +687,6 @@
     "char_name_dark_knight":  "黑暗騎士",     "char_desc_dark_knight":  "受詛咒的戰士。極高ATK和HP，被詛咒的幸運。",
     "char_name_time_mage":  "時間法師",     "char_desc_time_mage":  "時空施法者。高AGI和LUC，操縱命運。",
     "char_name_dragon_sage":  "龍賢者",      "char_desc_dragon_sage":  "遠古巨龍大師。極高HP和ATK。",
-    "char_name_pirate_captain":  "海盜船長",     "char_desc_pirate_captain":  "尋寶獵人。所有角色獲得的金幣翻倍。",
+    "char_name_pirate_captain":  "海盜船長",     "char_desc_pirate_captain":  "尋寶獵人。永久使獲得的金幣翻倍。",
     "zone_void_rift":  "虛空裂隙"
 }

@@ -136,7 +136,7 @@
     "char_name_templar":  "Templario",
     "char_desc_templar":  "Cruzado sagrado",
     "char_name_titan":  "Titán",
-    "char_desc_titan":  "Guerrero coloso",
+    "char_desc_titan":  "Guerrero coloso. Aumenta permanentemente la probabilidad de obtener objetos.",
     "char_name_vampire_lord":  "Señor Vampiro",
     "char_desc_vampire_lord":  "Depredador no-muerto",
     "char_name_witch":  "Bruja",
@@ -687,6 +687,6 @@
     "char_name_dark_knight":  "Caballero Oscuro",     "char_desc_dark_knight":  "Guerrero maldito. ATK y HP extremos, suerte maldita.",
     "char_name_time_mage":  "Mago del Tiempo",     "char_desc_time_mage":  "Hechicero temporal. Alto AGI y LUC, manipula el destino.",
     "char_name_dragon_sage":  "Sabio Dragón",      "char_desc_dragon_sage":  "Maestro dragón ancestral. HP y ATK extremos.",
-    "char_name_pirate_captain":  "Capitán Pirata",     "char_desc_pirate_captain":  "Cazatesoros. Duplica el oro ganado por todos los personajes.",
+    "char_name_pirate_captain":  "Capitán Pirata",     "char_desc_pirate_captain":  "Cazatesoros. Duplica permanentemente el oro obtenido.",
     "zone_void_rift":  "Grieta del Vacío"
 }

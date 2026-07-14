@@ -136,7 +136,7 @@
     "char_name_templar":  "テンプラー",
     "char_desc_templar":  "聖戦士",
     "char_name_titan":  "タイタン",
-    "char_desc_titan":  "巨人の戦士",
+    "char_desc_titan":  "巨人の戦士。アイテムドロップ率を永続的に上昇させる。",
     "char_name_vampire_lord":  "ヴァンパイアロード",
     "char_desc_vampire_lord":  "不死の捕食者",
     "char_name_witch":  "魔女",
@@ -687,6 +687,6 @@
     "char_name_dark_knight":  "ダークナイト",     "char_desc_dark_knight":  "呪われた戦士。極限のATKとHP、呪われた運。",
     "char_name_time_mage":  "タイムメイジ",     "char_desc_time_mage":  "時の術士。高いAGIとLUC、運命を操る。",
     "char_name_dragon_sage":  "ドラゴンセージ",      "char_desc_dragon_sage":  "古龍の支配者。極限のHPとATK。",
-    "char_name_pirate_captain":  "海賊船長",     "char_desc_pirate_captain":  "トレジャーハンター。全キャラの獲得ゴールドを2倍に。",
+    "char_name_pirate_captain":  "海賊船長",     "char_desc_pirate_captain":  "トレジャーハンター。獲得ゴールドを永続的に2倍にする。",
     "zone_void_rift":  "虚空の裂け目"
 }

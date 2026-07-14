@@ -136,7 +136,7 @@
     "char_name_templar":  "Templier",
     "char_desc_templar":  "Croisé sacré",
     "char_name_titan":  "Titan",
-    "char_desc_titan":  "Guerrier colosse",
+    "char_desc_titan":  "Guerrier colosse. Augmente définitivement le taux d'obtention des objets.",
     "char_name_vampire_lord":  "Seigneur Vampire",
     "char_desc_vampire_lord":  "Prédateur mort-vivant",
     "char_name_witch":  "Sorcière",
@@ -687,6 +687,6 @@
     "char_name_dark_knight":  "Chevalier noir",     "char_desc_dark_knight":  "Guerrier maudit. ATK et HP extrêmes, chance maudite.",
     "char_name_time_mage":  "Mage du temps",     "char_desc_time_mage":  "Lanceur temporel. AGI et LUC élevées, manipule le destin.",
     "char_name_dragon_sage":  "Sage dragon",      "char_desc_dragon_sage":  "Maître dragon ancien. HP et ATK extrêmes.",
-    "char_name_pirate_captain":  "Capitaine pirate",     "char_desc_pirate_captain":  "Chasseur de trésors. Double l'or gagné par tous les personnages.",
+    "char_name_pirate_captain":  "Capitaine pirate",     "char_desc_pirate_captain":  "Chasseur de trésors. Double définitivement l'or gagné.",
     "zone_void_rift":  "Faille du Vide"
 }

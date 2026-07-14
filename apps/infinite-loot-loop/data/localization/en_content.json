@@ -120,7 +120,7 @@
   "char_name_shaman":       "Shaman",        "char_desc_shaman":       "Nature shaman",
   "char_name_summoner":     "Summoner",      "char_desc_summoner":     "Fortune summoner",
   "char_name_templar":      "Templar",       "char_desc_templar":      "Holy crusader",
-  "char_name_titan":        "Titan",         "char_desc_titan":        "Colossus warrior",
+  "char_name_titan":        "Titan",         "char_desc_titan":        "Colossus warrior. Permanently increases item drop rate.",
   "char_name_vampire_lord": "Vampire Lord",  "char_desc_vampire_lord": "Undead predator",
   "char_name_witch":        "Witch",         "char_desc_witch":        "Chaos mage",
 
@@ -485,6 +485,6 @@
     "char_name_dark_knight":     "Dark Knight",     "char_desc_dark_knight":     "Cursed warrior. Extreme ATK and HP, cursed luck.",
     "char_name_time_mage":       "Time Mage",       "char_desc_time_mage":       "Temporal caster. High AGI and LUC, manipulates fate.",
     "char_name_dragon_sage":     "Dragon Sage",     "char_desc_dragon_sage":     "Ancient dragon master. Extreme HP and ATK.",
-    "char_name_pirate_captain":  "Pirate Captain",  "char_desc_pirate_captain":  "Treasure hunter. Doubles gold earned for all characters.",
+    "char_name_pirate_captain":  "Pirate Captain",  "char_desc_pirate_captain":  "Treasure hunter. Permanently doubles gold earned.",
     "zone_void_rift":  "Void Rift"
 }

@@ -136,7 +136,7 @@
     "char_name_templar":  "Templário",
     "char_desc_templar":  "Cruzado sagrado",
     "char_name_titan":  "Titã",
-    "char_desc_titan":  "Guerreiro colosso",
+    "char_desc_titan":  "Guerreiro colosso. Aumenta permanentemente a taxa de obtenção de itens.",
     "char_name_vampire_lord":  "Lorde Vampiro",
     "char_desc_vampire_lord":  "Predador morto-vivo",
     "char_name_witch":  "Bruxa",
@@ -687,6 +687,6 @@
     "char_name_dark_knight":  "Cavaleiro Negro",     "char_desc_dark_knight":  "Guerreiro amaldiçoado. ATK e HP extremos, sorte amaldiçoada.",
     "char_name_time_mage":  "Mago do Tempo",     "char_desc_time_mage":  "Conjurador temporal. Alto AGI e LUC, manipula o destino.",
     "char_name_dragon_sage":  "Sábio Dragão",      "char_desc_dragon_sage":  "Mestre dragão ancestral. HP e ATK extremos.",
-    "char_name_pirate_captain":  "Capitão Pirata",     "char_desc_pirate_captain":  "Caçador de tesouros. Dobra o ouro ganho por todos os personagens.",
+    "char_name_pirate_captain":  "Capitão Pirata",     "char_desc_pirate_captain":  "Caçador de tesouros. Dobra permanentemente o ouro ganho.",
     "zone_void_rift":  "Fenda do Vazio"
 }

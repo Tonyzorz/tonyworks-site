@@ -136,7 +136,7 @@
     "char_name_templar":  "Templar",
     "char_desc_templar":  "Tentara salib suci",
     "char_name_titan":  "Titan",
-    "char_desc_titan":  "Prajurit raksasa",
+    "char_desc_titan":  "Prajurit raksasa. Meningkatkan peluang drop item secara permanen.",
     "char_name_vampire_lord":  "Lord Vampir",
     "char_desc_vampire_lord":  "Pemangsa mayat hidup",
     "char_name_witch":  "Penyihir Wanita",
@@ -687,6 +687,6 @@
     "char_name_dark_knight":  "Ksatria Kegelapan",     "char_desc_dark_knight":  "Ksatria terkutuk. ATK dan HP ekstrem, keberuntungan terkutuk.",
     "char_name_time_mage":  "Penyihir Waktu",     "char_desc_time_mage":  "Penyihir temporal. AGI dan LUC tinggi, memanipulasi takdir.",
     "char_name_dragon_sage":  "Naga Bijak",      "char_desc_dragon_sage":  "Master naga purba. HP dan ATK ekstrem.",
-    "char_name_pirate_captain":  "Kapten Bajak Laut",     "char_desc_pirate_captain":  "Pemburu harta. Menggandakan emas untuk semua karakter.",
+    "char_name_pirate_captain":  "Kapten Bajak Laut",     "char_desc_pirate_captain":  "Pemburu harta. Menggandakan emas yang diperoleh secara permanen.",
     "zone_void_rift":  "Celah Kehampaan"
 }

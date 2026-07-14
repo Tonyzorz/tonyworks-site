@@ -136,7 +136,7 @@
     "char_name_templar":  "Тамплиер",
     "char_desc_templar":  "Святой крестоносец",
     "char_name_titan":  "Титан",
-    "char_desc_titan":  "Воин-колосс",
+    "char_desc_titan":  "Воин-колосс. Навсегда повышает шанс выпадения предметов.",
     "char_name_vampire_lord":  "Лорд Вампиров",
     "char_desc_vampire_lord":  "Нежить-хищник",
     "char_name_witch":  "Ведьма",
@@ -687,6 +687,6 @@
     "char_name_dark_knight":  "Тёмный рыцарь",     "char_desc_dark_knight":  "Проклятый воин. Экстремальные ATK и HP, проклятая удача.",
     "char_name_time_mage":  "Маг времени",     "char_desc_time_mage":  "Повелитель времени. Высокие AGI и LUC, управляет судьбой.",
     "char_name_dragon_sage":  "Драконий мудрец",      "char_desc_dragon_sage":  "Древний повелитель драконов. Экстремальные HP и ATK.",
-    "char_name_pirate_captain":  "Капитан пиратов",     "char_desc_pirate_captain":  "Охотник за сокровищами. Удваивает золото для всех персонажей.",
+    "char_name_pirate_captain":  "Капитан пиратов",     "char_desc_pirate_captain":  "Охотник за сокровищами. Навсегда удваивает получаемое золото.",
     "zone_void_rift":  "Разлом Пустоты"
 }
