@@ -9781,7 +9781,7 @@
     {
       "id": "ChaosHeart",
       "name": "Chaos Heart",
-      "description": "The pulsing heart of the Chaos Beast. +15% AGI, +1 BP.",
+      "description": "The pulsing heart of the Chaos Beast. +15% AGI, +1 AP.",
       "image": "item_ChaosHeart.png",
       "rarity": "Legendary",
       "type": "Accessory",
@@ -9799,13 +9799,13 @@
       "maxCopies": 3,
       "effects": [
         "AGI +15%",
-        "BP +1"
+        "AP +1"
       ]
     },
     {
       "id": "ChaosHeart_H",
       "name": "Chaos Heart [H]",
-      "description": "The pulsing heart of the Chaos Beast. +15% AGI, +1 BP.",
+      "description": "The pulsing heart of the Chaos Beast. +15% AGI, +1 AP.",
       "image": "item_ChaosHeart_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
@@ -9823,7 +9823,7 @@
       "maxCopies": 3,
       "effects": [
         "AGI +38%",
-        "BP +1"
+        "AP +1"
       ]
     },
     {

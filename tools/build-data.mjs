@@ -107,7 +107,7 @@ const items = loadCategory("Items").map((a) => {
   if (P("bonusExpPct") > 0) e.push("EXP +" + d1(P("bonusExpPct") * 100) + "%");
   if (bool(t, "hasHPAbsorb")) e.push("Absorb " + num(t, "hpAbsorbPercent") + "%");
   if (bool(t, "hasAutoRevive")) e.push("Auto Revive");
-  if (bool(t, "hasBPBonus")) e.push("BP +" + num(t, "bpBonus"));
+  if (bool(t, "hasBPBonus")) e.push("AP +" + num(t, "bpBonus"));
   o.effects = e; itemById.set(a.id, o); return o;
 });
 const itemName = (id) => itemById.has(id) ? itemById.get(id).name : id;

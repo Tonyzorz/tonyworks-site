@@ -310,7 +310,7 @@
         '<div class="starter-intro"><span class="starter-kicker">First run</span><h2 id="starter-title">New to Infinite Loot-Loop?</h2>' +
         '<p>Learn the essentials, choose your playstyle and enter your first route with a plan.</p></div>' +
         '<div class="starter-steps">' +
-          '<a href="guide.html"><span class="starter-num">01</span><span><strong>Learn the loop</strong><small>BP, battles, death and permanent progress</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
+          '<a href="guide.html"><span class="starter-num">01</span><span><strong>Learn the loop</strong><small>AP, battles, death and permanent progress</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
           '<a href="characters.html"><span class="starter-num">02</span><span><strong>Choose a character</strong><small>Compare starters and stat multipliers</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
           '<a href="items.html"><span class="starter-num">03</span><span><strong>Understand gear</strong><small>Stats, rarity, drops and equipment sets</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
           '<a href="maps.html"><span class="starter-num">04</span><span><strong>Plan your route</strong><small>World connections, zones and bosses</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
@@ -392,7 +392,7 @@
       "<div><h1>" + esc(e.name) + "</h1>" +
       '<div class="tags"><span class="pill">Level ' + rng(e.minLevel, e.maxLevel) + "</span>" +
         (e.isBoss ? '<span class="pill" style="color:var(--bad)">Boss</span>' : "") +
-        (e.permanentBPReward ? '<span class="pill">+' + e.permanentBPReward + " BP</span>" : "") + "</div>" +
+        (e.permanentBPReward ? '<span class="pill">+' + e.permanentBPReward + " AP</span>" : "") + "</div>" +
       '<div class="section-title">Stats (' + lvLabel + ")</div>" +
       '<div class="statgrid">' +
         sb("HP", rng(e.hpMin, e.hpMax)) + sb("ATK", rng(e.atkMin, e.atkMax)) +
