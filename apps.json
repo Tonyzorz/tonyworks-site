@@ -17,8 +17,12 @@
       "name": "Show Me the Saju",
       "tagline": "Discover your Korean Four Pillars chart in seconds — free, private, and with no sign-up.",
       "icon": "쇼미",
+      "coverImage": "https://showmethesaju.com/og/og-default.png",
+      "coverAlt": "Show Me the Saju Korean Four Pillars reading",
       "path": "https://showmethesaju.com/en/",
-      "status": "Live website",
+      "status": "Live",
+      "category": "Korean Four Pillars",
+      "features": ["Free", "No sign-up", "11 languages"],
       "accent": "#b44a3f",
       "type": "web",
       "external": true
