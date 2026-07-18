@@ -19,30 +19,78 @@
     return '<div class="app-icon"><span>' + esc(app.icon || initials(app.name)) + "</span></div>";
   }
 
+  function renderWebsiteDetail(app) {
+    var externalAttrs = app.external ? ' target="_blank" rel="noopener noreferrer"' : "";
+    var action = "launch_" + String(app.id || "website").replace(/[^a-z0-9_-]/gi, "_");
+    var facts = (app.details || []).map(function (detail) {
+      return '<div><dt>' + esc(detail.label) + '</dt><dd>' + esc(detail.value) + '</dd></div>';
+    }).join("");
+    var features = (app.features || []).map(function (feature) { return "<span>" + esc(feature) + "</span>"; }).join("");
+
+    return '<div class="portal-site-detail-head"><span class="portal-kicker">Selected website</span>' +
+      '<div class="portal-site-identity">' + tileIcon(app) + '<div><span>' + esc(app.category || "Web experience") +
+      '</span><h3>' + esc(app.name) + '</h3></div></div></div>' +
+      '<p class="portal-site-about">' + esc(app.about || app.tagline || "") + '</p>' +
+      (facts ? '<dl class="portal-site-facts">' + facts + '</dl>' : "") +
+      (features ? '<div class="portal-site-detail-features" aria-label="Website highlights">' + features + '</div>' : "") +
+      '<div class="portal-site-detail-actions"><a class="portal-site-launch" data-portal-action="' + esc(action) + '" href="' +
+      esc(app.path) + '"' + externalAttrs + '>Visit ' + esc(app.name) + ' <span aria-hidden="true">&#8599;</span></a>' +
+      '<span>' + esc(app.domain || app.path) + '</span></div>';
+  }
+
   function renderWebsiteShowcase(apps) {
     var websites = (apps || []).filter(function (app) { return app.type === "web"; });
     if (!websites.length) return "";
 
     var cards = websites.map(function (app, index) {
-      var externalAttrs = app.external ? ' target="_blank" rel="noopener noreferrer"' : "";
       var action = "website_" + String(app.id || "project").replace(/[^a-z0-9_-]/gi, "_");
       var cover = app.coverImage ? '<img src="' + esc(app.coverImage) + '" alt="' + esc(app.coverAlt || app.name) + '" loading="lazy">' : "";
       var features = (app.features || []).map(function (feature) { return "<span>" + esc(feature) + "</span>"; }).join("");
-      return '<a class="portal-site-card" data-portal-action="' + esc(action) + '" href="' + esc(app.path) + '"' + externalAttrs +
-        ' style="--project-accent:' + esc(app.accent || "#b44a3f") + '">' +
+      return '<article class="portal-site-card" data-active="' + (index === 0 ? "true" : "false") +
+        '" style="--project-accent:' + esc(app.accent || "#b44a3f") + '"><button class="portal-site-select" type="button" data-website-id="' +
+        esc(app.id) + '" data-portal-action="' + esc(action) + '" aria-controls="website-detail" aria-pressed="' + (index === 0 ? "true" : "false") + '">' +
         '<div class="portal-site-art">' + cover + '<span class="portal-site-badge">' + (index === 0 ? "Featured website" : "Web project") + '</span></div>' +
         '<div class="portal-site-info">' + tileIcon(app) + '<div class="portal-site-copy">' +
         '<span class="portal-site-label">' + esc(app.category || "Web experience") + ' <i aria-hidden="true"></i> ' + esc(app.status || "Live") +
         '</span><h3>' + esc(app.name) + '</h3><p>' + esc(app.tagline || "") + '</p>' +
         (features ? '<div class="portal-site-features" aria-label="Highlights">' + features + "</div>" : "") + '</div>' +
-        '<span class="portal-site-go" aria-hidden="true">&#8599;</span></div></a>';
+        '<span class="portal-site-go" aria-hidden="true">&#8594;</span></div></button></article>';
     }).join("");
 
     return '<section class="portal-projects" id="projects" aria-labelledby="projects-title">' +
       '<div class="portal-projects-head"><div><span class="portal-kicker">Web projects</span>' +
       '<h2 id="projects-title">Useful sites. Thoughtfully made.</h2></div>' +
       '<p>Independent web experiences from Tony Works. This collection will grow as new sites launch.</p></div>' +
-      '<div class="portal-project-grid">' + cards + '</div></section>';
+      '<div class="portal-project-layout"><div class="portal-project-grid" aria-label="Websites">' + cards + '</div>' +
+      '<aside class="portal-site-detail" id="website-detail" aria-live="polite" style="--project-accent:' +
+      esc(websites[0].accent || "#b44a3f") + '">' + renderWebsiteDetail(websites[0]) + '</aside></div></section>';
+  }
+
+  function setupWebsiteSelector(apps, portal) {
+    var websites = (apps || []).filter(function (app) { return app.type === "web"; });
+    var detail = portal.querySelector("#website-detail");
+    if (!detail || !websites.length) return;
+
+    portal.addEventListener("click", function (event) {
+      var selector = event.target.closest && event.target.closest("[data-website-id]");
+      if (!selector) return;
+      var id = selector.getAttribute("data-website-id");
+      var selected = websites.filter(function (app) { return String(app.id) === id; })[0];
+      if (!selected) return;
+
+      portal.querySelectorAll("[data-website-id]").forEach(function (button) {
+        var active = button === selector;
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+        var card = button.closest(".portal-site-card");
+        if (card) card.setAttribute("data-active", active ? "true" : "false");
+      });
+      detail.style.setProperty("--project-accent", selected.accent || "#b44a3f");
+      detail.innerHTML = renderWebsiteDetail(selected);
+
+      if (window.matchMedia && window.matchMedia("(max-width: 900px)").matches) {
+        detail.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
   }
 
   function render(apps) {
@@ -79,6 +127,8 @@
       renderWebsiteShowcase(apps) +
       '<section class="portal-contact"><div><span class="portal-kicker">Tony Works</span><h2>Projects made with care—and supported after launch.</h2></div>' +
         '<a data-portal-action="contact" href="mailto:tonyzorz@naver.com">Get in touch &#8594;</a></section>';
+
+    setupWebsiteSelector(apps, portal);
 
     portal.addEventListener("click", function (e) {
       var target = e.target.closest && e.target.closest("[data-portal-action]");

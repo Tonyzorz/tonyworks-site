@@ -23,6 +23,13 @@
       "status": "Live",
       "category": "Korean Four Pillars",
       "features": ["Free", "No sign-up", "11 languages"],
+      "domain": "showmethesaju.com",
+      "about": "A privacy-first, multilingual introduction to Saju. Enter birth details to reveal a Korean Four Pillars chart, then explore clear explanations of the elements and symbols behind the reading.",
+      "details": [
+        { "label": "Experience", "value": "Four Pillars chart and learning guides" },
+        { "label": "Privacy", "value": "Birth data stays in your browser" },
+        { "label": "Languages", "value": "11 supported languages" }
+      ],
       "accent": "#b44a3f",
       "type": "web",
       "external": true
