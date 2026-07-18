@@ -12,8 +12,10 @@
     { id: "characters",   label: "Characters",  href: "characters.html" },
     { id: "achievements", label: "Achievements",href: "achievements.html" },
     { id: "guide",        label: "Guide",       href: "guide.html" },
+    { id: "game-data",    label: "Data Notes",  href: "game-data.html" },
     { id: "patch",        label: "Patch Notes", href: "patch.html" },
-    { id: "faq",          label: "FAQ",         href: "faq.html" }
+    { id: "faq",          label: "FAQ",         href: "faq.html" },
+    { id: "about",        label: "About",       href: "/about.html" }
   ];
 
   var PRIMARY_NAV = ["home", "guide", "maps", "items", "monsters"];
@@ -233,6 +235,7 @@
     if (footer) {
       footer.innerHTML =
         'Tony Works &#8212; companion wiki for <strong>Infinite Loot-Loop</strong>. ' +
+        '<a href="/about.html">About</a> &#183; <a href="game-data.html">Data notes</a> &#183; ' +
         '<a href="/privacy-policy.html">Privacy</a> &#183; <a href="/terms.html">Terms</a> &#183; ' +
         '<a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>';
     }
@@ -260,10 +263,9 @@
 
   function fail(app, err) {
     app.innerHTML =
-      '<div class="notice"><strong>No data yet.</strong><br>' +
-      'This page reads <code>data/data.json</code>. Run <strong>Dev &#8594; Export Site Data</strong> ' +
-      'in the Unity editor, then commit &amp; push.<br><span style="color:var(--faint)">(' +
-      esc(err && err.message ? err.message : err) + ")</span></div>";
+      '<div class="notice" role="status"><strong>The live catalog is temporarily unavailable.</strong><br>' +
+      'The developer-written information below remains available. Please try the interactive catalog again later, ' +
+      'or use the <a href="guide.html">field guide</a> while data refreshes.</div>';
   }
 
   /* ---------- filtering utility ---------- */
@@ -986,14 +988,10 @@
     else window.scrollTo(0, 0);
   }
 
-  /* ---------- side ad rails (Google AdSense — web) ----------
-     To go live after AdSense approval: set AD_CLIENT to your publisher id
-     ("ca-pub-XXXXXXXXXXXXXXXX") and the two slot ids. Until then the rails show a
-     subtle placeholder on wide screens so the 3-column layout is visible. Rails are
-     fixed in the outer margins and hidden below 1600px (they'd overlap content). */
-  /* ---------- ads ---------- */
-  // Google AdSense **Auto ads**: the loader <script> (ca-pub-1837000267504503) is in every
-  // page's <head> and Google places ads automatically — no per-unit code needed here.
+  /* ---------- advertising policy ----------
+     AdSense is intentionally limited to substantive, long-form editorial pages.
+     Do not add the Auto Ads loader to catalog shells, search/filter screens, legal
+     pages, loading states, errors, or other utility-only experiences. */
 
   /* ---------- theme toggle ---------- */
   var SUN = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19"/></svg>';
@@ -1056,8 +1054,15 @@
       mountBackToTop();
       var app = $("#app");
       if (app && PAGES[page]) {
-        showLoading(app);
-        loadData().then(function (d) { PAGES[page](app, d); }).catch(function (e) { fail(app, e); });
+        if (!app.children.length) showLoading(app);
+        else app.setAttribute("aria-busy", "true");
+        loadData().then(function (d) {
+          app.removeAttribute("aria-busy");
+          PAGES[page](app, d);
+        }).catch(function (e) {
+          app.removeAttribute("aria-busy");
+          fail(app, e);
+        });
       }
     });
   });

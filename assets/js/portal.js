@@ -32,7 +32,7 @@
 
     portal.innerHTML =
       '<header class="portal-nav"><a class="portal-brand" href="index.html"><span>TW</span><strong>Tony Works</strong></a>' +
-        '<nav aria-label="Main navigation"><a href="#game">Game</a><a href="' + guidePath + '">Guide</a><a href="mailto:tonyzorz@naver.com">Contact</a></nav></header>' +
+        '<nav aria-label="Main navigation"><a href="#game">Game</a><a href="' + guidePath + '">Guide</a><a href="about.html">About</a><a href="mailto:tonyzorz@naver.com">Contact</a></nav></header>' +
       '<section class="portal-hero" id="game"><div class="portal-hero-copy"><span class="portal-kicker">Independent game studio</span>' +
         '<h1>Small worlds.<br><span>Long adventures.</span></h1>' +
         '<p>Tony Works creates focused games with deep progression, approachable systems, and player-friendly companion tools.</p>' +
@@ -61,7 +61,7 @@
 
     var footer = document.getElementById("portal-footer");
     if (footer) footer.innerHTML = "Tony Works &#183; " + new Date().getFullYear() +
-      ' &#183; <a href="privacy-policy.html">Privacy</a> &#183; <a href="terms.html">Terms</a>' +
+      ' &#183; <a href="about.html">About</a> &#183; <a href="privacy-policy.html">Privacy</a> &#183; <a href="terms.html">Terms</a>' +
       ' &#183; <a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>';
   }
 
@@ -89,6 +89,7 @@
     document.head.appendChild(fav);
     var translationsReady = window.TWI18n ? window.TWI18n.ready : Promise.resolve();
     translationsReady.then(function () {
+      if (!document.getElementById("portal")) return;
       fetch("apps.json", { cache: "no-cache" })
         .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
         .then(function (d) { render(d.apps || []); })

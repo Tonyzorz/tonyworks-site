@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NMFFW9TKW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3NMFFW9TKW');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="icon" href="/apps/infinite-loot-loop/assets/img/app_icon.png">
+  <title>Game Data and Editorial Method — Infinite Loot-Loop</title>
+  <meta name="description" content="Learn how Infinite Loot-Loop wiki data is exported from Unity, reviewed, updated, and separated from developer-written strategy guidance.">
+  <link rel="canonical" href="https://tonyworks.co.kr/apps/infinite-loot-loop/game-data.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Tony Works">
+  <meta property="og:title" content="Infinite Loot-Loop Game Data Method">
+  <meta property="og:description" content="How the official wiki exports, checks, explains, and updates game values.">
+  <meta property="og:url" content="https://tonyworks.co.kr/apps/infinite-loot-loop/game-data.html">
+  <meta property="og:image" content="https://tonyworks.co.kr/apps/infinite-loot-loop/assets/img/app_icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How the Infinite Loot-Loop Wiki Is Produced",
+    "description": "How the official wiki exports, checks, explains, and updates game values.",
+    "dateModified": "2026-07-18",
+    "author": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/about.html" },
+    "publisher": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/" },
+    "mainEntityOfPage": "https://tonyworks.co.kr/apps/infinite-loot-loop/game-data.html"
+  }
+  </script>
+  <script>try{var s=localStorage.getItem('tw-theme');var t=s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <link rel="stylesheet" href="../../assets/css/style.css?v=31">
+</head>
+<body data-page="game-data">
+  <header class="site-header" id="site-header"></header>
+  <main class="wrap">
+    <section class="static-page-head">
+      <span class="section-kicker">Data and editorial notes</span>
+      <h1>How the Infinite Loot-Loop wiki is produced</h1>
+      <p>This page explains which facts come directly from the Unity project, what is reviewed by the developer, how updates reach the site, and what limitations readers should keep in mind.</p>
+    </section>
+
+    <div class="article-meta" aria-label="Page information">
+      <span>Maintained by Tony Works</span>
+      <span>Last reviewed 18 July 2026</span>
+      <span>Applies to the official companion wiki</span>
+    </div>
+
+    <article class="editorial" aria-labelledby="source-title">
+      <header class="editorial-heading">
+        <span class="section-kicker">Primary source</span>
+        <h2 id="source-title">Catalog values originate in the game project</h2>
+      </header>
+      <div class="editorial-grid">
+        <section>
+          <h3>Exported reference data</h3>
+          <p>The interactive catalogs read a structured data file exported from the Unity project. It contains the fields needed by the public wiki, including enemy level and stat ranges, boss values and rewards, item types and effects, equipment-set membership, map relationships, character multipliers, achievements, and image references.</p>
+          <p>Using a project export reduces transcription mistakes and keeps related pages consistent. For example, an item link on a monster page and the same item's detail view refer to one exported identifier. A map's boss relationship uses the same identifiers as the boss archive.</p>
+        </section>
+        <section>
+          <h3>Information that is not published</h3>
+          <p>The export is intentionally limited to player-facing reference information. It does not publish player save data, purchase receipts, advertising identifiers, cloud credentials, private service keys, source code, or internal account records. Website analytics and game privacy practices are described separately in the <a href="/privacy-policy.html">privacy policy</a>.</p>
+          <p>Some internal development records may also be excluded when they are templates, duplicates, unused assets, or not reachable in the current game. The public bestiary, for example, is intended to represent enemies that can appear in active game zones rather than every test object that has ever existed in the project.</p>
+        </section>
+      </div>
+
+      <header class="editorial-heading">
+        <span class="section-kicker">Review process</span>
+        <h2>Automated consistency checks plus human explanation</h2>
+      </header>
+      <div class="editorial-grid">
+        <section>
+          <h3>Checks before publication</h3>
+          <p>After an export, the site should be checked for missing names, broken images, duplicate catalog records, invalid item links, bosses without usable map references, and maps that do not belong to a reachable route. HTML, JavaScript, sitemap URLs, canonical links, and important internal links are also validated before changes are published.</p>
+          <p>Numbers that appear surprising are compared with the active game configuration. This is particularly important for permanent bonuses, Hard Mode scaling, purchase values, drop chances, and newly connected maps because those systems can affect many pages at once.</p>
+        </section>
+        <section>
+          <h3>Editorial content is written separately</h3>
+          <p>Raw data can state that a monster has a certain attack value or that an item belongs to a set. It cannot explain whether spending Adventure Points to farm that enemy is sensible for a particular run. Strategy sections are therefore written and reviewed as editorial guidance. They describe tradeoffs and link readers back to the current catalog.</p>
+          <p>Recommendations are not presented as guaranteed optimal solutions. Character choice, collected equipment, route access, remaining Adventure Points, and future balance changes can all alter the best decision.</p>
+        </section>
+      </div>
+
+      <header class="editorial-heading">
+        <span class="section-kicker">Important limitations</span>
+        <h2>Why a live game and a reference site can briefly differ</h2>
+      </header>
+      <div class="trust-list">
+        <section>
+          <h3>Build timing</h3>
+          <p>A site export and a TestFlight, App Store, or Google Play build may be published at different times. The store build installed on a device is the final authority for what the player experiences.</p>
+        </section>
+        <section>
+          <h3>Random outcomes</h3>
+          <p>A drop chance describes an independent probability, not a guaranteed schedule. Receiving an item unusually early or late does not by itself prove that the published chance is wrong.</p>
+        </section>
+        <section>
+          <h3>Display rounding</h3>
+          <p>The game or website may abbreviate large values for readability. A shortened value such as 130K or 1M can hide smaller differences that still exist in the underlying number.</p>
+        </section>
+      </div>
+
+      <div class="editorial-callout">
+        <strong>Report a discrepancy</strong>
+        <p>Send the page URL, the game version shown on the device, the relevant character or mode, and a screenshot to <a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>. That information makes it possible to compare the correct build and data record.</p>
+      </div>
+
+      <div class="editorial-links">
+        <a href="guide.html"><strong>Read the field guide</strong><span>Use the values in a complete gameplay context &#8594;</span></a>
+        <a href="patch.html"><strong>Review recent changes</strong><span>See when player-facing behavior changed &#8594;</span></a>
+        <a href="/about.html"><strong>About Tony Works</strong><span>Learn who maintains the site and game &#8594;</span></a>
+      </div>
+    </article>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="../../assets/js/i18n.js?v=1"></script>
+  <script src="../../assets/js/app.js?v=31"></script>
+</body>
+</html>

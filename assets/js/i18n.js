@@ -26,6 +26,8 @@
     "Guide": ["가이드", "ガイド", "指南", "指南", "Guide", "Guide", "Guía", "Guia", "Руководство", "Panduan"],
     "Patch Notes": ["패치 노트", "パッチノート", "更新说明", "更新說明", "Patchnotes", "Notes de mise à jour", "Notas del parche", "Notas da atualização", "Примечания к обновлению", "Catatan pembaruan"],
     "FAQ": ["자주 묻는 질문", "よくある質問", "常见问题", "常見問題", "FAQ", "FAQ", "Preguntas frecuentes", "Perguntas frequentes", "Частые вопросы", "Tanya jawab"],
+    "Data Notes": ["데이터 안내", "データ説明", "数据说明", "資料說明", "Datenhinweise", "Notes sur les données", "Notas de datos", "Notas de dados", "Примечания к данным", "Catatan data"],
+    "About": ["소개", "運営情報", "关于", "關於", "Über uns", "À propos", "Acerca de", "Sobre", "О нас", "Tentang"],
     "More": ["더보기", "その他", "更多", "更多", "Mehr", "Plus", "Más", "Mais", "Ещё", "Lainnya"],
     "Privacy": ["개인정보", "プライバシー", "隐私", "隱私", "Datenschutz", "Confidentialité", "Privacidad", "Privacidade", "Конфиденциальность", "Privasi"],
     "Terms": ["이용약관", "利用規約", "条款", "條款", "Bedingungen", "Conditions", "Términos", "Termos", "Условия", "Ketentuan"],
@@ -279,7 +281,7 @@
   function addArticleNotice() {
     if (code === "en") return;
     var page = document.body && document.body.getAttribute("data-page");
-    if (["guide", "faq", "patch"].indexOf(page) === -1 || document.querySelector(".translation-notice")) return;
+    if (["portal", "home", "monsters", "bosses", "items", "sets", "maps", "characters", "achievements", "guide", "game-data", "faq", "patch", "about"].indexOf(page) === -1 || document.querySelector(".translation-notice")) return;
     var main = document.querySelector("main");
     if (!main) return;
     var notice = document.createElement("aside");
