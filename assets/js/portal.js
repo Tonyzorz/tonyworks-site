@@ -19,9 +19,32 @@
     return '<div class="app-icon"><span>' + esc(app.icon || initials(app.name)) + "</span></div>";
   }
 
+  function renderAdditionalProjects(apps, featured) {
+    var projects = (apps || []).filter(function (app) { return app !== featured; });
+    if (!projects.length) return "";
+
+    var cards = projects.map(function (app) {
+      var externalAttrs = app.external ? ' target="_blank" rel="noopener noreferrer"' : "";
+      var typeLabel = app.type === "web" ? "Web experience" : "Project";
+      var action = "additional_" + String(app.id || "project").replace(/[^a-z0-9_-]/gi, "_");
+      return '<a class="portal-project-card" data-portal-action="' + esc(action) + '" href="' + esc(app.path) + '"' + externalAttrs +
+        ' style="--project-accent:' + esc(app.accent || "#b44a3f") + '">' +
+        '<div class="portal-project-mark" aria-hidden="true"><span>' + esc(app.icon || initials(app.name)) + '</span></div>' +
+        '<div class="portal-project-copy"><span class="portal-project-type">' + esc(typeLabel) + ' <i aria-hidden="true"></i> ' + esc(app.status || "Live") +
+        '</span><h3>' + esc(app.name) + '</h3><p>' + esc(app.tagline || "") + '</p></div>' +
+        '<span class="portal-project-go">Visit website <span aria-hidden="true">&#8599;</span></span></a>';
+    }).join("");
+
+    return '<section class="portal-projects" id="projects" aria-labelledby="projects-title">' +
+      '<div class="portal-projects-head"><div><span class="portal-kicker">Additional projects</span>' +
+      '<h2 id="projects-title">Made for the web</h2></div>' +
+      '<p>Small, useful experiences beyond games.</p></div>' +
+      '<div class="portal-project-grid">' + cards + '</div></section>';
+  }
+
   function render(apps) {
     var portal = document.getElementById("portal");
-    var featured = (apps || [])[0];
+    var featured = (apps || []).filter(function (app) { return app.type === "game"; })[0] || (apps || [])[0];
     if (!featured) {
       portal.innerHTML = '<div class="empty">No projects yet.</div>';
       return;
@@ -50,6 +73,7 @@
         '<div class="portal-link-grid"><a href="' + gamePath + '"><span class="portal-link-num">01</span><span><strong>Explore the wiki</strong><small>Monsters, bosses, items, maps and characters</small></span><span aria-hidden="true">&#8594;</span></a>' +
           '<a href="' + guidePath + '"><span class="portal-link-num">02</span><span><strong>Learn the loop</strong><small>A friendly guide from first battle to Hard Mode</small></span><span aria-hidden="true">&#8594;</span></a>' +
           '<a href="' + patchPath + '"><span class="portal-link-num">03</span><span><strong>Follow development</strong><small>New content, balance changes and fixes</small></span><span aria-hidden="true">&#8594;</span></a></div></section>' +
+      renderAdditionalProjects(apps, featured) +
       '<section class="portal-contact"><div><span class="portal-kicker">Tony Works</span><h2>Games made with care—and supported after launch.</h2></div>' +
         '<a data-portal-action="contact" href="mailto:tonyzorz@naver.com">Get in touch &#8594;</a></section>';
 
