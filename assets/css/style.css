@@ -702,14 +702,22 @@ body[data-page="portal"] .wrap { padding-top:0; }
 .wm-grid {
   display:grid; width:max-content; margin:0 auto; align-items:center; justify-items:center; gap:6px;
   grid-template-columns: auto 30px auto 30px auto 30px auto 30px auto;
-  grid-template-rows: auto 24px auto 24px auto;
+  grid-template-rows: auto 24px auto 24px auto 24px auto;
   grid-template-areas:
     ".    .  .    .  .      .  uw   .  ."
     ".    .  .    .  .      .  vu   .  ."
     "void h1 volc h2 forest h3 gl   h4 desert"
     ".    .  .    .  .      .  vd   .  ."
-    ".    .  .    .  .      .  gate .  .";
+    ".    .  .    .  .      .  gate .  ."
+    ".    .  .    .  .      .  vg   .  ."
+    "wg   wg wg   wg wg     wg wg   wg wg";
 }
+/* World Gate branch: the hub drops onto a bus that fans out to the four themed regions. */
+.wm-branch { display:flex; flex-direction:column; align-items:center; width:100%; }
+.wm-branch-bus { align-self:stretch; height:2px; margin:0 12%; background:var(--border); }
+.wm-branch-row { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; }
+.wm-branch-item { display:flex; flex-direction:column; align-items:center; }
+.wm-branch-item .wm-drop { width:2px; height:16px; background:var(--border); }
 .wm-cell { display:flex; }
 .wm-conn.h { width:100%; height:2px; background:var(--border); align-self:center; }
 .wm-conn.v { height:100%; min-height:24px; width:2px; background:var(--border); justify-self:center; }
@@ -938,12 +946,12 @@ body[data-page="portal"] .wrap { padding-top:0; }
 /* ---- per-map area list (maps page, "List" view) ----
    Every map gets its own row so Forest 01/02/03/04 are each listed, grouped by world. */
 .region-list { display:grid; grid-template-columns:1fr; gap:1.1rem; }
-.area-group { padding:.9rem 1rem 1rem; background:var(--panel); border:1px solid var(--border); border-left:3px solid var(--wc,var(--accent)); border-radius:var(--radius); }
+.area-group { min-width:0; padding:.9rem 1rem 1rem; background:var(--panel); border:1px solid var(--border); border-left:3px solid var(--wc,var(--accent)); border-radius:var(--radius); }
 .area-group-head { display:flex; align-items:center; gap:.5rem; margin:0 0 .7rem; font-size:1rem; }
 .area-group-head .wicon { font-size:1.15rem; }
 .area-group-head small { margin-left:auto; color:var(--muted); font-weight:400; font-size:.75rem; }
 .area-rows { display:grid; gap:.4rem; }
-.area-row { display:grid; grid-template-columns:auto minmax(0,1fr) auto auto; align-items:center; gap:.7rem; padding:.55rem .7rem; color:inherit; text-decoration:none; background:var(--panel-2); border:1px solid var(--border); border-radius:8px; transition:border-color .15s, transform .15s; }
+.area-row { display:grid; grid-template-columns:auto minmax(0,1fr) auto auto; align-items:center; gap:.7rem; min-width:0; padding:.55rem .7rem; color:inherit; text-decoration:none; background:var(--panel-2); border:1px solid var(--border); border-radius:8px; transition:border-color .15s, transform .15s; }
 .area-row:hover { border-color:var(--wc,var(--accent)); transform:translateX(2px); }
 .area-code { padding:.15rem .4rem; color:var(--wc,var(--accent)); background:color-mix(in srgb,var(--wc,var(--accent)) 12%,transparent); border-radius:5px; font-size:.7rem; font-weight:700; letter-spacing:.02em; }
 .area-name { font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }

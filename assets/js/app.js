@@ -853,9 +853,14 @@
         '<div class="wm-cell" style="grid-area:desert">' + wnode(d, "Desert") + '</div>' +
         '<div class="wm-conn v" style="grid-area:vd"></div>' +
         '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate") + '</div>' +
-      '</div></div><p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, the World Gate south. Void Hunt is a secret arena reached from Volcanic. Through the World Gate lie four more regions &#8212; ' +
-      ['Japan', 'Greek', 'Military', 'Heaven'].map(function (w) { return '<a href="maps.html?world=' + encodeURIComponent(w) + '">' + w + '</a>'; }).join(', ') +
-      ' &#8212; listed in full below.</p></div>' +
+        // The World Gate fans out to its four themed regions.
+        '<div class="wm-conn v" style="grid-area:vg"></div>' +
+        '<div class="wm-branch" style="grid-area:wg"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
+          ["Japan", "Greek", "Military", "Heaven"].map(function (w) {
+            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w) + "</div>";
+          }).join("") +
+        '</div></div>' +
+      '</div></div><p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, the World Gate south. Void Hunt is a secret arena reached from Volcanic. Through the World Gate lie Japan, Greek, Military and Heaven.</p></div>' +
       // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
       // grouped under its world. The compass graph above stays world-level.
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {
