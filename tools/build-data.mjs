@@ -44,7 +44,18 @@ for (const meta of walk(SPR, (p) => p.endsWith(".png.meta"))) { const g = metaGu
 function yamlStr(v) {
   v = v.trim();
   if (v.length >= 2 && v[0] === "'" && v[v.length - 1] === "'") return v.slice(1, -1).replace(/''/g, "'");
-  if (v.length >= 2 && v[0] === '"' && v[v.length - 1] === '"') return v.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+  // Unity escapes non-ASCII inside double-quoted scalars, so an em-dash arrives as "—" and
+  // used to reach the page verbatim. Decode in ONE pass — chaining .replace() calls would also
+  // re-process the output of earlier ones (a literal backslash-quote decoded twice).
+  if (v.length >= 2 && v[0] === '"' && v[v.length - 1] === '"') {
+    return v.slice(1, -1).replace(/\\(u[0-9a-fA-F]{4}|x[0-9a-fA-F]{2}|.)/g, (_, g) => {
+      if (g[0] === "u" || g[0] === "x") return String.fromCharCode(parseInt(g.slice(1), 16));
+      if (g === "n") return "\n";
+      if (g === "t") return "\t";
+      if (g === "r") return "\r";
+      return g;   // \" -> "   \\ -> \   \/ -> /
+    });
+  }
   return v;
 }
 const field = (t, k) => { const m = t.match(new RegExp("^  " + k + ":\\s?(.*)$", "m")); return m ? yamlStr(m[1].trim()) : ""; };
@@ -155,6 +166,9 @@ const enemies = loadCategory("Enemies").map((a) => {
 });
 const enemyName = (id) => enemyById.has(id) ? enemyById.get(id).name : id;
 
+// Mirrors BossData.RollDrop in the game. Keep in sync if those constants move.
+const BOSS_DROP_CHANCE = 1;        // Normal mode, %
+const BOSS_DROP_CHANCE_HARD = 0.75; // Hard mode, %
 const bosses = loadCategory("Bosses").map((a) => {
   const t = a.text; const lv = num(t, "level");
   return {
@@ -162,7 +176,12 @@ const bosses = loadCategory("Bosses").map((a) => {
     mapId: assetName(guidOf(t, "activeInMap")), level: lv, hp: num(t, "hp"), atk: num(t, "atk"),
     hardModeHp: num(t, "hardModeHp"), hardModeAtk: num(t, "hardModeAtk"), exp: lv * lv * 10 + lv * 100,
     dropItemId: assetName(guidOf(t, "dropItem")), dropItemName: itemName(assetName(guidOf(t, "dropItem"))),
-    hardModeDropItemId: assetName(guidOf(t, "hardModeDropItem")), bonusDropItemId: assetName(guidOf(t, "bonusDropItem"))
+    hardModeDropItemId: assetName(guidOf(t, "hardModeDropItem")), bonusDropItemId: assetName(guidOf(t, "bonusDropItem")),
+    // Boss drop odds are a CODE constant, not a field on the asset — mirrored from
+    // BossData.RollDrop: 1% in Normal, 0.75% in Hard. The bonus item rolls on the same chance
+    // as its mode. Both are the BASE rate, before luck/collection bonuses and the duplicate
+    // falloff that EnemyData.CalculateDropChance applies once you already own copies.
+    dropChance: BOSS_DROP_CHANCE, hardModeDropChance: BOSS_DROP_CHANCE_HARD
   };
 });
 

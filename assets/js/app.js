@@ -629,7 +629,8 @@
       (bossDrops.length ? '<div class="section-title">Boss rewards</div><div class="effect-list">' +
         bossDrops.map(function (b) {
           var mode = b.hardModeDropItemId === i.id ? "Hard" : b.bonusDropItemId === i.id ? "Bonus" : "Normal";
-          return '<span class="fx">' + link("bosses.html", b.id, b.name) + ' <small>' + mode + "</small></span>";
+          return '<span class="fx">' + link("bosses.html", b.id, b.name) +
+            " (" + bossDropChance(b, mode) + "%) <small>" + mode + "</small></span>";
         }).join("") + "</div>" : "") +
       "</div></div>";
     mountCompareTray(d, i.id);
@@ -774,13 +775,20 @@
     });
     return rows.sort(function (a, b) { return a.name.localeCompare(b.name); });
   }
+  // Base boss drop odds (BossData.RollDrop): 1% Normal, 0.75% Hard. A "Bonus" item rolls on the
+  // same chance as the mode it belongs to. Falls back to the constants if data.json predates them.
+  function bossDropChance(b, mode) {
+    if (mode === "Hard") return b.hardModeDropChance != null ? b.hardModeDropChance : 0.75;
+    return b.dropChance != null ? b.dropChance : 1;
+  }
   function bossDropItems(d, bosses) {
     var rows = [];
     bosses.forEach(function (b) {
       [[b.dropItemId, "Normal"], [b.hardModeDropItemId, "Hard"], [b.bonusDropItemId, "Bonus"]].forEach(function (x) {
         if (!x[0]) return;
         var item = d._itemById[x[0]];
-        rows.push({ item: item, id: x[0], name: item ? item.name : x[0], boss: b, mode: x[1] });
+        rows.push({ item: item, id: x[0], name: item ? item.name : x[0], boss: b, mode: x[1],
+          chance: bossDropChance(b, x[1]) });
       });
     });
     return rows;
@@ -1016,7 +1024,8 @@
       return '<article class="map-drop-card boss-drop">' + thumb(item && item.image, row.name) + '<div><h3>' +
         (item ? link("items.html", item.id, item.name) : esc(row.name)) + '</h3>' +
         (item ? '<p><span style="color:' + rarColor(item.rarity) + '">' + esc(item.rarity) + '</span> &#183; ' + esc(item.type) + '</p>' : '') +
-        '<div class="map-drop-sources"><span>' + link("bosses.html", row.boss.id, row.boss.name) + ' <strong>' + esc(row.mode) + '</strong></span></div>' +
+        '<div class="map-drop-sources"><span>' + link("bosses.html", row.boss.id, row.boss.name) +
+          ' <strong>' + esc(row.chance) + '%</strong> <small>' + esc(row.mode) + '</small></span></div>' +
         '</div></article>';
     }
     app.innerHTML =

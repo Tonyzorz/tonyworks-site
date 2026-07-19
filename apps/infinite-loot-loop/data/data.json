@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T05:40:46Z",
+  "generatedAt": "2026-07-19T06:02:11Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 265,
@@ -11706,7 +11706,9 @@
       "dropItemId": "WanderersToken",
       "dropItemName": "Wanderer's Token",
       "hardModeDropItemId": "WanderersToken_H",
-      "bonusDropItemId": "BossItem_ExpRing"
+      "bonusDropItemId": "BossItem_ExpRing",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "BoneDragonJr",
@@ -11722,7 +11724,9 @@
       "dropItemId": "DragonFangPendant",
       "dropItemName": "Dragon Fang Pendant",
       "hardModeDropItemId": "DragonFangPendant_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "DarkTreant",
@@ -11738,7 +11742,9 @@
       "dropItemId": "AncientBarkShield",
       "dropItemName": "Ancient Bark Shield",
       "hardModeDropItemId": "AncientBarkShield_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "SoulReaper",
@@ -11754,7 +11760,9 @@
       "dropItemId": "SoulLantern",
       "dropItemName": "Soul Lantern",
       "hardModeDropItemId": "SoulLantern_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "FrostWitch",
@@ -11770,7 +11778,9 @@
       "dropItemId": "WitchsGrimoire",
       "dropItemName": "Witch's Grimoire",
       "hardModeDropItemId": "WitchsGrimoire_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "InfernoDrake",
@@ -11786,7 +11796,9 @@
       "dropItemId": "DrakeScaleSword",
       "dropItemName": "Drake Scale Sword",
       "hardModeDropItemId": "DrakeScaleSword_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "LavaTitan",
@@ -11802,7 +11814,9 @@
       "dropItemId": "TitansMagmaPlate",
       "dropItemName": "Titan's Magma Plate",
       "hardModeDropItemId": "TitansMagmaPlate_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "ChaosBeast",
@@ -11818,7 +11832,9 @@
       "dropItemId": "ChaosHeart",
       "dropItemName": "Chaos Heart",
       "hardModeDropItemId": "ChaosHeart_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "CursedArmor",
@@ -11834,7 +11850,9 @@
       "dropItemId": "BossItem_IronFortress",
       "dropItemName": "Iron Fortress",
       "hardModeDropItemId": "BossItem_IronFortress_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "CrystalElemental",
@@ -11850,7 +11868,9 @@
       "dropItemId": "CrystalPrism",
       "dropItemName": "Crystal Prism",
       "hardModeDropItemId": "CrystalPrism_H",
-      "bonusDropItemId": "BossItem_LifeCrystal"
+      "bonusDropItemId": "BossItem_LifeCrystal",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "ThunderOni",
@@ -11866,7 +11886,9 @@
       "dropItemId": "BossItem_WarCrest",
       "dropItemName": "War Crest",
       "hardModeDropItemId": "BossItem_WarCrest_H",
-      "bonusDropItemId": "BossItem_SpeedBoots"
+      "bonusDropItemId": "BossItem_SpeedBoots",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "GoldenMimic",
@@ -11882,7 +11904,9 @@
       "dropItemId": "BossItem_ZenStone",
       "dropItemName": "Zen Stone",
       "hardModeDropItemId": "BossItem_ZenStone_H",
-      "bonusDropItemId": "BossItem_GoldRing"
+      "bonusDropItemId": "BossItem_GoldRing",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "EternalKing",
@@ -11898,7 +11922,9 @@
       "dropItemId": "PharaohSpirit",
       "dropItemName": "Pharaoh Spirit",
       "hardModeDropItemId": "PharaohSpirit_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "SunBeast",
@@ -11914,7 +11940,9 @@
       "dropItemId": "SunBeastTalon",
       "dropItemName": "Sun Beast Talon",
       "hardModeDropItemId": "SunBeastTalon_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "TidalGuardian",
@@ -11930,7 +11958,9 @@
       "dropItemId": "TidalWarden",
       "dropItemName": "Tidal Warden",
       "hardModeDropItemId": "TidalWarden_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "DesertPharaoh",
@@ -11946,7 +11976,9 @@
       "dropItemId": "PharaohsScepter",
       "dropItemName": "Pharaoh's Scepter",
       "hardModeDropItemId": "PharaohsScepter_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "DeepSeaHorror",
@@ -11962,7 +11994,9 @@
       "dropItemId": "BossItem_LifeRing",
       "dropItemName": "Blood Ring",
       "hardModeDropItemId": "BossItem_LifeRing_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "GiantClam",
@@ -11978,7 +12012,9 @@
       "dropItemId": "GiantClamPearl",
       "dropItemName": "Giant Clam Pearl",
       "hardModeDropItemId": "GiantClamPearl_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "AquaLiege",
@@ -11994,7 +12030,9 @@
       "dropItemId": "AbyssalCrown",
       "dropItemName": "Abyssal Crown",
       "hardModeDropItemId": "AbyssalCrown_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "VoidStalker",
@@ -12010,7 +12048,9 @@
       "dropItemId": "BossItem_OmniStone",
       "dropItemName": "Omni Stone",
       "hardModeDropItemId": "BossItem_OmniStone_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "YokaiShogun",
@@ -12026,7 +12066,9 @@
       "dropItemId": "AmaterasuMirror",
       "dropItemName": "Amaterasu Mirror",
       "hardModeDropItemId": "AmaterasuMirror_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "BronzeColossus",
@@ -12042,7 +12084,9 @@
       "dropItemId": "ZeusThunderstone",
       "dropItemName": "Zeus Thunderstone",
       "hardModeDropItemId": "ZeusThunderstone_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "SiegeJuggernaut",
@@ -12058,7 +12102,9 @@
       "dropItemId": "ReconDrone",
       "dropItemName": "Recon Drone",
       "hardModeDropItemId": "ReconDrone_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "WarlordIronclad",
@@ -12074,7 +12120,9 @@
       "dropItemId": "GeneralsInsignia",
       "dropItemName": "General's Insignia",
       "hardModeDropItemId": "GeneralsInsignia_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "ArchangelSovereign",
@@ -12090,7 +12138,9 @@
       "dropItemId": "CreatorsLight",
       "dropItemName": "Creator's Light",
       "hardModeDropItemId": "CreatorsLight_H",
-      "bonusDropItemId": ""
+      "bonusDropItemId": "",
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     }
   ],
   "items": [
@@ -13720,7 +13770,7 @@
     {
       "id": "CreatorsLight",
       "name": "Creator's Light",
-      "description": "A mote of the first light \\u2014 all stats bow to its bearer.",
+      "description": "A mote of the first light — all stats bow to its bearer.",
       "image": "item_CreatorsLight.png",
       "rarity": "Legendary",
       "type": "Accessory",
@@ -13750,7 +13800,7 @@
     {
       "id": "CreatorsLight_H",
       "name": "Creator's Light [H]",
-      "description": "A mote of the first light \\u2014 all stats bow to its bearer.",
+      "description": "A mote of the first light — all stats bow to its bearer.",
       "image": "item_CreatorsLight_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
