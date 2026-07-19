@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T23:39:47Z",
+  "generatedAt": "2026-07-19T00:04:49Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 213,
@@ -797,9 +797,9 @@
       ]
     },
     {
-      "id": "ShadowHound_FR01",
+      "id": "ShadowHound_FR01 1",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_FR01.png",
+      "image": "enemy_ShadowHound_FR01_1.png",
       "isBoss": false,
       "minLevel": 37,
       "maxLevel": 40,
@@ -922,9 +922,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_FR03",
+      "id": "DesertScorpion_FR03 1",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_FR03.png",
+      "image": "enemy_DesertScorpion_FR03_1.png",
       "isBoss": false,
       "minLevel": 60,
       "maxLevel": 67,
@@ -1072,9 +1072,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_FR03",
+      "id": "CrystalGolem_FR03 1",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_FR03.png",
+      "image": "enemy_CrystalGolem_FR03_1.png",
       "isBoss": false,
       "minLevel": 73,
       "maxLevel": 80,
@@ -1167,9 +1167,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR03 1",
+      "id": "BloodWraith_FR03",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR03_1.png",
+      "image": "enemy_BloodWraith_FR03.png",
       "isBoss": false,
       "minLevel": 82,
       "maxLevel": 85,
@@ -1222,9 +1222,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR04 1",
+      "id": "BloodWraith_FR04",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR04_1.png",
+      "image": "enemy_BloodWraith_FR04.png",
       "isBoss": false,
       "minLevel": 85,
       "maxLevel": 90,
@@ -1277,9 +1277,9 @@
       ]
     },
     {
-      "id": "FlameImp_FR04",
+      "id": "FlameImp_FR04 1",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_FR04.png",
+      "image": "enemy_FlameImp_FR04_1.png",
       "isBoss": false,
       "minLevel": 88,
       "maxLevel": 94,
@@ -1417,9 +1417,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_FR04 1",
+      "id": "ChaosShaman_FR04",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_FR04_1.png",
+      "image": "enemy_ChaosShaman_FR04.png",
       "isBoss": false,
       "minLevel": 100,
       "maxLevel": 103,
@@ -1542,9 +1542,9 @@
       ]
     },
     {
-      "id": "FlameImp_VO01",
+      "id": "FlameImp_VO01 1",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_VO01.png",
+      "image": "enemy_FlameImp_VO01_1.png",
       "isBoss": false,
       "minLevel": 108,
       "maxLevel": 115,
@@ -1767,9 +1767,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_VO01",
+      "id": "ChaosShaman_VO01 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_VO01.png",
+      "image": "enemy_ChaosShaman_VO01_1.png",
       "isBoss": false,
       "minLevel": 128,
       "maxLevel": 136,
@@ -2647,9 +2647,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_DS01",
+      "id": "DesertScorpion_DS01 1",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_DS01.png",
+      "image": "enemy_DesertScorpion_DS01_1.png",
       "isBoss": false,
       "minLevel": 205,
       "maxLevel": 217,
@@ -3152,9 +3152,9 @@
       ]
     },
     {
-      "id": "ShadowHound_DS03",
+      "id": "ShadowHound_DS03 1",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_DS03.png",
+      "image": "enemy_ShadowHound_DS03_1.png",
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
@@ -3432,9 +3432,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_DS03",
+      "id": "CrystalGolem_DS03 1",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_DS03.png",
+      "image": "enemy_CrystalGolem_DS03_1.png",
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
@@ -9834,7 +9834,7 @@
       "id": "AmaterasuMirror",
       "name": "Amaterasu Mirror",
       "description": "A sun-goddess mirror that reflects glory onto its bearer.",
-      "image": "",
+      "image": "item_AmaterasuMirror.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -9859,7 +9859,7 @@
       "id": "AmaterasuMirror_H",
       "name": "Amaterasu Mirror [H]",
       "description": "A sun-goddess mirror that reflects glory onto its bearer.",
-      "image": "",
+      "image": "item_AmaterasuMirror_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -13395,7 +13395,7 @@
       "id": "FieldCompass",
       "name": "Field Compass",
       "description": "",
-      "image": "",
+      "image": "item_FieldCompass.png",
       "rarity": "Rare",
       "type": "Accessory",
       "setName": "",
@@ -16951,7 +16951,7 @@
       "id": "Field_Compass_H",
       "name": "Field Compass [H]",
       "description": "",
-      "image": "",
+      "image": "item_Field_Compass_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -23132,7 +23132,7 @@
       "id": "SakuraGeta",
       "name": "Sakura Geta",
       "description": "",
-      "image": "",
+      "image": "item_SakuraGeta.png",
       "rarity": "Epic",
       "type": "Shoes",
       "setName": "",
@@ -26139,7 +26139,7 @@
       "goldMultiplier": 46,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_DS01",
+          "enemyId": "DesertScorpion_DS01 1",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -26299,7 +26299,7 @@
       "goldMultiplier": 70,
       "enemies": [
         {
-          "enemyId": "ShadowHound_DS03",
+          "enemyId": "ShadowHound_DS03 1",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -26339,7 +26339,7 @@
       "goldMultiplier": 74,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_DS03",
+          "enemyId": "CrystalGolem_DS03 1",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -26811,7 +26811,7 @@
       "goldMultiplier": 7.5,
       "enemies": [
         {
-          "enemyId": "ShadowHound_FR01",
+          "enemyId": "ShadowHound_FR01 1",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -26891,7 +26891,7 @@
       "goldMultiplier": 13,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_FR03",
+          "enemyId": "DesertScorpion_FR03 1",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -26951,7 +26951,7 @@
       "goldMultiplier": 16,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_FR03",
+          "enemyId": "CrystalGolem_FR03 1",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -26991,7 +26991,7 @@
       "goldMultiplier": 18,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR03 1",
+          "enemyId": "BloodWraith_FR03",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -27011,7 +27011,7 @@
       "goldMultiplier": 19,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR04 1",
+          "enemyId": "BloodWraith_FR04",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -27031,7 +27031,7 @@
       "goldMultiplier": 20,
       "enemies": [
         {
-          "enemyId": "FlameImp_FR04",
+          "enemyId": "FlameImp_FR04 1",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -27091,7 +27091,7 @@
       "goldMultiplier": 23,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_FR04 1",
+          "enemyId": "ChaosShaman_FR04",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -31288,7 +31288,7 @@
       "goldMultiplier": 32,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_VO01",
+          "enemyId": "ChaosShaman_VO01 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -31388,7 +31388,7 @@
       "goldMultiplier": 27,
       "enemies": [
         {
-          "enemyId": "FlameImp_VO01",
+          "enemyId": "FlameImp_VO01 1",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
