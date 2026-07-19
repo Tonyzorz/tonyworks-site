@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T08:43:08Z",
+  "generatedAt": "2026-07-19T08:58:47Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 265,
@@ -808,9 +808,9 @@
       ]
     },
     {
-      "id": "ShadowHound_FR01 1",
+      "id": "ShadowHound_FR01",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_FR01_1.png",
+      "image": "enemy_ShadowHound_FR01.png",
       "isBoss": false,
       "minLevel": 37,
       "maxLevel": 40,
@@ -952,9 +952,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_FR03 1",
+      "id": "DesertScorpion_FR03",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_FR03_1.png",
+      "image": "enemy_DesertScorpion_FR03.png",
       "isBoss": false,
       "minLevel": 60,
       "maxLevel": 67,
@@ -1096,9 +1096,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_FR03 1",
+      "id": "CrystalGolem_FR03",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_FR03_1.png",
+      "image": "enemy_CrystalGolem_FR03.png",
       "isBoss": false,
       "minLevel": 73,
       "maxLevel": 80,
@@ -1187,9 +1187,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR03",
+      "id": "BloodWraith_FR03 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR03.png",
+      "image": "enemy_BloodWraith_FR03_1.png",
       "isBoss": false,
       "minLevel": 82,
       "maxLevel": 85,
@@ -1240,9 +1240,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR04",
+      "id": "BloodWraith_FR04 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR04.png",
+      "image": "enemy_BloodWraith_FR04_1.png",
       "isBoss": false,
       "minLevel": 85,
       "maxLevel": 90,
@@ -1293,9 +1293,9 @@
       ]
     },
     {
-      "id": "FlameImp_FR04 1",
+      "id": "FlameImp_FR04",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_FR04_1.png",
+      "image": "enemy_FlameImp_FR04.png",
       "isBoss": false,
       "minLevel": 88,
       "maxLevel": 94,
@@ -1457,9 +1457,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_FR04",
+      "id": "ChaosShaman_FR04 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_FR04.png",
+      "image": "enemy_ChaosShaman_FR04_1.png",
       "isBoss": false,
       "minLevel": 100,
       "maxLevel": 103,
@@ -1596,9 +1596,9 @@
       ]
     },
     {
-      "id": "FlameImp_VO01 1",
+      "id": "FlameImp_VO01",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_VO01_1.png",
+      "image": "enemy_FlameImp_VO01.png",
       "isBoss": false,
       "minLevel": 108,
       "maxLevel": 115,
@@ -1881,9 +1881,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_VO01 1",
+      "id": "ChaosShaman_VO01",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_VO01_1.png",
+      "image": "enemy_ChaosShaman_VO01.png",
       "isBoss": false,
       "minLevel": 128,
       "maxLevel": 136,
@@ -2828,9 +2828,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_DS01 1",
+      "id": "DesertScorpion_DS01",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_DS01_1.png",
+      "image": "enemy_DesertScorpion_DS01.png",
       "isBoss": false,
       "minLevel": 205,
       "maxLevel": 217,
@@ -3376,9 +3376,9 @@
       ]
     },
     {
-      "id": "ShadowHound_DS03 1",
+      "id": "ShadowHound_DS03",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_DS03_1.png",
+      "image": "enemy_ShadowHound_DS03.png",
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
@@ -3697,9 +3697,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_DS03 1",
+      "id": "CrystalGolem_DS03",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_DS03_1.png",
+      "image": "enemy_CrystalGolem_DS03.png",
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
@@ -32229,7 +32229,7 @@
       "goldMultiplier": 46,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_DS01 1",
+          "enemyId": "DesertScorpion_DS01",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -32389,7 +32389,7 @@
       "goldMultiplier": 70,
       "enemies": [
         {
-          "enemyId": "ShadowHound_DS03 1",
+          "enemyId": "ShadowHound_DS03",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -32429,7 +32429,7 @@
       "goldMultiplier": 74,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_DS03 1",
+          "enemyId": "CrystalGolem_DS03",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -32901,7 +32901,7 @@
       "goldMultiplier": 7.5,
       "enemies": [
         {
-          "enemyId": "ShadowHound_FR01 1",
+          "enemyId": "ShadowHound_FR01",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -32981,7 +32981,7 @@
       "goldMultiplier": 13,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_FR03 1",
+          "enemyId": "DesertScorpion_FR03",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -33041,7 +33041,7 @@
       "goldMultiplier": 16,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_FR03 1",
+          "enemyId": "CrystalGolem_FR03",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -33081,7 +33081,7 @@
       "goldMultiplier": 18,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR03",
+          "enemyId": "BloodWraith_FR03 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -33101,7 +33101,7 @@
       "goldMultiplier": 19,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR04",
+          "enemyId": "BloodWraith_FR04 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -33121,7 +33121,7 @@
       "goldMultiplier": 20,
       "enemies": [
         {
-          "enemyId": "FlameImp_FR04 1",
+          "enemyId": "FlameImp_FR04",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -33181,7 +33181,7 @@
       "goldMultiplier": 23,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_FR04",
+          "enemyId": "ChaosShaman_FR04 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -39056,7 +39056,7 @@
       "goldMultiplier": 32,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_VO01 1",
+          "enemyId": "ChaosShaman_VO01",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -39156,7 +39156,7 @@
       "goldMultiplier": 27,
       "enemies": [
         {
-          "enemyId": "FlameImp_VO01 1",
+          "enemyId": "FlameImp_VO01",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -39668,7 +39668,7 @@
         "VineGolem",
         "ThunderBeetle",
         "MoonWisp",
-        "ShadowHound_FR01 1",
+        "ShadowHound_FR01",
         "ForestRoadSprite_H",
         "CrystalLizard_H",
         "IronToad_H",
@@ -39802,12 +39802,12 @@
       "maxLevel": 672,
       "zoneCount": 12,
       "enemyIds": [
-        "DesertScorpion_FR03 1",
+        "DesertScorpion_FR03",
         "DarkPrince",
         "VoidRat",
-        "CrystalGolem_FR03 1",
+        "CrystalGolem_FR03",
         "BoneHydra",
-        "BloodWraith_FR03",
+        "BloodWraith_FR03 1",
         "DesertScorpion_H",
         "DarkPrince_H",
         "VoidRat_H",
@@ -39875,11 +39875,11 @@
       "maxLevel": 700,
       "zoneCount": 12,
       "enemyIds": [
-        "BloodWraith_FR04",
-        "FlameImp_FR04 1",
+        "BloodWraith_FR04 1",
+        "FlameImp_FR04",
         "RuneGolem",
         "ThunderLynx",
-        "ChaosShaman_FR04",
+        "ChaosShaman_FR04 1",
         "IronMantis",
         "BloodWraith_H",
         "FlameImp_H",
@@ -39967,12 +39967,12 @@
         "AshBat_H",
         "MagmaGolem",
         "InfernoWitch",
-        "ChaosShaman_VO01 1",
+        "ChaosShaman_VO01",
         "AbyssLord",
         "ForestDemon",
         "FireDrake",
         "RockCrab",
-        "FlameImp_VO01 1",
+        "FlameImp_VO01",
         "AshBat"
       ],
       "bossIds": [
@@ -40213,7 +40213,7 @@
         "PyramidGolem",
         "PharaohGuardian",
         "DesertViper",
-        "DesertScorpion_DS01 1",
+        "DesertScorpion_DS01",
         "SandWraith",
         "CactusKnight_H",
         "PyramidGolem_H",
@@ -40360,9 +40360,9 @@
       "maxLevel": 868,
       "zoneCount": 12,
       "enemyIds": [
-        "ShadowHound_DS03 1",
+        "ShadowHound_DS03",
         "EmberDrake",
-        "CrystalGolem_DS03 1",
+        "CrystalGolem_DS03",
         "MagmaWyrm",
         "ObsidianKing",
         "SunSentinel",
