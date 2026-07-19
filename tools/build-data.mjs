@@ -133,7 +133,7 @@ const enemies = loadCategory("Enemies").map((a) => {
     expMin: atLevel(bEXP, sEXP, minLv, minLv), expMax: atLevel(bEXP, sEXP, maxLv, minLv),
     goldMin: atLevel(bGold, sGold, minLv, minLv), goldMax: atLevel(bGold, sGold, maxLv, minLv),
     permanentBPReward: num(t, "permanentBPReward"), drops,
-    worlds: [], zoneNames: []   // filled after zones are parsed
+    worlds: [], areas: [], zoneNames: []   // filled after zones are parsed
   };
   enemyById.set(a.id, o); return o;
 });
@@ -293,10 +293,12 @@ function areaCode(zid) {
 for (const z of zones) {
   const w = zoneWorld(z.id);
   if (!w) continue;
+  const ac = areaCode(z.id);   // the specific map (FR02), not just the world (Forest)
   for (const en of (z.enemies || [])) {
     const e = enemyById.get(en.enemyId);
     if (!e) continue;
     if (!e.worlds.includes(w)) e.worlds.push(w);
+    if (ac && !e.areas.includes(ac)) e.areas.push(ac);
     if (z.name && !e.zoneNames.includes(z.name)) e.zoneNames.push(z.name);
   }
 }

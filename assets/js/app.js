@@ -393,12 +393,21 @@
         { label: "Normal", test: function (e) { return !/_H$/.test(e.id); } },
         { label: "Hard", test: function (e) { return /_H$/.test(e.id); } }
       ],
-      search: function (e) { return e.name + " " + e.id + " " + (e.worlds || []).join(" "); },
+      search: function (e) { return e.name + " " + e.id + " " + (e.worlds || []).join(" ") + " " + areaNames(d, e.areas).join(" "); },
+      filters: [
+        { key: "area", label: "Area",
+          options: (d.areas || []).map(function (a) {
+            return { value: a.code, label: a.name + " (" + a.code + ")", group: a.world };
+          }),
+          get: function (e) { return e.areas || []; } }
+      ],
       card: function (e) {
+        // Show the exact maps it spawns on (Dark Forest), not just the world (Forest).
+        var where = areaNames(d, e.areas);
         return cardShell("monsters.html", e.id, e.image, e.name,
           tierBadge(e.worlds) +
           '<span class="badge">Lv ' + rng(e.minLevel, e.maxLevel) + "</span>" +
-          ((e.worlds && e.worlds.length) ? '<span class="badge">' + esc(e.worlds.join(", ")) + "</span>" : "") +
+          (where.length ? '<span class="badge">' + esc(where.join(", ")) + "</span>" : "") +
           '<span class="meta">HP ' + rng(e.hpMin, e.hpMax) + " &#183; ATK " + rng(e.atkMin, e.atkMax) + "</span>");
       }
     });
@@ -795,6 +804,33 @@
     var cls = "wnode" + (opts.secret ? " secret" : "");
     return '<a class="' + cls + '" style="--wc:' + meta.color + '" href="maps.html?world=' + encodeURIComponent(w) + '">' + inner + "</a>";
   }
+  // Region codes -> their map names ("FR02" -> "Dark Forest").
+  function areaNames(d, codes) {
+    if (!codes || !codes.length) return [];
+    var byCode = {}; (d.areas || []).forEach(function (a) { byCode[a.code] = a; });
+    return codes.map(function (c) { return byCode[c] ? byCode[c].name : c; });
+  }
+  // One row per MAP within a world, so Forest Road / Dark Forest / Deep Dark Forest / Ashen
+  // Forest Pass are each listed and reachable rather than hidden behind a single "Forest" node.
+  function areaRows(d, w) {
+    var meta = WORLD_META[w] || { icon: "&#128506;", color: "var(--accent)" };
+    var list = (d.areas || []).filter(function (a) { return a.world === w; });
+    if (!list.length) return "";
+    return '<section class="area-group" style="--wc:' + meta.color + '">' +
+      '<h3 class="area-group-head"><span class="wicon">' + meta.icon + '</span>' + esc(w) +
+        '<small>' + list.length + " map" + (list.length !== 1 ? "s" : "") + "</small></h3>" +
+      '<div class="area-rows">' + list.map(function (a) {
+        var drops = a.dropItemIds.length + a.bossDropItemIds.length;
+        var href = a.mapId ? "maps.html?id=" + encodeURIComponent(a.mapId) : "maps.html?world=" + encodeURIComponent(w);
+        return '<a class="area-row" href="' + href + '">' +
+          '<span class="area-code">' + esc(a.code) + "</span>" +
+          '<span class="area-name">' + esc(a.name) + "</span>" +
+          '<span class="area-meta">Lv ' + fmt(a.minLevel) + "&#8211;" + fmt(a.maxLevel) +
+            " &#183; " + a.enemyIds.length + " monsters &#183; " + drops + " drops" +
+            (a.bossIds.length ? " &#183; " + a.bossIds.length + " boss" + (a.bossIds.length > 1 ? "es" : "") : "") + "</span>" +
+          '<b aria-hidden="true">&#8594;</b></a>';
+      }).join("") + "</div></section>";
+  }
   PAGES.maps = function (app, d) {
     var id = param("id"); if (id) return mapDetail(app, d, d._mapById[id]);
     var world = param("world"); if (world) return worldView(app, d, world);
@@ -820,7 +856,11 @@
       '</div></div><p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, the World Gate south. Void Hunt is a secret arena reached from Volcanic. Through the World Gate lie four more regions &#8212; ' +
       ['Japan', 'Greek', 'Military', 'Heaven'].map(function (w) { return '<a href="maps.html?world=' + encodeURIComponent(w) + '">' + w + '</a>'; }).join(', ') +
       ' &#8212; listed in full below.</p></div>' +
-      '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) { return wnode(d, w, { secret: w === "Void Hunt" }); }).join("") + '</div>';
+      // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
+      // grouped under its world. The compass graph above stays world-level.
+      '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {
+        return areaRows(d, w);
+      }).join("") + '</div>';
     var stored; try { stored = localStorage.getItem("tw-map-view"); } catch (_) {}
     var view = stored || (window.innerWidth <= 640 ? "list" : "map");
     function setView(v) {

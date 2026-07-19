@@ -933,8 +933,26 @@ body[data-page="portal"] .wrap { padding-top:0; }
 .view-switch button { border:0; border-radius:8px; padding:.5rem 1rem; color:var(--muted); background:transparent; font:inherit; font-weight:700; cursor:pointer; }
 .view-switch button.active { color:var(--on-accent); background:var(--accent); }
 .world-view[hidden] { display:none !important; }
-.region-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:.8rem; }
 .region-list .wnode { width:100%; min-height:128px; }
+
+/* ---- per-map area list (maps page, "List" view) ----
+   Every map gets its own row so Forest 01/02/03/04 are each listed, grouped by world. */
+.region-list { display:grid; grid-template-columns:1fr; gap:1.1rem; }
+.area-group { padding:.9rem 1rem 1rem; background:var(--panel); border:1px solid var(--border); border-left:3px solid var(--wc,var(--accent)); border-radius:var(--radius); }
+.area-group-head { display:flex; align-items:center; gap:.5rem; margin:0 0 .7rem; font-size:1rem; }
+.area-group-head .wicon { font-size:1.15rem; }
+.area-group-head small { margin-left:auto; color:var(--muted); font-weight:400; font-size:.75rem; }
+.area-rows { display:grid; gap:.4rem; }
+.area-row { display:grid; grid-template-columns:auto minmax(0,1fr) auto auto; align-items:center; gap:.7rem; padding:.55rem .7rem; color:inherit; text-decoration:none; background:var(--panel-2); border:1px solid var(--border); border-radius:8px; transition:border-color .15s, transform .15s; }
+.area-row:hover { border-color:var(--wc,var(--accent)); transform:translateX(2px); }
+.area-code { padding:.15rem .4rem; color:var(--wc,var(--accent)); background:color-mix(in srgb,var(--wc,var(--accent)) 12%,transparent); border-radius:5px; font-size:.7rem; font-weight:700; letter-spacing:.02em; }
+.area-name { font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.area-row .area-meta { color:var(--muted); font-size:.74rem; white-space:nowrap; }
+.area-row b { color:var(--faint); }
+@media (max-width:640px) {
+  .area-row { grid-template-columns:auto minmax(0,1fr) auto; row-gap:.25rem; }
+  .area-row .area-meta { grid-column:1/-1; white-space:normal; }
+}
 .region-link[data-region="Grassland"] { border-color:#5cb85c; }
 .region-link[data-region="Forest"] { border-color:#3f9d54; }
 .region-link[data-region="Volcanic"] { border-color:#e0603a; }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T04:21:53Z",
+  "generatedAt": "2026-07-19T05:01:14Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 265,
@@ -63,6 +63,9 @@
       "worlds": [
         "Grassland"
       ],
+      "areas": [
+        "GL01"
+      ],
       "zoneNames": [
         "Starter Village"
       ]
@@ -117,6 +120,9 @@
       ],
       "worlds": [
         "Grassland"
+      ],
+      "areas": [
+        "GL01"
       ],
       "zoneNames": [
         "Western Path"
@@ -173,6 +179,9 @@
       "worlds": [
         "Grassland"
       ],
+      "areas": [
+        "GL01"
+      ],
       "zoneNames": [
         "Eastern Keep"
       ]
@@ -222,6 +231,9 @@
       ],
       "worlds": [
         "Grassland"
+      ],
+      "areas": [
+        "GL01"
       ],
       "zoneNames": [
         "Farm Fields"
@@ -278,6 +290,9 @@
       "worlds": [
         "Grassland"
       ],
+      "areas": [
+        "GL01"
+      ],
       "zoneNames": [
         "North Quarter"
       ]
@@ -333,6 +348,9 @@
       "worlds": [
         "Grassland"
       ],
+      "areas": [
+        "GL01"
+      ],
       "zoneNames": [
         "Deep Forest Path"
       ]
@@ -383,6 +401,9 @@
       "worlds": [
         "Grassland"
       ],
+      "areas": [
+        "GL01"
+      ],
       "zoneNames": [
         "Danger Trail"
       ]
@@ -427,6 +448,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR01"
       ],
       "zoneNames": [
         "Forest Entry"
@@ -483,6 +507,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR01"
+      ],
       "zoneNames": [
         "Upper Thicket"
       ]
@@ -532,6 +559,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR01"
       ],
       "zoneNames": [
         "Mossy Path"
@@ -583,6 +613,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR01"
+      ],
       "zoneNames": [
         "Twisted Grove"
       ]
@@ -632,6 +665,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR01"
       ],
       "zoneNames": [
         "Bone Hollow"
@@ -688,6 +724,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR01"
+      ],
       "zoneNames": [
         "Dark Corridor"
       ]
@@ -743,6 +782,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR02"
+      ],
       "zoneNames": [
         "Dark Canopy"
       ]
@@ -793,6 +835,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR01"
+      ],
       "zoneNames": [
         "Haunted Pass"
       ]
@@ -832,6 +877,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR01"
       ],
       "zoneNames": [
         "Shadow Gate"
@@ -883,6 +931,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR02"
+      ],
       "zoneNames": [
         "Murky Hollows"
       ]
@@ -917,6 +968,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR02"
       ],
       "zoneNames": [
         "Root Depths"
@@ -968,6 +1022,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR03"
+      ],
       "zoneNames": [
         "Upper Gate"
       ]
@@ -1012,6 +1069,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR03"
       ],
       "zoneNames": [
         "Shadow Road"
@@ -1068,6 +1128,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR03"
+      ],
       "zoneNames": [
         "Crimson Canopy"
       ]
@@ -1107,6 +1170,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR03"
       ],
       "zoneNames": [
         "Forsaken Grove"
@@ -1163,6 +1229,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR03"
+      ],
       "zoneNames": [
         "Ancient Ruins"
       ]
@@ -1217,6 +1286,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR03"
       ],
       "zoneNames": [
         "Forbidden Peak"
@@ -1273,6 +1345,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR04"
+      ],
       "zoneNames": [
         "Ashen Gate"
       ]
@@ -1317,6 +1392,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR04"
       ],
       "zoneNames": [
         "Cinder Trail"
@@ -1368,6 +1446,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR04"
+      ],
       "zoneNames": [
         "Ember Hollow"
       ]
@@ -1413,6 +1494,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR04"
+      ],
       "zoneNames": [
         "Rune Road"
       ]
@@ -1447,6 +1531,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR04"
       ],
       "zoneNames": [
         "Frost Approach"
@@ -1493,6 +1580,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR04"
+      ],
       "zoneNames": [
         "Witch's Peak"
       ]
@@ -1537,6 +1627,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO01"
       ],
       "zoneNames": [
         "Ember Approach"
@@ -1583,6 +1676,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO01"
+      ],
       "zoneNames": [
         "Cinder Pass"
       ]
@@ -1627,6 +1723,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO01"
       ],
       "zoneNames": [
         "Lava Fields"
@@ -1673,6 +1772,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO01"
+      ],
       "zoneNames": [
         "Magma Ridge"
       ]
@@ -1717,6 +1819,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO01"
       ],
       "zoneNames": [
         "Volcanic Core"
@@ -1763,6 +1868,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO01"
+      ],
       "zoneNames": [
         "Inferno Maze"
       ]
@@ -1797,6 +1905,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO01"
       ],
       "zoneNames": [
         "Drake's Lair"
@@ -1843,6 +1954,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO01"
+      ],
       "zoneNames": [
         "Witch's Crater"
       ]
@@ -1877,6 +1991,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO01"
       ],
       "zoneNames": [
         "Molten Deep"
@@ -1922,6 +2039,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO02"
       ],
       "zoneNames": [
         "Scorched Gate"
@@ -1973,6 +2093,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO02"
+      ],
       "zoneNames": [
         "Lava Prairie"
       ]
@@ -2023,6 +2146,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO02"
+      ],
       "zoneNames": [
         "Fire Strait"
       ]
@@ -2067,6 +2193,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO02"
       ],
       "zoneNames": [
         "Magma Bluff"
@@ -2118,6 +2247,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO02"
+      ],
       "zoneNames": [
         "Titan's Forge"
       ]
@@ -2162,6 +2294,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO02"
       ],
       "zoneNames": [
         "Cinder Depths"
@@ -2213,6 +2348,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO02"
+      ],
       "zoneNames": [
         "Hellfire Ruins"
       ]
@@ -2258,6 +2396,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO02"
+      ],
       "zoneNames": [
         "Void Shore"
       ]
@@ -2297,6 +2438,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO02"
       ],
       "zoneNames": [
         "Abyss Caldera"
@@ -2342,6 +2486,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO03"
       ],
       "zoneNames": [
         "Nether Gate"
@@ -2398,6 +2545,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO03"
+      ],
       "zoneNames": [
         "Chaos Abyss"
       ]
@@ -2452,6 +2602,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO03"
       ],
       "zoneNames": [
         "Void Sanctum"
@@ -2508,6 +2661,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO03"
+      ],
       "zoneNames": [
         "Primal Ruins"
       ]
@@ -2558,6 +2714,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO03"
+      ],
       "zoneNames": [
         "World's End"
       ]
@@ -2597,6 +2756,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO03"
       ],
       "zoneNames": [
         "Eternal Forge"
@@ -2642,6 +2804,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS01"
       ],
       "zoneNames": [
         "Sandy Gate"
@@ -2693,6 +2858,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS01"
+      ],
       "zoneNames": [
         "Dune Crossing"
       ]
@@ -2737,6 +2905,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS01"
       ],
       "zoneNames": [
         "Mirage Fields"
@@ -2783,6 +2954,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS01"
+      ],
       "zoneNames": [
         "Cactus Wastes"
       ]
@@ -2828,6 +3002,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS01"
+      ],
       "zoneNames": [
         "Pyramid Approach"
       ]
@@ -2862,6 +3039,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS01"
       ],
       "zoneNames": [
         "Sunken Temple"
@@ -2907,6 +3087,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS02"
       ],
       "zoneNames": [
         "Oasis Road"
@@ -2958,6 +3141,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS02"
+      ],
       "zoneNames": [
         "Sand Dunes"
       ]
@@ -3007,6 +3193,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS02"
       ],
       "zoneNames": [
         "Mirage Valley"
@@ -3058,6 +3247,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS02"
+      ],
       "zoneNames": [
         "Scorched Wastes"
       ]
@@ -3108,6 +3300,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS02"
+      ],
       "zoneNames": [
         "Ancient Well"
       ]
@@ -3147,6 +3342,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS02"
       ],
       "zoneNames": [
         "Crossroads Gate"
@@ -3188,6 +3386,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS03"
+      ],
       "zoneNames": [
         "Shadow Cavern"
       ]
@@ -3223,6 +3424,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS04"
+      ],
       "zoneNames": [
         "Stone Gateway"
       ]
@@ -3257,6 +3461,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS05"
       ],
       "zoneNames": [
         "Tomb Entrance"
@@ -3297,6 +3504,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS05"
       ],
       "zoneNames": [
         "Burial Halls"
@@ -3348,6 +3558,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS03"
+      ],
       "zoneNames": [
         "Ember Grotto"
       ]
@@ -3387,6 +3600,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS04"
       ],
       "zoneNames": [
         "Sand Passages"
@@ -3428,6 +3644,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS04"
+      ],
       "zoneNames": [
         "Hollow Tunnels"
       ]
@@ -3467,6 +3686,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS03"
       ],
       "zoneNames": [
         "Crystal Depths"
@@ -3508,6 +3730,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS05"
+      ],
       "zoneNames": [
         "Sacred Vaults"
       ]
@@ -3542,6 +3767,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS05"
       ],
       "zoneNames": [
         "Cursed Chambers"
@@ -3593,6 +3821,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS03"
+      ],
       "zoneNames": [
         "Magma Vein"
       ]
@@ -3628,6 +3859,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS04"
+      ],
       "zoneNames": [
         "Wind Shafts"
       ]
@@ -3662,6 +3896,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS05"
       ],
       "zoneNames": [
         "Pharaoh's Rest"
@@ -3713,6 +3950,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS03"
+      ],
       "zoneNames": [
         "Obsidian Hall"
       ]
@@ -3748,6 +3988,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS04"
+      ],
       "zoneNames": [
         "Spiral Descent"
       ]
@@ -3777,6 +4020,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS05"
       ],
       "zoneNames": [
         "Eternal Crypt"
@@ -3823,6 +4069,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS03"
+      ],
       "zoneNames": [
         "Sun Chamber"
       ]
@@ -3852,6 +4101,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS04"
       ],
       "zoneNames": [
         "Underground Lake"
@@ -3897,6 +4149,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW01"
       ],
       "zoneNames": [
         "Coral Gate"
@@ -3948,6 +4203,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW01"
+      ],
       "zoneNames": [
         "Kelp Forest"
       ]
@@ -3997,6 +4255,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW01"
       ],
       "zoneNames": [
         "Anemone Field"
@@ -4048,6 +4309,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW01"
+      ],
       "zoneNames": [
         "Tide Pools"
       ]
@@ -4098,6 +4362,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW01"
+      ],
       "zoneNames": [
         "Reef Heart"
       ]
@@ -4137,6 +4404,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW01"
       ],
       "zoneNames": [
         "Reef's Edge"
@@ -4178,6 +4448,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW02"
+      ],
       "zoneNames": [
         "Maze Entry"
       ]
@@ -4218,6 +4491,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW03"
+      ],
       "zoneNames": [
         "Temple Gate"
       ]
@@ -4257,6 +4533,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW04"
       ],
       "zoneNames": [
         "Trench Mouth"
@@ -4308,6 +4587,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW02"
+      ],
       "zoneNames": [
         "Coral Walls"
       ]
@@ -4357,6 +4639,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW03"
       ],
       "zoneNames": [
         "Ancient Hall"
@@ -4408,6 +4693,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW04"
+      ],
       "zoneNames": [
         "Abyssal Path"
       ]
@@ -4452,6 +4740,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW02"
       ],
       "zoneNames": [
         "Hidden Grotto"
@@ -4498,6 +4789,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW03"
+      ],
       "zoneNames": [
         "Sacred Passage"
       ]
@@ -4542,6 +4836,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW04"
       ],
       "zoneNames": [
         "Pressure Zone"
@@ -4593,6 +4890,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW03"
+      ],
       "zoneNames": [
         "Relic Chamber"
       ]
@@ -4642,6 +4942,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW02"
       ],
       "zoneNames": [
         "Spiral Hall"
@@ -4693,6 +4996,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW04"
+      ],
       "zoneNames": [
         "Void Waters"
       ]
@@ -4737,6 +5043,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW02"
       ],
       "zoneNames": [
         "Deep Currents"
@@ -4783,6 +5092,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW03"
+      ],
       "zoneNames": [
         "Temple Heart"
       ]
@@ -4823,6 +5135,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW02"
+      ],
       "zoneNames": [
         "Maze's End"
       ]
@@ -4862,6 +5177,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW03"
       ],
       "zoneNames": [
         "Sunken Altar"
@@ -4908,6 +5226,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW04"
+      ],
       "zoneNames": [
         "Midnight Zone"
       ]
@@ -4947,6 +5268,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW04"
       ],
       "zoneNames": [
         "Trench Bottom"
@@ -4992,6 +5316,9 @@
       ],
       "worlds": [
         "Japan"
+      ],
+      "areas": [
+        "JP01"
       ],
       "zoneNames": [
         "Lantern Row",
@@ -5039,6 +5366,9 @@
       "worlds": [
         "Japan"
       ],
+      "areas": [
+        "JP01"
+      ],
       "zoneNames": [
         "Market Street",
         "Stream Crossing",
@@ -5080,6 +5410,9 @@
       ],
       "worlds": [
         "Japan"
+      ],
+      "areas": [
+        "JP01"
       ],
       "zoneNames": [
         "Old Orchard",
@@ -5127,6 +5460,9 @@
       "worlds": [
         "Japan"
       ],
+      "areas": [
+        "JP02"
+      ],
       "zoneNames": [
         "Lower Paddies",
         "Waterwheel Flats"
@@ -5173,6 +5509,9 @@
       "worlds": [
         "Japan"
       ],
+      "areas": [
+        "JP02"
+      ],
       "zoneNames": [
         "Waterwheel Flats",
         "Koi Pond",
@@ -5214,6 +5553,9 @@
       ],
       "worlds": [
         "Japan"
+      ],
+      "areas": [
+        "JP02"
       ],
       "zoneNames": [
         "Upper Terraces",
@@ -5261,6 +5603,9 @@
       "worlds": [
         "Japan"
       ],
+      "areas": [
+        "JP03"
+      ],
       "zoneNames": [
         "Hundred Steps",
         "Fox Shrine"
@@ -5301,6 +5646,9 @@
       ],
       "worlds": [
         "Japan"
+      ],
+      "areas": [
+        "JP03"
       ],
       "zoneNames": [
         "Fox Shrine",
@@ -5348,6 +5696,9 @@
       "worlds": [
         "Japan"
       ],
+      "areas": [
+        "JP03"
+      ],
       "zoneNames": [
         "Torii Tunnel",
         "Lantern Heights"
@@ -5388,6 +5739,9 @@
       ],
       "worlds": [
         "Japan"
+      ],
+      "areas": [
+        "JP03"
       ],
       "zoneNames": [
         "Lantern Heights",
@@ -5445,6 +5799,9 @@
       "worlds": [
         "Japan"
       ],
+      "areas": [
+        "JP04"
+      ],
       "zoneNames": [
         "Pagoda Court"
       ]
@@ -5485,6 +5842,9 @@
       "worlds": [
         "Japan"
       ],
+      "areas": [
+        "JP04"
+      ],
       "zoneNames": [
         "Pagoda Court"
       ]
@@ -5519,6 +5879,9 @@
       ],
       "worlds": [
         "Grassland"
+      ],
+      "areas": [
+        "GL01"
       ],
       "zoneNames": [
         "GL01 Hard 2"
@@ -5555,6 +5918,9 @@
       "worlds": [
         "Grassland"
       ],
+      "areas": [
+        "GL01"
+      ],
       "zoneNames": [
         "GL01 Hard 3"
       ]
@@ -5589,6 +5955,9 @@
       ],
       "worlds": [
         "Grassland"
+      ],
+      "areas": [
+        "GL01"
       ],
       "zoneNames": [
         "GL01 Hard 1"
@@ -5625,6 +5994,9 @@
       "worlds": [
         "Grassland"
       ],
+      "areas": [
+        "GL01"
+      ],
       "zoneNames": [
         "GL01 Hard 0"
       ]
@@ -5660,6 +6032,9 @@
       "worlds": [
         "Grassland"
       ],
+      "areas": [
+        "GL01"
+      ],
       "zoneNames": [
         "GL01 Hard 4"
       ]
@@ -5690,6 +6065,9 @@
       "worlds": [
         "Grassland"
       ],
+      "areas": [
+        "GL01"
+      ],
       "zoneNames": [
         "GL01 Hard 6"
       ]
@@ -5719,6 +6097,9 @@
       ],
       "worlds": [
         "Grassland"
+      ],
+      "areas": [
+        "GL01"
       ],
       "zoneNames": [
         "GL01 Hard 5"
@@ -5755,6 +6136,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR01"
+      ],
       "zoneNames": [
         "FR01 Hard 3"
       ]
@@ -5789,6 +6173,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR01"
       ],
       "zoneNames": [
         "FR01 Hard 1"
@@ -5825,6 +6212,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR01"
+      ],
       "zoneNames": [
         "FR01 Hard 0"
       ]
@@ -5860,6 +6250,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR01"
+      ],
       "zoneNames": [
         "FR01 Hard 2"
       ]
@@ -5889,6 +6282,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR01"
       ],
       "zoneNames": [
         "FR01 Hard 6"
@@ -5920,6 +6316,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR01"
+      ],
       "zoneNames": [
         "FR01 Hard 5"
       ]
@@ -5949,6 +6348,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR01"
       ],
       "zoneNames": [
         "FR01 Hard 4"
@@ -6010,6 +6412,9 @@
       "worlds": [
         "Greek"
       ],
+      "areas": [
+        "GR01"
+      ],
       "zoneNames": [
         "Marble Quay",
         "Olive Grove"
@@ -6066,6 +6471,9 @@
       "worlds": [
         "Greek"
       ],
+      "areas": [
+        "GR01"
+      ],
       "zoneNames": [
         "Olive Grove",
         "Fallen Colonnade",
@@ -6108,6 +6516,9 @@
       "worlds": [
         "Greek"
       ],
+      "areas": [
+        "GR01"
+      ],
       "zoneNames": [
         "Traders' Steps",
         "Agora Gate"
@@ -6148,6 +6559,9 @@
       ],
       "worlds": [
         "Greek"
+      ],
+      "areas": [
+        "GR02"
       ],
       "zoneNames": [
         "Fountain Court",
@@ -6196,6 +6610,9 @@
       "worlds": [
         "Greek"
       ],
+      "areas": [
+        "GR02"
+      ],
       "zoneNames": [
         "South Stoa",
         "Fountain Court",
@@ -6233,6 +6650,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR02"
+      ],
       "zoneNames": [
         "FR02 Hard 2"
       ]
@@ -6268,6 +6688,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR02"
+      ],
       "zoneNames": [
         "FR02 Hard 1"
       ]
@@ -6302,6 +6725,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR02"
       ],
       "zoneNames": [
         "FR02 Hard 0"
@@ -6342,6 +6768,9 @@
       ],
       "worlds": [
         "Greek"
+      ],
+      "areas": [
+        "GR03"
       ],
       "zoneNames": [
         "Outer Ring",
@@ -6389,6 +6818,9 @@
       "worlds": [
         "Greek"
       ],
+      "areas": [
+        "GR05"
+      ],
       "zoneNames": [
         "Statue Garden",
         "Phosphor Pools"
@@ -6434,6 +6866,9 @@
       ],
       "worlds": [
         "Greek"
+      ],
+      "areas": [
+        "GR03"
       ],
       "zoneNames": [
         "Bone Corridors",
@@ -6486,6 +6921,9 @@
       "worlds": [
         "Greek"
       ],
+      "areas": [
+        "GR05"
+      ],
       "zoneNames": [
         "Phosphor Pools",
         "Serpent Passage"
@@ -6521,6 +6959,9 @@
       ],
       "worlds": [
         "Greek"
+      ],
+      "areas": [
+        "GR04"
       ],
       "zoneNames": [
         "Broken Tiers",
@@ -6569,6 +7010,9 @@
       "worlds": [
         "Greek"
       ],
+      "areas": [
+        "GR04"
+      ],
       "zoneNames": [
         "Upper Rings",
         "Broken Tiers",
@@ -6611,6 +7055,9 @@
       "worlds": [
         "Greek"
       ],
+      "areas": [
+        "GR05"
+      ],
       "zoneNames": [
         "Serpent Passage",
         "Pale Opening"
@@ -6646,6 +7093,9 @@
       ],
       "worlds": [
         "Greek"
+      ],
+      "areas": [
+        "GR03"
       ],
       "zoneNames": [
         "Bull Hall",
@@ -6683,6 +7133,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR03"
+      ],
       "zoneNames": [
         "FR03 Hard 4"
       ]
@@ -6718,6 +7171,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR03"
+      ],
       "zoneNames": [
         "FR03 Hard 1"
       ]
@@ -6752,6 +7208,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR03"
       ],
       "zoneNames": [
         "FR03 Hard 2"
@@ -6823,6 +7282,9 @@
       "worlds": [
         "Greek"
       ],
+      "areas": [
+        "GR06"
+      ],
       "zoneNames": [
         "Temple Plateau"
       ]
@@ -6857,6 +7319,10 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR03",
+        "FR04"
       ],
       "zoneNames": [
         "FR03 Hard 5",
@@ -6894,6 +7360,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR04"
+      ],
       "zoneNames": [
         "FR04 Hard 5"
       ]
@@ -6929,6 +7398,9 @@
       "worlds": [
         "Forest"
       ],
+      "areas": [
+        "FR04"
+      ],
       "zoneNames": [
         "FR04 Hard 2"
       ]
@@ -6963,6 +7435,9 @@
       ],
       "worlds": [
         "Forest"
+      ],
+      "areas": [
+        "FR04"
       ],
       "zoneNames": [
         "FR04 Hard 3"
@@ -7014,6 +7489,9 @@
       "worlds": [
         "Military"
       ],
+      "areas": [
+        "ML01"
+      ],
       "zoneNames": [
         "Gatehouse",
         "Chicane Road"
@@ -7049,6 +7527,9 @@
       ],
       "worlds": [
         "Military"
+      ],
+      "areas": [
+        "ML01"
       ],
       "zoneNames": [
         "Chicane Road",
@@ -7101,6 +7582,9 @@
       "worlds": [
         "Military"
       ],
+      "areas": [
+        "ML02"
+      ],
       "zoneNames": [
         "Crate Rows",
         "Fuel Yard"
@@ -7136,6 +7620,9 @@
       ],
       "worlds": [
         "Military"
+      ],
+      "areas": [
+        "ML02"
       ],
       "zoneNames": [
         "Fuel Yard",
@@ -7173,6 +7660,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO01"
+      ],
       "zoneNames": [
         "VO01 Hard 3"
       ]
@@ -7207,6 +7697,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO01"
       ],
       "zoneNames": [
         "VO01 Hard 8"
@@ -7244,6 +7737,10 @@
         "Forest",
         "Volcanic"
       ],
+      "areas": [
+        "FR04",
+        "VO01"
+      ],
       "zoneNames": [
         "FR04 Hard 4",
         "VO01 Hard 2"
@@ -7274,6 +7771,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO01"
       ],
       "zoneNames": [
         "VO01 Hard 5"
@@ -7306,6 +7806,10 @@
         "Forest",
         "Volcanic"
       ],
+      "areas": [
+        "FR04",
+        "VO01"
+      ],
       "zoneNames": [
         "FR04 Hard 1",
         "VO01 Hard 7"
@@ -7337,6 +7841,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO01"
+      ],
       "zoneNames": [
         "VO01 Hard 4"
       ]
@@ -7366,6 +7873,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO01"
       ],
       "zoneNames": [
         "VO01 Hard 1"
@@ -7397,6 +7907,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO01"
+      ],
       "zoneNames": [
         "VO01 Hard 0"
       ]
@@ -7426,6 +7939,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO01"
       ],
       "zoneNames": [
         "VO01 Hard 6"
@@ -7477,6 +7993,9 @@
       "worlds": [
         "Military"
       ],
+      "areas": [
+        "ML03"
+      ],
       "zoneNames": [
         "Forward Sap",
         "Fire Trench",
@@ -7513,6 +8032,9 @@
       ],
       "worlds": [
         "Military"
+      ],
+      "areas": [
+        "ML03"
       ],
       "zoneNames": [
         "Fire Trench",
@@ -7566,6 +8088,9 @@
       "worlds": [
         "Military"
       ],
+      "areas": [
+        "ML04"
+      ],
       "zoneNames": [
         "Tape Gate",
         "The Wrecks"
@@ -7601,6 +8126,9 @@
       ],
       "worlds": [
         "Military"
+      ],
+      "areas": [
+        "ML04"
       ],
       "zoneNames": [
         "The Wrecks",
@@ -7653,6 +8181,9 @@
       "worlds": [
         "Military"
       ],
+      "areas": [
+        "ML05"
+      ],
       "zoneNames": [
         "South Apron",
         "Runway Cross",
@@ -7689,6 +8220,9 @@
       ],
       "worlds": [
         "Military"
+      ],
+      "areas": [
+        "ML05"
       ],
       "zoneNames": [
         "Runway Cross",
@@ -7727,6 +8261,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO02"
+      ],
       "zoneNames": [
         "VO02 Hard 4"
       ]
@@ -7761,6 +8298,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO02"
       ],
       "zoneNames": [
         "VO02 Hard 6"
@@ -7797,6 +8337,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO02"
+      ],
       "zoneNames": [
         "VO02 Hard 5"
       ]
@@ -7826,6 +8369,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO02"
       ],
       "zoneNames": [
         "VO02 Hard 7"
@@ -7857,6 +8403,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO02"
+      ],
       "zoneNames": [
         "VO02 Hard 2"
       ]
@@ -7886,6 +8435,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO02"
       ],
       "zoneNames": [
         "VO02 Hard 1"
@@ -7917,6 +8469,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO02"
+      ],
       "zoneNames": [
         "VO02 Hard 8"
       ]
@@ -7947,6 +8502,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO02"
+      ],
       "zoneNames": [
         "VO02 Hard 3"
       ]
@@ -7976,6 +8534,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO02"
       ],
       "zoneNames": [
         "VO02 Hard 0"
@@ -8027,6 +8588,9 @@
       "worlds": [
         "Military"
       ],
+      "areas": [
+        "ML06"
+      ],
       "zoneNames": [
         "Outer Casemates",
         "Gun Pits",
@@ -8063,6 +8627,9 @@
       ],
       "worlds": [
         "Military"
+      ],
+      "areas": [
+        "ML06"
       ],
       "zoneNames": [
         "Gun Pits",
@@ -8111,6 +8678,9 @@
       "worlds": [
         "Military"
       ],
+      "areas": [
+        "ML07"
+      ],
       "zoneNames": [
         "Wall Gap",
         "Convoy Graveyard"
@@ -8147,6 +8717,9 @@
       "worlds": [
         "Military"
       ],
+      "areas": [
+        "ML07"
+      ],
       "zoneNames": [
         "Convoy Graveyard",
         "Armored Gate"
@@ -8182,6 +8755,9 @@
       ],
       "worlds": [
         "Military"
+      ],
+      "areas": [
+        "ML08"
       ],
       "zoneNames": [
         "Kill-Zone Forecourt"
@@ -8228,6 +8804,9 @@
       "worlds": [
         "Military"
       ],
+      "areas": [
+        "ML08"
+      ],
       "zoneNames": [
         "Kill-Zone Forecourt"
       ]
@@ -8262,6 +8841,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO03"
       ],
       "zoneNames": [
         "VO03 Hard 4"
@@ -8298,6 +8880,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO03"
+      ],
       "zoneNames": [
         "VO03 Hard 0"
       ]
@@ -8332,6 +8917,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO03"
       ],
       "zoneNames": [
         "VO03 Hard 1"
@@ -8368,6 +8956,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO03"
+      ],
       "zoneNames": [
         "VO03 Hard 2"
       ]
@@ -8402,6 +8993,9 @@
       ],
       "worlds": [
         "Volcanic"
+      ],
+      "areas": [
+        "VO03"
       ],
       "zoneNames": [
         "VO03 Hard 3"
@@ -8438,6 +9032,9 @@
       "worlds": [
         "Volcanic"
       ],
+      "areas": [
+        "VO03"
+      ],
       "zoneNames": [
         "VO03 Hard 5"
       ]
@@ -8472,6 +9069,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS01"
       ],
       "zoneNames": [
         "DS01 Hard 0"
@@ -8509,6 +9109,10 @@
         "Desert",
         "Forest"
       ],
+      "areas": [
+        "DS01",
+        "FR03"
+      ],
       "zoneNames": [
         "DS01 Hard 4",
         "FR03 Hard 0"
@@ -8545,6 +9149,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS01"
+      ],
       "zoneNames": [
         "DS01 Hard 3"
       ]
@@ -8579,6 +9186,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS01"
       ],
       "zoneNames": [
         "DS01 Hard 2"
@@ -8615,6 +9225,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS01"
+      ],
       "zoneNames": [
         "DS01 Hard 1"
       ]
@@ -8649,6 +9262,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS01"
       ],
       "zoneNames": [
         "DS01 Hard 5"
@@ -8695,6 +9311,9 @@
       "worlds": [
         "Heaven"
       ],
+      "areas": [
+        "HV01"
+      ],
       "zoneNames": [
         "Light Bridge"
       ]
@@ -8740,6 +9359,9 @@
       "worlds": [
         "Heaven"
       ],
+      "areas": [
+        "HV01"
+      ],
       "zoneNames": [
         "Cloud Gate",
         "Light Bridge"
@@ -8776,6 +9398,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS02"
+      ],
       "zoneNames": [
         "DS02 Hard 5"
       ]
@@ -8810,6 +9435,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS02"
       ],
       "zoneNames": [
         "DS02 Hard 0"
@@ -8856,6 +9484,9 @@
       "worlds": [
         "Heaven"
       ],
+      "areas": [
+        "HV01"
+      ],
       "zoneNames": [
         "Fountain Isle"
       ]
@@ -8890,6 +9521,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS02"
       ],
       "zoneNames": [
         "DS02 Hard 1"
@@ -8926,6 +9560,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS02"
+      ],
       "zoneNames": [
         "DS02 Hard 3"
       ]
@@ -8961,6 +9598,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS02"
+      ],
       "zoneNames": [
         "DS02 Hard 2"
       ]
@@ -8995,6 +9635,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS02"
       ],
       "zoneNames": [
         "DS02 Hard 4"
@@ -9041,6 +9684,9 @@
       "worlds": [
         "Heaven"
       ],
+      "areas": [
+        "HV01"
+      ],
       "zoneNames": [
         "Radiant Grove"
       ]
@@ -9085,6 +9731,9 @@
       ],
       "worlds": [
         "Heaven"
+      ],
+      "areas": [
+        "HV01"
       ],
       "zoneNames": [
         "Halo Basin"
@@ -9131,6 +9780,9 @@
       "worlds": [
         "Heaven"
       ],
+      "areas": [
+        "HV01"
+      ],
       "zoneNames": [
         "Choir Terrace"
       ]
@@ -9175,6 +9827,9 @@
       ],
       "worlds": [
         "Heaven"
+      ],
+      "areas": [
+        "HV01"
       ],
       "zoneNames": [
         "Ascension Stair"
@@ -9221,6 +9876,9 @@
       "worlds": [
         "Heaven"
       ],
+      "areas": [
+        "HV01"
+      ],
       "zoneNames": [
         "Ascension Stair"
       ]
@@ -9266,6 +9924,9 @@
       "worlds": [
         "Heaven"
       ],
+      "areas": [
+        "HV01"
+      ],
       "zoneNames": [
         "Seraph Landing"
       ]
@@ -9301,6 +9962,10 @@
       "worlds": [
         "Desert",
         "Forest"
+      ],
+      "areas": [
+        "DS03",
+        "FR03"
       ],
       "zoneNames": [
         "DS03 Hard 2",
@@ -9338,6 +10003,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS03"
+      ],
       "zoneNames": [
         "DS03 Hard 1"
       ]
@@ -9373,6 +10041,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS03"
+      ],
       "zoneNames": [
         "DS03 Hard 3"
       ]
@@ -9407,6 +10078,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS03"
       ],
       "zoneNames": [
         "DS03 Hard 4"
@@ -9444,6 +10118,10 @@
         "Desert",
         "Forest"
       ],
+      "areas": [
+        "DS03",
+        "FR01"
+      ],
       "zoneNames": [
         "DS03 Hard 0",
         "FR01 Hard 7"
@@ -9479,6 +10157,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS03"
       ],
       "zoneNames": [
         "DS03 Hard 5"
@@ -9520,6 +10201,9 @@
       "worlds": [
         "Heaven"
       ],
+      "areas": [
+        "HV01"
+      ],
       "zoneNames": [
         "Throne Approach"
       ]
@@ -9554,6 +10238,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS04"
       ],
       "zoneNames": [
         "DS04 Hard 2"
@@ -9590,6 +10277,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS04"
+      ],
       "zoneNames": [
         "DS04 Hard 1"
       ]
@@ -9624,6 +10314,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS04"
       ],
       "zoneNames": [
         "DS04 Hard 0"
@@ -9660,6 +10353,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS04"
+      ],
       "zoneNames": [
         "DS04 Hard 5"
       ]
@@ -9694,6 +10390,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS04"
       ],
       "zoneNames": [
         "DS04 Hard 4"
@@ -9730,6 +10429,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS04"
+      ],
       "zoneNames": [
         "DS04 Hard 3"
       ]
@@ -9764,6 +10466,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS05"
       ],
       "zoneNames": [
         "DS05 Hard 4"
@@ -9800,6 +10505,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS05"
+      ],
       "zoneNames": [
         "DS05 Hard 1"
       ]
@@ -9834,6 +10542,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS05"
       ],
       "zoneNames": [
         "DS05 Hard 5"
@@ -9870,6 +10581,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS05"
+      ],
       "zoneNames": [
         "DS05 Hard 3"
       ]
@@ -9904,6 +10618,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS05"
       ],
       "zoneNames": [
         "DS05 Hard 2"
@@ -9940,6 +10657,9 @@
       "worlds": [
         "Desert"
       ],
+      "areas": [
+        "DS05"
+      ],
       "zoneNames": [
         "DS05 Hard 0"
       ]
@@ -9974,6 +10694,9 @@
       ],
       "worlds": [
         "Desert"
+      ],
+      "areas": [
+        "DS06"
       ],
       "zoneNames": [
         "DS06 Hard 0"
@@ -10010,6 +10733,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW01"
+      ],
       "zoneNames": [
         "UW01 Hard 3"
       ]
@@ -10044,6 +10770,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW01"
       ],
       "zoneNames": [
         "UW01 Hard 0"
@@ -10080,6 +10809,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW01"
+      ],
       "zoneNames": [
         "UW01 Hard 4"
       ]
@@ -10114,6 +10846,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW01"
       ],
       "zoneNames": [
         "UW01 Hard 2"
@@ -10150,6 +10885,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW01"
+      ],
       "zoneNames": [
         "UW01 Hard 5"
       ]
@@ -10184,6 +10922,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW01"
       ],
       "zoneNames": [
         "UW01 Hard 1"
@@ -10220,6 +10961,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW02"
+      ],
       "zoneNames": [
         "UW02 Hard 4"
       ]
@@ -10254,6 +10998,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW02"
       ],
       "zoneNames": [
         "UW02 Hard 2"
@@ -10290,6 +11037,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW02"
+      ],
       "zoneNames": [
         "UW02 Hard 1"
       ]
@@ -10324,6 +11074,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW02"
       ],
       "zoneNames": [
         "UW02 Hard 0"
@@ -10360,6 +11113,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW02"
+      ],
       "zoneNames": [
         "UW02 Hard 5"
       ]
@@ -10394,6 +11150,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW02"
       ],
       "zoneNames": [
         "UW02 Hard 3"
@@ -10430,6 +11189,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW03"
+      ],
       "zoneNames": [
         "UW03 Hard 4"
       ]
@@ -10464,6 +11226,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW03"
       ],
       "zoneNames": [
         "UW03 Hard 2"
@@ -10500,6 +11265,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW03"
+      ],
       "zoneNames": [
         "UW03 Hard 3"
       ]
@@ -10534,6 +11302,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW03"
       ],
       "zoneNames": [
         "UW03 Hard 1"
@@ -10570,6 +11341,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW03"
+      ],
       "zoneNames": [
         "UW03 Hard 0"
       ]
@@ -10604,6 +11378,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW03"
       ],
       "zoneNames": [
         "UW03 Hard 5"
@@ -10640,6 +11417,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW04"
+      ],
       "zoneNames": [
         "UW04 Hard 1"
       ]
@@ -10674,6 +11454,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW04"
       ],
       "zoneNames": [
         "UW04 Hard 4"
@@ -10710,6 +11493,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW04"
+      ],
       "zoneNames": [
         "UW04 Hard 2"
       ]
@@ -10744,6 +11530,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW04"
       ],
       "zoneNames": [
         "UW04 Hard 5"
@@ -10780,6 +11569,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW04"
+      ],
       "zoneNames": [
         "UW04 Hard 0"
       ]
@@ -10814,6 +11606,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW04"
       ],
       "zoneNames": [
         "UW04 Hard 3"
@@ -10850,6 +11645,9 @@
       "worlds": [
         "Underwater"
       ],
+      "areas": [
+        "UW06"
+      ],
       "zoneNames": [
         "UW06 Hard 0"
       ]
@@ -10884,6 +11682,9 @@
       ],
       "worlds": [
         "Underwater"
+      ],
+      "areas": [
+        "UW07"
       ],
       "zoneNames": [
         "UW07 Hard 0"
