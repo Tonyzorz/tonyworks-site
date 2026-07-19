@@ -74,6 +74,20 @@ const ATYPE  = ["TotalKills","BossKills","GoldEarned","RunsCompleted","LevelReac
 const AMODE   = ["Any","Normal","Hard"];
 const AREWARD = ["BonusATK","BonusHP","BonusDEF","BonusAGI","BonusLUC","UnlockCharacter"];
 const nz = (n) => n && n !== 0;
+// Mirrors Core/NumberFormat.Abbreviate: 999, 1.5K, 12.3M, 1.2B, 3.4T. Floors (never rounds up
+// across a tier edge) and drops a trailing ".0", exactly like the game's Trim().
+const abbr = (n) => {
+  const neg = n < 0;
+  const v = Math.abs(Number(n) || 0);
+  const trim = (x) => String(Math.floor(x * 10) / 10);
+  let s;
+  if      (v >= 1e12) s = trim(v / 1e12) + "T";
+  else if (v >= 1e9)  s = trim(v / 1e9)  + "B";
+  else if (v >= 1e6)  s = trim(v / 1e6)  + "M";
+  else if (v >= 1e3)  s = trim(v / 1e3)  + "K";
+  else                s = String(Math.floor(v));
+  return (neg ? "-" : "") + s;
+};
 const d1 = (n) => { const r = Math.round(n * 10) / 10; return Number.isInteger(r) ? r.toFixed(0) : r.toFixed(1); };
 
 const itemById = new Map();
@@ -89,11 +103,13 @@ const items = loadCategory("Items").map((a) => {
     buyPrice: num(t, "buyPrice"), maxCopies: num(t, "maxCopies"), effects: []
   };
   const e = [];
-  if (nz(o.bonusHP)) e.push("HP +" + o.bonusHP);
-  if (nz(o.bonusATK)) e.push("ATK +" + o.bonusATK);
-  if (nz(o.bonusDEF)) e.push("DEF +" + o.bonusDEF);
-  if (nz(o.bonusAGI)) e.push("AGI +" + o.bonusAGI);
-  if (nz(o.bonusLUC)) e.push("LUC +" + o.bonusLUC);
+  // Abbreviated, mirroring Core/NumberFormat.Abbreviate in the game so the wiki reads identically
+  // ("HP +3.3M", not "HP +3300000"). The raw bonus* fields above stay exact for tooling/compare.
+  if (nz(o.bonusHP)) e.push("HP +" + abbr(o.bonusHP));
+  if (nz(o.bonusATK)) e.push("ATK +" + abbr(o.bonusATK));
+  if (nz(o.bonusDEF)) e.push("DEF +" + abbr(o.bonusDEF));
+  if (nz(o.bonusAGI)) e.push("AGI +" + abbr(o.bonusAGI));
+  if (nz(o.bonusLUC)) e.push("LUC +" + abbr(o.bonusLUC));
   const P = (k) => num(t, k);
   if (P("bonusHPPercent") > 0) e.push("HP +" + Math.round(P("bonusHPPercent")) + "%");
   if (P("bonusATKPercent") > 0) e.push("ATK +" + Math.round(P("bonusATKPercent")) + "%");
