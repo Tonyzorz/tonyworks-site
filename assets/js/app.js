@@ -157,13 +157,31 @@
       .filter(function (e) { var k = e.name; if (seen[k]) return false; seen[k] = 1; return true; });
   }
   function bossList(d) { return d.bosses.slice().sort(function (a, b) { return a.level - b.level; }); }
-  function itemList(d) {
-    var rank = { Common: 0, Uncommon: 1, Rare: 2, Epic: 3, Legendary: 4 };
-    return d.items.slice().sort(function (a, b) {
-      var ra = rank[a.rarity] == null ? 9 : rank[a.rarity], rb = rank[b.rarity] == null ? 9 : rank[b.rarity];
-      if (ra !== rb) return ra - rb;
-      var pa = a.buyPrice || 0, pb = b.buyPrice || 0; if (pa !== pb) return pa - pb;
+  function itemPrimaryStat(i) {
+    if (i.type === "Weapon") return Number(i.bonusATK) || 0;
+    if (i.type === "Armor" || i.type === "Helmet" || i.type === "Shoes") return Number(i.bonusHP) || 0;
+    return Math.max(Number(i.bonusATK) || 0, Number(i.bonusHP) || 0);
+  }
+  function itemPrimaryLabel(i) {
+    if (i.type === "Weapon") return "ATK";
+    if (i.type === "Armor" || i.type === "Helmet" || i.type === "Shoes") return "HP";
+    return (Number(i.bonusATK) || 0) >= (Number(i.bonusHP) || 0) ? "ATK" : "HP";
+  }
+  function itemStatCompare(field, direction) {
+    return function (a, b) {
+      var av = field === "primary" ? itemPrimaryStat(a) : Number(a[field]) || 0;
+      var bv = field === "primary" ? itemPrimaryStat(b) : Number(b[field]) || 0;
+      if (av !== bv) return (av - bv) * direction;
       return String(a.name).localeCompare(String(b.name));
+    };
+  }
+  function itemList(d) {
+    var types = { Weapon: 0, Armor: 1, Helmet: 2, Shoes: 3, Accessory: 4 };
+    return d.items.slice().sort(function (a, b) {
+      var ta = types[a.type] == null ? 9 : types[a.type], tb = types[b.type] == null ? 9 : types[b.type];
+      if (ta !== tb) return ta - tb;
+      var statDelta = itemPrimaryStat(a) - itemPrimaryStat(b);
+      return statDelta || String(a.name).localeCompare(String(b.name));
     });
   }
   function charList(d) {
@@ -479,17 +497,54 @@
       search: function (i) { return i.name + " " + i.id + " " + (i.setName || ""); },
       filters: [
         { key: "mode",   label: "Mode",   values: ["Normal", "Hard"], get: function (i) { return i.isHardModeItem ? "Hard" : "Normal"; } },
-        { key: "rarity", label: "Rarity", values: rarities,           get: function (i) { return i.rarity; } }
+        { key: "rarity", label: "Rarity", values: rarities,           get: function (i) { return i.rarity; } },
+        // Where can I get this? Matches field drops, boss rewards AND shop stock for the area.
+        { key: "area", label: "Area",
+          options: (d.areas || []).map(function (a) {
+            return { value: a.code, label: a.name + " (" + a.code + ")", group: a.world };
+          }),
+          get: function (i) { return (i.dropAreas || []).concat(i.shopAreas || []); } }
+      ],
+      defaultSort: "primary-asc",
+      sorts: [
+        { key: "primary-asc", label: "Main stat: Low to high", compare: itemStatCompare("primary", 1) },
+        { key: "atk-asc", label: "ATK: Low to high", compare: itemStatCompare("bonusATK", 1) },
+        { key: "atk-desc", label: "ATK: High to low", compare: itemStatCompare("bonusATK", -1) },
+        { key: "hp-asc", label: "HP: Low to high", compare: itemStatCompare("bonusHP", 1) },
+        { key: "hp-desc", label: "HP: High to low", compare: itemStatCompare("bonusHP", -1) }
       ],
       card: function (i) {
+        var mainLabel = itemPrimaryLabel(i), mainValue = itemPrimaryStat(i);
         var eff = (i.effects || []).slice(0, 2).join(" · ");
-        return '<a class="card rar" href="items.html?id=' + encodeURIComponent(i.id) + '" style="border-top-color:' + rarColor(i.rarity) + '">' +
+        return '<a class="card rar item-card" href="items.html?id=' + encodeURIComponent(i.id) + '" style="border-top-color:' + rarColor(i.rarity) + '">' +
           thumb(i.image, i.name) + '<div class="body"><h4>' + esc(i.name) + "</h4>" +
           '<div class="meta"><span style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span> &#183; " + esc(i.type) + "</div>" +
+          '<div class="item-main-stat"><span>' + esc(mainLabel) + '</span><strong>' + fmt(mainValue) + '</strong></div>' +
           (eff ? '<div class="meta" style="margin-top:.25rem">' + esc(eff) + "</div>" : "") + "</div></a>";
       }
     });
   };
+  // "Where do I farm this?" — the areas an item can be obtained in, split by how. Each chip
+  // links to that area's map page, which lists its full drop table.
+  function itemAreaSection(d, i) {
+    var byCode = {}; (d.areas || []).forEach(function (a) { byCode[a.code] = a; });
+    var drops = (i.dropAreas || []), shops = (i.shopAreas || []);
+    if (!drops.length && !shops.length) return "";
+    function chips(codes, tag) {
+      return codes.map(function (c) {
+        var a = byCode[c]; if (!a) return "";
+        var label = esc(a.name) + " <small>" + esc(c) + "</small>" + (tag ? " <small>" + tag + "</small>" : "");
+        return '<span class="fx">' + (a.mapId
+          ? '<a href="maps.html?id=' + encodeURIComponent(a.mapId) + '">' + label + "</a>"
+          : label) + "</span>";
+      }).join("");
+    }
+    // Shop-only areas are listed separately so "drops here" stays truthful.
+    var shopOnly = shops.filter(function (c) { return drops.indexOf(c) < 0; });
+    return '<div class="section-title">Where to find it</div><div class="effect-list">' +
+      chips(drops, "") + chips(shopOnly, "shop") + "</div>";
+  }
+
   // Permanent collection bonus by copies owned (1..20), with milestone jumps at 10 (50%) and 20
   // (100%) — mirrors PermanentProgressManager.ItemPermRateByCopy.
   var PERM_RATES = [2, 5, 8, 11, 14, 18, 22, 26, 30, 50, 53, 56, 59, 62, 65, 68, 72, 76, 80, 100];
@@ -555,6 +610,7 @@
       "</div>" +
       itemPermTable(i) +
       setItems +
+      itemAreaSection(d, i) +
       (droppedBy.length ? '<div class="section-title">Dropped by</div><div class="effect-list">' +
         droppedBy.map(function (e) {
           var dr = (e.drops || []).filter(function (x) { return x.itemId === i.id; })[0];
@@ -610,7 +666,12 @@
     "Desert":     { icon: "&#127964;", color: "#d9a441" },
     "Underwater": { icon: "&#127754;", color: "#3aa0e0" },
     "Void Hunt":  { icon: "&#128371;",  color: "#8a5cf0" },
-    "World Gate": { icon: "&#128682;", color: "#8a8f98" }
+    "World Gate": { icon: "&#128682;", color: "#8a8f98" },
+    // World Gate branch regions, reached through the hub south of Grassland.
+    "Japan":      { icon: "&#9962;",    color: "#e0607a" },
+    "Greek":      { icon: "&#127963;", color: "#5bc8d8" },
+    "Military":   { icon: "&#128737;", color: "#7d8b5a" },
+    "Heaven":     { icon: "&#10024;",  color: "#f0d264" }
   };
   // Real in-game connections per world (documented route). Maps to MapData asset ids.
   var WORLD_ROUTES = {
@@ -625,8 +686,96 @@
       "SandstoneTunnel_Map": ["DesertBossRoom_Map"], "AncientBurialPassage_Map": ["DesertBossRoom_Map"], "SunBuriedCave_Map": ["DesertBossRoom_Map"] } },
     "Underwater": { root: "ShallowCoralReef_Map", edges: {
       "ShallowCoralReef_Map": ["CoralMaze_Map", "SunkenTempleGate_Map", "DeepTrench_Map"],
-      "CoralMaze_Map": ["GiantClamBossRoom_Map"], "DeepTrench_Map": ["MainUnderwaterBossRoom_Map"] } }
+      "CoralMaze_Map": ["GiantClamBossRoom_Map"], "DeepTrench_Map": ["MainUnderwaterBossRoom_Map"] } },
+    // World Gate branch — each region is entered from the CV_01 hub and returns to it.
+    "Japan": { root: "JapanVillage_Map", edges: {
+      "JapanVillage_Map": ["JapanTerraces_Map"], "JapanTerraces_Map": ["JapanShrine_Map"],
+      "JapanShrine_Map": ["JapanPagoda_Map"] } },
+    "Greek": { root: "GreekHarbor_Map", edges: {
+      "GreekHarbor_Map": ["GreekAgora_Map"],
+      "GreekAgora_Map": ["GreekLabyrinth_Map", "GreekAmphitheatre_Map", "GreekGrotto_Map"],
+      "GreekLabyrinth_Map": ["GreekTemple_Map"], "GreekAmphitheatre_Map": ["GreekTemple_Map"],
+      "GreekGrotto_Map": ["GreekTemple_Map"] } },
+    "Military": { root: "MilitaryCheckpoint_Map", edges: {
+      "MilitaryCheckpoint_Map": ["MilitaryDepot_Map"], "MilitaryDepot_Map": ["MilitaryTrench_Map"],
+      "MilitaryTrench_Map": ["MilitaryMinefield_Map"], "MilitaryMinefield_Map": ["MilitaryAirfield_Map"],
+      "MilitaryAirfield_Map": ["MilitaryBunker_Map"], "MilitaryBunker_Map": ["MilitaryYard_Map"],
+      "MilitaryYard_Map": ["MilitaryHQ_Map"] } },
+    "Heaven": { root: "HeavenAscension_Map", edges: {} }
   };
+  // Route prefixes are shared by a map's normal and hard-mode ZoneData assets.
+  // Keeping this map-to-route table explicit prevents similarly named maps from being
+  // grouped together accidentally (for example, Greek Temple and Sunken Temple Gate).
+  var MAP_ZONE_ROUTES = {
+    "Grassland_Map": "GL01",
+    "ForestRoad_Map": "FR01", "DarkForest_Map": "FR02", "DeepForest_Map": "FR03", "AshenForest_Map": "FR04",
+    "VolcanicApproach_Map": "VO01", "LavaRiverPass_Map": "VO02", "LavaCore_Map": "VO03",
+    "DesertOutskirts_Map": "DS01", "DesertCrossroads_Map": "DS02", "SunBuriedCave_Map": "DS03",
+    "SandstoneTunnel_Map": "DS04", "AncientBurialPassage_Map": "DS05", "DesertBossRoom_Map": "DS06",
+    "ShallowCoralReef_Map": "UW01", "CoralMaze_Map": "UW02", "SunkenTempleGate_Map": "UW03",
+    "DeepTrench_Map": "UW04", "GiantClamBossRoom_Map": "UW06", "MainUnderwaterBossRoom_Map": "UW07",
+    "VoidHunt_Map": "VoidHunt"
+  };
+  // data.json ships an `areas` table (region code + its map) built from the setup tools, so prefer
+  // it — a new region added there flows straight through to the site with no second table to
+  // update here. MAP_ZONE_ROUTES stays as a fallback for older data.json builds.
+  function routeForMap(d, mapId) {
+    var areas = (d && d.areas) || [];
+    for (var i = 0; i < areas.length; i++) if (areas[i].mapId === mapId) return areas[i].code;
+    return MAP_ZONE_ROUTES[mapId] || null;
+  }
+  function zonesForMap(d, m) {
+    var route = m && routeForMap(d, m.id);
+    if (!route) return [];
+    return (d.zones || []).filter(function (z) {
+      if (route === "VoidHunt") return z.id === "VoidHunt_Zone" || z.id.indexOf("VoidHunt_") === 0;
+      return z.id.indexOf(route + "_Zone") === 0 || z.id.indexOf(route + "_HM_Z") === 0;
+    }).sort(function (a, b) {
+      var ah = /_HM_Z/.test(a.id), bh = /_HM_Z/.test(b.id);
+      if (ah !== bh) return ah ? 1 : -1;
+      return a.minEnemyLevel - b.minEnemyLevel || a.name.localeCompare(b.name);
+    });
+  }
+  function mapEncounters(d, m) {
+    var zones = zonesForMap(d, m), seen = {}, enemies = [];
+    zones.forEach(function (z) {
+      (z.enemies || []).forEach(function (ze) {
+        var e = d._enemyById[ze.enemyId];
+        if (!e) return;
+        if (!seen[e.id]) {
+          seen[e.id] = { enemy: e, zones: [], hard: /_H$/.test(e.id) || /_HM_Z/.test(z.id) };
+          enemies.push(seen[e.id]);
+        }
+        if (seen[e.id].zones.indexOf(z.name) < 0) seen[e.id].zones.push(z.name);
+      });
+    });
+    return { zones: zones, enemies: enemies };
+  }
+  function mapDropItems(d, encounters) {
+    var byId = {}, rows = [];
+    encounters.enemies.forEach(function (entry) {
+      (entry.enemy.drops || []).forEach(function (drop) {
+        var row = byId[drop.itemId];
+        if (!row) {
+          row = byId[drop.itemId] = { item: d._itemById[drop.itemId], id: drop.itemId, name: drop.itemName || drop.itemId, sources: [] };
+          rows.push(row);
+        }
+        row.sources.push({ enemy: entry.enemy, chance: drop.chance, hard: entry.hard });
+      });
+    });
+    return rows.sort(function (a, b) { return a.name.localeCompare(b.name); });
+  }
+  function bossDropItems(d, bosses) {
+    var rows = [];
+    bosses.forEach(function (b) {
+      [[b.dropItemId, "Normal"], [b.hardModeDropItemId, "Hard"], [b.bonusDropItemId, "Bonus"]].forEach(function (x) {
+        if (!x[0]) return;
+        var item = d._itemById[x[0]];
+        rows.push({ item: item, id: x[0], name: item ? item.name : x[0], boss: b, mode: x[1] });
+      });
+    });
+    return rows;
+  }
   function worldStats(d, w) {
     var ms = d.maps.filter(function (m) { return m.world === w; });
     var ids = ms.map(function (m) { return m.id; });
@@ -649,7 +798,8 @@
   PAGES.maps = function (app, d) {
     var id = param("id"); if (id) return mapDetail(app, d, d._mapById[id]);
     var world = param("world"); if (world) return worldView(app, d, world);
-    var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt"];
+    var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt",
+                  "Japan", "Greek", "Military", "Heaven"];
     app.innerHTML =
       pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", d.maps.length) +
       '<div class="view-switch" role="group" aria-label="World view"><button type="button" data-view="map">Map</button><button type="button" data-view="list">List</button></div>' +
@@ -666,8 +816,10 @@
         '<div class="wm-conn h" style="grid-area:h4"></div>' +
         '<div class="wm-cell" style="grid-area:desert">' + wnode(d, "Desert") + '</div>' +
         '<div class="wm-conn v" style="grid-area:vd"></div>' +
-        '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate", { locked: true }) + '</div>' +
-      '</div></div><p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, the World Gate south. Void Hunt is a secret arena reached from Volcanic.</p></div>' +
+        '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate") + '</div>' +
+      '</div></div><p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, the World Gate south. Void Hunt is a secret arena reached from Volcanic. Through the World Gate lie four more regions &#8212; ' +
+      ['Japan', 'Greek', 'Military', 'Heaven'].map(function (w) { return '<a href="maps.html?world=' + encodeURIComponent(w) + '">' + w + '</a>'; }).join(', ') +
+      ' &#8212; listed in full below.</p></div>' +
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) { return wnode(d, w, { secret: w === "Void Hunt" }); }).join("") + '</div>';
     var stored; try { stored = localStorage.getItem("tw-map-view"); } catch (_) {}
     var view = stored || (window.innerWidth <= 640 ? "list" : "map");
@@ -707,7 +859,10 @@
     s.maps.forEach(function (m) { if (depth[m.id] == null) (tiers[maxD + 1] = tiers[maxD + 1] || []).push(m); });
     function mnode(m) {
       var mb = d.bosses.filter(function (b) { return b.mapId === m.id; });
-      var sub = mb.length ? ("&#9760;&#65039; " + mb.map(function (b) { return esc(b.name); }).join(", ")) : "No boss";
+      var me = mapEncounters(d, m), drops = mapDropItems(d, me);
+      var facts = [me.enemies.length + " monster" + (me.enemies.length !== 1 ? "s" : ""), drops.length + " item drop" + (drops.length !== 1 ? "s" : "")];
+      if (mb.length) facts.push(mb.length + " boss" + (mb.length !== 1 ? "es" : ""));
+      var sub = facts.join(" &#183; ");
       return '<a class="mnode" data-mid="' + esc(m.id) + '" href="maps.html?id=' + encodeURIComponent(m.id) + '" style="--wc:' + meta.color + '">' +
         thumb(m.image, m.name) +
         '<div class="mnode-body"><h4>' + esc(m.name) + '</h4><div class="meta">' + sub + '</div></div></a>';
@@ -770,19 +925,76 @@
   function mapDetail(app, d, m) {
     if (!m) return notFound(app, "maps.html", "Maps");
     var bosses = d.bosses.filter(function (b) { return b.mapId === m.id; });
+    var encounters = mapEncounters(d, m), zones = encounters.zones;
+    var normalZones = zones.filter(function (z) { return !/_HM_Z/.test(z.id); });
+    var hardZones = zones.filter(function (z) { return /_HM_Z/.test(z.id); });
+    var drops = mapDropItems(d, encounters), bossDrops = bossDropItems(d, bosses);
+    var levelZones = normalZones.length ? normalZones : zones;
+    var minLevel = levelZones.length ? Math.min.apply(null, levelZones.map(function (z) { return z.minEnemyLevel; })) : 0;
+    var maxLevel = levelZones.length ? Math.max.apply(null, levelZones.map(function (z) { return z.maxEnemyLevel; })) : 0;
+    var totalCells = m.walkableCells + m.blockedCells;
+    var walkPct = totalCells ? Math.round(m.walkableCells / totalCells * 100) + "%" : "--";
+    function sectionHead(kicker, title, count, copy) {
+      return '<header class="map-section-head"><div><span class="section-kicker">' + esc(kicker) + '</span><h2>' + esc(title) + '</h2></div>' +
+        (count != null ? '<span class="map-section-count">' + fmt(count) + '</span>' : '') +
+        (copy ? '<p>' + esc(copy) + '</p>' : '') + '</header>';
+    }
+    function zoneCard(z) {
+      var hard = /_HM_Z/.test(z.id), names = (z.enemies || []).map(function (ze) { return ze.enemyName || ze.enemyId; });
+      return '<article class="map-zone-card" style="--zone-color:' + esc(z.color || "var(--accent)") + '">' +
+        '<div class="map-zone-top"><div><h3>' + esc(z.name) + '</h3><span>Level ' + fmt(z.minEnemyLevel) + '&#8211;' + fmt(z.maxEnemyLevel) + '</span></div>' +
+        '<span class="pill">' + (hard ? 'Hard' : 'Normal') + '</span></div>' +
+        '<p>' + (names.length ? esc(names.join(", ")) : 'No regular encounters') + '</p></article>';
+    }
+    function enemyCard(entry) {
+      var e = entry.enemy;
+      return '<a class="map-entity-card" href="monsters.html?id=' + encodeURIComponent(e.id) + '">' + thumb(e.image, e.name) +
+        '<div><h3>' + esc(e.name) + '</h3><p>Level ' + fmt(e.minLevel) + '&#8211;' + fmt(e.maxLevel) + ' &#183; ' + (e.drops || []).length + ' drop' + ((e.drops || []).length !== 1 ? 's' : '') + '</p>' +
+        '<span>' + esc(entry.zones.join(", ")) + '</span></div><b aria-hidden="true">&#8594;</b></a>';
+    }
+    function dropCard(row) {
+      var item = row.item;
+      return '<article class="map-drop-card">' + thumb(item && item.image, row.name) + '<div><h3>' +
+        (item ? link("items.html", item.id, item.name) : esc(row.name)) + '</h3>' +
+        (item ? '<p><span style="color:' + rarColor(item.rarity) + '">' + esc(item.rarity) + '</span> &#183; ' + esc(item.type) + '</p>' : '') +
+        '<div class="map-drop-sources">' + row.sources.map(function (s) {
+          return '<span>' + link("monsters.html", s.enemy.id, s.enemy.name) + ' <strong>' + esc(s.chance) + '%</strong>' + (s.hard ? ' <small>Hard</small>' : '') + '</span>';
+        }).join('') + '</div></div></article>';
+    }
+    function bossCard(b) {
+      return '<a class="map-entity-card boss" href="bosses.html?id=' + encodeURIComponent(b.id) + '">' + thumb(b.image, b.name) +
+        '<div><h3>' + esc(b.name) + '</h3><p>Level ' + fmt(b.level) + ' &#183; ' + fmt(b.hp) + ' HP &#183; ' + fmt(b.atk) + ' ATK</p>' +
+        '<span>' + (b.dropItemName ? 'Reward: ' + esc(b.dropItemName) : 'Open boss details') + '</span></div><b aria-hidden="true">&#8594;</b></a>';
+    }
+    function bossDropCard(row) {
+      var item = row.item;
+      return '<article class="map-drop-card boss-drop">' + thumb(item && item.image, row.name) + '<div><h3>' +
+        (item ? link("items.html", item.id, item.name) : esc(row.name)) + '</h3>' +
+        (item ? '<p><span style="color:' + rarColor(item.rarity) + '">' + esc(item.rarity) + '</span> &#183; ' + esc(item.type) + '</p>' : '') +
+        '<div class="map-drop-sources"><span>' + link("bosses.html", row.boss.id, row.boss.name) + ' <strong>' + esc(row.mode) + '</strong></span></div>' +
+        '</div></article>';
+    }
     app.innerHTML =
       '<a class="back" href="maps.html' + (m.world ? "?world=" + encodeURIComponent(m.world) : "") + '">&#8592; ' + esc(m.world || "Maps") + "</a>" +
-      "<h1>" + esc(m.name) + "</h1>" +
-      (m.world ? '<div class="tags"><span class="pill">' + esc(m.world) + "</span></div>" : "") +
-      '<div class="map-art">' +
-        (m.image ? '<img src="' + IMG_BASE + esc(m.image) + '" alt="' + esc(m.name) + '">' : '<div class="empty">No map art available.</div>') +
-      "</div>" +
-      '<div class="statgrid">' +
-        sb("Walkable tiles", fmt(m.walkableCells)) + sb("Blocked tiles", fmt(m.blockedCells)) +
-        sb("Grid", m.gridWidth + "&#215;" + m.gridHeight) +
-      "</div>" +
-      (bosses.length ? '<div class="section-title">Bosses here</div><div class="effect-list">' +
-        bosses.map(function (b) { return '<span class="fx">' + link("bosses.html", b.id, b.name) + "</span>"; }).join("") + "</div>" : "");
+      '<section class="map-detail-hero"><div><span class="section-kicker">Map dossier</span><h1>' + esc(m.name) + '</h1>' +
+        '<div class="tags">' + (m.world ? '<span class="pill">' + esc(m.world) + '</span>' : '') +
+        (minLevel ? '<span class="pill">Level ' + fmt(minLevel) + '&#8211;' + fmt(maxLevel) + '</span>' : '') + '</div>' +
+        '<p>Review this map\'s zones, encounters, regular item drops, bosses, and exclusive boss rewards before choosing your route.</p></div>' +
+        '<div class="map-art">' + (m.image ? '<img src="' + IMG_BASE + esc(m.image) + '" alt="' + esc(m.name) + '">' : '<div class="empty">No map art available.</div>') + '</div></section>' +
+      '<section class="map-overview" aria-label="Map overview">' +
+        sb("Zones", zones.length) + sb("Monsters", encounters.enemies.length) + sb("Item drops", drops.length) + sb("Bosses", bosses.length) +
+        sb("Walkable", walkPct) + sb("Grid", m.gridWidth + "&#215;" + m.gridHeight) + '</section>' +
+      (zones.length ? '<section class="map-detail-section">' + sectionHead("Local areas", "Zones", zones.length, normalZones.length + " normal and " + hardZones.length + " hard-mode zones") +
+        '<div class="map-zone-grid">' + zones.map(zoneCard).join('') + '</div></section>' : '') +
+      (encounters.enemies.length ? '<section class="map-detail-section">' + sectionHead("Encounters", "Monsters", encounters.enemies.length, "Every regular enemy found across this map's normal and hard-mode zones") +
+        '<div class="map-entity-grid">' + encounters.enemies.map(enemyCard).join('') + '</div></section>' : '') +
+      (drops.length ? '<section class="map-detail-section monster-drops">' + sectionHead("Regular loot", "Monster item drops", drops.length, "Items earned from regular encounters on this map") +
+        '<div class="map-drop-grid">' + drops.map(dropCard).join('') + '</div></section>' : '') +
+      (bosses.length ? '<section class="map-detail-section">' + sectionHead("Map guardians", "Bosses", bosses.length, "Boss encounters assigned to this map") +
+        '<div class="map-entity-grid">' + bosses.map(bossCard).join('') + '</div></section>' : '') +
+      (bossDrops.length ? '<section class="map-detail-section boss-drops">' + sectionHead("Exclusive loot", "Boss item drops", bossDrops.length, "Normal, hard-mode, and bonus rewards are kept separate from monster drops") +
+        '<div class="map-drop-grid">' + bossDrops.map(bossDropCard).join('') + '</div></section>' : '') +
+      (!zones.length && !bosses.length ? '<div class="empty map-empty">Detailed encounter data is not available for this map yet.</div>' : '');
   }
 
   /* ---- Characters ---- */
@@ -925,6 +1137,7 @@
   function listView(app, d, cfg) {
     var active = {}; (cfg.filters || []).forEach(function (f) { active[f.key] = null; });
     var q = "", tabIdx = 0;
+    var sortKey = cfg.defaultSort || (cfg.sorts && cfg.sorts.length ? cfg.sorts[0].key : "");
     // Remember tab / search / filters / scroll per page so Back returns to the same view.
     var SKEY = "tw-list:" + cfg.page;
     var saved = {}, back = isBackNav();
@@ -935,6 +1148,7 @@
       if (cfg.tabs && typeof saved.tab === "number" && saved.tab >= 0 && saved.tab < cfg.tabs.length) tabIdx = saved.tab;
       if (typeof saved.q === "string") q = saved.q;
       if (saved.filters) for (var fk in saved.filters) if (fk in active) active[fk] = saved.filters[fk];
+      if (cfg.sorts && cfg.sorts.some(function (s) { return s.key === saved.sort; })) sortKey = saved.sort;
     }
     var tabsHtml = cfg.tabs ? '<div class="tabs" id="tabs">' + cfg.tabs.map(function (t, i) {
       return '<button class="tab' + (i === tabIdx ? " active" : "") + '" data-i="' + i + '">' + esc(t.label) + "</button>";
@@ -944,9 +1158,30 @@
       '<div class="toolbar">' +
         (cfg.search ? '<label class="search-field"><span aria-hidden="true">&#128269;</span><input type="search" id="q" placeholder="Search ' + esc(cfg.title.toLowerCase()) + '&#8230;" aria-label="Search ' + esc(cfg.title.toLowerCase()) + '"></label>' : "") +
         (cfg.filters || []).map(function (f) {
-          return '<select data-key="' + f.key + '"><option value="">' + f.label + ': All</option>' +
-            f.values.map(function (v) { return '<option value="' + esc(v) + '"' + (active[f.key] === v ? " selected" : "") + ">" + esc(v) + "</option>"; }).join("") + "</select>";
+          var opts;
+          if (f.options) {
+            // Grouped form: [{value,label,group}] — used by the Area filter so 40 regions stay
+            // readable, grouped under their world.
+            var order = [], byGroup = {};
+            f.options.forEach(function (o) {
+              var g = o.group || "";
+              if (!byGroup[g]) { byGroup[g] = []; order.push(g); }
+              byGroup[g].push(o);
+            });
+            opts = order.map(function (g) {
+              var inner = byGroup[g].map(function (o) {
+                return '<option value="' + esc(o.value) + '"' + (active[f.key] === o.value ? " selected" : "") + ">" + esc(o.label) + "</option>";
+              }).join("");
+              return g ? '<optgroup label="' + esc(g) + '">' + inner + "</optgroup>" : inner;
+            }).join("");
+          } else {
+            opts = f.values.map(function (v) { return '<option value="' + esc(v) + '"' + (active[f.key] === v ? " selected" : "") + ">" + esc(v) + "</option>"; }).join("");
+          }
+          return '<select data-key="' + f.key + '"><option value="">' + f.label + ': All</option>' + opts + "</select>";
         }).join("") +
+        (cfg.sorts ? '<select data-sort aria-label="Sort ' + esc(cfg.title.toLowerCase()) + '">' + cfg.sorts.map(function (s) {
+          return '<option value="' + esc(s.key) + '"' + (s.key === sortKey ? ' selected' : '') + '>Sort: ' + esc(s.label) + '</option>';
+        }).join('') + '</select>' : '') +
         '<span class="result-count" id="rc"></span>' +
       "</div></div>" +
       '<div class="grid" id="grid"></div>';
@@ -959,10 +1194,18 @@
         if (q && cfg.search(x).toLowerCase().indexOf(q) < 0) return false;
         for (var key in active) if (active[key] && cfg.filters) {
           var f = cfg.filters.filter(function (ff) { return ff.key === key; })[0];
-          if (f && f.get(x) !== active[key]) return false;
+          if (!f) continue;
+          var got = f.get(x);
+          // get() may return a LIST (an item drops in several areas) — match if any entry hits.
+          if (Object.prototype.toString.call(got) === "[object Array]") { if (got.indexOf(active[key]) < 0) return false; }
+          else if (got !== active[key]) return false;
         }
         return true;
       });
+      if (cfg.sorts && sortKey) {
+        var sorter = cfg.sorts.filter(function (s) { return s.key === sortKey; })[0];
+        if (sorter && sorter.compare) out = out.slice().sort(sorter.compare);
+      }
       grid.innerHTML = out.length ? out.map(function (x) { return cfg.card(x, tab); }).join("") : '<div class="empty" style="grid-column:1/-1">No matches.</div>';
       rc.textContent = out.length + " / " + base.length;
     }
@@ -971,6 +1214,8 @@
     Array.prototype.forEach.call(app.querySelectorAll("select[data-key]"), function (sel) {
       sel.addEventListener("change", function () { active[sel.getAttribute("data-key")] = sel.value || null; apply(); });
     });
+    var sortSelect = app.querySelector("select[data-sort]");
+    if (sortSelect) sortSelect.addEventListener("change", function () { sortKey = sortSelect.value; apply(); });
     Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (btn) {
       btn.addEventListener("click", function () {
         tabIdx = +btn.getAttribute("data-i");
@@ -980,7 +1225,7 @@
     });
     // Persist the view (incl. scroll) right before navigating into a detail page.
     window.addEventListener("pagehide", function () {
-      try { sessionStorage.setItem(SKEY, JSON.stringify({ tab: tabIdx, q: q, filters: active, scrollY: window.pageYOffset || 0 })); } catch (e) {}
+      try { sessionStorage.setItem(SKEY, JSON.stringify({ tab: tabIdx, q: q, filters: active, sort: sortKey, scrollY: window.pageYOffset || 0 })); } catch (e) {}
     });
     apply();
     // Only restore scroll when returning via Back/Forward; fresh visits start at the top.

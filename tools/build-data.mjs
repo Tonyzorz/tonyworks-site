@@ -229,6 +229,12 @@ function mapWorld(id) {
   if (/^Grassland/.test(id))                      return "Grassland";
   if (/WorldGate/.test(id))                       return "World Gate";
   if (/Void/.test(id))                            return "Void Hunt";
+  // World Gate branch regions. These MUST be tested before the generic checks below —
+  // GreekTemple_Map otherwise matches /Temple/ and lands in "Underwater".
+  if (/^Japan/.test(id))                          return "Japan";
+  if (/^Greek/.test(id))                          return "Greek";
+  if (/^Military/.test(id))                       return "Military";
+  if (/^Heaven/.test(id))                         return "Heaven";
   if (/Forest/.test(id))                          return "Forest";
   if (/Volcanic|Lava/.test(id))                   return "Volcanic";
   if (/Desert|Sandstone|Burial|SunBuriedCave/.test(id)) return "Desert";
@@ -246,11 +252,42 @@ const maps = loadCategory("Maps").map((a) => {
 
 // Attach spawn worlds + zone names to each enemy (LIVE zones only: GL/FR/VO/DS/UW normal
 // {WORLD}##_Zone# + hard {WORLD}##_HM_Z#, plus VoidHunt). Legacy/duplicate zones are ignored.
-const WORLD = { GL: "Grassland", FR: "Forest", VO: "Volcanic", DS: "Desert", UW: "Underwater" };
+const WORLD = {
+  GL: "Grassland", FR: "Forest", VO: "Volcanic", DS: "Desert", UW: "Underwater",
+  JP: "Japan", GR: "Greek", ML: "Military", HV: "Heaven"   // World Gate branch
+};
 function zoneWorld(zid) {
-  const m = zid.match(/^(GL|FR|VO|DS|UW)\d+_(?:Zone|HM_Z)\d+/);
+  const m = zid.match(/^(GL|FR|VO|DS|UW|JP|GR|ML|HV)\d+_(?:Zone|HM_Z)\d+/);
   if (m) return WORLD[m[1]];
   if (/^VoidHunt/.test(zid)) return "Void Hunt";
+  return null;
+}
+
+// ── AREAS ────────────────────────────────────────────────────────────────────────────────
+// One area per route region code (GL01, FR02, VO01, JP03 …). This is the granularity players
+// actually think in ("what drops in Forest-02?"), and a zone id already encodes it.
+// Region code -> map asset id, read off each setup tool's MapAssetPath/ZonePaths pair.
+const REGION_MAP = {
+  GL01: "Grassland_Map",
+  FR01: "ForestRoad_Map", FR02: "DarkForest_Map", FR03: "DeepForest_Map", FR04: "AshenForest_Map",
+  VO01: "VolcanicApproach_Map", VO02: "LavaRiverPass_Map", VO03: "LavaCore_Map",
+  DS01: "DesertOutskirts_Map", DS02: "DesertCrossroads_Map", DS03: "SunBuriedCave_Map",
+  DS04: "SandstoneTunnel_Map", DS05: "AncientBurialPassage_Map", DS06: "DesertBossRoom_Map",
+  UW01: "ShallowCoralReef_Map", UW02: "CoralMaze_Map", UW03: "SunkenTempleGate_Map",
+  UW04: "DeepTrench_Map", UW06: "GiantClamBossRoom_Map", UW07: "MainUnderwaterBossRoom_Map",
+  JP01: "JapanVillage_Map", JP02: "JapanTerraces_Map", JP03: "JapanShrine_Map", JP04: "JapanPagoda_Map",
+  GR01: "GreekHarbor_Map", GR02: "GreekAgora_Map", GR03: "GreekLabyrinth_Map",
+  GR04: "GreekAmphitheatre_Map", GR05: "GreekGrotto_Map", GR06: "GreekTemple_Map",
+  ML01: "MilitaryCheckpoint_Map", ML02: "MilitaryDepot_Map", ML03: "MilitaryTrench_Map",
+  ML04: "MilitaryMinefield_Map", ML05: "MilitaryAirfield_Map", ML06: "MilitaryBunker_Map",
+  ML07: "MilitaryYard_Map", ML08: "MilitaryHQ_Map",
+  HV01: "HeavenAscension_Map",
+  VoidHunt: "VoidHunt_Map"
+};
+function areaCode(zid) {
+  const m = zid.match(/^([A-Z]{2}\d{2})_(?:Zone|HM_Z)\d+/);
+  if (m) return m[1];
+  if (/^VoidHunt/.test(zid)) return "VoidHunt";
   return null;
 }
 for (const z of zones) {
@@ -274,10 +311,74 @@ const liveZones = zones.filter((z) => zoneWorld(z.id));
 
 liveEnemies.sort((a, b) => a.minLevel - b.minLevel);
 bosses.sort((a, b) => a.level - b.level);
+
+// Aggregate every source of loot per area: field drops, boss rewards and shop stock.
+const MAP_TO_REGION = {};
+for (const code of Object.keys(REGION_MAP)) MAP_TO_REGION[REGION_MAP[code]] = code;
+const areaByCode = new Map();
+function ensureArea(code) {
+  let a = areaByCode.get(code);
+  if (!a) {
+    const mapId = REGION_MAP[code] || "";
+    a = {
+      code, mapId, name: mapId ? mapDisplayName(mapId) : code, world: "Other",
+      minLevel: 0, maxLevel: 0, zoneCount: 0,
+      enemyIds: [], bossIds: [], dropItemIds: [], bossDropItemIds: [], shopItemIds: []
+    };
+    areaByCode.set(code, a);
+  }
+  return a;
+}
+const push = (arr, v) => { if (v && arr.indexOf(v) < 0) arr.push(v); };
+for (const z of liveZones) {
+  const code = areaCode(z.id);
+  if (!code) continue;
+  const a = ensureArea(code);
+  a.world = zoneWorld(z.id) || a.world;
+  a.zoneCount++;
+  if (z.minEnemyLevel) a.minLevel = a.minLevel ? Math.min(a.minLevel, z.minEnemyLevel) : z.minEnemyLevel;
+  if (z.maxEnemyLevel) a.maxLevel = Math.max(a.maxLevel, z.maxEnemyLevel);
+  for (const s of (z.shopItems || [])) push(a.shopItemIds, s);
+  for (const en of (z.enemies || [])) {
+    push(a.enemyIds, en.enemyId);
+    const e = enemyById.get(en.enemyId);
+    if (!e) continue;
+    for (const dr of (e.drops || [])) push(a.dropItemIds, dr.itemId);
+  }
+}
+// A boss's reward belongs to the area its arena sits in.
+for (const b of bosses) {
+  const code = MAP_TO_REGION[b.mapId];
+  if (!code) continue;
+  const a = ensureArea(code);
+  push(a.bossIds, b.id);
+  [b.dropItemId, b.hardModeDropItemId, b.bonusDropItemId].forEach((id) => push(a.bossDropItemIds, id));
+}
+const areas = Array.from(areaByCode.values())
+  .sort((x, y) => (x.minLevel || 1e9) - (y.minLevel || 1e9) || x.code.localeCompare(y.code));
+
+// Tag every item with the areas it can be obtained in, so the item list can filter by area
+// without re-deriving the whole zone -> enemy -> drop chain in the browser.
+const dropIn = new Map(), shopIn = new Map();
+for (const a of areas) {
+  a.dropItemIds.concat(a.bossDropItemIds).forEach((id) => {
+    if (!dropIn.has(id)) dropIn.set(id, []);
+    push(dropIn.get(id), a.code);
+  });
+  a.shopItemIds.forEach((id) => {
+    if (!shopIn.has(id)) shopIn.set(id, []);
+    push(shopIn.get(id), a.code);
+  });
+}
+for (const it of items) {
+  it.dropAreas = dropIn.get(it.id) || [];
+  it.shopAreas = shopIn.get(it.id) || [];
+}
+
 const root = {
   generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop",
-  counts: { enemies: liveEnemies.length, bosses: bosses.length, items: items.length, maps: maps.length, zones: liveZones.length, characters: characters.length, achievements: achievements.length },
-  enemies: liveEnemies, bosses, items, maps, zones: liveZones, characters, achievements
+  counts: { enemies: liveEnemies.length, bosses: bosses.length, items: items.length, maps: maps.length, zones: liveZones.length, areas: areas.length, characters: characters.length, achievements: achievements.length },
+  enemies: liveEnemies, bosses, items, maps, zones: liveZones, areas, characters, achievements
 };
 fs.writeFileSync(path.join(DATA, "data.json"), JSON.stringify(root, null, 2));
 console.log("Wrote data.json", root.counts, "images:", imagesWritten);
