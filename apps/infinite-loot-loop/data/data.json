@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T05:01:14Z",
+  "generatedAt": "2026-07-19T05:28:38Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 265,
@@ -843,9 +843,9 @@
       ]
     },
     {
-      "id": "ShadowHound_FR01 1",
+      "id": "ShadowHound_FR01",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_FR01_1.png",
+      "image": "enemy_ShadowHound_FR01.png",
       "isBoss": false,
       "minLevel": 37,
       "maxLevel": 40,
@@ -977,9 +977,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_FR03 1",
+      "id": "DesertScorpion_FR03",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_FR03_1.png",
+      "image": "enemy_DesertScorpion_FR03.png",
       "isBoss": false,
       "minLevel": 60,
       "maxLevel": 67,
@@ -1136,9 +1136,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_FR03 1",
+      "id": "CrystalGolem_FR03",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_FR03_1.png",
+      "image": "enemy_CrystalGolem_FR03.png",
       "isBoss": false,
       "minLevel": 73,
       "maxLevel": 80,
@@ -1237,9 +1237,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR03",
+      "id": "BloodWraith_FR03 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR03.png",
+      "image": "enemy_BloodWraith_FR03_1.png",
       "isBoss": false,
       "minLevel": 82,
       "maxLevel": 85,
@@ -1295,9 +1295,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR04",
+      "id": "BloodWraith_FR04 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR04.png",
+      "image": "enemy_BloodWraith_FR04_1.png",
       "isBoss": false,
       "minLevel": 85,
       "maxLevel": 90,
@@ -1353,9 +1353,9 @@
       ]
     },
     {
-      "id": "FlameImp_FR04 1",
+      "id": "FlameImp_FR04",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_FR04_1.png",
+      "image": "enemy_FlameImp_FR04.png",
       "isBoss": false,
       "minLevel": 88,
       "maxLevel": 94,
@@ -1502,9 +1502,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_FR04",
+      "id": "ChaosShaman_FR04 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_FR04.png",
+      "image": "enemy_ChaosShaman_FR04_1.png",
       "isBoss": false,
       "minLevel": 100,
       "maxLevel": 103,
@@ -1636,9 +1636,9 @@
       ]
     },
     {
-      "id": "FlameImp_VO01 1",
+      "id": "FlameImp_VO01",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_VO01_1.png",
+      "image": "enemy_FlameImp_VO01.png",
       "isBoss": false,
       "minLevel": 108,
       "maxLevel": 115,
@@ -1876,9 +1876,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_VO01 1",
+      "id": "ChaosShaman_VO01",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_VO01_1.png",
+      "image": "enemy_ChaosShaman_VO01.png",
       "isBoss": false,
       "minLevel": 128,
       "maxLevel": 136,
@@ -2813,9 +2813,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_DS01 1",
+      "id": "DesertScorpion_DS01",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_DS01_1.png",
+      "image": "enemy_DesertScorpion_DS01.png",
       "isBoss": false,
       "minLevel": 205,
       "maxLevel": 217,
@@ -3351,9 +3351,9 @@
       ]
     },
     {
-      "id": "ShadowHound_DS03 1",
+      "id": "ShadowHound_DS03",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_DS03_1.png",
+      "image": "enemy_ShadowHound_DS03.png",
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
@@ -3652,9 +3652,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_DS03 1",
+      "id": "CrystalGolem_DS03",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_DS03_1.png",
+      "image": "enemy_CrystalGolem_DS03.png",
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
@@ -12134,14 +12134,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 601000,
+      "bonusATK": 600000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 187000,
       "maxCopies": -1,
       "effects": [
-        "ATK +601000"
+        "ATK +600000"
       ],
       "dropAreas": [
         "UW02"
@@ -12387,7 +12387,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 158000,
+      "bonusHP": 150000,
       "bonusATK": 0,
       "bonusDEF": 6670,
       "bonusAGI": 0,
@@ -12395,7 +12395,7 @@
       "buyPrice": 590000,
       "maxCopies": -1,
       "effects": [
-        "HP +158000",
+        "HP +150000",
         "DEF +6670",
         "LUC +1230"
       ],
@@ -12449,14 +12449,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 10300000,
+      "bonusATK": 10000000,
       "bonusDEF": 0,
       "bonusAGI": 724,
       "bonusLUC": 0,
       "buyPrice": 336000,
       "maxCopies": -1,
       "effects": [
-        "ATK +10300000",
+        "ATK +10000000",
         "AGI +724"
       ],
       "dropAreas": [
@@ -12537,7 +12537,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 508000,
+      "bonusHP": 500000,
       "bonusATK": 0,
       "bonusDEF": 18000,
       "bonusAGI": 0,
@@ -12545,7 +12545,7 @@
       "buyPrice": 1510000,
       "maxCopies": -1,
       "effects": [
-        "HP +508000",
+        "HP +500000",
         "DEF +18000",
         "LUC +3030"
       ],
@@ -12568,7 +12568,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 166000,
+      "bonusHP": 160000,
       "bonusATK": 0,
       "bonusDEF": 6770,
       "bonusAGI": 0,
@@ -12576,7 +12576,7 @@
       "buyPrice": 408000,
       "maxCopies": -1,
       "effects": [
-        "HP +166000",
+        "HP +160000",
         "DEF +6770",
         "LUC +1220"
       ],
@@ -12657,14 +12657,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1790000000,
+      "bonusATK": 1700000000,
       "bonusDEF": 0,
       "bonusAGI": 6170,
       "bonusLUC": 0,
       "buyPrice": 1990000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1790000000",
+        "ATK +1700000000",
         "AGI +6170"
       ],
       "dropAreas": [
@@ -12686,7 +12686,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1460000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -12694,7 +12694,7 @@
       "buyPrice": 2140000,
       "maxCopies": -1,
       "effects": [
-        "HP +1460000"
+        "HP +1400000"
       ],
       "dropAreas": [
         "HV01"
@@ -12804,14 +12804,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1990000,
+      "bonusATK": 1900000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 333000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1990000"
+        "ATK +1900000"
       ],
       "dropAreas": [
         "JP01"
@@ -12864,14 +12864,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 432000000,
+      "bonusATK": 430000000,
       "bonusDEF": 0,
       "bonusAGI": 3750,
       "bonusLUC": 0,
       "buyPrice": 456000,
       "maxCopies": -1,
       "effects": [
-        "ATK +432000000",
+        "ATK +430000000",
         "AGI +3750"
       ],
       "dropAreas": [
@@ -12894,14 +12894,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1420000,
+      "bonusATK": 1400000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 167000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1420000"
+        "ATK +1400000"
       ],
       "dropAreas": [
         "JP01"
@@ -12923,14 +12923,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 182000000,
+      "bonusATK": 180000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 377000,
       "maxCopies": -1,
       "effects": [
-        "ATK +182000000"
+        "ATK +180000000"
       ],
       "dropAreas": [
         "ML03"
@@ -13987,11 +13987,11 @@
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 37500000,
+      "bonusLUC": 37000000,
       "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
-        "LUC +37500000",
+        "LUC +37000000",
         "HP +25%",
         "ATK +30%",
         "Gold +25%"
@@ -14207,12 +14207,12 @@
       "bonusHP": 0,
       "bonusATK": 0,
       "bonusDEF": 0,
-      "bonusAGI": 112500000,
+      "bonusAGI": 110000000,
       "bonusLUC": 0,
       "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
-        "AGI +112500000",
+        "AGI +110000000",
         "Move Spd +75%",
         "EXP +25%"
       ],
@@ -14644,7 +14644,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 967000,
+      "bonusHP": 960000,
       "bonusATK": 0,
       "bonusDEF": 29700,
       "bonusAGI": 0,
@@ -14652,7 +14652,7 @@
       "buyPrice": 2200000,
       "maxCopies": -1,
       "effects": [
-        "HP +967000",
+        "HP +960000",
         "DEF +29700"
       ],
       "dropAreas": [
@@ -14732,7 +14732,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 153000,
+      "bonusHP": 150000,
       "bonusATK": 0,
       "bonusDEF": 6430,
       "bonusAGI": 0,
@@ -14740,7 +14740,7 @@
       "buyPrice": 468000,
       "maxCopies": -1,
       "effects": [
-        "HP +153000",
+        "HP +150000",
         "DEF +6430"
       ],
       "dropAreas": [
@@ -14762,7 +14762,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 102000,
+      "bonusHP": 100000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -14770,7 +14770,7 @@
       "buyPrice": 290000,
       "maxCopies": -1,
       "effects": [
-        "HP +102000"
+        "HP +100000"
       ],
       "dropAreas": [
         "GR01"
@@ -14791,7 +14791,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 745000,
+      "bonusHP": 740000,
       "bonusATK": 0,
       "bonusDEF": 24600,
       "bonusAGI": 0,
@@ -14799,7 +14799,7 @@
       "buyPrice": 1820000,
       "maxCopies": -1,
       "effects": [
-        "HP +745000",
+        "HP +740000",
         "DEF +24600",
         "LUC +4000"
       ],
@@ -14823,14 +14823,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 25300000,
+      "bonusATK": 25000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 743000,
       "maxCopies": -1,
       "effects": [
-        "ATK +25300000"
+        "ATK +25000000"
       ],
       "dropAreas": [
         "GR02"
@@ -15108,14 +15108,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1950000000,
+      "bonusATK": 1900000000,
       "bonusDEF": 0,
       "bonusAGI": 6720,
       "bonusLUC": 0,
       "buyPrice": 800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1950000000",
+        "ATK +1900000000",
         "AGI +6720"
       ],
       "dropAreas": [
@@ -15137,7 +15137,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1510000,
+      "bonusHP": 1500000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -15145,7 +15145,7 @@
       "buyPrice": 861000,
       "maxCopies": -1,
       "effects": [
-        "HP +1510000",
+        "HP +1500000",
         "LUC +6590"
       ],
       "dropAreas": [
@@ -15167,7 +15167,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1450000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
       "bonusDEF": 41600,
       "bonusAGI": 0,
@@ -15175,7 +15175,7 @@
       "buyPrice": 1600000,
       "maxCopies": -1,
       "effects": [
-        "HP +1450000",
+        "HP +1400000",
         "DEF +41600",
         "LUC +6290"
       ],
@@ -15257,7 +15257,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1460000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -15265,7 +15265,7 @@
       "buyPrice": 1030000,
       "maxCopies": -1,
       "effects": [
-        "HP +1460000"
+        "HP +1400000"
       ],
       "dropAreas": [
         "HV01"
@@ -15583,7 +15583,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 612000,
+      "bonusHP": 610000,
       "bonusATK": 0,
       "bonusDEF": 20900,
       "bonusAGI": 0,
@@ -15591,7 +15591,7 @@
       "buyPrice": 1170000,
       "maxCopies": -1,
       "effects": [
-        "HP +612000",
+        "HP +610000",
         "DEF +20900"
       ],
       "dropAreas": [
@@ -15613,7 +15613,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 561000,
+      "bonusHP": 560000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -15621,7 +15621,7 @@
       "buyPrice": 828000,
       "maxCopies": -1,
       "effects": [
-        "HP +561000"
+        "HP +560000"
       ],
       "dropAreas": [
         "ML04"
@@ -15643,14 +15643,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 296000000,
+      "bonusATK": 290000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 414000,
       "maxCopies": -1,
       "effects": [
-        "ATK +296000000"
+        "ATK +290000000"
       ],
       "dropAreas": [
         "ML04"
@@ -15671,7 +15671,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1080000,
+      "bonusHP": 1000000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -15679,7 +15679,7 @@
       "buyPrice": 1530000,
       "maxCopies": -1,
       "effects": [
-        "HP +1080000",
+        "HP +1000000",
         "LUC +4980"
       ],
       "dropAreas": [
@@ -15701,7 +15701,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1470000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
       "bonusDEF": 42200,
       "bonusAGI": 0,
@@ -15709,7 +15709,7 @@
       "buyPrice": 2310000,
       "maxCopies": -1,
       "effects": [
-        "HP +1470000",
+        "HP +1400000",
         "DEF +42200",
         "LUC +6380"
       ],
@@ -16150,7 +16150,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1480000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
       "bonusDEF": 42700,
       "bonusAGI": 0,
@@ -16158,7 +16158,7 @@
       "buyPrice": 2670000,
       "maxCopies": -1,
       "effects": [
-        "HP +1480000",
+        "HP +1400000",
         "DEF +42700"
       ],
       "dropAreas": [
@@ -16180,7 +16180,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 285000,
+      "bonusHP": 280000,
       "bonusATK": 0,
       "bonusDEF": 10800,
       "bonusAGI": 0,
@@ -16188,7 +16188,7 @@
       "buyPrice": 1240000,
       "maxCopies": -1,
       "effects": [
-        "HP +285000",
+        "HP +280000",
         "DEF +10800",
         "LUC +1890"
       ],
@@ -16211,7 +16211,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1320000,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 38000,
       "bonusAGI": 0,
@@ -16219,7 +16219,7 @@
       "buyPrice": 772000,
       "maxCopies": -1,
       "effects": [
-        "HP +1320000",
+        "HP +1300000",
         "DEF +38000",
         "LUC +5750"
       ],
@@ -17223,7 +17223,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1220000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 36300,
       "bonusAGI": 5590,
@@ -17231,7 +17231,7 @@
       "buyPrice": 2430000,
       "maxCopies": -1,
       "effects": [
-        "HP +1220000",
+        "HP +1200000",
         "DEF +36300",
         "AGI +5590"
       ],
@@ -17340,7 +17340,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1370000,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -17348,7 +17348,7 @@
       "buyPrice": 1240000,
       "maxCopies": -1,
       "effects": [
-        "HP +1370000"
+        "HP +1300000"
       ],
       "dropAreas": [
         "HV01"
@@ -17370,14 +17370,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1730000000,
+      "bonusATK": 1700000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 1150000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1730000000"
+        "ATK +1700000000"
       ],
       "dropAreas": [
         "HV01"
@@ -17428,7 +17428,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 342000,
+      "bonusHP": 340000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -17436,7 +17436,7 @@
       "buyPrice": 684000,
       "maxCopies": -1,
       "effects": [
-        "HP +342000"
+        "HP +340000"
       ],
       "dropAreas": [
         "ML02"
@@ -17457,7 +17457,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 365000,
+      "bonusHP": 360000,
       "bonusATK": 0,
       "bonusDEF": 13400,
       "bonusAGI": 0,
@@ -17465,7 +17465,7 @@
       "buyPrice": 967000,
       "maxCopies": -1,
       "effects": [
-        "HP +365000",
+        "HP +360000",
         "DEF +13400"
       ],
       "dropAreas": [
@@ -17487,7 +17487,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 339000,
+      "bonusHP": 330000,
       "bonusATK": 0,
       "bonusDEF": 12400,
       "bonusAGI": 0,
@@ -17495,7 +17495,7 @@
       "buyPrice": 1370000,
       "maxCopies": -1,
       "effects": [
-        "HP +339000",
+        "HP +330000",
         "DEF +12400",
         "LUC +2130"
       ],
@@ -17547,7 +17547,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 741000,
+      "bonusHP": 740000,
       "bonusATK": 0,
       "bonusDEF": 23600,
       "bonusAGI": 0,
@@ -17555,7 +17555,7 @@
       "buyPrice": 2000000,
       "maxCopies": -1,
       "effects": [
-        "HP +741000",
+        "HP +740000",
         "DEF +23600",
         "LUC +3780"
       ],
@@ -17697,7 +17697,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 549000,
+      "bonusHP": 540000,
       "bonusATK": 0,
       "bonusDEF": 18800,
       "bonusAGI": 0,
@@ -17705,7 +17705,7 @@
       "buyPrice": 1660000,
       "maxCopies": -1,
       "effects": [
-        "HP +549000",
+        "HP +540000",
         "DEF +18800",
         "LUC +3110"
       ],
@@ -17850,7 +17850,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 198000,
+      "bonusHP": 190000,
       "bonusATK": 0,
       "bonusDEF": 8040,
       "bonusAGI": 0,
@@ -17858,7 +17858,7 @@
       "buyPrice": 1030000,
       "maxCopies": -1,
       "effects": [
-        "HP +198000",
+        "HP +190000",
         "DEF +8040",
         "LUC +1460"
       ],
@@ -17968,7 +17968,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 193000,
+      "bonusHP": 190000,
       "bonusATK": 0,
       "bonusDEF": 7860,
       "bonusAGI": 0,
@@ -17976,7 +17976,7 @@
       "buyPrice": 727000,
       "maxCopies": -1,
       "effects": [
-        "HP +193000",
+        "HP +190000",
         "DEF +7860",
         "LUC +1420"
       ],
@@ -17999,7 +17999,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 204000,
+      "bonusHP": 200000,
       "bonusATK": 0,
       "bonusDEF": 8320,
       "bonusAGI": 0,
@@ -18007,7 +18007,7 @@
       "buyPrice": 1030000,
       "maxCopies": -1,
       "effects": [
-        "HP +204000",
+        "HP +200000",
         "DEF +8320"
       ],
       "dropAreas": [
@@ -18030,14 +18030,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 588000000,
+      "bonusATK": 580000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 501000,
       "maxCopies": -1,
       "effects": [
-        "ATK +588000000"
+        "ATK +580000000"
       ],
       "dropAreas": [
         "ML06"
@@ -18180,7 +18180,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 3465500,
+      "bonusHP": 3400000,
       "bonusATK": 0,
       "bonusDEF": 97600,
       "bonusAGI": 0,
@@ -18188,7 +18188,7 @@
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "HP +3465500",
+        "HP +3400000",
         "DEF +97600"
       ],
       "dropAreas": [
@@ -18270,16 +18270,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 7992500,
+      "bonusHP": 7900000,
       "bonusATK": 0,
-      "bonusDEF": 411000,
+      "bonusDEF": 410000,
       "bonusAGI": 0,
       "bonusLUC": 413,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "HP +7992500",
-        "DEF +411000",
+        "HP +7900000",
+        "DEF +410000",
         "LUC +413"
       ],
       "dropAreas": [
@@ -18358,16 +18358,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 4705000,
+      "bonusHP": 4700000,
       "bonusATK": 0,
-      "bonusDEF": 125000,
+      "bonusDEF": 120000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "HP +4705000",
-        "DEF +125000"
+        "HP +4700000",
+        "DEF +120000"
       ],
       "dropAreas": [
         "DS05"
@@ -18388,16 +18388,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 10900000,
+      "bonusHP": 10000000,
       "bonusATK": 0,
-      "bonusDEF": 525500,
+      "bonusDEF": 520000,
       "bonusAGI": 0,
       "bonusLUC": 440,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +10900000",
-        "DEF +525500",
+        "HP +10000000",
+        "DEF +520000",
         "LUC +440"
       ],
       "dropAreas": [
@@ -18511,14 +18511,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 10924999,
+      "bonusATK": 10000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 333000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +10924999"
+        "ATK +10000000"
       ],
       "dropAreas": [
         "GL01"
@@ -18539,7 +18539,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 110840,
+      "bonusHP": 110000,
       "bonusATK": 0,
       "bonusDEF": 10393,
       "bonusAGI": 0,
@@ -18547,7 +18547,7 @@
       "buyPrice": 386300000,
       "maxCopies": -1,
       "effects": [
-        "HP +110840",
+        "HP +110000",
         "DEF +10393"
       ],
       "dropAreas": [
@@ -18599,7 +18599,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 130336,
+      "bonusHP": 130000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -18607,7 +18607,7 @@
       "buyPrice": 386300000,
       "maxCopies": -1,
       "effects": [
-        "HP +130336"
+        "HP +130000"
       ],
       "dropAreas": [
         "FR01"
@@ -18658,7 +18658,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 150280,
+      "bonusHP": 150000,
       "bonusATK": 0,
       "bonusDEF": 13293,
       "bonusAGI": 0,
@@ -18666,7 +18666,7 @@
       "buyPrice": 484800000,
       "maxCopies": -1,
       "effects": [
-        "HP +150280",
+        "HP +150000",
         "DEF +13293"
       ],
       "dropAreas": [],
@@ -18687,14 +18687,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 9429999,
+      "bonusATK": 9400000,
       "bonusDEF": 0,
       "bonusAGI": 144,
       "bonusLUC": 0,
       "buyPrice": 333000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +9429999",
+        "ATK +9400000",
         "AGI +144"
       ],
       "dropAreas": [
@@ -18745,7 +18745,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 176800,
+      "bonusHP": 170000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -18753,7 +18753,7 @@
       "buyPrice": 484800000,
       "maxCopies": -1,
       "effects": [
-        "HP +176800"
+        "HP +170000"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -18772,7 +18772,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 204340,
+      "bonusHP": 200000,
       "bonusATK": 0,
       "bonusDEF": 17012,
       "bonusAGI": 0,
@@ -18780,7 +18780,7 @@
       "buyPrice": 609600000,
       "maxCopies": -1,
       "effects": [
-        "HP +204340",
+        "HP +200000",
         "DEF +17012"
       ],
       "dropAreas": [
@@ -18803,14 +18803,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 24034999,
+      "bonusATK": 24000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 386300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +24034999"
+        "ATK +24000000"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -18829,7 +18829,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 116999,
+      "bonusHP": 110000,
       "bonusATK": 0,
       "bonusDEF": 11721,
       "bonusAGI": 0,
@@ -18837,7 +18837,7 @@
       "buyPrice": 609600000,
       "maxCopies": -1,
       "effects": [
-        "HP +116999",
+        "HP +110000",
         "DEF +11721",
         "LUC +470"
       ],
@@ -18858,7 +18858,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 277100,
+      "bonusHP": 270000,
       "bonusATK": 0,
       "bonusDEF": 21762,
       "bonusAGI": 0,
@@ -18866,7 +18866,7 @@
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "HP +277100",
+        "HP +270000",
         "DEF +21762"
       ],
       "dropAreas": [],
@@ -18886,7 +18886,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 159119,
+      "bonusHP": 150000,
       "bonusATK": 0,
       "bonusDEF": 14990,
       "bonusAGI": 0,
@@ -18894,7 +18894,7 @@
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "HP +159119",
+        "HP +150000",
         "DEF +14990",
         "LUC +501"
       ],
@@ -18916,14 +18916,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 20745999,
+      "bonusATK": 20000000,
       "bonusDEF": 0,
       "bonusAGI": 163,
       "bonusLUC": 0,
       "buyPrice": 386300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +20745999",
+        "ATK +20000000",
         "AGI +163"
       ],
       "dropAreas": [
@@ -18945,16 +18945,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2032000,
+      "bonusHP": 2000000,
       "bonusATK": 0,
-      "bonusDEF": 105500,
+      "bonusDEF": 100000,
       "bonusAGI": 109,
       "bonusLUC": 0,
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +2032000",
-        "DEF +105500",
+        "HP +2000000",
+        "DEF +100000",
         "AGI +109"
       ],
       "dropAreas": [
@@ -18977,14 +18977,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 53009999,
+      "bonusATK": 53000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 484800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +53009999"
+        "ATK +53000000"
       ],
       "dropAreas": [
         "FR02"
@@ -19006,14 +19006,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 45755999,
+      "bonusATK": 45000000,
       "bonusDEF": 0,
       "bonusAGI": 187,
       "bonusLUC": 0,
       "buyPrice": 484800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +45755999",
+        "ATK +45000000",
         "AGI +187"
       ],
       "dropAreas": [],
@@ -19034,14 +19034,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 116849998,
+      "bonusATK": 110000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 609600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +116849998"
+        "ATK +110000000"
       ],
       "dropAreas": [
         "FR03"
@@ -19062,7 +19062,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 376380,
+      "bonusHP": 370000,
       "bonusATK": 0,
       "bonusDEF": 27837,
       "bonusAGI": 0,
@@ -19070,7 +19070,7 @@
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "HP +376380",
+        "HP +370000",
         "DEF +27837"
       ],
       "dropAreas": [
@@ -19093,14 +19093,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 100859999,
+      "bonusATK": 100000000,
       "bonusDEF": 0,
       "bonusAGI": 211,
       "bonusLUC": 0,
       "buyPrice": 609600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +100859999",
+        "ATK +100000000",
         "AGI +211"
       ],
       "dropAreas": [],
@@ -19122,14 +19122,14 @@
       "isBossItem": false,
       "bonusHP": 16000000,
       "bonusATK": 0,
-      "bonusDEF": 334500,
+      "bonusDEF": 330000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
         "HP +16000000",
-        "DEF +334500"
+        "DEF +330000"
       ],
       "dropAreas": [
         "UW03"
@@ -19178,7 +19178,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 215669,
+      "bonusHP": 210000,
       "bonusATK": 0,
       "bonusDEF": 19176,
       "bonusAGI": 0,
@@ -19186,7 +19186,7 @@
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "HP +215669",
+        "HP +210000",
         "DEF +19176",
         "LUC +535"
       ],
@@ -19240,7 +19240,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 511020,
+      "bonusHP": 510000,
       "bonusATK": 0,
       "bonusDEF": 35612,
       "bonusAGI": 0,
@@ -19248,7 +19248,7 @@
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "HP +511020",
+        "HP +510000",
         "DEF +35612"
       ],
       "dropAreas": [
@@ -19270,16 +19270,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2352500,
+      "bonusHP": 2300000,
       "bonusATK": 0,
-      "bonusDEF": 153500,
+      "bonusDEF": 150000,
       "bonusAGI": 0,
       "bonusLUC": 321,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "HP +2352500",
-        "DEF +153500",
+        "HP +2300000",
+        "DEF +150000",
         "LUC +321"
       ],
       "dropAreas": [
@@ -19302,14 +19302,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 257544996,
+      "bonusATK": 250000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +257544996"
+        "ATK +250000000"
       ],
       "dropAreas": [
         "FR04"
@@ -19330,7 +19330,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 119340,
+      "bonusHP": 110000,
       "bonusATK": 0,
       "bonusDEF": 11784,
       "bonusAGI": 85,
@@ -19338,7 +19338,7 @@
       "buyPrice": 484800000,
       "maxCopies": -1,
       "effects": [
-        "HP +119340",
+        "HP +110000",
         "DEF +11784",
         "AGI +85"
       ],
@@ -19359,7 +19359,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 693600,
+      "bonusHP": 690000,
       "bonusATK": 0,
       "bonusDEF": 45556,
       "bonusAGI": 0,
@@ -19367,7 +19367,7 @@
       "buyPrice": 1524900000,
       "maxCopies": -1,
       "effects": [
-        "HP +693600",
+        "HP +690000",
         "DEF +45556"
       ],
       "dropAreas": [
@@ -19389,7 +19389,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 941800,
+      "bonusHP": 940000,
       "bonusATK": 0,
       "bonusDEF": 58275,
       "bonusAGI": 0,
@@ -19397,7 +19397,7 @@
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "HP +941800",
+        "HP +940000",
         "DEF +58275"
       ],
       "dropAreas": [
@@ -19420,7 +19420,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 161840,
+      "bonusHP": 160000,
       "bonusATK": 0,
       "bonusDEF": 15076,
       "bonusAGI": 96,
@@ -19428,7 +19428,7 @@
       "buyPrice": 609600000,
       "maxCopies": -1,
       "effects": [
-        "HP +161840",
+        "HP +160000",
         "DEF +15076",
         "AGI +96"
       ],
@@ -19451,7 +19451,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 292889,
+      "bonusHP": 290000,
       "bonusATK": 0,
       "bonusDEF": 24527,
       "bonusAGI": 0,
@@ -19459,7 +19459,7 @@
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "HP +292889",
+        "HP +290000",
         "DEF +24527",
         "LUC +569"
       ],
@@ -19510,14 +19510,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 222301998,
+      "bonusATK": 220000000,
       "bonusDEF": 0,
       "bonusAGI": 242,
       "bonusLUC": 0,
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +222301998",
+        "ATK +220000000",
         "AGI +242"
       ],
       "dropAreas": [
@@ -19540,7 +19540,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 3194000,
+      "bonusHP": 3100000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -19548,7 +19548,7 @@
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +3194000",
+        "HP +3100000",
         "LUC +697"
       ],
       "dropAreas": [],
@@ -19568,7 +19568,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 397799,
+      "bonusHP": 390000,
       "bonusATK": 0,
       "bonusDEF": 31377,
       "bonusAGI": 0,
@@ -19576,7 +19576,7 @@
       "buyPrice": 1524900000,
       "maxCopies": -1,
       "effects": [
-        "HP +397799",
+        "HP +390000",
         "DEF +31377",
         "LUC +608"
       ],
@@ -19599,7 +19599,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 439500,
+      "bonusHP": 430000,
       "bonusATK": 0,
       "bonusDEF": 30840,
       "bonusAGI": 57,
@@ -19607,7 +19607,7 @@
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "HP +439500",
+        "HP +430000",
         "DEF +30840",
         "AGI +57"
       ],
@@ -19630,7 +19630,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 300500,
+      "bonusHP": 300000,
       "bonusATK": 0,
       "bonusDEF": 13610,
       "bonusAGI": 0,
@@ -19638,7 +19638,7 @@
       "buyPrice": 609600000,
       "maxCopies": -1,
       "effects": [
-        "HP +300500",
+        "HP +300000",
         "DEF +13610"
       ],
       "dropAreas": [
@@ -19690,7 +19690,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1278740,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 74550,
       "bonusAGI": 0,
@@ -19698,7 +19698,7 @@
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1278740",
+        "HP +1200000",
         "DEF +74550"
       ],
       "dropAreas": [
@@ -19721,14 +19721,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 331989900000,
+      "bonusATK": 330000000000,
       "bonusDEF": 0,
       "bonusAGI": 322,
       "bonusLUC": 0,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +331989900000",
+        "ATK +330000000000",
         "AGI +322"
       ],
       "dropAreas": [
@@ -19751,14 +19751,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 731534300000,
+      "bonusATK": 730000000000,
       "bonusDEF": 0,
       "bonusAGI": 367,
       "bonusLUC": 0,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +731534300000",
+        "ATK +730000000000",
         "AGI +367"
       ],
       "dropAreas": [
@@ -19780,16 +19780,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 12800000,
+      "bonusHP": 12000000,
       "bonusATK": 0,
-      "bonusDEF": 463500,
+      "bonusDEF": 460000,
       "bonusAGI": 237,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "HP +12800000",
-        "DEF +463500",
+        "HP +12000000",
+        "DEF +460000",
         "AGI +237"
       ],
       "dropAreas": [
@@ -19811,7 +19811,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 540149,
+      "bonusHP": 540000,
       "bonusATK": 0,
       "bonusDEF": 40134,
       "bonusAGI": 0,
@@ -19819,7 +19819,7 @@
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "HP +540149",
+        "HP +540000",
         "DEF +40134",
         "LUC +647"
       ],
@@ -19842,16 +19842,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 29500000,
+      "bonusHP": 29000000,
       "bonusATK": 0,
-      "bonusDEF": 547000,
+      "bonusDEF": 540000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +29500000",
-        "DEF +547000"
+        "HP +29000000",
+        "DEF +540000"
       ],
       "dropAreas": [
         "UW06"
@@ -19873,14 +19873,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 567529992,
+      "bonusATK": 560000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +567529992"
+        "ATK +560000000"
       ],
       "dropAreas": [
         "VO01"
@@ -19901,7 +19901,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 733199,
+      "bonusHP": 730000,
       "bonusATK": 0,
       "bonusDEF": 51337,
       "bonusAGI": 0,
@@ -19909,7 +19909,7 @@
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "HP +733199",
+        "HP +730000",
         "DEF +51337",
         "LUC +688"
       ],
@@ -19932,7 +19932,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 326400,
+      "bonusHP": 320000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -19940,7 +19940,7 @@
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "HP +326400"
+        "HP +320000"
       ],
       "dropAreas": [
         "FR04"
@@ -19961,7 +19961,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1736040,
+      "bonusHP": 1700000,
       "bonusATK": 0,
       "bonusDEF": 95368,
       "bonusAGI": 0,
@@ -19969,7 +19969,7 @@
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +1736040",
+        "HP +1700000",
         "DEF +95368"
       ],
       "dropAreas": [
@@ -19991,7 +19991,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 219980,
+      "bonusHP": 210000,
       "bonusATK": 0,
       "bonusDEF": 19284,
       "bonusAGI": 110,
@@ -19999,7 +19999,7 @@
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "HP +219980",
+        "HP +210000",
         "DEF +19284",
         "AGI +110"
       ],
@@ -20022,7 +20022,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 995669,
+      "bonusHP": 990000,
       "bonusATK": 0,
       "bonusDEF": 65666,
       "bonusAGI": 0,
@@ -20030,7 +20030,7 @@
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +995669",
+        "HP +990000",
         "DEF +65666",
         "LUC +735"
       ],
@@ -20054,14 +20054,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 489867995,
+      "bonusATK": 480000000,
       "bonusDEF": 0,
       "bonusAGI": 276,
       "bonusLUC": 0,
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +489867995",
+        "ATK +480000000",
         "AGI +276"
       ],
       "dropAreas": [
@@ -20083,7 +20083,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 5887000,
+      "bonusHP": 5800000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -20091,7 +20091,7 @@
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "HP +5887000",
+        "HP +5800000",
         "LUC +759"
       ],
       "dropAreas": [
@@ -20114,14 +20114,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1250485014,
+      "bonusATK": 1200000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1250485014"
+        "ATK +1200000000"
       ],
       "dropAreas": [
         "VO02"
@@ -20142,7 +20142,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1351739,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 83999,
       "bonusAGI": 0,
@@ -20150,7 +20150,7 @@
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1351739",
+        "HP +1300000",
         "DEF +83999",
         "LUC +782"
       ],
@@ -20174,14 +20174,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1079366016,
+      "bonusATK": 1000000000,
       "bonusDEF": 0,
       "bonusAGI": 312,
       "bonusLUC": 0,
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1079366016",
+        "ATK +1000000000",
         "AGI +312"
       ],
       "dropAreas": [
@@ -20204,14 +20204,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2755474935,
+      "bonusATK": 2700000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 1524900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2755474935"
+        "ATK +2700000000"
       ],
       "dropAreas": [
         "VO03"
@@ -20232,7 +20232,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 276500,
+      "bonusHP": 270000,
       "bonusATK": 0,
       "bonusDEF": 27395,
       "bonusAGI": 0,
@@ -20240,7 +20240,7 @@
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "HP +276500",
+        "HP +270000",
         "DEF +27395",
         "LUC +206"
       ],
@@ -20264,16 +20264,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2356540,
+      "bonusHP": 2300000,
       "bonusATK": 0,
-      "bonusDEF": 122000,
+      "bonusDEF": 120000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "HP +2356540",
-        "DEF +122000"
+        "HP +2300000",
+        "DEF +120000"
       ],
       "dropAreas": [
         "DS04"
@@ -20294,7 +20294,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 238000,
+      "bonusHP": 230000,
       "bonusATK": 0,
       "bonusDEF": 18845,
       "bonusAGI": 44,
@@ -20302,7 +20302,7 @@
       "buyPrice": 609600000,
       "maxCopies": -1,
       "effects": [
-        "HP +238000",
+        "HP +230000",
         "DEF +18845",
         "AGI +44"
       ],
@@ -20325,7 +20325,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 298860,
+      "bonusHP": 290000,
       "bonusATK": 0,
       "bonusDEF": 24672,
       "bonusAGI": 125,
@@ -20333,7 +20333,7 @@
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "HP +298860",
+        "HP +290000",
         "DEF +24672",
         "AGI +125"
       ],
@@ -20356,7 +20356,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 405960,
+      "bonusHP": 400000,
       "bonusATK": 0,
       "bonusDEF": 31564,
       "bonusAGI": 143,
@@ -20364,7 +20364,7 @@
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "HP +405960",
+        "HP +400000",
         "DEF +31564",
         "AGI +143"
       ],
@@ -20387,16 +20387,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1834949,
+      "bonusHP": 1800000,
       "bonusATK": 0,
-      "bonusDEF": 107449,
+      "bonusDEF": 100000,
       "bonusAGI": 0,
       "bonusLUC": 834,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "HP +1834949",
-        "DEF +107449",
+        "HP +1800000",
+        "DEF +100000",
         "LUC +834"
       ],
       "dropAreas": [
@@ -20419,14 +20419,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2378409953,
+      "bonusATK": 2300000000,
       "bonusDEF": 0,
       "bonusAGI": 355,
       "bonusLUC": 0,
       "buyPrice": 1524900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2378409953",
+        "ATK +2300000000",
         "AGI +355"
       ],
       "dropAreas": [
@@ -20448,16 +20448,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2491319,
+      "bonusHP": 2400000,
       "bonusATK": 0,
-      "bonusDEF": 137549,
+      "bonusDEF": 130000,
       "bonusAGI": 0,
       "bonusLUC": 889,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +2491319",
-        "DEF +137549",
+        "HP +2400000",
+        "DEF +130000",
         "LUC +889"
       ],
       "dropAreas": [],
@@ -20478,14 +20478,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6071544832,
+      "bonusATK": 6000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6071544832"
+        "ATK +6000000000"
       ],
       "dropAreas": [
         "DS01"
@@ -20506,7 +20506,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 122400,
+      "bonusHP": 120000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -20514,7 +20514,7 @@
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "HP +122400",
+        "HP +120000",
         "LUC +1042"
       ],
       "dropAreas": [
@@ -20536,16 +20536,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 3199400,
+      "bonusHP": 3100000,
       "bonusATK": 0,
-      "bonusDEF": 156250,
+      "bonusDEF": 150000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "HP +3199400",
-        "DEF +156250"
+        "HP +3100000",
+        "DEF +150000"
       ],
       "dropAreas": [
         "DS05"
@@ -20566,16 +20566,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 4343840,
+      "bonusHP": 4300000,
       "bonusATK": 0,
-      "bonusDEF": 199375,
+      "bonusDEF": 190000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +4343840",
-        "DEF +199375"
+        "HP +4300000",
+        "DEF +190000"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -20595,14 +20595,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3551847100000,
+      "bonusATK": 3500000000000,
       "bonusDEF": 0,
       "bonusAGI": 475,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +3551847100000",
+        "ATK +3500000000000",
         "AGI +475"
       ],
       "dropAreas": [
@@ -20624,16 +20624,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 17300000,
+      "bonusHP": 17000000,
       "bonusATK": 0,
-      "bonusDEF": 592500,
+      "bonusDEF": 590000,
       "bonusAGI": 270,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +17300000",
-        "DEF +592500",
+        "HP +17000000",
+        "DEF +590000",
         "AGI +270"
       ],
       "dropAreas": [
@@ -20655,16 +20655,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 3382469,
+      "bonusHP": 3300000,
       "bonusATK": 0,
-      "bonusDEF": 175699,
+      "bonusDEF": 170000,
       "bonusAGI": 0,
       "bonusLUC": 946,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "HP +3382469",
-        "DEF +175699",
+        "HP +3300000",
+        "DEF +170000",
         "LUC +946"
       ],
       "dropAreas": [
@@ -20686,7 +20686,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 442400,
+      "bonusHP": 440000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -20694,7 +20694,7 @@
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "HP +442400"
+        "HP +440000"
       ],
       "dropAreas": [
         "VO01"
@@ -20715,16 +20715,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 21700000,
+      "bonusHP": 21000000,
       "bonusATK": 0,
-      "bonusDEF": 427500,
+      "bonusDEF": 420000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +21700000",
-        "DEF +427500"
+        "HP +21000000",
+        "DEF +420000"
       ],
       "dropAreas": [
         "UW04"
@@ -20746,14 +20746,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 5240701875,
+      "bonusATK": 5200000000,
       "bonusDEF": 0,
       "bonusAGI": 405,
       "bonusLUC": 0,
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +5240701875",
+        "ATK +5200000000",
         "AGI +405"
       ],
       "dropAreas": [
@@ -20776,14 +20776,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 17245421800000,
+      "bonusATK": 17000000000000,
       "bonusDEF": 0,
       "bonusAGI": 615,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +17245421800000",
+        "ATK +17000000000000",
         "AGI +615"
       ],
       "dropAreas": [
@@ -20805,7 +20805,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 692500,
+      "bonusHP": 690000,
       "bonusATK": 0,
       "bonusDEF": 57335,
       "bonusAGI": 0,
@@ -20813,7 +20813,7 @@
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "HP +692500",
+        "HP +690000",
         "DEF +57335",
         "LUC +249"
       ],
@@ -20836,16 +20836,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 5897300,
+      "bonusHP": 5800000,
       "bonusATK": 0,
-      "bonusDEF": 255625,
+      "bonusDEF": 250000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "HP +5897300",
-        "DEF +255625"
+        "HP +5800000",
+        "DEF +250000"
       ],
       "dropAreas": [
         "UW01"
@@ -20867,14 +20867,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 7826436100000,
+      "bonusATK": 7800000000000,
       "bonusDEF": 0,
       "bonusAGI": 540,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +7826436100000",
+        "ATK +7800000000000",
         "AGI +540"
       ],
       "dropAreas": [
@@ -20896,7 +20896,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 551140,
+      "bonusHP": 550000,
       "bonusATK": 0,
       "bonusDEF": 40380,
       "bonusAGI": 162,
@@ -20904,7 +20904,7 @@
       "buyPrice": 1524900000,
       "maxCopies": -1,
       "effects": [
-        "HP +551140",
+        "HP +550000",
         "DEF +40380",
         "AGI +162"
       ],
@@ -20927,7 +20927,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 165900,
+      "bonusHP": 160000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -20935,7 +20935,7 @@
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "HP +165900",
+        "HP +160000",
         "LUC +1089"
       ],
       "dropAreas": [
@@ -20958,16 +20958,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 8024000,
+      "bonusHP": 8000000,
       "bonusATK": 0,
-      "bonusDEF": 326875,
+      "bonusDEF": 320000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "HP +8024000",
-        "DEF +326875"
+        "HP +8000000",
+        "DEF +320000"
       ],
       "dropAreas": [
         "UW02"
@@ -21017,16 +21017,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 10880000,
+      "bonusHP": 10000000,
       "bonusATK": 0,
-      "bonusDEF": 418125,
+      "bonusDEF": 410000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "HP +10880000",
-        "DEF +418125"
+        "HP +10000000",
+        "DEF +410000"
       ],
       "dropAreas": [
         "UW03"
@@ -21047,7 +21047,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 14700000,
+      "bonusHP": 14000000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -21055,7 +21055,7 @@
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +14700000",
+        "HP +14000000",
         "LUC +862"
       ],
       "dropAreas": [],
@@ -21076,14 +21076,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 13378565105,
+      "bonusATK": 13000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +13378565105"
+        "ATK +13000000000"
       ],
       "dropAreas": [
         "DS02"
@@ -21104,7 +21104,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 749020,
+      "bonusHP": 740000,
       "bonusATK": 0,
       "bonusDEF": 51656,
       "bonusAGI": 184,
@@ -21112,7 +21112,7 @@
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "HP +749020",
+        "HP +740000",
         "DEF +51656",
         "AGI +184"
       ],
@@ -21135,7 +21135,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 600800,
+      "bonusHP": 600000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -21143,7 +21143,7 @@
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "HP +600800"
+        "HP +600000"
       ],
       "dropAreas": [
         "VO02"
@@ -21164,16 +21164,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 4591859,
+      "bonusHP": 4500000,
       "bonusATK": 0,
-      "bonusDEF": 224699,
+      "bonusDEF": 220000,
       "bonusAGI": 0,
       "bonusLUC": 1008,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "HP +4591859",
-        "DEF +224699",
+        "HP +4500000",
+        "DEF +220000",
         "LUC +1008"
       ],
       "dropAreas": [
@@ -21195,7 +21195,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1017280,
+      "bonusHP": 1000000,
       "bonusATK": 0,
       "bonusDEF": 66088,
       "bonusAGI": 211,
@@ -21203,7 +21203,7 @@
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1017280",
+        "HP +1000000",
         "DEF +66088",
         "AGI +211"
       ],
@@ -21226,7 +21226,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 225300,
+      "bonusHP": 220000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -21234,7 +21234,7 @@
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "HP +225300",
+        "HP +220000",
         "LUC +1137"
       ],
       "dropAreas": [
@@ -21256,7 +21256,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 816000,
+      "bonusHP": 810000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -21264,7 +21264,7 @@
       "buyPrice": 1524900000,
       "maxCopies": -1,
       "effects": [
-        "HP +816000"
+        "HP +810000"
       ],
       "dropAreas": [
         "VO03"
@@ -21285,16 +21285,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 6388000,
+      "bonusHP": 6300000,
       "bonusATK": 0,
-      "bonusDEF": 159500,
+      "bonusDEF": 150000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +6388000",
-        "DEF +159500"
+        "HP +6300000",
+        "DEF +150000"
       ],
       "dropAreas": [
         "DS06"
@@ -21315,16 +21315,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 14756000,
+      "bonusHP": 14000000,
       "bonusATK": 0,
-      "bonusDEF": 534375,
+      "bonusDEF": 530000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +14756000",
-        "DEF +534375"
+        "HP +14000000",
+        "DEF +530000"
       ],
       "dropAreas": [
         "UW04"
@@ -21346,14 +21346,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 11547814135,
+      "bonusATK": 11000000000,
       "bonusDEF": 0,
       "bonusAGI": 460,
       "bonusLUC": 0,
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +11547814135",
+        "ATK +11000000000",
         "AGI +460"
       ],
       "dropAreas": [
@@ -21375,7 +21375,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1381760,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 84400,
       "bonusAGI": 239,
@@ -21383,7 +21383,7 @@
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +1381760",
+        "HP +1300000",
         "DEF +84400",
         "AGI +239"
       ],
@@ -21406,16 +21406,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 8672500,
+      "bonusHP": 8600000,
       "bonusATK": 0,
-      "bonusDEF": 204500,
+      "bonusDEF": 200000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "HP +8672500",
-        "DEF +204500"
+        "HP +8600000",
+        "DEF +200000"
       ],
       "dropAreas": [
         "UW01"
@@ -21436,16 +21436,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 20060000,
+      "bonusHP": 20000000,
       "bonusATK": 0,
-      "bonusDEF": 683750,
+      "bonusDEF": 680000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +20060000",
-        "DEF +683750"
+        "HP +20000000",
+        "DEF +680000"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -21465,14 +21465,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 29479448718,
+      "bonusATK": 29000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +29479448718"
+        "ATK +29000000000"
       ],
       "dropAreas": [
         "DS03"
@@ -21493,16 +21493,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1877140,
+      "bonusHP": 1800000,
       "bonusATK": 0,
-      "bonusDEF": 108000,
+      "bonusDEF": 100000,
       "bonusAGI": 272,
       "bonusLUC": 0,
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1877140",
-        "DEF +108000",
+        "HP +1800000",
+        "DEF +100000",
         "AGI +272"
       ],
       "dropAreas": [
@@ -21524,7 +21524,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 4336500,
+      "bonusHP": 4300000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -21532,7 +21532,7 @@
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "HP +4336500",
+        "HP +4300000",
         "LUC +727"
       ],
       "dropAreas": [
@@ -21554,7 +21554,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 276500,
+      "bonusHP": 270000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -21562,7 +21562,7 @@
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "HP +276500",
+        "HP +270000",
         "LUC +495"
       ],
       "dropAreas": [
@@ -21585,16 +21585,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 27200000,
+      "bonusHP": 27000000,
       "bonusATK": 0,
-      "bonusDEF": 875000,
+      "bonusDEF": 870000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "HP +27200000",
-        "DEF +875000"
+        "HP +27000000",
+        "DEF +870000"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -21614,14 +21614,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 25445418990,
+      "bonusATK": 25000000000,
       "bonusDEF": 0,
       "bonusAGI": 525,
       "bonusLUC": 0,
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +25445418990",
+        "ATK +25000000000",
         "AGI +525"
       ],
       "dropAreas": [
@@ -21644,16 +21644,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2549660,
+      "bonusHP": 2500000,
       "bonusATK": 0,
-      "bonusDEF": 138400,
+      "bonusDEF": 130000,
       "bonusAGI": 312,
       "bonusLUC": 0,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "HP +2549660",
-        "DEF +138400",
+        "HP +2500000",
+        "DEF +130000",
         "AGI +312"
       ],
       "dropAreas": [
@@ -21706,16 +21706,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 3463580,
+      "bonusHP": 3400000,
       "bonusATK": 0,
-      "bonusDEF": 177200,
+      "bonusDEF": 170000,
       "bonusAGI": 354,
       "bonusLUC": 0,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +3463580",
-        "DEF +177200",
+        "HP +3400000",
+        "DEF +170000",
         "AGI +354"
       ],
       "dropAreas": [],
@@ -21735,16 +21735,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 6234149,
+      "bonusHP": 6200000,
       "bonusATK": 0,
-      "bonusDEF": 287699,
+      "bonusDEF": 280000,
       "bonusAGI": 0,
       "bonusLUC": 1073,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "HP +6234149",
-        "DEF +287699",
+        "HP +6200000",
+        "DEF +280000",
         "LUC +1073"
       ],
       "dropAreas": [
@@ -21767,14 +21767,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 64957485674,
+      "bonusATK": 64000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +64957485674"
+        "ATK +64000000000"
       ],
       "dropAreas": [
         "DS04"
@@ -21795,7 +21795,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 810500,
+      "bonusHP": 810000,
       "bonusATK": 0,
       "bonusDEF": 50475,
       "bonusAGI": 74,
@@ -21803,7 +21803,7 @@
       "buyPrice": 1524900000,
       "maxCopies": -1,
       "effects": [
-        "HP +810500",
+        "HP +810000",
         "DEF +50475",
         "AGI +74"
       ],
@@ -21826,16 +21826,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 8501999,
+      "bonusHP": 8500000,
       "bonusATK": 0,
-      "bonusDEF": 367849,
+      "bonusDEF": 360000,
       "bonusAGI": 0,
       "bonusLUC": 1143,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +8501999",
-        "DEF +367849",
+        "HP +8500000",
+        "DEF +360000",
         "LUC +1143"
       ],
       "dropAreas": [
@@ -21857,16 +21857,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 4704920,
+      "bonusHP": 4700000,
       "bonusATK": 0,
-      "bonusDEF": 226400,
+      "bonusDEF": 220000,
       "bonusAGI": 402,
       "bonusLUC": 0,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "HP +4704920",
-        "DEF +226400",
+        "HP +4700000",
+        "DEF +220000",
         "AGI +402"
       ],
       "dropAreas": [
@@ -21888,7 +21888,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 306000,
+      "bonusHP": 300000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -21896,7 +21896,7 @@
       "buyPrice": 1524900000,
       "maxCopies": -1,
       "effects": [
-        "HP +306000",
+        "HP +300000",
         "LUC +1185"
       ],
       "dropAreas": [
@@ -21918,7 +21918,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1108000,
+      "bonusHP": 1100000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -21926,7 +21926,7 @@
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "HP +1108000"
+        "HP +1100000"
       ],
       "dropAreas": [
         "DS01"
@@ -21947,7 +21947,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 415500,
+      "bonusHP": 410000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -21955,7 +21955,7 @@
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "HP +415500",
+        "HP +410000",
         "LUC +1238"
       ],
       "dropAreas": [
@@ -21977,16 +21977,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 3199400,
+      "bonusHP": 3100000,
       "bonusATK": 0,
-      "bonusDEF": 156250,
+      "bonusDEF": 150000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "HP +3199400",
-        "DEF +156250"
+        "HP +3100000",
+        "DEF +150000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -22003,7 +22003,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1880500,
+      "bonusHP": 1800000,
       "bonusATK": 0,
       "bonusDEF": 59640,
       "bonusAGI": 0,
@@ -22011,7 +22011,7 @@
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1880500",
+        "HP +1800000",
         "DEF +59640"
       ],
       "dropAreas": [
@@ -22034,14 +22034,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1316300000,
+      "bonusATK": 1300000000,
       "bonusDEF": 0,
       "bonusAGI": 130,
       "bonusLUC": 0,
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1316300000",
+        "ATK +1300000000",
         "AGI +130"
       ],
       "dropAreas": [
@@ -22063,16 +22063,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 4343840,
+      "bonusHP": 4300000,
       "bonusATK": 0,
-      "bonusDEF": 199375,
+      "bonusDEF": 190000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +4343840",
-        "DEF +199375"
+        "HP +4300000",
+        "DEF +190000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -22089,7 +22089,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1504000,
+      "bonusHP": 1500000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -22097,7 +22097,7 @@
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1504000"
+        "HP +1500000"
       ],
       "dropAreas": [
         "DS02"
@@ -22118,7 +22118,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 564000,
+      "bonusHP": 560000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -22126,7 +22126,7 @@
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "HP +564000",
+        "HP +560000",
         "LUC +1291"
       ],
       "dropAreas": [
@@ -22149,14 +22149,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 56068566796,
+      "bonusATK": 56000000000,
       "bonusDEF": 0,
       "bonusAGI": 597,
       "bonusLUC": 0,
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +56068566796",
+        "ATK +56000000000",
         "AGI +597"
       ],
       "dropAreas": [
@@ -22178,16 +22178,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 11465999,
+      "bonusHP": 11000000,
       "bonusATK": 0,
-      "bonusDEF": 470749,
+      "bonusDEF": 470000,
       "bonusAGI": 0,
       "bonusLUC": 1219,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +11465999",
-        "DEF +470749",
+        "HP +11000000",
+        "DEF +470000",
         "LUC +1219"
       ],
       "dropAreas": [],
@@ -22208,14 +22208,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 143132700514,
+      "bonusATK": 140000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "ATK +143132700514"
+        "ATK +140000000000"
       ],
       "dropAreas": [
         "DS05"
@@ -22236,7 +22236,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2042400,
+      "bonusHP": 2000000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -22244,7 +22244,7 @@
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +2042400"
+        "HP +2000000"
       ],
       "dropAreas": [
         "FR01",
@@ -22266,16 +22266,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 3194000,
+      "bonusHP": 3100000,
       "bonusATK": 0,
-      "bonusDEF": 196500,
+      "bonusDEF": 190000,
       "bonusAGI": 0,
       "bonusLUC": 342,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +3194000",
-        "DEF +196500",
+        "HP +3100000",
+        "DEF +190000",
         "LUC +342"
       ],
       "dropAreas": [],
@@ -22323,7 +22323,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 765900,
+      "bonusHP": 760000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -22331,7 +22331,7 @@
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +765900",
+        "HP +760000",
         "LUC +1348"
       ],
       "dropAreas": [
@@ -22353,16 +22353,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 6390980,
+      "bonusHP": 6300000,
       "bonusATK": 0,
-      "bonusDEF": 289600,
+      "bonusDEF": 280000,
       "bonusAGI": 459,
       "bonusLUC": 0,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "HP +6390980",
-        "DEF +289600",
+        "HP +6300000",
+        "DEF +280000",
         "AGI +459"
       ],
       "dropAreas": [
@@ -22385,14 +22385,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 123546120916,
+      "bonusATK": 120000000000,
       "bonusDEF": 0,
       "bonusAGI": 679,
       "bonusLUC": 0,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "ATK +123546120916",
+        "ATK +120000000000",
         "AGI +679"
       ],
       "dropAreas": [
@@ -22414,7 +22414,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2772800,
+      "bonusHP": 2700000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -22422,7 +22422,7 @@
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "HP +2772800"
+        "HP +2700000"
       ],
       "dropAreas": [
         "DS04"
@@ -22444,14 +22444,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 315390410071,
+      "bonusATK": 310000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +315390410071"
+        "ATK +310000000000"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -22470,16 +22470,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 8704000,
+      "bonusHP": 8700000,
       "bonusATK": 0,
-      "bonusDEF": 370800,
+      "bonusDEF": 370000,
       "bonusAGI": 521,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "HP +8704000",
-        "DEF +370800",
+        "HP +8700000",
+        "DEF +370000",
         "AGI +521"
       ],
       "dropAreas": [
@@ -22501,7 +22501,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1039800,
+      "bonusHP": 1000000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -22509,7 +22509,7 @@
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1039800",
+        "HP +1000000",
         "LUC +1408"
       ],
       "dropAreas": [
@@ -22531,16 +22531,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 5897300,
+      "bonusHP": 5800000,
       "bonusATK": 0,
-      "bonusDEF": 255625,
+      "bonusDEF": 250000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "HP +5897300",
-        "DEF +255625"
+        "HP +5800000",
+        "DEF +250000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -22558,14 +22558,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 272231723418,
+      "bonusATK": 270000000000,
       "bonusDEF": 0,
       "bonusAGI": 772,
       "bonusLUC": 0,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +272231723418",
+        "ATK +270000000000",
         "AGI +772"
       ],
       "dropAreas": [],
@@ -22585,16 +22585,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 15599999,
+      "bonusHP": 15000000,
       "bonusATK": 0,
-      "bonusDEF": 601999,
+      "bonusDEF": 600000,
       "bonusAGI": 0,
       "bonusLUC": 1299,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "HP +15599999",
-        "DEF +601999",
+        "HP +15000000",
+        "DEF +600000",
         "LUC +1299"
       ],
       "dropAreas": [],
@@ -22614,16 +22614,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 11764000,
+      "bonusHP": 11000000,
       "bonusATK": 0,
-      "bonusDEF": 474000,
+      "bonusDEF": 470000,
       "bonusAGI": 594,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +11764000",
-        "DEF +474000",
+        "HP +11000000",
+        "DEF +470000",
         "AGI +594"
       ],
       "dropAreas": [
@@ -22646,14 +22646,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 694957602697,
+      "bonusATK": 690000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +694957602697"
+        "ATK +690000000000"
       ],
       "dropAreas": [
         "UW01"
@@ -22675,14 +22675,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 599858143570,
+      "bonusATK": 590000000000,
       "bonusDEF": 0,
       "bonusAGI": 880,
       "bonusLUC": 0,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +599858143570",
+        "ATK +590000000000",
         "AGI +880"
       ],
       "dropAreas": [
@@ -22704,16 +22704,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 8024000,
+      "bonusHP": 8000000,
       "bonusATK": 0,
-      "bonusDEF": 326875,
+      "bonusDEF": 320000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "HP +8024000",
-        "DEF +326875"
+        "HP +8000000",
+        "DEF +320000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -22731,14 +22731,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1531327513021,
+      "bonusATK": 1500000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1531327513021"
+        "ATK +1500000000000"
       ],
       "dropAreas": [
         "UW02"
@@ -22759,7 +22759,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 3764000,
+      "bonusHP": 3700000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -22767,7 +22767,7 @@
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "HP +3764000"
+        "HP +3700000"
       ],
       "dropAreas": [
         "DS05"
@@ -22788,16 +22788,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 6919000,
+      "bonusHP": 6900000,
       "bonusATK": 0,
-      "bonusDEF": 283000,
+      "bonusDEF": 280000,
       "bonusAGI": 183,
       "bonusLUC": 0,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "HP +6919000",
-        "DEF +283000",
+        "HP +6900000",
+        "DEF +280000",
         "AGI +183"
       ],
       "dropAreas": [
@@ -22819,7 +22819,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1276500,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 93810,
       "bonusAGI": 0,
@@ -22827,7 +22827,7 @@
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +1276500",
+        "HP +1200000",
         "DEF +93810",
         "LUC +283"
       ],
@@ -22850,16 +22850,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 10880000,
+      "bonusHP": 10000000,
       "bonusATK": 0,
-      "bonusDEF": 418125,
+      "bonusDEF": 410000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "HP +10880000",
-        "DEF +418125"
+        "HP +10000000",
+        "DEF +410000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -22877,14 +22877,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1321777437348,
+      "bonusATK": 1300000000000,
       "bonusDEF": 0,
       "bonusAGI": 1000,
       "bonusLUC": 0,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1321777437348",
+        "ATK +1300000000000",
         "AGI +1000"
       ],
       "dropAreas": [
@@ -22936,7 +22936,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 323500,
+      "bonusHP": 320000,
       "bonusATK": 0,
       "bonusDEF": 24105,
       "bonusAGI": 50,
@@ -22944,7 +22944,7 @@
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "HP +323500",
+        "HP +320000",
         "DEF +24105",
         "AGI +50"
       ],
@@ -22967,7 +22967,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 110500,
+      "bonusHP": 110000,
       "bonusATK": 0,
       "bonusDEF": 13090,
       "bonusAGI": 0,
@@ -22975,7 +22975,7 @@
       "buyPrice": 484800000,
       "maxCopies": -1,
       "effects": [
-        "HP +110500",
+        "HP +110000",
         "DEF +13090",
         "LUC +170"
       ],
@@ -23028,16 +23028,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 16048000,
+      "bonusHP": 16000000,
       "bonusATK": 0,
-      "bonusDEF": 606400,
+      "bonusDEF": 600000,
       "bonusAGI": 677,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +16048000",
-        "DEF +606400",
+        "HP +16000000",
+        "DEF +600000",
         "AGI +677"
       ],
       "dropAreas": [],
@@ -23058,14 +23058,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 11500000,
+      "bonusATK": 11000000,
       "bonusDEF": 0,
       "bonusAGI": 60,
       "bonusLUC": 0,
       "buyPrice": 333000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +11500000",
+        "ATK +11000000",
         "AGI +60"
       ],
       "dropAreas": [
@@ -23088,14 +23088,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3374254597991,
+      "bonusATK": 3300000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +3374254597991"
+        "ATK +3300000000000"
       ],
       "dropAreas": [
         "UW03"
@@ -23116,16 +23116,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 21760000,
+      "bonusHP": 21000000,
       "bonusATK": 0,
-      "bonusDEF": 776000,
+      "bonusDEF": 770000,
       "bonusAGI": 770,
       "bonusLUC": 0,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "HP +21760000",
-        "DEF +776000",
+        "HP +21000000",
+        "DEF +770000",
         "AGI +770"
       ],
       "dropAreas": [],
@@ -23146,14 +23146,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2912514506250,
+      "bonusATK": 2900000000000,
       "bonusDEF": 0,
       "bonusAGI": 1140,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2912514506250",
+        "ATK +2900000000000",
         "AGI +1140"
       ],
       "dropAreas": [
@@ -23175,7 +23175,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 407500,
+      "bonusHP": 400000,
       "bonusATK": 0,
       "bonusDEF": 17410,
       "bonusAGI": 0,
@@ -23183,7 +23183,7 @@
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "HP +407500",
+        "HP +400000",
         "DEF +17410"
       ],
       "dropAreas": [],
@@ -23203,7 +23203,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 204000,
+      "bonusHP": 200000,
       "bonusATK": 0,
       "bonusDEF": 21415,
       "bonusAGI": 0,
@@ -23211,7 +23211,7 @@
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "HP +204000",
+        "HP +200000",
         "DEF +21415",
         "LUC +193"
       ],
@@ -23232,7 +23232,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1411500,
+      "bonusHP": 1400000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -23240,7 +23240,7 @@
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "HP +1411500",
+        "HP +1400000",
         "LUC +1469"
       ],
       "dropAreas": [
@@ -23263,14 +23263,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 7435114104512,
+      "bonusATK": 7400000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +7435114104512"
+        "ATK +7400000000000"
       ],
       "dropAreas": [
         "UW04"
@@ -23291,16 +23291,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 14756000,
+      "bonusHP": 14000000,
       "bonusATK": 0,
-      "bonusDEF": 534375,
+      "bonusDEF": 530000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +14756000",
-        "DEF +534375"
+        "HP +14000000",
+        "DEF +530000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -23317,7 +23317,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1733000,
+      "bonusHP": 1700000,
       "bonusATK": 0,
       "bonusDEF": 120000,
       "bonusAGI": 0,
@@ -23325,7 +23325,7 @@
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1733000",
+        "HP +1700000",
         "DEF +120000",
         "LUC +301"
       ],
@@ -23348,7 +23348,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 5110400,
+      "bonusHP": 5100000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -23356,7 +23356,7 @@
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +5110400"
+        "HP +5100000"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -23376,14 +23376,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6417677462131,
+      "bonusATK": 6400000000000,
       "bonusDEF": 0,
       "bonusAGI": 1296,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6417677462131",
+        "ATK +6400000000000",
         "AGI +1296"
       ],
       "dropAreas": [
@@ -23405,7 +23405,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 221000,
+      "bonusHP": 220000,
       "bonusATK": 0,
       "bonusDEF": 10635,
       "bonusAGI": 0,
@@ -23413,7 +23413,7 @@
       "buyPrice": 484800000,
       "maxCopies": -1,
       "effects": [
-        "HP +221000",
+        "HP +220000",
         "DEF +10635"
       ],
       "dropAreas": [
@@ -23435,7 +23435,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 175500,
+      "bonusHP": 170000,
       "bonusATK": 0,
       "bonusDEF": 14730,
       "bonusAGI": 39,
@@ -23443,7 +23443,7 @@
       "buyPrice": 484800000,
       "maxCopies": -1,
       "effects": [
-        "HP +175500",
+        "HP +170000",
         "DEF +14730",
         "AGI +39"
       ],
@@ -23528,16 +23528,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 20060000,
+      "bonusHP": 20000000,
       "bonusATK": 0,
-      "bonusDEF": 683750,
+      "bonusDEF": 680000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +20060000",
-        "DEF +683750"
+        "HP +20000000",
+        "DEF +680000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -23554,7 +23554,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 692500,
+      "bonusHP": 690000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -23562,7 +23562,7 @@
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "HP +692500",
+        "HP +690000",
         "LUC +563"
       ],
       "dropAreas": [
@@ -23584,16 +23584,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 27200000,
+      "bonusHP": 27000000,
       "bonusATK": 0,
-      "bonusDEF": 875000,
+      "bonusDEF": 870000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "HP +27200000",
-        "DEF +875000"
+        "HP +27000000",
+        "DEF +870000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -23611,14 +23611,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2900500000,
+      "bonusATK": 2900000000,
       "bonusDEF": 0,
       "bonusAGI": 148,
       "bonusLUC": 0,
       "buyPrice": 1524900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2900500000",
+        "ATK +2900000000",
         "AGI +148"
       ],
       "dropAreas": [
@@ -23640,16 +23640,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2760500,
+      "bonusHP": 2700000,
       "bonusATK": 0,
-      "bonusDEF": 135000,
+      "bonusDEF": 130000,
       "bonusAGI": 124,
       "bonusLUC": 0,
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "HP +2760500",
-        "DEF +135000",
+        "HP +2700000",
+        "DEF +130000",
         "AGI +124"
       ],
       "dropAreas": [
@@ -23671,16 +23671,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 21760000,
+      "bonusHP": 21000000,
       "bonusATK": 0,
-      "bonusDEF": 776000,
+      "bonusDEF": 770000,
       "bonusAGI": 770,
       "bonusLUC": 0,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "HP +21760000",
-        "DEF +776000",
+        "HP +21000000",
+        "DEF +770000",
         "AGI +770"
       ],
       "dropAreas": [],
@@ -23699,14 +23699,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 16383150657573,
+      "bonusATK": 16000000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +16383150657573"
+        "ATK +16000000000000"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -23726,14 +23726,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 14141245884848,
+      "bonusATK": 14000000000000,
       "bonusDEF": 0,
       "bonusAGI": 1476,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +14141245884848",
+        "ATK +14000000000000",
         "AGI +1476"
       ],
       "dropAreas": [],
@@ -23754,14 +23754,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 36099999523657,
+      "bonusATK": 36000000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +36099999523657"
+        "ATK +36000000000000"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -23781,14 +23781,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 31159999708050,
+      "bonusATK": 31000000000000,
       "bonusDEF": 0,
       "bonusAGI": 1680,
       "bonusLUC": 0,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +31159999708050",
+        "ATK +31000000000000",
         "AGI +1680"
       ],
       "dropAreas": [],
@@ -23808,16 +23808,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 5887000,
+      "bonusHP": 5800000,
       "bonusATK": 0,
-      "bonusDEF": 321000,
+      "bonusDEF": 320000,
       "bonusAGI": 0,
       "bonusLUC": 388,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "HP +5887000",
-        "DEF +321000",
+        "HP +5800000",
+        "DEF +320000",
         "LUC +388"
       ],
       "dropAreas": [
@@ -23839,7 +23839,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1385000,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 46620,
       "bonusAGI": 0,
@@ -23847,7 +23847,7 @@
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "HP +1385000",
+        "HP +1300000",
         "DEF +46620"
       ],
       "dropAreas": [
@@ -23870,7 +23870,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 7992500,
+      "bonusHP": 7900000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -23878,7 +23878,7 @@
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "HP +7992500",
+        "HP +7900000",
         "LUC +792"
       ],
       "dropAreas": [
@@ -23900,16 +23900,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 5093500,
+      "bonusHP": 5000000,
       "bonusATK": 0,
-      "bonusDEF": 221500,
+      "bonusDEF": 220000,
       "bonusAGI": 161,
       "bonusLUC": 0,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +5093500",
-        "DEF +221500",
+        "HP +5000000",
+        "DEF +220000",
         "AGI +161"
       ],
       "dropAreas": [],
@@ -23930,14 +23930,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 123000000,
+      "bonusATK": 120000000,
       "bonusDEF": 0,
       "bonusAGI": 88,
       "bonusLUC": 0,
       "buyPrice": 609600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +123000000",
+        "ATK +120000000",
         "AGI +88"
       ],
       "dropAreas": [],
@@ -23958,14 +23958,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 31159999708050,
+      "bonusATK": 31000000000000,
       "bonusDEF": 0,
       "bonusAGI": 1680,
       "bonusLUC": 0,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +31159999708050",
+        "ATK +31000000000000",
         "AGI +1680"
       ],
       "dropAreas": [],
@@ -23983,7 +23983,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 553500,
+      "bonusHP": 550000,
       "bonusATK": 0,
       "bonusDEF": 22270,
       "bonusAGI": 0,
@@ -23991,7 +23991,7 @@
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "HP +553500",
+        "HP +550000",
         "DEF +22270"
       ],
       "dropAreas": [
@@ -24014,14 +24014,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 64957485674,
+      "bonusATK": 64000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +64957485674"
+        "ATK +64000000000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -24038,7 +24038,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1916400,
+      "bonusHP": 1900000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24046,7 +24046,7 @@
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +1916400",
+        "HP +1900000",
         "LUC +1533"
       ],
       "dropAreas": [],
@@ -24066,7 +24066,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 6938400,
+      "bonusHP": 6900000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24074,7 +24074,7 @@
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "HP +6938400"
+        "HP +6900000"
       ],
       "dropAreas": [
         "UW01"
@@ -24096,14 +24096,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 150666000000,
+      "bonusATK": 150000000000,
       "bonusDEF": 0,
       "bonusAGI": 283,
       "bonusLUC": 0,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "ATK +150666000000",
+        "ATK +150000000000",
         "AGI +283"
       ],
       "dropAreas": [
@@ -24126,14 +24126,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 56068566796,
+      "bonusATK": 56000000000,
       "bonusDEF": 0,
       "bonusAGI": 597,
       "bonusLUC": 0,
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +56068566796",
+        "ATK +56000000000",
         "AGI +597"
       ],
       "dropAreas": [],
@@ -24151,16 +24151,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 8704000,
+      "bonusHP": 8700000,
       "bonusATK": 0,
-      "bonusDEF": 370800,
+      "bonusDEF": 370000,
       "bonusAGI": 521,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "HP +8704000",
-        "DEF +370800",
+        "HP +8700000",
+        "DEF +370000",
         "AGI +521"
       ],
       "dropAreas": [],
@@ -24178,16 +24178,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 11465999,
+      "bonusHP": 11000000,
       "bonusATK": 0,
-      "bonusDEF": 470749,
+      "bonusDEF": 470000,
       "bonusAGI": 0,
       "bonusLUC": 1219,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +11465999",
-        "DEF +470749",
+        "HP +11000000",
+        "DEF +470000",
         "LUC +1219"
       ],
       "dropAreas": [],
@@ -24206,14 +24206,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 143132700514,
+      "bonusATK": 140000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "ATK +143132700514"
+        "ATK +140000000000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -24230,7 +24230,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2601900,
+      "bonusHP": 2600000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24238,7 +24238,7 @@
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "HP +2601900",
+        "HP +2600000",
         "LUC +1599"
       ],
       "dropAreas": [
@@ -24260,16 +24260,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 15599999,
+      "bonusHP": 15000000,
       "bonusATK": 0,
-      "bonusDEF": 601999,
+      "bonusDEF": 600000,
       "bonusAGI": 0,
       "bonusLUC": 1299,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "HP +15599999",
-        "DEF +601999",
+        "HP +15000000",
+        "DEF +600000",
         "LUC +1299"
       ],
       "dropAreas": [],
@@ -24317,7 +24317,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 9419200,
+      "bonusHP": 9400000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24325,7 +24325,7 @@
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "HP +9419200"
+        "HP +9400000"
       ],
       "dropAreas": [
         "UW02"
@@ -24346,7 +24346,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 3532200,
+      "bonusHP": 3500000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24354,7 +24354,7 @@
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "HP +3532200",
+        "HP +3500000",
         "LUC +1669"
       ],
       "dropAreas": [
@@ -24376,7 +24376,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 204000,
+      "bonusHP": 200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24384,7 +24384,7 @@
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "HP +204000",
+        "HP +200000",
         "LUC +474"
       ],
       "dropAreas": [
@@ -24406,7 +24406,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 12788000,
+      "bonusHP": 12000000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24414,7 +24414,7 @@
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "HP +12788000"
+        "HP +12000000"
       ],
       "dropAreas": [
         "UW03"
@@ -24436,14 +24436,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 315390410071,
+      "bonusATK": 310000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +315390410071"
+        "ATK +310000000000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -24460,7 +24460,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 4795500,
+      "bonusHP": 4700000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24468,7 +24468,7 @@
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "HP +4795500",
+        "HP +4700000",
         "LUC +1742"
       ],
       "dropAreas": [
@@ -24491,14 +24491,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 123546120916,
+      "bonusATK": 120000000000,
       "bonusDEF": 0,
       "bonusAGI": 679,
       "bonusLUC": 0,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "ATK +123546120916",
+        "ATK +120000000000",
         "AGI +679"
       ],
       "dropAreas": [],
@@ -24516,16 +24516,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 11764000,
+      "bonusHP": 11000000,
       "bonusATK": 0,
-      "bonusDEF": 474000,
+      "bonusDEF": 470000,
       "bonusAGI": 594,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +11764000",
-        "DEF +474000",
+        "HP +11000000",
+        "DEF +470000",
         "AGI +594"
       ],
       "dropAreas": [],
@@ -24543,7 +24543,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 375500,
+      "bonusHP": 370000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24551,7 +24551,7 @@
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "HP +375500",
+        "HP +370000",
         "LUC +517"
       ],
       "dropAreas": [
@@ -24573,16 +24573,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 16048000,
+      "bonusHP": 16000000,
       "bonusATK": 0,
-      "bonusDEF": 606400,
+      "bonusDEF": 600000,
       "bonusAGI": 677,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +16048000",
-        "DEF +606400",
+        "HP +16000000",
+        "DEF +600000",
         "AGI +677"
       ],
       "dropAreas": [],
@@ -24600,7 +24600,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 17440000,
+      "bonusHP": 17000000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24608,7 +24608,7 @@
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +17440000"
+        "HP +17000000"
       ],
       "dropAreas": [
         "UW04"
@@ -24629,7 +24629,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 10900000,
+      "bonusHP": 10000000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24637,7 +24637,7 @@
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +10900000",
+        "HP +10000000",
         "LUC +826"
       ],
       "dropAreas": [
@@ -24659,7 +24659,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 751500,
+      "bonusHP": 750000,
       "bonusATK": 0,
       "bonusDEF": 28490,
       "bonusAGI": 0,
@@ -24667,7 +24667,7 @@
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "HP +751500",
+        "HP +750000",
         "DEF +28490"
       ],
       "dropAreas": [
@@ -24689,7 +24689,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 733199,
+      "bonusHP": 730000,
       "bonusATK": 0,
       "bonusDEF": 51337,
       "bonusAGI": 0,
@@ -24697,7 +24697,7 @@
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "HP +733199",
+        "HP +730000",
         "DEF +51337",
         "LUC +688"
       ],
@@ -24717,14 +24717,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 271100000,
+      "bonusATK": 270000000,
       "bonusDEF": 0,
       "bonusAGI": 101,
       "bonusLUC": 0,
       "buyPrice": 766100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +271100000",
+        "ATK +270000000",
         "AGI +101"
       ],
       "dropAreas": [
@@ -24748,14 +24748,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 272231723418,
+      "bonusATK": 270000000000,
       "bonusDEF": 0,
       "bonusAGI": 772,
       "bonusLUC": 0,
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +272231723418",
+        "ATK +270000000000",
         "AGI +772"
       ],
       "dropAreas": [],
@@ -24774,14 +24774,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 694957602697,
+      "bonusATK": 690000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +694957602697"
+        "ATK +690000000000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -24798,16 +24798,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 21760000,
+      "bonusHP": 21000000,
       "bonusATK": 0,
-      "bonusDEF": 776000,
+      "bonusDEF": 770000,
       "bonusAGI": 770,
       "bonusLUC": 0,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "HP +21760000",
-        "DEF +776000",
+        "HP +21000000",
+        "DEF +770000",
         "AGI +770"
       ],
       "dropAreas": [],
@@ -24856,7 +24856,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1020000,
+      "bonusHP": 1000000,
       "bonusATK": 0,
       "bonusDEF": 36445,
       "bonusAGI": 0,
@@ -24864,7 +24864,7 @@
       "buyPrice": 1524900000,
       "maxCopies": -1,
       "effects": [
-        "HP +1020000",
+        "HP +1000000",
         "DEF +36445"
       ],
       "dropAreas": [
@@ -24887,14 +24887,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 599858143570,
+      "bonusATK": 590000000000,
       "bonusDEF": 0,
       "bonusAGI": 880,
       "bonusLUC": 0,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +599858143570",
+        "ATK +590000000000",
         "AGI +880"
       ],
       "dropAreas": [],
@@ -24912,7 +24912,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1496000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
       "bonusDEF": 82610,
       "bonusAGI": 96,
@@ -24920,7 +24920,7 @@
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1496000",
+        "HP +1400000",
         "DEF +82610",
         "AGI +96"
       ],
@@ -24943,7 +24943,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 6540000,
+      "bonusHP": 6500000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24951,7 +24951,7 @@
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "HP +6540000",
+        "HP +6500000",
         "LUC +1817"
       ],
       "dropAreas": [
@@ -24973,7 +24973,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 110500,
+      "bonusHP": 110000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -24981,7 +24981,7 @@
       "buyPrice": 484800000,
       "maxCopies": -1,
       "effects": [
-        "HP +110500",
+        "HP +110000",
         "LUC +436"
       ],
       "dropAreas": [
@@ -25004,14 +25004,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 597400000,
+      "bonusATK": 590000000,
       "bonusDEF": 0,
       "bonusAGI": 115,
       "bonusLUC": 0,
       "buyPrice": 962800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +597400000",
+        "ATK +590000000",
         "AGI +115"
       ],
       "dropAreas": [
@@ -25034,14 +25034,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1611923700000,
+      "bonusATK": 1600000000000,
       "bonusDEF": 0,
       "bonusAGI": 417,
       "bonusLUC": 0,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1611923700000",
+        "ATK +1600000000000",
         "AGI +417"
       ],
       "dropAreas": [
@@ -25064,14 +25064,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1531327513021,
+      "bonusATK": 1500000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1531327513021"
+        "ATK +1500000000000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -25088,16 +25088,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 23600000,
+      "bonusHP": 23000000,
       "bonusATK": 0,
-      "bonusDEF": 758000,
+      "bonusDEF": 750000,
       "bonusAGI": 308,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +23600000",
-        "DEF +758000",
+        "HP +23000000",
+        "DEF +750000",
         "AGI +308"
       ],
       "dropAreas": [],
@@ -25117,16 +25117,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 9398500,
+      "bonusHP": 9300000,
       "bonusATK": 0,
-      "bonusDEF": 362000,
+      "bonusDEF": 360000,
       "bonusAGI": 209,
       "bonusLUC": 0,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "HP +9398500",
-        "DEF +362000",
+        "HP +9300000",
+        "DEF +360000",
         "AGI +209"
       ],
       "dropAreas": [
@@ -25148,7 +25148,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 163000,
+      "bonusHP": 160000,
       "bonusATK": 0,
       "bonusDEF": 8315,
       "bonusAGI": 0,
@@ -25156,7 +25156,7 @@
       "buyPrice": 386300000,
       "maxCopies": -1,
       "effects": [
-        "HP +163000",
+        "HP +160000",
         "DEF +8315"
       ],
       "dropAreas": [
@@ -25208,14 +25208,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 55800000,
+      "bonusATK": 55000000,
       "bonusDEF": 0,
       "bonusAGI": 78,
       "bonusLUC": 0,
       "buyPrice": 484800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +55800000",
+        "ATK +55000000",
         "AGI +78"
       ],
       "dropAreas": [
@@ -25237,7 +25237,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 597000,
+      "bonusHP": 590000,
       "bonusATK": 0,
       "bonusDEF": 39455,
       "bonusAGI": 65,
@@ -25245,7 +25245,7 @@
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "HP +597000",
+        "HP +590000",
         "DEF +39455",
         "AGI +65"
       ],
@@ -25269,14 +25269,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 25300000,
+      "bonusATK": 25000000,
       "bonusDEF": 0,
       "bonusAGI": 68,
       "bonusLUC": 0,
       "buyPrice": 386300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +25300000",
+        "ATK +25000000",
         "AGI +68"
       ],
       "dropAreas": [
@@ -25299,14 +25299,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1321777437348,
+      "bonusATK": 1300000000000,
       "bonusDEF": 0,
       "bonusAGI": 1000,
       "bonusLUC": 0,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1321777437348",
+        "ATK +1300000000000",
         "AGI +1000"
       ],
       "dropAreas": [],
@@ -25325,14 +25325,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3374254597991,
+      "bonusATK": 3300000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +3374254597991"
+        "ATK +3300000000000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -25380,7 +25380,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 23520000,
+      "bonusHP": 23000000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -25388,7 +25388,7 @@
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +23520000"
+        "HP +23000000"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -25408,14 +25408,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 2912514506250,
+      "bonusATK": 2900000000000,
       "bonusDEF": 0,
       "bonusAGI": 1140,
       "bonusLUC": 0,
       "buyPrice": 12367800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +2912514506250",
+        "ATK +2900000000000",
         "AGI +1140"
       ],
       "dropAreas": [],
@@ -25433,7 +25433,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 8820000,
+      "bonusHP": 8800000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -25441,7 +25441,7 @@
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +8820000",
+        "HP +8800000",
         "LUC +1896"
       ],
       "dropAreas": [],
@@ -25461,7 +25461,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1276500,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -25469,7 +25469,7 @@
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +1276500",
+        "HP +1200000",
         "LUC +613"
       ],
       "dropAreas": [
@@ -25492,16 +25492,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 4336500,
+      "bonusHP": 4300000,
       "bonusATK": 0,
-      "bonusDEF": 251000,
+      "bonusDEF": 250000,
       "bonusAGI": 0,
       "bonusLUC": 364,
       "buyPrice": 7726400000,
       "maxCopies": -1,
       "effects": [
-        "HP +4336500",
-        "DEF +251000",
+        "HP +4300000",
+        "DEF +250000",
         "LUC +364"
       ],
       "dropAreas": [
@@ -25524,14 +25524,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 7435114104512,
+      "bonusATK": 7400000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +7435114104512"
+        "ATK +7400000000000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -25549,14 +25549,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6417677462131,
+      "bonusATK": 6400000000000,
       "bonusDEF": 0,
       "bonusAGI": 1296,
       "bonusLUC": 0,
       "buyPrice": 15587200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6417677462131",
+        "ATK +6400000000000",
         "AGI +1296"
       ],
       "dropAreas": [],
@@ -25601,7 +25601,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 995669,
+      "bonusHP": 990000,
       "bonusATK": 0,
       "bonusDEF": 65666,
       "bonusAGI": 0,
@@ -25609,7 +25609,7 @@
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +995669",
+        "HP +990000",
         "DEF +65666",
         "LUC +735"
       ],
@@ -25656,7 +25656,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1733000,
+      "bonusHP": 1700000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -25664,7 +25664,7 @@
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1733000",
+        "HP +1700000",
         "LUC +640"
       ],
       "dropAreas": [
@@ -25687,14 +25687,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 16383150657573,
+      "bonusATK": 16000000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +16383150657573"
+        "ATK +16000000000000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -25711,7 +25711,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 129000,
+      "bonusHP": 120000,
       "bonusATK": 0,
       "bonusDEF": 11515,
       "bonusAGI": 34,
@@ -25719,7 +25719,7 @@
       "buyPrice": 386300000,
       "maxCopies": -1,
       "effects": [
-        "HP +129000",
+        "HP +120000",
         "DEF +11515",
         "AGI +34"
       ],
@@ -25742,7 +25742,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1017280,
+      "bonusHP": 1000000,
       "bonusATK": 0,
       "bonusDEF": 66088,
       "bonusAGI": 211,
@@ -25750,7 +25750,7 @@
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1017280",
+        "HP +1000000",
         "DEF +66088",
         "AGI +211"
       ],
@@ -25769,16 +25769,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 14700000,
+      "bonusHP": 14000000,
       "bonusATK": 0,
-      "bonusDEF": 672500,
+      "bonusDEF": 670000,
       "bonusAGI": 0,
       "bonusLUC": 469,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "HP +14700000",
-        "DEF +672500",
+        "HP +14000000",
+        "DEF +670000",
         "LUC +469"
       ],
       "dropAreas": [],
@@ -25799,14 +25799,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 14141245884848,
+      "bonusATK": 14000000000000,
       "bonusDEF": 0,
       "bonusAGI": 1476,
       "bonusLUC": 0,
       "buyPrice": 19744800000,
       "maxCopies": -1,
       "effects": [
-        "ATK +14141245884848",
+        "ATK +14000000000000",
         "AGI +1476"
       ],
       "dropAreas": [],
@@ -25824,16 +25824,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 11800000,
+      "bonusHP": 11000000,
       "bonusATK": 0,
-      "bonusDEF": 261500,
+      "bonusDEF": 260000,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 9745900000,
       "maxCopies": -1,
       "effects": [
-        "HP +11800000",
-        "DEF +261500"
+        "HP +11000000",
+        "DEF +260000"
       ],
       "dropAreas": [
         "UW02"
@@ -25854,7 +25854,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1916400,
+      "bonusHP": 1900000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -25862,7 +25862,7 @@
       "buyPrice": 6118600000,
       "maxCopies": -1,
       "effects": [
-        "HP +1916400",
+        "HP +1900000",
         "LUC +1533"
       ],
       "dropAreas": [],
@@ -25881,14 +25881,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 68376300000,
+      "bonusATK": 68000000000,
       "bonusDEF": 0,
       "bonusAGI": 249,
       "bonusLUC": 0,
       "buyPrice": 3842300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +68376300000",
+        "ATK +68000000000",
         "AGI +249"
       ],
       "dropAreas": [
@@ -25911,14 +25911,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 14082700000,
+      "bonusATK": 14000000000,
       "bonusDEF": 0,
       "bonusAGI": 192,
       "bonusLUC": 0,
       "buyPrice": 2418300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +14082700000",
+        "ATK +14000000000",
         "AGI +192"
       ],
       "dropAreas": [
@@ -25941,14 +25941,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 31031000000,
+      "bonusATK": 31000000000,
       "bonusDEF": 0,
       "bonusAGI": 219,
       "bonusLUC": 0,
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +31031000000",
+        "ATK +31000000000",
         "AGI +219"
       ],
       "dropAreas": [
@@ -25971,7 +25971,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2553000,
+      "bonusHP": 2500000,
       "bonusATK": 0,
       "bonusDEF": 76295,
       "bonusAGI": 0,
@@ -25979,7 +25979,7 @@
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +2553000",
+        "HP +2500000",
         "DEF +76295"
       ],
       "dropAreas": [
@@ -26001,7 +26001,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1381760,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 84400,
       "bonusAGI": 239,
@@ -26009,7 +26009,7 @@
       "buyPrice": 3046600000,
       "maxCopies": -1,
       "effects": [
-        "HP +1381760",
+        "HP +1300000",
         "DEF +84400",
         "AGI +239"
       ],
@@ -26029,14 +26029,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6391100000,
+      "bonusATK": 6300000000,
       "bonusDEF": 0,
       "bonusAGI": 169,
       "bonusLUC": 0,
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6391100000",
+        "ATK +6300000000",
         "AGI +169"
       ],
       "dropAreas": [
@@ -26058,16 +26058,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 3749500,
+      "bonusHP": 3700000,
       "bonusATK": 0,
-      "bonusDEF": 173000,
+      "bonusDEF": 170000,
       "bonusAGI": 142,
       "bonusLUC": 0,
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "HP +3749500",
-        "DEF +173000",
+        "HP +3700000",
+        "DEF +170000",
         "AGI +142"
       ],
       "dropAreas": [
@@ -26089,7 +26089,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 2352500,
+      "bonusHP": 2300000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -26097,7 +26097,7 @@
       "buyPrice": 4847500000,
       "maxCopies": -1,
       "effects": [
-        "HP +2352500",
+        "HP +2300000",
         "LUC +668"
       ],
       "dropAreas": [
@@ -26119,7 +26119,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1101500,
+      "bonusHP": 1100000,
       "bonusATK": 0,
       "bonusDEF": 64570,
       "bonusAGI": 84,
@@ -26127,7 +26127,7 @@
       "buyPrice": 1919400000,
       "maxCopies": -1,
       "effects": [
-        "HP +1101500",
+        "HP +1100000",
         "DEF +64570",
         "AGI +84"
       ],
@@ -26150,7 +26150,7 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 375500,
+      "bonusHP": 370000,
       "bonusATK": 0,
       "bonusDEF": 35040,
       "bonusAGI": 0,
@@ -26158,7 +26158,7 @@
       "buyPrice": 1211300000,
       "maxCopies": -1,
       "effects": [
-        "HP +375500",
+        "HP +370000",
         "DEF +35040",
         "LUC +219"
       ],
@@ -26212,14 +26212,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 36099999523657,
+      "bonusATK": 36000000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +36099999523657"
+        "ATK +36000000000000"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -26237,14 +26237,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 31159999708050,
+      "bonusATK": 31000000000000,
       "bonusDEF": 0,
       "bonusAGI": 1680,
       "bonusLUC": 0,
       "buyPrice": 25011100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +31159999708050",
+        "ATK +31000000000000",
         "AGI +1680"
       ],
       "dropAreas": [],
@@ -26289,7 +26289,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 177000,
+      "bonusHP": 170000,
       "bonusATK": 0,
       "bonusDEF": 7190,
       "bonusAGI": 1300,
@@ -26297,7 +26297,7 @@
       "buyPrice": 648000,
       "maxCopies": -1,
       "effects": [
-        "HP +177000",
+        "HP +170000",
         "DEF +7190",
         "AGI +1300"
       ],
@@ -26320,7 +26320,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1390000,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 40000,
       "bonusAGI": 0,
@@ -26328,7 +26328,7 @@
       "buyPrice": 1330000,
       "maxCopies": -1,
       "effects": [
-        "HP +1390000",
+        "HP +1300000",
         "DEF +40000",
         "LUC +6050"
       ],
@@ -26351,7 +26351,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 129000,
+      "bonusHP": 120000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -26359,7 +26359,7 @@
       "buyPrice": 371000,
       "maxCopies": -1,
       "effects": [
-        "HP +129000"
+        "HP +120000"
       ],
       "dropAreas": [
         "GR02"
@@ -26409,7 +26409,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 103000,
+      "bonusHP": 100000,
       "bonusATK": 0,
       "bonusDEF": 4470,
       "bonusAGI": 0,
@@ -26417,7 +26417,7 @@
       "buyPrice": 730000,
       "maxCopies": -1,
       "effects": [
-        "HP +103000",
+        "HP +100000",
         "DEF +4470"
       ],
       "dropAreas": [
@@ -26440,14 +26440,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 16100000,
+      "bonusATK": 16000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 213000,
       "maxCopies": -1,
       "effects": [
-        "ATK +16100000"
+        "ATK +16000000"
       ],
       "dropAreas": [
         "GR01"
@@ -26876,7 +26876,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 414000,
+      "bonusHP": 410000,
       "bonusATK": 0,
       "bonusDEF": 14700,
       "bonusAGI": 0,
@@ -26884,7 +26884,7 @@
       "buyPrice": 1070000,
       "maxCopies": -1,
       "effects": [
-        "HP +414000",
+        "HP +410000",
         "DEF +14700"
       ],
       "dropAreas": [
@@ -26937,14 +26937,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6810000,
+      "bonusATK": 6800000,
       "bonusDEF": 0,
       "bonusAGI": 605,
       "bonusLUC": 0,
       "buyPrice": 371000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6810000",
+        "ATK +6800000",
         "AGI +605"
       ],
       "dropAreas": [
@@ -27084,7 +27084,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 112000,
+      "bonusHP": 110000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -27092,7 +27092,7 @@
       "buyPrice": 626000,
       "maxCopies": -1,
       "effects": [
-        "HP +112000",
+        "HP +110000",
         "LUC +916"
       ],
       "dropAreas": [
@@ -27520,7 +27520,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 187000,
+      "bonusHP": 180000,
       "bonusATK": 0,
       "bonusDEF": 7620,
       "bonusAGI": 0,
@@ -27528,7 +27528,7 @@
       "buyPrice": 257000,
       "maxCopies": -1,
       "effects": [
-        "HP +187000",
+        "HP +180000",
         "DEF +7620"
       ],
       "dropAreas": [
@@ -27610,14 +27610,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 38300000,
+      "bonusATK": 38000000,
       "bonusDEF": 0,
       "bonusAGI": 1340,
       "bonusLUC": 0,
       "buyPrice": 257000,
       "maxCopies": -1,
       "effects": [
-        "ATK +38300000",
+        "ATK +38000000",
         "AGI +1340"
       ],
       "dropAreas": [
@@ -27697,7 +27697,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 184000,
+      "bonusHP": 180000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -27705,7 +27705,7 @@
       "buyPrice": 1030000,
       "maxCopies": -1,
       "effects": [
-        "HP +184000"
+        "HP +180000"
       ],
       "dropAreas": [
         "GR03"
@@ -28024,7 +28024,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 101000,
+      "bonusHP": 100000,
       "bonusATK": 0,
       "bonusDEF": 4380,
       "bonusAGI": 0,
@@ -28032,7 +28032,7 @@
       "buyPrice": 394000,
       "maxCopies": -1,
       "effects": [
-        "HP +101000",
+        "HP +100000",
         "DEF +4380",
         "LUC +820"
       ],
@@ -28145,14 +28145,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 63700000,
+      "bonusATK": 63000000,
       "bonusDEF": 0,
       "bonusAGI": 1770,
       "bonusLUC": 0,
       "buyPrice": 283000,
       "maxCopies": -1,
       "effects": [
-        "ATK +63700000",
+        "ATK +63000000",
         "AGI +1770"
       ],
       "dropAreas": [
@@ -28174,7 +28174,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 277000,
+      "bonusHP": 270000,
       "bonusATK": 0,
       "bonusDEF": 10900,
       "bonusAGI": 1940,
@@ -28182,7 +28182,7 @@
       "buyPrice": 1130000,
       "maxCopies": -1,
       "effects": [
-        "HP +277000",
+        "HP +270000",
         "DEF +10900",
         "AGI +1940"
       ],
@@ -28235,14 +28235,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6220000,
+      "bonusATK": 6200000,
       "bonusDEF": 0,
       "bonusAGI": 552,
       "bonusLUC": 0,
       "buyPrice": 218000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6220000",
+        "ATK +6200000",
         "AGI +552"
       ],
       "dropAreas": [
@@ -28293,7 +28293,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 699000,
+      "bonusHP": 690000,
       "bonusATK": 0,
       "bonusDEF": 23100,
       "bonusAGI": 3750,
@@ -28301,7 +28301,7 @@
       "buyPrice": 1290000,
       "maxCopies": -1,
       "effects": [
-        "HP +699000",
+        "HP +690000",
         "DEF +23100",
         "AGI +3750"
       ],
@@ -28557,7 +28557,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1220000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -28565,7 +28565,7 @@
       "buyPrice": 717000,
       "maxCopies": -1,
       "effects": [
-        "HP +1220000"
+        "HP +1200000"
       ],
       "dropAreas": [
         "HV01"
@@ -28615,7 +28615,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1260000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 36200,
       "bonusAGI": 0,
@@ -28623,7 +28623,7 @@
       "buyPrice": 893000,
       "maxCopies": -1,
       "effects": [
-        "HP +1260000",
+        "HP +1200000",
         "DEF +36200"
       ],
       "dropAreas": [
@@ -28763,7 +28763,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1330000,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 38100,
       "bonusAGI": 0,
@@ -28771,7 +28771,7 @@
       "buyPrice": 926000,
       "maxCopies": -1,
       "effects": [
-        "HP +1330000",
+        "HP +1300000",
         "DEF +38100",
         "LUC +5770"
       ],
@@ -28823,7 +28823,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1260000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -28831,7 +28831,7 @@
       "buyPrice": 1790000,
       "maxCopies": -1,
       "effects": [
-        "HP +1260000",
+        "HP +1200000",
         "LUC +5480"
       ],
       "dropAreas": [
@@ -28854,14 +28854,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1590000000,
+      "bonusATK": 1500000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 1660000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1590000000"
+        "ATK +1500000000"
       ],
       "dropAreas": [
         "HV01"
@@ -28913,14 +28913,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1310000000,
+      "bonusATK": 1300000000,
       "bonusDEF": 0,
       "bonusAGI": 5710,
       "bonusLUC": 0,
       "buyPrice": 607000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1310000000",
+        "ATK +1300000000",
         "AGI +5710"
       ],
       "dropAreas": [
@@ -28969,7 +28969,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 949000,
+      "bonusHP": 940000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -28977,7 +28977,7 @@
       "buyPrice": 1390000,
       "maxCopies": -1,
       "effects": [
-        "HP +949000",
+        "HP +940000",
         "LUC +4570"
       ],
       "dropAreas": [
@@ -29028,7 +29028,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 754000,
+      "bonusHP": 750000,
       "bonusATK": 0,
       "bonusDEF": 24000,
       "bonusAGI": 3840,
@@ -29036,7 +29036,7 @@
       "buyPrice": 1420000,
       "maxCopies": -1,
       "effects": [
-        "HP +754000",
+        "HP +750000",
         "DEF +24000",
         "AGI +3840"
       ],
@@ -29059,7 +29059,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 323000,
+      "bonusHP": 320000,
       "bonusATK": 0,
       "bonusDEF": 12200,
       "bonusAGI": 0,
@@ -29067,7 +29067,7 @@
       "buyPrice": 880000,
       "maxCopies": -1,
       "effects": [
-        "HP +323000",
+        "HP +320000",
         "DEF +12200"
       ],
       "dropAreas": [
@@ -29090,14 +29090,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1790000000,
+      "bonusATK": 1700000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 667000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1790000000"
+        "ATK +1700000000"
       ],
       "dropAreas": [
         "HV01"
@@ -29264,7 +29264,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 114000,
+      "bonusHP": 110000,
       "bonusATK": 0,
       "bonusDEF": 4960,
       "bonusAGI": 0,
@@ -29272,7 +29272,7 @@
       "buyPrice": 338000,
       "maxCopies": -1,
       "effects": [
-        "HP +114000",
+        "HP +110000",
         "DEF +4960"
       ],
       "dropAreas": [
@@ -29446,14 +29446,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3770000,
+      "bonusATK": 3700000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 368000,
       "maxCopies": -1,
       "effects": [
-        "ATK +3770000"
+        "ATK +3700000"
       ],
       "dropAreas": [
         "JP02"
@@ -29738,14 +29738,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1790000000,
+      "bonusATK": 1700000000,
       "bonusDEF": 0,
       "bonusAGI": 6160,
       "bonusLUC": 0,
       "buyPrice": 1380000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1790000000",
+        "ATK +1700000000",
         "AGI +6160"
       ],
       "dropAreas": [
@@ -29767,7 +29767,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1350000,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 38800,
       "bonusAGI": 0,
@@ -29775,7 +29775,7 @@
       "buyPrice": 1920000,
       "maxCopies": -1,
       "effects": [
-        "HP +1350000",
+        "HP +1300000",
         "DEF +38800",
         "LUC +5870"
       ],
@@ -29799,14 +29799,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 119000000,
+      "bonusATK": 110000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 342000,
       "maxCopies": -1,
       "effects": [
-        "ATK +119000000"
+        "ATK +110000000"
       ],
       "dropAreas": [
         "ML02"
@@ -30271,14 +30271,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 744000000,
+      "bonusATK": 740000000,
       "bonusDEF": 0,
       "bonusAGI": 4080,
       "bonusLUC": 0,
       "buyPrice": 551000,
       "maxCopies": -1,
       "effects": [
-        "ATK +744000000",
+        "ATK +740000000",
         "AGI +4080"
       ],
       "dropAreas": [
@@ -30332,7 +30332,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 191000,
+      "bonusHP": 190000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -30340,7 +30340,7 @@
       "buyPrice": 257000,
       "maxCopies": -1,
       "effects": [
-        "HP +191000"
+        "HP +190000"
       ],
       "dropAreas": [
         "GR03"
@@ -30536,7 +30536,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 421000,
+      "bonusHP": 420000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -30544,7 +30544,7 @@
       "buyPrice": 754000,
       "maxCopies": -1,
       "effects": [
-        "HP +421000"
+        "HP +420000"
       ],
       "dropAreas": [
         "ML03"
@@ -30596,14 +30596,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 5720000,
+      "bonusATK": 5700000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 187000,
       "maxCopies": -1,
       "effects": [
-        "ATK +5720000"
+        "ATK +5700000"
       ],
       "dropAreas": [
         "UW04"
@@ -30855,7 +30855,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1310000,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -30863,7 +30863,7 @@
       "buyPrice": 2570000,
       "maxCopies": -1,
       "effects": [
-        "HP +1310000",
+        "HP +1300000",
         "LUC +5720"
       ],
       "dropAreas": [
@@ -30943,7 +30943,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 218000,
+      "bonusHP": 210000,
       "bonusATK": 0,
       "bonusDEF": 8610,
       "bonusAGI": 0,
@@ -30951,7 +30951,7 @@
       "buyPrice": 476000,
       "maxCopies": -1,
       "effects": [
-        "HP +218000",
+        "HP +210000",
         "DEF +8610"
       ],
       "dropAreas": [
@@ -30973,7 +30973,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 241000,
+      "bonusHP": 240000,
       "bonusATK": 0,
       "bonusDEF": 9490,
       "bonusAGI": 0,
@@ -30981,7 +30981,7 @@
       "buyPrice": 566000,
       "maxCopies": -1,
       "effects": [
-        "HP +241000",
+        "HP +240000",
         "DEF +9490",
         "LUC +1680"
       ],
@@ -31146,14 +31146,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 90800000,
+      "bonusATK": 90000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 311000,
       "maxCopies": -1,
       "effects": [
-        "ATK +90800000"
+        "ATK +90000000"
       ],
       "dropAreas": [
         "ML01"
@@ -31295,14 +31295,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 366000,
+      "bonusATK": 360000,
       "bonusDEF": 0,
       "bonusAGI": 764,
       "bonusLUC": 0,
       "buyPrice": 189000,
       "maxCopies": -1,
       "effects": [
-        "ATK +366000",
+        "ATK +360000",
         "AGI +764"
       ],
       "dropAreas": [
@@ -31325,14 +31325,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 381000,
+      "bonusATK": 380000,
       "bonusDEF": 0,
       "bonusAGI": 795,
       "bonusLUC": 0,
       "buyPrice": 408000,
       "maxCopies": -1,
       "effects": [
-        "ATK +381000",
+        "ATK +380000",
         "AGI +795"
       ],
       "dropAreas": [
@@ -31475,14 +31475,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 648000,
+      "bonusATK": 640000,
       "bonusDEF": 0,
       "bonusAGI": 794,
       "bonusLUC": 0,
       "buyPrice": 264000,
       "maxCopies": -1,
       "effects": [
-        "ATK +648000",
+        "ATK +640000",
         "AGI +794"
       ],
       "dropAreas": [
@@ -31625,14 +31625,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1570000,
+      "bonusATK": 1500000,
       "bonusDEF": 0,
       "bonusAGI": 851,
       "bonusLUC": 0,
       "buyPrice": 288000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1570000",
+        "ATK +1500000",
         "AGI +851"
       ],
       "dropAreas": [
@@ -31714,7 +31714,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 102000,
+      "bonusHP": 100000,
       "bonusATK": 0,
       "bonusDEF": 5280,
       "bonusAGI": 0,
@@ -31722,7 +31722,7 @@
       "buyPrice": 528000,
       "maxCopies": -1,
       "effects": [
-        "HP +102000",
+        "HP +100000",
         "DEF +5280"
       ],
       "dropAreas": [
@@ -31775,14 +31775,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 9590000,
+      "bonusATK": 9500000,
       "bonusDEF": 0,
       "bonusAGI": 413,
       "bonusLUC": 0,
       "buyPrice": 314000,
       "maxCopies": -1,
       "effects": [
-        "ATK +9590000",
+        "ATK +9500000",
         "AGI +413"
       ],
       "dropAreas": [
@@ -31916,14 +31916,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 5510000,
+      "bonusATK": 5500000,
       "bonusDEF": 0,
       "bonusAGI": 979,
       "bonusLUC": 0,
       "buyPrice": 222000,
       "maxCopies": -1,
       "effects": [
-        "ATK +5510000",
+        "ATK +5500000",
         "AGI +979"
       ],
       "dropAreas": [
@@ -32094,14 +32094,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 3490000,
+      "bonusATK": 3400000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 184000,
       "maxCopies": -1,
       "effects": [
-        "ATK +3490000"
+        "ATK +3400000"
       ],
       "dropAreas": [
         "JP02"
@@ -32179,7 +32179,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 1570000,
+      "bonusHP": 1500000,
       "bonusATK": 0,
       "bonusDEF": 45100,
       "bonusAGI": 6820,
@@ -32187,7 +32187,7 @@
       "buyPrice": 1540000,
       "maxCopies": -1,
       "effects": [
-        "HP +1570000",
+        "HP +1500000",
         "DEF +45100",
         "AGI +6820"
       ],
@@ -32328,14 +32328,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 22600000,
+      "bonusATK": 22000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 234000,
       "maxCopies": -1,
       "effects": [
-        "ATK +22600000"
+        "ATK +22000000"
       ],
       "dropAreas": [
         "GR02"
@@ -32386,14 +32386,14 @@
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 68600000,
+      "bonusATK": 68000000,
       "bonusDEF": 0,
       "bonusAGI": 1910,
       "bonusLUC": 0,
       "buyPrice": 673000,
       "maxCopies": -1,
       "effects": [
-        "ATK +68600000",
+        "ATK +68000000",
         "AGI +1910"
       ],
       "dropAreas": [
@@ -32415,7 +32415,7 @@
       "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
-      "bonusHP": 265000,
+      "bonusHP": 260000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
@@ -32423,7 +32423,7 @@
       "buyPrice": 952000,
       "maxCopies": -1,
       "effects": [
-        "HP +265000",
+        "HP +260000",
         "LUC +1850"
       ],
       "dropAreas": [
@@ -32979,7 +32979,7 @@
       "goldMultiplier": 46,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_DS01 1",
+          "enemyId": "DesertScorpion_DS01",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -33139,7 +33139,7 @@
       "goldMultiplier": 70,
       "enemies": [
         {
-          "enemyId": "ShadowHound_DS03 1",
+          "enemyId": "ShadowHound_DS03",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -33179,7 +33179,7 @@
       "goldMultiplier": 74,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_DS03 1",
+          "enemyId": "CrystalGolem_DS03",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -33651,7 +33651,7 @@
       "goldMultiplier": 7.5,
       "enemies": [
         {
-          "enemyId": "ShadowHound_FR01 1",
+          "enemyId": "ShadowHound_FR01",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -33731,7 +33731,7 @@
       "goldMultiplier": 13,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_FR03 1",
+          "enemyId": "DesertScorpion_FR03",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -33791,7 +33791,7 @@
       "goldMultiplier": 16,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_FR03 1",
+          "enemyId": "CrystalGolem_FR03",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -33831,7 +33831,7 @@
       "goldMultiplier": 18,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR03",
+          "enemyId": "BloodWraith_FR03 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -33851,7 +33851,7 @@
       "goldMultiplier": 19,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR04",
+          "enemyId": "BloodWraith_FR04 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -33871,7 +33871,7 @@
       "goldMultiplier": 20,
       "enemies": [
         {
-          "enemyId": "FlameImp_FR04 1",
+          "enemyId": "FlameImp_FR04",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -33931,7 +33931,7 @@
       "goldMultiplier": 23,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_FR04",
+          "enemyId": "ChaosShaman_FR04 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -39806,7 +39806,7 @@
       "goldMultiplier": 32,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_VO01 1",
+          "enemyId": "ChaosShaman_VO01",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -39906,7 +39906,7 @@
       "goldMultiplier": 27,
       "enemies": [
         {
-          "enemyId": "FlameImp_VO01 1",
+          "enemyId": "FlameImp_VO01",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -40419,7 +40419,7 @@
         "VineGolem",
         "ThunderBeetle",
         "MoonWisp",
-        "ShadowHound_FR01 1",
+        "ShadowHound_FR01",
         "ForestRoadSprite_H",
         "CrystalLizard_H",
         "IronToad_H",
@@ -40554,12 +40554,12 @@
       "maxLevel": 672,
       "zoneCount": 12,
       "enemyIds": [
-        "DesertScorpion_FR03 1",
+        "DesertScorpion_FR03",
         "DarkPrince",
         "VoidRat",
-        "CrystalGolem_FR03 1",
+        "CrystalGolem_FR03",
         "BoneHydra",
-        "BloodWraith_FR03",
+        "BloodWraith_FR03 1",
         "DesertScorpion_H",
         "DarkPrince_H",
         "VoidRat_H",
@@ -40629,11 +40629,11 @@
       "maxLevel": 700,
       "zoneCount": 12,
       "enemyIds": [
-        "BloodWraith_FR04",
-        "FlameImp_FR04 1",
+        "BloodWraith_FR04 1",
+        "FlameImp_FR04",
         "RuneGolem",
         "ThunderLynx",
-        "ChaosShaman_FR04",
+        "ChaosShaman_FR04 1",
         "IronMantis",
         "BloodWraith_H",
         "FlameImp_H",
@@ -40720,12 +40720,12 @@
         "AshBat_H",
         "MagmaGolem",
         "InfernoWitch",
-        "ChaosShaman_VO01 1",
+        "ChaosShaman_VO01",
         "AbyssLord",
         "ForestDemon",
         "FireDrake",
         "RockCrab",
-        "FlameImp_VO01 1",
+        "FlameImp_VO01",
         "AshBat"
       ],
       "bossIds": [
@@ -40966,7 +40966,7 @@
         "PyramidGolem",
         "PharaohGuardian",
         "DesertViper",
-        "DesertScorpion_DS01 1",
+        "DesertScorpion_DS01",
         "SandWraith",
         "CactusKnight_H",
         "PyramidGolem_H",
@@ -41116,9 +41116,9 @@
       "maxLevel": 868,
       "zoneCount": 12,
       "enemyIds": [
-        "ShadowHound_DS03 1",
+        "ShadowHound_DS03",
         "EmberDrake",
-        "CrystalGolem_DS03 1",
+        "CrystalGolem_DS03",
         "MagmaWyrm",
         "ObsidianKing",
         "SunSentinel",
