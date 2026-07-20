@@ -92,7 +92,10 @@ const abbr = (n) => {
   const v = Math.abs(Number(n) || 0);
   const trim = (x) => String(Math.floor(x * 10) / 10);
   let s;
-  if      (v >= 1e12) s = trim(v / 1e12) + "T";
+  // Mirrors Core/NumberFormat: Q/Qi exist because hard World Gate reaches ~2e15.
+  if      (v >= 1e18) s = trim(v / 1e18) + "Qi";
+  else if (v >= 1e15) s = trim(v / 1e15) + "Q";
+  else if (v >= 1e12) s = trim(v / 1e12) + "T";
   else if (v >= 1e9)  s = trim(v / 1e9)  + "B";
   else if (v >= 1e6)  s = trim(v / 1e6)  + "M";
   else if (v >= 1e3)  s = trim(v / 1e3)  + "K";

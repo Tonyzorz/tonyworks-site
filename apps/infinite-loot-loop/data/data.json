@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-20T10:31:51Z",
+  "generatedAt": "2026-07-20T11:13:28Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 313,
     "bosses": 25,
-    "items": 724,
+    "items": 751,
     "maps": 41,
     "zones": 367,
     "areas": 40,
@@ -6027,8 +6027,8 @@
           "chance": 1
         },
         {
-          "itemId": "Acolyte_Vestment_H",
-          "itemName": "Acolyte Vestment [H]",
+          "itemId": "Ancient_Armor_H",
+          "itemName": "Ancient Armor [H]",
           "chance": 1
         }
       ],
@@ -6179,8 +6179,8 @@
           "chance": 1
         },
         {
-          "itemId": "Aegis_Charm_H",
-          "itemName": "Aegis Charm [H]",
+          "itemId": "Ankh_Pendant_H",
+          "itemName": "Ankh Pendant [H]",
           "chance": 1
         }
       ],
@@ -6212,8 +6212,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Amaterasu_Katana_H",
-          "itemName": "Amaterasu Katana [H]",
+          "itemId": "Ankh_Blade_H",
+          "itemName": "Ankh Blade [H]",
           "chance": 1
         }
       ],
@@ -6245,8 +6245,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Ankh_Blade_H",
-          "itemName": "Ankh Blade [H]",
+          "itemId": "Blaze_Spear_H",
+          "itemName": "Blaze Spear [H]",
           "chance": 1
         }
       ],
@@ -6283,8 +6283,8 @@
           "chance": 1
         },
         {
-          "itemId": "Amaterasu_Kabuto_H",
-          "itemName": "Amaterasu Kabuto [H]",
+          "itemId": "Ankh_Crown_H",
+          "itemName": "Ankh Crown [H]",
           "chance": 1
         }
       ],
@@ -6359,8 +6359,8 @@
           "chance": 1
         },
         {
-          "itemId": "Ammo_Belt_H",
-          "itemName": "Ammo Belt [H]",
+          "itemId": "Blood_Gem_H",
+          "itemName": "Blood Gem [H]",
           "chance": 1
         }
       ],
@@ -6397,8 +6397,8 @@
           "chance": 1
         },
         {
-          "itemId": "Amphora_Vial_H",
-          "itemName": "Amphora Vial [H]",
+          "itemId": "Chaos_Amulet_H",
+          "itemName": "Chaos Amulet [H]",
           "chance": 1
         }
       ],
@@ -6463,8 +6463,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Ashigaru_Yari_H",
-          "itemName": "Ashigaru Yari [H]",
+          "itemId": "Cinder_Dust_H",
+          "itemName": "Cinder Dust [H]",
           "chance": 1
         }
       ],
@@ -6496,8 +6496,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Amaterasu_Regalia_H",
-          "itemName": "Amaterasu Regalia [H]",
+          "itemId": "Berserker_Armor_H",
+          "itemName": "Berserker Armor [H]",
           "chance": 1
         }
       ],
@@ -6878,8 +6878,8 @@
           "chance": 1
         },
         {
-          "itemId": "Assault_Rifle_H",
-          "itemName": "Assault Rifle [H]",
+          "itemId": "Cinder_Lance_H",
+          "itemName": "Cinder Lance [H]",
           "chance": 1
         }
       ],
@@ -7295,8 +7295,8 @@
           "chance": 1
         },
         {
-          "itemId": "Archangel_Armor_H",
-          "itemName": "Archangel Armor [H]",
+          "itemId": "Chaos_Armor_H",
+          "itemName": "Chaos Armor [H]",
           "chance": 1
         }
       ],
@@ -7333,8 +7333,8 @@
           "chance": 1
         },
         {
-          "itemId": "Bronze_Greaves_H",
-          "itemName": "Bronze Greaves [H]",
+          "itemId": "Desert_Boots_H",
+          "itemName": "Desert Boots [H]",
           "chance": 1
         }
       ],
@@ -7366,13 +7366,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Bayonet_Rifle_H",
-          "itemName": "Bayonet Rifle [H]",
+          "itemId": "Coral_Trident_H",
+          "itemName": "Coral Trident [H]",
           "chance": 1
         },
         {
-          "itemId": "Chaos_Amulet_H",
-          "itemName": "Chaos Amulet [H]",
+          "itemId": "Inferno_Core_H",
+          "itemName": "Inferno Core [H]",
           "chance": 1
         }
       ],
@@ -7482,8 +7482,8 @@
           "chance": 1
         },
         {
-          "itemId": "Bronze_Trident_H",
-          "itemName": "Bronze Trident [H]",
+          "itemId": "Dragon_Sword_H",
+          "itemName": "Dragon Sword [H]",
           "chance": 1
         }
       ],
@@ -7522,8 +7522,8 @@
           "chance": 1
         },
         {
-          "itemId": "Choir_Slippers_H",
-          "itemName": "Choir Slippers [H]",
+          "itemId": "Dune_Treads_H",
+          "itemName": "Dune Treads [H]",
           "chance": 1
         }
       ],
@@ -7560,8 +7560,8 @@
           "chance": 1
         },
         {
-          "itemId": "Cherub_Wing_H",
-          "itemName": "Cherub Wing [H]",
+          "itemId": "Lava_Ring_H",
+          "itemName": "Lava Ring [H]",
           "chance": 1
         }
       ],
@@ -7593,13 +7593,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Bone_Sword_H",
-          "itemName": "Bone Sword [H]",
+          "itemId": "Demon_Spear_H",
+          "itemName": "Demon Spear [H]",
           "chance": 1
         },
         {
-          "itemId": "Covenant_Seal_H",
-          "itemName": "Covenant Seal [H]",
+          "itemId": "Phoenix_Feather_H",
+          "itemName": "Phoenix Feather [H]",
           "chance": 1
         }
       ],
@@ -7822,8 +7822,8 @@
           "chance": 1
         },
         {
-          "itemId": "Cloud_Sandals_H",
-          "itemName": "Cloud Sandals [H]",
+          "itemId": "Pharaoh_Greaves_H",
+          "itemName": "Pharaoh Greaves [H]",
           "chance": 1
         }
       ],
@@ -7860,8 +7860,8 @@
           "chance": 1
         },
         {
-          "itemId": "Cursed_Ring_H",
-          "itemName": "Cursed Ring [H]",
+          "itemId": "Sand_Amulet_H",
+          "itemName": "Sand Amulet [H]",
           "chance": 1
         }
       ],
@@ -7898,8 +7898,8 @@
           "chance": 1
         },
         {
-          "itemId": "Daruma_Doll_H",
-          "itemName": "Daruma Doll [H]",
+          "itemId": "Sun_Disk_H",
+          "itemName": "Sun Disk [H]",
           "chance": 1
         }
       ],
@@ -8003,8 +8003,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Cherub_Bow_H",
-          "itemName": "Cherub Bow [H]",
+          "itemId": "Dune_Edge_H",
+          "itemName": "Dune Edge [H]",
           "chance": 1
         }
       ],
@@ -8036,8 +8036,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Choir_Wand_H",
-          "itemName": "Choir Wand [H]",
+          "itemId": "Excalibur_H",
+          "itemName": "Excalibur [H]",
           "chance": 1
         }
       ],
@@ -8069,8 +8069,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Berserker_Armor_H",
-          "itemName": "Berserker Armor [H]",
+          "itemId": "Crystal_Armor_H",
+          "itemName": "Crystal Armor [H]",
           "chance": 1
         }
       ],
@@ -8102,8 +8102,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Blood_Mask_H",
-          "itemName": "Blood Mask [H]",
+          "itemId": "Cursed_Hood_H",
+          "itemName": "Cursed Hood [H]",
           "chance": 1
         }
       ],
@@ -8423,8 +8423,8 @@
           "chance": 1
         },
         {
-          "itemId": "Combat_Boots_H",
-          "itemName": "Combat Boots [H]",
+          "itemId": "Sand_Sandals_H",
+          "itemName": "Sand Sandals [H]",
           "chance": 1
         }
       ],
@@ -8461,8 +8461,8 @@
           "chance": 1
         },
         {
-          "itemId": "Desert_Crescent_H",
-          "itemName": "Desert Crescent [H]",
+          "itemId": "Tomb_Relic_H",
+          "itemName": "Tomb Relic [H]",
           "chance": 1
         }
       ],
@@ -8499,8 +8499,8 @@
           "chance": 1
         },
         {
-          "itemId": "Dog_Tags_H",
-          "itemName": "Dog Tags [H]",
+          "itemId": "Void_Ring_H",
+          "itemName": "Void Ring [H]",
           "chance": 1
         }
       ],
@@ -8598,8 +8598,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Cinder_Dust_H",
-          "itemName": "Cinder Dust [H]",
+          "itemId": "Frost_Sabre_H",
+          "itemName": "Frost Sabre [H]",
           "chance": 1
         }
       ],
@@ -8631,8 +8631,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Cinder_Lance_H",
-          "itemName": "Cinder Lance [H]",
+          "itemId": "Gnarled_Staff_H",
+          "itemName": "Gnarled Staff [H]",
           "chance": 1
         }
       ],
@@ -8664,8 +8664,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Bone_Armor_H",
-          "itemName": "Bone Armor [H]",
+          "itemId": "Cursed_Armor_H",
+          "itemName": "Cursed Armor [H]",
           "chance": 1
         }
       ],
@@ -8697,8 +8697,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Bronze_Skullcap_H",
-          "itemName": "Bronze Skullcap [H]",
+          "itemId": "Desert_Wrap_H",
+          "itemName": "Desert Wrap [H]",
           "chance": 1
         }
       ],
@@ -9019,8 +9019,8 @@
           "chance": 1
         },
         {
-          "itemId": "Combat_Shotgun_H",
-          "itemName": "Combat Shotgun [H]",
+          "itemId": "Holy_Sword_H",
+          "itemName": "Holy Sword [H]",
           "chance": 1
         }
       ],
@@ -9057,8 +9057,8 @@
           "chance": 1
         },
         {
-          "itemId": "Breacher_Suit_H",
-          "itemName": "Breacher Suit [H]",
+          "itemId": "Dark_Robe_H",
+          "itemName": "Dark Robe [H]",
           "chance": 1
         }
       ],
@@ -9095,8 +9095,8 @@
           "chance": 1
         },
         {
-          "itemId": "Cadet_Cap_H",
-          "itemName": "Cadet Cap [H]",
+          "itemId": "Pharaoh_Helm_H",
+          "itemName": "Pharaoh Helm [H]",
           "chance": 1
         }
       ],
@@ -9133,8 +9133,8 @@
           "chance": 1
         },
         {
-          "itemId": "Dark_Steppers_H",
-          "itemName": "Dark Steppers [H]",
+          "itemId": "Scorched_Boots_H",
+          "itemName": "Scorched Boots [H]",
           "chance": 1
         }
       ],
@@ -9171,8 +9171,8 @@
           "chance": 1
         },
         {
-          "itemId": "Down_Feather_H",
-          "itemName": "Down Feather [H]",
+          "itemId": "Abyssal_Ring_H",
+          "itemName": "Abyssal Ring [H]",
           "chance": 1
         }
       ],
@@ -9204,13 +9204,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Cinder_Scythe_H",
-          "itemName": "Cinder Scythe [H]",
+          "itemId": "Hell_Staff_H",
+          "itemName": "Hell Staff [H]",
           "chance": 1
         },
         {
-          "itemId": "Field_Compass_H",
-          "itemName": "Field Compass [H]",
+          "itemId": "Ankh_Pendant_H",
+          "itemName": "Ankh Pendant [H]",
           "chance": 1
         }
       ],
@@ -9247,8 +9247,8 @@
           "chance": 1
         },
         {
-          "itemId": "Cursed_Scythe_H",
-          "itemName": "Cursed Scythe [H]",
+          "itemId": "Ice_Blade_H",
+          "itemName": "Ice Blade [H]",
           "chance": 1
         }
       ],
@@ -9285,8 +9285,8 @@
           "chance": 1
         },
         {
-          "itemId": "Bronze_Cuirass_H",
-          "itemName": "Bronze Cuirass [H]",
+          "itemId": "Demon_Armor_H",
+          "itemName": "Demon Armor [H]",
           "chance": 1
         }
       ],
@@ -9326,8 +9326,8 @@
           "chance": 1
         },
         {
-          "itemId": "Chaos_Hood_H",
-          "itemName": "Chaos Hood [H]",
+          "itemId": "Phoenix_Helm_H",
+          "itemName": "Phoenix Helm [H]",
           "chance": 1
         }
       ],
@@ -9364,8 +9364,8 @@
           "chance": 1
         },
         {
-          "itemId": "Desert_Boots_H",
-          "itemName": "Desert Boots [H]",
+          "itemId": "Shadow_Greaves_H",
+          "itemName": "Shadow Greaves [H]",
           "chance": 1
         }
       ],
@@ -9402,8 +9402,8 @@
           "chance": 1
         },
         {
-          "itemId": "Field_Radio_H",
-          "itemName": "Field Radio [H]",
+          "itemId": "Blood_Gem_H",
+          "itemName": "Blood Gem [H]",
           "chance": 1
         }
       ],
@@ -9435,13 +9435,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Coral_Trident_H",
-          "itemName": "Coral Trident [H]",
+          "itemId": "Hunter's_Bow_H",
+          "itemName": "Hunter's Bow [H]",
           "chance": 1
         },
         {
-          "itemId": "Fire_Gem_H",
-          "itemName": "Fire Gem [H]",
+          "itemId": "Chaos_Amulet_H",
+          "itemName": "Chaos Amulet [H]",
           "chance": 1
         }
       ],
@@ -9575,8 +9575,8 @@
           "chance": 1
         },
         {
-          "itemId": "Dragon_Sword_H",
-          "itemName": "Dragon Sword [H]",
+          "itemId": "Lava_Titan_Blade_H",
+          "itemName": "Lava Titan Blade [H]",
           "chance": 1
         }
       ],
@@ -9613,8 +9613,8 @@
           "chance": 1
         },
         {
-          "itemId": "Chaos_Armor_H",
-          "itemName": "Chaos Armor [H]",
+          "itemId": "Demon_Hide_H",
+          "itemName": "Demon Hide [H]",
           "chance": 1
         }
       ],
@@ -9699,8 +9699,8 @@
           "chance": 1
         },
         {
-          "itemId": "Cherub_Circlet_H",
-          "itemName": "Cherub Circlet [H]",
+          "itemId": "Shadow_Crown_H",
+          "itemName": "Shadow Crown [H]",
           "chance": 1
         }
       ],
@@ -9737,8 +9737,8 @@
           "chance": 1
         },
         {
-          "itemId": "Divine_Treads_H",
-          "itemName": "Divine Treads [H]",
+          "itemId": "Void_Boots_H",
+          "itemName": "Void Boots [H]",
           "chance": 1
         }
       ],
@@ -9775,8 +9775,8 @@
           "chance": 1
         },
         {
-          "itemId": "Fox_Bell_H",
-          "itemName": "Fox Bell [H]",
+          "itemId": "Cursed_Ring_H",
+          "itemName": "Cursed Ring [H]",
           "chance": 1
         }
       ],
@@ -9808,13 +9808,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Demon_Spear_H",
-          "itemName": "Demon Spear [H]",
+          "itemId": "Inferno_Sword_H",
+          "itemName": "Inferno Sword [H]",
           "chance": 1
         },
         {
-          "itemId": "Frag_Grenade_H",
-          "itemName": "Frag Grenade [H]",
+          "itemId": "Desert_Crescent_H",
+          "itemName": "Desert Crescent [H]",
           "chance": 1
         }
       ],
@@ -10139,8 +10139,8 @@
           "chance": 1
         },
         {
-          "itemId": "Excalibur_H",
-          "itemName": "Excalibur [H]",
+          "itemId": "Nether_Dagger_H",
+          "itemName": "Nether Dagger [H]",
           "chance": 1
         }
       ],
@@ -10180,8 +10180,8 @@
           "chance": 1
         },
         {
-          "itemId": "Choir_Raiment_H",
-          "itemName": "Choir Raiment [H]",
+          "itemId": "Dragon_Scale_Armor_H",
+          "itemName": "Dragon Scale Armor [H]",
           "chance": 1
         }
       ],
@@ -10218,8 +10218,8 @@
           "chance": 1
         },
         {
-          "itemId": "Choir_Veil_H",
-          "itemName": "Choir Veil [H]",
+          "itemId": "Tomb_Mask_H",
+          "itemName": "Tomb Mask [H]",
           "chance": 1
         }
       ],
@@ -10256,8 +10256,8 @@
           "chance": 1
         },
         {
-          "itemId": "Dragon_Tabi_H",
-          "itemName": "Dragon Tabi [H]",
+          "itemId": "Volcanic_Sandals_H",
+          "itemName": "Volcanic Sandals [H]",
           "chance": 1
         }
       ],
@@ -10294,8 +10294,8 @@
           "chance": 1
         },
         {
-          "itemId": "Golden_Fleece_H",
-          "itemName": "Golden Fleece [H]",
+          "itemId": "Fire_Gem_H",
+          "itemName": "Fire Gem [H]",
           "chance": 1
         }
       ],
@@ -10330,13 +10330,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Dune_Edge_H",
-          "itemName": "Dune Edge [H]",
+          "itemId": "Maze_Spear_H",
+          "itemName": "Maze Spear [H]",
           "chance": 1
         },
         {
-          "itemId": "Gorgon_Eye_H",
-          "itemName": "Gorgon Eye [H]",
+          "itemId": "Inferno_Core_H",
+          "itemName": "Inferno Core [H]",
           "chance": 1
         }
       ],
@@ -10416,8 +10416,8 @@
           "chance": 1
         },
         {
-          "itemId": "Frost_Sabre_H",
-          "itemName": "Frost Sabre [H]",
+          "itemId": "Pharaoh_Blade_H",
+          "itemName": "Pharaoh Blade [H]",
           "chance": 1
         }
       ],
@@ -10454,8 +10454,8 @@
           "chance": 1
         },
         {
-          "itemId": "Cloth_Robe_H",
-          "itemName": "Cloth Robe [H]",
+          "itemId": "Dune_Armor_H",
+          "itemName": "Dune Armor [H]",
           "chance": 1
         }
       ],
@@ -10492,8 +10492,8 @@
           "chance": 1
         },
         {
-          "itemId": "Cinder_Helm_H",
-          "itemName": "Cinder Helm [H]",
+          "itemId": "Abyssal_Helm_H",
+          "itemName": "Abyssal Helm [H]",
           "chance": 1
         }
       ],
@@ -10530,8 +10530,8 @@
           "chance": 1
         },
         {
-          "itemId": "Dune_Treads_H",
-          "itemName": "Dune Treads [H]",
+          "itemId": "Abyssal_Soles_H",
+          "itemName": "Abyssal Soles [H]",
           "chance": 1
         }
       ],
@@ -10568,8 +10568,8 @@
           "chance": 1
         },
         {
-          "itemId": "Halo_Ring_H",
-          "itemName": "Halo Ring [H]",
+          "itemId": "Lava_Ring_H",
+          "itemName": "Lava Ring [H]",
           "chance": 1
         }
       ],
@@ -10601,13 +10601,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Feathered_Spear_H",
-          "itemName": "Feathered Spear [H]",
+          "itemId": "Oasis_Blade_H",
+          "itemName": "Oasis Blade [H]",
           "chance": 1
         },
         {
-          "itemId": "Holy_Chalice_H",
-          "itemName": "Holy Chalice [H]",
+          "itemId": "Phoenix_Feather_H",
+          "itemName": "Phoenix Feather [H]",
           "chance": 1
         }
       ],
@@ -10644,8 +10644,8 @@
           "chance": 1
         },
         {
-          "itemId": "Grenade_Launcher_H",
-          "itemName": "Grenade Launcher [H]",
+          "itemId": "Sand_Blade_H",
+          "itemName": "Sand Blade [H]",
           "chance": 1
         }
       ],
@@ -10682,8 +10682,8 @@
           "chance": 1
         },
         {
-          "itemId": "Crystal_Armor_H",
-          "itemName": "Crystal Armor [H]",
+          "itemId": "Flame_Armor_H",
+          "itemName": "Flame Armor [H]",
           "chance": 1
         }
       ],
@@ -10720,8 +10720,8 @@
           "chance": 1
         },
         {
-          "itemId": "Combat_Helm_H",
-          "itemName": "Combat Helm [H]",
+          "itemId": "Ankh_Crown_H",
+          "itemName": "Ankh Crown [H]",
           "chance": 1
         }
       ],
@@ -10758,8 +10758,8 @@
           "chance": 1
         },
         {
-          "itemId": "Exo_Striders_H",
-          "itemName": "Exo Striders [H]",
+          "itemId": "Blood_Striders_H",
+          "itemName": "Blood Striders [H]",
           "chance": 1
         }
       ],
@@ -10796,8 +10796,8 @@
           "chance": 1
         },
         {
-          "itemId": "Inferno_Core_H",
-          "itemName": "Inferno Core [H]",
+          "itemId": "Sand_Amulet_H",
+          "itemName": "Sand Amulet [H]",
           "chance": 1
         }
       ],
@@ -10829,13 +10829,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Gnarled_Staff_H",
-          "itemName": "Gnarled Staff [H]",
+          "itemId": "Pharaoh_Scepter_H",
+          "itemName": "Pharaoh Scepter [H]",
           "chance": 1
         },
         {
-          "itemId": "Koi_Charm_H",
-          "itemName": "Koi Charm [H]",
+          "itemId": "Sun_Disk_H",
+          "itemName": "Sun Disk [H]",
           "chance": 1
         }
       ],
@@ -10910,8 +10910,8 @@
           "chance": 1
         },
         {
-          "itemId": "Hunter's_Bow_H",
-          "itemName": "Hunter's Bow [H]",
+          "itemId": "Shadow_Staff_H",
+          "itemName": "Shadow Staff [H]",
           "chance": 1
         }
       ],
@@ -10948,8 +10948,8 @@
           "chance": 1
         },
         {
-          "itemId": "Dark_Robe_H",
-          "itemName": "Dark Robe [H]",
+          "itemId": "Holy_Robe_H",
+          "itemName": "Holy Robe [H]",
           "chance": 1
         }
       ],
@@ -10986,8 +10986,8 @@
           "chance": 1
         },
         {
-          "itemId": "Cursed_Hood_H",
-          "itemName": "Cursed Hood [H]",
+          "itemId": "Chaos_Hood_H",
+          "itemName": "Chaos Hood [H]",
           "chance": 1
         }
       ],
@@ -11024,8 +11024,8 @@
           "chance": 1
         },
         {
-          "itemId": "Field_Boots_H",
-          "itemName": "Field Boots [H]",
+          "itemId": "Desert_Boots_H",
+          "itemName": "Desert Boots [H]",
           "chance": 1
         }
       ],
@@ -11062,8 +11062,8 @@
           "chance": 1
         },
         {
-          "itemId": "Olive_Branch_H",
-          "itemName": "Olive Branch [H]",
+          "itemId": "Abyssal_Ring_H",
+          "itemName": "Abyssal Ring [H]",
           "chance": 1
         }
       ],
@@ -11095,13 +11095,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Hoplite_Spear_H",
-          "itemName": "Hoplite Spear [H]",
+          "itemId": "Shadow_Fang_H",
+          "itemName": "Shadow Fang [H]",
           "chance": 1
         },
         {
-          "itemId": "Phoenix_Feather_H",
-          "itemName": "Phoenix Feather [H]",
+          "itemId": "Ankh_Pendant_H",
+          "itemName": "Ankh Pendant [H]",
           "chance": 1
         }
       ],
@@ -11138,8 +11138,8 @@
           "chance": 1
         },
         {
-          "itemId": "Inferno_Sword_H",
-          "itemName": "Inferno Sword [H]",
+          "itemId": "Stone_Edge_H",
+          "itemName": "Stone Edge [H]",
           "chance": 1
         }
       ],
@@ -11176,8 +11176,8 @@
           "chance": 1
         },
         {
-          "itemId": "Demon_Armor_H",
-          "itemName": "Demon Armor [H]",
+          "itemId": "Ice_Armor_H",
+          "itemName": "Ice Armor [H]",
           "chance": 1
         }
       ],
@@ -11214,8 +11214,8 @@
           "chance": 1
         },
         {
-          "itemId": "Desert_Wrap_H",
-          "itemName": "Desert Wrap [H]",
+          "itemId": "Cinder_Helm_H",
+          "itemName": "Cinder Helm [H]",
           "chance": 1
         }
       ],
@@ -11252,8 +11252,8 @@
           "chance": 1
         },
         {
-          "itemId": "Gorgon_Treads_H",
-          "itemName": "Gorgon Treads [H]",
+          "itemId": "Dune_Treads_H",
+          "itemName": "Dune Treads [H]",
           "chance": 1
         }
       ],
@@ -11290,8 +11290,8 @@
           "chance": 1
         },
         {
-          "itemId": "Prayer_Beads_H",
-          "itemName": "Prayer Beads [H]",
+          "itemId": "Blood_Gem_H",
+          "itemName": "Blood Gem [H]",
           "chance": 1
         }
       ],
@@ -11323,13 +11323,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Ice_Blade_H",
-          "itemName": "Ice Blade [H]",
+          "itemId": "Spectral_Bow_H",
+          "itemName": "Spectral Bow [H]",
           "chance": 1
         },
         {
-          "itemId": "Prayer_Candle_H",
-          "itemName": "Prayer Candle [H]",
+          "itemId": "Chaos_Amulet_H",
+          "itemName": "Chaos Amulet [H]",
           "chance": 1
         }
       ],
@@ -11366,8 +11366,8 @@
           "chance": 1
         },
         {
-          "itemId": "Kitsune_Naginata_H",
-          "itemName": "Kitsune Naginata [H]",
+          "itemId": "Temple_Blade_H",
+          "itemName": "Temple Blade [H]",
           "chance": 1
         }
       ],
@@ -11404,8 +11404,8 @@
           "chance": 1
         },
         {
-          "itemId": "Demon_Hide_H",
-          "itemName": "Demon Hide [H]",
+          "itemId": "Inferno_Robe_H",
+          "itemName": "Inferno Robe [H]",
           "chance": 1
         }
       ],
@@ -11442,8 +11442,8 @@
           "chance": 1
         },
         {
-          "itemId": "Feathered_Helm_H",
-          "itemName": "Feathered Helm [H]",
+          "itemId": "Cursed_Hood_H",
+          "itemName": "Cursed Hood [H]",
           "chance": 1
         }
       ],
@@ -11480,8 +11480,8 @@
           "chance": 1
         },
         {
-          "itemId": "Hermes_Sandals_H",
-          "itemName": "Hermes Sandals [H]",
+          "itemId": "Pharaoh_Greaves_H",
+          "itemName": "Pharaoh Greaves [H]",
           "chance": 1
         }
       ],
@@ -11518,8 +11518,8 @@
           "chance": 1
         },
         {
-          "itemId": "Sakura_Netsuke_H",
-          "itemName": "Sakura Netsuke [H]",
+          "itemId": "Cursed_Ring_H",
+          "itemName": "Cursed Ring [H]",
           "chance": 1
         }
       ],
@@ -11551,13 +11551,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Judgment_Blade_H",
-          "itemName": "Judgment Blade [H]",
+          "itemId": "Storm_Scimitar_H",
+          "itemName": "Storm Scimitar [H]",
           "chance": 1
         },
         {
-          "itemId": "Sand_Amulet_H",
-          "itemName": "Sand Amulet [H]",
+          "itemId": "Desert_Crescent_H",
+          "itemName": "Desert Crescent [H]",
           "chance": 1
         }
       ],
@@ -11594,8 +11594,8 @@
           "chance": 1
         },
         {
-          "itemId": "Lava_Titan_Blade_H",
-          "itemName": "Lava Titan Blade [H]",
+          "itemId": "Tide_Blade_H",
+          "itemName": "Tide Blade [H]",
           "chance": 1
         }
       ],
@@ -11632,8 +11632,8 @@
           "chance": 1
         },
         {
-          "itemId": "Dragon_Scale_Armor_H",
-          "itemName": "Dragon Scale Armor [H]",
+          "itemId": "Lava_Armor_H",
+          "itemName": "Lava Armor [H]",
           "chance": 1
         }
       ],
@@ -11670,8 +11670,8 @@
           "chance": 1
         },
         {
-          "itemId": "Field_Beret_H",
-          "itemName": "Field Beret [H]",
+          "itemId": "Desert_Wrap_H",
+          "itemName": "Desert Wrap [H]",
           "chance": 1
         }
       ],
@@ -11708,8 +11708,8 @@
           "chance": 1
         },
         {
-          "itemId": "Hoplite_Sandals_H",
-          "itemName": "Hoplite Sandals [H]",
+          "itemId": "Sand_Sandals_H",
+          "itemName": "Sand Sandals [H]",
           "chance": 1
         }
       ],
@@ -11746,8 +11746,8 @@
           "chance": 1
         },
         {
-          "itemId": "Seraph_Tear_H",
-          "itemName": "Seraph Tear [H]",
+          "itemId": "Fire_Gem_H",
+          "itemName": "Fire Gem [H]",
           "chance": 1
         }
       ],
@@ -11779,13 +11779,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Kopis_Blade_H",
-          "itemName": "Kopis Blade [H]",
+          "itemId": "Thunder_Sabre_H",
+          "itemName": "Thunder Sabre [H]",
           "chance": 1
         },
         {
-          "itemId": "Shogun_Seal_H",
-          "itemName": "Shogun Seal [H]",
+          "itemId": "Inferno_Core_H",
+          "itemName": "Inferno Core [H]",
           "chance": 1
         }
       ],
@@ -20164,23 +20164,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 48000,
+      "bonusHP": 180000,
       "bonusATK": 0,
-      "bonusDEF": 5700,
+      "bonusDEF": 16000,
       "bonusAGI": 0,
-      "bonusLUC": 380,
-      "buyPrice": 10000000,
+      "bonusLUC": 780,
+      "buyPrice": 18200000,
       "maxCopies": -1,
       "effects": [
-        "HP +48K",
-        "DEF +5.7K",
-        "LUC +380"
+        "HP +180K",
+        "DEF +16K",
+        "LUC +780"
       ],
       "dropAreas": [
-        "GL01"
+        "GL01",
+        "DS04"
       ],
       "shopAreas": [
-        "GL01"
+        "GL01",
+        "DS04"
       ]
     },
     {
@@ -20225,21 +20227,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 99000,
+      "bonusHP": 1100000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 10000000,
+      "buyPrice": 19900000,
       "maxCopies": -1,
       "effects": [
-        "HP +99K"
+        "HP +1.1M"
       ],
       "dropAreas": [
-        "GL01"
+        "GL01",
+        "VO03",
+        "UW01"
       ],
       "shopAreas": [
-        "GL01"
+        "GL01",
+        "VO03",
+        "UW01"
       ]
     },
     {
@@ -20254,23 +20260,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 66000,
+      "bonusHP": 250000,
       "bonusATK": 0,
-      "bonusDEF": 7300,
-      "bonusAGI": 66,
+      "bonusDEF": 20000,
+      "bonusAGI": 270,
       "bonusLUC": 0,
-      "buyPrice": 10000000,
+      "buyPrice": 18200000,
       "maxCopies": -1,
       "effects": [
-        "HP +66K",
-        "DEF +7.3K",
-        "AGI +66"
+        "HP +250K",
+        "DEF +20K",
+        "AGI +270"
       ],
       "dropAreas": [
-        "GL01"
+        "GL01",
+        "DS04"
       ],
       "shopAreas": [
-        "GL01"
+        "GL01",
+        "DS04"
       ]
     },
     {
@@ -20445,12 +20453,8 @@
         "HP +84K",
         "DEF +8.3K"
       ],
-      "dropAreas": [
-        "GL01"
-      ],
-      "shopAreas": [
-        "GL01"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Aegis_Charm_H",
@@ -20476,11 +20480,9 @@
         "LUC +1.2K"
       ],
       "dropAreas": [
-        "GL01",
         "GR03"
       ],
       "shopAreas": [
-        "GL01",
         "GR03"
       ]
     },
@@ -20508,11 +20510,8 @@
         "DEF +590K",
         "LUC +600"
       ],
-      "dropAreas": [
-        "FR01"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "FR01",
         "JP04"
       ]
     },
@@ -20540,11 +20539,9 @@
         "AGI +850"
       ],
       "dropAreas": [
-        "GL01",
         "JP04"
       ],
       "shopAreas": [
-        "GL01",
         "JP04"
       ]
     },
@@ -20572,11 +20569,9 @@
         "DEF +480K"
       ],
       "dropAreas": [
-        "FR01",
         "JP04"
       ],
       "shopAreas": [
-        "FR01",
         "JP04"
       ]
     },
@@ -20633,11 +20628,8 @@
         "HP +120M",
         "LUC +1.6K"
       ],
-      "dropAreas": [
-        "FR01"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "FR01",
         "ML03"
       ]
     },
@@ -20664,11 +20656,8 @@
         "HP +44M",
         "LUC +1.3K"
       ],
-      "dropAreas": [
-        "FR01"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "FR01",
         "GR04"
       ]
     },
@@ -20684,20 +20673,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 91000,
+      "bonusHP": 84000,
       "bonusATK": 0,
-      "bonusDEF": 8800,
+      "bonusDEF": 8300,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 12100000,
+      "buyPrice": 10000000,
       "maxCopies": -1,
       "effects": [
-        "HP +91K",
-        "DEF +8.8K"
+        "HP +84K",
+        "DEF +8.3K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "GL01"
+      ],
       "shopAreas": [
-        "FR02"
+        "GL01"
       ]
     },
     {
@@ -20713,15 +20704,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 5100000,
+      "bonusATK": 5900000,
       "bonusDEF": 0,
-      "bonusAGI": 140,
+      "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 10000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +5.1M",
-        "AGI +140"
+        "ATK +5.9M"
       ],
       "dropAreas": [
         "GL01"
@@ -20742,21 +20732,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 52000,
+      "bonusHP": 180000,
       "bonusATK": 0,
-      "bonusDEF": 6100,
+      "bonusDEF": 16000,
       "bonusAGI": 0,
-      "bonusLUC": 440,
-      "buyPrice": 12100000,
+      "bonusLUC": 830,
+      "buyPrice": 18900000,
       "maxCopies": -1,
       "effects": [
-        "HP +52K",
-        "DEF +6.1K",
-        "LUC +440"
+        "HP +180K",
+        "DEF +16K",
+        "LUC +830"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "FR01",
+        "DS05"
+      ],
       "shopAreas": [
-        "FR02"
+        "FR01",
+        "DS05"
       ]
     },
     {
@@ -20771,19 +20765,26 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 100000,
+      "bonusHP": 440000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 0,
-      "buyPrice": 12100000,
+      "bonusLUC": 1500,
+      "buyPrice": 19900000,
       "maxCopies": -1,
       "effects": [
-        "HP +100K"
+        "HP +440K",
+        "LUC +1.5K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "GL01",
+        "VO03",
+        "UW01"
+      ],
       "shopAreas": [
-        "FR02"
+        "GL01",
+        "VO03",
+        "UW01"
       ]
     },
     {
@@ -20809,12 +20810,8 @@
         "HP +92K",
         "DEF +8.9K"
       ],
-      "dropAreas": [
-        "FR03"
-      ],
-      "shopAreas": [
-        "FR03"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Archangel_Greatsword_H",
@@ -20839,9 +20836,7 @@
         "ATK +6.8M"
       ],
       "dropAreas": [],
-      "shopAreas": [
-        "FR01"
-      ]
+      "shopAreas": []
     },
     {
       "id": "Archangel_Helm_H",
@@ -20868,9 +20863,7 @@
         "LUC +470"
       ],
       "dropAreas": [],
-      "shopAreas": [
-        "FR03"
-      ]
+      "shopAreas": []
     },
     {
       "id": "Ashigaru_Do_H",
@@ -20899,7 +20892,6 @@
         "JP02"
       ],
       "shopAreas": [
-        "FR04",
         "JP02"
       ]
     },
@@ -20931,7 +20923,6 @@
         "JP01"
       ],
       "shopAreas": [
-        "FR04",
         "JP01"
       ]
     },
@@ -20959,11 +20950,9 @@
         "AGI +770"
       ],
       "dropAreas": [
-        "FR01",
         "JP02"
       ],
       "shopAreas": [
-        "FR01",
         "JP02"
       ]
     },
@@ -21022,11 +21011,9 @@
         "AGI +1.4K"
       ],
       "dropAreas": [
-        "FR02",
         "ML05"
       ],
       "shopAreas": [
-        "FR02",
         "ML05"
       ]
     },
@@ -21057,7 +21044,6 @@
         "JP01"
       ],
       "shopAreas": [
-        "FR02",
         "JP01"
       ]
     },
@@ -21085,11 +21071,9 @@
         "AGI +1.3K"
       ],
       "dropAreas": [
-        "FR03",
         "ML03"
       ],
       "shopAreas": [
-        "FR03",
         "ML03"
       ]
     },
@@ -21105,22 +21089,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 150000,
+      "bonusHP": 89000,
       "bonusATK": 0,
-      "bonusDEF": 13000,
+      "bonusDEF": 8700,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 12900000,
+      "buyPrice": 11600000,
       "maxCopies": -1,
       "effects": [
-        "HP +150K",
-        "DEF +13K"
+        "HP +89K",
+        "DEF +8.7K"
       ],
       "dropAreas": [
-        "VO01"
+        "FR01"
       ],
       "shopAreas": [
-        "VO01"
+        "FR01"
       ]
     },
     {
@@ -21136,19 +21120,21 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6300000,
+      "bonusATK": 5100000,
       "bonusDEF": 0,
-      "bonusAGI": 210,
+      "bonusAGI": 140,
       "bonusLUC": 0,
-      "buyPrice": 12400000,
+      "buyPrice": 10000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6.3M",
-        "AGI +210"
+        "ATK +5.1M",
+        "AGI +140"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "GL01"
+      ],
       "shopAreas": [
-        "FR03"
+        "GL01"
       ]
     },
     {
@@ -21193,20 +21179,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 40000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 950,
-      "buyPrice": 12100000,
+      "bonusLUC": 0,
+      "buyPrice": 21500000,
       "maxCopies": -1,
       "effects": [
-        "HP +40K",
-        "LUC +950"
+        "HP +1.2M"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "FR01",
+        "DS01",
+        "UW02"
+      ],
       "shopAreas": [
-        "FR02"
+        "FR01",
+        "DS01",
+        "UW02"
       ]
     },
     {
@@ -21221,23 +21212,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 90000,
+      "bonusHP": 180000,
       "bonusATK": 0,
-      "bonusDEF": 9300,
+      "bonusDEF": 16000,
       "bonusAGI": 0,
-      "bonusLUC": 530,
-      "buyPrice": 12900000,
+      "bonusLUC": 880,
+      "buyPrice": 19400000,
       "maxCopies": -1,
       "effects": [
-        "HP +90K",
-        "DEF +9.3K",
-        "LUC +530"
+        "HP +180K",
+        "DEF +16K",
+        "LUC +880"
       ],
-      "dropAreas": [
-        "VO01"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "VO01"
+        "FR02",
+        "DS06"
       ]
     },
     {
@@ -21252,23 +21242,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 71000,
+      "bonusHP": 250000,
       "bonusATK": 0,
-      "bonusDEF": 7700,
-      "bonusAGI": 74,
+      "bonusDEF": 20000,
+      "bonusAGI": 310,
       "bonusLUC": 0,
-      "buyPrice": 11600000,
+      "buyPrice": 18900000,
       "maxCopies": -1,
       "effects": [
-        "HP +71K",
-        "DEF +7.7K",
-        "AGI +74"
+        "HP +250K",
+        "DEF +20K",
+        "AGI +310"
       ],
       "dropAreas": [
-        "FR01"
+        "FR01",
+        "DS05"
       ],
       "shopAreas": [
-        "FR01"
+        "FR01",
+        "DS05"
       ]
     },
     {
@@ -21283,22 +21275,20 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 160000,
+      "bonusHP": 91000,
       "bonusATK": 0,
-      "bonusDEF": 13000,
+      "bonusDEF": 8800,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 13900000,
+      "buyPrice": 12100000,
       "maxCopies": -1,
       "effects": [
-        "HP +160K",
-        "DEF +13K"
+        "HP +91K",
+        "DEF +8.8K"
       ],
-      "dropAreas": [
-        "VO02"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "VO02"
+        "FR02"
       ]
     },
     {
@@ -21345,20 +21335,18 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 7500000,
+      "bonusATK": 6800000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 12700000,
+      "buyPrice": 11600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +7.5M"
+        "ATK +6.8M"
       ],
-      "dropAreas": [
-        "FR04"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "FR04"
+        "FR01"
       ]
     },
     {
@@ -21389,7 +21377,6 @@
         "ML07"
       ],
       "shopAreas": [
-        "FR02",
         "ML07"
       ]
     },
@@ -21417,11 +21404,9 @@
         "DEF +3.3M"
       ],
       "dropAreas": [
-        "VO03",
         "ML06"
       ],
       "shopAreas": [
-        "VO03",
         "ML06"
       ]
     },
@@ -21449,12 +21434,9 @@
         "DEF +1.1M"
       ],
       "dropAreas": [
-        "FR03",
-        "DS01",
         "GR03"
       ],
       "shopAreas": [
-        "DS01",
         "GR03"
       ]
     },
@@ -21483,11 +21465,9 @@
         "AGI +490"
       ],
       "dropAreas": [
-        "FR03",
         "GR03"
       ],
       "shopAreas": [
-        "FR03",
         "GR03"
       ]
     },
@@ -21516,11 +21496,9 @@
         "LUC +630"
       ],
       "dropAreas": [
-        "VO02",
         "GR01"
       ],
       "shopAreas": [
-        "VO02",
         "GR01"
       ]
     },
@@ -21549,7 +21527,6 @@
       ],
       "dropAreas": [],
       "shopAreas": [
-        "FR03",
         "ML05"
       ]
     },
@@ -21577,12 +21554,9 @@
         "AGI +1K"
       ],
       "dropAreas": [
-        "FR03",
-        "FR04",
         "GR04"
       ],
       "shopAreas": [
-        "FR04",
         "GR04"
       ]
     },
@@ -21639,11 +21613,9 @@
         "LUC +850"
       ],
       "dropAreas": [
-        "VO03",
         "ML01"
       ],
       "shopAreas": [
-        "VO03",
         "ML01"
       ]
     },
@@ -21720,22 +21692,26 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 40000,
+      "bonusHP": 450000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 1000,
-      "buyPrice": 12400000,
+      "bonusLUC": 1600,
+      "buyPrice": 21500000,
       "maxCopies": -1,
       "effects": [
-        "HP +40K",
-        "LUC +1K"
+        "HP +450K",
+        "LUC +1.6K"
       ],
       "dropAreas": [
-        "FR03"
+        "FR01",
+        "DS01",
+        "UW02"
       ],
       "shopAreas": [
-        "FR03"
+        "FR01",
+        "DS01",
+        "UW02"
       ]
     },
     {
@@ -21750,22 +21726,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 300000,
+      "bonusHP": 92000,
       "bonusATK": 0,
-      "bonusDEF": 22000,
+      "bonusDEF": 8900,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 17000000,
+      "buyPrice": 12400000,
       "maxCopies": -1,
       "effects": [
-        "HP +300K",
-        "DEF +22K"
+        "HP +92K",
+        "DEF +8.9K"
       ],
       "dropAreas": [
-        "DS02"
+        "FR03"
       ],
       "shopAreas": [
-        "DS02"
+        "FR03"
       ]
     },
     {
@@ -21871,23 +21847,24 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 160000,
+      "bonusHP": 580000,
       "bonusATK": 0,
-      "bonusDEF": 15000,
+      "bonusDEF": 39000,
       "bonusAGI": 0,
-      "bonusLUC": 640,
-      "buyPrice": 15400000,
+      "bonusLUC": 940,
+      "buyPrice": 19900000,
       "maxCopies": -1,
       "effects": [
-        "HP +160K",
-        "DEF +15K",
-        "LUC +640"
+        "HP +580K",
+        "DEF +39K",
+        "LUC +940"
       ],
       "dropAreas": [
-        "DS01"
+        "UW01"
       ],
       "shopAreas": [
-        "DS01"
+        "FR03",
+        "UW01"
       ]
     },
     {
@@ -21942,12 +21919,8 @@
       "effects": [
         "ATK +22M"
       ],
-      "dropAreas": [
-        "VO01"
-      ],
-      "shopAreas": [
-        "VO01"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Cherub_Circlet_H",
@@ -21973,12 +21946,8 @@
         "DEF +15K",
         "LUC +680"
       ],
-      "dropAreas": [
-        "DS02"
-      ],
-      "shopAreas": [
-        "DS02"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Cherub_Wing_H",
@@ -22002,12 +21971,8 @@
       "effects": [
         "HP +110K"
       ],
-      "dropAreas": [
-        "FR04"
-      ],
-      "shopAreas": [
-        "FR04"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Choir_Raiment_H",
@@ -22032,12 +21997,8 @@
         "HP +300K",
         "DEF +22K"
       ],
-      "dropAreas": [
-        "DS03"
-      ],
-      "shopAreas": [
-        "DS03"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Choir_Slippers_H",
@@ -22063,12 +22024,8 @@
         "DEF +8K",
         "AGI +110"
       ],
-      "dropAreas": [
-        "FR04"
-      ],
-      "shopAreas": [
-        "FR04"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Choir_Veil_H",
@@ -22094,12 +22051,8 @@
         "DEF +15K",
         "LUC +730"
       ],
-      "dropAreas": [
-        "DS03"
-      ],
-      "shopAreas": [
-        "DS03"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Choir_Wand_H",
@@ -22124,12 +22077,8 @@
         "ATK +19M",
         "AGI +270"
       ],
-      "dropAreas": [
-        "VO01"
-      ],
-      "shopAreas": [
-        "VO01"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Cinder_Band_H",
@@ -22174,20 +22123,21 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 25000000,
+      "bonusATK": 5800000,
       "bonusDEF": 0,
-      "bonusAGI": 0,
+      "bonusAGI": 160,
       "bonusLUC": 0,
-      "buyPrice": 13900000,
+      "buyPrice": 11600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +25M"
+        "ATK +5.8M",
+        "AGI +160"
       ],
       "dropAreas": [
-        "VO02"
+        "FR01"
       ],
       "shopAreas": [
-        "VO02"
+        "FR01"
       ]
     },
     {
@@ -22202,23 +22152,24 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 180000,
+      "bonusHP": 590000,
       "bonusATK": 0,
-      "bonusDEF": 16000,
+      "bonusDEF": 40000,
       "bonusAGI": 0,
-      "bonusLUC": 780,
-      "buyPrice": 18200000,
+      "bonusLUC": 1000,
+      "buyPrice": 21500000,
       "maxCopies": -1,
       "effects": [
-        "HP +180K",
-        "DEF +16K",
-        "LUC +780"
+        "HP +590K",
+        "DEF +40K",
+        "LUC +1K"
       ],
       "dropAreas": [
-        "DS04"
+        "UW02"
       ],
       "shopAreas": [
-        "DS04"
+        "FR04",
+        "UW02"
       ]
     },
     {
@@ -22234,21 +22185,20 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 21000000,
+      "bonusATK": 7000000,
       "bonusDEF": 0,
-      "bonusAGI": 310,
+      "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 13900000,
+      "buyPrice": 12100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +21M",
-        "AGI +310"
+        "ATK +7M"
       ],
       "dropAreas": [
-        "VO02"
+        "FR02"
       ],
       "shopAreas": [
-        "VO02"
+        "FR02"
       ]
     },
     {
@@ -22264,20 +22214,19 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 27000000,
+      "bonusATK": 6100000,
       "bonusDEF": 0,
-      "bonusAGI": 0,
+      "bonusAGI": 180,
       "bonusLUC": 0,
-      "buyPrice": 14600000,
+      "buyPrice": 12100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +27M"
+        "ATK +6.1M",
+        "AGI +180"
       ],
-      "dropAreas": [
-        "VO03"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "VO03"
+        "FR02"
       ]
     },
     {
@@ -22324,22 +22273,20 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 310000,
+      "bonusHP": 93000,
       "bonusATK": 0,
-      "bonusDEF": 23000,
+      "bonusDEF": 9000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 18200000,
+      "buyPrice": 12700000,
       "maxCopies": -1,
       "effects": [
-        "HP +310K",
-        "DEF +23K"
+        "HP +93K",
+        "DEF +9K"
       ],
-      "dropAreas": [
-        "DS04"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "DS04"
+        "FR04"
       ]
     },
     {
@@ -22397,12 +22344,8 @@
         "DEF +12K",
         "AGI +120"
       ],
-      "dropAreas": [
-        "VO01"
-      ],
-      "shopAreas": [
-        "VO01"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Combat_Boots_H",
@@ -22429,11 +22372,9 @@
         "AGI +690"
       ],
       "dropAreas": [
-        "VO02",
         "ML04"
       ],
       "shopAreas": [
-        "VO02",
         "ML04"
       ]
     },
@@ -22462,11 +22403,9 @@
         "LUC +990"
       ],
       "dropAreas": [
-        "DS05",
         "ML04"
       ],
       "shopAreas": [
-        "DS05",
         "ML04"
       ]
     },
@@ -22494,11 +22433,9 @@
         "AGI +1.3K"
       ],
       "dropAreas": [
-        "VO03",
         "ML04"
       ],
       "shopAreas": [
-        "VO03",
         "ML04"
       ]
     },
@@ -22527,9 +22464,7 @@
         "LUC +880"
       ],
       "dropAreas": [],
-      "shopAreas": [
-        "DS06"
-      ]
+      "shopAreas": []
     },
     {
       "id": "Commanders_Helm_H",
@@ -22601,20 +22536,20 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 88000000,
+      "bonusATK": 7300000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 15400000,
+      "buyPrice": 12400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +88M"
+        "ATK +7.3M"
       ],
       "dropAreas": [
-        "DS01"
+        "FR03"
       ],
       "shopAreas": [
-        "DS01"
+        "FR03"
       ]
     },
     {
@@ -22641,11 +22576,9 @@
         "LUC +2.2K"
       ],
       "dropAreas": [
-        "FR04",
         "HV01"
       ],
       "shopAreas": [
-        "FR04",
         "HV01"
       ]
     },
@@ -22661,22 +22594,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 320000,
+      "bonusHP": 150000,
       "bonusATK": 0,
-      "bonusDEF": 23000,
+      "bonusDEF": 13000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 18900000,
+      "buyPrice": 12900000,
       "maxCopies": -1,
       "effects": [
-        "HP +320K",
-        "DEF +23K"
+        "HP +150K",
+        "DEF +13K"
       ],
       "dropAreas": [
-        "DS05"
+        "VO01"
       ],
       "shopAreas": [
-        "DS05"
+        "VO01"
       ]
     },
     {
@@ -22691,20 +22624,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 320000,
+      "bonusHP": 160000,
       "bonusATK": 0,
-      "bonusDEF": 23000,
+      "bonusDEF": 13000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 19400000,
+      "buyPrice": 13900000,
       "maxCopies": -1,
       "effects": [
-        "HP +320K",
-        "DEF +23K"
+        "HP +160K",
+        "DEF +13K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "VO02"
+      ],
       "shopAreas": [
-        "DS06"
+        "VO02"
       ]
     },
     {
@@ -22780,23 +22715,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 580000,
+      "bonusHP": 610000,
       "bonusATK": 0,
-      "bonusDEF": 39000,
+      "bonusDEF": 41000,
       "bonusAGI": 0,
-      "bonusLUC": 940,
-      "buyPrice": 19900000,
+      "bonusLUC": 1000,
+      "buyPrice": 22700000,
       "maxCopies": -1,
       "effects": [
-        "HP +580K",
-        "DEF +39K",
-        "LUC +940"
+        "HP +610K",
+        "DEF +41K",
+        "LUC +1K"
       ],
       "dropAreas": [
-        "UW01"
+        "VO01",
+        "UW03"
       ],
       "shopAreas": [
-        "UW01"
+        "VO01",
+        "UW03"
       ]
     },
     {
@@ -22811,21 +22748,24 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 180000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 12900000,
+      "buyPrice": 22700000,
       "maxCopies": -1,
       "effects": [
-        "HP +180K"
+        "HP +1.2M"
       ],
       "dropAreas": [
-        "VO01"
+        "DS02",
+        "UW03"
       ],
       "shopAreas": [
-        "VO01"
+        "FR02",
+        "DS02",
+        "UW03"
       ]
     },
     {
@@ -22871,21 +22811,19 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 76000000,
+      "bonusATK": 6300000,
       "bonusDEF": 0,
-      "bonusAGI": 400,
+      "bonusAGI": 210,
       "bonusLUC": 0,
-      "buyPrice": 15400000,
+      "buyPrice": 12400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +76M",
-        "AGI +400"
+        "ATK +6.3M",
+        "AGI +210"
       ],
-      "dropAreas": [
-        "DS01"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "DS01"
+        "FR03"
       ]
     },
     {
@@ -22961,22 +22899,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1000000,
+      "bonusHP": 170000,
       "bonusATK": 0,
-      "bonusDEF": 57000,
+      "bonusDEF": 14000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 19900000,
+      "buyPrice": 14600000,
       "maxCopies": -1,
       "effects": [
-        "HP +1M",
-        "DEF +57K"
+        "HP +170K",
+        "DEF +14K"
       ],
       "dropAreas": [
-        "UW01"
+        "VO03"
       ],
       "shopAreas": [
-        "UW01"
+        "VO03"
       ]
     },
     {
@@ -23021,23 +22959,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 130000,
+      "bonusHP": 260000,
       "bonusATK": 0,
-      "bonusDEF": 12000,
-      "bonusAGI": 160,
+      "bonusDEF": 21000,
+      "bonusAGI": 350,
       "bonusLUC": 0,
-      "buyPrice": 14600000,
+      "buyPrice": 19400000,
       "maxCopies": -1,
       "effects": [
-        "HP +130K",
-        "DEF +12K",
-        "AGI +160"
+        "HP +260K",
+        "DEF +21K",
+        "AGI +350"
       ],
-      "dropAreas": [
-        "VO03"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "VO03"
+        "FR02",
+        "DS06"
       ]
     },
     {
@@ -23064,12 +23001,9 @@
         "LUC +1K"
       ],
       "dropAreas": [
-        "FR04",
-        "VO01",
         "JP03"
       ],
       "shopAreas": [
-        "VO01",
         "JP03"
       ]
     },
@@ -23085,22 +23019,23 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1000000,
+      "bonusHP": 290000,
       "bonusATK": 0,
-      "bonusDEF": 58000,
+      "bonusDEF": 22000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 21500000,
+      "buyPrice": 15400000,
       "maxCopies": -1,
       "effects": [
-        "HP +1M",
-        "DEF +58K"
+        "HP +290K",
+        "DEF +22K"
       ],
       "dropAreas": [
-        "UW02"
+        "FR03",
+        "DS01"
       ],
       "shopAreas": [
-        "UW02"
+        "DS01"
       ]
     },
     {
@@ -23144,22 +23079,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1000000,
+      "bonusHP": 300000,
       "bonusATK": 0,
-      "bonusDEF": 59000,
+      "bonusDEF": 22000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 22700000,
+      "buyPrice": 17000000,
       "maxCopies": -1,
       "effects": [
-        "HP +1M",
-        "DEF +59K"
+        "HP +300K",
+        "DEF +22K"
       ],
       "dropAreas": [
-        "UW03"
+        "DS02"
       ],
       "shopAreas": [
-        "UW03"
+        "DS02"
       ]
     },
     {
@@ -23203,20 +23138,20 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 92000000,
+      "bonusATK": 7500000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 17000000,
+      "buyPrice": 12700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +92M"
+        "ATK +7.5M"
       ],
       "dropAreas": [
-        "DS02"
+        "FR04"
       ],
       "shopAreas": [
-        "DS02"
+        "FR04"
       ]
     },
     {
@@ -23231,23 +23166,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 230000,
+      "bonusHP": 800000,
       "bonusATK": 0,
-      "bonusDEF": 19000,
-      "bonusAGI": 180,
+      "bonusDEF": 51000,
+      "bonusAGI": 400,
       "bonusLUC": 0,
-      "buyPrice": 15400000,
+      "buyPrice": 19900000,
       "maxCopies": -1,
       "effects": [
-        "HP +230K",
-        "DEF +19K",
-        "AGI +180"
+        "HP +800K",
+        "DEF +51K",
+        "AGI +400"
       ],
       "dropAreas": [
-        "DS01"
+        "FR03",
+        "UW01"
       ],
       "shopAreas": [
-        "DS01"
+        "FR03",
+        "UW01"
       ]
     },
     {
@@ -23262,21 +23199,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 190000,
+      "bonusHP": 470000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 0,
-      "buyPrice": 13900000,
+      "bonusLUC": 1700,
+      "buyPrice": 22700000,
       "maxCopies": -1,
       "effects": [
-        "HP +190K"
+        "HP +470K",
+        "LUC +1.7K"
       ],
       "dropAreas": [
-        "VO02"
+        "DS02",
+        "UW03"
       ],
       "shopAreas": [
-        "VO02"
+        "FR02",
+        "DS02",
+        "UW03"
       ]
     },
     {
@@ -23291,23 +23232,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 590000,
+      "bonusHP": 620000,
       "bonusATK": 0,
-      "bonusDEF": 40000,
+      "bonusDEF": 42000,
       "bonusAGI": 0,
-      "bonusLUC": 1000,
-      "buyPrice": 21500000,
+      "bonusLUC": 1100,
+      "buyPrice": 24000000,
       "maxCopies": -1,
       "effects": [
-        "HP +590K",
-        "DEF +40K",
-        "LUC +1K"
+        "HP +620K",
+        "DEF +42K",
+        "LUC +1.1K"
       ],
       "dropAreas": [
-        "UW02"
+        "VO02",
+        "UW04"
       ],
       "shopAreas": [
-        "UW02"
+        "VO02",
+        "UW04"
       ]
     },
     {
@@ -23335,11 +23278,9 @@
         "AGI +880"
       ],
       "dropAreas": [
-        "DS02",
         "HV01"
       ],
       "shopAreas": [
-        "DS02",
         "HV01"
       ]
     },
@@ -23366,11 +23307,8 @@
         "HP +92M",
         "LUC +1.5K"
       ],
-      "dropAreas": [
-        "VO02"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "VO02",
         "ML01"
       ]
     },
@@ -23396,12 +23334,8 @@
       "effects": [
         "HP +200K"
       ],
-      "dropAreas": [
-        "VO03"
-      ],
-      "shopAreas": [
-        "VO03"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Dragon_Armor_H",
@@ -23445,22 +23379,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1000000,
+      "bonusHP": 300000,
       "bonusATK": 0,
-      "bonusDEF": 61000,
+      "bonusDEF": 22000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 24000000,
+      "buyPrice": 17500000,
       "maxCopies": -1,
       "effects": [
-        "HP +1M",
-        "DEF +61K"
+        "HP +300K",
+        "DEF +22K"
       ],
       "dropAreas": [
-        "UW04"
+        "DS03"
       ],
       "shopAreas": [
-        "UW04"
+        "DS03"
       ]
     },
     {
@@ -23476,21 +23410,22 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 79000000,
+      "bonusATK": 6500000,
       "bonusDEF": 0,
-      "bonusAGI": 460,
+      "bonusAGI": 240,
       "bonusLUC": 0,
-      "buyPrice": 17000000,
+      "buyPrice": 12700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +79M",
-        "AGI +460"
+        "ATK +6.5M",
+        "AGI +240"
       ],
       "dropAreas": [
-        "DS02"
+        "FR03",
+        "FR04"
       ],
       "shopAreas": [
-        "DS02"
+        "FR04"
       ]
     },
     {
@@ -23517,11 +23452,8 @@
         "DEF +670K",
         "AGI +420"
       ],
-      "dropAreas": [
-        "DS03"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "DS03",
         "JP04"
       ]
     },
@@ -23567,20 +23499,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1100000,
+      "bonusHP": 310000,
       "bonusATK": 0,
-      "bonusDEF": 62000,
+      "bonusDEF": 23000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 24700000,
+      "buyPrice": 18200000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.1M",
-        "DEF +62K"
+        "HP +310K",
+        "DEF +23K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "DS04"
+      ],
       "shopAreas": [
-        "UW06"
+        "DS04"
       ]
     },
     {
@@ -23596,20 +23530,20 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 96000000,
+      "bonusATK": 22000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 17500000,
+      "buyPrice": 12900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +96M"
+        "ATK +22M"
       ],
       "dropAreas": [
-        "DS03"
+        "VO01"
       ],
       "shopAreas": [
-        "DS03"
+        "VO01"
       ]
     },
     {
@@ -23624,23 +23558,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 250000,
+      "bonusHP": 820000,
       "bonusATK": 0,
-      "bonusDEF": 20000,
-      "bonusAGI": 270,
+      "bonusDEF": 52000,
+      "bonusAGI": 450,
       "bonusLUC": 0,
-      "buyPrice": 18200000,
+      "buyPrice": 21500000,
       "maxCopies": -1,
       "effects": [
-        "HP +250K",
-        "DEF +20K",
-        "AGI +270"
+        "HP +820K",
+        "DEF +52K",
+        "AGI +450"
       ],
       "dropAreas": [
-        "DS04"
+        "FR04",
+        "UW02"
       ],
       "shopAreas": [
-        "DS04"
+        "FR04",
+        "UW02"
       ]
     },
     {
@@ -23731,7 +23667,6 @@
         "ML07"
       ],
       "shopAreas": [
-        "UW07",
         "ML07"
       ]
     },
@@ -23748,22 +23683,21 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 83000000,
+      "bonusATK": 19000000,
       "bonusDEF": 0,
-      "bonusAGI": 520,
+      "bonusAGI": 270,
       "bonusLUC": 0,
-      "buyPrice": 17500000,
+      "buyPrice": 12900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +83M",
-        "AGI +520"
+        "ATK +19M",
+        "AGI +270"
       ],
       "dropAreas": [
-        "FR03",
-        "DS03"
+        "VO01"
       ],
       "shopAreas": [
-        "DS03"
+        "VO01"
       ]
     },
     {
@@ -23820,11 +23754,8 @@
         "DEF +5.6M",
         "AGI +840"
       ],
-      "dropAreas": [
-        "DS05"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "DS05",
         "ML08"
       ]
     },
@@ -23884,9 +23815,7 @@
         "AGI +350"
       ],
       "dropAreas": [],
-      "shopAreas": [
-        "DS06"
-      ]
+      "shopAreas": []
     },
     {
       "id": "Feathered_Cuirass_H",
@@ -23938,12 +23867,8 @@
         "DEF +41K",
         "LUC +1K"
       ],
-      "dropAreas": [
-        "UW03"
-      ],
-      "shopAreas": [
-        "UW03"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Feathered_Spear_H",
@@ -23967,12 +23892,8 @@
       "effects": [
         "ATK +100M"
       ],
-      "dropAreas": [
-        "DS04"
-      ],
-      "shopAreas": [
-        "DS04"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Fern_Boots_H",
@@ -24030,11 +23951,9 @@
         "LUC +890"
       ],
       "dropAreas": [
-        "UW04",
         "ML02"
       ],
       "shopAreas": [
-        "UW04",
         "ML02"
       ]
     },
@@ -24063,11 +23982,9 @@
         "AGI +620"
       ],
       "dropAreas": [
-        "UW01",
         "ML02"
       ],
       "shopAreas": [
-        "UW01",
         "ML02"
       ]
     },
@@ -24094,11 +24011,8 @@
         "HP +100M",
         "LUC +1.6K"
       ],
-      "dropAreas": [
-        "VO03"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "VO03",
         "ML02"
       ]
     },
@@ -24155,11 +24069,8 @@
         "HP +180M",
         "LUC +1.9K"
       ],
-      "dropAreas": [
-        "DS01"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "DS01",
         "ML06"
       ]
     },
@@ -24175,22 +24086,25 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 130000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 1200,
-      "buyPrice": 15400000,
+      "bonusLUC": 0,
+      "buyPrice": 24000000,
       "maxCopies": -1,
       "effects": [
-        "HP +130K",
-        "LUC +1.2K"
+        "HP +1.2M"
       ],
       "dropAreas": [
-        "DS01"
+        "FR01",
+        "DS03",
+        "UW04"
       ],
       "shopAreas": [
-        "DS01"
+        "FR03",
+        "DS03",
+        "UW04"
       ]
     },
     {
@@ -24235,19 +24149,23 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 50000000,
+      "bonusHP": 320000,
       "bonusATK": 0,
-      "bonusDEF": 1400000,
+      "bonusDEF": 23000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 40120100000,
+      "buyPrice": 18900000,
       "maxCopies": -1,
       "effects": [
-        "HP +50M",
-        "DEF +1.4M"
+        "HP +320K",
+        "DEF +23K"
       ],
-      "dropAreas": [],
-      "shopAreas": []
+      "dropAreas": [
+        "DS05"
+      ],
+      "shopAreas": [
+        "DS05"
+      ]
     },
     {
       "id": "Flame_Plate_H",
@@ -24321,19 +24239,21 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 68000000,
+      "bonusHP": 320000,
       "bonusATK": 0,
-      "bonusDEF": 1800000,
+      "bonusDEF": 23000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 50943400000,
+      "buyPrice": 19400000,
       "maxCopies": -1,
       "effects": [
-        "HP +68M",
-        "DEF +1.8M"
+        "HP +320K",
+        "DEF +23K"
       ],
       "dropAreas": [],
-      "shopAreas": []
+      "shopAreas": [
+        "DS06"
+      ]
     },
     {
       "id": "Fox_Bell_H",
@@ -24357,12 +24277,8 @@
       "effects": [
         "HP +350K"
       ],
-      "dropAreas": [
-        "DS02"
-      ],
-      "shopAreas": [
-        "DS02"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Frag_Grenade_H",
@@ -24387,11 +24303,8 @@
         "HP +130M",
         "LUC +1.7K"
       ],
-      "dropAreas": [
-        "DS02"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "DS02",
         "ML04"
       ]
     },
@@ -24408,21 +24321,20 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 86000000,
+      "bonusATK": 25000000,
       "bonusDEF": 0,
-      "bonusAGI": 590,
+      "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 18200000,
+      "buyPrice": 13900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +86M",
-        "AGI +590"
+        "ATK +25M"
       ],
       "dropAreas": [
-        "DS04"
+        "VO02"
       ],
       "shopAreas": [
-        "DS04"
+        "VO02"
       ]
     },
     {
@@ -24453,7 +24365,6 @@
         "ML05"
       ],
       "shopAreas": [
-        "UW06",
         "ML05"
       ]
     },
@@ -24470,20 +24381,21 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 100000000,
+      "bonusATK": 21000000,
       "bonusDEF": 0,
-      "bonusAGI": 0,
+      "bonusAGI": 310,
       "bonusLUC": 0,
-      "buyPrice": 18900000,
+      "buyPrice": 13900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +100M"
+        "ATK +21M",
+        "AGI +310"
       ],
       "dropAreas": [
-        "DS05"
+        "VO02"
       ],
       "shopAreas": [
-        "DS05"
+        "VO02"
       ]
     },
     {
@@ -24508,13 +24420,8 @@
       "effects": [
         "HP +360K"
       ],
-      "dropAreas": [
-        "FR01",
-        "DS03"
-      ],
-      "shopAreas": [
-        "DS03"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Gold_Helmet_H",
@@ -24597,11 +24504,9 @@
         "LUC +1.3K"
       ],
       "dropAreas": [
-        "DS03",
         "GR05"
       ],
       "shopAreas": [
-        "DS03",
         "GR05"
       ]
     },
@@ -24630,11 +24535,9 @@
         "AGI +540"
       ],
       "dropAreas": [
-        "UW02",
         "GR05"
       ],
       "shopAreas": [
-        "UW02",
         "GR05"
       ]
     },
@@ -24662,11 +24565,9 @@
         "AGI +1.5K"
       ],
       "dropAreas": [
-        "DS05",
         "ML06"
       ],
       "shopAreas": [
-        "DS05",
         "ML06"
       ]
     },
@@ -24692,12 +24593,8 @@
       "effects": [
         "HP +370K"
       ],
-      "dropAreas": [
-        "DS04"
-      ],
-      "shopAreas": [
-        "DS04"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Hell_Staff_H",
@@ -24712,18 +24609,20 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 100000000,
+      "bonusATK": 27000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 19400000,
+      "buyPrice": 14600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +100M"
+        "ATK +27M"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "VO03"
+      ],
       "shopAreas": [
-        "DS06"
+        "VO03"
       ]
     },
     {
@@ -24750,12 +24649,8 @@
         "DEF +53K",
         "AGI +520"
       ],
-      "dropAreas": [
-        "UW03"
-      ],
-      "shopAreas": [
-        "UW03"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Holy_Chalice_H",
@@ -24780,12 +24675,8 @@
         "HP +130K",
         "LUC +1.4K"
       ],
-      "dropAreas": [
-        "DS04"
-      ],
-      "shopAreas": [
-        "DS04"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Holy_Robe_H",
@@ -24799,19 +24690,23 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 92000000,
+      "bonusHP": 1000000,
       "bonusATK": 0,
-      "bonusDEF": 2300000,
+      "bonusDEF": 57000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 64691000000,
+      "buyPrice": 19900000,
       "maxCopies": -1,
       "effects": [
-        "HP +92M",
-        "DEF +2.3M"
+        "HP +1M",
+        "DEF +57K"
       ],
-      "dropAreas": [],
-      "shopAreas": []
+      "dropAreas": [
+        "UW01"
+      ],
+      "shopAreas": [
+        "UW01"
+      ]
     },
     {
       "id": "Holy_Sword_H",
@@ -24826,19 +24721,21 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 94000000,
+      "bonusATK": 23000000,
       "bonusDEF": 0,
-      "bonusAGI": 770,
+      "bonusAGI": 350,
       "bonusLUC": 0,
-      "buyPrice": 19400000,
+      "buyPrice": 14600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +94M",
-        "AGI +770"
+        "ATK +23M",
+        "AGI +350"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "VO03"
+      ],
       "shopAreas": [
-        "DS06"
+        "VO03"
       ]
     },
     {
@@ -24869,7 +24766,6 @@
         "GR03"
       ],
       "shopAreas": [
-        "UW07",
         "GR03"
       ]
     },
@@ -24928,11 +24824,9 @@
         "AGI +460"
       ],
       "dropAreas": [
-        "UW04",
         "GR02"
       ],
       "shopAreas": [
-        "UW04",
         "GR02"
       ]
     },
@@ -24960,11 +24854,9 @@
         "AGI +890"
       ],
       "dropAreas": [
-        "UW01",
         "GR01"
       ],
       "shopAreas": [
-        "UW01",
         "GR01"
       ]
     },
@@ -24981,21 +24873,50 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1000000000,
+      "bonusATK": 88000000,
       "bonusDEF": 0,
-      "bonusAGI": 880,
+      "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 19900000,
+      "buyPrice": 15400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1B",
-        "AGI +880"
+        "ATK +88M"
       ],
       "dropAreas": [
-        "UW01"
+        "DS01"
       ],
       "shopAreas": [
-        "UW01"
+        "DS01"
+      ]
+    },
+    {
+      "id": "Ice_Armor_H",
+      "name": "Ice Armor [H]",
+      "description": "",
+      "image": "item_Ice_Armor_H.png",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 1000000,
+      "bonusATK": 0,
+      "bonusDEF": 58000,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 21500000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +1M",
+        "DEF +58K"
+      ],
+      "dropAreas": [
+        "UW02"
+      ],
+      "shopAreas": [
+        "UW02"
       ]
     },
     {
@@ -25011,20 +24932,21 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1300000000,
+      "bonusATK": 76000000,
       "bonusDEF": 0,
-      "bonusAGI": 0,
+      "bonusAGI": 400,
       "bonusLUC": 0,
-      "buyPrice": 21500000,
+      "buyPrice": 15400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1.3B"
+        "ATK +76M",
+        "AGI +400"
       ],
       "dropAreas": [
-        "UW02"
+        "DS01"
       ],
       "shopAreas": [
-        "UW02"
+        "DS01"
       ]
     },
     {
@@ -25039,21 +24961,26 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 370000,
+      "bonusHP": 480000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 0,
-      "buyPrice": 18900000,
+      "bonusLUC": 1800,
+      "buyPrice": 24000000,
       "maxCopies": -1,
       "effects": [
-        "HP +370K"
+        "HP +480K",
+        "LUC +1.8K"
       ],
       "dropAreas": [
-        "DS05"
+        "FR03",
+        "DS03",
+        "UW04"
       ],
       "shopAreas": [
-        "DS05"
+        "FR03",
+        "DS03",
+        "UW04"
       ]
     },
     {
@@ -25119,6 +25046,36 @@
       ]
     },
     {
+      "id": "Inferno_Robe_H",
+      "name": "Inferno Robe [H]",
+      "description": "",
+      "image": "item_Inferno_Robe_H.png",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 1000000,
+      "bonusATK": 0,
+      "bonusDEF": 59000,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 22700000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +1M",
+        "DEF +59K"
+      ],
+      "dropAreas": [
+        "UW03"
+      ],
+      "shopAreas": [
+        "UW03"
+      ]
+    },
+    {
       "id": "Inferno_Sword_H",
       "name": "Inferno Sword [H]",
       "description": "",
@@ -25131,21 +25088,20 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1100000000,
+      "bonusATK": 92000000,
       "bonusDEF": 0,
-      "bonusAGI": 1000,
+      "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 21500000,
+      "buyPrice": 17000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1.1B",
-        "AGI +1K"
+        "ATK +92M"
       ],
       "dropAreas": [
-        "UW02"
+        "DS02"
       ],
       "shopAreas": [
-        "UW02"
+        "DS02"
       ]
     },
     {
@@ -25295,9 +25251,7 @@
         "AGI +670"
       ],
       "dropAreas": [],
-      "shopAreas": [
-        "UW06"
-      ]
+      "shopAreas": []
     },
     {
       "id": "Iron_Sword_H",
@@ -25353,11 +25307,9 @@
         "AGI +1.7K"
       ],
       "dropAreas": [
-        "UW03",
         "HV01"
       ],
       "shopAreas": [
-        "UW03",
         "HV01"
       ]
     },
@@ -25389,7 +25341,6 @@
         "ML03"
       ],
       "shopAreas": [
-        "UW07",
         "ML03"
       ]
     },
@@ -25443,12 +25394,8 @@
         "ATK +1.1B",
         "AGI +1.1K"
       ],
-      "dropAreas": [
-        "UW03"
-      ],
-      "shopAreas": [
-        "UW03"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Knight_Armor_H",
@@ -25531,11 +25478,9 @@
         "LUC +990"
       ],
       "dropAreas": [
-        "DS05",
         "JP02"
       ],
       "shopAreas": [
-        "DS05",
         "JP02"
       ]
     },
@@ -25563,11 +25508,9 @@
         "AGI +930"
       ],
       "dropAreas": [
-        "UW04",
         "GR02"
       ],
       "shopAreas": [
-        "UW04",
         "GR02"
       ]
     },
@@ -25600,6 +25543,36 @@
       ],
       "shopAreas": [
         "GR02"
+      ]
+    },
+    {
+      "id": "Lava_Armor_H",
+      "name": "Lava Armor [H]",
+      "description": "",
+      "image": "item_Lava_Armor_H.png",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 1000000,
+      "bonusATK": 0,
+      "bonusDEF": 61000,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 24000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +1M",
+        "DEF +61K"
+      ],
+      "dropAreas": [
+        "UW04"
+      ],
+      "shopAreas": [
+        "UW04"
       ]
     },
     {
@@ -25645,19 +25618,24 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 380000,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 19400000,
+      "buyPrice": 24700000,
       "maxCopies": -1,
       "effects": [
-        "HP +380K"
+        "HP +1.3M"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "FR04",
+        "DS04"
+      ],
       "shopAreas": [
-        "DS06"
+        "FR04",
+        "DS04",
+        "UW06"
       ]
     },
     {
@@ -25673,21 +25651,21 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1200000000,
+      "bonusATK": 79000000,
       "bonusDEF": 0,
-      "bonusAGI": 1200,
+      "bonusAGI": 460,
       "bonusLUC": 0,
-      "buyPrice": 24000000,
+      "buyPrice": 17000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1.2B",
-        "AGI +1.2K"
+        "ATK +79M",
+        "AGI +460"
       ],
       "dropAreas": [
-        "UW04"
+        "DS02"
       ],
       "shopAreas": [
-        "UW04"
+        "DS02"
       ]
     },
     {
@@ -25814,6 +25792,34 @@
       ]
     },
     {
+      "id": "Legendary_Armor_H",
+      "name": "Legendary Armor [H]",
+      "description": "",
+      "image": "item_Legendary_Armor_H.png",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 1100000,
+      "bonusATK": 0,
+      "bonusDEF": 62000,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 24700000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +1.1M",
+        "DEF +62K"
+      ],
+      "dropAreas": [],
+      "shopAreas": [
+        "UW06"
+      ]
+    },
+    {
       "id": "Linen_Chiton_H",
       "name": "Linen Chiton [H]",
       "description": "",
@@ -25901,6 +25907,34 @@
       ],
       "shopAreas": [
         "DS01"
+      ]
+    },
+    {
+      "id": "Mage_Robe_H",
+      "name": "Mage Robe [H]",
+      "description": "",
+      "image": "item_Mage_Robe_H.png",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 1100000,
+      "bonusATK": 0,
+      "bonusDEF": 63000,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 25500000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +1.1M",
+        "DEF +63K"
+      ],
+      "dropAreas": [],
+      "shopAreas": [
+        "UW07"
       ]
     },
     {
@@ -26018,9 +26052,7 @@
         "ATK +1.5B"
       ],
       "dropAreas": [],
-      "shopAreas": [
-        "UW06"
-      ]
+      "shopAreas": []
     },
     {
       "id": "Maze_Spear_H",
@@ -26035,19 +26067,20 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1300000000,
+      "bonusATK": 96000000,
       "bonusDEF": 0,
-      "bonusAGI": 1400,
+      "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 24700000,
+      "buyPrice": 17500000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1.3B",
-        "AGI +1.4K"
+        "ATK +96M"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "DS03"
+      ],
       "shopAreas": [
-        "UW06"
+        "DS03"
       ]
     },
     {
@@ -26107,7 +26140,6 @@
         "GR05"
       ],
       "shopAreas": [
-        "UW07",
         "GR05"
       ]
     },
@@ -26193,9 +26225,7 @@
         "AGI +1.6K"
       ],
       "dropAreas": [],
-      "shopAreas": [
-        "UW07"
-      ]
+      "shopAreas": []
     },
     {
       "id": "Mirage_Helm_H",
@@ -26359,17 +26389,23 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 36000000000000,
+      "bonusATK": 83000000,
       "bonusDEF": 0,
-      "bonusAGI": 0,
+      "bonusAGI": 520,
       "bonusLUC": 0,
-      "buyPrice": 25011100000,
+      "buyPrice": 17500000,
       "maxCopies": -1,
       "effects": [
-        "ATK +36T"
+        "ATK +83M",
+        "AGI +520"
       ],
-      "dropAreas": [],
-      "shopAreas": []
+      "dropAreas": [
+        "FR03",
+        "DS03"
+      ],
+      "shopAreas": [
+        "DS03"
+      ]
     },
     {
       "id": "Ninja_Tabi_H",
@@ -26445,18 +26481,21 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 31000000000000,
+      "bonusATK": 100000000,
       "bonusDEF": 0,
-      "bonusAGI": 1600,
+      "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 25011100000,
+      "buyPrice": 18200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +31T",
-        "AGI +1.6K"
+        "ATK +100M"
       ],
-      "dropAreas": [],
-      "shopAreas": []
+      "dropAreas": [
+        "DS04"
+      ],
+      "shopAreas": [
+        "DS04"
+      ]
     },
     {
       "id": "Obol_Coin_H",
@@ -26485,7 +26524,6 @@
         "GR01"
       ],
       "shopAreas": [
-        "DS06",
         "GR01"
       ]
     },
@@ -26512,11 +26550,8 @@
         "HP +31M",
         "LUC +1.2K"
       ],
-      "dropAreas": [
-        "UW01"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "UW01",
         "GR02"
       ]
     },
@@ -26758,17 +26793,22 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 170000000000000,
+      "bonusATK": 86000000,
       "bonusDEF": 0,
-      "bonusAGI": 0,
+      "bonusAGI": 590,
       "bonusLUC": 0,
-      "buyPrice": 40120100000,
+      "buyPrice": 18200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +170T"
+        "ATK +86M",
+        "AGI +590"
       ],
-      "dropAreas": [],
-      "shopAreas": []
+      "dropAreas": [
+        "DS04"
+      ],
+      "shopAreas": [
+        "DS04"
+      ]
     },
     {
       "id": "Pharaoh_Greaves_H",
@@ -26782,20 +26822,58 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 21000000,
+      "bonusHP": 840000,
       "bonusATK": 0,
-      "bonusDEF": 770000,
-      "bonusAGI": 770,
+      "bonusDEF": 53000,
+      "bonusAGI": 520,
       "bonusLUC": 0,
-      "buyPrice": 25011100000,
+      "buyPrice": 22700000,
       "maxCopies": -1,
       "effects": [
-        "HP +21M",
-        "DEF +770K",
-        "AGI +770"
+        "HP +840K",
+        "DEF +53K",
+        "AGI +520"
       ],
-      "dropAreas": [],
-      "shopAreas": []
+      "dropAreas": [
+        "VO01",
+        "UW03"
+      ],
+      "shopAreas": [
+        "VO01",
+        "UW03"
+      ]
+    },
+    {
+      "id": "Pharaoh_Helm_H",
+      "name": "Pharaoh Helm [H]",
+      "description": "",
+      "image": "item_Pharaoh_Helm_H.png",
+      "rarity": "Legendary",
+      "type": "Helmet",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 640000,
+      "bonusATK": 0,
+      "bonusDEF": 43000,
+      "bonusAGI": 0,
+      "bonusLUC": 1200,
+      "buyPrice": 24700000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +640K",
+        "DEF +43K",
+        "LUC +1.2K"
+      ],
+      "dropAreas": [
+        "VO03"
+      ],
+      "shopAreas": [
+        "VO03",
+        "UW06"
+      ]
     },
     {
       "id": "Pharaoh_Scepter_H",
@@ -26810,18 +26888,21 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 150000000000000,
+      "bonusATK": 100000000,
       "bonusDEF": 0,
-      "bonusAGI": 2100,
+      "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 40120100000,
+      "buyPrice": 18900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +150T",
-        "AGI +2.1K"
+        "ATK +100M"
       ],
-      "dropAreas": [],
-      "shopAreas": []
+      "dropAreas": [
+        "DS05"
+      ],
+      "shopAreas": [
+        "DS05"
+      ]
     },
     {
       "id": "Phoenix_Feather_H",
@@ -26835,22 +26916,57 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 440000,
+      "bonusHP": 490000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 1500,
-      "buyPrice": 19900000,
+      "bonusLUC": 1800,
+      "buyPrice": 24700000,
       "maxCopies": -1,
       "effects": [
-        "HP +440K",
-        "LUC +1.5K"
+        "HP +490K",
+        "LUC +1.8K"
       ],
       "dropAreas": [
-        "UW01"
+        "FR04",
+        "DS04"
       ],
       "shopAreas": [
-        "UW01"
+        "FR04",
+        "DS04",
+        "UW06"
+      ]
+    },
+    {
+      "id": "Phoenix_Helm_H",
+      "name": "Phoenix Helm [H]",
+      "description": "",
+      "image": "item_Phoenix_Helm_H.png",
+      "rarity": "Legendary",
+      "type": "Helmet",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 650000,
+      "bonusATK": 0,
+      "bonusDEF": 43000,
+      "bonusAGI": 0,
+      "bonusLUC": 1200,
+      "buyPrice": 25500000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +650K",
+        "DEF +43K",
+        "LUC +1.2K"
+      ],
+      "dropAreas": [
+        "DS01"
+      ],
+      "shopAreas": [
+        "DS01",
+        "UW07"
       ]
     },
     {
@@ -26964,11 +27080,9 @@
         "LUC +940"
       ],
       "dropAreas": [
-        "UW02",
         "JP01"
       ],
       "shopAreas": [
-        "UW02",
         "JP01"
       ]
     },
@@ -26995,12 +27109,8 @@
         "HP +450K",
         "LUC +1.6K"
       ],
-      "dropAreas": [
-        "UW02"
-      ],
-      "shopAreas": [
-        "UW02"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Radiant_Scepter_H",
@@ -27553,12 +27663,8 @@
       "effects": [
         "HP +1.2M"
       ],
-      "dropAreas": [
-        "UW03"
-      ],
-      "shopAreas": [
-        "UW03"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Sandstorm_Blade_H",
@@ -27573,17 +27679,19 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1800000000000000,
+      "bonusATK": 100000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 81896200000,
+      "buyPrice": 19400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1800T"
+        "ATK +100M"
       ],
       "dropAreas": [],
-      "shopAreas": []
+      "shopAreas": [
+        "DS06"
+      ]
     },
     {
       "id": "Sand_Amulet_H",
@@ -27597,22 +27705,24 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 470000,
+      "bonusHP": 1300000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 1700,
-      "buyPrice": 22700000,
+      "bonusLUC": 0,
+      "buyPrice": 25500000,
       "maxCopies": -1,
       "effects": [
-        "HP +470K",
-        "LUC +1.7K"
+        "HP +1.3M"
       ],
       "dropAreas": [
-        "UW03"
+        "VO01",
+        "DS05"
       ],
       "shopAreas": [
-        "UW03"
+        "VO01",
+        "DS05",
+        "UW07"
       ]
     },
     {
@@ -27628,18 +27738,55 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 730000000000000,
+      "bonusATK": 90000000,
       "bonusDEF": 0,
-      "bonusAGI": 2800,
+      "bonusAGI": 670,
       "bonusLUC": 0,
-      "buyPrice": 64691000000,
+      "buyPrice": 18900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +730T",
-        "AGI +2.8K"
+        "ATK +90M",
+        "AGI +670"
       ],
-      "dropAreas": [],
-      "shopAreas": []
+      "dropAreas": [
+        "DS05"
+      ],
+      "shopAreas": [
+        "DS05"
+      ]
+    },
+    {
+      "id": "Sand_Sandals_H",
+      "name": "Sand Sandals [H]",
+      "description": "",
+      "image": "item_Sand_Sandals_H.png",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 860000,
+      "bonusATK": 0,
+      "bonusDEF": 54000,
+      "bonusAGI": 590,
+      "bonusLUC": 0,
+      "buyPrice": 24000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +860K",
+        "DEF +54K",
+        "AGI +590"
+      ],
+      "dropAreas": [
+        "VO02",
+        "UW04"
+      ],
+      "shopAreas": [
+        "VO02",
+        "UW04"
+      ]
     },
     {
       "id": "Sapphire_Ring_H",
@@ -27672,6 +27819,38 @@
       ]
     },
     {
+      "id": "Scorched_Boots_H",
+      "name": "Scorched Boots [H]",
+      "description": "",
+      "image": "item_Scorched_Boots_H.png",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 890000,
+      "bonusATK": 0,
+      "bonusDEF": 55000,
+      "bonusAGI": 670,
+      "bonusLUC": 0,
+      "buyPrice": 24700000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +890K",
+        "DEF +55K",
+        "AGI +670"
+      ],
+      "dropAreas": [
+        "VO03"
+      ],
+      "shopAreas": [
+        "VO03",
+        "UW06"
+      ]
+    },
+    {
       "id": "Seraph_Sword_H",
       "name": "Seraph Sword [H]",
       "description": "",
@@ -27691,7 +27870,7 @@
       "buyPrice": 81896200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1600T",
+        "ATK +1.6Q",
         "AGI +3.2K"
       ],
       "dropAreas": [],
@@ -27719,12 +27898,8 @@
       "effects": [
         "HP +1.2M"
       ],
-      "dropAreas": [
-        "UW04"
-      ],
-      "shopAreas": [
-        "UW04"
-      ]
+      "dropAreas": [],
+      "shopAreas": []
     },
     {
       "id": "Service_Pistol_H",
@@ -27817,6 +27992,37 @@
       ]
     },
     {
+      "id": "Shadow_Crown_H",
+      "name": "Shadow Crown [H]",
+      "description": "",
+      "image": "item_Shadow_Crown_H.png",
+      "rarity": "Legendary",
+      "type": "Helmet",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 170000,
+      "bonusATK": 0,
+      "bonusDEF": 15000,
+      "bonusAGI": 0,
+      "bonusLUC": 680,
+      "buyPrice": 17000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +170K",
+        "DEF +15K",
+        "LUC +680"
+      ],
+      "dropAreas": [
+        "DS02"
+      ],
+      "shopAreas": [
+        "DS02"
+      ]
+    },
+    {
       "id": "Shadow_Dagger_H",
       "name": "Shadow Dagger [H]",
       "description": "",
@@ -27845,6 +28051,95 @@
       ],
       "shopAreas": [
         "FR04"
+      ]
+    },
+    {
+      "id": "Shadow_Edge_H",
+      "name": "Shadow Edge [H]",
+      "description": "",
+      "image": "item_Shadow_Edge_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 94000000,
+      "bonusDEF": 0,
+      "bonusAGI": 770,
+      "bonusLUC": 0,
+      "buyPrice": 19400000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +94M",
+        "AGI +770"
+      ],
+      "dropAreas": [],
+      "shopAreas": [
+        "DS06"
+      ]
+    },
+    {
+      "id": "Shadow_Fang_H",
+      "name": "Shadow Fang [H]",
+      "description": "",
+      "image": "item_Shadow_Fang_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1200000000,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 19900000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.2B"
+      ],
+      "dropAreas": [
+        "UW01"
+      ],
+      "shopAreas": [
+        "UW01"
+      ]
+    },
+    {
+      "id": "Shadow_Greaves_H",
+      "name": "Shadow Greaves [H]",
+      "description": "",
+      "image": "item_Shadow_Greaves_H.png",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 910000,
+      "bonusATK": 0,
+      "bonusDEF": 56000,
+      "bonusAGI": 770,
+      "bonusLUC": 0,
+      "buyPrice": 25500000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +910K",
+        "DEF +56K",
+        "AGI +770"
+      ],
+      "dropAreas": [
+        "DS01"
+      ],
+      "shopAreas": [
+        "DS01",
+        "UW07"
       ]
     },
     {
@@ -27909,6 +28204,36 @@
       ]
     },
     {
+      "id": "Shadow_Staff_H",
+      "name": "Shadow Staff [H]",
+      "description": "",
+      "image": "item_Shadow_Staff_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1000000000,
+      "bonusDEF": 0,
+      "bonusAGI": 880,
+      "bonusLUC": 0,
+      "buyPrice": 19900000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1B",
+        "AGI +880"
+      ],
+      "dropAreas": [
+        "UW01"
+      ],
+      "shopAreas": [
+        "UW01"
+      ]
+    },
+    {
       "id": "Shadow_Treads_H",
       "name": "Shadow Treads [H]",
       "description": "",
@@ -27962,11 +28287,8 @@
         "HP +15M",
         "LUC +1K"
       ],
-      "dropAreas": [
-        "UW04"
-      ],
+      "dropAreas": [],
       "shopAreas": [
-        "UW04",
         "JP04"
       ]
     },
@@ -28119,6 +28441,35 @@
       ],
       "shopAreas": [
         "GR04"
+      ]
+    },
+    {
+      "id": "Spectral_Bow_H",
+      "name": "Spectral Bow [H]",
+      "description": "",
+      "image": "item_Spectral_Bow_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1300000000,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 21500000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.3B"
+      ],
+      "dropAreas": [
+        "UW02"
+      ],
+      "shopAreas": [
+        "UW02"
       ]
     },
     {
@@ -28363,6 +28714,65 @@
       ]
     },
     {
+      "id": "Stone_Edge_H",
+      "name": "Stone Edge [H]",
+      "description": "",
+      "image": "item_Stone_Edge_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1100000000,
+      "bonusDEF": 0,
+      "bonusAGI": 1000,
+      "bonusLUC": 0,
+      "buyPrice": 21500000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.1B",
+        "AGI +1K"
+      ],
+      "dropAreas": [
+        "UW02"
+      ],
+      "shopAreas": [
+        "UW02"
+      ]
+    },
+    {
+      "id": "Storm_Scimitar_H",
+      "name": "Storm Scimitar [H]",
+      "description": "",
+      "image": "item_Storm_Scimitar_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1300000000,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 22700000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.3B"
+      ],
+      "dropAreas": [
+        "UW03"
+      ],
+      "shopAreas": [
+        "UW03"
+      ]
+    },
+    {
       "id": "Straw_Hat_H",
       "name": "Straw Hat [H]",
       "description": "",
@@ -28436,19 +28846,56 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1300000,
+      "bonusHP": 500000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 0,
-      "buyPrice": 24700000,
+      "bonusLUC": 1900,
+      "buyPrice": 25500000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.3M"
+        "HP +500K",
+        "LUC +1.9K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "FR04",
+        "VO01",
+        "DS05"
+      ],
       "shopAreas": [
-        "UW06"
+        "VO01",
+        "DS05",
+        "UW07"
+      ]
+    },
+    {
+      "id": "Temple_Blade_H",
+      "name": "Temple Blade [H]",
+      "description": "",
+      "image": "item_Temple_Blade_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1100000000,
+      "bonusDEF": 0,
+      "bonusAGI": 1100,
+      "bonusLUC": 0,
+      "buyPrice": 22700000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.1B",
+        "AGI +1.1K"
+      ],
+      "dropAreas": [
+        "UW03"
+      ],
+      "shopAreas": [
+        "UW03"
       ]
     },
     {
@@ -28475,9 +28922,7 @@
         "LUC +1.8K"
       ],
       "dropAreas": [],
-      "shopAreas": [
-        "UW06"
-      ]
+      "shopAreas": []
     },
     {
       "id": "Thief_Ring_H",
@@ -28603,6 +29048,65 @@
       ]
     },
     {
+      "id": "Thunder_Sabre_H",
+      "name": "Thunder Sabre [H]",
+      "description": "",
+      "image": "item_Thunder_Sabre_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1400000000,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 24000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.4B"
+      ],
+      "dropAreas": [
+        "UW04"
+      ],
+      "shopAreas": [
+        "UW04"
+      ]
+    },
+    {
+      "id": "Tide_Blade_H",
+      "name": "Tide Blade [H]",
+      "description": "",
+      "image": "item_Tide_Blade_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1200000000,
+      "bonusDEF": 0,
+      "bonusAGI": 1200,
+      "bonusLUC": 0,
+      "buyPrice": 24000000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.2B",
+        "AGI +1.2K"
+      ],
+      "dropAreas": [
+        "UW04"
+      ],
+      "shopAreas": [
+        "UW04"
+      ]
+    },
+    {
       "id": "Titan_Shackle_H",
       "name": "Titan Shackle [H]",
       "description": "",
@@ -28627,8 +29131,38 @@
       ],
       "dropAreas": [],
       "shopAreas": [
-        "UW07",
         "GR06"
+      ]
+    },
+    {
+      "id": "Tomb_Mask_H",
+      "name": "Tomb Mask [H]",
+      "description": "",
+      "image": "item_Tomb_Mask_H.png",
+      "rarity": "Legendary",
+      "type": "Helmet",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 170000,
+      "bonusATK": 0,
+      "bonusDEF": 15000,
+      "bonusAGI": 0,
+      "bonusLUC": 730,
+      "buyPrice": 17500000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +170K",
+        "DEF +15K",
+        "LUC +730"
+      ],
+      "dropAreas": [
+        "DS03"
+      ],
+      "shopAreas": [
+        "DS03"
       ]
     },
     {
@@ -28643,20 +29177,22 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 500000,
+      "bonusHP": 380000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 1900,
-      "buyPrice": 25500000,
+      "bonusLUC": 0,
+      "buyPrice": 19400000,
       "maxCopies": -1,
       "effects": [
-        "HP +500K",
-        "LUC +1.9K"
+        "HP +380K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "VO02"
+      ],
       "shopAreas": [
-        "UW07"
+        "VO02",
+        "DS06"
       ]
     },
     {
@@ -28687,6 +29223,33 @@
       ],
       "shopAreas": [
         "DS04"
+      ]
+    },
+    {
+      "id": "Trainee_Blade_H",
+      "name": "Trainee Blade [H]",
+      "description": "",
+      "image": "item_Trainee_Blade_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1500000000,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 24700000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.5B"
+      ],
+      "dropAreas": [],
+      "shopAreas": [
+        "UW06"
       ]
     },
     {
@@ -28751,6 +29314,37 @@
       ]
     },
     {
+      "id": "Void_Boots_H",
+      "name": "Void Boots [H]",
+      "description": "",
+      "image": "item_Void_Boots_H.png",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 230000,
+      "bonusATK": 0,
+      "bonusDEF": 19000,
+      "bonusAGI": 210,
+      "bonusLUC": 0,
+      "buyPrice": 17000000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +230K",
+        "DEF +19K",
+        "AGI +210"
+      ],
+      "dropAreas": [
+        "DS02"
+      ],
+      "shopAreas": [
+        "DS02"
+      ]
+    },
+    {
       "id": "Void_Helm_H",
       "name": "Void Helm [H]",
       "description": "",
@@ -28773,6 +29367,34 @@
         "HP +820K",
         "DEF +61K",
         "LUC +460"
+      ],
+      "dropAreas": [],
+      "shopAreas": [
+        "UW06"
+      ]
+    },
+    {
+      "id": "Void_Lance_H",
+      "name": "Void Lance [H]",
+      "description": "",
+      "image": "item_Void_Lance_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1300000000,
+      "bonusDEF": 0,
+      "bonusAGI": 1400,
+      "bonusLUC": 0,
+      "buyPrice": 24700000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.3B",
+        "AGI +1.4K"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -28821,19 +29443,24 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 6500000,
+      "bonusHP": 140000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
-      "bonusLUC": 1800,
-      "buyPrice": 15587200000,
+      "bonusLUC": 1500,
+      "buyPrice": 19400000,
       "maxCopies": -1,
       "effects": [
-        "HP +6.5M",
-        "LUC +1.8K"
+        "HP +140K",
+        "LUC +1.5K"
       ],
-      "dropAreas": [],
-      "shopAreas": []
+      "dropAreas": [
+        "VO02"
+      ],
+      "shopAreas": [
+        "VO02",
+        "DS06"
+      ]
     },
     {
       "id": "Void_Scythe_H",
@@ -28948,6 +29575,37 @@
       "effects": [
         "HP +450K",
         "DEF +18K"
+      ],
+      "dropAreas": [
+        "DS03"
+      ],
+      "shopAreas": [
+        "DS03"
+      ]
+    },
+    {
+      "id": "Volcanic_Sandals_H",
+      "name": "Volcanic Sandals [H]",
+      "description": "",
+      "image": "item_Volcanic_Sandals_H.png",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 240000,
+      "bonusATK": 0,
+      "bonusDEF": 20000,
+      "bonusAGI": 230,
+      "bonusLUC": 0,
+      "buyPrice": 17500000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +240K",
+        "DEF +20K",
+        "AGI +230"
       ],
       "dropAreas": [
         "DS03"
@@ -29167,6 +29825,61 @@
       ],
       "shopAreas": [
         "GL01"
+      ]
+    },
+    {
+      "id": "Wooden_Staff_H",
+      "name": "Wooden Staff [H]",
+      "description": "",
+      "image": "item_Wooden_Staff_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1600000000,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 25500000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.6B"
+      ],
+      "dropAreas": [],
+      "shopAreas": [
+        "UW07"
+      ]
+    },
+    {
+      "id": "Wooden_Sword_H",
+      "name": "Wooden Sword [H]",
+      "description": "",
+      "image": "item_Wooden_Sword_H.png",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "bonusHP": 0,
+      "bonusATK": 1300000000,
+      "bonusDEF": 0,
+      "bonusAGI": 1600,
+      "bonusLUC": 0,
+      "buyPrice": 25500000,
+      "maxCopies": -1,
+      "effects": [
+        "ATK +1.3B",
+        "AGI +1.6K"
+      ],
+      "dropAreas": [],
+      "shopAreas": [
+        "UW07"
       ]
     },
     {
@@ -37718,13 +38431,13 @@
         "Dark_Hood_H",
         "Wind_Boots_H",
         "Lucky_Ring_H",
-        "Coral_Trident_H",
-        "Cursed_Scythe_H",
-        "Bronze_Cuirass_H",
-        "Chaos_Hood_H",
-        "Desert_Boots_H",
-        "Field_Radio_H",
-        "Fire_Gem_H"
+        "Hunter's_Bow_H",
+        "Ice_Blade_H",
+        "Demon_Armor_H",
+        "Phoenix_Helm_H",
+        "Shadow_Greaves_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -37749,13 +38462,13 @@
         "Dark_Hood_H",
         "Wind_Boots_H",
         "Lucky_Ring_H",
-        "Coral_Trident_H",
-        "Cursed_Scythe_H",
-        "Bronze_Cuirass_H",
-        "Chaos_Hood_H",
-        "Desert_Boots_H",
-        "Field_Radio_H",
-        "Fire_Gem_H"
+        "Hunter's_Bow_H",
+        "Ice_Blade_H",
+        "Demon_Armor_H",
+        "Phoenix_Helm_H",
+        "Shadow_Greaves_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -37780,13 +38493,13 @@
         "Dark_Hood_H",
         "Wind_Boots_H",
         "Lucky_Ring_H",
-        "Coral_Trident_H",
-        "Cursed_Scythe_H",
-        "Bronze_Cuirass_H",
-        "Chaos_Hood_H",
-        "Desert_Boots_H",
-        "Field_Radio_H",
-        "Fire_Gem_H"
+        "Hunter's_Bow_H",
+        "Ice_Blade_H",
+        "Demon_Armor_H",
+        "Phoenix_Helm_H",
+        "Shadow_Greaves_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -37811,13 +38524,13 @@
         "Dark_Hood_H",
         "Wind_Boots_H",
         "Lucky_Ring_H",
-        "Coral_Trident_H",
-        "Cursed_Scythe_H",
-        "Bronze_Cuirass_H",
-        "Chaos_Hood_H",
-        "Desert_Boots_H",
-        "Field_Radio_H",
-        "Fire_Gem_H"
+        "Hunter's_Bow_H",
+        "Ice_Blade_H",
+        "Demon_Armor_H",
+        "Phoenix_Helm_H",
+        "Shadow_Greaves_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -37842,13 +38555,13 @@
         "Dark_Hood_H",
         "Wind_Boots_H",
         "Lucky_Ring_H",
-        "Coral_Trident_H",
-        "Cursed_Scythe_H",
-        "Bronze_Cuirass_H",
-        "Chaos_Hood_H",
-        "Desert_Boots_H",
-        "Field_Radio_H",
-        "Fire_Gem_H"
+        "Hunter's_Bow_H",
+        "Ice_Blade_H",
+        "Demon_Armor_H",
+        "Phoenix_Helm_H",
+        "Shadow_Greaves_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -37873,13 +38586,13 @@
         "Dark_Hood_H",
         "Wind_Boots_H",
         "Lucky_Ring_H",
-        "Coral_Trident_H",
-        "Cursed_Scythe_H",
-        "Bronze_Cuirass_H",
-        "Chaos_Hood_H",
-        "Desert_Boots_H",
-        "Field_Radio_H",
-        "Fire_Gem_H"
+        "Hunter's_Bow_H",
+        "Ice_Blade_H",
+        "Demon_Armor_H",
+        "Phoenix_Helm_H",
+        "Shadow_Greaves_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -37904,13 +38617,13 @@
         "Shadow_Mask_H",
         "Shadow_Treads_H",
         "Power_Ring_H",
-        "Demon_Spear_H",
-        "Dragon_Sword_H",
-        "Chaos_Armor_H",
-        "Cherub_Circlet_H",
-        "Divine_Treads_H",
-        "Fox_Bell_H",
-        "Frag_Grenade_H"
+        "Inferno_Sword_H",
+        "Lava_Titan_Blade_H",
+        "Demon_Hide_H",
+        "Shadow_Crown_H",
+        "Void_Boots_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -37935,13 +38648,13 @@
         "Shadow_Mask_H",
         "Shadow_Treads_H",
         "Power_Ring_H",
-        "Demon_Spear_H",
-        "Dragon_Sword_H",
-        "Chaos_Armor_H",
-        "Cherub_Circlet_H",
-        "Divine_Treads_H",
-        "Fox_Bell_H",
-        "Frag_Grenade_H"
+        "Inferno_Sword_H",
+        "Lava_Titan_Blade_H",
+        "Demon_Hide_H",
+        "Shadow_Crown_H",
+        "Void_Boots_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -37966,13 +38679,13 @@
         "Shadow_Mask_H",
         "Shadow_Treads_H",
         "Power_Ring_H",
-        "Demon_Spear_H",
-        "Dragon_Sword_H",
-        "Chaos_Armor_H",
-        "Cherub_Circlet_H",
-        "Divine_Treads_H",
-        "Fox_Bell_H",
-        "Frag_Grenade_H"
+        "Inferno_Sword_H",
+        "Lava_Titan_Blade_H",
+        "Demon_Hide_H",
+        "Shadow_Crown_H",
+        "Void_Boots_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -37997,13 +38710,13 @@
         "Shadow_Mask_H",
         "Shadow_Treads_H",
         "Power_Ring_H",
-        "Demon_Spear_H",
-        "Dragon_Sword_H",
-        "Chaos_Armor_H",
-        "Cherub_Circlet_H",
-        "Divine_Treads_H",
-        "Fox_Bell_H",
-        "Frag_Grenade_H"
+        "Inferno_Sword_H",
+        "Lava_Titan_Blade_H",
+        "Demon_Hide_H",
+        "Shadow_Crown_H",
+        "Void_Boots_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -38028,13 +38741,13 @@
         "Shadow_Mask_H",
         "Shadow_Treads_H",
         "Power_Ring_H",
-        "Demon_Spear_H",
-        "Dragon_Sword_H",
-        "Chaos_Armor_H",
-        "Cherub_Circlet_H",
-        "Divine_Treads_H",
-        "Fox_Bell_H",
-        "Frag_Grenade_H"
+        "Inferno_Sword_H",
+        "Lava_Titan_Blade_H",
+        "Demon_Hide_H",
+        "Shadow_Crown_H",
+        "Void_Boots_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -38059,13 +38772,13 @@
         "Shadow_Mask_H",
         "Shadow_Treads_H",
         "Power_Ring_H",
-        "Demon_Spear_H",
-        "Dragon_Sword_H",
-        "Chaos_Armor_H",
-        "Cherub_Circlet_H",
-        "Divine_Treads_H",
-        "Fox_Bell_H",
-        "Frag_Grenade_H"
+        "Inferno_Sword_H",
+        "Lava_Titan_Blade_H",
+        "Demon_Hide_H",
+        "Shadow_Crown_H",
+        "Void_Boots_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -38090,13 +38803,13 @@
         "Inferno_Mask_H",
         "Ash_Treads_H",
         "Thief_Ring_H",
-        "Dune_Edge_H",
-        "Excalibur_H",
-        "Choir_Raiment_H",
-        "Choir_Veil_H",
-        "Dragon_Tabi_H",
-        "Golden_Fleece_H",
-        "Gorgon_Eye_H"
+        "Maze_Spear_H",
+        "Nether_Dagger_H",
+        "Dragon_Scale_Armor_H",
+        "Tomb_Mask_H",
+        "Volcanic_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -38121,13 +38834,13 @@
         "Inferno_Mask_H",
         "Ash_Treads_H",
         "Thief_Ring_H",
-        "Dune_Edge_H",
-        "Excalibur_H",
-        "Choir_Raiment_H",
-        "Choir_Veil_H",
-        "Dragon_Tabi_H",
-        "Golden_Fleece_H",
-        "Gorgon_Eye_H"
+        "Maze_Spear_H",
+        "Nether_Dagger_H",
+        "Dragon_Scale_Armor_H",
+        "Tomb_Mask_H",
+        "Volcanic_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -38152,13 +38865,13 @@
         "Inferno_Mask_H",
         "Ash_Treads_H",
         "Thief_Ring_H",
-        "Dune_Edge_H",
-        "Excalibur_H",
-        "Choir_Raiment_H",
-        "Choir_Veil_H",
-        "Dragon_Tabi_H",
-        "Golden_Fleece_H",
-        "Gorgon_Eye_H"
+        "Maze_Spear_H",
+        "Nether_Dagger_H",
+        "Dragon_Scale_Armor_H",
+        "Tomb_Mask_H",
+        "Volcanic_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -38183,13 +38896,13 @@
         "Inferno_Mask_H",
         "Ash_Treads_H",
         "Thief_Ring_H",
-        "Dune_Edge_H",
-        "Excalibur_H",
-        "Choir_Raiment_H",
-        "Choir_Veil_H",
-        "Dragon_Tabi_H",
-        "Golden_Fleece_H",
-        "Gorgon_Eye_H"
+        "Maze_Spear_H",
+        "Nether_Dagger_H",
+        "Dragon_Scale_Armor_H",
+        "Tomb_Mask_H",
+        "Volcanic_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -38214,13 +38927,13 @@
         "Inferno_Mask_H",
         "Ash_Treads_H",
         "Thief_Ring_H",
-        "Dune_Edge_H",
-        "Excalibur_H",
-        "Choir_Raiment_H",
-        "Choir_Veil_H",
-        "Dragon_Tabi_H",
-        "Golden_Fleece_H",
-        "Gorgon_Eye_H"
+        "Maze_Spear_H",
+        "Nether_Dagger_H",
+        "Dragon_Scale_Armor_H",
+        "Tomb_Mask_H",
+        "Volcanic_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -38245,13 +38958,13 @@
         "Inferno_Mask_H",
         "Ash_Treads_H",
         "Thief_Ring_H",
-        "Dune_Edge_H",
-        "Excalibur_H",
-        "Choir_Raiment_H",
-        "Choir_Veil_H",
-        "Dragon_Tabi_H",
-        "Golden_Fleece_H",
-        "Gorgon_Eye_H"
+        "Maze_Spear_H",
+        "Nether_Dagger_H",
+        "Dragon_Scale_Armor_H",
+        "Tomb_Mask_H",
+        "Volcanic_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -38276,13 +38989,13 @@
         "Lava_Crown_H",
         "Magma_Greaves_H",
         "Tracker_Ring_H",
-        "Feathered_Spear_H",
-        "Frost_Sabre_H",
-        "Cloth_Robe_H",
-        "Cinder_Helm_H",
-        "Dune_Treads_H",
-        "Halo_Ring_H",
-        "Holy_Chalice_H"
+        "Oasis_Blade_H",
+        "Pharaoh_Blade_H",
+        "Dune_Armor_H",
+        "Abyssal_Helm_H",
+        "Abyssal_Soles_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -38307,13 +39020,13 @@
         "Lava_Crown_H",
         "Magma_Greaves_H",
         "Tracker_Ring_H",
-        "Feathered_Spear_H",
-        "Frost_Sabre_H",
-        "Cloth_Robe_H",
-        "Cinder_Helm_H",
-        "Dune_Treads_H",
-        "Halo_Ring_H",
-        "Holy_Chalice_H"
+        "Oasis_Blade_H",
+        "Pharaoh_Blade_H",
+        "Dune_Armor_H",
+        "Abyssal_Helm_H",
+        "Abyssal_Soles_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -38338,13 +39051,13 @@
         "Lava_Crown_H",
         "Magma_Greaves_H",
         "Tracker_Ring_H",
-        "Feathered_Spear_H",
-        "Frost_Sabre_H",
-        "Cloth_Robe_H",
-        "Cinder_Helm_H",
-        "Dune_Treads_H",
-        "Halo_Ring_H",
-        "Holy_Chalice_H"
+        "Oasis_Blade_H",
+        "Pharaoh_Blade_H",
+        "Dune_Armor_H",
+        "Abyssal_Helm_H",
+        "Abyssal_Soles_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -38369,13 +39082,13 @@
         "Lava_Crown_H",
         "Magma_Greaves_H",
         "Tracker_Ring_H",
-        "Feathered_Spear_H",
-        "Frost_Sabre_H",
-        "Cloth_Robe_H",
-        "Cinder_Helm_H",
-        "Dune_Treads_H",
-        "Halo_Ring_H",
-        "Holy_Chalice_H"
+        "Oasis_Blade_H",
+        "Pharaoh_Blade_H",
+        "Dune_Armor_H",
+        "Abyssal_Helm_H",
+        "Abyssal_Soles_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -38400,13 +39113,13 @@
         "Lava_Crown_H",
         "Magma_Greaves_H",
         "Tracker_Ring_H",
-        "Feathered_Spear_H",
-        "Frost_Sabre_H",
-        "Cloth_Robe_H",
-        "Cinder_Helm_H",
-        "Dune_Treads_H",
-        "Halo_Ring_H",
-        "Holy_Chalice_H"
+        "Oasis_Blade_H",
+        "Pharaoh_Blade_H",
+        "Dune_Armor_H",
+        "Abyssal_Helm_H",
+        "Abyssal_Soles_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -38431,13 +39144,13 @@
         "Lava_Crown_H",
         "Magma_Greaves_H",
         "Tracker_Ring_H",
-        "Feathered_Spear_H",
-        "Frost_Sabre_H",
-        "Cloth_Robe_H",
-        "Cinder_Helm_H",
-        "Dune_Treads_H",
-        "Halo_Ring_H",
-        "Holy_Chalice_H"
+        "Oasis_Blade_H",
+        "Pharaoh_Blade_H",
+        "Dune_Armor_H",
+        "Abyssal_Helm_H",
+        "Abyssal_Soles_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -38462,13 +39175,13 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Gnarled_Staff_H",
-        "Grenade_Launcher_H",
-        "Crystal_Armor_H",
-        "Combat_Helm_H",
-        "Exo_Striders_H",
-        "Inferno_Core_H",
-        "Koi_Charm_H"
+        "Pharaoh_Scepter_H",
+        "Sand_Blade_H",
+        "Flame_Armor_H",
+        "Ankh_Crown_H",
+        "Blood_Striders_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -38493,13 +39206,13 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Gnarled_Staff_H",
-        "Grenade_Launcher_H",
-        "Crystal_Armor_H",
-        "Combat_Helm_H",
-        "Exo_Striders_H",
-        "Inferno_Core_H",
-        "Koi_Charm_H"
+        "Pharaoh_Scepter_H",
+        "Sand_Blade_H",
+        "Flame_Armor_H",
+        "Ankh_Crown_H",
+        "Blood_Striders_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -38524,13 +39237,13 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Gnarled_Staff_H",
-        "Grenade_Launcher_H",
-        "Crystal_Armor_H",
-        "Combat_Helm_H",
-        "Exo_Striders_H",
-        "Inferno_Core_H",
-        "Koi_Charm_H"
+        "Pharaoh_Scepter_H",
+        "Sand_Blade_H",
+        "Flame_Armor_H",
+        "Ankh_Crown_H",
+        "Blood_Striders_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -38555,13 +39268,13 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Gnarled_Staff_H",
-        "Grenade_Launcher_H",
-        "Crystal_Armor_H",
-        "Combat_Helm_H",
-        "Exo_Striders_H",
-        "Inferno_Core_H",
-        "Koi_Charm_H"
+        "Pharaoh_Scepter_H",
+        "Sand_Blade_H",
+        "Flame_Armor_H",
+        "Ankh_Crown_H",
+        "Blood_Striders_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -38586,13 +39299,13 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Gnarled_Staff_H",
-        "Grenade_Launcher_H",
-        "Crystal_Armor_H",
-        "Combat_Helm_H",
-        "Exo_Striders_H",
-        "Inferno_Core_H",
-        "Koi_Charm_H"
+        "Pharaoh_Scepter_H",
+        "Sand_Blade_H",
+        "Flame_Armor_H",
+        "Ankh_Crown_H",
+        "Blood_Striders_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -38617,13 +39330,13 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Gnarled_Staff_H",
-        "Grenade_Launcher_H",
-        "Crystal_Armor_H",
-        "Combat_Helm_H",
-        "Exo_Striders_H",
-        "Inferno_Core_H",
-        "Koi_Charm_H"
+        "Pharaoh_Scepter_H",
+        "Sand_Blade_H",
+        "Flame_Armor_H",
+        "Ankh_Crown_H",
+        "Blood_Striders_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -38648,13 +39361,13 @@
         "Gold_Helmet_H",
         "Molten_Striders_H",
         "Cactus_Ring_H",
-        "Hell_Staff_H",
-        "Holy_Sword_H",
-        "Cursed_Armor_H",
-        "Commander's_Helm_H",
-        "Feathered_Boots_H",
-        "Lava_Ring_H",
-        "Obol_Coin_H"
+        "Sandstorm_Blade_H",
+        "Shadow_Edge_H",
+        "Forest_Armor_H",
+        "Blood_Mask_H",
+        "Dark_Steppers_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -38679,13 +39392,13 @@
         "Leather_Helmet_H",
         "Travel_Boots_H",
         "Iron_Ring_H",
-        "Archangel_Greatsword_H",
-        "Ashigaru_Yari_H",
-        "Amaterasu_Regalia_H",
-        "Amaterasu_Kabuto_H",
+        "Bone_Sword_H",
+        "Cinder_Dust_H",
+        "Berserker_Armor_H",
+        "Ankh_Crown_H",
         "Blood_Striders_H",
-        "Ammo_Belt_H",
-        "Amphora_Vial_H"
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -38710,13 +39423,13 @@
         "Leather_Helmet_H",
         "Travel_Boots_H",
         "Iron_Ring_H",
-        "Archangel_Greatsword_H",
-        "Ashigaru_Yari_H",
-        "Amaterasu_Regalia_H",
-        "Amaterasu_Kabuto_H",
+        "Bone_Sword_H",
+        "Cinder_Dust_H",
+        "Berserker_Armor_H",
+        "Ankh_Crown_H",
         "Blood_Striders_H",
-        "Ammo_Belt_H",
-        "Amphora_Vial_H"
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -38741,13 +39454,13 @@
         "Leather_Helmet_H",
         "Travel_Boots_H",
         "Iron_Ring_H",
-        "Archangel_Greatsword_H",
-        "Ashigaru_Yari_H",
-        "Amaterasu_Regalia_H",
-        "Amaterasu_Kabuto_H",
+        "Bone_Sword_H",
+        "Cinder_Dust_H",
+        "Berserker_Armor_H",
+        "Ankh_Crown_H",
         "Blood_Striders_H",
-        "Ammo_Belt_H",
-        "Amphora_Vial_H"
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -38772,13 +39485,13 @@
         "Leather_Helmet_H",
         "Travel_Boots_H",
         "Iron_Ring_H",
-        "Archangel_Greatsword_H",
-        "Ashigaru_Yari_H",
-        "Amaterasu_Regalia_H",
-        "Amaterasu_Kabuto_H",
+        "Bone_Sword_H",
+        "Cinder_Dust_H",
+        "Berserker_Armor_H",
+        "Ankh_Crown_H",
         "Blood_Striders_H",
-        "Ammo_Belt_H",
-        "Amphora_Vial_H"
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -38803,13 +39516,13 @@
         "Leather_Helmet_H",
         "Travel_Boots_H",
         "Iron_Ring_H",
-        "Archangel_Greatsword_H",
-        "Ashigaru_Yari_H",
-        "Amaterasu_Regalia_H",
-        "Amaterasu_Kabuto_H",
+        "Bone_Sword_H",
+        "Cinder_Dust_H",
+        "Berserker_Armor_H",
+        "Ankh_Crown_H",
         "Blood_Striders_H",
-        "Ammo_Belt_H",
-        "Amphora_Vial_H"
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -38834,13 +39547,13 @@
         "Leather_Helmet_H",
         "Travel_Boots_H",
         "Iron_Ring_H",
-        "Archangel_Greatsword_H",
-        "Ashigaru_Yari_H",
-        "Amaterasu_Regalia_H",
-        "Amaterasu_Kabuto_H",
+        "Bone_Sword_H",
+        "Cinder_Dust_H",
+        "Berserker_Armor_H",
+        "Ankh_Crown_H",
         "Blood_Striders_H",
-        "Ammo_Belt_H",
-        "Amphora_Vial_H"
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -38865,13 +39578,13 @@
         "Leather_Helmet_H",
         "Travel_Boots_H",
         "Iron_Ring_H",
-        "Archangel_Greatsword_H",
-        "Ashigaru_Yari_H",
-        "Amaterasu_Regalia_H",
-        "Amaterasu_Kabuto_H",
+        "Bone_Sword_H",
+        "Cinder_Dust_H",
+        "Berserker_Armor_H",
+        "Ankh_Crown_H",
         "Blood_Striders_H",
-        "Ammo_Belt_H",
-        "Amphora_Vial_H"
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -38896,13 +39609,13 @@
         "Leather_Helmet_H",
         "Travel_Boots_H",
         "Iron_Ring_H",
-        "Archangel_Greatsword_H",
-        "Ashigaru_Yari_H",
-        "Amaterasu_Regalia_H",
-        "Amaterasu_Kabuto_H",
+        "Bone_Sword_H",
+        "Cinder_Dust_H",
+        "Berserker_Armor_H",
+        "Ankh_Crown_H",
         "Blood_Striders_H",
-        "Ammo_Belt_H",
-        "Amphora_Vial_H"
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -38927,13 +39640,13 @@
         "Iron_Helmet_H",
         "Leather_Boots_H",
         "Silver_Ring_H",
-        "Assault_Rifle_H",
-        "Bamboo_Spear_H",
-        "Ancient_Armor_H",
-        "Ankh_Crown_H",
-        "Breacher_Greaves_H",
-        "Ankh_Pendant_H",
-        "Blood_Gem_H"
+        "Cinder_Lance_H",
+        "Cinder_Scythe_H",
+        "Bone_Armor_H",
+        "Blood_Mask_H",
+        "Dark_Steppers_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -38958,13 +39671,13 @@
         "Iron_Helmet_H",
         "Leather_Boots_H",
         "Silver_Ring_H",
-        "Assault_Rifle_H",
-        "Bamboo_Spear_H",
-        "Ancient_Armor_H",
-        "Ankh_Crown_H",
-        "Breacher_Greaves_H",
-        "Ankh_Pendant_H",
-        "Blood_Gem_H"
+        "Cinder_Lance_H",
+        "Cinder_Scythe_H",
+        "Bone_Armor_H",
+        "Blood_Mask_H",
+        "Dark_Steppers_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -38989,13 +39702,13 @@
         "Iron_Helmet_H",
         "Leather_Boots_H",
         "Silver_Ring_H",
-        "Assault_Rifle_H",
-        "Bamboo_Spear_H",
-        "Ancient_Armor_H",
-        "Ankh_Crown_H",
-        "Breacher_Greaves_H",
-        "Ankh_Pendant_H",
-        "Blood_Gem_H"
+        "Cinder_Lance_H",
+        "Cinder_Scythe_H",
+        "Bone_Armor_H",
+        "Blood_Mask_H",
+        "Dark_Steppers_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -39020,13 +39733,13 @@
         "Steel_Helmet_H",
         "Cloth_Sandals_H",
         "Gold_Ring_H",
-        "Bayonet_Rifle_H",
-        "Blaze_Spear_H",
-        "Archangel_Armor_H",
-        "Archangel_Helm_H",
-        "Bronze_Greaves_H",
-        "Bronze_Star_H",
-        "Chaos_Amulet_H"
+        "Coral_Trident_H",
+        "Cursed_Scythe_H",
+        "Chaos_Armor_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -39051,13 +39764,13 @@
         "Steel_Helmet_H",
         "Cloth_Sandals_H",
         "Gold_Ring_H",
-        "Bayonet_Rifle_H",
-        "Blaze_Spear_H",
-        "Archangel_Armor_H",
-        "Archangel_Helm_H",
-        "Bronze_Greaves_H",
-        "Bronze_Star_H",
-        "Chaos_Amulet_H"
+        "Coral_Trident_H",
+        "Cursed_Scythe_H",
+        "Chaos_Armor_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -39082,13 +39795,13 @@
         "Steel_Helmet_H",
         "Cloth_Sandals_H",
         "Gold_Ring_H",
-        "Bayonet_Rifle_H",
-        "Blaze_Spear_H",
-        "Archangel_Armor_H",
-        "Archangel_Helm_H",
-        "Bronze_Greaves_H",
-        "Bronze_Star_H",
-        "Chaos_Amulet_H"
+        "Coral_Trident_H",
+        "Cursed_Scythe_H",
+        "Chaos_Armor_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -39113,13 +39826,13 @@
         "Steel_Helmet_H",
         "Cloth_Sandals_H",
         "Gold_Ring_H",
-        "Bayonet_Rifle_H",
-        "Blaze_Spear_H",
-        "Archangel_Armor_H",
-        "Archangel_Helm_H",
-        "Bronze_Greaves_H",
-        "Bronze_Star_H",
-        "Chaos_Amulet_H"
+        "Coral_Trident_H",
+        "Cursed_Scythe_H",
+        "Chaos_Armor_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -39144,13 +39857,13 @@
         "Steel_Helmet_H",
         "Cloth_Sandals_H",
         "Gold_Ring_H",
-        "Bayonet_Rifle_H",
-        "Blaze_Spear_H",
-        "Archangel_Armor_H",
-        "Archangel_Helm_H",
-        "Bronze_Greaves_H",
-        "Bronze_Star_H",
-        "Chaos_Amulet_H"
+        "Coral_Trident_H",
+        "Cursed_Scythe_H",
+        "Chaos_Armor_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -39175,13 +39888,13 @@
         "Steel_Helmet_H",
         "Cloth_Sandals_H",
         "Gold_Ring_H",
-        "Bayonet_Rifle_H",
-        "Blaze_Spear_H",
-        "Archangel_Armor_H",
-        "Archangel_Helm_H",
-        "Bronze_Greaves_H",
-        "Bronze_Star_H",
-        "Chaos_Amulet_H"
+        "Coral_Trident_H",
+        "Cursed_Scythe_H",
+        "Chaos_Armor_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -39206,13 +39919,13 @@
         "Knight_Helmet_H",
         "Iron_Greaves_H",
         "Ruby_Ring_H",
-        "Bone_Sword_H",
-        "Bronze_Trident_H",
-        "Ashigaru_Do_H",
-        "Ashigaru_Kabuto_H",
-        "Choir_Slippers_H",
-        "Cherub_Wing_H",
-        "Covenant_Seal_H"
+        "Demon_Spear_H",
+        "Dragon_Sword_H",
+        "Cloth_Robe_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -39237,13 +39950,13 @@
         "Knight_Helmet_H",
         "Iron_Greaves_H",
         "Ruby_Ring_H",
-        "Bone_Sword_H",
-        "Bronze_Trident_H",
-        "Ashigaru_Do_H",
-        "Ashigaru_Kabuto_H",
-        "Choir_Slippers_H",
-        "Cherub_Wing_H",
-        "Covenant_Seal_H"
+        "Demon_Spear_H",
+        "Dragon_Sword_H",
+        "Cloth_Robe_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -39268,13 +39981,13 @@
         "Knight_Helmet_H",
         "Iron_Greaves_H",
         "Ruby_Ring_H",
-        "Bone_Sword_H",
-        "Bronze_Trident_H",
-        "Ashigaru_Do_H",
-        "Ashigaru_Kabuto_H",
-        "Choir_Slippers_H",
-        "Cherub_Wing_H",
-        "Covenant_Seal_H"
+        "Demon_Spear_H",
+        "Dragon_Sword_H",
+        "Cloth_Robe_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -39299,13 +40012,13 @@
         "Knight_Helmet_H",
         "Iron_Greaves_H",
         "Ruby_Ring_H",
-        "Bone_Sword_H",
-        "Bronze_Trident_H",
-        "Ashigaru_Do_H",
-        "Ashigaru_Kabuto_H",
-        "Choir_Slippers_H",
-        "Cherub_Wing_H",
-        "Covenant_Seal_H"
+        "Demon_Spear_H",
+        "Dragon_Sword_H",
+        "Cloth_Robe_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -39330,13 +40043,13 @@
         "Knight_Helmet_H",
         "Iron_Greaves_H",
         "Ruby_Ring_H",
-        "Bone_Sword_H",
-        "Bronze_Trident_H",
-        "Ashigaru_Do_H",
-        "Ashigaru_Kabuto_H",
-        "Choir_Slippers_H",
-        "Cherub_Wing_H",
-        "Covenant_Seal_H"
+        "Demon_Spear_H",
+        "Dragon_Sword_H",
+        "Cloth_Robe_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -39361,13 +40074,13 @@
         "Knight_Helmet_H",
         "Iron_Greaves_H",
         "Ruby_Ring_H",
-        "Bone_Sword_H",
-        "Bronze_Trident_H",
-        "Ashigaru_Do_H",
-        "Ashigaru_Kabuto_H",
-        "Choir_Slippers_H",
-        "Cherub_Wing_H",
-        "Covenant_Seal_H"
+        "Demon_Spear_H",
+        "Dragon_Sword_H",
+        "Cloth_Robe_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -39392,13 +40105,13 @@
         "Leather_Cap_H",
         "Farm_Boots_H",
         "Wooden_Ring_H",
-        "Amaterasu_Katana_H",
         "Ankh_Blade_H",
-        "Acolyte_Vestment_H",
+        "Blaze_Spear_H",
+        "Ancient_Armor_H",
         "Abyssal_Helm_H",
         "Abyssal_Soles_H",
         "Abyssal_Ring_H",
-        "Aegis_Charm_H"
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -39423,13 +40136,13 @@
         "Leather_Cap_H",
         "Farm_Boots_H",
         "Wooden_Ring_H",
-        "Amaterasu_Katana_H",
         "Ankh_Blade_H",
-        "Acolyte_Vestment_H",
+        "Blaze_Spear_H",
+        "Ancient_Armor_H",
         "Abyssal_Helm_H",
         "Abyssal_Soles_H",
         "Abyssal_Ring_H",
-        "Aegis_Charm_H"
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -39454,13 +40167,13 @@
         "Leather_Cap_H",
         "Farm_Boots_H",
         "Wooden_Ring_H",
-        "Amaterasu_Katana_H",
         "Ankh_Blade_H",
-        "Acolyte_Vestment_H",
+        "Blaze_Spear_H",
+        "Ancient_Armor_H",
         "Abyssal_Helm_H",
         "Abyssal_Soles_H",
         "Abyssal_Ring_H",
-        "Aegis_Charm_H"
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -39485,13 +40198,13 @@
         "Leather_Cap_H",
         "Farm_Boots_H",
         "Wooden_Ring_H",
-        "Amaterasu_Katana_H",
         "Ankh_Blade_H",
-        "Acolyte_Vestment_H",
+        "Blaze_Spear_H",
+        "Ancient_Armor_H",
         "Abyssal_Helm_H",
         "Abyssal_Soles_H",
         "Abyssal_Ring_H",
-        "Aegis_Charm_H"
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -39516,13 +40229,13 @@
         "Leather_Cap_H",
         "Farm_Boots_H",
         "Wooden_Ring_H",
-        "Amaterasu_Katana_H",
         "Ankh_Blade_H",
-        "Acolyte_Vestment_H",
+        "Blaze_Spear_H",
+        "Ancient_Armor_H",
         "Abyssal_Helm_H",
         "Abyssal_Soles_H",
         "Abyssal_Ring_H",
-        "Aegis_Charm_H"
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -39547,13 +40260,13 @@
         "Leather_Cap_H",
         "Farm_Boots_H",
         "Wooden_Ring_H",
-        "Amaterasu_Katana_H",
         "Ankh_Blade_H",
-        "Acolyte_Vestment_H",
+        "Blaze_Spear_H",
+        "Ancient_Armor_H",
         "Abyssal_Helm_H",
         "Abyssal_Soles_H",
         "Abyssal_Ring_H",
-        "Aegis_Charm_H"
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -39578,13 +40291,13 @@
         "Leather_Cap_H",
         "Farm_Boots_H",
         "Wooden_Ring_H",
-        "Amaterasu_Katana_H",
         "Ankh_Blade_H",
-        "Acolyte_Vestment_H",
+        "Blaze_Spear_H",
+        "Ancient_Armor_H",
         "Abyssal_Helm_H",
         "Abyssal_Soles_H",
         "Abyssal_Ring_H",
-        "Aegis_Charm_H"
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -41337,13 +42050,13 @@
         "Thorn_Crown_H",
         "Inferno_Greaves_H",
         "Ember_Ring_H",
-        "Hoplite_Spear_H",
-        "Hunter's_Bow_H",
-        "Dark_Robe_H",
-        "Cursed_Hood_H",
-        "Field_Boots_H",
-        "Olive_Branch_H",
-        "Phoenix_Feather_H"
+        "Shadow_Fang_H",
+        "Shadow_Staff_H",
+        "Holy_Robe_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -41368,13 +42081,13 @@
         "Thorn_Crown_H",
         "Inferno_Greaves_H",
         "Ember_Ring_H",
-        "Hoplite_Spear_H",
-        "Hunter's_Bow_H",
-        "Dark_Robe_H",
-        "Cursed_Hood_H",
-        "Field_Boots_H",
-        "Olive_Branch_H",
-        "Phoenix_Feather_H"
+        "Shadow_Fang_H",
+        "Shadow_Staff_H",
+        "Holy_Robe_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -41399,13 +42112,13 @@
         "Thorn_Crown_H",
         "Inferno_Greaves_H",
         "Ember_Ring_H",
-        "Hoplite_Spear_H",
-        "Hunter's_Bow_H",
-        "Dark_Robe_H",
-        "Cursed_Hood_H",
-        "Field_Boots_H",
-        "Olive_Branch_H",
-        "Phoenix_Feather_H"
+        "Shadow_Fang_H",
+        "Shadow_Staff_H",
+        "Holy_Robe_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -41430,13 +42143,13 @@
         "Thorn_Crown_H",
         "Inferno_Greaves_H",
         "Ember_Ring_H",
-        "Hoplite_Spear_H",
-        "Hunter's_Bow_H",
-        "Dark_Robe_H",
-        "Cursed_Hood_H",
-        "Field_Boots_H",
-        "Olive_Branch_H",
-        "Phoenix_Feather_H"
+        "Shadow_Fang_H",
+        "Shadow_Staff_H",
+        "Holy_Robe_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -41461,13 +42174,13 @@
         "Thorn_Crown_H",
         "Inferno_Greaves_H",
         "Ember_Ring_H",
-        "Hoplite_Spear_H",
-        "Hunter's_Bow_H",
-        "Dark_Robe_H",
-        "Cursed_Hood_H",
-        "Field_Boots_H",
-        "Olive_Branch_H",
-        "Phoenix_Feather_H"
+        "Shadow_Fang_H",
+        "Shadow_Staff_H",
+        "Holy_Robe_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -41492,13 +42205,13 @@
         "Thorn_Crown_H",
         "Inferno_Greaves_H",
         "Ember_Ring_H",
-        "Hoplite_Spear_H",
-        "Hunter's_Bow_H",
-        "Dark_Robe_H",
-        "Cursed_Hood_H",
-        "Field_Boots_H",
-        "Olive_Branch_H",
-        "Phoenix_Feather_H"
+        "Shadow_Fang_H",
+        "Shadow_Staff_H",
+        "Holy_Robe_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -41523,13 +42236,13 @@
         "Mirage_Helm_H",
         "Spirit_Greaves_H",
         "Cinder_Band_H",
-        "Ice_Blade_H",
-        "Inferno_Sword_H",
-        "Demon_Armor_H",
-        "Desert_Wrap_H",
-        "Gorgon_Treads_H",
-        "Prayer_Beads_H",
-        "Prayer_Candle_H"
+        "Spectral_Bow_H",
+        "Stone_Edge_H",
+        "Ice_Armor_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -41554,13 +42267,13 @@
         "Mirage_Helm_H",
         "Spirit_Greaves_H",
         "Cinder_Band_H",
-        "Ice_Blade_H",
-        "Inferno_Sword_H",
-        "Demon_Armor_H",
-        "Desert_Wrap_H",
-        "Gorgon_Treads_H",
-        "Prayer_Beads_H",
-        "Prayer_Candle_H"
+        "Spectral_Bow_H",
+        "Stone_Edge_H",
+        "Ice_Armor_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -41585,13 +42298,13 @@
         "Mirage_Helm_H",
         "Spirit_Greaves_H",
         "Cinder_Band_H",
-        "Ice_Blade_H",
-        "Inferno_Sword_H",
-        "Demon_Armor_H",
-        "Desert_Wrap_H",
-        "Gorgon_Treads_H",
-        "Prayer_Beads_H",
-        "Prayer_Candle_H"
+        "Spectral_Bow_H",
+        "Stone_Edge_H",
+        "Ice_Armor_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -41616,13 +42329,13 @@
         "Mirage_Helm_H",
         "Spirit_Greaves_H",
         "Cinder_Band_H",
-        "Ice_Blade_H",
-        "Inferno_Sword_H",
-        "Demon_Armor_H",
-        "Desert_Wrap_H",
-        "Gorgon_Treads_H",
-        "Prayer_Beads_H",
-        "Prayer_Candle_H"
+        "Spectral_Bow_H",
+        "Stone_Edge_H",
+        "Ice_Armor_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -41647,13 +42360,13 @@
         "Mirage_Helm_H",
         "Spirit_Greaves_H",
         "Cinder_Band_H",
-        "Ice_Blade_H",
-        "Inferno_Sword_H",
-        "Demon_Armor_H",
-        "Desert_Wrap_H",
-        "Gorgon_Treads_H",
-        "Prayer_Beads_H",
-        "Prayer_Candle_H"
+        "Spectral_Bow_H",
+        "Stone_Edge_H",
+        "Ice_Armor_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -41678,13 +42391,13 @@
         "Mirage_Helm_H",
         "Spirit_Greaves_H",
         "Cinder_Band_H",
-        "Ice_Blade_H",
-        "Inferno_Sword_H",
-        "Demon_Armor_H",
-        "Desert_Wrap_H",
-        "Gorgon_Treads_H",
-        "Prayer_Beads_H",
-        "Prayer_Candle_H"
+        "Spectral_Bow_H",
+        "Stone_Edge_H",
+        "Ice_Armor_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -41709,13 +42422,13 @@
         "Abyss_Helm_H",
         "Chaos_Greaves_H",
         "Molten_Band_H",
-        "Judgment_Blade_H",
-        "Kitsune_Naginata_H",
-        "Demon_Hide_H",
-        "Feathered_Helm_H",
-        "Hermes_Sandals_H",
-        "Sakura_Netsuke_H",
-        "Sand_Amulet_H"
+        "Storm_Scimitar_H",
+        "Temple_Blade_H",
+        "Inferno_Robe_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -41740,13 +42453,13 @@
         "Abyss_Helm_H",
         "Chaos_Greaves_H",
         "Molten_Band_H",
-        "Judgment_Blade_H",
-        "Kitsune_Naginata_H",
-        "Demon_Hide_H",
-        "Feathered_Helm_H",
-        "Hermes_Sandals_H",
-        "Sakura_Netsuke_H",
-        "Sand_Amulet_H"
+        "Storm_Scimitar_H",
+        "Temple_Blade_H",
+        "Inferno_Robe_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -41771,13 +42484,13 @@
         "Abyss_Helm_H",
         "Chaos_Greaves_H",
         "Molten_Band_H",
-        "Judgment_Blade_H",
-        "Kitsune_Naginata_H",
-        "Demon_Hide_H",
-        "Feathered_Helm_H",
-        "Hermes_Sandals_H",
-        "Sakura_Netsuke_H",
-        "Sand_Amulet_H"
+        "Storm_Scimitar_H",
+        "Temple_Blade_H",
+        "Inferno_Robe_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -41802,13 +42515,13 @@
         "Abyss_Helm_H",
         "Chaos_Greaves_H",
         "Molten_Band_H",
-        "Judgment_Blade_H",
-        "Kitsune_Naginata_H",
-        "Demon_Hide_H",
-        "Feathered_Helm_H",
-        "Hermes_Sandals_H",
-        "Sakura_Netsuke_H",
-        "Sand_Amulet_H"
+        "Storm_Scimitar_H",
+        "Temple_Blade_H",
+        "Inferno_Robe_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -41833,13 +42546,13 @@
         "Abyss_Helm_H",
         "Chaos_Greaves_H",
         "Molten_Band_H",
-        "Judgment_Blade_H",
-        "Kitsune_Naginata_H",
-        "Demon_Hide_H",
-        "Feathered_Helm_H",
-        "Hermes_Sandals_H",
-        "Sakura_Netsuke_H",
-        "Sand_Amulet_H"
+        "Storm_Scimitar_H",
+        "Temple_Blade_H",
+        "Inferno_Robe_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -41864,13 +42577,13 @@
         "Abyss_Helm_H",
         "Chaos_Greaves_H",
         "Molten_Band_H",
-        "Judgment_Blade_H",
-        "Kitsune_Naginata_H",
-        "Demon_Hide_H",
-        "Feathered_Helm_H",
-        "Hermes_Sandals_H",
-        "Sakura_Netsuke_H",
-        "Sand_Amulet_H"
+        "Storm_Scimitar_H",
+        "Temple_Blade_H",
+        "Inferno_Robe_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -41895,13 +42608,13 @@
         "Abyss_Visor_H",
         "Cursed_Boots_H",
         "Shadow_Amulet_H",
-        "Kopis_Blade_H",
-        "Lava_Titan_Blade_H",
-        "Dragon_Scale_Armor_H",
-        "Field_Beret_H",
-        "Hoplite_Sandals_H",
-        "Seraph_Tear_H",
-        "Shogun_Seal_H"
+        "Thunder_Sabre_H",
+        "Tide_Blade_H",
+        "Lava_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -41926,13 +42639,13 @@
         "Abyss_Visor_H",
         "Cursed_Boots_H",
         "Shadow_Amulet_H",
-        "Kopis_Blade_H",
-        "Lava_Titan_Blade_H",
-        "Dragon_Scale_Armor_H",
-        "Field_Beret_H",
-        "Hoplite_Sandals_H",
-        "Seraph_Tear_H",
-        "Shogun_Seal_H"
+        "Thunder_Sabre_H",
+        "Tide_Blade_H",
+        "Lava_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -41957,13 +42670,13 @@
         "Abyss_Visor_H",
         "Cursed_Boots_H",
         "Shadow_Amulet_H",
-        "Kopis_Blade_H",
-        "Lava_Titan_Blade_H",
-        "Dragon_Scale_Armor_H",
-        "Field_Beret_H",
-        "Hoplite_Sandals_H",
-        "Seraph_Tear_H",
-        "Shogun_Seal_H"
+        "Thunder_Sabre_H",
+        "Tide_Blade_H",
+        "Lava_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -41988,13 +42701,13 @@
         "Abyss_Visor_H",
         "Cursed_Boots_H",
         "Shadow_Amulet_H",
-        "Kopis_Blade_H",
-        "Lava_Titan_Blade_H",
-        "Dragon_Scale_Armor_H",
-        "Field_Beret_H",
-        "Hoplite_Sandals_H",
-        "Seraph_Tear_H",
-        "Shogun_Seal_H"
+        "Thunder_Sabre_H",
+        "Tide_Blade_H",
+        "Lava_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -42019,13 +42732,13 @@
         "Abyss_Visor_H",
         "Cursed_Boots_H",
         "Shadow_Amulet_H",
-        "Kopis_Blade_H",
-        "Lava_Titan_Blade_H",
-        "Dragon_Scale_Armor_H",
-        "Field_Beret_H",
-        "Hoplite_Sandals_H",
-        "Seraph_Tear_H",
-        "Shogun_Seal_H"
+        "Thunder_Sabre_H",
+        "Tide_Blade_H",
+        "Lava_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -42050,13 +42763,13 @@
         "Abyss_Visor_H",
         "Cursed_Boots_H",
         "Shadow_Amulet_H",
-        "Kopis_Blade_H",
-        "Lava_Titan_Blade_H",
-        "Dragon_Scale_Armor_H",
-        "Field_Beret_H",
-        "Hoplite_Sandals_H",
-        "Seraph_Tear_H",
-        "Shogun_Seal_H"
+        "Thunder_Sabre_H",
+        "Tide_Blade_H",
+        "Lava_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -42081,13 +42794,13 @@
         "Void_Helm_H",
         "Speed_Boots_H",
         "Demon_Ring_H",
-        "Masamune_Odachi_H",
-        "Maze_Spear_H",
-        "Dune_Armor_H",
-        "Gas_Mask_H",
-        "Iron_Suneate_H",
-        "Sun_Disk_H",
-        "Tengu_Fan_H"
+        "Trainee_Blade_H",
+        "Void_Lance_H",
+        "Legendary_Armor_H",
+        "Pharaoh_Helm_H",
+        "Scorched_Boots_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -42112,13 +42825,13 @@
         "Demon_Helm_H",
         "Abyss_Lord_Soles_H",
         "Abyss_Orb_H",
-        "Medusa_Glaive_H",
-        "Minotaur_Labrys_H",
-        "EOD_Armor_H",
-        "Hoplite_Helm_H",
-        "Jungle_Boots_H",
-        "Titan_Shackle_H",
-        "Tomb_Relic_H"
+        "Wooden_Staff_H",
+        "Wooden_Sword_H",
+        "Mage_Robe_H",
+        "Phoenix_Helm_H",
+        "Shadow_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -42143,13 +42856,13 @@
         "Cloth_Hood_H",
         "Chain_Boots_H",
         "Emerald_Ring_H",
-        "Cherub_Bow_H",
-        "Choir_Wand_H",
-        "Berserker_Armor_H",
-        "Blood_Mask_H",
-        "Cloud_Sandals_H",
-        "Cursed_Ring_H",
-        "Daruma_Doll_H"
+        "Dune_Edge_H",
+        "Excalibur_H",
+        "Crystal_Armor_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -42174,13 +42887,13 @@
         "Cloth_Hood_H",
         "Chain_Boots_H",
         "Emerald_Ring_H",
-        "Cherub_Bow_H",
-        "Choir_Wand_H",
-        "Berserker_Armor_H",
-        "Blood_Mask_H",
-        "Cloud_Sandals_H",
-        "Cursed_Ring_H",
-        "Daruma_Doll_H"
+        "Dune_Edge_H",
+        "Excalibur_H",
+        "Crystal_Armor_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -42205,13 +42918,13 @@
         "Cloth_Hood_H",
         "Chain_Boots_H",
         "Emerald_Ring_H",
-        "Cherub_Bow_H",
-        "Choir_Wand_H",
-        "Berserker_Armor_H",
-        "Blood_Mask_H",
-        "Cloud_Sandals_H",
-        "Cursed_Ring_H",
-        "Daruma_Doll_H"
+        "Dune_Edge_H",
+        "Excalibur_H",
+        "Crystal_Armor_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -42236,13 +42949,13 @@
         "Cloth_Hood_H",
         "Chain_Boots_H",
         "Emerald_Ring_H",
-        "Cherub_Bow_H",
-        "Choir_Wand_H",
-        "Berserker_Armor_H",
-        "Blood_Mask_H",
-        "Cloud_Sandals_H",
-        "Cursed_Ring_H",
-        "Daruma_Doll_H"
+        "Dune_Edge_H",
+        "Excalibur_H",
+        "Crystal_Armor_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -42267,13 +42980,13 @@
         "Cloth_Hood_H",
         "Chain_Boots_H",
         "Emerald_Ring_H",
-        "Cherub_Bow_H",
-        "Choir_Wand_H",
-        "Berserker_Armor_H",
-        "Blood_Mask_H",
-        "Cloud_Sandals_H",
-        "Cursed_Ring_H",
-        "Daruma_Doll_H"
+        "Dune_Edge_H",
+        "Excalibur_H",
+        "Crystal_Armor_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -42298,13 +43011,13 @@
         "Cloth_Hood_H",
         "Chain_Boots_H",
         "Emerald_Ring_H",
-        "Cherub_Bow_H",
-        "Choir_Wand_H",
-        "Berserker_Armor_H",
-        "Blood_Mask_H",
-        "Cloud_Sandals_H",
-        "Cursed_Ring_H",
-        "Daruma_Doll_H"
+        "Dune_Edge_H",
+        "Excalibur_H",
+        "Crystal_Armor_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -42329,13 +43042,13 @@
         "Cloth_Hood_H",
         "Chain_Boots_H",
         "Emerald_Ring_H",
-        "Cherub_Bow_H",
-        "Choir_Wand_H",
-        "Berserker_Armor_H",
-        "Blood_Mask_H",
-        "Cloud_Sandals_H",
-        "Cursed_Ring_H",
-        "Daruma_Doll_H"
+        "Dune_Edge_H",
+        "Excalibur_H",
+        "Crystal_Armor_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -42360,13 +43073,13 @@
         "Cloth_Hood_H",
         "Chain_Boots_H",
         "Emerald_Ring_H",
-        "Cherub_Bow_H",
-        "Choir_Wand_H",
-        "Berserker_Armor_H",
-        "Blood_Mask_H",
-        "Cloud_Sandals_H",
-        "Cursed_Ring_H",
-        "Daruma_Doll_H"
+        "Dune_Edge_H",
+        "Excalibur_H",
+        "Crystal_Armor_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -42391,13 +43104,13 @@
         "Cloth_Hood_H",
         "Chain_Boots_H",
         "Emerald_Ring_H",
-        "Cherub_Bow_H",
-        "Choir_Wand_H",
-        "Berserker_Armor_H",
-        "Blood_Mask_H",
-        "Cloud_Sandals_H",
-        "Cursed_Ring_H",
-        "Daruma_Doll_H"
+        "Dune_Edge_H",
+        "Excalibur_H",
+        "Crystal_Armor_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -42422,13 +43135,13 @@
         "Wizard_Hat_H",
         "Steel_Sabatons_H",
         "Sapphire_Ring_H",
-        "Cinder_Dust_H",
-        "Cinder_Lance_H",
-        "Bone_Armor_H",
-        "Bronze_Skullcap_H",
-        "Combat_Boots_H",
-        "Desert_Crescent_H",
-        "Dog_Tags_H"
+        "Frost_Sabre_H",
+        "Gnarled_Staff_H",
+        "Cursed_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -42453,13 +43166,13 @@
         "Wizard_Hat_H",
         "Steel_Sabatons_H",
         "Sapphire_Ring_H",
-        "Cinder_Dust_H",
-        "Cinder_Lance_H",
-        "Bone_Armor_H",
-        "Bronze_Skullcap_H",
-        "Combat_Boots_H",
-        "Desert_Crescent_H",
-        "Dog_Tags_H"
+        "Frost_Sabre_H",
+        "Gnarled_Staff_H",
+        "Cursed_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -42484,13 +43197,13 @@
         "Wizard_Hat_H",
         "Steel_Sabatons_H",
         "Sapphire_Ring_H",
-        "Cinder_Dust_H",
-        "Cinder_Lance_H",
-        "Bone_Armor_H",
-        "Bronze_Skullcap_H",
-        "Combat_Boots_H",
-        "Desert_Crescent_H",
-        "Dog_Tags_H"
+        "Frost_Sabre_H",
+        "Gnarled_Staff_H",
+        "Cursed_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -42515,13 +43228,13 @@
         "Wizard_Hat_H",
         "Steel_Sabatons_H",
         "Sapphire_Ring_H",
-        "Cinder_Dust_H",
-        "Cinder_Lance_H",
-        "Bone_Armor_H",
-        "Bronze_Skullcap_H",
-        "Combat_Boots_H",
-        "Desert_Crescent_H",
-        "Dog_Tags_H"
+        "Frost_Sabre_H",
+        "Gnarled_Staff_H",
+        "Cursed_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -42546,13 +43259,13 @@
         "Wizard_Hat_H",
         "Steel_Sabatons_H",
         "Sapphire_Ring_H",
-        "Cinder_Dust_H",
-        "Cinder_Lance_H",
-        "Bone_Armor_H",
-        "Bronze_Skullcap_H",
-        "Combat_Boots_H",
-        "Desert_Crescent_H",
-        "Dog_Tags_H"
+        "Frost_Sabre_H",
+        "Gnarled_Staff_H",
+        "Cursed_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -42577,13 +43290,13 @@
         "Wizard_Hat_H",
         "Steel_Sabatons_H",
         "Sapphire_Ring_H",
-        "Cinder_Dust_H",
-        "Cinder_Lance_H",
-        "Bone_Armor_H",
-        "Bronze_Skullcap_H",
-        "Combat_Boots_H",
-        "Desert_Crescent_H",
-        "Dog_Tags_H"
+        "Frost_Sabre_H",
+        "Gnarled_Staff_H",
+        "Cursed_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -42608,13 +43321,13 @@
         "Wizard_Hat_H",
         "Steel_Sabatons_H",
         "Sapphire_Ring_H",
-        "Cinder_Dust_H",
-        "Cinder_Lance_H",
-        "Bone_Armor_H",
-        "Bronze_Skullcap_H",
-        "Combat_Boots_H",
-        "Desert_Crescent_H",
-        "Dog_Tags_H"
+        "Frost_Sabre_H",
+        "Gnarled_Staff_H",
+        "Cursed_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -42639,13 +43352,13 @@
         "Wizard_Hat_H",
         "Steel_Sabatons_H",
         "Sapphire_Ring_H",
-        "Cinder_Dust_H",
-        "Cinder_Lance_H",
-        "Bone_Armor_H",
-        "Bronze_Skullcap_H",
-        "Combat_Boots_H",
-        "Desert_Crescent_H",
-        "Dog_Tags_H"
+        "Frost_Sabre_H",
+        "Gnarled_Staff_H",
+        "Cursed_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -42670,13 +43383,13 @@
         "Wizard_Hat_H",
         "Steel_Sabatons_H",
         "Sapphire_Ring_H",
-        "Cinder_Dust_H",
-        "Cinder_Lance_H",
-        "Bone_Armor_H",
-        "Bronze_Skullcap_H",
-        "Combat_Boots_H",
-        "Desert_Crescent_H",
-        "Dog_Tags_H"
+        "Frost_Sabre_H",
+        "Gnarled_Staff_H",
+        "Cursed_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -42701,13 +43414,13 @@
         "Straw_Hat_H",
         "Fern_Boots_H",
         "Amethyst_Ring_H",
-        "Cinder_Scythe_H",
-        "Combat_Shotgun_H",
-        "Breacher_Suit_H",
-        "Cadet_Cap_H",
-        "Dark_Steppers_H",
-        "Down_Feather_H",
-        "Field_Compass_H"
+        "Hell_Staff_H",
+        "Holy_Sword_H",
+        "Dark_Robe_H",
+        "Pharaoh_Helm_H",
+        "Scorched_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -42732,13 +43445,13 @@
         "Straw_Hat_H",
         "Fern_Boots_H",
         "Amethyst_Ring_H",
-        "Cinder_Scythe_H",
-        "Combat_Shotgun_H",
-        "Breacher_Suit_H",
-        "Cadet_Cap_H",
-        "Dark_Steppers_H",
-        "Down_Feather_H",
-        "Field_Compass_H"
+        "Hell_Staff_H",
+        "Holy_Sword_H",
+        "Dark_Robe_H",
+        "Pharaoh_Helm_H",
+        "Scorched_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -42763,13 +43476,13 @@
         "Straw_Hat_H",
         "Fern_Boots_H",
         "Amethyst_Ring_H",
-        "Cinder_Scythe_H",
-        "Combat_Shotgun_H",
-        "Breacher_Suit_H",
-        "Cadet_Cap_H",
-        "Dark_Steppers_H",
-        "Down_Feather_H",
-        "Field_Compass_H"
+        "Hell_Staff_H",
+        "Holy_Sword_H",
+        "Dark_Robe_H",
+        "Pharaoh_Helm_H",
+        "Scorched_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -42794,13 +43507,13 @@
         "Straw_Hat_H",
         "Fern_Boots_H",
         "Amethyst_Ring_H",
-        "Cinder_Scythe_H",
-        "Combat_Shotgun_H",
-        "Breacher_Suit_H",
-        "Cadet_Cap_H",
-        "Dark_Steppers_H",
-        "Down_Feather_H",
-        "Field_Compass_H"
+        "Hell_Staff_H",
+        "Holy_Sword_H",
+        "Dark_Robe_H",
+        "Pharaoh_Helm_H",
+        "Scorched_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -42825,13 +43538,13 @@
         "Straw_Hat_H",
         "Fern_Boots_H",
         "Amethyst_Ring_H",
-        "Cinder_Scythe_H",
-        "Combat_Shotgun_H",
-        "Breacher_Suit_H",
-        "Cadet_Cap_H",
-        "Dark_Steppers_H",
-        "Down_Feather_H",
-        "Field_Compass_H"
+        "Hell_Staff_H",
+        "Holy_Sword_H",
+        "Dark_Robe_H",
+        "Pharaoh_Helm_H",
+        "Scorched_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -42856,13 +43569,13 @@
         "Straw_Hat_H",
         "Fern_Boots_H",
         "Amethyst_Ring_H",
-        "Cinder_Scythe_H",
-        "Combat_Shotgun_H",
-        "Breacher_Suit_H",
-        "Cadet_Cap_H",
-        "Dark_Steppers_H",
-        "Down_Feather_H",
-        "Field_Compass_H"
+        "Hell_Staff_H",
+        "Holy_Sword_H",
+        "Dark_Robe_H",
+        "Pharaoh_Helm_H",
+        "Scorched_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -45106,13 +45819,13 @@
         "Leather_Cap_H",
         "Abyssal_Soles_H",
         "Iron_Sword_H",
-        "Acolyte_Vestment_H",
+        "Ancient_Armor_H",
         "Iron_Chestplate_H",
         "Abyssal_Helm_H",
         "Wooden_Ring_H",
-        "Aegis_Charm_H",
-        "Ankh_Blade_H",
-        "Amaterasu_Katana_H"
+        "Ankh_Pendant_H",
+        "Blaze_Spear_H",
+        "Ankh_Blade_H"
       ],
       "bossDropItemIds": [
         "WanderersToken",
@@ -45164,13 +45877,13 @@
         "Leather_Cap_H",
         "Farm_Boots_H",
         "Wooden_Ring_H",
-        "Amaterasu_Katana_H",
         "Ankh_Blade_H",
-        "Acolyte_Vestment_H",
+        "Blaze_Spear_H",
+        "Ancient_Armor_H",
         "Abyssal_Helm_H",
         "Abyssal_Soles_H",
         "Abyssal_Ring_H",
-        "Aegis_Charm_H"
+        "Ankh_Pendant_H"
       ]
     },
     {
@@ -45230,18 +45943,18 @@
         "OakArmor",
         "PhantomBlade",
         "Leather_Helmet_H",
-        "Ammo_Belt_H",
+        "Blood_Gem_H",
         "Steel_Armor_H",
         "Blood_Striders_H",
         "Travel_Boots_H",
-        "Amphora_Vial_H",
+        "Chaos_Amulet_H",
         "Steel_Sword_H",
-        "Amaterasu_Kabuto_H",
-        "Amaterasu_Regalia_H",
-        "Ashigaru_Yari_H",
+        "Ankh_Crown_H",
+        "Berserker_Armor_H",
+        "Cinder_Dust_H",
         "Iron_Ring_H",
         "Thief_Ring_H",
-        "Golden_Fleece_H"
+        "Fire_Gem_H"
       ],
       "bossDropItemIds": [
         "DragonFangPendant",
@@ -45261,13 +45974,13 @@
         "Leather_Helmet_H",
         "Travel_Boots_H",
         "Iron_Ring_H",
-        "Archangel_Greatsword_H",
-        "Ashigaru_Yari_H",
-        "Amaterasu_Regalia_H",
-        "Amaterasu_Kabuto_H",
+        "Bone_Sword_H",
+        "Cinder_Dust_H",
+        "Berserker_Armor_H",
+        "Ankh_Crown_H",
         "Blood_Striders_H",
-        "Ammo_Belt_H",
-        "Amphora_Vial_H"
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -45300,7 +46013,7 @@
         "MireScale",
         "DarkTreeBark",
         "Iron_Helmet_H",
-        "Assault_Rifle_H",
+        "Cinder_Lance_H",
         "Leather_Armor_H",
         "Silver_Ring_H",
         "Steel_Longsword_H",
@@ -45319,13 +46032,13 @@
         "Iron_Helmet_H",
         "Leather_Boots_H",
         "Silver_Ring_H",
-        "Assault_Rifle_H",
-        "Bamboo_Spear_H",
-        "Ancient_Armor_H",
-        "Ankh_Crown_H",
-        "Breacher_Greaves_H",
-        "Ankh_Pendant_H",
-        "Blood_Gem_H"
+        "Cinder_Lance_H",
+        "Cinder_Scythe_H",
+        "Bone_Armor_H",
+        "Blood_Mask_H",
+        "Dark_Steppers_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -45364,17 +46077,17 @@
         "VoidShard",
         "PhantomCloak",
         "Molten_Armor_H",
-        "Bronze_Cuirass_H",
+        "Demon_Armor_H",
         "Cloth_Sandals_H",
-        "Bronze_Greaves_H",
-        "Bayonet_Rifle_H",
-        "Chaos_Amulet_H",
+        "Desert_Boots_H",
+        "Coral_Trident_H",
+        "Inferno_Core_H",
         "Void_Spear_H",
-        "Excalibur_H",
+        "Nether_Dagger_H",
         "Chain_Mail_H",
-        "Archangel_Armor_H",
+        "Chaos_Armor_H",
         "Shadow_Dagger_H",
-        "Bronze_Trident_H"
+        "Dragon_Sword_H"
       ],
       "bossDropItemIds": [
         "SoulLantern",
@@ -45392,13 +46105,13 @@
         "Steel_Helmet_H",
         "Cloth_Sandals_H",
         "Gold_Ring_H",
-        "Bayonet_Rifle_H",
-        "Blaze_Spear_H",
-        "Archangel_Armor_H",
-        "Archangel_Helm_H",
-        "Bronze_Greaves_H",
-        "Bronze_Star_H",
-        "Chaos_Amulet_H"
+        "Coral_Trident_H",
+        "Cursed_Scythe_H",
+        "Chaos_Armor_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -45446,16 +46159,16 @@
         "Excalibur",
         "AshEdge",
         "Shadow_Dagger_H",
-        "Bronze_Trident_H",
+        "Dragon_Sword_H",
         "Emerald_Ring_H",
         "Ruby_Ring_H",
-        "Cherub_Wing_H",
-        "Bone_Sword_H",
-        "Covenant_Seal_H",
+        "Lava_Ring_H",
+        "Demon_Spear_H",
+        "Phoenix_Feather_H",
         "Cloth_Hood_H",
-        "Daruma_Doll_H",
+        "Sun_Disk_H",
         "Iron_Greaves_H",
-        "Choir_Slippers_H"
+        "Dune_Treads_H"
       ],
       "bossDropItemIds": [
         "WitchsGrimoire",
@@ -45473,13 +46186,13 @@
         "Knight_Helmet_H",
         "Iron_Greaves_H",
         "Ruby_Ring_H",
-        "Bone_Sword_H",
-        "Bronze_Trident_H",
-        "Ashigaru_Do_H",
-        "Ashigaru_Kabuto_H",
-        "Choir_Slippers_H",
-        "Cherub_Wing_H",
-        "Covenant_Seal_H"
+        "Demon_Spear_H",
+        "Dragon_Sword_H",
+        "Cloth_Robe_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -45514,18 +46227,18 @@
         "InfernoDrake"
       ],
       "dropItemIds": [
-        "Berserker_Armor_H",
-        "Choir_Wand_H",
+        "Crystal_Armor_H",
+        "Excalibur_H",
         "Cloth_Hood_H",
-        "Daruma_Doll_H",
+        "Sun_Disk_H",
         "Smoky_Dagger_H",
-        "Cloud_Sandals_H",
-        "Cherub_Bow_H",
+        "Pharaoh_Greaves_H",
+        "Dune_Edge_H",
         "Chain_Boots_H",
-        "Blood_Mask_H",
+        "Cursed_Hood_H",
         "Emerald_Ring_H",
         "Oak_Armor_H",
-        "Cursed_Ring_H",
+        "Sand_Amulet_H",
         "DrakeArmor",
         "CinderLance",
         "VolcanoBlade",
@@ -45555,13 +46268,13 @@
         "Cloth_Hood_H",
         "Chain_Boots_H",
         "Emerald_Ring_H",
-        "Cherub_Bow_H",
-        "Choir_Wand_H",
-        "Berserker_Armor_H",
-        "Blood_Mask_H",
-        "Cloud_Sandals_H",
-        "Cursed_Ring_H",
-        "Daruma_Doll_H",
+        "Dune_Edge_H",
+        "Excalibur_H",
+        "Crystal_Armor_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H",
         "VolcanoBlade",
         "CinderLance",
         "DrakeArmor",
@@ -45605,18 +46318,18 @@
         "LavaTitan"
       ],
       "dropItemIds": [
-        "Bronze_Skullcap_H",
-        "Cinder_Dust_H",
+        "Desert_Wrap_H",
+        "Frost_Sabre_H",
         "Sapphire_Ring_H",
-        "Bone_Armor_H",
+        "Cursed_Armor_H",
         "Flame_Sword_H",
-        "Combat_Boots_H",
+        "Sand_Sandals_H",
         "Wizard_Hat_H",
-        "Dog_Tags_H",
+        "Void_Ring_H",
         "Shadow_Armor_H",
-        "Desert_Crescent_H",
+        "Tomb_Relic_H",
         "Steel_Sabatons_H",
-        "Cinder_Lance_H",
+        "Gnarled_Staff_H",
         "AbyssalMail",
         "VoidSpear",
         "LavaTitanBlade",
@@ -45643,13 +46356,13 @@
         "Wizard_Hat_H",
         "Steel_Sabatons_H",
         "Sapphire_Ring_H",
-        "Cinder_Dust_H",
-        "Cinder_Lance_H",
-        "Bone_Armor_H",
-        "Bronze_Skullcap_H",
-        "Combat_Boots_H",
-        "Desert_Crescent_H",
-        "Dog_Tags_H",
+        "Frost_Sabre_H",
+        "Gnarled_Staff_H",
+        "Cursed_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H",
         "LavaTitanBlade",
         "VoidSpear",
         "AbyssalMail",
@@ -45688,17 +46401,17 @@
       ],
       "dropItemIds": [
         "Shadow_Plate_H",
-        "Breacher_Suit_H",
+        "Dark_Robe_H",
         "Straw_Hat_H",
-        "Cadet_Cap_H",
+        "Pharaoh_Helm_H",
         "Fern_Boots_H",
-        "Dark_Steppers_H",
+        "Scorched_Boots_H",
         "Amethyst_Ring_H",
-        "Down_Feather_H",
+        "Abyssal_Ring_H",
         "Magma_Blade_H",
-        "Combat_Shotgun_H",
-        "Cinder_Scythe_H",
-        "Field_Compass_H",
+        "Holy_Sword_H",
+        "Hell_Staff_H",
+        "Ankh_Pendant_H",
         "HellStaff",
         "CinderScythe",
         "InfernoRobe",
@@ -45720,13 +46433,13 @@
         "Straw_Hat_H",
         "Fern_Boots_H",
         "Amethyst_Ring_H",
-        "Cinder_Scythe_H",
-        "Combat_Shotgun_H",
-        "Breacher_Suit_H",
-        "Cadet_Cap_H",
-        "Dark_Steppers_H",
-        "Down_Feather_H",
-        "Field_Compass_H",
+        "Hell_Staff_H",
+        "Holy_Sword_H",
+        "Dark_Robe_H",
+        "Pharaoh_Helm_H",
+        "Scorched_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H",
         "ChaosEdge",
         "NetherDagger",
         "VoidArmor",
@@ -45775,17 +46488,17 @@
         "ShadowAmulet",
         "SoulBlade",
         "Volcano_Blade_H",
-        "Cursed_Scythe_H",
+        "Ice_Blade_H",
         "Lucky_Ring_H",
-        "Field_Radio_H",
+        "Blood_Gem_H",
         "Wind_Boots_H",
-        "Desert_Boots_H",
+        "Shadow_Greaves_H",
         "Dark_Hood_H",
-        "Chaos_Hood_H",
+        "Phoenix_Helm_H",
         "Molten_Armor_H",
-        "Bronze_Cuirass_H",
-        "Coral_Trident_H",
-        "Fire_Gem_H"
+        "Demon_Armor_H",
+        "Hunter's_Bow_H",
+        "Chaos_Amulet_H"
       ],
       "bossDropItemIds": [
         "CrystalPrism",
@@ -45804,13 +46517,13 @@
         "Dark_Hood_H",
         "Wind_Boots_H",
         "Lucky_Ring_H",
-        "Coral_Trident_H",
-        "Cursed_Scythe_H",
-        "Bronze_Cuirass_H",
-        "Chaos_Hood_H",
-        "Desert_Boots_H",
-        "Field_Radio_H",
-        "Fire_Gem_H"
+        "Hunter's_Bow_H",
+        "Ice_Blade_H",
+        "Demon_Armor_H",
+        "Phoenix_Helm_H",
+        "Shadow_Greaves_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H"
       ]
     },
     {
@@ -45849,17 +46562,17 @@
         "DS02Helm",
         "DS02Weapon2",
         "Flame_Plate_H",
-        "Chaos_Armor_H",
+        "Demon_Hide_H",
         "Shadow_Mask_H",
-        "Cherub_Circlet_H",
+        "Shadow_Crown_H",
         "Power_Ring_H",
-        "Fox_Bell_H",
+        "Cursed_Ring_H",
         "Shadow_Treads_H",
-        "Divine_Treads_H",
-        "Demon_Spear_H",
-        "Frag_Grenade_H",
+        "Void_Boots_H",
+        "Inferno_Sword_H",
+        "Desert_Crescent_H",
         "Void_Shard_H",
-        "Dragon_Sword_H"
+        "Lava_Titan_Blade_H"
       ],
       "bossDropItemIds": [
         "BossItem_IronFortress",
@@ -45877,13 +46590,13 @@
         "Shadow_Mask_H",
         "Shadow_Treads_H",
         "Power_Ring_H",
-        "Demon_Spear_H",
-        "Dragon_Sword_H",
-        "Chaos_Armor_H",
-        "Cherub_Circlet_H",
-        "Divine_Treads_H",
-        "Fox_Bell_H",
-        "Frag_Grenade_H"
+        "Inferno_Sword_H",
+        "Lava_Titan_Blade_H",
+        "Demon_Hide_H",
+        "Shadow_Crown_H",
+        "Void_Boots_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H"
       ]
     },
     {
@@ -45937,17 +46650,17 @@
         "DS04Helm",
         "DS05Helm",
         "Thief_Ring_H",
-        "Golden_Fleece_H",
+        "Fire_Gem_H",
         "Volcanic_Plate_H",
-        "Choir_Raiment_H",
+        "Dragon_Scale_Armor_H",
         "Void_Spear_H",
-        "Excalibur_H",
+        "Nether_Dagger_H",
         "Inferno_Mask_H",
-        "Choir_Veil_H",
+        "Tomb_Mask_H",
         "Ash_Treads_H",
-        "Dragon_Tabi_H",
-        "Dune_Edge_H",
-        "Gorgon_Eye_H"
+        "Volcanic_Sandals_H",
+        "Maze_Spear_H",
+        "Inferno_Core_H"
       ],
       "bossDropItemIds": [
         "BossItem_WarCrest",
@@ -45967,13 +46680,13 @@
         "Inferno_Mask_H",
         "Ash_Treads_H",
         "Thief_Ring_H",
-        "Dune_Edge_H",
-        "Excalibur_H",
-        "Choir_Raiment_H",
-        "Choir_Veil_H",
-        "Dragon_Tabi_H",
-        "Golden_Fleece_H",
-        "Gorgon_Eye_H"
+        "Maze_Spear_H",
+        "Nether_Dagger_H",
+        "Dragon_Scale_Armor_H",
+        "Tomb_Mask_H",
+        "Volcanic_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H"
       ]
     },
     {
@@ -46010,17 +46723,17 @@
         "PharaohArmor",
         "PharaohHelm",
         "Lava_Crown_H",
-        "Cinder_Helm_H",
+        "Abyssal_Helm_H",
         "Abyssal_Mail_H",
-        "Cloth_Robe_H",
+        "Dune_Armor_H",
         "Void_Scythe_H",
-        "Frost_Sabre_H",
-        "Feathered_Spear_H",
-        "Holy_Chalice_H",
+        "Pharaoh_Blade_H",
+        "Oasis_Blade_H",
+        "Phoenix_Feather_H",
         "Tracker_Ring_H",
-        "Halo_Ring_H",
+        "Lava_Ring_H",
         "Magma_Greaves_H",
-        "Dune_Treads_H"
+        "Abyssal_Soles_H"
       ],
       "bossDropItemIds": [
         "BossItem_ZenStone",
@@ -46040,13 +46753,13 @@
         "Lava_Crown_H",
         "Magma_Greaves_H",
         "Tracker_Ring_H",
-        "Feathered_Spear_H",
-        "Frost_Sabre_H",
-        "Cloth_Robe_H",
-        "Cinder_Helm_H",
-        "Dune_Treads_H",
-        "Halo_Ring_H",
-        "Holy_Chalice_H"
+        "Oasis_Blade_H",
+        "Pharaoh_Blade_H",
+        "Dune_Armor_H",
+        "Abyssal_Helm_H",
+        "Abyssal_Soles_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -46078,18 +46791,18 @@
         "AnkhBlade",
         "DuneTreads",
         "PharaohScepter",
-        "Gnarled_Staff_H",
-        "Koi_Charm_H",
+        "Pharaoh_Scepter_H",
+        "Sun_Disk_H",
         "Abyss_Shroud_H",
-        "Crystal_Armor_H",
+        "Flame_Armor_H",
         "Willow_Ring_H",
-        "Inferno_Core_H",
+        "Sand_Amulet_H",
         "Vulcan_Boots_H",
-        "Exo_Striders_H",
+        "Blood_Striders_H",
         "Phantom_Blade_H",
-        "Grenade_Launcher_H",
+        "Sand_Blade_H",
         "Bone_Crown_H",
-        "Combat_Helm_H"
+        "Ankh_Crown_H"
       ],
       "bossDropItemIds": [
         "PharaohSpirit",
@@ -46106,13 +46819,13 @@
         "Bone_Crown_H",
         "Vulcan_Boots_H",
         "Willow_Ring_H",
-        "Gnarled_Staff_H",
-        "Grenade_Launcher_H",
-        "Crystal_Armor_H",
-        "Combat_Helm_H",
-        "Exo_Striders_H",
-        "Inferno_Core_H",
-        "Koi_Charm_H"
+        "Pharaoh_Scepter_H",
+        "Sand_Blade_H",
+        "Flame_Armor_H",
+        "Ankh_Crown_H",
+        "Blood_Striders_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
@@ -46143,13 +46856,13 @@
         "Gold_Helmet_H",
         "Molten_Striders_H",
         "Cactus_Ring_H",
-        "Hell_Staff_H",
-        "Holy_Sword_H",
-        "Cursed_Armor_H",
-        "Commander's_Helm_H",
-        "Feathered_Boots_H",
-        "Lava_Ring_H",
-        "Obol_Coin_H"
+        "Sandstorm_Blade_H",
+        "Shadow_Edge_H",
+        "Forest_Armor_H",
+        "Blood_Mask_H",
+        "Dark_Steppers_H",
+        "Tomb_Relic_H",
+        "Void_Ring_H"
       ]
     },
     {
@@ -46179,17 +46892,17 @@
       ],
       "dropItemIds": [
         "Drake_Armor_H",
-        "Dark_Robe_H",
-        "Hoplite_Spear_H",
-        "Phoenix_Feather_H",
+        "Holy_Robe_H",
+        "Shadow_Fang_H",
+        "Ankh_Pendant_H",
         "Inferno_Greaves_H",
-        "Field_Boots_H",
+        "Desert_Boots_H",
         "Chaos_Edge_H",
-        "Hunter's_Bow_H",
+        "Shadow_Staff_H",
         "Thorn_Crown_H",
-        "Cursed_Hood_H",
+        "Chaos_Hood_H",
         "Ember_Ring_H",
-        "Olive_Branch_H",
+        "Abyssal_Ring_H",
         "StrawHat",
         "AbyssShroud",
         "AbyssVisor",
@@ -46211,13 +46924,13 @@
         "Thorn_Crown_H",
         "Inferno_Greaves_H",
         "Ember_Ring_H",
-        "Hoplite_Spear_H",
-        "Hunter's_Bow_H",
-        "Dark_Robe_H",
-        "Cursed_Hood_H",
-        "Field_Boots_H",
-        "Olive_Branch_H",
-        "Phoenix_Feather_H",
+        "Shadow_Fang_H",
+        "Shadow_Staff_H",
+        "Holy_Robe_H",
+        "Chaos_Hood_H",
+        "Desert_Boots_H",
+        "Abyssal_Ring_H",
+        "Ankh_Pendant_H",
         "UW01Weapon",
         "UW01Armor",
         "UW01Helm",
@@ -46251,17 +46964,17 @@
       "bossIds": [],
       "dropItemIds": [
         "Spirit_Greaves_H",
-        "Gorgon_Treads_H",
+        "Dune_Treads_H",
         "Mirage_Helm_H",
-        "Desert_Wrap_H",
+        "Cinder_Helm_H",
         "Void_Plate_H",
-        "Demon_Armor_H",
-        "Ice_Blade_H",
-        "Prayer_Candle_H",
+        "Ice_Armor_H",
+        "Spectral_Bow_H",
+        "Chaos_Amulet_H",
         "Soul_Blade_H",
-        "Inferno_Sword_H",
+        "Stone_Edge_H",
         "Cinder_Band_H",
-        "Prayer_Beads_H",
+        "Blood_Gem_H",
         "AbyssalArmor",
         "VoidPlate",
         "VoidRing",
@@ -46279,13 +46992,13 @@
         "Mirage_Helm_H",
         "Spirit_Greaves_H",
         "Cinder_Band_H",
-        "Ice_Blade_H",
-        "Inferno_Sword_H",
-        "Demon_Armor_H",
-        "Desert_Wrap_H",
-        "Gorgon_Treads_H",
-        "Prayer_Beads_H",
-        "Prayer_Candle_H",
+        "Spectral_Bow_H",
+        "Stone_Edge_H",
+        "Ice_Armor_H",
+        "Cinder_Helm_H",
+        "Dune_Treads_H",
+        "Blood_Gem_H",
+        "Chaos_Amulet_H",
         "UW02Weapon",
         "UW02Armor",
         "UW02Helm",
@@ -46318,17 +47031,17 @@
       "bossIds": [],
       "dropItemIds": [
         "Molten_Band_H",
-        "Sakura_Netsuke_H",
+        "Cursed_Ring_H",
         "Chaos_Greaves_H",
-        "Hermes_Sandals_H",
+        "Pharaoh_Greaves_H",
         "Blood_Armor_H",
-        "Demon_Hide_H",
+        "Inferno_Robe_H",
         "Abyss_Helm_H",
-        "Feathered_Helm_H",
+        "Cursed_Hood_H",
         "Cursed_Blade_H",
-        "Kitsune_Naginata_H",
-        "Judgment_Blade_H",
-        "Sand_Amulet_H",
+        "Temple_Blade_H",
+        "Storm_Scimitar_H",
+        "Desert_Crescent_H",
         "AbyssLordSoles",
         "AbyssalRing",
         "AbyssalBlade",
@@ -46345,13 +47058,13 @@
         "Abyss_Helm_H",
         "Chaos_Greaves_H",
         "Molten_Band_H",
-        "Judgment_Blade_H",
-        "Kitsune_Naginata_H",
-        "Demon_Hide_H",
-        "Feathered_Helm_H",
-        "Hermes_Sandals_H",
-        "Sakura_Netsuke_H",
-        "Sand_Amulet_H",
+        "Storm_Scimitar_H",
+        "Temple_Blade_H",
+        "Inferno_Robe_H",
+        "Cursed_Hood_H",
+        "Pharaoh_Greaves_H",
+        "Cursed_Ring_H",
+        "Desert_Crescent_H",
         "UW03Weapon",
         "UW03Armor",
         "UW03Helm",
@@ -46386,17 +47099,17 @@
       ],
       "dropItemIds": [
         "Shadow_Amulet_H",
-        "Seraph_Tear_H",
+        "Fire_Gem_H",
         "Dark_Scythe_H",
-        "Lava_Titan_Blade_H",
+        "Tide_Blade_H",
         "Abyss_Visor_H",
-        "Field_Beret_H",
-        "Kopis_Blade_H",
-        "Shogun_Seal_H",
+        "Desert_Wrap_H",
+        "Thunder_Sabre_H",
+        "Inferno_Core_H",
         "Cursed_Robe_H",
-        "Dragon_Scale_Armor_H",
+        "Lava_Armor_H",
         "Cursed_Boots_H",
-        "Hoplite_Sandals_H",
+        "Sand_Sandals_H",
         "VoidHelm",
         "SteelSword",
         "UW04Shoes",
@@ -46415,13 +47128,13 @@
         "Abyss_Visor_H",
         "Cursed_Boots_H",
         "Shadow_Amulet_H",
-        "Kopis_Blade_H",
-        "Lava_Titan_Blade_H",
-        "Dragon_Scale_Armor_H",
-        "Field_Beret_H",
-        "Hoplite_Sandals_H",
-        "Seraph_Tear_H",
-        "Shogun_Seal_H",
+        "Thunder_Sabre_H",
+        "Tide_Blade_H",
+        "Lava_Armor_H",
+        "Desert_Wrap_H",
+        "Sand_Sandals_H",
+        "Fire_Gem_H",
+        "Inferno_Core_H",
         "UW04Weapon",
         "UW04Armor",
         "UW04Helm",
@@ -46510,13 +47223,13 @@
         "Void_Helm_H",
         "Speed_Boots_H",
         "Demon_Ring_H",
-        "Masamune_Odachi_H",
-        "Maze_Spear_H",
-        "Dune_Armor_H",
-        "Gas_Mask_H",
-        "Iron_Suneate_H",
-        "Sun_Disk_H",
-        "Tengu_Fan_H"
+        "Trainee_Blade_H",
+        "Void_Lance_H",
+        "Legendary_Armor_H",
+        "Pharaoh_Helm_H",
+        "Scorched_Boots_H",
+        "Lava_Ring_H",
+        "Phoenix_Feather_H"
       ]
     },
     {
@@ -46600,13 +47313,13 @@
         "Demon_Helm_H",
         "Abyss_Lord_Soles_H",
         "Abyss_Orb_H",
-        "Medusa_Glaive_H",
-        "Minotaur_Labrys_H",
-        "EOD_Armor_H",
-        "Hoplite_Helm_H",
-        "Jungle_Boots_H",
-        "Titan_Shackle_H",
-        "Tomb_Relic_H"
+        "Wooden_Staff_H",
+        "Wooden_Sword_H",
+        "Mage_Robe_H",
+        "Phoenix_Helm_H",
+        "Shadow_Greaves_H",
+        "Sand_Amulet_H",
+        "Sun_Disk_H"
       ]
     },
     {
