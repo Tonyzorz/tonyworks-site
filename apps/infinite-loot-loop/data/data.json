@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T00:11:14Z",
+  "generatedAt": "2026-07-21T02:15:10Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 313,
@@ -194,8 +194,8 @@
       "atkMax": 141,
       "expMin": 606,
       "expMax": 1333,
-      "goldMin": 256,
-      "goldMax": 640,
+      "goldMin": 251,
+      "goldMax": 628,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -252,8 +252,8 @@
       "atkMax": 185,
       "expMin": 876,
       "expMax": 1577,
-      "goldMin": 384,
-      "goldMax": 768,
+      "goldMin": 363,
+      "goldMax": 726,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -305,8 +305,8 @@
       "atkMax": 236,
       "expMin": 974,
       "expMax": 2143,
-      "goldMin": 427,
-      "goldMax": 1068,
+      "goldMin": 391,
+      "goldMax": 978,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -363,8 +363,8 @@
       "atkMax": 270,
       "expMin": 909,
       "expMax": 2000,
-      "goldMin": 384,
-      "goldMax": 960,
+      "goldMin": 333,
+      "goldMax": 833,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -416,8 +416,8 @@
       "atkMax": 296,
       "expMin": 1022,
       "expMax": 2657,
-      "goldMin": 432,
-      "goldMax": 1296,
+      "goldMin": 362,
+      "goldMax": 1086,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -459,8 +459,8 @@
       "atkMax": 351,
       "expMin": 1061,
       "expMax": 3183,
-      "goldMin": 448,
-      "goldMax": 1568,
+      "goldMin": 371,
+      "goldMax": 1299,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -512,8 +512,8 @@
       "atkMax": 367,
       "expMin": 1136,
       "expMax": 2954,
-      "goldMin": 480,
-      "goldMax": 1440,
+      "goldMin": 390,
+      "goldMax": 1170,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -560,8 +560,8 @@
       "atkMax": 427,
       "expMin": 1212,
       "expMax": 3636,
-      "goldMin": 512,
-      "goldMax": 1792,
+      "goldMin": 408,
+      "goldMax": 1428,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -613,8 +613,8 @@
       "atkMax": 440,
       "expMin": 1288,
       "expMax": 3349,
-      "goldMin": 544,
-      "goldMax": 1632,
+      "goldMin": 426,
+      "goldMax": 1278,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -661,8 +661,8 @@
       "atkMax": 470,
       "expMin": 1115,
       "expMax": 3345,
-      "goldMin": 461,
-      "goldMax": 1614,
+      "goldMin": 354,
+      "goldMax": 1239,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -714,8 +714,8 @@
       "atkMax": 542,
       "expMin": 1115,
       "expMax": 3345,
-      "goldMin": 461,
-      "goldMax": 1614,
+      "goldMin": 354,
+      "goldMax": 1239,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -772,8 +772,8 @@
       "atkMax": 511,
       "expMin": 1401,
       "expMax": 3643,
-      "goldMin": 592,
-      "goldMax": 1776,
+      "goldMin": 452,
+      "goldMax": 1356,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -808,9 +808,9 @@
       ]
     },
     {
-      "id": "ShadowHound_FR01 1",
+      "id": "ShadowHound_FR01",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_FR01_1.png",
+      "image": "enemy_ShadowHound_FR01.png",
       "isBoss": false,
       "minLevel": 37,
       "maxLevel": 40,
@@ -820,8 +820,8 @@
       "atkMax": 551,
       "expMin": 1850,
       "expMax": 4070,
-      "goldMin": 811,
-      "goldMax": 2028,
+      "goldMin": 613,
+      "goldMax": 1533,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -863,8 +863,8 @@
       "atkMax": 646,
       "expMin": 1101,
       "expMax": 4624,
-      "goldMin": 448,
-      "goldMax": 2240,
+      "goldMin": 329,
+      "goldMax": 1645,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -921,8 +921,8 @@
       "atkMax": 695,
       "expMin": 1311,
       "expMax": 5506,
-      "goldMin": 533,
-      "goldMax": 2665,
+      "goldMin": 371,
+      "goldMax": 1855,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -952,9 +952,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_FR03 1",
+      "id": "DesertScorpion_FR03",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_FR03_1.png",
+      "image": "enemy_DesertScorpion_FR03.png",
       "isBoss": false,
       "minLevel": 60,
       "maxLevel": 67,
@@ -964,8 +964,8 @@
       "atkMax": 661,
       "expMin": 1678,
       "expMax": 6376,
-      "goldMin": 683,
-      "goldMax": 3074,
+      "goldMin": 442,
+      "goldMax": 1989,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1007,8 +1007,8 @@
       "atkMax": 739,
       "expMin": 2107,
       "expMax": 8007,
-      "goldMin": 870,
-      "goldMax": 3915,
+      "goldMin": 553,
+      "goldMax": 2489,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1060,8 +1060,8 @@
       "atkMax": 729,
       "expMin": 1940,
       "expMax": 7372,
-      "goldMin": 789,
-      "goldMax": 3551,
+      "goldMin": 489,
+      "goldMax": 2201,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1096,9 +1096,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_FR03 1",
+      "id": "CrystalGolem_FR03",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_FR03_1.png",
+      "image": "enemy_CrystalGolem_FR03.png",
       "isBoss": false,
       "minLevel": 73,
       "maxLevel": 80,
@@ -1108,8 +1108,8 @@
       "atkMax": 810,
       "expMin": 2355,
       "expMax": 8949,
-      "goldMin": 973,
-      "goldMax": 4379,
+      "goldMin": 598,
+      "goldMax": 2691,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1161,8 +1161,8 @@
       "atkMax": 802,
       "expMin": 2479,
       "expMax": 8429,
-      "goldMin": 1024,
-      "goldMax": 4096,
+      "goldMin": 620,
+      "goldMax": 2480,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1197,9 +1197,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR03",
+      "id": "BloodWraith_FR03 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR03.png",
+      "image": "enemy_BloodWraith_FR03_1.png",
       "isBoss": false,
       "minLevel": 82,
       "maxLevel": 85,
@@ -1209,8 +1209,8 @@
       "atkMax": 748,
       "expMin": 3182,
       "expMax": 7000,
-      "goldMin": 1344,
-      "goldMax": 3360,
+      "goldMin": 802,
+      "goldMax": 2005,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1240,9 +1240,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR04",
+      "id": "BloodWraith_FR04 1",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR04.png",
+      "image": "enemy_BloodWraith_FR04_1.png",
       "isBoss": false,
       "minLevel": 85,
       "maxLevel": 90,
@@ -1252,8 +1252,8 @@
       "atkMax": 791,
       "expMin": 2727,
       "expMax": 8181,
-      "goldMin": 1126,
-      "goldMax": 3941,
+      "goldMin": 662,
+      "goldMax": 2317,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1293,9 +1293,9 @@
       ]
     },
     {
-      "id": "FlameImp_FR04 1",
+      "id": "FlameImp_FR04",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_FR04_1.png",
+      "image": "enemy_FlameImp_FR04.png",
       "isBoss": false,
       "minLevel": 88,
       "maxLevel": 94,
@@ -1305,8 +1305,8 @@
       "atkMax": 943,
       "expMin": 2820,
       "expMax": 9588,
-      "goldMin": 1165,
-      "goldMax": 4660,
+      "goldMin": 678,
+      "goldMax": 2712,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1353,8 +1353,8 @@
       "atkMax": 1051,
       "expMin": 2944,
       "expMax": 10010,
-      "goldMin": 1216,
-      "goldMax": 4864,
+      "goldMin": 699,
+      "goldMax": 2796,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1401,8 +1401,8 @@
       "atkMax": 1157,
       "expMin": 3068,
       "expMax": 10431,
-      "goldMin": 1267,
-      "goldMax": 5068,
+      "goldMin": 719,
+      "goldMax": 2876,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1437,9 +1437,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_FR04",
+      "id": "ChaosShaman_FR04 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_FR04.png",
+      "image": "enemy_ChaosShaman_FR04_1.png",
       "isBoss": false,
       "minLevel": 100,
       "maxLevel": 103,
@@ -1449,8 +1449,8 @@
       "atkMax": 1133,
       "expMin": 3863,
       "expMax": 8499,
-      "goldMin": 1632,
-      "goldMax": 4080,
+      "goldMin": 918,
+      "goldMax": 2295,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1497,8 +1497,8 @@
       "atkMax": 1229,
       "expMin": 3939,
       "expMax": 8666,
-      "goldMin": 1664,
-      "goldMax": 4160,
+      "goldMin": 930,
+      "goldMax": 2325,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1535,8 +1535,8 @@
       "atkMax": 1446,
       "expMin": 3347,
       "expMax": 12719,
-      "goldMin": 1382,
-      "goldMax": 6219,
+      "goldMin": 764,
+      "goldMax": 3438,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1566,9 +1566,9 @@
       ]
     },
     {
-      "id": "FlameImp_VO01 1",
+      "id": "FlameImp_VO01",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_VO01_1.png",
+      "image": "enemy_FlameImp_VO01.png",
       "isBoss": false,
       "minLevel": 108,
       "maxLevel": 115,
@@ -1578,8 +1578,8 @@
       "atkMax": 1572,
       "expMin": 2937,
       "expMax": 11161,
-      "goldMin": 1195,
-      "goldMax": 5378,
+      "goldMin": 653,
+      "goldMax": 2939,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1631,8 +1631,8 @@
       "atkMax": 1878,
       "expMin": 3042,
       "expMax": 12776,
-      "goldMin": 1237,
-      "goldMax": 6185,
+      "goldMin": 670,
+      "goldMax": 3350,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1679,8 +1679,8 @@
       "atkMax": 2104,
       "expMin": 3147,
       "expMax": 13217,
-      "goldMin": 1280,
-      "goldMax": 6400,
+      "goldMin": 686,
+      "goldMax": 3430,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1732,8 +1732,8 @@
       "atkMax": 2329,
       "expMin": 3252,
       "expMax": 13658,
-      "goldMin": 1323,
-      "goldMax": 6615,
+      "goldMin": 702,
+      "goldMax": 3510,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1780,8 +1780,8 @@
       "atkMax": 2555,
       "expMin": 3357,
       "expMax": 14099,
-      "goldMin": 1365,
-      "goldMax": 6825,
+      "goldMin": 717,
+      "goldMax": 3585,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1821,9 +1821,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_VO01 1",
+      "id": "ChaosShaman_VO01",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_VO01_1.png",
+      "image": "enemy_ChaosShaman_VO01.png",
       "isBoss": false,
       "minLevel": 128,
       "maxLevel": 136,
@@ -1833,8 +1833,8 @@
       "atkMax": 2780,
       "expMin": 3461,
       "expMax": 14536,
-      "goldMin": 1408,
-      "goldMax": 7040,
+      "goldMin": 733,
+      "goldMax": 3665,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1881,8 +1881,8 @@
       "atkMax": 3006,
       "expMin": 3566,
       "expMax": 14977,
-      "goldMin": 1451,
-      "goldMax": 7255,
+      "goldMin": 749,
+      "goldMax": 3745,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1929,8 +1929,8 @@
       "atkMax": 3073,
       "expMin": 3723,
       "expMax": 14147,
-      "goldMin": 1515,
-      "goldMax": 6818,
+      "goldMin": 772,
+      "goldMax": 3474,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -1967,8 +1967,8 @@
       "atkMax": 3271,
       "expMin": 4586,
       "expMax": 17427,
-      "goldMin": 1894,
-      "goldMax": 8523,
+      "goldMin": 953,
+      "goldMax": 4289,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2015,8 +2015,8 @@
       "atkMax": 3401,
       "expMin": 4012,
       "expMax": 16850,
-      "goldMin": 1632,
-      "goldMax": 8160,
+      "goldMin": 813,
+      "goldMax": 4065,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2068,8 +2068,8 @@
       "atkMax": 3533,
       "expMin": 3591,
       "expMax": 16519,
-      "goldMin": 1445,
-      "goldMax": 7948,
+      "goldMin": 713,
+      "goldMax": 3922,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2121,8 +2121,8 @@
       "atkMax": 3742,
       "expMin": 4222,
       "expMax": 17732,
-      "goldMin": 1717,
-      "goldMax": 8585,
+      "goldMin": 842,
+      "goldMax": 4210,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2174,8 +2174,8 @@
       "atkMax": 3870,
       "expMin": 3773,
       "expMax": 17356,
-      "goldMin": 1518,
-      "goldMax": 8349,
+      "goldMin": 738,
+      "goldMax": 4059,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2227,8 +2227,8 @@
       "atkMax": 4085,
       "expMin": 4432,
       "expMax": 18614,
-      "goldMin": 1803,
-      "goldMax": 9015,
+      "goldMin": 872,
+      "goldMax": 4360,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2280,8 +2280,8 @@
       "atkMax": 4463,
       "expMin": 4510,
       "expMax": 20746,
-      "goldMin": 1835,
-      "goldMax": 10093,
+      "goldMin": 882,
+      "goldMax": 4851,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2333,8 +2333,8 @@
       "atkMax": 4209,
       "expMin": 4615,
       "expMax": 17537,
-      "goldMin": 1877,
-      "goldMax": 8447,
+      "goldMin": 897,
+      "goldMax": 4037,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2386,8 +2386,8 @@
       "atkMax": 4211,
       "expMin": 6742,
       "expMax": 17529,
-      "goldMin": 2848,
-      "goldMax": 8544,
+      "goldMin": 1356,
+      "goldMax": 4068,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2429,8 +2429,8 @@
       "atkMax": 4466,
       "expMin": 6894,
       "expMax": 20682,
-      "goldMin": 2912,
-      "goldMax": 10192,
+      "goldMin": 1377,
+      "goldMax": 4820,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2477,8 +2477,8 @@
       "atkMax": 4600,
       "expMin": 5733,
       "expMax": 19492,
-      "goldMin": 2368,
-      "goldMax": 9472,
+      "goldMin": 1114,
+      "goldMax": 4456,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2530,8 +2530,8 @@
       "atkMax": 4783,
       "expMin": 5795,
       "expMax": 19703,
-      "goldMin": 2394,
-      "goldMax": 9576,
+      "goldMin": 1123,
+      "goldMax": 4492,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2583,8 +2583,8 @@
       "atkMax": 4967,
       "expMin": 5919,
       "expMax": 20125,
-      "goldMin": 2445,
-      "goldMax": 9780,
+      "goldMin": 1140,
+      "goldMax": 4560,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2636,8 +2636,8 @@
       "atkMax": 5152,
       "expMin": 5981,
       "expMax": 20335,
-      "goldMin": 2470,
-      "goldMax": 9880,
+      "goldMin": 1148,
+      "goldMax": 4592,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2689,8 +2689,8 @@
       "atkMax": 5624,
       "expMin": 6074,
       "expMax": 23081,
-      "goldMin": 2509,
-      "goldMax": 11291,
+      "goldMin": 1160,
+      "goldMax": 5220,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2732,8 +2732,8 @@
       "atkMax": 5747,
       "expMin": 4659,
       "expMax": 23295,
-      "goldMin": 1874,
-      "goldMax": 11244,
+      "goldMin": 855,
+      "goldMax": 5130,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2763,9 +2763,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_DS01 1",
+      "id": "DesertScorpion_DS01",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_DS01_1.png",
+      "image": "enemy_DesertScorpion_DS01.png",
       "isBoss": false,
       "minLevel": 205,
       "maxLevel": 217,
@@ -2775,8 +2775,8 @@
       "atkMax": 6172,
       "expMin": 4231,
       "expMax": 24540,
-      "goldMin": 1688,
-      "goldMax": 11816,
+      "goldMin": 764,
+      "goldMax": 5348,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2828,8 +2828,8 @@
       "atkMax": 6423,
       "expMin": 4331,
       "expMax": 25120,
-      "goldMin": 1728,
-      "goldMax": 12096,
+      "goldMin": 776,
+      "goldMax": 5432,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2876,8 +2876,8 @@
       "atkMax": 6591,
       "expMin": 3983,
       "expMax": 24695,
-      "goldMin": 1579,
-      "goldMax": 11843,
+      "goldMin": 703,
+      "goldMax": 5273,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2929,8 +2929,8 @@
       "atkMax": 7016,
       "expMin": 3701,
       "expMax": 25907,
-      "goldMin": 1459,
-      "goldMax": 12402,
+      "goldMin": 645,
+      "goldMax": 5483,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -2977,8 +2977,8 @@
       "atkMax": 7829,
       "expMin": 3273,
       "expMax": 29457,
-      "goldMin": 1280,
-      "goldMax": 14080,
+      "goldMin": 557,
+      "goldMax": 6127,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3020,8 +3020,8 @@
       "atkMax": 7178,
       "expMin": 5134,
       "expMax": 29777,
-      "goldMin": 2048,
-      "goldMax": 14336,
+      "goldMin": 874,
+      "goldMax": 6118,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3063,8 +3063,8 @@
       "atkMax": 7740,
       "expMin": 4755,
       "expMax": 31383,
-      "goldMin": 1884,
-      "goldMax": 15072,
+      "goldMin": 796,
+      "goldMax": 6368,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3116,8 +3116,8 @@
       "atkMax": 8422,
       "expMin": 4880,
       "expMax": 34160,
-      "goldMin": 1934,
-      "goldMax": 16439,
+      "goldMin": 811,
+      "goldMax": 6894,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3164,8 +3164,8 @@
       "atkMax": 8491,
       "expMin": 5006,
       "expMax": 33040,
-      "goldMin": 1984,
-      "goldMax": 15872,
+      "goldMin": 825,
+      "goldMax": 6600,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3217,8 +3217,8 @@
       "atkMax": 8866,
       "expMin": 5149,
       "expMax": 33983,
-      "goldMin": 2041,
-      "goldMax": 16328,
+      "goldMin": 842,
+      "goldMax": 6736,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3265,8 +3265,8 @@
       "atkMax": 9006,
       "expMin": 5896,
       "expMax": 34197,
-      "goldMin": 2352,
-      "goldMax": 16464,
+      "goldMin": 963,
+      "goldMax": 6741,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3296,9 +3296,9 @@
       ]
     },
     {
-      "id": "ShadowHound_DS03 1",
+      "id": "ShadowHound_DS03",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_DS03_1.png",
+      "image": "enemy_ShadowHound_DS03.png",
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
@@ -3308,8 +3308,8 @@
       "atkMax": 9121,
       "expMin": 5000,
       "expMax": 35000,
-      "goldMin": 1971,
-      "goldMax": 16754,
+      "goldMin": 796,
+      "goldMax": 6766,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3366,8 +3366,8 @@
       "atkMax": 13147,
       "expMin": 5000,
       "expMax": 35000,
-      "goldMin": 1971,
-      "goldMax": 16754,
+      "goldMin": 796,
+      "goldMax": 6766,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3409,8 +3409,8 @@
       "atkMax": 15158,
       "expMin": 5000,
       "expMax": 35000,
-      "goldMin": 1971,
-      "goldMax": 16754,
+      "goldMin": 796,
+      "goldMax": 6766,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3447,8 +3447,8 @@
       "atkMax": 16183,
       "expMin": 5195,
       "expMax": 38443,
-      "goldMin": 2048,
-      "goldMax": 18432,
+      "goldMin": 818,
+      "goldMax": 7362,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3490,8 +3490,8 @@
       "atkMax": 10287,
       "expMin": 5195,
       "expMax": 38443,
-      "goldMin": 2048,
-      "goldMax": 18432,
+      "goldMin": 818,
+      "goldMax": 7362,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3548,8 +3548,8 @@
       "atkMax": 14043,
       "expMin": 5195,
       "expMax": 38443,
-      "goldMin": 2048,
-      "goldMax": 18432,
+      "goldMin": 818,
+      "goldMax": 7362,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3596,8 +3596,8 @@
       "atkMax": 15023,
       "expMin": 4568,
       "expMax": 41112,
-      "goldMin": 1787,
-      "goldMax": 19657,
+      "goldMin": 704,
+      "goldMax": 7744,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3637,9 +3637,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_DS03 1",
+      "id": "CrystalGolem_DS03",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_DS03_1.png",
+      "image": "enemy_CrystalGolem_DS03.png",
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
@@ -3649,8 +3649,8 @@
       "atkMax": 11554,
       "expMin": 4568,
       "expMax": 41112,
-      "goldMin": 1787,
-      "goldMax": 19657,
+      "goldMin": 704,
+      "goldMax": 7744,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3707,8 +3707,8 @@
       "atkMax": 17306,
       "expMin": 4568,
       "expMax": 41112,
-      "goldMin": 1787,
-      "goldMax": 19657,
+      "goldMin": 704,
+      "goldMax": 7744,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3750,8 +3750,8 @@
       "atkMax": 17794,
       "expMin": 4773,
       "expMax": 42957,
-      "goldMin": 1867,
-      "goldMax": 20537,
+      "goldMin": 726,
+      "goldMax": 7986,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3788,8 +3788,8 @@
       "atkMax": 12423,
       "expMin": 4773,
       "expMax": 42957,
-      "goldMin": 1867,
-      "goldMax": 20537,
+      "goldMin": 726,
+      "goldMax": 7986,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3846,8 +3846,8 @@
       "atkMax": 15454,
       "expMin": 4773,
       "expMax": 42957,
-      "goldMin": 1867,
-      "goldMax": 20537,
+      "goldMin": 726,
+      "goldMax": 7986,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3899,8 +3899,8 @@
       "atkMax": 18286,
       "expMin": 4977,
       "expMax": 44793,
-      "goldMin": 1947,
-      "goldMax": 21417,
+      "goldMin": 747,
+      "goldMax": 8217,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3937,8 +3937,8 @@
       "atkMax": 13289,
       "expMin": 4977,
       "expMax": 44793,
-      "goldMin": 1947,
-      "goldMax": 21417,
+      "goldMin": 747,
+      "goldMax": 8217,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -3990,8 +3990,8 @@
       "atkMax": 15889,
       "expMin": 4977,
       "expMax": 44793,
-      "goldMin": 1947,
-      "goldMax": 21417,
+      "goldMin": 747,
+      "goldMax": 8217,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4038,8 +4038,8 @@
       "atkMax": 18777,
       "expMin": 5182,
       "expMax": 46638,
-      "goldMin": 2027,
-      "goldMax": 22297,
+      "goldMin": 768,
+      "goldMax": 8448,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4071,8 +4071,8 @@
       "atkMax": 14154,
       "expMin": 5182,
       "expMax": 46638,
-      "goldMin": 2027,
-      "goldMax": 22297,
+      "goldMin": 768,
+      "goldMax": 8448,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4109,8 +4109,8 @@
       "atkMax": 16323,
       "expMin": 5182,
       "expMax": 46638,
-      "goldMin": 2027,
-      "goldMax": 22297,
+      "goldMin": 768,
+      "goldMax": 8448,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4152,8 +4152,8 @@
       "atkMax": 17439,
       "expMin": 6623,
       "expMax": 46361,
-      "goldMin": 2611,
-      "goldMax": 22194,
+      "goldMin": 969,
+      "goldMax": 8237,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4200,8 +4200,8 @@
       "atkMax": 17976,
       "expMin": 6785,
       "expMax": 47495,
-      "goldMin": 2675,
-      "goldMax": 22738,
+      "goldMin": 986,
+      "goldMax": 8381,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4253,8 +4253,8 @@
       "atkMax": 18513,
       "expMin": 6948,
       "expMax": 48636,
-      "goldMin": 2739,
-      "goldMax": 23282,
+      "goldMin": 1002,
+      "goldMax": 8517,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4306,8 +4306,8 @@
       "atkMax": 19298,
       "expMin": 7805,
       "expMax": 51513,
-      "goldMin": 3093,
-      "goldMax": 24744,
+      "goldMin": 1126,
+      "goldMax": 9008,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4359,8 +4359,8 @@
       "atkMax": 19092,
       "expMin": 7931,
       "expMax": 49172,
-      "goldMin": 3143,
-      "goldMax": 23573,
+      "goldMin": 1139,
+      "goldMax": 8543,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4412,8 +4412,8 @@
       "atkMax": 20675,
       "expMin": 8984,
       "expMax": 55701,
-      "goldMin": 3584,
-      "goldMax": 26880,
+      "goldMin": 1294,
+      "goldMax": 9705,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4455,8 +4455,8 @@
       "atkMax": 18333,
       "expMin": 8289,
       "expMax": 51392,
-      "goldMin": 3285,
-      "goldMax": 24638,
+      "goldMin": 1175,
+      "goldMax": 8813,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4498,8 +4498,8 @@
       "atkMax": 21145,
       "expMin": 8289,
       "expMax": 51392,
-      "goldMin": 3285,
-      "goldMax": 24638,
+      "goldMin": 1175,
+      "goldMax": 8813,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4546,8 +4546,8 @@
       "atkMax": 24445,
       "expMin": 8289,
       "expMax": 51392,
-      "goldMin": 3285,
-      "goldMax": 24638,
+      "goldMin": 1175,
+      "goldMax": 8813,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4594,8 +4594,8 @@
       "atkMax": 19622,
       "expMin": 9385,
       "expMax": 58187,
-      "goldMin": 3744,
-      "goldMax": 28080,
+      "goldMin": 1334,
+      "goldMax": 10005,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4647,8 +4647,8 @@
       "atkMax": 22643,
       "expMin": 9385,
       "expMax": 58187,
-      "goldMin": 3744,
-      "goldMax": 28080,
+      "goldMin": 1334,
+      "goldMax": 10005,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4705,8 +4705,8 @@
       "atkMax": 26730,
       "expMin": 8469,
       "expMax": 59283,
-      "goldMin": 3356,
-      "goldMax": 28526,
+      "goldMin": 1193,
+      "goldMax": 10141,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4758,8 +4758,8 @@
       "atkMax": 20048,
       "expMin": 8558,
       "expMax": 56483,
-      "goldMin": 3392,
-      "goldMax": 27136,
+      "goldMin": 1201,
+      "goldMax": 9608,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4806,8 +4806,8 @@
       "atkMax": 23146,
       "expMin": 8558,
       "expMax": 56483,
-      "goldMin": 3392,
-      "goldMax": 27136,
+      "goldMin": 1201,
+      "goldMax": 9608,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4859,8 +4859,8 @@
       "atkMax": 27533,
       "expMin": 8648,
       "expMax": 60536,
-      "goldMin": 3428,
-      "goldMax": 29138,
+      "goldMin": 1210,
+      "goldMax": 10285,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4907,8 +4907,8 @@
       "atkMax": 23826,
       "expMin": 8702,
       "expMax": 57433,
-      "goldMin": 3449,
-      "goldMax": 27592,
+      "goldMin": 1216,
+      "goldMax": 9728,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -4960,8 +4960,8 @@
       "atkMax": 20626,
       "expMin": 8702,
       "expMax": 57433,
-      "goldMin": 3449,
-      "goldMax": 27592,
+      "goldMin": 1216,
+      "goldMax": 9728,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5013,8 +5013,8 @@
       "atkMax": 28338,
       "expMin": 8828,
       "expMax": 61796,
-      "goldMin": 3499,
-      "goldMax": 29742,
+      "goldMin": 1228,
+      "goldMax": 10438,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5061,8 +5061,8 @@
       "atkMax": 21206,
       "expMin": 8846,
       "expMax": 58384,
-      "goldMin": 3506,
-      "goldMax": 28048,
+      "goldMin": 1230,
+      "goldMax": 9840,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5109,8 +5109,8 @@
       "atkMax": 24506,
       "expMin": 8846,
       "expMax": 58384,
-      "goldMin": 3506,
-      "goldMax": 28048,
+      "goldMin": 1230,
+      "goldMax": 9840,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5157,8 +5157,8 @@
       "atkMax": 21786,
       "expMin": 8953,
       "expMax": 59090,
-      "goldMin": 3548,
-      "goldMax": 28384,
+      "goldMin": 1240,
+      "goldMax": 9920,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5200,8 +5200,8 @@
       "atkMax": 25186,
       "expMin": 8953,
       "expMax": 59090,
-      "goldMin": 3548,
-      "goldMax": 28384,
+      "goldMin": 1240,
+      "goldMax": 9920,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5238,8 +5238,8 @@
       "atkMax": 29141,
       "expMin": 9007,
       "expMax": 63049,
-      "goldMin": 3570,
-      "goldMax": 30345,
+      "goldMin": 1245,
+      "goldMax": 10583,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5281,8 +5281,8 @@
       "atkMax": 29944,
       "expMin": 9187,
       "expMax": 64309,
-      "goldMin": 3641,
-      "goldMax": 30949,
+      "goldMin": 1262,
+      "goldMax": 10727,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5319,8 +5319,8 @@
       "atkMax": 28970,
       "expMin": 29317,
       "expMax": 42510,
-      "goldMin": 13760,
-      "goldMax": 19952,
+      "goldMin": 4760,
+      "goldMax": 6902,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5383,8 +5383,8 @@
       "atkMax": 30012,
       "expMin": 29545,
       "expMax": 41363,
-      "goldMin": 13867,
-      "goldMax": 19414,
+      "goldMin": 4786,
+      "goldMax": 6700,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5443,8 +5443,8 @@
       "atkMax": 31034,
       "expMin": 29658,
       "expMax": 41521,
-      "goldMin": 13920,
-      "goldMax": 19488,
+      "goldMin": 4798,
+      "goldMax": 6717,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5487,8 +5487,8 @@
       "atkMax": 32200,
       "expMin": 30113,
       "expMax": 42158,
-      "goldMin": 14133,
-      "goldMax": 19786,
+      "goldMin": 4850,
+      "goldMax": 6790,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5551,8 +5551,8 @@
       "atkMax": 34534,
       "expMin": 30341,
       "expMax": 42477,
-      "goldMin": 14240,
-      "goldMax": 19936,
+      "goldMin": 4876,
+      "goldMax": 6826,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5611,8 +5611,8 @@
       "atkMax": 35700,
       "expMin": 30454,
       "expMax": 42636,
-      "goldMin": 14293,
-      "goldMax": 20010,
+      "goldMin": 4888,
+      "goldMax": 6843,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5655,8 +5655,8 @@
       "atkMax": 38334,
       "expMin": 30908,
       "expMax": 44817,
-      "goldMin": 14507,
-      "goldMax": 21035,
+      "goldMin": 4939,
+      "goldMax": 7162,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5719,8 +5719,8 @@
       "atkMax": 38106,
       "expMin": 29890,
       "expMax": 43341,
-      "goldMin": 14029,
-      "goldMax": 20342,
+      "goldMin": 4766,
+      "goldMax": 6911,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5778,8 +5778,8 @@
       "atkMax": 41052,
       "expMin": 31249,
       "expMax": 45311,
-      "goldMin": 14667,
-      "goldMax": 21267,
+      "goldMin": 4977,
+      "goldMax": 7217,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5837,8 +5837,8 @@
       "atkMax": 40950,
       "expMin": 31477,
       "expMax": 44068,
-      "goldMin": 14773,
-      "goldMax": 20682,
+      "goldMin": 5002,
+      "goldMax": 7003,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5881,8 +5881,8 @@
       "atkMax": 50874,
       "expMin": 28434,
       "expMax": 48338,
-      "goldMin": 13345,
-      "goldMax": 22687,
+      "goldMin": 4498,
+      "goldMax": 7647,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -5929,8 +5929,8 @@
       "atkMax": 50874,
       "expMin": 28434,
       "expMax": 48338,
-      "goldMin": 13345,
-      "goldMax": 22687,
+      "goldMin": 4498,
+      "goldMax": 7647,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6484,8 +6484,8 @@
       "atkMax": 48912,
       "expMin": 34147,
       "expMax": 47806,
-      "goldMin": 16027,
-      "goldMax": 22438,
+      "goldMin": 5297,
+      "goldMax": 7416,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6548,8 +6548,8 @@
       "atkMax": 52471,
       "expMin": 34374,
       "expMax": 48124,
-      "goldMin": 16133,
-      "goldMax": 22586,
+      "goldMin": 5321,
+      "goldMax": 7449,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6608,8 +6608,8 @@
       "atkMax": 54250,
       "expMin": 34488,
       "expMax": 48283,
-      "goldMin": 16187,
-      "goldMax": 22662,
+      "goldMin": 5333,
+      "goldMax": 7466,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6652,8 +6652,8 @@
       "atkMax": 62300,
       "expMin": 35227,
       "expMax": 49318,
-      "goldMin": 16533,
-      "goldMax": 23146,
+      "goldMin": 5413,
+      "goldMax": 7578,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6702,8 +6702,8 @@
       "atkMax": 62300,
       "expMin": 35227,
       "expMax": 49318,
-      "goldMin": 16533,
-      "goldMax": 23146,
+      "goldMin": 5413,
+      "goldMax": 7578,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6866,8 +6866,8 @@
       "atkMax": 65411,
       "expMin": 36022,
       "expMax": 50431,
-      "goldMin": 16907,
-      "goldMax": 23670,
+      "goldMin": 5498,
+      "goldMax": 7697,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6915,8 +6915,8 @@
       "atkMax": 71634,
       "expMin": 35908,
       "expMax": 50271,
-      "goldMin": 16853,
-      "goldMax": 23594,
+      "goldMin": 5486,
+      "goldMax": 7680,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -6964,8 +6964,8 @@
       "atkMax": 68130,
       "expMin": 34799,
       "expMax": 50459,
-      "goldMin": 16333,
-      "goldMax": 23683,
+      "goldMin": 5302,
+      "goldMax": 7688,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7013,8 +7013,8 @@
       "atkMax": 74192,
       "expMin": 36022,
       "expMax": 52232,
-      "goldMin": 16907,
-      "goldMax": 24515,
+      "goldMin": 5498,
+      "goldMax": 7972,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7067,8 +7067,8 @@
       "atkMax": 71634,
       "expMin": 36022,
       "expMax": 50431,
-      "goldMin": 16907,
-      "goldMax": 23670,
+      "goldMin": 5498,
+      "goldMax": 7697,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7117,8 +7117,8 @@
       "atkMax": 71634,
       "expMin": 35908,
       "expMax": 50271,
-      "goldMin": 16853,
-      "goldMax": 23594,
+      "goldMin": 5486,
+      "goldMax": 7680,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7162,8 +7162,8 @@
       "atkMax": 73680,
       "expMin": 34799,
       "expMax": 52199,
-      "goldMin": 16333,
-      "goldMax": 24500,
+      "goldMin": 5302,
+      "goldMax": 7953,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7206,8 +7206,8 @@
       "atkMax": 73680,
       "expMin": 35072,
       "expMax": 52608,
-      "goldMin": 16461,
-      "goldMax": 24692,
+      "goldMin": 5330,
+      "goldMax": 7995,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7359,8 +7359,8 @@
       "atkMax": 87016,
       "expMin": 34405,
       "expMax": 55048,
-      "goldMin": 16148,
-      "goldMax": 25837,
+      "goldMin": 5198,
+      "goldMax": 8317,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7586,8 +7586,8 @@
       "atkMax": 88666,
       "expMin": 39204,
       "expMax": 54886,
-      "goldMin": 18400,
-      "goldMax": 25760,
+      "goldMin": 5834,
+      "goldMax": 8168,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7640,8 +7640,8 @@
       "atkMax": 94850,
       "expMin": 39317,
       "expMax": 55044,
-      "goldMin": 18453,
-      "goldMax": 25834,
+      "goldMin": 5846,
+      "goldMax": 8184,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7679,8 +7679,8 @@
       "atkMax": 101966,
       "expMin": 39716,
       "expMax": 55602,
-      "goldMin": 18640,
-      "goldMax": 26096,
+      "goldMin": 5887,
+      "goldMax": 8242,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -7733,8 +7733,8 @@
       "atkMax": 109084,
       "expMin": 39829,
       "expMax": 55761,
-      "goldMin": 18693,
-      "goldMax": 26170,
+      "goldMin": 5899,
+      "goldMax": 8259,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8090,8 +8090,8 @@
       "atkMax": 124834,
       "expMin": 40341,
       "expMax": 56477,
-      "goldMin": 18933,
-      "goldMax": 26506,
+      "goldMin": 5952,
+      "goldMax": 8333,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8145,8 +8145,8 @@
       "atkMax": 124834,
       "expMin": 40341,
       "expMax": 56477,
-      "goldMin": 18933,
-      "goldMax": 26506,
+      "goldMin": 5952,
+      "goldMax": 8333,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8185,8 +8185,8 @@
       "atkMax": 134750,
       "expMin": 40738,
       "expMax": 57033,
-      "goldMin": 19120,
-      "goldMax": 26768,
+      "goldMin": 5992,
+      "goldMax": 8389,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8239,8 +8239,8 @@
       "atkMax": 144666,
       "expMin": 40852,
       "expMax": 57193,
-      "goldMin": 19173,
-      "goldMax": 26842,
+      "goldMin": 6004,
+      "goldMax": 8406,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8278,8 +8278,8 @@
       "atkMax": 165666,
       "expMin": 41363,
       "expMax": 57908,
-      "goldMin": 19413,
-      "goldMax": 27178,
+      "goldMin": 6057,
+      "goldMax": 8480,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8333,8 +8333,8 @@
       "atkMax": 165666,
       "expMin": 41363,
       "expMax": 57908,
-      "goldMin": 19413,
-      "goldMax": 27178,
+      "goldMin": 6057,
+      "goldMax": 8480,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8685,8 +8685,8 @@
       "atkMax": 190166,
       "expMin": 41874,
       "expMax": 58624,
-      "goldMin": 19653,
-      "goldMax": 27514,
+      "goldMin": 6109,
+      "goldMax": 8553,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8740,8 +8740,8 @@
       "atkMax": 190166,
       "expMin": 41874,
       "expMax": 58624,
-      "goldMin": 19653,
-      "goldMax": 27514,
+      "goldMin": 6109,
+      "goldMax": 8553,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8780,8 +8780,8 @@
       "atkMax": 204750,
       "expMin": 42272,
       "expMax": 59181,
-      "goldMin": 19840,
-      "goldMax": 27776,
+      "goldMin": 6150,
+      "goldMax": 8610,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8829,8 +8829,8 @@
       "atkMax": 219334,
       "expMin": 42386,
       "expMax": 59340,
-      "goldMin": 19893,
-      "goldMax": 27850,
+      "goldMin": 6162,
+      "goldMax": 8627,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8868,8 +8868,8 @@
       "atkMax": 272000,
       "expMin": 38131,
       "expMax": 64823,
-      "goldMin": 17896,
-      "goldMax": 30423,
+      "goldMin": 5523,
+      "goldMax": 9389,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -8926,8 +8926,8 @@
       "atkMax": 272000,
       "expMin": 38131,
       "expMax": 64823,
-      "goldMin": 17896,
-      "goldMax": 30423,
+      "goldMin": 5523,
+      "goldMax": 9389,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -9428,8 +9428,8 @@
       "atkMax": 256812,
       "expMin": 46192,
       "expMax": 64669,
-      "goldMin": 21680,
-      "goldMax": 30352,
+      "goldMin": 6544,
+      "goldMax": 9162,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -9476,8 +9476,8 @@
       "atkMax": 256812,
       "expMin": 46192,
       "expMax": 64669,
-      "goldMin": 21680,
-      "goldMax": 30352,
+      "goldMin": 6544,
+      "goldMax": 9162,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -9601,8 +9601,8 @@
       "atkMax": 261625,
       "expMin": 46420,
       "expMax": 64988,
-      "goldMin": 21787,
-      "goldMax": 30502,
+      "goldMin": 6567,
+      "goldMax": 9194,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -9801,8 +9801,8 @@
       "atkMax": 266437,
       "expMin": 46647,
       "expMax": 65306,
-      "goldMin": 21893,
-      "goldMax": 30650,
+      "goldMin": 6589,
+      "goldMax": 9225,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -9849,8 +9849,8 @@
       "atkMax": 271250,
       "expMin": 46874,
       "expMax": 65624,
-      "goldMin": 22000,
-      "goldMax": 30800,
+      "goldMin": 6612,
+      "goldMax": 9257,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -9897,8 +9897,8 @@
       "atkMax": 276062,
       "expMin": 47102,
       "expMax": 65943,
-      "goldMin": 22107,
-      "goldMax": 30950,
+      "goldMin": 6633,
+      "goldMax": 9286,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -9945,8 +9945,8 @@
       "atkMax": 296307,
       "expMin": 43793,
       "expMax": 70069,
-      "goldMin": 20554,
-      "goldMax": 32886,
+      "goldMin": 6155,
+      "goldMax": 9848,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -9993,8 +9993,8 @@
       "atkMax": 296307,
       "expMin": 43793,
       "expMax": 70069,
-      "goldMin": 20554,
-      "goldMax": 32886,
+      "goldMin": 6155,
+      "goldMax": 9848,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -10041,8 +10041,8 @@
       "atkMax": 285687,
       "expMin": 47783,
       "expMax": 66896,
-      "goldMin": 22427,
-      "goldMax": 31398,
+      "goldMin": 6701,
+      "goldMax": 9381,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -10323,8 +10323,8 @@
       "atkMax": 308760,
       "expMin": 46145,
       "expMax": 71525,
-      "goldMin": 21658,
-      "goldMax": 33570,
+      "goldMin": 6459,
+      "goldMax": 10011,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -36689,7 +36689,7 @@
       "goldMultiplier": 46,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_DS01 1",
+          "enemyId": "DesertScorpion_DS01",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -36849,7 +36849,7 @@
       "goldMultiplier": 70,
       "enemies": [
         {
-          "enemyId": "ShadowHound_DS03 1",
+          "enemyId": "ShadowHound_DS03",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -36889,7 +36889,7 @@
       "goldMultiplier": 74,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_DS03 1",
+          "enemyId": "CrystalGolem_DS03",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -37361,7 +37361,7 @@
       "goldMultiplier": 7.5,
       "enemies": [
         {
-          "enemyId": "ShadowHound_FR01 1",
+          "enemyId": "ShadowHound_FR01",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -37441,7 +37441,7 @@
       "goldMultiplier": 13,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_FR03 1",
+          "enemyId": "DesertScorpion_FR03",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -37501,7 +37501,7 @@
       "goldMultiplier": 16,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_FR03 1",
+          "enemyId": "CrystalGolem_FR03",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -37541,7 +37541,7 @@
       "goldMultiplier": 18,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR03",
+          "enemyId": "BloodWraith_FR03 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -37561,7 +37561,7 @@
       "goldMultiplier": 19,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR04",
+          "enemyId": "BloodWraith_FR04 1",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -37581,7 +37581,7 @@
       "goldMultiplier": 20,
       "enemies": [
         {
-          "enemyId": "FlameImp_FR04 1",
+          "enemyId": "FlameImp_FR04",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -37641,7 +37641,7 @@
       "goldMultiplier": 23,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_FR04",
+          "enemyId": "ChaosShaman_FR04 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -45244,7 +45244,7 @@
       "goldMultiplier": 32,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_VO01 1",
+          "enemyId": "ChaosShaman_VO01",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -45344,7 +45344,7 @@
       "goldMultiplier": 27,
       "enemies": [
         {
-          "enemyId": "FlameImp_VO01 1",
+          "enemyId": "FlameImp_VO01",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -45856,7 +45856,7 @@
         "VineGolem",
         "ThunderBeetle",
         "MoonWisp",
-        "ShadowHound_FR01 1",
+        "ShadowHound_FR01",
         "ForestRoadSprite_H",
         "CrystalLizard_H",
         "IronToad_H",
@@ -45990,12 +45990,12 @@
       "maxLevel": 672,
       "zoneCount": 12,
       "enemyIds": [
-        "DesertScorpion_FR03 1",
+        "DesertScorpion_FR03",
         "DarkPrince",
         "VoidRat",
-        "CrystalGolem_FR03 1",
+        "CrystalGolem_FR03",
         "BoneHydra",
-        "BloodWraith_FR03",
+        "BloodWraith_FR03 1",
         "DesertScorpion_H",
         "DarkPrince_H",
         "VoidRat_H",
@@ -46063,11 +46063,11 @@
       "maxLevel": 700,
       "zoneCount": 12,
       "enemyIds": [
-        "BloodWraith_FR04",
-        "FlameImp_FR04 1",
+        "BloodWraith_FR04 1",
+        "FlameImp_FR04",
         "RuneGolem",
         "ThunderLynx",
-        "ChaosShaman_FR04",
+        "ChaosShaman_FR04 1",
         "IronMantis",
         "BloodWraith_H",
         "FlameImp_H",
@@ -46150,12 +46150,12 @@
         "AshBat_H",
         "MagmaGolem",
         "InfernoWitch",
-        "ChaosShaman_VO01 1",
+        "ChaosShaman_VO01",
         "AbyssLord",
         "ForestDemon",
         "FireDrake",
         "RockCrab",
-        "FlameImp_VO01 1",
+        "FlameImp_VO01",
         "AshBat"
       ],
       "bossIds": [
@@ -46391,7 +46391,7 @@
         "PyramidGolem",
         "PharaohGuardian",
         "DesertViper",
-        "DesertScorpion_DS01 1",
+        "DesertScorpion_DS01",
         "SandWraith",
         "CactusKnight_H",
         "PyramidGolem_H",
@@ -46534,9 +46534,9 @@
       "maxLevel": 868,
       "zoneCount": 12,
       "enemyIds": [
-        "ShadowHound_DS03 1",
+        "ShadowHound_DS03",
         "EmberDrake",
-        "CrystalGolem_DS03 1",
+        "CrystalGolem_DS03",
         "MagmaWyrm",
         "ObsidianKing",
         "SunSentinel",
