@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T23:07:59Z",
+  "generatedAt": "2026-07-21T00:11:14Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 313,
@@ -88,8 +88,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "IronRing",
-          "itemName": "Iron Ring",
+          "itemId": "LeatherCap",
+          "itemName": "Leather Cap",
           "chance": 3
         },
         {
@@ -98,8 +98,8 @@
           "chance": 3
         },
         {
-          "itemId": "LeatherCap",
-          "itemName": "Leather Cap",
+          "itemId": "IronRing",
+          "itemName": "Iron Ring",
           "chance": 3
         },
         {
@@ -146,13 +146,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "SilverRing",
-          "itemName": "Silver Ring",
+          "itemId": "SteelLongsword",
+          "itemName": "Steel Longsword",
           "chance": 3
         },
         {
-          "itemId": "SteelLongsword",
-          "itemName": "Steel Longsword",
+          "itemId": "SilverRing",
+          "itemName": "Silver Ring",
           "chance": 3
         },
         {
@@ -262,13 +262,13 @@
           "chance": 3
         },
         {
-          "itemId": "IceBlade",
-          "itemName": "Ice Blade",
+          "itemId": "RubyRing",
+          "itemName": "Ruby Ring",
           "chance": 3
         },
         {
-          "itemId": "RubyRing",
-          "itemName": "Ruby Ring",
+          "itemId": "IceBlade",
+          "itemName": "Ice Blade",
           "chance": 3
         },
         {
@@ -320,13 +320,13 @@
           "chance": 3
         },
         {
-          "itemId": "ShadowDagger",
-          "itemName": "Shadow Dagger",
+          "itemId": "SteelSabatons",
+          "itemName": "Steel Sabatons",
           "chance": 3
         },
         {
-          "itemId": "SteelSabatons",
-          "itemName": "Steel Sabatons",
+          "itemId": "ShadowDagger",
+          "itemName": "Shadow Dagger",
           "chance": 3
         },
         {
@@ -808,9 +808,9 @@
       ]
     },
     {
-      "id": "ShadowHound_FR01",
+      "id": "ShadowHound_FR01 1",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_FR01.png",
+      "image": "enemy_ShadowHound_FR01_1.png",
       "isBoss": false,
       "minLevel": 37,
       "maxLevel": 40,
@@ -952,9 +952,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_FR03",
+      "id": "DesertScorpion_FR03 1",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_FR03.png",
+      "image": "enemy_DesertScorpion_FR03_1.png",
       "isBoss": false,
       "minLevel": 60,
       "maxLevel": 67,
@@ -969,23 +969,18 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "BoneCrown",
-          "itemName": "Tomb Mask",
+          "itemId": "DemonRing",
+          "itemName": "Demon Ring",
           "chance": 3
         },
         {
-          "itemId": "SpiritGreaves",
-          "itemName": "Shadow Greaves",
+          "itemId": "ChaosGreaves",
+          "itemName": "Chaos Greaves",
           "chance": 3
         },
         {
-          "itemId": "ShadowAmulet",
-          "itemName": "Shadow Amulet",
-          "chance": 3
-        },
-        {
-          "itemId": "SoulBlade",
-          "itemName": "Holy Sword",
+          "itemId": "CursedBoots",
+          "itemName": "Cursed Boots",
           "chance": 3
         }
       ],
@@ -1030,6 +1025,16 @@
           "itemId": "CursedBoots",
           "itemName": "Cursed Boots",
           "chance": 3
+        },
+        {
+          "itemId": "VoidShard",
+          "itemName": "Void Shard",
+          "chance": 3
+        },
+        {
+          "itemId": "PhantomCloak",
+          "itemName": "Phantom Armor",
+          "chance": 3
         }
       ],
       "worlds": [
@@ -1060,16 +1065,6 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "DemonRing",
-          "itemName": "Demon Ring",
-          "chance": 3
-        },
-        {
-          "itemId": "ChaosGreaves",
-          "itemName": "Chaos Greaves",
-          "chance": 3
-        },
-        {
           "itemId": "CursedBoots",
           "itemName": "Cursed Boots",
           "chance": 3
@@ -1082,6 +1077,11 @@
         {
           "itemId": "PhantomCloak",
           "itemName": "Phantom Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "BoneCrown",
+          "itemName": "Tomb Mask",
           "chance": 3
         }
       ],
@@ -1096,9 +1096,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_FR03",
+      "id": "CrystalGolem_FR03 1",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_FR03.png",
+      "image": "enemy_CrystalGolem_FR03_1.png",
       "isBoss": false,
       "minLevel": 73,
       "maxLevel": 80,
@@ -1113,6 +1113,21 @@
       "permanentBPReward": 0,
       "drops": [
         {
+          "itemId": "VoidShard",
+          "itemName": "Void Shard",
+          "chance": 3
+        },
+        {
+          "itemId": "PhantomCloak",
+          "itemName": "Phantom Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "BoneCrown",
+          "itemName": "Tomb Mask",
+          "chance": 3
+        },
+        {
           "itemId": "SpiritGreaves",
           "itemName": "Shadow Greaves",
           "chance": 3
@@ -1120,11 +1135,6 @@
         {
           "itemId": "ShadowAmulet",
           "itemName": "Shadow Amulet",
-          "chance": 3
-        },
-        {
-          "itemId": "SoulBlade",
-          "itemName": "Holy Sword",
           "chance": 3
         }
       ],
@@ -1156,23 +1166,23 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "CursedBoots",
-          "itemName": "Cursed Boots",
-          "chance": 3
-        },
-        {
-          "itemId": "VoidShard",
-          "itemName": "Void Shard",
-          "chance": 3
-        },
-        {
-          "itemId": "PhantomCloak",
-          "itemName": "Phantom Armor",
-          "chance": 3
-        },
-        {
           "itemId": "BoneCrown",
           "itemName": "Tomb Mask",
+          "chance": 3
+        },
+        {
+          "itemId": "SpiritGreaves",
+          "itemName": "Shadow Greaves",
+          "chance": 3
+        },
+        {
+          "itemId": "ShadowAmulet",
+          "itemName": "Shadow Amulet",
+          "chance": 3
+        },
+        {
+          "itemId": "SoulBlade",
+          "itemName": "Holy Sword",
           "chance": 3
         }
       ],
@@ -1187,9 +1197,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR03 1",
+      "id": "BloodWraith_FR03",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR03_1.png",
+      "image": "enemy_BloodWraith_FR03.png",
       "isBoss": false,
       "minLevel": 82,
       "maxLevel": 85,
@@ -1204,21 +1214,6 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "VoidShard",
-          "itemName": "Void Shard",
-          "chance": 3
-        },
-        {
-          "itemId": "PhantomCloak",
-          "itemName": "Phantom Armor",
-          "chance": 3
-        },
-        {
-          "itemId": "BoneCrown",
-          "itemName": "Tomb Mask",
-          "chance": 3
-        },
-        {
           "itemId": "SpiritGreaves",
           "itemName": "Shadow Greaves",
           "chance": 3
@@ -1226,6 +1221,11 @@
         {
           "itemId": "ShadowAmulet",
           "itemName": "Shadow Amulet",
+          "chance": 3
+        },
+        {
+          "itemId": "SoulBlade",
+          "itemName": "Holy Sword",
           "chance": 3
         }
       ],
@@ -1240,9 +1240,9 @@
       ]
     },
     {
-      "id": "BloodWraith_FR04 1",
+      "id": "BloodWraith_FR04",
       "name": "Ash Wraith",
-      "image": "enemy_BloodWraith_FR04_1.png",
+      "image": "enemy_BloodWraith_FR04.png",
       "isBoss": false,
       "minLevel": 85,
       "maxLevel": 90,
@@ -1257,28 +1257,28 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "VoidShard",
-          "itemName": "Void Shard",
+          "itemId": "DemonSpear",
+          "itemName": "Demon Spear",
           "chance": 3
         },
         {
-          "itemId": "PhantomCloak",
-          "itemName": "Phantom Armor",
+          "itemId": "ChaosRobe",
+          "itemName": "Chaos Robe",
           "chance": 3
         },
         {
-          "itemId": "BoneCrown",
-          "itemName": "Tomb Mask",
+          "itemId": "CursedRobe",
+          "itemName": "Cursed Robe",
           "chance": 3
         },
         {
-          "itemId": "SpiritGreaves",
-          "itemName": "Shadow Greaves",
+          "itemId": "DarkScythe",
+          "itemName": "Dark Scythe",
           "chance": 3
         },
         {
-          "itemId": "ShadowAmulet",
-          "itemName": "Shadow Amulet",
+          "itemId": "ChaosHood",
+          "itemName": "Chaos Hood",
           "chance": 3
         }
       ],
@@ -1293,9 +1293,9 @@
       ]
     },
     {
-      "id": "FlameImp_FR04",
+      "id": "FlameImp_FR04 1",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_FR04.png",
+      "image": "enemy_FlameImp_FR04_1.png",
       "isBoss": false,
       "minLevel": 88,
       "maxLevel": 94,
@@ -1310,28 +1310,23 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "CinderPlate",
-          "itemName": "Lava Armor",
+          "itemId": "DarkScythe",
+          "itemName": "Dark Scythe",
           "chance": 3
         },
         {
-          "itemId": "AshTreads",
-          "itemName": "Ash Treads",
+          "itemId": "ChaosHood",
+          "itemName": "Chaos Hood",
           "chance": 3
         },
         {
-          "itemId": "RuneCrown",
-          "itemName": "Rune Crown",
+          "itemId": "ShadowStaff",
+          "itemName": "Shadow Staff",
           "chance": 3
         },
         {
-          "itemId": "FrostAmulet",
-          "itemName": "Chaos Amulet",
-          "chance": 3
-        },
-        {
-          "itemId": "FrostSabre",
-          "itemName": "Frost Sabre",
+          "itemId": "Excalibur",
+          "itemName": "Excalibur",
           "chance": 3
         }
       ],
@@ -1363,33 +1358,23 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "DemonSpear",
-          "itemName": "Demon Spear",
-          "chance": 3
-        },
-        {
-          "itemId": "ChaosRobe",
-          "itemName": "Chaos Robe",
-          "chance": 3
-        },
-        {
-          "itemId": "CursedRobe",
-          "itemName": "Cursed Robe",
-          "chance": 3
-        },
-        {
-          "itemId": "DarkScythe",
-          "itemName": "Dark Scythe",
-          "chance": 3
-        },
-        {
-          "itemId": "ChaosHood",
-          "itemName": "Chaos Hood",
-          "chance": 3
-        },
-        {
           "itemId": "ShadowStaff",
           "itemName": "Shadow Staff",
+          "chance": 3
+        },
+        {
+          "itemId": "Excalibur",
+          "itemName": "Excalibur",
+          "chance": 3
+        },
+        {
+          "itemId": "AshEdge",
+          "itemName": "Ash Edge",
+          "chance": 3
+        },
+        {
+          "itemId": "CinderPlate",
+          "itemName": "Lava Armor",
           "chance": 3
         }
       ],
@@ -1421,28 +1406,23 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "DarkScythe",
-          "itemName": "Dark Scythe",
-          "chance": 3
-        },
-        {
-          "itemId": "ChaosHood",
-          "itemName": "Chaos Hood",
-          "chance": 3
-        },
-        {
-          "itemId": "ShadowStaff",
-          "itemName": "Shadow Staff",
-          "chance": 3
-        },
-        {
-          "itemId": "Excalibur",
-          "itemName": "Excalibur",
-          "chance": 3
-        },
-        {
           "itemId": "AshEdge",
           "itemName": "Ash Edge",
+          "chance": 3
+        },
+        {
+          "itemId": "CinderPlate",
+          "itemName": "Lava Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "AshTreads",
+          "itemName": "Ash Treads",
+          "chance": 3
+        },
+        {
+          "itemId": "RuneCrown",
+          "itemName": "Rune Crown",
           "chance": 3
         }
       ],
@@ -1457,9 +1437,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_FR04 1",
+      "id": "ChaosShaman_FR04",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_FR04_1.png",
+      "image": "enemy_ChaosShaman_FR04.png",
       "isBoss": false,
       "minLevel": 100,
       "maxLevel": 103,
@@ -1473,6 +1453,16 @@
       "goldMax": 4080,
       "permanentBPReward": 0,
       "drops": [
+        {
+          "itemId": "AshTreads",
+          "itemName": "Ash Treads",
+          "chance": 3
+        },
+        {
+          "itemId": "RuneCrown",
+          "itemName": "Rune Crown",
+          "chance": 3
+        },
         {
           "itemId": "FrostAmulet",
           "itemName": "Chaos Amulet",
@@ -1512,28 +1502,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Excalibur",
-          "itemName": "Excalibur",
+          "itemId": "FrostAmulet",
+          "itemName": "Chaos Amulet",
           "chance": 3
         },
         {
-          "itemId": "AshEdge",
-          "itemName": "Ash Edge",
-          "chance": 3
-        },
-        {
-          "itemId": "CinderPlate",
-          "itemName": "Lava Armor",
-          "chance": 3
-        },
-        {
-          "itemId": "AshTreads",
-          "itemName": "Ash Treads",
-          "chance": 3
-        },
-        {
-          "itemId": "RuneCrown",
-          "itemName": "Rune Crown",
+          "itemId": "FrostSabre",
+          "itemName": "Frost Sabre",
           "chance": 3
         }
       ],
@@ -1578,11 +1553,6 @@
           "itemId": "InfernoMask",
           "itemName": "Inferno Mask",
           "chance": 3
-        },
-        {
-          "itemId": "VolcanicPlate",
-          "itemName": "Volcanic Plate",
-          "chance": 3
         }
       ],
       "worlds": [
@@ -1596,9 +1566,9 @@
       ]
     },
     {
-      "id": "FlameImp_VO01",
+      "id": "FlameImp_VO01 1",
       "name": "Flame Imp",
-      "image": "enemy_FlameImp_VO01.png",
+      "image": "enemy_FlameImp_VO01_1.png",
       "isBoss": false,
       "minLevel": 108,
       "maxLevel": 115,
@@ -1613,28 +1583,28 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "CinderPlate",
-          "itemName": "Lava Armor",
+          "itemId": "InfernoSword",
+          "itemName": "Inferno Sword",
           "chance": 3
         },
         {
-          "itemId": "AshTreads",
-          "itemName": "Ash Treads",
+          "itemId": "MoltenArmor",
+          "itemName": "Molten Armor",
           "chance": 3
         },
         {
-          "itemId": "RuneCrown",
-          "itemName": "Rune Crown",
+          "itemId": "InfernoMask",
+          "itemName": "Inferno Mask",
           "chance": 3
         },
         {
-          "itemId": "FrostAmulet",
-          "itemName": "Chaos Amulet",
+          "itemId": "VolcanicPlate",
+          "itemName": "Volcanic Plate",
           "chance": 3
         },
         {
-          "itemId": "FrostSabre",
-          "itemName": "Frost Sabre",
+          "itemId": "SmokyDagger",
+          "itemName": "Smoky Dagger",
           "chance": 3
         }
       ],
@@ -1665,16 +1635,6 @@
       "goldMax": 6185,
       "permanentBPReward": 0,
       "drops": [
-        {
-          "itemId": "InfernoSword",
-          "itemName": "Inferno Sword",
-          "chance": 3
-        },
-        {
-          "itemId": "MoltenArmor",
-          "itemName": "Molten Armor",
-          "chance": 3
-        },
         {
           "itemId": "InfernoMask",
           "itemName": "Inferno Mask",
@@ -1723,11 +1683,6 @@
       "goldMax": 6400,
       "permanentBPReward": 0,
       "drops": [
-        {
-          "itemId": "InfernoMask",
-          "itemName": "Inferno Mask",
-          "chance": 3
-        },
         {
           "itemId": "VolcanicPlate",
           "itemName": "Volcanic Plate",
@@ -1782,11 +1737,6 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "SmokyDagger",
-          "itemName": "Smoky Dagger",
-          "chance": 3
-        },
-        {
           "itemId": "CinderBand",
           "itemName": "Fire Gem",
           "chance": 3
@@ -1804,11 +1754,6 @@
         {
           "itemId": "LavaCrown",
           "itemName": "Lava Crown",
-          "chance": 3
-        },
-        {
-          "itemId": "EmberRing",
-          "itemName": "Inferno Core",
           "chance": 3
         }
       ],
@@ -1863,11 +1808,6 @@
           "itemId": "DrakeArmor",
           "itemName": "Dragon Scale Armor",
           "chance": 3
-        },
-        {
-          "itemId": "CinderLance",
-          "itemName": "Cinder Lance",
-          "chance": 3
         }
       ],
       "worlds": [
@@ -1881,9 +1821,9 @@
       ]
     },
     {
-      "id": "ChaosShaman_VO01",
+      "id": "ChaosShaman_VO01 1",
       "name": "Volcanic Phoenix",
-      "image": "enemy_ChaosShaman_VO01.png",
+      "image": "enemy_ChaosShaman_VO01_1.png",
       "isBoss": false,
       "minLevel": 128,
       "maxLevel": 136,
@@ -1898,13 +1838,23 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "FrostAmulet",
-          "itemName": "Chaos Amulet",
+          "itemId": "LavaCrown",
+          "itemName": "Lava Crown",
           "chance": 3
         },
         {
-          "itemId": "FrostSabre",
-          "itemName": "Frost Sabre",
+          "itemId": "EmberRing",
+          "itemName": "Inferno Core",
+          "chance": 3
+        },
+        {
+          "itemId": "DrakeArmor",
+          "itemName": "Dragon Scale Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "CinderLance",
+          "itemName": "Cinder Lance",
           "chance": 3
         }
       ],
@@ -1935,11 +1885,6 @@
       "goldMax": 7255,
       "permanentBPReward": 0,
       "drops": [
-        {
-          "itemId": "LavaCrown",
-          "itemName": "Lava Crown",
-          "chance": 3
-        },
         {
           "itemId": "EmberRing",
           "itemName": "Inferno Core",
@@ -1988,11 +1933,6 @@
       "goldMax": 6818,
       "permanentBPReward": 0,
       "drops": [
-        {
-          "itemId": "DrakeArmor",
-          "itemName": "Dragon Scale Armor",
-          "chance": 3
-        },
         {
           "itemId": "CinderLance",
           "itemName": "Cinder Lance",
@@ -2810,11 +2750,6 @@
           "itemId": "DuneEdge",
           "itemName": "Dune Edge",
           "chance": 3
-        },
-        {
-          "itemId": "SandBlade",
-          "itemName": "Sand Blade",
-          "chance": 3
         }
       ],
       "worlds": [
@@ -2828,9 +2763,9 @@
       ]
     },
     {
-      "id": "DesertScorpion_DS01",
+      "id": "DesertScorpion_DS01 1",
       "name": "Dune Scarab",
-      "image": "enemy_DesertScorpion_DS01.png",
+      "image": "enemy_DesertScorpion_DS01_1.png",
       "isBoss": false,
       "minLevel": 205,
       "maxLevel": 217,
@@ -2845,23 +2780,28 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "BoneCrown",
-          "itemName": "Tomb Mask",
+          "itemId": "PharaohGreaves",
+          "itemName": "Pharaoh Greaves",
           "chance": 3
         },
         {
-          "itemId": "SpiritGreaves",
-          "itemName": "Shadow Greaves",
+          "itemId": "SandstormBlade",
+          "itemName": "Sandstorm Blade",
           "chance": 3
         },
         {
-          "itemId": "ShadowAmulet",
-          "itemName": "Shadow Amulet",
+          "itemId": "DuneEdge",
+          "itemName": "Dune Edge",
           "chance": 3
         },
         {
-          "itemId": "SoulBlade",
-          "itemName": "Holy Sword",
+          "itemId": "SandBlade",
+          "itemName": "Sand Blade",
+          "chance": 3
+        },
+        {
+          "itemId": "DuneMail",
+          "itemName": "Sand Armor",
           "chance": 3
         }
       ],
@@ -2892,16 +2832,6 @@
       "goldMax": 12096,
       "permanentBPReward": 0,
       "drops": [
-        {
-          "itemId": "PharaohGreaves",
-          "itemName": "Pharaoh Greaves",
-          "chance": 3
-        },
-        {
-          "itemId": "SandstormBlade",
-          "itemName": "Sandstorm Blade",
-          "chance": 3
-        },
         {
           "itemId": "DuneEdge",
           "itemName": "Dune Edge",
@@ -2950,11 +2880,6 @@
       "goldMax": 11843,
       "permanentBPReward": 0,
       "drops": [
-        {
-          "itemId": "DuneEdge",
-          "itemName": "Dune Edge",
-          "chance": 3
-        },
         {
           "itemId": "SandBlade",
           "itemName": "Sand Blade",
@@ -3008,11 +2933,6 @@
       "goldMax": 12402,
       "permanentBPReward": 0,
       "drops": [
-        {
-          "itemId": "DuneMail",
-          "itemName": "Sand Armor",
-          "chance": 3
-        },
         {
           "itemId": "MirageHelm",
           "itemName": "Mirage Helm",
@@ -3376,9 +3296,9 @@
       ]
     },
     {
-      "id": "ShadowHound_DS03",
+      "id": "ShadowHound_DS03 1",
       "name": "Shadow Hound",
-      "image": "enemy_ShadowHound_DS03.png",
+      "image": "enemy_ShadowHound_DS03_1.png",
       "isBoss": false,
       "minLevel": 300,
       "maxLevel": 315,
@@ -3393,18 +3313,33 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "GnarledStaff",
-          "itemName": "Gnarled Staff",
+          "itemId": "BloodGem",
+          "itemName": "Blood Gem",
           "chance": 3
         },
         {
-          "itemId": "OakArmor",
-          "itemName": "Forest Armor",
+          "itemId": "DesertWrap",
+          "itemName": "Desert Wrap",
           "chance": 3
         },
         {
-          "itemId": "PhantomBlade",
-          "itemName": "Phantom Blade",
+          "itemId": "DS03Weapon",
+          "itemName": "Shadow Fang",
+          "chance": 3
+        },
+        {
+          "itemId": "DS05Weapon",
+          "itemName": "Cursed Scythe",
+          "chance": 3
+        },
+        {
+          "itemId": "DS04Weapon",
+          "itemName": "Stone Edge",
+          "chance": 3
+        },
+        {
+          "itemId": "DS03Shoes",
+          "itemName": "Abyssal Soles",
           "chance": 3
         }
       ],
@@ -3560,28 +3495,33 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "BloodGem",
-          "itemName": "Blood Gem",
-          "chance": 3
-        },
-        {
-          "itemId": "DesertWrap",
-          "itemName": "Desert Wrap",
-          "chance": 3
-        },
-        {
           "itemId": "DS05Weapon",
           "itemName": "Cursed Scythe",
           "chance": 3
         },
         {
-          "itemId": "DS03Weapon",
-          "itemName": "Shadow Fang",
+          "itemId": "DS04Weapon",
+          "itemName": "Stone Edge",
           "chance": 3
         },
         {
-          "itemId": "DS04Weapon",
-          "itemName": "Stone Edge",
+          "itemId": "DS03Shoes",
+          "itemName": "Abyssal Soles",
+          "chance": 3
+        },
+        {
+          "itemId": "DS05Shoes",
+          "itemName": "Dark Steppers",
+          "chance": 3
+        },
+        {
+          "itemId": "DS04Shoes",
+          "itemName": "Wind Boots (Desert)",
+          "chance": 3
+        },
+        {
+          "itemId": "DS03Armor",
+          "itemName": "Chaos Armor",
           "chance": 3
         }
       ],
@@ -3697,9 +3637,9 @@
       ]
     },
     {
-      "id": "CrystalGolem_DS03",
+      "id": "CrystalGolem_DS03 1",
       "name": "Crystal Golem",
-      "image": "enemy_CrystalGolem_DS03.png",
+      "image": "enemy_CrystalGolem_DS03_1.png",
       "isBoss": false,
       "minLevel": 325,
       "maxLevel": 345,
@@ -3714,18 +3654,33 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "SpiritGreaves",
-          "itemName": "Shadow Greaves",
+          "itemId": "DS05Shoes",
+          "itemName": "Dark Steppers",
           "chance": 3
         },
         {
-          "itemId": "ShadowAmulet",
-          "itemName": "Shadow Amulet",
+          "itemId": "DS04Shoes",
+          "itemName": "Wind Boots (Desert)",
           "chance": 3
         },
         {
-          "itemId": "SoulBlade",
-          "itemName": "Holy Sword",
+          "itemId": "DS03Armor",
+          "itemName": "Chaos Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "DS05Armor",
+          "itemName": "Holy Robe",
+          "chance": 3
+        },
+        {
+          "itemId": "DS04Armor",
+          "itemName": "Royal Armor",
+          "chance": 3
+        },
+        {
+          "itemId": "DS03Acc",
+          "itemName": "Void Ring (Desert)",
           "chance": 3
         }
       ],
@@ -3838,23 +3793,33 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "DS03Shoes",
-          "itemName": "Abyssal Soles",
+          "itemId": "DS05Armor",
+          "itemName": "Holy Robe",
           "chance": 3
         },
         {
-          "itemId": "DS05Shoes",
-          "itemName": "Dark Steppers",
+          "itemId": "DS04Armor",
+          "itemName": "Royal Armor",
           "chance": 3
         },
         {
-          "itemId": "DS04Shoes",
-          "itemName": "Wind Boots (Desert)",
+          "itemId": "DS03Acc",
+          "itemName": "Void Ring (Desert)",
           "chance": 3
         },
         {
-          "itemId": "DS03Armor",
-          "itemName": "Chaos Armor",
+          "itemId": "DS05Acc",
+          "itemName": "Ankh Pendant",
+          "chance": 3
+        },
+        {
+          "itemId": "DS04Acc",
+          "itemName": "Phoenix Feather",
+          "chance": 3
+        },
+        {
+          "itemId": "DS03Helm",
+          "itemName": "Blood Mask",
           "chance": 3
         }
       ],
@@ -3977,16 +3942,6 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "DS05Armor",
-          "itemName": "Holy Robe",
-          "chance": 3
-        },
-        {
-          "itemId": "DS04Armor",
-          "itemName": "Royal Armor",
-          "chance": 3
-        },
-        {
           "itemId": "DS05Acc",
           "itemName": "Ankh Pendant",
           "chance": 3
@@ -3994,6 +3949,21 @@
         {
           "itemId": "DS04Acc",
           "itemName": "Phoenix Feather",
+          "chance": 3
+        },
+        {
+          "itemId": "DS03Helm",
+          "itemName": "Blood Mask",
+          "chance": 3
+        },
+        {
+          "itemId": "DS04Helm",
+          "itemName": "Cinder Helm",
+          "chance": 3
+        },
+        {
+          "itemId": "DS05Helm",
+          "itemName": "Shadow Crown",
           "chance": 3
         }
       ],
@@ -4105,16 +4075,6 @@
       "goldMax": 22297,
       "permanentBPReward": 0,
       "drops": [
-        {
-          "itemId": "DS03Acc",
-          "itemName": "Void Ring (Desert)",
-          "chance": 3
-        },
-        {
-          "itemId": "DS03Helm",
-          "itemName": "Blood Mask",
-          "chance": 3
-        },
         {
           "itemId": "DS04Helm",
           "itemName": "Cinder Helm",
@@ -4770,8 +4730,8 @@
           "chance": 3
         },
         {
-          "itemId": "UW04Acc",
-          "itemName": "Abyss Orb (Abyssal)",
+          "itemId": "UW04Armor",
+          "itemName": "Cursed Armor",
           "chance": 3
         }
       ],
@@ -4914,13 +4874,13 @@
           "chance": 3
         },
         {
-          "itemId": "UW04Acc",
-          "itemName": "Abyss Orb (Abyssal)",
+          "itemId": "UW04Armor",
+          "itemName": "Cursed Armor",
           "chance": 3
         },
         {
-          "itemId": "UW04Armor",
-          "itemName": "Cursed Armor",
+          "itemId": "UW04Acc",
+          "itemName": "Abyss Orb (Abyssal)",
           "chance": 3
         }
       ],
@@ -5020,13 +4980,13 @@
           "chance": 3
         },
         {
-          "itemId": "UW02Acc",
-          "itemName": "Cursed Ring",
+          "itemId": "UW02Armor",
+          "itemName": "Thunder Armor",
           "chance": 3
         },
         {
-          "itemId": "UW02Armor",
-          "itemName": "Thunder Armor",
+          "itemId": "UW02Acc",
+          "itemName": "Cursed Ring",
           "chance": 3
         }
       ],
@@ -5063,13 +5023,13 @@
           "chance": 3
         },
         {
-          "itemId": "UW04Acc",
-          "itemName": "Abyss Orb (Abyssal)",
+          "itemId": "UW04Armor",
+          "itemName": "Cursed Armor",
           "chance": 3
         },
         {
-          "itemId": "UW04Armor",
-          "itemName": "Cursed Armor",
+          "itemId": "UW04Acc",
+          "itemName": "Abyss Orb (Abyssal)",
           "chance": 3
         },
         {
@@ -5111,13 +5071,13 @@
           "chance": 3
         },
         {
-          "itemId": "UW02Acc",
-          "itemName": "Cursed Ring",
+          "itemId": "UW02Armor",
+          "itemName": "Thunder Armor",
           "chance": 3
         },
         {
-          "itemId": "UW02Armor",
-          "itemName": "Thunder Armor",
+          "itemId": "UW02Acc",
+          "itemName": "Cursed Ring",
           "chance": 3
         },
         {
@@ -5202,13 +5162,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "UW02Acc",
-          "itemName": "Cursed Ring",
+          "itemId": "UW02Armor",
+          "itemName": "Thunder Armor",
           "chance": 3
         },
         {
-          "itemId": "UW02Armor",
-          "itemName": "Thunder Armor",
+          "itemId": "UW02Acc",
+          "itemName": "Cursed Ring",
           "chance": 3
         },
         {
@@ -5283,13 +5243,13 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "UW04Acc",
-          "itemName": "Abyss Orb (Abyssal)",
+          "itemId": "UW04Armor",
+          "itemName": "Cursed Armor",
           "chance": 3
         },
         {
-          "itemId": "UW04Armor",
-          "itemName": "Cursed Armor",
+          "itemId": "UW04Acc",
+          "itemName": "Abyss Orb (Abyssal)",
           "chance": 3
         },
         {
@@ -5326,8 +5286,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "UW04Armor",
-          "itemName": "Cursed Armor",
+          "itemId": "UW04Acc",
+          "itemName": "Abyss Orb (Abyssal)",
           "chance": 3
         },
         {
@@ -6697,23 +6657,23 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "BronzeGreaves",
-          "itemName": "Bronze Greaves",
+          "itemId": "BloodArmor",
+          "itemName": "Blood Armor",
           "chance": 3
         },
         {
-          "itemId": "AegisCharm",
-          "itemName": "Aegis Charm",
+          "itemId": "Xiphos",
+          "itemName": "Xiphos",
           "chance": 3
         },
         {
-          "itemId": "BronzeTrident",
-          "itemName": "Bronze Trident",
+          "itemId": "BronzeCuirass",
+          "itemName": "Bronze Cuirass",
           "chance": 3
         },
         {
-          "itemId": "HoplitePanoply",
-          "itemName": "Hoplite Panoply",
+          "itemId": "HopliteHelm",
+          "itemName": "Hoplite Helm",
           "chance": 3
         }
       ],
@@ -6747,23 +6707,23 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "BloodArmor",
-          "itemName": "Blood Armor",
+          "itemId": "BronzeGreaves",
+          "itemName": "Bronze Greaves",
           "chance": 3
         },
         {
-          "itemId": "Xiphos",
-          "itemName": "Xiphos",
+          "itemId": "AegisCharm",
+          "itemName": "Aegis Charm",
           "chance": 3
         },
         {
-          "itemId": "BronzeCuirass",
-          "itemName": "Bronze Cuirass",
+          "itemId": "BronzeTrident",
+          "itemName": "Bronze Trident",
           "chance": 3
         },
         {
-          "itemId": "HopliteHelm",
-          "itemName": "Hoplite Helm",
+          "itemId": "HoplitePanoply",
+          "itemName": "Hoplite Panoply",
           "chance": 3
         }
       ],
@@ -7112,18 +7072,23 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "AmphoraVial",
-          "itemName": "Amphora Vial",
+          "itemId": "BloodStriders",
+          "itemName": "Blood Striders",
           "chance": 3
         },
         {
-          "itemId": "HermesSandals",
-          "itemName": "Hermes Sandals",
+          "itemId": "LuckyRing",
+          "itemName": "Lucky Ring",
           "chance": 3
         },
         {
-          "itemId": "GoldenFleece",
-          "itemName": "Golden Fleece",
+          "itemId": "TrackerRing",
+          "itemName": "Tracker Ring",
+          "chance": 3
+        },
+        {
+          "itemId": "MarbleSteppers",
+          "itemName": "Marble Steppers",
           "chance": 3
         }
       ],
@@ -7157,23 +7122,18 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "BloodStriders",
-          "itemName": "Blood Striders",
+          "itemId": "AmphoraVial",
+          "itemName": "Amphora Vial",
           "chance": 3
         },
         {
-          "itemId": "LuckyRing",
-          "itemName": "Lucky Ring",
+          "itemId": "HermesSandals",
+          "itemName": "Hermes Sandals",
           "chance": 3
         },
         {
-          "itemId": "TrackerRing",
-          "itemName": "Tracker Ring",
-          "chance": 3
-        },
-        {
-          "itemId": "MarbleSteppers",
-          "itemName": "Marble Steppers",
+          "itemId": "GoldenFleece",
+          "itemName": "Golden Fleece",
           "chance": 3
         }
       ],
@@ -8913,6 +8873,21 @@
       "permanentBPReward": 0,
       "drops": [
         {
+          "itemId": "FarmBoots",
+          "itemName": "Farm Boots",
+          "chance": 3
+        },
+        {
+          "itemId": "TravelBoots",
+          "itemName": "Travel Boots",
+          "chance": 3
+        },
+        {
+          "itemId": "RailgunPrototype",
+          "itemName": "Railgun Prototype",
+          "chance": 3
+        },
+        {
           "itemId": "ExoFrame",
           "itemName": "Exo Frame",
           "chance": 3
@@ -8955,21 +8930,6 @@
       "goldMax": 30423,
       "permanentBPReward": 0,
       "drops": [
-        {
-          "itemId": "FarmBoots",
-          "itemName": "Farm Boots",
-          "chance": 3
-        },
-        {
-          "itemId": "TravelBoots",
-          "itemName": "Travel Boots",
-          "chance": 3
-        },
-        {
-          "itemId": "RailgunPrototype",
-          "itemName": "Railgun Prototype",
-          "chance": 3
-        },
         {
           "itemId": "ExoFrame",
           "itemName": "Exo Frame",
@@ -9473,23 +9433,23 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "DownFeather",
-          "itemName": "Down Feather",
+          "itemId": "ReedStaff",
+          "itemName": "Reed Staff",
           "chance": 3
         },
         {
-          "itemId": "CherubBow",
-          "itemName": "Cherub Bow",
+          "itemId": "PilgrimRobe",
+          "itemName": "Pilgrim Robe",
           "chance": 3
         },
         {
-          "itemId": "AcolyteVestment",
-          "itemName": "Acolyte Vestment",
+          "itemId": "PilgrimHood",
+          "itemName": "Pilgrim Hood",
           "chance": 3
         },
         {
-          "itemId": "CherubCirclet",
-          "itemName": "Cherub Circlet",
+          "itemId": "CloudSandals",
+          "itemName": "Cloud Sandals",
           "chance": 3
         }
       ],
@@ -9521,23 +9481,23 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "ReedStaff",
-          "itemName": "Reed Staff",
+          "itemId": "DownFeather",
+          "itemName": "Down Feather",
           "chance": 3
         },
         {
-          "itemId": "PilgrimRobe",
-          "itemName": "Pilgrim Robe",
+          "itemId": "CherubBow",
+          "itemName": "Cherub Bow",
           "chance": 3
         },
         {
-          "itemId": "PilgrimHood",
-          "itemName": "Pilgrim Hood",
+          "itemId": "AcolyteVestment",
+          "itemName": "Acolyte Vestment",
           "chance": 3
         },
         {
-          "itemId": "CloudSandals",
-          "itemName": "Cloud Sandals",
+          "itemId": "CherubCirclet",
+          "itemName": "Cherub Circlet",
           "chance": 3
         }
       ],
@@ -14851,8 +14811,7 @@
         "AGI +84"
       ],
       "dropAreas": [
-        "FR04",
-        "VO01"
+        "FR04"
       ],
       "shopAreas": [
         "FR04"
@@ -15080,9 +15039,7 @@
         "LUC +67"
       ],
       "dropAreas": [
-        "FR03",
-        "FR04",
-        "DS01"
+        "FR03"
       ],
       "shopAreas": [
         "FR03"
@@ -17426,8 +17383,7 @@
         "DEF +420"
       ],
       "dropAreas": [
-        "FR04",
-        "VO01"
+        "FR04"
       ],
       "shopAreas": [
         "FR04"
@@ -19755,8 +19711,7 @@
         "LUC +92"
       ],
       "dropAreas": [
-        "FR04",
-        "VO01"
+        "FR04"
       ],
       "shopAreas": [
         "FR04"
@@ -19786,8 +19741,7 @@
         "AGI +95"
       ],
       "dropAreas": [
-        "FR04",
-        "VO01"
+        "FR04"
       ],
       "shopAreas": [
         "FR04"
@@ -19846,8 +19800,7 @@
         "AGI +29"
       ],
       "dropAreas": [
-        "FR01",
-        "DS03"
+        "FR01"
       ],
       "shopAreas": [
         "FR01"
@@ -31761,8 +31714,7 @@
         "DEF +110"
       ],
       "dropAreas": [
-        "FR01",
-        "DS03"
+        "FR01"
       ],
       "shopAreas": [
         "FR01"
@@ -32124,8 +32076,7 @@
         "AGI +27"
       ],
       "dropAreas": [
-        "FR01",
-        "DS03"
+        "FR01"
       ],
       "shopAreas": [
         "FR01"
@@ -32155,8 +32106,7 @@
         "DEF +290"
       ],
       "dropAreas": [
-        "FR03",
-        "FR04"
+        "FR03"
       ],
       "shopAreas": [
         "FR03"
@@ -33101,8 +33051,7 @@
         "LUC +93"
       ],
       "dropAreas": [
-        "FR04",
-        "VO01"
+        "FR04"
       ],
       "shopAreas": [
         "FR04"
@@ -33606,10 +33555,7 @@
         "LUC +63"
       ],
       "dropAreas": [
-        "FR03",
-        "FR04",
-        "DS01",
-        "DS03"
+        "FR03"
       ],
       "shopAreas": [
         "FR03"
@@ -34080,9 +34026,7 @@
         "AGI +69"
       ],
       "dropAreas": [
-        "FR03",
-        "DS01",
-        "DS03"
+        "FR03"
       ],
       "shopAreas": [
         "FR03"
@@ -34196,10 +34140,7 @@
         "AGI +67"
       ],
       "dropAreas": [
-        "FR03",
-        "FR04",
-        "DS01",
-        "DS03"
+        "FR03"
       ],
       "shopAreas": [
         "FR03"
@@ -35724,8 +35665,7 @@
         "AGI +54"
       ],
       "dropAreas": [
-        "FR03",
-        "FR04"
+        "FR03"
       ],
       "shopAreas": [
         "FR03"
@@ -36749,7 +36689,7 @@
       "goldMultiplier": 46,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_DS01",
+          "enemyId": "DesertScorpion_DS01 1",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -36909,7 +36849,7 @@
       "goldMultiplier": 70,
       "enemies": [
         {
-          "enemyId": "ShadowHound_DS03",
+          "enemyId": "ShadowHound_DS03 1",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -36949,7 +36889,7 @@
       "goldMultiplier": 74,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_DS03",
+          "enemyId": "CrystalGolem_DS03 1",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -37421,7 +37361,7 @@
       "goldMultiplier": 7.5,
       "enemies": [
         {
-          "enemyId": "ShadowHound_FR01",
+          "enemyId": "ShadowHound_FR01 1",
           "enemyName": "Shadow Hound",
           "spawnWeight": 100
         }
@@ -37501,7 +37441,7 @@
       "goldMultiplier": 13,
       "enemies": [
         {
-          "enemyId": "DesertScorpion_FR03",
+          "enemyId": "DesertScorpion_FR03 1",
           "enemyName": "Dune Scarab",
           "spawnWeight": 100
         }
@@ -37561,7 +37501,7 @@
       "goldMultiplier": 16,
       "enemies": [
         {
-          "enemyId": "CrystalGolem_FR03",
+          "enemyId": "CrystalGolem_FR03 1",
           "enemyName": "Crystal Golem",
           "spawnWeight": 100
         }
@@ -37601,7 +37541,7 @@
       "goldMultiplier": 18,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR03 1",
+          "enemyId": "BloodWraith_FR03",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -37621,7 +37561,7 @@
       "goldMultiplier": 19,
       "enemies": [
         {
-          "enemyId": "BloodWraith_FR04 1",
+          "enemyId": "BloodWraith_FR04",
           "enemyName": "Ash Wraith",
           "spawnWeight": 100
         }
@@ -37641,7 +37581,7 @@
       "goldMultiplier": 20,
       "enemies": [
         {
-          "enemyId": "FlameImp_FR04",
+          "enemyId": "FlameImp_FR04 1",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -37701,7 +37641,7 @@
       "goldMultiplier": 23,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_FR04 1",
+          "enemyId": "ChaosShaman_FR04",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -45304,7 +45244,7 @@
       "goldMultiplier": 32,
       "enemies": [
         {
-          "enemyId": "ChaosShaman_VO01",
+          "enemyId": "ChaosShaman_VO01 1",
           "enemyName": "Volcanic Phoenix",
           "spawnWeight": 100
         }
@@ -45404,7 +45344,7 @@
       "goldMultiplier": 27,
       "enemies": [
         {
-          "enemyId": "FlameImp_VO01",
+          "enemyId": "FlameImp_VO01 1",
           "enemyName": "Flame Imp",
           "spawnWeight": 100
         }
@@ -45781,14 +45721,14 @@
         "ClothRobe",
         "WoodenRing",
         "ClothSandals",
-        "IronRing",
-        "LeatherArmor",
         "LeatherCap",
+        "LeatherArmor",
+        "IronRing",
         "IronSword",
         "LeatherBoots",
         "IronHelmet",
-        "SilverRing",
         "SteelLongsword",
+        "SilverRing",
         "IronChestplate",
         "IronGreaves",
         "FlameSword",
@@ -45799,14 +45739,14 @@
         "SteelArmor",
         "ChainBoots",
         "ShortBow",
-        "IceBlade",
         "RubyRing",
+        "IceBlade",
         "ThunderSabre",
         "KnightHelmet",
         "KnightArmor",
         "SapphireRing",
-        "ShadowDagger",
         "SteelSabatons",
+        "ShadowDagger",
         "DarkHood",
         "DarkRobe",
         "EmeraldRing",
@@ -45916,7 +45856,7 @@
         "VineGolem",
         "ThunderBeetle",
         "MoonWisp",
-        "ShadowHound_FR01",
+        "ShadowHound_FR01 1",
         "ForestRoadSprite_H",
         "CrystalLizard_H",
         "IronToad_H",
@@ -46050,12 +45990,12 @@
       "maxLevel": 672,
       "zoneCount": 12,
       "enemyIds": [
-        "DesertScorpion_FR03",
+        "DesertScorpion_FR03 1",
         "DarkPrince",
         "VoidRat",
-        "CrystalGolem_FR03",
+        "CrystalGolem_FR03 1",
         "BoneHydra",
-        "BloodWraith_FR03 1",
+        "BloodWraith_FR03",
         "DesertScorpion_H",
         "DarkPrince_H",
         "VoidRat_H",
@@ -46067,15 +46007,15 @@
         "SoulReaper"
       ],
       "dropItemIds": [
-        "BoneCrown",
-        "SpiritGreaves",
-        "ShadowAmulet",
-        "SoulBlade",
         "DemonRing",
         "ChaosGreaves",
         "CursedBoots",
         "VoidShard",
         "PhantomCloak",
+        "BoneCrown",
+        "SpiritGreaves",
+        "ShadowAmulet",
+        "SoulBlade",
         "Molten_Armor_H",
         "Demon_Armor_H",
         "Cloth_Sandals_H",
@@ -46123,11 +46063,11 @@
       "maxLevel": 700,
       "zoneCount": 12,
       "enemyIds": [
-        "BloodWraith_FR04 1",
-        "FlameImp_FR04",
+        "BloodWraith_FR04",
+        "FlameImp_FR04 1",
         "RuneGolem",
         "ThunderLynx",
-        "ChaosShaman_FR04 1",
+        "ChaosShaman_FR04",
         "IronMantis",
         "BloodWraith_H",
         "FlameImp_H",
@@ -46140,16 +46080,6 @@
         "FrostWitch"
       ],
       "dropItemIds": [
-        "VoidShard",
-        "PhantomCloak",
-        "BoneCrown",
-        "SpiritGreaves",
-        "ShadowAmulet",
-        "CinderPlate",
-        "AshTreads",
-        "RuneCrown",
-        "FrostAmulet",
-        "FrostSabre",
         "DemonSpear",
         "ChaosRobe",
         "CursedRobe",
@@ -46158,6 +46088,11 @@
         "ShadowStaff",
         "Excalibur",
         "AshEdge",
+        "CinderPlate",
+        "AshTreads",
+        "RuneCrown",
+        "FrostAmulet",
+        "FrostSabre",
         "Shadow_Dagger_H",
         "Dragon_Sword_H",
         "Emerald_Ring_H",
@@ -46215,12 +46150,12 @@
         "AshBat_H",
         "MagmaGolem",
         "InfernoWitch",
-        "ChaosShaman_VO01",
+        "ChaosShaman_VO01 1",
         "AbyssLord",
         "ForestDemon",
         "FireDrake",
         "RockCrab",
-        "FlameImp_VO01",
+        "FlameImp_VO01 1",
         "AshBat"
       ],
       "bossIds": [
@@ -46239,24 +46174,19 @@
         "Emerald_Ring_H",
         "Oak_Armor_H",
         "Sand_Amulet_H",
-        "DrakeArmor",
         "CinderLance",
         "VolcanoBlade",
-        "LavaCrown",
         "EmberRing",
-        "FrostAmulet",
-        "FrostSabre",
+        "DrakeArmor",
+        "LavaCrown",
         "MagmaGreaves",
         "IgneousShield",
-        "SmokyDagger",
         "CinderBand",
-        "InfernoMask",
         "VolcanicPlate",
+        "SmokyDagger",
+        "InfernoMask",
         "InfernoSword",
-        "MoltenArmor",
-        "CinderPlate",
-        "AshTreads",
-        "RuneCrown"
+        "MoltenArmor"
       ],
       "bossDropItemIds": [
         "DrakeScaleSword",
@@ -46461,7 +46391,7 @@
         "PyramidGolem",
         "PharaohGuardian",
         "DesertViper",
-        "DesertScorpion_DS01",
+        "DesertScorpion_DS01 1",
         "SandWraith",
         "CactusKnight_H",
         "PyramidGolem_H",
@@ -46474,7 +46404,6 @@
         "CrystalElemental"
       ],
       "dropItemIds": [
-        "DuneEdge",
         "SandBlade",
         "DuneMail",
         "MirageHelm",
@@ -46483,10 +46412,7 @@
         "PharaohBlade",
         "PharaohGreaves",
         "SandstormBlade",
-        "BoneCrown",
-        "SpiritGreaves",
-        "ShadowAmulet",
-        "SoulBlade",
+        "DuneEdge",
         "Volcano_Blade_H",
         "Ice_Blade_H",
         "Lucky_Ring_H",
@@ -46608,9 +46534,9 @@
       "maxLevel": 868,
       "zoneCount": 12,
       "enemyIds": [
-        "ShadowHound_DS03",
+        "ShadowHound_DS03 1",
         "EmberDrake",
-        "CrystalGolem_DS03",
+        "CrystalGolem_DS03 1",
         "MagmaWyrm",
         "ObsidianKing",
         "SunSentinel",
@@ -46625,26 +46551,20 @@
         "SunBeast"
       ],
       "dropItemIds": [
-        "GnarledStaff",
-        "OakArmor",
-        "PhantomBlade",
         "BloodGem",
         "DesertWrap",
-        "DS05Weapon",
         "DS03Weapon",
+        "DS05Weapon",
         "DS04Weapon",
-        "SpiritGreaves",
-        "ShadowAmulet",
-        "SoulBlade",
         "DS03Shoes",
         "DS05Shoes",
         "DS04Shoes",
         "DS03Armor",
         "DS05Armor",
         "DS04Armor",
+        "DS03Acc",
         "DS05Acc",
         "DS04Acc",
-        "DS03Acc",
         "DS03Helm",
         "DS04Helm",
         "DS05Helm",
@@ -46975,8 +46895,8 @@
         "VoidScythe",
         "UW02Shoes",
         "UW02Weapon",
-        "UW02Acc",
         "UW02Armor",
+        "UW02Acc",
         "UW02Helm"
       ],
       "bossDropItemIds": [
@@ -47118,8 +47038,8 @@
         "SteelSword",
         "UW04Shoes",
         "UW04Weapon",
-        "UW04Acc",
         "UW04Armor",
+        "UW04Acc",
         "UW04Helm"
       ],
       "bossDropItemIds": [
@@ -47502,14 +47422,14 @@
       ],
       "bossIds": [],
       "dropItemIds": [
-        "BloodArmor",
-        "Xiphos",
-        "BronzeCuirass",
-        "HopliteHelm",
         "BronzeGreaves",
         "AegisCharm",
         "BronzeTrident",
         "HoplitePanoply",
+        "BloodArmor",
+        "Xiphos",
+        "BronzeCuirass",
+        "HopliteHelm",
         "Linothorax_H",
         "Hoplite_Sandals_H",
         "Kopis_Blade_H",
@@ -47590,13 +47510,13 @@
       ],
       "bossIds": [],
       "dropItemIds": [
+        "AmphoraVial",
+        "HermesSandals",
+        "GoldenFleece",
         "BloodStriders",
         "LuckyRing",
         "TrackerRing",
         "MarbleSteppers",
-        "AmphoraVial",
-        "HermesSandals",
-        "GoldenFleece",
         "Hoplite_Panoply_H",
         "Marble_Steppers_H",
         "Bronze_Trident_H",
@@ -48009,12 +47929,12 @@
       "dropItemIds": [
         "Railgun_Prototype_H",
         "Exo_Frame_H",
-        "FarmBoots",
-        "TravelBoots",
-        "RailgunPrototype",
         "ExoFrame",
         "CommandersHelm",
-        "ExoStriders"
+        "ExoStriders",
+        "FarmBoots",
+        "TravelBoots",
+        "RailgunPrototype"
       ],
       "bossDropItemIds": [
         "GeneralsInsignia",
@@ -48069,14 +47989,14 @@
         "Judgment_Blade_H",
         "Throne_Vestments_H",
         "Covenant_Seal_H",
-        "ReedStaff",
-        "PilgrimRobe",
-        "PilgrimHood",
-        "CloudSandals",
         "DownFeather",
         "CherubBow",
         "AcolyteVestment",
         "CherubCirclet",
+        "ReedStaff",
+        "PilgrimRobe",
+        "PilgrimHood",
+        "CloudSandals",
         "PilgrimSandals",
         "PrayerCandle",
         "ChoirWand",
