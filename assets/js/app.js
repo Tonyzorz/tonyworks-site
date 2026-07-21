@@ -613,7 +613,9 @@
       (i.description ? "<p>" + esc(i.description) + "</p>" : "") +
       (effects ? '<div class="section-title">Effects</div><div class="effect-list">' + effects + "</div>" : "") +
       '<div class="section-title">Details</div><div class="statgrid">' +
-        (i.buyPrice > 0 && !i.shopUnavailable ? sb("Buy Price", fmt(i.buyPrice) + " g") : sb("Availability", i.shopUnavailable ? "Drop only" : "Shop")) +
+        (i.buyPrice > 0 && !i.shopUnavailable && i.shopAreas && i.shopAreas.length > 0
+          ? sb("Buy Price", fmt(i.buyPrice) + " g")
+          : sb("Availability", (i.dropAreas && i.dropAreas.length > 0) ? "Drop only" : "Not in shop")) +
         sb("Max Copies", i.type === "Accessory" ? 3 : 20) +
         (i.setName ? sb("Set", esc(i.setName)) : "") +
       "</div>" +
