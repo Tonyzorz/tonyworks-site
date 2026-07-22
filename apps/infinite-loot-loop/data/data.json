@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T06:23:25Z",
+  "generatedAt": "2026-07-22T09:12:06Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 313,
@@ -6931,8 +6931,8 @@
       "isBoss": false,
       "minLevel": 561,
       "maxLevel": 588,
-      "hpMin": 12907779,
-      "hpMax": 12907779,
+      "hpMin": 181059649329,
+      "hpMax": 181059649329,
       "atkMin": 16494,
       "atkMax": 16494,
       "expMin": 31781,
@@ -6953,10 +6953,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8083999,
-        "comboResist": 0.5056,
-        "dodgeResist": 0.2296,
-        "critMultResist": 0.5084,
+        "critResist": 7.028,
+        "comboResist": 1.814,
+        "dodgeResist": 1.4056,
+        "critMultResist": 3.014,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -6977,8 +6977,8 @@
       "isBoss": false,
       "minLevel": 561,
       "maxLevel": 588,
-      "hpMin": 15382253,
-      "hpMax": 15382253,
+      "hpMin": 215769514840,
+      "hpMax": 215769514840,
       "atkMin": 17253,
       "atkMax": 17253,
       "expMin": 31015,
@@ -6999,10 +6999,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8083999,
-        "comboResist": 0.5056,
-        "dodgeResist": 0.2296,
-        "critMultResist": 0.5084,
+        "critResist": 7.028,
+        "comboResist": 1.814,
+        "dodgeResist": 1.4056,
+        "critMultResist": 3.014,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7023,8 +7023,8 @@
       "isBoss": false,
       "minLevel": 561,
       "maxLevel": 588,
-      "hpMin": 13732604,
-      "hpMax": 13732604,
+      "hpMin": 192629604499,
+      "hpMax": 192629604499,
       "atkMin": 16774,
       "atkMax": 16774,
       "expMin": 26675,
@@ -7045,10 +7045,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8083999,
-        "comboResist": 0.5056,
-        "dodgeResist": 0.2296,
-        "critMultResist": 0.5084,
+        "critResist": 7.028,
+        "comboResist": 1.814,
+        "dodgeResist": 1.4056,
+        "critMultResist": 3.014,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7069,8 +7069,8 @@
       "isBoss": false,
       "minLevel": 561,
       "maxLevel": 588,
-      "hpMin": 14817899,
-      "hpMax": 14817899,
+      "hpMin": 207853229723,
+      "hpMax": 207853229723,
       "atkMin": 17093,
       "atkMax": 17093,
       "expMin": 32674,
@@ -7091,10 +7091,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8083999,
-        "comboResist": 0.5056,
-        "dodgeResist": 0.2296,
-        "critMultResist": 0.5084,
+        "critResist": 7.028,
+        "comboResist": 1.814,
+        "dodgeResist": 1.4056,
+        "critMultResist": 3.014,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7115,8 +7115,8 @@
       "isBoss": false,
       "minLevel": 561,
       "maxLevel": 588,
-      "hpMin": 14253545,
-      "hpMax": 14253545,
+      "hpMin": 199936944607,
+      "hpMax": 199936944607,
       "atkMin": 19569,
       "atkMax": 19569,
       "expMin": 37907,
@@ -7137,10 +7137,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8083999,
-        "comboResist": 0.5056,
-        "dodgeResist": 0.2296,
-        "critMultResist": 0.5084,
+        "critResist": 7.028,
+        "comboResist": 1.814,
+        "dodgeResist": 1.4056,
+        "critMultResist": 3.014,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7161,8 +7161,8 @@
       "isBoss": false,
       "minLevel": 561,
       "maxLevel": 588,
-      "hpMin": 15599312,
-      "hpMax": 15599312,
+      "hpMin": 218814239884,
+      "hpMax": 218814239884,
       "atkMin": 20008,
       "atkMax": 20008,
       "expMin": 32930,
@@ -7178,10 +7178,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8083999,
-        "comboResist": 0.5056,
-        "dodgeResist": 0.2296,
-        "critMultResist": 0.5084,
+        "critResist": 7.028,
+        "comboResist": 1.814,
+        "dodgeResist": 1.4056,
+        "critMultResist": 3.014,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7202,8 +7202,8 @@
       "isBoss": false,
       "minLevel": 561,
       "maxLevel": 588,
-      "hpMin": 15425664,
-      "hpMax": 15425664,
+      "hpMin": 216378459849,
+      "hpMax": 216378459849,
       "atkMin": 18611,
       "atkMax": 18611,
       "expMin": 29228,
@@ -7219,10 +7219,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8083999,
-        "comboResist": 0.5056,
-        "dodgeResist": 0.2296,
-        "critMultResist": 0.5084,
+        "critResist": 7.028,
+        "comboResist": 1.814,
+        "dodgeResist": 1.4056,
+        "critMultResist": 3.014,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7243,8 +7243,8 @@
       "isBoss": false,
       "minLevel": 589,
       "maxLevel": 616,
-      "hpMin": 1930065955,
-      "hpMax": 1930065955,
+      "hpMin": 715584717799,
+      "hpMax": 715584717799,
       "atkMin": 21459,
       "atkMax": 21459,
       "expMin": 38010,
@@ -7265,10 +7265,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8252,
-        "comboResist": 0.5168,
-        "dodgeResist": 0.2408,
-        "critMultResist": 0.5252,
+        "critResist": 7.084,
+        "comboResist": 1.842,
+        "dodgeResist": 1.4168,
+        "critMultResist": 3.042,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7289,8 +7289,8 @@
       "isBoss": false,
       "minLevel": 589,
       "maxLevel": 616,
-      "hpMin": 1714641170,
-      "hpMax": 1714641170,
+      "hpMin": 635714554197,
+      "hpMax": 635714554197,
       "atkMin": 20820,
       "atkMax": 20820,
       "expMin": 31543,
@@ -7311,10 +7311,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8252,
-        "comboResist": 0.5168,
-        "dodgeResist": 0.2408,
-        "critMultResist": 0.5252,
+        "critResist": 7.084,
+        "comboResist": 1.842,
+        "dodgeResist": 1.4168,
+        "critMultResist": 3.042,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7335,8 +7335,8 @@
       "isBoss": false,
       "minLevel": 589,
       "maxLevel": 616,
-      "hpMin": 1840743483,
-      "hpMax": 1840743483,
+      "hpMin": 682467820696,
+      "hpMax": 682467820696,
       "atkMin": 21185,
       "atkMax": 21185,
       "expMin": 35766,
@@ -7357,10 +7357,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8252,
-        "comboResist": 0.5168,
-        "dodgeResist": 0.2408,
-        "critMultResist": 0.5252,
+        "critResist": 7.084,
+        "comboResist": 1.842,
+        "dodgeResist": 1.4168,
+        "critMultResist": 3.042,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7381,8 +7381,8 @@
       "isBoss": false,
       "minLevel": 589,
       "maxLevel": 616,
-      "hpMin": 1735658222,
-      "hpMax": 1735658222,
+      "hpMin": 643506765280,
+      "hpMax": 643506765280,
       "atkMin": 19359,
       "atkMax": 19359,
       "expMin": 37350,
@@ -7403,10 +7403,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8252,
-        "comboResist": 0.5168,
-        "dodgeResist": 0.2408,
-        "critMultResist": 0.5252,
+        "critResist": 7.084,
+        "comboResist": 1.842,
+        "dodgeResist": 1.4168,
+        "critMultResist": 3.042,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7427,8 +7427,8 @@
       "isBoss": false,
       "minLevel": 589,
       "maxLevel": 616,
-      "hpMin": 1620064436,
-      "hpMax": 1620064436,
+      "hpMin": 600649604323,
+      "hpMax": 600649604323,
       "atkMin": 20546,
       "atkMax": 20546,
       "expMin": 33126,
@@ -7444,10 +7444,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8252,
-        "comboResist": 0.5168,
-        "dodgeResist": 0.2408,
-        "critMultResist": 0.5252,
+        "critResist": 7.084,
+        "comboResist": 1.842,
+        "dodgeResist": 1.4168,
+        "critMultResist": 3.042,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7468,8 +7468,8 @@
       "isBoss": false,
       "minLevel": 589,
       "maxLevel": 616,
-      "hpMin": 1688369855,
-      "hpMax": 1688369855,
+      "hpMin": 625974290343,
+      "hpMax": 625974290343,
       "atkMin": 19222,
       "atkMax": 19222,
       "expMin": 27715,
@@ -7485,10 +7485,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8252,
-        "comboResist": 0.5168,
-        "dodgeResist": 0.2408,
-        "critMultResist": 0.5252,
+        "critResist": 7.084,
+        "comboResist": 1.842,
+        "dodgeResist": 1.4168,
+        "critMultResist": 3.042,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7509,8 +7509,8 @@
       "isBoss": false,
       "minLevel": 589,
       "maxLevel": 616,
-      "hpMin": 1851252009,
-      "hpMax": 1851252009,
+      "hpMin": 686363926237,
+      "hpMax": 686363926237,
       "atkMin": 19724,
       "atkMax": 19724,
       "expMin": 37746,
@@ -7526,10 +7526,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8252,
-        "comboResist": 0.5168,
-        "dodgeResist": 0.2408,
-        "critMultResist": 0.5252,
+        "critResist": 7.084,
+        "comboResist": 1.842,
+        "dodgeResist": 1.4168,
+        "critMultResist": 3.042,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7858,8 +7858,8 @@
       "isBoss": false,
       "minLevel": 617,
       "maxLevel": 644,
-      "hpMin": 2374622781,
-      "hpMax": 2374622781,
+      "hpMin": 844408182172,
+      "hpMax": 844408182172,
       "atkMin": 26519,
       "atkMax": 26519,
       "expMin": 29028,
@@ -7880,10 +7880,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.842,
-        "comboResist": 0.528,
-        "dodgeResist": 0.252,
-        "critMultResist": 0.542,
+        "critResist": 7.14,
+        "comboResist": 1.87,
+        "dodgeResist": 1.428,
+        "critMultResist": 3.07,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7904,8 +7904,8 @@
       "isBoss": false,
       "minLevel": 617,
       "maxLevel": 644,
-      "hpMin": 1868896807,
-      "hpMax": 1868896807,
+      "hpMin": 664573661341,
+      "hpMax": 664573661341,
       "atkMin": 23335,
       "atkMax": 23335,
       "expMin": 37018,
@@ -7926,10 +7926,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.842,
-        "comboResist": 0.528,
-        "dodgeResist": 0.252,
-        "critMultResist": 0.542,
+        "critResist": 7.14,
+        "comboResist": 1.87,
+        "dodgeResist": 1.428,
+        "critMultResist": 3.07,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -7950,8 +7950,8 @@
       "isBoss": false,
       "minLevel": 617,
       "maxLevel": 644,
-      "hpMin": 1950062704,
-      "hpMax": 1950062704,
+      "hpMin": 693435991845,
+      "hpMax": 693435991845,
       "atkMin": 23596,
       "atkMax": 23596,
       "expMin": 39149,
@@ -7972,10 +7972,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.842,
-        "comboResist": 0.528,
-        "dodgeResist": 0.252,
-        "critMultResist": 0.542,
+        "critResist": 7.14,
+        "comboResist": 1.87,
+        "dodgeResist": 1.428,
+        "critMultResist": 3.07,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -8439,8 +8439,8 @@
       "isBoss": false,
       "minLevel": 645,
       "maxLevel": 672,
-      "hpMin": 2264083500,
-      "hpMax": 2264083500,
+      "hpMin": 893112710048,
+      "hpMax": 893112710048,
       "atkMin": 29658,
       "atkMax": 29658,
       "expMin": 30632,
@@ -8461,10 +8461,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8587999,
-        "comboResist": 0.5392,
-        "dodgeResist": 0.26319999,
-        "critMultResist": 0.5588,
+        "critResist": 7.196,
+        "comboResist": 1.898,
+        "dodgeResist": 1.4391999,
+        "critMultResist": 3.098,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -8485,8 +8485,8 @@
       "isBoss": false,
       "minLevel": 645,
       "maxLevel": 672,
-      "hpMin": 2049591379,
-      "hpMax": 2049591379,
+      "hpMin": 808502032254,
+      "hpMax": 808502032254,
       "atkMin": 29002,
       "atkMax": 29002,
       "expMin": 37752,
@@ -8507,10 +8507,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8587999,
-        "comboResist": 0.5392,
-        "dodgeResist": 0.26319999,
-        "critMultResist": 0.5588,
+        "critResist": 7.196,
+        "comboResist": 1.898,
+        "dodgeResist": 1.4391999,
+        "critMultResist": 3.098,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -8531,8 +8531,8 @@
       "isBoss": false,
       "minLevel": 645,
       "maxLevel": 672,
-      "hpMin": 2179586604,
-      "hpMax": 2179586604,
+      "hpMin": 859781230917,
+      "hpMax": 859781230917,
       "atkMin": 27391,
       "atkMax": 27391,
       "expMin": 36140,
@@ -8553,10 +8553,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8587999,
-        "comboResist": 0.5392,
-        "dodgeResist": 0.26319999,
-        "critMultResist": 0.5588,
+        "critResist": 7.196,
+        "comboResist": 1.898,
+        "dodgeResist": 1.4391999,
+        "critMultResist": 3.098,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -8658,8 +8658,8 @@
       "isBoss": false,
       "minLevel": 673,
       "maxLevel": 700,
-      "hpMin": 2380434395,
-      "hpMax": 2380434395,
+      "hpMin": 972658881427,
+      "hpMax": 972658881427,
       "atkMin": 28859,
       "atkMax": 28859,
       "expMin": 30500,
@@ -8680,10 +8680,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8756,
-        "comboResist": 0.5504,
-        "dodgeResist": 0.2744,
-        "critMultResist": 0.5756,
+        "critResist": 7.252,
+        "comboResist": 1.926,
+        "dodgeResist": 1.4504,
+        "critMultResist": 3.126,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -8706,8 +8706,8 @@
       "isBoss": false,
       "minLevel": 673,
       "maxLevel": 700,
-      "hpMin": 2445884221,
-      "hpMax": 2445884221,
+      "hpMin": 999402048228,
+      "hpMax": 999402048228,
       "atkMin": 33634,
       "atkMax": 33634,
       "expMin": 32668,
@@ -8728,10 +8728,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8756,
-        "comboResist": 0.5504,
-        "dodgeResist": 0.2744,
-        "critMultResist": 0.5756,
+        "critResist": 7.252,
+        "comboResist": 1.926,
+        "dodgeResist": 1.4504,
+        "critMultResist": 3.126,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -8752,8 +8752,8 @@
       "isBoss": false,
       "minLevel": 673,
       "maxLevel": 700,
-      "hpMin": 2184084919,
-      "hpMax": 2184084919,
+      "hpMin": 892429381024,
+      "hpMax": 892429381024,
       "atkMin": 32815,
       "atkMax": 32815,
       "expMin": 33889,
@@ -8774,10 +8774,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8756,
-        "comboResist": 0.5504,
-        "dodgeResist": 0.2744,
-        "critMultResist": 0.5756,
+        "critResist": 7.252,
+        "comboResist": 1.926,
+        "dodgeResist": 1.4504,
+        "critMultResist": 3.126,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -8798,8 +8798,8 @@
       "isBoss": false,
       "minLevel": 673,
       "maxLevel": 700,
-      "hpMin": 2104090688,
-      "hpMax": 2104090688,
+      "hpMin": 859743288268,
+      "hpMax": 859743288268,
       "atkMin": 30291,
       "atkMax": 30291,
       "expMin": 33617,
@@ -8820,10 +8820,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8756,
-        "comboResist": 0.5504,
-        "dodgeResist": 0.2744,
-        "critMultResist": 0.5756,
+        "critResist": 7.252,
+        "comboResist": 1.926,
+        "dodgeResist": 1.4504,
+        "critMultResist": 3.126,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9062,8 +9062,8 @@
       "isBoss": false,
       "minLevel": 701,
       "maxLevel": 728,
-      "hpMin": 2396771413,
-      "hpMax": 2396771413,
+      "hpMin": 990897038977,
+      "hpMax": 990897038977,
       "atkMin": 37047,
       "atkMax": 37047,
       "expMin": 33498,
@@ -9084,10 +9084,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8923999,
-        "comboResist": 0.56159997,
-        "dodgeResist": 0.2856,
-        "critMultResist": 0.5924,
+        "critResist": 7.308,
+        "comboResist": 1.954,
+        "dodgeResist": 1.4616,
+        "critMultResist": 3.154,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9108,8 +9108,8 @@
       "isBoss": false,
       "minLevel": 701,
       "maxLevel": 728,
-      "hpMin": 3107343644,
-      "hpMax": 3107343644,
+      "hpMin": 1284668867004,
+      "hpMax": 1284668867004,
       "atkMin": 39230,
       "atkMax": 39230,
       "expMin": 43419,
@@ -9130,10 +9130,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8923999,
-        "comboResist": 0.56159997,
-        "dodgeResist": 0.2856,
-        "critMultResist": 0.5924,
+        "critResist": 7.308,
+        "comboResist": 1.954,
+        "dodgeResist": 1.4616,
+        "critMultResist": 3.154,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9154,8 +9154,8 @@
       "isBoss": false,
       "minLevel": 701,
       "maxLevel": 728,
-      "hpMin": 2675924790,
-      "hpMax": 2675924790,
+      "hpMin": 1106307399988,
+      "hpMax": 1106307399988,
       "atkMin": 32758,
       "atkMax": 32758,
       "expMin": 36230,
@@ -9176,10 +9176,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8923999,
-        "comboResist": 0.56159997,
-        "dodgeResist": 0.2856,
-        "critMultResist": 0.5924,
+        "critResist": 7.308,
+        "comboResist": 1.954,
+        "dodgeResist": 1.4616,
+        "critMultResist": 3.154,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9203,8 +9203,8 @@
       "isBoss": false,
       "minLevel": 701,
       "maxLevel": 728,
-      "hpMin": 3225772349,
-      "hpMax": 3225772349,
+      "hpMin": 1333630838342,
+      "hpMax": 1333630838342,
       "atkMin": 37047,
       "atkMax": 37047,
       "expMin": 35511,
@@ -9220,10 +9220,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8923999,
-        "comboResist": 0.56159997,
-        "dodgeResist": 0.2856,
-        "critMultResist": 0.5924,
+        "critResist": 7.308,
+        "comboResist": 1.954,
+        "dodgeResist": 1.4616,
+        "critMultResist": 3.154,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9244,8 +9244,8 @@
       "isBoss": false,
       "minLevel": 701,
       "maxLevel": 728,
-      "hpMin": 3022751712,
-      "hpMax": 3022751712,
+      "hpMin": 1249696030334,
+      "hpMax": 1249696030334,
       "atkMin": 36423,
       "atkMax": 36423,
       "expMin": 39105,
@@ -9261,10 +9261,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8923999,
-        "comboResist": 0.56159997,
-        "dodgeResist": 0.2856,
-        "critMultResist": 0.5924,
+        "critResist": 7.308,
+        "comboResist": 1.954,
+        "dodgeResist": 1.4616,
+        "critMultResist": 3.154,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9288,8 +9288,8 @@
       "isBoss": false,
       "minLevel": 701,
       "maxLevel": 728,
-      "hpMin": 2608251244,
-      "hpMax": 2608251244,
+      "hpMin": 1078329130652,
+      "hpMax": 1078329130652,
       "atkMin": 35097,
       "atkMax": 35097,
       "expMin": 31917,
@@ -9305,10 +9305,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8923999,
-        "comboResist": 0.56159997,
-        "dodgeResist": 0.2856,
-        "critMultResist": 0.5924,
+        "critResist": 7.308,
+        "comboResist": 1.954,
+        "dodgeResist": 1.4616,
+        "critMultResist": 3.154,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9329,8 +9329,8 @@
       "isBoss": false,
       "minLevel": 701,
       "maxLevel": 728,
-      "hpMin": 2878945427,
-      "hpMax": 2878945427,
+      "hpMin": 1190242207995,
+      "hpMax": 1190242207995,
       "atkMin": 38528,
       "atkMax": 38528,
       "expMin": 34649,
@@ -9346,10 +9346,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8923999,
-        "comboResist": 0.56159997,
-        "dodgeResist": 0.2856,
-        "critMultResist": 0.5924,
+        "critResist": 7.308,
+        "comboResist": 1.954,
+        "dodgeResist": 1.4616,
+        "critMultResist": 3.154,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9370,8 +9370,8 @@
       "isBoss": false,
       "minLevel": 701,
       "maxLevel": 728,
-      "hpMin": 2447526573,
-      "hpMax": 2447526573,
+      "hpMin": 1011880740979,
+      "hpMax": 1011880740979,
       "atkMin": 37203,
       "atkMax": 37203,
       "expMin": 37812,
@@ -9387,10 +9387,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8923999,
-        "comboResist": 0.56159997,
-        "dodgeResist": 0.2856,
-        "critMultResist": 0.5924,
+        "critResist": 7.308,
+        "comboResist": 1.954,
+        "dodgeResist": 1.4616,
+        "critMultResist": 3.154,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9411,8 +9411,8 @@
       "isBoss": false,
       "minLevel": 701,
       "maxLevel": 728,
-      "hpMin": 3158098804,
-      "hpMax": 3158098804,
+      "hpMin": 1305652569006,
+      "hpMax": 1305652569006,
       "atkMin": 36813,
       "atkMax": 36813,
       "expMin": 37380,
@@ -9428,10 +9428,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.8923999,
-        "comboResist": 0.56159997,
-        "dodgeResist": 0.2856,
-        "critMultResist": 0.5924,
+        "critResist": 7.308,
+        "comboResist": 1.954,
+        "dodgeResist": 1.4616,
+        "critMultResist": 3.154,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9783,8 +9783,8 @@
       "isBoss": false,
       "minLevel": 729,
       "maxLevel": 756,
-      "hpMin": 3243836786,
-      "hpMax": 3243836786,
+      "hpMin": 1362500137520,
+      "hpMax": 1362500137520,
       "atkMin": 43688,
       "atkMax": 43688,
       "expMin": 42030,
@@ -9805,10 +9805,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9092,
-        "comboResist": 0.5728,
-        "dodgeResist": 0.2968,
-        "critMultResist": 0.6092,
+        "critResist": 7.364,
+        "comboResist": 1.982,
+        "dodgeResist": 1.4728,
+        "critMultResist": 3.182,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9829,8 +9829,8 @@
       "isBoss": false,
       "minLevel": 729,
       "maxLevel": 756,
-      "hpMin": 3382575223,
-      "hpMax": 3382575223,
+      "hpMin": 1420774074156,
+      "hpMax": 1420774074156,
       "atkMin": 41103,
       "atkMax": 41103,
       "expMin": 40241,
@@ -9851,10 +9851,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9092,
-        "comboResist": 0.5728,
-        "dodgeResist": 0.2968,
-        "critMultResist": 0.6092,
+        "critResist": 7.364,
+        "comboResist": 1.982,
+        "dodgeResist": 1.4728,
+        "critMultResist": 3.182,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9875,8 +9875,8 @@
       "isBoss": false,
       "minLevel": 729,
       "maxLevel": 756,
-      "hpMin": 3442034553,
-      "hpMax": 3442034553,
+      "hpMin": 1445748618428,
+      "hpMax": 1445748618428,
       "atkMin": 38340,
       "atkMax": 38340,
       "expMin": 38304,
@@ -9897,10 +9897,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9092,
-        "comboResist": 0.5728,
-        "dodgeResist": 0.2968,
-        "critMultResist": 0.6092,
+        "critResist": 7.364,
+        "comboResist": 1.982,
+        "dodgeResist": 1.4728,
+        "critMultResist": 3.182,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9921,8 +9921,8 @@
       "isBoss": false,
       "minLevel": 729,
       "maxLevel": 756,
-      "hpMin": 2926720359,
-      "hpMax": 2926720359,
+      "hpMin": 1229302568068,
+      "hpMax": 1229302568068,
       "atkMin": 36824,
       "atkMax": 36824,
       "expMin": 32938,
@@ -9938,10 +9938,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9092,
-        "comboResist": 0.5728,
-        "dodgeResist": 0.2968,
-        "critMultResist": 0.6092,
+        "critResist": 7.364,
+        "comboResist": 1.982,
+        "dodgeResist": 1.4728,
+        "critMultResist": 3.182,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -9962,8 +9962,8 @@
       "isBoss": false,
       "minLevel": 729,
       "maxLevel": 756,
-      "hpMin": 3233926898,
-      "hpMax": 3233926898,
+      "hpMin": 1358337713475,
+      "hpMax": 1358337713475,
       "atkMin": 43688,
       "atkMax": 43688,
       "expMin": 35621,
@@ -9979,10 +9979,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9092,
-        "comboResist": 0.5728,
-        "dodgeResist": 0.2968,
-        "critMultResist": 0.6092,
+        "critResist": 7.364,
+        "comboResist": 1.982,
+        "dodgeResist": 1.4728,
+        "critMultResist": 3.182,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10003,8 +10003,8 @@
       "isBoss": false,
       "minLevel": 729,
       "maxLevel": 756,
-      "hpMin": 2837531364,
-      "hpMax": 2837531364,
+      "hpMin": 1191840751660,
+      "hpMax": 1191840751660,
       "atkMin": 36557,
       "atkMax": 36557,
       "expMin": 32640,
@@ -10020,10 +10020,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9092,
-        "comboResist": 0.5728,
-        "dodgeResist": 0.2968,
-        "critMultResist": 0.6092,
+        "critResist": 7.364,
+        "comboResist": 1.982,
+        "dodgeResist": 1.4728,
+        "critMultResist": 3.182,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10044,8 +10044,8 @@
       "isBoss": false,
       "minLevel": 729,
       "maxLevel": 756,
-      "hpMin": 3224017010,
-      "hpMax": 3224017010,
+      "hpMin": 1354175289429,
+      "hpMax": 1354175289429,
       "atkMin": 37716,
       "atkMax": 37716,
       "expMin": 37708,
@@ -10061,10 +10061,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9092,
-        "comboResist": 0.5728,
-        "dodgeResist": 0.2968,
-        "critMultResist": 0.6092,
+        "critResist": 7.364,
+        "comboResist": 1.982,
+        "dodgeResist": 1.4728,
+        "critMultResist": 3.182,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10085,8 +10085,8 @@
       "isBoss": false,
       "minLevel": 729,
       "maxLevel": 756,
-      "hpMin": 3451944442,
-      "hpMax": 3451944442,
+      "hpMin": 1449911042473,
+      "hpMax": 1449911042473,
       "atkMin": 38340,
       "atkMax": 38340,
       "expMin": 33982,
@@ -10102,10 +10102,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9092,
-        "comboResist": 0.5728,
-        "dodgeResist": 0.2968,
-        "critMultResist": 0.6092,
+        "critResist": 7.364,
+        "comboResist": 1.982,
+        "dodgeResist": 1.4728,
+        "critMultResist": 3.182,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10126,8 +10126,8 @@
       "isBoss": false,
       "minLevel": 729,
       "maxLevel": 756,
-      "hpMin": 3253746675,
-      "hpMax": 3253746675,
+      "hpMin": 1366662561566,
+      "hpMax": 1366662561566,
       "atkMin": 40746,
       "atkMax": 40746,
       "expMin": 44266,
@@ -10143,10 +10143,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9092,
-        "comboResist": 0.5728,
-        "dodgeResist": 0.2968,
-        "critMultResist": 0.6092,
+        "critResist": 7.364,
+        "comboResist": 1.982,
+        "dodgeResist": 1.4728,
+        "critMultResist": 3.182,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10499,8 +10499,8 @@
       "isBoss": false,
       "minLevel": 757,
       "maxLevel": 784,
-      "hpMin": 3773280874,
-      "hpMax": 3773280874,
+      "hpMin": 1517732074337,
+      "hpMax": 1517732074337,
       "atkMin": 42299,
       "atkMax": 42299,
       "expMin": 45263,
@@ -10521,10 +10521,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.926,
-        "comboResist": 0.584,
-        "dodgeResist": 0.308,
-        "critMultResist": 0.626,
+        "critResist": 7.42,
+        "comboResist": 2.01,
+        "dodgeResist": 1.484,
+        "critMultResist": 3.21,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10545,8 +10545,8 @@
       "isBoss": false,
       "minLevel": 757,
       "maxLevel": 784,
-      "hpMin": 4034508012,
-      "hpMax": 4034508012,
+      "hpMin": 1622805833330,
+      "hpMax": 1622805833330,
       "atkMin": 46477,
       "atkMax": 46477,
       "expMin": 39084,
@@ -10567,10 +10567,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.926,
-        "comboResist": 0.584,
-        "dodgeResist": 0.308,
-        "critMultResist": 0.626,
+        "critResist": 7.42,
+        "comboResist": 2.01,
+        "dodgeResist": 1.484,
+        "critMultResist": 3.21,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10591,8 +10591,8 @@
       "isBoss": false,
       "minLevel": 757,
       "maxLevel": 784,
-      "hpMin": 3624008225,
-      "hpMax": 3624008225,
+      "hpMin": 1457689926341,
+      "hpMax": 1457689926341,
       "atkMin": 41891,
       "atkMax": 41891,
       "expMin": 38466,
@@ -10613,10 +10613,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.926,
-        "comboResist": 0.584,
-        "dodgeResist": 0.308,
-        "critMultResist": 0.626,
+        "critResist": 7.42,
+        "comboResist": 2.01,
+        "dodgeResist": 1.484,
+        "critMultResist": 3.21,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10637,8 +10637,8 @@
       "isBoss": false,
       "minLevel": 757,
       "maxLevel": 784,
-      "hpMin": 4494765350,
-      "hpMax": 4494765350,
+      "hpMin": 1807935789650,
+      "hpMax": 1807935789650,
       "atkMin": 44337,
       "atkMax": 44337,
       "expMin": 35531,
@@ -10659,10 +10659,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.926,
-        "comboResist": 0.584,
-        "dodgeResist": 0.308,
-        "critMultResist": 0.626,
+        "critResist": 7.42,
+        "comboResist": 2.01,
+        "dodgeResist": 1.484,
+        "critMultResist": 3.21,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10683,8 +10683,8 @@
       "isBoss": false,
       "minLevel": 757,
       "maxLevel": 784,
-      "hpMin": 3549371900,
-      "hpMax": 3549371900,
+      "hpMin": 1427668852343,
+      "hpMax": 1427668852343,
       "atkMin": 45152,
       "atkMax": 45152,
       "expMin": 38312,
@@ -10705,10 +10705,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.926,
-        "comboResist": 0.584,
-        "dodgeResist": 0.308,
-        "critMultResist": 0.626,
+        "critResist": 7.42,
+        "comboResist": 2.01,
+        "dodgeResist": 1.484,
+        "critMultResist": 3.21,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10729,8 +10729,8 @@
       "isBoss": false,
       "minLevel": 757,
       "maxLevel": 784,
-      "hpMin": 4046947400,
-      "hpMax": 4046947400,
+      "hpMin": 1627809345663,
+      "hpMax": 1627809345663,
       "atkMin": 49840,
       "atkMax": 49840,
       "expMin": 39084,
@@ -10751,10 +10751,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.926,
-        "comboResist": 0.584,
-        "dodgeResist": 0.308,
-        "critMultResist": 0.626,
+        "critResist": 7.42,
+        "comboResist": 2.01,
+        "dodgeResist": 1.484,
+        "critMultResist": 3.21,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10775,8 +10775,8 @@
       "isBoss": false,
       "minLevel": 785,
       "maxLevel": 812,
-      "hpMin": 4675612076,
-      "hpMax": 4675612076,
+      "hpMin": 1823970591316,
+      "hpMax": 1823970591316,
       "atkMin": 52086,
       "atkMax": 52086,
       "expMin": 41902,
@@ -10797,10 +10797,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9427999,
-        "comboResist": 0.5952,
-        "dodgeResist": 0.31919998,
-        "critMultResist": 0.64280003,
+        "critResist": 7.476,
+        "comboResist": 2.0379999,
+        "dodgeResist": 1.4951999,
+        "critMultResist": 3.238,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10821,8 +10821,8 @@
       "isBoss": false,
       "minLevel": 785,
       "maxLevel": 812,
-      "hpMin": 4957716045,
-      "hpMax": 4957716045,
+      "hpMin": 1934020213585,
+      "hpMax": 1934020213585,
       "atkMin": 48941,
       "atkMax": 48941,
       "expMin": 42237,
@@ -10843,10 +10843,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9427999,
-        "comboResist": 0.5952,
-        "dodgeResist": 0.31919998,
-        "critMultResist": 0.64280003,
+        "critResist": 7.476,
+        "comboResist": 2.0379999,
+        "dodgeResist": 1.4951999,
+        "critMultResist": 3.238,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10870,8 +10870,8 @@
       "isBoss": false,
       "minLevel": 785,
       "maxLevel": 812,
-      "hpMin": 4753974290,
-      "hpMax": 4753974290,
+      "hpMin": 1854539930835,
+      "hpMax": 1854539930835,
       "atkMin": 56164,
       "atkMax": 56164,
       "expMin": 39555,
@@ -10892,10 +10892,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9427999,
-        "comboResist": 0.5952,
-        "dodgeResist": 0.31919998,
-        "critMultResist": 0.64280003,
+        "critResist": 7.476,
+        "comboResist": 2.0379999,
+        "dodgeResist": 1.4951999,
+        "critMultResist": 3.238,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10916,8 +10916,8 @@
       "isBoss": false,
       "minLevel": 785,
       "maxLevel": 812,
-      "hpMin": 5083095587,
-      "hpMax": 5083095587,
+      "hpMin": 1982931156816,
+      "hpMax": 1982931156816,
       "atkMin": 49174,
       "atkMax": 49174,
       "expMin": 42404,
@@ -10938,10 +10938,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9427999,
-        "comboResist": 0.5952,
-        "dodgeResist": 0.31919998,
-        "critMultResist": 0.64280003,
+        "critResist": 7.476,
+        "comboResist": 2.0379999,
+        "dodgeResist": 1.4951999,
+        "critMultResist": 3.238,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -10962,8 +10962,8 @@
       "isBoss": false,
       "minLevel": 785,
       "maxLevel": 812,
-      "hpMin": 4518887649,
-      "hpMax": 4518887649,
+      "hpMin": 1762831912277,
+      "hpMax": 1762831912277,
       "atkMin": 51737,
       "atkMax": 51737,
       "expMin": 41566,
@@ -10984,10 +10984,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9427999,
-        "comboResist": 0.5952,
-        "dodgeResist": 0.31919998,
-        "critMultResist": 0.64280003,
+        "critResist": 7.476,
+        "comboResist": 2.0379999,
+        "dodgeResist": 1.4951999,
+        "critMultResist": 3.238,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11008,8 +11008,8 @@
       "isBoss": false,
       "minLevel": 785,
       "maxLevel": 812,
-      "hpMin": 5067423144,
-      "hpMax": 5067423144,
+      "hpMin": 1976817288912,
+      "hpMax": 1976817288912,
       "atkMin": 56979,
       "atkMax": 56979,
       "expMin": 42404,
@@ -11030,10 +11030,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9427999,
-        "comboResist": 0.5952,
-        "dodgeResist": 0.31919998,
-        "critMultResist": 0.64280003,
+        "critResist": 7.476,
+        "comboResist": 2.0379999,
+        "dodgeResist": 1.4951999,
+        "critMultResist": 3.238,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11167,8 +11167,8 @@
       "isBoss": false,
       "minLevel": 813,
       "maxLevel": 840,
-      "hpMin": 7039766191,
-      "hpMax": 7039766191,
+      "hpMin": 2712478368186,
+      "hpMax": 2712478368186,
       "atkMin": 66606,
       "atkMax": 66606,
       "expMin": 39060,
@@ -11189,10 +11189,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9596,
-        "comboResist": 0.6064,
-        "dodgeResist": 0.3304,
-        "critMultResist": 0.6596,
+        "critResist": 7.532,
+        "comboResist": 2.066,
+        "dodgeResist": 1.5064,
+        "critMultResist": 3.266,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11213,8 +11213,8 @@
       "isBoss": false,
       "minLevel": 813,
       "maxLevel": 840,
-      "hpMin": 7059467029,
-      "hpMax": 7059467029,
+      "hpMin": 2720069259142,
+      "hpMax": 2720069259142,
       "atkMin": 57815,
       "atkMax": 57815,
       "expMin": 51340,
@@ -11235,10 +11235,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9596,
-        "comboResist": 0.6064,
-        "dodgeResist": 0.3304,
-        "critMultResist": 0.6596,
+        "critResist": 7.532,
+        "comboResist": 2.066,
+        "dodgeResist": 1.5064,
+        "critMultResist": 3.266,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11315,8 +11315,8 @@
       "isBoss": false,
       "minLevel": 813,
       "maxLevel": 840,
-      "hpMin": 7315577926,
-      "hpMax": 7315577926,
+      "hpMin": 2818750841567,
+      "hpMax": 2818750841567,
       "atkMin": 62743,
       "atkMax": 62743,
       "expMin": 41959,
@@ -11337,10 +11337,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9596,
-        "comboResist": 0.6064,
-        "dodgeResist": 0.3304,
-        "critMultResist": 0.6596,
+        "critResist": 7.532,
+        "comboResist": 2.066,
+        "dodgeResist": 1.5064,
+        "critMultResist": 3.266,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11361,8 +11361,8 @@
       "isBoss": false,
       "minLevel": 813,
       "maxLevel": 840,
-      "hpMin": 5621305839,
-      "hpMax": 5621305839,
+      "hpMin": 2165934219373,
+      "hpMax": 2165934219373,
       "atkMin": 59014,
       "atkMax": 59014,
       "expMin": 42300,
@@ -11383,10 +11383,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9596,
-        "comboResist": 0.6064,
-        "dodgeResist": 0.3304,
-        "critMultResist": 0.6596,
+        "critResist": 7.532,
+        "comboResist": 2.066,
+        "dodgeResist": 1.5064,
+        "critMultResist": 3.266,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11407,8 +11407,8 @@
       "isBoss": false,
       "minLevel": 813,
       "maxLevel": 840,
-      "hpMin": 6192630147,
-      "hpMax": 6192630147,
+      "hpMin": 2386070057089,
+      "hpMax": 2386070057089,
       "atkMin": 55817,
       "atkMax": 55817,
       "expMin": 40595,
@@ -11429,10 +11429,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9596,
-        "comboResist": 0.6064,
-        "dodgeResist": 0.3304,
-        "critMultResist": 0.6596,
+        "critResist": 7.532,
+        "comboResist": 2.066,
+        "dodgeResist": 1.5064,
+        "critMultResist": 3.266,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11453,8 +11453,8 @@
       "isBoss": false,
       "minLevel": 813,
       "maxLevel": 840,
-      "hpMin": 7256475411,
-      "hpMax": 7256475411,
+      "hpMin": 2795978168700,
+      "hpMax": 2795978168700,
       "atkMin": 62610,
       "atkMax": 62610,
       "expMin": 39401,
@@ -11475,10 +11475,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9596,
-        "comboResist": 0.6064,
-        "dodgeResist": 0.3304,
-        "critMultResist": 0.6596,
+        "critResist": 7.532,
+        "comboResist": 2.066,
+        "dodgeResist": 1.5064,
+        "critMultResist": 3.266,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11835,8 +11835,8 @@
       "isBoss": false,
       "minLevel": 841,
       "maxLevel": 868,
-      "hpMin": 9621736795,
-      "hpMax": 9621736795,
+      "hpMin": 3582087143969,
+      "hpMax": 3582087143969,
       "atkMin": 66856,
       "atkMax": 66856,
       "expMin": 47766,
@@ -11857,10 +11857,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9764,
-        "comboResist": 0.6176,
-        "dodgeResist": 0.3416,
-        "critMultResist": 0.6764,
+        "critResist": 7.588,
+        "comboResist": 2.0939999,
+        "dodgeResist": 1.5175999,
+        "critMultResist": 3.294,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11884,8 +11884,8 @@
       "isBoss": false,
       "minLevel": 841,
       "maxLevel": 868,
-      "hpMin": 9004848951,
-      "hpMax": 9004848951,
+      "hpMin": 3352425278995,
+      "hpMax": 3352425278995,
       "atkMin": 65638,
       "atkMax": 65638,
       "expMin": 47071,
@@ -11906,10 +11906,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9764,
-        "comboResist": 0.6176,
-        "dodgeResist": 0.3416,
-        "critMultResist": 0.6764,
+        "critResist": 7.588,
+        "comboResist": 2.0939999,
+        "dodgeResist": 1.5175999,
+        "critMultResist": 3.294,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11930,8 +11930,8 @@
       "isBoss": false,
       "minLevel": 841,
       "maxLevel": 868,
-      "hpMin": 8593590388,
-      "hpMax": 8593590388,
+      "hpMin": 3199317369012,
+      "hpMax": 3199317369012,
       "atkMin": 69902,
       "atkMax": 69902,
       "expMin": 51761,
@@ -11952,10 +11952,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9764,
-        "comboResist": 0.6176,
-        "dodgeResist": 0.3416,
-        "critMultResist": 0.6764,
+        "critResist": 7.588,
+        "comboResist": 2.0939999,
+        "dodgeResist": 1.5175999,
+        "critMultResist": 3.294,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -11976,8 +11976,8 @@
       "isBoss": false,
       "minLevel": 841,
       "maxLevel": 868,
-      "hpMin": 8799219669,
-      "hpMax": 8799219669,
+      "hpMin": 3275871324004,
+      "hpMax": 3275871324004,
       "atkMin": 65181,
       "atkMax": 65181,
       "expMin": 49329,
@@ -11998,10 +11998,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9764,
-        "comboResist": 0.6176,
-        "dodgeResist": 0.3416,
-        "critMultResist": 0.6764,
+        "critResist": 7.588,
+        "comboResist": 2.0939999,
+        "dodgeResist": 1.5175999,
+        "critMultResist": 3.294,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12022,8 +12022,8 @@
       "isBoss": false,
       "minLevel": 841,
       "maxLevel": 868,
-      "hpMin": 7359814699,
-      "hpMax": 7359814699,
+      "hpMin": 2739993639064,
+      "hpMax": 2739993639064,
       "atkMin": 72490,
       "atkMax": 72490,
       "expMin": 35607,
@@ -12044,10 +12044,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9764,
-        "comboResist": 0.6176,
-        "dodgeResist": 0.3416,
-        "critMultResist": 0.6764,
+        "critResist": 7.588,
+        "comboResist": 2.0939999,
+        "dodgeResist": 1.5175999,
+        "critMultResist": 3.294,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12071,8 +12071,8 @@
       "isBoss": false,
       "minLevel": 841,
       "maxLevel": 868,
-      "hpMin": 7873887903,
-      "hpMax": 7873887903,
+      "hpMin": 2931378526543,
+      "hpMax": 2931378526543,
       "atkMin": 63354,
       "atkMax": 63354,
       "expMin": 51066,
@@ -12093,10 +12093,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9764,
-        "comboResist": 0.6176,
-        "dodgeResist": 0.3416,
-        "critMultResist": 0.6764,
+        "critResist": 7.588,
+        "comboResist": 2.0939999,
+        "dodgeResist": 1.5175999,
+        "critMultResist": 3.294,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12168,8 +12168,8 @@
       "isBoss": false,
       "minLevel": 869,
       "maxLevel": 896,
-      "hpMin": 10393496846,
-      "hpMax": 10393496846,
+      "hpMin": 3652452933884,
+      "hpMax": 3652452933884,
       "atkMin": 77648,
       "atkMax": 77648,
       "expMin": 51886,
@@ -12190,10 +12190,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9932,
-        "comboResist": 0.6288,
-        "dodgeResist": 0.35279998,
-        "critMultResist": 0.6932,
+        "critResist": 7.644,
+        "comboResist": 2.122,
+        "dodgeResist": 1.5288,
+        "critMultResist": 3.322,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12214,8 +12214,8 @@
       "isBoss": false,
       "minLevel": 869,
       "maxLevel": 896,
-      "hpMin": 12252401231,
-      "hpMax": 12252401231,
+      "hpMin": 4305703796074,
+      "hpMax": 4305703796074,
       "atkMin": 80781,
       "atkMax": 80781,
       "expMin": 40513,
@@ -12236,10 +12236,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9932,
-        "comboResist": 0.6288,
-        "dodgeResist": 0.35279998,
-        "critMultResist": 0.6932,
+        "critResist": 7.644,
+        "comboResist": 2.122,
+        "dodgeResist": 1.5288,
+        "critMultResist": 3.322,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12260,8 +12260,8 @@
       "isBoss": false,
       "minLevel": 869,
       "maxLevel": 896,
-      "hpMin": 13199390257,
-      "hpMax": 13199390257,
+      "hpMin": 4638491971153,
+      "hpMax": 4638491971153,
       "atkMin": 82348,
       "atkMax": 82348,
       "expMin": 46377,
@@ -12282,10 +12282,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9932,
-        "comboResist": 0.6288,
-        "dodgeResist": 0.35279998,
-        "critMultResist": 0.6932,
+        "critResist": 7.644,
+        "comboResist": 2.122,
+        "dodgeResist": 1.5288,
+        "critMultResist": 3.322,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12306,8 +12306,8 @@
       "isBoss": false,
       "minLevel": 869,
       "maxLevel": 896,
-      "hpMin": 10849454525,
-      "hpMax": 10849454525,
+      "hpMin": 3812684277440,
+      "hpMax": 3812684277440,
       "atkMin": 78518,
       "atkMax": 78518,
       "expMin": 52241,
@@ -12328,10 +12328,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9932,
-        "comboResist": 0.6288,
-        "dodgeResist": 0.35279998,
-        "critMultResist": 0.6932,
+        "critResist": 7.644,
+        "comboResist": 2.122,
+        "dodgeResist": 1.5288,
+        "critMultResist": 3.322,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12352,8 +12352,8 @@
       "isBoss": false,
       "minLevel": 869,
       "maxLevel": 896,
-      "hpMin": 10077833837,
-      "hpMax": 10077833837,
+      "hpMin": 3541523542191,
+      "hpMax": 3541523542191,
       "atkMin": 77126,
       "atkMax": 77126,
       "expMin": 36426,
@@ -12374,10 +12374,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9932,
-        "comboResist": 0.6288,
-        "dodgeResist": 0.35279998,
-        "critMultResist": 0.6932,
+        "critResist": 7.644,
+        "comboResist": 2.122,
+        "dodgeResist": 1.5288,
+        "critMultResist": 3.322,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12398,8 +12398,8 @@
       "isBoss": false,
       "minLevel": 869,
       "maxLevel": 896,
-      "hpMin": 12252401231,
-      "hpMax": 12252401231,
+      "hpMin": 4305703796074,
+      "hpMax": 4305703796074,
       "atkMin": 86525,
       "atkMax": 86525,
       "expMin": 38026,
@@ -12420,10 +12420,10 @@
         }
       ],
       "resists": {
-        "critResist": 1.9932,
-        "comboResist": 0.6288,
-        "dodgeResist": 0.35279998,
-        "critMultResist": 0.6932,
+        "critResist": 7.644,
+        "comboResist": 2.122,
+        "dodgeResist": 1.5288,
+        "critMultResist": 3.322,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12444,8 +12444,8 @@
       "isBoss": false,
       "minLevel": 897,
       "maxLevel": 924,
-      "hpMin": 17434295971,
-      "hpMax": 17434295971,
+      "hpMin": 5834649871221,
+      "hpMax": 5834649871221,
       "atkMin": 93145,
       "atkMax": 93145,
       "expMin": 38827,
@@ -12466,10 +12466,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.01,
-        "comboResist": 0.64,
-        "dodgeResist": 0.364,
-        "critMultResist": 0.71000004,
+        "critResist": 7.7,
+        "comboResist": 2.1499999,
+        "dodgeResist": 1.54,
+        "critMultResist": 3.35,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12490,8 +12490,8 @@
       "isBoss": false,
       "minLevel": 897,
       "maxLevel": 924,
-      "hpMin": 17627295558,
-      "hpMax": 17627295558,
+      "hpMin": 5899240091197,
+      "hpMax": 5899240091197,
       "atkMin": 100110,
       "atkMax": 100110,
       "expMin": 41523,
@@ -12512,10 +12512,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.01,
-        "comboResist": 0.64,
-        "dodgeResist": 0.364,
-        "critMultResist": 0.71000004,
+        "critResist": 7.7,
+        "comboResist": 2.1499999,
+        "dodgeResist": 1.54,
+        "critMultResist": 3.35,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12536,8 +12536,8 @@
       "isBoss": false,
       "minLevel": 897,
       "maxLevel": 924,
-      "hpMin": 14877051451,
-      "hpMax": 14877051451,
+      "hpMin": 4978829456531,
+      "hpMax": 4978829456531,
       "atkMin": 82996,
       "atkMax": 82996,
       "expMin": 52848,
@@ -12558,10 +12558,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.01,
-        "comboResist": 0.64,
-        "dodgeResist": 0.364,
-        "critMultResist": 0.71000004,
+        "critResist": 7.7,
+        "comboResist": 2.1499999,
+        "dodgeResist": 1.54,
+        "critMultResist": 3.35,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12582,8 +12582,8 @@
       "isBoss": false,
       "minLevel": 897,
       "maxLevel": 924,
-      "hpMin": 14539302175,
-      "hpMax": 14539302175,
+      "hpMin": 4865796571572,
+      "hpMax": 4865796571572,
       "atkMin": 82598,
       "atkMax": 82598,
       "expMin": 52668,
@@ -12604,10 +12604,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.01,
-        "comboResist": 0.64,
-        "dodgeResist": 0.364,
-        "critMultResist": 0.71000004,
+        "critResist": 7.7,
+        "comboResist": 2.1499999,
+        "dodgeResist": 1.54,
+        "critMultResist": 3.35,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12628,8 +12628,8 @@
       "isBoss": false,
       "minLevel": 897,
       "maxLevel": 924,
-      "hpMin": 15166550831,
-      "hpMax": 15166550831,
+      "hpMin": 5075714786496,
+      "hpMax": 5075714786496,
       "atkMin": 96727,
       "atkMax": 96727,
       "expMin": 47815,
@@ -12650,10 +12650,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.01,
-        "comboResist": 0.64,
-        "dodgeResist": 0.364,
-        "critMultResist": 0.71000004,
+        "critResist": 7.7,
+        "comboResist": 2.1499999,
+        "dodgeResist": 1.54,
+        "critMultResist": 3.35,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12674,8 +12674,8 @@
       "isBoss": false,
       "minLevel": 897,
       "maxLevel": 924,
-      "hpMin": 16179798660,
-      "hpMax": 16179798660,
+      "hpMin": 5414813441373,
+      "hpMax": 5414813441373,
       "atkMin": 84787,
       "atkMax": 84787,
       "expMin": 38108,
@@ -12696,10 +12696,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.01,
-        "comboResist": 0.64,
-        "dodgeResist": 0.364,
-        "critMultResist": 0.71000004,
+        "critResist": 7.7,
+        "comboResist": 2.1499999,
+        "dodgeResist": 1.54,
+        "critMultResist": 3.35,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12720,8 +12720,8 @@
       "isBoss": false,
       "minLevel": 925,
       "maxLevel": 952,
-      "hpMin": 22419067632,
-      "hpMax": 22419067632,
+      "hpMin": 7230085983515,
+      "hpMax": 7230085983515,
       "atkMin": 103500,
       "atkMax": 103500,
       "expMin": 45243,
@@ -12742,10 +12742,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0268,
-        "comboResist": 0.6512,
-        "dodgeResist": 0.3752,
-        "critMultResist": 0.7268,
+        "critResist": 7.756,
+        "comboResist": 2.178,
+        "dodgeResist": 1.5511999,
+        "critMultResist": 3.378,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12766,8 +12766,8 @@
       "isBoss": false,
       "minLevel": 953,
       "maxLevel": 980,
-      "hpMin": 33067824202,
-      "hpMax": 33067824202,
+      "hpMin": 8459141600000,
+      "hpMax": 8459141600000,
       "atkMin": 111911,
       "atkMax": 111911,
       "expMin": 52060,
@@ -12788,10 +12788,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0436,
-        "comboResist": 0.6624,
-        "dodgeResist": 0.38639998,
-        "critMultResist": 0.7436,
+        "critResist": 7.8120003,
+        "comboResist": 2.206,
+        "dodgeResist": 1.5624,
+        "critMultResist": 3.4060001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12812,8 +12812,8 @@
       "isBoss": false,
       "minLevel": 953,
       "maxLevel": 980,
-      "hpMin": 29754731128,
-      "hpMax": 29754731128,
+      "hpMin": 7611613100000,
+      "hpMax": 7611613100000,
       "atkMin": 126189,
       "atkMax": 126189,
       "expMin": 40149,
@@ -12834,10 +12834,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0436,
-        "comboResist": 0.6624,
-        "dodgeResist": 0.38639998,
-        "critMultResist": 0.7436,
+        "critResist": 7.8120003,
+        "comboResist": 2.206,
+        "dodgeResist": 1.5624,
+        "critMultResist": 3.4060001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12858,8 +12858,8 @@
       "isBoss": false,
       "minLevel": 953,
       "maxLevel": 980,
-      "hpMin": 33446463411,
-      "hpMax": 33446463411,
+      "hpMin": 8556002000000,
+      "hpMax": 8556002000000,
       "atkMin": 112170,
       "atkMax": 112170,
       "expMin": 49370,
@@ -12880,10 +12880,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0436,
-        "comboResist": 0.6624,
-        "dodgeResist": 0.38639998,
-        "critMultResist": 0.7436,
+        "critResist": 7.8120003,
+        "comboResist": 2.206,
+        "dodgeResist": 1.5624,
+        "critMultResist": 3.4060001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12904,8 +12904,8 @@
       "isBoss": false,
       "minLevel": 953,
       "maxLevel": 980,
-      "hpMin": 28050854691,
-      "hpMax": 28050854691,
+      "hpMin": 7175741300000,
+      "hpMax": 7175741300000,
       "atkMin": 124631,
       "atkMax": 124631,
       "expMin": 47833,
@@ -12926,10 +12926,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0436,
-        "comboResist": 0.6624,
-        "dodgeResist": 0.38639998,
-        "critMultResist": 0.7436,
+        "critResist": 7.8120003,
+        "comboResist": 2.206,
+        "dodgeResist": 1.5624,
+        "critMultResist": 3.4060001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12950,8 +12950,8 @@
       "isBoss": false,
       "minLevel": 953,
       "maxLevel": 980,
-      "hpMin": 32121226181,
-      "hpMax": 32121226181,
+      "hpMin": 8216990600000,
+      "hpMax": 8216990600000,
       "atkMin": 128266,
       "atkMax": 128266,
       "expMin": 46297,
@@ -12972,10 +12972,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0436,
-        "comboResist": 0.6624,
-        "dodgeResist": 0.38639998,
-        "critMultResist": 0.7436,
+        "critResist": 7.8120003,
+        "comboResist": 2.206,
+        "dodgeResist": 1.5624,
+        "critMultResist": 3.4060001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -12996,8 +12996,8 @@
       "isBoss": false,
       "minLevel": 953,
       "maxLevel": 980,
-      "hpMin": 32594525192,
-      "hpMax": 32594525192,
+      "hpMin": 8338066099999,
+      "hpMax": 8338066099999,
       "atkMin": 128785,
       "atkMax": 128785,
       "expMin": 46489,
@@ -13018,10 +13018,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0436,
-        "comboResist": 0.6624,
-        "dodgeResist": 0.38639998,
-        "critMultResist": 0.7436,
+        "critResist": 7.8120003,
+        "comboResist": 2.206,
+        "dodgeResist": 1.5624,
+        "critMultResist": 3.4060001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13042,8 +13042,8 @@
       "isBoss": false,
       "minLevel": 981,
       "maxLevel": 1008,
-      "hpMin": 42227914645,
-      "hpMax": 42227914645,
+      "hpMin": 8443494399999,
+      "hpMax": 8443494399999,
       "atkMin": 124173,
       "atkMax": 124173,
       "expMin": 52841,
@@ -13064,10 +13064,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0604,
-        "comboResist": 0.6736,
-        "dodgeResist": 0.3976,
-        "critMultResist": 0.7604,
+        "critResist": 7.868,
+        "comboResist": 2.234,
+        "dodgeResist": 1.5735999,
+        "critMultResist": 3.434,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13088,8 +13088,8 @@
       "isBoss": false,
       "minLevel": 981,
       "maxLevel": 1008,
-      "hpMin": 47500770583,
-      "hpMax": 47500770583,
+      "hpMin": 9497804800000,
+      "hpMax": 9497804800000,
       "atkMin": 128034,
       "atkMax": 128034,
       "expMin": 51053,
@@ -13110,10 +13110,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0604,
-        "comboResist": 0.6736,
-        "dodgeResist": 0.3976,
-        "critMultResist": 0.7604,
+        "critResist": 7.868,
+        "comboResist": 2.234,
+        "dodgeResist": 1.5735999,
+        "critMultResist": 3.434,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13134,8 +13134,8 @@
       "isBoss": false,
       "minLevel": 981,
       "maxLevel": 1008,
-      "hpMin": 38983080222,
-      "hpMax": 38983080222,
+      "hpMin": 7794688000000,
+      "hpMax": 7794688000000,
       "atkMin": 121797,
       "atkMax": 121797,
       "expMin": 55026,
@@ -13156,10 +13156,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0604,
-        "comboResist": 0.6736,
-        "dodgeResist": 0.3976,
-        "critMultResist": 0.7604,
+        "critResist": 7.868,
+        "comboResist": 2.234,
+        "dodgeResist": 1.5735999,
+        "critMultResist": 3.434,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13180,8 +13180,8 @@
       "isBoss": false,
       "minLevel": 981,
       "maxLevel": 1008,
-      "hpMin": 48041576320,
-      "hpMax": 48041576320,
+      "hpMin": 9605939200000,
+      "hpMax": 9605939200000,
       "atkMin": 128628,
       "atkMax": 128628,
       "expMin": 48272,
@@ -13202,10 +13202,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0604,
-        "comboResist": 0.6736,
-        "dodgeResist": 0.3976,
-        "critMultResist": 0.7604,
+        "critResist": 7.868,
+        "comboResist": 2.234,
+        "dodgeResist": 1.5735999,
+        "critMultResist": 3.434,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13226,8 +13226,8 @@
       "isBoss": false,
       "minLevel": 981,
       "maxLevel": 1008,
-      "hpMin": 47635972017,
-      "hpMax": 47635972017,
+      "hpMin": 9524838400000,
+      "hpMax": 9524838400000,
       "atkMin": 138132,
       "atkMax": 138132,
       "expMin": 59595,
@@ -13248,10 +13248,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0604,
-        "comboResist": 0.6736,
-        "dodgeResist": 0.3976,
-        "critMultResist": 0.7604,
+        "critResist": 7.868,
+        "comboResist": 2.234,
+        "dodgeResist": 1.5735999,
+        "critMultResist": 3.434,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13272,8 +13272,8 @@
       "isBoss": false,
       "minLevel": 981,
       "maxLevel": 1008,
-      "hpMin": 51556813612,
-      "hpMax": 51556813612,
+      "hpMin": 10308812800000,
+      "hpMax": 10308812800000,
       "atkMin": 141102,
       "atkMax": 141102,
       "expMin": 60390,
@@ -13294,10 +13294,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0604,
-        "comboResist": 0.6736,
-        "dodgeResist": 0.3976,
-        "critMultResist": 0.7604,
+        "critResist": 7.868,
+        "comboResist": 2.234,
+        "dodgeResist": 1.5735999,
+        "critMultResist": 3.434,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13318,8 +13318,8 @@
       "isBoss": false,
       "minLevel": 1009,
       "maxLevel": 1036,
-      "hpMin": 71056562370,
-      "hpMax": 71056562370,
+      "hpMin": 10452443900000,
+      "hpMax": 10452443900000,
       "atkMin": 157404,
       "atkMax": 157404,
       "expMin": 61506,
@@ -13340,10 +13340,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0772,
-        "comboResist": 0.68479997,
-        "dodgeResist": 0.40879998,
-        "critMultResist": 0.7772,
+        "critResist": 7.9240003,
+        "comboResist": 2.262,
+        "dodgeResist": 1.5848,
+        "critMultResist": 3.4620001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13364,8 +13364,8 @@
       "isBoss": false,
       "minLevel": 1009,
       "maxLevel": 1036,
-      "hpMin": 58746474568,
-      "hpMax": 58746474568,
+      "hpMin": 8641625900000,
+      "hpMax": 8641625900000,
       "atkMin": 150606,
       "atkMax": 150606,
       "expMin": 45050,
@@ -13386,10 +13386,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0772,
-        "comboResist": 0.68479997,
-        "dodgeResist": 0.40879998,
-        "critMultResist": 0.7772,
+        "critResist": 7.9240003,
+        "comboResist": 2.262,
+        "dodgeResist": 1.5848,
+        "critMultResist": 3.4620001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13410,8 +13410,8 @@
       "isBoss": false,
       "minLevel": 1009,
       "maxLevel": 1036,
-      "hpMin": 75775429361,
-      "hpMax": 75775429361,
+      "hpMin": 11146590800000,
+      "hpMax": 11146590800000,
       "atkMin": 171340,
       "atkMax": 171340,
       "expMin": 56363,
@@ -13432,10 +13432,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0772,
-        "comboResist": 0.68479997,
-        "dodgeResist": 0.40879998,
-        "critMultResist": 0.7772,
+        "critResist": 7.9240003,
+        "comboResist": 2.262,
+        "dodgeResist": 1.5848,
+        "critMultResist": 3.4620001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13456,8 +13456,8 @@
       "isBoss": false,
       "minLevel": 1009,
       "maxLevel": 1036,
-      "hpMin": 71672066760,
-      "hpMax": 71672066760,
+      "hpMin": 10542984800000,
+      "hpMax": 10542984800000,
       "atkMin": 146527,
       "atkMax": 146527,
       "expMin": 46901,
@@ -13478,10 +13478,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0772,
-        "comboResist": 0.68479997,
-        "dodgeResist": 0.40879998,
-        "critMultResist": 0.7772,
+        "critResist": 7.9240003,
+        "comboResist": 2.262,
+        "dodgeResist": 1.5848,
+        "critMultResist": 3.4620001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13502,8 +13502,8 @@
       "isBoss": false,
       "minLevel": 1009,
       "maxLevel": 1036,
-      "hpMin": 65311854729,
-      "hpMax": 65311854729,
+      "hpMin": 9607395500000,
+      "hpMax": 9607395500000,
       "atkMin": 142788,
       "atkMax": 142788,
       "expMin": 43198,
@@ -13524,10 +13524,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0772,
-        "comboResist": 0.68479997,
-        "dodgeResist": 0.40879998,
-        "critMultResist": 0.7772,
+        "critResist": 7.9240003,
+        "comboResist": 2.262,
+        "dodgeResist": 1.5848,
+        "critMultResist": 3.4620001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13548,8 +13548,8 @@
       "isBoss": false,
       "minLevel": 1009,
       "maxLevel": 1036,
-      "hpMin": 69415217330,
-      "hpMax": 69415217330,
+      "hpMin": 10211001499999,
+      "hpMax": 10211001499999,
       "atkMin": 167941,
       "atkMax": 167941,
       "expMin": 55541,
@@ -13570,10 +13570,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0772,
-        "comboResist": 0.68479997,
-        "dodgeResist": 0.40879998,
-        "critMultResist": 0.7772,
+        "critResist": 7.9240003,
+        "comboResist": 2.262,
+        "dodgeResist": 1.5848,
+        "critMultResist": 3.4620001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13594,8 +13594,8 @@
       "isBoss": false,
       "minLevel": 1037,
       "maxLevel": 1064,
-      "hpMin": 91382679911,
-      "hpMax": 91382679911,
+      "hpMin": 9883368000000,
+      "hpMax": 9883368000000,
       "atkMin": 160014,
       "atkMax": 160014,
       "expMin": 51854,
@@ -13616,10 +13616,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0939999,
-        "comboResist": 0.696,
-        "dodgeResist": 0.42,
-        "critMultResist": 0.794,
+        "critResist": 7.98,
+        "comboResist": 2.29,
+        "dodgeResist": 1.596,
+        "critMultResist": 3.49,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13640,8 +13640,8 @@
       "isBoss": false,
       "minLevel": 1037,
       "maxLevel": 1064,
-      "hpMin": 119109015748,
-      "hpMax": 119109015748,
+      "hpMin": 12882071700000,
+      "hpMax": 12882071700000,
       "atkMin": 197291,
       "atkMax": 197291,
       "expMin": 45607,
@@ -13662,10 +13662,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0939999,
-        "comboResist": 0.696,
-        "dodgeResist": 0.42,
-        "critMultResist": 0.794,
+        "critResist": 7.98,
+        "comboResist": 2.29,
+        "dodgeResist": 1.596,
+        "critMultResist": 3.49,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13686,8 +13686,8 @@
       "isBoss": false,
       "minLevel": 1037,
       "maxLevel": 1064,
-      "hpMin": 107270804941,
-      "hpMax": 107270804941,
+      "hpMin": 11601726300000,
+      "hpMax": 11601726300000,
       "atkMin": 166616,
       "atkMax": 166616,
       "expMin": 50396,
@@ -13708,10 +13708,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0939999,
-        "comboResist": 0.696,
-        "dodgeResist": 0.42,
-        "critMultResist": 0.794,
+        "critResist": 7.98,
+        "comboResist": 2.29,
+        "dodgeResist": 1.596,
+        "critMultResist": 3.49,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13732,8 +13732,8 @@
       "isBoss": false,
       "minLevel": 1037,
       "maxLevel": 1064,
-      "hpMin": 111320719165,
-      "hpMax": 111320719165,
+      "hpMin": 12039739200000,
+      "hpMax": 12039739200000,
       "atkMin": 181371,
       "atkMax": 181371,
       "expMin": 50813,
@@ -13754,10 +13754,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0939999,
-        "comboResist": 0.696,
-        "dodgeResist": 0.42,
-        "critMultResist": 0.794,
+        "critResist": 7.98,
+        "comboResist": 2.29,
+        "dodgeResist": 1.596,
+        "critMultResist": 3.49,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13778,8 +13778,8 @@
       "isBoss": false,
       "minLevel": 1037,
       "maxLevel": 1064,
-      "hpMin": 111009187301,
-      "hpMax": 111009187301,
+      "hpMin": 12006045900000,
+      "hpMax": 12006045900000,
       "atkMin": 194185,
       "atkMax": 194185,
       "expMin": 59560,
@@ -13800,10 +13800,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0939999,
-        "comboResist": 0.696,
-        "dodgeResist": 0.42,
-        "critMultResist": 0.794,
+        "critResist": 7.98,
+        "comboResist": 2.29,
+        "dodgeResist": 1.596,
+        "critMultResist": 3.49,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13824,8 +13824,8 @@
       "isBoss": false,
       "minLevel": 1037,
       "maxLevel": 1064,
-      "hpMin": 96055657861,
-      "hpMax": 96055657861,
+      "hpMin": 10388767500000,
+      "hpMax": 10388767500000,
       "atkMin": 161956,
       "atkMax": 161956,
       "expMin": 49355,
@@ -13846,10 +13846,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.0939999,
-        "comboResist": 0.696,
-        "dodgeResist": 0.42,
-        "critMultResist": 0.794,
+        "critResist": 7.98,
+        "comboResist": 2.29,
+        "dodgeResist": 1.596,
+        "critMultResist": 3.49,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13870,8 +13870,8 @@
       "isBoss": false,
       "minLevel": 1065,
       "maxLevel": 1092,
-      "hpMin": 184924357848,
-      "hpMax": 184924357848,
+      "hpMin": 12538400000000,
+      "hpMax": 12538400000000,
       "atkMin": 202000,
       "atkMax": 202000,
       "expMin": 52671,
@@ -13892,10 +13892,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.1108,
-        "comboResist": 0.7072,
-        "dodgeResist": 0.4312,
-        "critMultResist": 0.8108,
+        "critResist": 8.036,
+        "comboResist": 2.318,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.5180001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13916,8 +13916,8 @@
       "isBoss": false,
       "minLevel": 1093,
       "maxLevel": 1120,
-      "hpMin": 335363741014,
-      "hpMax": 335363741014,
+      "hpMin": 14000000000000,
+      "hpMax": 14000000000000,
       "atkMin": 230817,
       "atkMax": 230817,
       "expMin": 53286,
@@ -13938,10 +13938,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.1276,
-        "comboResist": 0.7184,
-        "dodgeResist": 0.44239998,
-        "critMultResist": 0.8276,
+        "critResist": 8.092,
+        "comboResist": 2.346,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.546,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -13984,10 +13984,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.1444,
-        "comboResist": 0.7296,
-        "dodgeResist": 0.4536,
-        "critMultResist": 0.8444,
+        "critResist": 8.148,
+        "comboResist": 2.374,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.5740001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14031,10 +14031,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.1444,
-        "comboResist": 0.7296,
-        "dodgeResist": 0.4536,
-        "critMultResist": 0.8444,
+        "critResist": 8.148,
+        "comboResist": 2.374,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.5740001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14072,10 +14072,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.1444,
-        "comboResist": 0.7296,
-        "dodgeResist": 0.4536,
-        "critMultResist": 0.8444,
+        "critResist": 8.148,
+        "comboResist": 2.374,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.5740001,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14119,10 +14119,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.1612,
-        "comboResist": 0.7408,
-        "dodgeResist": 0.4648,
-        "critMultResist": 0.86120003,
+        "critResist": 8.204,
+        "comboResist": 2.402,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.602,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14165,10 +14165,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.1612,
-        "comboResist": 0.7408,
-        "dodgeResist": 0.4648,
-        "critMultResist": 0.86120003,
+        "critResist": 8.204,
+        "comboResist": 2.402,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.602,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14207,10 +14207,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.1612,
-        "comboResist": 0.7408,
-        "dodgeResist": 0.4648,
-        "critMultResist": 0.86120003,
+        "critResist": 8.204,
+        "comboResist": 2.402,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.602,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14254,10 +14254,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.178,
-        "comboResist": 0.752,
-        "dodgeResist": 0.47599998,
-        "critMultResist": 0.878,
+        "critResist": 8.26,
+        "comboResist": 2.43,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.63,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14295,10 +14295,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.178,
-        "comboResist": 0.752,
-        "dodgeResist": 0.47599998,
-        "critMultResist": 0.878,
+        "critResist": 8.26,
+        "comboResist": 2.43,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.63,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14337,10 +14337,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.178,
-        "comboResist": 0.752,
-        "dodgeResist": 0.47599998,
-        "critMultResist": 0.878,
+        "critResist": 8.26,
+        "comboResist": 2.43,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.63,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14378,10 +14378,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.178,
-        "comboResist": 0.752,
-        "dodgeResist": 0.47599998,
-        "critMultResist": 0.878,
+        "critResist": 8.26,
+        "comboResist": 2.43,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.63,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14424,10 +14424,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.1948,
-        "comboResist": 0.7632,
-        "dodgeResist": 0.4872,
-        "critMultResist": 0.8948,
+        "critResist": 8.316,
+        "comboResist": 2.458,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.658,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14470,10 +14470,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.7744,
-        "dodgeResist": 0.49839997,
-        "critMultResist": 0.9116,
+        "critResist": 8.372,
+        "comboResist": 2.486,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.686,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14517,10 +14517,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.7744,
-        "dodgeResist": 0.49839997,
-        "critMultResist": 0.9116,
+        "critResist": 8.372,
+        "comboResist": 2.486,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.686,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14559,10 +14559,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.7744,
-        "dodgeResist": 0.49839997,
-        "critMultResist": 0.9116,
+        "critResist": 8.372,
+        "comboResist": 2.486,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.686,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14605,10 +14605,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.7856,
-        "dodgeResist": 0.5096,
-        "critMultResist": 0.92840004,
+        "critResist": 8.428,
+        "comboResist": 2.514,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.714,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14651,10 +14651,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.7856,
-        "dodgeResist": 0.5096,
-        "critMultResist": 0.92840004,
+        "critResist": 8.428,
+        "comboResist": 2.514,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.714,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14699,10 +14699,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.7968,
-        "dodgeResist": 0.5208,
-        "critMultResist": 0.9452,
+        "critResist": 8.484,
+        "comboResist": 2.542,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.742,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14746,10 +14746,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.7968,
-        "dodgeResist": 0.5208,
-        "critMultResist": 0.9452,
+        "critResist": 8.484,
+        "comboResist": 2.542,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.742,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14787,10 +14787,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.7968,
-        "dodgeResist": 0.5208,
-        "critMultResist": 0.9452,
+        "critResist": 8.484,
+        "comboResist": 2.542,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.742,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14833,10 +14833,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.80799997,
-        "dodgeResist": 0.532,
-        "critMultResist": 0.962,
+        "critResist": 8.54,
+        "comboResist": 2.57,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.77,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14879,10 +14879,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.80799997,
-        "dodgeResist": 0.532,
-        "critMultResist": 0.962,
+        "critResist": 8.54,
+        "comboResist": 2.57,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.77,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14927,10 +14927,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8192,
-        "dodgeResist": 0.5432,
-        "critMultResist": 0.9788,
+        "critResist": 8.596,
+        "comboResist": 2.598,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.798,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -14973,10 +14973,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8192,
-        "dodgeResist": 0.5432,
-        "critMultResist": 0.9788,
+        "critResist": 8.596,
+        "comboResist": 2.598,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.798,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15014,10 +15014,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8192,
-        "dodgeResist": 0.5432,
-        "critMultResist": 0.9788,
+        "critResist": 8.596,
+        "comboResist": 2.598,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.798,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15061,10 +15061,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8304,
-        "dodgeResist": 0.55439997,
-        "critMultResist": 0.99560004,
+        "critResist": 8.652,
+        "comboResist": 2.626,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.826,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15107,10 +15107,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8416,
-        "dodgeResist": 0.5656,
-        "critMultResist": 1.0124,
+        "critResist": 8.708,
+        "comboResist": 2.654,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.854,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15154,10 +15154,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8416,
-        "dodgeResist": 0.5656,
-        "critMultResist": 1.0124,
+        "critResist": 8.708,
+        "comboResist": 2.654,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.854,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15200,10 +15200,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8528,
-        "dodgeResist": 0.5768,
-        "critMultResist": 1.0292001,
+        "critResist": 8.764,
+        "comboResist": 2.682,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.882,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15247,10 +15247,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8528,
-        "dodgeResist": 0.5768,
-        "critMultResist": 1.0292001,
+        "critResist": 8.764,
+        "comboResist": 2.682,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.882,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15293,10 +15293,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.86399996,
-        "dodgeResist": 0.588,
-        "critMultResist": 1.046,
+        "critResist": 8.82,
+        "comboResist": 2.71,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.91,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15341,10 +15341,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.86399996,
-        "dodgeResist": 0.588,
-        "critMultResist": 1.046,
+        "critResist": 8.82,
+        "comboResist": 2.71,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.91,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15387,10 +15387,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8752,
-        "dodgeResist": 0.5992,
-        "critMultResist": 1.0628,
+        "critResist": 8.876,
+        "comboResist": 2.738,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.938,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15434,10 +15434,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8752,
-        "dodgeResist": 0.5992,
-        "critMultResist": 1.0628,
+        "critResist": 8.876,
+        "comboResist": 2.738,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.938,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15480,10 +15480,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8864,
-        "dodgeResist": 0.61039996,
-        "critMultResist": 1.0796,
+        "critResist": 8.932,
+        "comboResist": 2.766,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.966,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15528,10 +15528,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8864,
-        "dodgeResist": 0.61039996,
-        "critMultResist": 1.0796,
+        "critResist": 8.932,
+        "comboResist": 2.766,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.966,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15574,10 +15574,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8976,
-        "dodgeResist": 0.6216,
-        "critMultResist": 1.0964,
+        "critResist": 8.988,
+        "comboResist": 2.794,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.994,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15622,10 +15622,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.8976,
-        "dodgeResist": 0.6216,
-        "critMultResist": 1.0964,
+        "critResist": 8.988,
+        "comboResist": 2.794,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.994,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15668,10 +15668,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.9088,
-        "dodgeResist": 0.6328,
-        "critMultResist": 1.1132001,
+        "critResist": 9,
+        "comboResist": 2.822,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.022,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15715,10 +15715,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.9088,
-        "dodgeResist": 0.6328,
-        "critMultResist": 1.1132001,
+        "critResist": 9,
+        "comboResist": 2.822,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.022,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15761,10 +15761,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.92,
-        "dodgeResist": 0.644,
-        "critMultResist": 1.13,
+        "critResist": 9,
+        "comboResist": 2.85,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.05,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15802,10 +15802,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.93119997,
-        "dodgeResist": 0.6552,
-        "critMultResist": 1.1468,
+        "critResist": 9,
+        "comboResist": 2.878,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.078,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15843,10 +15843,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.93119997,
-        "dodgeResist": 0.6552,
-        "critMultResist": 1.1468,
+        "critResist": 9,
+        "comboResist": 2.878,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.078,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15884,10 +15884,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.93119997,
-        "dodgeResist": 0.6552,
-        "critMultResist": 1.1468,
+        "critResist": 9,
+        "comboResist": 2.878,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.078,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15926,10 +15926,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.93119997,
-        "dodgeResist": 0.6552,
-        "critMultResist": 1.1468,
+        "critResist": 9,
+        "comboResist": 2.878,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.078,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -15967,10 +15967,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.93119997,
-        "dodgeResist": 0.6552,
-        "critMultResist": 1.1468,
+        "critResist": 9,
+        "comboResist": 2.878,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.078,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16008,10 +16008,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.93119997,
-        "dodgeResist": 0.6552,
-        "critMultResist": 1.1468,
+        "critResist": 9,
+        "comboResist": 2.878,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.078,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16049,10 +16049,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.93119997,
-        "dodgeResist": 0.6552,
-        "critMultResist": 1.1468,
+        "critResist": 9,
+        "comboResist": 2.878,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.078,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16090,10 +16090,10 @@
         }
       ],
       "resists": {
-        "critResist": 2.2,
-        "comboResist": 0.93119997,
-        "dodgeResist": 0.6552,
-        "critMultResist": 1.1468,
+        "critResist": 9,
+        "comboResist": 2.878,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.078,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16117,8 +16117,8 @@
       "level": 30,
       "hp": 10400,
       "atk": 520,
-      "hardModeHp": 18088256,
-      "hardModeAtk": 27225,
+      "hardModeHp": 405963339304,
+      "hardModeAtk": 36300,
       "exp": 12000,
       "resists": {
         "critResist": 0.036000002,
@@ -16129,10 +16129,10 @@
         "weaken": 0.009000001
       },
       "hardModeResists": {
-        "critResist": 1.8168,
-        "comboResist": 0.5112,
-        "dodgeResist": 0.23519999,
-        "critMultResist": 0.5168,
+        "critResist": 7.056,
+        "comboResist": 1.828,
+        "dodgeResist": 1.4111999,
+        "critMultResist": 3.028,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16151,8 +16151,8 @@
       "level": 45,
       "hp": 7560,
       "atk": 713,
-      "hardModeHp": 886219032,
-      "hardModeAtk": 31125,
+      "hardModeHp": 1772078670485,
+      "hardModeAtk": 41500,
       "exp": 24750,
       "resists": {
         "critResist": 0.054,
@@ -16163,10 +16163,10 @@
         "weaken": 0.0135
       },
       "hardModeResists": {
-        "critResist": 1.8335999,
-        "comboResist": 0.5224,
-        "dodgeResist": 0.2464,
-        "critMultResist": 0.5336,
+        "critResist": 7.112,
+        "comboResist": 1.856,
+        "dodgeResist": 1.4224,
+        "critMultResist": 3.056,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16185,8 +16185,8 @@
       "level": 65,
       "hp": 13680,
       "atk": 896,
-      "hardModeHp": 1067643721,
-      "hardModeAtk": 35587,
+      "hardModeHp": 2019623075502,
+      "hardModeAtk": 47450,
       "exp": 48750,
       "resists": {
         "critResist": 0.078,
@@ -16197,10 +16197,10 @@
         "weaken": 0.0195
       },
       "hardModeResists": {
-        "critResist": 1.8504,
-        "comboResist": 0.5336,
-        "dodgeResist": 0.25759998,
-        "critMultResist": 0.5504,
+        "critResist": 7.168,
+        "comboResist": 1.884,
+        "dodgeResist": 1.4336,
+        "critMultResist": 3.084,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16219,8 +16219,8 @@
       "level": 90,
       "hp": 15840,
       "atk": 1127,
-      "hardModeHp": 1315118358,
-      "hardModeAtk": 40680,
+      "hardModeHp": 2332348885858,
+      "hardModeAtk": 54240,
       "exp": 90000,
       "resists": {
         "critResist": 0.108,
@@ -16231,10 +16231,10 @@
         "weaken": 0.027
       },
       "hardModeResists": {
-        "critResist": 1.8671999,
-        "comboResist": 0.5448,
-        "dodgeResist": 0.2688,
-        "critMultResist": 0.5672,
+        "critResist": 7.224,
+        "comboResist": 1.912,
+        "dodgeResist": 1.4448,
+        "critMultResist": 3.112,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16253,8 +16253,8 @@
       "level": 110,
       "hp": 24300,
       "atk": 2300,
-      "hardModeHp": 1616853097,
-      "hardModeAtk": 46507,
+      "hardModeHp": 2703040822216,
+      "hardModeAtk": 62010,
       "exp": 132000,
       "resists": {
         "critResist": 0.132,
@@ -16265,10 +16265,10 @@
         "weaken": 0.033
       },
       "hardModeResists": {
-        "critResist": 1.884,
-        "comboResist": 0.556,
-        "dodgeResist": 0.28,
-        "critMultResist": 0.584,
+        "critResist": 7.28,
+        "comboResist": 1.9399999,
+        "dodgeResist": 1.456,
+        "critMultResist": 3.14,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16287,8 +16287,8 @@
       "level": 150,
       "hp": 28800,
       "atk": 3449,
-      "hardModeHp": 2049944491,
-      "hardModeAtk": 53167,
+      "hardModeHp": 3179030853285,
+      "hardModeAtk": 70890,
       "exp": 240000,
       "resists": {
         "critResist": 0.18,
@@ -16299,10 +16299,10 @@
         "weaken": 0.045
       },
       "hardModeResists": {
-        "critResist": 1.9008,
-        "comboResist": 0.5672,
-        "dodgeResist": 0.29119998,
-        "critMultResist": 0.6008,
+        "critResist": 7.336,
+        "comboResist": 1.9679999,
+        "dodgeResist": 1.4671999,
+        "critMultResist": 3.168,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16321,8 +16321,8 @@
       "level": 185,
       "hp": 57600,
       "atk": 4255,
-      "hardModeHp": 2606300636,
-      "hardModeAtk": 60780,
+      "hardModeHp": 3783643457249,
+      "hardModeAtk": 81040,
       "exp": 360750,
       "resists": {
         "critResist": 0.22200002,
@@ -16333,10 +16333,10 @@
         "weaken": 0.055500004
       },
       "hardModeResists": {
-        "critResist": 1.9175999,
-        "comboResist": 0.5784,
-        "dodgeResist": 0.3024,
-        "critMultResist": 0.6176,
+        "critResist": 7.392,
+        "comboResist": 1.9959999,
+        "dodgeResist": 1.4784,
+        "critMultResist": 3.196,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16355,8 +16355,8 @@
       "level": 210,
       "hp": 97200,
       "atk": 5140,
-      "hardModeHp": 3437417412,
-      "hardModeAtk": 69480,
+      "hardModeHp": 4551528385568,
+      "hardModeAtk": 92640,
       "exp": 462000,
       "resists": {
         "critResist": 0.252,
@@ -16367,10 +16367,10 @@
         "weaken": 0.063
       },
       "hardModeResists": {
-        "critResist": 1.9344,
-        "comboResist": 0.5896,
-        "dodgeResist": 0.3136,
-        "critMultResist": 0.6344,
+        "critResist": 7.448,
+        "comboResist": 2.024,
+        "dodgeResist": 1.4896,
+        "critMultResist": 3.224,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16389,8 +16389,8 @@
       "level": 220,
       "hp": 432000,
       "atk": 7819,
-      "hardModeHp": 5890550628,
-      "hardModeAtk": 90810,
+      "hardModeHp": 6905180472744,
+      "hardModeAtk": 121080,
       "exp": 506000,
       "resists": {
         "critResist": 0.264,
@@ -16401,10 +16401,10 @@
         "weaken": 0.066
       },
       "hardModeResists": {
-        "critResist": 1.9679999,
-        "comboResist": 0.612,
-        "dodgeResist": 0.336,
-        "critMultResist": 0.668,
+        "critResist": 7.56,
+        "comboResist": 2.08,
+        "dodgeResist": 1.512,
+        "critMultResist": 3.28,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16423,8 +16423,8 @@
       "level": 260,
       "hp": 219600,
       "atk": 6232,
-      "hardModeHp": 4409180550,
-      "hardModeAtk": 79432,
+      "hardModeHp": 5557505924602,
+      "hardModeAtk": 105910,
       "exp": 702000,
       "resists": {
         "critResist": 0.312,
@@ -16435,10 +16435,10 @@
         "weaken": 0.078
       },
       "hardModeResists": {
-        "critResist": 1.9512,
-        "comboResist": 0.6008,
-        "dodgeResist": 0.32479998,
-        "critMultResist": 0.6512,
+        "critResist": 7.504,
+        "comboResist": 2.052,
+        "dodgeResist": 1.5008,
+        "critMultResist": 3.252,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16457,8 +16457,8 @@
       "level": 400,
       "hp": 2106000,
       "atk": 19435,
-      "hardModeHp": 15439966912,
-      "hardModeAtk": 135675,
+      "hardModeHp": 11174108055955,
+      "hardModeAtk": 180900,
       "exp": 1640000,
       "resists": {
         "critResist": 0.48000002,
@@ -16469,10 +16469,10 @@
         "weaken": 0.120000005
       },
       "hardModeResists": {
-        "critResist": 2.0184,
-        "comboResist": 0.6456,
-        "dodgeResist": 0.3696,
-        "critMultResist": 0.7184,
+        "critResist": 7.728,
+        "comboResist": 2.164,
+        "dodgeResist": 1.5455999,
+        "critMultResist": 3.364,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16491,8 +16491,8 @@
       "level": 400,
       "hp": 798000,
       "atk": 14374,
-      "hardModeHp": 8250874919,
-      "hardModeAtk": 103815,
+      "hardModeHp": 8704822632139,
+      "hardModeAtk": 138420,
       "exp": 1640000,
       "resists": {
         "critResist": 0.48000002,
@@ -16503,10 +16503,10 @@
         "weaken": 0.120000005
       },
       "hardModeResists": {
-        "critResist": 1.9848,
-        "comboResist": 0.6232,
-        "dodgeResist": 0.34719998,
-        "critMultResist": 0.6848,
+        "critResist": 7.616,
+        "comboResist": 2.108,
+        "dodgeResist": 1.5231999,
+        "critMultResist": 3.308,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16525,8 +16525,8 @@
       "level": 400,
       "hp": 1605500,
       "atk": 16905,
-      "hardModeHp": 11246956092,
-      "hardModeAtk": 118680,
+      "hardModeHp": 10349301395336,
+      "hardModeAtk": 158240,
       "exp": 1640000,
       "resists": {
         "critResist": 0.48000002,
@@ -16537,10 +16537,10 @@
         "weaken": 0.120000005
       },
       "hardModeResists": {
-        "critResist": 2.0016,
-        "comboResist": 0.6344,
-        "dodgeResist": 0.3584,
-        "critMultResist": 0.7016,
+        "critResist": 7.672,
+        "comboResist": 2.136,
+        "dodgeResist": 1.5344,
+        "critMultResist": 3.336,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16559,8 +16559,8 @@
       "level": 410,
       "hp": 2574000,
       "atk": 22815,
-      "hardModeHp": 22419067632,
-      "hardModeAtk": 155250,
+      "hardModeHp": 12862322964673,
+      "hardModeAtk": 207000,
       "exp": 1722000,
       "resists": {
         "critResist": 0.492,
@@ -16571,10 +16571,10 @@
         "weaken": 0.123
       },
       "hardModeResists": {
-        "critResist": 2.0351999,
-        "comboResist": 0.6568,
-        "dodgeResist": 0.38079998,
-        "critMultResist": 0.7352,
+        "critResist": 7.784,
+        "comboResist": 2.192,
+        "dodgeResist": 1.5568,
+        "critMultResist": 3.392,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16593,7 +16593,7 @@
       "level": 450,
       "hp": 7488000,
       "atk": 19665,
-      "hardModeHp": 32910057865,
+      "hardModeHp": 8523715200000,
       "hardModeAtk": 177000,
       "exp": 2070000,
       "resists": {
@@ -16605,10 +16605,10 @@
         "weaken": 0.135
       },
       "hardModeResists": {
-        "critResist": 2.052,
-        "comboResist": 0.668,
-        "dodgeResist": 0.392,
-        "critMultResist": 0.75200003,
+        "critResist": 7.84,
+        "comboResist": 2.22,
+        "dodgeResist": 1.568,
+        "critMultResist": 3.42,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16627,7 +16627,7 @@
       "level": 465,
       "hp": 10800000,
       "atk": 19895,
-      "hardModeHp": 47095166280,
+      "hardModeHp": 8569651200000,
       "hardModeAtk": 202500,
       "exp": 2208750,
       "resists": {
@@ -16639,10 +16639,10 @@
         "weaken": 0.1395
       },
       "hardModeResists": {
-        "critResist": 2.0688,
-        "comboResist": 0.6792,
-        "dodgeResist": 0.4032,
-        "critMultResist": 0.7688,
+        "critResist": 7.896,
+        "comboResist": 2.248,
+        "dodgeResist": 1.5792,
+        "critMultResist": 3.448,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16661,7 +16661,7 @@
       "level": 470,
       "hp": 35100000,
       "atk": 25299,
-      "hardModeHp": 71466898630,
+      "hardModeHp": 8752287000000,
       "hardModeAtk": 231750,
       "exp": 2256000,
       "resists": {
@@ -16673,10 +16673,10 @@
         "weaken": 0.141
       },
       "hardModeResists": {
-        "critResist": 2.0856,
-        "comboResist": 0.6904,
-        "dodgeResist": 0.41439998,
-        "critMultResist": 0.7856,
+        "critResist": 7.952,
+        "comboResist": 2.276,
+        "dodgeResist": 1.5904,
+        "critMultResist": 3.476,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16695,7 +16695,7 @@
       "level": 520,
       "hp": 10800000,
       "atk": 19895,
-      "hardModeHp": 202492171843,
+      "hardModeHp": 9453953600000,
       "hardModeAtk": 303000,
       "exp": 2756000,
       "resists": {
@@ -16707,10 +16707,10 @@
         "weaken": 0.156
       },
       "hardModeResists": {
-        "critResist": 2.1192,
-        "comboResist": 0.71279997,
-        "dodgeResist": 0.4368,
-        "critMultResist": 0.81920004,
+        "critResist": 8.064,
+        "comboResist": 2.332,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.532,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16729,7 +16729,7 @@
       "level": 550,
       "hp": 120000000,
       "atk": 31185,
-      "hardModeHp": 367223296410,
+      "hardModeHp": 9968000000000,
       "hardModeAtk": 346225,
       "exp": 3080000,
       "resists": {
@@ -16741,10 +16741,10 @@
         "weaken": 0.165
       },
       "hardModeResists": {
-        "critResist": 2.136,
-        "comboResist": 0.724,
-        "dodgeResist": 0.44799998,
-        "critMultResist": 0.836,
+        "critResist": 8.12,
+        "comboResist": 2.36,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.56,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16763,7 +16763,7 @@
       "level": 550,
       "hp": 85000000,
       "atk": 25410,
-      "hardModeHp": 113709130117,
+      "hardModeHp": 9063497700000,
       "hardModeAtk": 264750,
       "exp": 3080000,
       "resists": {
@@ -16775,10 +16775,10 @@
         "weaken": 0.165
       },
       "hardModeResists": {
-        "critResist": 2.1024,
-        "comboResist": 0.7016,
-        "dodgeResist": 0.4256,
-        "critMultResist": 0.8024,
+        "critResist": 8.008,
+        "comboResist": 2.304,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.504,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16809,10 +16809,10 @@
         "weaken": 0.177
       },
       "hardModeResists": {
-        "critResist": 2.2,
-        "comboResist": 0.7688,
-        "dodgeResist": 0.4928,
-        "critMultResist": 0.90320003,
+        "critResist": 8.344,
+        "comboResist": 2.472,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.672,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16843,10 +16843,10 @@
         "weaken": 0.20400001
       },
       "hardModeResists": {
-        "critResist": 2.2,
-        "comboResist": 0.83599997,
-        "dodgeResist": 0.56,
-        "critMultResist": 1.0040001,
+        "critResist": 8.68,
+        "comboResist": 2.64,
+        "dodgeResist": 1.6,
+        "critMultResist": 3.8400002,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16877,10 +16877,10 @@
         "weaken": 0.231
       },
       "hardModeResists": {
-        "critResist": 2.2,
-        "comboResist": 0.9144,
-        "dodgeResist": 0.63839996,
-        "critMultResist": 1.1216,
+        "critResist": 9,
+        "comboResist": 2.836,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.0360003,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16911,10 +16911,10 @@
         "weaken": 0.24000001
       },
       "hardModeResists": {
-        "critResist": 2.2,
-        "comboResist": 0.9256,
-        "dodgeResist": 0.64959997,
-        "critMultResist": 1.1384001,
+        "critResist": 9,
+        "comboResist": 2.864,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.064,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -16945,10 +16945,10 @@
         "weaken": 0.252
       },
       "hardModeResists": {
-        "critResist": 2.2,
-        "comboResist": 0.9368,
-        "dodgeResist": 0.6608,
-        "critMultResist": 1.1552,
+        "critResist": 9,
+        "comboResist": 2.892,
+        "dodgeResist": 1.6,
+        "critMultResist": 4.092,
         "armorPierce": 0.4,
         "weaken": 0.32
       },
@@ -22986,16 +22986,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1600000,
+      "bonusHP": 8400000,
       "bonusATK": 0,
-      "bonusDEF": 50000,
+      "bonusDEF": 100000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.6M",
-        "DEF +50K"
+        "HP +8.4M",
+        "DEF +100K"
       ],
       "dropAreas": [
         "UW07"
@@ -23017,14 +23017,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1600000000,
+      "bonusATK": 23000000000,
       "bonusDEF": 0,
       "bonusAGI": 700,
       "bonusLUC": 0,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1.6B",
+        "ATK +23B",
         "AGI +700"
       ],
       "dropAreas": [
@@ -23046,16 +23046,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 210000,
+      "bonusHP": 1000000,
       "bonusATK": 0,
-      "bonusDEF": 18000,
+      "bonusDEF": 37000,
       "bonusAGI": 0,
       "bonusLUC": 780,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +210K",
-        "DEF +18K",
+        "HP +1M",
+        "DEF +37K",
         "LUC +780"
       ],
       "dropAreas": [
@@ -23079,16 +23079,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 560000,
+      "bonusHP": 2800000,
       "bonusATK": 0,
-      "bonusDEF": 21000,
+      "bonusDEF": 43000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +560K",
-        "DEF +21K"
+        "HP +2.8M",
+        "DEF +43K"
       ],
       "dropAreas": [
         "DS04"
@@ -23109,15 +23109,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 670000,
+      "bonusHP": 3300000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "HP +670K"
+        "HP +3.3M"
       ],
       "dropAreas": [
         "GL01",
@@ -23142,16 +23142,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 300000,
+      "bonusHP": 1500000,
       "bonusATK": 0,
-      "bonusDEF": 23000,
+      "bonusDEF": 47000,
       "bonusAGI": 270,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +300K",
-        "DEF +23K",
+        "HP +1.5M",
+        "DEF +47K",
         "AGI +270"
       ],
       "dropAreas": [
@@ -23175,16 +23175,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 550000,
+      "bonusHP": 2700000,
       "bonusATK": 0,
-      "bonusDEF": 45000,
+      "bonusDEF": 91000,
       "bonusAGI": 0,
       "bonusLUC": 410,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "HP +550K",
-        "DEF +45K",
+        "HP +2.7M",
+        "DEF +91K",
         "LUC +410"
       ],
       "dropAreas": [
@@ -23206,16 +23206,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1300000,
+      "bonusHP": 6700000,
       "bonusATK": 0,
-      "bonusDEF": 70000,
+      "bonusDEF": 140000,
       "bonusAGI": 350,
       "bonusLUC": 0,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.3M",
-        "DEF +70K",
+        "HP +6.7M",
+        "DEF +140K",
         "AGI +350"
       ],
       "dropAreas": [],
@@ -23235,15 +23235,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 840000,
+      "bonusHP": 4200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 900,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "HP +840K",
+        "HP +4.2M",
         "LUC +900"
       ],
       "dropAreas": [],
@@ -23263,16 +23263,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 640000,
+      "bonusHP": 3200000,
       "bonusATK": 0,
-      "bonusDEF": 24000,
+      "bonusDEF": 48000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +640K",
-        "DEF +24K"
+        "HP +3.2M",
+        "DEF +48K"
       ],
       "dropAreas": [
         "DS05"
@@ -23293,16 +23293,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 640000,
+      "bonusHP": 3200000,
       "bonusATK": 0,
-      "bonusDEF": 50000,
+      "bonusDEF": 100000,
       "bonusAGI": 0,
       "bonusLUC": 440,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +640K",
-        "DEF +50K",
+        "HP +3.2M",
+        "DEF +100K",
         "LUC +440"
       ],
       "dropAreas": [
@@ -23469,15 +23469,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 160000,
+      "bonusHP": 810000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 530,
-      "buyPrice": 2900000,
+      "buyPrice": 3100000,
       "maxCopies": -1,
       "effects": [
-        "HP +160K",
+        "HP +810K",
         "LUC +530"
       ],
       "dropAreas": [
@@ -23555,16 +23555,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 84000,
+      "bonusHP": 420000,
       "bonusATK": 0,
-      "bonusDEF": 8300,
+      "bonusDEF": 16000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2400000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "HP +84K",
-        "DEF +8.3K"
+        "HP +420K",
+        "DEF +16K"
       ],
       "dropAreas": [
         "GL01"
@@ -23586,14 +23586,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 5900000,
+      "bonusATK": 83000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2400000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +5.9M"
+        "ATK +83M"
       ],
       "dropAreas": [
         "GL01"
@@ -23614,16 +23614,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 250000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
-      "bonusDEF": 20000,
+      "bonusDEF": 41000,
       "bonusAGI": 0,
       "bonusLUC": 830,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +250K",
-        "DEF +20K",
+        "HP +1.2M",
+        "DEF +41K",
         "LUC +830"
       ],
       "dropAreas": [
@@ -23647,15 +23647,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 250000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 1500,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "HP +250K",
+        "HP +1.2M",
         "LUC +1.5K"
       ],
       "dropAreas": [
@@ -23850,16 +23850,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 380000,
+      "bonusHP": 1900000,
       "bonusATK": 0,
-      "bonusDEF": 26000,
+      "bonusDEF": 53000,
       "bonusAGI": 100,
       "bonusLUC": 0,
-      "buyPrice": 3300000,
+      "buyPrice": 3500000,
       "maxCopies": -1,
       "effects": [
-        "HP +380K",
-        "DEF +26K",
+        "HP +1.9M",
+        "DEF +53K",
         "AGI +100"
       ],
       "dropAreas": [
@@ -23971,16 +23971,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 96000,
+      "bonusHP": 480000,
       "bonusATK": 0,
-      "bonusDEF": 9200,
+      "bonusDEF": 18000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "HP +96K",
-        "DEF +9.2K"
+        "HP +480K",
+        "DEF +18K"
       ],
       "dropAreas": [
         "FR01"
@@ -24002,14 +24002,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 5100000,
+      "bonusATK": 72000000,
       "bonusDEF": 0,
       "bonusAGI": 140,
       "bonusLUC": 0,
-      "buyPrice": 2400000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +5.1M",
+        "ATK +72M",
         "AGI +140"
       ],
       "dropAreas": [
@@ -24031,16 +24031,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1100000,
+      "bonusHP": 5500000,
       "bonusATK": 0,
-      "bonusDEF": 36000,
+      "bonusDEF": 73000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.1M",
-        "DEF +36K"
+        "HP +5.5M",
+        "DEF +73K"
       ],
       "dropAreas": [
         "UW03"
@@ -24061,15 +24061,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 770000,
+      "bonusHP": 3800000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "HP +770K"
+        "HP +3.8M"
       ],
       "dropAreas": [
         "FR01",
@@ -24094,16 +24094,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 280000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
-      "bonusDEF": 23000,
+      "bonusDEF": 46000,
       "bonusAGI": 0,
       "bonusLUC": 880,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +280K",
-        "DEF +23K",
+        "HP +1.4M",
+        "DEF +46K",
         "LUC +880"
       ],
       "dropAreas": [],
@@ -24124,16 +24124,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 340000,
+      "bonusHP": 1700000,
       "bonusATK": 0,
-      "bonusDEF": 26000,
+      "bonusDEF": 53000,
       "bonusAGI": 310,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +340K",
-        "DEF +26K",
+        "HP +1.7M",
+        "DEF +53K",
         "AGI +310"
       ],
       "dropAreas": [
@@ -24157,16 +24157,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 110000,
+      "bonusHP": 550000,
       "bonusATK": 0,
-      "bonusDEF": 10000,
+      "bonusDEF": 20000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +110K",
-        "DEF +10K"
+        "HP +550K",
+        "DEF +20K"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -24185,16 +24185,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 320000,
+      "bonusHP": 1600000,
       "bonusATK": 0,
-      "bonusDEF": 29000,
+      "bonusDEF": 59000,
       "bonusAGI": 0,
       "bonusLUC": 320,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +320K",
-        "DEF +29K",
+        "HP +1.6M",
+        "DEF +59K",
         "LUC +320"
       ],
       "dropAreas": [
@@ -24217,14 +24217,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 8000000,
+      "bonusATK": 110000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +8M"
+        "ATK +110M"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -24454,15 +24454,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 370000,
+      "bonusHP": 1800000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 690,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +370K",
+        "HP +1.8M",
         "LUC +690"
       ],
       "dropAreas": [],
@@ -24513,16 +24513,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 190000,
+      "bonusHP": 970000,
       "bonusATK": 0,
-      "bonusDEF": 15000,
+      "bonusDEF": 31000,
       "bonusAGI": 57,
       "bonusLUC": 0,
-      "buyPrice": 2700000,
+      "buyPrice": 2900000,
       "maxCopies": -1,
       "effects": [
-        "HP +190K",
-        "DEF +15K",
+        "HP +970K",
+        "DEF +31K",
         "AGI +57"
       ],
       "dropAreas": [
@@ -24544,16 +24544,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 180000,
+      "bonusHP": 930000,
       "bonusATK": 0,
-      "bonusDEF": 9100,
+      "bonusDEF": 18000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +180K",
-        "DEF +9.1K"
+        "HP +930K",
+        "DEF +18K"
       ],
       "dropAreas": [
         "FR03"
@@ -24574,15 +24574,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 290000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 1600,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "HP +290K",
+        "HP +1.4M",
         "LUC +1.6K"
       ],
       "dropAreas": [
@@ -24608,16 +24608,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 120000,
+      "bonusHP": 630000,
       "bonusATK": 0,
-      "bonusDEF": 11000,
+      "bonusDEF": 22000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +120K",
-        "DEF +11K"
+        "HP +630K",
+        "DEF +22K"
       ],
       "dropAreas": [
         "FR03"
@@ -24639,14 +24639,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 280000000,
+      "bonusATK": 4000000000,
       "bonusDEF": 0,
       "bonusAGI": 320,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +280M",
+        "ATK +4B",
         "AGI +320"
       ],
       "dropAreas": [
@@ -24669,14 +24669,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 380000000,
+      "bonusATK": 5400000000,
       "bonusDEF": 0,
       "bonusAGI": 360,
       "bonusLUC": 0,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +380M",
+        "ATK +5.4B",
         "AGI +360"
       ],
       "dropAreas": [
@@ -24698,16 +24698,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 880000,
+      "bonusHP": 4400000,
       "bonusATK": 0,
-      "bonusDEF": 51000,
+      "bonusDEF": 100000,
       "bonusAGI": 230,
       "bonusLUC": 0,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "HP +880K",
-        "DEF +51K",
+        "HP +4.4M",
+        "DEF +100K",
         "AGI +230"
       ],
       "dropAreas": [
@@ -24729,16 +24729,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 330000,
+      "bonusHP": 1600000,
       "bonusATK": 0,
-      "bonusDEF": 25000,
+      "bonusDEF": 51000,
       "bonusAGI": 0,
       "bonusLUC": 940,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "HP +330K",
-        "DEF +25K",
+        "HP +1.6M",
+        "DEF +51K",
         "LUC +940"
       ],
       "dropAreas": [
@@ -24761,16 +24761,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1400000,
+      "bonusHP": 7300000,
       "bonusATK": 0,
-      "bonusDEF": 45000,
+      "bonusDEF": 91000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.4M",
-        "DEF +45K"
+        "HP +7.3M",
+        "DEF +91K"
       ],
       "dropAreas": [
         "UW06"
@@ -24974,15 +24974,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 480000,
+      "bonusHP": 2400000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 750,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "HP +480K",
+        "HP +2.4M",
         "LUC +750"
       ],
       "dropAreas": [
@@ -25005,14 +25005,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6900000,
+      "bonusATK": 96000000,
       "bonusDEF": 0,
       "bonusAGI": 160,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6.9M",
+        "ATK +96M",
         "AGI +160"
       ],
       "dropAreas": [
@@ -25034,16 +25034,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 370000,
+      "bonusHP": 1900000,
       "bonusATK": 0,
-      "bonusDEF": 28000,
+      "bonusDEF": 57000,
       "bonusAGI": 0,
       "bonusLUC": 1000,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "HP +370K",
-        "DEF +28K",
+        "HP +1.9M",
+        "DEF +57K",
         "LUC +1K"
       ],
       "dropAreas": [
@@ -25067,14 +25067,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 10000000,
+      "bonusATK": 150000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +10M"
+        "ATK +150M"
       ],
       "dropAreas": [
         "FR02"
@@ -25096,14 +25096,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 9200000,
+      "bonusATK": 130000000,
       "bonusDEF": 0,
       "bonusAGI": 180,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +9.2M",
+        "ATK +130M",
         "AGI +180"
       ],
       "dropAreas": [],
@@ -25123,16 +25123,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 120000,
+      "bonusHP": 610000,
       "bonusATK": 0,
-      "bonusDEF": 14000,
+      "bonusDEF": 28000,
       "bonusAGI": 0,
       "bonusLUC": 200,
-      "buyPrice": 2700000,
+      "buyPrice": 2900000,
       "maxCopies": -1,
       "effects": [
-        "HP +120K",
-        "DEF +14K",
+        "HP +610K",
+        "DEF +28K",
         "LUC +200"
       ],
       "dropAreas": [
@@ -25155,16 +25155,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 140000,
+      "bonusHP": 720000,
       "bonusATK": 0,
-      "bonusDEF": 12000,
+      "bonusDEF": 25000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +140K",
-        "DEF +12K"
+        "HP +720K",
+        "DEF +25K"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -25183,16 +25183,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 140000,
+      "bonusHP": 740000,
       "bonusATK": 0,
-      "bonusDEF": 12000,
+      "bonusDEF": 25000,
       "bonusAGI": 44,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +140K",
-        "DEF +12K",
+        "HP +740K",
+        "DEF +25K",
         "AGI +44"
       ],
       "dropAreas": [
@@ -25418,14 +25418,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 14000000,
+      "bonusATK": 200000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +14M"
+        "ATK +200M"
       ],
       "dropAreas": [
         "FR03"
@@ -25476,16 +25476,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 160000,
+      "bonusHP": 830000,
       "bonusATK": 0,
-      "bonusDEF": 14000,
+      "bonusDEF": 28000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2700000,
+      "buyPrice": 2900000,
       "maxCopies": -1,
       "effects": [
-        "HP +160K",
-        "DEF +14K"
+        "HP +830K",
+        "DEF +28K"
       ],
       "dropAreas": [
         "VO01"
@@ -25506,16 +25506,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 190000,
+      "bonusHP": 960000,
       "bonusATK": 0,
-      "bonusDEF": 15000,
+      "bonusDEF": 31000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2800000,
+      "buyPrice": 3000000,
       "maxCopies": -1,
       "effects": [
-        "HP +190K",
-        "DEF +15K"
+        "HP +960K",
+        "DEF +31K"
       ],
       "dropAreas": [
         "VO02"
@@ -25537,14 +25537,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 700000000,
+      "bonusATK": 9800000000,
       "bonusDEF": 0,
       "bonusAGI": 470,
       "bonusLUC": 0,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +700M",
+        "ATK +9.8B",
         "AGI +470"
       ],
       "dropAreas": [
@@ -25566,16 +25566,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1000000,
+      "bonusHP": 5100000,
       "bonusATK": 0,
-      "bonusDEF": 56000,
+      "bonusDEF": 110000,
       "bonusAGI": 270,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +1M",
-        "DEF +56K",
+        "HP +5.1M",
+        "DEF +110K",
         "AGI +270"
       ],
       "dropAreas": [
@@ -25597,16 +25597,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 430000,
+      "bonusHP": 2100000,
       "bonusATK": 0,
-      "bonusDEF": 31000,
+      "bonusDEF": 63000,
       "bonusAGI": 0,
       "bonusLUC": 1000,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "HP +430K",
-        "DEF +31K",
+        "HP +2.1M",
+        "DEF +63K",
         "LUC +1K"
       ],
       "dropAreas": [
@@ -25630,15 +25630,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 890000,
+      "bonusHP": 4400000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "HP +890K"
+        "HP +4.4M"
       ],
       "dropAreas": [
         "DS02",
@@ -25662,16 +25662,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1200000,
+      "bonusHP": 6400000,
       "bonusATK": 0,
-      "bonusDEF": 41000,
+      "bonusDEF": 82000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.2M",
-        "DEF +41K"
+        "HP +6.4M",
+        "DEF +82K"
       ],
       "dropAreas": [
         "UW04"
@@ -25693,14 +25693,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 12000000,
+      "bonusATK": 170000000,
       "bonusDEF": 0,
       "bonusAGI": 210,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +12M",
+        "ATK +170M",
         "AGI +210"
       ],
       "dropAreas": [],
@@ -25721,14 +25721,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1200000000,
+      "bonusATK": 17000000000,
       "bonusDEF": 0,
       "bonusAGI": 610,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1.2B",
+        "ATK +17B",
         "AGI +610"
       ],
       "dropAreas": [
@@ -25750,16 +25750,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 180000,
+      "bonusHP": 930000,
       "bonusATK": 0,
-      "bonusDEF": 19000,
+      "bonusDEF": 38000,
       "bonusAGI": 0,
       "bonusLUC": 240,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +180K",
-        "DEF +19K",
+        "HP +930K",
+        "DEF +38K",
         "LUC +240"
       ],
       "dropAreas": [
@@ -25781,16 +25781,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 220000,
+      "bonusHP": 1100000,
       "bonusATK": 0,
-      "bonusDEF": 17000,
+      "bonusDEF": 35000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2900000,
+      "buyPrice": 3100000,
       "maxCopies": -1,
       "effects": [
-        "HP +220K",
-        "DEF +17K"
+        "HP +1.1M",
+        "DEF +35K"
       ],
       "dropAreas": [
         "VO03"
@@ -25812,14 +25812,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 940000000,
+      "bonusATK": 13000000000,
       "bonusDEF": 0,
       "bonusAGI": 540,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +940M",
+        "ATK +13B",
         "AGI +540"
       ],
       "dropAreas": [
@@ -25841,16 +25841,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 400000,
+      "bonusHP": 2000000,
       "bonusATK": 0,
-      "bonusDEF": 29000,
+      "bonusDEF": 59000,
       "bonusAGI": 350,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +400K",
-        "DEF +29K",
+        "HP +2M",
+        "DEF +59K",
         "AGI +350"
       ],
       "dropAreas": [],
@@ -25901,16 +25901,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 250000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
-      "bonusDEF": 19000,
+      "bonusDEF": 39000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +250K",
-        "DEF +19K"
+        "HP +1.2M",
+        "DEF +39K"
       ],
       "dropAreas": [
         "FR03",
@@ -25932,16 +25932,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 840000,
+      "bonusHP": 4200000,
       "bonusATK": 0,
-      "bonusDEF": 62000,
+      "bonusDEF": 120000,
       "bonusAGI": 0,
       "bonusLUC": 500,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "HP +840K",
-        "DEF +62K",
+        "HP +4.2M",
+        "DEF +120K",
         "LUC +500"
       ],
       "dropAreas": [],
@@ -25961,16 +25961,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 290000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
-      "bonusDEF": 21000,
+      "bonusDEF": 43000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +290K",
-        "DEF +21K"
+        "HP +1.4M",
+        "DEF +43K"
       ],
       "dropAreas": [
         "DS02"
@@ -25991,15 +25991,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 730000,
+      "bonusHP": 3600000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 860,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +730K",
+        "HP +3.6M",
         "LUC +860"
       ],
       "dropAreas": [],
@@ -26020,14 +26020,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 19000000,
+      "bonusATK": 270000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +19M"
+        "ATK +270M"
       ],
       "dropAreas": [
         "FR04"
@@ -26048,16 +26048,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 450000,
+      "bonusHP": 2200000,
       "bonusATK": 0,
-      "bonusDEF": 32000,
+      "bonusDEF": 65000,
       "bonusAGI": 400,
       "bonusLUC": 0,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "HP +450K",
-        "DEF +32K",
+        "HP +2.2M",
+        "DEF +65K",
         "AGI +400"
       ],
       "dropAreas": [
@@ -26081,15 +26081,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 330000,
+      "bonusHP": 1600000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 1700,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "HP +330K",
+        "HP +1.6M",
         "LUC +1.7K"
       ],
       "dropAreas": [
@@ -26114,16 +26114,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 500000,
+      "bonusHP": 2500000,
       "bonusATK": 0,
-      "bonusDEF": 35000,
+      "bonusDEF": 71000,
       "bonusAGI": 0,
       "bonusLUC": 1100,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +500K",
-        "DEF +35K",
+        "HP +2.5M",
+        "DEF +71K",
         "LUC +1.1K"
       ],
       "dropAreas": [
@@ -26231,16 +26231,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 740000,
+      "bonusHP": 3700000,
       "bonusATK": 0,
-      "bonusDEF": 26000,
+      "bonusDEF": 53000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +740K",
-        "DEF +26K"
+        "HP +3.7M",
+        "DEF +53K"
       ],
       "dropAreas": [
         "DS06"
@@ -26261,16 +26261,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 330000,
+      "bonusHP": 1600000,
       "bonusATK": 0,
-      "bonusDEF": 24000,
+      "bonusDEF": 48000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3300000,
+      "buyPrice": 3500000,
       "maxCopies": -1,
       "effects": [
-        "HP +330K",
-        "DEF +24K"
+        "HP +1.6M",
+        "DEF +48K"
       ],
       "dropAreas": [
         "DS03"
@@ -26292,14 +26292,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 16000000,
+      "bonusATK": 230000000,
       "bonusDEF": 0,
       "bonusAGI": 240,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +16M",
+        "ATK +230M",
         "AGI +240"
       ],
       "dropAreas": [
@@ -26351,16 +26351,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 840000,
+      "bonusHP": 4200000,
       "bonusATK": 0,
-      "bonusDEF": 29000,
+      "bonusDEF": 59000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "HP +840K",
-        "DEF +29K"
+        "HP +4.2M",
+        "DEF +59K"
       ],
       "dropAreas": [
         "UW01"
@@ -26381,16 +26381,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 380000,
+      "bonusHP": 1900000,
       "bonusATK": 0,
-      "bonusDEF": 26000,
+      "bonusDEF": 53000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +380K",
-        "DEF +26K"
+        "HP +1.9M",
+        "DEF +53K"
       ],
       "dropAreas": [
         "DS04"
@@ -26412,14 +26412,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 26000000,
+      "bonusATK": 360000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2700000,
+      "buyPrice": 2900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +26M"
+        "ATK +360M"
       ],
       "dropAreas": [
         "VO01"
@@ -26440,16 +26440,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 520000,
+      "bonusHP": 2600000,
       "bonusATK": 0,
-      "bonusDEF": 36000,
+      "bonusDEF": 73000,
       "bonusAGI": 450,
       "bonusLUC": 0,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "HP +520K",
-        "DEF +36K",
+        "HP +2.6M",
+        "DEF +73K",
         "AGI +450"
       ],
       "dropAreas": [
@@ -26473,15 +26473,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 420000,
+      "bonusHP": 2100000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 720,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "HP +420K",
+        "HP +2.1M",
         "LUC +720"
       ],
       "dropAreas": [
@@ -26503,15 +26503,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 120000,
+      "bonusHP": 610000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 490,
-      "buyPrice": 2700000,
+      "buyPrice": 2900000,
       "maxCopies": -1,
       "effects": [
-        "HP +120K",
+        "HP +610K",
         "LUC +490"
       ],
       "dropAreas": [
@@ -26565,14 +26565,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 22000000,
+      "bonusATK": 310000000,
       "bonusDEF": 0,
       "bonusAGI": 270,
       "bonusLUC": 0,
-      "buyPrice": 2700000,
+      "buyPrice": 2900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +22M",
+        "ATK +310M",
         "AGI +270"
       ],
       "dropAreas": [
@@ -26653,16 +26653,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 98000,
+      "bonusHP": 490000,
       "bonusATK": 0,
-      "bonusDEF": 9200,
+      "bonusDEF": 18000,
       "bonusAGI": 30,
       "bonusLUC": 0,
-      "buyPrice": 2400000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "HP +98K",
-        "DEF +9.2K",
+        "HP +490K",
+        "DEF +18K",
         "AGI +30"
       ],
       "dropAreas": [
@@ -26789,16 +26789,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 250000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
-      "bonusDEF": 19000,
+      "bonusDEF": 38000,
       "bonusAGI": 74,
       "bonusLUC": 0,
-      "buyPrice": 2900000,
+      "buyPrice": 3100000,
       "maxCopies": -1,
       "effects": [
-        "HP +250K",
-        "DEF +19K",
+        "HP +1.2M",
+        "DEF +38K",
         "AGI +74"
       ],
       "dropAreas": [
@@ -26968,15 +26968,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1000000,
+      "bonusHP": 5100000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +1M"
+        "HP +5.1M"
       ],
       "dropAreas": [
         "FR01",
@@ -27031,16 +27031,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 430000,
+      "bonusHP": 2100000,
       "bonusATK": 0,
-      "bonusDEF": 30000,
+      "bonusDEF": 60000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +430K",
-        "DEF +30K"
+        "HP +2.1M",
+        "DEF +60K"
       ],
       "dropAreas": [
         "DS05"
@@ -27061,16 +27061,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 420000,
+      "bonusHP": 2100000,
       "bonusATK": 0,
-      "bonusDEF": 17000,
+      "bonusDEF": 34000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +420K",
-        "DEF +17K"
+        "HP +2.1M",
+        "DEF +34K"
       ],
       "dropAreas": [
         "DS02"
@@ -27092,14 +27092,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 36000000,
+      "bonusATK": 510000000,
       "bonusDEF": 0,
       "bonusAGI": 130,
       "bonusLUC": 0,
-      "buyPrice": 2800000,
+      "buyPrice": 3000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +36M",
+        "ATK +510M",
         "AGI +130"
       ],
       "dropAreas": [
@@ -27121,16 +27121,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 500000,
+      "bonusHP": 2500000,
       "bonusATK": 0,
-      "bonusDEF": 33000,
+      "bonusDEF": 66000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +500K",
-        "DEF +33K"
+        "HP +2.5M",
+        "DEF +66K"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -27203,14 +27203,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 34000000,
+      "bonusATK": 490000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2800000,
+      "buyPrice": 3000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +34M"
+        "ATK +490M"
       ],
       "dropAreas": [
         "VO02"
@@ -27263,14 +27263,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 30000000,
+      "bonusATK": 420000000,
       "bonusDEF": 0,
       "bonusAGI": 310,
       "bonusLUC": 0,
-      "buyPrice": 2800000,
+      "buyPrice": 3000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +30M",
+        "ATK +420M",
         "AGI +310"
       ],
       "dropAreas": [
@@ -27317,16 +27317,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 370000,
+      "bonusHP": 1800000,
       "bonusATK": 0,
-      "bonusDEF": 33000,
+      "bonusDEF": 66000,
       "bonusAGI": 0,
       "bonusLUC": 340,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +370K",
-        "DEF +33K",
+        "HP +1.8M",
+        "DEF +66K",
         "LUC +340"
       ],
       "dropAreas": [],
@@ -27346,15 +27346,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 93000,
+      "bonusHP": 460000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 450,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +93K",
+        "HP +460K",
         "LUC +450"
       ],
       "dropAreas": [],
@@ -27491,14 +27491,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 47000000,
+      "bonusATK": 650000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2900000,
+      "buyPrice": 3100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +47M"
+        "ATK +650M"
       ],
       "dropAreas": [
         "VO03"
@@ -27572,16 +27572,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 570000,
+      "bonusHP": 2800000,
       "bonusATK": 0,
-      "bonusDEF": 37000,
+      "bonusDEF": 74000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "HP +570K",
-        "DEF +37K"
+        "HP +2.8M",
+        "DEF +74K"
       ],
       "dropAreas": [
         "UW01"
@@ -27603,14 +27603,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 40000000,
+      "bonusATK": 560000000,
       "bonusDEF": 0,
       "bonusAGI": 350,
       "bonusLUC": 0,
-      "buyPrice": 2900000,
+      "buyPrice": 3100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +40M",
+        "ATK +560M",
         "AGI +350"
       ],
       "dropAreas": [
@@ -27755,14 +27755,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 63000000,
+      "bonusATK": 880000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +63M"
+        "ATK +880M"
       ],
       "dropAreas": [
         "DS01"
@@ -27783,16 +27783,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 660000,
+      "bonusHP": 3300000,
       "bonusATK": 0,
-      "bonusDEF": 41000,
+      "bonusDEF": 82000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "HP +660K",
-        "DEF +41K"
+        "HP +3.3M",
+        "DEF +82K"
       ],
       "dropAreas": [
         "UW02"
@@ -27814,14 +27814,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 54000000,
+      "bonusATK": 760000000,
       "bonusDEF": 0,
       "bonusAGI": 400,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +54M",
+        "ATK +760M",
         "AGI +400"
       ],
       "dropAreas": [
@@ -27843,15 +27843,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 380000,
+      "bonusHP": 1900000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 1800,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +380K",
+        "HP +1.9M",
         "LUC +1.8K"
       ],
       "dropAreas": [
@@ -27877,16 +27877,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 670000,
+      "bonusHP": 3300000,
       "bonusATK": 0,
-      "bonusDEF": 41000,
+      "bonusDEF": 82000,
       "bonusAGI": 180,
       "bonusLUC": 0,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "HP +670K",
-        "DEF +41K",
+        "HP +3.3M",
+        "DEF +82K",
         "AGI +180"
       ],
       "dropAreas": [
@@ -27908,16 +27908,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 240000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
-      "bonusDEF": 23000,
+      "bonusDEF": 47000,
       "bonusAGI": 0,
       "bonusLUC": 280,
-      "buyPrice": 3300000,
+      "buyPrice": 3500000,
       "maxCopies": -1,
       "effects": [
-        "HP +240K",
-        "DEF +23K",
+        "HP +1.2M",
+        "DEF +47K",
         "LUC +280"
       ],
       "dropAreas": [
@@ -27939,16 +27939,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 760000,
+      "bonusHP": 3800000,
       "bonusATK": 0,
-      "bonusDEF": 46000,
+      "bonusDEF": 92000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "HP +760K",
-        "DEF +46K"
+        "HP +3.8M",
+        "DEF +92K"
       ],
       "dropAreas": [
         "UW03"
@@ -27970,14 +27970,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 84000000,
+      "bonusATK": 1100000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +84M"
+        "ATK +1.1B"
       ],
       "dropAreas": [
         "DS02"
@@ -27998,16 +27998,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 120000,
+      "bonusHP": 610000,
       "bonusATK": 0,
-      "bonusDEF": 6600,
+      "bonusDEF": 13000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2400000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "HP +120K",
-        "DEF +6.6K"
+        "HP +610K",
+        "DEF +13K"
       ],
       "dropAreas": [
         "GL01"
@@ -28028,16 +28028,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 170000,
+      "bonusHP": 850000,
       "bonusATK": 0,
-      "bonusDEF": 14000,
+      "bonusDEF": 28000,
       "bonusAGI": 50,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +170K",
-        "DEF +14K",
+        "HP +850K",
+        "DEF +28K",
         "AGI +50"
       ],
       "dropAreas": [
@@ -28059,16 +28059,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 81000,
+      "bonusHP": 400000,
       "bonusATK": 0,
-      "bonusDEF": 10000,
+      "bonusDEF": 20000,
       "bonusAGI": 0,
       "bonusLUC": 170,
-      "buyPrice": 2500000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +81K",
-        "DEF +10K",
+        "HP +400K",
+        "DEF +20K",
         "LUC +170"
       ],
       "dropAreas": [
@@ -28090,15 +28090,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 71000,
+      "bonusHP": 350000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 410,
-      "buyPrice": 2500000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "HP +71K",
+        "HP +350K",
         "LUC +410"
       ],
       "dropAreas": [
@@ -28148,14 +28148,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 6200000,
+      "bonusATK": 88000000,
       "bonusDEF": 0,
       "bonusAGI": 60,
       "bonusLUC": 0,
-      "buyPrice": 2400000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +6.2M",
+        "ATK +88M",
         "AGI +60"
       ],
       "dropAreas": [
@@ -28291,16 +28291,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 210000,
+      "bonusHP": 1000000,
       "bonusATK": 0,
-      "bonusDEF": 10000,
+      "bonusDEF": 20000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +210K",
-        "DEF +10K"
+        "HP +1M",
+        "DEF +20K"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -28319,16 +28319,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 100000,
+      "bonusHP": 530000,
       "bonusATK": 0,
-      "bonusDEF": 12000,
+      "bonusDEF": 25000,
       "bonusAGI": 0,
       "bonusLUC": 190,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +100K",
-        "DEF +12K",
+        "HP +530K",
+        "DEF +25K",
         "LUC +190"
       ],
       "dropAreas": [],
@@ -28439,16 +28439,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 870000,
+      "bonusHP": 4300000,
       "bonusATK": 0,
-      "bonusDEF": 51000,
+      "bonusDEF": 100000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +870K",
-        "DEF +51K"
+        "HP +4.3M",
+        "DEF +100K"
       ],
       "dropAreas": [
         "UW04"
@@ -28469,16 +28469,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 280000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
-      "bonusDEF": 26000,
+      "bonusDEF": 53000,
       "bonusAGI": 0,
       "bonusLUC": 300,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +280K",
-        "DEF +26K",
+        "HP +1.4M",
+        "DEF +53K",
         "LUC +300"
       ],
       "dropAreas": [
@@ -28500,15 +28500,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1100000,
+      "bonusHP": 5800000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.1M"
+        "HP +5.8M"
       ],
       "dropAreas": [
         "FR04",
@@ -28533,14 +28533,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 73000000,
+      "bonusATK": 1000000000,
       "bonusDEF": 0,
       "bonusAGI": 460,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +73M",
+        "ATK +1B",
         "AGI +460"
       ],
       "dropAreas": [
@@ -28562,16 +28562,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 160000,
+      "bonusHP": 810000,
       "bonusATK": 0,
-      "bonusDEF": 8200,
+      "bonusDEF": 16000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +160K",
-        "DEF +8.2K"
+        "HP +810K",
+        "DEF +16K"
       ],
       "dropAreas": [
         "FR02"
@@ -28592,16 +28592,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 120000,
+      "bonusHP": 640000,
       "bonusATK": 0,
-      "bonusDEF": 11000,
+      "bonusDEF": 22000,
       "bonusAGI": 39,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +120K",
-        "DEF +11K",
+        "HP +640K",
+        "DEF +22K",
         "AGI +39"
       ],
       "dropAreas": [
@@ -28623,16 +28623,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 61000,
+      "bonusHP": 300000,
       "bonusATK": 0,
-      "bonusDEF": 8200,
+      "bonusDEF": 16000,
       "bonusAGI": 0,
       "bonusLUC": 150,
-      "buyPrice": 2400000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "HP +61K",
-        "DEF +8.2K",
+        "HP +300K",
+        "DEF +16K",
         "LUC +150"
       ],
       "dropAreas": [
@@ -28654,16 +28654,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 71000,
+      "bonusHP": 350000,
       "bonusATK": 0,
-      "bonusDEF": 9100,
+      "bonusDEF": 18000,
       "bonusAGI": 0,
       "bonusLUC": 160,
-      "buyPrice": 2500000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "HP +71K",
-        "DEF +9.1K",
+        "HP +350K",
+        "DEF +18K",
         "LUC +160"
       ],
       "dropAreas": [
@@ -28685,16 +28685,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1000000,
+      "bonusHP": 5000000,
       "bonusATK": 0,
-      "bonusDEF": 57000,
+      "bonusDEF": 110000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +1M",
-        "DEF +57K"
+        "HP +5M",
+        "DEF +110K"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -28773,15 +28773,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 180000,
+      "bonusHP": 930000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 560,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +180K",
+        "HP +930K",
         "LUC +560"
       ],
       "dropAreas": [
@@ -28803,16 +28803,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1100000,
+      "bonusHP": 5700000,
       "bonusATK": 0,
-      "bonusDEF": 63000,
+      "bonusDEF": 120000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.1M",
-        "DEF +63K"
+        "HP +5.7M",
+        "DEF +120K"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -28832,14 +28832,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 49000000,
+      "bonusATK": 690000000,
       "bonusDEF": 0,
       "bonusAGI": 140,
       "bonusLUC": 0,
-      "buyPrice": 2900000,
+      "buyPrice": 3100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +49M",
+        "ATK +690M",
         "AGI +140"
       ],
       "dropAreas": [
@@ -28861,16 +28861,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 440000,
+      "bonusHP": 2200000,
       "bonusATK": 0,
-      "bonusDEF": 29000,
+      "bonusDEF": 59000,
       "bonusAGI": 120,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +440K",
-        "DEF +29K",
+        "HP +2.2M",
+        "DEF +59K",
         "AGI +120"
       ],
       "dropAreas": [
@@ -28949,14 +28949,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 110000000,
+      "bonusATK": 1500000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3300000,
+      "buyPrice": 3500000,
       "maxCopies": -1,
       "effects": [
-        "ATK +110M"
+        "ATK +1.5B"
       ],
       "dropAreas": [
         "DS03"
@@ -29121,16 +29121,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 480000,
+      "bonusHP": 2400000,
       "bonusATK": 0,
-      "bonusDEF": 40000,
+      "bonusDEF": 81000,
       "bonusAGI": 0,
       "bonusLUC": 380,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "HP +480K",
-        "DEF +40K",
+        "HP +2.4M",
+        "DEF +81K",
         "LUC +380"
       ],
       "dropAreas": [
@@ -29152,16 +29152,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 370000,
+      "bonusHP": 1800000,
       "bonusATK": 0,
-      "bonusDEF": 15000,
+      "bonusDEF": 31000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +370K",
-        "DEF +15K"
+        "HP +1.8M",
+        "DEF +31K"
       ],
       "dropAreas": [
         "FR03",
@@ -29183,15 +29183,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 550000,
+      "bonusHP": 2700000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 790,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "HP +550K",
+        "HP +2.7M",
         "LUC +790"
       ],
       "dropAreas": [
@@ -29213,16 +29213,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 580000,
+      "bonusHP": 2900000,
       "bonusATK": 0,
-      "bonusDEF": 37000,
+      "bonusDEF": 74000,
       "bonusAGI": 160,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +580K",
-        "DEF +37K",
+        "HP +2.9M",
+        "DEF +74K",
         "AGI +160"
       ],
       "dropAreas": [],
@@ -29243,14 +29243,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 15000000,
+      "bonusATK": 210000000,
       "bonusDEF": 0,
       "bonusAGI": 88,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +15M",
+        "ATK +210M",
         "AGI +88"
       ],
       "dropAreas": [],
@@ -29271,14 +29271,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 98000000,
+      "bonusATK": 1300000000,
       "bonusDEF": 0,
       "bonusAGI": 520,
       "bonusLUC": 0,
-      "buyPrice": 3300000,
+      "buyPrice": 3500000,
       "maxCopies": -1,
       "effects": [
-        "ATK +98M",
+        "ATK +1.3B",
         "AGI +520"
       ],
       "dropAreas": [
@@ -29332,16 +29332,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 240000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
-      "bonusDEF": 11000,
+      "bonusDEF": 22000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2700000,
+      "buyPrice": 2900000,
       "maxCopies": -1,
       "effects": [
-        "HP +240K",
-        "DEF +11K"
+        "HP +1.2M",
+        "DEF +22K"
       ],
       "dropAreas": [
         "VO01"
@@ -29363,14 +29363,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 150000000,
+      "bonusATK": 2100000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +150M"
+        "ATK +2.1B"
       ],
       "dropAreas": [
         "DS04"
@@ -29645,14 +29645,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 210000000,
+      "bonusATK": 3000000000,
       "bonusDEF": 0,
       "bonusAGI": 280,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +210M",
+        "ATK +3B",
         "AGI +280"
       ],
       "dropAreas": [
@@ -29675,14 +29675,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 130000000,
+      "bonusATK": 1800000000,
       "bonusDEF": 0,
       "bonusAGI": 590,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +130M",
+        "ATK +1.8B",
         "AGI +590"
       ],
       "dropAreas": [
@@ -29704,16 +29704,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 600000,
+      "bonusHP": 3000000,
       "bonusATK": 0,
-      "bonusDEF": 40000,
+      "bonusDEF": 81000,
       "bonusAGI": 520,
       "bonusLUC": 0,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "HP +600K",
-        "DEF +40K",
+        "HP +3M",
+        "DEF +81K",
         "AGI +520"
       ],
       "dropAreas": [
@@ -29737,16 +29737,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 570000,
+      "bonusHP": 2800000,
       "bonusATK": 0,
-      "bonusDEF": 39000,
+      "bonusDEF": 79000,
       "bonusAGI": 0,
       "bonusLUC": 1200,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +570K",
-        "DEF +39K",
+        "HP +2.8M",
+        "DEF +79K",
         "LUC +1.2K"
       ],
       "dropAreas": [
@@ -29770,14 +29770,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 200000000,
+      "bonusATK": 2800000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +200M"
+        "ATK +2.8B"
       ],
       "dropAreas": [
         "DS05"
@@ -29798,15 +29798,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 440000,
+      "bonusHP": 2200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 1800,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +440K",
+        "HP +2.2M",
         "LUC +1.8K"
       ],
       "dropAreas": [
@@ -29831,16 +29831,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 650000,
+      "bonusHP": 3200000,
       "bonusATK": 0,
-      "bonusDEF": 43000,
+      "bonusDEF": 87000,
       "bonusAGI": 0,
       "bonusLUC": 1200,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "HP +650K",
-        "DEF +43K",
+        "HP +3.2M",
+        "DEF +87K",
         "LUC +1.2K"
       ],
       "dropAreas": [
@@ -29920,15 +29920,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 210000,
+      "bonusHP": 1000000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 580,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +210K",
+        "HP +1M",
         "LUC +580"
       ],
       "dropAreas": [
@@ -30449,15 +30449,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 100000,
+      "bonusHP": 530000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 470,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +100K",
+        "HP +530K",
         "LUC +470"
       ],
       "dropAreas": [
@@ -30561,14 +30561,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 270000000,
+      "bonusATK": 3800000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +270M"
+        "ATK +3.8B"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -30587,15 +30587,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1300000,
+      "bonusHP": 6700000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.3M"
+        "HP +6.7M"
       ],
       "dropAreas": [
         "VO01",
@@ -30620,14 +30620,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 170000000,
+      "bonusATK": 2400000000,
       "bonusDEF": 0,
       "bonusAGI": 670,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +170M",
+        "ATK +2.4B",
         "AGI +670"
       ],
       "dropAreas": [
@@ -30649,16 +30649,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 690000,
+      "bonusHP": 3400000,
       "bonusATK": 0,
-      "bonusDEF": 45000,
+      "bonusDEF": 90000,
       "bonusAGI": 590,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +690K",
-        "DEF +45K",
+        "HP +3.4M",
+        "DEF +90K",
         "AGI +590"
       ],
       "dropAreas": [
@@ -30682,15 +30682,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 140000,
+      "bonusHP": 700000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 510,
-      "buyPrice": 2800000,
+      "buyPrice": 3000000,
       "maxCopies": -1,
       "effects": [
-        "HP +140K",
+        "HP +700K",
         "LUC +510"
       ],
       "dropAreas": [
@@ -30712,16 +30712,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 790000,
+      "bonusHP": 3900000,
       "bonusATK": 0,
-      "bonusDEF": 50000,
+      "bonusDEF": 100000,
       "bonusAGI": 670,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +790K",
-        "DEF +50K",
+        "HP +3.9M",
+        "DEF +100K",
         "AGI +670"
       ],
       "dropAreas": [
@@ -30825,15 +30825,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 640000,
+      "bonusHP": 3200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 820,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +640K",
+        "HP +3.2M",
         "LUC +820"
       ],
       "dropAreas": [
@@ -30855,16 +30855,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 280000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
-      "bonusDEF": 12000,
+      "bonusDEF": 25000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2800000,
+      "buyPrice": 3000000,
       "maxCopies": -1,
       "effects": [
-        "HP +280K",
-        "DEF +12K"
+        "HP +1.4M",
+        "DEF +25K"
       ],
       "dropAreas": [
         "VO02"
@@ -30885,16 +30885,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 160000,
+      "bonusHP": 830000,
       "bonusATK": 0,
-      "bonusDEF": 15000,
+      "bonusDEF": 30000,
       "bonusAGI": 0,
       "bonusLUC": 680,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +160K",
-        "DEF +15K",
+        "HP +830K",
+        "DEF +30K",
         "LUC +680"
       ],
       "dropAreas": [
@@ -30917,14 +30917,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 20000000,
+      "bonusATK": 280000000,
       "bonusDEF": 0,
       "bonusAGI": 100,
       "bonusLUC": 0,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +20M",
+        "ATK +280M",
         "AGI +100"
       ],
       "dropAreas": [
@@ -30948,14 +30948,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 230000000,
+      "bonusATK": 3300000000,
       "bonusDEF": 0,
       "bonusAGI": 770,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +230M",
+        "ATK +3.3B",
         "AGI +770"
       ],
       "dropAreas": [],
@@ -30976,14 +30976,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 360000000,
+      "bonusATK": 5100000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +360M"
+        "ATK +5.1B"
       ],
       "dropAreas": [
         "UW01"
@@ -31004,16 +31004,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 910000,
+      "bonusHP": 4500000,
       "bonusATK": 0,
-      "bonusDEF": 56000,
+      "bonusDEF": 110000,
       "bonusAGI": 770,
       "bonusLUC": 0,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "HP +910K",
-        "DEF +56K",
+        "HP +4.5M",
+        "DEF +110K",
         "AGI +770"
       ],
       "dropAreas": [
@@ -31036,16 +31036,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 210000,
+      "bonusHP": 1000000,
       "bonusATK": 0,
-      "bonusDEF": 21000,
+      "bonusDEF": 43000,
       "bonusAGI": 0,
       "bonusLUC": 260,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +210K",
-        "DEF +21K",
+        "HP +1M",
+        "DEF +43K",
         "LUC +260"
       ],
       "dropAreas": [
@@ -31067,16 +31067,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 320000,
+      "bonusHP": 1600000,
       "bonusATK": 0,
-      "bonusDEF": 14000,
+      "bonusDEF": 28000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2900000,
+      "buyPrice": 3100000,
       "maxCopies": -1,
       "effects": [
-        "HP +320K",
-        "DEF +14K"
+        "HP +1.6M",
+        "DEF +28K"
       ],
       "dropAreas": [
         "VO03"
@@ -31098,14 +31098,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 310000000,
+      "bonusATK": 4400000000,
       "bonusDEF": 0,
       "bonusAGI": 880,
       "bonusLUC": 0,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +310M",
+        "ATK +4.4B",
         "AGI +880"
       ],
       "dropAreas": [
@@ -31127,16 +31127,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 330000,
+      "bonusHP": 1600000,
       "bonusATK": 0,
-      "bonusDEF": 24000,
+      "bonusDEF": 48000,
       "bonusAGI": 96,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +330K",
-        "DEF +24K",
+        "HP +1.6M",
+        "DEF +48K",
         "AGI +96"
       ],
       "dropAreas": [
@@ -31186,15 +31186,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 81000,
+      "bonusHP": 400000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 430,
-      "buyPrice": 2500000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +81K",
+        "HP +400K",
         "LUC +430"
       ],
       "dropAreas": [
@@ -31217,14 +31217,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 27000000,
+      "bonusATK": 380000000,
       "bonusDEF": 0,
       "bonusAGI": 110,
       "bonusLUC": 0,
-      "buyPrice": 2700000,
+      "buyPrice": 2900000,
       "maxCopies": -1,
       "effects": [
-        "ATK +27M",
+        "ATK +380M",
         "AGI +110"
       ],
       "dropAreas": [
@@ -31277,14 +31277,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 520000000,
+      "bonusATK": 7300000000,
       "bonusDEF": 0,
       "bonusAGI": 410,
       "bonusLUC": 0,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +520M",
+        "ATK +7.3B",
         "AGI +410"
       ],
       "dropAreas": [
@@ -31338,14 +31338,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 490000000,
+      "bonusATK": 6900000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +490M"
+        "ATK +6.9B"
       ],
       "dropAreas": [
         "UW02"
@@ -31366,16 +31366,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 1100000,
+      "bonusHP": 5800000,
       "bonusATK": 0,
-      "bonusDEF": 63000,
+      "bonusDEF": 120000,
       "bonusAGI": 300,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +1.1M",
-        "DEF +63K",
+        "HP +5.8M",
+        "DEF +120K",
         "AGI +300"
       ],
       "dropAreas": [],
@@ -31395,16 +31395,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 770000,
+      "bonusHP": 3800000,
       "bonusATK": 0,
-      "bonusDEF": 45000,
+      "bonusDEF": 91000,
       "bonusAGI": 200,
       "bonusLUC": 0,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "HP +770K",
-        "DEF +45K",
+        "HP +3.8M",
+        "DEF +91K",
         "AGI +200"
       ],
       "dropAreas": [
@@ -31426,16 +31426,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 140000,
+      "bonusHP": 710000,
       "bonusATK": 0,
-      "bonusDEF": 7300,
+      "bonusDEF": 14000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "HP +140K",
-        "DEF +7.3K"
+        "HP +710K",
+        "DEF +14K"
       ],
       "dropAreas": [
         "FR01"
@@ -31456,16 +31456,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 93000,
+      "bonusHP": 460000,
       "bonusATK": 0,
-      "bonusDEF": 11000,
+      "bonusDEF": 22000,
       "bonusAGI": 0,
       "bonusLUC": 180,
-      "buyPrice": 2600000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "HP +93K",
-        "DEF +11K",
+        "HP +460K",
+        "DEF +22K",
         "LUC +180"
       ],
       "dropAreas": [],
@@ -31486,14 +31486,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 11000000,
+      "bonusATK": 150000000,
       "bonusDEF": 0,
       "bonusAGI": 78,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2700000,
       "maxCopies": -1,
       "effects": [
-        "ATK +11M",
+        "ATK +150M",
         "AGI +78"
       ],
       "dropAreas": [
@@ -31546,16 +31546,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 220000,
+      "bonusHP": 1100000,
       "bonusATK": 0,
-      "bonusDEF": 17000,
+      "bonusDEF": 35000,
       "bonusAGI": 65,
       "bonusLUC": 0,
-      "buyPrice": 2800000,
+      "buyPrice": 3000000,
       "maxCopies": -1,
       "effects": [
-        "HP +220K",
-        "DEF +17K",
+        "HP +1.1M",
+        "DEF +35K",
         "AGI +65"
       ],
       "dropAreas": [
@@ -31578,14 +31578,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 8400000,
+      "bonusATK": 110000000,
       "bonusDEF": 0,
       "bonusAGI": 68,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +8.4M",
+        "ATK +110M",
         "AGI +68"
       ],
       "dropAreas": [
@@ -31608,14 +31608,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 420000000,
+      "bonusATK": 5900000000,
       "bonusDEF": 0,
       "bonusAGI": 1000,
       "bonusLUC": 0,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "ATK +420M",
+        "ATK +5.9B",
         "AGI +1K"
       ],
       "dropAreas": [
@@ -31638,14 +31638,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 660000000,
+      "bonusATK": 9300000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +660M"
+        "ATK +9.3B"
       ],
       "dropAreas": [
         "UW03"
@@ -31666,16 +31666,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 160000,
+      "bonusHP": 810000,
       "bonusATK": 0,
-      "bonusDEF": 17000,
+      "bonusDEF": 34000,
       "bonusAGI": 0,
       "bonusLUC": 230,
-      "buyPrice": 2900000,
+      "buyPrice": 3100000,
       "maxCopies": -1,
       "effects": [
-        "HP +160K",
-        "DEF +17K",
+        "HP +810K",
+        "DEF +34K",
         "LUC +230"
       ],
       "dropAreas": [
@@ -31728,15 +31728,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 500000,
+      "bonusHP": 2500000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 1900,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "HP +500K",
+        "HP +2.5M",
         "LUC +1.9K"
       ],
       "dropAreas": [
@@ -31763,14 +31763,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 570000000,
+      "bonusATK": 8000000000,
       "bonusDEF": 0,
       "bonusAGI": 1100,
       "bonusLUC": 0,
-      "buyPrice": 3900000,
+      "buyPrice": 4100000,
       "maxCopies": -1,
       "effects": [
-        "ATK +570M",
+        "ATK +8B",
         "AGI +1.1K"
       ],
       "dropAreas": [
@@ -31818,15 +31818,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 240000,
+      "bonusHP": 1200000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 610,
-      "buyPrice": 3300000,
+      "buyPrice": 3500000,
       "maxCopies": -1,
       "effects": [
-        "HP +240K",
+        "HP +1.2M",
         "LUC +610"
       ],
       "dropAreas": [
@@ -31849,16 +31849,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 420000,
+      "bonusHP": 2100000,
       "bonusATK": 0,
-      "bonusDEF": 36000,
+      "bonusDEF": 73000,
       "bonusAGI": 0,
       "bonusLUC": 360,
-      "buyPrice": 3700000,
+      "buyPrice": 3900000,
       "maxCopies": -1,
       "effects": [
-        "HP +420K",
-        "DEF +36K",
+        "HP +2.1M",
+        "DEF +73K",
         "LUC +360"
       ],
       "dropAreas": [
@@ -31942,14 +31942,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 890000000,
+      "bonusATK": 12000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +890M"
+        "ATK +12B"
       ],
       "dropAreas": [
         "UW04"
@@ -31971,14 +31971,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 770000000,
+      "bonusATK": 10000000000,
       "bonusDEF": 0,
       "bonusAGI": 1200,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +770M",
+        "ATK +10B",
         "AGI +1.2K"
       ],
       "dropAreas": [
@@ -32028,16 +32028,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 190000,
+      "bonusHP": 950000,
       "bonusATK": 0,
-      "bonusDEF": 16000,
+      "bonusDEF": 33000,
       "bonusAGI": 0,
       "bonusLUC": 730,
-      "buyPrice": 3300000,
+      "buyPrice": 3500000,
       "maxCopies": -1,
       "effects": [
-        "HP +190K",
-        "DEF +16K",
+        "HP +950K",
+        "DEF +33K",
         "LUC +730"
       ],
       "dropAreas": [
@@ -32059,15 +32059,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 590000,
+      "bonusHP": 2900000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +590K"
+        "HP +2.9M"
       ],
       "dropAreas": [
         "VO02"
@@ -32089,15 +32089,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 280000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 640,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +280K",
+        "HP +1.4M",
         "LUC +640"
       ],
       "dropAreas": [
@@ -32120,14 +32120,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1200000000,
+      "bonusATK": 16000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1.2B"
+        "ATK +16B"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -32146,16 +32146,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 110000,
+      "bonusHP": 560000,
       "bonusATK": 0,
-      "bonusDEF": 10000,
+      "bonusDEF": 20000,
       "bonusAGI": 34,
       "bonusLUC": 0,
-      "buyPrice": 2500000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "HP +110K",
-        "DEF +10K",
+        "HP +560K",
+        "DEF +20K",
         "AGI +34"
       ],
       "dropAreas": [
@@ -32207,16 +32207,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 230000,
+      "bonusHP": 1100000,
       "bonusATK": 0,
-      "bonusDEF": 19000,
+      "bonusDEF": 38000,
       "bonusAGI": 210,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +230K",
-        "DEF +19K",
+        "HP +1.1M",
+        "DEF +38K",
         "AGI +210"
       ],
       "dropAreas": [
@@ -32238,16 +32238,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 730000,
+      "bonusHP": 3600000,
       "bonusATK": 0,
-      "bonusDEF": 56000,
+      "bonusDEF": 110000,
       "bonusAGI": 0,
       "bonusLUC": 460,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "HP +730K",
-        "DEF +56K",
+        "HP +3.6M",
+        "DEF +110K",
         "LUC +460"
       ],
       "dropAreas": [],
@@ -32268,14 +32268,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1000000000,
+      "bonusATK": 14000000000,
       "bonusDEF": 0,
       "bonusAGI": 1400,
       "bonusLUC": 0,
-      "buyPrice": 4000000,
+      "buyPrice": 4200000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1B",
+        "ATK +14B",
         "AGI +1.4K"
       ],
       "dropAreas": [],
@@ -32295,16 +32295,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 970000,
+      "bonusHP": 4800000,
       "bonusATK": 0,
-      "bonusDEF": 33000,
+      "bonusDEF": 66000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3800000,
+      "buyPrice": 4000000,
       "maxCopies": -1,
       "effects": [
-        "HP +970K",
-        "DEF +33K"
+        "HP +4.8M",
+        "DEF +66K"
       ],
       "dropAreas": [
         "UW02"
@@ -32325,15 +32325,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 220000,
+      "bonusHP": 1100000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 1500,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +220K",
+        "HP +1.1M",
         "LUC +1.5K"
       ],
       "dropAreas": [
@@ -32357,14 +32357,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 160000000,
+      "bonusATK": 2200000000,
       "bonusDEF": 0,
       "bonusAGI": 240,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "ATK +160M",
+        "ATK +2.2B",
         "AGI +240"
       ],
       "dropAreas": [
@@ -32387,14 +32387,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 89000000,
+      "bonusATK": 1200000000,
       "bonusDEF": 0,
       "bonusAGI": 190,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +89M",
+        "ATK +1.2B",
         "AGI +190"
       ],
       "dropAreas": [
@@ -32417,14 +32417,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 110000000,
+      "bonusATK": 1600000000,
       "bonusDEF": 0,
       "bonusAGI": 210,
       "bonusLUC": 0,
-      "buyPrice": 3300000,
+      "buyPrice": 3500000,
       "maxCopies": -1,
       "effects": [
-        "ATK +110M",
+        "ATK +1.6B",
         "AGI +210"
       ],
       "dropAreas": [
@@ -32447,16 +32447,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 490000,
+      "bonusHP": 2400000,
       "bonusATK": 0,
-      "bonusDEF": 19000,
+      "bonusDEF": 38000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3300000,
+      "buyPrice": 3500000,
       "maxCopies": -1,
       "effects": [
-        "HP +490K",
-        "DEF +19K"
+        "HP +2.4M",
+        "DEF +38K"
       ],
       "dropAreas": [
         "DS03"
@@ -32477,16 +32477,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 260000,
+      "bonusHP": 1300000,
       "bonusATK": 0,
-      "bonusDEF": 21000,
+      "bonusDEF": 42000,
       "bonusAGI": 230,
       "bonusLUC": 0,
-      "buyPrice": 3300000,
+      "buyPrice": 3500000,
       "maxCopies": -1,
       "effects": [
-        "HP +260K",
-        "DEF +21K",
+        "HP +1.3M",
+        "DEF +42K",
         "AGI +230"
       ],
       "dropAreas": [
@@ -32509,14 +32509,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 66000000,
+      "bonusATK": 930000000,
       "bonusDEF": 0,
       "bonusAGI": 160,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "ATK +66M",
+        "ATK +930M",
         "AGI +160"
       ],
       "dropAreas": [
@@ -32538,16 +32538,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 510000,
+      "bonusHP": 2500000,
       "bonusATK": 0,
-      "bonusDEF": 33000,
+      "bonusDEF": 66000,
       "bonusAGI": 140,
       "bonusLUC": 0,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +510K",
-        "DEF +33K",
+        "HP +2.5M",
+        "DEF +66K",
         "AGI +140"
       ],
       "dropAreas": [
@@ -32599,15 +32599,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 320000,
+      "bonusHP": 1600000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 660,
-      "buyPrice": 3400000,
+      "buyPrice": 3600000,
       "maxCopies": -1,
       "effects": [
-        "HP +320K",
+        "HP +1.6M",
         "LUC +660"
       ],
       "dropAreas": [
@@ -32629,16 +32629,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 290000,
+      "bonusHP": 1400000,
       "bonusATK": 0,
-      "bonusDEF": 21000,
+      "bonusDEF": 43000,
       "bonusAGI": 84,
       "bonusLUC": 0,
-      "buyPrice": 3200000,
+      "buyPrice": 3400000,
       "maxCopies": -1,
       "effects": [
-        "HP +290K",
-        "DEF +21K",
+        "HP +1.4M",
+        "DEF +43K",
         "AGI +84"
       ],
       "dropAreas": [
@@ -32660,16 +32660,16 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 140000,
+      "bonusHP": 700000,
       "bonusATK": 0,
-      "bonusDEF": 15000,
+      "bonusDEF": 31000,
       "bonusAGI": 0,
       "bonusLUC": 210,
-      "buyPrice": 2800000,
+      "buyPrice": 3000000,
       "maxCopies": -1,
       "effects": [
-        "HP +140K",
-        "DEF +15K",
+        "HP +700K",
+        "DEF +31K",
         "LUC +210"
       ],
       "dropAreas": [
@@ -32691,15 +32691,15 @@
       "shopUnavailable": false,
       "isHardModeItem": true,
       "isBossItem": false,
-      "bonusHP": 61000,
+      "bonusHP": 300000,
       "bonusATK": 0,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 400,
-      "buyPrice": 2400000,
+      "buyPrice": 2600000,
       "maxCopies": -1,
       "effects": [
-        "HP +61K",
+        "HP +300K",
         "LUC +400"
       ],
       "dropAreas": [
@@ -32722,14 +32722,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1600000000,
+      "bonusATK": 22000000000,
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1.6B"
+        "ATK +22B"
       ],
       "dropAreas": [],
       "shopAreas": [
@@ -32749,14 +32749,14 @@
       "isHardModeItem": true,
       "isBossItem": false,
       "bonusHP": 0,
-      "bonusATK": 1300000000,
+      "bonusATK": 19000000000,
       "bonusDEF": 0,
       "bonusAGI": 1600,
       "bonusLUC": 0,
-      "buyPrice": 4100000,
+      "buyPrice": 4300000,
       "maxCopies": -1,
       "effects": [
-        "ATK +1.3B",
+        "ATK +19B",
         "AGI +1.6K"
       ],
       "dropAreas": [],
