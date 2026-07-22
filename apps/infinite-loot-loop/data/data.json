@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T12:42:24Z",
+  "generatedAt": "2026-07-22T03:31:20Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 313,
@@ -60,6 +60,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.0036000002,
+        "comboResist": 0.00024,
+        "dodgeResist": 0.0011999999,
+        "critMultResist": 0.0027,
+        "armorPierce": 0.0011999999,
+        "weaken": 0.00090000004
+      },
       "worlds": [
         "Grassland"
       ],
@@ -118,6 +126,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.008400001,
+        "comboResist": 0.00055999996,
+        "dodgeResist": 0.0028,
+        "critMultResist": 0.0063,
+        "armorPierce": 0.0028,
+        "weaken": 0.0021000002
+      },
       "worlds": [
         "Grassland"
       ],
@@ -171,6 +187,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.013200001,
+        "comboResist": 0.00087999995,
+        "dodgeResist": 0.0044,
+        "critMultResist": 0.0099,
+        "armorPierce": 0.0044,
+        "weaken": 0.0033000002
+      },
       "worlds": [
         "Grassland"
       ],
@@ -229,6 +253,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.018000001,
+        "comboResist": 0.0011999999,
+        "dodgeResist": 0.006,
+        "critMultResist": 0.013499999,
+        "armorPierce": 0.006,
+        "weaken": 0.0045000003
+      },
       "worlds": [
         "Grassland"
       ],
@@ -282,6 +314,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.0216,
+        "comboResist": 0.00144,
+        "dodgeResist": 0.0072,
+        "critMultResist": 0.0162,
+        "armorPierce": 0.0072,
+        "weaken": 0.0054
+      },
       "worlds": [
         "Grassland"
       ],
@@ -340,6 +380,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.024,
+        "comboResist": 0.0016,
+        "dodgeResist": 0.007999999,
+        "critMultResist": 0.018,
+        "armorPierce": 0.007999999,
+        "weaken": 0.006
+      },
       "worlds": [
         "Grassland"
       ],
@@ -393,6 +441,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.027600002,
+        "comboResist": 0.0018399999,
+        "dodgeResist": 0.0092,
+        "critMultResist": 0.0207,
+        "armorPierce": 0.0092,
+        "weaken": 0.0069000004
+      },
       "worlds": [
         "Grassland"
       ],
@@ -436,6 +492,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.0324,
+        "comboResist": 0.00216,
+        "dodgeResist": 0.010799999,
+        "critMultResist": 0.0243,
+        "armorPierce": 0.010799999,
+        "weaken": 0.0081
+      },
       "worlds": [
         "Forest"
       ],
@@ -489,6 +553,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.033600003,
+        "comboResist": 0.0022399998,
+        "dodgeResist": 0.0112,
+        "critMultResist": 0.0252,
+        "armorPierce": 0.0112,
+        "weaken": 0.008400001
+      },
       "worlds": [
         "Forest"
       ],
@@ -537,6 +609,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.036000002,
+        "comboResist": 0.0023999999,
+        "dodgeResist": 0.012,
+        "critMultResist": 0.026999999,
+        "armorPierce": 0.012,
+        "weaken": 0.009000001
+      },
       "worlds": [
         "Forest"
       ],
@@ -590,6 +670,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.0384,
+        "comboResist": 0.00256,
+        "dodgeResist": 0.0128,
+        "critMultResist": 0.0288,
+        "armorPierce": 0.0128,
+        "weaken": 0.0096
+      },
       "worlds": [
         "Forest"
       ],
@@ -638,6 +726,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.0408,
+        "comboResist": 0.00272,
+        "dodgeResist": 0.013599999,
+        "critMultResist": 0.0306,
+        "armorPierce": 0.013599999,
+        "weaken": 0.0102
+      },
       "worlds": [
         "Forest"
       ],
@@ -691,6 +787,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.042000003,
+        "comboResist": 0.0028,
+        "dodgeResist": 0.0139999995,
+        "critMultResist": 0.0315,
+        "armorPierce": 0.0139999995,
+        "weaken": 0.010500001
+      },
       "worlds": [
         "Forest"
       ],
@@ -749,6 +853,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.042000003,
+        "comboResist": 0.0028,
+        "dodgeResist": 0.0139999995,
+        "critMultResist": 0.0315,
+        "armorPierce": 0.0139999995,
+        "weaken": 0.010500001
+      },
       "worlds": [
         "Forest"
       ],
@@ -797,6 +909,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.044400003,
+        "comboResist": 0.00296,
+        "dodgeResist": 0.0148,
+        "critMultResist": 0.0333,
+        "armorPierce": 0.0148,
+        "weaken": 0.011100001
+      },
       "worlds": [
         "Forest"
       ],
@@ -840,6 +960,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.0456,
+        "comboResist": 0.0030399999,
+        "dodgeResist": 0.015199999,
+        "critMultResist": 0.034199998,
+        "armorPierce": 0.015199999,
+        "weaken": 0.0114
+      },
       "worlds": [
         "Forest"
       ],
@@ -898,6 +1026,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.050400004,
+        "comboResist": 0.00336,
+        "dodgeResist": 0.0168,
+        "critMultResist": 0.0378,
+        "armorPierce": 0.0168,
+        "weaken": 0.012600001
+      },
       "worlds": [
         "Forest"
       ],
@@ -941,6 +1077,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.060000002,
+        "comboResist": 0.0039999997,
+        "dodgeResist": 0.02,
+        "critMultResist": 0.044999998,
+        "armorPierce": 0.02,
+        "weaken": 0.015000001
+      },
       "worlds": [
         "Forest"
       ],
@@ -984,6 +1128,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.075600006,
+        "comboResist": 0.0050399997,
+        "dodgeResist": 0.0252,
+        "critMultResist": 0.0567,
+        "armorPierce": 0.0252,
+        "weaken": 0.018900001
+      },
       "worlds": [
         "Forest"
       ],
@@ -1037,6 +1189,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.0816,
+        "comboResist": 0.00544,
+        "dodgeResist": 0.027199998,
+        "critMultResist": 0.0612,
+        "armorPierce": 0.027199998,
+        "weaken": 0.0204
+      },
       "worlds": [
         "Forest"
       ],
@@ -1085,6 +1245,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.08760001,
+        "comboResist": 0.0058399998,
+        "dodgeResist": 0.029199999,
+        "critMultResist": 0.0657,
+        "armorPierce": 0.029199999,
+        "weaken": 0.021900002
+      },
       "worlds": [
         "Forest"
       ],
@@ -1138,6 +1306,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.0912,
+        "comboResist": 0.0060799997,
+        "dodgeResist": 0.030399999,
+        "critMultResist": 0.068399996,
+        "armorPierce": 0.030399999,
+        "weaken": 0.0228
+      },
       "worlds": [
         "Forest"
       ],
@@ -1186,6 +1362,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.096,
+        "comboResist": 0.0064,
+        "dodgeResist": 0.031999998,
+        "critMultResist": 0.072,
+        "armorPierce": 0.031999998,
+        "weaken": 0.024
+      },
       "worlds": [
         "Forest"
       ],
@@ -1229,6 +1413,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.0996,
+        "comboResist": 0.00664,
+        "dodgeResist": 0.0332,
+        "critMultResist": 0.0747,
+        "armorPierce": 0.0332,
+        "weaken": 0.0249
+      },
       "worlds": [
         "Forest"
       ],
@@ -1282,6 +1474,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.1044,
+        "comboResist": 0.00696,
+        "dodgeResist": 0.0348,
+        "critMultResist": 0.0783,
+        "armorPierce": 0.0348,
+        "weaken": 0.0261
+      },
       "worlds": [
         "Forest"
       ],
@@ -1330,6 +1530,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.10920001,
+        "comboResist": 0.00728,
+        "dodgeResist": 0.036399998,
+        "critMultResist": 0.0819,
+        "armorPierce": 0.036399998,
+        "weaken": 0.027300002
+      },
       "worlds": [
         "Forest"
       ],
@@ -1378,6 +1586,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.11400001,
+        "comboResist": 0.0075999997,
+        "dodgeResist": 0.038,
+        "critMultResist": 0.0855,
+        "armorPierce": 0.038,
+        "weaken": 0.028500002
+      },
       "worlds": [
         "Forest"
       ],
@@ -1426,6 +1642,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.11880001,
+        "comboResist": 0.00792,
+        "dodgeResist": 0.0396,
+        "critMultResist": 0.089099996,
+        "armorPierce": 0.0396,
+        "weaken": 0.029700002
+      },
       "worlds": [
         "Forest"
       ],
@@ -1474,6 +1698,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.1212,
+        "comboResist": 0.00808,
+        "dodgeResist": 0.0404,
+        "critMultResist": 0.0909,
+        "armorPierce": 0.0404,
+        "weaken": 0.0303
+      },
       "worlds": [
         "Forest"
       ],
@@ -1512,6 +1744,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.123600006,
+        "comboResist": 0.008239999,
+        "dodgeResist": 0.0412,
+        "critMultResist": 0.0927,
+        "armorPierce": 0.0412,
+        "weaken": 0.030900002
+      },
       "worlds": [
         "Forest"
       ],
@@ -1555,6 +1795,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.1296,
+        "comboResist": 0.00864,
+        "dodgeResist": 0.043199997,
+        "critMultResist": 0.0972,
+        "armorPierce": 0.043199997,
+        "weaken": 0.0324
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -1608,6 +1856,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.1332,
+        "comboResist": 0.00888,
+        "dodgeResist": 0.0444,
+        "critMultResist": 0.0999,
+        "armorPierce": 0.0444,
+        "weaken": 0.0333
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -1656,6 +1912,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.1392,
+        "comboResist": 0.00928,
+        "dodgeResist": 0.0464,
+        "critMultResist": 0.1044,
+        "armorPierce": 0.0464,
+        "weaken": 0.0348
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -1709,6 +1973,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.14400001,
+        "comboResist": 0.0095999995,
+        "dodgeResist": 0.048,
+        "critMultResist": 0.107999995,
+        "armorPierce": 0.048,
+        "weaken": 0.036000002
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -1757,6 +2029,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.1488,
+        "comboResist": 0.00992,
+        "dodgeResist": 0.049599998,
+        "critMultResist": 0.1116,
+        "armorPierce": 0.049599998,
+        "weaken": 0.0372
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -1810,6 +2090,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.1536,
+        "comboResist": 0.01024,
+        "dodgeResist": 0.0512,
+        "critMultResist": 0.1152,
+        "armorPierce": 0.0512,
+        "weaken": 0.0384
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -1858,6 +2146,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.15840001,
+        "comboResist": 0.010559999,
+        "dodgeResist": 0.0528,
+        "critMultResist": 0.1188,
+        "armorPierce": 0.0528,
+        "weaken": 0.039600004
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -1906,6 +2202,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.1632,
+        "comboResist": 0.01088,
+        "dodgeResist": 0.054399997,
+        "critMultResist": 0.1224,
+        "armorPierce": 0.054399997,
+        "weaken": 0.0408
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -1944,6 +2248,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.1692,
+        "comboResist": 0.011279999,
+        "dodgeResist": 0.056399997,
+        "critMultResist": 0.1269,
+        "armorPierce": 0.056399997,
+        "weaken": 0.0423
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -1992,6 +2304,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.17760001,
+        "comboResist": 0.01184,
+        "dodgeResist": 0.0592,
+        "critMultResist": 0.1332,
+        "armorPierce": 0.0592,
+        "weaken": 0.044400003
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2045,6 +2365,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.18360001,
+        "comboResist": 0.01224,
+        "dodgeResist": 0.061199997,
+        "critMultResist": 0.13769999,
+        "armorPierce": 0.061199997,
+        "weaken": 0.045900002
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2098,6 +2426,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.18840002,
+        "comboResist": 0.01256,
+        "dodgeResist": 0.0628,
+        "critMultResist": 0.1413,
+        "armorPierce": 0.0628,
+        "weaken": 0.047100004
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2151,6 +2487,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.1932,
+        "comboResist": 0.012879999,
+        "dodgeResist": 0.064399995,
+        "critMultResist": 0.1449,
+        "armorPierce": 0.064399995,
+        "weaken": 0.0483
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2204,6 +2548,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.19800001,
+        "comboResist": 0.0132,
+        "dodgeResist": 0.066,
+        "critMultResist": 0.1485,
+        "armorPierce": 0.066,
+        "weaken": 0.049500003
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2257,6 +2609,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.2028,
+        "comboResist": 0.01352,
+        "dodgeResist": 0.0676,
+        "critMultResist": 0.1521,
+        "armorPierce": 0.0676,
+        "weaken": 0.0507
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2310,6 +2670,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.2064,
+        "comboResist": 0.01376,
+        "dodgeResist": 0.068799995,
+        "critMultResist": 0.1548,
+        "armorPierce": 0.068799995,
+        "weaken": 0.0516
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2363,6 +2731,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.21000001,
+        "comboResist": 0.0139999995,
+        "dodgeResist": 0.07,
+        "critMultResist": 0.1575,
+        "armorPierce": 0.07,
+        "weaken": 0.052500002
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2406,6 +2782,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.21360001,
+        "comboResist": 0.014239999,
+        "dodgeResist": 0.0712,
+        "critMultResist": 0.1602,
+        "armorPierce": 0.0712,
+        "weaken": 0.053400002
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2454,6 +2838,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.21840002,
+        "comboResist": 0.01456,
+        "dodgeResist": 0.072799996,
+        "critMultResist": 0.1638,
+        "armorPierce": 0.072799996,
+        "weaken": 0.054600004
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2507,6 +2899,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.22200002,
+        "comboResist": 0.0148,
+        "dodgeResist": 0.074,
+        "critMultResist": 0.1665,
+        "armorPierce": 0.074,
+        "weaken": 0.055500004
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2560,6 +2960,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.22440001,
+        "comboResist": 0.014959999,
+        "dodgeResist": 0.0748,
+        "critMultResist": 0.1683,
+        "armorPierce": 0.0748,
+        "weaken": 0.056100003
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2613,6 +3021,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.2292,
+        "comboResist": 0.01528,
+        "dodgeResist": 0.0764,
+        "critMultResist": 0.1719,
+        "armorPierce": 0.0764,
+        "weaken": 0.0573
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2666,6 +3082,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.23160002,
+        "comboResist": 0.015439999,
+        "dodgeResist": 0.077199996,
+        "critMultResist": 0.17369999,
+        "armorPierce": 0.077199996,
+        "weaken": 0.057900004
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2709,6 +3133,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.23520002,
+        "comboResist": 0.01568,
+        "dodgeResist": 0.0784,
+        "critMultResist": 0.17639999,
+        "armorPierce": 0.0784,
+        "weaken": 0.058800004
+      },
       "worlds": [
         "Volcanic"
       ],
@@ -2752,6 +3184,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.246,
+        "comboResist": 0.0164,
+        "dodgeResist": 0.081999995,
+        "critMultResist": 0.1845,
+        "armorPierce": 0.081999995,
+        "weaken": 0.0615
+      },
       "worlds": [
         "Desert"
       ],
@@ -2805,6 +3245,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.25320002,
+        "comboResist": 0.01688,
+        "dodgeResist": 0.0844,
+        "critMultResist": 0.1899,
+        "armorPierce": 0.0844,
+        "weaken": 0.063300006
+      },
       "worlds": [
         "Desert"
       ],
@@ -2853,6 +3301,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.2592,
+        "comboResist": 0.01728,
+        "dodgeResist": 0.086399995,
+        "critMultResist": 0.1944,
+        "armorPierce": 0.086399995,
+        "weaken": 0.0648
+      },
       "worlds": [
         "Desert"
       ],
@@ -2906,6 +3362,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.26520002,
+        "comboResist": 0.017679999,
+        "dodgeResist": 0.0884,
+        "critMultResist": 0.1989,
+        "armorPierce": 0.0884,
+        "weaken": 0.066300005
+      },
       "worlds": [
         "Desert"
       ],
@@ -2954,6 +3418,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.27240002,
+        "comboResist": 0.01816,
+        "dodgeResist": 0.090799995,
+        "critMultResist": 0.2043,
+        "armorPierce": 0.090799995,
+        "weaken": 0.068100005
+      },
       "worlds": [
         "Desert"
       ],
@@ -2997,6 +3469,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.28800002,
+        "comboResist": 0.019199999,
+        "dodgeResist": 0.096,
+        "critMultResist": 0.21599999,
+        "armorPierce": 0.096,
+        "weaken": 0.072000004
+      },
       "worlds": [
         "Desert"
       ],
@@ -3040,6 +3520,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.3072,
+        "comboResist": 0.02048,
+        "dodgeResist": 0.1024,
+        "critMultResist": 0.2304,
+        "armorPierce": 0.1024,
+        "weaken": 0.0768
+      },
       "worlds": [
         "Desert"
       ],
@@ -3093,6 +3581,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.31800002,
+        "comboResist": 0.0212,
+        "dodgeResist": 0.106,
+        "critMultResist": 0.2385,
+        "armorPierce": 0.106,
+        "weaken": 0.079500005
+      },
       "worlds": [
         "Desert"
       ],
@@ -3141,6 +3637,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.3264,
+        "comboResist": 0.02176,
+        "dodgeResist": 0.108799994,
+        "critMultResist": 0.2448,
+        "armorPierce": 0.108799994,
+        "weaken": 0.0816
+      },
       "worlds": [
         "Desert"
       ],
@@ -3194,6 +3698,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.3348,
+        "comboResist": 0.022319999,
+        "dodgeResist": 0.1116,
+        "critMultResist": 0.2511,
+        "armorPierce": 0.1116,
+        "weaken": 0.0837
+      },
       "worlds": [
         "Desert"
       ],
@@ -3242,6 +3754,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.34440002,
+        "comboResist": 0.02296,
+        "dodgeResist": 0.1148,
+        "critMultResist": 0.2583,
+        "armorPierce": 0.1148,
+        "weaken": 0.086100005
+      },
       "worlds": [
         "Desert"
       ],
@@ -3285,6 +3805,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.3528,
+        "comboResist": 0.02352,
+        "dodgeResist": 0.117599994,
+        "critMultResist": 0.2646,
+        "armorPierce": 0.117599994,
+        "weaken": 0.0882
+      },
       "worlds": [
         "Desert"
       ],
@@ -3343,6 +3871,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.3684,
+        "comboResist": 0.024559999,
+        "dodgeResist": 0.1228,
+        "critMultResist": 0.27629998,
+        "armorPierce": 0.1228,
+        "weaken": 0.0921
+      },
       "worlds": [
         "Desert"
       ],
@@ -3386,6 +3922,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.3684,
+        "comboResist": 0.024559999,
+        "dodgeResist": 0.1228,
+        "critMultResist": 0.27629998,
+        "armorPierce": 0.1228,
+        "weaken": 0.0921
+      },
       "worlds": [
         "Desert"
       ],
@@ -3424,6 +3968,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.3684,
+        "comboResist": 0.024559999,
+        "dodgeResist": 0.1228,
+        "critMultResist": 0.27629998,
+        "armorPierce": 0.1228,
+        "weaken": 0.0921
+      },
       "worlds": [
         "Desert"
       ],
@@ -3467,6 +4019,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.384,
+        "comboResist": 0.0256,
+        "dodgeResist": 0.12799999,
+        "critMultResist": 0.288,
+        "armorPierce": 0.12799999,
+        "weaken": 0.096
+      },
       "worlds": [
         "Desert"
       ],
@@ -3525,6 +4085,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.384,
+        "comboResist": 0.0256,
+        "dodgeResist": 0.12799999,
+        "critMultResist": 0.288,
+        "armorPierce": 0.12799999,
+        "weaken": 0.096
+      },
       "worlds": [
         "Desert"
       ],
@@ -3573,6 +4141,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.384,
+        "comboResist": 0.0256,
+        "dodgeResist": 0.12799999,
+        "critMultResist": 0.288,
+        "armorPierce": 0.12799999,
+        "weaken": 0.096
+      },
       "worlds": [
         "Desert"
       ],
@@ -3626,6 +4202,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.402,
+        "comboResist": 0.0268,
+        "dodgeResist": 0.134,
+        "critMultResist": 0.3015,
+        "armorPierce": 0.134,
+        "weaken": 0.1005
+      },
       "worlds": [
         "Desert"
       ],
@@ -3684,6 +4268,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.402,
+        "comboResist": 0.0268,
+        "dodgeResist": 0.134,
+        "critMultResist": 0.3015,
+        "armorPierce": 0.134,
+        "weaken": 0.1005
+      },
       "worlds": [
         "Desert"
       ],
@@ -3727,6 +4319,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.402,
+        "comboResist": 0.0268,
+        "dodgeResist": 0.134,
+        "critMultResist": 0.3015,
+        "armorPierce": 0.134,
+        "weaken": 0.1005
+      },
       "worlds": [
         "Desert"
       ],
@@ -3765,6 +4365,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.42000002,
+        "comboResist": 0.027999999,
+        "dodgeResist": 0.14,
+        "critMultResist": 0.315,
+        "armorPierce": 0.14,
+        "weaken": 0.105000004
+      },
       "worlds": [
         "Desert"
       ],
@@ -3823,6 +4431,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.42000002,
+        "comboResist": 0.027999999,
+        "dodgeResist": 0.14,
+        "critMultResist": 0.315,
+        "armorPierce": 0.14,
+        "weaken": 0.105000004
+      },
       "worlds": [
         "Desert"
       ],
@@ -3876,6 +4492,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.42000002,
+        "comboResist": 0.027999999,
+        "dodgeResist": 0.14,
+        "critMultResist": 0.315,
+        "armorPierce": 0.14,
+        "weaken": 0.105000004
+      },
       "worlds": [
         "Desert"
       ],
@@ -3914,6 +4538,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.43800002,
+        "comboResist": 0.029199999,
+        "dodgeResist": 0.146,
+        "critMultResist": 0.3285,
+        "armorPierce": 0.146,
+        "weaken": 0.109500006
+      },
       "worlds": [
         "Desert"
       ],
@@ -3967,6 +4599,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.43800002,
+        "comboResist": 0.029199999,
+        "dodgeResist": 0.146,
+        "critMultResist": 0.3285,
+        "armorPierce": 0.146,
+        "weaken": 0.109500006
+      },
       "worlds": [
         "Desert"
       ],
@@ -4015,6 +4655,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.43800002,
+        "comboResist": 0.029199999,
+        "dodgeResist": 0.146,
+        "critMultResist": 0.3285,
+        "armorPierce": 0.146,
+        "weaken": 0.109500006
+      },
       "worlds": [
         "Desert"
       ],
@@ -4048,6 +4696,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.45600003,
+        "comboResist": 0.030399999,
+        "dodgeResist": 0.152,
+        "critMultResist": 0.342,
+        "armorPierce": 0.152,
+        "weaken": 0.11400001
+      },
       "worlds": [
         "Desert"
       ],
@@ -4086,6 +4742,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.45600003,
+        "comboResist": 0.030399999,
+        "dodgeResist": 0.152,
+        "critMultResist": 0.342,
+        "armorPierce": 0.152,
+        "weaken": 0.11400001
+      },
       "worlds": [
         "Desert"
       ],
@@ -4129,6 +4793,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.45600003,
+        "comboResist": 0.030399999,
+        "dodgeResist": 0.152,
+        "critMultResist": 0.342,
+        "armorPierce": 0.152,
+        "weaken": 0.11400001
+      },
       "worlds": [
         "Desert"
       ],
@@ -4177,6 +4849,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.4884,
+        "comboResist": 0.03256,
+        "dodgeResist": 0.1628,
+        "critMultResist": 0.3663,
+        "armorPierce": 0.1628,
+        "weaken": 0.1221
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4230,6 +4910,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5004,
+        "comboResist": 0.03336,
+        "dodgeResist": 0.16679999,
+        "critMultResist": 0.3753,
+        "armorPierce": 0.16679999,
+        "weaken": 0.1251
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4283,6 +4971,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.51240003,
+        "comboResist": 0.03416,
+        "dodgeResist": 0.1708,
+        "critMultResist": 0.3843,
+        "armorPierce": 0.1708,
+        "weaken": 0.12810001
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4336,6 +5032,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.522,
+        "comboResist": 0.0348,
+        "dodgeResist": 0.174,
+        "critMultResist": 0.3915,
+        "armorPierce": 0.174,
+        "weaken": 0.1305
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4389,6 +5093,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5292,
+        "comboResist": 0.03528,
+        "dodgeResist": 0.17639999,
+        "critMultResist": 0.3969,
+        "armorPierce": 0.17639999,
+        "weaken": 0.1323
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4432,6 +5144,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.53760004,
+        "comboResist": 0.035839997,
+        "dodgeResist": 0.1792,
+        "critMultResist": 0.4032,
+        "armorPierce": 0.1792,
+        "weaken": 0.13440001
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4475,6 +5195,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5532,
+        "comboResist": 0.036879998,
+        "dodgeResist": 0.18439999,
+        "critMultResist": 0.4149,
+        "armorPierce": 0.18439999,
+        "weaken": 0.1383
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4523,6 +5251,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5532,
+        "comboResist": 0.036879998,
+        "dodgeResist": 0.18439999,
+        "critMultResist": 0.4149,
+        "armorPierce": 0.18439999,
+        "weaken": 0.1383
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4571,6 +5307,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5532,
+        "comboResist": 0.036879998,
+        "dodgeResist": 0.18439999,
+        "critMultResist": 0.4149,
+        "armorPierce": 0.18439999,
+        "weaken": 0.1383
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4624,6 +5368,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5616,
+        "comboResist": 0.03744,
+        "dodgeResist": 0.1872,
+        "critMultResist": 0.4212,
+        "armorPierce": 0.1872,
+        "weaken": 0.1404
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4682,6 +5434,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5616,
+        "comboResist": 0.03744,
+        "dodgeResist": 0.1872,
+        "critMultResist": 0.4212,
+        "armorPierce": 0.1872,
+        "weaken": 0.1404
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4735,6 +5495,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.56640005,
+        "comboResist": 0.03776,
+        "dodgeResist": 0.18879999,
+        "critMultResist": 0.42479998,
+        "armorPierce": 0.18879999,
+        "weaken": 0.14160001
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4783,6 +5551,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.57240003,
+        "comboResist": 0.03816,
+        "dodgeResist": 0.1908,
+        "critMultResist": 0.42929998,
+        "armorPierce": 0.1908,
+        "weaken": 0.14310001
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4836,6 +5612,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.57240003,
+        "comboResist": 0.03816,
+        "dodgeResist": 0.1908,
+        "critMultResist": 0.42929998,
+        "armorPierce": 0.1908,
+        "weaken": 0.14310001
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4884,6 +5668,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5784,
+        "comboResist": 0.03856,
+        "dodgeResist": 0.1928,
+        "critMultResist": 0.43379998,
+        "armorPierce": 0.1928,
+        "weaken": 0.1446
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4937,6 +5729,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.582,
+        "comboResist": 0.038799997,
+        "dodgeResist": 0.19399999,
+        "critMultResist": 0.43649998,
+        "armorPierce": 0.19399999,
+        "weaken": 0.1455
+      },
       "worlds": [
         "Underwater"
       ],
@@ -4990,6 +5790,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.582,
+        "comboResist": 0.038799997,
+        "dodgeResist": 0.19399999,
+        "critMultResist": 0.43649998,
+        "armorPierce": 0.19399999,
+        "weaken": 0.1455
+      },
       "worlds": [
         "Underwater"
       ],
@@ -5038,6 +5846,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.59040004,
+        "comboResist": 0.039359998,
+        "dodgeResist": 0.1968,
+        "critMultResist": 0.4428,
+        "armorPierce": 0.1968,
+        "weaken": 0.14760001
+      },
       "worlds": [
         "Underwater"
       ],
@@ -5086,6 +5902,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5916,
+        "comboResist": 0.03944,
+        "dodgeResist": 0.1972,
+        "critMultResist": 0.4437,
+        "armorPierce": 0.1972,
+        "weaken": 0.1479
+      },
       "worlds": [
         "Underwater"
       ],
@@ -5134,6 +5958,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5916,
+        "comboResist": 0.03944,
+        "dodgeResist": 0.1972,
+        "critMultResist": 0.4437,
+        "armorPierce": 0.1972,
+        "weaken": 0.1479
+      },
       "worlds": [
         "Underwater"
       ],
@@ -5177,6 +6009,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5988,
+        "comboResist": 0.03992,
+        "dodgeResist": 0.1996,
+        "critMultResist": 0.4491,
+        "armorPierce": 0.1996,
+        "weaken": 0.1497
+      },
       "worlds": [
         "Underwater"
       ],
@@ -5215,6 +6055,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.5988,
+        "comboResist": 0.03992,
+        "dodgeResist": 0.1996,
+        "critMultResist": 0.4491,
+        "armorPierce": 0.1996,
+        "weaken": 0.1497
+      },
       "worlds": [
         "Underwater"
       ],
@@ -5258,6 +6106,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.6024,
+        "comboResist": 0.04016,
+        "dodgeResist": 0.2008,
+        "critMultResist": 0.4518,
+        "armorPierce": 0.2008,
+        "weaken": 0.1506
+      },
       "worlds": [
         "Underwater"
       ],
@@ -5296,6 +6152,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.6144,
+        "comboResist": 0.04096,
+        "dodgeResist": 0.2048,
+        "critMultResist": 0.4608,
+        "armorPierce": 0.2048,
+        "weaken": 0.1536
+      },
       "worlds": [
         "Underwater"
       ],
@@ -5359,6 +6223,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.61920005,
+        "comboResist": 0.041279998,
+        "dodgeResist": 0.20639999,
+        "critMultResist": 0.4644,
+        "armorPierce": 0.20639999,
+        "weaken": 0.15480001
+      },
       "worlds": [
         "Japan"
       ],
@@ -5418,6 +6290,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.624,
+        "comboResist": 0.0416,
+        "dodgeResist": 0.20799999,
+        "critMultResist": 0.468,
+        "armorPierce": 0.20799999,
+        "weaken": 0.156
+      },
       "worlds": [
         "Japan"
       ],
@@ -5463,6 +6343,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.62640005,
+        "comboResist": 0.041759998,
+        "dodgeResist": 0.20879999,
+        "critMultResist": 0.4698,
+        "armorPierce": 0.20879999,
+        "weaken": 0.15660001
+      },
       "worlds": [
         "Japan"
       ],
@@ -5527,6 +6415,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.63600004,
+        "comboResist": 0.0424,
+        "dodgeResist": 0.212,
+        "critMultResist": 0.477,
+        "armorPierce": 0.212,
+        "weaken": 0.15900001
+      },
       "worlds": [
         "Japan"
       ],
@@ -5586,6 +6482,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.64080006,
+        "comboResist": 0.042719997,
+        "dodgeResist": 0.2136,
+        "critMultResist": 0.4806,
+        "armorPierce": 0.2136,
+        "weaken": 0.16020001
+      },
       "worlds": [
         "Japan"
       ],
@@ -5631,6 +6535,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.64320004,
+        "comboResist": 0.04288,
+        "dodgeResist": 0.2144,
+        "critMultResist": 0.4824,
+        "armorPierce": 0.2144,
+        "weaken": 0.16080001
+      },
       "worlds": [
         "Japan"
       ],
@@ -5695,6 +6607,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.6528,
+        "comboResist": 0.04352,
+        "dodgeResist": 0.21759999,
+        "critMultResist": 0.4896,
+        "armorPierce": 0.21759999,
+        "weaken": 0.1632
+      },
       "worlds": [
         "Japan"
       ],
@@ -5754,6 +6674,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.6564,
+        "comboResist": 0.043759998,
+        "dodgeResist": 0.2188,
+        "critMultResist": 0.4923,
+        "armorPierce": 0.2188,
+        "weaken": 0.1641
+      },
       "worlds": [
         "Japan"
       ],
@@ -5813,6 +6741,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.66,
+        "comboResist": 0.044,
+        "dodgeResist": 0.22,
+        "critMultResist": 0.495,
+        "armorPierce": 0.22,
+        "weaken": 0.165
+      },
       "worlds": [
         "Japan"
       ],
@@ -5857,6 +6793,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.66480005,
+        "comboResist": 0.04432,
+        "dodgeResist": 0.2216,
+        "critMultResist": 0.4986,
+        "armorPierce": 0.2216,
+        "weaken": 0.16620001
+      },
       "worlds": [
         "Japan"
       ],
@@ -5906,6 +6850,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.67560005,
+        "comboResist": 0.04504,
+        "dodgeResist": 0.2252,
+        "critMultResist": 0.5067,
+        "armorPierce": 0.2252,
+        "weaken": 0.16890001
+      },
       "worlds": [
         "Japan"
       ],
@@ -5954,6 +6906,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.67560005,
+        "comboResist": 0.04504,
+        "dodgeResist": 0.2252,
+        "critMultResist": 0.5067,
+        "armorPierce": 0.2252,
+        "weaken": 0.16890001
+      },
       "worlds": [
         "Japan"
       ],
@@ -5992,6 +6952,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Grassland"
       ],
@@ -6030,6 +6991,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Grassland"
       ],
@@ -6068,6 +7030,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Grassland"
       ],
@@ -6106,6 +7069,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Grassland"
       ],
@@ -6144,6 +7108,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Grassland"
       ],
@@ -6177,6 +7142,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Grassland"
       ],
@@ -6210,6 +7176,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Grassland"
       ],
@@ -6248,6 +7215,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -6286,6 +7254,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -6324,6 +7293,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -6362,6 +7332,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -6395,6 +7366,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -6428,6 +7400,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -6461,6 +7434,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -6524,6 +7498,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.72120005,
+        "comboResist": 0.048079997,
+        "dodgeResist": 0.24039999,
+        "critMultResist": 0.5409,
+        "armorPierce": 0.24039999,
+        "weaken": 0.18030001
+      },
       "worlds": [
         "Greek"
       ],
@@ -6583,6 +7565,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.726,
+        "comboResist": 0.0484,
+        "dodgeResist": 0.242,
+        "critMultResist": 0.5445,
+        "armorPierce": 0.242,
+        "weaken": 0.1815
+      },
       "worlds": [
         "Greek"
       ],
@@ -6628,6 +7618,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.72840005,
+        "comboResist": 0.048559997,
+        "dodgeResist": 0.2428,
+        "critMultResist": 0.5463,
+        "armorPierce": 0.2428,
+        "weaken": 0.18210001
+      },
       "worlds": [
         "Greek"
       ],
@@ -6677,6 +7675,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.744,
+        "comboResist": 0.049599998,
+        "dodgeResist": 0.248,
+        "critMultResist": 0.55799997,
+        "armorPierce": 0.248,
+        "weaken": 0.186
+      },
       "worlds": [
         "Greek"
       ],
@@ -6727,6 +7733,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.744,
+        "comboResist": 0.049599998,
+        "dodgeResist": 0.248,
+        "critMultResist": 0.55799997,
+        "armorPierce": 0.248,
+        "weaken": 0.186
+      },
       "worlds": [
         "Greek"
       ],
@@ -6767,6 +7781,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -6805,6 +7820,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -6843,6 +7859,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -6891,6 +7908,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.76080006,
+        "comboResist": 0.05072,
+        "dodgeResist": 0.2536,
+        "critMultResist": 0.5706,
+        "armorPierce": 0.2536,
+        "weaken": 0.19020002
+      },
       "worlds": [
         "Greek"
       ],
@@ -6940,6 +7965,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.76080006,
+        "comboResist": 0.05072,
+        "dodgeResist": 0.2536,
+        "critMultResist": 0.5706,
+        "armorPierce": 0.2536,
+        "weaken": 0.19020002
+      },
       "worlds": [
         "Greek"
       ],
@@ -6989,6 +8022,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.76440006,
+        "comboResist": 0.050959997,
+        "dodgeResist": 0.2548,
+        "critMultResist": 0.5733,
+        "armorPierce": 0.2548,
+        "weaken": 0.19110002
+      },
       "worlds": [
         "Greek"
       ],
@@ -7043,6 +8084,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.76440006,
+        "comboResist": 0.050959997,
+        "dodgeResist": 0.2548,
+        "critMultResist": 0.5733,
+        "armorPierce": 0.2548,
+        "weaken": 0.19110002
+      },
       "worlds": [
         "Greek"
       ],
@@ -7092,6 +8141,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.7656,
+        "comboResist": 0.051039997,
+        "dodgeResist": 0.2552,
+        "critMultResist": 0.5742,
+        "armorPierce": 0.2552,
+        "weaken": 0.1914
+      },
       "worlds": [
         "Greek"
       ],
@@ -7137,6 +8194,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.7656,
+        "comboResist": 0.051039997,
+        "dodgeResist": 0.2552,
+        "critMultResist": 0.5742,
+        "armorPierce": 0.2552,
+        "weaken": 0.1914
+      },
       "worlds": [
         "Greek"
       ],
@@ -7182,6 +8247,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.7716,
+        "comboResist": 0.05144,
+        "dodgeResist": 0.2572,
+        "critMultResist": 0.5787,
+        "armorPierce": 0.2572,
+        "weaken": 0.1929
+      },
       "worlds": [
         "Greek"
       ],
@@ -7221,6 +8294,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.7716,
+        "comboResist": 0.05144,
+        "dodgeResist": 0.2572,
+        "critMultResist": 0.5787,
+        "armorPierce": 0.2572,
+        "weaken": 0.1929
+      },
       "worlds": [
         "Greek"
       ],
@@ -7260,6 +8341,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -7298,6 +8380,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -7336,6 +8419,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -7409,6 +8493,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.78720003,
+        "comboResist": 0.052479997,
+        "dodgeResist": 0.2624,
+        "critMultResist": 0.5904,
+        "armorPierce": 0.2624,
+        "weaken": 0.19680001
+      },
       "worlds": [
         "Greek"
       ],
@@ -7447,6 +8539,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -7487,6 +8580,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -7525,6 +8619,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -7563,6 +8658,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest"
       ],
@@ -7616,6 +8712,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.82800007,
+        "comboResist": 0.0552,
+        "dodgeResist": 0.276,
+        "critMultResist": 0.621,
+        "armorPierce": 0.276,
+        "weaken": 0.20700002
+      },
       "worlds": [
         "Military"
       ],
@@ -7655,6 +8759,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.83040005,
+        "comboResist": 0.055359997,
+        "dodgeResist": 0.2768,
+        "critMultResist": 0.6228,
+        "armorPierce": 0.2768,
+        "weaken": 0.20760001
+      },
       "worlds": [
         "Military"
       ],
@@ -7709,6 +8821,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.8388,
+        "comboResist": 0.055919997,
+        "dodgeResist": 0.2796,
+        "critMultResist": 0.62909997,
+        "armorPierce": 0.2796,
+        "weaken": 0.2097
+      },
       "worlds": [
         "Military"
       ],
@@ -7748,6 +8868,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.84120005,
+        "comboResist": 0.05608,
+        "dodgeResist": 0.28039998,
+        "critMultResist": 0.63089997,
+        "armorPierce": 0.28039998,
+        "weaken": 0.21030001
+      },
       "worlds": [
         "Military"
       ],
@@ -7787,6 +8915,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -7825,6 +8954,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -7863,6 +8993,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest",
         "Volcanic"
@@ -7899,6 +9030,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -7932,6 +9064,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Forest",
         "Volcanic"
@@ -7968,6 +9101,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8001,6 +9135,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8034,6 +9169,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8067,6 +9203,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8120,6 +9257,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.85200006,
+        "comboResist": 0.0568,
+        "dodgeResist": 0.28399998,
+        "critMultResist": 0.639,
+        "armorPierce": 0.28399998,
+        "weaken": 0.21300001
+      },
       "worlds": [
         "Military"
       ],
@@ -8160,6 +9305,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.85200006,
+        "comboResist": 0.0568,
+        "dodgeResist": 0.28399998,
+        "critMultResist": 0.639,
+        "armorPierce": 0.28399998,
+        "weaken": 0.21300001
+      },
       "worlds": [
         "Military"
       ],
@@ -8215,6 +9368,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.8604,
+        "comboResist": 0.057359997,
+        "dodgeResist": 0.2868,
+        "critMultResist": 0.6453,
+        "armorPierce": 0.2868,
+        "weaken": 0.2151
+      },
       "worlds": [
         "Military"
       ],
@@ -8254,6 +9415,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.86280006,
+        "comboResist": 0.05752,
+        "dodgeResist": 0.28759998,
+        "critMultResist": 0.6471,
+        "armorPierce": 0.28759998,
+        "weaken": 0.21570002
+      },
       "worlds": [
         "Military"
       ],
@@ -8308,6 +9477,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.87360007,
+        "comboResist": 0.05824,
+        "dodgeResist": 0.29119998,
+        "critMultResist": 0.6552,
+        "armorPierce": 0.29119998,
+        "weaken": 0.21840002
+      },
       "worlds": [
         "Military"
       ],
@@ -8348,6 +9525,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.87360007,
+        "comboResist": 0.05824,
+        "dodgeResist": 0.29119998,
+        "critMultResist": 0.6552,
+        "armorPierce": 0.29119998,
+        "weaken": 0.21840002
+      },
       "worlds": [
         "Military"
       ],
@@ -8388,6 +9573,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8426,6 +9612,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8464,6 +9651,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8497,6 +9685,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8530,6 +9719,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8563,6 +9753,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8596,6 +9787,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8629,6 +9821,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8662,6 +9855,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -8715,6 +9909,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.88440007,
+        "comboResist": 0.05896,
+        "dodgeResist": 0.29479998,
+        "critMultResist": 0.6633,
+        "armorPierce": 0.29479998,
+        "weaken": 0.22110002
+      },
       "worlds": [
         "Military"
       ],
@@ -8755,6 +9957,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.88440007,
+        "comboResist": 0.05896,
+        "dodgeResist": 0.29479998,
+        "critMultResist": 0.6633,
+        "armorPierce": 0.29479998,
+        "weaken": 0.22110002
+      },
       "worlds": [
         "Military"
       ],
@@ -8805,6 +10015,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.89280003,
+        "comboResist": 0.05952,
+        "dodgeResist": 0.2976,
+        "critMultResist": 0.6696,
+        "armorPierce": 0.2976,
+        "weaken": 0.22320001
+      },
       "worlds": [
         "Military"
       ],
@@ -8844,6 +10062,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.8952,
+        "comboResist": 0.05968,
+        "dodgeResist": 0.29839998,
+        "critMultResist": 0.6714,
+        "armorPierce": 0.29839998,
+        "weaken": 0.2238
+      },
       "worlds": [
         "Military"
       ],
@@ -8903,6 +10129,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.906,
+        "comboResist": 0.060399998,
+        "dodgeResist": 0.302,
+        "critMultResist": 0.6795,
+        "armorPierce": 0.302,
+        "weaken": 0.2265
+      },
       "worlds": [
         "Military"
       ],
@@ -8946,6 +10180,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.906,
+        "comboResist": 0.060399998,
+        "dodgeResist": 0.302,
+        "critMultResist": 0.6795,
+        "armorPierce": 0.302,
+        "weaken": 0.2265
+      },
       "worlds": [
         "Military"
       ],
@@ -8984,6 +10226,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -9022,6 +10265,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -9060,6 +10304,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -9098,6 +10343,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -9136,6 +10382,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -9174,6 +10421,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Volcanic"
       ],
@@ -9212,6 +10460,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9250,6 +10499,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert",
         "Forest"
@@ -9291,6 +10541,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9329,6 +10580,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9367,6 +10619,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9405,6 +10658,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9453,6 +10707,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.97560006,
+        "comboResist": 0.06504,
+        "dodgeResist": 0.3252,
+        "critMultResist": 0.7317,
+        "armorPierce": 0.3252,
+        "weaken": 0.24390002
+      },
       "worlds": [
         "Heaven"
       ],
@@ -9501,6 +10763,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.97560006,
+        "comboResist": 0.06504,
+        "dodgeResist": 0.3252,
+        "critMultResist": 0.7317,
+        "armorPierce": 0.3252,
+        "weaken": 0.24390002
+      },
       "worlds": [
         "Heaven"
       ],
@@ -9540,6 +10810,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9578,6 +10849,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9626,6 +10898,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.9804,
+        "comboResist": 0.065359995,
+        "dodgeResist": 0.3268,
+        "critMultResist": 0.7353,
+        "armorPierce": 0.3268,
+        "weaken": 0.2451
+      },
       "worlds": [
         "Heaven"
       ],
@@ -9664,6 +10944,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9702,6 +10983,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9740,6 +11022,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9778,6 +11061,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -9826,6 +11110,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.98520005,
+        "comboResist": 0.06568,
+        "dodgeResist": 0.3284,
+        "critMultResist": 0.7389,
+        "armorPierce": 0.3284,
+        "weaken": 0.24630001
+      },
       "worlds": [
         "Heaven"
       ],
@@ -9874,6 +11166,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.99000007,
+        "comboResist": 0.066,
+        "dodgeResist": 0.32999998,
+        "critMultResist": 0.7425,
+        "armorPierce": 0.32999998,
+        "weaken": 0.24750002
+      },
       "worlds": [
         "Heaven"
       ],
@@ -9922,6 +11222,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 0.99480003,
+        "comboResist": 0.066319995,
+        "dodgeResist": 0.33159998,
+        "critMultResist": 0.7461,
+        "armorPierce": 0.33159998,
+        "weaken": 0.24870001
+      },
       "worlds": [
         "Heaven"
       ],
@@ -9970,6 +11278,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 1.0020001,
+        "comboResist": 0.0668,
+        "dodgeResist": 0.334,
+        "critMultResist": 0.7515,
+        "armorPierce": 0.334,
+        "weaken": 0.25050002
+      },
       "worlds": [
         "Heaven"
       ],
@@ -10018,6 +11334,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 1.0020001,
+        "comboResist": 0.0668,
+        "dodgeResist": 0.334,
+        "critMultResist": 0.7515,
+        "armorPierce": 0.334,
+        "weaken": 0.25050002
+      },
       "worlds": [
         "Heaven"
       ],
@@ -10066,6 +11390,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 1.0092001,
+        "comboResist": 0.06728,
+        "dodgeResist": 0.3364,
+        "critMultResist": 0.7569,
+        "armorPierce": 0.3364,
+        "weaken": 0.25230002
+      },
       "worlds": [
         "Heaven"
       ],
@@ -10104,6 +11436,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert",
         "Forest"
@@ -10145,6 +11478,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10183,6 +11517,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10221,6 +11556,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10259,6 +11595,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert",
         "Forest"
@@ -10300,6 +11637,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10343,6 +11681,14 @@
           "chance": 3
         }
       ],
+      "resists": {
+        "critResist": 1.0152,
+        "comboResist": 0.06768,
+        "dodgeResist": 0.3384,
+        "critMultResist": 0.7614,
+        "armorPierce": 0.3384,
+        "weaken": 0.2538
+      },
       "worlds": [
         "Heaven"
       ],
@@ -10381,6 +11727,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10419,6 +11766,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10457,6 +11805,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10495,6 +11844,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10533,6 +11883,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10571,6 +11922,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10609,6 +11961,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10647,6 +12000,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10685,6 +12039,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10723,6 +12078,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10761,6 +12117,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10799,6 +12156,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Desert"
       ],
@@ -10837,6 +12195,14 @@
           "chance": 1
         }
       ],
+      "resists": {
+        "critResist": 1.1256001,
+        "comboResist": 0.07504,
+        "dodgeResist": 0.3752,
+        "critMultResist": 0.8442,
+        "armorPierce": 0.3752,
+        "weaken": 0.28140002
+      },
       "worlds": [
         "Desert"
       ],
@@ -10875,6 +12241,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -10913,6 +12280,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -10951,6 +12319,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -10989,6 +12358,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11027,6 +12397,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11065,6 +12436,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11103,6 +12475,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11141,6 +12514,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11179,6 +12553,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11217,6 +12592,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11255,6 +12631,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11293,6 +12670,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11331,6 +12709,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11369,6 +12748,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11407,6 +12787,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11445,6 +12826,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11483,6 +12865,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11521,6 +12904,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11559,6 +12943,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11597,6 +12982,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11635,6 +13021,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11673,6 +13060,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11711,6 +13099,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11749,6 +13138,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Underwater"
       ],
@@ -11787,6 +13177,14 @@
           "chance": 1
         }
       ],
+      "resists": {
+        "critResist": 1.2936001,
+        "comboResist": 0.08624,
+        "dodgeResist": 0.4312,
+        "critMultResist": 0.9702,
+        "armorPierce": 0.4312,
+        "weaken": 0.32340002
+      },
       "worlds": [
         "Underwater"
       ],
@@ -11825,6 +13223,14 @@
           "chance": 1
         }
       ],
+      "resists": {
+        "critResist": 1.3272,
+        "comboResist": 0.088479996,
+        "dodgeResist": 0.44239998,
+        "critMultResist": 0.9954,
+        "armorPierce": 0.44239998,
+        "weaken": 0.3318
+      },
       "worlds": [
         "Underwater"
       ],
@@ -11863,6 +13269,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -11902,6 +13309,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -11935,6 +13343,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -11974,6 +13383,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -12012,6 +13422,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -12046,6 +13457,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -12085,6 +13497,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -12118,6 +13531,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -12152,6 +13566,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -12185,6 +13600,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -12223,6 +13639,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Japan"
       ],
@@ -12261,6 +13678,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12300,6 +13718,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12334,6 +13753,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12372,6 +13792,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12410,6 +13831,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12450,6 +13872,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12489,6 +13912,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12522,6 +13946,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12560,6 +13985,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12598,6 +14024,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12638,6 +14065,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12676,6 +14104,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12709,6 +14138,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12748,6 +14178,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Greek"
       ],
@@ -12786,6 +14217,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -12825,6 +14257,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -12863,6 +14296,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -12902,6 +14336,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -12940,6 +14375,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -12980,6 +14416,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -13018,6 +14455,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -13057,6 +14495,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -13095,6 +14534,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -13135,6 +14575,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -13173,6 +14614,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -13213,6 +14655,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -13251,6 +14694,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -13290,6 +14734,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -13328,6 +14773,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Military"
       ],
@@ -13361,6 +14807,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Heaven"
       ],
@@ -13394,6 +14841,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Heaven"
       ],
@@ -13427,6 +14875,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Heaven"
       ],
@@ -13461,6 +14910,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Heaven"
       ],
@@ -13494,6 +14944,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Heaven"
       ],
@@ -13527,6 +14978,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Heaven"
       ],
@@ -13560,6 +15012,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Heaven"
       ],
@@ -13593,6 +15046,7 @@
           "chance": 1
         }
       ],
+      "resists": null,
       "worlds": [
         "Heaven"
       ],
@@ -13616,6 +15070,22 @@
       "hardModeHp": 47089018,
       "hardModeAtk": 36304,
       "exp": 12000,
+      "resists": {
+        "critResist": 0.036000002,
+        "comboResist": 0.0023999999,
+        "dodgeResist": 0.012,
+        "critMultResist": 0.026999999,
+        "armorPierce": 0.012,
+        "weaken": 0.009000001
+      },
+      "hardModeResists": {
+        "critResist": 0.7056,
+        "comboResist": 0.04704,
+        "dodgeResist": 0.23519999,
+        "critMultResist": 0.5292,
+        "armorPierce": 0.23519999,
+        "weaken": 0.1764
+      },
       "dropItemId": "WanderersToken",
       "dropItemName": "Wanderer's Token",
       "hardModeDropItemId": "WanderersToken_H",
@@ -13634,6 +15104,22 @@
       "hardModeHp": 384577522,
       "hardModeAtk": 48062,
       "exp": 24750,
+      "resists": {
+        "critResist": 0.054,
+        "comboResist": 0.0036,
+        "dodgeResist": 0.018,
+        "critMultResist": 0.0405,
+        "armorPierce": 0.018,
+        "weaken": 0.0135
+      },
+      "hardModeResists": {
+        "critResist": 0.73920006,
+        "comboResist": 0.04928,
+        "dodgeResist": 0.2464,
+        "critMultResist": 0.55439997,
+        "armorPierce": 0.2464,
+        "weaken": 0.18480001
+      },
       "dropItemId": "DragonFangPendant",
       "dropItemName": "Dragon Fang Pendant",
       "hardModeDropItemId": "DragonFangPendant_H",
@@ -13652,6 +15138,22 @@
       "hardModeHp": 323872084,
       "hardModeAtk": 48744,
       "exp": 48750,
+      "resists": {
+        "critResist": 0.078,
+        "comboResist": 0.0052,
+        "dodgeResist": 0.025999999,
+        "critMultResist": 0.0585,
+        "armorPierce": 0.025999999,
+        "weaken": 0.0195
+      },
+      "hardModeResists": {
+        "critResist": 0.7728,
+        "comboResist": 0.051519997,
+        "dodgeResist": 0.25759998,
+        "critMultResist": 0.5796,
+        "armorPierce": 0.25759998,
+        "weaken": 0.1932
+      },
       "dropItemId": "AncientBarkShield",
       "dropItemName": "Ancient Bark Shield",
       "hardModeDropItemId": "AncientBarkShield_H",
@@ -13670,6 +15172,22 @@
       "hardModeHp": 226241457,
       "hardModeAtk": 49436,
       "exp": 90000,
+      "resists": {
+        "critResist": 0.108,
+        "comboResist": 0.0072,
+        "dodgeResist": 0.036,
+        "critMultResist": 0.081,
+        "armorPierce": 0.036,
+        "weaken": 0.027
+      },
+      "hardModeResists": {
+        "critResist": 0.80640006,
+        "comboResist": 0.05376,
+        "dodgeResist": 0.2688,
+        "critMultResist": 0.6048,
+        "armorPierce": 0.2688,
+        "weaken": 0.20160002
+      },
       "dropItemId": "SoulLantern",
       "dropItemName": "Soul Lantern",
       "hardModeDropItemId": "SoulLantern_H",
@@ -13688,6 +15206,22 @@
       "hardModeHp": 197518431,
       "hardModeAtk": 50140,
       "exp": 132000,
+      "resists": {
+        "critResist": 0.132,
+        "comboResist": 0.0088,
+        "dodgeResist": 0.044,
+        "critMultResist": 0.099,
+        "armorPierce": 0.044,
+        "weaken": 0.033
+      },
+      "hardModeResists": {
+        "critResist": 0.84000003,
+        "comboResist": 0.055999998,
+        "dodgeResist": 0.28,
+        "critMultResist": 0.63,
+        "armorPierce": 0.28,
+        "weaken": 0.21000001
+      },
       "dropItemId": "WitchsGrimoire",
       "dropItemName": "Witch's Grimoire",
       "hardModeDropItemId": "WitchsGrimoire_H",
@@ -13706,6 +15240,22 @@
       "hardModeHp": 641355036,
       "hardModeAtk": 59510,
       "exp": 240000,
+      "resists": {
+        "critResist": 0.18,
+        "comboResist": 0.012,
+        "dodgeResist": 0.06,
+        "critMultResist": 0.13499999,
+        "armorPierce": 0.06,
+        "weaken": 0.045
+      },
+      "hardModeResists": {
+        "critResist": 0.87360007,
+        "comboResist": 0.05824,
+        "dodgeResist": 0.29119998,
+        "critMultResist": 0.6552,
+        "armorPierce": 0.29119998,
+        "weaken": 0.21840002
+      },
       "dropItemId": "DrakeScaleSword",
       "dropItemName": "Drake Scale Sword",
       "hardModeDropItemId": "DrakeScaleSword_H",
@@ -13724,6 +15274,22 @@
       "hardModeHp": 988812041,
       "hardModeAtk": 71528,
       "exp": 360750,
+      "resists": {
+        "critResist": 0.22200002,
+        "comboResist": 0.0148,
+        "dodgeResist": 0.074,
+        "critMultResist": 0.1665,
+        "armorPierce": 0.074,
+        "weaken": 0.055500004
+      },
+      "hardModeResists": {
+        "critResist": 0.90720004,
+        "comboResist": 0.06048,
+        "dodgeResist": 0.3024,
+        "critMultResist": 0.6804,
+        "armorPierce": 0.3024,
+        "weaken": 0.22680001
+      },
       "dropItemId": "TitansMagmaPlate",
       "dropItemName": "Titan's Magma Plate",
       "hardModeDropItemId": "TitansMagmaPlate_H",
@@ -13742,6 +15308,22 @@
       "hardModeHp": 515161431,
       "hardModeAtk": 81868,
       "exp": 462000,
+      "resists": {
+        "critResist": 0.252,
+        "comboResist": 0.0168,
+        "dodgeResist": 0.084,
+        "critMultResist": 0.189,
+        "armorPierce": 0.084,
+        "weaken": 0.063
+      },
+      "hardModeResists": {
+        "critResist": 0.9408001,
+        "comboResist": 0.06272,
+        "dodgeResist": 0.3136,
+        "critMultResist": 0.70559996,
+        "armorPierce": 0.3136,
+        "weaken": 0.23520002
+      },
       "dropItemId": "ChaosHeart",
       "dropItemName": "Chaos Heart",
       "hardModeDropItemId": "ChaosHeart_H",
@@ -13760,6 +15342,22 @@
       "hardModeHp": 1826669179,
       "hardModeAtk": 113990,
       "exp": 506000,
+      "resists": {
+        "critResist": 0.264,
+        "comboResist": 0.0176,
+        "dodgeResist": 0.088,
+        "critMultResist": 0.198,
+        "armorPierce": 0.088,
+        "weaken": 0.066
+      },
+      "hardModeResists": {
+        "critResist": 1.008,
+        "comboResist": 0.0672,
+        "dodgeResist": 0.336,
+        "critMultResist": 0.756,
+        "armorPierce": 0.336,
+        "weaken": 0.252
+      },
       "dropItemId": "BossItem_IronFortress",
       "dropItemName": "Iron Fortress",
       "hardModeDropItemId": "BossItem_IronFortress_H",
@@ -13778,6 +15376,22 @@
       "hardModeHp": 1371403768,
       "hardModeAtk": 103886,
       "exp": 702000,
+      "resists": {
+        "critResist": 0.312,
+        "comboResist": 0.0208,
+        "dodgeResist": 0.103999995,
+        "critMultResist": 0.234,
+        "armorPierce": 0.103999995,
+        "weaken": 0.078
+      },
+      "hardModeResists": {
+        "critResist": 0.97440004,
+        "comboResist": 0.064959995,
+        "dodgeResist": 0.32479998,
+        "critMultResist": 0.7308,
+        "armorPierce": 0.32479998,
+        "weaken": 0.24360001
+      },
       "dropItemId": "CrystalPrism",
       "dropItemName": "Crystal Prism",
       "hardModeDropItemId": "CrystalPrism_H",
@@ -13796,6 +15410,22 @@
       "hardModeHp": 3692419033,
       "hardModeAtk": 143256,
       "exp": 1640000,
+      "resists": {
+        "critResist": 0.48000002,
+        "comboResist": 0.031999998,
+        "dodgeResist": 0.16,
+        "critMultResist": 0.35999998,
+        "armorPierce": 0.16,
+        "weaken": 0.120000005
+      },
+      "hardModeResists": {
+        "critResist": 1.1088,
+        "comboResist": 0.07392,
+        "dodgeResist": 0.3696,
+        "critMultResist": 0.8316,
+        "armorPierce": 0.3696,
+        "weaken": 0.2772
+      },
       "dropItemId": "PharaohSpirit",
       "dropItemName": "Pharaoh Spirit",
       "hardModeDropItemId": "PharaohSpirit_H",
@@ -13814,6 +15444,22 @@
       "hardModeHp": 3858407455,
       "hardModeAtk": 125132,
       "exp": 1640000,
+      "resists": {
+        "critResist": 0.48000002,
+        "comboResist": 0.031999998,
+        "dodgeResist": 0.16,
+        "critMultResist": 0.35999998,
+        "armorPierce": 0.16,
+        "weaken": 0.120000005
+      },
+      "hardModeResists": {
+        "critResist": 1.0416001,
+        "comboResist": 0.06944,
+        "dodgeResist": 0.34719998,
+        "critMultResist": 0.7812,
+        "armorPierce": 0.34719998,
+        "weaken": 0.26040003
+      },
       "dropItemId": "SunBeastTalon",
       "dropItemName": "Sun Beast Talon",
       "hardModeDropItemId": "SunBeastTalon_H",
@@ -13832,6 +15478,22 @@
       "hardModeHp": 4829534276,
       "hardModeAtk": 137468,
       "exp": 1640000,
+      "resists": {
+        "critResist": 0.48000002,
+        "comboResist": 0.031999998,
+        "dodgeResist": 0.16,
+        "critMultResist": 0.35999998,
+        "armorPierce": 0.16,
+        "weaken": 0.120000005
+      },
+      "hardModeResists": {
+        "critResist": 1.0752001,
+        "comboResist": 0.071679994,
+        "dodgeResist": 0.3584,
+        "critMultResist": 0.8064,
+        "armorPierce": 0.3584,
+        "weaken": 0.26880002
+      },
       "dropItemId": "TidalWarden",
       "dropItemName": "Tidal Warden",
       "hardModeDropItemId": "TidalWarden_H",
@@ -13850,6 +15512,22 @@
       "hardModeHp": 3382690685,
       "hardModeAtk": 145950,
       "exp": 1722000,
+      "resists": {
+        "critResist": 0.492,
+        "comboResist": 0.0328,
+        "dodgeResist": 0.16399999,
+        "critMultResist": 0.369,
+        "armorPierce": 0.16399999,
+        "weaken": 0.123
+      },
+      "hardModeResists": {
+        "critResist": 1.1424,
+        "comboResist": 0.07616,
+        "dodgeResist": 0.38079998,
+        "critMultResist": 0.85679996,
+        "armorPierce": 0.38079998,
+        "weaken": 0.2856
+      },
       "dropItemId": "PharaohsScepter",
       "dropItemName": "Pharaoh's Scepter",
       "hardModeDropItemId": "PharaohsScepter_H",
@@ -13868,6 +15546,22 @@
       "hardModeHp": 9730176362,
       "hardModeAtk": 202762,
       "exp": 2070000,
+      "resists": {
+        "critResist": 0.54,
+        "comboResist": 0.036,
+        "dodgeResist": 0.17999999,
+        "critMultResist": 0.405,
+        "armorPierce": 0.17999999,
+        "weaken": 0.135
+      },
+      "hardModeResists": {
+        "critResist": 1.176,
+        "comboResist": 0.0784,
+        "dodgeResist": 0.392,
+        "critMultResist": 0.88199997,
+        "armorPierce": 0.392,
+        "weaken": 0.294
+      },
       "dropItemId": "BossItem_LifeRing",
       "dropItemName": "Blood Ring",
       "hardModeDropItemId": "BossItem_LifeRing_H",
@@ -13886,6 +15580,22 @@
       "hardModeHp": 16286618261,
       "hardModeAtk": 294640,
       "exp": 2208750,
+      "resists": {
+        "critResist": 0.558,
+        "comboResist": 0.0372,
+        "dodgeResist": 0.18599999,
+        "critMultResist": 0.4185,
+        "armorPierce": 0.18599999,
+        "weaken": 0.1395
+      },
+      "hardModeResists": {
+        "critResist": 1.2096001,
+        "comboResist": 0.080639996,
+        "dodgeResist": 0.4032,
+        "critMultResist": 0.9072,
+        "armorPierce": 0.4032,
+        "weaken": 0.30240002
+      },
       "dropItemId": "BossItem_WarCrest",
       "dropItemName": "War Crest",
       "hardModeDropItemId": "BossItem_WarCrest_H",
@@ -13904,6 +15614,22 @@
       "hardModeHp": 38367709394,
       "hardModeAtk": 428020,
       "exp": 2256000,
+      "resists": {
+        "critResist": 0.564,
+        "comboResist": 0.0376,
+        "dodgeResist": 0.188,
+        "critMultResist": 0.42299998,
+        "armorPierce": 0.188,
+        "weaken": 0.141
+      },
+      "hardModeResists": {
+        "critResist": 1.2432001,
+        "comboResist": 0.08288,
+        "dodgeResist": 0.41439998,
+        "critMultResist": 0.9324,
+        "armorPierce": 0.41439998,
+        "weaken": 0.31080002
+      },
       "dropItemId": "BossItem_ZenStone",
       "dropItemName": "Zen Stone",
       "hardModeDropItemId": "BossItem_ZenStone_H",
@@ -13922,6 +15648,22 @@
       "hardModeHp": 73705061645,
       "hardModeAtk": 451454,
       "exp": 2756000,
+      "resists": {
+        "critResist": 0.624,
+        "comboResist": 0.0416,
+        "dodgeResist": 0.20799999,
+        "critMultResist": 0.468,
+        "armorPierce": 0.20799999,
+        "weaken": 0.156
+      },
+      "hardModeResists": {
+        "critResist": 1.3104,
+        "comboResist": 0.087359995,
+        "dodgeResist": 0.4368,
+        "critMultResist": 0.9828,
+        "armorPierce": 0.4368,
+        "weaken": 0.3276
+      },
       "dropItemId": "GiantClamPearl",
       "dropItemName": "Giant Clam Pearl",
       "hardModeDropItemId": "GiantClamPearl_H",
@@ -13940,6 +15682,22 @@
       "hardModeHp": 89108509623,
       "hardModeAtk": 461634,
       "exp": 3080000,
+      "resists": {
+        "critResist": 0.66,
+        "comboResist": 0.044,
+        "dodgeResist": 0.22,
+        "critMultResist": 0.495,
+        "armorPierce": 0.22,
+        "weaken": 0.165
+      },
+      "hardModeResists": {
+        "critResist": 1.3440001,
+        "comboResist": 0.0896,
+        "dodgeResist": 0.44799998,
+        "critMultResist": 1.008,
+        "armorPierce": 0.44799998,
+        "weaken": 0.33600003
+      },
       "dropItemId": "AbyssalCrown",
       "dropItemName": "Abyssal Crown",
       "hardModeDropItemId": "AbyssalCrown_H",
@@ -13958,6 +15716,22 @@
       "hardModeHp": 40713849847,
       "hardModeAtk": 441496,
       "exp": 3080000,
+      "resists": {
+        "critResist": 0.66,
+        "comboResist": 0.044,
+        "dodgeResist": 0.22,
+        "critMultResist": 0.495,
+        "armorPierce": 0.22,
+        "weaken": 0.165
+      },
+      "hardModeResists": {
+        "critResist": 1.2768,
+        "comboResist": 0.08512,
+        "dodgeResist": 0.4256,
+        "critMultResist": 0.9576,
+        "armorPierce": 0.4256,
+        "weaken": 0.3192
+      },
       "dropItemId": "BossItem_OmniStone",
       "dropItemName": "Omni Stone",
       "hardModeDropItemId": "BossItem_OmniStone_H",
@@ -13976,6 +15750,22 @@
       "hardModeHp": 797758870860,
       "hardModeAtk": 1218306,
       "exp": 3540000,
+      "resists": {
+        "critResist": 0.708,
+        "comboResist": 0.047199998,
+        "dodgeResist": 0.236,
+        "critMultResist": 0.531,
+        "armorPierce": 0.236,
+        "weaken": 0.177
+      },
+      "hardModeResists": {
+        "critResist": 1.4784001,
+        "comboResist": 0.09856,
+        "dodgeResist": 0.4928,
+        "critMultResist": 1.1087999,
+        "armorPierce": 0.4928,
+        "weaken": 0.36960003
+      },
       "dropItemId": "AmaterasuMirror",
       "dropItemName": "Amaterasu Mirror",
       "hardModeDropItemId": "AmaterasuMirror_H",
@@ -13994,6 +15784,22 @@
       "hardModeHp": 19811758133566,
       "hardModeAtk": 4373158,
       "exp": 4692000,
+      "resists": {
+        "critResist": 0.81600004,
+        "comboResist": 0.054399997,
+        "dodgeResist": 0.27199998,
+        "critMultResist": 0.612,
+        "armorPierce": 0.27199998,
+        "weaken": 0.20400001
+      },
+      "hardModeResists": {
+        "critResist": 1.6800001,
+        "comboResist": 0.111999996,
+        "dodgeResist": 0.56,
+        "critMultResist": 1.26,
+        "armorPierce": 0.5,
+        "weaken": 0.4
+      },
       "dropItemId": "ZeusThunderstone",
       "dropItemName": "Zeus Thunderstone",
       "hardModeDropItemId": "ZeusThunderstone_H",
@@ -14012,6 +15818,22 @@
       "hardModeHp": 213370435035045,
       "hardModeAtk": 12352762,
       "exp": 6006000,
+      "resists": {
+        "critResist": 0.924,
+        "comboResist": 0.0616,
+        "dodgeResist": 0.308,
+        "critMultResist": 0.69299996,
+        "armorPierce": 0.308,
+        "weaken": 0.231
+      },
+      "hardModeResists": {
+        "critResist": 1.9152001,
+        "comboResist": 0.12768,
+        "dodgeResist": 0.63839996,
+        "critMultResist": 1.4363999,
+        "armorPierce": 0.5,
+        "weaken": 0.4
+      },
       "dropItemId": "ReconDrone",
       "dropItemName": "Recon Drone",
       "hardModeDropItemId": "ReconDrone_H",
@@ -14030,6 +15852,22 @@
       "hardModeHp": 321383362596618,
       "hardModeAtk": 13925120,
       "exp": 6480000,
+      "resists": {
+        "critResist": 0.96000004,
+        "comboResist": 0.063999996,
+        "dodgeResist": 0.32,
+        "critMultResist": 0.71999997,
+        "armorPierce": 0.32,
+        "weaken": 0.24000001
+      },
+      "hardModeResists": {
+        "critResist": 1.9488001,
+        "comboResist": 0.12991999,
+        "dodgeResist": 0.64959997,
+        "critMultResist": 1.4616,
+        "armorPierce": 0.5,
+        "weaken": 0.4
+      },
       "dropItemId": "GeneralsInsignia",
       "dropItemName": "General's Insignia",
       "hardModeDropItemId": "GeneralsInsignia_H",
@@ -14048,6 +15886,22 @@
       "hardModeHp": 428752028347237,
       "hardModeAtk": 15697620,
       "exp": 7140000,
+      "resists": {
+        "critResist": 1.008,
+        "comboResist": 0.0672,
+        "dodgeResist": 0.336,
+        "critMultResist": 0.756,
+        "armorPierce": 0.336,
+        "weaken": 0.252
+      },
+      "hardModeResists": {
+        "critResist": 1.9824001,
+        "comboResist": 0.13216,
+        "dodgeResist": 0.6608,
+        "critMultResist": 1.4868,
+        "armorPierce": 0.5,
+        "weaken": 0.4
+      },
       "dropItemId": "CreatorsLight",
       "dropItemName": "Creator's Light",
       "hardModeDropItemId": "CreatorsLight_H",

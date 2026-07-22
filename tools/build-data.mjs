@@ -61,6 +61,28 @@ function yamlStr(v) {
 const field = (t, k) => { const m = t.match(new RegExp("^  " + k + ":\\s?(.*)$", "m")); return m ? yamlStr(m[1].trim()) : ""; };
 const num   = (t, k) => { const v = field(t, k); return v === "" ? 0 : Number(v); };
 const bool  = (t, k) => field(t, k) === "1";
+// Reads a nested serialized struct block: "  <key>:\n    a: 1\n    b: 2" -> {a:1, b:2}.
+// Sub-fields are indented 4 spaces; the block ends at the next 2-space (or less) indented line.
+function structOf(t, key) {
+  const m = t.match(new RegExp("^  " + key + ":\\s*\\n((?:    .*\\n?)+)", "m"));
+  if (!m) return null;
+  const out = {};
+  for (const line of m[1].split("\n")) {
+    const mm = line.match(/^\s{4}(\w+):\s*(.+?)\s*$/);
+    if (mm) out[mm[1]] = Number(mm[2]);
+  }
+  return Object.keys(out).length ? out : null;
+}
+// MonsterResists block -> rounded percentages for display. Fixed per monster (wiki value).
+const RESIST_KEYS = ["critResist", "comboResist", "dodgeResist", "critMultResist", "armorPierce", "weaken"];
+function resistsOf(t, key = "resists") {
+  const s = structOf(t, key);
+  if (!s) return null;
+  const r = {};
+  let any = false;
+  for (const k of RESIST_KEYS) { const v = s[k] || 0; r[k] = v; if (v > 0) any = true; }
+  return any ? r : null;
+}
 function guidOf(t, k) { const m = t.match(new RegExp("^  " + k + ":\\s*\\{[^}]*guid:\\s*([0-9a-f]+)", "m")); return m ? m[1] : null; }
 const assetName = (guid) => guid ? (guidToAsset.get(guid) || "") : "";
 const loadCategory = (sub) => walk(path.join(SO, sub), (p) => p.endsWith(".asset")).map((p) => ({ id: path.basename(p, ".asset"), text: read(p) }));
@@ -163,6 +185,7 @@ const enemies = loadCategory("Enemies").map((a) => {
     expMin: atLevel(bEXP, sEXP, minLv, minLv), expMax: atLevel(bEXP, sEXP, maxLv, minLv),
     goldMin: atLevel(bGold, sGold, minLv, minLv), goldMax: atLevel(bGold, sGold, maxLv, minLv),
     permanentBPReward: num(t, "permanentBPReward"), drops,
+    resists: resistsOf(t),
     worlds: [], areas: [], zoneNames: []   // filled after zones are parsed
   };
   enemyById.set(a.id, o); return o;
@@ -178,6 +201,7 @@ const bosses = loadCategory("Bosses").map((a) => {
     id: a.id, name: field(t, "bossName") || a.id, image: copySprite(guidOf(t, "bossSprite"), "boss", a.id),
     mapId: assetName(guidOf(t, "activeInMap")), level: lv, hp: num(t, "hp"), atk: num(t, "atk"),
     hardModeHp: num(t, "hardModeHp"), hardModeAtk: num(t, "hardModeAtk"), exp: lv * lv * 10 + lv * 100,
+    resists: resistsOf(t, "resists"), hardModeResists: resistsOf(t, "hardModeResists"),
     dropItemId: assetName(guidOf(t, "dropItem")), dropItemName: itemName(assetName(guidOf(t, "dropItem"))),
     hardModeDropItemId: assetName(guidOf(t, "hardModeDropItem")), bonusDropItemId: assetName(guidOf(t, "bonusDropItem")),
     // Boss drop odds are a CODE constant, not a field on the asset — mirrored from

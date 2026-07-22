@@ -412,6 +412,29 @@
       }
     });
   };
+  // Monster counter-stats (resist model). FIXED per monster — the number a player must out-grow.
+  // critResist/comboResist/critMultResist beyond what the player has zeroes that effect; a crit
+  // resist above 100% means you need >100% crit chance (tiered-crit territory) just to land one.
+  var RESIST_LABELS = {
+    critResist: "Crit resist", comboResist: "Combo resist", dodgeResist: "Dodge resist",
+    critMultResist: "Crit-dmg resist", armorPierce: "Armor pierce", weaken: "Weaken"
+  };
+  function resistRows(r) {
+    if (!r) return "";
+    return Object.keys(RESIST_LABELS).filter(function (k) { return (r[k] || 0) > 0; }).map(function (k) {
+      var v = r[k];
+      // critMultResist is a flat multiplier reduction (e.g. -0.50x); the rest are percentages.
+      var disp = k === "critMultResist" ? ("−" + v.toFixed(2) + "x") : (Math.round(v * 100) + "%");
+      return sb(RESIST_LABELS[k], disp);
+    }).join("");
+  }
+  function resistSection(r, title) {
+    var rows = resistRows(r);
+    if (!rows) return "";
+    return '<div class="section-title">' + (title || "Resistances") + "</div>" +
+      '<div class="statgrid">' + rows + "</div>";
+  }
+
   function monsterDetail(app, d, e) {
     if (!e) return notFound(app, "monsters.html", "Monsters");
     var worlds = e.worlds || [], zones = e.zoneNames || [], drops = e.drops || [];
@@ -427,6 +450,7 @@
         sb("HP", rng(e.hpMin, e.hpMax)) + sb("ATK", rng(e.atkMin, e.atkMax)) +
         sb("EXP", rng(e.expMin, e.expMax)) + sb("Gold", rng(e.goldMin, e.goldMax)) +
       "</div>" +
+      resistSection(e.resists, "Resistances") +
       (worlds.length
         ? '<div class="section-title">Appears in</div><div class="effect-list">' +
             worlds.map(function (w) { return '<a class="fx region-link" data-region="' + esc(w) + '" href="maps.html?world=' + encodeURIComponent(w) + '">' + esc(w) + "</a>"; }).join("") + "</div>" +
@@ -469,7 +493,9 @@
       var hp = hard && b.hardModeHp ? b.hardModeHp : b.hp;
       var atk = hard && b.hardModeAtk ? b.hardModeAtk : b.atk;
       var dropId = (hard && b.hardModeDropItemId) ? b.hardModeDropItemId : b.dropItemId;
+      var res = hard ? b.hardModeResists : b.resists;
       return '<div class="statgrid">' + sb("HP", fmt(hp)) + sb("ATK", fmt(atk)) + "</div>" +
+        resistSection(res, "Resistances") +
         '<div class="section-title">Drop</div><table class="data">' +
           (dropId ? "<tr><td>" + (hard ? "Hard" : "Normal") + "</td><td>" + itemLink(dropId) + "</td></tr>" : "") +
           (b.bonusDropItemId ? "<tr><td>Bonus</td><td>" + itemLink(b.bonusDropItemId) + "</td></tr>" : "") +
