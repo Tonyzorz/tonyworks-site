@@ -53,8 +53,9 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { max-width:100%; overflow-x:hidden; scroll-behavior: smooth; }
 body {
+  max-width:100%; overflow-x:hidden;
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
   background: var(--page-bg) fixed;
@@ -81,7 +82,7 @@ img { max-width: 100%; display: block; }
   max-width: var(--maxw); margin: 0 auto; padding: .7rem 1rem;
   display: flex; align-items: center; gap: .9rem; flex-wrap: wrap;
 }
-.brand { display: flex; align-items: center; gap: .55rem; font-weight: 800; letter-spacing: .3px; }
+.brand { min-width:0; display: flex; align-items: center; gap: .55rem; font-weight: 800; letter-spacing: .3px; }
 .brand .logo {
   width: 30px; height: 30px; border-radius: 8px;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
@@ -357,7 +358,7 @@ table.data tr:hover td { background: var(--panel); }
     url("../../apps/infinite-loot-loop/assets/img/map_Grassland_Map.png") center/cover no-repeat;
 }
 .guide-hero::after { content:""; position:absolute; width:260px; height:260px; right:-90px; top:-120px; border-radius:50%; background:var(--accent); filter:blur(85px); opacity:.18; pointer-events:none; }
-.guide-hero-copy,.guide-goal { position:relative; z-index:1; }
+.guide-hero-copy,.guide-goal { position:relative; z-index:1; min-width:0; overflow-wrap:anywhere; }
 .guide-eyebrow,.guide-goal-label { color:var(--accent-2); font-size:.72rem; font-weight:850; text-transform:uppercase; letter-spacing:.13em; }
 .guide-hero h1 { max-width:650px; margin:.3rem 0 .55rem; color:#f5f7ff; font-size:clamp(2rem,5vw,3.35rem); line-height:1.04; letter-spacing:-.035em; }
 .guide-hero-copy > p { max-width:650px; margin:0; color:#cbd1df; font-size:1rem; }
@@ -618,6 +619,7 @@ body[data-page="portal"] .wrap { padding-top:0; }
   border:1px solid color-mix(in srgb,var(--accent) 45%,var(--border)); border-radius:var(--radius-sm);
   color:var(--text); background:var(--panel); background:color-mix(in srgb,var(--accent) 9%,var(--panel)); }
 .translation-notice > span { font-size:1.2rem; line-height:1.4; }
+.translation-notice > div { min-width:0; overflow-wrap:anywhere; }
 .translation-notice strong { color:var(--accent); }
 .translation-notice p { margin:.18rem 0 0; color:var(--muted); font-size:.88rem; }
 

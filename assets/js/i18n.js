@@ -103,11 +103,45 @@
     "No matches.": ["검색 결과가 없습니다.", "一致する結果はありません。", "没有匹配结果。", "沒有符合結果。", "Keine Treffer.", "Aucun résultat.", "Sin resultados.", "Nenhum resultado.", "Совпадений нет.", "Tidak ada hasil."],
     "Translation status": ["번역 안내", "翻訳について", "翻译状态", "翻譯狀態", "Übersetzungsstatus", "État de la traduction", "Estado de traducción", "Status da tradução", "Статус перевода", "Status terjemahan"],
     "Navigation and game database names are available in your language. This detailed article is currently shown in English.": ["탐색 메뉴와 게임 데이터베이스 이름은 선택한 언어로 제공됩니다. 이 상세 문서는 현재 영어로 표시됩니다.", "ナビゲーションとゲームデータベース名は選択した言語で表示されます。この記事の詳細は現在英語です。", "导航和游戏数据库名称已支持你的语言。此详细文章目前以英文显示。", "導覽與遊戲資料庫名稱已支援你的語言。此詳細文章目前以英文顯示。", "Navigation und Namen der Spieldatenbank sind in deiner Sprache verfügbar. Dieser ausführliche Artikel wird derzeit auf Englisch angezeigt.", "La navigation et les noms de la base de données sont disponibles dans votre langue. Cet article détaillé est actuellement affiché en anglais.", "La navegación y los nombres de la base de datos están disponibles en tu idioma. Este artículo detallado se muestra actualmente en inglés.", "A navegação e os nomes do banco de dados estão disponíveis no seu idioma. Este artigo detalhado está em inglês no momento.", "Навигация и названия в игровой базе доступны на вашем языке. Подробная статья пока отображается на английском.", "Navigasi dan nama database game tersedia dalam bahasa Anda. Artikel terperinci ini saat ini ditampilkan dalam bahasa Inggris."],
+    "Page controls and headings are available in your language. This legal document is currently shown in English.": ["페이지 조작 요소와 제목은 선택한 언어로 제공됩니다. 이 법률 문서는 현재 영어로 표시됩니다.", "ページ操作と見出しは選択した言語で表示されます。この法的文書は現在英語です。", "页面控件和标题已支持你的语言。此法律文件目前以英文显示。", "頁面控制項與標題已支援你的語言。此法律文件目前以英文顯示。", "Seitenelemente und Überschriften sind in deiner Sprache verfügbar. Dieses Rechtsdokument wird derzeit auf Englisch angezeigt.", "Les commandes et titres sont disponibles dans votre langue. Ce document juridique est actuellement affiché en anglais.", "Los controles y títulos están disponibles en tu idioma. Este documento legal se muestra actualmente en inglés.", "Os controles e títulos estão disponíveis no seu idioma. Este documento jurídico está em inglês no momento.", "Элементы управления и заголовки доступны на вашем языке. Юридический документ пока отображается на английском.", "Kontrol halaman dan judul tersedia dalam bahasa Anda. Dokumen hukum ini saat ini ditampilkan dalam bahasa Inggris."],
     "Search": ["검색", "検索", "搜索", "搜尋", "Suchen", "Rechercher", "Buscar", "Buscar", "Поиск", "Cari"],
     "All": ["전체", "すべて", "全部", "全部", "Alle", "Tous", "Todos", "Todos", "Все", "Semua"],
     "Normal": ["일반", "ノーマル", "普通", "普通", "Normal", "Normal", "Normal", "Normal", "Обычный", "Normal"],
     "Hard": ["하드", "ハード", "困难", "困難", "Schwer", "Difficile", "Difícil", "Difícil", "Сложный", "Sulit"],
-    "entries": ["개 항목", "件", "条", "筆", "Einträge", "entrées", "entradas", "entradas", "записей", "entri"]
+    "entries": ["개 항목", "件", "条", "筆", "Einträge", "entrées", "entradas", "entradas", "записей", "entri"],
+    "Mode": ["모드", "モード", "模式", "模式", "Modus", "Mode", "Modo", "Modo", "Режим", "Mode"],
+    "Rarity": ["희귀도", "レア度", "稀有度", "稀有度", "Seltenheit", "Rareté", "Rareza", "Raridade", "Редкость", "Kelangkaan"],
+    "Area": ["지역", "エリア", "区域", "地區", "Gebiet", "Zone", "Área", "Área", "Область", "Area"],
+    "Sort": ["정렬", "並べ替え", "排序", "排序", "Sortieren", "Trier", "Ordenar", "Ordenar", "Сортировка", "Urutkan"],
+    "Main stat": ["주요 능력치", "メインステータス", "主属性", "主屬性", "Hauptwert", "Stat principale", "Atributo principal", "Atributo principal", "Основной параметр", "Stat utama"],
+    "Low to high": ["낮은 순", "低い順", "从低到高", "由低至高", "Aufsteigend", "Croissant", "De menor a mayor", "Do menor para o maior", "По возрастанию", "Terendah ke tertinggi"],
+    "High to low": ["높은 순", "高い順", "从高到低", "由高至低", "Absteigend", "Décroissant", "De mayor a menor", "Do maior para o menor", "По убыванию", "Tertinggi ke terendah"],
+    "Weapon": ["무기", "武器", "武器", "武器", "Waffe", "Arme", "Arma", "Arma", "Оружие", "Senjata"],
+    "Armor": ["방어구", "防具", "护甲", "護甲", "Rüstung", "Armure", "Armadura", "Armadura", "Броня", "Zirah"],
+    "Helmet": ["투구", "兜", "头盔", "頭盔", "Helm", "Casque", "Casco", "Elmo", "Шлем", "Helm"],
+    "Shoes": ["신발", "靴", "鞋子", "鞋子", "Schuhe", "Chaussures", "Calzado", "Calçados", "Обувь", "Sepatu"],
+    "Accessory": ["장신구", "アクセサリー", "饰品", "飾品", "Accessoire", "Accessoire", "Accesorio", "Acessório", "Аксессуар", "Aksesori"],
+    "Common": ["일반", "コモン", "普通", "普通", "Gewöhnlich", "Commun", "Común", "Comum", "Обычный", "Umum"],
+    "Uncommon": ["고급", "アンコモン", "优秀", "優秀", "Ungewöhnlich", "Inhabituel", "Poco común", "Incomum", "Необычный", "Tidak umum"],
+    "Rare": ["희귀", "レア", "稀有", "稀有", "Selten", "Rare", "Raro", "Raro", "Редкий", "Langka"],
+    "Epic": ["영웅", "エピック", "史诗", "史詩", "Episch", "Épique", "Épico", "Épico", "Эпический", "Epik"],
+    "Legendary": ["전설", "レジェンダリー", "传说", "傳說", "Legendär", "Légendaire", "Legendario", "Lendário", "Легендарный", "Legendaris"],
+    "Bestiary": ["몬스터 도감", "モンスター図鑑", "怪物图鉴", "怪物圖鑑", "Bestiarium", "Bestiaire", "Bestiario", "Bestiário", "Бестиарий", "Bestiari"],
+    "Boss Archive": ["보스 기록", "ボス図鑑", "首领档案", "首領檔案", "Bossarchiv", "Archives des boss", "Archivo de jefes", "Arquivo de chefes", "Архив боссов", "Arsip bos"],
+    "Loot Library": ["전리품 도감", "戦利品図鑑", "战利品图鉴", "戰利品圖鑑", "Beutearchiv", "Bibliothèque du butin", "Biblioteca de botín", "Biblioteca de saques", "Архив добычи", "Pustaka loot"],
+    "Build Workshop": ["빌드 연구소", "ビルド工房", "配装工坊", "配裝工坊", "Build-Werkstatt", "Atelier de builds", "Taller de builds", "Oficina de builds", "Мастерская сборок", "Lokakarya build"],
+    "World Atlas": ["세계 지도책", "ワールドアトラス", "世界图鉴", "世界圖鑑", "Weltatlas", "Atlas du monde", "Atlas mundial", "Atlas mundial", "Атлас мира", "Atlas dunia"],
+    "Roster": ["캐릭터 명단", "キャラクター一覧", "角色名单", "角色名單", "Charakterliste", "Effectif", "Plantilla", "Elenco", "Список героев", "Daftar karakter"],
+    "Milestones": ["주요 업적", "マイルストーン", "里程碑", "里程碑", "Meilensteine", "Jalons", "Hitos", "Marcos", "Вехи", "Tonggak"],
+    "Wiki navigation": ["위키 탐색", "Wikiナビゲーション", "百科导航", "百科導覽", "Wiki-Navigation", "Navigation du wiki", "Navegación de la wiki", "Navegação da wiki", "Навигация по вики", "Navigasi wiki"],
+    "Prev": ["이전", "前へ", "上一项", "上一項", "Zurück", "Précédent", "Anterior", "Anterior", "Назад", "Sebelumnya"],
+    "Next": ["다음", "次へ", "下一项", "下一項", "Weiter", "Suivant", "Siguiente", "Próximo", "Далее", "Berikutnya"],
+    "Zone": ["구역", "ゾーン", "区域", "區域", "Zone", "Zone", "Zona", "Zona", "Зона", "Zona"],
+    "Privacy Policy": ["개인정보 처리방침", "プライバシーポリシー", "隐私政策", "隱私權政策", "Datenschutzerklärung", "Politique de confidentialité", "Política de privacidad", "Política de privacidade", "Политика конфиденциальности", "Kebijakan Privasi"],
+    "Terms of Service": ["이용약관", "利用規約", "服务条款", "服務條款", "Nutzungsbedingungen", "Conditions d'utilisation", "Términos del servicio", "Termos de Serviço", "Условия использования", "Ketentuan Layanan"],
+    "Data Deletion Request": ["데이터 삭제 요청", "データ削除リクエスト", "数据删除请求", "資料刪除要求", "Antrag auf Datenlöschung", "Demande de suppression des données", "Solicitud de eliminación de datos", "Solicitação de exclusão de dados", "Запрос на удаление данных", "Permintaan Penghapusan Data"],
+    "Data Deletion": ["데이터 삭제", "データ削除", "数据删除", "資料刪除", "Datenlöschung", "Suppression des données", "Eliminación de datos", "Exclusão de dados", "Удаление данных", "Penghapusan Data"],
+    "Last updated": ["최종 업데이트", "最終更新", "最后更新", "最後更新", "Zuletzt aktualisiert", "Dernière mise à jour", "Última actualización", "Última atualização", "Последнее обновление", "Terakhir diperbarui"]
   };
 
   function canonicalLanguage(value) {
@@ -142,11 +176,18 @@
   try { localStorage.setItem("tw-lang", code); } catch (e) {}
 
   var siteMap = {};
+  var siteMapLower = {};
   Object.keys(PHRASES).forEach(function (english) {
     var translated = PHRASES[english][TRANSLATION_ORDER.indexOf(code)];
-    if (code !== "en" && translated) siteMap[english] = translated;
+    if (code !== "en" && translated) {
+      siteMap[english] = translated;
+      siteMapLower[english.toLowerCase()] = translated;
+    }
   });
   var gameMap = {};
+  var gameMapLower = {};
+  var siteContentMap = {};
+  var siteContentMapLower = {};
 
   function fetchJSON(url) {
     return fetch(url, { cache: "force-cache" }).then(function (response) {
@@ -161,18 +202,33 @@
       var target = translated && translated[key];
       if (typeof source === "string" && typeof target === "string" && source && target && source !== target) {
         gameMap[source] = target;
+        gameMapLower[source.toLowerCase()] = target;
+      }
+    });
+  }
+
+  function mapSiteContent(translated) {
+    Object.keys(translated || {}).forEach(function (source) {
+      var target = translated[source];
+      if (typeof target === "string" && target) {
+        siteContentMap[source] = target;
+        siteContentMapLower[source.toLowerCase()] = target;
       }
     });
   }
 
   var scriptUrl = document.currentScript && document.currentScript.src ? document.currentScript.src : window.location.href;
   var dataBase = new URL("../../apps/infinite-loot-loop/data/localization/", scriptUrl).href;
+  var siteContentBase = new URL("../i18n/site-content/", scriptUrl).href;
+  var localizationVersion = "3";
   var ready = code === "en" ? Promise.resolve() : Promise.all([
-    fetchJSON(dataBase + "en.json"), fetchJSON(dataBase + "en_content.json"),
-    fetchJSON(dataBase + code + ".json"), fetchJSON(dataBase + code + "_content.json")
+    fetchJSON(dataBase + "en.json?v=" + localizationVersion), fetchJSON(dataBase + "en_content.json?v=" + localizationVersion),
+    fetchJSON(dataBase + code + ".json?v=" + localizationVersion), fetchJSON(dataBase + code + "_content.json?v=" + localizationVersion),
+    fetchJSON(siteContentBase + code + ".json?v=" + localizationVersion)
   ]).then(function (files) {
     mapGamePhrases(files[0], files[2]);
     mapGamePhrases(files[1], files[3]);
+    mapSiteContent(files[4]);
   }).catch(function (error) {
     if (window.console && console.warn) console.warn("Tony Works translations could not be loaded:", error);
   });
@@ -181,7 +237,12 @@
     var source = String(value == null ? "" : value);
     if (code === "en" || !source) return source;
     if (siteMap[source]) return siteMap[source];
+    if (siteContentMap[source]) return siteContentMap[source];
     if (gameMap[source]) return gameMap[source];
+    var lower = source.toLowerCase();
+    if (siteMapLower[lower]) return siteMapLower[lower];
+    if (siteContentMapLower[lower]) return siteContentMapLower[lower];
+    if (gameMapLower[lower]) return gameMapLower[lower];
 
     var hard = source.match(/^(.*?)(\s(?:\[H\]|H))$/);
     if (hard && gameMap[hard[1]]) return gameMap[hard[1]] + hard[2];
@@ -199,7 +260,29 @@
     var search = source.match(/^Search (.+?)(…|\.\.\.)$/);
     if (search) return (siteMap.Search || "Search") + " " + translatePhrase(search[1]) + search[2];
 
-    return source;
+    return translateUiParts(source);
+  }
+
+  function escapeRegExp(value) {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  // Runtime catalog labels often combine multiple concepts in one text node
+  // (for example "Rare · Weapon" or "Mode: All"). Translate those short UI
+  // composites without partially rewriting long editorial sentences.
+  function translateUiParts(source) {
+    if (source.length > 100 || source.trim().split(/\s+/).length > 12 || /[.!?]\s*$/.test(source)) return source;
+    var result = source;
+    Object.keys(siteMap).sort(function (a, b) { return b.length - a.length; }).forEach(function (english) {
+      if (english.length < 3) return;
+      var boundaryStart = /^[A-Za-z0-9]/.test(english) ? "(^|[^A-Za-z0-9])" : "";
+      var boundaryEnd = /[A-Za-z0-9]$/.test(english) ? "(?=$|[^A-Za-z0-9])" : "";
+      var pattern = new RegExp(boundaryStart + "(" + escapeRegExp(english) + ")" + boundaryEnd, "gi");
+      result = result.replace(pattern, function (_, prefix) {
+        return (boundaryStart ? prefix : "") + siteMap[english];
+      });
+    });
+    return result;
   }
 
   function translateTextNode(node) {
@@ -207,7 +290,8 @@
     var original = node.nodeValue || "";
     var trimmed = original.trim();
     if (!trimmed) return;
-    var translated = translatePhrase(trimmed);
+    var canonical = trimmed.replace(/\s+/g, " ");
+    var translated = translatePhrase(canonical);
     if (translated !== trimmed) node.nodeValue = original.replace(trimmed, translated);
   }
 
@@ -238,12 +322,12 @@
 
   function localizeGameData(data) {
     if (code === "en" || !data) return data;
-    ["enemies", "bosses", "items", "maps", "zones", "characters", "achievements"].forEach(function (group) {
+    ["enemies", "bosses", "items", "characters", "achievements"].forEach(function (group) {
       (data[group] || []).forEach(function (entry) {
-        ["name", "description", "world", "effect", "unlockCondition", "reward", "dropItemName", "hardModeDropItemName", "bonusDropItemName"].forEach(function (field) {
+        ["name", "description", "effect", "unlockCondition", "reward", "dropItemName", "hardModeDropItemName", "bonusDropItemName"].forEach(function (field) {
           if (typeof entry[field] === "string") entry[field] = translatePhrase(entry[field]);
         });
-        ["zoneNames", "worlds", "effects"].forEach(function (field) {
+        ["zoneNames", "effects"].forEach(function (field) {
           if (Array.isArray(entry[field])) entry[field] = entry[field].map(translatePhrase);
         });
         (entry.drops || []).forEach(function (drop) {
@@ -251,7 +335,46 @@
         });
       });
     });
+
+    // Area and map display names are exported from Unity but do not have
+    // dedicated content keys. Use the localized world plus the stable route
+    // code so new routes never fall back to an English asset name.
+    var areaByMap = {};
+    var areaByCode = {};
+    (data.areas || []).forEach(function (area) {
+      var localizedWorld = translatePhrase(area.world || "");
+      area.name = localizedWorld + (area.code ? " " + area.code : "");
+      if (area.mapId) areaByMap[area.mapId] = area;
+      if (area.code) areaByCode[area.code] = area;
+    });
+    (data.maps || []).forEach(function (map) {
+      var area = areaByMap[map.id];
+      map.name = area ? area.name : (translatePhrase(map.world || "") || translatePhrase(map.name));
+    });
+    (data.zones || []).forEach(function (zone) {
+      var translated = translatePhrase(zone.name);
+      if (translated !== zone.name) {
+        zone.name = translated;
+        return;
+      }
+      var route = String(zone.id || "").match(/^([A-Z]{2}\d+|VoidHunt)/i);
+      var area = route && areaByCode[route[1]];
+      if (!area) return;
+      var number = String(zone.id || "").match(/(?:Zone|_Z)(\d+)$/i);
+      var stage = number ? String(Number(number[1]) + 1) : "";
+      var hard = /_HM_/i.test(zone.id || "") ? translatePhrase("Hard") + " " : "";
+      zone.name = area.name + " · " + hard + translatePhrase("Zone") + (stage ? " " + stage : "");
+    });
     return data;
+  }
+
+  function translateDocumentMetadata() {
+    if (code === "en") return;
+    document.title = translatePhrase(document.title);
+    ["meta[property='og:title']", "meta[name='twitter:title']"].forEach(function (selector) {
+      var element = document.querySelector(selector);
+      if (element) element.setAttribute("content", translatePhrase(element.getAttribute("content")));
+    });
   }
 
   function mountLanguageSelector() {
@@ -281,14 +404,18 @@
   function addArticleNotice() {
     if (code === "en") return;
     var page = document.body && document.body.getAttribute("data-page");
-    if (["portal", "home", "monsters", "bosses", "items", "sets", "maps", "characters", "achievements", "guide", "game-data", "faq", "patch", "about"].indexOf(page) === -1 || document.querySelector(".translation-notice")) return;
-    var main = document.querySelector("main");
+    if (["portal", "home", "monsters", "bosses", "items", "sets", "maps", "characters", "achievements", "guide", "game-data", "faq", "patch", "about", "privacy", "terms", "deletion"].indexOf(page) === -1 || document.querySelector(".translation-notice")) return;
+    var main = document.querySelector("main") || document.body;
     if (!main) return;
     var notice = document.createElement("aside");
     notice.className = "translation-notice";
+    var legalPage = ["privacy", "terms", "deletion"].indexOf(page) !== -1;
+    var noticeMessage = legalPage
+      ? "This translation is provided for convenience. If it differs from the English version, the English version controls."
+      : "This page is available in your language. Game-specific names are synchronized with the current localization files.";
     notice.innerHTML = '<span aria-hidden="true">&#127760;</span><div><strong>' +
       translatePhrase("Translation status") + '</strong><p>' +
-      translatePhrase("Navigation and game database names are available in your language. This detailed article is currently shown in English.") + "</p></div>";
+      translatePhrase(noticeMessage) + "</p></div>";
     main.insertBefore(notice, main.firstChild);
   }
 
@@ -312,6 +439,7 @@
     mountLanguageSelector();
     observer.observe(document.body, { childList: true, subtree: true });
     ready.then(function () {
+      translateDocumentMetadata();
       translateTree(document.body);
       addArticleNotice();
     });

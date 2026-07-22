@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { sourceStrings } from "./build-site-translations.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const allowedAdPages = new Set(["apps/infinite-loot-loop/guide.html"]);
@@ -23,6 +24,9 @@ const substantivePages = new Set([
 
 const errors = [];
 const normalize = value => value.split(path.sep).join("/");
+const languages = ["en", "ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR", "ru", "id"];
+const localizationDir = path.join(root, "apps", "infinite-loot-loop", "data", "localization");
+const siteContentDir = path.join(root, "assets", "i18n", "site-content");
 
 function walk(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => {
@@ -87,10 +91,92 @@ for (const rel of substantivePages) {
   if (!sitemap.includes(`<loc>${url}</loc>`)) errors.push(`sitemap.xml: missing ${url}`);
 }
 
+function readLocale(file) {
+  try { return JSON.parse(fs.readFileSync(path.join(localizationDir, file), "utf8")); }
+  catch (error) {
+    errors.push(`localization/${file}: ${error.message}`);
+    return {};
+  }
+}
+
+function placeholderSignature(value) {
+  return (String(value).match(/\{\d+(?::[^}]*)?\}/g) || []).sort().join("|");
+}
+
+const englishUi = readLocale("en.json");
+const englishContent = readLocale("en_content.json");
+for (const language of languages) {
+  for (const suffix of ["", "_content"]) {
+    const file = `${language}${suffix}.json`;
+    const reference = suffix ? englishContent : englishUi;
+    const locale = readLocale(file);
+    const expected = Object.keys(reference).sort();
+    const actual = Object.keys(locale).sort();
+    if (JSON.stringify(actual) !== JSON.stringify(expected)) {
+      const missing = expected.filter(key => !Object.hasOwn(locale, key));
+      const extra = actual.filter(key => !Object.hasOwn(reference, key));
+      errors.push(`localization/${file}: key mismatch (${missing.length} missing, ${extra.length} extra)`);
+    }
+    for (const key of expected) {
+      if (typeof locale[key] !== "string" || !locale[key].trim()) {
+        errors.push(`localization/${file}: empty or non-string value for ${key}`);
+      } else if (placeholderSignature(locale[key]) !== placeholderSignature(reference[key])) {
+        errors.push(`localization/${file}: placeholder mismatch for ${key}`);
+      }
+    }
+  }
+}
+
+const expectedSiteStrings = sourceStrings();
+for (const language of languages) {
+  const file = path.join(siteContentDir, `${language}.json`);
+  let locale = {};
+  try { locale = JSON.parse(fs.readFileSync(file, "utf8")); }
+  catch (error) {
+    errors.push(`site-content/${language}.json: ${error.message}`);
+    continue;
+  }
+  const expected = expectedSiteStrings.slice().sort();
+  const actual = Object.keys(locale).sort();
+  if (JSON.stringify(actual) !== JSON.stringify(expected)) {
+    const missing = expected.filter(key => !Object.hasOwn(locale, key));
+    const extra = actual.filter(key => !expected.includes(key));
+    errors.push(`site-content/${language}.json: key mismatch (${missing.length} missing, ${extra.length} extra)`);
+  }
+  for (const source of expected) {
+    const translated = locale[source];
+    if (typeof translated !== "string" || !translated.trim()) {
+      errors.push(`site-content/${language}.json: empty value for ${source}`);
+    } else if (/__\s*T(?:W)?PH|TWSEP/i.test(translated)) {
+      errors.push(`site-content/${language}.json: leaked generator token for ${source}`);
+    } else if (language !== "en" && source.length > 30 && translated === source && /[A-Za-z]{4}/.test(source) &&
+        !/https?:|@/.test(source) && !/^Infinite Loot-Loop(?: FAQ)? — Tony Works$/.test(source)) {
+      errors.push(`site-content/${language}.json: untranslated long-form text for ${source}`);
+    }
+  }
+}
+
+const i18nSource = fs.readFileSync(path.join(root, "assets", "js", "i18n.js"), "utf8");
+const phraseMatch = i18nSource.match(/var PHRASES = (\{[\s\S]*?\});\s*function canonicalLanguage/);
+if (!phraseMatch) {
+  errors.push("assets/js/i18n.js: PHRASES dictionary not found");
+} else {
+  try {
+    const phrases = JSON.parse(phraseMatch[1]);
+    for (const [english, translations] of Object.entries(phrases)) {
+      if (!Array.isArray(translations) || translations.length !== languages.length - 1 || translations.some(value => typeof value !== "string" || !value.trim())) {
+        errors.push(`assets/js/i18n.js: incomplete PHRASES entry for ${english}`);
+      }
+    }
+  } catch (error) {
+    errors.push(`assets/js/i18n.js: invalid PHRASES dictionary (${error.message})`);
+  }
+}
+
 if (errors.length) {
   console.error(`Site audit failed with ${errors.length} issue(s):`);
   errors.forEach(error => console.error(`- ${error}`));
   process.exit(1);
 }
 
-console.log(`Site audit passed: ${substantivePages.size} substantive pages, controlled ads, valid local links, and complete sitemap coverage.`);
+console.log(`Site audit passed: ${substantivePages.size} substantive pages, ${languages.length} complete locales, controlled ads, valid local links, and complete sitemap coverage.`);
