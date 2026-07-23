@@ -138,6 +138,49 @@
       '</section>';
   }
 
+  /* ---------- Normal / Hard mode state ---------- */
+  var GAME_MODE_KEY = "tw-game-mode";
+  function isHardEnemy(e) { return !!(e && /_H$/.test(e.id || "")); }
+  function isHardZone(z) { return !!(z && /_HM_Z/.test(z.id || "")); }
+  function selectedGameMode(fallback) {
+    var queryMode = String(param("mode") || "").toLowerCase();
+    if (queryMode === "normal" || queryMode === "hard") return queryMode;
+    var saved = "";
+    try { saved = localStorage.getItem(GAME_MODE_KEY) || ""; } catch (_) {}
+    return saved === "hard" || saved === "normal" ? saved : (fallback || "normal");
+  }
+  function rememberGameMode(mode, syncUrl) {
+    if (mode !== "normal" && mode !== "hard") return;
+    try { localStorage.setItem(GAME_MODE_KEY, mode); } catch (_) {}
+    if (syncUrl && window.history && window.history.replaceState) {
+      var url = new URL(window.location.href);
+      url.searchParams.set("mode", mode);
+      window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    }
+  }
+  function modeTabsHtml(mode, availability, label) {
+    availability = availability || { normal: true, hard: true };
+    return '<div class="mode-tabs" role="tablist" aria-label="' + esc(label || "Game mode") + '">' +
+      ["normal", "hard"].map(function (m) {
+        var active = mode === m, available = availability[m] !== false;
+        return '<button type="button" class="mode-tab' + (active ? " active" : "") + '" data-game-mode="' + m + '" role="tab"' +
+          ' aria-selected="' + (active ? "true" : "false") + '"' + (!available ? ' disabled aria-disabled="true"' : '') + '>' +
+          (m === "hard" ? "Hard Mode" : "Normal Mode") + '</button>';
+      }).join("") + '</div>';
+  }
+  function wireModeTabs(root, mode, render) {
+    Array.prototype.forEach.call(root.querySelectorAll(".mode-tab[data-game-mode]"), function (btn) {
+      btn.addEventListener("click", function () {
+        if (btn.disabled) return;
+        var next = btn.getAttribute("data-game-mode");
+        if (next === mode) return;
+        rememberGameMode(next, true);
+        render(next);
+        window.scrollTo(0, 0);
+      });
+    });
+  }
+
   /* ---------- tier badge ---------- */
   var WORLD_TIER = { "Grassland": 0, "Forest": 1, "Volcanic": 2, "Desert": 3, "Underwater": 4 };
   function tierOf(worlds) {
@@ -390,8 +433,8 @@
     listView(app, d, {
       items: list, page: "monsters.html", title: "Monsters", subtitle: list.length + " monsters (Normal + Hard)",
       tabs: [
-        { label: "Normal", test: function (e) { return !/_H$/.test(e.id); } },
-        { label: "Hard", test: function (e) { return /_H$/.test(e.id); } }
+        { label: "Normal Mode", mode: "normal", test: function (e) { return !isHardEnemy(e); } },
+        { label: "Hard Mode", mode: "hard", test: function (e) { return isHardEnemy(e); } }
       ],
       search: function (e) { return e.name + " " + e.id + " " + (e.worlds || []).join(" ") + " " + areaNames(d, e.areas).join(" "); },
       filters: [
@@ -435,30 +478,42 @@
       '<div class="statgrid">' + rows + "</div>";
   }
 
-  function monsterDetail(app, d, e) {
+  function monsterDetail(app, d, e, forcedMode) {
     if (!e) return notFound(app, "monsters.html", "Monsters");
-    var worlds = e.worlds || [], zones = e.zoneNames || [], drops = e.drops || [];
-    var lvLabel = e.minLevel === e.maxLevel ? ("Lv " + e.minLevel) : ("Lv " + e.minLevel + "&#8211;" + e.maxLevel);
-    app.innerHTML = detailHead("monsters.html", "Monsters", monsterList(d), e) +
-      '<div class="detail">' + portrait(e.image, e.name) +
-      "<div><h1>" + esc(e.name) + "</h1>" +
-      '<div class="tags"><span class="pill">Level ' + rng(e.minLevel, e.maxLevel) + "</span>" +
-        (e.isBoss ? '<span class="pill" style="color:var(--bad)">Boss</span>' : "") +
-        (e.permanentBPReward ? '<span class="pill">+' + e.permanentBPReward + " AP</span>" : "") + "</div>" +
+    var normal = isHardEnemy(e) ? d._enemyById[String(e.id).replace(/_H$/, "")] : e;
+    var hard = isHardEnemy(e) ? e : d._enemyById[e.id + "_H"];
+    var queryMode = String(param("mode") || "").toLowerCase();
+    var mode = forcedMode || ((queryMode === "normal" || queryMode === "hard") ? queryMode : (isHardEnemy(e) ? "hard" : "normal"));
+    if (mode === "hard" && !hard) mode = "normal";
+    if (mode === "normal" && !normal) mode = "hard";
+    var selected = mode === "hard" ? hard : normal;
+    rememberGameMode(mode, false);
+    var worlds = selected.worlds || [], zones = selected.zoneNames || [], drops = selected.drops || [];
+    var lvLabel = selected.minLevel === selected.maxLevel ? ("Lv " + selected.minLevel) : ("Lv " + selected.minLevel + "&#8211;" + selected.maxLevel);
+    var navList = monsterList(d).filter(function (x) { return isHardEnemy(x) === (mode === "hard"); });
+    app.innerHTML = detailHead("monsters.html", "Monsters", navList, selected) +
+      '<div class="detail">' + portrait(selected.image, selected.name) +
+      "<div><h1>" + esc(selected.name) + "</h1>" +
+      modeTabsHtml(mode, { normal: !!normal, hard: !!hard }, "Monster mode") +
+      '<div class="tags"><span class="pill mode-pill ' + mode + '">' + (mode === "hard" ? "Hard Mode" : "Normal Mode") + '</span>' +
+        '<span class="pill">Level ' + rng(selected.minLevel, selected.maxLevel) + "</span>" +
+        (selected.isBoss ? '<span class="pill" style="color:var(--bad)">Boss</span>' : "") +
+        (selected.permanentBPReward ? '<span class="pill">+' + selected.permanentBPReward + " AP</span>" : "") + "</div>" +
       '<div class="section-title">Stats (' + lvLabel + ")</div>" +
       '<div class="statgrid">' +
-        sb("HP", rng(e.hpMin, e.hpMax)) + sb("ATK", rng(e.atkMin, e.atkMax)) +
-        sb("EXP", rng(e.expMin, e.expMax)) + sb("Gold", rng(e.goldMin, e.goldMax)) +
+        sb("HP", rng(selected.hpMin, selected.hpMax)) + sb("ATK", rng(selected.atkMin, selected.atkMax)) +
+        sb("EXP", rng(selected.expMin, selected.expMax)) + sb("Gold", rng(selected.goldMin, selected.goldMax)) +
       "</div>" +
-      resistSection(e.resists, "Resistances") +
+      resistSection(selected.resists, "Resistances") +
       (worlds.length
         ? '<div class="section-title">Appears in</div><div class="effect-list">' +
-            worlds.map(function (w) { return '<a class="fx region-link" data-region="' + esc(w) + '" href="maps.html?world=' + encodeURIComponent(w) + '">' + esc(w) + "</a>"; }).join("") + "</div>" +
+            worlds.map(function (w) { return '<a class="fx region-link" data-region="' + esc(w) + '" href="maps.html?world=' + encodeURIComponent(w) + '&mode=' + mode + '">' + esc(w) + "</a>"; }).join("") + "</div>" +
             (zones.length ? '<p style="color:var(--faint);font-size:.85rem;margin-top:.5rem">' + esc(zones.join(" · ")) + "</p>" : "")
         : "") +
       (drops.length ? '<div class="section-title">Drops</div><table class="data"><tr><th>Item</th><th>Chance</th></tr>' +
         drops.map(function (x) { return "<tr><td>" + link("items.html", x.itemId, x.itemName || x.itemId) + "</td><td>" + x.chance + "%</td></tr>"; }).join("") + "</table>" : "") +
       "</div></div>";
+    wireModeTabs(app, mode, function (next) { monsterDetail(app, d, selected, next); });
   }
 
   /* ---- Bosses ---- */
@@ -468,7 +523,7 @@
     var list = bossList(d);
     listView(app, d, {
       items: list, page: "bosses.html", title: "Bosses", subtitle: d.bosses.length + " bosses",
-      tabs: [ { label: "Normal", mode: "normal" }, { label: "Hard", mode: "hard" } ],
+      tabs: [ { label: "Normal Mode", mode: "normal" }, { label: "Hard Mode", mode: "hard" } ],
       search: function (b) { return b.name + " " + b.id + " " + b.mapId; },
       card: function (b, tab) {
         var hard = tab && tab.mode === "hard";
@@ -483,11 +538,14 @@
       }
     });
   };
-  function bossDetail(app, d, b) {
+  function bossDetail(app, d, b, forcedMode) {
     if (!b) return notFound(app, "bosses.html", "Bosses");
     var map = d._mapById[b.mapId];
     function itemLink(id) { var it = d._itemById[id]; return it ? link("items.html", id, it.name) : esc(id); }
     var hasHard = b.hardModeHp || b.hardModeAtk || b.hardModeDropItemId;
+    var mode = forcedMode || selectedGameMode("normal");
+    if (mode === "hard" && !hasHard) mode = "normal";
+    rememberGameMode(mode, false);
     function stats(mode) {
       var hard = mode === "hard";
       var hp = hard && b.hardModeHp ? b.hardModeHp : b.hp;
@@ -496,27 +554,23 @@
       var res = hard ? b.hardModeResists : b.resists;
       return '<div class="statgrid">' + sb("HP", fmt(hp)) + sb("ATK", fmt(atk)) + "</div>" +
         resistSection(res, "Resistances") +
-        '<div class="section-title">Drop</div><table class="data">' +
-          (dropId ? "<tr><td>" + (hard ? "Hard" : "Normal") + "</td><td>" + itemLink(dropId) + "</td></tr>" : "") +
-          (b.bonusDropItemId ? "<tr><td>Bonus</td><td>" + itemLink(b.bonusDropItemId) + "</td></tr>" : "") +
+        '<div class="section-title">Drops</div><table class="data"><tr><th>Type</th><th>Item</th><th>Base chance</th></tr>' +
+          (dropId ? "<tr><td>" + (hard ? "Hard" : "Normal") + "</td><td>" + itemLink(dropId) + "</td><td>" + bossDropChance(b, hard ? "Hard" : "Normal") + "%</td></tr>" : "") +
+          (b.bonusDropItemId ? "<tr><td>Bonus</td><td>" + itemLink(b.bonusDropItemId) + "</td><td>" + bossDropChance(b, hard ? "Hard" : "Normal") + "%</td></tr>" : "") +
         "</table>";
     }
     app.innerHTML = detailHead("bosses.html", "Bosses", bossList(d), b) +
       '<div class="detail">' + portrait(b.image, b.name) +
       "<div><h1>" + esc(b.name) + "</h1>" +
       '<div class="tags"><span class="pill">Level ' + b.level + "</span>" +
-        (b.mapId ? '<span class="pill">' + (map ? link("maps.html", b.mapId, map.name) : esc(b.mapId)) + "</span>" : "") +
+        (b.mapId ? '<span class="pill">' + (map
+          ? '<a href="maps.html?id=' + encodeURIComponent(b.mapId) + '&mode=' + mode + '">' + esc(map.name) + "</a>"
+          : esc(b.mapId)) + "</span>" : "") +
         '<span class="pill">EXP ' + fmt(b.exp) + "</span></div>" +
-      (hasHard ? '<div class="tabs" id="btabs"><button class="tab active" data-m="normal">Normal</button><button class="tab" data-m="hard">Hard</button></div>' : "") +
-      '<div id="bstats">' + stats("normal") + "</div>" +
+      modeTabsHtml(mode, { normal: true, hard: !!hasHard }, "Boss mode") +
+      '<div id="bstats">' + stats(mode) + "</div>" +
       "</div></div>";
-    if (hasHard) Array.prototype.forEach.call(app.querySelectorAll("#btabs .tab"), function (btn) {
-      btn.addEventListener("click", function () {
-        Array.prototype.forEach.call(app.querySelectorAll("#btabs .tab"), function (x) { x.classList.remove("active"); });
-        btn.classList.add("active");
-        $("#bstats", app).innerHTML = stats(btn.getAttribute("data-m"));
-      });
-    });
+    wireModeTabs(app, mode, function (next) { bossDetail(app, d, b, next); });
   }
 
   /* ---- Items ---- */
@@ -528,10 +582,13 @@
     var sorted = itemList(d);
     listView(app, d, {
       items: sorted, page: "items.html", title: "Items", subtitle: d.items.length + " items (Normal + Hard)",
-      tabs: types.map(function (tp) { return { label: tp, test: function (i) { return i.type === tp; } }; }),
+      tabs: [
+        { label: "Normal Mode", mode: "normal", test: function (i) { return !i.isHardModeItem; } },
+        { label: "Hard Mode", mode: "hard", test: function (i) { return i.isHardModeItem; } }
+      ],
       search: function (i) { return i.name + " " + i.id + " " + (i.setName || ""); },
       filters: [
-        { key: "mode",   label: "Mode",   values: ["Normal", "Hard"], get: function (i) { return i.isHardModeItem ? "Hard" : "Normal"; } },
+        { key: "type",   label: "Type",   values: types,              get: function (i) { return i.type; } },
         { key: "rarity", label: "Rarity", values: rarities,           get: function (i) { return i.rarity; } },
         // Where can I get this? Matches field drops, boss rewards AND shop stock for the area.
         { key: "area", label: "Area",
@@ -561,7 +618,7 @@
   };
   // "Where do I farm this?" — the areas an item can be obtained in, split by how. Each chip
   // links to that area's map page, which lists its full drop table.
-  function itemAreaSection(d, i) {
+  function itemAreaSection(d, i, mode) {
     var byCode = {}; (d.areas || []).forEach(function (a) { byCode[a.code] = a; });
     var drops = (i.dropAreas || []), shops = (i.shopAreas || []);
     if (!drops.length && !shops.length) return "";
@@ -570,7 +627,7 @@
         var a = byCode[c]; if (!a) return "";
         var label = esc(a.name) + " <small>" + esc(c) + "</small>" + (tag ? " <small>" + tag + "</small>" : "");
         return '<span class="fx">' + (a.mapId
-          ? '<a href="maps.html?id=' + encodeURIComponent(a.mapId) + '">' + label + "</a>"
+          ? '<a href="maps.html?id=' + encodeURIComponent(a.mapId) + '&mode=' + mode + '">' + label + "</a>"
           : label) + "</span>";
       }).join("");
     }
@@ -609,8 +666,17 @@
       '<p style="color:var(--muted);font-size:.85rem;margin:.2rem 0 .5rem">Owning copies grants a permanent, every-run bonus of this item’s stats — +2% at 1 copy, up to ' + cap + '.</p>' +
       '<details class="perm-details"' + (wide ? " open" : "") + '><summary>Show all ' + maxC + ' levels</summary>' + table + '</details>';
   }
-  function itemDetail(app, d, i) {
+  function itemDetail(app, d, i, forcedMode) {
     if (!i) return notFound(app, "items.html", "Items");
+    var normal = i.isHardModeItem ? d._itemById[String(i.id).replace(/_H$/, "")] : i;
+    var hard = i.isHardModeItem ? i : d._itemById[i.id + "_H"];
+    var queryMode = String(param("mode") || "").toLowerCase();
+    var mode = forcedMode || ((queryMode === "normal" || queryMode === "hard") ? queryMode : (i.isHardModeItem ? "hard" : "normal"));
+    if (mode === "hard" && !hard) mode = "normal";
+    if (mode === "normal" && !normal) mode = "hard";
+    i = mode === "hard" ? hard : normal;
+    rememberGameMode(mode, false);
+    Array.prototype.forEach.call(document.querySelectorAll(".compare-tray"), function (tray) { tray.remove(); });
     var effects = (i.effects || []).map(function (f) { return '<span class="fx">' + esc(f) + "</span>"; }).join("");
     var setItems = "";
     if (i.setName) {
@@ -627,14 +693,16 @@
     var bossDrops = d.bosses.filter(function (b) {
       return b.dropItemId === i.id || b.hardModeDropItemId === i.id || b.bonusDropItemId === i.id;
     });
-    app.innerHTML = detailHead("items.html", "Items", itemList(d), i) +
+    var navList = itemList(d).filter(function (x) { return !!x.isHardModeItem === (mode === "hard"); });
+    app.innerHTML = detailHead("items.html", "Items", navList, i) +
       '<div class="detail">' + portrait(i.image, i.name) +
       "<div><h1>" + esc(i.name) + "</h1>" +
-      '<div class="tags"><span class="pill" style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span>" +
+      modeTabsHtml(mode, { normal: !!normal, hard: !!hard }, "Item mode") +
+      '<div class="tags"><span class="pill mode-pill ' + mode + '">' + (mode === "hard" ? "Hard Mode" : "Normal Mode") + '</span>' +
+        '<span class="pill" style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span>" +
         '<span class="pill">' + esc(i.type) + "</span>" +
         (i.isUnique ? '<span class="pill">Unique</span>' : "") +
-        (i.isBossItem ? '<span class="pill">Boss Item</span>' : "") +
-        (i.isHardModeItem ? '<span class="pill">Hard</span>' : "") + "</div>" +
+        (i.isBossItem ? '<span class="pill">Boss Item</span>' : "") + "</div>" +
       '<button class="compare-add" type="button" data-compare-id="' + esc(i.id) + '">&#8644; Add to comparison</button>' +
       (i.description ? "<p>" + esc(i.description) + "</p>" : "") +
       (effects ? '<div class="section-title">Effects</div><div class="effect-list">' + effects + "</div>" : "") +
@@ -647,7 +715,7 @@
       "</div>" +
       itemPermTable(i) +
       setItems +
-      itemAreaSection(d, i) +
+      itemAreaSection(d, i, mode) +
       (droppedBy.length ? '<div class="section-title">Dropped by</div><div class="effect-list">' +
         droppedBy.map(function (e) {
           var dr = (e.drops || []).filter(function (x) { return x.itemId === i.id; })[0];
@@ -656,11 +724,12 @@
         }).join("") + "</div>" : "") +
       (bossDrops.length ? '<div class="section-title">Boss rewards</div><div class="effect-list">' +
         bossDrops.map(function (b) {
-          var mode = b.hardModeDropItemId === i.id ? "Hard" : b.bonusDropItemId === i.id ? "Bonus" : "Normal";
-          return '<span class="fx">' + link("bosses.html", b.id, b.name) +
-            " (" + bossDropChance(b, mode) + "%) <small>" + mode + "</small></span>";
+          var dropMode = b.hardModeDropItemId === i.id ? "Hard" : b.bonusDropItemId === i.id ? "Bonus" : "Normal";
+          return '<span class="fx"><a href="bosses.html?id=' + encodeURIComponent(b.id) + '&mode=' + mode + '">' + esc(b.name) + "</a>" +
+            " (" + bossDropChance(b, dropMode === "Hard" ? "Hard" : (mode === "hard" ? "Hard" : "Normal")) + "%) <small>" + dropMode + "</small></span>";
         }).join("") + "</div>" : "") +
       "</div></div>";
+    wireModeTabs(app, mode, function (next) { itemDetail(app, d, i, next); });
     mountCompareTray(d, i.id);
   }
 
@@ -762,20 +831,25 @@
     for (var i = 0; i < areas.length; i++) if (areas[i].mapId === mapId) return areas[i].code;
     return MAP_ZONE_ROUTES[mapId] || null;
   }
-  function zonesForMap(d, m) {
+  function zonesForMap(d, m, mode) {
     var route = m && routeForMap(d, m.id);
     if (!route) return [];
     return (d.zones || []).filter(function (z) {
-      if (route === "VoidHunt") return z.id === "VoidHunt_Zone" || z.id.indexOf("VoidHunt_") === 0;
-      return z.id.indexOf(route + "_Zone") === 0 || z.id.indexOf(route + "_HM_Z") === 0;
+      var onRoute = route === "VoidHunt"
+        ? z.id === "VoidHunt_Zone" || z.id.indexOf("VoidHunt_") === 0
+        : z.id.indexOf(route + "_Zone") === 0 || z.id.indexOf(route + "_HM_Z") === 0;
+      if (!onRoute) return false;
+      if (mode === "hard") return isHardZone(z);
+      if (mode === "normal") return !isHardZone(z);
+      return true;
     }).sort(function (a, b) {
       var ah = /_HM_Z/.test(a.id), bh = /_HM_Z/.test(b.id);
       if (ah !== bh) return ah ? 1 : -1;
       return a.minEnemyLevel - b.minEnemyLevel || a.name.localeCompare(b.name);
     });
   }
-  function mapEncounters(d, m) {
-    var zones = zonesForMap(d, m), seen = {}, enemies = [];
+  function mapEncounters(d, m, mode) {
+    var zones = zonesForMap(d, m, mode), seen = {}, enemies = [];
     zones.forEach(function (z) {
       (z.enemies || []).forEach(function (ze) {
         var e = d._enemyById[ze.enemyId];
@@ -809,14 +883,18 @@
     if (mode === "Hard") return b.hardModeDropChance != null ? b.hardModeDropChance : 0.75;
     return b.dropChance != null ? b.dropChance : 1;
   }
-  function bossDropItems(d, bosses) {
+  function bossDropItems(d, bosses, selectedMode) {
     var rows = [];
     bosses.forEach(function (b) {
-      [[b.dropItemId, "Normal"], [b.hardModeDropItemId, "Hard"], [b.bonusDropItemId, "Bonus"]].forEach(function (x) {
+      var hard = selectedMode === "hard";
+      var entries = selectedMode
+        ? [[hard ? b.hardModeDropItemId : b.dropItemId, hard ? "Hard" : "Normal"], [b.bonusDropItemId, "Bonus"]]
+        : [[b.dropItemId, "Normal"], [b.hardModeDropItemId, "Hard"], [b.bonusDropItemId, "Bonus"]];
+      entries.forEach(function (x) {
         if (!x[0]) return;
         var item = d._itemById[x[0]];
         rows.push({ item: item, id: x[0], name: item ? item.name : x[0], boss: b, mode: x[1],
-          chance: bossDropChance(b, x[1]) });
+          chance: bossDropChance(b, selectedMode === "hard" || x[1] === "Hard" ? "Hard" : "Normal") });
       });
     });
     return rows;
@@ -829,6 +907,7 @@
   }
   function wnode(d, w, opts) {
     opts = opts || {};
+    var mode = opts.mode || selectedGameMode("normal");
     var meta = WORLD_META[w] || { icon: "&#128506;", color: "var(--accent)" };
     var s = worldStats(d, w);
     var sub = opts.locked ? "Coming soon"
@@ -838,7 +917,7 @@
       '<span class="wname">' + esc(w) + "</span><span class=\"wmeta\">" + sub + "</span>";
     if (opts.locked) return '<div class="wnode locked" style="--wc:' + meta.color + '">' + inner + "</div>";
     var cls = "wnode" + (opts.secret ? " secret" : "");
-    return '<a class="' + cls + '" style="--wc:' + meta.color + '" href="maps.html?world=' + encodeURIComponent(w) + '">' + inner + "</a>";
+    return '<a class="' + cls + '" style="--wc:' + meta.color + '" href="maps.html?world=' + encodeURIComponent(w) + '&mode=' + mode + '">' + inner + "</a>";
   }
   // Region codes -> their map names ("FR02" -> "Dark Forest").
   function areaNames(d, codes) {
@@ -848,7 +927,7 @@
   }
   // One row per MAP within a world, so Forest Road / Dark Forest / Deep Dark Forest / Ashen
   // Forest Pass are each listed and reachable rather than hidden behind a single "Forest" node.
-  function areaRows(d, w) {
+  function areaRows(d, w, mode) {
     var meta = WORLD_META[w] || { icon: "&#128506;", color: "var(--accent)" };
     var list = (d.areas || []).filter(function (a) { return a.world === w; });
     if (!list.length) return "";
@@ -856,24 +935,33 @@
       '<h3 class="area-group-head"><span class="wicon">' + meta.icon + '</span>' + esc(w) +
         '<small>' + list.length + " map" + (list.length !== 1 ? "s" : "") + "</small></h3>" +
       '<div class="area-rows">' + list.map(function (a) {
-        var drops = a.dropItemIds.length + a.bossDropItemIds.length;
-        var href = a.mapId ? "maps.html?id=" + encodeURIComponent(a.mapId) : "maps.html?world=" + encodeURIComponent(w);
+        var map = d._mapById[a.mapId];
+        var encounters = map ? mapEncounters(d, map, mode) : { zones: [], enemies: [] };
+        var mapBosses = d.bosses.filter(function (b) { return b.mapId === a.mapId; });
+        var drops = mapDropItems(d, encounters).length + bossDropItems(d, mapBosses, mode).length;
+        var levels = encounters.zones.map(function (z) { return [z.minEnemyLevel, z.maxEnemyLevel]; });
+        var minLevel = levels.length ? Math.min.apply(null, levels.map(function (x) { return x[0]; })) : 0;
+        var maxLevel = levels.length ? Math.max.apply(null, levels.map(function (x) { return x[1]; })) : 0;
+        var href = a.mapId ? "maps.html?id=" + encodeURIComponent(a.mapId) + "&mode=" + mode : "maps.html?world=" + encodeURIComponent(w) + "&mode=" + mode;
         return '<a class="area-row" href="' + href + '">' +
           '<span class="area-code">' + esc(a.code) + "</span>" +
           '<span class="area-name">' + esc(a.name) + "</span>" +
-          '<span class="area-meta">Lv ' + fmt(a.minLevel) + "&#8211;" + fmt(a.maxLevel) +
-            " &#183; " + a.enemyIds.length + " monsters &#183; " + drops + " drops" +
-            (a.bossIds.length ? " &#183; " + a.bossIds.length + " boss" + (a.bossIds.length > 1 ? "es" : "") : "") + "</span>" +
+          '<span class="area-meta">' + (minLevel ? "Lv " + fmt(minLevel) + "&#8211;" + fmt(maxLevel) + " &#183; " : "") +
+            encounters.enemies.length + " monsters &#183; " + drops + " drops" +
+            (mapBosses.length ? " &#183; " + mapBosses.length + " boss" + (mapBosses.length > 1 ? "es" : "") : "") + "</span>" +
           '<b aria-hidden="true">&#8594;</b></a>';
       }).join("") + "</div></section>";
   }
-  PAGES.maps = function (app, d) {
-    var id = param("id"); if (id) return mapDetail(app, d, d._mapById[id]);
-    var world = param("world"); if (world) return worldView(app, d, world);
+  PAGES.maps = function (app, d, forcedMode) {
+    var id = param("id"); if (id) return mapDetail(app, d, d._mapById[id], forcedMode);
+    var world = param("world"); if (world) return worldView(app, d, world, forcedMode);
+    var mode = forcedMode || selectedGameMode("normal");
+    rememberGameMode(mode, false);
     var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt",
                   "Japan", "Greek", "Military", "Heaven"];
     app.innerHTML =
       pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", d.maps.length) +
+      modeTabsHtml(mode, null, "Map data mode") +
       '<div class="view-switch" role="group" aria-label="World view"><button type="button" data-view="map">Map</button><button type="button" data-view="list">List</button></div>' +
       '<div class="world-view" data-panel="map"><div class="worldmap"><div class="wm-grid">' +
         '<div class="wm-cell" style="grid-area:uw">'     + wnode(d, "Underwater") + '</div>' +
@@ -900,7 +988,7 @@
       // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
       // grouped under its world. The compass graph above stays world-level.
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {
-        return areaRows(d, w);
+        return areaRows(d, w, mode);
       }).join("") + '</div>';
     var stored; try { stored = localStorage.getItem("tw-map-view"); } catch (_) {}
     var view = stored || (window.innerWidth <= 640 ? "list" : "map");
@@ -914,8 +1002,11 @@
       });
     }
     Array.prototype.forEach.call(app.querySelectorAll("[data-view]"), function (b) { b.onclick = function () { setView(b.getAttribute("data-view")); }; }); setView(view);
+    wireModeTabs(app, mode, function (next) { PAGES.maps(app, d, next); });
   };
-  function worldView(app, d, w) {
+  function worldView(app, d, w, forcedMode) {
+    var mode = forcedMode || selectedGameMode("normal");
+    rememberGameMode(mode, false);
     var s = worldStats(d, w);
     if (!s.maps.length) return notFound(app, "maps.html", "Worlds");
     var meta = WORLD_META[w] || { color: "var(--accent)" };
@@ -940,11 +1031,11 @@
     s.maps.forEach(function (m) { if (depth[m.id] == null) (tiers[maxD + 1] = tiers[maxD + 1] || []).push(m); });
     function mnode(m) {
       var mb = d.bosses.filter(function (b) { return b.mapId === m.id; });
-      var me = mapEncounters(d, m), drops = mapDropItems(d, me);
+      var me = mapEncounters(d, m, mode), drops = mapDropItems(d, me);
       var facts = [me.enemies.length + " monster" + (me.enemies.length !== 1 ? "s" : ""), drops.length + " item drop" + (drops.length !== 1 ? "s" : "")];
       if (mb.length) facts.push(mb.length + " boss" + (mb.length !== 1 ? "es" : ""));
       var sub = facts.join(" &#183; ");
-      return '<a class="mnode" data-mid="' + esc(m.id) + '" href="maps.html?id=' + encodeURIComponent(m.id) + '" style="--wc:' + meta.color + '">' +
+      return '<a class="mnode" data-mid="' + esc(m.id) + '" href="maps.html?id=' + encodeURIComponent(m.id) + '&mode=' + mode + '" style="--wc:' + meta.color + '">' +
         thumb(m.image, m.name) +
         '<div class="mnode-body"><h4>' + esc(m.name) + '</h4><div class="meta">' + sub + '</div></div></a>';
     }
@@ -965,7 +1056,9 @@
     app.innerHTML =
       '<a class="back" href="maps.html">&#8592; World Map</a>' +
       '<div class="page-head"><h1>' + esc(w) + '</h1><p>' + s.maps.length + ' map' + (s.maps.length !== 1 ? 's' : '') + ' &#183; connected in travel order</p></div>' +
+      modeTabsHtml(mode, null, "World data mode") +
       '<div class="mchain' + (horizontal ? " h" : "") + '" style="--wc:' + meta.color + '"><svg class="mconn-svg" aria-hidden="true"></svg>' + html + '</div>';
+    wireModeTabs(app, mode, function (next) { worldView(app, d, w, next); });
     drawRouteConnectors(app, route);
   }
   // Draw one line per route edge, from parent node centre to child node centre, on an SVG
@@ -1003,14 +1096,17 @@
     var t; drawRouteConnectors._rz = function () { clearTimeout(t); t = setTimeout(draw, 120); };
     window.addEventListener("resize", drawRouteConnectors._rz);
   }
-  function mapDetail(app, d, m) {
+  function mapDetail(app, d, m, forcedMode) {
     if (!m) return notFound(app, "maps.html", "Maps");
+    var mode = forcedMode || selectedGameMode("normal");
+    rememberGameMode(mode, false);
     var bosses = d.bosses.filter(function (b) { return b.mapId === m.id; });
-    var encounters = mapEncounters(d, m), zones = encounters.zones;
-    var normalZones = zones.filter(function (z) { return !/_HM_Z/.test(z.id); });
-    var hardZones = zones.filter(function (z) { return /_HM_Z/.test(z.id); });
-    var drops = mapDropItems(d, encounters), bossDrops = bossDropItems(d, bosses);
-    var levelZones = normalZones.length ? normalZones : zones;
+    var allZones = zonesForMap(d, m);
+    var normalZones = allZones.filter(function (z) { return !isHardZone(z); });
+    var hardZones = allZones.filter(function (z) { return isHardZone(z); });
+    var encounters = mapEncounters(d, m, mode), zones = encounters.zones;
+    var drops = mapDropItems(d, encounters), bossDrops = bossDropItems(d, bosses, mode);
+    var levelZones = zones;
     var minLevel = levelZones.length ? Math.min.apply(null, levelZones.map(function (z) { return z.minEnemyLevel; })) : 0;
     var maxLevel = levelZones.length ? Math.max.apply(null, levelZones.map(function (z) { return z.maxEnemyLevel; })) : 0;
     var totalCells = m.walkableCells + m.blockedCells;
@@ -1029,7 +1125,7 @@
     }
     function enemyCard(entry) {
       var e = entry.enemy;
-      return '<a class="map-entity-card" href="monsters.html?id=' + encodeURIComponent(e.id) + '">' + thumb(e.image, e.name) +
+      return '<a class="map-entity-card" href="monsters.html?id=' + encodeURIComponent(e.id) + '&mode=' + mode + '">' + thumb(e.image, e.name) +
         '<div><h3>' + esc(e.name) + '</h3><p>Level ' + fmt(e.minLevel) + '&#8211;' + fmt(e.maxLevel) + ' &#183; ' + (e.drops || []).length + ' drop' + ((e.drops || []).length !== 1 ? 's' : '') + '</p>' +
         '<span>' + esc(entry.zones.join(", ")) + '</span></div><b aria-hidden="true">&#8594;</b></a>';
     }
@@ -1043,40 +1139,47 @@
         }).join('') + '</div></div></article>';
     }
     function bossCard(b) {
-      return '<a class="map-entity-card boss" href="bosses.html?id=' + encodeURIComponent(b.id) + '">' + thumb(b.image, b.name) +
-        '<div><h3>' + esc(b.name) + '</h3><p>Level ' + fmt(b.level) + ' &#183; ' + fmt(b.hp) + ' HP &#183; ' + fmt(b.atk) + ' ATK</p>' +
-        '<span>' + (b.dropItemName ? 'Reward: ' + esc(b.dropItemName) : 'Open boss details') + '</span></div><b aria-hidden="true">&#8594;</b></a>';
+      var hard = mode === "hard";
+      var hp = hard && b.hardModeHp ? b.hardModeHp : b.hp;
+      var atk = hard && b.hardModeAtk ? b.hardModeAtk : b.atk;
+      var rewardId = hard && b.hardModeDropItemId ? b.hardModeDropItemId : b.dropItemId;
+      var reward = d._itemById[rewardId];
+      return '<a class="map-entity-card boss" href="bosses.html?id=' + encodeURIComponent(b.id) + '&mode=' + mode + '">' + thumb(b.image, b.name) +
+        '<div><h3>' + esc(b.name) + '</h3><p>Level ' + fmt(b.level) + ' &#183; ' + fmt(hp) + ' HP &#183; ' + fmt(atk) + ' ATK</p>' +
+        '<span>' + (reward ? 'Reward: ' + esc(reward.name) : 'Open boss details') + '</span></div><b aria-hidden="true">&#8594;</b></a>';
     }
     function bossDropCard(row) {
       var item = row.item;
       return '<article class="map-drop-card boss-drop">' + thumb(item && item.image, row.name) + '<div><h3>' +
         (item ? link("items.html", item.id, item.name) : esc(row.name)) + '</h3>' +
         (item ? '<p><span style="color:' + rarColor(item.rarity) + '">' + esc(item.rarity) + '</span> &#183; ' + esc(item.type) + '</p>' : '') +
-        '<div class="map-drop-sources"><span>' + link("bosses.html", row.boss.id, row.boss.name) +
+        '<div class="map-drop-sources"><span><a href="bosses.html?id=' + encodeURIComponent(row.boss.id) + '&mode=' + mode + '">' + esc(row.boss.name) + '</a>' +
           ' <strong>' + esc(row.chance) + '%</strong> <small>' + esc(row.mode) + '</small></span></div>' +
         '</div></article>';
     }
     app.innerHTML =
-      '<a class="back" href="maps.html' + (m.world ? "?world=" + encodeURIComponent(m.world) : "") + '">&#8592; ' + esc(m.world || "Maps") + "</a>" +
+      '<a class="back" href="maps.html' + (m.world ? "?world=" + encodeURIComponent(m.world) + "&mode=" + mode : "?mode=" + mode) + '">&#8592; ' + esc(m.world || "Maps") + "</a>" +
       '<section class="map-detail-hero"><div><span class="section-kicker">Map dossier</span><h1>' + esc(m.name) + '</h1>' +
         '<div class="tags">' + (m.world ? '<span class="pill">' + esc(m.world) + '</span>' : '') +
         (minLevel ? '<span class="pill">Level ' + fmt(minLevel) + '&#8211;' + fmt(maxLevel) + '</span>' : '') + '</div>' +
         '<p>Review this map\'s zones, encounters, regular item drops, bosses, and exclusive boss rewards before choosing your route.</p></div>' +
         '<div class="map-art">' + (m.image ? '<img src="' + IMG_BASE + esc(m.image) + '" alt="' + esc(m.name) + '">' : '<div class="empty">No map art available.</div>') + '</div></section>' +
+      modeTabsHtml(mode, { normal: normalZones.length > 0 || bosses.length > 0, hard: hardZones.length > 0 || bosses.length > 0 }, "Map data mode") +
       '<section class="map-overview" aria-label="Map overview">' +
         sb("Zones", zones.length) + sb("Monsters", encounters.enemies.length) + sb("Item drops", drops.length) + sb("Bosses", bosses.length) +
         sb("Walkable", walkPct) + sb("Grid", m.gridWidth + "&#215;" + m.gridHeight) + '</section>' +
-      (zones.length ? '<section class="map-detail-section">' + sectionHead("Local areas", "Zones", zones.length, normalZones.length + " normal and " + hardZones.length + " hard-mode zones") +
+      (zones.length ? '<section class="map-detail-section">' + sectionHead("Local areas", "Zones", zones.length, mode === "hard" ? "Hard Mode zones only" : "Normal Mode zones only") +
         '<div class="map-zone-grid">' + zones.map(zoneCard).join('') + '</div></section>' : '') +
-      (encounters.enemies.length ? '<section class="map-detail-section">' + sectionHead("Encounters", "Monsters", encounters.enemies.length, "Every regular enemy found across this map's normal and hard-mode zones") +
+      (encounters.enemies.length ? '<section class="map-detail-section">' + sectionHead("Encounters", "Monsters", encounters.enemies.length, "Regular enemies in " + (mode === "hard" ? "Hard Mode" : "Normal Mode")) +
         '<div class="map-entity-grid">' + encounters.enemies.map(enemyCard).join('') + '</div></section>' : '') +
       (drops.length ? '<section class="map-detail-section monster-drops">' + sectionHead("Regular loot", "Monster item drops", drops.length, "Items earned from regular encounters on this map") +
         '<div class="map-drop-grid">' + drops.map(dropCard).join('') + '</div></section>' : '') +
       (bosses.length ? '<section class="map-detail-section">' + sectionHead("Map guardians", "Bosses", bosses.length, "Boss encounters assigned to this map") +
         '<div class="map-entity-grid">' + bosses.map(bossCard).join('') + '</div></section>' : '') +
-      (bossDrops.length ? '<section class="map-detail-section boss-drops">' + sectionHead("Exclusive loot", "Boss item drops", bossDrops.length, "Normal, hard-mode, and bonus rewards are kept separate from monster drops") +
+      (bossDrops.length ? '<section class="map-detail-section boss-drops">' + sectionHead("Exclusive loot", "Boss item drops", bossDrops.length, (mode === "hard" ? "Hard Mode" : "Normal Mode") + " boss and bonus rewards") +
         '<div class="map-drop-grid">' + bossDrops.map(bossDropCard).join('') + '</div></section>' : '') +
-      (!zones.length && !bosses.length ? '<div class="empty map-empty">Detailed encounter data is not available for this map yet.</div>' : '');
+      (!zones.length && !bosses.length ? '<div class="empty map-empty">Detailed ' + (mode === "hard" ? "Hard Mode" : "Normal Mode") + ' encounter data is not available for this map yet.</div>' : '');
+    wireModeTabs(app, mode, function (next) { mapDetail(app, d, m, next); });
   }
 
   /* ---- Characters ---- */
@@ -1219,6 +1322,11 @@
   function listView(app, d, cfg) {
     var active = {}; (cfg.filters || []).forEach(function (f) { active[f.key] = null; });
     var q = "", tabIdx = 0;
+    var preferredMode = selectedGameMode("normal");
+    if (cfg.tabs) {
+      var preferredTab = cfg.tabs.findIndex(function (t) { return t.mode === preferredMode; });
+      if (preferredTab >= 0) tabIdx = preferredTab;
+    }
     var sortKey = cfg.defaultSort || (cfg.sorts && cfg.sorts.length ? cfg.sorts[0].key : "");
     // Remember tab / search / filters / scroll per page so Back returns to the same view.
     var SKEY = "tw-list:" + cfg.page;
@@ -1232,8 +1340,12 @@
       if (saved.filters) for (var fk in saved.filters) if (fk in active) active[fk] = saved.filters[fk];
       if (cfg.sorts && cfg.sorts.some(function (s) { return s.key === saved.sort; })) sortKey = saved.sort;
     }
-    var tabsHtml = cfg.tabs ? '<div class="tabs" id="tabs">' + cfg.tabs.map(function (t, i) {
-      return '<button class="tab' + (i === tabIdx ? " active" : "") + '" data-i="' + i + '">' + esc(t.label) + "</button>";
+    var modeTabSet = cfg.tabs && cfg.tabs.some(function (t) { return !!t.mode; });
+    var tabsHtml = cfg.tabs ? '<div class="tabs' + (modeTabSet ? ' mode-tabs' : '') + '" id="tabs" role="tablist" aria-label="' +
+      esc(modeTabSet ? "Game mode" : cfg.title + " categories") + '">' + cfg.tabs.map(function (t, i) {
+      return '<button type="button" class="tab' + (modeTabSet ? ' mode-tab' : '') + (i === tabIdx ? " active" : "") +
+        '" data-i="' + i + '"' + (t.mode ? ' data-game-mode="' + esc(t.mode) + '"' : '') + ' role="tab" aria-selected="' +
+        (i === tabIdx ? "true" : "false") + '">' + esc(t.label) + "</button>";
     }).join("") + "</div>" : "";
     app.innerHTML = pageHero(cfg.page, cfg.title, cfg.subtitle, cfg.items.length) +
       '<div class="catalog-controls">' + tabsHtml +
@@ -1301,8 +1413,13 @@
     Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (btn) {
       btn.addEventListener("click", function () {
         tabIdx = +btn.getAttribute("data-i");
-        Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (b) { b.classList.remove("active"); });
-        btn.classList.add("active"); apply(); window.scrollTo(0, 0);
+        Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (b) {
+          b.classList.remove("active"); b.setAttribute("aria-selected", "false");
+        });
+        btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
+        var tab = cfg.tabs && cfg.tabs[tabIdx];
+        if (tab && tab.mode) rememberGameMode(tab.mode, true);
+        apply(); window.scrollTo(0, 0);
       });
     });
     // Persist the view (incl. scroll) right before navigating into a detail page.
