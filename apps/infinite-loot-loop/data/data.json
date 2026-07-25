@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T13:22:52Z",
+  "generatedAt": "2026-07-25T00:06:38Z",
   "game": "Infinite Loot-Loop",
   "counts": {
     "enemies": 313,
@@ -20194,7 +20194,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 5300,
@@ -21217,7 +21217,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 24000,
@@ -21549,7 +21549,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 31000,
@@ -21966,7 +21966,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 6300,
@@ -21996,7 +21996,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": true,
+      "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 410,
@@ -33763,7 +33763,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": true,
+      "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 270,
@@ -34861,7 +34861,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": true,
-      "shopUnavailable": true,
+      "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 4100,
@@ -35665,7 +35665,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 9800,
@@ -36320,7 +36320,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": true,
+      "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 310,
@@ -36856,7 +36856,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 3300,
@@ -38205,7 +38205,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 51000,
@@ -38537,7 +38537,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 77000,
@@ -38688,7 +38688,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": true,
-      "shopUnavailable": true,
+      "shopUnavailable": false,
       "isHardModeItem": false,
       "isBossItem": false,
       "bonusHP": 48000,
@@ -39497,8 +39497,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 7047,
-      "blockedCells": 2169
+      "walkableCells": 7056,
+      "blockedCells": 2160
     },
     {
       "id": "CoralMaze_Map",
@@ -39508,8 +39508,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 4876,
-      "blockedCells": 4340
+      "walkableCells": 4916,
+      "blockedCells": 4300
     },
     {
       "id": "DarkForest_Map",
@@ -39519,8 +39519,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 1521,
-      "blockedCells": 7695
+      "walkableCells": 1561,
+      "blockedCells": 7655
     },
     {
       "id": "DeepForest_Map",
@@ -39530,8 +39530,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 2880,
-      "blockedCells": 6336
+      "walkableCells": 2892,
+      "blockedCells": 6324
     },
     {
       "id": "DeepTrench_Map",
@@ -39552,8 +39552,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 7167,
-      "blockedCells": 2049
+      "walkableCells": 7212,
+      "blockedCells": 2004
     },
     {
       "id": "DesertCrossroads_Map",
@@ -39585,8 +39585,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 4865,
-      "blockedCells": 4351
+      "walkableCells": 4880,
+      "blockedCells": 4336
     },
     {
       "id": "GiantClamBossRoom_Map",
@@ -39596,8 +39596,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 2600,
-      "blockedCells": 6616
+      "walkableCells": 2621,
+      "blockedCells": 6595
     },
     {
       "id": "Grassland_Map",
@@ -39739,8 +39739,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 6513,
-      "blockedCells": 2703
+      "walkableCells": 6514,
+      "blockedCells": 2702
     },
     {
       "id": "LavaRiverPass_Map",
@@ -39750,8 +39750,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 6228,
-      "blockedCells": 2988
+      "walkableCells": 5019,
+      "blockedCells": 4197
     },
     {
       "id": "MainUnderwaterBossRoom_Map",
@@ -39893,8 +39893,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 2683,
-      "blockedCells": 6533
+      "walkableCells": 2704,
+      "blockedCells": 6512
     },
     {
       "id": "VoidHunt_Map",
@@ -39915,8 +39915,8 @@
       "gridWidth": 96,
       "gridHeight": 96,
       "dataVersion": 1,
-      "walkableCells": 7898,
-      "blockedCells": 1318
+      "walkableCells": 7933,
+      "blockedCells": 1283
     },
     {
       "id": "WorldGate_Map",
