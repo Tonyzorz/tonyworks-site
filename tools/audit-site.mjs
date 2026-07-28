@@ -10,6 +10,7 @@ const substantivePages = new Set([
   "about.html",
   "apps/infinite-loot-loop/index.html",
   "apps/infinite-loot-loop/guide.html",
+  "apps/infinite-loot-loop/design-notes.html",
   "apps/infinite-loot-loop/game-data.html",
   "apps/infinite-loot-loop/faq.html",
   "apps/infinite-loot-loop/patch.html",
@@ -66,6 +67,9 @@ for (const page of walk(root)) {
   if (substantivePages.has(rel)) {
     const words = bodyText(html).split(/\s+/).filter(Boolean).length;
     if (words < 150) errors.push(`${rel}: only ${words} static words; expected at least 150 for this site audit`);
+    if (rel === "apps/infinite-loot-loop/design-notes.html" && words < 1000) {
+      errors.push(`${rel}: only ${words} static words; expected at least 1000 for the first-hand design article`);
+    }
     if (!/<h1\b/i.test(html)) errors.push(`${rel}: missing a static H1`);
     if (!/<link\s+rel=["']canonical["']/i.test(html)) errors.push(`${rel}: missing canonical URL`);
   }
@@ -83,6 +87,12 @@ for (const page of walk(root)) {
     const target = resolveInternalHref(page, match[1]);
     if (target && !fs.existsSync(target)) errors.push(`${rel}: broken internal link ${match[1]}`);
   }
+}
+
+const storeUrl = "https://apps.apple.com/us/app/infinite-loot-loop/id6790783620";
+for (const rel of ["index.html", "apps/infinite-loot-loop/index.html", "apps/infinite-loot-loop/patch.html"]) {
+  const html = fs.readFileSync(path.join(root, rel), "utf8");
+  if (!html.includes(storeUrl)) errors.push(`${rel}: missing the live iOS App Store URL`);
 }
 
 const sitemap = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");

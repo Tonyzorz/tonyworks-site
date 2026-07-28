@@ -12,6 +12,7 @@
     { id: "characters",   label: "Characters",  href: "characters.html" },
     { id: "achievements", label: "Achievements",href: "achievements.html" },
     { id: "guide",        label: "Guide",       href: "guide.html" },
+    { id: "design-notes", label: "Design Notes",href: "design-notes.html" },
     { id: "game-data",    label: "Data Notes",  href: "game-data.html" },
     { id: "patch",        label: "Patch Notes", href: "patch.html" },
     { id: "faq",          label: "FAQ",         href: "faq.html" },
@@ -36,7 +37,7 @@
   // Add the final store listing URLs here when each release is live. Empty URLs
   // intentionally render as "Coming soon" so visitors never hit a broken page.
   var STORE_LINKS = {
-    ios: "",
+    ios: "https://apps.apple.com/us/app/infinite-loot-loop/id6790783620",
     android: ""
   };
 
@@ -352,6 +353,7 @@
     var resources = [
       ["sets.html", "Item Sets", "Build complete equipment bonuses"],
       ["achievements.html", "Achievements", "Track goals and permanent rewards"],
+      ["design-notes.html", "Design Notes", "See how the AP economy and progression are balanced"],
       ["patch.html", "Patch Notes", "See the latest changes"],
       ["faq.html", "FAQ", "Get quick player answers"]
     ];
@@ -362,7 +364,11 @@
         '<p>Find drops, explore routes, compare gear and plan your next run with data exported directly from the game.</p>' +
         '<div class="hero-actions"><a class="hero-primary" href="guide.html">Start with the guide <span aria-hidden="true">&#8594;</span></a>' +
           '<a class="hero-secondary" href="#explore">Explore the wiki</a></div>' +
-        '<div class="launch-line"><span class="download-dot" aria-hidden="true"></span><strong>Mobile launch:</strong> iOS &amp; Android coming soon</div></div>' +
+        '<div class="download-block"><div class="download-heading"><span class="download-dot" aria-hidden="true"></span>Available on iOS</div>' +
+          '<div class="store-buttons">' +
+            storeButton("ios", "Available now", "Download on the App Store", STORE_LINKS.ios) +
+            storeButton("android", "Release updates", "Google Play", STORE_LINKS.android) +
+          '</div></div></div>' +
       "</section>" +
       '<section class="home-search home-search-featured" aria-labelledby="wiki-search-title"><div class="home-search-copy"><span class="section-kicker">Quick lookup</span>' +
         '<h2 id="wiki-search-title">What are you looking for?</h2><p>Jump straight to a monster, boss, item or character.</p></div>' +
@@ -395,7 +401,7 @@
         }).join("") + '</div></section>' +
       '<aside class="home-status" aria-label="Game and wiki status"><div><span class="status-dot" aria-hidden="true"></span><span><small>Current game build</small><strong>' + esc(d.gameVersion || "Development") + '</strong></span></div>' +
         '<div><span><small>Wiki refreshed</small><strong>' + esc(formatDate(d.generatedAt)) + '</strong></span></div>' +
-        '<div><span><small>Mobile release</small><strong>iOS &amp; Android coming soon</strong></span></div>' +
+        '<div><span><small>Mobile release</small><strong>iOS available now · Android coming soon</strong></span></div>' +
         '<a href="patch.html">Read latest patch notes &#8594;</a></aside>' +
       "";
     function stat(n, l) { return '<div class="stat"><div class="n">' + (n || 0) + '</div><div class="l">' + l + "</div></div>"; }

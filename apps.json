@@ -8,7 +8,12 @@
       "icon": "⚔️",
       "iconImage": "apps/infinite-loot-loop/assets/img/app_icon.png",
       "path": "apps/infinite-loot-loop/index.html",
-      "status": "Wiki",
+      "status": "Released",
+      "platforms": ["iOS", "Android coming soon"],
+      "storeLinks": {
+        "ios": "https://apps.apple.com/us/app/infinite-loot-loop/id6790783620",
+        "android": ""
+      },
       "accent": "#7c9cff",
       "type": "game"
     },

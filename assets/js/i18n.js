@@ -404,7 +404,7 @@
   function addArticleNotice() {
     if (code === "en") return;
     var page = document.body && document.body.getAttribute("data-page");
-    if (["portal", "home", "monsters", "bosses", "items", "sets", "maps", "characters", "achievements", "guide", "game-data", "faq", "patch", "about", "privacy", "terms", "deletion"].indexOf(page) === -1 || document.querySelector(".translation-notice")) return;
+    if (["portal", "home", "monsters", "bosses", "items", "sets", "maps", "characters", "achievements", "guide", "design-notes", "game-data", "faq", "patch", "about", "privacy", "terms", "deletion"].indexOf(page) === -1 || document.querySelector(".translation-notice")) return;
     var main = document.querySelector("main") || document.body;
     if (!main) return;
     var notice = document.createElement("aside");

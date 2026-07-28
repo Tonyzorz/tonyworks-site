@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NMFFW9TKW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3NMFFW9TKW');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#0e0f13">
+  <link rel="icon" href="/apps/infinite-loot-loop/assets/img/app_icon.png">
+  <title>Why 30 Adventure Points Matter — Infinite Loot-Loop Design Notes</title>
+  <meta name="description" content="A first-hand development note explaining Infinite Loot-Loop's 30-AP run economy, permanent item progression, fresh-player playtesting, and balance simulations.">
+  <link rel="canonical" href="https://tonyworks.co.kr/apps/infinite-loot-loop/design-notes.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Tony Works">
+  <meta property="og:title" content="Why 30 Adventure Points Matter">
+  <meta property="og:description" content="How Infinite Loot-Loop turns a small AP budget into route choices, persistent progress, and a balance model that can be tested.">
+  <meta property="og:image" content="https://tonyworks.co.kr/apps/infinite-loot-loop/assets/img/map_Grassland_Map.png">
+  <meta property="og:image:alt" content="The Grassland map from Infinite Loot-Loop">
+  <meta property="og:url" content="https://tonyworks.co.kr/apps/infinite-loot-loop/design-notes.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Why 30 Adventure Points Matter">
+  <meta name="twitter:description" content="A first-hand look at the systems and tests behind Infinite Loot-Loop.">
+  <meta name="twitter:image" content="https://tonyworks.co.kr/apps/infinite-loot-loop/assets/img/map_Grassland_Map.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Why 30 Adventure Points Matter",
+    "description": "A first-hand development note explaining Infinite Loot-Loop's run economy, permanent item progression, playtesting, and balance simulations.",
+    "datePublished": "2026-07-28",
+    "dateModified": "2026-07-28",
+    "author": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/about.html" },
+    "publisher": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/" },
+    "image": "https://tonyworks.co.kr/apps/infinite-loot-loop/assets/img/map_Grassland_Map.png",
+    "mainEntityOfPage": "https://tonyworks.co.kr/apps/infinite-loot-loop/design-notes.html",
+    "about": { "@type": "VideoGame", "name": "Infinite Loot-Loop" }
+  }
+  </script>
+  <script>try{var s=localStorage.getItem('tw-theme');var t=s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <link rel="stylesheet" href="../../assets/css/style.css?v=43">
+</head>
+<body data-page="design-notes">
+  <header class="site-header" id="site-header"></header>
+  <main class="wrap">
+    <section class="design-hero">
+      <div>
+        <span class="info-kicker">Developer design notes</span>
+        <h1>Why 30 Adventure Points matter</h1>
+        <p>Infinite Loot-Loop looks like a game about winning battles. Underneath, it is a game about choosing which battles are worth spending a limited run on.</p>
+      </div>
+      <img src="assets/img/map_Grassland_Map.png" alt="The Grassland map from Infinite Loot-Loop" width="960" height="540">
+    </section>
+
+    <div class="article-meta" aria-label="Article information">
+      <span>Written by Tony Works</span>
+      <span>Published 28 July 2026</span>
+      <span>Based on the version 1.0 game project</span>
+    </div>
+
+    <article class="prose design-article">
+      <p class="article-lede">This is a first-hand account of how the central progression systems in Infinite Loot-Loop are implemented and tested. The values below are taken from the version 1.0 Unity project, not reconstructed from a playthrough or copied from another guide. They may change in later balance updates, but they explain the reasoning behind the launch build.</p>
+
+      <section aria-labelledby="ap-budget">
+        <span class="section-kicker">The run budget</span>
+        <h2 id="ap-budget">A battle should be a decision, not background noise</h2>
+        <p>Each Normal Mode run begins with 30 Adventure Points, or AP. A regular victory costs 1 AP. Losing a battle or choosing to run away costs 4 AP in Normal Mode and 6 AP in Hard Mode. A boss victory moves in the opposite direction: it refunds 3 AP and lets the expedition continue.</p>
+        <div class="design-metrics" aria-label="Adventure Point rules">
+          <div><strong>30</strong><span>AP at the start of a run</span></div>
+          <div><strong>&minus;1</strong><span>for a regular victory</span></div>
+          <div><strong>+3</strong><span>for a boss victory</span></div>
+          <div><strong>&minus;4 / &minus;6</strong><span>for defeat or retreat</span></div>
+        </div>
+        <p>The important part is that success still has a cost. If every victory were free, the best strategy would be to remain in the safest zone until the character outleveled the rest of the route. Spending 1 AP turns that apparently safe choice into a trade: the player gains EXP, gold, a streak, and a chance at equipment, but gives up one of the encounters available before the run ends.</p>
+        <p>Bosses are deliberately different. The +3 AP reward makes a boss a source of momentum rather than only a gate. Reaching one early can extend a good expedition; challenging one too soon can consume several times the cost of a routine fight. That tension is why the map, encounter gauge, enemy catalog, and boss routes belong to the same system rather than four disconnected features.</p>
+      </section>
+
+      <section aria-labelledby="encounter-gauge">
+        <span class="section-kicker">Movement and encounters</span>
+        <h2 id="encounter-gauge">The map controls the pace before combat begins</h2>
+        <p>Movement fills an encounter gauge. The live default adds gauge as the character travels, and a stationary hold can intentionally search for a fight without forcing the player to walk in circles. At full gauge, an encounter is guaranteed; before that point, the chance rises with the amount already filled. Equipment can slow the gauge, which makes a navigation stat meaningful without removing encounters altogether.</p>
+        <p>This makes route planning physical. Crossing a map is not a free menu action: distance creates encounter pressure. The player can farm a useful zone, move toward a boss, or look for a safer route, but every choice changes when the next battle is likely to arrive. Boss arenas with no field enemies keep the gauge empty so the interface never promises an encounter that cannot occur.</p>
+        <aside class="design-callout">
+          <strong>Player-facing consequence</strong>
+          <p>If the next fight is unlikely to improve the build, moving toward the next gate is often more valuable than filling the encounter gauge in place. Farming is useful when it has a purpose: a level threshold, an affordable shop item, a needed set piece, or enough safety for a boss attempt.</p>
+        </aside>
+      </section>
+
+      <section aria-labelledby="two-progression-layers">
+        <span class="section-kicker">Temporary and permanent growth</span>
+        <h2 id="two-progression-layers">A run can end without becoming wasted time</h2>
+        <p>The game separates progress into two layers. Run-level EXP, temporary level growth, the current AP budget, and current-run gold create short-term momentum. Owned equipment, unlocked slots, completed achievements, defeated-boss records, character unlocks, and collection bonuses survive between attempts. A failed expedition can therefore lose momentum without erasing the reason it was worth playing.</p>
+        <p>Equipment copies connect the two layers. The first copy of an item contributes 1% of that item's base stats to the permanent collection total. Completing the copy progression raises the contribution to 3% in total. Accessories complete at three copies; other equipment families complete at twenty. The bonus is intentionally small per item so that equipped gear remains important, while a broad collection gradually lifts the floor of every future run.</p>
+        <p>The permanent total is recalculated from the actual item bank instead of trusting a number that has been repeatedly added to a save file. That matters when a balance curve changes: existing collections can be reevaluated from owned items without quietly duplicating or losing progress. Achievement bonuses are derived in the same spirit from the set of achievements the player has actually unlocked.</p>
+      </section>
+
+      <section aria-labelledby="first-fight">
+        <span class="section-kicker">A playtest failure that changed the game</span>
+        <h2 id="first-fight">The original fresh start contained a progression deadlock</h2>
+        <p>A clean save originally began with zero gold and no items. The weakest monster was stronger than a character using base attack alone, but gold was only awarded after a victory. That created a circular failure: the player needed a weapon to win, needed gold to buy a weapon, and needed a win to earn gold.</p>
+        <p>The fix was not to weaken the entire opening region or grant a large permanent boost. A new player now receives the Trainee Blade, deliberately the weakest weapon in the game, and it is automatically equipped. It is granted only when the player owns no weapon, so restarting a run cannot be used to stack free copies and inflate the permanent collection bonus.</p>
+        <p>This small case is representative of progression design. A spreadsheet can show that an average character eventually becomes strong enough; it cannot always reveal that the first step is impossible. The launch build therefore uses both simulation and clean-save playtesting. Simulations find pacing outliers across many runs, while device playtests expose interaction, readability, and state problems that averages hide.</p>
+      </section>
+
+      <section aria-labelledby="simulation">
+        <span class="section-kicker">Balance methodology</span>
+        <h2 id="simulation">The balance model uses the same assets as the game</h2>
+        <p>The Normal Mode progression simulation runs 30 trials against the active boss, zone, enemy, item, and character assets. A simulated fresh player starts with the same 30 AP, base stats, six equipment slots, zero gold, and no collection. It buys affordable equipment, equips higher-value pieces, models duplicate drops and permanent collection bonuses, and chooses a farming zone only when its estimated chance of winning is at least 82%.</p>
+        <p>Boss attempts use a higher safety threshold in Normal Mode. This is not intended to dictate how a person must play. It supplies a repeatable baseline: if a conservative player suddenly needs far more runs to cross one map, or if a small gold change collapses the expected campaign length, the model identifies where to inspect the live data.</p>
+        <p>One useful lesson came from testing regional gold multipliers. A seemingly modest extra multiplier dramatically shortened modeled progression because gold buys equipment copies, copies add permanent stats, and those stats make later gold arrive faster. The effect compounded across runs. The change was reverted instead of being accepted merely because each individual percentage looked reasonable.</p>
+        <p>The website follows the same source-of-truth rule. Its catalogs are generated from the Unity data, while articles such as this one explain the design choices that raw values cannot communicate. The <a href="game-data.html">game-data methodology</a> describes which fields are exported and how the published pages are checked.</p>
+      </section>
+
+      <section aria-labelledby="how-to-play">
+        <span class="section-kicker">What this means for a player</span>
+        <h2 id="how-to-play">A practical way to think about the next battle</h2>
+        <ol class="design-decisions">
+          <li><strong>Name the reward you need.</strong> Fight for a level, an affordable upgrade, a specific drop, a streak, or a safer boss attempt—not simply because a monster is nearby.</li>
+          <li><strong>Compare the AP cost with the route ahead.</strong> A routine win costs 1 AP, while one bad matchup can cost four times as much in Normal Mode.</li>
+          <li><strong>Treat a boss as both risk and fuel.</strong> A successful challenge opens progress and returns 3 AP, but an early loss can erase the value of several safe wins.</li>
+          <li><strong>Value new items even when they are not immediately equipped.</strong> The collection system means the first copy adds permanent progress, and later copies improve both the item and its completed collection value.</li>
+          <li><strong>End a run with information.</strong> If a route failed, check whether the missing piece was survival, damage, encounter pacing, or AP efficiency. Each answer points to a different next goal.</li>
+        </ol>
+      </section>
+
+      <footer class="design-footer">
+        <div>
+          <span class="section-kicker">Version 1.0 is available now</span>
+          <h2>Start your own loop on iPhone or iPad</h2>
+          <p>Infinite Loot-Loop is free on the App Store and requires iOS 15.0 or later. Android release information will be added when its store listing is live.</p>
+        </div>
+        <a class="store-button is-live" data-store-platform="ios" href="https://apps.apple.com/us/app/infinite-loot-loop/id6790783620" target="_blank" rel="noopener noreferrer" aria-label="Download Infinite Loot-Loop on the App Store (opens in a new tab)">
+          <span class="store-icon" aria-hidden="true">iOS</span>
+          <span class="store-copy"><small>Available now</small><strong>Download on the App Store</strong></span>
+          <span class="store-arrow" aria-hidden="true">&#8599;</span>
+        </a>
+      </footer>
+
+      <div class="editorial-links" aria-label="Continue reading">
+        <a href="guide.html"><strong>Beginner field guide</strong><span>Apply the systems in your first run &#8594;</span></a>
+        <a href="maps.html"><strong>World atlas</strong><span>Plan routes and boss connections &#8594;</span></a>
+        <a href="game-data.html"><strong>Data methodology</strong><span>See how the official catalogs are produced &#8594;</span></a>
+      </div>
+    </article>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="../../assets/js/i18n.js?v=3"></script>
+  <script src="../../assets/js/app.js?v=44"></script>
+</body>
+</html>

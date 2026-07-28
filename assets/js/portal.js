@@ -103,6 +103,8 @@
     var gamePath = esc(featured.path);
     var guidePath = esc(featured.path.replace(/index\.html$/, "guide.html"));
     var patchPath = esc(featured.path.replace(/index\.html$/, "patch.html"));
+    var designPath = esc(featured.path.replace(/index\.html$/, "design-notes.html"));
+    var iosStore = featured.storeLinks && featured.storeLinks.ios ? esc(featured.storeLinks.ios) : "";
 
     portal.innerHTML =
       '<header class="portal-nav"><a class="portal-brand" href="index.html"><span>TW</span><strong>Tony Works</strong></a>' +
@@ -110,20 +112,22 @@
       '<section class="portal-hero" id="game"><div class="portal-hero-copy"><span class="portal-kicker">Independent game studio</span>' +
         '<h1>Small worlds.<br><span>Long adventures.</span></h1>' +
         '<p>Tony Works creates focused games with deep progression, approachable systems, and player-friendly companion tools.</p>' +
-        '<div class="portal-actions"><a class="portal-primary" data-portal-action="game" href="' + gamePath + '">Explore Infinite Loot-Loop <span aria-hidden="true">&#8594;</span></a>' +
-          '<a class="portal-secondary" data-portal-action="guide" href="' + guidePath + '">Read the beginner guide</a></div>' +
-        '<div class="portal-platforms"><span><i aria-hidden="true"></i> In development</span><span>iOS</span><span>Android</span></div></div>' +
+        '<div class="portal-actions">' +
+          (iosStore ? '<a class="portal-primary" data-portal-action="app_store" href="' + iosStore + '" target="_blank" rel="noopener noreferrer">Download on the App Store <span aria-hidden="true">&#8599;</span></a>' : '') +
+          '<a class="portal-secondary" data-portal-action="game" href="' + gamePath + '">Explore the official wiki</a></div>' +
+        '<div class="portal-platforms"><span><i aria-hidden="true"></i> Released on iOS</span><span>Free</span><span>Android coming soon</span></div></div>' +
         '<a class="featured-game" data-portal-action="featured_game" href="' + gamePath + '" style="--tile-accent:' + esc(featured.accent || "#7c9cff") + '">' +
           '<div class="featured-game-art"><span class="featured-badge">Featured game</span></div><div class="featured-game-info">' + tileIcon(featured) +
           '<div><span class="featured-label">Mobile roguelike RPG</span><h2>' + esc(featured.name) + '</h2><p>' + esc(featured.tagline || "") + '</p></div>' +
           '<span class="featured-go" aria-hidden="true">&#8594;</span></div></a></section>' +
       '<section class="portal-strip" aria-label="Tony Works highlights"><div><strong>Unity</strong><span>Built for mobile</span></div>' +
-        '<div><strong>11</strong><span>Supported languages</span></div><div><strong>Live</strong><span>Data-backed wiki</span></div></section>' +
+        '<div><strong>11</strong><span>Supported languages</span></div><div><strong>iOS</strong><span>Version 1.0 available now</span></div></section>' +
       '<section class="portal-discover" aria-labelledby="discover-title"><div class="portal-section-head"><span class="portal-kicker">More than a landing page</span>' +
         '<h2 id="discover-title">Everything for your next run</h2><p>The official companion wiki stays connected to the game data, so planning a build never becomes guesswork.</p></div>' +
         '<div class="portal-link-grid"><a href="' + gamePath + '"><span class="portal-link-num">01</span><span><strong>Explore the wiki</strong><small>Monsters, bosses, items, maps and characters</small></span><span aria-hidden="true">&#8594;</span></a>' +
           '<a href="' + guidePath + '"><span class="portal-link-num">02</span><span><strong>Learn the loop</strong><small>A friendly guide from first battle to Hard Mode</small></span><span aria-hidden="true">&#8594;</span></a>' +
-          '<a href="' + patchPath + '"><span class="portal-link-num">03</span><span><strong>Follow development</strong><small>New content, balance changes and fixes</small></span><span aria-hidden="true">&#8594;</span></a></div></section>' +
+          '<a href="' + designPath + '"><span class="portal-link-num">03</span><span><strong>Read the design notes</strong><small>How AP, permanent progress and balance simulations work</small></span><span aria-hidden="true">&#8594;</span></a>' +
+          '<a href="' + patchPath + '"><span class="portal-link-num">04</span><span><strong>Follow development</strong><small>New content, balance changes and fixes</small></span><span aria-hidden="true">&#8594;</span></a></div></section>' +
       renderWebsiteShowcase(apps) +
       '<section class="portal-contact"><div><span class="portal-kicker">Tony Works</span><h2>Projects made with care—and supported after launch.</h2></div>' +
         '<a data-portal-action="contact" href="mailto:tonyzorz@naver.com">Get in touch &#8594;</a></section>';

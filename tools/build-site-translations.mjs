@@ -7,6 +7,7 @@ const outputDir = path.join(root, "assets", "i18n", "site-content");
 const pages = [
   "index.html", "about.html", "privacy-policy.html", "terms.html", "deletion.html",
   "apps/infinite-loot-loop/index.html", "apps/infinite-loot-loop/guide.html",
+  "apps/infinite-loot-loop/design-notes.html",
   "apps/infinite-loot-loop/game-data.html", "apps/infinite-loot-loop/faq.html",
   "apps/infinite-loot-loop/patch.html", "apps/infinite-loot-loop/monsters.html",
   "apps/infinite-loot-loop/bosses.html", "apps/infinite-loot-loop/items.html",
@@ -25,7 +26,19 @@ const glossaryOverrides = {
 const localeOrder = ["ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR", "ru", "id"];
 const extraStrings = [
   "This page is available in your language. Game-specific names are synchronized with the current localization files.",
-  "This translation is provided for convenience. If it differs from the English version, the English version controls."
+  "This translation is provided for convenience. If it differs from the English version, the English version controls.",
+  "Design Notes",
+  "See how the AP economy and progression are balanced",
+  "Available on iOS",
+  "Release updates",
+  "Google Play",
+  "iOS available now · Android coming soon",
+  "Released on iOS",
+  "Free",
+  "Android coming soon",
+  "Version 1.0 available now",
+  "How AP, permanent progress and balance simulations work",
+  "Explore the official wiki"
 ];
 
 function decodeEntities(value) {
