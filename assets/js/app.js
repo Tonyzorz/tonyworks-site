@@ -301,6 +301,7 @@
         '<a href="/privacy-policy.html">Privacy</a> &#183; <a href="/terms.html">Terms</a> &#183; ' +
         '<a href="https://www.tiktok.com/@tonyworks95?lang=en" target="_blank" rel="noopener noreferrer">TikTok</a> &#183; ' +
         '<a href="https://www.instagram.com/tonytworks" target="_blank" rel="noopener noreferrer">Instagram</a> &#183; ' +
+        '<a href="https://www.youtube.com/@tonytworks" target="_blank" rel="noopener noreferrer">YouTube</a> &#183; ' +
         '<a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>';
     }
   }
