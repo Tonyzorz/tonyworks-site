@@ -220,7 +220,7 @@
   var scriptUrl = document.currentScript && document.currentScript.src ? document.currentScript.src : window.location.href;
   var dataBase = new URL("../../apps/infinite-loot-loop/data/localization/", scriptUrl).href;
   var siteContentBase = new URL("../i18n/site-content/", scriptUrl).href;
-  var localizationVersion = "3";
+  var localizationVersion = "4";
   var ready = code === "en" ? Promise.resolve() : Promise.all([
     fetchJSON(dataBase + "en.json?v=" + localizationVersion), fetchJSON(dataBase + "en_content.json?v=" + localizationVersion),
     fetchJSON(dataBase + code + ".json?v=" + localizationVersion), fetchJSON(dataBase + code + "_content.json?v=" + localizationVersion),

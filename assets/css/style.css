@@ -190,6 +190,15 @@ body[data-page="achievements"] { --page-accent:#f3b95f; }
   color:#c8ceda; background:rgba(255,255,255,.08); font-size:.62rem; font-weight:800; text-transform:uppercase; letter-spacing:.05em;
 }
 .static-store-link { display:inline-flex; align-items:center; justify-content:center; min-height:44px; margin-top:.45rem; padding:.62rem .9rem; border-radius:10px; font-size:.86rem; font-weight:800; }
+.social-follow { display:flex; flex-wrap:wrap; align-items:center; gap:.55rem .7rem; margin-top:1rem; }
+.social-follow-label { color:var(--muted); font-size:.68rem; font-weight:850; text-transform:uppercase; letter-spacing:.1em; }
+.social-follow-links { display:flex; flex-wrap:wrap; gap:.45rem; }
+.social-link { --social:var(--accent); display:inline-flex; align-items:center; justify-content:center; gap:.35rem; min-height:38px; padding:.48rem .72rem; color:var(--text); background:color-mix(in srgb,var(--social) 11%,var(--panel)); border:1px solid color-mix(in srgb,var(--social) 62%,var(--border)); border-radius:999px; font-size:.76rem; font-weight:850; transition:.15s ease; }
+.social-link:hover { color:var(--text); background:color-mix(in srgb,var(--social) 19%,var(--panel)); box-shadow:0 7px 20px color-mix(in srgb,var(--social) 14%,transparent); transform:translateY(-2px); text-decoration:none; }
+.social-link--tiktok { --social:#25d9d2; }
+.social-link--instagram { --social:#d65ca9; }
+.social-link--youtube { --social:#ff3d52; }
+.social-follow--portal { margin-top:.8rem; }
 .release-banner { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin:0 0 1.35rem; padding:.85rem 1rem; background:color-mix(in srgb,var(--good) 8%,var(--panel)); border:1px solid color-mix(in srgb,var(--good) 40%,var(--border)); border-radius:12px; }
 .release-banner > div { display:flex; align-items:center; gap:.7rem; }
 .release-banner small,.release-banner strong { display:block; }
@@ -671,6 +680,9 @@ body[data-page="portal"] .wrap { padding-top:0; }
   .game-hero .hero-copy { width:100%; padding:1.35rem .9rem; }
   .store-buttons { grid-template-columns:1fr; max-width:340px; margin:0 auto; }
   .store-button { min-height:64px; }
+  .social-follow { align-items:flex-start; flex-direction:column; }
+  .social-follow-links { width:100%; }
+  .social-link { flex:1 1 90px; }
   .starter-panel { grid-template-columns:1fr; }
   .starter-intro { text-align:center; }
   .starter-steps { grid-template-columns:1fr; }

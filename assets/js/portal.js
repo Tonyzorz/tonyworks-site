@@ -115,6 +115,10 @@
         '<div class="portal-actions">' +
           (iosStore ? '<a class="portal-primary" data-portal-action="app_store" href="' + iosStore + '" target="_blank" rel="noopener noreferrer">Download on the App Store <span aria-hidden="true">&#8599;</span></a>' : '') +
           '<a class="portal-secondary" data-portal-action="game" href="' + gamePath + '">Explore the official wiki</a></div>' +
+        '<div class="social-follow social-follow--portal" aria-label="Follow Tony Works"><span class="social-follow-label">Follow Tony Works</span>' +
+          '<div class="social-follow-links"><a class="social-link social-link--tiktok" data-portal-action="tiktok" href="https://www.tiktok.com/@tonyworks95?lang=en" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">&#8599;</span></a>' +
+          '<a class="social-link social-link--instagram" data-portal-action="instagram" href="https://www.instagram.com/tonytworks" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">&#8599;</span></a>' +
+          '<a class="social-link social-link--youtube" data-portal-action="youtube" href="https://www.youtube.com/@tonytworks" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">&#8599;</span></a></div></div>' +
         '<div class="portal-platforms"><span><i aria-hidden="true"></i> Released on iOS</span><span>Free</span><span>Android coming soon</span></div></div>' +
         '<a class="featured-game" data-portal-action="featured_game" href="' + gamePath + '" style="--tile-accent:' + esc(featured.accent || "#7c9cff") + '">' +
           '<div class="featured-game-art"><span class="featured-badge">Featured game</span></div><div class="featured-game-info">' + tileIcon(featured) +
