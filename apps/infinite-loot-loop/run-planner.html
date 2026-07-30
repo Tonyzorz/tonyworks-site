@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NMFFW9TKW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3NMFFW9TKW');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#0e0f13">
+  <link rel="icon" href="/apps/infinite-loot-loop/assets/img/app_icon.png">
+  <title>Adventure Point Run Planner &#8212; Infinite Loot-Loop</title>
+  <meta name="description" content="Plan an Infinite Loot-Loop expedition with the official Adventure Point calculator, worked examples, risk buffers, and Normal or Hard Mode strategy.">
+  <link rel="canonical" href="https://tonyworks.co.kr/apps/infinite-loot-loop/run-planner.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Tony Works">
+  <meta property="og:title" content="Adventure Point Run Planner">
+  <meta property="og:description" content="Calculate the AP cost of regular victories, boss wins, defeats, and retreats before committing to a route.">
+  <meta property="og:image" content="https://tonyworks.co.kr/apps/infinite-loot-loop/assets/img/map_Grassland_Map.png">
+  <meta property="og:image:alt" content="The Grassland map from Infinite Loot-Loop">
+  <meta property="og:url" content="https://tonyworks.co.kr/apps/infinite-loot-loop/run-planner.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adventure Point Run Planner">
+  <meta name="twitter:description" content="Build an AP budget for an Infinite Loot-Loop expedition.">
+  <meta name="twitter:image" content="https://tonyworks.co.kr/apps/infinite-loot-loop/assets/img/map_Grassland_Map.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Adventure Point Run Planner",
+    "description": "An interactive Adventure Point calculator and strategy guide for Infinite Loot-Loop.",
+    "datePublished": "2026-07-30",
+    "dateModified": "2026-07-30",
+    "author": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/about.html" },
+    "publisher": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/" },
+    "image": "https://tonyworks.co.kr/apps/infinite-loot-loop/assets/img/map_Grassland_Map.png",
+    "mainEntityOfPage": "https://tonyworks.co.kr/apps/infinite-loot-loop/run-planner.html",
+    "about": { "@type": "VideoGame", "name": "Infinite Loot-Loop" }
+  }
+  </script>
+  <script>try{var s=localStorage.getItem('tw-theme');var t=s||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <link rel="stylesheet" href="../../assets/css/style.css?v=45">
+</head>
+<body data-page="run-planner">
+  <header class="site-header" id="site-header"></header>
+  <main class="wrap">
+    <section class="planner-hero">
+      <div>
+        <span class="info-kicker">Official strategy tool</span>
+        <h1>Adventure Point run planner</h1>
+        <p>Turn a possible route into an AP budget before you spend the run. Compare regular victories, boss recovery, and the cost of a setback in Normal or Hard Mode.</p>
+      </div>
+      <div class="planner-hero-rule" aria-label="Adventure Point summary">
+        <span><strong>30 AP</strong>Standard starting budget</span>
+        <span><strong>&minus;1 AP</strong>Regular victory</span>
+        <span><strong>+3 AP</strong>Boss victory</span>
+        <span><strong>&minus;4 / &minus;6 AP</strong>Defeat or retreat</span>
+      </div>
+    </section>
+
+    <div class="article-meta" aria-label="Article information">
+      <span>Built and reviewed by Tony Works</span>
+      <span>Updated 30 July 2026</span>
+      <span>Rules match version 1.0</span>
+    </div>
+
+    <article class="prose design-article planner-article">
+      <p class="article-lede">This planner uses the same player-facing Adventure Point rules described in the game and the official field guide. It does not predict combat outcomes or item drops. Its job is narrower: show whether the encounters you intend to take leave a useful AP margin, and make the cost of one defeat visible before it happens.</p>
+
+      <section aria-labelledby="planner-tool-title">
+        <span class="section-kicker">Interactive calculator</span>
+        <h2 id="planner-tool-title">Build the AP budget</h2>
+        <p>Enter the fights you expect to complete before the next checkpoint. A positive balance means the plan fits inside the stated AP budget. A balance of zero or less means the planned sequence would end the run unless another boss victory or a shorter route changes the total.</p>
+
+        <div class="run-planner" id="runPlanner">
+          <form class="planner-form" id="runPlannerForm">
+            <label>
+              <span>Starting AP</span>
+              <input id="plannerStart" name="starting-ap" type="number" min="1" max="999" step="1" value="30" inputmode="numeric">
+            </label>
+            <label>
+              <span>Game mode</span>
+              <select id="plannerMode" name="game-mode">
+                <option value="normal">Normal Mode</option>
+                <option value="hard">Hard Mode</option>
+              </select>
+            </label>
+            <label>
+              <span>Regular victories</span>
+              <input id="plannerWins" name="regular-victories" type="number" min="0" max="999" step="1" value="14" inputmode="numeric">
+              <small>Each costs 1 AP.</small>
+            </label>
+            <label>
+              <span>Boss victories</span>
+              <input id="plannerBosses" name="boss-victories" type="number" min="0" max="999" step="1" value="2" inputmode="numeric">
+              <small>Each restores 3 AP.</small>
+            </label>
+            <label>
+              <span>Defeats or retreats</span>
+              <input id="plannerSetbacks" name="defeats-or-retreats" type="number" min="0" max="999" step="1" value="0" inputmode="numeric">
+              <small>Each costs 4 AP in Normal or 6 AP in Hard.</small>
+            </label>
+            <button class="planner-reset" id="plannerReset" type="button">Reset example</button>
+          </form>
+
+          <div class="planner-result" aria-live="polite" aria-atomic="true">
+            <span class="planner-result-label">Projected AP balance</span>
+            <strong id="plannerBalance">22</strong>
+            <p class="planner-state planner-state--safe" id="plannerSafeState">The plan finishes with AP to spare.</p>
+            <p class="planner-state planner-state--danger" id="plannerDangerState" hidden>The plan reaches zero AP before all planned encounters.</p>
+            <dl class="planner-breakdown">
+              <div><dt>Regular battle cost</dt><dd id="plannerWinCost">&minus;14 AP</dd></div>
+              <div><dt>Boss recovery</dt><dd id="plannerBossGain">+6 AP</dd></div>
+              <div><dt>Setback cost</dt><dd id="plannerSetbackCost">0 AP</dd></div>
+            </dl>
+          </div>
+        </div>
+        <noscript><p class="design-callout">JavaScript is required for the calculator. The complete AP formula and worked examples remain available below.</p></noscript>
+      </section>
+
+      <section aria-labelledby="planner-formula">
+        <span class="section-kicker">The exact rule</span>
+        <h2 id="planner-formula">How the calculation works</h2>
+        <p>Start with the AP currently shown in the game. Subtract one point for every regular victory. Add three for each boss victory. Finally, subtract four points for every defeat or retreat in Normal Mode, or six points for every defeat or retreat in Hard Mode.</p>
+        <div class="planner-formula" aria-label="Adventure Point formula">
+          <strong>AP balance = starting AP &minus; regular victories + (boss victories &times; 3) &minus; (setbacks &times; mode penalty)</strong>
+        </div>
+        <p>The result is a planning margin, not a promise. Movement raises the encounter gauge, so the exact number of battles on a route can change. A surprise encounter can add another one-point win or a much larger defeat cost. The calculator is most useful when the plan includes a deliberate buffer instead of spending down to exactly zero.</p>
+      </section>
+
+      <section aria-labelledby="planner-examples">
+        <span class="section-kicker">Worked routes</span>
+        <h2 id="planner-examples">Four examples that show where a run changes</h2>
+        <div class="scenario-grid">
+          <section>
+            <h3>Controlled early route</h3>
+            <p><strong>14 regular wins, 2 bosses, no setbacks</strong></p>
+            <p>The balance is 22 AP: 30 &minus; 14 + 6. The route creates progress and still leaves room for farming, a longer connection, or one failed fight. The useful lesson is not that 22 is always ideal; it is that the next choice can be made without immediate AP pressure.</p>
+          </section>
+          <section>
+            <h3>One Normal Mode mistake</h3>
+            <p><strong>20 regular wins, 3 bosses, 1 setback</strong></p>
+            <p>The balance is 15 AP: 30 &minus; 20 + 9 &minus; 4. A single defeat costs as much as four successful field battles. If those four battles were optional farming, avoiding the bad matchup would preserve the same AP while also protecting the run's momentum.</p>
+          </section>
+          <section>
+            <h3>The same shape in Hard Mode</h3>
+            <p><strong>18 regular wins, 2 bosses, 1 setback</strong></p>
+            <p>The balance is 12 AP: 30 &minus; 18 + 6 &minus; 6. Hard Mode turns one mistake into six ordinary victories of AP cost. A route that is comfortable in Normal Mode may therefore need stronger equipment, fewer optional encounters, or a larger reserve before the boss.</p>
+          </section>
+          <section>
+            <h3>A plan that cannot finish</h3>
+            <p><strong>28 regular wins, 1 boss, 2 Normal setbacks</strong></p>
+            <p>The balance is &minus;3 AP: 30 &minus; 28 + 3 &minus; 8. The run reaches zero before every planned encounter occurs. The correct response is to change the plan: remove low-value fights, reach another boss earlier, or reduce the chance of a setback by upgrading first.</p>
+          </section>
+        </div>
+      </section>
+
+      <section aria-labelledby="planner-buffer">
+        <span class="section-kicker">Risk management</span>
+        <h2 id="planner-buffer">Reserve AP for the fight that does not go as expected</h2>
+        <p>A route with exactly one AP left is mathematically possible and strategically fragile. The encounter gauge can fill before the desired destination. A recently unlocked enemy can be stronger than its neighbors. A boss attempt may begin before the build has enough damage or survival. Every one of those cases can turn a clean spreadsheet into a lost expedition.</p>
+        <p>A practical buffer is at least one full setback at the current difficulty: 4 AP in Normal Mode or 6 AP in Hard Mode. This is not a hidden game requirement. It is a way to compare routes consistently. If two paths offer similar rewards, the path that keeps the setback buffer usually gives more room to react. If a route spends that buffer, the expected reward should be specific enough to justify the risk.</p>
+        <aside class="design-callout">
+          <strong>Ask one question before farming</strong>
+          <p>What will the next fight change? Useful answers include reaching a level threshold, buying a known shop item, completing a set, collecting a missing first copy, or making the next boss safe. If the answer is only that the enemy is available, continuing toward the objective may be more AP-efficient.</p>
+        </aside>
+      </section>
+
+      <section aria-labelledby="planner-bosses">
+        <span class="section-kicker">Boss timing</span>
+        <h2 id="planner-bosses">Treat +3 AP as recovery, not permission to ignore preparation</h2>
+        <p>A boss victory is the only encounter in the core loop that increases the AP total. That makes bosses both progression gates and sources of fuel. Reaching a beatable boss early can extend a run; forcing a low-probability attempt can erase the value of several ordinary victories.</p>
+        <p>Before adding a boss to the calculator, open the <a href="bosses.html">boss archive</a> and compare its current mode, location, and drops with the build. Then use the <a href="items.html">item library</a> to check whether a nearby equipment upgrade changes the matchup. The extra farming is worth its AP only when it raises the chance of earning the boss recovery more than it exposes the run to another avoidable setback.</p>
+        <p>After a boss victory, recalculate. The next region may have a different encounter density, a stronger enemy floor, or a shop tier that changes the best use of the remaining AP. A run plan should be a sequence of short decisions, not one prediction made at the first map.</p>
+      </section>
+
+      <section aria-labelledby="planner-limits">
+        <span class="section-kicker">What the tool does not predict</span>
+        <h2 id="planner-limits">Use the planner with the catalog, not in place of it</h2>
+        <ul class="planner-limit-list">
+          <li><strong>Combat probability:</strong> the tool does not compare attack, defense, health, levels, or character multipliers.</li>
+          <li><strong>Encounter timing:</strong> movement and the encounter gauge determine when field battles occur; a map is not a fixed list of fights.</li>
+          <li><strong>Drop luck:</strong> an item chance is not a guaranteed number of attempts, and duplicate falloff changes the value of repeated farming.</li>
+          <li><strong>Route requirements:</strong> connected maps and defeated-boss gates still decide where the character can travel.</li>
+          <li><strong>Future balance updates:</strong> if the in-game AP rules change, the current build takes priority over this page until the planner is reviewed.</li>
+        </ul>
+        <p>For those questions, continue with the <a href="maps.html">world atlas</a>, <a href="monsters.html">monster catalog</a>, <a href="characters.html">character roster</a>, and <a href="patch.html">release notes</a>. The <a href="game-data.html">data methodology</a> explains how those pages are exported and checked.</p>
+      </section>
+
+      <section aria-labelledby="planner-checklist">
+        <span class="section-kicker">Before moving</span>
+        <h2 id="planner-checklist">A five-step run check</h2>
+        <ol class="design-decisions">
+          <li><strong>Name the next required result.</strong> Choose a boss, level, shop purchase, equipment piece, or route connection.</li>
+          <li><strong>Count only purposeful encounters.</strong> Add the regular fights likely to improve the chance of reaching that result.</li>
+          <li><strong>Include at least one setback.</strong> Use 4 AP in Normal Mode or 6 AP in Hard Mode when judging whether the route has breathing room.</li>
+          <li><strong>Verify the boss before counting its recovery.</strong> A projected +3 AP matters only if the current build can earn it reliably.</li>
+          <li><strong>Replan at every checkpoint.</strong> New drops, levels, map access, and remaining AP can all change the best next action.</li>
+        </ol>
+      </section>
+
+      <div class="editorial-links" aria-label="Continue planning">
+        <a href="guide.html"><strong>Field guide</strong><span>Learn every core system in one place &#8594;</span></a>
+        <a href="maps.html"><strong>World atlas</strong><span>Choose the route to budget &#8594;</span></a>
+        <a href="design-notes.html"><strong>Developer design notes</strong><span>See why the AP economy uses these values &#8594;</span></a>
+      </div>
+    </article>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="../../assets/js/i18n.js?v=4"></script>
+  <script src="../../assets/js/app.js?v=47"></script>
+  <script src="../../assets/js/run-planner.js?v=1"></script>
+</body>
+</html>

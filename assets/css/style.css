@@ -1146,6 +1146,49 @@ body[data-page="portal"] .wrap { padding-top:0; }
 .design-footer p { margin:0; color:var(--muted); }
 .design-footer .store-button { width:100%; }
 
+/* ---- Adventure Point run planner ---- */
+.planner-hero {
+  display:grid; grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr); align-items:center;
+  gap:clamp(1.2rem,4vw,3rem); margin:.25rem 0 1rem; padding:clamp(1.4rem,4vw,2.5rem);
+  background:linear-gradient(125deg,var(--panel),var(--panel-2)); border:1px solid var(--border);
+  border-radius:calc(var(--radius) + 6px); box-shadow:var(--shadow);
+}
+.planner-hero h1 { max-width:720px; margin:.35rem 0 .7rem; font-size:clamp(2.2rem,6vw,4.2rem); line-height:1; letter-spacing:-.04em; }
+.planner-hero > div > p { max-width:680px; margin:0; color:var(--muted); font-size:clamp(1rem,2vw,1.15rem); line-height:1.65; }
+.planner-hero-rule { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.65rem; }
+.planner-hero-rule span { min-width:0; padding:1rem; color:var(--muted); background:var(--bg-2); border:1px solid var(--border); border-radius:12px; font-size:.76rem; line-height:1.45; }
+.planner-hero-rule strong { display:block; margin-bottom:.3rem; color:var(--text); font-size:1.15rem; }
+.run-planner { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(270px,.85fr); gap:1rem; margin:1.25rem 0 1rem; }
+.planner-form,.planner-result { padding:1.15rem; background:var(--panel); border:1px solid var(--border); border-radius:14px; }
+.planner-form { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.9rem; }
+.planner-form label { display:flex; flex-direction:column; gap:.38rem; min-width:0; color:var(--text); font-size:.84rem; font-weight:750; }
+.planner-form label:nth-of-type(n+3) { grid-column:span 2; }
+.planner-form input,.planner-form select {
+  width:100%; min-height:44px; padding:.65rem .72rem; color:var(--text); background:var(--bg-2);
+  border:1px solid var(--border); border-radius:9px; font:inherit; font-weight:650;
+}
+.planner-form input:focus,.planner-form select:focus { outline:2px solid var(--accent); outline-offset:2px; }
+.planner-form small { color:var(--muted); font-size:.72rem; font-weight:400; }
+.planner-reset { justify-self:start; padding:.62rem .85rem; color:var(--accent); background:transparent; border:1px solid var(--accent); border-radius:9px; font:inherit; font-weight:750; cursor:pointer; }
+.planner-reset:hover { color:var(--on-accent); background:var(--accent); }
+.planner-result { display:flex; flex-direction:column; justify-content:center; border-top:4px solid var(--good); }
+.planner-result.is-danger { border-top-color:var(--danger); }
+.planner-result-label { color:var(--muted); font-size:.76rem; font-weight:750; letter-spacing:.04em; text-transform:uppercase; }
+.planner-result > strong { margin:.15rem 0 .35rem; font-size:clamp(3rem,8vw,5.5rem); line-height:1; letter-spacing:-.06em; }
+.planner-state { margin:0 0 .9rem; color:var(--good); font-weight:750; }
+.planner-state--danger { color:var(--danger); }
+.planner-breakdown { display:grid; gap:.4rem; margin:.35rem 0 0; }
+.planner-breakdown div { display:flex; justify-content:space-between; gap:1rem; padding:.48rem 0; border-top:1px solid var(--border); }
+.planner-breakdown dt { color:var(--muted); }
+.planner-breakdown dd { margin:0; color:var(--text); font-weight:750; white-space:nowrap; }
+.planner-formula { margin:1rem 0 1.25rem; padding:1.05rem 1.15rem; overflow-wrap:anywhere; color:var(--text); background:var(--panel); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:12px; line-height:1.65; }
+.scenario-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem; }
+.scenario-grid > section { padding:1rem; background:var(--panel); border:1px solid var(--border); border-radius:12px; }
+.scenario-grid h3 { margin:0 0 .45rem; }
+.scenario-grid p { margin:.35rem 0; color:var(--muted); line-height:1.68; }
+.planner-limit-list { display:grid; gap:.55rem; margin:1rem 0; padding:0; list-style:none; }
+.planner-limit-list li { padding:.8rem .9rem; color:var(--muted); background:var(--panel); border:1px solid var(--border); border-radius:10px; line-height:1.65; }
+
 @media (max-width:760px) {
   .editorial-grid,.editorial-links,.trust-list { grid-template-columns:1fr; }
   .editorial { padding:1.1rem; }
@@ -1155,6 +1198,13 @@ body[data-page="portal"] .wrap { padding-top:0; }
   .design-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .design-footer { grid-template-columns:1fr; }
   .release-banner { align-items:flex-start; flex-direction:column; }
+  .planner-hero,.run-planner { grid-template-columns:1fr; }
+  .planner-hero { padding:1.15rem; }
+  .scenario-grid { grid-template-columns:1fr; }
+}
+@media (max-width:480px) {
+  .planner-hero-rule,.planner-form { grid-template-columns:1fr; }
+  .planner-form label:nth-of-type(n+3) { grid-column:auto; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior:auto; }

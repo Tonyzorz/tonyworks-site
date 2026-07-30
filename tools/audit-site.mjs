@@ -10,6 +10,7 @@ const substantivePages = new Set([
   "about.html",
   "apps/infinite-loot-loop/index.html",
   "apps/infinite-loot-loop/guide.html",
+  "apps/infinite-loot-loop/run-planner.html",
   "apps/infinite-loot-loop/design-notes.html",
   "apps/infinite-loot-loop/game-data.html",
   "apps/infinite-loot-loop/faq.html",
@@ -69,6 +70,9 @@ for (const page of walk(root)) {
     if (words < 150) errors.push(`${rel}: only ${words} static words; expected at least 150 for this site audit`);
     if (rel === "apps/infinite-loot-loop/design-notes.html" && words < 1000) {
       errors.push(`${rel}: only ${words} static words; expected at least 1000 for the first-hand design article`);
+    }
+    if (rel === "apps/infinite-loot-loop/run-planner.html" && words < 1000) {
+      errors.push(`${rel}: only ${words} static words; expected at least 1000 for the interactive strategy article`);
     }
     if (!/<h1\b/i.test(html)) errors.push(`${rel}: missing a static H1`);
     if (!/<link\s+rel=["']canonical["']/i.test(html)) errors.push(`${rel}: missing canonical URL`);

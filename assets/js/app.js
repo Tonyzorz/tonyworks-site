@@ -12,6 +12,7 @@
     { id: "characters",   label: "Characters",  href: "characters.html" },
     { id: "achievements", label: "Achievements",href: "achievements.html" },
     { id: "guide",        label: "Guide",       href: "guide.html" },
+    { id: "run-planner",  label: "Run Planner", href: "run-planner.html" },
     { id: "design-notes", label: "Design Notes",href: "design-notes.html" },
     { id: "game-data",    label: "Data Notes",  href: "game-data.html" },
     { id: "patch",        label: "Patch Notes", href: "patch.html" },

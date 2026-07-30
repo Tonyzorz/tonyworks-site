@@ -11,7 +11,7 @@ The site is a static, data-driven web app hosted on GitHub Pages. Game data is e
 - `assets/img/…` — copied sprites & icons
 - `about.html` — studio, authorship, editorial standards, and contact
 - `apps/infinite-loot-loop/game-data.html` — export and review methodology
-- pages: Maps, Monsters, Bosses, Items, Sets, Characters, Achievements, Guide, Patch Notes, and FAQ
+- pages: Maps, Monsters, Bosses, Items, Sets, Characters, Achievements, Guide, Run Planner, Patch Notes, and FAQ
 
 ## AdSense content safeguards
 

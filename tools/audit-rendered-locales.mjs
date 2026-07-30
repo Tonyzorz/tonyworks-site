@@ -11,6 +11,7 @@ const defaultLanguages = ["ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR
 const defaultPages = [
   "/", "/about.html", "/privacy-policy.html", "/terms.html", "/deletion.html",
   "/apps/infinite-loot-loop/", "/apps/infinite-loot-loop/guide.html",
+  "/apps/infinite-loot-loop/run-planner.html",
   "/apps/infinite-loot-loop/design-notes.html",
   "/apps/infinite-loot-loop/game-data.html", "/apps/infinite-loot-loop/faq.html",
   "/apps/infinite-loot-loop/patch.html", "/apps/infinite-loot-loop/monsters.html",
@@ -35,7 +36,7 @@ function decodeEntities(value) {
 }
 
 function textNodes(html) {
-  const clean = html.replace(/<(script|style|code|pre)\b[\s\S]*?<\/\1>/gi, " <tw-ignore></tw-ignore> ");
+  const clean = html.replace(/<(script|style|code|pre|noscript)\b[\s\S]*?<\/\1>/gi, " <tw-ignore></tw-ignore> ");
   return new Set(clean.split(/<[^>]+>/g).map(value => decodeEntities(value).replace(/\s+/g, " ").trim()).filter(Boolean));
 }
 
@@ -92,6 +93,9 @@ await mapConcurrent(jobs, 4, async (job, index) => {
   if (!new RegExp(`<html[^>]+lang=["']${job.language}["']`, "i").test(html)) errors.push(`${job.language} ${job.page}: incorrect html lang`);
   if (!html.includes('id="languagePicker"')) errors.push(`${job.language} ${job.page}: missing language picker`);
   if (/currently shown in English|detailed article is currently shown in English/i.test(html)) errors.push(`${job.language} ${job.page}: obsolete English-only notice`);
+  if (job.page.endsWith("/run-planner.html") && !/id=["']plannerBalance["'][^>]*>\s*22\s*</i.test(html)) {
+    errors.push(`${job.language} ${job.page}: planner did not calculate the default 22 AP balance`);
+  }
 
   const leaks = Object.entries(dictionary)
     .filter(([source, target]) => source !== target && /[A-Za-z]/.test(source) && nodes.has(source))

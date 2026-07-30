@@ -7,6 +7,7 @@ const outputDir = path.join(root, "assets", "i18n", "site-content");
 const pages = [
   "index.html", "about.html", "privacy-policy.html", "terms.html", "deletion.html",
   "apps/infinite-loot-loop/index.html", "apps/infinite-loot-loop/guide.html",
+  "apps/infinite-loot-loop/run-planner.html",
   "apps/infinite-loot-loop/design-notes.html",
   "apps/infinite-loot-loop/game-data.html", "apps/infinite-loot-loop/faq.html",
   "apps/infinite-loot-loop/patch.html", "apps/infinite-loot-loop/monsters.html",
