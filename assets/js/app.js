@@ -539,10 +539,11 @@
         var hard = tab && tab.mode === "hard";
         var hp = hard && b.hardModeHp ? b.hardModeHp : b.hp;
         var atk = hard && b.hardModeAtk ? b.hardModeAtk : b.atk;
+        var level = hard && b.hardModeLevel ? b.hardModeLevel : b.level;
         var mw = d._mapById[b.mapId] ? d._mapById[b.mapId].world : null;
         return cardShell("bosses.html", b.id, b.image, b.name,
           tierBadge(mw ? [mw] : []) +
-          '<span class="badge">Lv ' + b.level + "</span>" +
+          '<span class="badge">Lv ' + level + "</span>" +
           (hard ? '<span class="badge" style="color:var(--bad)">Hard</span>' : "") +
           '<span class="meta">HP ' + fmt(hp) + " &#183; ATK " + fmt(atk) + "</span>");
       }
@@ -556,6 +557,7 @@
     var mode = forcedMode || selectedGameMode("normal");
     if (mode === "hard" && !hasHard) mode = "normal";
     rememberGameMode(mode, false);
+    var level = mode === "hard" && b.hardModeLevel ? b.hardModeLevel : b.level;
     function stats(mode) {
       var hard = mode === "hard";
       var hp = hard && b.hardModeHp ? b.hardModeHp : b.hp;
@@ -572,7 +574,7 @@
     app.innerHTML = detailHead("bosses.html", "Bosses", bossList(d), b) +
       '<div class="detail">' + portrait(b.image, b.name) +
       "<div><h1>" + esc(b.name) + "</h1>" +
-      '<div class="tags"><span class="pill">Level ' + b.level + "</span>" +
+      '<div class="tags"><span class="pill">Combat Level ' + level + "</span>" +
         (b.mapId ? '<span class="pill">' + (map
           ? '<a href="maps.html?id=' + encodeURIComponent(b.mapId) + '&mode=' + mode + '">' + esc(map.name) + "</a>"
           : esc(b.mapId)) + "</span>" : "") +

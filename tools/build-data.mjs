@@ -199,8 +199,10 @@ const bosses = loadCategory("Bosses").map((a) => {
   const t = a.text; const lv = num(t, "level");
   return {
     id: a.id, name: field(t, "bossName") || a.id, image: copySprite(guidOf(t, "bossSprite"), "boss", a.id),
-    mapId: assetName(guidOf(t, "activeInMap")), level: lv, hp: num(t, "hp"), atk: num(t, "atk"),
-    hardModeHp: num(t, "hardModeHp"), hardModeAtk: num(t, "hardModeAtk"), exp: lv * lv * 10 + lv * 100,
+    mapId: assetName(guidOf(t, "activeInMap")), level: lv, hardModeLevel: num(t, "hardModeLevel"),
+    hp: num(t, "hp"), atk: num(t, "atk"),
+    // BossData.GetLevelBasedEXP is linear: about ten same-level field kills.
+    hardModeHp: num(t, "hardModeHp"), hardModeAtk: num(t, "hardModeAtk"), exp: Math.max(1, lv) * 125,
     resists: resistsOf(t, "resists"), hardModeResists: resistsOf(t, "hardModeResists"),
     dropItemId: assetName(guidOf(t, "dropItem")), dropItemName: itemName(assetName(guidOf(t, "dropItem"))),
     hardModeDropItemId: assetName(guidOf(t, "hardModeDropItem")), bonusDropItemId: assetName(guidOf(t, "bonusDropItem")),
