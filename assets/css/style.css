@@ -316,6 +316,13 @@ body[data-page="achievements"] { --page-accent:#f3b95f; }
 .item-card .body { min-height:132px; padding-right:.78rem; }
 .item-main-stat { display:flex; align-items:baseline; justify-content:space-between; gap:.5rem; margin-top:.5rem; padding:.35rem .45rem; color:var(--muted); background:var(--panel-2); border:1px solid var(--border); border-radius:7px; font-size:.7rem; }
 .item-main-stat strong { color:var(--text); font-size:.9rem; }
+.shop-card .body { display:flex; flex-direction:column; min-width:0; }
+.shop-price { display:flex; align-items:baseline; justify-content:space-between; gap:.55rem; margin-top:.6rem; padding:.45rem .5rem; color:var(--muted); background:color-mix(in srgb,var(--accent-2) 8%,var(--panel-2)); border:1px solid color-mix(in srgb,var(--accent-2) 30%,var(--border)); border-radius:8px; font-size:.72rem; }
+.shop-price strong { min-width:0; color:var(--accent-2); font-size:.9rem; overflow-wrap:anywhere; text-align:right; }
+.shop-card-details { display:flex; justify-content:space-between; gap:.5rem; margin-top:.45rem; color:var(--muted); font-size:.72rem; }
+.shop-card-details span { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.shop-card-details strong { color:var(--text); }
+.shop-card-action { margin-top:auto; padding-top:.7rem; color:var(--accent); font-size:.72rem; font-weight:750; }
 @media (max-width:480px) {
   .item-card .thumb { height:160px; }
   .item-card .thumb img { width:124px; height:124px; }

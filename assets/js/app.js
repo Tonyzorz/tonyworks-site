@@ -7,6 +7,7 @@
     { id: "monsters",     label: "Monsters",    href: "monsters.html" },
     { id: "bosses",       label: "Bosses",      href: "bosses.html" },
     { id: "items",        label: "Items",       href: "items.html" },
+    { id: "shop",         label: "Shop",        href: "shop.html" },
     { id: "sets",         label: "Sets",        href: "sets.html" },
     { id: "maps",         label: "Maps",        href: "maps.html" },
     { id: "characters",   label: "Characters",  href: "characters.html" },
@@ -20,11 +21,12 @@
     { id: "about",        label: "About",       href: "/about.html" }
   ];
 
-  var PRIMARY_NAV = ["home", "guide", "maps", "items", "monsters"];
+  var PRIMARY_NAV = ["home", "guide", "maps", "items", "shop", "monsters"];
   var PAGE_PRESENTATION = {
     monsters:     { icon: "&#128058;", kicker: "Bestiary", accent: "#6fd08c" },
     bosses:       { icon: "&#9760;", kicker: "Boss Archive", accent: "#ff766d" },
     items:        { icon: "&#9876;", kicker: "Loot Library", accent: "#ffcf6b" },
+    shop:         { icon: "&#128176;", kicker: "Merchant Stock", accent: "#f3b95f" },
     sets:         { icon: "&#10022;", kicker: "Build Workshop", accent: "#b994ff" },
     maps:         { icon: "&#128506;", kicker: "World Atlas", accent: "#64b5f6" },
     characters:   { icon: "&#9823;", kicker: "Roster", accent: "#62d9d0" },
@@ -33,7 +35,7 @@
 
   var IMG_BASE = "assets/img/";
   var DATA_URL = "data/data.json";
-  var WIKI_VERSION = "24";
+  var WIKI_VERSION = "25";
 
   // Add the final store listing URLs here when each release is live. Empty URLs
   // intentionally render as "Coming soon" so visitors never hit a broken page.
@@ -346,10 +348,15 @@
   /* ---- Home ---- */
   PAGES.home = function (app, d) {
     var c = d.counts || {};
+    var shopCount = d.items.filter(function (i) {
+      return i.buyPrice > 0 && !i.shopUnavailable && i.shopAreas && i.shopAreas.length > 0 &&
+        (!i.isHardModeItem || i.shopRank === 1);
+    }).length;
     var cards = [
       ["monsters.html", "&#128126;", "Monsters", c.enemies, "Stats, locations and drop tables", "#6fd08c"],
       ["bosses.html", "&#9760;&#65039;", "Bosses", c.bosses, "Normal and Hard Mode rewards", "#ff766d"],
       ["items.html", "&#9876;&#65039;", "Items", c.items, "Gear, effects and rarity", "#ffcf6b"],
+      ["shop.html", "&#128176;", "Shop", shopCount, "Current prices and purchasable gear", "#f3b95f"],
       ["maps.html", "&#128506;&#65039;", "Maps", c.maps, "World connections and routes", "#64b5f6"],
       ["characters.html", "&#129489;", "Characters", c.characters, "Roster and stat multipliers", "#62d9d0"],
       ["guide.html", "&#128214;", "Field Guide", null, "Progression, stats and strategy", "#b994ff"]
@@ -625,6 +632,63 @@
           '<div class="meta"><span style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span> &#183; " + esc(i.type) + "</div>" +
           '<div class="item-main-stat"><span>' + esc(mainLabel) + '</span><strong>' + fmt(mainValue) + '</strong></div>' +
           (eff ? '<div class="meta" style="margin-top:.25rem">' + esc(eff) + "</div>" : "") + "</div></a>";
+      }
+    });
+  };
+
+  /* ---- Shop ---- */
+  PAGES.shop = function (app, d) {
+    var types = ["Weapon", "Armor", "Helmet", "Shoes", "Accessory"];
+    var byArea = {};
+    (d.areas || []).forEach(function (area) { byArea[area.code] = area; });
+    var stock = itemList(d).filter(function (i) {
+      return i.buyPrice > 0 && !i.shopUnavailable && i.shopAreas && i.shopAreas.length > 0 &&
+        (!i.isHardModeItem || i.shopRank === 1);
+    });
+    function areaLabel(code) {
+      return byArea[code] ? byArea[code].name : code;
+    }
+    listView(app, d, {
+      items: stock,
+      page: "shop.html",
+      title: "Shop",
+      subtitle: stock.length + " currently purchasable equipment items",
+      tabs: [
+        { label: "Normal Mode", mode: "normal", test: function (i) { return !i.isHardModeItem; } },
+        { label: "Hard Mode", mode: "hard", test: function (i) { return i.isHardModeItem; } }
+      ],
+      search: function (i) {
+        return i.name + " " + i.id + " " + i.type + " " + (i.shopAreas || []).map(areaLabel).join(" ");
+      },
+      filters: [
+        { key: "type", label: "Equipment", values: types, get: function (i) { return i.type; } },
+        { key: "area", label: "Shop area",
+          options: (d.areas || []).filter(function (a) {
+            return stock.some(function (i) { return i.shopAreas.indexOf(a.code) >= 0; });
+          }).map(function (a) {
+            return { value: a.code, label: a.name + " (" + a.code + ")", group: a.world };
+          }),
+          get: function (i) { return i.shopAreas; } }
+      ],
+      defaultSort: "price-asc",
+      sorts: [
+        { key: "price-asc", label: "Price: Low to high", compare: function (a, b) { return a.buyPrice - b.buyPrice; } },
+        { key: "price-desc", label: "Price: High to low", compare: function (a, b) { return b.buyPrice - a.buyPrice; } },
+        { key: "name-asc", label: "Name: A to Z", compare: function (a, b) { return a.name.localeCompare(b.name); } },
+        { key: "stat-desc", label: "Main stat: High to low", compare: itemStatCompare("primary", -1) }
+      ],
+      card: function (i) {
+        var mainLabel = itemPrimaryLabel(i), mainValue = itemPrimaryStat(i);
+        var firstArea = i.shopAreas.length ? areaLabel(i.shopAreas[0]) : "Current shop";
+        var extraAreas = i.shopAreas.length > 1 ? " +" + (i.shopAreas.length - 1) : "";
+        return '<a class="card rar item-card shop-card" href="items.html?id=' + encodeURIComponent(i.id) + '&mode=' +
+          (i.isHardModeItem ? "hard" : "normal") + '" style="border-top-color:' + rarColor(i.rarity) + '">' +
+          thumb(i.image, i.name) + '<div class="body"><h4>' + esc(i.name) + "</h4>" +
+          '<div class="meta"><span style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span> &#183; " + esc(i.type) + "</div>" +
+          '<div class="shop-price"><span>Buy price</span><strong>' + fmt(i.buyPrice) + ' g</strong></div>' +
+          '<div class="shop-card-details"><span>' + esc(mainLabel) + ' <strong>' + fmt(mainValue) + '</strong></span>' +
+          '<span title="Available in ' + i.shopAreas.length + ' shop areas">' + esc(firstArea) + esc(extraAreas) + '</span></div>' +
+          '<span class="shop-card-action">View equipment details &#8594;</span></div></a>';
       }
     });
   };
