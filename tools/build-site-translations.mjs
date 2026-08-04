@@ -17,14 +17,15 @@ const pages = [
 ];
 const targets = {
   ko: "ko", ja: "ja", "zh-CN": "zh-CN", "zh-TW": "zh-TW", de: "de",
-  fr: "fr", es: "es", "pt-BR": "pt", ru: "ru", id: "id"
+  fr: "fr", es: "es", "pt-BR": "pt", ru: "ru", id: "id",
+  it: "it", pl: "pl", tr: "tr", vi: "vi"
 };
 const glossaryOverrides = {
-  boss: ["보스", "ボス", "首领", "首領", "Boss", "boss", "jefe", "chefe", "босс", "bos"],
-  item: ["아이템", "アイテム", "道具", "道具", "Gegenstand", "objet", "objeto", "item", "предмет", "item"],
-  shop: ["상점", "ショップ", "商店", "商店", "Shop", "boutique", "tienda", "loja", "магазин", "toko"]
+  boss: ["보스", "ボス", "首领", "首領", "Boss", "boss", "jefe", "chefe", "босс", "bos", "boss", "boss", "boss", "trùm"],
+  item: ["아이템", "アイテム", "道具", "道具", "Gegenstand", "objet", "objeto", "item", "предмет", "item", "oggetto", "przedmiot", "eşya", "vật phẩm"],
+  shop: ["상점", "ショップ", "商店", "商店", "Shop", "boutique", "tienda", "loja", "магазин", "toko", "negozio", "sklep", "mağaza", "cửa hàng"]
 };
-const localeOrder = ["ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR", "ru", "id"];
+const localeOrder = ["ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR", "ru", "id", "it", "pl", "tr", "vi"];
 const extraStrings = [
   "This page is available in your language. Game-specific names are synchronized with the current localization files.",
   "This translation is provided for convenience. If it differs from the English version, the English version controls.",
@@ -86,7 +87,10 @@ function extractStrings(html) {
 }
 
 export function sourceStrings() {
-  const strings = new Set(extraStrings);
+  const i18nSource = fs.readFileSync(path.join(root, "assets", "js", "i18n.js"), "utf8");
+  const phraseMatch = i18nSource.match(/var PHRASES = (\{[\s\S]*?\});\s*function canonicalLanguage/);
+  if (!phraseMatch) throw new Error("assets/js/i18n.js: PHRASES dictionary not found");
+  const strings = new Set([...extraStrings, ...Object.keys(JSON.parse(phraseMatch[1]))]);
   for (const page of pages) {
     const html = fs.readFileSync(path.join(root, page), "utf8");
     extractStrings(html).forEach(value => strings.add(value));

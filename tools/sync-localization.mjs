@@ -6,7 +6,7 @@ const siteRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."
 const defaultSource = path.resolve(siteRoot, "..", "Infinite Loot-Loop", "Assets", "Resources", "Localization");
 const source = path.resolve(process.argv[2] || defaultSource);
 const destination = path.join(siteRoot, "apps", "infinite-loot-loop", "data", "localization");
-const languages = ["en", "ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR", "ru", "id"];
+const languages = ["en", "ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR", "ru", "id", "it", "pl", "tr", "vi"];
 const files = languages.flatMap(language => [`${language}.json`, `${language}_content.json`]);
 
 if (!fs.existsSync(source)) {

@@ -125,7 +125,7 @@
           '<div><span class="featured-label">Mobile roguelike RPG</span><h2>' + esc(featured.name) + '</h2><p>' + esc(featured.tagline || "") + '</p></div>' +
           '<span class="featured-go" aria-hidden="true">&#8594;</span></div></a></section>' +
       '<section class="portal-strip" aria-label="Tony Works highlights"><div><strong>Unity</strong><span>Built for mobile</span></div>' +
-        '<div><strong>11</strong><span>Supported languages</span></div><div><strong>iOS</strong><span>Version 1.0 available now</span></div></section>' +
+        '<div><strong>15</strong><span>Supported languages</span></div><div><strong>iOS</strong><span>Version 1.0 available now</span></div></section>' +
       '<section class="portal-discover" aria-labelledby="discover-title"><div class="portal-section-head"><span class="portal-kicker">More than a landing page</span>' +
         '<h2 id="discover-title">Everything for your next run</h2><p>The official companion wiki stays connected to the game data, so planning a build never becomes guesswork.</p></div>' +
         '<div class="portal-link-grid"><a href="' + gamePath + '"><span class="portal-link-num">01</span><span><strong>Explore the wiki</strong><small>Monsters, bosses, items, maps and characters</small></span><span aria-hidden="true">&#8594;</span></a>' +

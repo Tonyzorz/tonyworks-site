@@ -27,7 +27,7 @@ const substantivePages = new Set([
 
 const errors = [];
 const normalize = value => value.split(path.sep).join("/");
-const languages = ["en", "ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR", "ru", "id"];
+const languages = ["en", "ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR", "ru", "id", "it", "pl", "tr", "vi"];
 const localizationDir = path.join(root, "apps", "infinite-loot-loop", "data", "localization");
 const siteContentDir = path.join(root, "assets", "i18n", "site-content");
 
@@ -179,7 +179,7 @@ if (!phraseMatch) {
   try {
     const phrases = JSON.parse(phraseMatch[1]);
     for (const [english, translations] of Object.entries(phrases)) {
-      if (!Array.isArray(translations) || translations.length !== languages.length - 1 || translations.some(value => typeof value !== "string" || !value.trim())) {
+      if (!Array.isArray(translations) || translations.length !== 10 || translations.some(value => typeof value !== "string" || !value.trim())) {
         errors.push(`assets/js/i18n.js: incomplete PHRASES entry for ${english}`);
       }
     }

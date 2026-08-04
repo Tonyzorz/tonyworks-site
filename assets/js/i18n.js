@@ -6,12 +6,13 @@
     ["en", "English"], ["ko", "한국어"], ["ja", "日本語"],
     ["zh-CN", "简体中文"], ["zh-TW", "繁體中文"], ["de", "Deutsch"],
     ["fr", "Français"], ["es", "Español"], ["pt-BR", "Português (Brasil)"],
-    ["ru", "Русский"], ["id", "Bahasa Indonesia"]
+    ["ru", "Русский"], ["id", "Bahasa Indonesia"], ["it", "Italiano"],
+    ["pl", "Polski"], ["tr", "Türkçe"], ["vi", "Tiếng Việt"]
   ];
   var CODES = LANGUAGES.map(function (entry) { return entry[0]; });
   var TRANSLATION_ORDER = CODES.slice(1);
 
-  /* Values follow: ko, ja, zh-CN, zh-TW, de, fr, es, pt-BR, ru, id. */
+  /* Values follow TRANSLATION_ORDER; the complete static dictionaries load below. */
   var PHRASES = {
     "Language": ["언어", "言語", "语言", "語言", "Sprache", "Langue", "Idioma", "Idioma", "Язык", "Bahasa"],
     "Home": ["홈", "ホーム", "首页", "首頁", "Start", "Accueil", "Inicio", "Início", "Главная", "Beranda"],
@@ -220,7 +221,7 @@
   var scriptUrl = document.currentScript && document.currentScript.src ? document.currentScript.src : window.location.href;
   var dataBase = new URL("../../apps/infinite-loot-loop/data/localization/", scriptUrl).href;
   var siteContentBase = new URL("../i18n/site-content/", scriptUrl).href;
-  var localizationVersion = "4";
+  var localizationVersion = "5";
   var ready = code === "en" ? Promise.resolve() : Promise.all([
     fetchJSON(dataBase + "en.json?v=" + localizationVersion), fetchJSON(dataBase + "en_content.json?v=" + localizationVersion),
     fetchJSON(dataBase + code + ".json?v=" + localizationVersion), fetchJSON(dataBase + code + "_content.json?v=" + localizationVersion),

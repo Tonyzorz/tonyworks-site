@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const edge = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe";
 const baseUrl = process.argv[2] || "http://127.0.0.1:8765";
-const defaultLanguages = ["ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR", "ru", "id"];
+const defaultLanguages = ["ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR", "ru", "id", "it", "pl", "tr", "vi"];
 const defaultPages = [
   "/", "/about.html", "/privacy-policy.html", "/terms.html", "/deletion.html",
   "/apps/infinite-loot-loop/", "/apps/infinite-loot-loop/guide.html",
