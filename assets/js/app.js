@@ -35,7 +35,7 @@
 
   var IMG_BASE = "assets/img/";
   var DATA_URL = "data/data.json";
-  var WIKI_VERSION = "25";
+  var WIKI_VERSION = "26";
 
   // Add the final store listing URLs here when each release is live. Empty URLs
   // intentionally render as "Coming soon" so visitors never hit a broken page.
@@ -678,7 +678,10 @@
         { key: "stat-desc", label: "Main stat: High to low", compare: itemStatCompare("primary", -1) }
       ],
       card: function (i) {
-        var mainLabel = itemPrimaryLabel(i), mainValue = itemPrimaryStat(i);
+        var stats = [
+          ["HP", i.bonusHP], ["ATK", i.bonusATK], ["DEF", i.bonusDEF],
+          ["AGI", i.bonusAGI], ["LUC", i.bonusLUC]
+        ].filter(function (stat) { return Number(stat[1]) !== 0; });
         var firstArea = i.shopAreas.length ? areaLabel(i.shopAreas[0]) : "Current shop";
         var extraAreas = i.shopAreas.length > 1 ? " +" + (i.shopAreas.length - 1) : "";
         return '<a class="card rar item-card shop-card" href="items.html?id=' + encodeURIComponent(i.id) + '&mode=' +
@@ -686,31 +689,30 @@
           thumb(i.image, i.name) + '<div class="body"><h4>' + esc(i.name) + "</h4>" +
           '<div class="meta"><span style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span> &#183; " + esc(i.type) + "</div>" +
           '<div class="shop-price"><span>Buy price</span><strong>' + fmt(i.buyPrice) + ' g</strong></div>' +
-          '<div class="shop-card-details"><span>' + esc(mainLabel) + ' <strong>' + fmt(mainValue) + '</strong></span>' +
-          '<span title="Available in ' + i.shopAreas.length + ' shop areas">' + esc(firstArea) + esc(extraAreas) + '</span></div>' +
+          '<div class="shop-stat-grid" aria-label="Full equipment stats">' + stats.map(function (stat) {
+            return '<span><small>' + esc(stat[0]) + '</small><strong>' + fmt(stat[1]) + '</strong></span>';
+          }).join("") + '</div>' +
+          '<div class="shop-card-location"><span>Shop</span> ' + esc(firstArea) + esc(extraAreas) + '</div>' +
           '<span class="shop-card-action">View equipment details &#8594;</span></div></a>';
       }
     });
   };
-  // "Where do I farm this?" — the areas an item can be obtained in, split by how. Each chip
-  // links to that area's map page, which lists its full drop table.
+  // True field-drop locations only. Shop availability lives on the dedicated Shop page so
+  // merchant stock is never presented as an item drop source.
   function itemAreaSection(d, i, mode) {
     var byCode = {}; (d.areas || []).forEach(function (a) { byCode[a.code] = a; });
-    var drops = (i.dropAreas || []), shops = (i.shopAreas || []);
-    if (!drops.length && !shops.length) return "";
-    function chips(codes, tag) {
+    var drops = (i.dropAreas || []);
+    if (!drops.length) return "";
+    function chips(codes) {
       return codes.map(function (c) {
         var a = byCode[c]; if (!a) return "";
-        var label = esc(a.name) + " <small>" + esc(c) + "</small>" + (tag ? " <small>" + tag + "</small>" : "");
+        var label = esc(a.name) + " <small>" + esc(c) + "</small>";
         return '<span class="fx">' + (a.mapId
           ? '<a href="maps.html?id=' + encodeURIComponent(a.mapId) + '&mode=' + mode + '">' + label + "</a>"
           : label) + "</span>";
       }).join("");
     }
-    // Shop-only areas are listed separately so "drops here" stays truthful.
-    var shopOnly = shops.filter(function (c) { return drops.indexOf(c) < 0; });
-    return '<div class="section-title">Where to find it</div><div class="effect-list">' +
-      chips(drops, "") + chips(shopOnly, "shop") + "</div>";
+    return '<div class="section-title">Drop locations</div><div class="effect-list">' + chips(drops) + "</div>";
   }
 
   // Permanent collection bonus by copies owned (1..20), with milestone jumps at 10 (50%) and 20
