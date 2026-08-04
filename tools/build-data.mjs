@@ -95,10 +95,23 @@ function copySprite(guid, prefix, id) {
   if (!src || !fs.existsSync(src)) return "";
   const file = `${prefix}_${safe(id)}.png`;
   const dest = path.join(IMG, file);
-  // Skip if already present so we don't clobber resize-images.ps1 output. Delete
-  // assets/img (or the file) to force a fresh copy, then re-run the resize script.
-  if (!fs.existsSync(dest)) { fs.copyFileSync(src, dest); imagesWritten++; }
+  if (shouldCopyImage(src, dest)) { fs.copyFileSync(src, dest); imagesWritten++; }
   return file;
+}
+
+// Copy when the destination is missing OR the SOURCE IS NEWER than it.
+// ★ It used to be `!fs.existsSync(dest)` alone, to protect resize-images.ps1's downscaled output from
+// being clobbered by a later build. That also meant REPLACED ART NEVER REACHED THE SITE: swapping a
+// boss PNG in the Unity project left the old one published forever, and every build printed
+// "images: 0" while looking like it had worked. Found 2026-08-04 — eleven boss sprites redrawn on
+// Aug 3 were still serving Jul 27 placeholders, three of them byte-identical stand-ins.
+// The mtime test keeps the original protection: resize-images.ps1 rewrites in place, so a processed
+// file is always NEWER than its source and is still skipped. Only genuinely changed art is re-copied
+// (and needs the resize script re-run afterwards, which now only has to touch what changed).
+function shouldCopyImage(src, dest) {
+  if (!fs.existsSync(dest)) return true;
+  try { return fs.statSync(src).mtimeMs > fs.statSync(dest).mtimeMs; }
+  catch { return true; }
 }
 
 const RARITY = ["Common","Uncommon","Rare","Epic","Legendary"];
@@ -287,7 +300,8 @@ function copyMapVisual(id) {
   if (!fs.existsSync(src)) return "";
   const file = "map_" + safe(id) + ".png";
   const dest = path.join(IMG, file);
-  if (!fs.existsSync(dest)) { fs.copyFileSync(src, dest); imagesWritten++; }
+  // Same staleness rule as copySprite — a redrawn map visual must actually reach the site.
+  if (shouldCopyImage(src, dest)) { fs.copyFileSync(src, dest); imagesWritten++; }
   return file;
 }
 // Group each map asset into its player-facing world (for the route graph on the Maps page).
