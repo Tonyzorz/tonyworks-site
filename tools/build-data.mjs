@@ -135,6 +135,8 @@ const items = loadCategory("Items").map((a) => {
     rarity: RARITY[num(t, "rarity")] || "Common", type: ITYPE[num(t, "itemType")] || "Weapon",
     setName: field(t, "setName"), isUnique: bool(t, "isUnique"), shopUnavailable: bool(t, "shopUnavailable"),
     isHardModeItem: bool(t, "isHardModeItem"), isBossItem: bool(t, "isBossItem"),
+    // Carried so shopAreas below can reproduce ShopManager's purchasability rules exactly.
+    shopRank: num(t, "shopRank"), sourceRegion: field(t, "sourceRegion"),
     bonusHP: num(t, "bonusHP"), bonusATK: num(t, "bonusATK"), bonusDEF: num(t, "bonusDEF"), bonusAGI: num(t, "bonusAGI"), bonusLUC: num(t, "bonusLUC"),
     buyPrice: num(t, "buyPrice"), maxCopies: num(t, "maxCopies"), effects: []
   };
@@ -396,6 +398,20 @@ function ensureArea(code) {
   return a;
 }
 const push = (arr, v) => { if (v && arr.indexOf(v) < 0) arr.push(v); };
+// ★ MIRRORS ShopManager.GetCurrentShopItems. `ZoneData.shopItems` is the RAW array, and in HARD mode
+// every zone carries the SAME shared list (main route + all 95 World Gate pieces), so publishing it
+// unfiltered advertised 120 purchasable hard items where the game actually serves 25 — and listed
+// World Gate gear the player has no route to. The client applies four rules before anything reaches
+// the shop; apply the identical four here or the wiki misreports the shop.
+const isUnreleasedRegion = (r) => !!r && /^(JP|GR|ML|HV)/.test(r);
+const isPurchasable = (id) => {
+  const i = itemById.get(id);
+  if (!i) return false;
+  if (i.shopUnavailable || !(i.buyPrice > 0)) return false;
+  if (isUnreleasedRegion(i.sourceRegion)) return false;      // World Gate is locked for this release
+  if (i.isHardModeItem && i.shopRank !== 1) return false;     // hard shop is rank-1 only; rest is drop loot
+  return true;
+};
 for (const z of liveZones) {
   const code = areaCode(z.id);
   if (!code) continue;
@@ -404,7 +420,7 @@ for (const z of liveZones) {
   a.zoneCount++;
   if (z.minEnemyLevel) a.minLevel = a.minLevel ? Math.min(a.minLevel, z.minEnemyLevel) : z.minEnemyLevel;
   if (z.maxEnemyLevel) a.maxLevel = Math.max(a.maxLevel, z.maxEnemyLevel);
-  for (const s of (z.shopItems || [])) push(a.shopItemIds, s);
+  for (const s of (z.shopItems || [])) if (isPurchasable(s)) push(a.shopItemIds, s);
   for (const en of (z.enemies || [])) {
     push(a.enemyIds, en.enemyId);
     const e = enemyById.get(en.enemyId);
