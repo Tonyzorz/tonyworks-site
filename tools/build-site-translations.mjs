@@ -101,7 +101,8 @@ export function sourceStrings() {
 const protectedTerms = [
   "Infinite Loot-Loop", "Infinite Loot Loop", "Tony Works", "Show Me the Saju",
   "Amazon Web Services", "Apple App Store", "Firebase Crashlytics", "Firebase Analytics",
-  "Google Analytics", "Google AdMob", "Google Play", "Game Center", "Android", "Unity", "iOS", "AWS"
+  "Google Analytics", "Google AdMob", "Google User Messaging Platform", "Google Play",
+  "AppLovin MAX", "AppLovin", "Unity Ads", "Game Center", "Android", "Unity", "iOS", "AWS"
 ].sort((a, b) => b.length - a.length);
 
 function protect(source) {
