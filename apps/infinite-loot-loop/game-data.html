@@ -71,6 +71,21 @@
       </div>
 
       <header class="editorial-heading">
+        <span class="section-kicker">Runtime formulas</span>
+        <h2>Some player stats are derived from gameplay code</h2>
+      </header>
+      <div class="editorial-grid">
+        <section>
+          <h3>Current level-power calculation</h3>
+          <p>HP, ATK, and DEF use the logarithmic level-power formula <code>8 &times; ln(1 + level / 100)%</code>. It applies to the complete stat foundation, including equipment and permanent bonuses. Item percentage bonuses also apply to that complete total. AGI and LUC remain outside the level multiplier.</p>
+        </section>
+        <section>
+          <h3>Catalog values versus final battle values</h3>
+          <p>Enemy pages publish their configured values and resistance fields. A player's final battle result also depends on level power, equipment, character and achievement bonuses, crit/combo overflow, armor pierce, weaken, and mode-specific reward rules. The <a href="guide.html#stats">stat guide</a> explains those calculations in player-facing terms.</p>
+        </section>
+      </div>
+
+      <header class="editorial-heading">
         <span class="section-kicker">Review process</span>
         <h2>Automated consistency checks plus human explanation</h2>
       </header>
@@ -113,6 +128,8 @@
 
       <div class="editorial-links">
         <a href="guide.html"><strong>Read the field guide</strong><span>Use the values in a complete gameplay context &#8594;</span></a>
+        <a href="normal-guide.html"><strong>Normal Mode route</strong><span>Follow the five open regions &#8594;</span></a>
+        <a href="hard-mode-guide.html"><strong>Hard Mode route</strong><span>Prepare for the separate progression ladder &#8594;</span></a>
         <a href="patch.html"><strong>Review recent changes</strong><span>See when player-facing behavior changed &#8594;</span></a>
         <a href="/about.html"><strong>About Tony Works</strong><span>Learn who maintains the site and game &#8594;</span></a>
       </div>
@@ -120,6 +137,6 @@
   </main>
   <footer class="footer" id="site-footer"></footer>
   <script src="../../assets/js/i18n.js?v=5"></script>
-  <script src="../../assets/js/app.js?v=50"></script>
+  <script src="../../assets/js/app.js?v=51"></script>
 </body>
 </html>

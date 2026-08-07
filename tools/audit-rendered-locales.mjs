@@ -11,6 +11,7 @@ const defaultLanguages = ["ko", "ja", "zh-CN", "zh-TW", "de", "fr", "es", "pt-BR
 const defaultPages = [
   "/", "/about.html", "/privacy-policy.html", "/terms.html", "/deletion.html",
   "/apps/infinite-loot-loop/", "/apps/infinite-loot-loop/guide.html",
+  "/apps/infinite-loot-loop/normal-guide.html", "/apps/infinite-loot-loop/hard-mode-guide.html",
   "/apps/infinite-loot-loop/run-planner.html",
   "/apps/infinite-loot-loop/design-notes.html",
   "/apps/infinite-loot-loop/game-data.html", "/apps/infinite-loot-loop/faq.html",

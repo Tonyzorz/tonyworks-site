@@ -10,6 +10,8 @@ const substantivePages = new Set([
   "about.html",
   "apps/infinite-loot-loop/index.html",
   "apps/infinite-loot-loop/guide.html",
+  "apps/infinite-loot-loop/normal-guide.html",
+  "apps/infinite-loot-loop/hard-mode-guide.html",
   "apps/infinite-loot-loop/run-planner.html",
   "apps/infinite-loot-loop/design-notes.html",
   "apps/infinite-loot-loop/game-data.html",

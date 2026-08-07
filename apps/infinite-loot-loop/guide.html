@@ -32,7 +32,7 @@
     "@type": "Article",
     "headline": "Infinite Loot-Loop Beginner and Progression Guide",
     "description": "A practical guide to Adventure Points, battles, stats, equipment, routes, bosses, and permanent progression.",
-    "dateModified": "2026-07-18",
+    "dateModified": "2026-08-07",
     "author": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/about.html" },
     "publisher": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/" },
     "mainEntityOfPage": "https://tonyworks.co.kr/apps/infinite-loot-loop/guide.html"
@@ -48,7 +48,7 @@
         <span class="guide-eyebrow">Field manual</span>
         <h1>Your first loop starts here.</h1>
         <p>Learn the systems that matter, make smarter upgrades, and turn every defeat into a stronger next run.</p>
-        <div class="guide-badges"><span>15 focused topics</span><span>Beginner friendly</span><span>Based on live game data</span></div>
+        <div class="guide-badges"><span>15 focused topics</span><span>Beginner friendly</span><span>Reviewed 7 August 2026</span></div>
       </div>
       <div class="guide-goal">
         <span class="guide-goal-label">Your first goal</span>
@@ -106,7 +106,7 @@
         indefinitely. Farming trash costs net AP; boss kills pay you back.</div>
 
       <h2 id="stats">The five stats</h2>
-      <p>Every stat point you allocate (and every piece of gear) feeds one of five stats:</p>
+      <p>Your base stats begin at 100 HP, 10 ATK, 10 DEF, 5 AGI, and 5 LUC. An allocated point gives +5 HP or +1 to any other stat.</p>
       <div class="statgrid">
         <div class="statbox"><div class="k">HP</div><div class="v">Survivability</div></div>
         <div class="statbox"><div class="k">ATK</div><div class="v">Damage dealt</div></div>
@@ -121,6 +121,7 @@
         <li><strong>AGI</strong> &#8212; the tempo stat: raises <strong>crit chance</strong>, <strong>crit damage</strong> (base 1.5&#215;), <strong>combo</strong> chance, and a little <strong>dodge</strong>.</li>
         <li><strong>LUC</strong> &#8212; the fortune stat: raises <strong>drop rate</strong> (a small nudge, up to +0.6%), <strong>dodge</strong>, and <strong>combo</strong>.</li>
       </ul>
+      <div class="callout guide-tip"><strong>Current scaling</strong><span>Full HP, ATK, and DEF gain <code>8 &times; ln(1 + level / 100)%</code> from level power. The calculation includes base, equipment, permanent, achievement, and character stats. Item percentage bonuses also apply to the full total. AGI and LUC do not receive this level multiplier.</span></div>
       <div class="callout guide-note"><strong>Monster counter-stats</strong> Each monster has fixed resistance values that reduce crit, combo, dodge, crit damage, DEF effectiveness, or player ATK. Crit and combo can exceed 100% and overflow into stronger guaranteed tiers; dodge alone is capped at 95%.</div>
 
       <h2 id="combat">Combat mechanics</h2>
@@ -137,6 +138,7 @@
       <ul>
         <li>EXP to reach the next level = <code>currentLevel &times; 150</code>.</li>
         <li>Each level grants <strong>4 stat points</strong> to allocate however you like.</li>
+        <li>Level power raises the complete HP/ATK/DEF foundation logarithmically: about +10.02% at level 250, +18.42% at level 900, and +29.71% at level 4,000.</li>
         <li>Level, EXP, and stat points <strong>persist through a game</strong> (deaths don't reset them) but <strong>reset at game over</strong> (0 AP). Your <strong>gear, expanded slots, and permanent collection bonuses</strong> carry across games &#8212; that's your long-term power.</li>
       </ul>
       <div class="callout guide-tip"><strong>Allocation tip</strong> Lean HP + ATK to clear fights, keep enough AGI/LUC that
@@ -148,14 +150,15 @@
         In Normal mode:</p>
       <ul>
         <li><strong>T0 &#183; Grassland</strong> &#8212; the starter world (~Lv 1&#8211;25).</li>
-        <li><strong>T1 &#183; Forest</strong> &#8212; ~Lv 25&#8211;100.</li>
-        <li><strong>T2 &#183; Volcanic / Lava</strong> &#8212; ~Lv 105&#8211;195.</li>
-        <li><strong>T3 &#183; Desert</strong> &#8212; ~Lv 205&#8211;380.</li>
+        <li><strong>T1 &#183; Forest</strong> &#8212; ~Lv 25&#8211;105.</li>
+        <li><strong>T2 &#183; Volcanic / Lava</strong> &#8212; ~Lv 105&#8211;200.</li>
+        <li><strong>T3 &#183; Desert</strong> &#8212; ~Lv 200&#8211;500.</li>
         <li><strong>T4 &#183; Underwater</strong> &#8212; the deepest currently open Normal route (~Lv 450&#8211;750).</li>
       </ul>
       <p>From Grassland (the hub) you branch <strong>west</strong> into Forest then Volcanic,
         <strong>east</strong> into Desert, and <strong>north &#8212; the docks</strong> into Underwater.
         See the <a href="maps.html">World Map</a> for the full layout.</p>
+      <p>For boss order, region-by-region preparation, and the exact unlock checklist, use the dedicated <a href="normal-guide.html">Normal Mode Guide</a>.</p>
       <div class="callout guide-note"><strong>World Gate preview</strong> The next branch is fully cataloged with 19 maps across Japan, Greek, Military, and Heaven, plus 5 bosses and its extended Normal/Hard progression. The entrance remains sealed in the current hotfix build, so these pages are an upcoming-content preview rather than a claim that the route is playable today.</div>
 
       <h2 id="loot">Loot &amp; drop rates</h2>
@@ -202,7 +205,7 @@
         <strong>Hard &#8220;H&#8221; gear</strong>. The currently open Hard shop is a short curated ladder &#8212; <strong>5 buyable pieces per region, 25 in all</strong>,
         always on sale &#8212; and everything else in the Hard pool is drop-only, so rare drops are the real shortcuts.
         Death costs <strong>6 AP</strong> instead of 4, and some bosses have Hard-exclusive drops. It rewards clean,
-        well-geared play &#8212; so <strong>max your Normal endgame gear first</strong>.</p>
+        well-geared play &#8212; so <strong>max your Normal endgame gear first</strong>. The <a href="hard-mode-guide.html">Hard Mode Guide</a> lists the current field ranges, economy, preparation checklist, and the level 2,900 Aqua Liege checkpoint.</p>
 
       <h2 id="void">Void Hunt (secret)</h2>
       <p>A hidden arena reached from the <strong>top-right of the first Volcanic map</strong>. Inside you re-fight
@@ -229,13 +232,13 @@
 
       <div class="guide-finish">
         <div><span>Ready for the next run?</span><strong>Use the wiki as your field kit.</strong></div>
-        <div class="guide-finish-links"><a href="run-planner.html">Budget the run</a><a href="maps.html">Plan a route</a><a href="items.html">Compare gear</a><a href="faq.html">Read the FAQ</a></div>
+        <div class="guide-finish-links"><a href="normal-guide.html">Normal Guide</a><a href="hard-mode-guide.html">Hard Guide</a><a href="run-planner.html">Budget the run</a><a href="items.html">Compare gear</a></div>
       </div>
     </article>
     </div>
   </main>
   <footer class="footer" id="site-footer"></footer>
   <script src="../../assets/js/i18n.js?v=5"></script>
-  <script src="../../assets/js/app.js?v=50"></script>
+  <script src="../../assets/js/app.js?v=51"></script>
 </body>
 </html>

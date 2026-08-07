@@ -13,6 +13,8 @@
     { id: "characters",   label: "Characters",  href: "characters.html" },
     { id: "achievements", label: "Achievements",href: "achievements.html" },
     { id: "guide",        label: "Guide",       href: "guide.html" },
+    { id: "normal-guide", label: "Normal Guide",href: "normal-guide.html" },
+    { id: "hard-guide",   label: "Hard Guide",  href: "hard-mode-guide.html" },
     { id: "run-planner",  label: "Run Planner", href: "run-planner.html" },
     { id: "design-notes", label: "Design Notes",href: "design-notes.html" },
     { id: "game-data",    label: "Data Notes",  href: "game-data.html" },
@@ -35,7 +37,7 @@
 
   var IMG_BASE = "assets/img/";
   var DATA_URL = "data/data.json";
-  var WIKI_VERSION = "26";
+  var WIKI_VERSION = "27";
 
   // Add the final store listing URLs here when each release is live. Empty URLs
   // intentionally render as "Coming soon" so visitors never hit a broken page.
@@ -361,7 +363,9 @@
       ["shop.html", "&#128176;", "Shop", shopCount, "Current prices and purchasable gear", "#f3b95f"],
       ["maps.html", "&#128506;&#65039;", "Maps", c.maps, "World connections and routes", "#64b5f6"],
       ["characters.html", "&#129489;", "Characters", c.characters, "Roster and stat multipliers", "#62d9d0"],
-      ["guide.html", "&#128214;", "Field Guide", null, "Progression, stats and strategy", "#b994ff"]
+      ["guide.html", "&#128214;", "Field Guide", null, "Systems, stats and strategy", "#b994ff"],
+      ["normal-guide.html", "&#127807;", "Normal Guide", null, "Open route and Hard unlock checklist", "#6fd08c"],
+      ["hard-mode-guide.html", "&#128293;", "Hard Guide", null, "Preparation and Hard progression", "#ff766d"]
     ];
     var resources = [
       ["sets.html", "Equipment Loadouts", "Plan and switch between five saved builds"],
