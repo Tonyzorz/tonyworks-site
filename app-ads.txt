@@ -1,1 +1,2 @@
+ownerdomain=tonyworks.co.kr
 google.com, pub-1837000267504503, DIRECT, f08c47fec0942fa0
