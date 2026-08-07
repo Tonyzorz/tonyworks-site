@@ -1,4 +1,4 @@
-# Downscales exported sprite PNGs to 256px (app_icon to 512px) in place.
+# Downscales exported sprite PNGs to 256px (maps and app_icon to 512px) in place.
 # ASCII-only + $PSScriptRoot so it is safe to run as a file on Windows PowerShell.
 #   powershell -ExecutionPolicy Bypass -File tools\resize-images.ps1
 Add-Type -AssemblyName System.Drawing
@@ -22,8 +22,7 @@ function Resize-Png($path, $max) {
 
 $n = 0
 Get-ChildItem $dir -Filter *.png | ForEach-Object {
-  if ($_.Name -like 'map_*') { return }
-  $max = if ($_.Name -eq 'app_icon.png') { 512 } else { 256 }
+  $max = if ($_.Name -eq 'app_icon.png' -or $_.Name -like 'map_*') { 512 } else { 256 }
   if (Resize-Png $_.FullName $max) { $n++ }
 }
 "Resized $n images"

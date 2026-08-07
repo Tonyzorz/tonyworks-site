@@ -121,13 +121,12 @@
         <li><strong>AGI</strong> &#8212; the tempo stat: raises <strong>crit chance</strong>, <strong>crit damage</strong> (base 1.5&#215;), <strong>combo</strong> chance, and a little <strong>dodge</strong>.</li>
         <li><strong>LUC</strong> &#8212; the fortune stat: raises <strong>drop rate</strong> (a small nudge, up to +0.6%), <strong>dodge</strong>, and <strong>combo</strong>.</li>
       </ul>
-      <div class="callout guide-note"><strong>Level pressure</strong> Crit, dodge, and combo are reduced the further an enemy's level is
-        above yours &#8212; so AGI/LUC that shred early zones taper off in deep worlds. Keep your level up to stay ahead.</div>
+      <div class="callout guide-note"><strong>Monster counter-stats</strong> Each monster has fixed resistance values that reduce crit, combo, dodge, crit damage, DEF effectiveness, or player ATK. Crit and combo can exceed 100% and overflow into stronger guaranteed tiers; dodge alone is capped at 95%.</div>
 
       <h2 id="combat">Combat mechanics</h2>
       <ul>
-        <li><strong>Crit</strong> &#8212; hits can crit for bonus damage (base 1.5&#215; and up), driven by AGI.</li>
-        <li><strong>Combo</strong> &#8212; after a hit you can chain extra hits (up to 15), each rolled independently off AGI + LUC.</li>
+        <li><strong>Crit</strong> &#8212; AGI raises both chance and damage (minimum 1.5&#215;). Chance beyond 100% creates higher critical tiers instead of wasting the excess.</li>
+        <li><strong>Combo</strong> &#8212; AGI + LUC can chain up to 15 extra hits. Chance beyond 100% guarantees additional links before normal continuation rolls.</li>
         <li><strong>Dodge</strong> &#8212; a chance to avoid an enemy's hit entirely, from LUC + AGI.</li>
         <li><strong>Defense</strong> &#8212; flat, uncapped damage reduction; a minimum 15% of every attack still gets through.</li>
         <li><strong>Lifesteal</strong> &#8212; heal a share of damage dealt &#8212; gained <strong>only</strong> from specific accessories that have it (not from any stat).</li>
@@ -152,17 +151,18 @@
         <li><strong>T1 &#183; Forest</strong> &#8212; ~Lv 25&#8211;100.</li>
         <li><strong>T2 &#183; Volcanic / Lava</strong> &#8212; ~Lv 105&#8211;195.</li>
         <li><strong>T3 &#183; Desert</strong> &#8212; ~Lv 205&#8211;380.</li>
-        <li><strong>T4 &#183; Underwater</strong> &#8212; the deepest Normal world (~Lv 400&#8211;560).</li>
+        <li><strong>T4 &#183; Underwater</strong> &#8212; the deepest currently open Normal route (~Lv 450&#8211;750).</li>
       </ul>
       <p>From Grassland (the hub) you branch <strong>west</strong> into Forest then Volcanic,
         <strong>east</strong> into Desert, and <strong>north &#8212; the docks</strong> into Underwater.
         See the <a href="maps.html">World Map</a> for the full layout.</p>
+      <div class="callout guide-note"><strong>World Gate preview</strong> The next branch is fully cataloged with 19 maps across Japan, Greek, Military, and Heaven, plus 5 bosses and its extended Normal/Hard progression. The entrance remains sealed in the current hotfix build, so these pages are an upcoming-content preview rather than a claim that the route is playable today.</div>
 
       <h2 id="loot">Loot &amp; drop rates</h2>
       <ul>
-        <li>Each enemy has a drop table with per-item chances (most are a few percent).</li>
+        <li>Each enemy has one shared drop budget per victory, split among its eligible items rather than giving every item a separate full-strength roll.</li>
         <li><strong>Duplicate falloff:</strong> the more copies of an item you already own, the sharply lower the chance of another &#8212; early copies come fast, then taper off hard.</li>
-        <li><strong>LUC</strong> adds a very small drop-rate bonus, capped at +0.6%. Drop-rate gear, set bonuses, and certain characters stack on top.</li>
+        <li><strong>LUC</strong> adds a very small drop-rate bonus, capped at +0.6%. Drop-rate gear and certain characters stack on top.</li>
         <li><strong>Boss drops</strong> are rare uniques: ~<strong>1%</strong> in Normal, ~<strong>0.75%</strong> in Hard, before bonuses.</li>
       </ul>
 
@@ -170,7 +170,7 @@
       <ul>
         <li>Five equipment slots: <strong>Weapon, Armor, Helmet, Shoes, Accessory</strong> &#8212; browse them by category on the <a href="items.html">Items</a> page.</li>
         <li>Items can be <strong>upgraded up to +10</strong>, raising their stats each level.</li>
-        <li><strong>Sets:</strong> wearing pieces of the same set grants a set bonus (often bonus drop rate) &#8212; see the <a href="sets.html">Sets</a> page or any item's set mates.</li>
+        <li><strong>Set 1&#8211;5 are saved equipment loadouts</strong>, not matching-item bonuses. Use them to keep five builds and switch gear quickly; see <a href="sets.html">Equipment Loadouts</a>.</li>
         <li><strong>Accessory slots</strong> are a big late-game lever: you start with a few and buy more, with the last slots priced as a deliberate gold sink.</li>
         <li>The shop is <em>global</em> &#8212; it stocks every zone's gear, not just your current map. Once you unlock Hard Mode, the Hard shop items become buyable from any run, including Normal ones.</li>
         <li>Gold purchases show a <strong>Purchase / Cancel</strong> confirmation first. If you cannot afford an item, character, or slot, its purchase button is disabled.</li>
@@ -184,10 +184,10 @@
       </ul>
 
       <h2 id="chars">Characters</h2>
-      <p>Each character applies <strong>stat multipliers</strong> while active, and some grant a
+      <p>The current roster contains <strong>26 characters</strong>. Each character applies <strong>stat multipliers</strong> while active, and some grant a
         <strong>permanent owned bonus</strong> that applies in every run just for owning them (e.g. drop-rate and
         gold specialists). Characters are a deliberate <strong>price gate</strong> &#8212; only a few are affordable
-        per world cycle, so choosing who to save for matters. Two are premium (real-money). Full roster + prices on
+        per world cycle, so choosing who to save for matters. The full roster, unlock methods, and prices are on
         the <a href="characters.html">Characters</a> page.</p>
 
       <h2 id="bosses">Bosses</h2>
@@ -199,7 +199,7 @@
       <h2 id="hard">Hard Mode</h2>
       <p>Hard Mode is a second lap of the whole world map. You effectively <strong>re-level from the start</strong>
         against much tougher, fixed-stat monsters, and progress is gated by collecting exclusive
-        <strong>Hard &#8220;H&#8221; gear</strong>. The Hard shop is a short curated ladder &#8212; <strong>5 buyable pieces per region, 25 in all</strong>,
+        <strong>Hard &#8220;H&#8221; gear</strong>. The currently open Hard shop is a short curated ladder &#8212; <strong>5 buyable pieces per region, 25 in all</strong>,
         always on sale &#8212; and everything else in the Hard pool is drop-only, so rare drops are the real shortcuts.
         Death costs <strong>6 AP</strong> instead of 4, and some bosses have Hard-exclusive drops. It rewards clean,
         well-geared play &#8212; so <strong>max your Normal endgame gear first</strong>.</p>
@@ -211,7 +211,7 @@
         specific drop once it's unlocked.</p>
 
       <h2 id="ach">Achievements</h2>
-      <p>Achievements grant <strong>flat permanent stat bonuses</strong> or <strong>unlock characters</strong>.
+      <p>The current project contains <strong>59 achievements</strong>, including six upcoming World Gate milestones. Achievements grant <strong>flat permanent stat bonuses</strong> or <strong>unlock characters</strong>.
         Some are Any-mode, others are Normal- or Hard-specific &#8212; filter by mode on the
         <a href="achievements.html">Achievements</a> page.</p>
       <p>Two characters can <em>only</em> be earned this way &#8212; no amount of gold will buy them:
@@ -236,6 +236,6 @@
   </main>
   <footer class="footer" id="site-footer"></footer>
   <script src="../../assets/js/i18n.js?v=5"></script>
-  <script src="../../assets/js/app.js?v=49"></script>
+  <script src="../../assets/js/app.js?v=50"></script>
 </body>
 </html>

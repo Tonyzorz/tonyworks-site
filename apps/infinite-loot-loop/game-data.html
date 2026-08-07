@@ -48,7 +48,7 @@
 
     <div class="article-meta" aria-label="Page information">
       <span>Maintained by Tony Works</span>
-      <span>Last reviewed 18 July 2026</span>
+      <span>Last reviewed 7 August 2026</span>
       <span>Applies to the official companion wiki</span>
     </div>
 
@@ -60,13 +60,13 @@
       <div class="editorial-grid">
         <section>
           <h3>Exported reference data</h3>
-          <p>The interactive catalogs read a structured data file exported from the Unity project. It contains the fields needed by the public wiki, including enemy level and stat ranges, boss values and rewards, item types and effects, equipment-set membership, map relationships, character multipliers, achievements, and image references.</p>
+          <p>The interactive catalogs read a structured data file exported from the Unity project. It contains the fields needed by the public wiki, including enemy level and stat ranges, boss values and rewards, item types and effects, map relationships, character multipliers, achievements, release-state flags, and image references.</p>
           <p>Using a project export reduces transcription mistakes and keeps related pages consistent. For example, an item link on a monster page and the same item's detail view refer to one exported identifier. A map's boss relationship uses the same identifiers as the boss archive.</p>
         </section>
         <section>
           <h3>Information that is not published</h3>
           <p>The export is intentionally limited to player-facing reference information. It does not publish player save data, purchase receipts, advertising identifiers, cloud credentials, private service keys, source code, or internal account records. Website analytics and game privacy practices are described separately in the <a href="/privacy-policy.html">privacy policy</a>.</p>
-          <p>Some internal development records may also be excluded when they are templates, duplicates, unused assets, or not reachable in the current game. The public bestiary, for example, is intended to represent enemies that can appear in active game zones rather than every test object that has ever existed in the project.</p>
+          <p>Some internal development records are excluded when they are templates, duplicates, unused assets, or explicitly hidden from the in-game collection. The public bestiary represents enemies assigned to active route zones. Implemented but locked expansion content may be included as a clearly marked preview.</p>
         </section>
       </div>
 
@@ -82,7 +82,7 @@
         </section>
         <section>
           <h3>Editorial content is written separately</h3>
-          <p>Raw data can state that a monster has a certain attack value or that an item belongs to a set. It cannot explain whether spending Adventure Points to farm that enemy is sensible for a particular run. Strategy sections are therefore written and reviewed as editorial guidance. They describe tradeoffs and link readers back to the current catalog.</p>
+          <p>Raw data can state that a monster has a certain attack value or where an item can drop. It cannot explain whether spending Adventure Points to farm that enemy is sensible for a particular run. Strategy sections are therefore written and reviewed as editorial guidance. They describe tradeoffs and link readers back to the current catalog.</p>
           <p>Recommendations are not presented as guaranteed optimal solutions. Character choice, collected equipment, route access, remaining Adventure Points, and future balance changes can all alter the best decision.</p>
         </section>
       </div>
@@ -120,6 +120,6 @@
   </main>
   <footer class="footer" id="site-footer"></footer>
   <script src="../../assets/js/i18n.js?v=5"></script>
-  <script src="../../assets/js/app.js?v=49"></script>
+  <script src="../../assets/js/app.js?v=50"></script>
 </body>
 </html>

@@ -120,21 +120,25 @@ const ATYPE  = ["TotalKills","BossKills","GoldEarned","RunsCompleted","LevelReac
 const AMODE   = ["Any","Normal","Hard"];
 const AREWARD = ["BonusATK","BonusHP","BonusDEF","BonusAGI","BonusLUC","UnlockCharacter"];
 const nz = (n) => n && n !== 0;
-// Mirrors Core/NumberFormat.Abbreviate: 999, 1.5K, 12.3M, 1.2B, 3.4T. Floors (never rounds up
-// across a tier edge) and drops a trailing ".0", exactly like the game's Trim().
+// Mirrors Core/NumberFormat.Abbreviate, including the double-backed World Gate suffix ladder.
+// Floors (never rounds up across a tier edge) and drops a trailing ".0", like the game's Trim().
+const SUFFIXES = ["", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "Oc", "No", "Dc",
+  "Ud", "Dd", "Td", "Qad", "Qid", "Sxd", "Spd", "Od", "Nd", "Vg"];
 const abbr = (n) => {
   const neg = n < 0;
   const v = Math.abs(Number(n) || 0);
   const trim = (x) => String(Math.floor(x * 10) / 10);
-  let s;
-  // Mirrors Core/NumberFormat: Q/Qi exist because hard World Gate reaches ~2e15.
-  if      (v >= 1e18) s = trim(v / 1e18) + "Qi";
-  else if (v >= 1e15) s = trim(v / 1e15) + "Q";
-  else if (v >= 1e12) s = trim(v / 1e12) + "T";
-  else if (v >= 1e9)  s = trim(v / 1e9)  + "B";
-  else if (v >= 1e6)  s = trim(v / 1e6)  + "M";
-  else if (v >= 1e3)  s = trim(v / 1e3)  + "K";
-  else                s = String(Math.floor(v));
+  let s = String(Math.floor(v));
+  if (v >= 1000) {
+    let tier = Math.floor(Math.log10(v) / 3);
+    if (tier >= SUFFIXES.length) s = v.toExponential(2).replace(/\.0+(?=e)/, "");
+    else {
+      let scale = Math.pow(1000, tier);
+      if (v / scale < 1 && tier > 0) { tier--; scale /= 1000; }
+      else if (v / scale >= 1000 && tier + 1 < SUFFIXES.length) { tier++; scale *= 1000; }
+      s = trim(v / scale) + SUFFIXES[tier];
+    }
+  }
   return (neg ? "-" : "") + s;
 };
 const d1 = (n) => { const r = Math.round(n * 10) / 10; return Number.isInteger(r) ? r.toFixed(0) : r.toFixed(1); };
@@ -147,6 +151,7 @@ const items = loadCategory("Items").map((a) => {
     image: copySprite(guidOf(t, "icon"), "item", a.id),
     rarity: RARITY[num(t, "rarity")] || "Common", type: ITYPE[num(t, "itemType")] || "Weapon",
     setName: field(t, "setName"), isUnique: bool(t, "isUnique"), shopUnavailable: bool(t, "shopUnavailable"),
+    hiddenFromCollection: bool(t, "hiddenFromCollection"),
     isHardModeItem: bool(t, "isHardModeItem"), isBossItem: bool(t, "isBossItem"),
     // Carried so shopAreas below can reproduce ShopManager's purchasability rules exactly.
     shopRank: num(t, "shopRank"), sourceRegion: field(t, "sourceRegion"),
@@ -193,7 +198,7 @@ const enemies = loadCategory("Enemies").map((a) => {
   const re = /- item: \{fileID: \d+, guid: ([0-9a-f]+), type: \d+\}\s*\n\s*dropChance:\s*([\d.]+)/g;
   let m; while ((m = re.exec(t))) { const iid = assetName(m[1]); drops.push({ itemId: iid, itemName: itemName(iid), chance: Number(m[2]) }); }
   const o = {
-    id: a.id, name: field(t, "enemyName") || a.id, image: copySprite(guidOf(t, "enemySprite"), "enemy", a.id),
+    id: a.id, name: field(t, "enemyName") || a.id, image: "", imageGuid: guidOf(t, "enemySprite"),
     isBoss: bool(t, "isBoss"), minLevel: minLv, maxLevel: maxLv,
     hpMin:  atLevel(bHP,  sHP,  minLv, minLv), hpMax:  atLevel(bHP,  sHP,  maxLv, minLv),
     atkMin: atLevel(bATK, sATK, minLv, minLv), atkMax: atLevel(bATK, sATK, maxLv, minLv),
@@ -292,7 +297,16 @@ const zones = loadCategory("Zones").map((a) => {
 const MAP_VISUAL = {
   AshenForest_Map: "Ashen Forest Pass", DeepForest_Map: "Deep Dark Forest",
   Grassland_Map: "Grassland Plains", LavaCore_Map: "Lava Core Boss Chamber",
-  SunBuriedCave_Map: "Sun-Buried Cave", WorldGate_Map: "World Gate Entrance"
+  SunBuriedCave_Map: "Sun-Buried Cave", WorldGate_Map: "World Gate Entrance",
+  GreekAgora_Map: "Greek Agora Crossroads", GreekAmphitheatre_Map: "Greek Amphitheatre of Echoes",
+  GreekGrotto_Map: "Greek Gorgon Grotto", GreekHarbor_Map: "Greek Harbor of Columns",
+  GreekLabyrinth_Map: "Greek Labyrinth of the Bull", GreekTemple_Map: "Greek Temple of Olympus",
+  JapanPagoda_Map: "Japan Pagoda Court", JapanShrine_Map: "Japan Shrine Mountain",
+  JapanTerraces_Map: "Japan Rice Terraces", JapanVillage_Map: "Japan Village Gate",
+  MilitaryBunker_Map: "Military Bunker Network", MilitaryCheckpoint_Map: "Military Border Checkpoint",
+  MilitaryDepot_Map: "Military Supply Depot", MilitaryHQ_Map: "Military Command HQ",
+  MilitaryMinefield_Map: "Military Minefield Crossing", MilitaryTrench_Map: "Military Trench Line",
+  MilitaryYard_Map: "Military Blast-Wall Yard"
 };
 const mapDisplayName = (id) => MAP_VISUAL[id] || id.replace(/_Map$/, "").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
 function copyMapVisual(id) {
@@ -391,6 +405,13 @@ for (const z of zones) {
 const liveEnemies = enemies.filter((e) => e.worlds.length > 0);
 const liveZones = zones.filter((z) => zoneWorld(z.id));
 
+// Export art only for enemies that can appear in a live route. Deferring the copy prevents internal
+// balance templates and orphan development enemies from accumulating as unused website files.
+for (const e of liveEnemies) {
+  e.image = copySprite(e.imageGuid, "enemy", e.id);
+  delete e.imageGuid;
+}
+
 liveEnemies.sort((a, b) => a.minLevel - b.minLevel);
 bosses.sort((a, b) => a.level - b.level);
 
@@ -417,7 +438,11 @@ const push = (arr, v) => { if (v && arr.indexOf(v) < 0) arr.push(v); };
 // unfiltered advertised 120 purchasable hard items where the game actually serves 25 — and listed
 // World Gate gear the player has no route to. The client applies four rules before anything reaches
 // the shop; apply the identical four here or the wiki misreports the shop.
-const isUnreleasedRegion = (r) => !!r && /^(JP|GR|ML|HV)/.test(r);
+// Read the actual runtime switch instead of duplicating it in the website exporter. This keeps the
+// public shop catalog correct on both the locked preview build and the eventual World Gate release.
+const shopManagerSource = read(path.join(GAME, "Assets", "Scripts", "Core", "ShopManager.cs"));
+const worldGateReleased = /WorldGateReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+const isUnreleasedRegion = (r) => !worldGateReleased && !!r && /^(JP|GR|ML|HV)/.test(r);
 const isPurchasable = (id) => {
   const i = itemById.get(id);
   if (!i) return false;
@@ -471,10 +496,15 @@ for (const it of items) {
   it.shopAreas = shopIn.get(it.id) || [];
 }
 
+// Internal/template items remain available above for resolving references, but the public catalog
+// follows ItemData.hiddenFromCollection just like the in-game collection screen.
+const publicItems = items.filter((it) => !it.hiddenFromCollection);
+
 const root = {
   generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop",
-  counts: { enemies: liveEnemies.length, bosses: bosses.length, items: items.length, maps: maps.length, zones: liveZones.length, areas: areas.length, characters: characters.length, achievements: achievements.length },
-  enemies: liveEnemies, bosses, items, maps, zones: liveZones, areas, characters, achievements
+  release: { worldGateReleased },
+  counts: { enemies: liveEnemies.length, bosses: bosses.length, items: publicItems.length, maps: maps.length, zones: liveZones.length, areas: areas.length, characters: characters.length, achievements: achievements.length },
+  enemies: liveEnemies, bosses, items: publicItems, maps, zones: liveZones, areas, characters, achievements
 };
 fs.writeFileSync(path.join(DATA, "data.json"), JSON.stringify(root, null, 2));
 console.log("Wrote data.json", root.counts, "images:", imagesWritten);

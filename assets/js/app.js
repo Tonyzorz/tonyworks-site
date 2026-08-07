@@ -8,7 +8,7 @@
     { id: "bosses",       label: "Bosses",      href: "bosses.html" },
     { id: "items",        label: "Items",       href: "items.html" },
     { id: "shop",         label: "Shop",        href: "shop.html" },
-    { id: "sets",         label: "Sets",        href: "sets.html" },
+    { id: "sets",         label: "Loadouts",     href: "sets.html" },
     { id: "maps",         label: "Maps",        href: "maps.html" },
     { id: "characters",   label: "Characters",  href: "characters.html" },
     { id: "achievements", label: "Achievements",href: "achievements.html" },
@@ -67,12 +67,14 @@
   function fmt(n) {
     if (n == null || isNaN(n)) return "0";
     var neg = n < 0; n = Math.abs(Number(n));
-    var out;
-    if (n >= 1e12) out = (n / 1e12).toFixed(2).replace(/\.?0+$/, "") + "T";
-    else if (n >= 1e9)  out = (n / 1e9).toFixed(2).replace(/\.?0+$/, "") + "B";
-    else if (n >= 1e6)  out = (n / 1e6).toFixed(2).replace(/\.?0+$/, "") + "M";
-    else if (n >= 1e3)  out = (n / 1e3).toFixed(1).replace(/\.?0+$/, "") + "K";
-    else out = String(Math.round(n));
+    var suffixes = ["", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "Oc", "No", "Dc",
+      "Ud", "Dd", "Td", "Qad", "Qid", "Sxd", "Spd", "Od", "Nd", "Vg"];
+    var out = String(Math.round(n));
+    if (n >= 1000) {
+      var tier = Math.floor(Math.log(n) / Math.log(1000));
+      if (tier >= suffixes.length) out = n.toExponential(2).replace(/\.00(?=e)/, "");
+      else out = (n / Math.pow(1000, tier)).toFixed(2).replace(/\.?0+$/, "") + suffixes[tier];
+    }
     return (neg ? "-" : "") + out;
   }
 
@@ -362,7 +364,7 @@
       ["guide.html", "&#128214;", "Field Guide", null, "Progression, stats and strategy", "#b994ff"]
     ];
     var resources = [
-      ["sets.html", "Item Sets", "Build complete equipment bonuses"],
+      ["sets.html", "Equipment Loadouts", "Plan and switch between five saved builds"],
       ["achievements.html", "Achievements", "Track goals and permanent rewards"],
       ["design-notes.html", "Design Notes", "See how the AP economy and progression are balanced"],
       ["patch.html", "Patch Notes", "See the latest changes"],
@@ -392,7 +394,7 @@
         '<div class="starter-steps">' +
           '<a href="guide.html"><span class="starter-num">01</span><span><strong>Learn the loop</strong><small>AP, battles, death and permanent progress</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
           '<a href="characters.html"><span class="starter-num">02</span><span><strong>Choose a character</strong><small>Compare starters and stat multipliers</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
-          '<a href="items.html"><span class="starter-num">03</span><span><strong>Understand gear</strong><small>Stats, rarity, drops and equipment sets</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
+          '<a href="items.html"><span class="starter-num">03</span><span><strong>Understand gear</strong><small>Stats, rarity, drops and saved loadouts</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
           '<a href="maps.html"><span class="starter-num">04</span><span><strong>Plan your route</strong><small>World connections, zones and bosses</small></span><span class="starter-go" aria-hidden="true">&#8594;</span></a>' +
         '</div>' +
       '</section>' +
@@ -899,6 +901,12 @@
     "SandstoneTunnel_Map": "DS04", "AncientBurialPassage_Map": "DS05", "DesertBossRoom_Map": "DS06",
     "ShallowCoralReef_Map": "UW01", "CoralMaze_Map": "UW02", "SunkenTempleGate_Map": "UW03",
     "DeepTrench_Map": "UW04", "GiantClamBossRoom_Map": "UW06", "MainUnderwaterBossRoom_Map": "UW07",
+    "JapanVillage_Map": "JP01", "JapanTerraces_Map": "JP02", "JapanShrine_Map": "JP03", "JapanPagoda_Map": "JP04",
+    "GreekHarbor_Map": "GR01", "GreekAgora_Map": "GR02", "GreekLabyrinth_Map": "GR03",
+    "GreekAmphitheatre_Map": "GR04", "GreekGrotto_Map": "GR05", "GreekTemple_Map": "GR06",
+    "MilitaryCheckpoint_Map": "ML01", "MilitaryDepot_Map": "ML02", "MilitaryTrench_Map": "ML03",
+    "MilitaryMinefield_Map": "ML04", "MilitaryAirfield_Map": "ML05", "MilitaryBunker_Map": "ML06",
+    "MilitaryYard_Map": "ML07", "MilitaryHQ_Map": "ML08", "HeavenAscension_Map": "HV01",
     "VoidHunt_Map": "VoidHunt"
   };
   // data.json ships an `areas` table (region code + its map) built from the setup tools, so prefer
@@ -988,9 +996,9 @@
     var mode = opts.mode || selectedGameMode("normal");
     var meta = WORLD_META[w] || { icon: "&#128506;", color: "var(--accent)" };
     var s = worldStats(d, w);
-    var sub = opts.locked ? "Coming soon"
-      : (s.maps.length + " map" + (s.maps.length !== 1 ? "s" : "") +
-         (s.bosses ? " &#183; " + s.bosses + " boss" + (s.bosses > 1 ? "es" : "") : ""));
+    var inventory = s.maps.length + " map" + (s.maps.length !== 1 ? "s" : "") +
+         (s.bosses ? " &#183; " + s.bosses + " boss" + (s.bosses > 1 ? "es" : "") : "");
+    var sub = opts.locked ? "Coming soon" : (opts.upcoming ? "Upcoming &#183; " : "") + inventory;
     var inner = '<span class="wicon">' + meta.icon + "</span>" +
       '<span class="wname">' + esc(w) + "</span><span class=\"wmeta\">" + sub + "</span>";
     if (opts.locked) return '<div class="wnode locked" style="--wc:' + meta.color + '">' + inner + "</div>";
@@ -1035,8 +1043,9 @@
     var world = param("world"); if (world) return worldView(app, d, world, forcedMode);
     var mode = forcedMode || selectedGameMode("normal");
     rememberGameMode(mode, false);
-    var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt",
+    var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt", "World Gate",
                   "Japan", "Greek", "Military", "Heaven"];
+    var worldGateUpcoming = !(d.release && d.release.worldGateReleased);
     app.innerHTML =
       pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", d.maps.length) +
       modeTabsHtml(mode, null, "Map data mode") +
@@ -1054,15 +1063,15 @@
         '<div class="wm-conn h" style="grid-area:h4"></div>' +
         '<div class="wm-cell" style="grid-area:desert">' + wnode(d, "Desert") + '</div>' +
         '<div class="wm-conn v" style="grid-area:vd"></div>' +
-        '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate") + '</div>' +
+        '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate", { upcoming: worldGateUpcoming }) + '</div>' +
         // The World Gate fans out to its four themed regions.
         '<div class="wm-conn v" style="grid-area:vg"></div>' +
         '<div class="wm-branch" style="grid-area:wg"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
           ["Japan", "Greek", "Military", "Heaven"].map(function (w) {
-            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w) + "</div>";
+            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: worldGateUpcoming }) + "</div>";
           }).join("") +
         '</div></div>' +
-      '</div></div><p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, the World Gate south. Void Hunt is a secret arena reached from Volcanic. Through the World Gate lie Japan, Greek, Military and Heaven.</p></div>' +
+      '</div></div><p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, and the World Gate south. Void Hunt is a secret arena reached from Volcanic. Japan, Greek, Military and Heaven are fully cataloged here as an upcoming World Gate expansion while the in-game entrance remains sealed.</p></div>' +
       // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
       // grouped under its world. The compass graph above stays world-level.
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {
@@ -1354,19 +1363,14 @@
 
   /* ---- Sets ---- */
   PAGES.sets = function (app, d) {
-    var groups = {};
-    d.items.forEach(function (it) { if (it.setName) (groups[it.setName] = groups[it.setName] || []).push(it); });
-    var names = Object.keys(groups).sort(function (a, b) { return a.localeCompare(b); });
+    var loadouts = [1, 2, 3, 4, 5];
     app.innerHTML =
-      pageHero("sets.html", "Item Sets", "Combine matching pieces to activate set bonuses and bonus drop rate.", names.length) +
-      (names.length ? '<div class="set-grid">' + names.map(function (n) {
-        var mates = groups[n];
-        return '<div class="set-card"><h3>' + esc(n) + ' <span class="set-count">' + mates.length + " pieces</span></h3>" +
-          '<div class="effect-list">' + mates.map(function (it) {
-            return '<a class="fx" href="items.html?id=' + encodeURIComponent(it.id) + '">' + esc(it.name) +
-              ' <span style="color:var(--faint)">' + esc(it.type) + "</span></a>";
-          }).join("") + "</div></div>";
-      }).join("") + "</div>" : '<div class="empty">No item sets in the current data.</div>');
+      pageHero("sets.html", "Equipment Loadouts", "Five saved builds let you switch equipped gear quickly. They do not grant matching-item set bonuses.", loadouts.length) +
+      '<div class="set-grid">' + loadouts.map(function (n) {
+        return '<div class="set-card"><h3>Set ' + n + ' <span class="set-count">saved loadout</span></h3>' +
+          '<div class="effect-list"><span class="fx">Weapon, Armor, Helmet, Shoes and Accessories</span>' +
+          '<span class="fx">Each loadout remembers its own equipped items</span></div></div>';
+      }).join("") + '</div><div class="empty" style="margin-top:1rem">Use <a href="items.html">Items</a> to compare stats and find drop or shop sources before building each loadout.</div>';
   };
 
   /* ---------- loading + back-to-top ---------- */
