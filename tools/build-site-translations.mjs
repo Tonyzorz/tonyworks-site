@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputDir = path.join(root, "assets", "i18n", "site-content");
 const pages = [
-  "index.html", "about.html", "privacy-policy.html", "terms.html", "deletion.html",
+  "index.html", "about.html", "contact.html", "privacy-policy.html", "terms.html", "deletion.html",
   "apps/infinite-loot-loop/index.html", "apps/infinite-loot-loop/guide.html",
   "apps/infinite-loot-loop/normal-guide.html", "apps/infinite-loot-loop/hard-mode-guide.html",
   "apps/infinite-loot-loop/run-planner.html",

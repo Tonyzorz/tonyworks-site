@@ -108,7 +108,7 @@
 
     portal.innerHTML =
       '<header class="portal-nav"><a class="portal-brand" href="index.html"><span>TW</span><strong>Tony Works</strong></a>' +
-        '<nav aria-label="Main navigation"><a href="#game">Game</a><a href="' + guidePath + '">Guide</a><a href="about.html">About</a><a href="mailto:tonyzorz@naver.com">Contact</a></nav></header>' +
+        '<nav aria-label="Main navigation"><a href="#game">Game</a><a href="' + guidePath + '">Guide</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></header>' +
       '<section class="portal-hero" id="game"><div class="portal-hero-copy"><span class="portal-kicker">Independent game studio</span>' +
         '<h1>Small worlds.<br><span>Long adventures.</span></h1>' +
         '<p>Tony Works creates focused games with deep progression, approachable systems, and player-friendly companion tools.</p>' +
@@ -134,7 +134,7 @@
           '<a href="' + patchPath + '"><span class="portal-link-num">04</span><span><strong>Follow development</strong><small>New content, balance changes and fixes</small></span><span aria-hidden="true">&#8594;</span></a></div></section>' +
       renderWebsiteShowcase(apps) +
       '<section class="portal-contact"><div><span class="portal-kicker">Tony Works</span><h2>Projects made with care—and supported after launch.</h2></div>' +
-        '<a data-portal-action="contact" href="mailto:tonyzorz@naver.com">Get in touch &#8594;</a></section>';
+        '<a data-portal-action="contact" href="contact.html">Get in touch &#8594;</a></section>';
 
     setupWebsiteSelector(apps, portal);
 
@@ -146,7 +146,7 @@
 
     var footer = document.getElementById("portal-footer");
     if (footer) footer.innerHTML = "Tony Works &#183; " + new Date().getFullYear() +
-      ' &#183; <a href="about.html">About</a> &#183; <a href="privacy-policy.html">Privacy</a> &#183; <a href="terms.html">Terms</a>' +
+      ' &#183; <a href="about.html">About</a> &#183; <a href="contact.html">Contact</a> &#183; <a href="privacy-policy.html">Privacy</a> &#183; <a href="terms.html">Terms</a> &#183; <a href="deletion.html">Data deletion</a>' +
       ' &#183; <a href="https://www.tiktok.com/@tonyworks95?lang=en" target="_blank" rel="noopener noreferrer">TikTok</a>' +
       ' &#183; <a href="https://www.instagram.com/tonytworks" target="_blank" rel="noopener noreferrer">Instagram</a>' +
       ' &#183; <a href="https://www.youtube.com/@tonytworks" target="_blank" rel="noopener noreferrer">YouTube</a>' +

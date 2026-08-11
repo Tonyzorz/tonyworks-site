@@ -8,6 +8,7 @@ const allowedAdPages = new Set(["apps/infinite-loot-loop/guide.html"]);
 const substantivePages = new Set([
   "index.html",
   "about.html",
+  "contact.html",
   "apps/infinite-loot-loop/index.html",
   "apps/infinite-loot-loop/guide.html",
   "apps/infinite-loot-loop/normal-guide.html",
@@ -70,7 +71,7 @@ for (const page of walk(root)) {
 
   if (substantivePages.has(rel)) {
     const words = bodyText(html).split(/\s+/).filter(Boolean).length;
-    if (words < 150) errors.push(`${rel}: only ${words} static words; expected at least 150 for this site audit`);
+    if (words < 200) errors.push(`${rel}: only ${words} static words; expected at least 200 for this site audit`);
     if (rel === "apps/infinite-loot-loop/design-notes.html" && words < 1000) {
       errors.push(`${rel}: only ${words} static words; expected at least 1000 for the first-hand design article`);
     }
@@ -83,6 +84,10 @@ for (const page of walk(root)) {
 
   if (/<main\b[^>]*\bid=["'](?:app|portal)["'][^>]*>\s*<\/main>/i.test(html)) {
     errors.push(`${rel}: ships an empty main content shell`);
+  }
+
+  if (rel === "index.html" && !/href=["']contact\.html["']/i.test(html)) {
+    errors.push("index.html: missing a crawlable contact-page link");
   }
 
   for (const match of html.matchAll(/<script\s+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {

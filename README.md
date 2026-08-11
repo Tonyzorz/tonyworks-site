@@ -6,6 +6,8 @@ The site is a static, data-driven web app hosted on GitHub Pages. Game data is e
 
 ## Structure
 
+- `contact.html` — official player support, corrections, privacy, accessibility, and business contact
+
 - `index.html` — hub / landing
 - `data/data.json` — exported game data
 - `assets/img/…` — copied sprites & icons
@@ -27,8 +29,9 @@ The site is a static, data-driven web app hosted on GitHub Pages. Game data is e
 1. Export and validate `data/data.json` from Unity.
 2. Run JavaScript syntax, internal-link, sitemap, and static-content checks.
 3. Confirm only approved editorial pages contain the AdSense loader.
-4. Publish to GitHub Pages and inspect the live homepage, guide, and one catalog page.
-5. Submit `sitemap.xml` and request indexing for the most important updated URLs.
+4. Confirm the homepage exposes static navigation, About, Contact, Privacy, and Terms links before JavaScript runs.
+5. Publish to GitHub Pages and inspect the live homepage, guide, contact page, and one catalog page.
+6. Submit `sitemap.xml` and request indexing for the most important updated URLs.
 
 ## Contact
 

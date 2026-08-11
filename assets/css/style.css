@@ -95,6 +95,15 @@ img { max-width: 100%; display: block; }
 }
 .nav-links a:hover { color: var(--text); background: var(--panel); text-decoration: none; }
 .nav-links a.active { color: var(--text); background: var(--panel-2); box-shadow:inset 0 -2px 0 var(--accent); }
+.static-site-nav {
+  max-width:var(--maxw); margin:0 auto; padding:.7rem 1rem;
+  display:flex; align-items:center; gap:.9rem; flex-wrap:wrap;
+}
+.static-site-brand { display:flex; align-items:center; gap:.55rem; color:var(--text); }
+.static-site-brand:hover { text-decoration:none; }
+.static-site-links { display:flex; align-items:center; gap:.25rem; flex-wrap:wrap; margin-left:auto; }
+.static-site-links a { padding:.45rem .65rem; color:var(--muted); border-radius:9px; font-size:.86rem; font-weight:650; }
+.static-site-links a:hover { color:var(--text); background:var(--panel); text-decoration:none; }
 .nav-more { position:relative; }
 .nav-more summary { list-style:none; cursor:pointer; color:var(--muted); padding:.45rem .65rem; border-radius:9px; font-size:.86rem; font-weight:650; }
 .nav-more summary::-webkit-details-marker { display:none; }
@@ -686,6 +695,9 @@ body[data-page="portal"] .wrap { padding-top:0; }
   .detail { grid-template-columns: 1fr; }
   .detail .portrait { max-width: 240px; margin: 0 auto; }
   .nav-links { width: 100%; overflow-x: auto; }
+  .static-site-nav { gap:.55rem; }
+  .static-site-links { width:100%; margin-left:0; overflow-x:auto; flex-wrap:nowrap; }
+  .static-site-links a { white-space:nowrap; }
   .app-list { grid-template-columns: 1fr; }
   .game-hero .hero-copy { width:100%; padding:1.35rem .9rem; }
   .store-buttons { grid-template-columns:1fr; max-width:340px; margin:0 auto; }

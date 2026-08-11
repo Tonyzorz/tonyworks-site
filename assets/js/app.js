@@ -20,7 +20,8 @@
     { id: "game-data",    label: "Data Notes",  href: "game-data.html" },
     { id: "patch",        label: "Patch Notes", href: "patch.html" },
     { id: "faq",          label: "FAQ",         href: "faq.html" },
-    { id: "about",        label: "About",       href: "/about.html" }
+    { id: "about",        label: "About",       href: "/about.html" },
+    { id: "contact",      label: "Contact",     href: "/contact.html" }
   ];
 
   var PRIMARY_NAV = ["home", "guide", "maps", "items", "shop", "monsters"];
@@ -304,7 +305,7 @@
     if (footer) {
       footer.innerHTML =
         'Tony Works &#8212; companion wiki for <strong>Infinite Loot-Loop</strong>. ' +
-        '<a href="/about.html">About</a> &#183; <a href="game-data.html">Data notes</a> &#183; ' +
+        '<a href="/about.html">About</a> &#183; <a href="/contact.html">Contact</a> &#183; <a href="game-data.html">Data notes</a> &#183; ' +
         '<a href="/privacy-policy.html">Privacy</a> &#183; <a href="/terms.html">Terms</a> &#183; ' +
         '<a href="https://www.tiktok.com/@tonyworks95?lang=en" target="_blank" rel="noopener noreferrer">TikTok</a> &#183; ' +
         '<a href="https://www.instagram.com/tonytworks" target="_blank" rel="noopener noreferrer">Instagram</a> &#183; ' +
