@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T22:37:40Z",
+  "generatedAt": "2026-08-18T22:55:04Z",
   "game": "Infinite Loot-Loop",
   "release": {
     "worldGateReleased": true
@@ -16944,8 +16944,8 @@
           "chance": 2
         },
         {
-          "itemId": "Seraph_Sigil_H",
-          "itemName": "Seraph Sigil [H]",
+          "itemId": "Seraph_Tear_H",
+          "itemName": "Seraph Tear [H]",
           "chance": 2
         }
       ],
@@ -17149,8 +17149,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Seraph_Greatblade_H",
-          "itemName": "Seraph Greatblade [H]",
+          "itemId": "Seraph_Sword_H",
+          "itemName": "Seraph Sword [H]",
           "chance": 2
         }
       ],
@@ -17190,8 +17190,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Empyrean_Plate_H",
-          "itemName": "Empyrean Plate [H]",
+          "itemId": "Seraph_Plate_H",
+          "itemName": "Seraph Plate [H]",
           "chance": 2
         }
       ],
@@ -17231,8 +17231,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Empyrean_Crown_H",
-          "itemName": "Empyrean Crown [H]",
+          "itemId": "Seraph_Helm_H",
+          "itemName": "Seraph Helm [H]",
           "chance": 2
         }
       ],
@@ -17272,8 +17272,8 @@
       "permanentBPReward": 0,
       "drops": [
         {
-          "itemId": "Empyrean_Sabatons_H",
-          "itemName": "Empyrean Sabatons [H]",
+          "itemId": "Seraph_Greaves_H",
+          "itemName": "Seraph Greaves [H]",
           "chance": 2
         }
       ],
@@ -28270,105 +28270,6 @@
       ]
     },
     {
-      "id": "Empyrean_Crown_H",
-      "name": "Empyrean Crown [H]",
-      "description": "",
-      "image": "item_Empyrean_Crown_H.png",
-      "rarity": "Legendary",
-      "type": "Helmet",
-      "setName": "",
-      "isUnique": false,
-      "shopUnavailable": false,
-      "hiddenFromCollection": false,
-      "isHardModeItem": true,
-      "isBossItem": false,
-      "shopRank": 1,
-      "sourceRegion": "HV01",
-      "bonusHP": 227577654756774380000,
-      "bonusATK": 0,
-      "bonusDEF": 28488240994614150000,
-      "bonusAGI": 0,
-      "bonusLUC": 2020,
-      "buyPrice": 914433504634560000,
-      "maxCopies": -1,
-      "effects": [
-        "HP +227.5Qi",
-        "DEF +28.4Qi",
-        "LUC +2K"
-      ],
-      "dropAreas": [
-        "HV01"
-      ],
-      "shopAreas": [
-        "HV01"
-      ]
-    },
-    {
-      "id": "Empyrean_Plate_H",
-      "name": "Empyrean Plate [H]",
-      "description": "",
-      "image": "item_Empyrean_Plate_H.png",
-      "rarity": "Legendary",
-      "type": "Armor",
-      "setName": "",
-      "isUnique": false,
-      "shopUnavailable": false,
-      "hiddenFromCollection": false,
-      "isHardModeItem": true,
-      "isBossItem": false,
-      "shopRank": 1,
-      "sourceRegion": "HV01",
-      "bonusHP": 455155309513548760000,
-      "bonusATK": 0,
-      "bonusDEF": 23044628065706983000,
-      "bonusAGI": 0,
-      "bonusLUC": 0,
-      "buyPrice": 0,
-      "maxCopies": -1,
-      "effects": [
-        "HP +455.1Qi",
-        "DEF +23Qi"
-      ],
-      "dropAreas": [
-        "HV01"
-      ],
-      "shopAreas": []
-    },
-    {
-      "id": "Empyrean_Sabatons_H",
-      "name": "Empyrean Sabatons [H]",
-      "description": "",
-      "image": "item_Empyrean_Sabatons_H.png",
-      "rarity": "Legendary",
-      "type": "Shoes",
-      "setName": "",
-      "isUnique": false,
-      "shopUnavailable": false,
-      "hiddenFromCollection": false,
-      "isHardModeItem": true,
-      "isBossItem": false,
-      "shopRank": 1,
-      "sourceRegion": "HV01",
-      "bonusHP": 361885778875526550000,
-      "bonusATK": 0,
-      "bonusDEF": 31935862516255347000,
-      "bonusAGI": 1414,
-      "bonusLUC": 0,
-      "buyPrice": 914433504634560000,
-      "maxCopies": -1,
-      "effects": [
-        "HP +361.8Qi",
-        "DEF +31.9Qi",
-        "AGI +1.4K"
-      ],
-      "dropAreas": [
-        "HV01"
-      ],
-      "shopAreas": [
-        "HV01"
-      ]
-    },
-    {
       "id": "EOD_Armor_H",
       "name": "EOD Armor [H]",
       "description": "",
@@ -32231,10 +32132,109 @@
       "shopAreas": []
     },
     {
-      "id": "Seraph_Greatblade_H",
-      "name": "Seraph Greatblade [H]",
+      "id": "Seraph_Greaves_H",
+      "name": "Seraph Greaves [H]",
       "description": "",
-      "image": "item_Seraph_Greatblade_H.png",
+      "image": "item_Seraph_Greaves_H.png",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "hiddenFromCollection": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "shopRank": 1,
+      "sourceRegion": "HV01",
+      "bonusHP": 361885778875526550000,
+      "bonusATK": 0,
+      "bonusDEF": 31935862516255347000,
+      "bonusAGI": 1414,
+      "bonusLUC": 0,
+      "buyPrice": 914433504634560000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +361.8Qi",
+        "DEF +31.9Qi",
+        "AGI +1.4K"
+      ],
+      "dropAreas": [
+        "HV01"
+      ],
+      "shopAreas": [
+        "HV01"
+      ]
+    },
+    {
+      "id": "Seraph_Helm_H",
+      "name": "Seraph Helm [H]",
+      "description": "",
+      "image": "item_Seraph_Helm_H.png",
+      "rarity": "Legendary",
+      "type": "Helmet",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "hiddenFromCollection": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "shopRank": 1,
+      "sourceRegion": "HV01",
+      "bonusHP": 227577654756774380000,
+      "bonusATK": 0,
+      "bonusDEF": 28488240994614150000,
+      "bonusAGI": 0,
+      "bonusLUC": 2020,
+      "buyPrice": 914433504634560000,
+      "maxCopies": -1,
+      "effects": [
+        "HP +227.5Qi",
+        "DEF +28.4Qi",
+        "LUC +2K"
+      ],
+      "dropAreas": [
+        "HV01"
+      ],
+      "shopAreas": [
+        "HV01"
+      ]
+    },
+    {
+      "id": "Seraph_Plate_H",
+      "name": "Seraph Plate [H]",
+      "description": "",
+      "image": "item_Seraph_Plate_H.png",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": false,
+      "hiddenFromCollection": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "shopRank": 1,
+      "sourceRegion": "HV01",
+      "bonusHP": 455155309513548760000,
+      "bonusATK": 0,
+      "bonusDEF": 23044628065706983000,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 0,
+      "maxCopies": -1,
+      "effects": [
+        "HP +455.1Qi",
+        "DEF +23Qi"
+      ],
+      "dropAreas": [
+        "HV01"
+      ],
+      "shopAreas": []
+    },
+    {
+      "id": "Seraph_Sword_H",
+      "name": "Seraph Sword [H]",
+      "description": "",
+      "image": "item_Seraph_Sword_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -32262,10 +32262,10 @@
       "shopAreas": []
     },
     {
-      "id": "Seraph_Sigil_H",
-      "name": "Seraph Sigil [H]",
+      "id": "Seraph_Tear_H",
+      "name": "Seraph Tear [H]",
       "description": "",
-      "image": "item_Seraph_Sigil_H.png",
+      "image": "item_Seraph_Tear_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -46748,11 +46748,11 @@
         "Throne_Diadem_H",
         "Divine_Treads_H",
         "Covenant_Seal_H",
-        "Seraph_Greatblade_H",
-        "Empyrean_Plate_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
-        "Seraph_Sigil_H"
+        "Seraph_Sword_H",
+        "Seraph_Plate_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
+        "Seraph_Tear_H"
       ]
     },
     {
@@ -46777,11 +46777,11 @@
         "Throne_Diadem_H",
         "Divine_Treads_H",
         "Covenant_Seal_H",
-        "Seraph_Greatblade_H",
-        "Empyrean_Plate_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
-        "Seraph_Sigil_H"
+        "Seraph_Sword_H",
+        "Seraph_Plate_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
+        "Seraph_Tear_H"
       ]
     },
     {
@@ -46806,11 +46806,11 @@
         "Throne_Diadem_H",
         "Divine_Treads_H",
         "Covenant_Seal_H",
-        "Seraph_Greatblade_H",
-        "Empyrean_Plate_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
-        "Seraph_Sigil_H"
+        "Seraph_Sword_H",
+        "Seraph_Plate_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
+        "Seraph_Tear_H"
       ]
     },
     {
@@ -46835,11 +46835,11 @@
         "Throne_Diadem_H",
         "Divine_Treads_H",
         "Covenant_Seal_H",
-        "Seraph_Greatblade_H",
-        "Empyrean_Plate_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
-        "Seraph_Sigil_H"
+        "Seraph_Sword_H",
+        "Seraph_Plate_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
+        "Seraph_Tear_H"
       ]
     },
     {
@@ -46864,11 +46864,11 @@
         "Throne_Diadem_H",
         "Divine_Treads_H",
         "Covenant_Seal_H",
-        "Seraph_Greatblade_H",
-        "Empyrean_Plate_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
-        "Seraph_Sigil_H"
+        "Seraph_Sword_H",
+        "Seraph_Plate_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
+        "Seraph_Tear_H"
       ]
     },
     {
@@ -46893,11 +46893,11 @@
         "Throne_Diadem_H",
         "Divine_Treads_H",
         "Covenant_Seal_H",
-        "Seraph_Greatblade_H",
-        "Empyrean_Plate_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
-        "Seraph_Sigil_H"
+        "Seraph_Sword_H",
+        "Seraph_Plate_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
+        "Seraph_Tear_H"
       ]
     },
     {
@@ -46922,11 +46922,11 @@
         "Throne_Diadem_H",
         "Divine_Treads_H",
         "Covenant_Seal_H",
-        "Seraph_Greatblade_H",
-        "Empyrean_Plate_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
-        "Seraph_Sigil_H"
+        "Seraph_Sword_H",
+        "Seraph_Plate_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
+        "Seraph_Tear_H"
       ]
     },
     {
@@ -46951,11 +46951,11 @@
         "Throne_Diadem_H",
         "Divine_Treads_H",
         "Covenant_Seal_H",
-        "Seraph_Greatblade_H",
-        "Empyrean_Plate_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
-        "Seraph_Sigil_H"
+        "Seraph_Sword_H",
+        "Seraph_Plate_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
+        "Seraph_Tear_H"
       ]
     },
     {
@@ -46980,11 +46980,11 @@
         "Throne_Diadem_H",
         "Divine_Treads_H",
         "Covenant_Seal_H",
-        "Seraph_Greatblade_H",
-        "Empyrean_Plate_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
-        "Seraph_Sigil_H"
+        "Seraph_Sword_H",
+        "Seraph_Plate_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
+        "Seraph_Tear_H"
       ]
     },
     {
@@ -54867,15 +54867,15 @@
       ],
       "dropItemIds": [
         "Judgment_Blade_H",
-        "Seraph_Sigil_H",
+        "Seraph_Tear_H",
         "Throne_Vestments_H",
         "Throne_Diadem_H",
         "Divine_Treads_H",
         "Covenant_Seal_H",
-        "Seraph_Greatblade_H",
-        "Empyrean_Plate_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
+        "Seraph_Sword_H",
+        "Seraph_Plate_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
         "CloudSandals",
         "DownFeather",
         "ReedStaff",
@@ -54923,8 +54923,8 @@
       "shopItemIds": [
         "Throne_Diadem_H",
         "Divine_Treads_H",
-        "Empyrean_Crown_H",
-        "Empyrean_Sabatons_H",
+        "Seraph_Helm_H",
+        "Seraph_Greaves_H",
         "PilgrimRobe",
         "PilgrimHood"
       ]
