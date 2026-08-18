@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T23:12:42Z",
+  "generatedAt": "2026-08-18T23:44:42Z",
   "game": "Infinite Loot-Loop",
   "release": {
     "worldGateReleased": true
@@ -6381,7 +6381,7 @@
       "image": "enemy_ShadowRat_H.png",
       "isBoss": false,
       "minLevel": 612,
-      "maxLevel": 620,
+      "maxLevel": 621,
       "hpMin": 1326039,
       "hpMax": 1326039,
       "atkMin": 50407,
@@ -6938,7 +6938,7 @@
       "image": "enemy_ShadowHound_H.png",
       "isBoss": false,
       "minLevel": 673,
-      "maxLevel": 680,
+      "maxLevel": 681,
       "hpMin": 2112410,
       "hpMax": 2112410,
       "atkMin": 97669,
@@ -7091,7 +7091,7 @@
       "image": "enemy_AbyssalSerpent_H.png",
       "isBoss": false,
       "minLevel": 721,
-      "maxLevel": 740,
+      "maxLevel": 741,
       "hpMin": 3322413,
       "hpMax": 3322413,
       "atkMin": 178885,
@@ -7377,7 +7377,7 @@
       "image": "enemy_BloodWraith_H.png",
       "isBoss": false,
       "minLevel": 791,
-      "maxLevel": 800,
+      "maxLevel": 801,
       "hpMin": 5774855,
       "hpMax": 5774855,
       "atkMin": 389163,
@@ -7658,7 +7658,7 @@
       "image": "enemy_IronMantis_H.png",
       "isBoss": false,
       "minLevel": 851,
-      "maxLevel": 860,
+      "maxLevel": 861,
       "hpMin": 9580150,
       "hpMax": 9580150,
       "atkMin": 782546,
@@ -8037,7 +8037,7 @@
       "image": "enemy_AshBat_H.png",
       "isBoss": false,
       "minLevel": 914,
-      "maxLevel": 920,
+      "maxLevel": 921,
       "hpMin": 16554960,
       "hpMax": 16554960,
       "atkMin": 1656735,
@@ -8426,7 +8426,7 @@
       "image": "enemy_MagmaTitanJr_H.png",
       "isBoss": false,
       "minLevel": 974,
-      "maxLevel": 980,
+      "maxLevel": 981,
       "hpMin": 26641091,
       "hpMax": 26641091,
       "atkMin": 3231641,
@@ -8697,7 +8697,7 @@
       "image": "enemy_WorldEmber_H.png",
       "isBoss": false,
       "minLevel": 1031,
-      "maxLevel": 1040,
+      "maxLevel": 1041,
       "hpMin": 42751713,
       "hpMax": 42751713,
       "atkMin": 6219124,
@@ -8973,7 +8973,7 @@
       "image": "enemy_SandWraith_H.png",
       "isBoss": false,
       "minLevel": 1091,
-      "maxLevel": 1100,
+      "maxLevel": 1101,
       "hpMin": 70455270,
       "hpMax": 70455270,
       "atkMin": 12423250,
@@ -9234,7 +9234,7 @@
       "image": "enemy_DuneColossus_H.png",
       "isBoss": false,
       "minLevel": 1151,
-      "maxLevel": 1160,
+      "maxLevel": 1161,
       "hpMin": 118637035,
       "hpMax": 118637035,
       "atkMin": 25356429,
@@ -9505,7 +9505,7 @@
       "image": "enemy_SunSentinel_H.png",
       "isBoss": false,
       "minLevel": 1211,
-      "maxLevel": 1220,
+      "maxLevel": 1221,
       "hpMin": 189846155,
       "hpMax": 189846155,
       "atkMin": 49183073,
@@ -9766,7 +9766,7 @@
       "image": "enemy_TidalBeast_H.png",
       "isBoss": false,
       "minLevel": 1271,
-      "maxLevel": 1280,
+      "maxLevel": 1281,
       "hpMin": 313819283,
       "hpMax": 313819283,
       "atkMin": 98546122,
@@ -10032,7 +10032,7 @@
       "image": "enemy_EternalPharaoh_H.png",
       "isBoss": false,
       "minLevel": 1331,
-      "maxLevel": 1340,
+      "maxLevel": 1341,
       "hpMin": 517486598,
       "hpMax": 517486598,
       "atkMin": 196972261,
@@ -10078,7 +10078,7 @@
       "image": "enemy_DS06_HM_Z0_Enemy_H.png",
       "isBoss": false,
       "minLevel": 1341,
-      "maxLevel": 1400,
+      "maxLevel": 1401,
       "hpMin": 555335134,
       "hpMax": 555335134,
       "atkMin": 218265681,
@@ -10389,7 +10389,7 @@
       "image": "enemy_ReefKing_H.png",
       "isBoss": false,
       "minLevel": 1451,
-      "maxLevel": 1460,
+      "maxLevel": 1461,
       "hpMin": 1435461065,
       "hpMax": 1435461065,
       "atkMin": 802766950,
@@ -10650,7 +10650,7 @@
       "image": "enemy_MazeWarden_H.png",
       "isBoss": false,
       "minLevel": 1511,
-      "maxLevel": 1520,
+      "maxLevel": 1521,
       "hpMin": 2386918873,
       "hpMax": 2386918873,
       "atkMin": 1618012143,
@@ -10906,7 +10906,7 @@
       "image": "enemy_TempleWarden_H.png",
       "isBoss": false,
       "minLevel": 1570,
-      "maxLevel": 1580,
+      "maxLevel": 1581,
       "hpMin": 3905706336,
       "hpMax": 3905706336,
       "atkMin": 3209148072,
@@ -11162,7 +11162,7 @@
       "image": "enemy_TrenchColossus_H.png",
       "isBoss": false,
       "minLevel": 1631,
-      "maxLevel": 1640,
+      "maxLevel": 1641,
       "hpMin": 6517662052,
       "hpMax": 6517662052,
       "atkMin": 6491245871,
@@ -11203,7 +11203,7 @@
       "image": "enemy_UW06_HM_Z0_Enemy_H.png",
       "isBoss": false,
       "minLevel": 1641,
-      "maxLevel": 1700,
+      "maxLevel": 1701,
       "hpMin": 6988603801,
       "hpMax": 6988603801,
       "atkMin": 7187055247,
@@ -11279,7 +11279,7 @@
       "image": "enemy_UW07_HM_Z0_Enemy_H.png",
       "isBoss": false,
       "minLevel": 1701,
-      "maxLevel": 1760,
+      "maxLevel": 1761,
       "hpMin": 11662573083,
       "hpMax": 11662573083,
       "atkMin": 14537877094,
@@ -14100,8 +14100,8 @@
       "name": "Straw Ronin H",
       "image": "enemy_StrawRonin_H.png",
       "isBoss": false,
-      "minLevel": 46001,
-      "maxLevel": 46100,
+      "minLevel": 47000,
+      "maxLevel": 47199,
       "hpMin": 457289675868540800,
       "hpMax": 457289675868540800,
       "atkMin": 283227778096857860,
@@ -14119,10 +14119,10 @@
         }
       ],
       "resists": {
-        "critResist": 104.70181,
-        "comboResist": 26.931171,
-        "dodgeResist": -7.841816,
-        "critMultResist": 8.0108795,
+        "critResist": 104.70606,
+        "comboResist": 26.932154,
+        "dodgeResist": -7.8420663,
+        "critMultResist": 8.011,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14141,8 +14141,8 @@
       "name": "Straw Ronin H",
       "image": "enemy_StrawRonin_Z1_H.png",
       "isBoss": false,
-      "minLevel": 46101,
-      "maxLevel": 46200,
+      "minLevel": 47200,
+      "maxLevel": 47399,
       "hpMin": 489121782020944830,
       "hpMax": 489121782020944830,
       "atkMin": 302943370145956540,
@@ -14160,10 +14160,10 @@
         }
       ],
       "resists": {
-        "critResist": 104.70181,
-        "comboResist": 26.931171,
-        "dodgeResist": -7.841816,
-        "critMultResist": 8.0108795,
+        "critResist": 104.70606,
+        "comboResist": 26.932154,
+        "dodgeResist": -7.8420663,
+        "critMultResist": 8.011,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14182,8 +14182,8 @@
       "name": "Lantern Wisp H",
       "image": "enemy_LanternWisp_H.png",
       "isBoss": false,
-      "minLevel": 46201,
-      "maxLevel": 46300,
+      "minLevel": 47400,
+      "maxLevel": 47599,
       "hpMin": 523169733042738050,
       "hpMax": 523169733042738050,
       "atkMin": 324031371965235200,
@@ -14201,10 +14201,10 @@
         }
       ],
       "resists": {
-        "critResist": 104.70181,
-        "comboResist": 26.931171,
-        "dodgeResist": -7.841816,
-        "critMultResist": 8.0108795,
+        "critResist": 104.70606,
+        "comboResist": 26.932154,
+        "dodgeResist": -7.8420663,
+        "critMultResist": 8.011,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14223,8 +14223,8 @@
       "name": "Lantern Wisp H",
       "image": "enemy_LanternWisp_Z3_H.png",
       "isBoss": false,
-      "minLevel": 46301,
-      "maxLevel": 46400,
+      "minLevel": 47600,
+      "maxLevel": 47799,
       "hpMin": 559587774727827000,
       "hpMax": 559587774727827000,
       "atkMin": 346587317514444740,
@@ -14242,10 +14242,10 @@
         }
       ],
       "resists": {
-        "critResist": 104.70181,
-        "comboResist": 26.931171,
-        "dodgeResist": -7.841816,
-        "critMultResist": 8.0108795,
+        "critResist": 104.70606,
+        "comboResist": 26.932154,
+        "dodgeResist": -7.8420663,
+        "critMultResist": 8.011,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14264,8 +14264,8 @@
       "name": "Market Tanuki H",
       "image": "enemy_MarketTanuki_H.png",
       "isBoss": false,
-      "minLevel": 46401,
-      "maxLevel": 46500,
+      "minLevel": 47800,
+      "maxLevel": 48000,
       "hpMin": 598540889977786200,
       "hpMax": 598540889977786200,
       "atkMin": 370713390908168960,
@@ -14283,10 +14283,10 @@
         }
       ],
       "resists": {
-        "critResist": 104.70181,
-        "comboResist": 26.931171,
-        "dodgeResist": -7.841816,
-        "critMultResist": 8.0108795,
+        "critResist": 104.70606,
+        "comboResist": 26.932154,
+        "dodgeResist": -7.8420663,
+        "critMultResist": 8.011,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14305,8 +14305,8 @@
       "name": "Paddy Kappa H",
       "image": "enemy_PaddyKappa_H.png",
       "isBoss": false,
-      "minLevel": 46501,
-      "maxLevel": 46600,
+      "minLevel": 48000,
+      "maxLevel": 48199,
       "hpMin": 640205546215957100,
       "hpMax": 640205546215957100,
       "atkMin": 396518889335600960,
@@ -14324,10 +14324,10 @@
         }
       ],
       "resists": {
-        "critResist": 115.0405,
-        "comboResist": 29.136063,
-        "dodgeResist": -7.485983,
-        "critMultResist": 8.07088,
+        "critResist": 115.04509,
+        "comboResist": 29.13711,
+        "dodgeResist": -7.486218,
+        "critMultResist": 8.071,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14346,8 +14346,8 @@
       "name": "Paddy Kappa H",
       "image": "enemy_PaddyKappa_Z1_H.png",
       "isBoss": false,
-      "minLevel": 46601,
-      "maxLevel": 46700,
+      "minLevel": 48200,
+      "maxLevel": 48399,
       "hpMin": 684770494829322800,
       "hpMax": 684770494829322800,
       "atkMin": 424120718204339140,
@@ -14365,10 +14365,10 @@
         }
       ],
       "resists": {
-        "critResist": 115.0405,
-        "comboResist": 29.136063,
-        "dodgeResist": -7.485983,
-        "critMultResist": 8.07088,
+        "critResist": 115.04509,
+        "comboResist": 29.13711,
+        "dodgeResist": -7.486218,
+        "critMultResist": 8.071,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14387,8 +14387,8 @@
       "name": "Scarecrow Kakashi H",
       "image": "enemy_ScarecrowKakashi_H.png",
       "isBoss": false,
-      "minLevel": 46701,
-      "maxLevel": 46800,
+      "minLevel": 48400,
+      "maxLevel": 48599,
       "hpMin": 732437626259833300,
       "hpMax": 732437626259833300,
       "atkMin": 453643920751329200,
@@ -14406,10 +14406,10 @@
         }
       ],
       "resists": {
-        "critResist": 115.0405,
-        "comboResist": 29.136063,
-        "dodgeResist": -7.485983,
-        "critMultResist": 8.07088,
+        "critResist": 115.04509,
+        "comboResist": 29.13711,
+        "dodgeResist": -7.486218,
+        "critMultResist": 8.071,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14428,8 +14428,8 @@
       "name": "Scarecrow Kakashi H",
       "image": "enemy_ScarecrowKakashi_Z3_H.png",
       "isBoss": false,
-      "minLevel": 46801,
-      "maxLevel": 46900,
+      "minLevel": 48600,
+      "maxLevel": 48799,
       "hpMin": 783422884618957800,
       "hpMax": 783422884618957800,
       "atkMin": 485222244520222600,
@@ -14447,10 +14447,10 @@
         }
       ],
       "resists": {
-        "critResist": 115.0405,
-        "comboResist": 29.136063,
-        "dodgeResist": -7.485983,
-        "critMultResist": 8.07088,
+        "critResist": 115.04509,
+        "comboResist": 29.13711,
+        "dodgeResist": -7.486218,
+        "critMultResist": 8.071,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14469,8 +14469,8 @@
       "name": "Koi Revenant H",
       "image": "enemy_KoiRevenant_H.png",
       "isBoss": false,
-      "minLevel": 46901,
-      "maxLevel": 47000,
+      "minLevel": 48800,
+      "maxLevel": 49000,
       "hpMin": 837957245968900700,
       "hpMax": 837957245968900700,
       "atkMin": 518998747271436540,
@@ -14488,10 +14488,10 @@
         }
       ],
       "resists": {
-        "critResist": 115.0405,
-        "comboResist": 29.136063,
-        "dodgeResist": -7.485983,
-        "critMultResist": 8.07088,
+        "critResist": 115.04509,
+        "comboResist": 29.13711,
+        "dodgeResist": -7.486218,
+        "critMultResist": 8.071,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14510,8 +14510,8 @@
       "name": "Sakura Sprite H",
       "image": "enemy_SakuraSprite_H.png",
       "isBoss": false,
-      "minLevel": 47001,
-      "maxLevel": 47100,
+      "minLevel": 49000,
+      "maxLevel": 49199,
       "hpMin": 896287764702339800,
       "hpMax": 896287764702339800,
       "atkMin": 555126445069841340,
@@ -14529,10 +14529,10 @@
         }
       ],
       "resists": {
-        "critResist": 126.35234,
-        "comboResist": 31.493505,
-        "dodgeResist": -7.091582,
-        "critMultResist": 8.13088,
+        "critResist": 126.35729,
+        "comboResist": 31.494617,
+        "dodgeResist": -7.091801,
+        "critMultResist": 8.131,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14551,8 +14551,8 @@
       "name": "Sakura Sprite H",
       "image": "enemy_SakuraSprite_Z1_H.png",
       "isBoss": false,
-      "minLevel": 47101,
-      "maxLevel": 47200,
+      "minLevel": 49200,
+      "maxLevel": 49399,
       "hpMin": 958678692761051800,
       "hpMax": 958678692761051800,
       "atkMin": 593769005486074800,
@@ -14570,10 +14570,10 @@
         }
       ],
       "resists": {
-        "critResist": 126.35234,
-        "comboResist": 31.493505,
-        "dodgeResist": -7.091582,
-        "critMultResist": 8.13088,
+        "critResist": 126.35729,
+        "comboResist": 31.494617,
+        "dodgeResist": -7.091801,
+        "critMultResist": 8.131,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14592,8 +14592,8 @@
       "name": "Fox Shrine Guardian H",
       "image": "enemy_FoxShrineGuardian_H.png",
       "isBoss": false,
-      "minLevel": 47201,
-      "maxLevel": 47300,
+      "minLevel": 49400,
+      "maxLevel": 49599,
       "hpMin": 1025412676763766500,
       "hpMax": 1025412676763766500,
       "atkMin": 635101489051861000,
@@ -14611,10 +14611,10 @@
         }
       ],
       "resists": {
-        "critResist": 126.35234,
-        "comboResist": 31.493505,
-        "dodgeResist": -7.091582,
-        "critMultResist": 8.13088,
+        "critResist": 126.35729,
+        "comboResist": 31.494617,
+        "dodgeResist": -7.091801,
+        "critMultResist": 8.131,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14633,8 +14633,8 @@
       "name": "Torii Oni H",
       "image": "enemy_ToriiOni_H.png",
       "isBoss": false,
-      "minLevel": 47301,
-      "maxLevel": 47400,
+      "minLevel": 49600,
+      "maxLevel": 49799,
       "hpMin": 1096792038466540800,
       "hpMax": 1096792038466540800,
       "atkMin": 679311142328311700,
@@ -14652,10 +14652,10 @@
         }
       ],
       "resists": {
-        "critResist": 126.35234,
-        "comboResist": 31.493505,
-        "dodgeResist": -7.091582,
-        "critMultResist": 8.13088,
+        "critResist": 126.35729,
+        "comboResist": 31.494617,
+        "dodgeResist": -7.091801,
+        "critMultResist": 8.131,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14674,8 +14674,8 @@
       "name": "Shrine Tengu H",
       "image": "enemy_ShrineTengu_H.png",
       "isBoss": false,
-      "minLevel": 47401,
-      "maxLevel": 47500,
+      "minLevel": 49800,
+      "maxLevel": 50000,
       "hpMin": 1173140144356460800,
       "hpMax": 1173140144356460800,
       "atkMin": 726598246180011100,
@@ -14693,10 +14693,10 @@
         }
       ],
       "resists": {
-        "critResist": 126.35234,
-        "comboResist": 31.493505,
-        "dodgeResist": -7.091582,
-        "critMultResist": 8.13088,
+        "critResist": 126.35729,
+        "comboResist": 31.494617,
+        "dodgeResist": -7.091801,
+        "critMultResist": 8.131,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14715,8 +14715,8 @@
       "name": "Kabuki Wraith H",
       "image": "enemy_KabukiWraith_H.png",
       "isBoss": false,
-      "minLevel": 47601,
-      "maxLevel": 47725,
+      "minLevel": 50000,
+      "maxLevel": 50249,
       "hpMin": 1254802870583275800,
       "hpMax": 1254802870583275800,
       "atkMin": 777177023097777800,
@@ -14739,10 +14739,10 @@
         }
       ],
       "resists": {
-        "critResist": 138.80103,
-        "comboResist": 34.054543,
-        "dodgeResist": -6.6557646,
-        "critMultResist": 8.19088,
+        "critResist": 138.80635,
+        "comboResist": 34.05572,
+        "dodgeResist": -6.655967,
+        "critMultResist": 8.191,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14761,8 +14761,8 @@
       "name": "Kabuki Wraith H",
       "image": "enemy_KabukiWraith_Z1_H.png",
       "isBoss": false,
-      "minLevel": 47726,
-      "maxLevel": 47850,
+      "minLevel": 50250,
+      "maxLevel": 50499,
       "hpMin": 1364920989988025900,
       "hpMax": 1364920989988025900,
       "atkMin": 845379984881191800,
@@ -14780,10 +14780,10 @@
         }
       ],
       "resists": {
-        "critResist": 138.80103,
-        "comboResist": 34.054543,
-        "dodgeResist": -6.6557646,
-        "critMultResist": 8.19088,
+        "critResist": 138.80635,
+        "comboResist": 34.05572,
+        "dodgeResist": -6.655967,
+        "critMultResist": 8.191,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14802,8 +14802,8 @@
       "name": "Kabuki Wraith H",
       "image": "enemy_KabukiWraith_Z2_H.png",
       "isBoss": false,
-      "minLevel": 47851,
-      "maxLevel": 47975,
+      "minLevel": 50500,
+      "maxLevel": 50749,
       "hpMin": 1484702778886616300,
       "hpMax": 1484702778886616300,
       "atkMin": 919568254847661300,
@@ -14821,10 +14821,10 @@
         }
       ],
       "resists": {
-        "critResist": 138.80103,
-        "comboResist": 34.054543,
-        "dodgeResist": -6.6557646,
-        "critMultResist": 8.19088,
+        "critResist": 138.80635,
+        "comboResist": 34.05572,
+        "dodgeResist": -6.655967,
+        "critMultResist": 8.191,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14843,8 +14843,8 @@
       "name": "Kabuki Wraith H",
       "image": "enemy_KabukiWraith_Z3_H.png",
       "isBoss": false,
-      "minLevel": 47976,
-      "maxLevel": 48100,
+      "minLevel": 50750,
+      "maxLevel": 51000,
       "hpMin": 1614996294879294500,
       "hpMax": 1614996294879294500,
       "atkMin": 1000267087518535700,
@@ -14862,10 +14862,10 @@
         }
       ],
       "resists": {
-        "critResist": 138.80103,
-        "comboResist": 34.054543,
-        "dodgeResist": -6.6557646,
-        "critMultResist": 8.19088,
+        "critResist": 138.80635,
+        "comboResist": 34.05572,
+        "dodgeResist": -6.655967,
+        "critMultResist": 8.191,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14884,8 +14884,8 @@
       "name": "Harbor Hoplite H",
       "image": "enemy_HarborHoplite_H.png",
       "isBoss": false,
-      "minLevel": 48301,
-      "maxLevel": 48400,
+      "minLevel": 52000,
+      "maxLevel": 52199,
       "hpMin": 1756724018816586000,
       "hpMax": 1756724018816586000,
       "atkMin": 1088047832336889000,
@@ -14903,10 +14903,10 @@
         }
       ],
       "resists": {
-        "critResist": 152.43509,
-        "comboResist": 36.800026,
-        "dodgeResist": -6.1753926,
-        "critMultResist": 8.25088,
+        "critResist": 152.44084,
+        "comboResist": 36.80128,
+        "dodgeResist": -6.1755776,
+        "critMultResist": 8.251,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14925,8 +14925,8 @@
       "name": "Harbor Hoplite H",
       "image": "enemy_HarborHoplite_Z1_H.png",
       "isBoss": false,
-      "minLevel": 48401,
-      "maxLevel": 48500,
+      "minLevel": 52200,
+      "maxLevel": 52399,
       "hpMin": 1879010237811661300,
       "hpMax": 1879010237811661300,
       "atkMin": 1163787250752706600,
@@ -14944,10 +14944,10 @@
         }
       ],
       "resists": {
-        "critResist": 152.43509,
-        "comboResist": 36.800026,
-        "dodgeResist": -6.1753926,
-        "critMultResist": 8.25088,
+        "critResist": 152.44084,
+        "comboResist": 36.80128,
+        "dodgeResist": -6.1755776,
+        "critMultResist": 8.251,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14966,8 +14966,8 @@
       "name": "Olive Satyr H",
       "image": "enemy_OliveSatyr_H.png",
       "isBoss": false,
-      "minLevel": 48501,
-      "maxLevel": 48600,
+      "minLevel": 52400,
+      "maxLevel": 52599,
       "hpMin": 2009808846456982300,
       "hpMax": 2009808846456982300,
       "atkMin": 1244798918541647400,
@@ -14985,10 +14985,10 @@
         }
       ],
       "resists": {
-        "critResist": 152.43509,
-        "comboResist": 36.800026,
-        "dodgeResist": -6.1753926,
-        "critMultResist": 8.25088,
+        "critResist": 152.44084,
+        "comboResist": 36.80128,
+        "dodgeResist": -6.1755776,
+        "critMultResist": 8.251,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15007,8 +15007,8 @@
       "name": "Olive Satyr H",
       "image": "enemy_OliveSatyr_Z3_H.png",
       "isBoss": false,
-      "minLevel": 48601,
-      "maxLevel": 48700,
+      "minLevel": 52600,
+      "maxLevel": 52799,
       "hpMin": 2149712395394420000,
       "hpMax": 2149712395394420000,
       "atkMin": 1331449838963490800,
@@ -15026,10 +15026,10 @@
         }
       ],
       "resists": {
-        "critResist": 152.43509,
-        "comboResist": 36.800026,
-        "dodgeResist": -6.1753926,
-        "critMultResist": 8.25088,
+        "critResist": 152.44084,
+        "comboResist": 36.80128,
+        "dodgeResist": -6.1755776,
+        "critMultResist": 8.251,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15048,8 +15048,8 @@
       "name": "Siren Gull H",
       "image": "enemy_SirenGull_H.png",
       "isBoss": false,
-      "minLevel": 48701,
-      "maxLevel": 48800,
+      "minLevel": 52800,
+      "maxLevel": 53000,
       "hpMin": 2299354682938663200,
       "hpMax": 2299354682938663200,
       "atkMin": 1424132562512821800,
@@ -15067,10 +15067,10 @@
         }
       ],
       "resists": {
-        "critResist": 152.43509,
-        "comboResist": 36.800026,
-        "dodgeResist": -6.1753926,
-        "critMultResist": 8.25088,
+        "critResist": 152.44084,
+        "comboResist": 36.80128,
+        "dodgeResist": -6.1755776,
+        "critMultResist": 8.251,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15089,8 +15089,8 @@
       "name": "Marble Sentinel H",
       "image": "enemy_MarbleSentinel_H.png",
       "isBoss": false,
-      "minLevel": 49101,
-      "maxLevel": 49200,
+      "minLevel": 54000,
+      "maxLevel": 54249,
       "hpMin": 2459413626343220000,
       "hpMax": 2459413626343220000,
       "atkMin": 1523266965271644200,
@@ -15113,10 +15113,10 @@
         }
       ],
       "resists": {
-        "critResist": 167.45583,
-        "comboResist": 39.79147,
-        "dodgeResist": -5.6395516,
-        "critMultResist": 8.31085,
+        "critResist": 167.46355,
+        "comboResist": 39.793133,
+        "dodgeResist": -5.63976,
+        "critMultResist": 8.311,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15135,8 +15135,8 @@
       "name": "Marble Sentinel H",
       "image": "enemy_MarbleSentinel_Z1_H.png",
       "isBoss": false,
-      "minLevel": 49201,
-      "maxLevel": 49300,
+      "minLevel": 54250,
+      "maxLevel": 54499,
       "hpMin": 2675245140376530400,
       "hpMax": 2675245140376530400,
       "atkMin": 1656944770367135500,
@@ -15154,10 +15154,10 @@
         }
       ],
       "resists": {
-        "critResist": 167.45583,
-        "comboResist": 39.79147,
-        "dodgeResist": -5.6395516,
-        "critMultResist": 8.31085,
+        "critResist": 167.46355,
+        "comboResist": 39.793133,
+        "dodgeResist": -5.63976,
+        "critMultResist": 8.311,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15176,8 +15176,8 @@
       "name": "Agora Shade H",
       "image": "enemy_AgoraShade_H.png",
       "isBoss": false,
-      "minLevel": 49301,
-      "maxLevel": 49400,
+      "minLevel": 54500,
+      "maxLevel": 54749,
       "hpMin": 2910017446617767400,
       "hpMax": 2910017446617767400,
       "atkMin": 1802353779501415700,
@@ -15195,10 +15195,10 @@
         }
       ],
       "resists": {
-        "critResist": 167.45583,
-        "comboResist": 39.79147,
-        "dodgeResist": -5.6395516,
-        "critMultResist": 8.31085,
+        "critResist": 167.46355,
+        "comboResist": 39.793133,
+        "dodgeResist": -5.63976,
+        "critMultResist": 8.311,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15217,8 +15217,8 @@
       "name": "Agora Shade H",
       "image": "enemy_AgoraShade_Z3_H.png",
       "isBoss": false,
-      "minLevel": 49401,
-      "maxLevel": 49500,
+      "minLevel": 54750,
+      "maxLevel": 55000,
       "hpMin": 3165392737963417000,
       "hpMax": 3165392737963417000,
       "atkMin": 1960523491536329500,
@@ -15236,10 +15236,10 @@
         }
       ],
       "resists": {
-        "critResist": 167.45583,
-        "comboResist": 39.79147,
-        "dodgeResist": -5.6395516,
-        "critMultResist": 8.31085,
+        "critResist": 167.46355,
+        "comboResist": 39.793133,
+        "dodgeResist": -5.63976,
+        "critMultResist": 8.311,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15258,8 +15258,8 @@
       "name": "Bull Minion H",
       "image": "enemy_BullMinion_H.png",
       "isBoss": false,
-      "minLevel": 50001,
-      "maxLevel": 50100,
+      "minLevel": 56000,
+      "maxLevel": 56249,
       "hpMin": 3443179076880508000,
       "hpMax": 3443179076880508000,
       "atkMin": 2132573751380302000,
@@ -15282,10 +15282,10 @@
         }
       ],
       "resists": {
-        "critResist": 184.05614,
-        "comboResist": 43.00914,
-        "dodgeResist": -5.058806,
-        "critMultResist": 8.37085,
+        "critResist": 184.06448,
+        "comboResist": 43.01091,
+        "dodgeResist": -5.05899,
+        "critMultResist": 8.371,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15304,8 +15304,8 @@
       "name": "Bull Minion H",
       "image": "enemy_BullMinion_Z1_H.png",
       "isBoss": false,
-      "minLevel": 50101,
-      "maxLevel": 50200,
+      "minLevel": 56250,
+      "maxLevel": 56499,
       "hpMin": 3745343196527142400,
       "hpMax": 3745343196527142400,
       "atkMin": 2319722678513990000,
@@ -15323,10 +15323,10 @@
         }
       ],
       "resists": {
-        "critResist": 184.05614,
-        "comboResist": 43.00914,
-        "dodgeResist": -5.058806,
-        "critMultResist": 8.37085,
+        "critResist": 184.06448,
+        "comboResist": 43.01091,
+        "dodgeResist": -5.05899,
+        "critMultResist": 8.371,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15345,8 +15345,8 @@
       "name": "Maze Chimera Whelp H",
       "image": "enemy_ChimeraWhelp_H.png",
       "isBoss": false,
-      "minLevel": 50201,
-      "maxLevel": 50300,
+      "minLevel": 56500,
+      "maxLevel": 56749,
       "hpMin": 4074024425264874000,
       "hpMax": 4074024425264874000,
       "atkMin": 2523295291301982000,
@@ -15364,10 +15364,10 @@
         }
       ],
       "resists": {
-        "critResist": 184.05614,
-        "comboResist": 43.00914,
-        "dodgeResist": -5.058806,
-        "critMultResist": 8.37085,
+        "critResist": 184.06448,
+        "comboResist": 43.01091,
+        "dodgeResist": -5.05899,
+        "critMultResist": 8.371,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15386,8 +15386,8 @@
       "name": "Minotaur Warden H",
       "image": "enemy_MinotaurWarden_H.png",
       "isBoss": false,
-      "minLevel": 50301,
-      "maxLevel": 50400,
+      "minLevel": 56750,
+      "maxLevel": 57000,
       "hpMin": 4431549833148783000,
       "hpMax": 4431549833148783000,
       "atkMin": 2744732888150861300,
@@ -15405,10 +15405,10 @@
         }
       ],
       "resists": {
-        "critResist": 184.05614,
-        "comboResist": 43.00914,
-        "dodgeResist": -5.058806,
-        "critMultResist": 8.37085,
+        "critResist": 184.06448,
+        "comboResist": 43.01091,
+        "dodgeResist": -5.05899,
+        "critMultResist": 8.371,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15427,8 +15427,8 @@
       "name": "Stage Harpy H",
       "image": "enemy_StageHarpy_H.png",
       "isBoss": false,
-      "minLevel": 51001,
-      "maxLevel": 51100,
+      "minLevel": 58000,
+      "maxLevel": 58249,
       "hpMin": 4820450707632711000,
       "hpMax": 4820450707632711000,
       "atkMin": 2985603251932422700,
@@ -15451,10 +15451,10 @@
         }
       ],
       "resists": {
-        "critResist": 202.53207,
-        "comboResist": 46.52863,
-        "dodgeResist": -4.421918,
-        "critMultResist": 8.43085,
+        "critResist": 202.54108,
+        "comboResist": 46.530514,
+        "dodgeResist": -4.422076,
+        "critMultResist": 8.431,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15473,8 +15473,8 @@
       "name": "Stage Harpy H",
       "image": "enemy_StageHarpy_Z1_H.png",
       "isBoss": false,
-      "minLevel": 51101,
-      "maxLevel": 51200,
+      "minLevel": 58250,
+      "maxLevel": 58499,
       "hpMin": 5243480475137999000,
       "hpMax": 5243480475137999000,
       "atkMin": 3247611749919586000,
@@ -15492,10 +15492,10 @@
         }
       ],
       "resists": {
-        "critResist": 202.53207,
-        "comboResist": 46.52863,
-        "dodgeResist": -4.421918,
-        "critMultResist": 8.43085,
+        "critResist": 202.54108,
+        "comboResist": 46.530514,
+        "dodgeResist": -4.422076,
+        "critMultResist": 8.431,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15514,8 +15514,8 @@
       "name": "Chorus Wraith H",
       "image": "enemy_ChorusWraith_H.png",
       "isBoss": false,
-      "minLevel": 51201,
-      "maxLevel": 51300,
+      "minLevel": 58500,
+      "maxLevel": 58749,
       "hpMin": 5703634195370824000,
       "hpMax": 5703634195370824000,
       "atkMin": 3532613407822775000,
@@ -15533,10 +15533,10 @@
         }
       ],
       "resists": {
-        "critResist": 202.53207,
-        "comboResist": 46.52863,
-        "dodgeResist": -4.421918,
-        "critMultResist": 8.43085,
+        "critResist": 202.54108,
+        "comboResist": 46.530514,
+        "dodgeResist": -4.422076,
+        "critMultResist": 8.431,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15555,8 +15555,8 @@
       "name": "Stage Harpy H",
       "image": "enemy_StageHarpy_Z3_H.png",
       "isBoss": false,
-      "minLevel": 51301,
-      "maxLevel": 51400,
+      "minLevel": 58750,
+      "maxLevel": 59000,
       "hpMin": 6204169766408295000,
       "hpMax": 6204169766408295000,
       "atkMin": 3842626043411205000,
@@ -15574,10 +15574,10 @@
         }
       ],
       "resists": {
-        "critResist": 202.53207,
-        "comboResist": 46.52863,
-        "dodgeResist": -4.421918,
-        "critMultResist": 8.43085,
+        "critResist": 202.54108,
+        "comboResist": 46.530514,
+        "dodgeResist": -4.422076,
+        "critMultResist": 8.431,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15596,8 +15596,8 @@
       "name": "Pool Naiad H",
       "image": "enemy_PoolNaiad_H.png",
       "isBoss": false,
-      "minLevel": 52101,
-      "maxLevel": 52200,
+      "minLevel": 60000,
+      "maxLevel": 60249,
       "hpMin": 6748630990685794000,
       "hpMax": 6748630990685794000,
       "atkMin": 4179844552705391000,
@@ -15620,10 +15620,10 @@
         }
       ],
       "resists": {
-        "critResist": 223.02171,
-        "comboResist": 50.32891,
-        "dodgeResist": -3.724156,
-        "critMultResist": 8.4908495,
+        "critResist": 223.03148,
+        "comboResist": 50.330917,
+        "dodgeResist": -3.7242875,
+        "critMultResist": 8.491,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15642,8 +15642,8 @@
       "name": "Pool Naiad H",
       "image": "enemy_PoolNaiad_Z1_H.png",
       "isBoss": false,
-      "minLevel": 52201,
-      "maxLevel": 52300,
+      "minLevel": 60250,
+      "maxLevel": 60499,
       "hpMin": 7340872665193198000,
       "hpMax": 7340872665193198000,
       "atkMin": 4546656449887419400,
@@ -15661,10 +15661,10 @@
         }
       ],
       "resists": {
-        "critResist": 223.02171,
-        "comboResist": 50.32891,
-        "dodgeResist": -3.724156,
-        "critMultResist": 8.4908495,
+        "critResist": 223.03148,
+        "comboResist": 50.330917,
+        "dodgeResist": -3.7242875,
+        "critMultResist": 8.491,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15683,8 +15683,8 @@
       "name": "Petrified Husk H",
       "image": "enemy_PetrifiedHusk_H.png",
       "isBoss": false,
-      "minLevel": 52301,
-      "maxLevel": 52400,
+      "minLevel": 60500,
+      "maxLevel": 60749,
       "hpMin": 7985087873519152000,
       "hpMax": 7985087873519152000,
       "atkMin": 4945658770951884000,
@@ -15702,10 +15702,10 @@
         }
       ],
       "resists": {
-        "critResist": 223.02171,
-        "comboResist": 50.32891,
-        "dodgeResist": -3.724156,
-        "critMultResist": 8.4908495,
+        "critResist": 223.03148,
+        "comboResist": 50.330917,
+        "dodgeResist": -3.7242875,
+        "critMultResist": 8.491,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15724,8 +15724,8 @@
       "name": "Gorgon Acolyte H",
       "image": "enemy_GorgonAcolyte_H.png",
       "isBoss": false,
-      "minLevel": 52401,
-      "maxLevel": 52500,
+      "minLevel": 60750,
+      "maxLevel": 61000,
       "hpMin": 8685837672971613000,
       "hpMax": 8685837672971613000,
       "atkMin": 5379676460775687000,
@@ -15743,10 +15743,10 @@
         }
       ],
       "resists": {
-        "critResist": 223.02171,
-        "comboResist": 50.32891,
-        "dodgeResist": -3.724156,
-        "critMultResist": 8.4908495,
+        "critResist": 223.03148,
+        "comboResist": 50.330917,
+        "dodgeResist": -3.7242875,
+        "critMultResist": 8.491,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15765,8 +15765,8 @@
       "name": "Storm Peryton H",
       "image": "enemy_StormPeryton_H.png",
       "isBoss": false,
-      "minLevel": 53401,
-      "maxLevel": 53800,
+      "minLevel": 62000,
+      "maxLevel": 63000,
       "hpMin": 9448083386960112000,
       "hpMax": 9448083386960112000,
       "atkMin": 5851782373787548000,
@@ -15804,10 +15804,10 @@
         }
       ],
       "resists": {
-        "critResist": 245.91818,
-        "comboResist": 54.50458,
-        "dodgeResist": -2.9602401,
-        "critMultResist": 8.55085,
+        "critResist": 245.92876,
+        "comboResist": 54.50672,
+        "dodgeResist": -2.9603436,
+        "critMultResist": 8.551,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15826,8 +15826,8 @@
       "name": "Checkpoint Grunt H",
       "image": "enemy_CheckpointGrunt_H.png",
       "isBoss": false,
-      "minLevel": 54901,
-      "maxLevel": 55000,
+      "minLevel": 65000,
+      "maxLevel": 65332,
       "hpMin": 13227316741744155000,
       "hpMax": 13227316741744155000,
       "atkMin": 8192495323302565000,
@@ -15850,10 +15850,10 @@
         }
       ],
       "resists": {
-        "critResist": 271.62057,
-        "comboResist": 59.070873,
-        "dodgeResist": -2.124236,
-        "critMultResist": 8.6108,
+        "critResist": 271.63586,
+        "comboResist": 59.073917,
+        "dodgeResist": -2.1243336,
+        "critMultResist": 8.611,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15872,8 +15872,8 @@
       "name": "Checkpoint Grunt H",
       "image": "enemy_CheckpointGrunt_Z1_H.png",
       "isBoss": false,
-      "minLevel": 55001,
-      "maxLevel": 55100,
+      "minLevel": 65333,
+      "maxLevel": 65665,
       "hpMin": 14797252972397316000,
       "hpMax": 14797252972397316000,
       "atkMin": 9164853926232137000,
@@ -15896,10 +15896,10 @@
         }
       ],
       "resists": {
-        "critResist": 271.62057,
-        "comboResist": 59.070873,
-        "dodgeResist": -2.124236,
-        "critMultResist": 8.6108,
+        "critResist": 271.63586,
+        "comboResist": 59.073917,
+        "dodgeResist": -2.1243336,
+        "critMultResist": 8.611,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15918,8 +15918,8 @@
       "name": "Watchtower Sniper H",
       "image": "enemy_WatchtowerSniper_H.png",
       "isBoss": false,
-      "minLevel": 55101,
-      "maxLevel": 55200,
+      "minLevel": 65666,
+      "maxLevel": 66000,
       "hpMin": 16553523273401962000,
       "hpMax": 16553523273401962000,
       "atkMin": 10252620743067165000,
@@ -15937,10 +15937,10 @@
         }
       ],
       "resists": {
-        "critResist": 271.62057,
-        "comboResist": 59.070873,
-        "dodgeResist": -2.124236,
-        "critMultResist": 8.6108,
+        "critResist": 271.63586,
+        "comboResist": 59.073917,
+        "dodgeResist": -2.1243336,
+        "critMultResist": 8.611,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15959,8 +15959,8 @@
       "name": "Depot Mongrel H",
       "image": "enemy_DepotMongrel_H.png",
       "isBoss": false,
-      "minLevel": 56601,
-      "maxLevel": 56700,
+      "minLevel": 68000,
+      "maxLevel": 68332,
       "hpMin": 18518243438441820000,
       "hpMax": 18518243438441820000,
       "atkMin": 11469493452623591000,
@@ -15983,10 +15983,10 @@
         }
       ],
       "resists": {
-        "critResist": 300.63437,
-        "comboResist": 64.04001,
-        "dodgeResist": -1.2095759,
-        "critMultResist": 8.6708,
+        "critResist": 300.65103,
+        "comboResist": 64.04326,
+        "dodgeResist": -1.2096306,
+        "critMultResist": 8.671,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16005,8 +16005,8 @@
       "name": "Depot Mongrel H",
       "image": "enemy_DepotMongrel_Z1_H.png",
       "isBoss": false,
-      "minLevel": 56701,
-      "maxLevel": 56800,
+      "minLevel": 68333,
+      "maxLevel": 68665,
       "hpMin": 20716154161356247000,
       "hpMax": 20716154161356247000,
       "atkMin": 12830795496724992000,
@@ -16029,10 +16029,10 @@
         }
       ],
       "resists": {
-        "critResist": 300.63437,
-        "comboResist": 64.04001,
-        "dodgeResist": -1.2095759,
-        "critMultResist": 8.6708,
+        "critResist": 300.65103,
+        "comboResist": 64.04326,
+        "dodgeResist": -1.2096306,
+        "critMultResist": 8.671,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16051,8 +16051,8 @@
       "name": "Forklift Loader H",
       "image": "enemy_ForkliftLoader_H.png",
       "isBoss": false,
-      "minLevel": 56801,
-      "maxLevel": 56900,
+      "minLevel": 68666,
+      "maxLevel": 69000,
       "hpMin": 23174932582762740000,
       "hpMax": 23174932582762740000,
       "atkMin": 14353669040294030000,
@@ -16070,10 +16070,10 @@
         }
       ],
       "resists": {
-        "critResist": 300.63437,
-        "comboResist": 64.04001,
-        "dodgeResist": -1.2095759,
-        "critMultResist": 8.6708,
+        "critResist": 300.65103,
+        "comboResist": 64.04326,
+        "dodgeResist": -1.2096306,
+        "critMultResist": 8.671,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16092,8 +16092,8 @@
       "name": "Trench Sapper H",
       "image": "enemy_TrenchSapper_H.png",
       "isBoss": false,
-      "minLevel": 58401,
-      "maxLevel": 58500,
+      "minLevel": 71000,
+      "maxLevel": 71249,
       "hpMin": 25925540813818544000,
       "hpMax": 25925540813818544000,
       "atkMin": 16057290833673028000,
@@ -16116,10 +16116,10 @@
         }
       ],
       "resists": {
-        "critResist": 333.7179,
-        "comboResist": 69.548676,
-        "dodgeResist": -0.20875204,
-        "critMultResist": 8.73085,
+        "critResist": 333.73154,
+        "comboResist": 69.55128,
+        "dodgeResist": -0.20875901,
+        "critMultResist": 8.731,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16138,8 +16138,8 @@
       "name": "Trench Sapper H",
       "image": "enemy_TrenchSapper_Z1_H.png",
       "isBoss": false,
-      "minLevel": 58501,
-      "maxLevel": 58600,
+      "minLevel": 71250,
+      "maxLevel": 71499,
       "hpMin": 28200696430606184000,
       "hpMax": 28200696430606184000,
       "atkMin": 17466435417887508000,
@@ -16157,10 +16157,10 @@
         }
       ],
       "resists": {
-        "critResist": 333.7179,
-        "comboResist": 69.548676,
-        "dodgeResist": -0.20875204,
-        "critMultResist": 8.73085,
+        "critResist": 333.73154,
+        "comboResist": 69.55128,
+        "dodgeResist": -0.20875901,
+        "critMultResist": 8.731,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16179,8 +16179,8 @@
       "name": "Wire Ghoul H",
       "image": "enemy_WireGhoul_H.png",
       "isBoss": false,
-      "minLevel": 58601,
-      "maxLevel": 58700,
+      "minLevel": 71500,
+      "maxLevel": 71749,
       "hpMin": 30675513574911170000,
       "hpMax": 30675513574911170000,
       "atkMin": 18999242734488756000,
@@ -16198,10 +16198,10 @@
         }
       ],
       "resists": {
-        "critResist": 333.7179,
-        "comboResist": 69.548676,
-        "dodgeResist": -0.20875204,
-        "critMultResist": 8.73085,
+        "critResist": 333.73154,
+        "comboResist": 69.55128,
+        "dodgeResist": -0.20875901,
+        "critMultResist": 8.731,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16220,8 +16220,8 @@
       "name": "Trench Sapper H",
       "image": "enemy_TrenchSapper_Z3_H.png",
       "isBoss": false,
-      "minLevel": 58701,
-      "maxLevel": 58800,
+      "minLevel": 71750,
+      "maxLevel": 72000,
       "hpMin": 33367514004487746000,
       "hpMax": 33367514004487746000,
       "atkMin": 20666565091715875000,
@@ -16239,10 +16239,10 @@
         }
       ],
       "resists": {
-        "critResist": 333.7179,
-        "comboResist": 69.548676,
-        "dodgeResist": -0.20875204,
-        "critMultResist": 8.73085,
+        "critResist": 333.73154,
+        "comboResist": 69.55128,
+        "dodgeResist": -0.20875901,
+        "critMultResist": 8.731,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16261,8 +16261,8 @@
       "name": "Mine Skitterbot H",
       "image": "enemy_MineSkitterbot_H.png",
       "isBoss": false,
-      "minLevel": 60601,
-      "maxLevel": 60700,
+      "minLevel": 74000,
+      "maxLevel": 74332,
       "hpMin": 36295757139345957000,
       "hpMax": 36295757139345957000,
       "atkMin": 22480207167142236000,
@@ -16285,10 +16285,10 @@
         }
       ],
       "resists": {
-        "critResist": 371.4014,
-        "comboResist": 75.57973,
-        "dodgeResist": 0.8866919,
-        "critMultResist": 8.7908,
+        "critResist": 371.42133,
+        "comboResist": 75.58344,
+        "dodgeResist": 0.88673097,
+        "critMultResist": 8.791,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16307,8 +16307,8 @@
       "name": "Mine Skitterbot H",
       "image": "enemy_MineSkitterbot_Z1_H.png",
       "isBoss": false,
-      "minLevel": 60701,
-      "maxLevel": 60800,
+      "minLevel": 74333,
+      "maxLevel": 74665,
       "hpMin": 40603662156258230000,
       "hpMax": 40603662156258230000,
       "atkMin": 25148359173580980000,
@@ -16331,10 +16331,10 @@
         }
       ],
       "resists": {
-        "critResist": 371.4014,
-        "comboResist": 75.57973,
-        "dodgeResist": 0.8866919,
-        "critMultResist": 8.7908,
+        "critResist": 371.42133,
+        "comboResist": 75.58344,
+        "dodgeResist": 0.88673097,
+        "critMultResist": 8.791,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16353,8 +16353,8 @@
       "name": "Tank Husk Gunner H",
       "image": "enemy_TankHuskGunner_H.png",
       "isBoss": false,
-      "minLevel": 60801,
-      "maxLevel": 60900,
+      "minLevel": 74666,
+      "maxLevel": 75000,
       "hpMin": 45422867862214970000,
       "hpMax": 45422867862214970000,
       "atkMin": 28133191318976295000,
@@ -16372,10 +16372,10 @@
         }
       ],
       "resists": {
-        "critResist": 371.4014,
-        "comboResist": 75.57973,
-        "dodgeResist": 0.8866919,
-        "critMultResist": 8.7908,
+        "critResist": 371.42133,
+        "comboResist": 75.58344,
+        "dodgeResist": 0.88673097,
+        "critMultResist": 8.791,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16394,8 +16394,8 @@
       "name": "Airfield Gunner H",
       "image": "enemy_AirfieldGunner_H.png",
       "isBoss": false,
-      "minLevel": 63001,
-      "maxLevel": 63100,
+      "minLevel": 77000,
+      "maxLevel": 77249,
       "hpMin": 50814059995084340000,
       "hpMax": 50814059995084340000,
       "atkMin": 31472290033999130000,
@@ -16418,10 +16418,10 @@
         }
       ],
       "resists": {
-        "critResist": 414.8394,
-        "comboResist": 82.31648,
-        "dodgeResist": 2.1006472,
-        "critMultResist": 8.85085,
+        "critResist": 414.8558,
+        "comboResist": 82.31947,
+        "dodgeResist": 2.1007156,
+        "critMultResist": 8.851,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16440,8 +16440,8 @@
       "name": "Airfield Gunner H",
       "image": "enemy_AirfieldGunner_Z1_H.png",
       "isBoss": false,
-      "minLevel": 63101,
-      "maxLevel": 63200,
+      "minLevel": 77250,
+      "maxLevel": 77499,
       "hpMin": 55273365003988115000,
       "hpMax": 55273365003988115000,
       "atkMin": 34234213419059510000,
@@ -16459,10 +16459,10 @@
         }
       ],
       "resists": {
-        "critResist": 414.8394,
-        "comboResist": 82.31648,
-        "dodgeResist": 2.1006472,
-        "critMultResist": 8.85085,
+        "critResist": 414.8558,
+        "comboResist": 82.31947,
+        "dodgeResist": 2.1007156,
+        "critMultResist": 8.851,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16481,8 +16481,8 @@
       "name": "Drone Swarm Node H",
       "image": "enemy_DroneSwarmNode_H.png",
       "isBoss": false,
-      "minLevel": 63201,
-      "maxLevel": 63300,
+      "minLevel": 77500,
+      "maxLevel": 77749,
       "hpMin": 60124006606825890000,
       "hpMax": 60124006606825890000,
       "atkMin": 37238515759597950000,
@@ -16500,10 +16500,10 @@
         }
       ],
       "resists": {
-        "critResist": 414.8394,
-        "comboResist": 82.31648,
-        "dodgeResist": 2.1006472,
-        "critMultResist": 8.85085,
+        "critResist": 414.8558,
+        "comboResist": 82.31947,
+        "dodgeResist": 2.1007156,
+        "critMultResist": 8.851,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16522,8 +16522,8 @@
       "name": "Airfield Gunner H",
       "image": "enemy_AirfieldGunner_Z3_H.png",
       "isBoss": false,
-      "minLevel": 63301,
-      "maxLevel": 63400,
+      "minLevel": 77750,
+      "maxLevel": 78000,
       "hpMin": 65400327448795970000,
       "hpMax": 65400327448795970000,
       "atkMin": 40506467579763106000,
@@ -16541,10 +16541,10 @@
         }
       ],
       "resists": {
-        "critResist": 414.8394,
-        "comboResist": 82.31648,
-        "dodgeResist": 2.1006472,
-        "critMultResist": 8.85085,
+        "critResist": 414.8558,
+        "comboResist": 82.31947,
+        "dodgeResist": 2.1007156,
+        "critMultResist": 8.851,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16563,8 +16563,8 @@
       "name": "Bunker Sentry Bot H",
       "image": "enemy_BunkerSentryBot_H.png",
       "isBoss": false,
-      "minLevel": 65901,
-      "maxLevel": 66000,
+      "minLevel": 80000,
+      "maxLevel": 80249,
       "hpMin": 71139683993118070000,
       "hpMax": 71139683993118070000,
       "atkMin": 44061206047598780000,
@@ -16587,10 +16587,10 @@
         }
       ],
       "resists": {
-        "critResist": 465.3513,
-        "comboResist": 89.75288,
-        "dodgeResist": 3.416669,
-        "critMultResist": 8.91085,
+        "critResist": 465.36942,
+        "comboResist": 89.756096,
+        "dodgeResist": 3.4167788,
+        "critMultResist": 8.911,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16609,8 +16609,8 @@
       "name": "Bunker Sentry Bot H",
       "image": "enemy_BunkerSentryBot_Z1_H.png",
       "isBoss": false,
-      "minLevel": 66001,
-      "maxLevel": 66100,
+      "minLevel": 80250,
+      "maxLevel": 80499,
       "hpMin": 77382711005583360000,
       "hpMax": 77382711005583360000,
       "atkMin": 47927898786683314000,
@@ -16628,10 +16628,10 @@
         }
       ],
       "resists": {
-        "critResist": 465.3513,
-        "comboResist": 89.75288,
-        "dodgeResist": 3.416669,
-        "critMultResist": 8.91085,
+        "critResist": 465.36942,
+        "comboResist": 89.756096,
+        "dodgeResist": 3.4167788,
+        "critMultResist": 8.911,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16650,8 +16650,8 @@
       "name": "Flame Trooper H",
       "image": "enemy_FlameTrooper_H.png",
       "isBoss": false,
-      "minLevel": 66101,
-      "maxLevel": 66200,
+      "minLevel": 80500,
+      "maxLevel": 80749,
       "hpMin": 84173609249556230000,
       "hpMax": 84173609249556230000,
       "atkMin": 52133922063437136000,
@@ -16669,10 +16669,10 @@
         }
       ],
       "resists": {
-        "critResist": 465.3513,
-        "comboResist": 89.75288,
-        "dodgeResist": 3.416669,
-        "critMultResist": 8.91085,
+        "critResist": 465.36942,
+        "comboResist": 89.756096,
+        "dodgeResist": 3.4167788,
+        "critMultResist": 8.911,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16691,8 +16691,8 @@
       "name": "Bunker Sentry Bot H",
       "image": "enemy_BunkerSentryBot_Z3_H.png",
       "isBoss": false,
-      "minLevel": 66201,
-      "maxLevel": 66300,
+      "minLevel": 80750,
+      "maxLevel": 81000,
       "hpMin": 91560458428314350000,
       "hpMax": 91560458428314350000,
       "atkMin": 56709054611668345000,
@@ -16710,10 +16710,10 @@
         }
       ],
       "resists": {
-        "critResist": 465.3513,
-        "comboResist": 89.75288,
-        "dodgeResist": 3.416669,
-        "critMultResist": 8.91085,
+        "critResist": 465.36942,
+        "comboResist": 89.756096,
+        "dodgeResist": 3.4167788,
+        "critMultResist": 8.911,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16732,8 +16732,8 @@
       "name": "Riot Breacher H",
       "image": "enemy_RiotBreacher_H.png",
       "isBoss": false,
-      "minLevel": 68901,
-      "maxLevel": 69000,
+      "minLevel": 84000,
+      "maxLevel": 84332,
       "hpMin": 99595557590365290000,
       "hpMax": 99595557590365290000,
       "atkMin": 61685688466638280000,
@@ -16756,10 +16756,10 @@
         }
       ],
       "resists": {
-        "critResist": 524.9725,
-        "comboResist": 98.13269,
-        "dodgeResist": 4.8604393,
-        "critMultResist": 8.970799,
+        "critResist": 524.9993,
+        "comboResist": 98.13732,
+        "dodgeResist": 4.860645,
+        "critMultResist": 8.971,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16778,8 +16778,8 @@
       "name": "Riot Breacher H",
       "image": "enemy_RiotBreacher_Z1_H.png",
       "isBoss": false,
-      "minLevel": 69001,
-      "maxLevel": 69100,
+      "minLevel": 84333,
+      "maxLevel": 84665,
       "hpMin": 111416448956772580000,
       "hpMax": 111416448956772580000,
       "atkMin": 69007097572306200000,
@@ -16802,10 +16802,10 @@
         }
       ],
       "resists": {
-        "critResist": 524.9725,
-        "comboResist": 98.13269,
-        "dodgeResist": 4.8604393,
-        "critMultResist": 8.970799,
+        "critResist": 524.9993,
+        "comboResist": 98.13732,
+        "dodgeResist": 4.860645,
+        "critMultResist": 8.971,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16824,8 +16824,8 @@
       "name": "Spotlight Operator H",
       "image": "enemy_SpotlightOperator_H.png",
       "isBoss": false,
-      "minLevel": 69101,
-      "maxLevel": 69200,
+      "minLevel": 84666,
+      "maxLevel": 85000,
       "hpMin": 124640349413917840000,
       "hpMax": 124640349413917840000,
       "atkMin": 77197476979270940000,
@@ -16843,10 +16843,10 @@
         }
       ],
       "resists": {
-        "critResist": 524.9725,
-        "comboResist": 98.13269,
-        "dodgeResist": 4.8604393,
-        "critMultResist": 8.970799,
+        "critResist": 524.9993,
+        "comboResist": 98.13732,
+        "dodgeResist": 4.860645,
+        "critMultResist": 8.971,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16865,8 +16865,8 @@
       "name": "Recon Stalker H",
       "image": "enemy_ReconStalker_H.png",
       "isBoss": false,
-      "minLevel": 72401,
-      "maxLevel": 72800,
+      "minLevel": 88000,
+      "maxLevel": 89000,
       "hpMin": 139433780626511380000,
       "hpMax": 139433780626511380000,
       "atkMin": 86359963853293580000,
@@ -16904,10 +16904,10 @@
         }
       ],
       "resists": {
-        "critResist": 595.7031,
-        "comboResist": 107.480125,
-        "dodgeResist": 6.446541,
-        "critMultResist": 9.030849,
+        "critResist": 595.72565,
+        "comboResist": 107.48387,
+        "dodgeResist": 6.446743,
+        "critMultResist": 9.031,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16926,8 +16926,8 @@
       "name": "Cloud Wisp H",
       "image": "enemy_CloudWisp_H.png",
       "isBoss": false,
-      "minLevel": 76701,
-      "maxLevel": 77900,
+      "minLevel": 92000,
+      "maxLevel": 93110,
       "hpMin": 195207292877115900000,
       "hpMax": 195207292877115900000,
       "atkMin": 120903949394611010000,
@@ -16950,10 +16950,10 @@
         }
       ],
       "resists": {
-        "critResist": 681.18445,
-        "comboResist": 118.14021,
-        "dodgeResist": 8.191738,
-        "critMultResist": 9.090994,
+        "critResist": 681.1854,
+        "comboResist": 118.140366,
+        "dodgeResist": 8.191748,
+        "critMultResist": 9.091,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16972,8 +16972,8 @@
       "name": "Cloud Wisp H",
       "image": "enemy_CloudWisp_Z1_H.png",
       "isBoss": false,
-      "minLevel": 77901,
-      "maxLevel": 79100,
+      "minLevel": 93111,
+      "maxLevel": 94221,
       "hpMin": 202643411008553550000,
       "hpMax": 202643411008553550000,
       "atkMin": 125509597252356000000,
@@ -16991,10 +16991,10 @@
         }
       ],
       "resists": {
-        "critResist": 681.18445,
-        "comboResist": 118.14021,
-        "dodgeResist": 8.191738,
-        "critMultResist": 9.090994,
+        "critResist": 681.1854,
+        "comboResist": 118.140366,
+        "dodgeResist": 8.191748,
+        "critMultResist": 9.091,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17013,8 +17013,8 @@
       "name": "Fountain Naiad H",
       "image": "enemy_FountainNaiad_H.png",
       "isBoss": false,
-      "minLevel": 79101,
-      "maxLevel": 80300,
+      "minLevel": 94222,
+      "maxLevel": 95332,
       "hpMin": 210362796491582930000,
       "hpMax": 210362796491582930000,
       "atkMin": 130290690100076580000,
@@ -17032,10 +17032,10 @@
         }
       ],
       "resists": {
-        "critResist": 681.18445,
-        "comboResist": 118.14021,
-        "dodgeResist": 8.191738,
-        "critMultResist": 9.090994,
+        "critResist": 681.1854,
+        "comboResist": 118.140366,
+        "dodgeResist": 8.191748,
+        "critMultResist": 9.091,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17054,8 +17054,8 @@
       "name": "Grove Stag H",
       "image": "enemy_GroveStag_H.png",
       "isBoss": false,
-      "minLevel": 80301,
-      "maxLevel": 81500,
+      "minLevel": 95333,
+      "maxLevel": 96443,
       "hpMin": 218376239955274200000,
       "hpMax": 218376239955274200000,
       "atkMin": 135253911241720120000,
@@ -17073,10 +17073,10 @@
         }
       ],
       "resists": {
-        "critResist": 681.18445,
-        "comboResist": 118.14021,
-        "dodgeResist": 8.191738,
-        "critMultResist": 9.090994,
+        "critResist": 681.1854,
+        "comboResist": 118.140366,
+        "dodgeResist": 8.191748,
+        "critMultResist": 9.091,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17095,8 +17095,8 @@
       "name": "Halo Watcher H",
       "image": "enemy_HaloWatcher_H.png",
       "isBoss": false,
-      "minLevel": 81501,
-      "maxLevel": 82700,
+      "minLevel": 96444,
+      "maxLevel": 97554,
       "hpMin": 226694943080924450000,
       "hpMax": 226694943080924450000,
       "atkMin": 140406198571300290000,
@@ -17114,10 +17114,10 @@
         }
       ],
       "resists": {
-        "critResist": 681.18445,
-        "comboResist": 118.14021,
-        "dodgeResist": 8.191738,
-        "critMultResist": 9.090994,
+        "critResist": 681.1854,
+        "comboResist": 118.140366,
+        "dodgeResist": 8.191748,
+        "critMultResist": 9.091,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17136,8 +17136,8 @@
       "name": "Choir Cantor H",
       "image": "enemy_ChoirCantor_H.png",
       "isBoss": false,
-      "minLevel": 82701,
-      "maxLevel": 83900,
+      "minLevel": 97555,
+      "maxLevel": 98665,
       "hpMin": 235330534260453080000,
       "hpMax": 235330534260453080000,
       "atkMin": 145754754271109800000,
@@ -17155,10 +17155,10 @@
         }
       ],
       "resists": {
-        "critResist": 681.18445,
-        "comboResist": 118.14021,
-        "dodgeResist": 8.191738,
-        "critMultResist": 9.090994,
+        "critResist": 681.1854,
+        "comboResist": 118.140366,
+        "dodgeResist": 8.191748,
+        "critMultResist": 9.091,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17177,8 +17177,8 @@
       "name": "Grove Seraph H",
       "image": "enemy_GroveSeraph_H.png",
       "isBoss": false,
-      "minLevel": 83901,
-      "maxLevel": 85100,
+      "minLevel": 98666,
+      "maxLevel": 99776,
       "hpMin": 244295084851278900000,
       "hpMax": 244295084851278900000,
       "atkMin": 151307054879371000000,
@@ -17196,10 +17196,10 @@
         }
       ],
       "resists": {
-        "critResist": 681.18445,
-        "comboResist": 118.14021,
-        "dodgeResist": 8.191738,
-        "critMultResist": 9.090994,
+        "critResist": 681.1854,
+        "comboResist": 118.140366,
+        "dodgeResist": 8.191748,
+        "critMultResist": 9.091,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17218,8 +17218,8 @@
       "name": "Ascension Knight H",
       "image": "enemy_AscensionKnight_H.png",
       "isBoss": false,
-      "minLevel": 85101,
-      "maxLevel": 86300,
+      "minLevel": 99777,
+      "maxLevel": 100887,
       "hpMin": 253601126050401800000,
       "hpMax": 253601126050401800000,
       "atkMin": 157070861741398460000,
@@ -17237,10 +17237,10 @@
         }
       ],
       "resists": {
-        "critResist": 681.18445,
-        "comboResist": 118.14021,
-        "dodgeResist": 8.191738,
-        "critMultResist": 9.090994,
+        "critResist": 681.1854,
+        "comboResist": 118.140366,
+        "dodgeResist": 8.191748,
+        "critMultResist": 9.091,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17259,8 +17259,8 @@
       "name": "Throne Archon H",
       "image": "enemy_ThroneArchon_H.png",
       "isBoss": false,
-      "minLevel": 86301,
-      "maxLevel": 87500,
+      "minLevel": 100888,
+      "maxLevel": 102000,
       "hpMin": 263261666411276170000,
       "hpMax": 263261666411276170000,
       "atkMin": 163054231858881760000,
@@ -17278,10 +17278,10 @@
         }
       ],
       "resists": {
-        "critResist": 681.18445,
-        "comboResist": 118.14021,
-        "dodgeResist": 8.191738,
-        "critMultResist": 9.090994,
+        "critResist": 681.1854,
+        "comboResist": 118.140366,
+        "dodgeResist": 8.191748,
+        "critMultResist": 9.091,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17968,7 +17968,7 @@
       "image": "boss_AquaLiege.png",
       "mapId": "MainUnderwaterBossRoom_Map",
       "level": 750,
-      "hardModeLevel": 46000,
+      "hardModeLevel": 46999,
       "hp": 4625000,
       "atk": 52439.99999999999,
       "hardModeHp": 36172573788,
@@ -18003,7 +18003,7 @@
       "image": "boss_YokaiShogun.png",
       "mapId": "JapanPagoda_Map",
       "level": 6000,
-      "hardModeLevel": 48100,
+      "hardModeLevel": 51000,
       "hp": 2366587883239.65,
       "atk": 2218653400589.34,
       "hardModeHp": 7528817223499655000,
@@ -18018,10 +18018,10 @@
         "weaken": 0.7513376
       },
       "hardModeResists": {
-        "critResist": 140.13191,
-        "comboResist": 34.34947,
-        "dodgeResist": -6.706394,
-        "critMultResist": 8.22088,
+        "critResist": 140.13696,
+        "comboResist": 34.35059,
+        "dodgeResist": -6.7065864,
+        "critMultResist": 8.220994,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -18038,7 +18038,7 @@
       "image": "boss_BronzeColossus.png",
       "mapId": "GreekTemple_Map",
       "level": 12000,
-      "hardModeLevel": 53800,
+      "hardModeLevel": 63000,
       "hp": 16665943109851.621,
       "atk": 33887134655456.414,
       "hardModeHp": 66136583708720780000,
@@ -18053,10 +18053,10 @@
         "weaken": 0.7722847
       },
       "hardModeResists": {
-        "critResist": 248.03287,
-        "comboResist": 54.932182,
-        "dodgeResist": -2.980875,
-        "critMultResist": 8.58085,
+        "critResist": 248.04301,
+        "comboResist": 54.934235,
+        "dodgeResist": -2.9809742,
+        "critMultResist": 8.580994,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -18073,7 +18073,7 @@
       "image": "boss_SiegeJuggernaut.png",
       "mapId": "MilitaryYard_Map",
       "level": 27500,
-      "hardModeLevel": 69200,
+      "hardModeLevel": 85000,
       "hp": 193677355215752.78,
       "atk": 103080741464861.2,
       "hardModeHp": 328665340048205400000,
@@ -18088,10 +18088,10 @@
         "weaken": 0.7990419
       },
       "hardModeResists": {
-        "critResist": 529.0018,
-        "comboResist": 98.826385,
-        "dodgeResist": 4.891308,
-        "critMultResist": 9.0008,
+        "critResist": 529.02783,
+        "comboResist": 98.83087,
+        "dodgeResist": 4.891507,
+        "critMultResist": 9.000994,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -18108,7 +18108,7 @@
       "image": "boss_WarlordIronclad.png",
       "mapId": "MilitaryHQ_Map",
       "level": 31000,
-      "hardModeLevel": 72800,
+      "hardModeLevel": 89000,
       "hp": 2985001688821148,
       "atk": 117112351270252.8,
       "hardModeHp": 418301341879534160000,
@@ -18123,10 +18123,10 @@
         "weaken": 0.7990419
       },
       "hardModeResists": {
-        "critResist": 600.2061,
-        "comboResist": 108.22929,
-        "dodgeResist": 6.4869685,
-        "critMultResist": 9.06085,
+        "critResist": 600.2277,
+        "comboResist": 108.23289,
+        "dodgeResist": 6.4871626,
+        "critMultResist": 9.060994,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -18143,7 +18143,7 @@
       "image": "boss_ArchangelSovereign.png",
       "mapId": "HeavenAscension_Map",
       "level": 46000,
-      "hardModeLevel": 87500,
+      "hardModeLevel": 102000,
       "hp": 457289675868540800,
       "atk": 223749944696517730,
       "hardModeHp": 488018232192789800000,
@@ -18158,10 +18158,10 @@
         "weaken": 0.8418417
       },
       "hardModeResists": {
-        "critResist": 686.2567,
-        "comboResist": 118.95233,
-        "dodgeResist": 8.242473,
-        "critMultResist": 9.120995,
+        "critResist": 686.25665,
+        "comboResist": 118.952324,
+        "dodgeResist": 8.242472,
+        "critMultResist": 9.120994,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -43741,7 +43741,7 @@
       "bossEnemyId": "",
       "zoneTier": 13,
       "minEnemyLevel": 1091,
-      "maxEnemyLevel": 1100,
+      "maxEnemyLevel": 1101,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -44005,7 +44005,7 @@
       "bossEnemyId": "",
       "zoneTier": 14,
       "minEnemyLevel": 1151,
-      "maxEnemyLevel": 1160,
+      "maxEnemyLevel": 1161,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -44269,7 +44269,7 @@
       "bossEnemyId": "",
       "zoneTier": 15,
       "minEnemyLevel": 1211,
-      "maxEnemyLevel": 1220,
+      "maxEnemyLevel": 1221,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -44533,7 +44533,7 @@
       "bossEnemyId": "",
       "zoneTier": 16,
       "minEnemyLevel": 1271,
-      "maxEnemyLevel": 1280,
+      "maxEnemyLevel": 1281,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -44797,7 +44797,7 @@
       "bossEnemyId": "",
       "zoneTier": 17,
       "minEnemyLevel": 1331,
-      "maxEnemyLevel": 1340,
+      "maxEnemyLevel": 1341,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -44841,7 +44841,7 @@
       "bossEnemyId": "",
       "zoneTier": 18,
       "minEnemyLevel": 1341,
-      "maxEnemyLevel": 1400,
+      "maxEnemyLevel": 1401,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -45193,7 +45193,7 @@
       "bossEnemyId": "",
       "zoneTier": 6,
       "minEnemyLevel": 673,
-      "maxEnemyLevel": 680,
+      "maxEnemyLevel": 681,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -45325,7 +45325,7 @@
       "bossEnemyId": "",
       "zoneTier": 7,
       "minEnemyLevel": 721,
-      "maxEnemyLevel": 740,
+      "maxEnemyLevel": 741,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -45589,7 +45589,7 @@
       "bossEnemyId": "",
       "zoneTier": 8,
       "minEnemyLevel": 791,
-      "maxEnemyLevel": 800,
+      "maxEnemyLevel": 801,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -45853,7 +45853,7 @@
       "bossEnemyId": "",
       "zoneTier": 9,
       "minEnemyLevel": 851,
-      "maxEnemyLevel": 860,
+      "maxEnemyLevel": 861,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46161,7 +46161,7 @@
       "bossEnemyId": "",
       "zoneTier": 5,
       "minEnemyLevel": 612,
-      "maxEnemyLevel": 620,
+      "maxEnemyLevel": 621,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46204,8 +46204,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 29,
-      "minEnemyLevel": 48301,
-      "maxEnemyLevel": 48400,
+      "minEnemyLevel": 52000,
+      "maxEnemyLevel": 52199,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46228,8 +46228,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 29,
-      "minEnemyLevel": 48401,
-      "maxEnemyLevel": 48500,
+      "minEnemyLevel": 52200,
+      "maxEnemyLevel": 52399,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46252,8 +46252,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 29,
-      "minEnemyLevel": 48501,
-      "maxEnemyLevel": 48600,
+      "minEnemyLevel": 52400,
+      "maxEnemyLevel": 52599,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46276,8 +46276,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 29,
-      "minEnemyLevel": 48601,
-      "maxEnemyLevel": 48700,
+      "minEnemyLevel": 52600,
+      "maxEnemyLevel": 52799,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46300,8 +46300,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 29,
-      "minEnemyLevel": 48701,
-      "maxEnemyLevel": 48800,
+      "minEnemyLevel": 52800,
+      "maxEnemyLevel": 53000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46324,8 +46324,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 30,
-      "minEnemyLevel": 49101,
-      "maxEnemyLevel": 49200,
+      "minEnemyLevel": 54000,
+      "maxEnemyLevel": 54249,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46348,8 +46348,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 30,
-      "minEnemyLevel": 49201,
-      "maxEnemyLevel": 49300,
+      "minEnemyLevel": 54250,
+      "maxEnemyLevel": 54499,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46372,8 +46372,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 30,
-      "minEnemyLevel": 49301,
-      "maxEnemyLevel": 49400,
+      "minEnemyLevel": 54500,
+      "maxEnemyLevel": 54749,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46396,8 +46396,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 30,
-      "minEnemyLevel": 49401,
-      "maxEnemyLevel": 49500,
+      "minEnemyLevel": 54750,
+      "maxEnemyLevel": 55000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46420,8 +46420,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 31,
-      "minEnemyLevel": 50001,
-      "maxEnemyLevel": 50100,
+      "minEnemyLevel": 56000,
+      "maxEnemyLevel": 56249,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46444,8 +46444,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 31,
-      "minEnemyLevel": 50101,
-      "maxEnemyLevel": 50200,
+      "minEnemyLevel": 56250,
+      "maxEnemyLevel": 56499,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46468,8 +46468,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 31,
-      "minEnemyLevel": 50201,
-      "maxEnemyLevel": 50300,
+      "minEnemyLevel": 56500,
+      "maxEnemyLevel": 56749,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46492,8 +46492,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 31,
-      "minEnemyLevel": 50301,
-      "maxEnemyLevel": 50400,
+      "minEnemyLevel": 56750,
+      "maxEnemyLevel": 57000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46516,8 +46516,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 32,
-      "minEnemyLevel": 51001,
-      "maxEnemyLevel": 51100,
+      "minEnemyLevel": 58000,
+      "maxEnemyLevel": 58249,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46540,8 +46540,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 32,
-      "minEnemyLevel": 51101,
-      "maxEnemyLevel": 51200,
+      "minEnemyLevel": 58250,
+      "maxEnemyLevel": 58499,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46564,8 +46564,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 32,
-      "minEnemyLevel": 51201,
-      "maxEnemyLevel": 51300,
+      "minEnemyLevel": 58500,
+      "maxEnemyLevel": 58749,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46588,8 +46588,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 32,
-      "minEnemyLevel": 51301,
-      "maxEnemyLevel": 51400,
+      "minEnemyLevel": 58750,
+      "maxEnemyLevel": 59000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46612,8 +46612,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 33,
-      "minEnemyLevel": 52101,
-      "maxEnemyLevel": 52200,
+      "minEnemyLevel": 60000,
+      "maxEnemyLevel": 60249,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46636,8 +46636,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 33,
-      "minEnemyLevel": 52201,
-      "maxEnemyLevel": 52300,
+      "minEnemyLevel": 60250,
+      "maxEnemyLevel": 60499,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46660,8 +46660,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 33,
-      "minEnemyLevel": 52301,
-      "maxEnemyLevel": 52400,
+      "minEnemyLevel": 60500,
+      "maxEnemyLevel": 60749,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46684,8 +46684,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 33,
-      "minEnemyLevel": 52401,
-      "maxEnemyLevel": 52500,
+      "minEnemyLevel": 60750,
+      "maxEnemyLevel": 61000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46708,8 +46708,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 34,
-      "minEnemyLevel": 53401,
-      "maxEnemyLevel": 53800,
+      "minEnemyLevel": 62000,
+      "maxEnemyLevel": 63000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46732,8 +46732,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 43,
-      "minEnemyLevel": 76701,
-      "maxEnemyLevel": 77900,
+      "minEnemyLevel": 92000,
+      "maxEnemyLevel": 93110,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46761,8 +46761,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 43,
-      "minEnemyLevel": 77901,
-      "maxEnemyLevel": 79100,
+      "minEnemyLevel": 93111,
+      "maxEnemyLevel": 94221,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46790,8 +46790,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 43,
-      "minEnemyLevel": 79101,
-      "maxEnemyLevel": 80300,
+      "minEnemyLevel": 94222,
+      "maxEnemyLevel": 95332,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46819,8 +46819,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 43,
-      "minEnemyLevel": 80301,
-      "maxEnemyLevel": 81500,
+      "minEnemyLevel": 95333,
+      "maxEnemyLevel": 96443,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46848,8 +46848,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 43,
-      "minEnemyLevel": 81501,
-      "maxEnemyLevel": 82700,
+      "minEnemyLevel": 96444,
+      "maxEnemyLevel": 97554,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46877,8 +46877,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 43,
-      "minEnemyLevel": 82701,
-      "maxEnemyLevel": 83900,
+      "minEnemyLevel": 97555,
+      "maxEnemyLevel": 98665,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46906,8 +46906,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 43,
-      "minEnemyLevel": 83901,
-      "maxEnemyLevel": 85100,
+      "minEnemyLevel": 98666,
+      "maxEnemyLevel": 99776,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46935,8 +46935,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 43,
-      "minEnemyLevel": 85101,
-      "maxEnemyLevel": 86300,
+      "minEnemyLevel": 99777,
+      "maxEnemyLevel": 100887,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46964,8 +46964,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 43,
-      "minEnemyLevel": 86301,
-      "maxEnemyLevel": 87500,
+      "minEnemyLevel": 100888,
+      "maxEnemyLevel": 102000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -46993,8 +46993,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 25,
-      "minEnemyLevel": 46001,
-      "maxEnemyLevel": 46100,
+      "minEnemyLevel": 47000,
+      "maxEnemyLevel": 47199,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47017,8 +47017,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 25,
-      "minEnemyLevel": 46101,
-      "maxEnemyLevel": 46200,
+      "minEnemyLevel": 47200,
+      "maxEnemyLevel": 47399,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47041,8 +47041,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 25,
-      "minEnemyLevel": 46201,
-      "maxEnemyLevel": 46300,
+      "minEnemyLevel": 47400,
+      "maxEnemyLevel": 47599,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47065,8 +47065,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 25,
-      "minEnemyLevel": 46301,
-      "maxEnemyLevel": 46400,
+      "minEnemyLevel": 47600,
+      "maxEnemyLevel": 47799,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47089,8 +47089,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 25,
-      "minEnemyLevel": 46401,
-      "maxEnemyLevel": 46500,
+      "minEnemyLevel": 47800,
+      "maxEnemyLevel": 48000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47113,8 +47113,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 26,
-      "minEnemyLevel": 46501,
-      "maxEnemyLevel": 46600,
+      "minEnemyLevel": 48000,
+      "maxEnemyLevel": 48199,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47137,8 +47137,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 26,
-      "minEnemyLevel": 46601,
-      "maxEnemyLevel": 46700,
+      "minEnemyLevel": 48200,
+      "maxEnemyLevel": 48399,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47161,8 +47161,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 26,
-      "minEnemyLevel": 46701,
-      "maxEnemyLevel": 46800,
+      "minEnemyLevel": 48400,
+      "maxEnemyLevel": 48599,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47185,8 +47185,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 26,
-      "minEnemyLevel": 46801,
-      "maxEnemyLevel": 46900,
+      "minEnemyLevel": 48600,
+      "maxEnemyLevel": 48799,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47209,8 +47209,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 26,
-      "minEnemyLevel": 46901,
-      "maxEnemyLevel": 47000,
+      "minEnemyLevel": 48800,
+      "maxEnemyLevel": 49000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47233,8 +47233,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 27,
-      "minEnemyLevel": 47001,
-      "maxEnemyLevel": 47100,
+      "minEnemyLevel": 49000,
+      "maxEnemyLevel": 49199,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47257,8 +47257,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 27,
-      "minEnemyLevel": 47101,
-      "maxEnemyLevel": 47200,
+      "minEnemyLevel": 49200,
+      "maxEnemyLevel": 49399,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47281,8 +47281,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 27,
-      "minEnemyLevel": 47201,
-      "maxEnemyLevel": 47300,
+      "minEnemyLevel": 49400,
+      "maxEnemyLevel": 49599,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47305,8 +47305,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 27,
-      "minEnemyLevel": 47301,
-      "maxEnemyLevel": 47400,
+      "minEnemyLevel": 49600,
+      "maxEnemyLevel": 49799,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47329,8 +47329,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 27,
-      "minEnemyLevel": 47401,
-      "maxEnemyLevel": 47500,
+      "minEnemyLevel": 49800,
+      "maxEnemyLevel": 50000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47353,8 +47353,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 28,
-      "minEnemyLevel": 47601,
-      "maxEnemyLevel": 47725,
+      "minEnemyLevel": 50000,
+      "maxEnemyLevel": 50249,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47377,8 +47377,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 28,
-      "minEnemyLevel": 47726,
-      "maxEnemyLevel": 47850,
+      "minEnemyLevel": 50250,
+      "maxEnemyLevel": 50499,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47401,8 +47401,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 28,
-      "minEnemyLevel": 47851,
-      "maxEnemyLevel": 47975,
+      "minEnemyLevel": 50500,
+      "maxEnemyLevel": 50749,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47425,8 +47425,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 28,
-      "minEnemyLevel": 47976,
-      "maxEnemyLevel": 48100,
+      "minEnemyLevel": 50750,
+      "maxEnemyLevel": 51000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47449,8 +47449,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 35,
-      "minEnemyLevel": 54901,
-      "maxEnemyLevel": 55000,
+      "minEnemyLevel": 65000,
+      "maxEnemyLevel": 65332,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47473,8 +47473,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 35,
-      "minEnemyLevel": 55001,
-      "maxEnemyLevel": 55100,
+      "minEnemyLevel": 65333,
+      "maxEnemyLevel": 65665,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47497,8 +47497,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 35,
-      "minEnemyLevel": 55101,
-      "maxEnemyLevel": 55200,
+      "minEnemyLevel": 65666,
+      "maxEnemyLevel": 66000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47521,8 +47521,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 36,
-      "minEnemyLevel": 56601,
-      "maxEnemyLevel": 56700,
+      "minEnemyLevel": 68000,
+      "maxEnemyLevel": 68332,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47545,8 +47545,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 36,
-      "minEnemyLevel": 56701,
-      "maxEnemyLevel": 56800,
+      "minEnemyLevel": 68333,
+      "maxEnemyLevel": 68665,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47569,8 +47569,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 36,
-      "minEnemyLevel": 56801,
-      "maxEnemyLevel": 56900,
+      "minEnemyLevel": 68666,
+      "maxEnemyLevel": 69000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47593,8 +47593,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 37,
-      "minEnemyLevel": 58401,
-      "maxEnemyLevel": 58500,
+      "minEnemyLevel": 71000,
+      "maxEnemyLevel": 71249,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47617,8 +47617,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 37,
-      "minEnemyLevel": 58501,
-      "maxEnemyLevel": 58600,
+      "minEnemyLevel": 71250,
+      "maxEnemyLevel": 71499,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47641,8 +47641,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 37,
-      "minEnemyLevel": 58601,
-      "maxEnemyLevel": 58700,
+      "minEnemyLevel": 71500,
+      "maxEnemyLevel": 71749,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47665,8 +47665,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 37,
-      "minEnemyLevel": 58701,
-      "maxEnemyLevel": 58800,
+      "minEnemyLevel": 71750,
+      "maxEnemyLevel": 72000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47689,8 +47689,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 38,
-      "minEnemyLevel": 60601,
-      "maxEnemyLevel": 60700,
+      "minEnemyLevel": 74000,
+      "maxEnemyLevel": 74332,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47713,8 +47713,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 38,
-      "minEnemyLevel": 60701,
-      "maxEnemyLevel": 60800,
+      "minEnemyLevel": 74333,
+      "maxEnemyLevel": 74665,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47737,8 +47737,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 38,
-      "minEnemyLevel": 60801,
-      "maxEnemyLevel": 60900,
+      "minEnemyLevel": 74666,
+      "maxEnemyLevel": 75000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47761,8 +47761,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 39,
-      "minEnemyLevel": 63001,
-      "maxEnemyLevel": 63100,
+      "minEnemyLevel": 77000,
+      "maxEnemyLevel": 77249,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47785,8 +47785,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 39,
-      "minEnemyLevel": 63101,
-      "maxEnemyLevel": 63200,
+      "minEnemyLevel": 77250,
+      "maxEnemyLevel": 77499,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47809,8 +47809,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 39,
-      "minEnemyLevel": 63201,
-      "maxEnemyLevel": 63300,
+      "minEnemyLevel": 77500,
+      "maxEnemyLevel": 77749,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47833,8 +47833,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 39,
-      "minEnemyLevel": 63301,
-      "maxEnemyLevel": 63400,
+      "minEnemyLevel": 77750,
+      "maxEnemyLevel": 78000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47857,8 +47857,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 40,
-      "minEnemyLevel": 65901,
-      "maxEnemyLevel": 66000,
+      "minEnemyLevel": 80000,
+      "maxEnemyLevel": 80249,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47881,8 +47881,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 40,
-      "minEnemyLevel": 66001,
-      "maxEnemyLevel": 66100,
+      "minEnemyLevel": 80250,
+      "maxEnemyLevel": 80499,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47905,8 +47905,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 40,
-      "minEnemyLevel": 66101,
-      "maxEnemyLevel": 66200,
+      "minEnemyLevel": 80500,
+      "maxEnemyLevel": 80749,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47929,8 +47929,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 40,
-      "minEnemyLevel": 66201,
-      "maxEnemyLevel": 66300,
+      "minEnemyLevel": 80750,
+      "maxEnemyLevel": 81000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47953,8 +47953,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 41,
-      "minEnemyLevel": 68901,
-      "maxEnemyLevel": 69000,
+      "minEnemyLevel": 84000,
+      "maxEnemyLevel": 84332,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -47977,8 +47977,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 41,
-      "minEnemyLevel": 69001,
-      "maxEnemyLevel": 69100,
+      "minEnemyLevel": 84333,
+      "maxEnemyLevel": 84665,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -48001,8 +48001,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 41,
-      "minEnemyLevel": 69101,
-      "maxEnemyLevel": 69200,
+      "minEnemyLevel": 84666,
+      "maxEnemyLevel": 85000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -48025,8 +48025,8 @@
       "color": "#73008c",
       "bossEnemyId": "",
       "zoneTier": 42,
-      "minEnemyLevel": 72401,
-      "maxEnemyLevel": 72800,
+      "minEnemyLevel": 88000,
+      "maxEnemyLevel": 89000,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -48270,7 +48270,7 @@
       "bossEnemyId": "",
       "zoneTier": 19,
       "minEnemyLevel": 1451,
-      "maxEnemyLevel": 1460,
+      "maxEnemyLevel": 1461,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -48534,7 +48534,7 @@
       "bossEnemyId": "",
       "zoneTier": 20,
       "minEnemyLevel": 1511,
-      "maxEnemyLevel": 1520,
+      "maxEnemyLevel": 1521,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -48798,7 +48798,7 @@
       "bossEnemyId": "",
       "zoneTier": 21,
       "minEnemyLevel": 1570,
-      "maxEnemyLevel": 1580,
+      "maxEnemyLevel": 1581,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -49062,7 +49062,7 @@
       "bossEnemyId": "",
       "zoneTier": 22,
       "minEnemyLevel": 1631,
-      "maxEnemyLevel": 1640,
+      "maxEnemyLevel": 1641,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -49106,7 +49106,7 @@
       "bossEnemyId": "",
       "zoneTier": 23,
       "minEnemyLevel": 1641,
-      "maxEnemyLevel": 1700,
+      "maxEnemyLevel": 1701,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -49150,7 +49150,7 @@
       "bossEnemyId": "",
       "zoneTier": 24,
       "minEnemyLevel": 1701,
-      "maxEnemyLevel": 1760,
+      "maxEnemyLevel": 1761,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -49546,7 +49546,7 @@
       "bossEnemyId": "",
       "zoneTier": 10,
       "minEnemyLevel": 914,
-      "maxEnemyLevel": 920,
+      "maxEnemyLevel": 921,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -49942,7 +49942,7 @@
       "bossEnemyId": "",
       "zoneTier": 11,
       "minEnemyLevel": 974,
-      "maxEnemyLevel": 980,
+      "maxEnemyLevel": 981,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -50206,7 +50206,7 @@
       "bossEnemyId": "",
       "zoneTier": 12,
       "minEnemyLevel": 1031,
-      "maxEnemyLevel": 1040,
+      "maxEnemyLevel": 1041,
       "goldMultiplier": 1,
       "enemies": [
         {
@@ -52480,7 +52480,7 @@
       "name": "Grassland Plains",
       "world": "Grassland",
       "minLevel": 1,
-      "maxLevel": 620,
+      "maxLevel": 621,
       "zoneCount": 14,
       "enemyIds": [
         "GreenSlime",
@@ -52622,7 +52622,7 @@
       "name": "Forest Road",
       "world": "Forest",
       "minLevel": 25,
-      "maxLevel": 680,
+      "maxLevel": 681,
       "zoneCount": 16,
       "enemyIds": [
         "ForestRoadSprite",
@@ -52715,7 +52715,7 @@
       "name": "Dark Forest",
       "world": "Forest",
       "minLevel": 33,
-      "maxLevel": 740,
+      "maxLevel": 741,
       "zoneCount": 6,
       "enemyIds": [
         "DarkWolf",
@@ -52791,7 +52791,7 @@
       "name": "Deep Dark Forest",
       "world": "Forest",
       "minLevel": 60,
-      "maxLevel": 800,
+      "maxLevel": 801,
       "zoneCount": 12,
       "enemyIds": [
         "DesertScorpion",
@@ -52875,7 +52875,7 @@
       "name": "Ashen Forest Pass",
       "world": "Forest",
       "minLevel": 85,
-      "maxLevel": 860,
+      "maxLevel": 861,
       "zoneCount": 12,
       "enemyIds": [
         "AshWraith",
@@ -52965,7 +52965,7 @@
       "name": "Volcanic Approach",
       "world": "Volcanic",
       "minLevel": 105,
-      "maxLevel": 920,
+      "maxLevel": 921,
       "zoneCount": 18,
       "enemyIds": [
         "MagmaGolem_H",
@@ -53062,7 +53062,7 @@
       "name": "Lava River Pass",
       "world": "Volcanic",
       "minLevel": 145,
-      "maxLevel": 980,
+      "maxLevel": 981,
       "zoneCount": 18,
       "enemyIds": [
         "VoidCrab_H",
@@ -53161,7 +53161,7 @@
       "name": "Lava Core Boss Chamber",
       "world": "Volcanic",
       "minLevel": 180,
-      "maxLevel": 1040,
+      "maxLevel": 1041,
       "zoneCount": 12,
       "enemyIds": [
         "AncientGargoyle_H",
@@ -53246,7 +53246,7 @@
       "name": "Desert Outskirts",
       "world": "Desert",
       "minLevel": 200,
-      "maxLevel": 1100,
+      "maxLevel": 1101,
       "zoneCount": 12,
       "enemyIds": [
         "CactusKnight",
@@ -53332,7 +53332,7 @@
       "name": "Desert Crossroads",
       "world": "Desert",
       "minLevel": 250,
-      "maxLevel": 1160,
+      "maxLevel": 1161,
       "zoneCount": 12,
       "enemyIds": [
         "DuneCrawler",
@@ -53413,7 +53413,7 @@
       "name": "Sun-Buried Cave",
       "world": "Desert",
       "minLevel": 300,
-      "maxLevel": 1220,
+      "maxLevel": 1221,
       "zoneCount": 12,
       "enemyIds": [
         "DesertShadowHound",
@@ -53506,7 +53506,7 @@
       "name": "Sandstone Tunnel",
       "world": "Desert",
       "minLevel": 350,
-      "maxLevel": 1280,
+      "maxLevel": 1281,
       "zoneCount": 12,
       "enemyIds": [
         "StoneGiant",
@@ -53582,7 +53582,7 @@
       "name": "Ancient Burial Passage",
       "world": "Desert",
       "minLevel": 400,
-      "maxLevel": 1340,
+      "maxLevel": 1341,
       "zoneCount": 12,
       "enemyIds": [
         "TombGuard",
@@ -53659,7 +53659,7 @@
       "name": "Shallow Coral Reef",
       "world": "Underwater",
       "minLevel": 450,
-      "maxLevel": 1460,
+      "maxLevel": 1461,
       "zoneCount": 12,
       "enemyIds": [
         "CoralSerpent_H",
@@ -53740,7 +53740,7 @@
       "name": "Desert Boss Room",
       "world": "Desert",
       "minLevel": 490,
-      "maxLevel": 1400,
+      "maxLevel": 1401,
       "zoneCount": 2,
       "enemyIds": [
         "DS06_HM_Z0_Enemy_H"
@@ -53798,7 +53798,7 @@
       "name": "Coral Maze",
       "world": "Underwater",
       "minLevel": 500,
-      "maxLevel": 1520,
+      "maxLevel": 1521,
       "zoneCount": 12,
       "enemyIds": [
         "MazeEel_H",
@@ -53878,7 +53878,7 @@
       "name": "Sunken Temple Gate",
       "world": "Underwater",
       "minLevel": 550,
-      "maxLevel": 1580,
+      "maxLevel": 1581,
       "zoneCount": 12,
       "enemyIds": [
         "TempleGuard_H",
@@ -53956,7 +53956,7 @@
       "name": "Deep Trench",
       "world": "Underwater",
       "minLevel": 600,
-      "maxLevel": 1640,
+      "maxLevel": 1641,
       "zoneCount": 12,
       "enemyIds": [
         "TrenchHunter_H",
@@ -54031,7 +54031,7 @@
       "name": "Giant Clam Boss Room",
       "world": "Underwater",
       "minLevel": 700,
-      "maxLevel": 1700,
+      "maxLevel": 1701,
       "zoneCount": 2,
       "enemyIds": [
         "UW06_HM_Z0_Enemy_H"
@@ -54087,7 +54087,7 @@
       "name": "Main Underwater Boss Room",
       "world": "Underwater",
       "minLevel": 725,
-      "maxLevel": 1760,
+      "maxLevel": 1761,
       "zoneCount": 2,
       "enemyIds": [
         "UW07_HM_Z0_Enemy_H"
@@ -54143,7 +54143,7 @@
       "name": "Japan Village Gate",
       "world": "Japan",
       "minLevel": 3600,
-      "maxLevel": 46500,
+      "maxLevel": 48000,
       "zoneCount": 10,
       "enemyIds": [
         "StrawRonin_H",
@@ -54187,7 +54187,7 @@
       "name": "Japan Rice Terraces",
       "world": "Japan",
       "minLevel": 4100,
-      "maxLevel": 47000,
+      "maxLevel": 49000,
       "zoneCount": 10,
       "enemyIds": [
         "PaddyKappa_H",
@@ -54230,7 +54230,7 @@
       "name": "Japan Shrine Mountain",
       "world": "Japan",
       "minLevel": 4600,
-      "maxLevel": 47500,
+      "maxLevel": 50000,
       "zoneCount": 10,
       "enemyIds": [
         "SakuraSprite_H",
@@ -54276,7 +54276,7 @@
       "name": "Japan Pagoda Court",
       "world": "Japan",
       "minLevel": 5200,
-      "maxLevel": 48100,
+      "maxLevel": 51000,
       "zoneCount": 5,
       "enemyIds": [
         "KabukiWraith_H",
@@ -54319,7 +54319,7 @@
       "name": "Greek Harbor of Columns",
       "world": "Greek",
       "minLevel": 5900,
-      "maxLevel": 48800,
+      "maxLevel": 53000,
       "zoneCount": 10,
       "enemyIds": [
         "HarborHoplite",
@@ -54362,7 +54362,7 @@
       "name": "Greek Agora Crossroads",
       "world": "Greek",
       "minLevel": 6700,
-      "maxLevel": 49500,
+      "maxLevel": 55000,
       "zoneCount": 8,
       "enemyIds": [
         "MarbleSentinel",
@@ -54399,7 +54399,7 @@
       "name": "Greek Labyrinth of the Bull",
       "world": "Greek",
       "minLevel": 7600,
-      "maxLevel": 50400,
+      "maxLevel": 57000,
       "zoneCount": 8,
       "enemyIds": [
         "BullMinion",
@@ -54436,7 +54436,7 @@
       "name": "Greek Amphitheatre of Echoes",
       "world": "Greek",
       "minLevel": 8600,
-      "maxLevel": 51400,
+      "maxLevel": 59000,
       "zoneCount": 8,
       "enemyIds": [
         "StageHarpy",
@@ -54472,7 +54472,7 @@
       "name": "Greek Gorgon Grotto",
       "world": "Greek",
       "minLevel": 9700,
-      "maxLevel": 52500,
+      "maxLevel": 61000,
       "zoneCount": 8,
       "enemyIds": [
         "PoolNaiad",
@@ -54508,7 +54508,7 @@
       "name": "Greek Temple of Olympus",
       "world": "Greek",
       "minLevel": 11000,
-      "maxLevel": 53800,
+      "maxLevel": 63000,
       "zoneCount": 5,
       "enemyIds": [
         "StormPeryton",
@@ -54551,7 +54551,7 @@
       "name": "Military Border Checkpoint",
       "world": "Military",
       "minLevel": 12500,
-      "maxLevel": 55200,
+      "maxLevel": 66000,
       "zoneCount": 6,
       "enemyIds": [
         "CheckpointGrunt_H",
@@ -54586,7 +54586,7 @@
       "name": "Military Supply Depot",
       "world": "Military",
       "minLevel": 14200,
-      "maxLevel": 56900,
+      "maxLevel": 69000,
       "zoneCount": 6,
       "enemyIds": [
         "DepotMongrel_H",
@@ -54620,7 +54620,7 @@
       "name": "Military Trench Line",
       "world": "Military",
       "minLevel": 16000,
-      "maxLevel": 58800,
+      "maxLevel": 72000,
       "zoneCount": 8,
       "enemyIds": [
         "TrenchSapper_H",
@@ -54657,7 +54657,7 @@
       "name": "Military Minefield Crossing",
       "world": "Military",
       "minLevel": 18200,
-      "maxLevel": 60900,
+      "maxLevel": 75000,
       "zoneCount": 6,
       "enemyIds": [
         "MineSkitterbot_H",
@@ -54692,7 +54692,7 @@
       "name": "Military Airfield",
       "world": "Military",
       "minLevel": 20600,
-      "maxLevel": 63400,
+      "maxLevel": 78000,
       "zoneCount": 8,
       "enemyIds": [
         "AirfieldGunner_H",
@@ -54727,7 +54727,7 @@
       "name": "Military Bunker Network",
       "world": "Military",
       "minLevel": 23500,
-      "maxLevel": 66300,
+      "maxLevel": 81000,
       "zoneCount": 8,
       "enemyIds": [
         "BunkerSentryBot_H",
@@ -54764,7 +54764,7 @@
       "name": "Military Blast-Wall Yard",
       "world": "Military",
       "minLevel": 26500,
-      "maxLevel": 69200,
+      "maxLevel": 85000,
       "zoneCount": 6,
       "enemyIds": [
         "RiotBreacher_H",
@@ -54803,7 +54803,7 @@
       "name": "Military Command HQ",
       "world": "Military",
       "minLevel": 30000,
-      "maxLevel": 72800,
+      "maxLevel": 89000,
       "zoneCount": 5,
       "enemyIds": [
         "ReconStalker_H",
@@ -54839,7 +54839,7 @@
       "name": "Heaven Ascension",
       "world": "Heaven",
       "minLevel": 34300,
-      "maxLevel": 87500,
+      "maxLevel": 102000,
       "zoneCount": 18,
       "enemyIds": [
         "CloudWisp_H",
