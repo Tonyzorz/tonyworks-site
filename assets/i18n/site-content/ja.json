@@ -1394,5 +1394,11 @@
   "Your full HP, ATK, and DEF receive": "あなたのHP、ATK、DEFが全回復します",
   "Your use of the Game is also governed by our": "ゲームの使用には、当社の規定も適用されます。",
   "YouTube": "YouTube",
-  "Zone": "ゾーン"
+  "Zone": "ゾーン",
+  "World Gate hard mode rebalanced": "ワールドゲート ハードモードのバランス調整",
+  "Critical-damage resistance in World Gate hard mode now scales with your agility. Previously a single critical hit could end even the final boss fight regardless of your equipment.": "ワールドゲート ハードモードのクリティカルダメージ耐性が、敏捷性に応じて変化するようになりました。以前は装備に関係なく、たった一度のクリティカルで最終ボス戦が終わることがありました。",
+  "The Archangel Sovereign now has more health and hits less hard, so the fight lasts long enough for your gear to matter.": "アークエンジェル・ソブリンの体力を増やし、攻撃力を下げました。装備が意味を持つだけの長さの戦闘になります。",
+  "Fixed dodge resistance in the first half of World Gate hard mode, where it previously had no effect.": "これまでまったく効果のなかった、ワールドゲート ハードモード前半の回避耐性を修正しました。",
+  "Hard mode now takes roughly twice as many battles per map, and every region boss remains beatable. World Gate normal mode is unchanged.": "ハードモードはマップあたりの戦闘数がおよそ2倍になりましたが、各地域のボスは引き続き撃破可能です。ワールドゲート ノーマルモードに変更はありません。",
+  "2026-08-20 · Current project update": "2026-08-20 · 現在のプロジェクトの更新"
 }

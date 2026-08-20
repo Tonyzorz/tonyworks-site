@@ -1394,5 +1394,11 @@
   "Your full HP, ATK, and DEF receive": "你的HP、ATK、DEF全部获得",
   "Your use of the Game is also governed by our": "您对游戏的使用也受我们的约束",
   "YouTube": "YouTube",
-  "Zone": "专区"
+  "Zone": "专区",
+  "World Gate hard mode rebalanced": "世界之门困难模式平衡调整",
+  "Critical-damage resistance in World Gate hard mode now scales with your agility. Previously a single critical hit could end even the final boss fight regardless of your equipment.": "世界之门困难模式中的暴击伤害抗性现在会随你的敏捷而变化。此前无论装备如何，一次暴击就可能结束最终boss战。",
+  "The Archangel Sovereign now has more health and hits less hard, so the fight lasts long enough for your gear to matter.": "炽天使君主的生命值提高、攻击力降低，使战斗持续足够长的时间，让装备真正发挥作用。",
+  "Fixed dodge resistance in the first half of World Gate hard mode, where it previously had no effect.": "修复了世界之门困难模式前半段完全失效的闪避抗性。",
+  "Hard mode now takes roughly twice as many battles per map, and every region boss remains beatable. World Gate normal mode is unchanged.": "困难模式现在每张地图所需的战斗次数约为原来的两倍，且各地区boss依然可以击败。世界之门普通模式保持不变。",
+  "2026-08-20 · Current project update": "2026-08-20 · 当前项目更新"
 }

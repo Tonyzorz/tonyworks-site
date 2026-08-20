@@ -1394,5 +1394,11 @@
   "Your full HP, ATK, and DEF receive": "Tam HP, ATK ve DEF'iniz alınır",
   "Your use of the Game is also governed by our": "Oyunu kullanımınız aynı zamanda bizim kurallarımıza da tabidir.",
   "YouTube": "YouTube",
-  "Zone": "Bölge"
+  "Zone": "Bölge",
+  "World Gate hard mode rebalanced": "World Gate zor mod yeniden dengelendi",
+  "Critical-damage resistance in World Gate hard mode now scales with your agility. Previously a single critical hit could end even the final boss fight regardless of your equipment.": "World Gate zor modundaki kritik hasar direnci artık çevikliğinizle ölçekleniyor. Daha önce tek bir kritik vuruş, ekipmanınızdan bağımsız olarak final patron savaşını bile bitirebiliyordu.",
+  "The Archangel Sovereign now has more health and hits less hard, so the fight lasts long enough for your gear to matter.": "Baş Melek Hükümdar artık daha fazla cana sahip ve daha az sert vuruyor; böylece savaş, ekipmanınızın önem kazanacağı kadar uzun sürüyor.",
+  "Fixed dodge resistance in the first half of World Gate hard mode, where it previously had no effect.": "World Gate zor modunun ilk yarısında daha önce hiçbir etkisi olmayan kaçınma direnci düzeltildi.",
+  "Hard mode now takes roughly twice as many battles per map, and every region boss remains beatable. World Gate normal mode is unchanged.": "Zor mod artık harita başına yaklaşık iki katı savaş gerektiriyor ve her bölge patronu yenilebilir durumda. World Gate normal mod değişmedi.",
+  "2026-08-20 · Current project update": "2026-08-20 · Mevcut proje güncellemesi"
 }

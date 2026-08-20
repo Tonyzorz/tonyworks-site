@@ -1394,5 +1394,11 @@
   "Your full HP, ATK, and DEF receive": "HP, ATK, DEF를 모두 받습니다.",
   "Your use of the Game is also governed by our": "귀하의 게임 사용에는 당사의 규정도 적용됩니다.",
   "YouTube": "YouTube",
-  "Zone": "존"
+  "Zone": "존",
+  "World Gate hard mode rebalanced": "월드 게이트 하드 모드 밸런스 조정",
+  "Critical-damage resistance in World Gate hard mode now scales with your agility. Previously a single critical hit could end even the final boss fight regardless of your equipment.": "월드 게이트 하드 모드의 치명타 피해 저항이 이제 민첩성에 따라 조정됩니다. 이전에는 장비와 관계없이 단 한 번의 치명타로 최종 보스전이 끝날 수 있었습니다.",
+  "The Archangel Sovereign now has more health and hits less hard, so the fight lasts long enough for your gear to matter.": "아크엔젤 소버린의 체력이 증가하고 공격력이 감소하여, 장비가 의미를 가질 만큼 전투가 길어집니다.",
+  "Fixed dodge resistance in the first half of World Gate hard mode, where it previously had no effect.": "이전에는 전혀 적용되지 않았던 월드 게이트 하드 모드 전반부의 회피 저항을 수정했습니다.",
+  "Hard mode now takes roughly twice as many battles per map, and every region boss remains beatable. World Gate normal mode is unchanged.": "하드 모드는 이제 맵당 약 두 배의 전투가 필요하며, 모든 지역 보스는 여전히 처치할 수 있습니다. 월드 게이트 일반 모드는 변경되지 않았습니다.",
+  "2026-08-20 · Current project update": "2026-08-20 · 현재 프로젝트 업데이트"
 }

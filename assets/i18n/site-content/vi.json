@@ -1394,5 +1394,11 @@
   "Your full HP, ATK, and DEF receive": "Nhận đầy đủ HP, ATK và DEF của bạn",
   "Your use of the Game is also governed by our": "Việc bạn sử dụng Trò chơi cũng chịu sự điều chỉnh của chúng tôi",
   "YouTube": "YouTube",
-  "Zone": "Khu vực"
+  "Zone": "Khu vực",
+  "World Gate hard mode rebalanced": "Cân bằng lại chế độ khó World Gate",
+  "Critical-damage resistance in World Gate hard mode now scales with your agility. Previously a single critical hit could end even the final boss fight regardless of your equipment.": "Kháng sát thương chí mạng trong chế độ khó World Gate giờ đây thay đổi theo độ nhanh nhẹn của bạn. Trước đây, chỉ một đòn chí mạng cũng có thể kết thúc cả trận đấu trùm cuối bất kể trang bị của bạn.",
+  "The Archangel Sovereign now has more health and hits less hard, so the fight lasts long enough for your gear to matter.": "Archangel Sovereign giờ có nhiều máu hơn và đánh nhẹ hơn, để trận đấu kéo dài đủ lâu cho trang bị của bạn phát huy tác dụng.",
+  "Fixed dodge resistance in the first half of World Gate hard mode, where it previously had no effect.": "Đã sửa kháng né tránh ở nửa đầu chế độ khó World Gate, nơi trước đây nó hoàn toàn không có tác dụng.",
+  "Hard mode now takes roughly twice as many battles per map, and every region boss remains beatable. World Gate normal mode is unchanged.": "Chế độ khó giờ cần khoảng gấp đôi số trận mỗi bản đồ, và mọi trùm khu vực vẫn có thể đánh bại. Chế độ thường của World Gate không thay đổi.",
+  "2026-08-20 · Current project update": "13-08-2026 · Cập nhật dự án hiện tại"
 }

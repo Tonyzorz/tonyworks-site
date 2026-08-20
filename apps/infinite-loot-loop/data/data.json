@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T05:59:40Z",
+  "generatedAt": "2026-08-20T09:31:10Z",
   "game": "Infinite Loot-Loop",
   "release": {
     "worldGateReleased": true
@@ -14102,14 +14102,14 @@
       "isBoss": false,
       "minLevel": 47000,
       "maxLevel": 47199,
-      "hpMin": 457289675868540800,
-      "hpMax": 457289675868540800,
-      "atkMin": 1232040834721331500,
-      "atkMax": 1232040834721331500,
+      "hpMin": 110000000000000000,
+      "hpMax": 110000000000000000,
+      "atkMin": 672000000000000000,
+      "atkMax": 672000000000000000,
       "expMin": 2308143749,
       "expMax": 2308143749,
-      "goldMin": 1074630738291,
-      "goldMax": 1074630738291,
+      "goldMin": 200283732236903,
+      "goldMax": 200283732236903,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14121,8 +14121,8 @@
       "resists": {
         "critResist": 104.70606,
         "comboResist": 26.932154,
-        "dodgeResist": -7.8420663,
-        "critMultResist": 8.011,
+        "dodgeResist": 0.10411843,
+        "critMultResist": 27.315348,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14149,8 +14149,8 @@
       "atkMax": 1296412006038705700,
       "expMin": 2468814502,
       "expMax": 2468814502,
-      "goldMin": 1149436187749,
-      "goldMax": 1149436187749,
+      "goldMin": 214225558089532,
+      "goldMax": 214225558089532,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14162,8 +14162,8 @@
       "resists": {
         "critResist": 104.70606,
         "comboResist": 26.932154,
-        "dodgeResist": -7.8420663,
-        "critMultResist": 8.011,
+        "dodgeResist": 0.10411843,
+        "critMultResist": 27.315348,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14190,8 +14190,8 @@
       "atkMax": 1364146416284526800,
       "expMin": 2640669607,
       "expMax": 2640669607,
-      "goldMin": 1229448872650,
-      "goldMax": 1229448872650,
+      "goldMin": 229137879678057,
+      "goldMax": 229137879678057,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14203,8 +14203,8 @@
       "resists": {
         "critResist": 104.70606,
         "comboResist": 26.932154,
-        "dodgeResist": -7.8420663,
-        "critMultResist": 8.011,
+        "dodgeResist": 0.10411843,
+        "critMultResist": 27.315348,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14231,8 +14231,8 @@
       "atkMax": 1435419786606294800,
       "expMin": 2824487611,
       "expMax": 2824487611,
-      "goldMin": 1315031270610,
-      "goldMax": 1315031270610,
+      "goldMin": 245088253575293,
+      "goldMax": 245088253575293,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14244,8 +14244,8 @@
       "resists": {
         "critResist": 104.70606,
         "comboResist": 26.932154,
-        "dodgeResist": -7.8420663,
-        "critMultResist": 8.011,
+        "dodgeResist": 0.10411843,
+        "critMultResist": 27.315348,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14272,8 +14272,8 @@
       "atkMax": 1510417019158966000,
       "expMin": 3021101255,
       "expMax": 3021101255,
-      "goldMin": 1406571091447,
-      "goldMax": 1406571091447,
+      "goldMin": 262148938992470,
+      "goldMax": 262148938992470,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14285,8 +14285,8 @@
       "resists": {
         "critResist": 104.70606,
         "comboResist": 26.932154,
-        "dodgeResist": -7.8420663,
-        "critMultResist": 8.011,
+        "dodgeResist": 0.10411843,
+        "critMultResist": 27.315348,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14313,8 +14313,8 @@
       "atkMax": 1589332676790517500,
       "expMin": 2406351749,
       "expMax": 2406351749,
-      "goldMin": 1504483033607,
-      "goldMax": 1504483033607,
+      "goldMin": 280397225131664,
+      "goldMax": 280397225131664,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14326,8 +14326,8 @@
       "resists": {
         "critResist": 115.04509,
         "comboResist": 29.13711,
-        "dodgeResist": -7.486218,
-        "critMultResist": 8.071,
+        "dodgeResist": 0.14830996,
+        "critMultResist": 48.157917,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14354,8 +14354,8 @@
       "atkMax": 1672371487789930200,
       "expMin": 2573858798,
       "expMax": 2573858798,
-      "goldMin": 1609210662848,
-      "goldMax": 1609210662848,
+      "goldMin": 299915781325345,
+      "goldMax": 299915781325345,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14367,8 +14367,8 @@
       "resists": {
         "critResist": 115.04509,
         "comboResist": 29.13711,
-        "dodgeResist": -7.486218,
-        "critMultResist": 8.071,
+        "dodgeResist": 0.14830996,
+        "critMultResist": 48.157917,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14395,8 +14395,8 @@
       "atkMax": 1759748877007039700,
       "expMin": 2753026076,
       "expMax": 2753026076,
-      "goldMin": 1721228421710,
-      "goldMax": 1721228421710,
+      "goldMin": 320793031549280,
+      "goldMax": 320793031549280,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14408,8 +14408,8 @@
       "resists": {
         "critResist": 115.04509,
         "comboResist": 29.13711,
-        "dodgeResist": -7.486218,
-        "critMultResist": 8.071,
+        "dodgeResist": 0.14830996,
+        "critMultResist": 48.157917,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14436,8 +14436,8 @@
       "atkMax": 1851691524722120200,
       "expMin": 2944665255,
       "expMax": 2944665255,
-      "goldMin": 1841043778853,
-      "goldMax": 1841043778853,
+      "goldMin": 343123555005410,
+      "goldMax": 343123555005410,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14449,8 +14449,8 @@
       "resists": {
         "critResist": 115.04509,
         "comboResist": 29.13711,
-        "dodgeResist": -7.486218,
-        "critMultResist": 8.071,
+        "dodgeResist": 0.14830996,
+        "critMultResist": 48.157917,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14477,8 +14477,8 @@
       "atkMax": 1948437954715065900,
       "expMin": 3149644510,
       "expMax": 3149644510,
-      "goldMin": 1969199528026,
-      "goldMax": 1969199528026,
+      "goldMin": 367008514589458,
+      "goldMax": 367008514589458,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14490,8 +14490,8 @@
       "resists": {
         "critResist": 115.04509,
         "comboResist": 29.13711,
-        "dodgeResist": -7.486218,
-        "critMultResist": 8.071,
+        "dodgeResist": 0.14830996,
+        "critMultResist": 48.157917,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14518,8 +14518,8 @@
       "atkMax": 2050239153059767800,
       "expMin": 2506605749,
       "expMax": 2506605749,
-      "goldMin": 2106276247050,
-      "goldMax": 2106276247050,
+      "goldMin": 392556115184330,
+      "goldMax": 392556115184330,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14531,8 +14531,8 @@
       "resists": {
         "critResist": 126.35729,
         "comboResist": 31.494617,
-        "dodgeResist": -7.091801,
-        "critMultResist": 8.131,
+        "dodgeResist": 0.19396183,
+        "critMultResist": 69.00049,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14559,8 +14559,8 @@
       "atkMax": 2157359219249010200,
       "expMin": 2681091516,
       "expMax": 2681091516,
-      "goldMin": 2252894927987,
-      "goldMax": 2252894927987,
+      "goldMin": 419882093855484,
+      "goldMax": 419882093855484,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14572,8 +14572,8 @@
       "resists": {
         "critResist": 126.35729,
         "comboResist": 31.494617,
-        "dodgeResist": -7.091801,
-        "critMultResist": 8.131,
+        "dodgeResist": 0.19396183,
+        "critMultResist": 69.00049,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14600,8 +14600,8 @@
       "atkMax": 2270076051339081500,
       "expMin": 2867723304,
       "expMax": 2867723304,
-      "goldMin": 2409719790394,
-      "goldMax": 2409719790394,
+      "goldMin": 449110244168993,
+      "goldMax": 449110244168993,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14613,8 +14613,8 @@
       "resists": {
         "critResist": 126.35729,
         "comboResist": 31.494617,
-        "dodgeResist": -7.091801,
-        "critMultResist": 8.131,
+        "dodgeResist": 0.19396183,
+        "critMultResist": 69.00049,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14641,8 +14641,8 @@
       "atkMax": 2388682066891535400,
       "expMin": 3067346601,
       "expMax": 3067346601,
-      "goldMin": 2577461290395,
-      "goldMax": 2577461290395,
+      "goldMin": 480372977007574,
+      "goldMax": 480372977007574,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14654,8 +14654,8 @@
       "resists": {
         "critResist": 126.35729,
         "comboResist": 31.494617,
-        "dodgeResist": -7.091801,
-        "critMultResist": 8.131,
+        "dodgeResist": 0.19396183,
+        "critMultResist": 69.00049,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14682,8 +14682,8 @@
       "atkMax": 2513484961582435300,
       "expMin": 3280865750,
       "expMax": 3280865750,
-      "goldMin": 2756879339237,
-      "goldMax": 2756879339237,
+      "goldMin": 513811920425241,
+      "goldMax": 513811920425241,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14695,8 +14695,8 @@
       "resists": {
         "critResist": 126.35729,
         "comboResist": 31.494617,
-        "dodgeResist": -7.091801,
-        "critMultResist": 8.131,
+        "dodgeResist": 0.19396183,
+        "critMultResist": 69.00049,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14723,8 +14723,8 @@
       "atkMax": 2644808507447100400,
       "expMin": 2608905749,
       "expMax": 2608905749,
-      "goldMin": 2948786745870,
-      "goldMax": 2948786745870,
+      "goldMin": 549578561258063,
+      "goldMax": 549578561258063,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14741,8 +14741,8 @@
       "resists": {
         "critResist": 138.80635,
         "comboResist": 34.05572,
-        "dodgeResist": -6.655967,
-        "critMultResist": 8.191,
+        "dodgeResist": 0.241087,
+        "critMultResist": 77.90793,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14769,8 +14769,8 @@
       "atkMax": 2818653304646562300,
       "expMin": 2837856288,
       "expMax": 2837856288,
-      "goldMin": 3207564326471,
-      "goldMax": 3207564326471,
+      "goldMin": 597808095194955,
+      "goldMax": 597808095194955,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14782,8 +14782,8 @@
       "resists": {
         "critResist": 138.80635,
         "comboResist": 34.05572,
-        "dodgeResist": -6.655967,
-        "critMultResist": 8.191,
+        "dodgeResist": 0.241087,
+        "critMultResist": 77.90793,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14810,8 +14810,8 @@
       "atkMax": 3003925021196981000,
       "expMin": 3086898911,
       "expMax": 3086898911,
-      "goldMin": 3489051530382,
-      "goldMax": 3489051530382,
+      "goldMin": 650270123096760,
+      "goldMax": 650270123096760,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14823,8 +14823,8 @@
       "resists": {
         "critResist": 138.80635,
         "comboResist": 34.05572,
-        "dodgeResist": -6.655967,
-        "critMultResist": 8.191,
+        "dodgeResist": 0.241087,
+        "critMultResist": 77.90793,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14851,8 +14851,8 @@
       "atkMax": 3201374755134977500,
       "expMin": 3357796843,
       "expMax": 3357796843,
-      "goldMin": 3795241292965,
-      "goldMax": 3795241292965,
+      "goldMin": 707336077231233,
+      "goldMax": 707336077231233,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14864,8 +14864,8 @@
       "resists": {
         "critResist": 138.80635,
         "comboResist": 34.05572,
-        "dodgeResist": -6.655967,
-        "critMultResist": 8.191,
+        "dodgeResist": 0.241087,
+        "critMultResist": 77.90793,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14892,8 +14892,8 @@
       "atkMax": 3411802974606760000,
       "expMin": 2819643749,
       "expMax": 2819643749,
-      "goldMin": 4128301444218,
-      "goldMax": 4128301444218,
+      "goldMin": 769409985761288,
+      "goldMax": 769409985761288,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14905,8 +14905,8 @@
       "resists": {
         "critResist": 152.44084,
         "comboResist": 36.80128,
-        "dodgeResist": -6.1755776,
-        "critMultResist": 8.251,
+        "dodgeResist": 0.30094177,
+        "critMultResist": 74.881004,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14933,8 +14933,8 @@
       "atkMax": 3590061476752278500,
       "expMin": 3015920209,
       "expMax": 3015920209,
-      "goldMin": 4415674058856,
-      "goldMax": 4415674058856,
+      "goldMin": 822968903956751,
+      "goldMax": 822968903956751,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14946,8 +14946,8 @@
       "resists": {
         "critResist": 152.44084,
         "comboResist": 36.80128,
-        "dodgeResist": -6.1755776,
-        "critMultResist": 8.251,
+        "dodgeResist": 0.30094177,
+        "critMultResist": 74.881004,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -14974,8 +14974,8 @@
       "atkMax": 3777633557033365500,
       "expMin": 3225859548,
       "expMax": 3225859548,
-      "goldMin": 4723050789172,
-      "goldMax": 4723050789172,
+      "goldMin": 880256078571228,
+      "goldMax": 880256078571228,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -14987,8 +14987,8 @@
       "resists": {
         "critResist": 152.44084,
         "comboResist": 36.80128,
-        "dodgeResist": -6.1755776,
-        "critMultResist": 8.251,
+        "dodgeResist": 0.30094177,
+        "critMultResist": 74.881004,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15015,8 +15015,8 @@
       "atkMax": 3975005827514204000,
       "expMin": 3450412843,
       "expMax": 3450412843,
-      "goldMin": 5051824129175,
-      "goldMax": 5051824129175,
+      "goldMin": 941531034934847,
+      "goldMax": 941531034934847,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15028,8 +15028,8 @@
       "resists": {
         "critResist": 152.44084,
         "comboResist": 36.80128,
-        "dodgeResist": -6.1755776,
-        "critMultResist": 8.251,
+        "dodgeResist": 0.30094177,
+        "critMultResist": 74.881004,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15056,8 +15056,8 @@
       "atkMax": 4182690324569331000,
       "expMin": 3690597378,
       "expMax": 3690597378,
-      "goldMin": 5403483504904,
-      "goldMax": 5403483504904,
+      "goldMin": 1007071364033475,
+      "goldMax": 1007071364033475,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15069,8 +15069,8 @@
       "resists": {
         "critResist": 152.44084,
         "comboResist": 36.80128,
-        "dodgeResist": -6.1755776,
-        "critMultResist": 8.251,
+        "dodgeResist": 0.30094177,
+        "critMultResist": 74.881004,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15097,8 +15097,8 @@
       "atkMax": 4401225837242720000,
       "expMin": 3038565749,
       "expMax": 3038565749,
-      "goldMin": 5779622021906,
-      "goldMax": 5779622021906,
+      "goldMin": 1077173980065803,
+      "goldMax": 1077173980065803,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15115,8 +15115,8 @@
       "resists": {
         "critResist": 167.46355,
         "comboResist": 39.793133,
-        "dodgeResist": -5.63976,
-        "critMultResist": 8.311,
+        "dodgeResist": 0.3512299,
+        "critMultResist": 71.85407,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15143,8 +15143,8 @@
       "atkMax": 4690520964262345000,
       "expMin": 3305222093,
       "expMax": 3305222093,
-      "goldMin": 6286826079884,
-      "goldMax": 6286826079884,
+      "goldMin": 1171703866582112,
+      "goldMax": 1171703866582112,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15156,8 +15156,8 @@
       "resists": {
         "critResist": 167.46355,
         "comboResist": 39.793133,
-        "dodgeResist": -5.63976,
-        "critMultResist": 8.311,
+        "dodgeResist": 0.3512299,
+        "critMultResist": 71.85407,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15184,8 +15184,8 @@
       "atkMax": 4998831627773896000,
       "expMin": 3595279479,
       "expMax": 3595279479,
-      "goldMin": 6838540999551,
-      "goldMax": 6838540999551,
+      "goldMin": 1274529441269649,
+      "goldMax": 1274529441269649,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15197,8 +15197,8 @@
       "resists": {
         "critResist": 167.46355,
         "comboResist": 39.793133,
-        "dodgeResist": -5.63976,
-        "critMultResist": 8.311,
+        "dodgeResist": 0.3512299,
+        "critMultResist": 71.85407,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15225,8 +15225,8 @@
       "atkMax": 5327407730020114000,
       "expMin": 3910791520,
       "expMax": 3910791520,
-      "goldMin": 7438672934213,
-      "goldMax": 7438672934213,
+      "goldMin": 1386378711373216,
+      "goldMax": 1386378711373216,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15238,8 +15238,8 @@
       "resists": {
         "critResist": 167.46355,
         "comboResist": 39.793133,
-        "dodgeResist": -5.63976,
-        "critMultResist": 8.311,
+        "dodgeResist": 0.3512299,
+        "critMultResist": 71.85407,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15266,8 +15266,8 @@
       "atkMax": 5677581330043108000,
       "expMin": 3265671749,
       "expMax": 3265671749,
-      "goldMin": 8091470830669,
-      "goldMax": 8091470830669,
+      "goldMin": 1508043572092124,
+      "goldMax": 1508043572092124,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15284,8 +15284,8 @@
       "resists": {
         "critResist": 184.06448,
         "comboResist": 43.01091,
-        "dodgeResist": -5.05899,
-        "critMultResist": 8.371,
+        "dodgeResist": 0.40300924,
+        "critMultResist": 68.82677,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15312,8 +15312,8 @@
       "atkMax": 6050772043898424000,
       "expMin": 3552258303,
       "expMax": 3552258303,
-      "goldMin": 8801556511838,
-      "goldMax": 8801556511838,
+      "goldMin": 1640385413214956,
+      "goldMax": 1640385413214956,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15325,8 +15325,8 @@
       "resists": {
         "critResist": 184.06448,
         "comboResist": 43.01091,
-        "dodgeResist": -5.05899,
-        "critMultResist": 8.371,
+        "dodgeResist": 0.40300924,
+        "critMultResist": 68.82677,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15353,8 +15353,8 @@
       "atkMax": 6448492799828325000,
       "expMin": 3863994922,
       "expMax": 3863994922,
-      "goldMin": 9573957399372,
-      "goldMax": 9573957399372,
+      "goldMin": 1784341217777508,
+      "goldMax": 1784341217777508,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15366,8 +15366,8 @@
       "resists": {
         "critResist": 184.06448,
         "comboResist": 43.01091,
-        "dodgeResist": -5.05899,
-        "critMultResist": 8.371,
+        "dodgeResist": 0.40300924,
+        "critMultResist": 68.82677,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15394,8 +15394,8 @@
       "atkMax": 6872355971725949000,
       "expMin": 4203088707,
       "expMax": 4203088707,
-      "goldMin": 10414142107899,
-      "goldMax": 10414142107899,
+      "goldMin": 1940930195922503,
+      "goldMax": 1940930195922503,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15407,8 +15407,8 @@
       "resists": {
         "critResist": 184.06448,
         "comboResist": 43.01091,
-        "dodgeResist": -5.05899,
-        "critMultResist": 8.371,
+        "dodgeResist": 0.40300924,
+        "critMultResist": 68.82677,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15435,8 +15435,8 @@
       "atkMax": 7324079915755611000,
       "expMin": 3500961749,
       "expMax": 3500961749,
-      "goldMin": 11328059162936,
-      "goldMax": 11328059162936,
+      "goldMin": 2111261000928974,
+      "goldMax": 2111261000928974,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15453,8 +15453,8 @@
       "resists": {
         "critResist": 202.54108,
         "comboResist": 46.530514,
-        "dodgeResist": -4.422076,
-        "critMultResist": 8.431,
+        "dodgeResist": 0.45628652,
+        "critMultResist": 65.799835,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15481,8 +15481,8 @@
       "atkMax": 7805495936628968000,
       "expMin": 3808196720,
       "expMax": 3808196720,
-      "goldMin": 12322179116573,
-      "goldMax": 12322179116573,
+      "goldMin": 2296539578500940,
+      "goldMax": 2296539578500940,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15494,8 +15494,8 @@
       "resists": {
         "critResist": 202.54108,
         "comboResist": 46.530514,
-        "dodgeResist": -4.422076,
-        "critMultResist": 8.431,
+        "dodgeResist": 0.45628652,
+        "critMultResist": 65.799835,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15522,8 +15522,8 @@
       "atkMax": 8318555711778542000,
       "expMin": 4142393804,
       "expMax": 4142393804,
-      "goldMin": 13403540359120,
-      "goldMax": 13403540359120,
+      "goldMin": 2498077704888512,
+      "goldMax": 2498077704888512,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15535,8 +15535,8 @@
       "resists": {
         "critResist": 202.54108,
         "comboResist": 46.530514,
-        "dodgeResist": -4.422076,
-        "critMultResist": 8.431,
+        "dodgeResist": 0.45628652,
+        "critMultResist": 65.799835,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15563,8 +15563,8 @@
       "atkMax": 8865339203526477000,
       "expMin": 4505919125,
       "expMax": 4505919125,
-      "goldMin": 14579798951058,
-      "goldMax": 14579798951058,
+      "goldMin": 2717302274291504,
+      "goldMax": 2717302274291504,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15576,8 +15576,8 @@
       "resists": {
         "critResist": 202.54108,
         "comboResist": 46.530514,
-        "dodgeResist": -4.422076,
-        "critMultResist": 8.431,
+        "dodgeResist": 0.45628652,
+        "critMultResist": 65.799835,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15604,8 +15604,8 @@
       "atkMax": 9448063091324740000,
       "expMin": 3744435749,
       "expMax": 3744435749,
-      "goldMin": 15859282828111,
-      "goldMax": 15859282828111,
+      "goldMin": 2955765401300564,
+      "goldMax": 2955765401300564,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15622,8 +15622,8 @@
       "resists": {
         "critResist": 223.03148,
         "comboResist": 50.330917,
-        "dodgeResist": -3.7242875,
-        "critMultResist": 8.491,
+        "dodgeResist": 0.5110649,
+        "critMultResist": 62.772903,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15650,8 +15650,8 @@
       "atkMax": 10069089758251370000,
       "expMin": 4073037342,
       "expMax": 4073037342,
-      "goldMin": 17251050763203,
-      "goldMax": 17251050763203,
+      "goldMin": 3215155409901316,
+      "goldMax": 3215155409901316,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15663,8 +15663,8 @@
       "resists": {
         "critResist": 223.03148,
         "comboResist": 50.330917,
-        "dodgeResist": -3.7242875,
-        "critMultResist": 8.491,
+        "dodgeResist": 0.5110649,
+        "critMultResist": 62.772903,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15691,8 +15691,8 @@
       "atkMax": 10730936868194318000,
       "expMin": 4430476126,
       "expMax": 4430476126,
-      "goldMin": 18764956502769,
-      "goldMax": 18764956502769,
+      "goldMin": 3497308786843918,
+      "goldMax": 3497308786843918,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15704,8 +15704,8 @@
       "resists": {
         "critResist": 223.03148,
         "comboResist": 50.330917,
-        "dodgeResist": -3.7242875,
-        "critMultResist": 8.491,
+        "dodgeResist": 0.5110649,
+        "critMultResist": 62.772903,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15732,8 +15732,8 @@
       "atkMax": 11436287572549153000,
       "expMin": 4819282775,
       "expMax": 4819282775,
-      "goldMin": 20411718531482,
-      "goldMax": 20411718531482,
+      "goldMin": 3804223184008107,
+      "goldMax": 3804223184008107,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15745,8 +15745,8 @@
       "resists": {
         "critResist": 223.03148,
         "comboResist": 50.330917,
-        "dodgeResist": -3.7242875,
-        "critMultResist": 8.491,
+        "dodgeResist": 0.5110649,
+        "critMultResist": 62.772903,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15773,8 +15773,8 @@
       "atkMax": 12188001387808911000,
       "expMin": 3996093749,
       "expMax": 3996093749,
-      "goldMin": 22202995959356,
-      "goldMax": 22202995959356,
+      "goldMin": 4138071561820789,
+      "goldMax": 4138071561820789,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15806,8 +15806,8 @@
       "resists": {
         "critResist": 245.92876,
         "comboResist": 54.50672,
-        "dodgeResist": -2.9603436,
-        "critMultResist": 8.551,
+        "dodgeResist": 0.5673583,
+        "critMultResist": 61.643475,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15834,8 +15834,8 @@
       "atkMax": 15722521790273500000,
       "expMin": 4388925750,
       "expMax": 4388925750,
-      "goldMin": 31084194343098,
-      "goldMax": 31084194343098,
+      "goldMin": 5793300186549105,
+      "goldMax": 5793300186549105,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15852,8 +15852,8 @@
       "resists": {
         "critResist": 271.63586,
         "comboResist": 59.073917,
-        "dodgeResist": -2.1243336,
-        "critMultResist": 8.611,
+        "dodgeResist": 0.63766736,
+        "critMultResist": 62.411922,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15880,8 +15880,8 @@
       "atkMax": 17115336498577283000,
       "expMin": 4909842704,
       "expMax": 4909842704,
-      "goldMin": 34773544485132,
-      "goldMax": 34773544485132,
+      "goldMin": 6480900856850577,
+      "goldMax": 6480900856850577,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15898,8 +15898,8 @@
       "resists": {
         "critResist": 271.63586,
         "comboResist": 59.073917,
-        "dodgeResist": -2.1243336,
-        "critMultResist": 8.611,
+        "dodgeResist": 0.63766736,
+        "critMultResist": 62.411922,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15926,8 +15926,8 @@
       "atkMax": 18631536808602250000,
       "expMin": 5492586740,
       "expMax": 5492586740,
-      "goldMin": 38900779692493,
-      "goldMax": 38900779692493,
+      "goldMin": 7250112123284591,
+      "goldMax": 7250112123284591,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15939,8 +15939,8 @@
       "resists": {
         "critResist": 271.63586,
         "comboResist": 59.073917,
-        "dodgeResist": -2.1243336,
-        "critMultResist": 8.611,
+        "dodgeResist": 0.63766736,
+        "critMultResist": 62.411922,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -15967,8 +15967,8 @@
       "atkMax": 20282053109452812000,
       "expMin": 4800171750,
       "expMax": 4800171750,
-      "goldMin": 43517872080338,
-      "goldMax": 43517872080338,
+      "goldMin": 8110620261168748,
+      "goldMax": 8110620261168748,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -15985,8 +15985,8 @@
       "resists": {
         "critResist": 300.65103,
         "comboResist": 64.04326,
-        "dodgeResist": -1.2096306,
-        "critMultResist": 8.671,
+        "dodgeResist": 0.6972145,
+        "critMultResist": 63.18036,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16013,8 +16013,8 @@
       "atkMax": 22078784083164692000,
       "expMin": 5369899056,
       "expMax": 5369899056,
-      "goldMin": 48682962279186,
-      "goldMax": 48682962279186,
+      "goldMin": 9073261199590808,
+      "goldMax": 9073261199590808,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16031,8 +16031,8 @@
       "resists": {
         "critResist": 300.65103,
         "comboResist": 64.04326,
-        "dodgeResist": -1.2096306,
-        "critMultResist": 8.671,
+        "dodgeResist": 0.6972145,
+        "critMultResist": 63.18036,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16059,8 +16059,8 @@
       "atkMax": 24034682483096904000,
       "expMin": 6007246694,
       "expMax": 6007246694,
-      "goldMin": 54461091569492,
-      "goldMax": 54461091569492,
+      "goldMin": 10150156972598426,
+      "goldMax": 10150156972598426,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16072,8 +16072,8 @@
       "resists": {
         "critResist": 300.65103,
         "comboResist": 64.04326,
-        "dodgeResist": -1.2096306,
-        "critMultResist": 8.671,
+        "dodgeResist": 0.6972145,
+        "critMultResist": 63.18036,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16100,8 +16100,8 @@
       "atkMax": 26163848511194130000,
       "expMin": 5229831750,
       "expMax": 5229831750,
-      "goldMin": 60925020912473,
-      "goldMax": 60925020912473,
+      "goldMin": 11354868365636246,
+      "goldMax": 11354868365636246,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16118,8 +16118,8 @@
       "resists": {
         "critResist": 333.73154,
         "comboResist": 69.55128,
-        "dodgeResist": -0.20875901,
-        "critMultResist": 8.731,
+        "dodgeResist": 0.75829506,
+        "critMultResist": 63.949184,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16146,8 +16146,8 @@
       "atkMax": 27883613449025630000,
       "expMin": 5688787694,
       "expMax": 5688787694,
-      "goldMin": 66271636611923,
-      "goldMax": 66271636611923,
+      "goldMin": 12351341022676896,
+      "goldMax": 12351341022676896,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16159,8 +16159,8 @@
       "resists": {
         "critResist": 333.73154,
         "comboResist": 69.55128,
-        "dodgeResist": -0.20875901,
-        "critMultResist": 8.731,
+        "dodgeResist": 0.75829506,
+        "critMultResist": 63.949184,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16187,8 +16187,8 @@
       "atkMax": 29716419533694880000,
       "expMin": 6188020377,
       "expMax": 6188020377,
-      "goldMin": 72087456901040,
-      "goldMax": 72087456901040,
+      "goldMin": 13435261435539594,
+      "goldMax": 13435261435539594,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16200,8 +16200,8 @@
       "resists": {
         "critResist": 333.73154,
         "comboResist": 69.55128,
-        "dodgeResist": -0.20875901,
-        "critMultResist": 8.731,
+        "dodgeResist": 0.75829506,
+        "critMultResist": 63.949184,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16228,8 +16228,8 @@
       "atkMax": 31669697025348088000,
       "expMin": 6731064374,
       "expMax": 6731064374,
-      "goldMin": 78413657910545,
-      "goldMax": 78413657910545,
+      "goldMin": 14614303783685542,
+      "goldMax": 14614303783685542,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16241,8 +16241,8 @@
       "resists": {
         "critResist": 333.73154,
         "comboResist": 69.55128,
-        "dodgeResist": -0.20875901,
-        "critMultResist": 8.731,
+        "dodgeResist": 0.75829506,
+        "critMultResist": 63.949184,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16269,8 +16269,8 @@
       "atkMax": 33751364579440430000,
       "expMin": 5677905750,
       "expMax": 5677905750,
-      "goldMin": 85295029277463,
-      "goldMax": 85295029277463,
+      "goldMin": 15896815711890742,
+      "goldMax": 15896815711890742,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16288,7 +16288,7 @@
         "critResist": 371.42133,
         "comboResist": 75.58344,
         "dodgeResist": 0.88673097,
-        "critMultResist": 8.791,
+        "critMultResist": 64.718,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16315,8 +16315,8 @@
       "atkMax": 36741304592794374000,
       "expMin": 6351810376,
       "expMax": 6351810376,
-      "goldMin": 95418606067206,
-      "goldMax": 95418606067206,
+      "goldMin": 17783591951197980,
+      "goldMax": 17783591951197980,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16334,7 +16334,7 @@
         "critResist": 371.42133,
         "comboResist": 75.58344,
         "dodgeResist": 0.88673097,
-        "critMultResist": 8.791,
+        "critMultResist": 64.718,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16361,8 +16361,8 @@
       "atkMax": 39996115120121560000,
       "expMin": 7105700030,
       "expMax": 7105700030,
-      "goldMin": 106743739476205,
-      "goldMax": 106743739476205,
+      "goldMin": 19894307666292910,
+      "goldMax": 19894307666292910,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16375,7 +16375,7 @@
         "critResist": 371.42133,
         "comboResist": 75.58344,
         "dodgeResist": 0.88673097,
-        "critMultResist": 8.791,
+        "critMultResist": 64.718,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16402,8 +16402,8 @@
       "atkMax": 43539260307478150000,
       "expMin": 6144393750,
       "expMax": 6144393750,
-      "goldMin": 119413040988448,
-      "goldMax": 119413040988448,
+      "goldMin": 22255541996647040,
+      "goldMax": 22255541996647040,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16421,7 +16421,7 @@
         "critResist": 414.8558,
         "comboResist": 82.31947,
         "dodgeResist": 2.1007156,
-        "critMultResist": 8.851,
+        "critMultResist": 65.48644,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16448,8 +16448,8 @@
       "atkMax": 46401121140523550000,
       "expMin": 6683609192,
       "expMax": 6683609192,
-      "goldMin": 129892407759371,
-      "goldMax": 129892407759371,
+      "goldMin": 24208628404446716,
+      "goldMax": 24208628404446716,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16462,7 +16462,7 @@
         "critResist": 414.8558,
         "comboResist": 82.31947,
         "dodgeResist": 2.1007156,
-        "critMultResist": 8.851,
+        "critMultResist": 65.48644,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16489,8 +16489,8 @@
       "atkMax": 49451093746021655000,
       "expMin": 7270144728,
       "expMax": 7270144728,
-      "goldMin": 141291415526040,
-      "goldMax": 141291415526040,
+      "goldMin": 26333112413657604,
+      "goldMax": 26333112413657604,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16503,7 +16503,7 @@
         "critResist": 414.8558,
         "comboResist": 82.31947,
         "dodgeResist": 2.1007156,
-        "critMultResist": 8.851,
+        "critMultResist": 65.48644,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16530,8 +16530,8 @@
       "atkMax": 52701542819881755000,
       "expMin": 7908153043,
       "expMax": 7908153043,
-      "goldMin": 153690769504670,
-      "goldMax": 153690769504670,
+      "goldMin": 28644035416023660,
+      "goldMax": 28644035416023660,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16544,7 +16544,7 @@
         "critResist": 414.8558,
         "comboResist": 82.31947,
         "dodgeResist": 2.1007156,
-        "critMultResist": 8.851,
+        "critMultResist": 65.48644,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16571,8 +16571,8 @@
       "atkMax": 56165645796646820000,
       "expMin": 6629295749,
       "expMax": 6629295749,
-      "goldMin": 167178257383827,
-      "goldMax": 167178257383827,
+      "goldMin": 31157758795305852,
+      "goldMax": 31157758795305852,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16590,7 +16590,7 @@
         "critResist": 465.36942,
         "comboResist": 89.756096,
         "dodgeResist": 3.4167788,
-        "critMultResist": 8.911,
+        "critMultResist": 66.2549,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16617,8 +16617,8 @@
       "atkMax": 59857446271275385000,
       "expMin": 7211064884,
       "expMax": 7211064884,
-      "goldMin": 181849370863120,
-      "goldMax": 181849370863120,
+      "goldMin": 33892079766225396,
+      "goldMax": 33892079766225396,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16631,7 +16631,7 @@
         "critResist": 465.36942,
         "comboResist": 89.756096,
         "dodgeResist": 3.4167788,
-        "critMultResist": 8.911,
+        "critMultResist": 66.2549,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16658,8 +16658,8 @@
       "atkMax": 63791910932367930000,
       "expMin": 7843888511,
       "expMax": 7843888511,
-      "goldMin": 197807981736456,
-      "goldMax": 197807981736456,
+      "goldMin": 36866357379120640,
+      "goldMax": 36866357379120640,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16672,7 +16672,7 @@
         "critResist": 465.36942,
         "comboResist": 89.756096,
         "dodgeResist": 3.4167788,
-        "critMultResist": 8.911,
+        "critMultResist": 66.2549,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16699,8 +16699,8 @@
       "atkMax": 67984990237647454000,
       "expMin": 8532247035,
       "expMax": 8532247035,
-      "goldMin": 215167077306538,
-      "goldMax": 215167077306538,
+      "goldMin": 40101649582433120,
+      "goldMax": 40101649582433120,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16713,7 +16713,7 @@
         "critResist": 465.36942,
         "comboResist": 89.756096,
         "dodgeResist": 3.4167788,
-        "critMultResist": 8.911,
+        "critMultResist": 66.2549,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16740,8 +16740,8 @@
       "atkMax": 72453683077674400000,
       "expMin": 7304475749,
       "expMax": 7304475749,
-      "goldMin": 234049560337358,
-      "goldMax": 234049560337358,
+      "goldMin": 43620862313428184,
+      "goldMax": 43620862313428184,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16759,7 +16759,7 @@
         "critResist": 524.9993,
         "comboResist": 98.13732,
         "dodgeResist": 4.860645,
-        "critMultResist": 8.971,
+        "critMultResist": 67.02408,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16786,8 +16786,8 @@
       "atkMax": 78872154415001160000,
       "expMin": 8171436248,
       "expMax": 8171436248,
-      "goldMin": 261828655048415,
-      "goldMax": 261828655048415,
+      "goldMin": 48798176314087250,
+      "goldMax": 48798176314087250,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16805,7 +16805,7 @@
         "critResist": 524.9993,
         "comboResist": 98.13732,
         "dodgeResist": 4.860645,
-        "critMultResist": 8.971,
+        "critMultResist": 67.02408,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16832,8 +16832,8 @@
       "atkMax": 85859220371098650000,
       "expMin": 9141295371,
       "expMax": 9141295371,
-      "goldMin": 292904821122706,
-      "goldMax": 292904821122706,
+      "goldMin": 54589980236307730,
+      "goldMax": 54589980236307730,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16846,7 +16846,7 @@
         "critResist": 524.9993,
         "comboResist": 98.13732,
         "dodgeResist": 4.860645,
-        "critMultResist": 8.971,
+        "critMultResist": 67.02408,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16873,8 +16873,8 @@
       "atkMax": 93465251170199980000,
       "expMin": 8012391749,
       "expMax": 8012391749,
-      "goldMin": 327669384472301,
-      "goldMax": 327669384472301,
+      "goldMin": 61069207238799450,
+      "goldMax": 61069207238799450,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16907,7 +16907,7 @@
         "critResist": 595.72565,
         "comboResist": 107.48387,
         "dodgeResist": 6.446743,
-        "critMultResist": 9.031,
+        "critMultResist": 67.79366,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16934,8 +16934,8 @@
       "atkMax": 120570174009557990000,
       "expMin": 9625406999,
       "expMax": 9625406999,
-      "goldMin": 458737138261222,
-      "goldMax": 458737138261222,
+      "goldMin": 85496890134319230,
+      "goldMax": 85496890134319230,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -16958,7 +16958,7 @@
         "critResist": 681.1854,
         "comboResist": 118.140366,
         "dodgeResist": 8.191748,
-        "critMultResist": 9.091,
+        "critMultResist": 68.17825,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -16985,8 +16985,8 @@
       "atkMax": 133492062837472050000,
       "expMin": 10656992465,
       "expMax": 10656992465,
-      "goldMin": 507901455643537,
-      "goldMax": 507901455643537,
+      "goldMin": 94659863635215700,
+      "goldMax": 94659863635215700,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -17004,7 +17004,7 @@
         "critResist": 681.1854,
         "comboResist": 118.140366,
         "dodgeResist": 8.191748,
-        "critMultResist": 9.091,
+        "critMultResist": 68.17825,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17031,8 +17031,8 @@
       "atkMax": 147798831568335700000,
       "expMin": 11799136225,
       "expMax": 11799136225,
-      "goldMin": 562334869207668,
-      "goldMax": 562334869207668,
+      "goldMin": 104804862134287260,
+      "goldMax": 104804862134287260,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -17050,7 +17050,7 @@
         "critResist": 681.1854,
         "comboResist": 118.140366,
         "dodgeResist": 8.191748,
-        "critMultResist": 9.091,
+        "critMultResist": 68.17825,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17077,8 +17077,8 @@
       "atkMax": 163638902183728780000,
       "expMin": 13063687162,
       "expMax": 13063687162,
-      "goldMin": 622602084741297,
-      "goldMax": 622602084741297,
+      "goldMin": 116037132372337680,
+      "goldMax": 116037132372337680,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -17096,7 +17096,7 @@
         "critResist": 681.1854,
         "comboResist": 118.140366,
         "dodgeResist": 8.191748,
-        "critMultResist": 9.091,
+        "critMultResist": 68.17825,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17123,8 +17123,8 @@
       "atkMax": 181176603520814200000,
       "expMin": 14463764043,
       "expMax": 14463764043,
-      "goldMin": 689328329346507,
-      "goldMax": 689328329346507,
+      "goldMin": 128473200717950530,
+      "goldMax": 128473200717950530,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -17142,7 +17142,7 @@
         "critResist": 681.1854,
         "comboResist": 118.140366,
         "dodgeResist": 8.191748,
-        "critMultResist": 9.091,
+        "critMultResist": 68.17825,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17169,8 +17169,8 @@
       "atkMax": 200593876060616920000,
       "expMin": 16013891614,
       "expMax": 16013891614,
-      "goldMin": 763205837701444,
-      "goldMax": 763205837701444,
+      "goldMin": 142242082041054900,
+      "goldMax": 142242082041054900,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -17188,7 +17188,7 @@
         "critResist": 681.1854,
         "comboResist": 118.140366,
         "dodgeResist": 8.191748,
-        "critMultResist": 9.091,
+        "critMultResist": 68.17825,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17215,8 +17215,8 @@
       "atkMax": 222092159423882040000,
       "expMin": 17730151285,
       "expMax": 17730151285,
-      "goldMin": 845001033475245,
-      "goldMax": 845001033475245,
+      "goldMin": 157486618145314270,
+      "goldMax": 157486618145314270,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -17234,7 +17234,7 @@
         "critResist": 681.1854,
         "comboResist": 118.140366,
         "dodgeResist": 8.191748,
-        "critMultResist": 9.091,
+        "critMultResist": 68.17825,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17261,8 +17261,8 @@
       "atkMax": 245894482155864420000,
       "expMin": 19630347961,
       "expMax": 19630347961,
-      "goldMin": 935562480398048,
-      "goldMax": 935562480398048,
+      "goldMin": 174364959644569180,
+      "goldMax": 174364959644569180,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -17280,7 +17280,7 @@
         "critResist": 681.1854,
         "comboResist": 118.140366,
         "dodgeResist": 8.191748,
-        "critMultResist": 9.091,
+        "critMultResist": 68.17825,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -17307,8 +17307,8 @@
       "atkMax": 272247775479996900000,
       "expMin": 21734194754,
       "expMax": 21734194754,
-      "goldMin": 1035829685472437,
-      "goldMax": 1035829685472437,
+      "goldMin": 193052206656688700,
+      "goldMax": 193052206656688700,
       "permanentBPReward": 0,
       "drops": [
         {
@@ -17326,7 +17326,7 @@
         "critResist": 681.1854,
         "comboResist": 118.140366,
         "dodgeResist": 8.191748,
-        "critMultResist": 9.091,
+        "critMultResist": 68.17825,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -18065,8 +18065,8 @@
       "hardModeResists": {
         "critResist": 140.13696,
         "comboResist": 34.35059,
-        "dodgeResist": -6.7065864,
-        "critMultResist": 8.220994,
+        "dodgeResist": 0.24292049,
+        "critMultResist": 76.39458,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -18100,8 +18100,8 @@
       "hardModeResists": {
         "critResist": 248.04301,
         "comboResist": 54.934235,
-        "dodgeResist": -2.9809742,
-        "critMultResist": 8.580994,
+        "dodgeResist": 0.5713122,
+        "critMultResist": 62.02762,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -18136,7 +18136,7 @@
         "critResist": 529.02783,
         "comboResist": 98.83087,
         "dodgeResist": 4.891507,
-        "critMultResist": 9.000994,
+        "critMultResist": 67.40897,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -18171,7 +18171,7 @@
         "critResist": 600.2277,
         "comboResist": 108.23289,
         "dodgeResist": 6.4871626,
-        "critMultResist": 9.060994,
+        "critMultResist": 68.17817,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -18191,8 +18191,8 @@
       "hardModeLevel": 102000,
       "hp": 457289675868540800,
       "atk": 223749944696517730,
-      "hardModeHp": 6.051426079190594e+21,
-      "hardModeAtk": 1.9291227841529279e+21,
+      "hardModeHp": 1.3664510501398113e+22,
+      "hardModeAtk": 355682013328196100000,
       "exp": 5750000,
       "resists": {
         "critResist": 2843,
@@ -18206,7 +18206,7 @@
         "critResist": 686.25665,
         "comboResist": 118.952324,
         "dodgeResist": 8.242472,
-        "critMultResist": 9.120994,
+        "critMultResist": 68.17825,
         "armorPierce": 0.55,
         "weaken": 0.79999995
       },
@@ -18583,7 +18583,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 1370,
-      "buyPrice": 2030000000000,
+      "buyPrice": 20526523605150.215,
       "maxCopies": -1,
       "effects": [
         "HP +7.1T",
@@ -18647,7 +18647,7 @@
       "bonusDEF": 373000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2330000000000,
+      "buyPrice": 23560000000000,
       "maxCopies": -1,
       "effects": [
         "HP +7.4T",
@@ -18711,7 +18711,7 @@
       "bonusDEF": 57200000000000,
       "bonusAGI": 0,
       "bonusLUC": 3420,
-      "buyPrice": 61100000000000,
+      "buyPrice": 14292168195718654,
       "maxCopies": -1,
       "effects": [
         "HP +1.1Q",
@@ -18745,7 +18745,7 @@
       "bonusDEF": 2920000000000,
       "bonusAGI": 0,
       "bonusLUC": 1860,
-      "buyPrice": 7550000000000,
+      "buyPrice": 157104255319148.94,
       "maxCopies": -1,
       "effects": [
         "HP +57.8T",
@@ -19091,7 +19091,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 52600000000,
+      "buyPrice": 531869527896.99567,
       "maxCopies": -1,
       "effects": [
         "ATK +27.8B"
@@ -19123,7 +19123,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 35400000000000,
+      "buyPrice": 8280568807339448,
       "maxCopies": -1,
       "effects": [
         "ATK +25.3T"
@@ -21191,7 +21191,7 @@
       "bonusDEF": 256000000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 106000000000000,
+      "buyPrice": 24794923547400612,
       "maxCopies": -1,
       "effects": [
         "HP +5Q",
@@ -21224,7 +21224,7 @@
       "bonusDEF": 1070000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 4750000000000,
+      "buyPrice": 98840425531914.9,
       "maxCopies": -1,
       "effects": [
         "HP +21.2T",
@@ -21318,7 +21318,7 @@
       "bonusDEF": 156000000000000,
       "bonusAGI": 0,
       "bonusLUC": 3910,
-      "buyPrice": 114000000000000,
+      "buyPrice": 26666238532110090,
       "maxCopies": -1,
       "effects": [
         "HP +3Q",
@@ -22201,7 +22201,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 88400000000000,
+      "buyPrice": 20678030581039750,
       "maxCopies": -1,
       "effects": [
         "HP +1.9Q"
@@ -22263,7 +22263,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 5000,
-      "buyPrice": 255000000000000,
+      "buyPrice": 59648165137614670,
       "maxCopies": -1,
       "effects": [
         "HP +14.9Q",
@@ -23850,7 +23850,7 @@
       "bonusDEF": 517000000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 179000000000000,
+      "buyPrice": 41870672782874616,
       "maxCopies": -1,
       "effects": [
         "HP +10.3Q",
@@ -23944,7 +23944,7 @@
       "bonusDEF": 870000000000000,
       "bonusAGI": 5790,
       "bonusLUC": 0,
-      "buyPrice": 327000000000000,
+      "buyPrice": 76490000000000000,
       "maxCopies": -1,
       "effects": [
         "HP +17.2Q",
@@ -24165,7 +24165,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 41500000000000,
+      "buyPrice": 9707446483180426,
       "maxCopies": -1,
       "effects": [
         "HP +648T"
@@ -24197,7 +24197,7 @@
       "bonusDEF": 26800000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 28300000000000,
+      "buyPrice": 6619776758409786,
       "maxCopies": -1,
       "effects": [
         "HP +534T",
@@ -24262,7 +24262,7 @@
       "bonusDEF": 18700000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 20400000000000,
+      "buyPrice": 4771853211009174,
       "maxCopies": -1,
       "effects": [
         "HP +372T",
@@ -24421,7 +24421,7 @@
       "bonusDEF": 188000000000,
       "bonusAGI": 0,
       "bonusLUC": 1120,
-      "buyPrice": 848000000000,
+      "buyPrice": 8574626609442.061,
       "maxCopies": -1,
       "effects": [
         "HP +3.7T",
@@ -24803,7 +24803,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 130000000000000,
+      "buyPrice": 30408868501529050,
       "maxCopies": -1,
       "effects": [
         "ATK +152T"
@@ -25276,7 +25276,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 1265,
-      "buyPrice": 14273743467545200000,
+      "buyPrice": 214694569819009800000,
       "maxCopies": -1,
       "effects": [
         "HP +2.5Qi",
@@ -25309,7 +25309,7 @@
       "bonusDEF": 114452456062992100,
       "bonusAGI": 0,
       "bonusLUC": 608,
-      "buyPrice": 11947277291310000000,
+      "buyPrice": 72050778609420000000,
       "maxCopies": -1,
       "effects": [
         "HP +914.3Q",
@@ -25436,7 +25436,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 1695,
-      "buyPrice": 20373975257728800000,
+      "buyPrice": 1.906276191471036e+21,
       "maxCopies": -1,
       "effects": [
         "HP +18.8Qi",
@@ -25780,7 +25780,7 @@
       "bonusDEF": 0,
       "bonusAGI": 735,
       "bonusLUC": 0,
-      "buyPrice": 10000000000000000000,
+      "buyPrice": 24180000000000000000,
       "maxCopies": -1,
       "effects": [
         "ATK +16.6Q",
@@ -26157,7 +26157,7 @@
       "bonusDEF": 5248867544120579000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 24341353193037500000,
+      "buyPrice": 5.680259877588419e+21,
       "maxCopies": -1,
       "effects": [
         "HP +103.6Qi",
@@ -26378,7 +26378,7 @@
       "bonusDEF": 1206483443500603600,
       "bonusAGI": 0,
       "bonusLUC": 855,
-      "buyPrice": 18095189907160500000,
+      "buyPrice": 920585724233750500000,
       "maxCopies": -1,
       "effects": [
         "HP +9.6Qi",
@@ -26963,7 +26963,7 @@
       "bonusDEF": 3711235287502900000,
       "bonusAGI": 693,
       "bonusLUC": 0,
-      "buyPrice": 21618825145976000000,
+      "buyPrice": 2.7431314395268215e+21,
       "maxCopies": -1,
       "effects": [
         "HP +42Qi",
@@ -27935,7 +27935,7 @@
       "bonusDEF": 19959914072659590000,
       "bonusAGI": 884,
       "bonusLUC": 0,
-      "buyPrice": 29081289624293300000,
+      "buyPrice": 2.0311024659260267e+23,
       "maxCopies": -1,
       "effects": [
         "HP +226.1Qi",
@@ -28093,7 +28093,7 @@
       "bonusDEF": 128303390236220420,
       "bonusAGI": 426,
       "bonusLUC": 0,
-      "buyPrice": 11947277291310000000,
+      "buyPrice": 72050778609420000000,
       "maxCopies": -1,
       "effects": [
         "HP +1.4Qi",
@@ -29178,7 +29178,7 @@
       "bonusDEF": 0,
       "bonusAGI": 1530,
       "bonusLUC": 0,
-      "buyPrice": 24341353193037500000,
+      "buyPrice": 5.680259877588419e+21,
       "maxCopies": -1,
       "effects": [
         "ATK +2.5Qi",
@@ -29335,7 +29335,7 @@
       "bonusDEF": 355665162495999800,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 15145869193412200000,
+      "buyPrice": 308945485969555000000,
       "maxCopies": -1,
       "effects": [
         "HP +7Qi",
@@ -29400,7 +29400,7 @@
       "bonusDEF": 0,
       "bonusAGI": 893,
       "bonusLUC": 0,
-      "buyPrice": 12677255933809000000,
+      "buyPrice": 103681070418955400000,
       "maxCopies": -1,
       "effects": [
         "ATK +64Q",
@@ -29953,7 +29953,7 @@
       "bonusDEF": 2650882348216358000,
       "bonusAGI": 660,
       "bonusLUC": 0,
-      "buyPrice": 20373975257728800000,
+      "buyPrice": 1.906276191471036e+21,
       "maxCopies": -1,
       "effects": [
         "HP +30Qi",
@@ -30050,7 +30050,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 992,
-      "buyPrice": 10611000000000000000,
+      "buyPrice": 34795020000000000000,
       "maxCopies": -1,
       "effects": [
         "HP +466.4Q",
@@ -31220,7 +31220,7 @@
       "bonusDEF": 33739999999999996,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 10000000000000000000,
+      "buyPrice": 24180000000000000000,
       "maxCopies": -1,
       "effects": [
         "HP +666.4Q",
@@ -31691,7 +31691,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 2065,
-      "buyPrice": 25828609873132100000,
+      "buyPrice": 8.173893963849736e+21,
       "maxCopies": -1,
       "effects": [
         "HP +72.5Qi",
@@ -32196,7 +32196,7 @@
       "bonusDEF": 31935862516255347000,
       "bonusAGI": 1414,
       "bonusLUC": 0,
-      "buyPrice": 46530063398869280000,
+      "buyPrice": 3.249763945481643e+23,
       "maxCopies": -1,
       "effects": [
         "HP +361.8Qi",
@@ -32230,7 +32230,7 @@
       "bonusDEF": 28488240994614150000,
       "bonusAGI": 0,
       "bonusLUC": 2020,
-      "buyPrice": 46530063398869280000,
+      "buyPrice": 3.249763945481643e+23,
       "maxCopies": -1,
       "effects": [
         "HP +227.5Qi",
@@ -33557,7 +33557,7 @@
       "bonusDEF": 17805150621633843000,
       "bonusAGI": 0,
       "bonusLUC": 1263,
-      "buyPrice": 29081289624293300000,
+      "buyPrice": 2.0311024659260267e+23,
       "maxCopies": -1,
       "effects": [
         "HP +142.2Qi",
@@ -34525,7 +34525,7 @@
       "bonusDEF": 0,
       "bonusAGI": 985,
       "bonusLUC": 0,
-      "buyPrice": 14273743467545200000,
+      "buyPrice": 214694569819009800000,
       "maxCopies": -1,
       "effects": [
         "ATK +125.4Q",
@@ -34558,7 +34558,7 @@
       "bonusDEF": 697103718492159600,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 17053237119178700000,
+      "buyPrice": 639739905652363000000,
       "maxCopies": -1,
       "effects": [
         "HP +13.7Qi",
@@ -34622,7 +34622,7 @@
       "bonusDEF": 861773888214717000,
       "bonusAGI": 0,
       "bonusLUC": 814,
-      "buyPrice": 17053237119178700000,
+      "buyPrice": 639739905652363000000,
       "maxCopies": -1,
       "effects": [
         "HP +6.8Qi",
@@ -36067,7 +36067,7 @@
       "bonusDEF": 6130000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 8780000000000,
+      "buyPrice": 182698723404255.34,
       "maxCopies": -1,
       "effects": [
         "HP +121T",
@@ -36131,7 +36131,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 6860000000000,
+      "buyPrice": 142746382978723.4,
       "maxCopies": -1,
       "effects": [
         "HP +106T"
@@ -36163,7 +36163,7 @@
       "bonusDEF": 1640000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 8450000000000,
+      "buyPrice": 175831914893617.03,
       "maxCopies": -1,
       "effects": [
         "HP +32.4T",
@@ -36226,7 +36226,7 @@
       "bonusDEF": 0,
       "bonusAGI": 1850,
       "bonusLUC": 0,
-      "buyPrice": 7800000000000,
+      "buyPrice": 162306382978723.4,
       "maxCopies": -1,
       "effects": [
         "ATK +918B",
@@ -36551,7 +36551,7 @@
       "bonusDEF": 520000000000,
       "bonusAGI": 0,
       "bonusLUC": 1300,
-      "buyPrice": 2300000000000,
+      "buyPrice": 47859574468085.11,
       "maxCopies": -1,
       "effects": [
         "HP +10.3T",
@@ -36772,7 +36772,7 @@
       "bonusDEF": 0,
       "bonusAGI": 1190,
       "bonusLUC": 0,
-      "buyPrice": 763000000000,
+      "buyPrice": 7715141630901.288,
       "maxCopies": -1,
       "effects": [
         "ATK +106B",
@@ -36835,7 +36835,7 @@
       "bonusDEF": 162000000000000,
       "bonusAGI": 4060,
       "bonusLUC": 0,
-      "buyPrice": 109000000000000,
+      "buyPrice": 25496666666666668,
       "maxCopies": -1,
       "effects": [
         "HP +3.2Q",
@@ -36869,7 +36869,7 @@
       "bonusDEF": 55000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 82500000000,
+      "buyPrice": 834206008583.6909,
       "maxCopies": -1,
       "effects": [
         "HP +1T",
@@ -37126,7 +37126,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 350000000000000,
+      "buyPrice": 4493000000000000000,
       "maxCopies": -1,
       "effects": [
         "HP +32.6Q"
@@ -37158,7 +37158,7 @@
       "bonusDEF": 1560000000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 328000000000000,
+      "buyPrice": 4210582857142857000,
       "maxCopies": -1,
       "effects": [
         "HP +30.8Q",
@@ -37719,7 +37719,7 @@
       "bonusDEF": 85800000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 58700000000000,
+      "buyPrice": 13730773700305808,
       "maxCopies": -1,
       "effects": [
         "HP +1.7Q",
@@ -37843,7 +37843,7 @@
       "bonusDEF": 113000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 386000000000,
+      "buyPrice": 3903072961373.3906,
       "maxCopies": -1,
       "effects": [
         "HP +2.2T",
@@ -37876,7 +37876,7 @@
       "bonusDEF": 548000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 2280000000000,
+      "buyPrice": 47443404255319.15,
       "maxCopies": -1,
       "effects": [
         "HP +10.8T",
@@ -38039,7 +38039,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 409000000000,
+      "buyPrice": 4135639484978.541,
       "maxCopies": -1,
       "effects": [
         "HP +2.1T"
@@ -38943,7 +38943,7 @@
       "bonusDEF": 0,
       "bonusAGI": 4780,
       "bonusLUC": 0,
-      "buyPrice": 158000000000000,
+      "buyPrice": 36958470948012230,
       "maxCopies": -1,
       "effects": [
         "ATK +267T",
@@ -39657,7 +39657,7 @@
       "bonusDEF": 8260000000000,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 15900000000000,
+      "buyPrice": 330855319148936.2,
       "maxCopies": -1,
       "effects": [
         "HP +163T",
@@ -39690,7 +39690,7 @@
       "bonusDEF": 10400000000000,
       "bonusAGI": 0,
       "bonusLUC": 2420,
-      "buyPrice": 18800000000000,
+      "buyPrice": 391200000000000,
       "maxCopies": -1,
       "effects": [
         "HP +205T",
@@ -39819,7 +39819,7 @@
       "bonusDEF": 0,
       "bonusAGI": 2110,
       "bonusLUC": 0,
-      "buyPrice": 9570000000000,
+      "buyPrice": 199137446808510.66,
       "maxCopies": -1,
       "effects": [
         "ATK +1.7T",
@@ -39915,7 +39915,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 15800000000000,
+      "buyPrice": 3695847094801223,
       "maxCopies": -1,
       "effects": [
         "ATK +8.4T"
@@ -41185,7 +41185,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 3960000000000,
+      "buyPrice": 82401702127659.58,
       "maxCopies": -1,
       "effects": [
         "ATK +512B"

@@ -1394,5 +1394,11 @@
   "Your full HP, ATK, and DEF receive": "Seluruh HP, ATK, dan DEF Anda terima",
   "Your use of the Game is also governed by our": "Penggunaan Anda atas Game juga diatur oleh kami",
   "YouTube": "YouTube",
-  "Zone": "Zona"
+  "Zone": "Zona",
+  "World Gate hard mode rebalanced": "Mode sulit World Gate diseimbangkan ulang",
+  "Critical-damage resistance in World Gate hard mode now scales with your agility. Previously a single critical hit could end even the final boss fight regardless of your equipment.": "Ketahanan terhadap kerusakan kritis di mode sulit World Gate kini menyesuaikan dengan kelincahan Anda. Sebelumnya satu serangan kritis dapat mengakhiri bahkan pertarungan bos terakhir tanpa memandang perlengkapan Anda.",
+  "The Archangel Sovereign now has more health and hits less hard, so the fight lasts long enough for your gear to matter.": "Archangel Sovereign kini memiliki lebih banyak nyawa dan memukul lebih ringan, sehingga pertarungan berlangsung cukup lama agar perlengkapan Anda berarti.",
+  "Fixed dodge resistance in the first half of World Gate hard mode, where it previously had no effect.": "Memperbaiki ketahanan menghindar di paruh pertama mode sulit World Gate, yang sebelumnya sama sekali tidak berpengaruh.",
+  "Hard mode now takes roughly twice as many battles per map, and every region boss remains beatable. World Gate normal mode is unchanged.": "Mode sulit kini membutuhkan sekitar dua kali lipat pertarungan per peta, dan setiap bos wilayah tetap dapat dikalahkan. Mode normal World Gate tidak berubah.",
+  "2026-08-20 · Current project update": "13-08-2026 · Pembaruan proyek saat ini"
 }

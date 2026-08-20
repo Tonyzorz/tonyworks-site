@@ -1394,5 +1394,11 @@
   "Your full HP, ATK, and DEF receive": "Seu HP, ATK e DEF completos recebem",
   "Your use of the Game is also governed by our": "O uso do Jogo também é regido por nossos",
   "YouTube": "YouTube",
-  "Zone": "Zona"
+  "Zone": "Zona",
+  "World Gate hard mode rebalanced": "Modo difícil do World Gate rebalanceado",
+  "Critical-damage resistance in World Gate hard mode now scales with your agility. Previously a single critical hit could end even the final boss fight regardless of your equipment.": "A resistência a dano crítico no modo difícil do World Gate agora escala com sua agilidade. Antes, um único acerto crítico podia encerrar até a batalha final contra o chefe, independentemente do seu equipamento.",
+  "The Archangel Sovereign now has more health and hits less hard, so the fight lasts long enough for your gear to matter.": "O Arcanjo Soberano agora tem mais vida e bate menos forte, para que a batalha dure o suficiente para o seu equipamento importar.",
+  "Fixed dodge resistance in the first half of World Gate hard mode, where it previously had no effect.": "Corrigida a resistência a esquiva na primeira metade do modo difícil do World Gate, onde antes não tinha efeito algum.",
+  "Hard mode now takes roughly twice as many battles per map, and every region boss remains beatable. World Gate normal mode is unchanged.": "O modo difícil agora exige cerca do dobro de batalhas por mapa, e todos os chefes de região continuam derrotáveis. O modo normal do World Gate permanece inalterado.",
+  "2026-08-20 · Current project update": "20/08/2026 · Atualização do projeto atual"
 }

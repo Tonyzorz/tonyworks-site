@@ -1394,5 +1394,11 @@
   "Your full HP, ATK, and DEF receive": "Your full HP, ATK, and DEF receive",
   "Your use of the Game is also governed by our": "Your use of the Game is also governed by our",
   "YouTube": "YouTube",
-  "Zone": "Zone"
+  "Zone": "Zone",
+  "World Gate hard mode rebalanced": "World Gate hard mode rebalanced",
+  "Critical-damage resistance in World Gate hard mode now scales with your agility. Previously a single critical hit could end even the final boss fight regardless of your equipment.": "Critical-damage resistance in World Gate hard mode now scales with your agility. Previously a single critical hit could end even the final boss fight regardless of your equipment.",
+  "The Archangel Sovereign now has more health and hits less hard, so the fight lasts long enough for your gear to matter.": "The Archangel Sovereign now has more health and hits less hard, so the fight lasts long enough for your gear to matter.",
+  "Fixed dodge resistance in the first half of World Gate hard mode, where it previously had no effect.": "Fixed dodge resistance in the first half of World Gate hard mode, where it previously had no effect.",
+  "Hard mode now takes roughly twice as many battles per map, and every region boss remains beatable. World Gate normal mode is unchanged.": "Hard mode now takes roughly twice as many battles per map, and every region boss remains beatable. World Gate normal mode is unchanged.",
+  "2026-08-20 · Current project update": "2026-08-20 · Current project update"
 }
