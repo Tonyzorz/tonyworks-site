@@ -863,7 +863,11 @@
     "Japan":      { icon: "&#9962;",    color: "#e0607a" },
     "Greek":      { icon: "&#127963;", color: "#5bc8d8" },
     "Military":   { icon: "&#128737;", color: "#7d8b5a" },
-    "Heaven":     { icon: "&#10024;",  color: "#f0d264" }
+    "Heaven":     { icon: "&#10024;",  color: "#f0d264" },
+    "Maze":       { icon: "&#129513;", color: "#9b78dc" },
+    "Ice":        { icon: "&#10052;",  color: "#63bfe8" },
+    "America":    { icon: "&#127482;&#127480;", color: "#e56a6a" },
+    "Amazon":     { icon: "&#127811;", color: "#43a66b" }
   };
   // Real in-game connections per world (documented route). Maps to MapData asset ids.
   var WORLD_ROUTES = {
@@ -893,7 +897,19 @@
       "MilitaryTrench_Map": ["MilitaryMinefield_Map"], "MilitaryMinefield_Map": ["MilitaryAirfield_Map"],
       "MilitaryAirfield_Map": ["MilitaryBunker_Map"], "MilitaryBunker_Map": ["MilitaryYard_Map"],
       "MilitaryYard_Map": ["MilitaryHQ_Map"] } },
-    "Heaven": { root: "HeavenAscension_Map", edges: {} }
+    "Heaven": { root: "HeavenAscension_Map", edges: {} },
+    // Maze is entered from the World Gate hub. These are the authored door links; each
+    // regional gate then runs outward to a boss map and returns to the Rotunda (MZ05).
+    "Maze": { root: "MZ01", edges: {
+      "MZ01": ["MZ02", "MZ04", "MZ06"], "MZ02": ["MZ03", "MZ10"],
+      "MZ03": ["MZ04", "MZ05"], "MZ04": ["MZ11"],
+      "MZ05": ["MZ06", "MZ07", "MZ08", "MZ09"], "MZ06": ["MZ12"] } },
+    "Ice": { root: "IC01", edges: {
+      "IC01": ["IC02"], "IC02": ["IC03"], "IC03": ["IC04"], "IC04": ["IC05"] } },
+    "America": { root: "AM01", edges: {
+      "AM01": ["AM02"], "AM02": ["AM03"], "AM03": ["AM04"], "AM04": ["AM05"] } },
+    "Amazon": { root: "AZ01", edges: {
+      "AZ01": ["AZ02"], "AZ02": ["AZ03"], "AZ03": ["AZ04"], "AZ04": ["AZ05"] } }
   };
   // Route prefixes are shared by a map's normal and hard-mode ZoneData assets.
   // Keeping this map-to-route table explicit prevents similarly named maps from being
@@ -912,6 +928,11 @@
     "MilitaryCheckpoint_Map": "ML01", "MilitaryDepot_Map": "ML02", "MilitaryTrench_Map": "ML03",
     "MilitaryMinefield_Map": "ML04", "MilitaryAirfield_Map": "ML05", "MilitaryBunker_Map": "ML06",
     "MilitaryYard_Map": "ML07", "MilitaryHQ_Map": "ML08", "HeavenAscension_Map": "HV01",
+    "MZ01": "MZ01", "MZ02": "MZ02", "MZ03": "MZ03", "MZ04": "MZ04", "MZ05": "MZ05", "MZ06": "MZ06",
+    "MZ07": "MZ07", "MZ08": "MZ08", "MZ09": "MZ09", "MZ10": "MZ10", "MZ11": "MZ11", "MZ12": "MZ12",
+    "IC01": "IC01", "IC02": "IC02", "IC03": "IC03", "IC04": "IC04", "IC05": "IC05",
+    "AM01": "AM01", "AM02": "AM02", "AM03": "AM03", "AM04": "AM04", "AM05": "AM05",
+    "AZ01": "AZ01", "AZ02": "AZ02", "AZ03": "AZ03", "AZ04": "AZ04", "AZ05": "AZ05",
     "VoidHunt_Map": "VoidHunt"
   };
   // data.json ships an `areas` table (region code + its map) built from the setup tools, so prefer
@@ -1049,8 +1070,9 @@
     var mode = forcedMode || selectedGameMode("normal");
     rememberGameMode(mode, false);
     var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt", "World Gate",
-                  "Japan", "Greek", "Military", "Heaven"];
+                  "Japan", "Greek", "Military", "Heaven", "Maze", "Ice", "America", "Amazon"];
     var worldGateUpcoming = !(d.release && d.release.worldGateReleased);
+    var mazeBatchUpcoming = !(d.release && d.release.mazeBatchReleased);
     app.innerHTML =
       pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", d.maps.length) +
       modeTabsHtml(mode, null, "Map data mode") +
@@ -1069,14 +1091,19 @@
         '<div class="wm-cell" style="grid-area:desert">' + wnode(d, "Desert") + '</div>' +
         '<div class="wm-conn v" style="grid-area:vd"></div>' +
         '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate", { upcoming: worldGateUpcoming }) + '</div>' +
-        // The World Gate fans out to its four themed regions.
+        // The World Gate fans out to its four live regions and the Maze. The Maze then
+        // opens the Ice, America and Amazon routes through its three gate halls.
         '<div class="wm-conn v" style="grid-area:vg"></div>' +
         '<div class="wm-branch" style="grid-area:wg"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
-          ["Japan", "Greek", "Military", "Heaven"].map(function (w) {
-            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: worldGateUpcoming }) + "</div>";
+          ["Japan", "Greek", "Maze", "Military", "Heaven"].map(function (w) {
+            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: w === "Maze" ? mazeBatchUpcoming : worldGateUpcoming }) + "</div>";
           }).join("") +
-        '</div></div>' +
-      '</div></div><p class="route-note">Grassland is the hub &#8212; Forest &amp; Volcanic to the west, Desert east, the Underwater docks north, and the World Gate south. Void Hunt is a secret arena reached from Volcanic. Japan, Greek, Military and Heaven are fully cataloged here as an upcoming World Gate expansion while the in-game entrance remains sealed.</p></div>' +
+          '</div><div class="wm-maze-trunk"></div><div class="wm-subbranch"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
+            ["Ice", "America", "Amazon"].map(function (w) {
+              return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: mazeBatchUpcoming }) + "</div>";
+            }).join("") +
+          '</div></div></div>' +
+      '</div></div><p class="route-note">Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven, while the upcoming Maze entrance leads onward to Ice, America and Amazon. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
       // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
       // grouped under its world. The compass graph above stays world-level.
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {

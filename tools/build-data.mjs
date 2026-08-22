@@ -306,7 +306,16 @@ const MAP_VISUAL = {
   MilitaryBunker_Map: "Military Bunker Network", MilitaryCheckpoint_Map: "Military Border Checkpoint",
   MilitaryDepot_Map: "Military Supply Depot", MilitaryHQ_Map: "Military Command HQ",
   MilitaryMinefield_Map: "Military Minefield Crossing", MilitaryTrench_Map: "Military Trench Line",
-  MilitaryYard_Map: "Military Blast-Wall Yard"
+  MilitaryYard_Map: "Military Blast-Wall Yard",
+  MZ01: "Threshold of Reflections", MZ02: "Hall of False Doors", MZ03: "Mirror Bend",
+  MZ04: "Collapsed Stair", MZ05: "The Rotunda", MZ06: "Sunken Gallery",
+  MZ07: "Ice Gate", MZ08: "America Gate", MZ09: "Amazon Gate",
+  MZ10: "Fracture Warden", MZ11: "The Hollow Twin", MZ12: "Glassmaw",
+  IC01: "Glacier Shelf", IC02: "Frozen Lake", IC03: "Icefall Descent",
+  IC04: "Aurora Bridge", IC05: "Frozen Throne",
+  AM01: "New York", AM02: "Washington DC", AM03: "Florida", AM04: "Las Vegas", AM05: "Los Angeles",
+  AZ01: "River Mouth", AZ02: "Flooded Canopy", AZ03: "Sunken Temple",
+  AZ04: "Blackwater Swamp", AZ05: "Heart of the Amazon"
 };
 const mapDisplayName = (id) => MAP_VISUAL[id] || id.replace(/_Map$/, "").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
 function copyMapVisual(id) {
@@ -329,6 +338,10 @@ function mapWorld(id) {
   if (/^Greek/.test(id))                          return "Greek";
   if (/^Military/.test(id))                       return "Military";
   if (/^Heaven/.test(id))                         return "Heaven";
+  if (/^MZ\d{2}$/.test(id))                       return "Maze";
+  if (/^IC\d{2}$/.test(id))                       return "Ice";
+  if (/^AM\d{2}$/.test(id))                       return "America";
+  if (/^AZ\d{2}$/.test(id))                       return "Amazon";
   if (/Forest/.test(id))                          return "Forest";
   if (/Volcanic|Lava/.test(id))                   return "Volcanic";
   if (/Desert|Sandstone|Burial|SunBuriedCave/.test(id)) return "Desert";
@@ -348,10 +361,11 @@ const maps = loadCategory("Maps").map((a) => {
 // {WORLD}##_Zone# + hard {WORLD}##_HM_Z#, plus VoidHunt). Legacy/duplicate zones are ignored.
 const WORLD = {
   GL: "Grassland", FR: "Forest", VO: "Volcanic", DS: "Desert", UW: "Underwater",
-  JP: "Japan", GR: "Greek", ML: "Military", HV: "Heaven"   // World Gate branch
+  JP: "Japan", GR: "Greek", ML: "Military", HV: "Heaven",  // World Gate branch
+  MZ: "Maze", IC: "Ice", AM: "America", AZ: "Amazon"       // Maze batch
 };
 function zoneWorld(zid) {
-  const m = zid.match(/^(GL|FR|VO|DS|UW|JP|GR|ML|HV)\d+_(?:Zone|HM_Z)\d+/);
+  const m = zid.match(/^(GL|FR|VO|DS|UW|JP|GR|ML|HV|MZ|IC|AM|AZ)\d+_(?:Zone|HM_Z)\d+/);
   if (m) return WORLD[m[1]];
   if (/^VoidHunt/.test(zid)) return "Void Hunt";
   return null;
@@ -376,6 +390,11 @@ const REGION_MAP = {
   ML04: "MilitaryMinefield_Map", ML05: "MilitaryAirfield_Map", ML06: "MilitaryBunker_Map",
   ML07: "MilitaryYard_Map", ML08: "MilitaryHQ_Map",
   HV01: "HeavenAscension_Map",
+  MZ01: "MZ01", MZ02: "MZ02", MZ03: "MZ03", MZ04: "MZ04", MZ05: "MZ05", MZ06: "MZ06",
+  MZ07: "MZ07", MZ08: "MZ08", MZ09: "MZ09", MZ10: "MZ10", MZ11: "MZ11", MZ12: "MZ12",
+  IC01: "IC01", IC02: "IC02", IC03: "IC03", IC04: "IC04", IC05: "IC05",
+  AM01: "AM01", AM02: "AM02", AM03: "AM03", AM04: "AM04", AM05: "AM05",
+  AZ01: "AZ01", AZ02: "AZ02", AZ03: "AZ03", AZ04: "AZ04", AZ05: "AZ05",
   VoidHunt: "VoidHunt_Map"
 };
 function areaCode(zid) {
@@ -442,12 +461,15 @@ const push = (arr, v) => { if (v && arr.indexOf(v) < 0) arr.push(v); };
 // public shop catalog correct on both the locked preview build and the eventual World Gate release.
 const shopManagerSource = read(path.join(GAME, "Assets", "Scripts", "Core", "ShopManager.cs"));
 const worldGateReleased = /WorldGateReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+const mazeBatchReleased = /MazeBatchReleased\s*=>\s*true\s*;/.test(shopManagerSource);
 const isUnreleasedRegion = (r) => !worldGateReleased && !!r && /^(JP|GR|ML|HV)/.test(r);
+const isUnreleasedMazeRegion = (r) => !mazeBatchReleased && !!r && /^(MZ|IC|AM|AZ)/.test(r);
 const isPurchasable = (id) => {
   const i = itemById.get(id);
   if (!i) return false;
   if (i.shopUnavailable || !(i.buyPrice > 0)) return false;
   if (isUnreleasedRegion(i.sourceRegion)) return false;      // World Gate is locked for this release
+  if (isUnreleasedMazeRegion(i.sourceRegion)) return false;  // Maze batch is cataloged but not yet purchasable
   if (i.isHardModeItem && i.shopRank !== 1) return false;     // hard shop is rank-1 only; rest is drop loot
   return true;
 };
@@ -502,7 +524,7 @@ const publicItems = items.filter((it) => !it.hiddenFromCollection);
 
 const root = {
   generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop",
-  release: { worldGateReleased },
+  release: { worldGateReleased, mazeBatchReleased },
   counts: { enemies: liveEnemies.length, bosses: bosses.length, items: publicItems.length, maps: maps.length, zones: liveZones.length, areas: areas.length, characters: characters.length, achievements: achievements.length },
   enemies: liveEnemies, bosses, items: publicItems, maps, zones: liveZones, areas, characters, achievements
 };
