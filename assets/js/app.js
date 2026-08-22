@@ -866,7 +866,7 @@
     "Heaven":     { icon: "&#10024;",  color: "#f0d264" },
     "Maze":       { icon: "&#129513;", color: "#9b78dc" },
     "Ice":        { icon: "&#10052;",  color: "#63bfe8" },
-    "America":    { icon: "&#127482;&#127480;", color: "#e56a6a" },
+    "America":    { icon: '<span class="flag-us" role="img" aria-label="United States flag"></span>', color: "#e56a6a" },
     "Amazon":     { icon: "&#127811;", color: "#43a66b" }
   };
   // Real in-game connections per world (documented route). Maps to MapData asset ids.

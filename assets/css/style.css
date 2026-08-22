@@ -760,6 +760,16 @@ body[data-page="portal"] .wrap { padding-top:0; }
   box-shadow:var(--shadow); transition:transform .12s ease, border-color .12s ease; }
 .wnode:hover { transform:translateY(-3px); border-color:var(--wc,var(--accent)); }
 .wnode .wicon { font-size:1.9rem; line-height:1; }
+.flag-us {
+  display:inline-block; position:relative; width:1.35em; height:.82em; overflow:hidden;
+  vertical-align:middle; border:1px solid rgba(10,49,97,.28); border-radius:2px;
+  background:repeating-linear-gradient(to bottom,#b31942 0 7.7%,#fff 7.7% 15.4%);
+  box-shadow:0 1px 2px rgba(10,49,97,.18);
+}
+.flag-us::before {
+  content:""; position:absolute; inset:0 auto auto 0; width:42%; height:54%; background-color:#0a3161;
+  background-image:radial-gradient(circle,#fff 0 1px,transparent 1.2px); background-size:4px 4px;
+}
 .wnode .wname { font-weight:700; font-size:1.02rem; }
 .wnode .wmeta { font-size:.78rem; color:var(--muted); text-align:center; }
 .wnode.locked { opacity:.55; cursor:default; box-shadow:none; }
