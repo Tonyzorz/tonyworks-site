@@ -10,6 +10,7 @@ project to sit next to this repo as `../Infinite Loot-Loop`.
 ```
 node tools/build-data.mjs
 powershell -ExecutionPolicy Bypass -File tools/resize-images.ps1
+node tools/audit-data.mjs
 ```
 
 - `build-data.mjs` parses the `.asset` YAML, resolves `guid` references via the
@@ -21,6 +22,8 @@ powershell -ExecutionPolicy Bypass -File tools/resize-images.ps1
   empty even though the JSON still parses.
 - `resize-images.ps1` downscales the copied sprites to 256px (they ship from
   Unity at full art resolution, which is far too large for the web).
+- `audit-data.mjs` verifies every exported image reference and rejects maps where
+  differently named monster archetypes accidentally resolve to identical art.
 
 Then commit and push:
 ```

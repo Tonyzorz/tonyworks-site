@@ -89,13 +89,13 @@ const loadCategory = (sub) => walk(path.join(SO, sub), (p) => p.endsWith(".asset
 
 let imagesWritten = 0;
 const safe = (s) => String(s).replace(/[^A-Za-z0-9_-]/g, "_");
-function copySprite(guid, prefix, id) {
+function copySprite(guid, prefix, id, force = false) {
   if (!guid) return "";
   const src = guidToPng.get(guid);
   if (!src || !fs.existsSync(src)) return "";
   const file = `${prefix}_${safe(id)}.png`;
   const dest = path.join(IMG, file);
-  if (shouldCopyImage(src, dest)) { fs.copyFileSync(src, dest); imagesWritten++; }
+  if (force || shouldCopyImage(src, dest)) { fs.copyFileSync(src, dest); imagesWritten++; }
   return file;
 }
 
@@ -189,6 +189,24 @@ const itemName = (id) => itemById.has(id) ? itemById.get(id).name : id;
 const atLevel = (base, scaling, level, minLevel) =>
   Math.round(base * (1 + scaling * Math.max(0, level - minLevel)));
 const enemyById = new Map();
+// Four Maze-batch areas currently reuse one Unity sprite reference for two differently named
+// monster archetypes. Keep the public catalog visually truthful by assigning the second archetype
+// a thematically matching authored sprite until the game assets carry distinct references.
+// These are forced through copySprite because the site files may already contain the shared art.
+const ENEMY_ART_OVERRIDES = [
+  { pattern: /^MZ05_Z(?:1|3|5)(?:_H)?$/, sprite: "Reflecting Pool Shade" },
+  { pattern: /^MZ07_Z1(?:_H)?$/, sprite: "Aurora Moth" },
+  { pattern: /^MZ08_Z1(?:_H)?$/, sprite: "Marquee Wraith" },
+  { pattern: /^MZ09_Z1(?:_H)?$/, sprite: "Cypress Wight" }
+];
+function enemyArtOverride(id) {
+  const override = ENEMY_ART_OVERRIDES.find((entry) => entry.pattern.test(id));
+  if (!override) return null;
+  const meta = path.join(SPR, "Monsters", `${override.sprite}.png.meta`);
+  const guid = fs.existsSync(meta) ? metaGuid(meta) : null;
+  if (!guid || !guidToPng.has(guid)) throw new Error(`Monster art override not found: ${override.sprite}`);
+  return guid;
+}
 const enemies = loadCategory("Enemies").map((a) => {
   const t = a.text;
   const minLv = num(t, "minLevel"), maxLv = num(t, "maxLevel");
@@ -427,7 +445,8 @@ const liveZones = zones.filter((z) => zoneWorld(z.id));
 // Export art only for enemies that can appear in a live route. Deferring the copy prevents internal
 // balance templates and orphan development enemies from accumulating as unused website files.
 for (const e of liveEnemies) {
-  e.image = copySprite(e.imageGuid, "enemy", e.id);
+  const overrideGuid = enemyArtOverride(e.id);
+  e.image = copySprite(overrideGuid || e.imageGuid, "enemy", e.id, !!overrideGuid);
   delete e.imageGuid;
 }
 
