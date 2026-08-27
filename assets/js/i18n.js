@@ -237,12 +237,12 @@
   function translatePhrase(value) {
     var source = String(value == null ? "" : value);
     if (code === "en" || !source) return source;
-    if (siteMap[source]) return siteMap[source];
     if (siteContentMap[source]) return siteContentMap[source];
+    if (siteMap[source]) return siteMap[source];
     if (gameMap[source]) return gameMap[source];
     var lower = source.toLowerCase();
-    if (siteMapLower[lower]) return siteMapLower[lower];
     if (siteContentMapLower[lower]) return siteContentMapLower[lower];
+    if (siteMapLower[lower]) return siteMapLower[lower];
     if (gameMapLower[lower]) return gameMapLower[lower];
 
     var hard = source.match(/^(.*?)(\s(?:\[H\]|H))$/);
