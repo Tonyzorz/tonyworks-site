@@ -135,15 +135,20 @@ function restore(text, values) {
 
 const delay = milliseconds => new Promise(resolve => setTimeout(resolve, milliseconds));
 
+function translatedText(data) {
+  if (Array.isArray(data) && typeof data[0] === "string") return data.join("");
+  return (data[0] || []).map(part => part[0] || "").join("");
+}
+
 async function translateOne(source, target, attempt = 0) {
   const { text, values } = protect(source);
-  const url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=" +
-    encodeURIComponent(target) + "&dt=t&q=" + encodeURIComponent(text);
+  const url = "https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=" +
+    encodeURIComponent(target) + "&q=" + encodeURIComponent(text);
   try {
     const response = await fetch(url, { headers: { "user-agent": "TonyWorksLocalization/1.0" } });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
-    const translated = (data[0] || []).map(part => part[0] || "").join("");
+    const translated = translatedText(data);
     // Languages without articles can correctly translate an isolated text-node
     // fragment such as "The" to nothing. Keep an invisible word joiner so the
     // dictionary records the intentional removal instead of falling back to English.
@@ -181,13 +186,13 @@ async function translateBatch(sources, target, attempt = 0) {
   const protectedSources = sources.map(protect);
   const markers = sources.slice(1).map((_, index) => `[[[TWSEP_${String(index + 1).padStart(3, "0")}]]]`);
   const joined = protectedSources.map((entry, index) => index ? markers[index - 1] + "\n" + entry.text : entry.text).join("\n");
-  const url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=" +
-    encodeURIComponent(target) + "&dt=t&q=" + encodeURIComponent(joined);
+  const url = "https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=" +
+    encodeURIComponent(target) + "&q=" + encodeURIComponent(joined);
   try {
     const response = await fetch(url, { headers: { "user-agent": "TonyWorksLocalization/1.0" } });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
-    let translated = (data[0] || []).map(part => part[0] || "").join("");
+    let translated = translatedText(data);
     const parts = [];
     for (const marker of markers) {
       const index = translated.indexOf(marker);

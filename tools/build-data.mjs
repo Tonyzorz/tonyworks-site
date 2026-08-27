@@ -541,8 +541,19 @@ for (const it of items) {
 // follows ItemData.hiddenFromCollection just like the in-game collection screen.
 const publicItems = items.filter((it) => !it.hiddenFromCollection);
 
+// The Unity bundle version is intentionally not the public content version. The in-game notices
+// are the player-facing source of truth (for example, "v2.0.4 — Balance & Leaderboard Fixes").
+const englishUi = JSON.parse(read(path.join(GAME, "Assets", "Resources", "Localization", "en.json")));
+const gameVersion = Object.entries(englishUi)
+  .filter(([key, value]) => /^notice_.*_title$/.test(key) && /^v\d+\.\d+\.\d+\b/.test(value))
+  .map(([, value]) => value.match(/^v\d+\.\d+\.\d+/)[0])
+  .sort((a, b) => {
+    const pa = a.slice(1).split(".").map(Number), pb = b.slice(1).split(".").map(Number);
+    return pb[0] - pa[0] || pb[1] - pa[1] || pb[2] - pa[2];
+  })[0] || "Development";
+
 const root = {
-  generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop",
+  generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop", gameVersion,
   release: { worldGateReleased, mazeBatchReleased },
   counts: { enemies: liveEnemies.length, bosses: bosses.length, items: publicItems.length, maps: maps.length, zones: liveZones.length, areas: areas.length, characters: characters.length, achievements: achievements.length },
   enemies: liveEnemies, bosses, items: publicItems, maps, zones: liveZones, areas, characters, achievements

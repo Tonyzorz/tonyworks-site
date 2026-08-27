@@ -1,6 +1,7 @@
 {
-  "generatedAt": "2026-08-27T00:35:34Z",
+  "generatedAt": "2026-08-27T01:05:34Z",
   "game": "Infinite Loot-Loop",
+  "gameVersion": "v2.0.4",
   "release": {
     "worldGateReleased": true,
     "mazeBatchReleased": false
