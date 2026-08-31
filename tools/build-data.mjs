@@ -153,6 +153,7 @@ const items = loadCategory("Items").map((a) => {
     setName: field(t, "setName"), isUnique: bool(t, "isUnique"), shopUnavailable: bool(t, "shopUnavailable"),
     hiddenFromCollection: bool(t, "hiddenFromCollection"),
     isHardModeItem: bool(t, "isHardModeItem"), isBossItem: bool(t, "isBossItem"),
+    isTrollItem: bool(t, "isTrollItem"),
     // Carried so shopAreas below can reproduce ShopManager's purchasability rules exactly.
     shopRank: num(t, "shopRank"), sourceRegion: field(t, "sourceRegion"),
     bonusHP: num(t, "bonusHP"), bonusATK: num(t, "bonusATK"), bonusDEF: num(t, "bonusDEF"), bonusAGI: num(t, "bonusAGI"), bonusLUC: num(t, "bonusLUC"),
@@ -184,6 +185,59 @@ const items = loadCategory("Items").map((a) => {
 });
 const itemName = (id) => itemById.has(id) ? itemById.get(id).name : id;
 
+// ★★★ PERMANENT RULE (owner, 2026-08-29): NEVER publish a troll collectible's FIELD drop source.
+//
+// A troll item is a joke reward — a Rat King's Whisker, a Dud Grenade, a Cooled Ember. Finding out
+// which monster coughs one up IS the joke, and a wiki that lists "Shadow Rat -> Rat King's Whisker 3%"
+// spoils it before the player ever meets it. SIX of the nine collectibles are ordinary field-enemy
+// drops — Rat King's Whisker (GL01), Mantis Husk (FR04), Cooled Ember (VO03), Broken Torii Charm
+// (JP03), Frayed Thread (GR03), Dud Grenade (ML06) — so without this filter the site gives them away.
+//
+// BOSS drops are deliberately EXEMPT and stay published: a boss reward is already announced content,
+// the player knows exactly who they beat to get it, and there is nothing to spoil. That is the other
+// THREE, each with its [H] mirror: Iron Fortress (DS02, Cursed Armor), War Crest (UW02, Thunder Oni)
+// and Moulted Feather (HV01, Archangel Sovereign). ⚠ The first two are named `BossItem_*` rather than
+// `Troll_*` — older naming — so a glob over `Items/Troll/` alone MISCOUNTS this split.
+//
+// ⚠ Filtered at the ENEMY drop table, which is the single upstream source. Everything downstream —
+// each monster page's drop list, `areas[].dropItemIds`, and the `dropAreas` tag on the item itself —
+// derives from `e.drops`, so one filter closes all three. Do NOT "helpfully" re-add troll ids to any
+// of those; they are omitted on purpose.
+//
+// The items themselves REMAIN in the public catalog (that is `hiddenFromCollection`'s job, and troll
+// items do not set it) — a player who owns one can still look up what it does. Only the field source
+// is withheld.
+// ⚠ FAIL-SAFE, because `isTrollItem` is currently over-set in the game data. `TrollDropSetupTool`
+// owns exactly 9 collectibles (GL01 FR04 VO03 DS02 UW02 JP03 GR03 ML06 HV01) x2 for the [H] mirrors =
+// 18 assets, and it CLEARS the flag on anything else it does not own. But 12 Maze accessories
+// (MZ01/07/08/10/11/12 + _H) currently carry `isTrollItem: 1` while holding real endgame stats —
+// MZ12_Accessory "Glassmaw Sigil" is HP 8.48e22. Hiding those would withhold genuine gear.
+//
+// So the flag alone is not trusted. A troll piece is defined by the invariant ItemData states outright
+// — "THE STATS ARE A TOKEN +1 ON PURPOSE" — and anything flagged but carrying real stats is a data bug
+// that gets REPORTED and treated as ordinary gear, which is the safe direction: a joke item stays
+// hidden, real loot stays published. Once the flag is corrected upstream this check simply goes quiet.
+const TROLL_TOKEN_STAT_MAX = 1;
+const trollItemIds = new Set();
+const misflaggedTroll = [];
+for (const i of items) {
+  if (!i.isTrollItem) continue;
+  const biggest = Math.max(i.bonusHP || 0, i.bonusATK || 0, i.bonusDEF || 0, i.bonusAGI || 0, i.bonusLUC || 0);
+  if (biggest > TROLL_TOKEN_STAT_MAX) { misflaggedTroll.push(`${i.id} (${i.name}, max stat ${biggest})`); continue; }
+  trollItemIds.add(i.id);
+}
+if (misflaggedTroll.length) {
+  console.warn(`\n⚠ ${misflaggedTroll.length} item(s) are flagged isTrollItem but carry REAL stats — `
+    + `publishing them as ordinary gear. Fix the flag in the game (TrollDropSetupTool clears it):`);
+  misflaggedTroll.forEach((s) => console.warn("    " + s));
+  console.warn("");
+}
+const isTrollDrop = (id) => trollItemIds.has(id);
+
+// Returns the id, or "" when it names a troll collectible. Used on the BOSS drop slots so a boss
+// page can never reveal one either — see the absolute-rule note at the boss builder below.
+const nonTroll = (id) => (isTrollDrop(id) ? "" : id);
+
 // Enemy stat at a level: base * (1 + scaling * levelsAboveMin) — matches EnemyData.GetHP/ATK/EXP/Gold.
 // Hard-mode enemies (_H) have scaling 0, so min == max (fixed stats).
 const atLevel = (base, scaling, level, minLevel) =>
@@ -214,7 +268,14 @@ const enemies = loadCategory("Enemies").map((a) => {
   const sHP = num(t, "hpScaling"), sATK = num(t, "atkScaling"), sEXP = num(t, "expScaling"), sGold = num(t, "goldScaling");
   const drops = [];
   const re = /- item: \{fileID: \d+, guid: ([0-9a-f]+), type: \d+\}\s*\n\s*dropChance:\s*([\d.]+)/g;
-  let m; while ((m = re.exec(t))) { const iid = assetName(m[1]); drops.push({ itemId: iid, itemName: itemName(iid), chance: Number(m[2]) }); }
+  // Troll collectibles are withheld here — see the trollItemIds note above. This is the only place a
+  // field drop enters the data, so skipping it here keeps it out of monster pages, area loot lists
+  // and item `dropAreas` alike. Boss drops do not pass through this loop and are unaffected.
+  let m; while ((m = re.exec(t))) {
+    const iid = assetName(m[1]);
+    if (isTrollDrop(iid)) continue;
+    drops.push({ itemId: iid, itemName: itemName(iid), chance: Number(m[2]) });
+  }
   const o = {
     id: a.id, name: field(t, "enemyName") || a.id, image: "", imageGuid: guidOf(t, "enemySprite"),
     isBoss: bool(t, "isBoss"), minLevel: minLv, maxLevel: maxLv,
@@ -242,8 +303,16 @@ const bosses = loadCategory("Bosses").map((a) => {
     // BossData.GetLevelBasedEXP is linear: about ten same-level field kills.
     hardModeHp: num(t, "hardModeHp"), hardModeAtk: num(t, "hardModeAtk"), exp: Math.max(1, lv) * 125,
     resists: resistsOf(t, "resists"), hardModeResists: resistsOf(t, "hardModeResists"),
-    dropItemId: assetName(guidOf(t, "dropItem")), dropItemName: itemName(assetName(guidOf(t, "dropItem"))),
-    hardModeDropItemId: assetName(guidOf(t, "hardModeDropItem")), bonusDropItemId: assetName(guidOf(t, "bonusDropItem")),
+    // ⛔★★★ BOSS TROLL DROPS ARE WITHHELD TOO (owner, 2026-08-31: "Monsters, drops, areas, map
+    // info, never post troll related. Never. For all regions."). This OVERRIDES the boss-drops-are-
+    // exempt carve-out reasoned about above: that exemption published Cursed Armor -> Iron Fortress
+    // and Thunder Oni -> War Crest, and after the 3.0.1 Maze pass it would also have published
+    // The Verdant Mother -> Glassmaw Sigil. The rule is now ABSOLUTE — no troll collectible's
+    // source appears anywhere, field or boss, in any region.
+    dropItemId: nonTroll(assetName(guidOf(t, "dropItem"))),
+    dropItemName: itemName(nonTroll(assetName(guidOf(t, "dropItem")))),
+    hardModeDropItemId: nonTroll(assetName(guidOf(t, "hardModeDropItem"))),
+    bonusDropItemId: nonTroll(assetName(guidOf(t, "bonusDropItem"))),
     // Boss drop odds are a CODE constant, not a field on the asset — mirrored from
     // BossData.RollDrop: 1% in Normal, 0.75% in Hard. The bonus item rolls on the same chance
     // as its mode. Both are the BASE rate, before luck/collection bonuses and the duplicate
