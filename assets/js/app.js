@@ -868,7 +868,11 @@
     "Ice":        { icon: "&#10052;",  color: "#63bfe8" },
     "America":    { icon: '<span class="flag-us" role="img" aria-label="United States flag"></span>', color: "#e56a6a" },
     "Amazon":     { icon: "&#127811;", color: "#43a66b" },
-    "Graveyard":  { icon: "&#129702;", color: "#8fa38c" }
+    "Graveyard":  { icon: "&#129702;", color: "#8fa38c" },
+    // Graveyard-onward regions (endgame route), each entered through a door inside the Graveyard.
+    "Korea":      { icon: "&#127983;", color: "#6cc5a1" },
+    "London":     { icon: "&#128364;", color: "#c9a15a" },
+    "Monochrome": { icon: "&#128307;", color: "#9a9a9a" }
   };
   // Real in-game connections per world (documented route). Maps to MapData asset ids.
   var WORLD_ROUTES = {
@@ -917,7 +921,23 @@
     "Graveyard": { root: "GY01", edges: {
       "GY01": ["GY02", "GY04", "GY09"], "GY02": ["GY03", "GY06"], "GY03": ["GY05", "GY07"],
       "GY04": ["GY05", "GY06"], "GY05": ["GY08"], "GY06": ["GY10"], "GY08": ["GY07"],
-      "GY09": ["GY08"] } }
+      "GY09": ["GY08"] } },
+    // Korea — entered from GY09 (the surface loop). A hub village fanning to three routes,
+    // with the terraces splitting toward the waterway and the Nine Dragons throne.
+    "Korea": { root: "KR01", edges: {
+      "KR01": ["KR02", "KR03", "KR04"], "KR02": ["KR05"], "KR03": ["KR06"],
+      "KR05": ["KR07", "KR08"] } },
+    // London — entered from GY05 (the catacomb loop; the Underground connects below ground).
+    "London": { root: "LD01", edges: {
+      "LD01": ["LD02", "LD03", "LD04"], "LD02": ["LD05", "LD06", "LD07"],
+      "LD05": ["LD08"] } },
+    // Monochrome — entered from GY07 (the deep vault). Twenty maps, the longest lattice in the
+    // game, ending at The Origin past the Grey Throne.
+    "Monochrome": { root: "PX01", edges: {
+      "PX01": ["PX02", "PX03"], "PX02": ["PX05"], "PX03": ["PX04"], "PX04": ["PX06"],
+      "PX06": ["PX07", "PX08"], "PX07": ["PX09"], "PX09": ["PX10", "PX11"],
+      "PX11": ["PX12", "PX13"], "PX12": ["PX16"], "PX13": ["PX14"], "PX14": ["PX15"],
+      "PX16": ["PX17", "PX18"], "PX17": ["PX19"], "PX19": ["PX20"] } }
   };
   // Route prefixes are shared by a map's normal and hard-mode ZoneData assets.
   // Keeping this map-to-route table explicit prevents similarly named maps from being
@@ -943,6 +963,14 @@
     "AZ01": "AZ01", "AZ02": "AZ02", "AZ03": "AZ03", "AZ04": "AZ04", "AZ05": "AZ05",
     "GY01": "GY01", "GY02": "GY02", "GY03": "GY03", "GY04": "GY04", "GY05": "GY05",
     "GY06": "GY06", "GY07": "GY07", "GY08": "GY08", "GY09": "GY09", "GY10": "GY10",
+    "KR01": "KR01", "KR02": "KR02", "KR03": "KR03", "KR04": "KR04", "KR05": "KR05",
+    "KR06": "KR06", "KR07": "KR07", "KR08": "KR08",
+    "LD01": "LD01", "LD02": "LD02", "LD03": "LD03", "LD04": "LD04", "LD05": "LD05",
+    "LD06": "LD06", "LD07": "LD07", "LD08": "LD08",
+    "PX01": "PX01", "PX02": "PX02", "PX03": "PX03", "PX04": "PX04", "PX05": "PX05",
+    "PX06": "PX06", "PX07": "PX07", "PX08": "PX08", "PX09": "PX09", "PX10": "PX10",
+    "PX11": "PX11", "PX12": "PX12", "PX13": "PX13", "PX14": "PX14", "PX15": "PX15",
+    "PX16": "PX16", "PX17": "PX17", "PX18": "PX18", "PX19": "PX19", "PX20": "PX20",
     "VoidHunt_Map": "VoidHunt"
   };
   // data.json ships an `areas` table (region code + its map) built from the setup tools, so prefer
@@ -1080,10 +1108,14 @@
     var mode = forcedMode || selectedGameMode("normal");
     rememberGameMode(mode, false);
     var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt", "World Gate",
-                  "Japan", "Greek", "Military", "Heaven", "Maze", "Ice", "America", "Amazon", "Graveyard"];
+                  "Japan", "Greek", "Military", "Heaven", "Maze", "Ice", "America", "Amazon", "Graveyard",
+                  "Korea", "London", "Monochrome"];
     var worldGateUpcoming = !(d.release && d.release.worldGateReleased);
     var mazeBatchUpcoming = !(d.release && d.release.mazeBatchReleased);
     var graveyardUpcoming = !(d.release && d.release.graveyardReleased);
+    var koreaUpcoming = !(d.release && d.release.koreaReleased);
+    var londonUpcoming = !(d.release && d.release.londonReleased);
+    var monochromeUpcoming = !(d.release && d.release.monochromeReleased);
     app.innerHTML =
       pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", d.maps.length) +
       modeTabsHtml(mode, null, "Map data mode") +
@@ -1104,10 +1136,18 @@
         '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate", { upcoming: worldGateUpcoming }) + '</div>' +
         // ★ The Graveyard sits LITERALLY to the World Gate's right — the hub's right-hand side
         // opens into it in the game, so the atlas draws it that way (owner, 2026-09-01).
-        // ⚠ When Korea / London / Monochrome release, they chain FROM THIS NODE (a branch off the
-        // Graveyard, like the Maze's Ice/America/Amazon sub-branch) — never from the hub bus.
+        // Korea / London / Monochrome chain BELOW this node, never from the hub bus. The chain is
+        // drawn in ROUTE order; in the game each of the three doors opens from its own map INSIDE
+        // the Graveyard (Korea from GY09 on the surface loop, London from GY05 in the catacombs,
+        // Monochrome from GY07 in the deep vault) — the per-world pages show the exact doors.
         '<div class="wm-conn h" style="grid-area:hgy"></div>' +
         '<div class="wm-cell" style="grid-area:gy">'     + wnode(d, "Graveyard", { upcoming: graveyardUpcoming }) + '</div>' +
+        '<div class="wm-conn v" style="grid-area:vk"></div>' +
+        '<div class="wm-cell wm-chain" style="grid-area:kr">'     + wnode(d, "Korea", { upcoming: koreaUpcoming }) + '</div>' +
+        '<div class="wm-conn v" style="grid-area:vl"></div>' +
+        '<div class="wm-cell" style="grid-area:ld">'     + wnode(d, "London", { upcoming: londonUpcoming }) + '</div>' +
+        '<div class="wm-conn v" style="grid-area:vp"></div>' +
+        '<div class="wm-cell" style="grid-area:px">'     + wnode(d, "Monochrome", { upcoming: monochromeUpcoming }) + '</div>' +
         // The World Gate fans out to its four live regions and the Maze. The Maze then
         // opens the Ice, America and Amazon routes through its three gate halls.
         '<div class="wm-conn v" style="grid-area:vg"></div>' +
@@ -1122,7 +1162,7 @@
               return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: mazeBatchUpcoming }) + "</div>";
             }).join("") +
           '</div></div></div>' +
-      '</div></div><p class="route-note">Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven; the Maze hangs from the middle of the hub and leads onward to Ice, America and Amazon; and the door on the right side of the hub opens into the upcoming Graveyard, from which the later regions will branch. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
+      '</div></div><p class="route-note">Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven; the Maze hangs from the middle of the hub and leads onward to Ice, America and Amazon; and the door on the right side of the hub opens into the upcoming Graveyard. Below the Graveyard hang the three regions that follow it — Korea, London and Monochrome, drawn in route order; each is entered through its own door inside the Graveyard. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
       // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
       // grouped under its world. The compass graph above stays world-level.
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {

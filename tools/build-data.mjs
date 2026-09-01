@@ -417,7 +417,18 @@ const MAP_VISUAL = {
   GY01: "Iron Gate Cemetery", GY02: "Mausoleum Row", GY03: "The Catacombs",
   GY04: "Sunken Graves", GY05: "The Ossuary", GY06: "Gravekeeper's Walk",
   GY07: "The Deep Vault", GY08: "Bone Gallery", GY09: "The Yew Grove",
-  GY10: "Grave of the First Dead"
+  GY10: "Grave of the First Dead",
+  KR01: "Hanok Village", KR02: "Palace Grounds", KR03: "Fortress Wall", KR04: "Bamboo Sea",
+  KR05: "Terraced Fields", KR06: "Jeju Lava Tube", KR07: "Cheonggye Waterway",
+  KR08: "Throne of the Nine Dragons",
+  LD01: "Thameside Fog", LD02: "The Underground", LD03: "Rooftops", LD04: "Whitechapel Alleys",
+  LD05: "Clockworks", LD06: "Covent Arcade", LD07: "The Docklands", LD08: "The Great Clock",
+  PX01: "The Bleaching", PX02: "Ashfall Flats", PX03: "The Checkerboard", PX04: "Inversion",
+  PX05: "Static Shore", PX06: "The First Ground", PX07: "The Grey Cathedral",
+  PX08: "Halls of the Unmade", PX09: "The Long Stair", PX10: "The Ashen King",
+  PX11: "Monolith Field", PX12: "The Fold", PX13: "The Unfinished Bridge", PX14: "Chasm of Lines",
+  PX15: "Hollow Sun", PX16: "The Lattice", PX17: "The Pale March", PX18: "Threshold of the First",
+  PX19: "The Grey Throne", PX20: "The Origin"
 };
 const mapDisplayName = (id) => MAP_VISUAL[id] || id.replace(/_Map$/, "").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
 function copyMapVisual(id) {
@@ -445,6 +456,9 @@ function mapWorld(id) {
   if (/^AM\d{2}$/.test(id))                       return "America";
   if (/^AZ\d{2}$/.test(id))                       return "Amazon";
   if (/^GY\d{2}$/.test(id))                       return "Graveyard";
+  if (/^KR\d{2}$/.test(id))                       return "Korea";
+  if (/^LD\d{2}$/.test(id))                       return "London";
+  if (/^PX\d{2}$/.test(id))                       return "Monochrome";
   if (/Forest/.test(id))                          return "Forest";
   if (/Volcanic|Lava/.test(id))                   return "Volcanic";
   if (/Desert|Sandstone|Burial|SunBuriedCave/.test(id)) return "Desert";
@@ -462,10 +476,12 @@ const maps = loadCategory("Maps").map((a) => {
 // ★ GRAVEYARD IS DATA-FIRST (owner, 2026-09-01): the balance shipped before the art, so no MapData
 // assets exist yet. Synthesize atlas records for GY01-GY10 — no image, no grid — so the world shows
 // its named maps. Real MapData replaces these the moment the geometry pass lands (the some() guard).
-for (let i = 1; i <= 10; i++) {
-  const gid = "GY" + String(i).padStart(2, "0");
-  if (!maps.some((m) => m.id === gid))
-    maps.push({ id: gid, name: mapDisplayName(gid), world: "Graveyard", image: "", gridWidth: 0, gridHeight: 0, dataVersion: 0, walkableCells: 0, blockedCells: 0 });
+for (const [prefix, world, count] of [["GY", "Graveyard", 10], ["KR", "Korea", 8], ["LD", "London", 8], ["PX", "Monochrome", 20]]) {
+  for (let i = 1; i <= count; i++) {
+    const gid = prefix + String(i).padStart(2, "0");
+    if (!maps.some((m) => m.id === gid))
+      maps.push({ id: gid, name: mapDisplayName(gid), world, image: "", gridWidth: 0, gridHeight: 0, dataVersion: 0, walkableCells: 0, blockedCells: 0 });
+  }
 }
 
 // Attach spawn worlds + zone names to each enemy (LIVE zones only: GL/FR/VO/DS/UW normal
@@ -474,10 +490,10 @@ const WORLD = {
   GL: "Grassland", FR: "Forest", VO: "Volcanic", DS: "Desert", UW: "Underwater",
   JP: "Japan", GR: "Greek", ML: "Military", HV: "Heaven",  // World Gate branch
   MZ: "Maze", IC: "Ice", AM: "America", AZ: "Amazon",      // Maze batch
-  GY: "Graveyard"                                           // endgame ping-pong leg 2 (data-first: no art yet)
+  GY: "Graveyard", KR: "Korea", LD: "London", PX: "Monochrome"  // endgame ping-pong (data-first: no art yet)
 };
 function zoneWorld(zid) {
-  const m = zid.match(/^(GL|FR|VO|DS|UW|JP|GR|ML|HV|MZ|IC|AM|AZ|GY)\d+_(?:Zone|HM_Z)\d+/);
+  const m = zid.match(/^(GL|FR|VO|DS|UW|JP|GR|ML|HV|MZ|IC|AM|AZ|GY|KR|LD|PX)\d+_(?:Zone|HM_Z)\d+/);
   if (m) return WORLD[m[1]];
   if (/^VoidHunt/.test(zid)) return "Void Hunt";
   return null;
@@ -509,6 +525,14 @@ const REGION_MAP = {
   AZ01: "AZ01", AZ02: "AZ02", AZ03: "AZ03", AZ04: "AZ04", AZ05: "AZ05",
   GY01: "GY01", GY02: "GY02", GY03: "GY03", GY04: "GY04", GY05: "GY05",
   GY06: "GY06", GY07: "GY07", GY08: "GY08", GY09: "GY09", GY10: "GY10",
+  KR01: "KR01", KR02: "KR02", KR03: "KR03", KR04: "KR04", KR05: "KR05",
+  KR06: "KR06", KR07: "KR07", KR08: "KR08",
+  LD01: "LD01", LD02: "LD02", LD03: "LD03", LD04: "LD04", LD05: "LD05",
+  LD06: "LD06", LD07: "LD07", LD08: "LD08",
+  PX01: "PX01", PX02: "PX02", PX03: "PX03", PX04: "PX04", PX05: "PX05",
+  PX06: "PX06", PX07: "PX07", PX08: "PX08", PX09: "PX09", PX10: "PX10",
+  PX11: "PX11", PX12: "PX12", PX13: "PX13", PX14: "PX14", PX15: "PX15",
+  PX16: "PX16", PX17: "PX17", PX18: "PX18", PX19: "PX19", PX20: "PX20",
   VoidHunt: "VoidHunt_Map"
 };
 function areaCode(zid) {
@@ -579,6 +603,9 @@ const worldGateReleased = /WorldGateReleased\s*=>\s*true\s*;/.test(shopManagerSo
 const mazeBatchReleased = /MazeBatchReleased\s*=>\s*true\s*;/.test(shopManagerSource);
 const mazeHardReleased  = /MazeHardReleased\s*=>\s*true\s*;/.test(shopManagerSource);
 const graveyardReleased = /GraveyardReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+const koreaReleased      = /KoreaReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+const londonReleased     = /LondonReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+const monochromeReleased = /MonochromeReleased\s*=>\s*true\s*;/.test(shopManagerSource);
 bosses.forEach(suppressUnreleasedHard);   // must run AFTER the switches exist (TDZ)
 const isUnreleasedRegion = (r) => !worldGateReleased && !!r && /^(JP|GR|ML|HV)/.test(r);
 const isUnreleasedMazeRegion = (r) => !mazeBatchReleased && !!r && /^(MZ|IC|AM|AZ)/.test(r);
@@ -588,7 +615,10 @@ const isPurchasable = (id) => {
   if (i.shopUnavailable || !(i.buyPrice > 0)) return false;
   if (isUnreleasedRegion(i.sourceRegion)) return false;      // World Gate is locked for this release
   if (isUnreleasedMazeRegion(i.sourceRegion)) return false;  // Maze batch is cataloged but not yet purchasable
-  if (!graveyardReleased && /^GY/.test(i.sourceRegion)) return false;  // Graveyard: data published, shop locked
+  if (!graveyardReleased && /^GY/.test(i.sourceRegion)) return false;  // data published, shop locked
+  if (!koreaReleased      && /^KR/.test(i.sourceRegion)) return false;
+  if (!londonReleased     && /^LD/.test(i.sourceRegion)) return false;
+  if (!monochromeReleased && /^PX/.test(i.sourceRegion)) return false;
   if (i.isHardModeItem && i.shopRank !== 1) return false;     // hard shop is rank-1 only; rest is drop loot
   return true;
 };
@@ -639,12 +669,9 @@ for (const it of items) {
 
 // Internal/template items remain available above for resolving references, but the public catalog
 // follows ItemData.hiddenFromCollection just like the in-game collection screen.
-// ⛔ FAR-FUTURE REGIONS STAY OFF THE WIKI. Korea/London/Monochrome gear exists as data in the repo
-// but only the GRAVEYARD is data-released (owner, 2026-09-01: "we have the data not the asset").
-// Publishing a region's item names before the owner says so is the spoiler version of the shop
-// leak that cost two users — same guard, public side.
-const FAR_FUTURE_REGION = (r) => !!r && /^(KR|LD|PX)/.test(r);
-const publicItems = items.filter((it) => !it.hiddenFromCollection && !FAR_FUTURE_REGION(it.sourceRegion));
+// ★ ALL FOUR ping-pong regions are DATA-RELEASED on the wiki (owner, 2026-09-01: "Korea London
+// and mono? Please add them as well") — art-less, shop-locked, hard-less, but the data is public.
+const publicItems = items.filter((it) => !it.hiddenFromCollection);
 
 // The Unity bundle version is intentionally not the public content version. The in-game notices
 // are the player-facing source of truth (for example, "v2.0.4 — Balance & Leaderboard Fixes").
@@ -659,7 +686,7 @@ const gameVersion = Object.entries(englishUi)
 
 const root = {
   generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop", gameVersion,
-  release: { worldGateReleased, mazeBatchReleased, mazeHardReleased, graveyardReleased },
+  release: { worldGateReleased, mazeBatchReleased, mazeHardReleased, graveyardReleased, koreaReleased, londonReleased, monochromeReleased },
   counts: { enemies: liveEnemies.length, bosses: bosses.length, items: publicItems.length, maps: maps.length, zones: liveZones.length, areas: areas.length, characters: characters.length, achievements: achievements.length },
   enemies: liveEnemies, bosses, items: publicItems, maps, zones: liveZones, areas, characters, achievements
 };
