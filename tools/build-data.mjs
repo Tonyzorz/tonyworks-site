@@ -320,6 +320,17 @@ const bosses = loadCategory("Bosses").map((a) => {
     dropChance: BOSS_DROP_CHANCE, hardModeDropChance: BOSS_DROP_CHANCE_HARD
   };
 });
+// ⛔ THE MAZE-BATCH BOSSES' hardMode* FIELDS NOW CARRY THE UNRELEASED PING-PONG RE-DERIVATION
+// (2026-09-01). While MazeHardReleased is false the wiki must keep showing "no hard data" for
+// them rather than leak the future numbers — mirror the runtime switch, as the shop guard does.
+function suppressUnreleasedHard(b) {
+  if (mazeHardReleased) return b;
+  if (!/^(MZ|IC|AM|AZ)\d{2}$/.test(b.mapId || "")) return b;
+  b.hardModeLevel = 0; b.hardModeHp = 0; b.hardModeAtk = 0;
+  b.hardModeResists = null; b.hardModeDropItemId = "";
+  return b;
+}
+
 
 // Boss drops are always accessories in-game (a few have weapon/armor-sounding names but are
 // intended as accessories). Normalize their item type so the site categorizes them correctly.
@@ -402,7 +413,11 @@ const MAP_VISUAL = {
   IC04: "Aurora Bridge", IC05: "Frozen Throne",
   AM01: "New York", AM02: "Washington DC", AM03: "Florida", AM04: "Las Vegas", AM05: "Los Angeles",
   AZ01: "River Mouth", AZ02: "Flooded Canopy", AZ03: "Sunken Temple",
-  AZ04: "Blackwater Swamp", AZ05: "Heart of the Amazon"
+  AZ04: "Blackwater Swamp", AZ05: "Heart of the Amazon",
+  GY01: "Iron Gate Cemetery", GY02: "Mausoleum Row", GY03: "The Catacombs",
+  GY04: "Sunken Graves", GY05: "The Ossuary", GY06: "Gravekeeper's Walk",
+  GY07: "The Deep Vault", GY08: "Bone Gallery", GY09: "The Yew Grove",
+  GY10: "Grave of the First Dead"
 };
 const mapDisplayName = (id) => MAP_VISUAL[id] || id.replace(/_Map$/, "").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
 function copyMapVisual(id) {
@@ -429,6 +444,7 @@ function mapWorld(id) {
   if (/^IC\d{2}$/.test(id))                       return "Ice";
   if (/^AM\d{2}$/.test(id))                       return "America";
   if (/^AZ\d{2}$/.test(id))                       return "Amazon";
+  if (/^GY\d{2}$/.test(id))                       return "Graveyard";
   if (/Forest/.test(id))                          return "Forest";
   if (/Volcanic|Lava/.test(id))                   return "Volcanic";
   if (/Desert|Sandstone|Burial|SunBuriedCave/.test(id)) return "Desert";
@@ -443,16 +459,25 @@ const maps = loadCategory("Maps").map((a) => {
   }
   return { id: a.id, name: mapDisplayName(a.id), world: mapWorld(a.id), image: copyMapVisual(a.id), gridWidth: gw, gridHeight: gh, dataVersion: num(t, "dataVersion"), walkableCells: walkable, blockedCells: blocked };
 });
+// ★ GRAVEYARD IS DATA-FIRST (owner, 2026-09-01): the balance shipped before the art, so no MapData
+// assets exist yet. Synthesize atlas records for GY01-GY10 — no image, no grid — so the world shows
+// its named maps. Real MapData replaces these the moment the geometry pass lands (the some() guard).
+for (let i = 1; i <= 10; i++) {
+  const gid = "GY" + String(i).padStart(2, "0");
+  if (!maps.some((m) => m.id === gid))
+    maps.push({ id: gid, name: mapDisplayName(gid), world: "Graveyard", image: "", gridWidth: 0, gridHeight: 0, dataVersion: 0, walkableCells: 0, blockedCells: 0 });
+}
 
 // Attach spawn worlds + zone names to each enemy (LIVE zones only: GL/FR/VO/DS/UW normal
 // {WORLD}##_Zone# + hard {WORLD}##_HM_Z#, plus VoidHunt). Legacy/duplicate zones are ignored.
 const WORLD = {
   GL: "Grassland", FR: "Forest", VO: "Volcanic", DS: "Desert", UW: "Underwater",
   JP: "Japan", GR: "Greek", ML: "Military", HV: "Heaven",  // World Gate branch
-  MZ: "Maze", IC: "Ice", AM: "America", AZ: "Amazon"       // Maze batch
+  MZ: "Maze", IC: "Ice", AM: "America", AZ: "Amazon",      // Maze batch
+  GY: "Graveyard"                                           // endgame ping-pong leg 2 (data-first: no art yet)
 };
 function zoneWorld(zid) {
-  const m = zid.match(/^(GL|FR|VO|DS|UW|JP|GR|ML|HV|MZ|IC|AM|AZ)\d+_(?:Zone|HM_Z)\d+/);
+  const m = zid.match(/^(GL|FR|VO|DS|UW|JP|GR|ML|HV|MZ|IC|AM|AZ|GY)\d+_(?:Zone|HM_Z)\d+/);
   if (m) return WORLD[m[1]];
   if (/^VoidHunt/.test(zid)) return "Void Hunt";
   return null;
@@ -482,6 +507,8 @@ const REGION_MAP = {
   IC01: "IC01", IC02: "IC02", IC03: "IC03", IC04: "IC04", IC05: "IC05",
   AM01: "AM01", AM02: "AM02", AM03: "AM03", AM04: "AM04", AM05: "AM05",
   AZ01: "AZ01", AZ02: "AZ02", AZ03: "AZ03", AZ04: "AZ04", AZ05: "AZ05",
+  GY01: "GY01", GY02: "GY02", GY03: "GY03", GY04: "GY04", GY05: "GY05",
+  GY06: "GY06", GY07: "GY07", GY08: "GY08", GY09: "GY09", GY10: "GY10",
   VoidHunt: "VoidHunt_Map"
 };
 function areaCode(zid) {
@@ -550,6 +577,9 @@ const push = (arr, v) => { if (v && arr.indexOf(v) < 0) arr.push(v); };
 const shopManagerSource = read(path.join(GAME, "Assets", "Scripts", "Core", "ShopManager.cs"));
 const worldGateReleased = /WorldGateReleased\s*=>\s*true\s*;/.test(shopManagerSource);
 const mazeBatchReleased = /MazeBatchReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+const mazeHardReleased  = /MazeHardReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+const graveyardReleased = /GraveyardReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+bosses.forEach(suppressUnreleasedHard);   // must run AFTER the switches exist (TDZ)
 const isUnreleasedRegion = (r) => !worldGateReleased && !!r && /^(JP|GR|ML|HV)/.test(r);
 const isUnreleasedMazeRegion = (r) => !mazeBatchReleased && !!r && /^(MZ|IC|AM|AZ)/.test(r);
 const isPurchasable = (id) => {
@@ -558,6 +588,7 @@ const isPurchasable = (id) => {
   if (i.shopUnavailable || !(i.buyPrice > 0)) return false;
   if (isUnreleasedRegion(i.sourceRegion)) return false;      // World Gate is locked for this release
   if (isUnreleasedMazeRegion(i.sourceRegion)) return false;  // Maze batch is cataloged but not yet purchasable
+  if (!graveyardReleased && /^GY/.test(i.sourceRegion)) return false;  // Graveyard: data published, shop locked
   if (i.isHardModeItem && i.shopRank !== 1) return false;     // hard shop is rank-1 only; rest is drop loot
   return true;
 };
@@ -608,7 +639,12 @@ for (const it of items) {
 
 // Internal/template items remain available above for resolving references, but the public catalog
 // follows ItemData.hiddenFromCollection just like the in-game collection screen.
-const publicItems = items.filter((it) => !it.hiddenFromCollection);
+// ⛔ FAR-FUTURE REGIONS STAY OFF THE WIKI. Korea/London/Monochrome gear exists as data in the repo
+// but only the GRAVEYARD is data-released (owner, 2026-09-01: "we have the data not the asset").
+// Publishing a region's item names before the owner says so is the spoiler version of the shop
+// leak that cost two users — same guard, public side.
+const FAR_FUTURE_REGION = (r) => !!r && /^(KR|LD|PX)/.test(r);
+const publicItems = items.filter((it) => !it.hiddenFromCollection && !FAR_FUTURE_REGION(it.sourceRegion));
 
 // The Unity bundle version is intentionally not the public content version. The in-game notices
 // are the player-facing source of truth (for example, "v2.0.4 — Balance & Leaderboard Fixes").
@@ -623,7 +659,7 @@ const gameVersion = Object.entries(englishUi)
 
 const root = {
   generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop", gameVersion,
-  release: { worldGateReleased, mazeBatchReleased },
+  release: { worldGateReleased, mazeBatchReleased, mazeHardReleased, graveyardReleased },
   counts: { enemies: liveEnemies.length, bosses: bosses.length, items: publicItems.length, maps: maps.length, zones: liveZones.length, areas: areas.length, characters: characters.length, achievements: achievements.length },
   enemies: liveEnemies, bosses, items: publicItems, maps, zones: liveZones, areas, characters, achievements
 };

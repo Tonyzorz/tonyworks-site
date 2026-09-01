@@ -867,7 +867,8 @@
     "Maze":       { icon: "&#129513;", color: "#9b78dc" },
     "Ice":        { icon: "&#10052;",  color: "#63bfe8" },
     "America":    { icon: '<span class="flag-us" role="img" aria-label="United States flag"></span>', color: "#e56a6a" },
-    "Amazon":     { icon: "&#127811;", color: "#43a66b" }
+    "Amazon":     { icon: "&#127811;", color: "#43a66b" },
+    "Graveyard":  { icon: "&#129702;", color: "#8fa38c" }
   };
   // Real in-game connections per world (documented route). Maps to MapData asset ids.
   var WORLD_ROUTES = {
@@ -909,7 +910,14 @@
     "America": { root: "AM01", edges: {
       "AM01": ["AM02"], "AM02": ["AM03"], "AM03": ["AM04"], "AM04": ["AM05"] } },
     "Amazon": { root: "AZ01", edges: {
-      "AZ01": ["AZ02"], "AZ02": ["AZ03"], "AZ03": ["AZ04"], "AZ04": ["AZ05"] } }
+      "AZ01": ["AZ02"], "AZ02": ["AZ03"], "AZ03": ["AZ04"], "AZ04": ["AZ05"] } },
+    // Graveyard — entered from the World Gate hub (right-hand side). A lattice: a surface loop
+    // (GY01-GY02-GY06-GY09) over a catacomb loop (GY03-GY05-GY08-GY07), joined by three stairs,
+    // with the boss amphitheatre a spur off GY06.
+    "Graveyard": { root: "GY01", edges: {
+      "GY01": ["GY02", "GY04", "GY09"], "GY02": ["GY03", "GY06"], "GY03": ["GY05", "GY07"],
+      "GY04": ["GY05", "GY06"], "GY05": ["GY08"], "GY06": ["GY10"], "GY08": ["GY07"],
+      "GY09": ["GY08"] } }
   };
   // Route prefixes are shared by a map's normal and hard-mode ZoneData assets.
   // Keeping this map-to-route table explicit prevents similarly named maps from being
@@ -933,6 +941,8 @@
     "IC01": "IC01", "IC02": "IC02", "IC03": "IC03", "IC04": "IC04", "IC05": "IC05",
     "AM01": "AM01", "AM02": "AM02", "AM03": "AM03", "AM04": "AM04", "AM05": "AM05",
     "AZ01": "AZ01", "AZ02": "AZ02", "AZ03": "AZ03", "AZ04": "AZ04", "AZ05": "AZ05",
+    "GY01": "GY01", "GY02": "GY02", "GY03": "GY03", "GY04": "GY04", "GY05": "GY05",
+    "GY06": "GY06", "GY07": "GY07", "GY08": "GY08", "GY09": "GY09", "GY10": "GY10",
     "VoidHunt_Map": "VoidHunt"
   };
   // data.json ships an `areas` table (region code + its map) built from the setup tools, so prefer
@@ -1070,9 +1080,10 @@
     var mode = forcedMode || selectedGameMode("normal");
     rememberGameMode(mode, false);
     var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt", "World Gate",
-                  "Japan", "Greek", "Military", "Heaven", "Maze", "Ice", "America", "Amazon"];
+                  "Japan", "Greek", "Military", "Heaven", "Maze", "Ice", "America", "Amazon", "Graveyard"];
     var worldGateUpcoming = !(d.release && d.release.worldGateReleased);
     var mazeBatchUpcoming = !(d.release && d.release.mazeBatchReleased);
+    var graveyardUpcoming = !(d.release && d.release.graveyardReleased);
     app.innerHTML =
       pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", d.maps.length) +
       modeTabsHtml(mode, null, "Map data mode") +
@@ -1095,15 +1106,15 @@
         // opens the Ice, America and Amazon routes through its three gate halls.
         '<div class="wm-conn v" style="grid-area:vg"></div>' +
         '<div class="wm-branch" style="grid-area:wg"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
-          ["Japan", "Greek", "Maze", "Military", "Heaven"].map(function (w) {
-            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: w === "Maze" ? mazeBatchUpcoming : worldGateUpcoming }) + "</div>";
+          ["Japan", "Greek", "Maze", "Military", "Heaven", "Graveyard"].map(function (w) {
+            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: w === "Maze" ? mazeBatchUpcoming : w === "Graveyard" ? graveyardUpcoming : worldGateUpcoming }) + "</div>";
           }).join("") +
           '</div><div class="wm-maze-trunk"></div><div class="wm-subbranch"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
             ["Ice", "America", "Amazon"].map(function (w) {
               return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: mazeBatchUpcoming }) + "</div>";
             }).join("") +
           '</div></div></div>' +
-      '</div></div><p class="route-note">Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven, while the upcoming Maze entrance leads onward to Ice, America and Amazon. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
+      '</div></div><p class="route-note">Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven; the Maze entrance leads onward to Ice, America and Amazon; and the right side of the hub opens into the upcoming Graveyard. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
       // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
       // grouped under its world. The compass graph above stays world-level.
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {
