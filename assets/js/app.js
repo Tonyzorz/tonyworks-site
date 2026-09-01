@@ -1102,19 +1102,27 @@
         '<div class="wm-cell" style="grid-area:desert">' + wnode(d, "Desert") + '</div>' +
         '<div class="wm-conn v" style="grid-area:vd"></div>' +
         '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate", { upcoming: worldGateUpcoming }) + '</div>' +
+        // ★ The Graveyard sits LITERALLY to the World Gate's right — the hub's right-hand side
+        // opens into it in the game, so the atlas draws it that way (owner, 2026-09-01).
+        // ⚠ When Korea / London / Monochrome release, they chain FROM THIS NODE (a branch off the
+        // Graveyard, like the Maze's Ice/America/Amazon sub-branch) — never from the hub bus.
+        '<div class="wm-conn h" style="grid-area:hgy"></div>' +
+        '<div class="wm-cell" style="grid-area:gy">'     + wnode(d, "Graveyard", { upcoming: graveyardUpcoming }) + '</div>' +
         // The World Gate fans out to its four live regions and the Maze. The Maze then
         // opens the Ice, America and Amazon routes through its three gate halls.
         '<div class="wm-conn v" style="grid-area:vg"></div>' +
         '<div class="wm-branch" style="grid-area:wg"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
-          ["Japan", "Greek", "Maze", "Military", "Heaven", "Graveyard"].map(function (w) {
-            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: w === "Maze" ? mazeBatchUpcoming : w === "Graveyard" ? graveyardUpcoming : worldGateUpcoming }) + "</div>";
+          // Maze sits dead-centre of the five-portal bus — it hangs from the middle of the
+          // World Gate, exactly as in the game (owner, 2026-09-01).
+          ["Japan", "Greek", "Maze", "Military", "Heaven"].map(function (w) {
+            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: w === "Maze" ? mazeBatchUpcoming : worldGateUpcoming }) + "</div>";
           }).join("") +
           '</div><div class="wm-maze-trunk"></div><div class="wm-subbranch"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
             ["Ice", "America", "Amazon"].map(function (w) {
               return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: mazeBatchUpcoming }) + "</div>";
             }).join("") +
           '</div></div></div>' +
-      '</div></div><p class="route-note">Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven; the Maze entrance leads onward to Ice, America and Amazon; and the right side of the hub opens into the upcoming Graveyard. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
+      '</div></div><p class="route-note">Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven; the Maze hangs from the middle of the hub and leads onward to Ice, America and Amazon; and the door on the right side of the hub opens into the upcoming Graveyard, from which the later regions will branch. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
       // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
       // grouped under its world. The compass graph above stays world-level.
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {
