@@ -722,33 +722,43 @@
     return '<div class="section-title">Drop locations</div><div class="effect-list">' + chips(drops) + "</div>";
   }
 
-  // Permanent collection bonus by copies owned (1..20), with milestone jumps at 10 (50%) and 20
-  // (100%) — mirrors PermanentProgressManager.ItemPermRateByCopy.
-  var PERM_RATES = [2, 5, 8, 11, 14, 18, 22, 26, 30, 50, 53, 56, 59, 62, 65, 68, 72, 76, 80, 100];
-  function permRate(c) { if (c <= 0) return 0; return PERM_RATES[Math.min(c, 20) - 1] / 100; }
-  // Copy-count tier colors (mirror the in-game item border): green 1-4, blue 5-9, red 10-14,
-  // purple 15-19, rainbow at 20.
-  function permBand(c) { if (c >= 20) return "rainbow"; if (c >= 15) return "purple"; if (c >= 10) return "red"; if (c >= 5) return "blue"; return "green"; }
+  // Permanent collection bonus — TWO ladders (mirrors PermanentProgressManager, 2026-08-30 rule):
+  // 10-copy equipment families pay a flat +1% per copy (+10% at a full stack); 3-copy accessories
+  // pay 0% / 2% / 5% — the FIRST accessory copy deliberately grants nothing, because boss
+  // accessories carry far larger base stats (5% of one outweighs 10% of a common weapon).
+  var ACCESSORY_PERM_LADDER = [0, 2, 5];
+  function permRate(c, isAccessory) {
+    if (c <= 0) return 0;
+    if (isAccessory) return ACCESSORY_PERM_LADDER[Math.min(c, 3) - 1] / 100;
+    return Math.min(c, 10) * 0.01;
+  }
+  // Copy-count tier colors (mirror ItemTierBorder, re-cut for the 10-copy cap):
+  // 1 plain, 2 green, 3-4 blue, 5-6 red, 7-9 purple, rainbow at 10.
+  function permBand(c) { if (c >= 10) return "rainbow"; if (c >= 7) return "purple"; if (c >= 5) return "red"; if (c >= 3) return "blue"; if (c >= 2) return "green"; return "plain"; }
   function itemPermTable(i) {
     var flats = [["HP", i.bonusHP], ["ATK", i.bonusATK], ["DEF", i.bonusDEF], ["AGI", i.bonusAGI], ["LUC", i.bonusLUC]]
       .filter(function (x) { return x[1] > 0; });
     if (!flats.length)
       return '<div class="section-title">Permanent Collection Bonus</div>' +
         '<p style="color:var(--muted);font-size:.85rem">Percentage / utility effects only (see Effects) — no flat stats to bank, so this item earns no permanent collection bonus.</p>';
-    var maxC = i.type === "Accessory" ? 3 : 20;   // accessories cap at 3 copies, everything else at 20
+    var isAcc = i.type === "Accessory";
+    var maxC = isAcc ? 3 : 10;   // accessories cap at 3 copies, everything else at 10
     var head = "<tr><th>Copies</th><th>Permanent</th>" + flats.map(function (f) { return "<th>" + f[0] + "</th>"; }).join("") + "</tr>";
     var rows = "";
     for (var c = 1; c <= maxC; c++) {
-      var r = permRate(c);
+      var r = permRate(c, isAcc);
       rows += '<tr class="pb-' + permBand(c) + '"><td>' + c + "</td><td>+" + Math.round(r * 100) + "%</td>" +
         flats.map(function (f) { return "<td>+" + fmt(Math.round(f[1] * r)) + "</td>"; }).join("") + "</tr>";
     }
     var table = '<div class="perm-body" style="overflow-x:auto"><table class="data">' + head + rows + "</table></div>";
     // Desktop: rendered open (summary hidden via CSS) = full table. Mobile: collapsed dropdown.
     var wide = typeof window !== "undefined" && window.innerWidth >= 700;
-    var cap = "+" + Math.round(permRate(maxC) * 100) + "% at " + maxC + " owned";
+    var cap = "+" + Math.round(permRate(maxC, isAcc) * 100) + "% at " + maxC + " owned";
+    var intro = isAcc
+      ? "Owning copies grants a permanent, every-run bonus of this item’s stats. The first copy grants nothing - the ladder starts paying on the second: +2% at 2 copies, " + cap + "."
+      : "Owning copies grants a permanent, every-run bonus of this item’s stats - +1% per copy, up to " + cap + ".";
     return '<div class="section-title">Permanent Collection Bonus</div>' +
-      '<p style="color:var(--muted);font-size:.85rem;margin:.2rem 0 .5rem">Owning copies grants a permanent, every-run bonus of this item’s stats — +2% at 1 copy, up to ' + cap + '.</p>' +
+      '<p style="color:var(--muted);font-size:.85rem;margin:.2rem 0 .5rem">' + intro + '</p>' +
       '<details class="perm-details"' + (wide ? " open" : "") + '><summary>Show all ' + maxC + ' levels</summary>' + table + '</details>';
   }
   function itemDetail(app, d, i, forcedMode) {
@@ -795,7 +805,7 @@
         (i.buyPrice > 0 && !i.shopUnavailable && i.shopAreas && i.shopAreas.length > 0
           ? sb("Buy Price", fmt(i.buyPrice) + " g")
           : sb("Availability", (i.dropAreas && i.dropAreas.length > 0) ? "Drop only" : "Not in shop")) +
-        sb("Max Copies", i.type === "Accessory" ? 3 : 20) +
+        sb("Max Copies", i.type === "Accessory" ? 3 : 10) +
         (i.setName ? sb("Set", esc(i.setName)) : "") +
       "</div>" +
       itemPermTable(i) +
