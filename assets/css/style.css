@@ -777,7 +777,18 @@ body[data-page="portal"] .wrap { padding-top:0; }
 @media (max-width:640px){ .route-branches{ gap:.75rem; } .wnode{ width:44vw; max-width:170px; } }
 
 /* ---- World map: spatial compass layout ---- */
-.worldmap { overflow-x:auto; padding:1.25rem 0 .5rem; }
+/* A pannable canvas (owner, 2026-09-01: "make the maps moveable maybe by dragging"): full viewport
+   width, scrollbar hidden, grab-to-pan wired in app.js, opened centered. body gets overflow-x:clip
+   because the 100vw breakout ignores the page scrollbar's width. */
+body { overflow-x:clip; }
+.worldmap {
+  overflow-x:auto; overflow-y:hidden; padding:1.25rem 16px .5rem;
+  margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw);
+  cursor:grab; user-select:none; -webkit-user-select:none;
+  scrollbar-width:none; -ms-overflow-style:none;
+}
+.worldmap::-webkit-scrollbar { display:none; }
+.worldmap.panning { cursor:grabbing; }
 .wm-grid {
   display:grid; width:max-content; margin:0 auto; align-items:center; justify-items:center; gap:6px;
   grid-template-columns: auto 30px auto 30px auto 30px auto 30px auto 30px auto;

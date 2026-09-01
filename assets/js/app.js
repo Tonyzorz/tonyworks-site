@@ -1172,7 +1172,7 @@
               return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: mazeBatchUpcoming }) + "</div>";
             }).join("") +
           '</div></div></div>' +
-      '</div></div><p class="route-note">Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven; the Maze hangs from the middle of the hub and leads onward to Ice, America and Amazon; and the door on the right side of the hub opens into the upcoming Graveyard. Korea, London and Monochrome hang from one rail beside the Graveyard: none is entered through another — each has its own door inside the Graveyard, and rising monster levels are what make Korea the first stop, London the second and Monochrome the finale. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
+      '</div></div><p class="route-note">Drag the map to look around. Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven; the Maze hangs from the middle of the hub and leads onward to Ice, America and Amazon; and the door on the right side of the hub opens into the upcoming Graveyard. Korea, London and Monochrome hang from one rail beside the Graveyard: none is entered through another — each has its own door inside the Graveyard, and rising monster levels are what make Korea the first stop, London the second and Monochrome the finale. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
       // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
       // grouped under its world. The compass graph above stays world-level.
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {
@@ -1188,8 +1188,44 @@
         p.hidden = hide;
         p.style.display = hide ? "none" : "";
       });
+      // First time the map panel becomes visible, open it centered (centering while the panel
+      // is display:none is a no-op because scrollWidth reads 0).
+      if (v === "map") {
+        var wmc = app.querySelector(".worldmap");
+        if (wmc && !wmc._centered && wmc.clientWidth > 0) {
+          wmc.scrollLeft = (wmc.scrollWidth - wmc.clientWidth) / 2;
+          wmc._centered = true;
+        }
+      }
     }
     Array.prototype.forEach.call(app.querySelectorAll("[data-view]"), function (b) { b.onclick = function () { setView(b.getAttribute("data-view")); }; }); setView(view);
+    // Grab-to-pan (owner, 2026-09-01: "make the maps moveable maybe by dragging"). The atlas is
+    // wider than the page on purpose; the viewport pans with a mouse grab, the scrollbar is
+    // hidden, and the view opens centered. A grab that actually moved swallows the next click
+    // so releasing a pan on top of a world node never opens it. Touch pans natively.
+    (function (wm) {
+      if (!wm) return;
+      if (wm.clientWidth > 0) { wm.scrollLeft = (wm.scrollWidth - wm.clientWidth) / 2; wm._centered = true; }
+      var startX = 0, sl = 0, panning = false, moved = false;
+      wm.addEventListener("dragstart", function (e) { e.preventDefault(); });
+      wm.addEventListener("pointerdown", function (e) {
+        if (e.pointerType !== "mouse" || e.button !== 0) return;
+        panning = true; moved = false; startX = e.clientX; sl = wm.scrollLeft;
+        wm.classList.add("panning");
+      });
+      wm.addEventListener("pointermove", function (e) {
+        if (!panning) return;
+        var dx = e.clientX - startX;
+        if (Math.abs(dx) > 4) moved = true;
+        wm.scrollLeft = sl - dx;
+      });
+      function stop() { panning = false; wm.classList.remove("panning"); }
+      wm.addEventListener("pointerup", stop);
+      wm.addEventListener("pointerleave", stop);
+      wm.addEventListener("click", function (e) {
+        if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+      }, true);
+    })(app.querySelector(".worldmap"));
     wireModeTabs(app, mode, function (next) { PAGES.maps(app, d, next); });
   };
   function worldView(app, d, w, forcedMode) {
