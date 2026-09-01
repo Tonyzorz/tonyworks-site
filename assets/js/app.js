@@ -1146,17 +1146,17 @@
         '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate", { upcoming: worldGateUpcoming }) + '</div>' +
         // ★ The Graveyard sits LITERALLY to the World Gate's right — the hub's right-hand side
         // opens into it in the game, so the atlas draws it that way (owner, 2026-09-01).
-        // Korea / London / Monochrome chain BELOW this node, never from the hub bus. The chain is
-        // drawn in ROUTE order; in the game each of the three doors opens from its own map INSIDE
-        // the Graveyard (Korea from GY09 on the surface loop, London from GY05 in the catacombs,
-        // Monochrome from GY07 in the deep vault) — the per-world pages show the exact doors.
+        // ⚠ NOT A CORRIDOR — Korea, London and Monochrome are NOT entered through one another.
+        // Each has its OWN door inside the Graveyard (Korea from GY09 on the surface loop,
+        // London from GY05 in the catacombs, Monochrome from GY07 in the deep vault), so the
+        // atlas hangs all three off ONE rail from the Graveyard node. Only the monster-level
+        // ladder makes Korea the practical first stop (964K -> 1.86M -> 4.8M); difficulty is
+        // the only gate. The per-world pages show the exact doors.
         '<div class="wm-conn h" style="grid-area:hgy"></div>' +
         '<div class="wm-cell" style="grid-area:gy">'     + wnode(d, "Graveyard", { upcoming: graveyardUpcoming }) + '</div>' +
-        '<div class="wm-conn v" style="grid-area:vk"></div>' +
-        '<div class="wm-cell wm-chain" style="grid-area:kr">'     + wnode(d, "Korea", { upcoming: koreaUpcoming }) + '</div>' +
-        '<div class="wm-conn v" style="grid-area:vl"></div>' +
+        '<div class="wm-conn v" style="grid-area:gybus"></div>' +
+        '<div class="wm-cell" style="grid-area:kr">'     + wnode(d, "Korea", { upcoming: koreaUpcoming }) + '</div>' +
         '<div class="wm-cell" style="grid-area:ld">'     + wnode(d, "London", { upcoming: londonUpcoming }) + '</div>' +
-        '<div class="wm-conn v" style="grid-area:vp"></div>' +
         '<div class="wm-cell" style="grid-area:px">'     + wnode(d, "Monochrome", { upcoming: monochromeUpcoming }) + '</div>' +
         // The World Gate fans out to its four live regions and the Maze. The Maze then
         // opens the Ice, America and Amazon routes through its three gate halls.
@@ -1172,7 +1172,7 @@
               return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: mazeBatchUpcoming }) + "</div>";
             }).join("") +
           '</div></div></div>' +
-      '</div></div><p class="route-note">Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven; the Maze hangs from the middle of the hub and leads onward to Ice, America and Amazon; and the door on the right side of the hub opens into the upcoming Graveyard. Below the Graveyard hang the three regions that follow it — Korea, London and Monochrome, drawn in route order; each is entered through its own door inside the Graveyard. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
+      '</div></div><p class="route-note">Grassland connects south to the World Gate. From there, the live route fans out to Japan, Greek, Military and Heaven; the Maze hangs from the middle of the hub and leads onward to Ice, America and Amazon; and the door on the right side of the hub opens into the upcoming Graveyard. Korea, London and Monochrome hang from one rail beside the Graveyard: none is entered through another — each has its own door inside the Graveyard, and rising monster levels are what make Korea the first stop, London the second and Monochrome the finale. Void Hunt remains the secret arena reached from Volcanic.</p></div>' +
       // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
       // grouped under its world. The compass graph above stays world-level.
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {

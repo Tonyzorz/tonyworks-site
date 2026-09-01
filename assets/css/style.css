@@ -780,20 +780,18 @@ body[data-page="portal"] .wrap { padding-top:0; }
 .worldmap { overflow-x:auto; padding:1.25rem 0 .5rem; }
 .wm-grid {
   display:grid; width:max-content; margin:0 auto; align-items:center; justify-items:center; gap:6px;
-  grid-template-columns: auto 30px auto 30px auto 30px auto 30px auto;
-  grid-template-rows: auto 24px auto 24px auto 24px auto 24px auto 24px auto;
+  grid-template-columns: auto 30px auto 30px auto 30px auto 30px auto 30px auto;
+  grid-template-rows: auto 24px auto 24px auto 24px auto 24px auto;
   grid-template-areas:
-    ".    .  .    .  .      .  uw   .  ."
-    ".    .  .    .  .      .  vu   .  ."
-    "void h1 volc h2 forest h3 gl   h4 desert"
-    ".    .  .    .  .      .  vd   .  ."
-    ".    .  .    .  .      .  gate hgy gy"
-    ".    .  .    .  .      .  vg   .  vk"
-    "wg   wg wg   wg wg     wg wg   .  kr"
-    ".    .  .    .  .      .  .    .  vl"
-    ".    .  .    .  .      .  .    .  ld"
-    ".    .  .    .  .      .  .    .  vp"
-    ".    .  .    .  .      .  .    .  px";
+    ".    .  .    .  .      .  uw   .   .      .     ."
+    ".    .  .    .  .      .  vu   .   .      .     ."
+    "void h1 volc h2 forest h3 gl   h4  desert .     ."
+    ".    .  .    .  .      .  vd   .   .      .     ."
+    ".    .  .    .  .      .  gate hgy gy     gybus kr"
+    ".    .  .    .  .      .  vg   .   .      gybus ."
+    "wg   wg wg   wg wg     wg wg   .   .      gybus ld"
+    ".    .  .    .  .      .  .    .   .      gybus ."
+    ".    .  .    .  .      .  .    .   .      gybus px";
 }
 /* World Gate branch: the hub drops onto a bus that fans out to the four themed regions. */
 .wm-branch { display:flex; flex-direction:column; align-items:center; width:100%; }
@@ -805,10 +803,6 @@ body[data-page="portal"] .wrap { padding-top:0; }
 .wm-subbranch { display:flex; flex-direction:column; align-items:center; width:62%; }
 .wm-subbranch .wm-branch-bus { width:100%; margin:0; }
 .wm-cell { display:flex; }
-/* A chain cell shares a grid row taller than its node (Korea sits beside the World Gate branch
-   row), so it stretches and draws its own connector line through the spare height. */
-.wm-chain { align-self:stretch; flex-direction:column; align-items:center; justify-content:center; }
-.wm-chain::before, .wm-chain::after { content:""; width:2px; flex:1 1 0; background:var(--border); }
 .wm-conn.h { width:100%; height:2px; background:var(--border); align-self:center; }
 .wm-conn.v { height:100%; min-height:24px; width:2px; background:var(--border); justify-self:center; }
 .wm-conn.dashed { background:repeating-linear-gradient(90deg,var(--border) 0 5px,transparent 5px 10px); }
@@ -816,7 +810,7 @@ body[data-page="portal"] .wrap { padding-top:0; }
    horizontally so the layout stays connected instead of collapsing to a straight list. */
 @media (max-width:640px){
   .worldmap { padding-bottom:.75rem; }
-  .wm-grid { gap:4px; grid-template-columns: auto 16px auto 16px auto 16px auto 16px auto; }
+  .wm-grid { gap:4px; grid-template-columns: auto 16px auto 16px auto 16px auto 16px auto 16px auto; }
   .worldmap .wnode { width:108px; padding:.6rem .45rem; gap:.1rem; }
   .worldmap .wnode .wicon { font-size:1.5rem; }
   .worldmap .wnode .wname { font-size:.88rem; }
