@@ -535,7 +535,8 @@
             (zones.length ? '<p style="color:var(--faint);font-size:.85rem;margin-top:.5rem">' + esc(zones.join(" · ")) + "</p>" : "")
         : "") +
       (drops.length ? '<div class="section-title">Drops</div><table class="data"><tr><th>Item</th><th>Chance</th></tr>' +
-        drops.map(function (x) { return "<tr><td>" + link("items.html", x.itemId, x.itemName || x.itemId) + "</td><td>" + x.chance + "%</td></tr>"; }).join("") + "</table>" : "") +
+        drops.map(function (x) { return "<tr><td>" + link("items.html", x.itemId, x.itemName || x.itemId) + "</td><td>" + x.chance + "%</td></tr>"; }).join("") + "</table>" +
+        '<p style="color:var(--faint);font-size:.8rem;margin-top:.4rem">One shared drop roll per kill — these are each item’s share of it. In game, copies you already own shift the odds toward items you still need, and drop-rate bonuses raise the total.</p>' : "") +
       "</div></div>";
     wireModeTabs(app, mode, function (next) { monsterDetail(app, d, selected, next); });
   }

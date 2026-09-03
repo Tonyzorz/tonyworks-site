@@ -243,16 +243,14 @@ const nonTroll = (id) => (isTrollDrop(id) ? "" : id);
 const atLevel = (base, scaling, level, minLevel) =>
   Math.round(base * (1 + scaling * Math.max(0, level - minLevel)));
 const enemyById = new Map();
-// Four Maze-batch areas currently reuse one Unity sprite reference for two differently named
-// monster archetypes. Keep the public catalog visually truthful by assigning the second archetype
-// a thematically matching authored sprite until the game assets carry distinct references.
-// These are forced through copySprite because the site files may already contain the shared art.
-const ENEMY_ART_OVERRIDES = [
-  { pattern: /^MZ05_Z(?:1|3|5)(?:_H)?$/, sprite: "Reflecting Pool Shade" },
-  { pattern: /^MZ07_Z1(?:_H)?$/, sprite: "Aurora Moth" },
-  { pattern: /^MZ08_Z1(?:_H)?$/, sprite: "Marquee Wraith" },
-  { pattern: /^MZ09_Z1(?:_H)?$/, sprite: "Cypress Wight" }
-];
+// ★ EMPTY ON PURPOSE (2026-09-01). The old entries here papered over the game reusing one sprite
+// for two differently named archetypes (MZ05/07/08/09) — and they borrowed IC/AM/AZ monsters' own
+// art, which would have re-created the alias across regions the day those release. The game assets
+// now carry distinct references (Compass Shade → Ice Wisp, Lantern Thrall → Marshlight Swarm,
+// Ember Thrall → Ember Sprite, Ashen Thrall → Swamp Troll — previously UNUSED PNGs), so the site
+// reads the truth straight from enemySprite. Add an override again ONLY as a stopgap for a NEW
+// alias, and fix the game promptly — a site-only fix is how the wiki and the game diverged.
+const ENEMY_ART_OVERRIDES = [];
 function enemyArtOverride(id) {
   const override = ENEMY_ART_OVERRIDES.find((entry) => entry.pattern.test(id));
   if (!override) return null;
@@ -271,9 +269,14 @@ const enemies = loadCategory("Enemies").map((a) => {
   // Troll collectibles are withheld here — see the trollItemIds note above. This is the only place a
   // field drop enters the data, so skipping it here keeps it out of monster pages, area loot lists
   // and item `dropAreas` alike. Boss drops do not pass through this loop and are unaffected.
+  // Troll entries keep their WEIGHT (hiddenChances) so published shares stay TRUE without ever
+  // naming the item — same ruling as the in-game drop panel: absent, never renormalized over.
+  const hiddenChances = [];
+  const tableIds = [];
   let m; while ((m = re.exec(t))) {
     const iid = assetName(m[1]);
-    if (isTrollDrop(iid)) continue;
+    tableIds.push(iid);
+    if (isTrollDrop(iid)) { hiddenChances.push(Number(m[2])); continue; }
     drops.push({ itemId: iid, itemName: itemName(iid), chance: Number(m[2]) });
   }
   const o = {
@@ -285,17 +288,26 @@ const enemies = loadCategory("Enemies").map((a) => {
     goldMin: atLevel(bGold, sGold, minLv, minLv), goldMax: atLevel(bGold, sGold, maxLv, minLv),
     permanentBPReward: num(t, "permanentBPReward"), drops,
     resists: resistsOf(t),
+    isHard: field(t, "isHardMode") === "1",
+    _tableIds: tableIds, _hiddenChances: hiddenChances, _shopExtraIds: [],
     worlds: [], areas: [], zoneNames: []   // filled after zones are parsed
   };
   enemyById.set(a.id, o); return o;
 });
 const enemyName = (id) => enemyById.has(id) ? enemyById.get(id).name : id;
 
-// Mirrors BossData.RollDrop in the game. Keep in sync if those constants move.
+// Mirrors BossData.RollDrops in the game. Keep in sync if those constants move.
+// ★ SHARED BUDGET since 2026-09-01: a boss kill rolls ONE budget across its uniques (main + bonus)
+// instead of an independent roll per item — so a two-item boss shows budget/2 per item at base
+// state, and in game a capped item hands its whole share to the sibling. The bonus presence check
+// uses the RAW asset field (before the troll withhold): a hidden troll bonus still takes its share
+// of the budget, and the published main-drop share stays TRUE rather than renormalized.
 const BOSS_DROP_CHANCE = 1;        // Normal mode, %
 const BOSS_DROP_CHANCE_HARD = 0.75; // Hard mode, %
 const bosses = loadCategory("Bosses").map((a) => {
   const t = a.text; const lv = num(t, "level");
+  const hasBonusNormal = !!assetName(guidOf(t, "bonusDropItem"));
+  const hasBonusHard = !!(assetName(guidOf(t, "hardModeBonusDropItem")) || assetName(guidOf(t, "bonusDropItem")));
   return {
     id: a.id, name: field(t, "bossName") || a.id, image: copySprite(guidOf(t, "bossSprite"), "boss", a.id),
     mapId: assetName(guidOf(t, "activeInMap")), level: lv, hardModeLevel: num(t, "hardModeLevel"),
@@ -314,10 +326,11 @@ const bosses = loadCategory("Bosses").map((a) => {
     hardModeDropItemId: nonTroll(assetName(guidOf(t, "hardModeDropItem"))),
     bonusDropItemId: nonTroll(assetName(guidOf(t, "bonusDropItem"))),
     // Boss drop odds are a CODE constant, not a field on the asset — mirrored from
-    // BossData.RollDrop: 1% in Normal, 0.75% in Hard. The bonus item rolls on the same chance
-    // as its mode. Both are the BASE rate, before luck/collection bonuses and the duplicate
-    // falloff that EnemyData.CalculateDropChance applies once you already own copies.
-    dropChance: BOSS_DROP_CHANCE, hardModeDropChance: BOSS_DROP_CHANCE_HARD
+    // BossData.RollDrops' shared budget: 1% Normal / 0.75% Hard PER KILL, split evenly across the
+    // boss's uniques at base state (bonus item present = half each). Before luck/collection
+    // bonuses and the duplicate-falloff share shifts that apply once you own copies.
+    dropChance: hasBonusNormal ? BOSS_DROP_CHANCE / 2 : BOSS_DROP_CHANCE,
+    hardModeDropChance: hasBonusHard ? BOSS_DROP_CHANCE_HARD / 2 : BOSS_DROP_CHANCE_HARD
   };
 });
 // ⛔ THE MAZE-BATCH BOSSES' hardMode* FIELDS NOW CARRY THE UNRELEASED PING-PONG RE-DERIVATION
@@ -541,6 +554,7 @@ function areaCode(zid) {
   if (/^VoidHunt/.test(zid)) return "VoidHunt";
   return null;
 }
+const isCatalogueRegionZone = (id) => /^(MZ|IC|AM|AZ|GY|KR|LD|PX)\d\d_/.test(String(id || ""));
 for (const z of zones) {
   const w = zoneWorld(z.id);
   if (!w) continue;
@@ -551,7 +565,50 @@ for (const z of zones) {
     if (!e.worlds.includes(w)) e.worlds.push(w);
     if (ac && !e.areas.includes(ac)) e.areas.push(ac);
     if (z.name && !e.zoneNames.includes(z.name)) e.zoneNames.push(z.name);
+    // NORMAL mode only: the zone shop's stock is part of the kill's drop pool (BuildEligiblePool).
+    // Hard zone shops are NOT a drop source — hard is drop-table driven.
+    // ⛔ And neither are the CATALOGUE regions (2026-09-03, BattleManager.IsCatalogueRegionZone):
+    // Maze / Ice / America / Amazon / Graveyard / Korea / London / Monochrome zones carry the REGION
+    // shop catalogue in shopItems (MZ01_Zone0 lists MZ09_Accessory), and feeding it to the pool was
+    // the leak that let the first Maze monster drop map nine's sigil. The game no longer rolls it;
+    // the site must not publish it.
+    if (!e.isHard && !isCatalogueRegionZone(z.id)) for (const s of (z.shopItems || []))
+      if (e._shopExtraIds.indexOf(s) < 0) e._shopExtraIds.push(s);
   }
+}
+
+// ★ TRUE BASE-STATE DROP SHARES (owner ruling 2026-09-01; mirrors EnemyData.RollFromBudget +
+// ComputeBudgetAndWeights). A kill spends ONE budget — the pool's largest dropChance — shared
+// across every item the monster can pay. In NORMAL mode the zone shop's stock joins the pool at
+// chance 3 (BattleManager.ZoneShopDropChance); the published number per item is its SHARE of the
+// budget at a fresh-account base state (0 copies, no drop bonuses). In game, owning copies decays
+// an item's weight and shifts the difference to the items still needed, and player drop bonuses
+// raise the budget — so live panel numbers legitimately differ from these baselines.
+// ⚠ Troll entries keep their WEIGHT in the denominator but are never published: shares are shown
+// TRUE, never renormalized over the hidden slice (identical to the in-game drop panel ruling).
+// The old export printed the raw per-row dropChance ("3%"), which is the whole kill's budget, not
+// the item's chance — that mislabel is what made the wiki and the in-game panel disagree.
+const ZONE_SHOP_DROP_CHANCE = 3; // BattleManager.ZoneShopDropChance — one constant there, one here
+for (const e of enemies) {
+  const entries = e.drops.map((d) => ({ d, w: d.chance }));
+  const hidden = (e._hiddenChances || []).slice();
+  if (!e.isHard) {
+    for (const id of e._shopExtraIds || []) {
+      if (e._tableIds.indexOf(id) >= 0) continue;                 // DropTableContains
+      const i = itemById.get(id);
+      if (!i || i.shopUnavailable || !(i.buyPrice > 0)) continue; // BuildEligiblePool's filter
+      if (isTrollDrop(id)) { hidden.push(ZONE_SHOP_DROP_CHANCE); continue; }
+      const d = { itemId: id, itemName: itemName(id), chance: ZONE_SHOP_DROP_CHANCE };
+      e.drops.push(d); entries.push({ d, w: ZONE_SHOP_DROP_CHANCE });
+    }
+  }
+  const weights = entries.map((x) => x.w).concat(hidden);
+  if (weights.length) {
+    const budget = Math.max(...weights);
+    const totalW = weights.reduce((s, w) => s + w, 0);
+    for (const x of entries) x.d.chance = Math.round(budget * (x.w / totalW) * 1000) / 1000;
+  }
+  delete e._tableIds; delete e._hiddenChances; delete e._shopExtraIds;
 }
 // Gold shown = per-enemy base gold (the game no longer applies the per-zone gold multiplier, so
 // base gold IS the gold per kill — ascends cleanly with level like EXP).
