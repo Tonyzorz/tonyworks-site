@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T04:52:33Z",
+  "generatedAt": "2026-09-03T13:18:57Z",
   "game": "Infinite Loot-Loop",
-  "gameVersion": "v3.0.3",
+  "gameVersion": "v3.0.4",
   "release": {
     "worldGateReleased": true,
     "mazeBatchReleased": true,
@@ -11802,8 +11802,8 @@
       "isBoss": false,
       "minLevel": 3600,
       "maxLevel": 3800,
-      "hpMin": 27030000000,
-      "hpMax": 33517199459,
+      "hpMin": 24327000000,
+      "hpMax": 30165479513,
       "atkMin": 42103000000,
       "atkMax": 58944200000,
       "expMin": 7780483,
@@ -11969,8 +11969,8 @@
       "maxLevel": 4300,
       "hpMin": 242461642008,
       "hpMax": 300652431241,
-      "atkMin": 689188497025,
-      "atkMax": 964863895835,
+      "atkMin": 1650000000000,
+      "atkMax": 2310000000000,
       "expMin": 10025400,
       "expMax": 110279400,
       "goldMin": 678389813,
@@ -12027,8 +12027,8 @@
       "maxLevel": 4500,
       "hpMin": 262831159865,
       "hpMax": 325910638233,
-      "atkMin": 1455892492957,
-      "atkMax": 2038249475581,
+      "atkMin": 2030000000000,
+      "atkMax": 2841999979700,
       "expMin": 7591262,
       "expMax": 121460192,
       "goldMin": 509299121,
@@ -12081,8 +12081,8 @@
       "maxLevel": 4600,
       "hpMin": 288692961534,
       "hpMax": 357979266528,
-      "atkMin": 3099241605264,
-      "atkMax": 4338938247370,
+      "atkMin": 3100000000000,
+      "atkMax": 4340000000000,
       "expMin": 11508750,
       "expMax": 126596250,
       "goldMin": 807741639,
@@ -12139,8 +12139,8 @@
       "maxLevel": 4800,
       "hpMin": 384790571334,
       "hpMax": 477140300758,
-      "atkMin": 1554299993669,
-      "atkMax": 2176019991137,
+      "atkMin": 2490000000000,
+      "atkMax": 3486000000000,
       "expMin": 12554483,
       "expMax": 138099313,
       "goldMin": 1822365152,
@@ -12197,8 +12197,8 @@
       "maxLevel": 4900,
       "hpMin": 403800993477,
       "hpMax": 500713223835,
-      "atkMin": 2857171612591,
-      "atkMax": 4000040257627,
+      "atkMin": 3190000000000,
+      "atkMax": 4466000000000,
       "expMin": 13182207,
       "expMax": 145004277,
       "goldMin": 1913483410,
@@ -12250,8 +12250,8 @@
       "maxLevel": 5000,
       "hpMin": 422811415619,
       "hpMax": 524286146911,
-      "atkMin": 4632133515460,
-      "atkMax": 6484986921644,
+      "atkMin": 4090000000000,
+      "atkMax": 5726000000000,
       "expMin": 13841318,
       "expMax": 152254498,
       "goldMin": 2009157580,
@@ -12303,8 +12303,8 @@
       "maxLevel": 5100,
       "hpMin": 441821837761,
       "hpMax": 547859069987,
-      "atkMin": 7361936672978,
-      "atkMax": 10306711342169,
+      "atkMin": 5250000000000,
+      "atkMax": 7350000000000,
       "expMin": 14533383,
       "expMax": 159867213,
       "goldMin": 2109615459,
@@ -12465,8 +12465,8 @@
       "maxLevel": 6100,
       "hpMin": 1225572155226,
       "hpMax": 1519709447969,
-      "atkMin": 1576671959573,
-      "atkMax": 2207340743402,
+      "atkMin": 5740000000000,
+      "atkMax": 8036000000000,
       "expMin": 20460000,
       "expMax": 225060000,
       "goldMin": 4536856981,
@@ -12523,8 +12523,8 @@
       "maxLevel": 6300,
       "hpMin": 2296797881385,
       "hpMax": 2848029372917,
-      "atkMin": 4557608884683,
-      "atkMax": 6380652392980,
+      "atkMin": 6310000000000,
+      "atkMax": 8833999936900,
       "expMin": 15173497,
       "expMax": 242775952,
       "goldMin": 6103381922,
@@ -12582,8 +12582,8 @@
       "maxLevel": 6400,
       "hpMin": 2890803922653,
       "hpMax": 3584596806274,
-      "atkMin": 10328509839503,
-      "atkMax": 14459913775304,
+      "atkMin": 7640000000000,
+      "atkMax": 10696000000000,
       "expMin": 22570577,
       "expMax": 248276347,
       "goldMin": 10701258104,
@@ -12635,8 +12635,8 @@
       "maxLevel": 6900,
       "hpMin": 2755279027719,
       "hpMax": 3416545939266,
-      "atkMin": 3033137158861,
-      "atkMax": 4246392022405,
+      "atkMin": 10300000000000,
+      "atkMax": 14420000000000,
       "expMin": 26279733,
       "expMax": 289077063,
       "goldMin": 8439861070,
@@ -12688,8 +12688,8 @@
       "maxLevel": 7100,
       "hpMin": 4517658353048,
       "hpMax": 5601896357780,
-      "atkMin": 15873879589614,
-      "atkMax": 22223431266721,
+      "atkMin": 15900000000000,
+      "atkMax": 22259999841000,
       "expMin": 19477920,
       "expMax": 311646720,
       "goldMin": 9933782802,
@@ -12747,8 +12747,8 @@
       "maxLevel": 7800,
       "hpMin": 8258443620140,
       "hpMax": 10240469923805,
-      "atkMin": 3805227846635,
-      "atkMax": 5327318985289,
+      "atkMin": 12700000000000,
+      "atkMax": 17780000000000,
       "expMin": 33696483,
       "expMax": 370661313,
       "goldMin": 18554459229,
@@ -12795,8 +12795,8 @@
       "maxLevel": 7900,
       "hpMin": 8258443620140,
       "hpMax": 10240469923805,
-      "atkMin": 7792076173743,
-      "atkMax": 10908906643240,
+      "atkMin": 14000000000000,
+      "atkMax": 19600000000000,
       "expMin": 35381307,
       "expMax": 389194377,
       "goldMin": 19482182190,
@@ -12838,8 +12838,8 @@
       "maxLevel": 8000,
       "hpMin": 8258443620140,
       "hpMax": 10240469923805,
-      "atkMin": 15523439815660,
-      "atkMax": 21732815741924,
+      "atkMin": 15500000000000,
+      "atkMax": 21700000000000,
       "expMin": 37150373,
       "expMax": 408654103,
       "goldMin": 20456291300,
@@ -12881,8 +12881,8 @@
       "maxLevel": 9000,
       "hpMin": 9525754839740,
       "hpMax": 11811935886969,
-      "atkMin": 12519326410272,
-      "atkMax": 17527056974381,
+      "atkMin": 13700000000000,
+      "atkMax": 19180000000000,
       "expMin": 24006400,
       "expMax": 504134400,
       "goldMin": 13615555165,
@@ -12930,8 +12930,8 @@
       "maxLevel": 9000,
       "hpMin": 9605136087970,
       "hpMax": 11910368749083,
-      "atkMin": 25927809914520,
-      "atkMax": 36298933621050,
+      "atkMin": 25900000000000,
+      "atkMax": 36259999741000,
       "expMin": 32620461,
       "expMax": 521927376,
       "goldMin": 18501136732,
@@ -12984,8 +12984,8 @@
       "maxLevel": 9900,
       "hpMin": 9796683289920,
       "hpMax": 12147887083567,
-      "atkMin": 12774273310370,
-      "atkMax": 17883982634518,
+      "atkMin": 12900000000000,
+      "atkMax": 18060000000000,
       "expMin": 54582733,
       "expMax": 600410063,
       "goldMin": 23024472785,
@@ -13032,8 +13032,8 @@
       "maxLevel": 10000,
       "hpMin": 11192397610643,
       "hpMax": 13878572813349,
-      "atkMin": 32165087481298,
-      "atkMax": 45031122473817,
+      "atkMin": 31000000000000,
+      "atkMax": 43400000000000,
       "expMin": 57311870,
       "expMax": 630430570,
       "goldMin": 26304724422,
@@ -13085,8 +13085,8 @@
       "maxLevel": 10100,
       "hpMin": 12588111931366,
       "hpMax": 15609258543132,
-      "atkMin": 74675594874741,
-      "atkMax": 104545832824637,
+      "atkMin": 74700000000000,
+      "atkMax": 104580000000000,
       "expMin": 60177463,
       "expMax": 661952093,
       "goldMin": 29584976058,
@@ -13256,8 +13256,8 @@
       "maxLevel": 12700,
       "hpMin": 33696217907844,
       "hpMax": 41783309531802,
-      "atkMin": 181515773716667,
-      "atkMax": 254122083203334,
+      "atkMin": 182000000000000,
+      "atkMax": 254800000000000,
       "expMin": 90228599,
       "expMax": 992514589,
       "goldMin": 64992955821,
@@ -13304,8 +13304,8 @@
       "maxLevel": 12800,
       "hpMin": 33696217907844,
       "hpMax": 41783309531802,
-      "atkMin": 934481522664742,
-      "atkMax": 1308274131730639,
+      "atkMin": 934000000000000,
+      "atkMax": 1307600000000000,
       "expMin": 94740029,
       "expMax": 1042140319,
       "goldMin": 68242603612,
@@ -13357,8 +13357,8 @@
       "maxLevel": 14400,
       "hpMin": 47361757515642,
       "hpMax": 58728578372161,
-      "atkMin": 196081216452717,
-      "atkMax": 274513703033804,
+      "atkMin": 711000000000000,
+      "atkMax": 995400000000000,
       "expMin": 116218482,
       "expMax": 1278403302,
       "goldMin": 117456394240,
@@ -13415,8 +13415,8 @@
       "maxLevel": 14500,
       "hpMin": 69988181911332,
       "hpMax": 86785344170288,
-      "atkMin": 843394921498911,
-      "atkMax": 1180752890098475,
+      "atkMin": 711000000000000,
+      "atkMax": 995400000000000,
       "expMin": 122029406,
       "expMax": 1342323466,
       "goldMin": 173569561561,
@@ -13468,8 +13468,8 @@
       "maxLevel": 16400,
       "hpMin": 106921742762402,
       "hpMax": 132582959742318,
-      "atkMin": 1207003510482398,
-      "atkMax": 1689804914675357,
+      "atkMin": 1210000000000000,
+      "atkMax": 1694000000000000,
       "expMin": 81356399,
       "expMax": 1708484379,
       "goldMin": 84800810852,
@@ -13522,8 +13522,8 @@
       "maxLevel": 16400,
       "hpMin": 107812756812856,
       "hpMax": 133687818447941,
-      "atkMin": 2370856681357930,
-      "atkMax": 3319199330192535,
+      "atkMin": 2370000000000000,
+      "atkMax": 3317999976300000,
       "expMin": 110548989,
       "expMax": 1768783824,
       "goldMin": 115229337145,
@@ -13576,8 +13576,8 @@
       "maxLevel": 18400,
       "hpMin": 247066443249981,
       "hpMax": 306362384688648,
-      "atkMin": 466981495817332,
-      "atkMax": 653774094144265,
+      "atkMin": 1340000000000000,
+      "atkMax": 1876000000000000,
       "expMin": 190329148,
       "expMax": 2093620628,
       "goldMin": 262092084077,
@@ -13629,8 +13629,8 @@
       "maxLevel": 18500,
       "hpMin": 319358956549764,
       "hpMax": 396005099734528,
-      "atkMin": 2126850875655234,
-      "atkMax": 2977591225917328,
+      "atkMin": 2130000000000000,
+      "atkMax": 2982000000000000,
       "expMin": 199845605,
       "expMax": 2198301655,
       "goldMin": 338781152915,
@@ -13677,8 +13677,8 @@
       "maxLevel": 21000,
       "hpMin": 432450625155031,
       "hpMax": 536238770002831,
-      "atkMin": 3054796083044345,
-      "atkMax": 4276714516262083,
+      "atkMin": 3060000000000000,
+      "atkMax": 4284000000000000,
       "expMin": 134118398,
       "expMax": 2816486358,
       "goldMin": 351841219415,
@@ -13726,8 +13726,8 @@
       "maxLevel": 21000,
       "hpMin": 436054378453337,
       "hpMax": 540707429282138,
-      "atkMin": 6515879715977683,
-      "atkMax": 9122231537209958,
+      "atkMin": 6520000000000000,
+      "atkMax": 9127999934800000,
       "expMin": 182243235,
       "expMax": 2915891760,
       "goldMin": 478090127749,
@@ -13780,8 +13780,8 @@
       "maxLevel": 23900,
       "hpMin": 559926754972828,
       "hpMax": 694309169447186,
-      "atkMin": 7622178091988851,
-      "atkMax": 10671049328784390,
+      "atkMin": 7620000000000000,
+      "atkMax": 10668000000000000,
       "expMin": 174123898,
       "expMax": 3656601858,
       "goldMin": 728395391268,
@@ -13834,8 +13834,8 @@
       "maxLevel": 23900,
       "hpMin": 564592808789537,
       "hpMax": 700095082899026,
-      "atkMin": 17578648487770884,
-      "atkMax": 24610107707092750,
+      "atkMin": 8710000000000000,
+      "atkMax": 12193999912900000,
       "expMin": 236603650,
       "expMax": 3785658400,
       "goldMin": 989760796764,
@@ -23191,9 +23191,9 @@
         }
       ],
       "resists": {
-        "critResist": 8883,
-        "comboResist": 1480.27,
-        "dodgeResist": 140.92,
+        "critResist": 5922,
+        "comboResist": 986.85,
+        "dodgeResist": 93.95,
         "critMultResist": 166,
         "armorPierce": 0.62,
         "weaken": 0.84
@@ -23233,9 +23233,9 @@
         }
       ],
       "resists": {
-        "critResist": 8910.04,
-        "comboResist": 1484.97,
-        "dodgeResist": 141.72,
+        "critResist": 5940.03,
+        "comboResist": 989.98,
+        "dodgeResist": 94.48,
         "critMultResist": 166,
         "armorPierce": 0.621,
         "weaken": 0.84
@@ -23275,9 +23275,9 @@
         }
       ],
       "resists": {
-        "critResist": 8937.24,
-        "comboResist": 1489.68,
-        "dodgeResist": 142.51,
+        "critResist": 5958.16,
+        "comboResist": 993.12,
+        "dodgeResist": 95.01,
         "critMultResist": 166,
         "armorPierce": 0.622,
         "weaken": 0.841
@@ -23317,9 +23317,9 @@
         }
       ],
       "resists": {
-        "critResist": 8964.6,
-        "comboResist": 1494.43,
-        "dodgeResist": 143.31,
+        "critResist": 5976.4,
+        "comboResist": 996.29,
+        "dodgeResist": 95.54,
         "critMultResist": 166,
         "armorPierce": 0.622,
         "weaken": 0.841
@@ -23359,9 +23359,9 @@
         }
       ],
       "resists": {
-        "critResist": 8992.09,
-        "comboResist": 1499.2,
-        "dodgeResist": 144.1,
+        "critResist": 5994.73,
+        "comboResist": 999.47,
+        "dodgeResist": 96.07,
         "critMultResist": 166,
         "armorPierce": 0.623,
         "weaken": 0.842
@@ -23401,9 +23401,9 @@
         }
       ],
       "resists": {
-        "critResist": 9019.77,
-        "comboResist": 1504.01,
-        "dodgeResist": 144.92,
+        "critResist": 6013.18,
+        "comboResist": 1002.67,
+        "dodgeResist": 96.61,
         "critMultResist": 166,
         "armorPierce": 0.624,
         "weaken": 0.842
@@ -23443,9 +23443,9 @@
         }
       ],
       "resists": {
-        "critResist": 9419.96,
-        "comboResist": 1570.91,
-        "dodgeResist": 151.68,
+        "critResist": 6279.97,
+        "comboResist": 1047.27,
+        "dodgeResist": 101.12,
         "critMultResist": 170.01,
         "armorPierce": 0.624,
         "weaken": 0.842
@@ -23485,9 +23485,9 @@
         }
       ],
       "resists": {
-        "critResist": 9542.69,
-        "comboResist": 1591.62,
-        "dodgeResist": 154.14,
+        "critResist": 6361.79,
+        "comboResist": 1061.08,
+        "dodgeResist": 102.76,
         "critMultResist": 171,
         "armorPierce": 0.625,
         "weaken": 0.843
@@ -23527,9 +23527,9 @@
         }
       ],
       "resists": {
-        "critResist": 9666.36,
-        "comboResist": 1612.5,
-        "dodgeResist": 156.63,
+        "critResist": 6444.24,
+        "comboResist": 1075,
+        "dodgeResist": 104.42,
         "critMultResist": 172,
         "armorPierce": 0.626,
         "weaken": 0.843
@@ -23569,9 +23569,9 @@
         }
       ],
       "resists": {
-        "critResist": 9790.98,
-        "comboResist": 1633.55,
-        "dodgeResist": 159.15,
+        "critResist": 6527.32,
+        "comboResist": 1089.03,
+        "dodgeResist": 106.1,
         "critMultResist": 172.99,
         "armorPierce": 0.627,
         "weaken": 0.844
@@ -23611,9 +23611,9 @@
         }
       ],
       "resists": {
-        "critResist": 9916.54,
-        "comboResist": 1654.76,
-        "dodgeResist": 161.68,
+        "critResist": 6611.03,
+        "comboResist": 1103.17,
+        "dodgeResist": 107.79,
         "critMultResist": 173.99,
         "armorPierce": 0.628,
         "weaken": 0.844
@@ -23653,9 +23653,9 @@
         }
       ],
       "resists": {
-        "critResist": 10005.76,
-        "comboResist": 1669.83,
-        "dodgeResist": 163.5,
+        "critResist": 6670.51,
+        "comboResist": 1113.22,
+        "dodgeResist": 109,
         "critMultResist": 174.69,
         "armorPierce": 0.629,
         "weaken": 0.844
@@ -23695,9 +23695,9 @@
         }
       ],
       "resists": {
-        "critResist": 10090.47,
-        "comboResist": 1684.14,
-        "dodgeResist": 165.23,
+        "critResist": 6726.98,
+        "comboResist": 1122.76,
+        "dodgeResist": 110.15,
         "critMultResist": 175.35,
         "armorPierce": 0.63,
         "weaken": 0.845
@@ -23737,9 +23737,9 @@
         }
       ],
       "resists": {
-        "critResist": 10175.61,
-        "comboResist": 1698.52,
-        "dodgeResist": 166.95,
+        "critResist": 6783.74,
+        "comboResist": 1132.35,
+        "dodgeResist": 111.3,
         "critMultResist": 176.02,
         "armorPierce": 0.63,
         "weaken": 0.845
@@ -23779,9 +23779,9 @@
         }
       ],
       "resists": {
-        "critResist": 10261.2,
-        "comboResist": 1712.98,
-        "dodgeResist": 168.71,
+        "critResist": 6840.8,
+        "comboResist": 1141.99,
+        "dodgeResist": 112.47,
         "critMultResist": 176.68,
         "armorPierce": 0.631,
         "weaken": 0.845
@@ -23821,9 +23821,9 @@
         }
       ],
       "resists": {
-        "critResist": 10347.22,
-        "comboResist": 1727.53,
-        "dodgeResist": 170.46,
+        "critResist": 6898.15,
+        "comboResist": 1151.69,
+        "dodgeResist": 113.64,
         "critMultResist": 177.34,
         "armorPierce": 0.631,
         "weaken": 0.846
@@ -23863,9 +23863,9 @@
         }
       ],
       "resists": {
-        "critResist": 10433.69,
-        "comboResist": 1742.16,
-        "dodgeResist": 172.24,
+        "critResist": 6955.79,
+        "comboResist": 1161.44,
+        "dodgeResist": 114.83,
         "critMultResist": 178.01,
         "armorPierce": 0.632,
         "weaken": 0.846
@@ -23905,9 +23905,9 @@
         }
       ],
       "resists": {
-        "critResist": 10520.61,
-        "comboResist": 1756.84,
-        "dodgeResist": 174.03,
+        "critResist": 7013.74,
+        "comboResist": 1171.23,
+        "dodgeResist": 116.02,
         "critMultResist": 178.67,
         "armorPierce": 0.633,
         "weaken": 0.846
@@ -23947,9 +23947,9 @@
         }
       ],
       "resists": {
-        "critResist": 10613.13,
-        "comboResist": 1772.51,
-        "dodgeResist": 175.93,
+        "critResist": 7075.42,
+        "comboResist": 1181.67,
+        "dodgeResist": 117.29,
         "critMultResist": 179.37,
         "armorPierce": 0.633,
         "weaken": 0.847
@@ -23989,9 +23989,9 @@
         }
       ],
       "resists": {
-        "critResist": 10751.47,
-        "comboResist": 1795.89,
-        "dodgeResist": 178.77,
+        "critResist": 7167.65,
+        "comboResist": 1197.26,
+        "dodgeResist": 119.18,
         "critMultResist": 180.51,
         "armorPierce": 0.634,
         "weaken": 0.847
@@ -24031,9 +24031,9 @@
         }
       ],
       "resists": {
-        "critResist": 10890.9,
-        "comboResist": 1819.47,
-        "dodgeResist": 181.63,
+        "critResist": 7260.6,
+        "comboResist": 1212.98,
+        "dodgeResist": 121.09,
         "critMultResist": 181.65,
         "armorPierce": 0.635,
         "weaken": 0.848
@@ -24073,9 +24073,9 @@
         }
       ],
       "resists": {
-        "critResist": 11031.44,
-        "comboResist": 1843.23,
-        "dodgeResist": 184.53,
+        "critResist": 7354.29,
+        "comboResist": 1228.82,
+        "dodgeResist": 123.02,
         "critMultResist": 182.79,
         "armorPierce": 0.636,
         "weaken": 0.848
@@ -24115,9 +24115,9 @@
         }
       ],
       "resists": {
-        "critResist": 11173.08,
-        "comboResist": 1867.2,
-        "dodgeResist": 187.46,
+        "critResist": 7448.72,
+        "comboResist": 1244.8,
+        "dodgeResist": 124.97,
         "critMultResist": 183.93,
         "armorPierce": 0.637,
         "weaken": 0.849
@@ -24157,9 +24157,9 @@
         }
       ],
       "resists": {
-        "critResist": 11273.75,
-        "comboResist": 1884.24,
-        "dodgeResist": 189.54,
+        "critResist": 7515.83,
+        "comboResist": 1256.16,
+        "dodgeResist": 126.36,
         "critMultResist": 184.73,
         "armorPierce": 0.638,
         "weaken": 0.849
@@ -24199,9 +24199,9 @@
         }
       ],
       "resists": {
-        "critResist": 11393.71,
-        "comboResist": 1904.53,
-        "dodgeResist": 192.01,
+        "critResist": 7595.81,
+        "comboResist": 1269.69,
+        "dodgeResist": 128.01,
         "critMultResist": 185.75,
         "armorPierce": 0.639,
         "weaken": 0.849
@@ -24241,9 +24241,9 @@
         }
       ],
       "resists": {
-        "critResist": 11514.46,
-        "comboResist": 1924.97,
-        "dodgeResist": 194.51,
+        "critResist": 7676.31,
+        "comboResist": 1283.31,
+        "dodgeResist": 129.67,
         "critMultResist": 186.78,
         "armorPierce": 0.639,
         "weaken": 0.85
@@ -24283,9 +24283,9 @@
         }
       ],
       "resists": {
-        "critResist": 11635.98,
-        "comboResist": 1945.52,
-        "dodgeResist": 197.03,
+        "critResist": 7757.32,
+        "comboResist": 1297.01,
+        "dodgeResist": 131.35,
         "critMultResist": 187.81,
         "armorPierce": 0.64,
         "weaken": 0.85
@@ -24325,9 +24325,9 @@
         }
       ],
       "resists": {
-        "critResist": 11758.28,
-        "comboResist": 1966.22,
-        "dodgeResist": 199.58,
+        "critResist": 7838.85,
+        "comboResist": 1310.81,
+        "dodgeResist": 133.05,
         "critMultResist": 188.83,
         "armorPierce": 0.641,
         "weaken": 0.85
@@ -24367,9 +24367,9 @@
         }
       ],
       "resists": {
-        "critResist": 11881.37,
-        "comboResist": 1987.06,
-        "dodgeResist": 202.13,
+        "critResist": 7920.91,
+        "comboResist": 1324.71,
+        "dodgeResist": 134.75,
         "critMultResist": 189.86,
         "armorPierce": 0.642,
         "weaken": 0.851
@@ -24409,9 +24409,9 @@
         }
       ],
       "resists": {
-        "critResist": 11990.63,
-        "comboResist": 2005.56,
-        "dodgeResist": 204.4,
+        "critResist": 7993.75,
+        "comboResist": 1337.04,
+        "dodgeResist": 136.27,
         "critMultResist": 190.76,
         "armorPierce": 0.642,
         "weaken": 0.851
@@ -24451,9 +24451,9 @@
         }
       ],
       "resists": {
-        "critResist": 12146.49,
-        "comboResist": 2031.96,
-        "dodgeResist": 207.67,
+        "critResist": 8097.66,
+        "comboResist": 1354.64,
+        "dodgeResist": 138.45,
         "critMultResist": 192.05,
         "armorPierce": 0.643,
         "weaken": 0.852
@@ -24493,9 +24493,9 @@
         }
       ],
       "resists": {
-        "critResist": 12303.63,
-        "comboResist": 2058.57,
-        "dodgeResist": 210.97,
+        "critResist": 8202.42,
+        "comboResist": 1372.38,
+        "dodgeResist": 140.65,
         "critMultResist": 193.33,
         "armorPierce": 0.644,
         "weaken": 0.852
@@ -24535,9 +24535,9 @@
         }
       ],
       "resists": {
-        "critResist": 12462.03,
-        "comboResist": 2085.41,
-        "dodgeResist": 214.3,
+        "critResist": 8308.02,
+        "comboResist": 1390.27,
+        "dodgeResist": 142.87,
         "critMultResist": 194.61,
         "armorPierce": 0.645,
         "weaken": 0.853
@@ -24577,9 +24577,9 @@
         }
       ],
       "resists": {
-        "critResist": 12621.75,
-        "comboResist": 2112.48,
-        "dodgeResist": 217.68,
+        "critResist": 8414.5,
+        "comboResist": 1408.32,
+        "dodgeResist": 145.12,
         "critMultResist": 195.89,
         "armorPierce": 0.646,
         "weaken": 0.853
@@ -24619,9 +24619,9 @@
         }
       ],
       "resists": {
-        "critResist": 12735.27,
-        "comboResist": 2131.73,
-        "dodgeResist": 220.08,
+        "critResist": 8490.18,
+        "comboResist": 1421.15,
+        "dodgeResist": 146.72,
         "critMultResist": 196.8,
         "armorPierce": 0.647,
         "weaken": 0.853
@@ -24661,9 +24661,9 @@
         }
       ],
       "resists": {
-        "critResist": 13074.13,
-        "comboResist": 2189.15,
-        "dodgeResist": 227.24,
+        "critResist": 8716.09,
+        "comboResist": 1459.43,
+        "dodgeResist": 151.49,
         "critMultResist": 199.65,
         "armorPierce": 0.649,
         "weaken": 0.854
@@ -24703,9 +24703,9 @@
         }
       ],
       "resists": {
-        "critResist": 13418.67,
-        "comboResist": 2247.57,
-        "dodgeResist": 234.55,
+        "critResist": 8945.78,
+        "comboResist": 1498.38,
+        "dodgeResist": 156.37,
         "critMultResist": 202.5,
         "armorPierce": 0.65,
         "weaken": 0.855
@@ -24745,9 +24745,9 @@
         }
       ],
       "resists": {
-        "critResist": 13541.64,
-        "comboResist": 2268.42,
-        "dodgeResist": 237.17,
+        "critResist": 9027.76,
+        "comboResist": 1512.28,
+        "dodgeResist": 158.11,
         "critMultResist": 203.51,
         "armorPierce": 0.651,
         "weaken": 0.856
@@ -24787,9 +24787,9 @@
         }
       ],
       "resists": {
-        "critResist": 13687.41,
-        "comboResist": 2293.14,
-        "dodgeResist": 240.27,
+        "critResist": 9124.94,
+        "comboResist": 1528.76,
+        "dodgeResist": 160.18,
         "critMultResist": 204.76,
         "armorPierce": 0.652,
         "weaken": 0.856
@@ -24829,9 +24829,9 @@
         }
       ],
       "resists": {
-        "critResist": 13834.17,
-        "comboResist": 2318.04,
-        "dodgeResist": 243.39,
+        "critResist": 9222.78,
+        "comboResist": 1545.36,
+        "dodgeResist": 162.26,
         "critMultResist": 206.02,
         "armorPierce": 0.653,
         "weaken": 0.856
@@ -24871,9 +24871,9 @@
         }
       ],
       "resists": {
-        "critResist": 13981.9,
-        "comboResist": 2343.1,
-        "dodgeResist": 246.54,
+        "critResist": 9321.27,
+        "comboResist": 1562.07,
+        "dodgeResist": 164.36,
         "critMultResist": 207.27,
         "armorPierce": 0.653,
         "weaken": 0.857
@@ -24913,9 +24913,9 @@
         }
       ],
       "resists": {
-        "critResist": 14130.66,
-        "comboResist": 2368.33,
-        "dodgeResist": 249.72,
+        "critResist": 9420.44,
+        "comboResist": 1578.89,
+        "dodgeResist": 166.48,
         "critMultResist": 208.53,
         "armorPierce": 0.654,
         "weaken": 0.857
@@ -24955,9 +24955,9 @@
         }
       ],
       "resists": {
-        "critResist": 14280.4,
-        "comboResist": 2393.74,
-        "dodgeResist": 252.93,
+        "critResist": 9520.27,
+        "comboResist": 1595.83,
+        "dodgeResist": 168.62,
         "critMultResist": 209.78,
         "armorPierce": 0.655,
         "weaken": 0.857
@@ -24997,9 +24997,9 @@
         }
       ],
       "resists": {
-        "critResist": 14413.39,
-        "comboResist": 2416.32,
-        "dodgeResist": 255.78,
+        "critResist": 9608.93,
+        "comboResist": 1610.88,
+        "dodgeResist": 170.52,
         "critMultResist": 210.89,
         "armorPierce": 0.656,
         "weaken": 0.858
@@ -25039,9 +25039,9 @@
         }
       ],
       "resists": {
-        "critResist": 14610.21,
-        "comboResist": 2449.73,
-        "dodgeResist": 259.99,
+        "critResist": 9740.14,
+        "comboResist": 1633.15,
+        "dodgeResist": 173.33,
         "critMultResist": 212.6,
         "armorPierce": 0.657,
         "weaken": 0.858
@@ -25081,9 +25081,9 @@
         }
       ],
       "resists": {
-        "critResist": 14808.74,
-        "comboResist": 2483.42,
-        "dodgeResist": 264.24,
+        "critResist": 9872.49,
+        "comboResist": 1655.61,
+        "dodgeResist": 176.16,
         "critMultResist": 214.32,
         "armorPierce": 0.657,
         "weaken": 0.859
@@ -25123,9 +25123,9 @@
         }
       ],
       "resists": {
-        "critResist": 15008.96,
-        "comboResist": 2517.41,
-        "dodgeResist": 268.56,
+        "critResist": 10005.97,
+        "comboResist": 1678.27,
+        "dodgeResist": 179.04,
         "critMultResist": 216.03,
         "armorPierce": 0.658,
         "weaken": 0.859
@@ -25165,9 +25165,9 @@
         }
       ],
       "resists": {
-        "critResist": 15210.9,
-        "comboResist": 2551.7,
-        "dodgeResist": 272.91,
+        "critResist": 10140.6,
+        "comboResist": 1701.13,
+        "dodgeResist": 181.94,
         "critMultResist": 217.74,
         "armorPierce": 0.659,
         "weaken": 0.86
@@ -25207,9 +25207,9 @@
         }
       ],
       "resists": {
-        "critResist": 15354.52,
-        "comboResist": 2576.1,
-        "dodgeResist": 276.01,
+        "critResist": 10236.35,
+        "comboResist": 1717.4,
+        "dodgeResist": 184.01,
         "critMultResist": 218.95,
         "armorPierce": 0.66,
         "weaken": 0.86
@@ -25249,9 +25249,9 @@
         }
       ],
       "resists": {
-        "critResist": 15354.52,
-        "comboResist": 2576.1,
-        "dodgeResist": 276.01,
+        "critResist": 10236.35,
+        "comboResist": 1717.4,
+        "dodgeResist": 184.01,
         "critMultResist": 218.95,
         "armorPierce": 0.66,
         "weaken": 0.86
@@ -25291,9 +25291,9 @@
         }
       ],
       "resists": {
-        "critResist": 15354.52,
-        "comboResist": 2576.1,
-        "dodgeResist": 276.01,
+        "critResist": 10236.35,
+        "comboResist": 1717.4,
+        "dodgeResist": 184.01,
         "critMultResist": 218.95,
         "armorPierce": 0.66,
         "weaken": 0.86
@@ -25333,9 +25333,9 @@
         }
       ],
       "resists": {
-        "critResist": 15354.52,
-        "comboResist": 2576.1,
-        "dodgeResist": 276.01,
+        "critResist": 10236.35,
+        "comboResist": 1717.4,
+        "dodgeResist": 184.01,
         "critMultResist": 218.95,
         "armorPierce": 0.66,
         "weaken": 0.86
@@ -25375,9 +25375,9 @@
         }
       ],
       "resists": {
-        "critResist": 16210.9,
-        "comboResist": 2717.01,
-        "dodgeResist": 290.74,
+        "critResist": 10807.27,
+        "comboResist": 1811.34,
+        "dodgeResist": 193.83,
         "critMultResist": 236.1,
         "armorPierce": 0.66,
         "weaken": 0.86
@@ -25417,9 +25417,9 @@
         }
       ],
       "resists": {
-        "critResist": 16276.25,
-        "comboResist": 2727.92,
-        "dodgeResist": 292.68,
+        "critResist": 10850.83,
+        "comboResist": 1818.61,
+        "dodgeResist": 195.12,
         "critMultResist": 236.1,
         "armorPierce": 0.661,
         "weaken": 0.861
@@ -25459,9 +25459,9 @@
         }
       ],
       "resists": {
-        "critResist": 16342.1,
-        "comboResist": 2738.91,
-        "dodgeResist": 294.63,
+        "critResist": 10894.73,
+        "comboResist": 1825.94,
+        "dodgeResist": 196.42,
         "critMultResist": 236.1,
         "armorPierce": 0.662,
         "weaken": 0.861
@@ -25501,9 +25501,9 @@
         }
       ],
       "resists": {
-        "critResist": 16408.43,
-        "comboResist": 2749.98,
-        "dodgeResist": 296.6,
+        "critResist": 10938.95,
+        "comboResist": 1833.32,
+        "dodgeResist": 197.73,
         "critMultResist": 236.1,
         "armorPierce": 0.663,
         "weaken": 0.862
@@ -25543,9 +25543,9 @@
         }
       ],
       "resists": {
-        "critResist": 17372.04,
-        "comboResist": 2911.44,
-        "dodgeResist": 314.43,
+        "critResist": 11581.36,
+        "comboResist": 1940.96,
+        "dodgeResist": 209.62,
         "critMultResist": 248.97,
         "armorPierce": 0.664,
         "weaken": 0.862
@@ -25585,9 +25585,9 @@
         }
       ],
       "resists": {
-        "critResist": 17630.1,
-        "comboResist": 2954.66,
-        "dodgeResist": 319.72,
+        "critResist": 11753.4,
+        "comboResist": 1969.77,
+        "dodgeResist": 213.15,
         "critMultResist": 251.84,
         "armorPierce": 0.664,
         "weaken": 0.862
@@ -25627,9 +25627,9 @@
         }
       ],
       "resists": {
-        "critResist": 17889.73,
-        "comboResist": 2998.13,
-        "dodgeResist": 325.05,
+        "critResist": 11926.49,
+        "comboResist": 1998.75,
+        "dodgeResist": 216.7,
         "critMultResist": 254.72,
         "armorPierce": 0.665,
         "weaken": 0.863
@@ -25669,9 +25669,9 @@
         }
       ],
       "resists": {
-        "critResist": 18150.95,
-        "comboResist": 3041.85,
-        "dodgeResist": 330.43,
+        "critResist": 12100.63,
+        "comboResist": 2027.9,
+        "dodgeResist": 220.29,
         "critMultResist": 257.59,
         "armorPierce": 0.666,
         "weaken": 0.863
@@ -25711,9 +25711,9 @@
         }
       ],
       "resists": {
-        "critResist": 18413.75,
-        "comboResist": 3085.84,
-        "dodgeResist": 335.86,
+        "critResist": 12275.83,
+        "comboResist": 2057.23,
+        "dodgeResist": 223.91,
         "critMultResist": 260.47,
         "armorPierce": 0.667,
         "weaken": 0.863
@@ -25753,9 +25753,9 @@
         }
       ],
       "resists": {
-        "critResist": 18600.21,
-        "comboResist": 3117.06,
-        "dodgeResist": 339.72,
+        "critResist": 12400.14,
+        "comboResist": 2078.04,
+        "dodgeResist": 226.48,
         "critMultResist": 262.49,
         "armorPierce": 0.667,
         "weaken": 0.864
@@ -25795,9 +25795,9 @@
         }
       ],
       "resists": {
-        "critResist": 18880.11,
-        "comboResist": 3163.91,
-        "dodgeResist": 345.49,
+        "critResist": 12586.74,
+        "comboResist": 2109.27,
+        "dodgeResist": 230.33,
         "critMultResist": 265.65,
         "armorPierce": 0.668,
         "weaken": 0.864
@@ -25837,9 +25837,9 @@
         }
       ],
       "resists": {
-        "critResist": 19161.71,
-        "comboResist": 3211.03,
-        "dodgeResist": 351.32,
+        "critResist": 12774.47,
+        "comboResist": 2140.69,
+        "dodgeResist": 234.21,
         "critMultResist": 268.8,
         "armorPierce": 0.669,
         "weaken": 0.864
@@ -25879,9 +25879,9 @@
         }
       ],
       "resists": {
-        "critResist": 19445.05,
-        "comboResist": 3258.47,
-        "dodgeResist": 357.18,
+        "critResist": 12963.37,
+        "comboResist": 2172.31,
+        "dodgeResist": 238.12,
         "critMultResist": 271.95,
         "armorPierce": 0.67,
         "weaken": 0.865
@@ -25921,9 +25921,9 @@
         }
       ],
       "resists": {
-        "critResist": 19730.14,
-        "comboResist": 3306.18,
-        "dodgeResist": 363.11,
+        "critResist": 13153.43,
+        "comboResist": 2204.12,
+        "dodgeResist": 242.07,
         "critMultResist": 275.1,
         "armorPierce": 0.67,
         "weaken": 0.865
@@ -25963,9 +25963,9 @@
         }
       ],
       "resists": {
-        "critResist": 19932.45,
-        "comboResist": 3340.03,
-        "dodgeResist": 367.32,
+        "critResist": 13288.3,
+        "comboResist": 2226.69,
+        "dodgeResist": 244.88,
         "critMultResist": 277.33,
         "armorPierce": 0.671,
         "weaken": 0.865
@@ -26005,9 +26005,9 @@
         }
       ],
       "resists": {
-        "critResist": 20235.12,
-        "comboResist": 3390.69,
-        "dodgeResist": 373.61,
+        "critResist": 13490.08,
+        "comboResist": 2260.46,
+        "dodgeResist": 249.07,
         "critMultResist": 280.76,
         "armorPierce": 0.672,
         "weaken": 0.866
@@ -26047,9 +26047,9 @@
         }
       ],
       "resists": {
-        "critResist": 20539.67,
-        "comboResist": 3441.65,
-        "dodgeResist": 379.95,
+        "critResist": 13693.11,
+        "comboResist": 2294.43,
+        "dodgeResist": 253.3,
         "critMultResist": 284.19,
         "armorPierce": 0.672,
         "weaken": 0.866
@@ -26089,9 +26089,9 @@
         }
       ],
       "resists": {
-        "critResist": 20846.12,
-        "comboResist": 3492.93,
-        "dodgeResist": 386.34,
+        "critResist": 13897.41,
+        "comboResist": 2328.62,
+        "dodgeResist": 257.56,
         "critMultResist": 287.62,
         "armorPierce": 0.673,
         "weaken": 0.867
@@ -26131,9 +26131,9 @@
         }
       ],
       "resists": {
-        "critResist": 21154.48,
-        "comboResist": 3544.52,
-        "dodgeResist": 392.79,
+        "critResist": 14102.99,
+        "comboResist": 2363.01,
+        "dodgeResist": 261.86,
         "critMultResist": 291.05,
         "armorPierce": 0.674,
         "weaken": 0.867
@@ -26173,9 +26173,9 @@
         }
       ],
       "resists": {
-        "critResist": 21373.32,
-        "comboResist": 3581.13,
-        "dodgeResist": 397.38,
+        "critResist": 14248.88,
+        "comboResist": 2387.42,
+        "dodgeResist": 264.92,
         "critMultResist": 293.47,
         "armorPierce": 0.675,
         "weaken": 0.867
@@ -26215,9 +26215,9 @@
         }
       ],
       "resists": {
-        "critResist": 21628.41,
-        "comboResist": 3623.81,
-        "dodgeResist": 402.72,
+        "critResist": 14418.94,
+        "comboResist": 2415.87,
+        "dodgeResist": 268.48,
         "critMultResist": 296.32,
         "armorPierce": 0.675,
         "weaken": 0.868
@@ -26257,9 +26257,9 @@
         }
       ],
       "resists": {
-        "critResist": 21884.79,
-        "comboResist": 3666.71,
-        "dodgeResist": 408.11,
+        "critResist": 14589.86,
+        "comboResist": 2444.47,
+        "dodgeResist": 272.07,
         "critMultResist": 299.18,
         "armorPierce": 0.676,
         "weaken": 0.868
@@ -26299,9 +26299,9 @@
         }
       ],
       "resists": {
-        "critResist": 22142.46,
-        "comboResist": 3709.8,
-        "dodgeResist": 413.52,
+        "critResist": 14761.64,
+        "comboResist": 2473.2,
+        "dodgeResist": 275.68,
         "critMultResist": 302.03,
         "armorPierce": 0.676,
         "weaken": 0.868
@@ -26341,9 +26341,9 @@
         }
       ],
       "resists": {
-        "critResist": 22401.44,
-        "comboResist": 3753.12,
-        "dodgeResist": 418.98,
+        "critResist": 14934.29,
+        "comboResist": 2502.08,
+        "dodgeResist": 279.32,
         "critMultResist": 304.89,
         "armorPierce": 0.677,
         "weaken": 0.869
@@ -26383,9 +26383,9 @@
         }
       ],
       "resists": {
-        "critResist": 22661.73,
-        "comboResist": 3796.67,
-        "dodgeResist": 424.48,
+        "critResist": 15107.82,
+        "comboResist": 2531.11,
+        "dodgeResist": 282.99,
         "critMultResist": 307.75,
         "armorPierce": 0.678,
         "weaken": 0.869
@@ -26425,9 +26425,9 @@
         }
       ],
       "resists": {
-        "critResist": 22892.5,
-        "comboResist": 3835.26,
-        "dodgeResist": 429.36,
+        "critResist": 15261.67,
+        "comboResist": 2556.84,
+        "dodgeResist": 286.24,
         "critMultResist": 310.26,
         "armorPierce": 0.678,
         "weaken": 0.869
@@ -26467,9 +26467,9 @@
         }
       ],
       "resists": {
-        "critResist": 23236.19,
-        "comboResist": 3892.74,
-        "dodgeResist": 436.62,
+        "critResist": 15490.79,
+        "comboResist": 2595.16,
+        "dodgeResist": 291.08,
         "critMultResist": 314.11,
         "armorPierce": 0.679,
         "weaken": 0.869
@@ -26509,9 +26509,9 @@
         }
       ],
       "resists": {
-        "critResist": 23582.07,
-        "comboResist": 3950.59,
-        "dodgeResist": 443.93,
+        "critResist": 15721.38,
+        "comboResist": 2633.73,
+        "dodgeResist": 295.95,
         "critMultResist": 317.96,
         "armorPierce": 0.68,
         "weaken": 0.87
@@ -26551,9 +26551,9 @@
         }
       ],
       "resists": {
-        "critResist": 23930.19,
-        "comboResist": 4008.79,
-        "dodgeResist": 451.3,
+        "critResist": 15953.46,
+        "comboResist": 2672.53,
+        "dodgeResist": 300.87,
         "critMultResist": 321.81,
         "armorPierce": 0.681,
         "weaken": 0.87
@@ -26593,9 +26593,9 @@
         }
       ],
       "resists": {
-        "critResist": 24280.53,
-        "comboResist": 4067.39,
-        "dodgeResist": 458.76,
+        "critResist": 16187.02,
+        "comboResist": 2711.59,
+        "dodgeResist": 305.84,
         "critMultResist": 325.65,
         "armorPierce": 0.681,
         "weaken": 0.871
@@ -26635,9 +26635,9 @@
         }
       ],
       "resists": {
-        "critResist": 24529.19,
-        "comboResist": 4108.96,
-        "dodgeResist": 464.05,
+        "critResist": 16352.79,
+        "comboResist": 2739.31,
+        "dodgeResist": 309.37,
         "critMultResist": 328.37,
         "armorPierce": 0.682,
         "weaken": 0.871
@@ -26677,9 +26677,9 @@
         }
       ],
       "resists": {
-        "critResist": 25270.46,
-        "comboResist": 4232.9,
-        "dodgeResist": 479.84,
+        "critResist": 16846.97,
+        "comboResist": 2821.93,
+        "dodgeResist": 319.89,
         "critMultResist": 336.62,
         "armorPierce": 0.683,
         "weaken": 0.872
@@ -26719,9 +26719,9 @@
         }
       ],
       "resists": {
-        "critResist": 26021.38,
-        "comboResist": 4358.43,
-        "dodgeResist": 495.89,
+        "critResist": 17347.59,
+        "comboResist": 2905.62,
+        "dodgeResist": 330.59,
         "critMultResist": 344.87,
         "armorPierce": 0.685,
         "weaken": 0.872
@@ -26761,9 +26761,9 @@
         }
       ],
       "resists": {
-        "critResist": 26288.76,
-        "comboResist": 4403.11,
-        "dodgeResist": 501.63,
+        "critResist": 17525.84,
+        "comboResist": 2935.41,
+        "dodgeResist": 334.42,
         "critMultResist": 347.78,
         "armorPierce": 0.685,
         "weaken": 0.873
@@ -26803,9 +26803,9 @@
         }
       ],
       "resists": {
-        "critResist": 27084.09,
-        "comboResist": 4536.04,
-        "dodgeResist": 518.67,
+        "critResist": 18056.06,
+        "comboResist": 3024.03,
+        "dodgeResist": 345.78,
         "critMultResist": 356.59,
         "armorPierce": 0.687,
         "weaken": 0.873
@@ -26845,9 +26845,9 @@
         }
       ],
       "resists": {
-        "critResist": 27889.95,
-        "comboResist": 4670.71,
-        "dodgeResist": 536.03,
+        "critResist": 18593.3,
+        "comboResist": 3113.81,
+        "dodgeResist": 357.35,
         "critMultResist": 365.4,
         "armorPierce": 0.689,
         "weaken": 0.874
@@ -26887,9 +26887,9 @@
         }
       ],
       "resists": {
-        "critResist": 28176.91,
-        "comboResist": 4718.67,
-        "dodgeResist": 542.23,
+        "critResist": 18784.61,
+        "comboResist": 3145.78,
+        "dodgeResist": 361.49,
         "critMultResist": 368.51,
         "armorPierce": 0.689,
         "weaken": 0.875
@@ -26929,9 +26929,9 @@
         }
       ],
       "resists": {
-        "critResist": 29044.61,
-        "comboResist": 4863.65,
-        "dodgeResist": 560.93,
+        "critResist": 19363.07,
+        "comboResist": 3242.43,
+        "dodgeResist": 373.95,
         "critMultResist": 378.15,
         "armorPierce": 0.691,
         "weaken": 0.875
@@ -26971,9 +26971,9 @@
         }
       ],
       "resists": {
-        "critResist": 29923.93,
-        "comboResist": 5010.54,
-        "dodgeResist": 579.97,
+        "critResist": 19949.29,
+        "comboResist": 3340.36,
+        "dodgeResist": 386.65,
         "critMultResist": 387.79,
         "armorPierce": 0.692,
         "weaken": 0.876
@@ -27013,9 +27013,9 @@
         }
       ],
       "resists": {
-        "critResist": 30237.12,
-        "comboResist": 5062.84,
-        "dodgeResist": 586.79,
+        "critResist": 20158.08,
+        "comboResist": 3375.23,
+        "dodgeResist": 391.19,
         "critMultResist": 391.19,
         "armorPierce": 0.693,
         "weaken": 0.876
@@ -27055,9 +27055,9 @@
         }
       ],
       "resists": {
-        "critResist": 30854.04,
-        "comboResist": 5165.9,
-        "dodgeResist": 600.16,
+        "critResist": 20569.36,
+        "comboResist": 3443.93,
+        "dodgeResist": 400.11,
         "critMultResist": 397.99,
         "armorPierce": 0.694,
         "weaken": 0.877
@@ -27097,9 +27097,9 @@
         }
       ],
       "resists": {
-        "critResist": 31476.55,
-        "comboResist": 5269.86,
-        "dodgeResist": 613.72,
+        "critResist": 20984.37,
+        "comboResist": 3513.24,
+        "dodgeResist": 409.15,
         "critMultResist": 404.79,
         "armorPierce": 0.695,
         "weaken": 0.877
@@ -27139,9 +27139,9 @@
         }
       ],
       "resists": {
-        "critResist": 32104.71,
-        "comboResist": 5374.74,
-        "dodgeResist": 627.43,
+        "critResist": 21403.14,
+        "comboResist": 3583.16,
+        "dodgeResist": 418.29,
         "critMultResist": 411.59,
         "armorPierce": 0.696,
         "weaken": 0.878
@@ -27181,9 +27181,9 @@
         }
       ],
       "resists": {
-        "critResist": 32439.57,
-        "comboResist": 5430.66,
-        "dodgeResist": 634.77,
+        "critResist": 21626.38,
+        "comboResist": 3620.44,
+        "dodgeResist": 423.18,
         "critMultResist": 415.19,
         "armorPierce": 0.696,
         "weaken": 0.878
@@ -27223,9 +27223,9 @@
         }
       ],
       "resists": {
-        "critResist": 33098.16,
-        "comboResist": 5540.61,
-        "dodgeResist": 649.17,
+        "critResist": 22065.44,
+        "comboResist": 3693.74,
+        "dodgeResist": 432.78,
         "critMultResist": 422.36,
         "armorPierce": 0.697,
         "weaken": 0.879
@@ -27265,9 +27265,9 @@
         }
       ],
       "resists": {
-        "critResist": 33762.79,
-        "comboResist": 5651.55,
-        "dodgeResist": 663.75,
+        "critResist": 22508.53,
+        "comboResist": 3767.7,
+        "dodgeResist": 442.5,
         "critMultResist": 429.53,
         "armorPierce": 0.698,
         "weaken": 0.879
@@ -27307,9 +27307,9 @@
         }
       ],
       "resists": {
-        "critResist": 34433.54,
-        "comboResist": 5763.51,
-        "dodgeResist": 678.51,
+        "critResist": 22955.69,
+        "comboResist": 3842.34,
+        "dodgeResist": 452.34,
         "critMultResist": 436.7,
         "armorPierce": 0.699,
         "weaken": 0.88
@@ -27349,9 +27349,9 @@
         }
       ],
       "resists": {
-        "critResist": 34791.15,
-        "comboResist": 5823.19,
-        "dodgeResist": 686.4,
+        "critResist": 23194.1,
+        "comboResist": 3882.13,
+        "dodgeResist": 457.6,
         "critMultResist": 440.49,
         "armorPierce": 0.7,
         "weaken": 0.88
@@ -27391,9 +27391,9 @@
         }
       ],
       "resists": {
-        "critResist": 34791.15,
-        "comboResist": 5823.19,
-        "dodgeResist": 686.4,
+        "critResist": 23194.1,
+        "comboResist": 3882.13,
+        "dodgeResist": 457.6,
         "critMultResist": 440.49,
         "armorPierce": 0.7,
         "weaken": 0.88
@@ -27433,9 +27433,9 @@
         }
       ],
       "resists": {
-        "critResist": 34791.15,
-        "comboResist": 5823.19,
-        "dodgeResist": 686.4,
+        "critResist": 23194.1,
+        "comboResist": 3882.13,
+        "dodgeResist": 457.6,
         "critMultResist": 440.49,
         "armorPierce": 0.7,
         "weaken": 0.88
@@ -27475,9 +27475,9 @@
         }
       ],
       "resists": {
-        "critResist": 34791.15,
-        "comboResist": 5823.19,
-        "dodgeResist": 686.4,
+        "critResist": 23194.1,
+        "comboResist": 3882.13,
+        "dodgeResist": 457.6,
         "critMultResist": 440.49,
         "armorPierce": 0.7,
         "weaken": 0.88
@@ -27517,9 +27517,9 @@
         }
       ],
       "resists": {
-        "critResist": 37412.8,
-        "comboResist": 6270.87,
-        "dodgeResist": 740.47,
+        "critResist": 24941.87,
+        "comboResist": 4180.58,
+        "dodgeResist": 493.65,
         "critMultResist": 544.88,
         "armorPierce": 0.7,
         "weaken": 0.88
@@ -27559,9 +27559,9 @@
         }
       ],
       "resists": {
-        "critResist": 37561.52,
-        "comboResist": 6294.81,
-        "dodgeResist": 744.79,
+        "critResist": 25041.01,
+        "comboResist": 4196.54,
+        "dodgeResist": 496.53,
         "critMultResist": 544.88,
         "armorPierce": 0.701,
         "weaken": 0.88
@@ -27601,9 +27601,9 @@
         }
       ],
       "resists": {
-        "critResist": 37711.37,
-        "comboResist": 6318.9,
-        "dodgeResist": 749.15,
+        "critResist": 25140.91,
+        "comboResist": 4212.6,
+        "dodgeResist": 499.43,
         "critMultResist": 544.88,
         "armorPierce": 0.701,
         "weaken": 0.881
@@ -27643,9 +27643,9 @@
         }
       ],
       "resists": {
-        "critResist": 37862.34,
-        "comboResist": 6343.17,
-        "dodgeResist": 753.54,
+        "critResist": 25241.56,
+        "comboResist": 4228.78,
+        "dodgeResist": 502.36,
         "critMultResist": 544.88,
         "armorPierce": 0.702,
         "weaken": 0.881
@@ -27685,9 +27685,9 @@
         }
       ],
       "resists": {
-        "critResist": 38014.47,
-        "comboResist": 6367.62,
-        "dodgeResist": 757.95,
+        "critResist": 25342.98,
+        "comboResist": 4245.08,
+        "dodgeResist": 505.3,
         "critMultResist": 544.88,
         "armorPierce": 0.703,
         "weaken": 0.881
@@ -27727,9 +27727,9 @@
         }
       ],
       "resists": {
-        "critResist": 38167.79,
-        "comboResist": 6392.25,
-        "dodgeResist": 762.39,
+        "critResist": 25445.19,
+        "comboResist": 4261.5,
+        "dodgeResist": 508.26,
         "critMultResist": 544.88,
         "armorPierce": 0.704,
         "weaken": 0.882
@@ -27769,9 +27769,9 @@
         }
       ],
       "resists": {
-        "critResist": 39893.41,
-        "comboResist": 6680.26,
-        "dodgeResist": 798.15,
+        "critResist": 26595.61,
+        "comboResist": 4453.51,
+        "dodgeResist": 532.1,
         "critMultResist": 565.44,
         "armorPierce": 0.704,
         "weaken": 0.882
@@ -27811,9 +27811,9 @@
         }
       ],
       "resists": {
-        "critResist": 40265.55,
-        "comboResist": 6741.63,
-        "dodgeResist": 806.82,
+        "critResist": 26843.7,
+        "comboResist": 4494.42,
+        "dodgeResist": 537.88,
         "critMultResist": 568.54,
         "armorPierce": 0.705,
         "weaken": 0.882
@@ -27853,9 +27853,9 @@
         }
       ],
       "resists": {
-        "critResist": 40640.14,
-        "comboResist": 6803.38,
-        "dodgeResist": 815.55,
+        "critResist": 27093.43,
+        "comboResist": 4535.59,
+        "dodgeResist": 543.7,
         "critMultResist": 571.64,
         "armorPierce": 0.706,
         "weaken": 0.883
@@ -27895,9 +27895,9 @@
         }
       ],
       "resists": {
-        "critResist": 41017.27,
-        "comboResist": 6865.54,
-        "dodgeResist": 824.35,
+        "critResist": 27344.85,
+        "comboResist": 4577.03,
+        "dodgeResist": 549.57,
         "critMultResist": 574.74,
         "armorPierce": 0.706,
         "weaken": 0.883
@@ -27937,9 +27937,9 @@
         }
       ],
       "resists": {
-        "critResist": 41396.92,
-        "comboResist": 6928.09,
-        "dodgeResist": 833.25,
+        "critResist": 27597.95,
+        "comboResist": 4618.73,
+        "dodgeResist": 555.5,
         "critMultResist": 577.84,
         "armorPierce": 0.707,
         "weaken": 0.883
@@ -27979,9 +27979,9 @@
         }
       ],
       "resists": {
-        "critResist": 41779.13,
-        "comboResist": 6991.04,
-        "dodgeResist": 842.2,
+        "critResist": 27852.75,
+        "comboResist": 4660.69,
+        "dodgeResist": 561.47,
         "critMultResist": 580.94,
         "armorPierce": 0.707,
         "weaken": 0.884
@@ -28021,9 +28021,9 @@
         }
       ],
       "resists": {
-        "critResist": 42163.91,
-        "comboResist": 7054.38,
-        "dodgeResist": 851.23,
+        "critResist": 28109.27,
+        "comboResist": 4702.92,
+        "dodgeResist": 567.49,
         "critMultResist": 584.04,
         "armorPierce": 0.708,
         "weaken": 0.884
@@ -28063,9 +28063,9 @@
         }
       ],
       "resists": {
-        "critResist": 42574.16,
-        "comboResist": 7121.91,
-        "dodgeResist": 860.88,
+        "critResist": 28382.77,
+        "comboResist": 4747.94,
+        "dodgeResist": 573.92,
         "critMultResist": 587.32,
         "armorPierce": 0.709,
         "weaken": 0.884
@@ -28105,9 +28105,9 @@
         }
       ],
       "resists": {
-        "critResist": 43177.8,
-        "comboResist": 7221.27,
-        "dodgeResist": 875.02,
+        "critResist": 28785.2,
+        "comboResist": 4814.18,
+        "dodgeResist": 583.35,
         "critMultResist": 592.25,
         "armorPierce": 0.709,
         "weaken": 0.885
@@ -28147,9 +28147,9 @@
         }
       ],
       "resists": {
-        "critResist": 43787.64,
-        "comboResist": 7321.59,
-        "dodgeResist": 889.36,
+        "critResist": 29191.76,
+        "comboResist": 4881.06,
+        "dodgeResist": 592.91,
         "critMultResist": 597.18,
         "armorPierce": 0.71,
         "weaken": 0.885
@@ -28189,9 +28189,9 @@
         }
       ],
       "resists": {
-        "critResist": 44403.77,
-        "comboResist": 7422.88,
-        "dodgeResist": 903.89,
+        "critResist": 29602.51,
+        "comboResist": 4948.59,
+        "dodgeResist": 602.59,
         "critMultResist": 602.11,
         "armorPierce": 0.711,
         "weaken": 0.886
@@ -28231,9 +28231,9 @@
         }
       ],
       "resists": {
-        "critResist": 45026.28,
-        "comboResist": 7525.2,
-        "dodgeResist": 918.59,
+        "critResist": 30017.52,
+        "comboResist": 5016.8,
+        "dodgeResist": 612.39,
         "critMultResist": 607.04,
         "armorPierce": 0.712,
         "weaken": 0.886
@@ -28273,9 +28273,9 @@
         }
       ],
       "resists": {
-        "critResist": 45469.58,
-        "comboResist": 7598.01,
-        "dodgeResist": 929.07,
+        "critResist": 30313.05,
+        "comboResist": 5065.34,
+        "dodgeResist": 619.38,
         "critMultResist": 610.52,
         "armorPierce": 0.713,
         "weaken": 0.886
@@ -28315,9 +28315,9 @@
         }
       ],
       "resists": {
-        "critResist": 46121.02,
-        "comboResist": 7705.02,
-        "dodgeResist": 944.46,
+        "critResist": 30747.35,
+        "comboResist": 5136.68,
+        "dodgeResist": 629.64,
         "critMultResist": 615.73,
         "armorPierce": 0.714,
         "weaken": 0.887
@@ -28357,9 +28357,9 @@
         }
       ],
       "resists": {
-        "critResist": 46779.3,
-        "comboResist": 7813.09,
-        "dodgeResist": 960.03,
+        "critResist": 31186.2,
+        "comboResist": 5208.73,
+        "dodgeResist": 640.02,
         "critMultResist": 620.93,
         "armorPierce": 0.715,
         "weaken": 0.887
@@ -28399,9 +28399,9 @@
         }
       ],
       "resists": {
-        "critResist": 47444.52,
-        "comboResist": 7922.25,
-        "dodgeResist": 975.81,
+        "critResist": 31629.68,
+        "comboResist": 5281.5,
+        "dodgeResist": 650.54,
         "critMultResist": 626.14,
         "armorPierce": 0.716,
         "weaken": 0.888
@@ -28441,9 +28441,9 @@
         }
       ],
       "resists": {
-        "critResist": 48116.79,
-        "comboResist": 8032.5,
-        "dodgeResist": 991.8,
+        "critResist": 32077.86,
+        "comboResist": 5355,
+        "dodgeResist": 661.2,
         "critMultResist": 631.35,
         "armorPierce": 0.716,
         "weaken": 0.888
@@ -28483,9 +28483,9 @@
         }
       ],
       "resists": {
-        "critResist": 48595.65,
-        "comboResist": 8111,
-        "dodgeResist": 1003.2,
+        "critResist": 32397.1,
+        "comboResist": 5407.33,
+        "dodgeResist": 668.8,
         "critMultResist": 635.03,
         "armorPierce": 0.717,
         "weaken": 0.889
@@ -28525,9 +28525,9 @@
         }
       ],
       "resists": {
-        "critResist": 49157.31,
-        "comboResist": 8203.06,
-        "dodgeResist": 1016.55,
+        "critResist": 32771.54,
+        "comboResist": 5468.71,
+        "dodgeResist": 677.7,
         "critMultResist": 639.42,
         "armorPierce": 0.718,
         "weaken": 0.889
@@ -28567,9 +28567,9 @@
         }
       ],
       "resists": {
-        "critResist": 49723.8,
-        "comboResist": 8295.88,
-        "dodgeResist": 1030.04,
+        "critResist": 33149.2,
+        "comboResist": 5530.59,
+        "dodgeResist": 686.69,
         "critMultResist": 643.81,
         "armorPierce": 0.719,
         "weaken": 0.889
@@ -28609,9 +28609,9 @@
         }
       ],
       "resists": {
-        "critResist": 50295.15,
-        "comboResist": 8389.47,
-        "dodgeResist": 1043.67,
+        "critResist": 33530.1,
+        "comboResist": 5592.98,
+        "dodgeResist": 695.78,
         "critMultResist": 648.2,
         "armorPierce": 0.719,
         "weaken": 0.89
@@ -28651,9 +28651,9 @@
         }
       ],
       "resists": {
-        "critResist": 50871.45,
-        "comboResist": 8483.8,
-        "dodgeResist": 1057.44,
+        "critResist": 33914.3,
+        "comboResist": 5655.87,
+        "dodgeResist": 704.96,
         "critMultResist": 652.59,
         "armorPierce": 0.72,
         "weaken": 0.89
@@ -28693,9 +28693,9 @@
         }
       ],
       "resists": {
-        "critResist": 51452.76,
-        "comboResist": 8578.92,
-        "dodgeResist": 1071.34,
+        "critResist": 34301.84,
+        "comboResist": 5719.28,
+        "dodgeResist": 714.23,
         "critMultResist": 656.98,
         "armorPierce": 0.721,
         "weaken": 0.89
@@ -28735,9 +28735,9 @@
         }
       ],
       "resists": {
-        "critResist": 51969.87,
-        "comboResist": 8663.5,
-        "dodgeResist": 1083.75,
+        "critResist": 34646.58,
+        "comboResist": 5775.67,
+        "dodgeResist": 722.5,
         "critMultResist": 660.85,
         "armorPierce": 0.721,
         "weaken": 0.891
@@ -28777,9 +28777,9 @@
         }
       ],
       "resists": {
-        "critResist": 52728.06,
-        "comboResist": 8787.5,
-        "dodgeResist": 1101.9,
+        "critResist": 35152.04,
+        "comboResist": 5858.33,
+        "dodgeResist": 734.6,
         "critMultResist": 666.62,
         "armorPierce": 0.722,
         "weaken": 0.891
@@ -28819,9 +28819,9 @@
         }
       ],
       "resists": {
-        "critResist": 53494.59,
-        "comboResist": 8912.79,
-        "dodgeResist": 1120.27,
+        "critResist": 35663.06,
+        "comboResist": 5941.86,
+        "dodgeResist": 746.85,
         "critMultResist": 672.38,
         "armorPierce": 0.723,
         "weaken": 0.892
@@ -28861,9 +28861,9 @@
         }
       ],
       "resists": {
-        "critResist": 54269.59,
-        "comboResist": 9039.38,
-        "dodgeResist": 1138.91,
+        "critResist": 36179.73,
+        "comboResist": 6026.25,
+        "dodgeResist": 759.27,
         "critMultResist": 678.15,
         "armorPierce": 0.724,
         "weaken": 0.892
@@ -28903,9 +28903,9 @@
         }
       ],
       "resists": {
-        "critResist": 55053.21,
-        "comboResist": 9167.31,
-        "dodgeResist": 1157.79,
+        "critResist": 36702.14,
+        "comboResist": 6111.54,
+        "dodgeResist": 771.86,
         "critMultResist": 683.92,
         "armorPierce": 0.725,
         "weaken": 0.893
@@ -28945,9 +28945,9 @@
         }
       ],
       "resists": {
-        "critResist": 55611.63,
-        "comboResist": 9258.41,
-        "dodgeResist": 1171.26,
+        "critResist": 37074.42,
+        "comboResist": 6172.27,
+        "dodgeResist": 780.84,
         "critMultResist": 687.99,
         "armorPierce": 0.726,
         "weaken": 0.893
@@ -28987,9 +28987,9 @@
         }
       ],
       "resists": {
-        "critResist": 56429.54,
-        "comboResist": 9391.84,
-        "dodgeResist": 1190.97,
+        "critResist": 37619.7,
+        "comboResist": 6261.23,
+        "dodgeResist": 793.98,
         "critMultResist": 694.03,
         "armorPierce": 0.727,
         "weaken": 0.893
@@ -29029,9 +29029,9 @@
         }
       ],
       "resists": {
-        "critResist": 57256.68,
-        "comboResist": 9526.71,
-        "dodgeResist": 1210.95,
+        "critResist": 38171.12,
+        "comboResist": 6351.14,
+        "dodgeResist": 807.3,
         "critMultResist": 700.08,
         "armorPierce": 0.728,
         "weaken": 0.894
@@ -29071,9 +29071,9 @@
         }
       ],
       "resists": {
-        "critResist": 58093.18,
-        "comboResist": 9663.01,
-        "dodgeResist": 1231.18,
+        "critResist": 38728.79,
+        "comboResist": 6442.01,
+        "dodgeResist": 820.79,
         "critMultResist": 706.12,
         "armorPierce": 0.728,
         "weaken": 0.894
@@ -29113,9 +29113,9 @@
         }
       ],
       "resists": {
-        "critResist": 58939.23,
-        "comboResist": 9800.78,
-        "dodgeResist": 1251.69,
+        "critResist": 39292.82,
+        "comboResist": 6533.85,
+        "dodgeResist": 834.46,
         "critMultResist": 712.17,
         "armorPierce": 0.729,
         "weaken": 0.895
@@ -29155,9 +29155,9 @@
         }
       ],
       "resists": {
-        "critResist": 59542.26,
-        "comboResist": 9898.91,
-        "dodgeResist": 1266.34,
+        "critResist": 39694.84,
+        "comboResist": 6599.27,
+        "dodgeResist": 844.23,
         "critMultResist": 716.44,
         "armorPierce": 0.73,
         "weaken": 0.895
@@ -29197,9 +29197,9 @@
         }
       ],
       "resists": {
-        "critResist": 59542.26,
-        "comboResist": 9898.91,
-        "dodgeResist": 1266.34,
+        "critResist": 39694.84,
+        "comboResist": 6599.27,
+        "dodgeResist": 844.23,
         "critMultResist": 716.44,
         "armorPierce": 0.73,
         "weaken": 0.895
@@ -29239,9 +29239,9 @@
         }
       ],
       "resists": {
-        "critResist": 59542.26,
-        "comboResist": 9898.91,
-        "dodgeResist": 1266.34,
+        "critResist": 39694.84,
+        "comboResist": 6599.27,
+        "dodgeResist": 844.23,
         "critMultResist": 716.44,
         "armorPierce": 0.73,
         "weaken": 0.895
@@ -29281,9 +29281,9 @@
         }
       ],
       "resists": {
-        "critResist": 59542.26,
-        "comboResist": 9898.91,
-        "dodgeResist": 1266.34,
+        "critResist": 39694.84,
+        "comboResist": 6599.27,
+        "dodgeResist": 844.23,
         "critMultResist": 716.44,
         "armorPierce": 0.73,
         "weaken": 0.895
@@ -29323,9 +29323,9 @@
         }
       ],
       "resists": {
-        "critResist": 63898.13,
-        "comboResist": 10617.21,
-        "dodgeResist": 1357.3,
+        "critResist": 42598.75,
+        "comboResist": 7078.14,
+        "dodgeResist": 904.87,
         "critMultResist": 818.25,
         "armorPierce": 0.73,
         "weaken": 0.895
@@ -29365,9 +29365,9 @@
         }
       ],
       "resists": {
-        "critResist": 64261.23,
-        "comboResist": 10675.96,
-        "dodgeResist": 1367.32,
+        "critResist": 42840.82,
+        "comboResist": 7117.31,
+        "dodgeResist": 911.55,
         "critMultResist": 818.25,
         "armorPierce": 0.731,
         "weaken": 0.896
@@ -29407,9 +29407,9 @@
         }
       ],
       "resists": {
-        "critResist": 64628.31,
-        "comboResist": 10735.33,
-        "dodgeResist": 1377.45,
+        "critResist": 43085.54,
+        "comboResist": 7156.89,
+        "dodgeResist": 918.3,
         "critMultResist": 818.25,
         "armorPierce": 0.732,
         "weaken": 0.896
@@ -29449,9 +29449,9 @@
         }
       ],
       "resists": {
-        "critResist": 64999.42,
-        "comboResist": 10795.33,
-        "dodgeResist": 1387.67,
+        "critResist": 43332.95,
+        "comboResist": 7196.89,
+        "dodgeResist": 925.11,
         "critMultResist": 818.25,
         "armorPierce": 0.733,
         "weaken": 0.897
@@ -29491,9 +29491,9 @@
         }
       ],
       "resists": {
-        "critResist": 65374.66,
-        "comboResist": 10855.96,
-        "dodgeResist": 1398,
+        "critResist": 43583.11,
+        "comboResist": 7237.31,
+        "dodgeResist": 932,
         "critMultResist": 818.25,
         "armorPierce": 0.734,
         "weaken": 0.897
@@ -29533,9 +29533,9 @@
         }
       ],
       "resists": {
-        "critResist": 69265.32,
-        "comboResist": 11500.75,
-        "dodgeResist": 1482.93,
+        "critResist": 46176.88,
+        "comboResist": 7667.17,
+        "dodgeResist": 988.62,
         "critMultResist": 860.8,
         "armorPierce": 0.735,
         "weaken": 0.897
@@ -29575,9 +29575,9 @@
         }
       ],
       "resists": {
-        "critResist": 70493.55,
-        "comboResist": 11702.82,
-        "dodgeResist": 1511.71,
+        "critResist": 46995.7,
+        "comboResist": 7801.88,
+        "dodgeResist": 1007.81,
         "critMultResist": 870.53,
         "armorPierce": 0.736,
         "weaken": 0.898
@@ -29617,9 +29617,9 @@
         }
       ],
       "resists": {
-        "critResist": 71735.98,
-        "comboResist": 11907.13,
-        "dodgeResist": 1540.88,
+        "critResist": 47823.98,
+        "comboResist": 7938.09,
+        "dodgeResist": 1027.25,
         "critMultResist": 880.26,
         "armorPierce": 0.737,
         "weaken": 0.899
@@ -29659,9 +29659,9 @@
         }
       ],
       "resists": {
-        "critResist": 72992.87,
-        "comboResist": 12113.75,
-        "dodgeResist": 1570.42,
+        "critResist": 48661.91,
+        "comboResist": 8075.83,
+        "dodgeResist": 1046.95,
         "critMultResist": 890,
         "armorPierce": 0.738,
         "weaken": 0.899
@@ -29701,9 +29701,9 @@
         }
       ],
       "resists": {
-        "critResist": 74264.45,
-        "comboResist": 12322.7,
-        "dodgeResist": 1600.36,
+        "critResist": 49509.64,
+        "comboResist": 8215.13,
+        "dodgeResist": 1066.91,
         "critMultResist": 899.73,
         "armorPierce": 0.739,
         "weaken": 0.9
@@ -29743,9 +29743,9 @@
         }
       ],
       "resists": {
-        "critResist": 75171,
-        "comboResist": 12471.62,
-        "dodgeResist": 1621.76,
+        "critResist": 50114,
+        "comboResist": 8314.41,
+        "dodgeResist": 1081.17,
         "critMultResist": 906.6,
         "armorPierce": 0.74,
         "weaken": 0.9
@@ -29785,9 +29785,9 @@
         }
       ],
       "resists": {
-        "critResist": 76509.57,
-        "comboResist": 12691.49,
-        "dodgeResist": 1653.27,
+        "critResist": 51006.38,
+        "comboResist": 8460.99,
+        "dodgeResist": 1102.18,
         "critMultResist": 916.89,
         "armorPierce": 0.741,
         "weaken": 0.901
@@ -29827,9 +29827,9 @@
         }
       ],
       "resists": {
-        "critResist": 77864.03,
-        "comboResist": 12913.88,
-        "dodgeResist": 1685.22,
+        "critResist": 51909.36,
+        "comboResist": 8609.25,
+        "dodgeResist": 1123.48,
         "critMultResist": 927.17,
         "armorPierce": 0.742,
         "weaken": 0.901
@@ -29869,9 +29869,9 @@
         }
       ],
       "resists": {
-        "critResist": 79234.63,
-        "comboResist": 13138.83,
-        "dodgeResist": 1717.6,
+        "critResist": 52823.09,
+        "comboResist": 8759.22,
+        "dodgeResist": 1145.07,
         "critMultResist": 937.46,
         "armorPierce": 0.743,
         "weaken": 0.902
@@ -29911,9 +29911,9 @@
         }
       ],
       "resists": {
-        "critResist": 80621.7,
-        "comboResist": 13366.38,
-        "dodgeResist": 1750.42,
+        "critResist": 53747.8,
+        "comboResist": 8910.92,
+        "dodgeResist": 1166.95,
         "critMultResist": 947.74,
         "armorPierce": 0.744,
         "weaken": 0.902
@@ -29953,9 +29953,9 @@
         }
       ],
       "resists": {
-        "critResist": 81610.84,
-        "comboResist": 13528.61,
-        "dodgeResist": 1773.85,
+        "critResist": 54407.23,
+        "comboResist": 9019.07,
+        "dodgeResist": 1182.57,
         "critMultResist": 955,
         "armorPierce": 0.745,
         "weaken": 0.902
@@ -29995,9 +29995,9 @@
         }
       ],
       "resists": {
-        "critResist": 83079.83,
-        "comboResist": 13769.52,
-        "dodgeResist": 1808.59,
+        "critResist": 55386.55,
+        "comboResist": 9179.68,
+        "dodgeResist": 1205.73,
         "critMultResist": 965.98,
         "armorPierce": 0.746,
         "weaken": 0.903
@@ -30037,9 +30037,9 @@
         }
       ],
       "resists": {
-        "critResist": 84566.69,
-        "comboResist": 14013.25,
-        "dodgeResist": 1843.81,
+        "critResist": 56377.79,
+        "comboResist": 9342.17,
+        "dodgeResist": 1229.21,
         "critMultResist": 976.95,
         "armorPierce": 0.747,
         "weaken": 0.904
@@ -30079,9 +30079,9 @@
         }
       ],
       "resists": {
-        "critResist": 86071.79,
-        "comboResist": 14259.87,
-        "dodgeResist": 1879.53,
+        "critResist": 57381.2,
+        "comboResist": 9506.58,
+        "dodgeResist": 1253.02,
         "critMultResist": 987.93,
         "armorPierce": 0.748,
         "weaken": 0.904
@@ -30121,9 +30121,9 @@
         }
       ],
       "resists": {
-        "critResist": 87595.42,
-        "comboResist": 14509.43,
-        "dodgeResist": 1915.73,
+        "critResist": 58396.95,
+        "comboResist": 9672.95,
+        "dodgeResist": 1277.15,
         "critMultResist": 998.9,
         "armorPierce": 0.749,
         "weaken": 0.905
@@ -30163,9 +30163,9 @@
         }
       ],
       "resists": {
-        "critResist": 88682.28,
-        "comboResist": 14687.36,
-        "dodgeResist": 1941.57,
+        "critResist": 59121.52,
+        "comboResist": 9791.57,
+        "dodgeResist": 1294.38,
         "critMultResist": 1006.65,
         "armorPierce": 0.75,
         "weaken": 0.905
@@ -30205,9 +30205,9 @@
         }
       ],
       "resists": {
-        "critResist": 88682.28,
-        "comboResist": 14687.36,
-        "dodgeResist": 1941.57,
+        "critResist": 59121.52,
+        "comboResist": 9791.57,
+        "dodgeResist": 1294.38,
         "critMultResist": 1006.65,
         "armorPierce": 0.75,
         "weaken": 0.905
@@ -30247,9 +30247,9 @@
         }
       ],
       "resists": {
-        "critResist": 88682.28,
-        "comboResist": 14687.36,
-        "dodgeResist": 1941.57,
+        "critResist": 59121.52,
+        "comboResist": 9791.57,
+        "dodgeResist": 1294.38,
         "critMultResist": 1006.65,
         "armorPierce": 0.75,
         "weaken": 0.905
@@ -30289,9 +30289,9 @@
         }
       ],
       "resists": {
-        "critResist": 88682.28,
-        "comboResist": 14687.36,
-        "dodgeResist": 1941.57,
+        "critResist": 59121.52,
+        "comboResist": 9791.57,
+        "dodgeResist": 1294.38,
         "critMultResist": 1006.65,
         "armorPierce": 0.75,
         "weaken": 0.905
@@ -30331,9 +30331,9 @@
         }
       ],
       "resists": {
-        "critResist": 95882.33,
-        "comboResist": 15892.11,
-        "dodgeResist": 2102.86,
+        "critResist": 63921.55,
+        "comboResist": 10594.74,
+        "dodgeResist": 1401.91,
         "critMultResist": 1128,
         "armorPierce": 0.75,
         "weaken": 0.905
@@ -30373,9 +30373,9 @@
         }
       ],
       "resists": {
-        "critResist": 96157.77,
-        "comboResist": 15947.36,
-        "dodgeResist": 2112.24,
+        "critResist": 64105.18,
+        "comboResist": 10631.57,
+        "dodgeResist": 1408.16,
         "critMultResist": 1128,
         "armorPierce": 0.751,
         "weaken": 0.905
@@ -30415,9 +30415,9 @@
         }
       ],
       "resists": {
-        "critResist": 96434.73,
-        "comboResist": 16002.98,
-        "dodgeResist": 2121.69,
+        "critResist": 64289.82,
+        "comboResist": 10668.65,
+        "dodgeResist": 1414.46,
         "critMultResist": 1128,
         "armorPierce": 0.751,
         "weaken": 0.906
@@ -30457,9 +30457,9 @@
         }
       ],
       "resists": {
-        "critResist": 96713.25,
-        "comboResist": 16058.96,
-        "dodgeResist": 2131.19,
+        "critResist": 64475.5,
+        "comboResist": 10705.97,
+        "dodgeResist": 1420.79,
         "critMultResist": 1128,
         "armorPierce": 0.752,
         "weaken": 0.906
@@ -30499,9 +30499,9 @@
         }
       ],
       "resists": {
-        "critResist": 96993.31,
-        "comboResist": 16115.31,
-        "dodgeResist": 2140.76,
+        "critResist": 64662.21,
+        "comboResist": 10743.54,
+        "dodgeResist": 1427.17,
         "critMultResist": 1128,
         "armorPierce": 0.752,
         "weaken": 0.906
@@ -30541,9 +30541,9 @@
         }
       ],
       "resists": {
-        "critResist": 101224.16,
-        "comboResist": 16825.54,
-        "dodgeResist": 2236.64,
+        "critResist": 67482.77,
+        "comboResist": 11217.03,
+        "dodgeResist": 1491.09,
         "critMultResist": 1174.18,
         "armorPierce": 0.753,
         "weaken": 0.906
@@ -30583,9 +30583,9 @@
         }
       ],
       "resists": {
-        "critResist": 102182.39,
-        "comboResist": 16993.2,
-        "dodgeResist": 2260.68,
+        "critResist": 68121.59,
+        "comboResist": 11328.8,
+        "dodgeResist": 1507.12,
         "critMultResist": 1182.48,
         "armorPierce": 0.753,
         "weaken": 0.907
@@ -30625,9 +30625,9 @@
         }
       ],
       "resists": {
-        "critResist": 103145.02,
-        "comboResist": 17161.79,
-        "dodgeResist": 2284.88,
+        "critResist": 68763.35,
+        "comboResist": 11441.19,
+        "dodgeResist": 1523.25,
         "critMultResist": 1190.78,
         "armorPierce": 0.754,
         "weaken": 0.907
@@ -30667,9 +30667,9 @@
         }
       ],
       "resists": {
-        "critResist": 104112.11,
-        "comboResist": 17331.31,
-        "dodgeResist": 2309.23,
+        "critResist": 69408.08,
+        "comboResist": 11554.21,
+        "dodgeResist": 1539.49,
         "critMultResist": 1199.07,
         "armorPierce": 0.754,
         "weaken": 0.907
@@ -30709,9 +30709,9 @@
         }
       ],
       "resists": {
-        "critResist": 105083.7,
-        "comboResist": 17501.8,
-        "dodgeResist": 2333.76,
+        "critResist": 70055.8,
+        "comboResist": 11667.87,
+        "dodgeResist": 1555.84,
         "critMultResist": 1207.37,
         "armorPierce": 0.755,
         "weaken": 0.907
@@ -30751,9 +30751,9 @@
         }
       ],
       "resists": {
-        "critResist": 106059.81,
-        "comboResist": 17673.24,
-        "dodgeResist": 2358.44,
+        "critResist": 70706.55,
+        "comboResist": 11782.16,
+        "dodgeResist": 1572.29,
         "critMultResist": 1215.67,
         "armorPierce": 0.755,
         "weaken": 0.908
@@ -30793,9 +30793,9 @@
         }
       ],
       "resists": {
-        "critResist": 106924.84,
-        "comboResist": 17825.31,
-        "dodgeResist": 2380.35,
+        "critResist": 71283.23,
+        "comboResist": 11883.54,
+        "dodgeResist": 1586.9,
         "critMultResist": 1222.99,
         "armorPierce": 0.756,
         "weaken": 0.908
@@ -30835,9 +30835,9 @@
         }
       ],
       "resists": {
-        "critResist": 108201.69,
-        "comboResist": 18049.59,
-        "dodgeResist": 2412.61,
+        "critResist": 72134.46,
+        "comboResist": 12033.06,
+        "dodgeResist": 1608.41,
         "critMultResist": 1233.92,
         "armorPierce": 0.756,
         "weaken": 0.908
@@ -30877,9 +30877,9 @@
         }
       ],
       "resists": {
-        "critResist": 109486.02,
-        "comboResist": 18275.46,
-        "dodgeResist": 2445.15,
+        "critResist": 72990.69,
+        "comboResist": 12183.64,
+        "dodgeResist": 1630.1,
         "critMultResist": 1244.84,
         "armorPierce": 0.757,
         "weaken": 0.908
@@ -30919,9 +30919,9 @@
         }
       ],
       "resists": {
-        "critResist": 110777.88,
-        "comboResist": 18502.92,
-        "dodgeResist": 2477.96,
+        "critResist": 73851.92,
+        "comboResist": 12335.28,
+        "dodgeResist": 1651.97,
         "critMultResist": 1255.77,
         "armorPierce": 0.758,
         "weaken": 0.909
@@ -30961,9 +30961,9 @@
         }
       ],
       "resists": {
-        "critResist": 112077.36,
-        "comboResist": 18732.02,
-        "dodgeResist": 2511.03,
+        "critResist": 74718.24,
+        "comboResist": 12488.01,
+        "dodgeResist": 1674.02,
         "critMultResist": 1266.7,
         "armorPierce": 0.758,
         "weaken": 0.909
@@ -31003,9 +31003,9 @@
         }
       ],
       "resists": {
-        "critResist": 112999.27,
-        "comboResist": 18894.72,
-        "dodgeResist": 2534.55,
+        "critResist": 75332.85,
+        "comboResist": 12596.48,
+        "dodgeResist": 1689.7,
         "critMultResist": 1274.42,
         "armorPierce": 0.759,
         "weaken": 0.909
@@ -31045,9 +31045,9 @@
         }
       ],
       "resists": {
-        "critResist": 114076.24,
-        "comboResist": 19084.7,
-        "dodgeResist": 2561.98,
+        "critResist": 76050.83,
+        "comboResist": 12723.13,
+        "dodgeResist": 1707.99,
         "critMultResist": 1283.49,
         "armorPierce": 0.759,
         "weaken": 0.91
@@ -31087,9 +31087,9 @@
         }
       ],
       "resists": {
-        "critResist": 115158.33,
-        "comboResist": 19275.78,
-        "dodgeResist": 2589.6,
+        "critResist": 76772.22,
+        "comboResist": 12850.52,
+        "dodgeResist": 1726.4,
         "critMultResist": 1292.57,
         "armorPierce": 0.76,
         "weaken": 0.91
@@ -31129,9 +31129,9 @@
         }
       ],
       "resists": {
-        "critResist": 116245.57,
-        "comboResist": 19467.96,
-        "dodgeResist": 2617.41,
+        "critResist": 77497.05,
+        "comboResist": 12978.64,
+        "dodgeResist": 1744.94,
         "critMultResist": 1301.65,
         "armorPierce": 0.76,
         "weaken": 0.91
@@ -31171,9 +31171,9 @@
         }
       ],
       "resists": {
-        "critResist": 117337.98,
-        "comboResist": 19661.25,
-        "dodgeResist": 2645.4,
+        "critResist": 78225.32,
+        "comboResist": 13107.5,
+        "dodgeResist": 1763.6,
         "critMultResist": 1310.72,
         "armorPierce": 0.761,
         "weaken": 0.91
@@ -31213,9 +31213,9 @@
         }
       ],
       "resists": {
-        "critResist": 118435.61,
-        "comboResist": 19855.67,
-        "dodgeResist": 2673.57,
+        "critResist": 78957.08,
+        "comboResist": 13237.11,
+        "dodgeResist": 1782.38,
         "critMultResist": 1319.8,
         "armorPierce": 0.761,
         "weaken": 0.91
@@ -31255,9 +31255,9 @@
         }
       ],
       "resists": {
-        "critResist": 119408.46,
-        "comboResist": 20028.13,
-        "dodgeResist": 2698.59,
+        "critResist": 79605.64,
+        "comboResist": 13352.09,
+        "dodgeResist": 1799.06,
         "critMultResist": 1327.81,
         "armorPierce": 0.761,
         "weaken": 0.911
@@ -31297,9 +31297,9 @@
         }
       ],
       "resists": {
-        "critResist": 120840.27,
-        "comboResist": 20281.8,
-        "dodgeResist": 2735.34,
+        "critResist": 80560.19,
+        "comboResist": 13521.2,
+        "dodgeResist": 1823.56,
         "critMultResist": 1339.71,
         "armorPierce": 0.762,
         "weaken": 0.911
@@ -31339,9 +31339,9 @@
         }
       ],
       "resists": {
-        "critResist": 122280.68,
-        "comboResist": 20537.32,
-        "dodgeResist": 2772.41,
+        "critResist": 81520.45,
+        "comboResist": 13691.55,
+        "dodgeResist": 1848.27,
         "critMultResist": 1351.61,
         "armorPierce": 0.763,
         "weaken": 0.911
@@ -31381,9 +31381,9 @@
         }
       ],
       "resists": {
-        "critResist": 123729.78,
-        "comboResist": 20794.73,
-        "dodgeResist": 2809.78,
+        "critResist": 82486.52,
+        "comboResist": 13863.15,
+        "dodgeResist": 1873.19,
         "critMultResist": 1363.52,
         "armorPierce": 0.763,
         "weaken": 0.912
@@ -31423,9 +31423,9 @@
         }
       ],
       "resists": {
-        "critResist": 125187.64,
-        "comboResist": 21054,
-        "dodgeResist": 2847.48,
+        "critResist": 83458.43,
+        "comboResist": 14036,
+        "dodgeResist": 1898.32,
         "critMultResist": 1375.42,
         "armorPierce": 0.764,
         "weaken": 0.912
@@ -31465,9 +31465,9 @@
         }
       ],
       "resists": {
-        "critResist": 126222.05,
-        "comboResist": 21238.19,
-        "dodgeResist": 2874.28,
+        "critResist": 84148.03,
+        "comboResist": 14158.79,
+        "dodgeResist": 1916.19,
         "critMultResist": 1383.82,
         "armorPierce": 0.764,
         "weaken": 0.912
@@ -31507,9 +31507,9 @@
         }
       ],
       "resists": {
-        "critResist": 127742.25,
-        "comboResist": 21508.7,
-        "dodgeResist": 2913.61,
+        "critResist": 85161.5,
+        "comboResist": 14339.13,
+        "dodgeResist": 1942.41,
         "critMultResist": 1396.28,
         "armorPierce": 0.765,
         "weaken": 0.912
@@ -31549,9 +31549,9 @@
         }
       ],
       "resists": {
-        "critResist": 129271.73,
-        "comboResist": 21781.21,
-        "dodgeResist": 2953.27,
+        "critResist": 86181.16,
+        "comboResist": 14520.81,
+        "dodgeResist": 1968.85,
         "critMultResist": 1408.74,
         "armorPierce": 0.766,
         "weaken": 0.913
@@ -31591,9 +31591,9 @@
         }
       ],
       "resists": {
-        "critResist": 130810.56,
-        "comboResist": 22055.76,
-        "dodgeResist": 2993.27,
+        "critResist": 87207.05,
+        "comboResist": 14703.84,
+        "dodgeResist": 1995.51,
         "critMultResist": 1421.2,
         "armorPierce": 0.766,
         "weaken": 0.913
@@ -31633,9 +31633,9 @@
         }
       ],
       "resists": {
-        "critResist": 132358.81,
-        "comboResist": 22332.36,
-        "dodgeResist": 3033.61,
+        "critResist": 88239.21,
+        "comboResist": 14888.24,
+        "dodgeResist": 2022.41,
         "critMultResist": 1433.66,
         "armorPierce": 0.767,
         "weaken": 0.913
@@ -31675,9 +31675,9 @@
         }
       ],
       "resists": {
-        "critResist": 133457.42,
-        "comboResist": 22528.86,
-        "dodgeResist": 3062.29,
+        "critResist": 88971.62,
+        "comboResist": 15019.24,
+        "dodgeResist": 2041.53,
         "critMultResist": 1442.46,
         "armorPierce": 0.767,
         "weaken": 0.914
@@ -31717,9 +31717,9 @@
         }
       ],
       "resists": {
-        "critResist": 134746.6,
-        "comboResist": 22759.27,
-        "dodgeResist": 3095.9,
+        "critResist": 89831.06,
+        "comboResist": 15172.85,
+        "dodgeResist": 2063.93,
         "critMultResist": 1452.87,
         "armorPierce": 0.768,
         "weaken": 0.914
@@ -31759,9 +31759,9 @@
         }
       ],
       "resists": {
-        "critResist": 136042.12,
-        "comboResist": 22991.1,
-        "dodgeResist": 3129.73,
+        "critResist": 90694.75,
+        "comboResist": 15327.4,
+        "dodgeResist": 2086.49,
         "critMultResist": 1463.29,
         "armorPierce": 0.768,
         "weaken": 0.914
@@ -31801,9 +31801,9 @@
         }
       ],
       "resists": {
-        "critResist": 137344.06,
-        "comboResist": 23224.3,
-        "dodgeResist": 3163.8,
+        "critResist": 91562.71,
+        "comboResist": 15482.87,
+        "dodgeResist": 2109.2,
         "critMultResist": 1473.7,
         "armorPierce": 0.769,
         "weaken": 0.914
@@ -31843,9 +31843,9 @@
         }
       ],
       "resists": {
-        "critResist": 138652.47,
-        "comboResist": 23458.94,
-        "dodgeResist": 3198.1,
+        "critResist": 92434.98,
+        "comboResist": 15639.29,
+        "dodgeResist": 2132.07,
         "critMultResist": 1484.12,
         "armorPierce": 0.769,
         "weaken": 0.915
@@ -31885,9 +31885,9 @@
         }
       ],
       "resists": {
-        "critResist": 139967.39,
-        "comboResist": 23694.99,
-        "dodgeResist": 3232.65,
+        "critResist": 93311.59,
+        "comboResist": 15796.66,
+        "dodgeResist": 2155.1,
         "critMultResist": 1494.53,
         "armorPierce": 0.77,
         "weaken": 0.915
@@ -31927,9 +31927,9 @@
         }
       ],
       "resists": {
-        "critResist": 141133.02,
-        "comboResist": 23904.45,
-        "dodgeResist": 3263.34,
+        "critResist": 94088.68,
+        "comboResist": 15936.3,
+        "dodgeResist": 2175.56,
         "critMultResist": 1503.72,
         "armorPierce": 0.77,
         "weaken": 0.915
@@ -31969,9 +31969,9 @@
         }
       ],
       "resists": {
-        "critResist": 141133.02,
-        "comboResist": 23904.45,
-        "dodgeResist": 3263.34,
+        "critResist": 94088.68,
+        "comboResist": 15936.3,
+        "dodgeResist": 2175.56,
         "critMultResist": 1503.72,
         "armorPierce": 0.77,
         "weaken": 0.915
@@ -32011,9 +32011,9 @@
         }
       ],
       "resists": {
-        "critResist": 141133.02,
-        "comboResist": 23904.45,
-        "dodgeResist": 3263.34,
+        "critResist": 94088.68,
+        "comboResist": 15936.3,
+        "dodgeResist": 2175.56,
         "critMultResist": 1503.72,
         "armorPierce": 0.77,
         "weaken": 0.915
@@ -32053,9 +32053,9 @@
         }
       ],
       "resists": {
-        "critResist": 141133.02,
-        "comboResist": 23904.45,
-        "dodgeResist": 3263.34,
+        "critResist": 94088.68,
+        "comboResist": 15936.3,
+        "dodgeResist": 2175.56,
         "critMultResist": 1503.72,
         "armorPierce": 0.77,
         "weaken": 0.915
@@ -32095,9 +32095,9 @@
         }
       ],
       "resists": {
-        "critResist": 151510.52,
-        "comboResist": 25651,
-        "dodgeResist": 3499.88,
+        "critResist": 101007.02,
+        "comboResist": 17100.67,
+        "dodgeResist": 2333.25,
         "critMultResist": 1653,
         "armorPierce": 0.77,
         "weaken": 0.915
@@ -32137,9 +32137,9 @@
         }
       ],
       "resists": {
-        "critResist": 152347.62,
-        "comboResist": 25781.64,
-        "dodgeResist": 3525.6,
+        "critResist": 101565.09,
+        "comboResist": 17187.76,
+        "dodgeResist": 2350.4,
         "critMultResist": 1653,
         "armorPierce": 0.771,
         "weaken": 0.915
@@ -32179,9 +32179,9 @@
         }
       ],
       "resists": {
-        "critResist": 153193.7,
-        "comboResist": 25913.57,
-        "dodgeResist": 3551.61,
+        "critResist": 102129.14,
+        "comboResist": 17275.71,
+        "dodgeResist": 2367.74,
         "critMultResist": 1653,
         "armorPierce": 0.772,
         "weaken": 0.915
@@ -32221,9 +32221,9 @@
         }
       ],
       "resists": {
-        "critResist": 154048.94,
-        "comboResist": 26046.77,
-        "dodgeResist": 3577.91,
+        "critResist": 102699.3,
+        "comboResist": 17364.51,
+        "dodgeResist": 2385.27,
         "critMultResist": 1653,
         "armorPierce": 0.773,
         "weaken": 0.915
@@ -32263,9 +32263,9 @@
         }
       ],
       "resists": {
-        "critResist": 154913.45,
-        "comboResist": 26181.3,
-        "dodgeResist": 3604.5,
+        "critResist": 103275.64,
+        "comboResist": 17454.2,
+        "dodgeResist": 2403,
         "critMultResist": 1653,
         "armorPierce": 0.774,
         "weaken": 0.915
@@ -32305,9 +32305,9 @@
         }
       ],
       "resists": {
-        "critResist": 164118.31,
-        "comboResist": 27728.17,
-        "dodgeResist": 3823.54,
+        "critResist": 109412.21,
+        "comboResist": 18485.45,
+        "dodgeResist": 2549.03,
         "critMultResist": 1741.67,
         "armorPierce": 0.775,
         "weaken": 0.915
@@ -32347,9 +32347,9 @@
         }
       ],
       "resists": {
-        "critResist": 166982.31,
-        "comboResist": 28199.25,
-        "dodgeResist": 3897.3,
+        "critResist": 111321.55,
+        "comboResist": 18799.5,
+        "dodgeResist": 2598.2,
         "critMultResist": 1761.62,
         "armorPierce": 0.776,
         "weaken": 0.915
@@ -32389,9 +32389,9 @@
         }
       ],
       "resists": {
-        "critResist": 169878.62,
-        "comboResist": 28675.2,
-        "dodgeResist": 3972.06,
+        "critResist": 113252.42,
+        "comboResist": 19116.8,
+        "dodgeResist": 2648.04,
         "critMultResist": 1781.57,
         "armorPierce": 0.777,
         "weaken": 0.915
@@ -32431,9 +32431,9 @@
         }
       ],
       "resists": {
-        "critResist": 172807.72,
-        "comboResist": 29156.07,
-        "dodgeResist": 4047.84,
+        "critResist": 115205.15,
+        "comboResist": 19437.38,
+        "dodgeResist": 2698.56,
         "critMultResist": 1801.52,
         "armorPierce": 0.778,
         "weaken": 0.915
@@ -32473,9 +32473,9 @@
         }
       ],
       "resists": {
-        "critResist": 175770.2,
-        "comboResist": 29641.95,
-        "dodgeResist": 4124.66,
+        "critResist": 117180.14,
+        "comboResist": 19761.3,
+        "dodgeResist": 2749.77,
         "critMultResist": 1821.46,
         "armorPierce": 0.779,
         "weaken": 0.915
@@ -32515,9 +32515,9 @@
         }
       ],
       "resists": {
-        "critResist": 177881.72,
-        "comboResist": 29987.98,
-        "dodgeResist": 4179.51,
+        "critResist": 118587.81,
+        "comboResist": 19991.99,
+        "dodgeResist": 2786.34,
         "critMultResist": 1835.54,
         "armorPierce": 0.78,
         "weaken": 0.915
@@ -32557,9 +32557,9 @@
         }
       ],
       "resists": {
-        "critResist": 181017.05,
-        "comboResist": 30501.91,
-        "dodgeResist": 4260.84,
+        "critResist": 120678.03,
+        "comboResist": 20334.61,
+        "dodgeResist": 2840.56,
         "critMultResist": 1856.73,
         "armorPierce": 0.781,
         "weaken": 0.915
@@ -32599,9 +32599,9 @@
         }
       ],
       "resists": {
-        "critResist": 184188.6,
-        "comboResist": 31021.26,
-        "dodgeResist": 4343.29,
+        "critResist": 122792.4,
+        "comboResist": 20680.84,
+        "dodgeResist": 2895.53,
         "critMultResist": 1877.92,
         "armorPierce": 0.782,
         "weaken": 0.915
@@ -32641,9 +32641,9 @@
         }
       ],
       "resists": {
-        "critResist": 187397.02,
-        "comboResist": 31546.11,
-        "dodgeResist": 4426.91,
+        "critResist": 124931.34,
+        "comboResist": 21030.74,
+        "dodgeResist": 2951.27,
         "critMultResist": 1899.11,
         "armorPierce": 0.783,
         "weaken": 0.915
@@ -32683,9 +32683,9 @@
         }
       ],
       "resists": {
-        "critResist": 190642.9,
-        "comboResist": 32076.55,
-        "dodgeResist": 4511.69,
+        "critResist": 127095.27,
+        "comboResist": 21384.37,
+        "dodgeResist": 3007.79,
         "critMultResist": 1920.3,
         "armorPierce": 0.784,
         "weaken": 0.915
@@ -32725,9 +32725,9 @@
         }
       ],
       "resists": {
-        "critResist": 192957.03,
-        "comboResist": 32454.4,
-        "dodgeResist": 4572.24,
+        "critResist": 128638.02,
+        "comboResist": 21636.27,
+        "dodgeResist": 3048.16,
         "critMultResist": 1935.26,
         "armorPierce": 0.785,
         "weaken": 0.915
@@ -32767,9 +32767,9 @@
         }
       ],
       "resists": {
-        "critResist": 196386.27,
-        "comboResist": 33014.4,
-        "dodgeResist": 4661.85,
+        "critResist": 130924.18,
+        "comboResist": 22009.6,
+        "dodgeResist": 3107.9,
         "critMultResist": 1957.7,
         "armorPierce": 0.786,
         "weaken": 0.915
@@ -32809,9 +32809,9 @@
         }
       ],
       "resists": {
-        "critResist": 199856.19,
-        "comboResist": 33580.46,
-        "dodgeResist": 4752.73,
+        "critResist": 133237.47,
+        "comboResist": 22386.97,
+        "dodgeResist": 3168.49,
         "critMultResist": 1980.13,
         "armorPierce": 0.787,
         "weaken": 0.915
@@ -32851,9 +32851,9 @@
         }
       ],
       "resists": {
-        "critResist": 203367.52,
-        "comboResist": 34152.66,
-        "dodgeResist": 4844.91,
+        "critResist": 135578.34,
+        "comboResist": 22768.44,
+        "dodgeResist": 3229.94,
         "critMultResist": 2002.56,
         "armorPierce": 0.788,
         "weaken": 0.915
@@ -32893,9 +32893,9 @@
         }
       ],
       "resists": {
-        "critResist": 206920.97,
-        "comboResist": 34731.09,
-        "dodgeResist": 4938.41,
+        "critResist": 137947.31,
+        "comboResist": 23154.06,
+        "dodgeResist": 3292.27,
         "critMultResist": 2024.99,
         "armorPierce": 0.789,
         "weaken": 0.915
@@ -32935,9 +32935,9 @@
         }
       ],
       "resists": {
-        "critResist": 209455.03,
-        "comboResist": 35143.21,
-        "dodgeResist": 5005.2,
+        "critResist": 139636.69,
+        "comboResist": 23428.81,
+        "dodgeResist": 3336.8,
         "critMultResist": 2040.83,
         "armorPierce": 0.79,
         "weaken": 0.915
@@ -32977,9 +32977,9 @@
         }
       ],
       "resists": {
-        "critResist": 209455.03,
-        "comboResist": 35143.21,
-        "dodgeResist": 5005.2,
+        "critResist": 139636.69,
+        "comboResist": 23428.81,
+        "dodgeResist": 3336.8,
         "critMultResist": 2040.83,
         "armorPierce": 0.79,
         "weaken": 0.915
@@ -33019,9 +33019,9 @@
         }
       ],
       "resists": {
-        "critResist": 209455.03,
-        "comboResist": 35143.21,
-        "dodgeResist": 5005.2,
+        "critResist": 139636.69,
+        "comboResist": 23428.81,
+        "dodgeResist": 3336.8,
         "critMultResist": 2040.83,
         "armorPierce": 0.79,
         "weaken": 0.915
@@ -33061,9 +33061,9 @@
         }
       ],
       "resists": {
-        "critResist": 209455.03,
-        "comboResist": 35143.21,
-        "dodgeResist": 5005.2,
+        "critResist": 139636.69,
+        "comboResist": 23428.81,
+        "dodgeResist": 3336.8,
         "critMultResist": 2040.83,
         "armorPierce": 0.79,
         "weaken": 0.915
@@ -33103,9 +33103,9 @@
         }
       ],
       "resists": {
-        "critResist": 226398.03,
-        "comboResist": 38014.46,
-        "dodgeResist": 5419.19,
+        "critResist": 150932.03,
+        "comboResist": 25342.97,
+        "dodgeResist": 3612.79,
         "critMultResist": 2245.5,
         "armorPierce": 0.79,
         "weaken": 0.915
@@ -33145,9 +33145,9 @@
         }
       ],
       "resists": {
-        "critResist": 227783.9,
-        "comboResist": 38226.59,
-        "dodgeResist": 5455.95,
+        "critResist": 151855.94,
+        "comboResist": 25484.39,
+        "dodgeResist": 3637.3,
         "critMultResist": 2245.5,
         "armorPierce": 0.791,
         "weaken": 0.915
@@ -33187,9 +33187,9 @@
         }
       ],
       "resists": {
-        "critResist": 229186.36,
-        "comboResist": 38440.98,
-        "dodgeResist": 5493.12,
+        "critResist": 152790.9,
+        "comboResist": 25627.32,
+        "dodgeResist": 3662.08,
         "critMultResist": 2245.5,
         "armorPierce": 0.791,
         "weaken": 0.915
@@ -33229,9 +33229,9 @@
         }
       ],
       "resists": {
-        "critResist": 230605.64,
-        "comboResist": 38657.7,
-        "dodgeResist": 5530.68,
+        "critResist": 153737.1,
+        "comboResist": 25771.8,
+        "dodgeResist": 3687.12,
         "critMultResist": 2245.5,
         "armorPierce": 0.792,
         "weaken": 0.915
@@ -33271,9 +33271,9 @@
         }
       ],
       "resists": {
-        "critResist": 232042.12,
-        "comboResist": 38876.76,
-        "dodgeResist": 5568.63,
+        "critResist": 154694.75,
+        "comboResist": 25917.84,
+        "dodgeResist": 3712.42,
         "critMultResist": 2245.5,
         "armorPierce": 0.792,
         "weaken": 0.915
@@ -33313,9 +33313,9 @@
         }
       ],
       "resists": {
-        "critResist": 245978.86,
-        "comboResist": 41195.33,
-        "dodgeResist": 5905.68,
+        "critResist": 163985.9,
+        "comboResist": 27463.55,
+        "dodgeResist": 3937.12,
         "critMultResist": 2367.31,
         "armorPierce": 0.793,
         "weaken": 0.915
@@ -33355,9 +33355,9 @@
         }
       ],
       "resists": {
-        "critResist": 250425.75,
-        "comboResist": 41916.12,
-        "dodgeResist": 6016.13,
+        "critResist": 166950.5,
+        "comboResist": 27944.08,
+        "dodgeResist": 4010.75,
         "critMultResist": 2394.57,
         "armorPierce": 0.793,
         "weaken": 0.915
@@ -33397,9 +33397,9 @@
         }
       ],
       "resists": {
-        "critResist": 254928.34,
-        "comboResist": 42645.09,
-        "dodgeResist": 6127.98,
+        "critResist": 169952.23,
+        "comboResist": 28430.06,
+        "dodgeResist": 4085.32,
         "critMultResist": 2421.82,
         "armorPierce": 0.794,
         "weaken": 0.915
@@ -33439,9 +33439,9 @@
         }
       ],
       "resists": {
-        "critResist": 259487.75,
-        "comboResist": 43382.36,
-        "dodgeResist": 6241.28,
+        "critResist": 172991.84,
+        "comboResist": 28921.57,
+        "dodgeResist": 4160.85,
         "critMultResist": 2449.08,
         "armorPierce": 0.794,
         "weaken": 0.915
@@ -33481,9 +33481,9 @@
         }
       ],
       "resists": {
-        "critResist": 264104.9,
-        "comboResist": 44128.08,
-        "dodgeResist": 6356.01,
+        "critResist": 176069.94,
+        "comboResist": 29418.72,
+        "dodgeResist": 4237.34,
         "critMultResist": 2476.34,
         "armorPierce": 0.795,
         "weaken": 0.915
@@ -33523,9 +33523,9 @@
         }
       ],
       "resists": {
-        "critResist": 267399.5,
-        "comboResist": 44659.65,
-        "dodgeResist": 6437.9,
+        "critResist": 178266.34,
+        "comboResist": 29773.1,
+        "dodgeResist": 4291.93,
         "critMultResist": 2495.58,
         "armorPierce": 0.795,
         "weaken": 0.915
@@ -33565,9 +33565,9 @@
         }
       ],
       "resists": {
-        "critResist": 271305.78,
-        "comboResist": 45290.09,
-        "dodgeResist": 6534.88,
+        "critResist": 180870.53,
+        "comboResist": 30193.39,
+        "dodgeResist": 4356.59,
         "critMultResist": 2518.71,
         "armorPierce": 0.795,
         "weaken": 0.915
@@ -33607,9 +33607,9 @@
         }
       ],
       "resists": {
-        "critResist": 275252.2,
-        "comboResist": 45926.38,
-        "dodgeResist": 6632.88,
+        "critResist": 183501.47,
+        "comboResist": 30617.59,
+        "dodgeResist": 4421.92,
         "critMultResist": 2541.83,
         "armorPierce": 0.796,
         "weaken": 0.915
@@ -33649,9 +33649,9 @@
         }
       ],
       "resists": {
-        "critResist": 279239.44,
-        "comboResist": 46568.61,
-        "dodgeResist": 6731.9,
+        "critResist": 186159.62,
+        "comboResist": 31045.74,
+        "dodgeResist": 4487.93,
         "critMultResist": 2564.96,
         "armorPierce": 0.796,
         "weaken": 0.915
@@ -33691,9 +33691,9 @@
         }
       ],
       "resists": {
-        "critResist": 283268.12,
-        "comboResist": 47216.84,
-        "dodgeResist": 6831.94,
+        "critResist": 188845.42,
+        "comboResist": 31477.89,
+        "dodgeResist": 4554.63,
         "critMultResist": 2588.08,
         "armorPierce": 0.797,
         "weaken": 0.915
@@ -33733,9 +33733,9 @@
         }
       ],
       "resists": {
-        "critResist": 287338.84,
-        "comboResist": 47871.18,
-        "dodgeResist": 6933.03,
+        "critResist": 191559.23,
+        "comboResist": 31914.12,
+        "dodgeResist": 4622.02,
         "critMultResist": 2611.21,
         "armorPierce": 0.797,
         "weaken": 0.915
@@ -33775,9 +33775,9 @@
         }
       ],
       "resists": {
-        "critResist": 290966.2,
-        "comboResist": 48453.66,
-        "dodgeResist": 7023.12,
+        "critResist": 193977.47,
+        "comboResist": 32302.44,
+        "dodgeResist": 4682.08,
         "critMultResist": 2631.61,
         "armorPierce": 0.798,
         "weaken": 0.915
@@ -33817,9 +33817,9 @@
         }
       ],
       "resists": {
-        "critResist": 296338.75,
-        "comboResist": 49316.49,
-        "dodgeResist": 7156.43,
+        "critResist": 197559.17,
+        "comboResist": 32877.66,
+        "dodgeResist": 4770.95,
         "critMultResist": 2662.17,
         "armorPierce": 0.798,
         "weaken": 0.915
@@ -33859,9 +33859,9 @@
         }
       ],
       "resists": {
-        "critResist": 301782.66,
-        "comboResist": 50189.63,
-        "dodgeResist": 7291.5,
+        "critResist": 201188.44,
+        "comboResist": 33459.75,
+        "dodgeResist": 4861,
         "critMultResist": 2692.72,
         "armorPierce": 0.799,
         "weaken": 0.915
@@ -33901,9 +33901,9 @@
         }
       ],
       "resists": {
-        "critResist": 307299.3,
-        "comboResist": 51073.23,
-        "dodgeResist": 7428.39,
+        "critResist": 204866.22,
+        "comboResist": 34048.82,
+        "dodgeResist": 4952.26,
         "critMultResist": 2723.28,
         "armorPierce": 0.799,
         "weaken": 0.915
@@ -33943,9 +33943,9 @@
         }
       ],
       "resists": {
-        "critResist": 312890.22,
-        "comboResist": 51967.52,
-        "dodgeResist": 7567.09,
+        "critResist": 208593.48,
+        "comboResist": 34645.02,
+        "dodgeResist": 5044.73,
         "critMultResist": 2753.83,
         "armorPierce": 0.8,
         "weaken": 0.915
@@ -33985,9 +33985,9 @@
         }
       ],
       "resists": {
-        "critResist": 316882.22,
-        "comboResist": 52605.3,
-        "dodgeResist": 7666.13,
+        "critResist": 211254.81,
+        "comboResist": 35070.2,
+        "dodgeResist": 5110.75,
         "critMultResist": 2775.4,
         "armorPierce": 0.8,
         "weaken": 0.915
@@ -34027,9 +34027,9 @@
         }
       ],
       "resists": {
-        "critResist": 316882.22,
-        "comboResist": 52605.3,
-        "dodgeResist": 7666.13,
+        "critResist": 211254.81,
+        "comboResist": 35070.2,
+        "dodgeResist": 5110.75,
         "critMultResist": 2775.4,
         "armorPierce": 0.8,
         "weaken": 0.915
@@ -34069,9 +34069,9 @@
         }
       ],
       "resists": {
-        "critResist": 316882.22,
-        "comboResist": 52605.3,
-        "dodgeResist": 7666.13,
+        "critResist": 211254.81,
+        "comboResist": 35070.2,
+        "dodgeResist": 5110.75,
         "critMultResist": 2775.4,
         "armorPierce": 0.8,
         "weaken": 0.915
@@ -34111,9 +34111,9 @@
         }
       ],
       "resists": {
-        "critResist": 316882.22,
-        "comboResist": 52605.3,
-        "dodgeResist": 7666.13,
+        "critResist": 211254.81,
+        "comboResist": 35070.2,
+        "dodgeResist": 5110.75,
         "critMultResist": 2775.4,
         "armorPierce": 0.8,
         "weaken": 0.915
@@ -34153,9 +34153,9 @@
         }
       ],
       "resists": {
-        "critResist": 342954,
-        "comboResist": 56971.7,
-        "dodgeResist": 8309.35,
+        "critResist": 228636,
+        "comboResist": 37981.13,
+        "dodgeResist": 5539.57,
         "critMultResist": 3043.5,
         "armorPierce": 0.8,
         "weaken": 0.915
@@ -34195,9 +34195,9 @@
         }
       ],
       "resists": {
-        "critResist": 343447.28,
-        "comboResist": 57045.42,
-        "dodgeResist": 8324.24,
+        "critResist": 228964.86,
+        "comboResist": 38030.28,
+        "dodgeResist": 5549.49,
         "critMultResist": 3043.5,
         "armorPierce": 0.8,
         "weaken": 0.915
@@ -34237,9 +34237,9 @@
         }
       ],
       "resists": {
-        "critResist": 343941.97,
-        "comboResist": 57119.34,
-        "dodgeResist": 8339.15,
+        "critResist": 229294.66,
+        "comboResist": 38079.56,
+        "dodgeResist": 5559.43,
         "critMultResist": 3043.5,
         "armorPierce": 0.8,
         "weaken": 0.915
@@ -34279,9 +34279,9 @@
         }
       ],
       "resists": {
-        "critResist": 344438,
-        "comboResist": 57193.44,
-        "dodgeResist": 8354.12,
+        "critResist": 229625.34,
+        "comboResist": 38128.96,
+        "dodgeResist": 5569.41,
         "critMultResist": 3043.5,
         "armorPierce": 0.801,
         "weaken": 0.915
@@ -34321,9 +34321,9 @@
         }
       ],
       "resists": {
-        "critResist": 344935.47,
-        "comboResist": 57267.72,
-        "dodgeResist": 8369.12,
+        "critResist": 229956.98,
+        "comboResist": 38178.48,
+        "dodgeResist": 5579.41,
         "critMultResist": 3043.5,
         "armorPierce": 0.801,
         "weaken": 0.915
@@ -34363,9 +34363,9 @@
         }
       ],
       "resists": {
-        "critResist": 359803.2,
-        "comboResist": 59729.98,
-        "dodgeResist": 8732.01,
+        "critResist": 239868.8,
+        "comboResist": 39819.99,
+        "dodgeResist": 5821.34,
         "critMultResist": 3173.06,
         "armorPierce": 0.801,
         "weaken": 0.915
@@ -34405,9 +34405,9 @@
         }
       ],
       "resists": {
-        "critResist": 363535.44,
-        "comboResist": 60340.76,
-        "dodgeResist": 8825.69,
+        "critResist": 242356.97,
+        "comboResist": 40227.18,
+        "dodgeResist": 5883.79,
         "critMultResist": 3201.7,
         "armorPierce": 0.801,
         "weaken": 0.915
@@ -34447,9 +34447,9 @@
         }
       ],
       "resists": {
-        "critResist": 367278.5,
-        "comboResist": 60953.12,
-        "dodgeResist": 8919.69,
+        "critResist": 244852.34,
+        "comboResist": 40635.41,
+        "dodgeResist": 5946.46,
         "critMultResist": 3230.34,
         "armorPierce": 0.802,
         "weaken": 0.915
@@ -34489,9 +34489,9 @@
         }
       ],
       "resists": {
-        "critResist": 371032.3,
-        "comboResist": 61567.07,
-        "dodgeResist": 9014.01,
+        "critResist": 247354.88,
+        "comboResist": 41044.71,
+        "dodgeResist": 6009.34,
         "critMultResist": 3258.98,
         "armorPierce": 0.802,
         "weaken": 0.915
@@ -34531,9 +34531,9 @@
         }
       ],
       "resists": {
-        "critResist": 374797.06,
-        "comboResist": 62182.61,
-        "dodgeResist": 9108.68,
+        "critResist": 249864.72,
+        "comboResist": 41455.07,
+        "dodgeResist": 6072.45,
         "critMultResist": 3287.62,
         "armorPierce": 0.802,
         "weaken": 0.915
@@ -34573,9 +34573,9 @@
         }
       ],
       "resists": {
-        "critResist": 377461.06,
-        "comboResist": 62618.07,
-        "dodgeResist": 9175.68,
+        "critResist": 251640.72,
+        "comboResist": 41745.38,
+        "dodgeResist": 6117.12,
         "critMultResist": 3307.84,
         "armorPierce": 0.802,
         "weaken": 0.915
@@ -34615,9 +34615,9 @@
         }
       ],
       "resists": {
-        "critResist": 381383,
-        "comboResist": 63259.34,
-        "dodgeResist": 9274.28,
+        "critResist": 254255.34,
+        "comboResist": 42172.89,
+        "dodgeResist": 6182.85,
         "critMultResist": 3337.73,
         "armorPierce": 0.802,
         "weaken": 0.915
@@ -34657,9 +34657,9 @@
         }
       ],
       "resists": {
-        "critResist": 385316.38,
-        "comboResist": 63902.28,
-        "dodgeResist": 9373.21,
+        "critResist": 256877.6,
+        "comboResist": 42601.52,
+        "dodgeResist": 6248.81,
         "critMultResist": 3367.61,
         "armorPierce": 0.803,
         "weaken": 0.915
@@ -34699,9 +34699,9 @@
         }
       ],
       "resists": {
-        "critResist": 389261.2,
-        "comboResist": 64546.91,
-        "dodgeResist": 9472.5,
+        "critResist": 259507.47,
+        "comboResist": 43031.27,
+        "dodgeResist": 6315,
         "critMultResist": 3397.5,
         "armorPierce": 0.803,
         "weaken": 0.915
@@ -34741,9 +34741,9 @@
         }
       ],
       "resists": {
-        "critResist": 393217.5,
-        "comboResist": 65193.2,
-        "dodgeResist": 9572.12,
+        "critResist": 262145,
+        "comboResist": 43462.13,
+        "dodgeResist": 6381.41,
         "critMultResist": 3427.39,
         "armorPierce": 0.803,
         "weaken": 0.915
@@ -34783,9 +34783,9 @@
         }
       ],
       "resists": {
-        "critResist": 396017.2,
-        "comboResist": 65650.42,
-        "dodgeResist": 9642.66,
+        "critResist": 264011.47,
+        "comboResist": 43766.95,
+        "dodgeResist": 6428.44,
         "critMultResist": 3448.48,
         "armorPierce": 0.803,
         "weaken": 0.915
@@ -34825,9 +34825,9 @@
         }
       ],
       "resists": {
-        "critResist": 400132.75,
-        "comboResist": 66322.76,
-        "dodgeResist": 9746.28,
+        "critResist": 266755.2,
+        "comboResist": 44215.17,
+        "dodgeResist": 6497.52,
         "critMultResist": 3479.62,
         "armorPierce": 0.803,
         "weaken": 0.915
@@ -34867,9 +34867,9 @@
         }
       ],
       "resists": {
-        "critResist": 404260.38,
-        "comboResist": 66996.83,
-        "dodgeResist": 9850.28,
+        "critResist": 269506.94,
+        "comboResist": 44664.55,
+        "dodgeResist": 6566.85,
         "critMultResist": 3510.75,
         "armorPierce": 0.804,
         "weaken": 0.915
@@ -34909,9 +34909,9 @@
         }
       ],
       "resists": {
-        "critResist": 408400.06,
-        "comboResist": 67672.7,
-        "dodgeResist": 9954.63,
+        "critResist": 272266.72,
+        "comboResist": 45115.14,
+        "dodgeResist": 6636.42,
         "critMultResist": 3541.88,
         "armorPierce": 0.804,
         "weaken": 0.915
@@ -34951,9 +34951,9 @@
         }
       ],
       "resists": {
-        "critResist": 412552,
-        "comboResist": 68350.32,
-        "dodgeResist": 10059.36,
+        "critResist": 275034.7,
+        "comboResist": 45566.88,
+        "dodgeResist": 6706.24,
         "critMultResist": 3573.02,
         "armorPierce": 0.804,
         "weaken": 0.915
@@ -34993,9 +34993,9 @@
         }
       ],
       "resists": {
-        "critResist": 415490.06,
-        "comboResist": 68829.72,
-        "dodgeResist": 10133.5,
+        "critResist": 276993.38,
+        "comboResist": 45886.48,
+        "dodgeResist": 6755.67,
         "critMultResist": 3594.99,
         "armorPierce": 0.804,
         "weaken": 0.915
@@ -35035,9 +35035,9 @@
         }
       ],
       "resists": {
-        "critResist": 418952.06,
-        "comboResist": 69394.8,
-        "dodgeResist": 10220.8,
+        "critResist": 279301.38,
+        "comboResist": 46263.2,
+        "dodgeResist": 6813.87,
         "critMultResist": 3621.01,
         "armorPierce": 0.804,
         "weaken": 0.915
@@ -35077,9 +35077,9 @@
         }
       ],
       "resists": {
-        "critResist": 422422.25,
-        "comboResist": 69961.06,
-        "dodgeResist": 10308.34,
+        "critResist": 281614.84,
+        "comboResist": 46640.71,
+        "dodgeResist": 6872.23,
         "critMultResist": 3647.02,
         "armorPierce": 0.805,
         "weaken": 0.915
@@ -35119,9 +35119,9 @@
         }
       ],
       "resists": {
-        "critResist": 425900.62,
-        "comboResist": 70528.53,
-        "dodgeResist": 10396.14,
+        "critResist": 283933.75,
+        "comboResist": 47019.02,
+        "dodgeResist": 6930.76,
         "critMultResist": 3673.04,
         "armorPierce": 0.805,
         "weaken": 0.915
@@ -35161,9 +35161,9 @@
         }
       ],
       "resists": {
-        "critResist": 429387.2,
-        "comboResist": 71097.2,
-        "dodgeResist": 10484.18,
+        "critResist": 286258.12,
+        "comboResist": 47398.14,
+        "dodgeResist": 6989.45,
         "critMultResist": 3699.05,
         "armorPierce": 0.805,
         "weaken": 0.915
@@ -35203,9 +35203,9 @@
         }
       ],
       "resists": {
-        "critResist": 432882.06,
-        "comboResist": 71667.08,
-        "dodgeResist": 10572.46,
+        "critResist": 288588.06,
+        "comboResist": 47778.05,
+        "dodgeResist": 7048.31,
         "critMultResist": 3725.07,
         "armorPierce": 0.805,
         "weaken": 0.915
@@ -35245,9 +35245,9 @@
         }
       ],
       "resists": {
-        "critResist": 435972.56,
-        "comboResist": 72170.91,
-        "dodgeResist": 10650.58,
+        "critResist": 290648.38,
+        "comboResist": 48113.94,
+        "dodgeResist": 7100.39,
         "critMultResist": 3748.02,
         "armorPierce": 0.805,
         "weaken": 0.915
@@ -35287,9 +35287,9 @@
         }
       ],
       "resists": {
-        "critResist": 440519.06,
-        "comboResist": 72912.29,
-        "dodgeResist": 10765.43,
+        "critResist": 293679.38,
+        "comboResist": 48608.2,
+        "dodgeResist": 7176.95,
         "critMultResist": 3781.92,
         "armorPierce": 0.805,
         "weaken": 0.915
@@ -35329,9 +35329,9 @@
         }
       ],
       "resists": {
-        "critResist": 445079.06,
-        "comboResist": 73655.64,
-        "dodgeResist": 10880.67,
+        "critResist": 296719.38,
+        "comboResist": 49103.76,
+        "dodgeResist": 7253.78,
         "critMultResist": 3815.83,
         "armorPierce": 0.806,
         "weaken": 0.915
@@ -35371,9 +35371,9 @@
         }
       ],
       "resists": {
-        "critResist": 449652.62,
-        "comboResist": 74400.97,
-        "dodgeResist": 10996.32,
+        "critResist": 299768.44,
+        "comboResist": 49600.65,
+        "dodgeResist": 7330.88,
         "critMultResist": 3849.73,
         "armorPierce": 0.806,
         "weaken": 0.915
@@ -35413,9 +35413,9 @@
         }
       ],
       "resists": {
-        "critResist": 454239.75,
-        "comboResist": 75148.29,
-        "dodgeResist": 11112.39,
+        "critResist": 302826.5,
+        "comboResist": 50098.86,
+        "dodgeResist": 7408.26,
         "critMultResist": 3883.64,
         "armorPierce": 0.806,
         "weaken": 0.915
@@ -35455,9 +35455,9 @@
         }
       ],
       "resists": {
-        "critResist": 457485.94,
-        "comboResist": 75677.01,
-        "dodgeResist": 11194.56,
+        "critResist": 304990.62,
+        "comboResist": 50451.34,
+        "dodgeResist": 7463.04,
         "critMultResist": 3907.57,
         "armorPierce": 0.806,
         "weaken": 0.915
@@ -35497,9 +35497,9 @@
         }
       ],
       "resists": {
-        "critResist": 461299.8,
-        "comboResist": 76298.36,
-        "dodgeResist": 11291.04,
+        "critResist": 307533.22,
+        "comboResist": 50865.57,
+        "dodgeResist": 7527.36,
         "critMultResist": 3935.8,
         "armorPierce": 0.806,
         "weaken": 0.915
@@ -35539,9 +35539,9 @@
         }
       ],
       "resists": {
-        "critResist": 465122.8,
-        "comboResist": 76921.04,
-        "dodgeResist": 11387.8,
+        "critResist": 310081.88,
+        "comboResist": 51280.7,
+        "dodgeResist": 7591.87,
         "critMultResist": 3964.03,
         "armorPierce": 0.807,
         "weaken": 0.915
@@ -35581,9 +35581,9 @@
         }
       ],
       "resists": {
-        "critResist": 468955,
-        "comboResist": 77545.05,
-        "dodgeResist": 11484.84,
+        "critResist": 312636.7,
+        "comboResist": 51696.7,
+        "dodgeResist": 7656.56,
         "critMultResist": 3992.26,
         "armorPierce": 0.807,
         "weaken": 0.915
@@ -35623,9 +35623,9 @@
         }
       ],
       "resists": {
-        "critResist": 472796.25,
-        "comboResist": 78170.38,
-        "dodgeResist": 11582.16,
+        "critResist": 315197.5,
+        "comboResist": 52113.59,
+        "dodgeResist": 7721.44,
         "critMultResist": 4020.49,
         "armorPierce": 0.807,
         "weaken": 0.915
@@ -35665,9 +35665,9 @@
         }
       ],
       "resists": {
-        "critResist": 476646.75,
-        "comboResist": 78797.07,
-        "dodgeResist": 11679.75,
+        "critResist": 317764.5,
+        "comboResist": 52531.38,
+        "dodgeResist": 7786.5,
         "critMultResist": 4048.72,
         "armorPierce": 0.807,
         "weaken": 0.915
@@ -35707,9 +35707,9 @@
         }
       ],
       "resists": {
-        "critResist": 480051.88,
-        "comboResist": 79351.14,
-        "dodgeResist": 11766.09,
+        "critResist": 320034.6,
+        "comboResist": 52900.76,
+        "dodgeResist": 7844.06,
         "critMultResist": 4073.63,
         "armorPierce": 0.807,
         "weaken": 0.915
@@ -35749,9 +35749,9 @@
         }
       ],
       "resists": {
-        "critResist": 484060.03,
-        "comboResist": 80003.52,
-        "dodgeResist": 11867.64,
+        "critResist": 322706.7,
+        "comboResist": 53335.68,
+        "dodgeResist": 7911.76,
         "critMultResist": 4103.08,
         "armorPierce": 0.808,
         "weaken": 0.915
@@ -35791,9 +35791,9 @@
         }
       ],
       "resists": {
-        "critResist": 488077.8,
-        "comboResist": 80657.33,
-        "dodgeResist": 11969.49,
+        "critResist": 325385.22,
+        "comboResist": 53771.55,
+        "dodgeResist": 7979.66,
         "critMultResist": 4132.53,
         "armorPierce": 0.808,
         "weaken": 0.915
@@ -35833,9 +35833,9 @@
         }
       ],
       "resists": {
-        "critResist": 492105.28,
-        "comboResist": 81312.53,
-        "dodgeResist": 12071.64,
+        "critResist": 328070.2,
+        "comboResist": 54208.36,
+        "dodgeResist": 8047.76,
         "critMultResist": 4161.98,
         "armorPierce": 0.808,
         "weaken": 0.915
@@ -35875,9 +35875,9 @@
         }
       ],
       "resists": {
-        "critResist": 496142.44,
-        "comboResist": 81969.13,
-        "dodgeResist": 12174.07,
+        "critResist": 330761.62,
+        "comboResist": 54646.09,
+        "dodgeResist": 8116.05,
         "critMultResist": 4191.43,
         "armorPierce": 0.808,
         "weaken": 0.915
@@ -35917,9 +35917,9 @@
         }
       ],
       "resists": {
-        "critResist": 500189.34,
-        "comboResist": 82627.16,
-        "dodgeResist": 12276.81,
+        "critResist": 333459.56,
+        "comboResist": 55084.77,
+        "dodgeResist": 8184.54,
         "critMultResist": 4220.88,
         "armorPierce": 0.808,
         "weaken": 0.915
@@ -35959,9 +35959,9 @@
         }
       ],
       "resists": {
-        "critResist": 503768.2,
-        "comboResist": 83208.95,
-        "dodgeResist": 12367.7,
+        "critResist": 335845.47,
+        "comboResist": 55472.64,
+        "dodgeResist": 8245.13,
         "critMultResist": 4246.87,
         "armorPierce": 0.808,
         "weaken": 0.915
@@ -36001,9 +36001,9 @@
         }
       ],
       "resists": {
-        "critResist": 509028,
-        "comboResist": 84064.2,
-        "dodgeResist": 12501.2,
+        "critResist": 339352,
+        "comboResist": 56042.8,
+        "dodgeResist": 8334.13,
         "critMultResist": 4285.2,
         "armorPierce": 0.809,
         "weaken": 0.915
@@ -36043,9 +36043,9 @@
         }
       ],
       "resists": {
-        "critResist": 514303.7,
-        "comboResist": 84921.78,
-        "dodgeResist": 12635.16,
+        "critResist": 342869.12,
+        "comboResist": 56614.52,
+        "dodgeResist": 8423.44,
         "critMultResist": 4323.54,
         "armorPierce": 0.809,
         "weaken": 0.915
@@ -36085,9 +36085,9 @@
         }
       ],
       "resists": {
-        "critResist": 519595.38,
-        "comboResist": 85781.66,
-        "dodgeResist": 12769.63,
+        "critResist": 346396.94,
+        "comboResist": 57187.77,
+        "dodgeResist": 8513.09,
         "critMultResist": 4361.87,
         "armorPierce": 0.809,
         "weaken": 0.915
@@ -36127,9 +36127,9 @@
         }
       ],
       "resists": {
-        "critResist": 524903.1,
-        "comboResist": 86643.88,
-        "dodgeResist": 12904.57,
+        "critResist": 349935.44,
+        "comboResist": 57762.59,
+        "dodgeResist": 8603.05,
         "critMultResist": 4400.21,
         "armorPierce": 0.809,
         "weaken": 0.915
@@ -36169,9 +36169,9 @@
         }
       ],
       "resists": {
-        "critResist": 528659.44,
-        "comboResist": 87253.91,
-        "dodgeResist": 13000.13,
+        "critResist": 352439.62,
+        "comboResist": 58169.27,
+        "dodgeResist": 8666.75,
         "critMultResist": 4427.27,
         "armorPierce": 0.809,
         "weaken": 0.915
@@ -36211,9 +36211,9 @@
         }
       ],
       "resists": {
-        "critResist": 536035.6,
-        "comboResist": 88452.11,
-        "dodgeResist": 13187.65,
+        "critResist": 357357.1,
+        "comboResist": 58968.07,
+        "dodgeResist": 8791.77,
         "critMultResist": 4480.6,
         "armorPierce": 0.81,
         "weaken": 0.915
@@ -36253,9 +36253,9 @@
         }
       ],
       "resists": {
-        "critResist": 543441.9,
-        "comboResist": 89654.63,
-        "dodgeResist": 13376.08,
+        "critResist": 362294.6,
+        "comboResist": 59769.76,
+        "dodgeResist": 8917.39,
         "critMultResist": 4533.93,
         "armorPierce": 0.81,
         "weaken": 0.915
@@ -36295,9 +36295,9 @@
         }
       ],
       "resists": {
-        "critResist": 550878.25,
-        "comboResist": 90861.54,
-        "dodgeResist": 13565.43,
+        "critResist": 367252.2,
+        "comboResist": 60574.36,
+        "dodgeResist": 9043.62,
         "critMultResist": 4587.26,
         "armorPierce": 0.81,
         "weaken": 0.915
@@ -36337,9 +36337,9 @@
         }
       ],
       "resists": {
-        "critResist": 554827.44,
-        "comboResist": 91502.25,
-        "dodgeResist": 13666.05,
+        "critResist": 369884.97,
+        "comboResist": 61001.5,
+        "dodgeResist": 9110.7,
         "critMultResist": 4615.5,
         "armorPierce": 0.811,
         "weaken": 0.915
@@ -36379,9 +36379,9 @@
         }
       ],
       "resists": {
-        "critResist": 559469.75,
-        "comboResist": 92255.67,
-        "dodgeResist": 13784.24,
+        "critResist": 372979.84,
+        "comboResist": 61503.78,
+        "dodgeResist": 9189.49,
         "critMultResist": 4648.83,
         "armorPierce": 0.811,
         "weaken": 0.915
@@ -36421,9 +36421,9 @@
         }
       ],
       "resists": {
-        "critResist": 564123.56,
-        "comboResist": 93010.74,
-        "dodgeResist": 13902.78,
+        "critResist": 376082.38,
+        "comboResist": 62007.16,
+        "dodgeResist": 9268.52,
         "critMultResist": 4682.15,
         "armorPierce": 0.811,
         "weaken": 0.915
@@ -36463,9 +36463,9 @@
         }
       ],
       "resists": {
-        "critResist": 568788.8,
-        "comboResist": 93767.46,
-        "dodgeResist": 14021.67,
+        "critResist": 379192.56,
+        "comboResist": 62511.64,
+        "dodgeResist": 9347.78,
         "critMultResist": 4715.48,
         "armorPierce": 0.811,
         "weaken": 0.915
@@ -36505,9 +36505,9 @@
         }
       ],
       "resists": {
-        "critResist": 573465.44,
-        "comboResist": 94525.84,
-        "dodgeResist": 14140.9,
+        "critResist": 382310.3,
+        "comboResist": 63017.23,
+        "dodgeResist": 9427.27,
         "critMultResist": 4748.81,
         "armorPierce": 0.811,
         "weaken": 0.915
@@ -36547,9 +36547,9 @@
         }
       ],
       "resists": {
-        "critResist": 578153.6,
-        "comboResist": 95285.89,
-        "dodgeResist": 14260.49,
+        "critResist": 385435.75,
+        "comboResist": 63523.93,
+        "dodgeResist": 9506.99,
         "critMultResist": 4782.14,
         "armorPierce": 0.811,
         "weaken": 0.915
@@ -36589,9 +36589,9 @@
         }
       ],
       "resists": {
-        "critResist": 582299.8,
-        "comboResist": 95957.89,
-        "dodgeResist": 14366.29,
+        "critResist": 388199.88,
+        "comboResist": 63971.93,
+        "dodgeResist": 9577.53,
         "critMultResist": 4811.55,
         "armorPierce": 0.812,
         "weaken": 0.915
@@ -36631,9 +36631,9 @@
         }
       ],
       "resists": {
-        "critResist": 587180.4,
-        "comboResist": 96749.19,
-        "dodgeResist": 14490.74,
+        "critResist": 391453.6,
+        "comboResist": 64499.46,
+        "dodgeResist": 9660.49,
         "critMultResist": 4846.31,
         "armorPierce": 0.812,
         "weaken": 0.915
@@ -36673,9 +36673,9 @@
         }
       ],
       "resists": {
-        "critResist": 592073,
-        "comboResist": 97542.21,
-        "dodgeResist": 14615.56,
+        "critResist": 394715.34,
+        "comboResist": 65028.14,
+        "dodgeResist": 9743.71,
         "critMultResist": 4881.08,
         "armorPierce": 0.812,
         "weaken": 0.915
@@ -36715,9 +36715,9 @@
         }
       ],
       "resists": {
-        "critResist": 596977.7,
-        "comboResist": 98336.98,
-        "dodgeResist": 14740.75,
+        "critResist": 397985.12,
+        "comboResist": 65557.98,
+        "dodgeResist": 9827.17,
         "critMultResist": 4915.85,
         "armorPierce": 0.812,
         "weaken": 0.915
@@ -36757,9 +36757,9 @@
         }
       ],
       "resists": {
-        "critResist": 601894.56,
-        "comboResist": 99133.53,
-        "dodgeResist": 14866.3,
+        "critResist": 401263.06,
+        "comboResist": 66089.02,
+        "dodgeResist": 9910.87,
         "critMultResist": 4950.62,
         "armorPierce": 0.812,
         "weaken": 0.915
@@ -36799,9 +36799,9 @@
         }
       ],
       "resists": {
-        "critResist": 606823.5,
-        "comboResist": 99931.8,
-        "dodgeResist": 14992.23,
+        "critResist": 404549,
+        "comboResist": 66621.2,
+        "dodgeResist": 9994.82,
         "critMultResist": 4985.39,
         "armorPierce": 0.812,
         "weaken": 0.915
@@ -36841,9 +36841,9 @@
         }
       ],
       "resists": {
-        "critResist": 611182.75,
-        "comboResist": 100637.64,
-        "dodgeResist": 15103.63,
+        "critResist": 407455.2,
+        "comboResist": 67091.77,
+        "dodgeResist": 10069.09,
         "critMultResist": 5016.07,
         "armorPierce": 0.813,
         "weaken": 0.915
@@ -36883,9 +36883,9 @@
         }
       ],
       "resists": {
-        "critResist": 617606.2,
-        "comboResist": 101678.02,
-        "dodgeResist": 15267.69,
+        "critResist": 411737.47,
+        "comboResist": 67785.35,
+        "dodgeResist": 10178.46,
         "critMultResist": 5061.47,
         "armorPierce": 0.813,
         "weaken": 0.915
@@ -36925,9 +36925,9 @@
         }
       ],
       "resists": {
-        "critResist": 624049.56,
-        "comboResist": 102721.27,
-        "dodgeResist": 15432.36,
+        "critResist": 416033.06,
+        "comboResist": 68480.85,
+        "dodgeResist": 10288.24,
         "critMultResist": 5106.87,
         "armorPierce": 0.813,
         "weaken": 0.915
@@ -36967,9 +36967,9 @@
         }
       ],
       "resists": {
-        "critResist": 630513,
-        "comboResist": 103767.42,
-        "dodgeResist": 15597.63,
+        "critResist": 420342,
+        "comboResist": 69178.28,
+        "dodgeResist": 10398.42,
         "critMultResist": 5152.27,
         "armorPierce": 0.813,
         "weaken": 0.915
@@ -37009,9 +37009,9 @@
         }
       ],
       "resists": {
-        "critResist": 636996.6,
-        "comboResist": 104816.47,
-        "dodgeResist": 15763.51,
+        "critResist": 424664.44,
+        "comboResist": 69877.65,
+        "dodgeResist": 10509.01,
         "critMultResist": 5197.67,
         "armorPierce": 0.814,
         "weaken": 0.915
@@ -37051,9 +37051,9 @@
         }
       ],
       "resists": {
-        "critResist": 641585.5,
-        "comboResist": 105558.72,
-        "dodgeResist": 15880.98,
+        "critResist": 427723.7,
+        "comboResist": 70372.48,
+        "dodgeResist": 10587.32,
         "critMultResist": 5229.72,
         "armorPierce": 0.814,
         "weaken": 0.915
@@ -37093,9 +37093,9 @@
         }
       ],
       "resists": {
-        "critResist": 646971.5,
-        "comboResist": 106430.19,
-        "dodgeResist": 16018.77,
+        "critResist": 431314.34,
+        "comboResist": 70953.46,
+        "dodgeResist": 10679.18,
         "critMultResist": 5267.48,
         "armorPierce": 0.814,
         "weaken": 0.915
@@ -37135,9 +37135,9 @@
         }
       ],
       "resists": {
-        "critResist": 652371.1,
-        "comboResist": 107303.59,
-        "dodgeResist": 16156.96,
+        "critResist": 434914.1,
+        "comboResist": 71535.73,
+        "dodgeResist": 10771.31,
         "critMultResist": 5305.24,
         "armorPierce": 0.814,
         "weaken": 0.915
@@ -37177,9 +37177,9 @@
         }
       ],
       "resists": {
-        "critResist": 657784.1,
-        "comboResist": 108178.95,
-        "dodgeResist": 16295.56,
+        "critResist": 438522.75,
+        "comboResist": 72119.3,
+        "dodgeResist": 10863.71,
         "critMultResist": 5343,
         "armorPierce": 0.814,
         "weaken": 0.915
@@ -37219,9 +37219,9 @@
         }
       ],
       "resists": {
-        "critResist": 663210.9,
-        "comboResist": 109056.23,
-        "dodgeResist": 16434.58,
+        "critResist": 442140.6,
+        "comboResist": 72704.16,
+        "dodgeResist": 10956.39,
         "critMultResist": 5380.76,
         "armorPierce": 0.814,
         "weaken": 0.915
@@ -37261,9 +37261,9 @@
         }
       ],
       "resists": {
-        "critResist": 668651.1,
-        "comboResist": 109935.49,
-        "dodgeResist": 16574.01,
+        "critResist": 445767.44,
+        "comboResist": 73290.33,
+        "dodgeResist": 11049.34,
         "critMultResist": 5418.52,
         "armorPierce": 0.815,
         "weaken": 0.915
@@ -37303,9 +37303,9 @@
         }
       ],
       "resists": {
-        "critResist": 673462.75,
-        "comboResist": 110712.95,
-        "dodgeResist": 16697.38,
+        "critResist": 448975.2,
+        "comboResist": 73808.64,
+        "dodgeResist": 11131.59,
         "critMultResist": 5451.84,
         "armorPierce": 0.815,
         "weaken": 0.915
@@ -37345,9 +37345,9 @@
         }
       ],
       "resists": {
-        "critResist": 682916.4,
-        "comboResist": 112240.81,
-        "dodgeResist": 16939.63,
+        "critResist": 455277.6,
+        "comboResist": 74827.21,
+        "dodgeResist": 11293.09,
         "critMultResist": 5517.54,
         "armorPierce": 0.815,
         "weaken": 0.915
@@ -37387,9 +37387,9 @@
         }
       ],
       "resists": {
-        "critResist": 692409.5,
-        "comboResist": 113774.39,
-        "dodgeResist": 17183.08,
+        "critResist": 461606.34,
+        "comboResist": 75849.59,
+        "dodgeResist": 11455.39,
         "critMultResist": 5583.25,
         "armorPierce": 0.815,
         "weaken": 0.915
@@ -37429,9 +37429,9 @@
         }
       ],
       "resists": {
-        "critResist": 701942.9,
-        "comboResist": 115313.7,
-        "dodgeResist": 17427.75,
+        "critResist": 467961.94,
+        "comboResist": 76875.8,
+        "dodgeResist": 11618.5,
         "critMultResist": 5648.95,
         "armorPierce": 0.816,
         "weaken": 0.915
@@ -37471,9 +37471,9 @@
         }
       ],
       "resists": {
-        "critResist": 707006.25,
-        "comboResist": 116130.98,
-        "dodgeResist": 17557.79,
+        "critResist": 471337.5,
+        "comboResist": 77420.66,
+        "dodgeResist": 11705.19,
         "critMultResist": 5683.74,
         "armorPierce": 0.816,
         "weaken": 0.915
@@ -37513,9 +37513,9 @@
         }
       ],
       "resists": {
-        "critResist": 712961.2,
-        "comboResist": 117092.47,
-        "dodgeResist": 17710.61,
+        "critResist": 475307.47,
+        "comboResist": 78061.65,
+        "dodgeResist": 11807.07,
         "critMultResist": 5724.82,
         "armorPierce": 0.816,
         "weaken": 0.915
@@ -37555,9 +37555,9 @@
         }
       ],
       "resists": {
-        "critResist": 718931.2,
-        "comboResist": 118056.14,
-        "dodgeResist": 17863.88,
+        "critResist": 479287.47,
+        "comboResist": 78704.09,
+        "dodgeResist": 11909.25,
         "critMultResist": 5765.91,
         "armorPierce": 0.816,
         "weaken": 0.915
@@ -37597,9 +37597,9 @@
         }
       ],
       "resists": {
-        "critResist": 724916.44,
-        "comboResist": 119021.97,
-        "dodgeResist": 18017.61,
+        "critResist": 483277.62,
+        "comboResist": 79347.98,
+        "dodgeResist": 12011.74,
         "critMultResist": 5806.99,
         "armorPierce": 0.816,
         "weaken": 0.915
@@ -37639,9 +37639,9 @@
         }
       ],
       "resists": {
-        "critResist": 730916.94,
-        "comboResist": 119989.99,
-        "dodgeResist": 18171.81,
+        "critResist": 487277.97,
+        "comboResist": 79993.33,
+        "dodgeResist": 12114.54,
         "critMultResist": 5848.08,
         "armorPierce": 0.817,
         "weaken": 0.915
@@ -37681,9 +37681,9 @@
         }
       ],
       "resists": {
-        "critResist": 736932.6,
-        "comboResist": 120960.2,
-        "dodgeResist": 18326.48,
+        "critResist": 491288.44,
+        "comboResist": 80640.14,
+        "dodgeResist": 12217.65,
         "critMultResist": 5889.16,
         "armorPierce": 0.817,
         "weaken": 0.915
@@ -37723,9 +37723,9 @@
         }
       ],
       "resists": {
-        "critResist": 742253.44,
-        "comboResist": 121818.07,
-        "dodgeResist": 18463.33,
+        "critResist": 494835.62,
+        "comboResist": 81212.05,
+        "dodgeResist": 12308.89,
         "critMultResist": 5925.41,
         "armorPierce": 0.817,
         "weaken": 0.915
@@ -37765,9 +37765,9 @@
         }
       ],
       "resists": {
-        "critResist": 750084.1,
-        "comboResist": 123081.05,
-        "dodgeResist": 18664.62,
+        "critResist": 500056.1,
+        "comboResist": 82054.03,
+        "dodgeResist": 12443.08,
         "critMultResist": 5978.98,
         "armorPierce": 0.817,
         "weaken": 0.915
@@ -37807,9 +37807,9 @@
         }
       ],
       "resists": {
-        "critResist": 757939.94,
-        "comboResist": 124347.59,
-        "dodgeResist": 18866.65,
+        "critResist": 505293.3,
+        "comboResist": 82898.4,
+        "dodgeResist": 12577.77,
         "critMultResist": 6032.56,
         "armorPierce": 0.817,
         "weaken": 0.915
@@ -37849,9 +37849,9 @@
         }
       ],
       "resists": {
-        "critResist": 765820.8,
-        "comboResist": 125617.76,
-        "dodgeResist": 19069.47,
+        "critResist": 510547.22,
+        "comboResist": 83745.17,
+        "dodgeResist": 12712.98,
         "critMultResist": 6086.13,
         "armorPierce": 0.818,
         "weaken": 0.915
@@ -37891,9 +37891,9 @@
         }
       ],
       "resists": {
-        "critResist": 773727.1,
-        "comboResist": 126891.52,
-        "dodgeResist": 19273.04,
+        "critResist": 515818.1,
+        "comboResist": 84594.35,
+        "dodgeResist": 12848.69,
         "critMultResist": 6139.7,
         "armorPierce": 0.818,
         "weaken": 0.915
@@ -37933,9 +37933,9 @@
         }
       ],
       "resists": {
-        "critResist": 779323.25,
-        "comboResist": 127792.83,
-        "dodgeResist": 19417.2,
+        "critResist": 519548.84,
+        "comboResist": 85195.22,
+        "dodgeResist": 12944.8,
         "critMultResist": 6177.52,
         "armorPierce": 0.818,
         "weaken": 0.915
@@ -37975,9 +37975,9 @@
         }
       ],
       "resists": {
-        "critResist": 785900.5,
-        "comboResist": 128852.48,
-        "dodgeResist": 19586.54,
+        "critResist": 523933.7,
+        "comboResist": 85901.66,
+        "dodgeResist": 13057.69,
         "critMultResist": 6222.15,
         "armorPierce": 0.818,
         "weaken": 0.915
@@ -38017,9 +38017,9 @@
         }
       ],
       "resists": {
-        "critResist": 792494.75,
-        "comboResist": 129914.56,
-        "dodgeResist": 19756.38,
+        "critResist": 528329.9,
+        "comboResist": 86609.71,
+        "dodgeResist": 13170.92,
         "critMultResist": 6266.78,
         "armorPierce": 0.818,
         "weaken": 0.915
@@ -38059,9 +38059,9 @@
         }
       ],
       "resists": {
-        "critResist": 799105.9,
-        "comboResist": 130979.09,
-        "dodgeResist": 19926.73,
+        "critResist": 532737.25,
+        "comboResist": 87319.4,
+        "dodgeResist": 13284.49,
         "critMultResist": 6311.41,
         "armorPierce": 0.818,
         "weaken": 0.915
@@ -38101,9 +38101,9 @@
         }
       ],
       "resists": {
-        "critResist": 805734.1,
-        "comboResist": 132046.03,
-        "dodgeResist": 20097.62,
+        "critResist": 537156.1,
+        "comboResist": 88030.69,
+        "dodgeResist": 13398.41,
         "critMultResist": 6356.04,
         "armorPierce": 0.819,
         "weaken": 0.915
@@ -38143,9 +38143,9 @@
         }
       ],
       "resists": {
-        "critResist": 812379.56,
-        "comboResist": 133115.42,
-        "dodgeResist": 20269,
+        "critResist": 541586.4,
+        "comboResist": 88743.62,
+        "dodgeResist": 13512.67,
         "critMultResist": 6400.67,
         "armorPierce": 0.819,
         "weaken": 0.915
@@ -38185,9 +38185,9 @@
         }
       ],
       "resists": {
-        "critResist": 818257.5,
-        "comboResist": 134061.03,
-        "dodgeResist": 20420.67,
+        "critResist": 545505,
+        "comboResist": 89374.02,
+        "dodgeResist": 13613.78,
         "critMultResist": 6440.05,
         "armorPierce": 0.819,
         "weaken": 0.915
@@ -38227,9 +38227,9 @@
         }
       ],
       "resists": {
-        "critResist": 826901.25,
-        "comboResist": 135452.05,
-        "dodgeResist": 20643.57,
+        "critResist": 551267.5,
+        "comboResist": 90301.37,
+        "dodgeResist": 13762.38,
         "critMultResist": 6498.19,
         "armorPierce": 0.819,
         "weaken": 0.915
@@ -38269,9 +38269,9 @@
         }
       ],
       "resists": {
-        "critResist": 835573.3,
-        "comboResist": 136847.1,
-        "dodgeResist": 20867.32,
+        "critResist": 557048.9,
+        "comboResist": 91231.4,
+        "dodgeResist": 13911.55,
         "critMultResist": 6556.34,
         "armorPierce": 0.819,
         "weaken": 0.915
@@ -38311,9 +38311,9 @@
         }
       ],
       "resists": {
-        "critResist": 844273.6,
-        "comboResist": 138246.14,
-        "dodgeResist": 21091.94,
+        "critResist": 562849.1,
+        "comboResist": 92164.09,
+        "dodgeResist": 14061.29,
         "critMultResist": 6614.48,
         "armorPierce": 0.82,
         "weaken": 0.915
@@ -38353,9 +38353,9 @@
         }
       ],
       "resists": {
-        "critResist": 853002,
-        "comboResist": 139649.19,
-        "dodgeResist": 21317.4,
+        "critResist": 568668,
+        "comboResist": 93099.46,
+        "dodgeResist": 14211.6,
         "critMultResist": 6672.62,
         "armorPierce": 0.82,
         "weaken": 0.915
@@ -38395,9 +38395,9 @@
         }
       ],
       "resists": {
-        "critResist": 859180.5,
-        "comboResist": 140642.02,
-        "dodgeResist": 21477.09,
+        "critResist": 572787,
+        "comboResist": 93761.34,
+        "dodgeResist": 14318.06,
         "critMultResist": 6713.67,
         "armorPierce": 0.82,
         "weaken": 0.915
@@ -38437,9 +38437,9 @@
         }
       ],
       "resists": {
-        "critResist": 859180.5,
-        "comboResist": 140642.02,
-        "dodgeResist": 21477.09,
+        "critResist": 572787,
+        "comboResist": 93761.34,
+        "dodgeResist": 14318.06,
         "critMultResist": 6713.67,
         "armorPierce": 0.82,
         "weaken": 0.915
@@ -38479,9 +38479,9 @@
         }
       ],
       "resists": {
-        "critResist": 859180.5,
-        "comboResist": 140642.02,
-        "dodgeResist": 21477.09,
+        "critResist": 572787,
+        "comboResist": 93761.34,
+        "dodgeResist": 14318.06,
         "critMultResist": 6713.67,
         "armorPierce": 0.82,
         "weaken": 0.915
@@ -38521,9 +38521,9 @@
         }
       ],
       "resists": {
-        "critResist": 859180.5,
-        "comboResist": 140642.02,
-        "dodgeResist": 21477.09,
+        "critResist": 572787,
+        "comboResist": 93761.34,
+        "dodgeResist": 14318.06,
         "critMultResist": 6713.67,
         "armorPierce": 0.82,
         "weaken": 0.915
