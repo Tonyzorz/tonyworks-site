@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T08:35:49Z",
+  "generatedAt": "2026-09-05T16:21:00Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "v3.0.3",
   "release": {
@@ -25386,7 +25386,7 @@
         {
           "itemId": "MZ01_Weapon_H",
           "itemName": "Threshold Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25428,7 +25428,7 @@
         {
           "itemId": "MZ01_Armor_H",
           "itemName": "Threshold Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25470,7 +25470,7 @@
         {
           "itemId": "MZ01_Helmet_H",
           "itemName": "Threshold Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25512,7 +25512,7 @@
         {
           "itemId": "MZ01_Shoes_H",
           "itemName": "Threshold Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25554,7 +25554,7 @@
         {
           "itemId": "MZ02_Weapon_H",
           "itemName": "Falsedoor Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25596,7 +25596,7 @@
         {
           "itemId": "MZ02_Armor_H",
           "itemName": "Falsedoor Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25638,7 +25638,7 @@
         {
           "itemId": "MZ02_Helmet_H",
           "itemName": "Falsedoor Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25680,7 +25680,7 @@
         {
           "itemId": "MZ02_Shoes_H",
           "itemName": "Falsedoor Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25722,7 +25722,7 @@
         {
           "itemId": "MZ02_Accessory_H",
           "itemName": "Falsedoor Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25764,7 +25764,7 @@
         {
           "itemId": "MZ03_Weapon_H",
           "itemName": "Mirrorbend Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25806,7 +25806,7 @@
         {
           "itemId": "MZ03_Armor_H",
           "itemName": "Mirrorbend Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25848,7 +25848,7 @@
         {
           "itemId": "MZ03_Helmet_H",
           "itemName": "Mirrorbend Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25890,7 +25890,7 @@
         {
           "itemId": "MZ03_Shoes_H",
           "itemName": "Mirrorbend Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25932,7 +25932,7 @@
         {
           "itemId": "MZ03_Accessory_H",
           "itemName": "Mirrorbend Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -25974,7 +25974,7 @@
         {
           "itemId": "MZ04_Weapon_H",
           "itemName": "Stairfall Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26016,7 +26016,7 @@
         {
           "itemId": "MZ04_Armor_H",
           "itemName": "Stairfall Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26058,7 +26058,7 @@
         {
           "itemId": "MZ04_Helmet_H",
           "itemName": "Stairfall Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26100,7 +26100,7 @@
         {
           "itemId": "MZ04_Shoes_H",
           "itemName": "Stairfall Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26142,7 +26142,7 @@
         {
           "itemId": "MZ04_Accessory_H",
           "itemName": "Stairfall Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26184,7 +26184,7 @@
         {
           "itemId": "MZ05_Weapon_H",
           "itemName": "Rotunda Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26226,7 +26226,7 @@
         {
           "itemId": "MZ05_Armor_H",
           "itemName": "Rotunda Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26268,7 +26268,7 @@
         {
           "itemId": "MZ05_Helmet_H",
           "itemName": "Rotunda Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26310,7 +26310,7 @@
         {
           "itemId": "MZ05_Shoes_H",
           "itemName": "Rotunda Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26352,7 +26352,7 @@
         {
           "itemId": "MZ05_Accessory_H",
           "itemName": "Rotunda Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26394,7 +26394,7 @@
         {
           "itemId": "MZ05_Weapon_H",
           "itemName": "Rotunda Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26436,7 +26436,7 @@
         {
           "itemId": "MZ06_Weapon_H",
           "itemName": "Gallery Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26478,7 +26478,7 @@
         {
           "itemId": "MZ06_Armor_H",
           "itemName": "Gallery Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26520,7 +26520,7 @@
         {
           "itemId": "MZ06_Helmet_H",
           "itemName": "Gallery Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26562,7 +26562,7 @@
         {
           "itemId": "MZ06_Shoes_H",
           "itemName": "Gallery Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26604,7 +26604,7 @@
         {
           "itemId": "MZ06_Accessory_H",
           "itemName": "Gallery Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26646,7 +26646,7 @@
         {
           "itemId": "MZ07_Weapon_H",
           "itemName": "First Gate Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26688,7 +26688,7 @@
         {
           "itemId": "MZ07_Armor_H",
           "itemName": "First Gate Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26730,7 +26730,7 @@
         {
           "itemId": "MZ07_Helmet_H",
           "itemName": "First Gate Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26772,7 +26772,7 @@
         {
           "itemId": "MZ08_Weapon_H",
           "itemName": "Second Gate Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26814,7 +26814,7 @@
         {
           "itemId": "MZ08_Armor_H",
           "itemName": "Second Gate Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26856,7 +26856,7 @@
         {
           "itemId": "MZ08_Helmet_H",
           "itemName": "Second Gate Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26898,7 +26898,7 @@
         {
           "itemId": "MZ09_Weapon_H",
           "itemName": "Third Gate Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26940,7 +26940,7 @@
         {
           "itemId": "MZ09_Armor_H",
           "itemName": "Third Gate Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -26982,7 +26982,7 @@
         {
           "itemId": "MZ09_Helmet_H",
           "itemName": "Third Gate Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27024,7 +27024,7 @@
         {
           "itemId": "MZ10_Weapon_H",
           "itemName": "Fracture Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27066,7 +27066,7 @@
         {
           "itemId": "MZ10_Armor_H",
           "itemName": "Fracture Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27108,7 +27108,7 @@
         {
           "itemId": "MZ10_Helmet_H",
           "itemName": "Fracture Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27150,7 +27150,7 @@
         {
           "itemId": "MZ10_Shoes_H",
           "itemName": "Fracture Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27192,7 +27192,7 @@
         {
           "itemId": "MZ11_Weapon_H",
           "itemName": "Twinned Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27234,7 +27234,7 @@
         {
           "itemId": "MZ11_Armor_H",
           "itemName": "Twinned Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27276,7 +27276,7 @@
         {
           "itemId": "MZ11_Helmet_H",
           "itemName": "Twinned Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27318,7 +27318,7 @@
         {
           "itemId": "MZ11_Shoes_H",
           "itemName": "Twinned Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27360,7 +27360,7 @@
         {
           "itemId": "MZ12_Weapon_H",
           "itemName": "Glassmaw Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27402,7 +27402,7 @@
         {
           "itemId": "MZ12_Armor_H",
           "itemName": "Glassmaw Plate [H]",
-          "chance": 1.5
+          "chance": 1
         }
       ],
       "resists": {
@@ -27444,7 +27444,7 @@
         {
           "itemId": "MZ12_Helmet_H",
           "itemName": "Glassmaw Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -27486,7 +27486,7 @@
         {
           "itemId": "MZ12_Shoes_H",
           "itemName": "Glassmaw Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29339,7 +29339,7 @@
         {
           "itemId": "IC01_Weapon_H",
           "itemName": "Glacier Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29381,7 +29381,7 @@
         {
           "itemId": "IC01_Armor_H",
           "itemName": "Glacier Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29423,7 +29423,7 @@
         {
           "itemId": "IC01_Helmet_H",
           "itemName": "Glacier Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29465,7 +29465,7 @@
         {
           "itemId": "IC01_Shoes_H",
           "itemName": "Glacier Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29507,7 +29507,7 @@
         {
           "itemId": "IC01_Accessory_H",
           "itemName": "Glacier Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29549,7 +29549,7 @@
         {
           "itemId": "IC02_Weapon_H",
           "itemName": "Lakebound Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29591,7 +29591,7 @@
         {
           "itemId": "IC02_Armor_H",
           "itemName": "Lakebound Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29633,7 +29633,7 @@
         {
           "itemId": "IC02_Helmet_H",
           "itemName": "Lakebound Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29675,7 +29675,7 @@
         {
           "itemId": "IC02_Shoes_H",
           "itemName": "Lakebound Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29717,7 +29717,7 @@
         {
           "itemId": "IC02_Accessory_H",
           "itemName": "Lakebound Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29759,7 +29759,7 @@
         {
           "itemId": "IC03_Weapon_H",
           "itemName": "Icefall Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29801,7 +29801,7 @@
         {
           "itemId": "IC03_Armor_H",
           "itemName": "Icefall Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29843,7 +29843,7 @@
         {
           "itemId": "IC03_Helmet_H",
           "itemName": "Icefall Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29885,7 +29885,7 @@
         {
           "itemId": "IC03_Shoes_H",
           "itemName": "Icefall Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29927,7 +29927,7 @@
         {
           "itemId": "IC03_Accessory_H",
           "itemName": "Icefall Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -29969,7 +29969,7 @@
         {
           "itemId": "IC04_Weapon_H",
           "itemName": "Aurora Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -30011,7 +30011,7 @@
         {
           "itemId": "IC04_Armor_H",
           "itemName": "Aurora Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -30053,7 +30053,7 @@
         {
           "itemId": "IC04_Helmet_H",
           "itemName": "Aurora Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -30095,7 +30095,7 @@
         {
           "itemId": "IC04_Shoes_H",
           "itemName": "Aurora Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -30137,7 +30137,7 @@
         {
           "itemId": "IC04_Accessory_H",
           "itemName": "Aurora Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -30179,7 +30179,7 @@
         {
           "itemId": "IC05_Weapon_H",
           "itemName": "Frostthrone Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -30221,7 +30221,7 @@
         {
           "itemId": "IC05_Armor_H",
           "itemName": "Frostthrone Plate [H]",
-          "chance": 1.5
+          "chance": 1
         }
       ],
       "resists": {
@@ -30263,7 +30263,7 @@
         {
           "itemId": "IC05_Helmet_H",
           "itemName": "Frostthrone Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -30305,7 +30305,7 @@
         {
           "itemId": "IC05_Shoes_H",
           "itemName": "Frostthrone Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32116,7 +32116,7 @@
         {
           "itemId": "AM01_Weapon_H",
           "itemName": "Empire Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32158,7 +32158,7 @@
         {
           "itemId": "AM01_Armor_H",
           "itemName": "Empire Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32200,7 +32200,7 @@
         {
           "itemId": "AM01_Helmet_H",
           "itemName": "Empire Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32242,7 +32242,7 @@
         {
           "itemId": "AM01_Shoes_H",
           "itemName": "Empire Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32284,7 +32284,7 @@
         {
           "itemId": "AM01_Accessory_H",
           "itemName": "Empire Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32326,7 +32326,7 @@
         {
           "itemId": "AM02_Weapon_H",
           "itemName": "Capital Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32368,7 +32368,7 @@
         {
           "itemId": "AM02_Armor_H",
           "itemName": "Capital Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32410,7 +32410,7 @@
         {
           "itemId": "AM02_Helmet_H",
           "itemName": "Capital Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32452,7 +32452,7 @@
         {
           "itemId": "AM02_Shoes_H",
           "itemName": "Capital Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32494,7 +32494,7 @@
         {
           "itemId": "AM02_Accessory_H",
           "itemName": "Capital Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32536,7 +32536,7 @@
         {
           "itemId": "AM03_Weapon_H",
           "itemName": "Everglade Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32578,7 +32578,7 @@
         {
           "itemId": "AM03_Armor_H",
           "itemName": "Everglade Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32620,7 +32620,7 @@
         {
           "itemId": "AM03_Helmet_H",
           "itemName": "Everglade Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32662,7 +32662,7 @@
         {
           "itemId": "AM03_Shoes_H",
           "itemName": "Everglade Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32704,7 +32704,7 @@
         {
           "itemId": "AM03_Accessory_H",
           "itemName": "Everglade Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32746,7 +32746,7 @@
         {
           "itemId": "AM04_Weapon_H",
           "itemName": "Neon Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32788,7 +32788,7 @@
         {
           "itemId": "AM04_Armor_H",
           "itemName": "Neon Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32830,7 +32830,7 @@
         {
           "itemId": "AM04_Helmet_H",
           "itemName": "Neon Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32872,7 +32872,7 @@
         {
           "itemId": "AM04_Shoes_H",
           "itemName": "Neon Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32914,7 +32914,7 @@
         {
           "itemId": "AM04_Accessory_H",
           "itemName": "Neon Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32956,7 +32956,7 @@
         {
           "itemId": "AM05_Weapon_H",
           "itemName": "Pacific Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -32998,7 +32998,7 @@
         {
           "itemId": "AM05_Armor_H",
           "itemName": "Pacific Plate [H]",
-          "chance": 1.5
+          "chance": 1
         }
       ],
       "resists": {
@@ -33040,7 +33040,7 @@
         {
           "itemId": "AM05_Helmet_H",
           "itemName": "Pacific Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33082,7 +33082,7 @@
         {
           "itemId": "AM05_Shoes_H",
           "itemName": "Pacific Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33124,7 +33124,7 @@
         {
           "itemId": "AZ01_Weapon_H",
           "itemName": "Rivermouth Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33166,7 +33166,7 @@
         {
           "itemId": "AZ01_Armor_H",
           "itemName": "Rivermouth Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33208,7 +33208,7 @@
         {
           "itemId": "AZ01_Helmet_H",
           "itemName": "Rivermouth Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33250,7 +33250,7 @@
         {
           "itemId": "AZ01_Shoes_H",
           "itemName": "Rivermouth Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33292,7 +33292,7 @@
         {
           "itemId": "AZ01_Accessory_H",
           "itemName": "Rivermouth Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33334,7 +33334,7 @@
         {
           "itemId": "AZ02_Weapon_H",
           "itemName": "Canopy Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33376,7 +33376,7 @@
         {
           "itemId": "AZ02_Armor_H",
           "itemName": "Canopy Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33418,7 +33418,7 @@
         {
           "itemId": "AZ02_Helmet_H",
           "itemName": "Canopy Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33460,7 +33460,7 @@
         {
           "itemId": "AZ02_Shoes_H",
           "itemName": "Canopy Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33502,7 +33502,7 @@
         {
           "itemId": "AZ02_Accessory_H",
           "itemName": "Canopy Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33544,7 +33544,7 @@
         {
           "itemId": "AZ03_Weapon_H",
           "itemName": "Templebound Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33586,7 +33586,7 @@
         {
           "itemId": "AZ03_Armor_H",
           "itemName": "Templebound Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33628,7 +33628,7 @@
         {
           "itemId": "AZ03_Helmet_H",
           "itemName": "Templebound Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33670,7 +33670,7 @@
         {
           "itemId": "AZ03_Shoes_H",
           "itemName": "Templebound Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33712,7 +33712,7 @@
         {
           "itemId": "AZ03_Accessory_H",
           "itemName": "Templebound Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33754,7 +33754,7 @@
         {
           "itemId": "AZ03_Weapon_H",
           "itemName": "Templebound Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33796,7 +33796,7 @@
         {
           "itemId": "AZ04_Weapon_H",
           "itemName": "Blackwater Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33838,7 +33838,7 @@
         {
           "itemId": "AZ04_Armor_H",
           "itemName": "Blackwater Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33880,7 +33880,7 @@
         {
           "itemId": "AZ04_Helmet_H",
           "itemName": "Blackwater Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33922,7 +33922,7 @@
         {
           "itemId": "AZ04_Shoes_H",
           "itemName": "Blackwater Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -33964,7 +33964,7 @@
         {
           "itemId": "AZ04_Accessory_H",
           "itemName": "Blackwater Sigil [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -34006,7 +34006,7 @@
         {
           "itemId": "AZ05_Weapon_H",
           "itemName": "Heartwood Blade [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -34048,7 +34048,7 @@
         {
           "itemId": "AZ05_Armor_H",
           "itemName": "Heartwood Plate [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -34090,7 +34090,7 @@
         {
           "itemId": "AZ05_Helmet_H",
           "itemName": "Heartwood Crown [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
@@ -34132,7 +34132,7 @@
         {
           "itemId": "AZ05_Shoes_H",
           "itemName": "Heartwood Treads [H]",
-          "chance": 3
+          "chance": 2
         }
       ],
       "resists": {
