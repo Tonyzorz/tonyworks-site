@@ -656,13 +656,24 @@ const push = (arr, v) => { if (v && arr.indexOf(v) < 0) arr.push(v); };
 // Read the actual runtime switch instead of duplicating it in the website exporter. This keeps the
 // public shop catalog correct on both the locked preview build and the eventual World Gate release.
 const shopManagerSource = read(path.join(GAME, "Assets", "Scripts", "Core", "ShopManager.cs"));
-const worldGateReleased = /WorldGateReleased\s*=>\s*true\s*;/.test(shopManagerSource);
-const mazeBatchReleased = /MazeBatchReleased\s*=>\s*true\s*;/.test(shopManagerSource);
-const mazeHardReleased  = /MazeHardReleased\s*=>\s*true\s*;/.test(shopManagerSource);
-const graveyardReleased = /GraveyardReleased\s*=>\s*true\s*;/.test(shopManagerSource);
-const koreaReleased      = /KoreaReleased\s*=>\s*true\s*;/.test(shopManagerSource);
-const londonReleased     = /LondonReleased\s*=>\s*true\s*;/.test(shopManagerSource);
-const monochromeReleased = /MonochromeReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+let worldGateReleased = /WorldGateReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+let mazeBatchReleased = /MazeBatchReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+let mazeHardReleased  = /MazeHardReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+let graveyardReleased = /GraveyardReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+let koreaReleased      = /KoreaReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+let londonReleased     = /LondonReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+let monochromeReleased = /MonochromeReleased\s*=>\s*true\s*;/.test(shopManagerSource);
+// ★ SITE_LIVE_RELEASE (owner 2026-09-05: "4.0.0 is not launched yet - add upcoming for them"): the wiki describes the LIVE build,
+// not the tree. "mazeHard=0,graveyard=0,korea=0,london=0,monochrome=0" flips those switches off for the export, so the
+// front end renders those worlds as Upcoming while their data stays browsable. Unset = the tree state (dev preview).
+if (process.env.SITE_LIVE_RELEASE) {
+  const ov = Object.fromEntries(process.env.SITE_LIVE_RELEASE.split(",").map((kv) => kv.split("=").map((s) => s.trim())));
+  const flag = (k, cur) => (k in ov ? ov[k] === "1" : cur);
+  worldGateReleased = flag("worldGate", worldGateReleased); mazeBatchReleased = flag("mazeBatch", mazeBatchReleased);
+  mazeHardReleased = flag("mazeHard", mazeHardReleased); graveyardReleased = flag("graveyard", graveyardReleased);
+  koreaReleased = flag("korea", koreaReleased); londonReleased = flag("london", londonReleased); monochromeReleased = flag("monochrome", monochromeReleased);
+  console.log("SITE_LIVE_RELEASE override:", { mazeHardReleased, graveyardReleased, koreaReleased, londonReleased, monochromeReleased });
+}
 bosses.forEach(suppressUnreleasedHard);   // must run AFTER the switches exist (TDZ)
 const isUnreleasedRegion = (r) => !worldGateReleased && !!r && /^(JP|GR|ML|HV)/.test(r);
 const isUnreleasedMazeRegion = (r) => !mazeBatchReleased && !!r && /^(MZ|IC|AM|AZ)/.test(r);
@@ -733,13 +744,14 @@ const publicItems = items.filter((it) => !it.hiddenFromCollection);
 // The Unity bundle version is intentionally not the public content version. The in-game notices
 // are the player-facing source of truth (for example, "v2.0.4 — Balance & Leaderboard Fixes").
 const englishUi = JSON.parse(read(path.join(GAME, "Assets", "Resources", "Localization", "en.json")));
-const gameVersion = Object.entries(englishUi)
+const computedGameVersion = Object.entries(englishUi)
   .filter(([key, value]) => /^notice_.*_title$/.test(key) && /^v\d+\.\d+\.\d+\b/.test(value))
   .map(([, value]) => value.match(/^v\d+\.\d+\.\d+/)[0])
   .sort((a, b) => {
     const pa = a.slice(1).split(".").map(Number), pb = b.slice(1).split(".").map(Number);
     return pb[0] - pa[0] || pb[1] - pa[1] || pb[2] - pa[2];
   })[0] || "Development";
+const gameVersion = process.env.SITE_LIVE_VERSION || computedGameVersion;   // the LIVE build, when the tree is ahead of the store
 
 const root = {
   generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop", gameVersion,
