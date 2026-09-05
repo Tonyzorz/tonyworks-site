@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-05T07:41:21Z",
+  "generatedAt": "2026-09-05T08:35:49Z",
   "game": "Infinite Loot-Loop",
-  "gameVersion": "v4.0.0",
+  "gameVersion": "v3.0.3",
   "release": {
     "worldGateReleased": true,
     "mazeBatchReleased": true,
-    "mazeHardReleased": true,
-    "graveyardReleased": true,
-    "koreaReleased": true,
-    "londonReleased": true,
-    "monochromeReleased": true
+    "mazeHardReleased": false,
+    "graveyardReleased": false,
+    "koreaReleased": false,
+    "londonReleased": false,
+    "monochromeReleased": false
   },
   "counts": {
     "enemies": 837,
@@ -39457,11 +39457,11 @@
       "image": "boss_FractureWarden.png",
       "mapId": "MZ10",
       "level": 157800,
-      "hardModeLevel": 830000,
+      "hardModeLevel": 0,
       "hp": 3.4850000345921023e+22,
       "atk": 2.1700000215394152e+22,
-      "hardModeHp": 2.82e+28,
-      "hardModeAtk": 7.27e+26,
+      "hardModeHp": 0,
+      "hardModeAtk": 0,
       "exp": 19725000,
       "resists": {
         "critResist": 3553.44,
@@ -39471,17 +39471,10 @@
         "armorPierce": 0.579,
         "weaken": 0.817
       },
-      "hardModeResists": {
-        "critResist": 21403.14,
-        "comboResist": 3583.16,
-        "dodgeResist": 418.29,
-        "critMultResist": 411.59,
-        "armorPierce": 0.696,
-        "weaken": 0.878
-      },
+      "hardModeResists": null,
       "dropItemId": "MZ10_BossRelic",
       "dropItemName": "Fracture Relic",
-      "hardModeDropItemId": "MZ10_BossRelic_H",
+      "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 1,
       "hardModeDropChance": 0.75
@@ -39492,11 +39485,11 @@
       "image": "boss_HoarfrostTyrant.png",
       "mapId": "IC05",
       "level": 187200,
-      "hardModeLevel": 1780000,
+      "hardModeLevel": 0,
       "hp": 2.2891931667168115e+23,
       "atk": 7.330501299650895e+22,
-      "hardModeHp": 5.34e+30,
-      "hardModeAtk": 1.08e+29,
+      "hardModeHp": 0,
+      "hardModeAtk": 0,
       "exp": 23400000,
       "resists": {
         "critResist": 4374.29,
@@ -39506,17 +39499,10 @@
         "armorPierce": 0.59,
         "weaken": 0.823
       },
-      "hardModeResists": {
-        "critResist": 59121.52,
-        "comboResist": 9791.57,
-        "dodgeResist": 1294.38,
-        "critMultResist": 1006.65,
-        "armorPierce": 0.75,
-        "weaken": 0.905
-      },
+      "hardModeResists": null,
       "dropItemId": "IC05_BossRelic",
       "dropItemName": "Frostthrone Relic",
-      "hardModeDropItemId": "IC05_BossRelic_H",
+      "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 1,
       "hardModeDropChance": 0.75
@@ -39527,11 +39513,11 @@
       "image": "boss_TheHollowTwin.png",
       "mapId": "MZ11",
       "level": 193600,
-      "hardModeLevel": 875000,
+      "hardModeLevel": 0,
       "hp": 3.281000032567199e+23,
       "atk": 1.0500000104222977e+23,
-      "hardModeHp": 3.83e+28,
-      "hardModeAtk": 9.25e+26,
+      "hardModeHp": 0,
+      "hardModeAtk": 0,
       "exp": 24200000,
       "resists": {
         "critResist": 4916.23,
@@ -39541,17 +39527,10 @@
         "armorPierce": 0.595,
         "weaken": 0.826
       },
-      "hardModeResists": {
-        "critResist": 22955.69,
-        "comboResist": 3842.34,
-        "dodgeResist": 452.34,
-        "critMultResist": 436.7,
-        "armorPierce": 0.699,
-        "weaken": 0.88
-      },
+      "hardModeResists": null,
       "dropItemId": "MZ11_BossRelic",
       "dropItemName": "Twinned Relic",
-      "hardModeDropItemId": "MZ11_BossRelic_H",
+      "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 1,
       "hardModeDropChance": 0.75
@@ -39562,11 +39541,11 @@
       "image": "boss_TheSilverIdol.png",
       "mapId": "AM05",
       "level": 240400,
-      "hardModeLevel": 3420000,
+      "hardModeLevel": 0,
       "hp": 2.2031613973794149e+24,
       "atk": 3.540242101059232e+23,
-      "hardModeHp": 6.24e+32,
-      "hardModeAtk": 7.69e+30,
+      "hardModeHp": 0,
+      "hardModeAtk": 0,
       "exp": 30050000,
       "resists": {
         "critResist": 6253.94,
@@ -39576,17 +39555,10 @@
         "armorPierce": 0.606,
         "weaken": 0.832
       },
-      "hardModeResists": {
-        "critResist": 139636.69,
-        "comboResist": 23428.81,
-        "dodgeResist": 3336.8,
-        "critMultResist": 2040.83,
-        "armorPierce": 0.79,
-        "weaken": 0.915
-      },
+      "hardModeResists": null,
       "dropItemId": "AM05_BossRelic",
       "dropItemName": "Pacific Relic",
-      "hardModeDropItemId": "AM05_BossRelic_H",
+      "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 1,
       "hardModeDropChance": 0.75
@@ -39597,11 +39569,11 @@
       "image": "boss_Glassmaw.png",
       "mapId": "MZ12",
       "level": 247300,
-      "hardModeLevel": 925000,
+      "hardModeLevel": 0,
       "hp": 3.196000031723489e+24,
       "atk": 5.060000050225549e+23,
-      "hardModeHp": 5.19e+28,
-      "hardModeAtk": 1.18e+27,
+      "hardModeHp": 0,
+      "hardModeAtk": 0,
       "exp": 30912500,
       "resists": {
         "critResist": 7185.71,
@@ -39611,17 +39583,10 @@
         "armorPierce": 0.612,
         "weaken": 0.835
       },
-      "hardModeResists": {
-        "critResist": 23194.1,
-        "comboResist": 3882.13,
-        "dodgeResist": 457.6,
-        "critMultResist": 440.49,
-        "armorPierce": 0.7,
-        "weaken": 0.88
-      },
+      "hardModeResists": null,
       "dropItemId": "MZ12_BossRelic",
       "dropItemName": "Glassmaw Relic",
-      "hardModeDropItemId": "MZ12_BossRelic_H",
+      "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 1,
       "hardModeDropChance": 0.75
@@ -39632,11 +39597,11 @@
       "image": "boss_TheVerdantMother.png",
       "mapId": "AZ05",
       "level": 308200,
-      "hardModeLevel": 4610000,
+      "hardModeLevel": 0,
       "hp": 3.1632487394632296e+25,
       "atk": 2.764189030318564e+24,
-      "hardModeHp": 3.82e+33,
-      "hardModeAtk": 3.3699999999999995e+31,
+      "hardModeHp": 0,
+      "hardModeAtk": 0,
       "exp": 38525000,
       "resists": {
         "critResist": 8893.65,
@@ -39646,17 +39611,10 @@
         "armorPierce": 0.62,
         "weaken": 0.84
       },
-      "hardModeResists": {
-        "critResist": 211254.81,
-        "comboResist": 35070.2,
-        "dodgeResist": 5110.75,
-        "critMultResist": 2775.4,
-        "armorPierce": 0.8,
-        "weaken": 0.915
-      },
+      "hardModeResists": null,
       "dropItemId": "AZ05_BossRelic",
       "dropItemName": "Heartwood Relic",
-      "hardModeDropItemId": "AZ05_BossRelic_H",
+      "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 0.5,
       "hardModeDropChance": 0.375
@@ -41127,9 +41085,7 @@
         "ATK +20%",
         "DEF +20%"
       ],
-      "dropAreas": [
-        "AM05"
-      ],
+      "dropAreas": [],
       "shopAreas": []
     },
     {
@@ -41323,9 +41279,7 @@
         "ATK +30%",
         "DEF +30%"
       ],
-      "dropAreas": [
-        "AZ05"
-      ],
+      "dropAreas": [],
       "shopAreas": []
     },
     {
@@ -42395,9 +42349,7 @@
         "ATK +10%",
         "DEF +10%"
       ],
-      "dropAreas": [
-        "IC05"
-      ],
+      "dropAreas": [],
       "shopAreas": []
     },
     {
@@ -42457,9 +42409,7 @@
       "effects": [
         "HP +10%"
       ],
-      "dropAreas": [
-        "MZ10"
-      ],
+      "dropAreas": [],
       "shopAreas": []
     },
     {
@@ -42519,9 +42469,7 @@
       "effects": [
         "ATK +20%"
       ],
-      "dropAreas": [
-        "MZ11"
-      ],
+      "dropAreas": [],
       "shopAreas": []
     },
     {
@@ -42581,9 +42529,7 @@
       "effects": [
         "DEF +30%"
       ],
-      "dropAreas": [
-        "MZ12"
-      ],
+      "dropAreas": [],
       "shopAreas": []
     },
     {
@@ -47469,18 +47415,7 @@
       "dropAreas": [
         "GY03"
       ],
-      "shopAreas": [
-        "GY01",
-        "GY02",
-        "GY03",
-        "GY04",
-        "GY05",
-        "GY06",
-        "GY07",
-        "GY08",
-        "GY09",
-        "GY10"
-      ]
+      "shopAreas": []
     },
     {
       "id": "GY03_Weapon",
@@ -47775,18 +47710,7 @@
       "dropAreas": [
         "GY05"
       ],
-      "shopAreas": [
-        "GY01",
-        "GY02",
-        "GY03",
-        "GY04",
-        "GY05",
-        "GY06",
-        "GY07",
-        "GY08",
-        "GY09",
-        "GY10"
-      ]
+      "shopAreas": []
     },
     {
       "id": "GY05_Shoes",
@@ -48081,18 +48005,7 @@
       "dropAreas": [
         "GY07"
       ],
-      "shopAreas": [
-        "GY01",
-        "GY02",
-        "GY03",
-        "GY04",
-        "GY05",
-        "GY06",
-        "GY07",
-        "GY08",
-        "GY09",
-        "GY10"
-      ]
+      "shopAreas": []
     },
     {
       "id": "GY07_Helmet",
@@ -48224,18 +48137,7 @@
       "dropAreas": [
         "GY08"
       ],
-      "shopAreas": [
-        "GY01",
-        "GY02",
-        "GY03",
-        "GY04",
-        "GY05",
-        "GY06",
-        "GY07",
-        "GY08",
-        "GY09",
-        "GY10"
-      ]
+      "shopAreas": []
     },
     {
       "id": "GY08_Armor",
@@ -48726,18 +48628,7 @@
       "dropAreas": [
         "GY10"
       ],
-      "shopAreas": [
-        "GY01",
-        "GY02",
-        "GY03",
-        "GY04",
-        "GY05",
-        "GY06",
-        "GY07",
-        "GY08",
-        "GY09",
-        "GY10"
-      ]
+      "shopAreas": []
     },
     {
       "id": "GrenadeLauncher",
@@ -60669,16 +60560,7 @@
       "dropAreas": [
         "KR03"
       ],
-      "shopAreas": [
-        "KR01",
-        "KR02",
-        "KR03",
-        "KR04",
-        "KR05",
-        "KR06",
-        "KR07",
-        "KR08"
-      ]
+      "shopAreas": []
     },
     {
       "id": "KR03_Weapon",
@@ -60809,16 +60691,7 @@
       "dropAreas": [
         "KR04"
       ],
-      "shopAreas": [
-        "KR01",
-        "KR02",
-        "KR03",
-        "KR04",
-        "KR05",
-        "KR06",
-        "KR07",
-        "KR08"
-      ]
+      "shopAreas": []
     },
     {
       "id": "KR04_Shoes",
@@ -61113,16 +60986,7 @@
       "dropAreas": [
         "KR06"
       ],
-      "shopAreas": [
-        "KR01",
-        "KR02",
-        "KR03",
-        "KR04",
-        "KR05",
-        "KR06",
-        "KR07",
-        "KR08"
-      ]
+      "shopAreas": []
     },
     {
       "id": "KR06_Helmet",
@@ -61254,16 +61118,7 @@
       "dropAreas": [
         "KR07"
       ],
-      "shopAreas": [
-        "KR01",
-        "KR02",
-        "KR03",
-        "KR04",
-        "KR05",
-        "KR06",
-        "KR07",
-        "KR08"
-      ]
+      "shopAreas": []
     },
     {
       "id": "KR07_Armor",
@@ -61590,16 +61445,7 @@
       "dropAreas": [
         "KR08"
       ],
-      "shopAreas": [
-        "KR01",
-        "KR02",
-        "KR03",
-        "KR04",
-        "KR05",
-        "KR06",
-        "KR07",
-        "KR08"
-      ]
+      "shopAreas": []
     },
     {
       "id": "LaurelCirclet",
@@ -62387,16 +62233,7 @@
       "dropAreas": [
         "LD03"
       ],
-      "shopAreas": [
-        "LD01",
-        "LD02",
-        "LD03",
-        "LD04",
-        "LD05",
-        "LD06",
-        "LD07",
-        "LD08"
-      ]
+      "shopAreas": []
     },
     {
       "id": "LD03_Weapon",
@@ -62527,16 +62364,7 @@
       "dropAreas": [
         "LD04"
       ],
-      "shopAreas": [
-        "LD01",
-        "LD02",
-        "LD03",
-        "LD04",
-        "LD05",
-        "LD06",
-        "LD07",
-        "LD08"
-      ]
+      "shopAreas": []
     },
     {
       "id": "LD04_Shoes",
@@ -62831,16 +62659,7 @@
       "dropAreas": [
         "LD06"
       ],
-      "shopAreas": [
-        "LD01",
-        "LD02",
-        "LD03",
-        "LD04",
-        "LD05",
-        "LD06",
-        "LD07",
-        "LD08"
-      ]
+      "shopAreas": []
     },
     {
       "id": "LD06_Helmet",
@@ -62972,16 +62791,7 @@
       "dropAreas": [
         "LD07"
       ],
-      "shopAreas": [
-        "LD01",
-        "LD02",
-        "LD03",
-        "LD04",
-        "LD05",
-        "LD06",
-        "LD07",
-        "LD08"
-      ]
+      "shopAreas": []
     },
     {
       "id": "LD07_Armor",
@@ -63308,16 +63118,7 @@
       "dropAreas": [
         "LD08"
       ],
-      "shopAreas": [
-        "LD01",
-        "LD02",
-        "LD03",
-        "LD04",
-        "LD05",
-        "LD06",
-        "LD07",
-        "LD08"
-      ]
+      "shopAreas": []
     },
     {
       "id": "LuckyRing",
@@ -73369,28 +73170,7 @@
       "dropAreas": [
         "PX04"
       ],
-      "shopAreas": [
-        "PX01",
-        "PX02",
-        "PX03",
-        "PX04",
-        "PX05",
-        "PX06",
-        "PX07",
-        "PX08",
-        "PX09",
-        "PX10",
-        "PX11",
-        "PX12",
-        "PX13",
-        "PX14",
-        "PX15",
-        "PX16",
-        "PX17",
-        "PX18",
-        "PX19",
-        "PX20"
-      ]
+      "shopAreas": []
     },
     {
       "id": "PX04_Weapon",
@@ -73849,28 +73629,7 @@
       "dropAreas": [
         "PX07"
       ],
-      "shopAreas": [
-        "PX01",
-        "PX02",
-        "PX03",
-        "PX04",
-        "PX05",
-        "PX06",
-        "PX07",
-        "PX08",
-        "PX09",
-        "PX10",
-        "PX11",
-        "PX12",
-        "PX13",
-        "PX14",
-        "PX15",
-        "PX16",
-        "PX17",
-        "PX18",
-        "PX19",
-        "PX20"
-      ]
+      "shopAreas": []
     },
     {
       "id": "PX07_Shoes",
@@ -74524,28 +74283,7 @@
       "dropAreas": [
         "PX11"
       ],
-      "shopAreas": [
-        "PX01",
-        "PX02",
-        "PX03",
-        "PX04",
-        "PX05",
-        "PX06",
-        "PX07",
-        "PX08",
-        "PX09",
-        "PX10",
-        "PX11",
-        "PX12",
-        "PX13",
-        "PX14",
-        "PX15",
-        "PX16",
-        "PX17",
-        "PX18",
-        "PX19",
-        "PX20"
-      ]
+      "shopAreas": []
     },
     {
       "id": "PX11_Helmet",
@@ -75167,28 +74905,7 @@
         "LUC +439K"
       ],
       "dropAreas": [],
-      "shopAreas": [
-        "PX01",
-        "PX02",
-        "PX03",
-        "PX04",
-        "PX05",
-        "PX06",
-        "PX07",
-        "PX08",
-        "PX09",
-        "PX10",
-        "PX11",
-        "PX12",
-        "PX13",
-        "PX14",
-        "PX15",
-        "PX16",
-        "PX17",
-        "PX18",
-        "PX19",
-        "PX20"
-      ]
+      "shopAreas": []
     },
     {
       "id": "PX15_Armor",
@@ -76202,28 +75919,7 @@
       "dropAreas": [
         "PX20"
       ],
-      "shopAreas": [
-        "PX01",
-        "PX02",
-        "PX03",
-        "PX04",
-        "PX05",
-        "PX06",
-        "PX07",
-        "PX08",
-        "PX09",
-        "PX10",
-        "PX11",
-        "PX12",
-        "PX13",
-        "PX14",
-        "PX15",
-        "PX16",
-        "PX17",
-        "PX18",
-        "PX19",
-        "PX20"
-      ]
+      "shopAreas": []
     },
     {
       "id": "MossyDagger",
@@ -108325,8 +108021,7 @@
         "MZ10_Shoes"
       ],
       "bossDropItemIds": [
-        "MZ10_BossRelic",
-        "MZ10_BossRelic_H"
+        "MZ10_BossRelic"
       ],
       "shopItemIds": [
         "MZ01_Weapon_H",
@@ -108561,8 +108256,7 @@
         "IC05_Shoes"
       ],
       "bossDropItemIds": [
-        "IC05_BossRelic",
-        "IC05_BossRelic_H"
+        "IC05_BossRelic"
       ],
       "shopItemIds": [
         "IC01_Weapon_H",
@@ -108609,8 +108303,7 @@
         "MZ11_Shoes"
       ],
       "bossDropItemIds": [
-        "MZ11_BossRelic",
-        "MZ11_BossRelic_H"
+        "MZ11_BossRelic"
       ],
       "shopItemIds": [
         "MZ01_Weapon_H",
@@ -108845,8 +108538,7 @@
         "AM05_Shoes_H"
       ],
       "bossDropItemIds": [
-        "AM05_BossRelic",
-        "AM05_BossRelic_H"
+        "AM05_BossRelic"
       ],
       "shopItemIds": [
         "AM01_Weapon",
@@ -108893,8 +108585,7 @@
         "MZ12_Shoes"
       ],
       "bossDropItemIds": [
-        "MZ12_BossRelic",
-        "MZ12_BossRelic_H"
+        "MZ12_BossRelic"
       ],
       "shopItemIds": [
         "MZ01_Weapon_H",
@@ -109131,8 +108822,7 @@
         "AZ05_Shoes_H"
       ],
       "bossDropItemIds": [
-        "AZ05_BossRelic",
-        "AZ05_BossRelic_H"
+        "AZ05_BossRelic"
       ],
       "shopItemIds": [
         "AZ01_Weapon",
@@ -109172,13 +108862,7 @@
         "GY01_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "GY03_Shoes",
-        "GY05_Helmet",
-        "GY07_Armor",
-        "GY08_Accessory",
-        "GY10_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "GY02",
@@ -109204,13 +108888,7 @@
         "GY02_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "GY03_Shoes",
-        "GY05_Helmet",
-        "GY07_Armor",
-        "GY08_Accessory",
-        "GY10_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "GY03",
@@ -109238,13 +108916,7 @@
         "GY03_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "GY03_Shoes",
-        "GY05_Helmet",
-        "GY07_Armor",
-        "GY08_Accessory",
-        "GY10_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "GY04",
@@ -109270,13 +108942,7 @@
         "GY04_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "GY03_Shoes",
-        "GY05_Helmet",
-        "GY07_Armor",
-        "GY08_Accessory",
-        "GY10_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "GY05",
@@ -109303,13 +108969,7 @@
         "GY05_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "GY03_Shoes",
-        "GY05_Helmet",
-        "GY07_Armor",
-        "GY08_Accessory",
-        "GY10_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "GY06",
@@ -109335,13 +108995,7 @@
         "GY06_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "GY03_Shoes",
-        "GY05_Helmet",
-        "GY07_Armor",
-        "GY08_Accessory",
-        "GY10_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "GY07",
@@ -109365,13 +109019,7 @@
         "GY07_Helmet"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "GY03_Shoes",
-        "GY05_Helmet",
-        "GY07_Armor",
-        "GY08_Accessory",
-        "GY10_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "GY08",
@@ -109398,13 +109046,7 @@
         "GY08_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "GY03_Shoes",
-        "GY05_Helmet",
-        "GY07_Armor",
-        "GY08_Accessory",
-        "GY10_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "GY09",
@@ -109430,13 +109072,7 @@
         "GY09_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "GY03_Shoes",
-        "GY05_Helmet",
-        "GY07_Armor",
-        "GY08_Accessory",
-        "GY10_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "GY10",
@@ -109465,13 +109101,7 @@
       "bossDropItemIds": [
         "GY10_BossRelic"
       ],
-      "shopItemIds": [
-        "GY03_Shoes",
-        "GY05_Helmet",
-        "GY07_Armor",
-        "GY08_Accessory",
-        "GY10_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "KR01",
@@ -109498,13 +109128,7 @@
         "KR01_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "KR03_Shoes",
-        "KR04_Helmet",
-        "KR06_Armor",
-        "KR07_Accessory",
-        "KR08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "KR02",
@@ -109532,13 +109156,7 @@
         "KR02_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "KR03_Shoes",
-        "KR04_Helmet",
-        "KR06_Armor",
-        "KR07_Accessory",
-        "KR08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "KR03",
@@ -109564,13 +109182,7 @@
         "KR03_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "KR03_Shoes",
-        "KR04_Helmet",
-        "KR06_Armor",
-        "KR07_Accessory",
-        "KR08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "KR04",
@@ -109596,13 +109208,7 @@
         "KR04_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "KR03_Shoes",
-        "KR04_Helmet",
-        "KR06_Armor",
-        "KR07_Accessory",
-        "KR08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "KR05",
@@ -109629,13 +109235,7 @@
         "KR05_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "KR03_Shoes",
-        "KR04_Helmet",
-        "KR06_Armor",
-        "KR07_Accessory",
-        "KR08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "KR06",
@@ -109661,13 +109261,7 @@
         "KR06_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "KR03_Shoes",
-        "KR04_Helmet",
-        "KR06_Armor",
-        "KR07_Accessory",
-        "KR08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "KR07",
@@ -109693,13 +109287,7 @@
         "KR07_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "KR03_Shoes",
-        "KR04_Helmet",
-        "KR06_Armor",
-        "KR07_Accessory",
-        "KR08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "KR08",
@@ -109728,13 +109316,7 @@
       "bossDropItemIds": [
         "KR08_BossRelic"
       ],
-      "shopItemIds": [
-        "KR03_Shoes",
-        "KR04_Helmet",
-        "KR06_Armor",
-        "KR07_Accessory",
-        "KR08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "LD01",
@@ -109760,13 +109342,7 @@
         "LD01_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "LD03_Shoes",
-        "LD04_Helmet",
-        "LD06_Armor",
-        "LD07_Accessory",
-        "LD08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "LD02",
@@ -109793,13 +109369,7 @@
         "LD02_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "LD03_Shoes",
-        "LD04_Helmet",
-        "LD06_Armor",
-        "LD07_Accessory",
-        "LD08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "LD03",
@@ -109825,13 +109395,7 @@
         "LD03_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "LD03_Shoes",
-        "LD04_Helmet",
-        "LD06_Armor",
-        "LD07_Accessory",
-        "LD08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "LD04",
@@ -109858,13 +109422,7 @@
         "LD04_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "LD03_Shoes",
-        "LD04_Helmet",
-        "LD06_Armor",
-        "LD07_Accessory",
-        "LD08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "LD05",
@@ -109890,13 +109448,7 @@
         "LD05_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "LD03_Shoes",
-        "LD04_Helmet",
-        "LD06_Armor",
-        "LD07_Accessory",
-        "LD08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "LD06",
@@ -109922,13 +109474,7 @@
         "LD06_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "LD03_Shoes",
-        "LD04_Helmet",
-        "LD06_Armor",
-        "LD07_Accessory",
-        "LD08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "LD07",
@@ -109955,13 +109501,7 @@
         "LD07_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "LD03_Shoes",
-        "LD04_Helmet",
-        "LD06_Armor",
-        "LD07_Accessory",
-        "LD08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "LD08",
@@ -109990,13 +109530,7 @@
       "bossDropItemIds": [
         "LD08_BossRelic"
       ],
-      "shopItemIds": [
-        "LD03_Shoes",
-        "LD04_Helmet",
-        "LD06_Armor",
-        "LD07_Accessory",
-        "LD08_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX01",
@@ -110022,13 +109556,7 @@
         "PX01_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX02",
@@ -110054,13 +109582,7 @@
         "PX02_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX03",
@@ -110086,13 +109608,7 @@
         "PX03_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX04",
@@ -110118,13 +109634,7 @@
         "PX04_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX05",
@@ -110151,13 +109661,7 @@
         "PX05_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX06",
@@ -110183,13 +109687,7 @@
         "PX06_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX07",
@@ -110216,13 +109714,7 @@
         "PX07_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX08",
@@ -110249,13 +109741,7 @@
         "PX08_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX09",
@@ -110281,13 +109767,7 @@
         "PX09_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX10",
@@ -110316,13 +109796,7 @@
       "bossDropItemIds": [
         "PX10_BossRelic"
       ],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX11",
@@ -110349,13 +109823,7 @@
         "PX11_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX12",
@@ -110382,13 +109850,7 @@
         "PX12_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX13",
@@ -110414,13 +109876,7 @@
         "PX13_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX14",
@@ -110447,13 +109903,7 @@
         "PX14_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX15",
@@ -110481,13 +109931,7 @@
       "bossDropItemIds": [
         "PX15_BossRelic"
       ],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX16",
@@ -110514,13 +109958,7 @@
         "PX16_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX17",
@@ -110546,13 +109984,7 @@
         "PX17_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX18",
@@ -110579,13 +110011,7 @@
         "PX18_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX19",
@@ -110611,13 +110037,7 @@
         "PX19_Accessory"
       ],
       "bossDropItemIds": [],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     },
     {
       "code": "PX20",
@@ -110646,13 +110066,7 @@
       "bossDropItemIds": [
         "PX20_BossRelic"
       ],
-      "shopItemIds": [
-        "PX04_Shoes",
-        "PX07_Helmet",
-        "PX11_Armor",
-        "PX15_Accessory",
-        "PX20_Weapon"
-      ]
+      "shopItemIds": []
     }
   ],
   "characters": [
