@@ -380,7 +380,6 @@
   "cloud save is used only when online sync is available. You may erase cloud gameplay data in the Game or request deletion by contacting support.": "僅在線上同步可用時才使用雲端保存。您可以刪除遊戲中的雲端遊戲資料或聯絡支援人員請求刪除。",
   "Cloud save:": "雲端保存：",
   "collect your name, postal address, or precise location. The Game and the third-party services it uses may process:": "收集您的姓名、郵寄地址或準確位置。遊戲及其使用的第三方服務可能會處理：",
-  "Collected copies can also contribute permanent progress. The permanent amount is derived from the item's eligible base stats and copy milestone rather than granting the full equipped value forever. This makes a modest early item useful without allowing one common drop to overwhelm the entire economy. Open an item to see its copy table and distinguish equipped strength from banked collection strength.": "收集的副本也可以貢獻永久的進步。永久金額源自於該物品的合格基礎統計數據和複製里程碑，而不是永久授予全部裝備價值。這使得一個適度的早期項目變得有用，而不會讓一次普通的下降壓垮整個經濟。打開一個物品即可查看其複製表，並區分裝備強度和儲存的收藏強度。",
   "Combat": "戰鬥",
   "Combat mechanics": "戰鬥機制",
   "Combat plan": "作戰計劃",
@@ -546,7 +545,6 @@
   "entries": "條目",
   "Entry requirement": "入學要求",
   "Epic": "史詩",
-  "Equipment copies connect the two layers. The first copy of an item contributes 1% of that item's base stats to the permanent collection total. Completing the copy progression raises the contribution to 3% in total. Accessories complete at three copies; other equipment families complete at twenty. The bonus is intentionally small per item so that equipped gear remains important, while a broad collection gradually lifts the floor of every future run.": "设备副本连接两层。物品的第一份副本將該物品的基本統計數據的 1% 貢獻給永久收藏總數。完成副本進度後，貢獻總量將增加至 3%。配件齊全，三份；其他設備系列已完成二十個。每件物品的獎勵都故意較小，因此裝備齊全的裝備仍然很重要，而廣泛的收藏會逐漸提升未來每次跑步的基礎。",
   "Equipment first matters because of the stats and effects it provides during the current run. A weapon may raise attack enough to shorten battles, while armor and helmets can add the health or defense needed to survive a new region. Shoes and accessories may solve different problems, including agility, luck, economy, or utility effects.": "裝備首先重要是因為它在當前運行期間提供的統計數據和效果。武器可以提高攻擊力，足以縮短戰鬥時間，而盔甲和頭盔可以增加在新地區生存所需的生命值或防禦力。鞋子和配件可以解決不同的問題，包括敏捷性、運氣、經濟或實用效果。",
   "equipment loadouts": "設備裝載",
   "Equipment Loadouts": "裝備裝載",
@@ -679,7 +677,6 @@
   "Google Play": "Google Play",
   "Google Play, if applicable:": "Google Play，如果適用：",
   "Grassland": "草原",
-  "Grassland is the early hub. Forest and Volcanic extend west, Desert lies east, and Underwater begins through the northern docks. The live World Gate branch sits south and opens into Japan, Greek, Military, and Heaven. Its next authored connection is the upcoming Maze, which leads onward to Ice, America, and Amazon. Void Hunt is a special route connected through Volcanic.": "草原是早期的樞紐。森林和火山嚮西延伸，沙漠向東延伸，水下從北部碼頭開始。活躍的世界之門分支位於南方，通往日本、希臘、軍事和天堂。它的下一個創作連結是即將推出的迷宮，它通往冰河、美國和亞馬遜。虛空狩獵是一條透過火山連接的特殊路線。",
   "Grassland is the hub. Forest and Volcanic form the western route, Desert extends east, and Underwater begins at the northern docks. Use the": "草原是樞紐。森林和火山形成西線，沙漠向東延伸，水下從北部碼頭開始。使用",
   "Grassland:": "草原：",
   "Guide": "指南",
@@ -1112,7 +1109,6 @@
   "Reviewed 18 July 2026 · Values may change with balance updates": "點評日期：2026 年 7 月 18 日 · 數值可能會隨著餘額更新而變化",
   "Reviewed 27 August 2026": "點評日期：2026 年 8 月 27 日",
   "Reviewed 27 August 2026 · Companion data is exported from the Unity project": "審核日期：2026 年 8 月 27 日 · 配套資料是從 Unity 專案匯出的",
-  "Reviewed 7 August 2026 · Connections follow the current exported map graph": "點評日期：2026 年 8 月 7 日 · 連接遵循當前導出的地圖圖表",
   "Reviewed 7 August 2026 · Matches the current equipment system": "點評日期：2026 年 8 月 7 日 · 與目前的裝備系統相符",
   "Revive": "復活",
   "Reward changes": "獎勵變化",
@@ -1470,5 +1466,9 @@
   "Your full HP, ATK, and DEF receive": "你的HP、ATK、DEF全部獲得",
   "Your use of the Game is also governed by our": "您對遊戲的使用也受我們的約束",
   "YouTube": "YouTube",
-  "Zone": "專區"
+  "Zone": "專區",
+  "Collected copies can also contribute permanent progress. The permanent amount is derived from the item's eligible base stats and copy count rather than granting the full equipped value forever. This makes a modest early item useful without allowing one common drop to overwhelm the entire economy. Open an item to see its copy table and distinguish equipped strength from banked collection strength.": "收集的副本也可以貢獻永久的進步。永久金額源自於該物品的合格基礎統計數據和副本數量，而不是永久授予全部裝備價值。這使得一個適度的早期項目變得有用，而不會讓一次普通的下降壓垮整個經濟。打開一個物品即可查看其複製表，並區分裝備強度和儲存的收藏強度。",
+  "Equipment copies connect the two layers. Each copy of a regular item contributes 1% of that item's base stats to the permanent collection total, so a completed ten-copy family banks 10% in total. Accessories complete at three copies on their own ladder: the first copy grants nothing, the second 2%, and the third 5% - accessories carry far larger base stats, so a smaller percentage still matters. The bonus is intentionally small per item so that equipped gear remains important, while a broad collection gradually lifts the floor of every future run.": "設備副本連接兩層。常規物品的每一份副本都會將該物品基本統計數據的 1% 貢獻給永久收藏總數，因此完成十份副本的系列總共可儲存 10%。配件則有自己的階梯，三份即可完成：第一份不提供任何加成，第二份為 2%，第三份為 5% — 配件擁有大得多的基本統計數據，因此較小的百分比仍然重要。每件物品的獎勵都故意較小，因此裝備齊全的裝備仍然很重要，而廣泛的收藏會逐漸提升未來每次跑步的基礎。",
+  "Grassland is the early hub. Forest and Volcanic extend west, Desert lies east, and Underwater begins through the northern docks. The live World Gate branch sits south and opens into Japan, Greek, Military, and Heaven. The Maze leads onward to Ice, America, and Amazon, and the right side of the World Gate hub opens into the upcoming Graveyard. Beyond the Graveyard lie the three regions that close out the route — Korea, London, and Monochrome — each entered through its own door on the Graveyard grounds. Void Hunt is a special route connected through Volcanic.": "草原是早期的樞紐。森林和火山向西延伸，沙漠向東延伸，水下從北部碼頭開始。活躍的世界之門分支位於南方，通往日本、希臘、軍事和天堂。迷宮進一步通往冰河、美國和亞馬遜，而世界之門樞紐的右側則通往即將推出的墓地。墓地之外是結束整條路線的三個地區 — 韓國、倫敦和單色 — 每個地區都透過墓地區域內各自的門進入。虛空狩獵是一條透過火山連接的特殊路線。",
+  "Reviewed 1 September 2026 · Connections follow the current exported map graph": "點評日期：2026 年 9 月 1 日 · 連接遵循當前導出的地圖圖表"
 }

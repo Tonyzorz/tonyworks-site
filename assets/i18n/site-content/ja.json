@@ -380,7 +380,6 @@
   "cloud save is used only when online sync is available. You may erase cloud gameplay data in the Game or request deletion by contacting support.": "クラウド保存は、オンライン同期が利用可能な場合にのみ使用されます。ゲーム内のクラウド ゲームプレイ データを消去したり、サポートに連絡して削除をリクエストしたりすることができます。",
   "Cloud save:": "クラウド保存：",
   "collect your name, postal address, or precise location. The Game and the third-party services it uses may process:": "あなたの名前、住所、または正確な位置情報を収集します。ゲームとゲームが使用するサードパーティのサービスは、以下を処理する場合があります。",
-  "Collected copies can also contribute permanent progress. The permanent amount is derived from the item's eligible base stats and copy milestone rather than granting the full equipped value forever. This makes a modest early item useful without allowing one common drop to overwhelm the entire economy. Open an item to see its copy table and distinguish equipped strength from banked collection strength.": "収集されたコピーは、永続的な進歩に貢献することもできます。永続的な金額は、完全装備の価値を永久に付与するのではなく、アイテムの対象となる基本ステータスとコピー マイルストーンから導出されます。これにより、1 つの一般的なドロップが経済全体を圧倒することなく、控えめな初期アイテムが有用になります。アイテムを開いてコピーテーブルを確認し、装備された強度とバンクされたコレクションの強度を区別します。",
   "Combat": "戦闘",
   "Combat mechanics": "戦闘力学",
   "Combat plan": "戦闘計画",
@@ -546,7 +545,6 @@
   "entries": "エントリ",
   "Entry requirement": "エントリー要件",
   "Epic": "エピック",
-  "Equipment copies connect the two layers. The first copy of an item contributes 1% of that item's base stats to the permanent collection total. Completing the copy progression raises the contribution to 3% in total. Accessories complete at three copies; other equipment families complete at twenty. The bonus is intentionally small per item so that equipped gear remains important, while a broad collection gradually lifts the floor of every future run.": "機器のコピーは 2 つの層を接続します。アイテムの最初のコピーは、そのアイテムの基本統計の 1% を永久コレクションの合計に寄与します。コピー進行​​を完了すると貢献度は合計 3% に上昇します。付属品は 3 部で揃います。他の機器ファミリーは 20 時に完了します。装備されているギアの重要性が維持されるよう、アイテムごとのボーナスは意図的に小さくなっていますが、幅広いコレクションにより将来のランの底が徐々に引き上げられます。",
   "Equipment first matters because of the stats and effects it provides during the current run. A weapon may raise attack enough to shorten battles, while armor and helmets can add the health or defense needed to survive a new region. Shoes and accessories may solve different problems, including agility, luck, economy, or utility effects.": "装備がまず重要なのは、現在の実行中に装備が提供する統計と効果のためです。武器は戦闘を短縮するのに十分な攻撃力を高めることができ、鎧や兜は新しい地域で生き残るために必要な健康や防御力を追加することができます。靴やアクセサリーは、敏捷性、運、経済性、実用効果など、さまざまな問題を解決する可能性があります。",
   "equipment loadouts": "装備の装備",
   "Equipment Loadouts": "装備の装備",
@@ -679,7 +677,6 @@
   "Google Play": "Google Play",
   "Google Play, if applicable:": "Google Play (該当する場合):",
   "Grassland": "草原",
-  "Grassland is the early hub. Forest and Volcanic extend west, Desert lies east, and Underwater begins through the northern docks. The live World Gate branch sits south and opens into Japan, Greek, Military, and Heaven. Its next authored connection is the upcoming Maze, which leads onward to Ice, America, and Amazon. Void Hunt is a special route connected through Volcanic.": "草原は初期の拠点です。森林と火山は西に広がり、砂漠は東にあり、水中は北の波止場から始まります。ライブ ワールド ゲート ブランチは南に位置し、日本、ギリシャ、軍事、天国に開かれています。次に作成された接続は、氷、アメリカ、アマゾンにつながる今後の迷路です。ヴォイドハントはヴォルカニック経由で繋がる特別なルートです。",
   "Grassland is the hub. Forest and Volcanic form the western route, Desert extends east, and Underwater begins at the northern docks. Use the": "草原が拠点です。森林と火山が西のルートを形成し、砂漠が東に広がり、水中は北の波止場から始まります。を使用します。",
   "Grassland:": "草原:",
   "Guide": "ガイド",
@@ -1112,7 +1109,6 @@
   "Reviewed 18 July 2026 · Values may change with balance updates": "2026 年 7 月 18 日に投稿しました · 残高の更新により値が変更される場合があります",
   "Reviewed 27 August 2026": "2026年8月27日に投稿しました",
   "Reviewed 27 August 2026 · Companion data is exported from the Unity project": "2026 年 8 月 27 日にレビュー済み · コンパニオン データは Unity プロジェクトからエクスポートされます",
-  "Reviewed 7 August 2026 · Connections follow the current exported map graph": "2026 年 8 月 7 日に投稿済み · 接続は、現在エクスポートされているマップ グラフに従います",
   "Reviewed 7 August 2026 · Matches the current equipment system": "2026年8月7日に投稿しました · 現在の機器システムと一致します",
   "Revive": "リバイバル",
   "Reward changes": "報酬の変更",
@@ -1470,5 +1466,9 @@
   "Your full HP, ATK, and DEF receive": "あなたのHP、ATK、DEFが全回復します",
   "Your use of the Game is also governed by our": "ゲームの使用には、当社の規定も適用されます。",
   "YouTube": "YouTube",
-  "Zone": "ゾーン"
+  "Zone": "ゾーン",
+  "Collected copies can also contribute permanent progress. The permanent amount is derived from the item's eligible base stats and copy count rather than granting the full equipped value forever. This makes a modest early item useful without allowing one common drop to overwhelm the entire economy. Open an item to see its copy table and distinguish equipped strength from banked collection strength.": "収集されたコピーは、永続的な進歩に貢献することもできます。永続的な金額は、完全装備の価値を永久に付与するのではなく、アイテムの対象となる基本ステータスとコピー数から導出されます。これにより、1 つの一般的なドロップが経済全体を圧倒することなく、控えめな初期アイテムが有用になります。アイテムを開いてコピーテーブルを確認し、装備された強度とバンクされたコレクションの強度を区別します。",
+  "Equipment copies connect the two layers. Each copy of a regular item contributes 1% of that item's base stats to the permanent collection total, so a completed ten-copy family banks 10% in total. Accessories complete at three copies on their own ladder: the first copy grants nothing, the second 2%, and the third 5% - accessories carry far larger base stats, so a smaller percentage still matters. The bonus is intentionally small per item so that equipped gear remains important, while a broad collection gradually lifts the floor of every future run.": "機器のコピーは 2 つの層を接続します。通常のアイテムは、コピー 1 つにつきそのアイテムの基本ステータスの 1% を永久コレクションの合計に寄与するため、10 コピーで完成するファミリーは合計 10% を蓄積します。アクセサリは独自のラダーで 3 コピーで完成し、1 つ目のコピーでは何も得られず、2 つ目で 2%、3 つ目で 5% になります。アクセサリははるかに大きな基本ステータスを持つため、割合が小さくても十分に意味があります。装備されているギアの重要性が維持されるよう、アイテムごとのボーナスは意図的に小さくなっていますが、幅広いコレクションにより将来のランの底が徐々に引き上げられます。",
+  "Grassland is the early hub. Forest and Volcanic extend west, Desert lies east, and Underwater begins through the northern docks. The live World Gate branch sits south and opens into Japan, Greek, Military, and Heaven. The Maze leads onward to Ice, America, and Amazon, and the right side of the World Gate hub opens into the upcoming Graveyard. Beyond the Graveyard lie the three regions that close out the route — Korea, London, and Monochrome — each entered through its own door on the Graveyard grounds. Void Hunt is a special route connected through Volcanic.": "草原は初期の拠点です。森林と火山は西に広がり、砂漠は東にあり、水中は北の波止場から始まります。ライブ ワールド ゲート ブランチは南に位置し、日本、ギリシャ、軍事、天国に開かれています。迷路は氷、アメリカ、アマゾンへと続き、ワールド ゲート ハブの右側は今後の墓地へと開かれています。墓地の先には、ルートを締めくくる 3 つの地域である韓国、ロンドン、モノクロームがあり、それぞれ墓地の敷地内にある専用の扉から入ります。ヴォイドハントはヴォルカニック経由で繋がる特別なルートです。",
+  "Reviewed 1 September 2026 · Connections follow the current exported map graph": "2026 年 9 月 1 日に投稿済み · 接続は、現在エクスポートされているマップ グラフに従います"
 }
