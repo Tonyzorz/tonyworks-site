@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T01:08:07Z",
+  "generatedAt": "2026-09-06T01:30:42Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "v3.0.3",
   "release": {
@@ -14,7 +14,7 @@
   "counts": {
     "enemies": 837,
     "bosses": 37,
-    "items": 1254,
+    "items": 1258,
     "maps": 114,
     "zones": 866,
     "areas": 113,
@@ -23943,7 +23943,7 @@
         {
           "itemId": "GY04_Weapon",
           "itemName": "Mourning Blade",
-          "chance": 3
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -24405,7 +24405,7 @@
         {
           "itemId": "GY06_Weapon",
           "itemName": "Yewroot Scythe",
-          "chance": 3
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -24751,7 +24751,7 @@
         {
           "itemId": "GY08_Weapon",
           "itemName": "Fogcaller's Censer",
-          "chance": 3
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -28939,7 +28939,7 @@
     {
       "id": "KR07_Z0",
       "name": "Hanji Lantern",
-      "image": "",
+      "image": "enemy_KR07_Z0.png",
       "isBoss": false,
       "minLevel": 1234000,
       "maxLevel": 1234000,
@@ -29023,7 +29023,7 @@
     {
       "id": "KR07_Z2",
       "name": "Elder Hanji Lantern",
-      "image": "",
+      "image": "enemy_KR07_Z2.png",
       "isBoss": false,
       "minLevel": 1250000,
       "maxLevel": 1250000,
@@ -29107,7 +29107,7 @@
     {
       "id": "KR07_Z4",
       "name": "Greater Hanji Lantern",
-      "image": "",
+      "image": "enemy_KR07_Z4.png",
       "isBoss": false,
       "minLevel": 1266100,
       "maxLevel": 1266100,
@@ -39651,8 +39651,8 @@
       "dropItemName": "Relic of the First Dead",
       "hardModeDropItemId": "",
       "bonusDropItemId": "",
-      "dropChance": 1,
-      "hardModeDropChance": 0.75
+      "dropChance": 0.5,
+      "hardModeDropChance": 0.375
     },
     {
       "id": "NineDragonSovereign",
@@ -47519,7 +47519,7 @@
       "id": "GY04_Helmet",
       "name": "Mourning Hood",
       "description": "",
-      "image": "",
+      "image": "item_GY04_Helmet.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -47552,7 +47552,7 @@
       "id": "GY04_Shoes",
       "name": "Mourner's Slippers",
       "description": "",
-      "image": "",
+      "image": "item_GY04_Shoes.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -47683,7 +47683,7 @@
       "id": "GY05_Helmet",
       "name": "Iron Grave-Crown",
       "description": "",
-      "image": "",
+      "image": "item_GY05_Helmet.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -47847,7 +47847,7 @@
       "id": "GY06_Helmet",
       "name": "Reliquary Helm",
       "description": "",
-      "image": "",
+      "image": "item_GY06_Helmet.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -48109,7 +48109,7 @@
       "id": "GY08_Accessory",
       "name": "Fogcaller's Wick",
       "description": "",
-      "image": "",
+      "image": "item_GY08_Accessory.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -48175,7 +48175,7 @@
       "id": "GY08_Helmet",
       "name": "Fogcaller's Lantern Head",
       "description": "",
-      "image": "",
+      "image": "item_GY08_Helmet.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -48208,7 +48208,7 @@
       "id": "GY08_Shoes",
       "name": "Fogtread Boots",
       "description": "",
-      "image": "",
+      "image": "item_GY08_Shoes.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -48339,7 +48339,7 @@
       "id": "GY09_Helmet",
       "name": "Vault Keystone Helm",
       "description": "",
-      "image": "",
+      "image": "item_GY09_Helmet.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -48372,7 +48372,7 @@
       "id": "GY09_Shoes",
       "name": "Vaultwalker Sabatons",
       "description": "",
-      "image": "",
+      "image": "item_GY09_Shoes.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -48569,7 +48569,7 @@
       "id": "GY10_Shoes",
       "name": "Steps of the First Dead",
       "description": "",
-      "image": "",
+      "image": "item_GY10_Shoes.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -73832,7 +73832,7 @@
       "id": "PX08_Weapon",
       "name": "Monolith Maul",
       "description": "",
-      "image": "",
+      "image": "item_PX08_Weapon.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -79551,6 +79551,35 @@
       ]
     },
     {
+      "id": "Troll_BeetleShell",
+      "name": "Beetle Shell",
+      "description": "",
+      "image": "item_Troll_BeetleShell.png",
+      "rarity": "Rare",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": false,
+      "isBossItem": false,
+      "isTrollItem": true,
+      "shopRank": 1,
+      "sourceRegion": "GY08",
+      "bonusHP": 1,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 0,
+      "maxCopies": 3,
+      "effects": [
+        "HP +1"
+      ],
+      "dropAreas": [],
+      "shopAreas": []
+    },
+    {
       "id": "Troll_BrokenToriiCharm",
       "name": "Broken Torii Charm",
       "description": "",
@@ -79711,6 +79740,35 @@
       "isTrollItem": true,
       "shopRank": 1,
       "sourceRegion": "ML06",
+      "bonusHP": 0,
+      "bonusATK": 1,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 0,
+      "maxCopies": 3,
+      "effects": [
+        "ATK +1"
+      ],
+      "dropAreas": [],
+      "shopAreas": []
+    },
+    {
+      "id": "Troll_FogWhistle",
+      "name": "Fog Whistle",
+      "description": "",
+      "image": "item_Troll_FogWhistle.png",
+      "rarity": "Rare",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": false,
+      "isBossItem": false,
+      "isTrollItem": true,
+      "shopRank": 1,
+      "sourceRegion": "GY06",
       "bonusHP": 0,
       "bonusATK": 1,
       "bonusDEF": 0,
@@ -79899,6 +79957,35 @@
       "shopAreas": []
     },
     {
+      "id": "Troll_MournersHandkerchief",
+      "name": "Mourner's Handkerchief",
+      "description": "",
+      "image": "item_Troll_MournersHandkerchief.png",
+      "rarity": "Rare",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": false,
+      "isBossItem": false,
+      "isTrollItem": true,
+      "shopRank": 1,
+      "sourceRegion": "GY04",
+      "bonusHP": 1,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 0,
+      "maxCopies": 3,
+      "effects": [
+        "HP +1"
+      ],
+      "dropAreas": [],
+      "shopAreas": []
+    },
+    {
       "id": "Troll_RatKingsWhisker",
       "name": "Rat King's Whisker",
       "description": "",
@@ -79952,6 +80039,35 @@
       "maxCopies": 3,
       "effects": [
         "HP +1"
+      ],
+      "dropAreas": [],
+      "shopAreas": []
+    },
+    {
+      "id": "Troll_ToeTag",
+      "name": "Toe Tag",
+      "description": "",
+      "image": "item_Troll_ToeTag.png",
+      "rarity": "Rare",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": false,
+      "isBossItem": false,
+      "isTrollItem": true,
+      "shopRank": 1,
+      "sourceRegion": "GY10",
+      "bonusHP": 0,
+      "bonusATK": 0,
+      "bonusDEF": 1,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 0,
+      "maxCopies": 3,
+      "effects": [
+        "DEF +1"
       ],
       "dropAreas": [],
       "shopAreas": []
