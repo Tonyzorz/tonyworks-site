@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T02:00:48Z",
+  "generatedAt": "2026-09-06T02:07:08Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "v3.0.3",
   "release": {
@@ -82155,12 +82155,12 @@
       "id": "LD04",
       "name": "Whitechapel Alleys",
       "world": "London",
-      "image": "",
+      "image": "map_LD04.png",
       "gridWidth": 72,
       "gridHeight": 72,
       "dataVersion": 1,
-      "walkableCells": 2023,
-      "blockedCells": 3161
+      "walkableCells": 2276,
+      "blockedCells": 2908
     },
     {
       "id": "LD05",
