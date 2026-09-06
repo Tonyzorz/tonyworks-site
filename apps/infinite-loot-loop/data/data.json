@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T01:30:42Z",
+  "generatedAt": "2026-09-06T02:00:48Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "v3.0.3",
   "release": {
@@ -23943,7 +23943,7 @@
         {
           "itemId": "GY04_Weapon",
           "itemName": "Mourning Blade",
-          "chance": 1.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -24751,7 +24751,7 @@
         {
           "itemId": "GY08_Weapon",
           "itemName": "Fogcaller's Censer",
-          "chance": 1.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -28536,7 +28536,7 @@
         {
           "itemId": "KR05_Armor",
           "itemName": "Dancheong Cuirass",
-          "chance": 3
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -31313,7 +31313,7 @@
         {
           "itemId": "LD05_Armor",
           "itemName": "Riveted Iron Vest",
-          "chance": 3
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -39651,8 +39651,8 @@
       "dropItemName": "Relic of the First Dead",
       "hardModeDropItemId": "",
       "bonusDropItemId": "",
-      "dropChance": 0.5,
-      "hardModeDropChance": 0.375
+      "dropChance": 1,
+      "hardModeDropChance": 0.75
     },
     {
       "id": "NineDragonSovereign",
@@ -39826,8 +39826,8 @@
       "dropItemName": "The Point of Origin",
       "hardModeDropItemId": "",
       "bonusDropItemId": "",
-      "dropChance": 1,
-      "hardModeDropChance": 0.75
+      "dropChance": 0.5,
+      "hardModeDropChance": 0.375
     }
   ],
   "items": [
@@ -79551,35 +79551,6 @@
       ]
     },
     {
-      "id": "Troll_BeetleShell",
-      "name": "Beetle Shell",
-      "description": "",
-      "image": "item_Troll_BeetleShell.png",
-      "rarity": "Rare",
-      "type": "Accessory",
-      "setName": "",
-      "isUnique": false,
-      "shopUnavailable": true,
-      "hiddenFromCollection": false,
-      "isHardModeItem": false,
-      "isBossItem": false,
-      "isTrollItem": true,
-      "shopRank": 1,
-      "sourceRegion": "GY08",
-      "bonusHP": 1,
-      "bonusATK": 0,
-      "bonusDEF": 0,
-      "bonusAGI": 0,
-      "bonusLUC": 0,
-      "buyPrice": 0,
-      "maxCopies": 3,
-      "effects": [
-        "HP +1"
-      ],
-      "dropAreas": [],
-      "shopAreas": []
-    },
-    {
       "id": "Troll_BrokenToriiCharm",
       "name": "Broken Torii Charm",
       "description": "",
@@ -79633,6 +79604,35 @@
       "maxCopies": 3,
       "effects": [
         "ATK +1"
+      ],
+      "dropAreas": [],
+      "shopAreas": []
+    },
+    {
+      "id": "Troll_BurntGasMantle",
+      "name": "Burnt Gas Mantle",
+      "description": "",
+      "image": "item_Troll_BurntGasMantle.png",
+      "rarity": "Rare",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": false,
+      "isBossItem": false,
+      "isTrollItem": true,
+      "shopRank": 1,
+      "sourceRegion": "LD05",
+      "bonusHP": 0,
+      "bonusATK": 0,
+      "bonusDEF": 1,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 0,
+      "maxCopies": 3,
+      "effects": [
+        "DEF +1"
       ],
       "dropAreas": [],
       "shopAreas": []
@@ -79957,35 +79957,6 @@
       "shopAreas": []
     },
     {
-      "id": "Troll_MournersHandkerchief",
-      "name": "Mourner's Handkerchief",
-      "description": "",
-      "image": "item_Troll_MournersHandkerchief.png",
-      "rarity": "Rare",
-      "type": "Accessory",
-      "setName": "",
-      "isUnique": false,
-      "shopUnavailable": true,
-      "hiddenFromCollection": false,
-      "isHardModeItem": false,
-      "isBossItem": false,
-      "isTrollItem": true,
-      "shopRank": 1,
-      "sourceRegion": "GY04",
-      "bonusHP": 1,
-      "bonusATK": 0,
-      "bonusDEF": 0,
-      "bonusAGI": 0,
-      "bonusLUC": 0,
-      "buyPrice": 0,
-      "maxCopies": 3,
-      "effects": [
-        "HP +1"
-      ],
-      "dropAreas": [],
-      "shopAreas": []
-    },
-    {
       "id": "Troll_RatKingsWhisker",
       "name": "Rat King's Whisker",
       "description": "",
@@ -80044,10 +80015,10 @@
       "shopAreas": []
     },
     {
-      "id": "Troll_ToeTag",
-      "name": "Toe Tag",
+      "id": "Troll_SplinteredTotem",
+      "name": "Splintered Totem",
       "description": "",
-      "image": "item_Troll_ToeTag.png",
+      "image": "item_Troll_SplinteredTotem.png",
       "rarity": "Rare",
       "type": "Accessory",
       "setName": "",
@@ -80058,16 +80029,45 @@
       "isBossItem": false,
       "isTrollItem": true,
       "shopRank": 1,
-      "sourceRegion": "GY10",
-      "bonusHP": 0,
+      "sourceRegion": "KR05",
+      "bonusHP": 1,
       "bonusATK": 0,
-      "bonusDEF": 1,
+      "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
       "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
-        "DEF +1"
+        "HP +1"
+      ],
+      "dropAreas": [],
+      "shopAreas": []
+    },
+    {
+      "id": "Troll_StrayPixel",
+      "name": "Stray Pixel",
+      "description": "",
+      "image": "item_Troll_StrayPixel.png",
+      "rarity": "Rare",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": false,
+      "isBossItem": false,
+      "isTrollItem": true,
+      "shopRank": 1,
+      "sourceRegion": "PX20",
+      "bonusHP": 1,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 0,
+      "maxCopies": 3,
+      "effects": [
+        "HP +1"
       ],
       "dropAreas": [],
       "shopAreas": []
