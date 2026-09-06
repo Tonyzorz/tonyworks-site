@@ -2138,5 +2138,10 @@
   "zone_the_origin___zone_0": "起源 - エリア1",
   "zone_the_origin___zone_1": "起源 - エリア2",
   "zone_the_origin___zone_2": "起源 - エリア3",
-  "zone_the_origin___zone_3": "起源 - エリア4"
+  "zone_the_origin___zone_3": "起源 - エリア4",
+  "item_mourners_handkerchief": "弔問客のハンカチ",
+  "item_fog_whistle": "霧笛",
+  "item_splintered_totem": "ひび割れたチャンスン",
+  "item_burnt_gas_mantle": "焼けたガスマントル",
+  "item_stray_pixel": "はぐれピクセル"
 }

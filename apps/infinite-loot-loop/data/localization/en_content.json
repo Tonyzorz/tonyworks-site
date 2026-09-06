@@ -2138,5 +2138,10 @@
   "zone_the_origin___zone_0": "The Origin - Zone 0",
   "zone_the_origin___zone_1": "The Origin - Zone 1",
   "zone_the_origin___zone_2": "The Origin - Zone 2",
-  "zone_the_origin___zone_3": "The Origin - Zone 3"
+  "zone_the_origin___zone_3": "The Origin - Zone 3",
+  "item_mourners_handkerchief": "Mourner's Handkerchief",
+  "item_fog_whistle": "Fog Whistle",
+  "item_splintered_totem": "Splintered Totem",
+  "item_burnt_gas_mantle": "Burnt Gas Mantle",
+  "item_stray_pixel": "Stray Pixel"
 }

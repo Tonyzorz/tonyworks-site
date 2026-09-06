@@ -2138,5 +2138,10 @@
   "zone_the_origin___zone_0": "L'Origine – Zone 1",
   "zone_the_origin___zone_1": "L'Origine – Zone 2",
   "zone_the_origin___zone_2": "L'Origine – Zone 3",
-  "zone_the_origin___zone_3": "L'Origine – Zone 4"
+  "zone_the_origin___zone_3": "L'Origine – Zone 4",
+  "item_mourners_handkerchief": "Mouchoir du pleureur",
+  "item_fog_whistle": "Sifflet de brume",
+  "item_splintered_totem": "Totem fendu",
+  "item_burnt_gas_mantle": "Manchon à gaz brûlé",
+  "item_stray_pixel": "Pixel égaré"
 }

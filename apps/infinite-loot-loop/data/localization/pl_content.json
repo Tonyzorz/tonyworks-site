@@ -2138,5 +2138,10 @@
   "zone_the_origin___zone_0": "Początek – Strefa 1",
   "zone_the_origin___zone_1": "Początek – Strefa 2",
   "zone_the_origin___zone_2": "Początek – Strefa 3",
-  "zone_the_origin___zone_3": "Początek – Strefa 4"
+  "zone_the_origin___zone_3": "Początek – Strefa 4",
+  "item_mourners_handkerchief": "Chusteczka żałobnika",
+  "item_fog_whistle": "Gwizdek mgły",
+  "item_splintered_totem": "Rozłupany totem",
+  "item_burnt_gas_mantle": "Spalona siatka gazowa",
+  "item_stray_pixel": "Zabłąkany piksel"
 }

@@ -2138,5 +2138,10 @@
   "zone_the_origin___zone_0": "기원 - 1구역",
   "zone_the_origin___zone_1": "기원 - 2구역",
   "zone_the_origin___zone_2": "기원 - 3구역",
-  "zone_the_origin___zone_3": "기원 - 4구역"
+  "zone_the_origin___zone_3": "기원 - 4구역",
+  "item_mourners_handkerchief": "조문객의 손수건",
+  "item_fog_whistle": "안개 호루라기",
+  "item_splintered_totem": "쪼개진 장승",
+  "item_burnt_gas_mantle": "타버린 가스 맨틀",
+  "item_stray_pixel": "떠도는 픽셀"
 }

@@ -2138,5 +2138,10 @@
   "zone_the_origin___zone_0": "Der Ursprung – Zone 1",
   "zone_the_origin___zone_1": "Der Ursprung – Zone 2",
   "zone_the_origin___zone_2": "Der Ursprung – Zone 3",
-  "zone_the_origin___zone_3": "Der Ursprung – Zone 4"
+  "zone_the_origin___zone_3": "Der Ursprung – Zone 4",
+  "item_mourners_handkerchief": "Taschentuch des Trauernden",
+  "item_fog_whistle": "Nebelpfeife",
+  "item_splintered_totem": "Gesplitterter Totem",
+  "item_burnt_gas_mantle": "Verbrannter Glühstrumpf",
+  "item_stray_pixel": "Verirrtes Pixel"
 }

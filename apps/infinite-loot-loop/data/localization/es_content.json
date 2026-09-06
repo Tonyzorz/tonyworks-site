@@ -2138,5 +2138,10 @@
   "zone_the_origin___zone_0": "El Origen – Zona 1",
   "zone_the_origin___zone_1": "El Origen – Zona 2",
   "zone_the_origin___zone_2": "El Origen – Zona 3",
-  "zone_the_origin___zone_3": "El Origen – Zona 4"
+  "zone_the_origin___zone_3": "El Origen – Zona 4",
+  "item_mourners_handkerchief": "Pañuelo del doliente",
+  "item_fog_whistle": "Silbato de niebla",
+  "item_splintered_totem": "Tótem astillado",
+  "item_burnt_gas_mantle": "Camisa de gas quemada",
+  "item_stray_pixel": "Píxel perdido"
 }

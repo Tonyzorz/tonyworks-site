@@ -2138,5 +2138,10 @@
   "zone_the_origin___zone_0": "L'Origine – Zona 1",
   "zone_the_origin___zone_1": "L'Origine – Zona 2",
   "zone_the_origin___zone_2": "L'Origine – Zona 3",
-  "zone_the_origin___zone_3": "L'Origine – Zona 4"
+  "zone_the_origin___zone_3": "L'Origine – Zona 4",
+  "item_mourners_handkerchief": "Fazzoletto del piangente",
+  "item_fog_whistle": "Fischietto di nebbia",
+  "item_splintered_totem": "Totem scheggiato",
+  "item_burnt_gas_mantle": "Reticella a gas bruciata",
+  "item_stray_pixel": "Pixel smarrito"
 }

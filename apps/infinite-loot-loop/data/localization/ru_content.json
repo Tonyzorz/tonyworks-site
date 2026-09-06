@@ -2138,5 +2138,10 @@
   "zone_the_origin___zone_0": "Исток — зона 1",
   "zone_the_origin___zone_1": "Исток — зона 2",
   "zone_the_origin___zone_2": "Исток — зона 3",
-  "zone_the_origin___zone_3": "Исток — зона 4"
+  "zone_the_origin___zone_3": "Исток — зона 4",
+  "item_mourners_handkerchief": "Платок скорбящего",
+  "item_fog_whistle": "Туманный свисток",
+  "item_splintered_totem": "Расколотый тотем",
+  "item_burnt_gas_mantle": "Сгоревшая газовая сетка",
+  "item_stray_pixel": "Бродячий пиксель"
 }
