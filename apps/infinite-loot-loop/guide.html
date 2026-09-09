@@ -147,15 +147,15 @@
         <li><strong>ATK</strong> &#8212; base damage; scales your normal hits, crits, and combo hits.</li>
         <li><strong>DEF</strong> &#8212; <strong>flat</strong> damage reduction: an incoming hit deals <code>max(ATK &#215; 15%, ATK &#8722; DEF)</code>. Every point of DEF subtracts a point of damage, with no cap and no diminishing returns &#8212; but at least 15% of any attack always lands. Some enemies pierce a share of your DEF.</li>
         <li><strong>AGI</strong> &#8212; the tempo stat: raises <strong>crit chance</strong>, <strong>crit damage</strong> (base 1.5&#215;), <strong>combo</strong> chance, and a little <strong>dodge</strong>.</li>
-        <li><strong>LUC</strong> &#8212; the fortune stat: raises <strong>drop rate</strong> (a small nudge, up to +0.6%), <strong>dodge</strong>, and <strong>combo</strong>.</li>
+        <li><strong>LUC</strong> &#8212; the fortune stat: raises <strong>gold</strong> (LUC &times; 0.1%) and <strong>drop rate</strong> (a small nudge, up to +0.75%). LUC no longer feeds dodge or combo.</li>
       </ul>
       <div class="callout guide-tip"><strong>Current scaling</strong><span>Full HP, ATK, and DEF gain <code>8 &times; ln(1 + level / 100)%</code> from level power. The calculation includes base, equipment, permanent, achievement, and character stats. Item percentage bonuses also apply to the full total. AGI and LUC do not receive this level multiplier.</span></div>
-      <div class="callout guide-note"><strong>Monster counter-stats</strong> Each monster has fixed resistance values that reduce crit, combo, dodge, crit damage, DEF effectiveness, or player ATK. Crit and combo can exceed 100% and overflow into stronger guaranteed tiers; dodge alone is capped at 95%.</div>
+      <div class="callout guide-note"><strong>Monster counter-stats</strong> Each monster has fixed resistance values that reduce crit, combo, dodge, crit damage, DEF effectiveness, or player ATK. Crit and combo can exceed 100% and overflow into stronger tiers (up to 5, each multiplying again, to a 4&times; ceiling); dodge is hard-capped at 20%.</div>
 
       <h2 id="combat">Combat mechanics</h2>
       <ul>
         <li><strong>Crit</strong> &#8212; AGI raises both chance and damage (minimum 1.5&#215;). Chance beyond 100% creates higher critical tiers instead of wasting the excess.</li>
-        <li><strong>Combo</strong> &#8212; AGI + LUC can chain up to 15 extra hits. Chance beyond 100% guarantees additional links before normal continuation rolls.</li>
+        <li><strong>Combo</strong> &#8212; ATK points give a chance at up to 3 extra hits. Chance beyond 100% becomes combo tiers, and past the first tier every extra hit multiplies like a critical, up to 4&times;.</li>
         <li><strong>Dodge</strong> &#8212; a chance to avoid an enemy's hit entirely, from LUC + AGI.</li>
         <li><strong>Defense</strong> &#8212; flat, uncapped damage reduction; a minimum 15% of every attack still gets through.</li>
         <li><strong>Lifesteal</strong> &#8212; heal a share of damage dealt &#8212; gained <strong>only</strong> from specific accessories that have it (not from any stat).</li>
@@ -187,13 +187,13 @@
         <strong>east</strong> into Desert, and <strong>north &#8212; the docks</strong> into Underwater.
         See the <a href="maps.html">World Map</a> for the full layout.</p>
       <p>For boss order, region-by-region preparation, and the exact unlock checklist, use the dedicated <a href="normal-guide.html">Normal Mode Guide</a>.</p>
-      <div class="callout guide-note"><strong>World Gate and the next route</strong> The World Gate is live with 19 maps across Japan, Greek, Military, and Heaven, plus 5 bosses and extended Normal/Hard progression. The upcoming Maze batch is also cataloged: 12 Maze maps connect from the World Gate and branch into 5 Ice, 5 America, and 5 Amazon maps.</div>
+      <div class="callout guide-note"><strong>World Gate and the next route</strong> The World Gate is live with 19 maps across Japan, Greek, Military, and Heaven, plus 5 bosses and extended Normal/Hard progression. The route continues past the World Gate: 12 Maze maps branch into 5 Ice, 5 America, and 5 Amazon maps.</div>
 
       <h2 id="loot">Loot &amp; drop rates</h2>
       <ul>
         <li>Each enemy has one shared drop budget per victory, split among its eligible items rather than giving every item a separate full-strength roll.</li>
         <li><strong>Duplicate falloff:</strong> the more copies of an item you already own, the sharply lower the chance of another &#8212; early copies come fast, then taper off hard.</li>
-        <li><strong>LUC</strong> adds a very small drop-rate bonus, capped at +0.6%. Drop-rate gear and certain characters stack on top.</li>
+        <li><strong>LUC</strong> adds a very small drop-rate bonus, climbing toward +0.5% and then very slowly to +0.75%. Drop-rate gear and certain characters stack on top.</li>
         <li><strong>Boss drops</strong> are rare uniques: ~<strong>1%</strong> in Normal, ~<strong>0.75%</strong> in Hard, before bonuses.</li>
       </ul>
 
