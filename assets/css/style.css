@@ -760,6 +760,40 @@ body[data-page="portal"] .wrap { padding-top:0; }
   box-shadow:var(--shadow); transition:transform .12s ease, border-color .12s ease; }
 .wnode:hover { transform:translateY(-3px); border-color:var(--wc,var(--accent)); }
 .wnode .wicon { font-size:1.9rem; line-height:1; }
+/* CSS flags - see the note in app.js WORLD_META. Same box as .flag-us so they line up. */
+.flag-jp, .flag-kr, .flag-gr, .flag-gb, .flag-eg {
+  display:inline-block; position:relative; width:1.35em; height:.82em; overflow:hidden;
+  vertical-align:middle; border:1px solid rgba(0,0,0,.22); border-radius:2px;
+  box-shadow:0 1px 2px rgba(10,49,97,.18);
+}
+/* Japan: white field, centred red disc. */
+.flag-jp { background:#fff; }
+.flag-jp::before { content:""; position:absolute; inset:0; margin:auto; width:.42em; height:.42em;
+  border-radius:50%; background:#bc002d; }
+/* Korea: white field, red-over-blue taegeuk. The four trigrams are deliberately omitted - at
+   13px tall they render as mud; the taegeuk alone is unambiguous at this size. */
+.flag-kr { background:#fff; }
+.flag-kr::before { content:""; position:absolute; inset:0; margin:auto; width:.44em; height:.44em;
+  border-radius:50%; background:linear-gradient(180deg,#cd2e3a 0 50%,#0047a0 50% 100%); }
+/* Greece: nine blue/white stripes with a blue canton. */
+.flag-gr { background:repeating-linear-gradient(to bottom,#0d5eaf 0 22.2%,#fff 22.2% 44.4%); }
+.flag-gr::before { content:""; position:absolute; inset:0 auto auto 0; width:44%; height:55%;
+  background:#0d5eaf; }
+.flag-gr::after { content:""; position:absolute; inset:0 auto auto 0; width:44%; height:55%;
+  background:linear-gradient(#fff 0 0) center/100% 2px no-repeat, linear-gradient(#fff 0 0) center/2px 100% no-repeat; }
+/* United Kingdom: an approximation - diagonals then the St George cross over them. */
+.flag-gb {
+  background:
+    linear-gradient(#c8102e 0 0) center/100% 26% no-repeat,
+    linear-gradient(#c8102e 0 0) center/26% 100% no-repeat,
+    linear-gradient(#fff 0 0) center/100% 44% no-repeat,
+    linear-gradient(#fff 0 0) center/44% 100% no-repeat,
+    linear-gradient(63deg,transparent 44%,#fff 44% 56%,transparent 56%),
+    linear-gradient(-63deg,transparent 44%,#fff 44% 56%,transparent 56%),
+    #012169;
+}
+/* Egypt: red, white and black bands. The gold eagle is omitted at this size. */
+.flag-eg { background:linear-gradient(180deg,#ce1126 0 33.3%,#fff 33.3% 66.6%,#000 66.6% 100%); }
 .flag-us {
   display:inline-block; position:relative; width:1.35em; height:.82em; overflow:hidden;
   vertical-align:middle; border:1px solid rgba(10,49,97,.28); border-radius:2px;
@@ -782,7 +816,9 @@ body[data-page="portal"] .wrap { padding-top:0; }
    because the 100vw breakout ignores the page scrollbar's width. */
 body { overflow-x:clip; }
 .worldmap {
-  overflow-x:auto; overflow-y:hidden; padding:1.25rem 16px .5rem;
+  overflow-x:auto; overflow-y:auto; max-height:80vh; padding:1.25rem 16px .5rem;
+  /* overscroll-behavior stays at its default so that once the map hits an edge the PAGE keeps
+     scrolling - trapping the wheel inside the canvas is the usual complaint about pannable maps. */
   margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw);
   cursor:grab; user-select:none; -webkit-user-select:none;
   scrollbar-width:none; -ms-overflow-style:none;
@@ -790,9 +826,9 @@ body { overflow-x:clip; }
 .worldmap::-webkit-scrollbar { display:none; }
 .worldmap.panning { cursor:grabbing; }
 .wm-grid {
-  display:grid; width:max-content; margin:0 auto; align-items:center; justify-items:center; gap:6px;
-  grid-template-columns: auto 30px auto 30px auto 30px auto 30px auto 30px auto 30px auto 30px auto;
-  grid-template-rows: auto 24px auto 24px auto 24px auto 24px auto;
+  display:grid; width:max-content; margin:0 auto; align-items:center; justify-items:center; gap:18px;
+  grid-template-columns: auto 62px auto 62px auto 62px auto 62px auto 62px auto 62px auto 62px auto;
+  grid-template-rows: auto 46px auto 46px auto 46px auto 46px auto;
   grid-template-areas:
     ".  .     .  .   .    .  .    .  .      .  uw   .   .      .     ."
     ".  .     .  .   .    .  .    .  .      .  vu   .   .      .     ."
@@ -807,11 +843,20 @@ body { overflow-x:clip; }
 /* World Gate branch: the hub drops onto a bus that fans out to the four themed regions. */
 .wm-branch { display:flex; flex-direction:column; align-items:center; width:100%; }
 .wm-branch-bus { align-self:stretch; height:2px; margin:0 12%; background:var(--border); }
-.wm-branch-row { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; }
+.wm-branch-row { display:flex; flex-wrap:wrap; justify-content:center; gap:28px; }
 .wm-branch-item { display:flex; flex-direction:column; align-items:center; }
-.wm-branch-item .wm-drop { width:2px; height:16px; background:var(--border); }
-.wm-maze-trunk { width:2px; height:30px; background:var(--border); }
+.wm-branch-item .wm-drop { width:2px; height:26px; background:var(--border); }
+.wm-maze-trunk { width:2px; height:40px; background:var(--border); }
 .wm-subbranch { display:flex; flex-direction:column; align-items:center; width:62%; }
+/* Second group under the hub: Japan/Greek/Military/Heaven are reached from the World Gate
+   DIRECTLY, not through the Maze that is drawn above them. The gap plus the caption say so. */
+.wm-tier-gap { height:44px; }
+.wm-tier-label {
+  font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+  background:var(--panel); border:1px solid var(--border); border-radius:999px;
+  padding:.2rem .7rem; margin-bottom:.55rem; white-space:nowrap;
+}
+.wm-tier-stem { width:2px; height:22px; background:var(--border); }
 .wm-subbranch .wm-branch-bus { width:100%; margin:0; }
 /* ---- planned content (Epoch 4 wave 1) ------------------------------------------------------
    Everything the wiki shows for Stone / Egypt / The Temple is DESIGNED, NOT BUILT. It must never
@@ -833,7 +878,7 @@ body { overflow-x:clip; }
    horizontally so the layout stays connected instead of collapsing to a straight list. */
 @media (max-width:640px){
   .worldmap { padding-bottom:.75rem; }
-  .wm-grid { gap:4px; grid-template-columns: auto 16px auto 16px auto 16px auto 16px auto 16px auto 16px auto 16px auto; }
+  .wm-grid { gap:10px; grid-template-columns: auto 34px auto 34px auto 34px auto 34px auto 34px auto 34px auto 34px auto; }
   .worldmap .wnode { width:108px; padding:.6rem .45rem; gap:.1rem; }
   .worldmap .wnode .wicon { font-size:1.5rem; }
   .worldmap .wnode .wname { font-size:.88rem; }
