@@ -1,0 +1,1422 @@
+{
+ "generatedAt": "2026-09-11T01:41:10Z",
+ "source": "Assets/Project Information/epoch4_wave1_cloud_and_circle.md",
+ "epoch": 4,
+ "wave": 1,
+ "note": "Planned content. Nothing here is built: no assets, no art and NO STATS exist yet. Level bands are projections owned by the balance pass, not authored values.",
+ "route": [
+  {
+   "leg": 3,
+   "code": "ST",
+   "name": "Stone",
+   "anchor": "Korea-hard"
+  },
+  {
+   "leg": 5,
+   "code": "EG",
+   "name": "Egypt",
+   "anchor": "London-hard"
+  },
+  {
+   "leg": 7,
+   "code": "BD",
+   "name": "The Temple",
+   "anchor": "Monochrome-hard"
+  }
+ ],
+ "worlds": [
+  {
+   "code": "CL",
+   "name": "Cloud Plaza",
+   "kind": "hub",
+   "leg": null,
+   "anchor": null,
+   "levelFrom": null,
+   "levelTo": null,
+   "zoneCount": 1,
+   "pitch": "A second World Gate, reached by the stair on the WEST side of the hub. Shop, save and four exits: one each to Stone, Egypt and The Temple, and one back down to the World Gate.",
+   "maps": [
+    {
+     "id": "CL01",
+     "name": "Cloud Plaza",
+     "zoneCount": 1,
+     "bandStart": null,
+     "note": "hub town — no encounters"
+    }
+   ],
+   "creatures": [],
+   "gear": [],
+   "boss": null
+  },
+  {
+   "code": "ST",
+   "name": "Stone",
+   "kind": "region",
+   "leg": 3,
+   "anchor": "Korea-hard",
+   "levelFrom": 32800000,
+   "levelTo": 45590000,
+   "zoneCount": 44,
+   "pitch": "the oldest thing still standing. Megaliths, quarry steps, dolmens, cairns, glyph-cut monoliths — a landscape that was arranged by someone, a very long time ago, for a reason nobody recorded. Cold granite, lichen green, wet slate, standing mist.",
+   "maps": [
+    {
+     "id": "ST01",
+     "name": "Standing Circle",
+     "zoneCount": 6,
+     "bandStart": 32800000,
+     "note": "open moor, a ring of uprights; the arrival fight is in the middle of it"
+    },
+    {
+     "id": "ST02",
+     "name": "The Quarry Steps",
+     "zoneCount": 5,
+     "bandStart": 34180000,
+     "note": "a worked cliff face, cut steps, abandoned half-blocks"
+    },
+    {
+     "id": "ST03",
+     "name": "Dolmen Field",
+     "zoneCount": 6,
+     "bandStart": 35620000,
+     "note": "hundreds of capstones; sightlines break constantly"
+    },
+    {
+     "id": "ST04",
+     "name": "The Glyph Wall",
+     "zoneCount": 5,
+     "bandStart": 37110000,
+     "note": "one continuous carved face, walked end to end"
+    },
+    {
+     "id": "ST05",
+     "name": "Cairn Deeps",
+     "zoneCount": 6,
+     "bandStart": 38670000,
+     "note": "below ground — the first interior of the region"
+    },
+    {
+     "id": "ST06",
+     "name": "The Toppled Giant",
+     "zoneCount": 5,
+     "bandStart": 40300000,
+     "note": "a single fallen colossus; every zone is a body part"
+    },
+    {
+     "id": "ST07",
+     "name": "Menhir Spine",
+     "zoneCount": 6,
+     "bandStart": 41990000,
+     "note": "a ridgeline of uprights along a mountain's back"
+    },
+    {
+     "id": "ST08",
+     "name": "The Unmoved Stone",
+     "zoneCount": 5,
+     "bandStart": 43750000,
+     "note": "boss map; a plain, and one stone in it"
+    }
+   ],
+   "creatures": [
+    {
+     "id": "ST_LichenCrawler",
+     "name": "Lichen Crawler",
+     "areas": [
+      "ST01"
+     ]
+    },
+    {
+     "id": "ST_CairnHound",
+     "name": "Cairn Hound",
+     "areas": [
+      "ST01",
+      "ST05"
+     ]
+    },
+    {
+     "id": "ST_QuarryHauler",
+     "name": "Quarry Hauler",
+     "areas": [
+      "ST02"
+     ]
+    },
+    {
+     "id": "ST_SplitwedgeGolem",
+     "name": "Splitwedge Golem",
+     "areas": [
+      "ST02",
+      "ST06"
+     ]
+    },
+    {
+     "id": "ST_DolmenShade",
+     "name": "Dolmen Shade",
+     "areas": [
+      "ST03",
+      "ST08"
+     ]
+    },
+    {
+     "id": "ST_BarrowKite",
+     "name": "Barrow Kite",
+     "areas": [
+      "ST03"
+     ]
+    },
+    {
+     "id": "ST_GlyphCutSentinel",
+     "name": "Glyph-Cut Sentinel",
+     "areas": [
+      "ST04"
+     ]
+    },
+    {
+     "id": "ST_Chiselbeak",
+     "name": "Chiselbeak",
+     "areas": [
+      "ST04"
+     ]
+    },
+    {
+     "id": "ST_RubbleWurm",
+     "name": "Rubble Wurm",
+     "areas": [
+      "ST05"
+     ]
+    },
+    {
+     "id": "ST_MossBackedOx",
+     "name": "Moss-Backed Ox",
+     "areas": [
+      "ST06"
+     ]
+    },
+    {
+     "id": "ST_StandingWatcher",
+     "name": "Standing Watcher",
+     "areas": [
+      "ST07",
+      "ST08"
+     ]
+    },
+    {
+     "id": "ST_TheLeaningMan",
+     "name": "The Leaning Man",
+     "areas": [
+      "ST07"
+     ]
+    }
+   ],
+   "gear": [
+    {
+     "id": "ST01_Weapon",
+     "name": "Knapped Maul",
+     "type": "Weapon",
+     "tier": "ST01",
+     "tierIndex": 1
+    },
+    {
+     "id": "ST01_Armor",
+     "name": "Lichen Hide Vest",
+     "type": "Armor",
+     "tier": "ST01",
+     "tierIndex": 1
+    },
+    {
+     "id": "ST01_Helmet",
+     "name": "Quarry Cap",
+     "type": "Helmet",
+     "tier": "ST01",
+     "tierIndex": 1
+    },
+    {
+     "id": "ST01_Shoes",
+     "name": "Gritstone Treads",
+     "type": "Shoes",
+     "tier": "ST01",
+     "tierIndex": 1
+    },
+    {
+     "id": "ST01_Accessory",
+     "name": "Chip of the First Stone",
+     "type": "Accessory",
+     "tier": "ST01",
+     "tierIndex": 1
+    },
+    {
+     "id": "ST02_Weapon",
+     "name": "Splitting Wedge",
+     "type": "Weapon",
+     "tier": "ST02",
+     "tierIndex": 2
+    },
+    {
+     "id": "ST02_Armor",
+     "name": "Hauler's Harness",
+     "type": "Armor",
+     "tier": "ST02",
+     "tierIndex": 2
+    },
+    {
+     "id": "ST02_Helmet",
+     "name": "Wedge-Iron Helm",
+     "type": "Helmet",
+     "tier": "ST02",
+     "tierIndex": 2
+    },
+    {
+     "id": "ST02_Shoes",
+     "name": "Quarrystep Boots",
+     "type": "Shoes",
+     "tier": "ST02",
+     "tierIndex": 2
+    },
+    {
+     "id": "ST02_Accessory",
+     "name": "Cutter's Tally",
+     "type": "Accessory",
+     "tier": "ST02",
+     "tierIndex": 2
+    },
+    {
+     "id": "ST03_Weapon",
+     "name": "Dolmen Slab-Blade",
+     "type": "Weapon",
+     "tier": "ST03",
+     "tierIndex": 3
+    },
+    {
+     "id": "ST03_Armor",
+     "name": "Capstone Plate",
+     "type": "Armor",
+     "tier": "ST03",
+     "tierIndex": 3
+    },
+    {
+     "id": "ST03_Helmet",
+     "name": "Lintel Crown",
+     "type": "Helmet",
+     "tier": "ST03",
+     "tierIndex": 3
+    },
+    {
+     "id": "ST03_Shoes",
+     "name": "Dolmen Sandals",
+     "type": "Shoes",
+     "tier": "ST03",
+     "tierIndex": 3
+    },
+    {
+     "id": "ST03_Accessory",
+     "name": "Shadow Under the Slab",
+     "type": "Accessory",
+     "tier": "ST03",
+     "tierIndex": 3
+    },
+    {
+     "id": "ST04_Weapon",
+     "name": "Glyph-Cut Axe",
+     "type": "Weapon",
+     "tier": "ST04",
+     "tierIndex": 4
+    },
+    {
+     "id": "ST04_Armor",
+     "name": "Inscribed Cuirass",
+     "type": "Armor",
+     "tier": "ST04",
+     "tierIndex": 4
+    },
+    {
+     "id": "ST04_Helmet",
+     "name": "Reader's Circlet",
+     "type": "Helmet",
+     "tier": "ST04",
+     "tierIndex": 4
+    },
+    {
+     "id": "ST04_Shoes",
+     "name": "Glyphwalker Shoes",
+     "type": "Shoes",
+     "tier": "ST04",
+     "tierIndex": 4
+    },
+    {
+     "id": "ST04_Accessory",
+     "name": "The Unread Line",
+     "type": "Accessory",
+     "tier": "ST04",
+     "tierIndex": 4
+    },
+    {
+     "id": "ST05_Weapon",
+     "name": "Cairn Breaker",
+     "type": "Weapon",
+     "tier": "ST05",
+     "tierIndex": 5
+    },
+    {
+     "id": "ST05_Armor",
+     "name": "Barrow-Stone Mail",
+     "type": "Armor",
+     "tier": "ST05",
+     "tierIndex": 5
+    },
+    {
+     "id": "ST05_Helmet",
+     "name": "Cairn Keeper's Helm",
+     "type": "Helmet",
+     "tier": "ST05",
+     "tierIndex": 5
+    },
+    {
+     "id": "ST05_Shoes",
+     "name": "Deepcairn Boots",
+     "type": "Shoes",
+     "tier": "ST05",
+     "tierIndex": 5
+    },
+    {
+     "id": "ST05_Accessory",
+     "name": "Cairn Keystone",
+     "type": "Accessory",
+     "tier": "ST05",
+     "tierIndex": 5
+    },
+    {
+     "id": "ST06_Weapon",
+     "name": "Giant's Femur Club",
+     "type": "Weapon",
+     "tier": "ST06",
+     "tierIndex": 6
+    },
+    {
+     "id": "ST06_Armor",
+     "name": "Toppled Giant's Pauldron",
+     "type": "Armor",
+     "tier": "ST06",
+     "tierIndex": 6
+    },
+    {
+     "id": "ST06_Helmet",
+     "name": "Fallen Crown",
+     "type": "Helmet",
+     "tier": "ST06",
+     "tierIndex": 6
+    },
+    {
+     "id": "ST06_Shoes",
+     "name": "Giantstride Greaves",
+     "type": "Shoes",
+     "tier": "ST06",
+     "tierIndex": 6
+    },
+    {
+     "id": "ST06_Accessory",
+     "name": "Knuckle of the Giant",
+     "type": "Accessory",
+     "tier": "ST06",
+     "tierIndex": 6
+    },
+    {
+     "id": "ST07_Weapon",
+     "name": "Menhir Pike",
+     "type": "Weapon",
+     "tier": "ST07",
+     "tierIndex": 7
+    },
+    {
+     "id": "ST07_Armor",
+     "name": "Spine-Ridge Armour",
+     "type": "Armor",
+     "tier": "ST07",
+     "tierIndex": 7
+    },
+    {
+     "id": "ST07_Helmet",
+     "name": "Menhir Helm",
+     "type": "Helmet",
+     "tier": "ST07",
+     "tierIndex": 7
+    },
+    {
+     "id": "ST07_Shoes",
+     "name": "Ridgewalk Boots",
+     "type": "Shoes",
+     "tier": "ST07",
+     "tierIndex": 7
+    },
+    {
+     "id": "ST07_Accessory",
+     "name": "Vertebra of the Spine",
+     "type": "Accessory",
+     "tier": "ST07",
+     "tierIndex": 7
+    },
+    {
+     "id": "ST08_Weapon",
+     "name": "The Last Chisel",
+     "type": "Weapon",
+     "tier": "ST08",
+     "tierIndex": 8
+    },
+    {
+     "id": "ST08_Armor",
+     "name": "Unmoved Plate",
+     "type": "Armor",
+     "tier": "ST08",
+     "tierIndex": 8
+    },
+    {
+     "id": "ST08_Helmet",
+     "name": "Weathered Diadem",
+     "type": "Helmet",
+     "tier": "ST08",
+     "tierIndex": 8
+    },
+    {
+     "id": "ST08_Shoes",
+     "name": "Stonefast Sabatons",
+     "type": "Shoes",
+     "tier": "ST08",
+     "tierIndex": 8
+    },
+    {
+     "id": "ST08_Accessory",
+     "name": "The Stone That Did Not Move",
+     "type": "Accessory",
+     "tier": "ST08",
+     "tierIndex": 8
+    }
+   ],
+   "boss": {
+    "id": "ST08_Boss",
+    "mapId": "ST08",
+    "name": "THE UNMOVED",
+    "level": 45590000,
+    "blurb": "A standing stone that was never carved into anything. It has no face, and it has never taken a step. The fight is the region's thesis: *you are not going to move it, you are going to outlast it.* Reads as endurance through HP and resists, not through soft ATK — ⛔ the boss rule is absolute, it must out-stat its own field on every axis, level and resists included, at the post-WG ×2.2.",
+    "relic": {
+     "id": "ST08_BossRelic",
+     "name": "Heart of the Unmoved",
+     "bonus": "20 / 20 / 20%",
+     "cap": 3
+    }
+   }
+  },
+  {
+   "code": "EG",
+   "name": "Egypt",
+   "kind": "region",
+   "leg": 5,
+   "anchor": "London-hard",
+   "levelFrom": 76920000,
+   "levelTo": 106900000,
+   "zoneCount": 44,
+   "pitch": "a necropolis that is still being *staffed*. Embalmers who never stopped working, jars that still have something in them, false doors that lead somewhere anyway. No god is named and no god appears — the region's horror is bureaucratic, not divine: a death-industry running long after the state that funded it collapsed.",
+   "maps": [
+    {
+     "id": "EG01",
+     "name": "The Sand Stair",
+     "zoneCount": 6,
+     "bandStart": 76920000,
+     "note": "a buried staircase excavated one flight at a time"
+    },
+    {
+     "id": "EG02",
+     "name": "Embalmer's Row",
+     "zoneCount": 5,
+     "bandStart": 80150000,
+     "note": "workshop after workshop, all still lit"
+    },
+    {
+     "id": "EG03",
+     "name": "The Canopic Vault",
+     "zoneCount": 6,
+     "bandStart": 83510000,
+     "note": "shelved jars floor to ceiling; three of four are empty"
+    },
+    {
+     "id": "EG04",
+     "name": "Hall of False Doors",
+     "zoneCount": 5,
+     "bandStart": 87020000,
+     "note": "painted doors on solid stone — one of them opens"
+    },
+    {
+     "id": "EG05",
+     "name": "The Sunless Barque",
+     "zoneCount": 6,
+     "bandStart": 90680000,
+     "note": "an underground river and a ship crewed by rowers"
+    },
+    {
+     "id": "EG06",
+     "name": "Scarab Reach",
+     "zoneCount": 5,
+     "bandStart": 94480000,
+     "note": "the one open-air map; a dune sea that moves"
+    },
+    {
+     "id": "EG07",
+     "name": "The Weighing Room",
+     "zoneCount": 6,
+     "bandStart": 98450000,
+     "note": "scales, feathers, and a queue that never shortened"
+    },
+    {
+     "id": "EG08",
+     "name": "Tomb of the Bound King",
+     "zoneCount": 5,
+     "bandStart": 102590000,
+     "note": "boss map; a tomb built as a prison"
+    }
+   ],
+   "creatures": [
+    {
+     "id": "EG_SandWraith",
+     "name": "Sand Wraith",
+     "areas": [
+      "EG01"
+     ]
+    },
+    {
+     "id": "EG_NecropolisKite",
+     "name": "Necropolis Kite",
+     "areas": [
+      "EG01",
+      "EG06"
+     ]
+    },
+    {
+     "id": "EG_LinenHusk",
+     "name": "Linen Husk",
+     "areas": [
+      "EG02"
+     ]
+    },
+    {
+     "id": "EG_BandageWeaver",
+     "name": "Bandage Weaver",
+     "areas": [
+      "EG02"
+     ]
+    },
+    {
+     "id": "EG_CanopicCrawler",
+     "name": "Canopic Crawler",
+     "areas": [
+      "EG03"
+     ]
+    },
+    {
+     "id": "EG_ScarabSwarmlord",
+     "name": "Scarab Swarmlord",
+     "areas": [
+      "EG03",
+      "EG06"
+     ]
+    },
+    {
+     "id": "EG_FalseDoorShade",
+     "name": "False-Door Shade",
+     "areas": [
+      "EG04"
+     ]
+    },
+    {
+     "id": "EG_JackalHeadedWarden",
+     "name": "Jackal-Headed Warden",
+     "areas": [
+      "EG04",
+      "EG08"
+     ]
+    },
+    {
+     "id": "EG_BarqueOarsman",
+     "name": "Barque Oarsman",
+     "areas": [
+      "EG05"
+     ]
+    },
+    {
+     "id": "EG_SaltDriedBull",
+     "name": "Salt-Dried Bull",
+     "areas": [
+      "EG05"
+     ]
+    },
+    {
+     "id": "EG_AshLungEmbalmer",
+     "name": "Ash-Lung Embalmer",
+     "areas": [
+      "EG07"
+     ]
+    },
+    {
+     "id": "EG_TheNamelessScribe",
+     "name": "The Nameless Scribe",
+     "areas": [
+      "EG07",
+      "EG08"
+     ]
+    }
+   ],
+   "gear": [
+    {
+     "id": "EG01_Weapon",
+     "name": "Sandstair Khopesh",
+     "type": "Weapon",
+     "tier": "EG01",
+     "tierIndex": 1
+    },
+    {
+     "id": "EG01_Armor",
+     "name": "Duneweave Robe",
+     "type": "Armor",
+     "tier": "EG01",
+     "tierIndex": 1
+    },
+    {
+     "id": "EG01_Helmet",
+     "name": "Sunveil Headdress",
+     "type": "Helmet",
+     "tier": "EG01",
+     "tierIndex": 1
+    },
+    {
+     "id": "EG01_Shoes",
+     "name": "Sandstair Sandals",
+     "type": "Shoes",
+     "tier": "EG01",
+     "tierIndex": 1
+    },
+    {
+     "id": "EG01_Accessory",
+     "name": "Grain of the First Dune",
+     "type": "Accessory",
+     "tier": "EG01",
+     "tierIndex": 1
+    },
+    {
+     "id": "EG02_Weapon",
+     "name": "Embalmer's Hook",
+     "type": "Weapon",
+     "tier": "EG02",
+     "tierIndex": 2
+    },
+    {
+     "id": "EG02_Armor",
+     "name": "Linen-Wrapped Cuirass",
+     "type": "Armor",
+     "tier": "EG02",
+     "tierIndex": 2
+    },
+    {
+     "id": "EG02_Helmet",
+     "name": "Embalmer's Mask",
+     "type": "Helmet",
+     "tier": "EG02",
+     "tierIndex": 2
+    },
+    {
+     "id": "EG02_Shoes",
+     "name": "Row-Walker Sandals",
+     "type": "Shoes",
+     "tier": "EG02",
+     "tierIndex": 2
+    },
+    {
+     "id": "EG02_Accessory",
+     "name": "Vial of Black Resin",
+     "type": "Accessory",
+     "tier": "EG02",
+     "tierIndex": 2
+    },
+    {
+     "id": "EG03_Weapon",
+     "name": "Canopic Cleaver",
+     "type": "Weapon",
+     "tier": "EG03",
+     "tierIndex": 3
+    },
+    {
+     "id": "EG03_Armor",
+     "name": "Vaultjar Plate",
+     "type": "Armor",
+     "tier": "EG03",
+     "tierIndex": 3
+    },
+    {
+     "id": "EG03_Helmet",
+     "name": "Canopic Lid-Helm",
+     "type": "Helmet",
+     "tier": "EG03",
+     "tierIndex": 3
+    },
+    {
+     "id": "EG03_Shoes",
+     "name": "Vaultstep Boots",
+     "type": "Shoes",
+     "tier": "EG03",
+     "tierIndex": 3
+    },
+    {
+     "id": "EG03_Accessory",
+     "name": "The Fourth Jar",
+     "type": "Accessory",
+     "tier": "EG03",
+     "tierIndex": 3
+    },
+    {
+     "id": "EG04_Weapon",
+     "name": "False-Door Spear",
+     "type": "Weapon",
+     "tier": "EG04",
+     "tierIndex": 4
+    },
+    {
+     "id": "EG04_Armor",
+     "name": "Painted Door Panoply",
+     "type": "Armor",
+     "tier": "EG04",
+     "tierIndex": 4
+    },
+    {
+     "id": "EG04_Helmet",
+     "name": "Lintel Mask",
+     "type": "Helmet",
+     "tier": "EG04",
+     "tierIndex": 4
+    },
+    {
+     "id": "EG04_Shoes",
+     "name": "Threshold Sandals",
+     "type": "Shoes",
+     "tier": "EG04",
+     "tierIndex": 4
+    },
+    {
+     "id": "EG04_Accessory",
+     "name": "Key to a Door That Isn't",
+     "type": "Accessory",
+     "tier": "EG04",
+     "tierIndex": 4
+    },
+    {
+     "id": "EG05_Weapon",
+     "name": "Oarblade of the Barque",
+     "type": "Weapon",
+     "tier": "EG05",
+     "tierIndex": 5
+    },
+    {
+     "id": "EG05_Armor",
+     "name": "Sunless Hull Mail",
+     "type": "Armor",
+     "tier": "EG05",
+     "tierIndex": 5
+    },
+    {
+     "id": "EG05_Helmet",
+     "name": "Helmsman's Crown",
+     "type": "Helmet",
+     "tier": "EG05",
+     "tierIndex": 5
+    },
+    {
+     "id": "EG05_Shoes",
+     "name": "Deckwalker Sandals",
+     "type": "Shoes",
+     "tier": "EG05",
+     "tierIndex": 5
+    },
+    {
+     "id": "EG05_Accessory",
+     "name": "Lamp for the Sunless Water",
+     "type": "Accessory",
+     "tier": "EG05",
+     "tierIndex": 5
+    },
+    {
+     "id": "EG06_Weapon",
+     "name": "Scarab Mandible Axe",
+     "type": "Weapon",
+     "tier": "EG06",
+     "tierIndex": 6
+    },
+    {
+     "id": "EG06_Armor",
+     "name": "Carapace Scale Mail",
+     "type": "Armor",
+     "tier": "EG06",
+     "tierIndex": 6
+    },
+    {
+     "id": "EG06_Helmet",
+     "name": "Scarab Crest Helm",
+     "type": "Helmet",
+     "tier": "EG06",
+     "tierIndex": 6
+    },
+    {
+     "id": "EG06_Shoes",
+     "name": "Chitin Treads",
+     "type": "Shoes",
+     "tier": "EG06",
+     "tierIndex": 6
+    },
+    {
+     "id": "EG06_Accessory",
+     "name": "Living Scarab",
+     "type": "Accessory",
+     "tier": "EG06",
+     "tierIndex": 6
+    },
+    {
+     "id": "EG07_Weapon",
+     "name": "Feather-Edge Blade",
+     "type": "Weapon",
+     "tier": "EG07",
+     "tierIndex": 7
+    },
+    {
+     "id": "EG07_Armor",
+     "name": "Balance-Plate Armour",
+     "type": "Armor",
+     "tier": "EG07",
+     "tierIndex": 7
+    },
+    {
+     "id": "EG07_Helmet",
+     "name": "Weighing Circlet",
+     "type": "Helmet",
+     "tier": "EG07",
+     "tierIndex": 7
+    },
+    {
+     "id": "EG07_Shoes",
+     "name": "Scalewalk Sandals",
+     "type": "Shoes",
+     "tier": "EG07",
+     "tierIndex": 7
+    },
+    {
+     "id": "EG07_Accessory",
+     "name": "The Heavier Feather",
+     "type": "Accessory",
+     "tier": "EG07",
+     "tierIndex": 7
+    },
+    {
+     "id": "EG08_Weapon",
+     "name": "Sceptre of the Bound King",
+     "type": "Weapon",
+     "tier": "EG08",
+     "tierIndex": 8
+    },
+    {
+     "id": "EG08_Armor",
+     "name": "Bound King's Wrappings",
+     "type": "Armor",
+     "tier": "EG08",
+     "tierIndex": 8
+    },
+    {
+     "id": "EG08_Helmet",
+     "name": "Death Mask of the Bound King",
+     "type": "Helmet",
+     "tier": "EG08",
+     "tierIndex": 8
+    },
+    {
+     "id": "EG08_Shoes",
+     "name": "Burial Sandals",
+     "type": "Shoes",
+     "tier": "EG08",
+     "tierIndex": 8
+    },
+    {
+     "id": "EG08_Accessory",
+     "name": "Cartouche of the Bound King",
+     "type": "Accessory",
+     "tier": "EG08",
+     "tierIndex": 8
+    }
+   ],
+   "boss": {
+    "id": "EG08_Boss",
+    "mapId": "EG08",
+    "name": "THE BOUND KING",
+    "level": 106900000,
+    "blurb": "His tomb was not built to honour him. Every wrapping is a restraint, every seal a lock, and the whole necropolis above is the weight holding the lid down. The staff you have been fighting for seven maps were never guards — they were wardens, and you have just spent the region opening their prison for them.",
+    "relic": {
+     "id": "EG08_BossRelic",
+     "name": "The Broken Seal",
+     "bonus": "20 / 20 / 20%",
+     "cap": 3
+    }
+   }
+  },
+  {
+   "code": "BD",
+   "name": "The Temple",
+   "kind": "region",
+   "leg": 7,
+   "anchor": "Monochrome-hard",
+   "levelFrom": 342870000,
+   "levelTo": 476510000,
+   "zoneCount": 44,
+   "pitch": "a mountain temple with ten thousand steps, lantern halls, a bell that is still ringing from a strike nobody remembers, and a hall of a thousand identical seated statues — one of which is empty. No named figure and no deity appears anywhere in this region. Its guardians are objects: lanterns, bells, statues, flags, ash.",
+   "maps": [
+    {
+     "id": "BD01",
+     "name": "The Ten Thousand Steps",
+     "zoneCount": 6,
+     "bandStart": 342870000,
+     "note": "one climb; the whole map is the stair"
+    },
+    {
+     "id": "BD02",
+     "name": "Lantern Hall",
+     "zoneCount": 5,
+     "bandStart": 357270000,
+     "note": "thousands of hanging lanterns, all lit, no one lighting them"
+    },
+    {
+     "id": "BD03",
+     "name": "The Bell Tower",
+     "zoneCount": 6,
+     "bandStart": 372280000,
+     "note": "vertical map; the bell is struck once per zone"
+    },
+    {
+     "id": "BD04",
+     "name": "Hall of a Thousand Seats",
+     "zoneCount": 5,
+     "bandStart": 387910000,
+     "note": "identical statues; the ninth row has a gap"
+    },
+    {
+     "id": "BD05",
+     "name": "Prayer-Flag Span",
+     "zoneCount": 6,
+     "bandStart": 404210000,
+     "note": "a rope bridge in wind, flags to the horizon"
+    },
+    {
+     "id": "BD06",
+     "name": "The Ash Garden",
+     "zoneCount": 5,
+     "bandStart": 421180000,
+     "note": "raked ash instead of gravel; footprints appear behind you"
+    },
+    {
+     "id": "BD07",
+     "name": "The Silent Terrace",
+     "zoneCount": 6,
+     "bandStart": 438870000,
+     "note": "the map with no ambient sound at all"
+    },
+    {
+     "id": "BD08",
+     "name": "The Empty Seat",
+     "zoneCount": 5,
+     "bandStart": 457300000,
+     "note": "boss map; one seat, unoccupied, at the top of the mountain"
+    }
+   ],
+   "creatures": [
+    {
+     "id": "BD_StepPilgrim",
+     "name": "Step Pilgrim",
+     "areas": [
+      "BD01",
+      "BD05"
+     ]
+    },
+    {
+     "id": "BD_MistHermit",
+     "name": "Mist Hermit",
+     "areas": [
+      "BD01"
+     ]
+    },
+    {
+     "id": "BD_LanternKeeper",
+     "name": "Lantern Keeper",
+     "areas": [
+      "BD02"
+     ]
+    },
+    {
+     "id": "BD_IncenseSerpent",
+     "name": "Incense Serpent",
+     "areas": [
+      "BD02",
+      "BD06"
+     ]
+    },
+    {
+     "id": "BD_BellTowerShade",
+     "name": "Bell Tower Shade",
+     "areas": [
+      "BD03"
+     ]
+    },
+    {
+     "id": "BD_BellBronzeHound",
+     "name": "Bell-Bronze Hound",
+     "areas": [
+      "BD03"
+     ]
+    },
+    {
+     "id": "BD_SeatedEffigy",
+     "name": "Seated Effigy",
+     "areas": [
+      "BD04"
+     ]
+    },
+    {
+     "id": "BD_TheNinthStatue",
+     "name": "The Ninth Statue",
+     "areas": [
+      "BD04",
+      "BD08"
+     ]
+    },
+    {
+     "id": "BD_PrayerFlagWraith",
+     "name": "Prayer-Flag Wraith",
+     "areas": [
+      "BD05"
+     ]
+    },
+    {
+     "id": "BD_AshGardener",
+     "name": "Ash Gardener",
+     "areas": [
+      "BD06"
+     ]
+    },
+    {
+     "id": "BD_SilentAttendant",
+     "name": "Silent Attendant",
+     "areas": [
+      "BD07"
+     ]
+    },
+    {
+     "id": "BD_StoneGuardian",
+     "name": "Stone Guardian",
+     "areas": [
+      "BD07",
+      "BD08"
+     ]
+    }
+   ],
+   "gear": [
+    {
+     "id": "BD01_Weapon",
+     "name": "Pilgrim's Staff",
+     "type": "Weapon",
+     "tier": "BD01",
+     "tierIndex": 1
+    },
+    {
+     "id": "BD01_Armor",
+     "name": "Ten-Thousand-Step Robe",
+     "type": "Armor",
+     "tier": "BD01",
+     "tierIndex": 1
+    },
+    {
+     "id": "BD01_Helmet",
+     "name": "Traveller's Straw Hat",
+     "type": "Helmet",
+     "tier": "BD01",
+     "tierIndex": 1
+    },
+    {
+     "id": "BD01_Shoes",
+     "name": "Step-Worn Sandals",
+     "type": "Shoes",
+     "tier": "BD01",
+     "tierIndex": 1
+    },
+    {
+     "id": "BD01_Accessory",
+     "name": "Stone from the First Step",
+     "type": "Accessory",
+     "tier": "BD01",
+     "tierIndex": 1
+    },
+    {
+     "id": "BD02_Weapon",
+     "name": "Lantern Pole",
+     "type": "Weapon",
+     "tier": "BD02",
+     "tierIndex": 2
+    },
+    {
+     "id": "BD02_Armor",
+     "name": "Lanternlight Robe",
+     "type": "Armor",
+     "tier": "BD02",
+     "tierIndex": 2
+    },
+    {
+     "id": "BD02_Helmet",
+     "name": "Keeper's Hood",
+     "type": "Helmet",
+     "tier": "BD02",
+     "tierIndex": 2
+    },
+    {
+     "id": "BD02_Shoes",
+     "name": "Oil-Soaked Sandals",
+     "type": "Shoes",
+     "tier": "BD02",
+     "tierIndex": 2
+    },
+    {
+     "id": "BD02_Accessory",
+     "name": "Wick That Will Not Die",
+     "type": "Accessory",
+     "tier": "BD02",
+     "tierIndex": 2
+    },
+    {
+     "id": "BD03_Weapon",
+     "name": "Bell Clapper Maul",
+     "type": "Weapon",
+     "tier": "BD03",
+     "tierIndex": 3
+    },
+    {
+     "id": "BD03_Armor",
+     "name": "Bronze Bell Plate",
+     "type": "Armor",
+     "tier": "BD03",
+     "tierIndex": 3
+    },
+    {
+     "id": "BD03_Helmet",
+     "name": "Bell-Cast Helm",
+     "type": "Helmet",
+     "tier": "BD03",
+     "tierIndex": 3
+    },
+    {
+     "id": "BD03_Shoes",
+     "name": "Tower-Stair Boots",
+     "type": "Shoes",
+     "tier": "BD03",
+     "tierIndex": 3
+    },
+    {
+     "id": "BD03_Accessory",
+     "name": "Tongue of the Great Bell",
+     "type": "Accessory",
+     "tier": "BD03",
+     "tierIndex": 3
+    },
+    {
+     "id": "BD04_Weapon",
+     "name": "Seat-Splitter Blade",
+     "type": "Weapon",
+     "tier": "BD04",
+     "tierIndex": 4
+    },
+    {
+     "id": "BD04_Armor",
+     "name": "Thousand-Seat Mail",
+     "type": "Armor",
+     "tier": "BD04",
+     "tierIndex": 4
+    },
+    {
+     "id": "BD04_Helmet",
+     "name": "Effigy Crown",
+     "type": "Helmet",
+     "tier": "BD04",
+     "tierIndex": 4
+    },
+    {
+     "id": "BD04_Shoes",
+     "name": "Hall-Walker Sandals",
+     "type": "Shoes",
+     "tier": "BD04",
+     "tierIndex": 4
+    },
+    {
+     "id": "BD04_Accessory",
+     "name": "The Ninth Seat",
+     "type": "Accessory",
+     "tier": "BD04",
+     "tierIndex": 4
+    },
+    {
+     "id": "BD05_Weapon",
+     "name": "Flagpole Glaive",
+     "type": "Weapon",
+     "tier": "BD05",
+     "tierIndex": 5
+    },
+    {
+     "id": "BD05_Armor",
+     "name": "Prayer-Flag Wrap",
+     "type": "Armor",
+     "tier": "BD05",
+     "tierIndex": 5
+    },
+    {
+     "id": "BD05_Helmet",
+     "name": "Windworn Circlet",
+     "type": "Helmet",
+     "tier": "BD05",
+     "tierIndex": 5
+    },
+    {
+     "id": "BD05_Shoes",
+     "name": "Span-Walker Sandals",
+     "type": "Shoes",
+     "tier": "BD05",
+     "tierIndex": 5
+    },
+    {
+     "id": "BD05_Accessory",
+     "name": "The Flag Still Flying",
+     "type": "Accessory",
+     "tier": "BD05",
+     "tierIndex": 5
+    },
+    {
+     "id": "BD06_Weapon",
+     "name": "Ash Rake",
+     "type": "Weapon",
+     "tier": "BD06",
+     "tierIndex": 6
+    },
+    {
+     "id": "BD06_Armor",
+     "name": "Ashfall Vestment",
+     "type": "Armor",
+     "tier": "BD06",
+     "tierIndex": 6
+    },
+    {
+     "id": "BD06_Helmet",
+     "name": "Gardener's Wide Hat",
+     "type": "Helmet",
+     "tier": "BD06",
+     "tierIndex": 6
+    },
+    {
+     "id": "BD06_Shoes",
+     "name": "Ash-Tread Sandals",
+     "type": "Shoes",
+     "tier": "BD06",
+     "tierIndex": 6
+    },
+    {
+     "id": "BD06_Accessory",
+     "name": "Handful of Cold Ash",
+     "type": "Accessory",
+     "tier": "BD06",
+     "tierIndex": 6
+    },
+    {
+     "id": "BD07_Weapon",
+     "name": "Silent Edge",
+     "type": "Weapon",
+     "tier": "BD07",
+     "tierIndex": 7
+    },
+    {
+     "id": "BD07_Armor",
+     "name": "Terrace Stone Panoply",
+     "type": "Armor",
+     "tier": "BD07",
+     "tierIndex": 7
+    },
+    {
+     "id": "BD07_Helmet",
+     "name": "Hush Diadem",
+     "type": "Helmet",
+     "tier": "BD07",
+     "tierIndex": 7
+    },
+    {
+     "id": "BD07_Shoes",
+     "name": "Soundless Steps",
+     "type": "Shoes",
+     "tier": "BD07",
+     "tierIndex": 7
+    },
+    {
+     "id": "BD07_Accessory",
+     "name": "The Held Breath",
+     "type": "Accessory",
+     "tier": "BD07",
+     "tierIndex": 7
+    },
+    {
+     "id": "BD08_Weapon",
+     "name": "Staff of the Empty Seat",
+     "type": "Weapon",
+     "tier": "BD08",
+     "tierIndex": 8
+    },
+    {
+     "id": "BD08_Armor",
+     "name": "Vacant Vestment",
+     "type": "Armor",
+     "tier": "BD08",
+     "tierIndex": 8
+    },
+    {
+     "id": "BD08_Helmet",
+     "name": "Crown of No One",
+     "type": "Helmet",
+     "tier": "BD08",
+     "tierIndex": 8
+    },
+    {
+     "id": "BD08_Shoes",
+     "name": "Sandals Left at the Door",
+     "type": "Shoes",
+     "tier": "BD08",
+     "tierIndex": 8
+    },
+    {
+     "id": "BD08_Accessory",
+     "name": "The Seat Nobody Took",
+     "type": "Accessory",
+     "tier": "BD08",
+     "tierIndex": 8
+    }
+   ],
+   "boss": {
+    "id": "BD08_Boss",
+    "mapId": "BD08",
+    "name": "THE EMPTY SEAT",
+    "level": 476510000,
+    "blurb": "At the top of the mountain there is one seat and it has never been occupied. What defends it is not a person — it is the shape of the absence: a robe and a crown holding the silhouette of someone who is not there, seated, and it moves the way a held breath moves. No face, no figure, no deity.",
+    "relic": {
+     "id": "BD08_BossRelic",
+     "name": "The Unoccupied Crown",
+     "bonus": "20 / 20 / 20%",
+     "cap": 3
+    }
+   }
+  }
+ ],
+ "counts": {
+  "regions": 3,
+  "maps": 25,
+  "creatures": 36,
+  "gear": 120,
+  "bosses": 3,
+  "relics": 3
+ }
+}

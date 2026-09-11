@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-09T07:43:00Z",
+  "generatedAt": "2026-09-11T01:25:43Z",
   "game": "Infinite Loot-Loop",
-  "gameVersion": "v4.0.2",
+  "gameVersion": "v4.0.3",
   "release": {
     "worldGateReleased": true,
     "mazeBatchReleased": true,
@@ -14,7 +14,7 @@
   "counts": {
     "enemies": 837,
     "bosses": 37,
-    "items": 1258,
+    "items": 1266,
     "maps": 114,
     "zones": 866,
     "areas": 113,
@@ -19281,7 +19281,12 @@
         {
           "itemId": "MZ07_Armor",
           "itemName": "First Gate Plate",
-          "chance": 3
+          "chance": 1.5
+        },
+        {
+          "itemId": "MZ07_Shoes",
+          "itemName": "First Gate Treads",
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -19323,7 +19328,12 @@
         {
           "itemId": "MZ07_Helmet",
           "itemName": "First Gate Crown",
-          "chance": 3
+          "chance": 1.5
+        },
+        {
+          "itemId": "MZ07_Accessory",
+          "itemName": "First Gate Sigil",
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -19407,7 +19417,12 @@
         {
           "itemId": "MZ08_Armor",
           "itemName": "Second Gate Plate",
-          "chance": 3
+          "chance": 1.5
+        },
+        {
+          "itemId": "MZ08_Shoes",
+          "itemName": "Second Gate Treads",
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -19449,7 +19464,12 @@
         {
           "itemId": "MZ08_Helmet",
           "itemName": "Second Gate Crown",
-          "chance": 3
+          "chance": 1.5
+        },
+        {
+          "itemId": "MZ08_Accessory",
+          "itemName": "Second Gate Sigil",
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -19533,7 +19553,12 @@
         {
           "itemId": "MZ09_Armor",
           "itemName": "Third Gate Plate",
-          "chance": 3
+          "chance": 1.5
+        },
+        {
+          "itemId": "MZ09_Shoes",
+          "itemName": "Third Gate Treads",
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -19575,7 +19600,12 @@
         {
           "itemId": "MZ09_Helmet",
           "itemName": "Third Gate Crown",
-          "chance": 3
+          "chance": 1.5
+        },
+        {
+          "itemId": "MZ09_Accessory",
+          "itemName": "Third Gate Sigil",
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -20751,7 +20781,12 @@
         {
           "itemId": "IC05_Shoes",
           "itemName": "Frostthrone Treads",
-          "chance": 3
+          "chance": 1.5
+        },
+        {
+          "itemId": "IC05_Accessory",
+          "itemName": "Frostthrone Sigil",
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -21927,7 +21962,12 @@
         {
           "itemId": "AM05_Shoes",
           "itemName": "Pacific Treads",
-          "chance": 3
+          "chance": 1.5
+        },
+        {
+          "itemId": "AM05_Accessory",
+          "itemName": "Pacific Sigil",
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -23145,7 +23185,12 @@
         {
           "itemId": "AZ05_Shoes",
           "itemName": "Heartwood Treads",
-          "chance": 3
+          "chance": 1.5
+        },
+        {
+          "itemId": "AZ05_Accessory",
+          "itemName": "Heartwood Sigil",
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -26688,7 +26733,12 @@
         {
           "itemId": "MZ07_Armor_H",
           "itemName": "First Gate Plate [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "MZ07_Shoes_H",
+          "itemName": "First Gate Treads [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -26730,7 +26780,12 @@
         {
           "itemId": "MZ07_Helmet_H",
           "itemName": "First Gate Crown [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "MZ07_Accessory_H",
+          "itemName": "First Gate Sigil [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -26814,7 +26869,12 @@
         {
           "itemId": "MZ08_Armor_H",
           "itemName": "Second Gate Plate [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "MZ08_Shoes_H",
+          "itemName": "Second Gate Treads [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -26856,7 +26916,12 @@
         {
           "itemId": "MZ08_Helmet_H",
           "itemName": "Second Gate Crown [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "MZ08_Accessory_H",
+          "itemName": "Second Gate Sigil [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -26940,7 +27005,12 @@
         {
           "itemId": "MZ09_Armor_H",
           "itemName": "Third Gate Plate [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "MZ09_Shoes_H",
+          "itemName": "Third Gate Treads [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -26982,7 +27052,12 @@
         {
           "itemId": "MZ09_Helmet_H",
           "itemName": "Third Gate Crown [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "MZ09_Accessory_H",
+          "itemName": "Third Gate Sigil [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -30305,7 +30380,12 @@
         {
           "itemId": "IC05_Shoes_H",
           "itemName": "Frostthrone Treads [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "IC05_Accessory_H",
+          "itemName": "Frostthrone Sigil [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -33082,7 +33162,12 @@
         {
           "itemId": "AM05_Shoes_H",
           "itemName": "Pacific Treads [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "AM05_Accessory_H",
+          "itemName": "Pacific Sigil [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -34132,7 +34217,12 @@
         {
           "itemId": "AZ05_Shoes_H",
           "itemName": "Heartwood Treads [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "AZ05_Accessory_H",
+          "itemName": "Heartwood Sigil [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -37455,7 +37545,12 @@
         {
           "itemId": "PX15_Shoes",
           "itemName": "Scaffold Boots",
-          "chance": 3
+          "chance": 1.5
+        },
+        {
+          "itemId": "PX15_Accessory",
+          "itemName": "White Circle",
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -64937,7 +65032,9 @@
         "AGI +5.8K",
         "LUC +11.8K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "AM05"
+      ],
       "shopAreas": [
         "AM01",
         "AM02",
@@ -64975,7 +65072,9 @@
         "AGI +81.8K",
         "LUC +165K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "AM05"
+      ],
       "shopAreas": [
         "AM01",
         "AM02",
@@ -66633,7 +66732,9 @@
         "AGI +7.8K",
         "LUC +15.8K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "AZ05"
+      ],
       "shopAreas": [
         "AZ01",
         "AZ02",
@@ -66671,7 +66772,9 @@
         "AGI +104K",
         "LUC +211K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "AZ05"
+      ],
       "shopAreas": [
         "AZ01",
         "AZ02",
@@ -68329,7 +68432,9 @@
         "AGI +4.3K",
         "LUC +8.7K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "IC05"
+      ],
       "shopAreas": [
         "IC01",
         "IC02",
@@ -68367,7 +68472,9 @@
         "AGI +43.4K",
         "LUC +87.2K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "IC05"
+      ],
       "shopAreas": [
         "IC01",
         "IC02",
@@ -70673,6 +70780,74 @@
       "shopAreas": []
     },
     {
+      "id": "MZ07_Accessory",
+      "name": "First Gate Sigil",
+      "description": "",
+      "image": "item_MZ07_Accessory.png",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": false,
+      "isBossItem": false,
+      "isTrollItem": false,
+      "shopRank": 1,
+      "sourceRegion": "MZ07",
+      "bonusHP": 1.86942961597824e+21,
+      "bonusATK": 35023651239110400000,
+      "bonusDEF": 0,
+      "bonusAGI": 2970,
+      "bonusLUC": 5940,
+      "buyPrice": 5.54e+24,
+      "maxCopies": -1,
+      "effects": [
+        "HP +1.8Sx",
+        "ATK +35Qi",
+        "AGI +2.9K",
+        "LUC +5.9K"
+      ],
+      "dropAreas": [
+        "MZ07"
+      ],
+      "shopAreas": []
+    },
+    {
+      "id": "MZ07_Accessory_H",
+      "name": "First Gate Sigil [H]",
+      "description": "",
+      "image": "item_MZ07_Accessory_H.png",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "isTrollItem": false,
+      "shopRank": 1,
+      "sourceRegion": "MZ07",
+      "bonusHP": 1.43e+26,
+      "bonusATK": 9.73e+25,
+      "bonusDEF": 0,
+      "bonusAGI": 18000,
+      "bonusLUC": 36200,
+      "buyPrice": 1.8299999999999998e+31,
+      "maxCopies": -1,
+      "effects": [
+        "HP +143Sp",
+        "ATK +97.3Sp",
+        "AGI +18K",
+        "LUC +36.2K"
+      ],
+      "dropAreas": [
+        "MZ07"
+      ],
+      "shopAreas": []
+    },
+    {
       "id": "MZ07_Armor",
       "name": "First Gate Plate",
       "description": "",
@@ -70830,7 +71005,9 @@
         "DEF +361.4Qi",
         "AGI +3.1K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "MZ07"
+      ],
       "shopAreas": [
         "MZ01",
         "MZ02",
@@ -70874,7 +71051,9 @@
         "DEF +27.7Sp",
         "AGI +19.4K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "MZ07"
+      ],
       "shopAreas": [
         "MZ01",
         "MZ02",
@@ -70951,6 +71130,74 @@
       ],
       "dropAreas": [
         "MZ07"
+      ],
+      "shopAreas": []
+    },
+    {
+      "id": "MZ08_Accessory",
+      "name": "Second Gate Sigil",
+      "description": "",
+      "image": "item_MZ08_Accessory.png",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": false,
+      "isBossItem": false,
+      "isTrollItem": false,
+      "shopRank": 1,
+      "sourceRegion": "MZ08",
+      "bonusHP": 2.469674185445952e+21,
+      "bonusATK": 53643620679221380000,
+      "bonusDEF": 0,
+      "bonusAGI": 3120,
+      "bonusLUC": 6230,
+      "buyPrice": 8.34e+24,
+      "maxCopies": -1,
+      "effects": [
+        "HP +2.4Sx",
+        "ATK +53.6Qi",
+        "AGI +3.1K",
+        "LUC +6.2K"
+      ],
+      "dropAreas": [
+        "MZ08"
+      ],
+      "shopAreas": []
+    },
+    {
+      "id": "MZ08_Accessory_H",
+      "name": "Second Gate Sigil [H]",
+      "description": "",
+      "image": "item_MZ08_Accessory_H.png",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "isTrollItem": false,
+      "shopRank": 1,
+      "sourceRegion": "MZ08",
+      "bonusHP": 1.7e+26,
+      "bonusATK": 1.21e+26,
+      "bonusDEF": 0,
+      "bonusAGI": 18900,
+      "bonusLUC": 38000,
+      "buyPrice": 2.7399999999999996e+31,
+      "maxCopies": -1,
+      "effects": [
+        "HP +170Sp",
+        "ATK +121Sp",
+        "AGI +18.9K",
+        "LUC +38K"
+      ],
+      "dropAreas": [
+        "MZ08"
       ],
       "shopAreas": []
     },
@@ -71085,6 +71332,72 @@
       "shopAreas": []
     },
     {
+      "id": "MZ08_Shoes",
+      "name": "Second Gate Treads",
+      "description": "",
+      "image": "item_MZ08_Shoes.png",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": false,
+      "isBossItem": false,
+      "isTrollItem": false,
+      "shopRank": 1,
+      "sourceRegion": "MZ08",
+      "bonusHP": 5.421796351304602e+21,
+      "bonusATK": 0,
+      "bonusDEF": 479001923409749800000,
+      "bonusAGI": 3340,
+      "bonusLUC": 0,
+      "buyPrice": 8.34e+24,
+      "maxCopies": -1,
+      "effects": [
+        "HP +5.4Sx",
+        "DEF +479Qi",
+        "AGI +3.3K"
+      ],
+      "dropAreas": [
+        "MZ08"
+      ],
+      "shopAreas": []
+    },
+    {
+      "id": "MZ08_Shoes_H",
+      "name": "Second Gate Treads [H]",
+      "description": "",
+      "image": "item_MZ08_Shoes_H.png",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "isTrollItem": false,
+      "shopRank": 1,
+      "sourceRegion": "MZ08",
+      "bonusHP": 3.73e+26,
+      "bonusATK": 0,
+      "bonusDEF": 3.28e+25,
+      "bonusAGI": 20400,
+      "bonusLUC": 0,
+      "buyPrice": 2.7399999999999996e+31,
+      "maxCopies": -1,
+      "effects": [
+        "HP +373Sp",
+        "DEF +32.8Sp",
+        "AGI +20.4K"
+      ],
+      "dropAreas": [
+        "MZ08"
+      ],
+      "shopAreas": []
+    },
+    {
       "id": "MZ08_Weapon",
       "name": "Second Gate Blade",
       "description": "",
@@ -71177,7 +71490,9 @@
         "AGI +3.2K",
         "LUC +6.5K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "MZ09"
+      ],
       "shopAreas": [
         "MZ01",
         "MZ02",
@@ -71222,7 +71537,9 @@
         "AGI +19.9K",
         "LUC +39.9K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "MZ09"
+      ],
       "shopAreas": [
         "MZ01",
         "MZ02",
@@ -71362,6 +71679,72 @@
         "HP +277Sp",
         "DEF +34.9Sp",
         "LUC +30.6K"
+      ],
+      "dropAreas": [
+        "MZ09"
+      ],
+      "shopAreas": []
+    },
+    {
+      "id": "MZ09_Shoes",
+      "name": "Third Gate Treads",
+      "description": "",
+      "image": "item_MZ09_Shoes.png",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": false,
+      "isBossItem": false,
+      "isTrollItem": false,
+      "shopRank": 1,
+      "sourceRegion": "MZ09",
+      "bonusHP": 7.193988599353912e+21,
+      "bonusATK": 0,
+      "bonusDEF": 635039384503228000000,
+      "bonusAGI": 3510,
+      "bonusLUC": 0,
+      "buyPrice": 1.2499999999999998e+25,
+      "maxCopies": -1,
+      "effects": [
+        "HP +7.1Sx",
+        "DEF +635Qi",
+        "AGI +3.5K"
+      ],
+      "dropAreas": [
+        "MZ09"
+      ],
+      "shopAreas": []
+    },
+    {
+      "id": "MZ09_Shoes_H",
+      "name": "Third Gate Treads [H]",
+      "description": "",
+      "image": "item_MZ09_Shoes_H.png",
+      "rarity": "Legendary",
+      "type": "Shoes",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": true,
+      "isBossItem": false,
+      "isTrollItem": false,
+      "shopRank": 1,
+      "sourceRegion": "MZ09",
+      "bonusHP": 4.43e+26,
+      "bonusATK": 0,
+      "bonusDEF": 3.890000000000001e+25,
+      "bonusAGI": 21400,
+      "bonusLUC": 0,
+      "buyPrice": 4.11e+31,
+      "maxCopies": -1,
+      "effects": [
+        "HP +443Sp",
+        "DEF +38.9Sp",
+        "AGI +21.4K"
       ],
       "dropAreas": [
         "MZ09"
@@ -75168,7 +75551,9 @@
         "AGI +216K",
         "LUC +439K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "PX15"
+      ],
       "shopAreas": [
         "PX01",
         "PX02",
@@ -108314,10 +108699,14 @@
       "dropItemIds": [
         "MZ07_Weapon_H",
         "MZ07_Armor_H",
+        "MZ07_Shoes_H",
         "MZ07_Helmet_H",
+        "MZ07_Accessory_H",
         "MZ07_Weapon",
         "MZ07_Armor",
-        "MZ07_Helmet"
+        "MZ07_Shoes",
+        "MZ07_Helmet",
+        "MZ07_Accessory"
       ],
       "bossDropItemIds": [],
       "shopItemIds": [
@@ -108353,10 +108742,14 @@
       "dropItemIds": [
         "MZ08_Weapon_H",
         "MZ08_Armor_H",
+        "MZ08_Shoes_H",
         "MZ08_Helmet_H",
+        "MZ08_Accessory_H",
         "MZ08_Weapon",
         "MZ08_Armor",
-        "MZ08_Helmet"
+        "MZ08_Shoes",
+        "MZ08_Helmet",
+        "MZ08_Accessory"
       ],
       "bossDropItemIds": [],
       "shopItemIds": [
@@ -108392,10 +108785,14 @@
       "dropItemIds": [
         "MZ09_Weapon_H",
         "MZ09_Armor_H",
+        "MZ09_Shoes_H",
         "MZ09_Helmet_H",
+        "MZ09_Accessory_H",
         "MZ09_Weapon",
         "MZ09_Armor",
-        "MZ09_Helmet"
+        "MZ09_Shoes",
+        "MZ09_Helmet",
+        "MZ09_Accessory"
       ],
       "bossDropItemIds": [],
       "shopItemIds": [
@@ -108673,10 +109070,12 @@
         "IC05_Armor_H",
         "IC05_Helmet_H",
         "IC05_Shoes_H",
+        "IC05_Accessory_H",
         "IC05_Weapon",
         "IC05_Armor",
         "IC05_Helmet",
-        "IC05_Shoes"
+        "IC05_Shoes",
+        "IC05_Accessory"
       ],
       "bossDropItemIds": [
         "IC05_BossRelic",
@@ -108957,10 +109356,12 @@
         "AM05_Armor",
         "AM05_Helmet",
         "AM05_Shoes",
+        "AM05_Accessory",
         "AM05_Weapon_H",
         "AM05_Armor_H",
         "AM05_Helmet_H",
-        "AM05_Shoes_H"
+        "AM05_Shoes_H",
+        "AM05_Accessory_H"
       ],
       "bossDropItemIds": [
         "AM05_BossRelic",
@@ -109243,10 +109644,12 @@
         "AZ05_Armor",
         "AZ05_Helmet",
         "AZ05_Shoes",
+        "AZ05_Accessory",
         "AZ05_Weapon_H",
         "AZ05_Armor_H",
         "AZ05_Helmet_H",
-        "AZ05_Shoes_H"
+        "AZ05_Shoes_H",
+        "AZ05_Accessory_H"
       ],
       "bossDropItemIds": [
         "AZ05_BossRelic",
@@ -110594,7 +110997,8 @@
         "PX15_Weapon",
         "PX15_Armor",
         "PX15_Helmet",
-        "PX15_Shoes"
+        "PX15_Shoes",
+        "PX15_Accessory"
       ],
       "bossDropItemIds": [
         "PX15_BossRelic"

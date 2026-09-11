@@ -11,6 +11,7 @@ project to sit next to this repo as `../Infinite Loot-Loop`.
 node tools/build-data.mjs
 powershell -ExecutionPolicy Bypass -File tools/resize-images.ps1
 node tools/audit-data.mjs
+node tools/build-upcoming.mjs        # planned content -> data/upcoming.json
 ```
 
 - `build-data.mjs` parses the `.asset` YAML, resolves `guid` references via the
@@ -29,6 +30,29 @@ Then commit and push:
 ```
 git add -A && git commit -m "Refresh game data" && git push
 ```
+
+## Planned content — `data/upcoming.json`
+
+`build-upcoming.mjs` emits the Epoch 4 / wave 1 regions (Cloud Plaza, Stone, Egypt, The Temple)
+that are **designed but not built**: no Unity assets, no art, no authored stats. `app.js` merges
+the file into `data.json` at load time and every record carries `upcoming: true`, so the Maps,
+Monsters, Bosses and Items pages list them behind an **Upcoming** badge.
+
+⛔ **ONE LIST.** Every name is parsed out of the game repo design doc
+`Assets/Project Information/epoch4_wave1_cloud_and_circle.md` and is never retyped here. That doc
+is also what the Unity setup tools and the art-prompt docs are generated from, and the game repo
+polices the three against each other with `Tools/epoch4_blueprint/namecheck.js`. A fourth,
+hand-typed list on the wiki is exactly how the Maze batch shipped 48 PNGs that matched 1 of 124
+enemy names. The generator hard-fails if a region does not parse to 8 maps / 12 creatures /
+40 gear items / 1 boss.
+
+⛔ **It must never emit an HP / ATK / DEF number.** The balance pass owns those and none exist
+yet. Levels *are* published because the route is unreadable without them, but every one is
+labelled *projected* in the UI. A fabricated combat stat on a public wiki reads back later as if
+it had been authored.
+
+When a region actually ships, drop it from the design doc parse list here and let `build-data.mjs`
+pick it up from the real assets instead — do not leave both sources live.
 
 > A former in-editor exporter (`SiteDataExportTool.cs`) was **deleted 2026-07-27**.
 > It had diverged from this builder — emitting a raw `baseHP`/`atkScaling` schema
