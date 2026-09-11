@@ -17,10 +17,21 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { createRequire } from "node:module";
+
+// maps.js is CommonJS (module.exports) and this file is ESM, so it needs an explicit require bridge.
+const require = createRequire(import.meta.url);
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
 const DOC = path.resolve(ROOT, "../Infinite Loot-Loop/Assets/Project Information/epoch4_wave1_cloud_and_circle.md");
+// MAP GEOMETRY HAS ITS OWN SOURCE OF TRUTH, and it is not the design doc:
+// Tools/epoch4_blueprint/maps.js is "THE ONLY PLACE MAP GEOMETRY IS AUTHORED". buildall.js derives
+// every door, zone rect and landing from it and verifies them against the real engine constants.
+// We require() maps.js rather than parsing the emitted doc, and rather than requiring buildall.js,
+// which would WRITE the prompt docs back into the game repo as a side effect of building a website.
+const GEO = path.resolve(ROOT, "../Infinite Loot-Loop/Tools/epoch4_blueprint/maps.js");
+const HUBSRC = path.resolve(ROOT, "../Infinite Loot-Loop/Tools/epoch4_blueprint/buildall.js");
 const OUT = path.resolve(ROOT, "apps/infinite-loot-loop/data/upcoming.json");
 
 if (!fs.existsSync(DOC)) {
@@ -30,6 +41,47 @@ if (!fs.existsSync(DOC)) {
 }
 const md = fs.readFileSync(DOC, "utf8");
 const fail = (m) => { console.error("FATAL: " + m); process.exit(1); };
+if (!fs.existsSync(GEO)) fail("map geometry not found at\n  " + GEO);
+const { R: GEOM } = require(GEO);
+
+/**
+ * The door graph, derived exactly as buildall.js derives it (its `prev` rule): inside a region,
+ * map 01 goes back to the hub and every other map goes back to its predecessor; the three "01"
+ * maps carry the two extra ring doors that close the Stone / Egypt / Temple circle.
+ *
+ * The BOSS MAP HAS ONLY A BACK DOOR. maps.js gives ST08/EG08/BD08 one door each and no victory
+ * portal, even though the design doc section 1 wiring table lists ST08_to_CL01_Victory. The
+ * geometry is the half that is machine-verified (0 ERR / 0 WARN), so it wins here; the mismatch
+ * belongs to the design doc to settle, and is reported at the end of this build.
+ */
+function doorsFor(id) {
+  const m = GEOM[id]; if (!m) return [];
+  const reg = id.slice(0, 2), n = Number(id.slice(2));
+  const pad = (i) => reg + String(i).padStart(2, "0");
+  const out = [];
+  out.push(n === 1
+    ? { to: "CL01", kind: "hub",  label: "back to the Cloud Plaza" }
+    : { to: pad(n - 1), kind: "back", label: "back" });
+  if (GEOM[pad(n + 1)]) out.push({ to: pad(n + 1), kind: "onward", label: "onward" });
+  if (m.ringW) out.push({ to: m.ringW, kind: "ring", label: "ring door, west edge" });
+  if (m.ringE) out.push({ to: m.ringE, kind: "ring", label: "ring door, east edge" });
+  return out;
+}
+
+// CL01 doors live in buildall.js HUBS, not in maps.js. Read them out of the source instead of
+// retyping them. The character classes below dodge quote characters on purpose.
+function hubDoors() {
+  const src = fs.readFileSync(HUBSRC, "utf8");
+  const blk = src.match(/id:\s*.CL01.[\s\S]*?doors:\s*\[([\s\S]*?)\],\s*\n\s*layout:/);
+  if (!blk) fail("could not read the CL01 door list out of buildall.js");
+  const doors = [...blk[1].matchAll(/\[.([A-Z]+).,\s*.([A-Z0-9]+).,\s*.([^,\]]*?).\]/g)]
+    .map((dr) => ({
+      edge: dr[1], to: dr[2],
+      label: dr[3].replace(/[\u27f5\u27f6\u27f7]/g, "").trim()
+    }));
+  if (doors.length < 4) fail("CL01 parsed only " + doors.length + " doors; expected at least 4");
+  return doors;
+}
 
 const SLOTS = ["Weapon", "Armor", "Helmet", "Shoes", "Accessory"];
 // Display label for each region code. The doc titles them; this only maps code -> world name.
@@ -62,6 +114,7 @@ function tableRows(body, afterRe) {
 const clean = (s) => String(s == null ? "" : s).replace(/\*\*/g, "").replace(/`/g, "").trim();
 const num = (s) => Number(String(s).replace(/[^0-9]/g, "")) || null;
 
+const ZONE_DRIFT = [];
 const regions = [];
 for (const [idx, code] of [["3.1", "ST"], ["3.2", "EG"], ["3.3", "BD"]]) {
   const sec = section(new RegExp("^### " + idx.replace(".", "\\.") + " .*$", "m"));
@@ -78,10 +131,24 @@ for (const [idx, code] of [["3.1", "ST"], ["3.2", "EG"], ["3.3", "BD"]]) {
   // maps: | ST01 | **Standing Circle** | 6 | 32,800,000 | note |
   const maps = tableRows(body, /\| map \| name \| zones \|/i)
     .filter((r) => new RegExp("^" + code + "\\d\\d$").test(clean(r[0])))
-    .map((r) => ({
-      id: clean(r[0]), name: clean(r[1]), zoneCount: Number(clean(r[2])) || null,
-      bandStart: num(r[3]), note: clean(r[4])
-    }));
+    .map((r) => {
+      const id = clean(r[0]);
+      const g = GEOM[id];
+      if (!g) fail(id + " is in the design doc but not in maps.js (the geometry source of truth)");
+      // The design doc zone table and the geometry have drifted on a few maps. Do NOT fail the
+      // build on it: maps.js is the machine-verified half (0 ERR / 0 WARN) so it wins, and the doc
+      // is what a human has to correct. Collect every mismatch and print them all at the end.
+      if (g.zones.length !== Number(clean(r[2])))
+        ZONE_DRIFT.push(id + ": design doc " + clean(r[2]) + " zones, maps.js " + g.zones.length);
+      return {
+        id, name: clean(r[1]), zoneCount: g.zones.length,
+        bandStart: num(r[3]), note: clean(r[4]),
+        width: g.W, height: g.H, orient: g.orient,
+        // V = entered from the SOUTH edge, exits NORTH. H = entered from the WEST, exits EAST.
+        axis: g.orient === "V" ? "south to north" : "west to east",
+        isBossMap: !!g.boss, zoneNames: g.zones.slice(), doors: doorsFor(id)
+      };
+    });
   if (maps.length !== 8) fail(code + ": expected 8 maps, parsed " + maps.length);
 
   // creature pool: | 1 | **Lichen Crawler** | ST01, ST05 |
@@ -139,7 +206,17 @@ const hub = {
   levelFrom: null, levelTo: null, zoneCount: 1,
   pitch: "A second World Gate, reached by the stair on the WEST side of the hub. Shop, save and " +
          "four exits: one each to Stone, Egypt and The Temple, and one back down to the World Gate.",
-  maps: [{ id: "CL01", name: "Cloud Plaza", zoneCount: 1, bandStart: null, note: "hub town — no encounters" }],
+  maps: [{
+    id: "CL01", name: "Cloud Plaza", zoneCount: 1, bandStart: null,
+    note: "hub town — no encounters", width: 24, height: 24, orient: null, axis: null,
+    isBossMap: false, zoneNames: ["The Plaza"],
+    doors: hubDoors().map((dr) => ({
+      to: dr.to, edge: dr.edge, label: dr.label,
+      // From the plaza these lead OUT to a region; "hub" is the kind used by a region map for
+      // its door back IN, so labelling both the same made CL01 read "to the hub" about itself.
+      kind: dr.to === "CV01" ? "worldgate" : dr.to === "CL02" ? "wave2" : "region"
+    }))
+  }],
   creatures: [], gear: [], boss: null
 };
 
@@ -163,6 +240,23 @@ const out = {
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, JSON.stringify(out, null, 1) + "\n");
 console.log("Wrote " + path.relative(ROOT, OUT).replace(/\\/g, "/"), out.counts);
+const allMaps = out.worlds.flatMap((w) => w.maps);
+const ids = new Set(allMaps.map((m) => m.id));
+// A door pointing at a map nobody defined is the failure worth catching. CV01 (the live World
+// Gate) and CL02 (a wave-2 plaza) are the two legitimate references outside this wave.
+const dangling = allMaps.flatMap((m) => m.doors
+  .filter((dr) => !ids.has(dr.to) && dr.to !== "CV01" && dr.to !== "CL02")
+  .map((dr) => m.id + " -> " + dr.to));
+if (dangling.length) fail("doors point at maps that do not exist: " + dangling.join(", "));
+const doorCount = allMaps.reduce((a, m) => a + m.doors.length, 0);
+if (ZONE_DRIFT.length) {
+  console.log("  ⚠ ZONE COUNT DRIFT (geometry used, design doc needs fixing):");
+  for (const z of ZONE_DRIFT) console.log("      " + z);
+}
+console.log("  graph: " + doorCount + " doors over " + allMaps.length + " maps, 0 dangling");
+const noExit = allMaps.filter((m) => m.isBossMap && m.doors.length === 1).map((m) => m.id);
+if (noExit.length) console.log("  note: boss maps with only a back door (no victory portal in",
+  "maps.js, though the design doc lists one): " + noExit.join(", "));
 for (const r of ordered) {
   console.log("  leg " + r.leg + "  " + r.code + " " + r.name.padEnd(11) +
     r.maps.length + " maps · " + r.zoneCount + " zones · " + r.creatures.length + " creatures · " +

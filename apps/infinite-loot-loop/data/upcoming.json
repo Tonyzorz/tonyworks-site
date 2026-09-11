@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-11T01:41:10Z",
+ "generatedAt": "2026-09-11T02:20:48Z",
  "source": "Assets/Project Information/epoch4_wave1_cloud_and_circle.md",
  "epoch": 4,
  "wave": 1,
@@ -41,7 +41,47 @@
      "name": "Cloud Plaza",
      "zoneCount": 1,
      "bandStart": null,
-     "note": "hub town — no encounters"
+     "note": "hub town — no encounters",
+     "width": 24,
+     "height": 24,
+     "orient": null,
+     "axis": null,
+     "isBossMap": false,
+     "zoneNames": [
+      "The Plaza"
+     ],
+     "doors": [
+      {
+       "to": "CV01",
+       "edge": "SOUTH",
+       "label": "the World Gate WEST gate (external)",
+       "kind": "worldgate"
+      },
+      {
+       "to": "ST01",
+       "edge": "WEST",
+       "label": "stone arch",
+       "kind": "region"
+      },
+      {
+       "to": "EG01",
+       "edge": "EAST",
+       "label": "sand gate",
+       "kind": "region"
+      },
+      {
+       "to": "BD01",
+       "edge": "NORTH",
+       "label": "lantern gate",
+       "kind": "region"
+      },
+      {
+       "to": "CL02",
+       "edge": "UP",
+       "label": "the stair continues",
+       "kind": "wave2"
+      }
+     ]
     }
    ],
    "creatures": [],
@@ -64,56 +104,257 @@
      "name": "Standing Circle",
      "zoneCount": 6,
      "bandStart": 32800000,
-     "note": "open moor, a ring of uprights; the arrival fight is in the middle of it"
+     "note": "open moor, a ring of uprights; the arrival fight is in the middle of it",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "south to north",
+     "isBossMap": false,
+     "zoneNames": [
+      "Outer Ring",
+      "Fallen Uprights",
+      "The Inner Ring",
+      "Lichen Terrace",
+      "The Altar Stone",
+      "Northern Gap"
+     ],
+     "doors": [
+      {
+       "to": "CL01",
+       "kind": "hub",
+       "label": "back to the Cloud Plaza"
+      },
+      {
+       "to": "ST02",
+       "kind": "onward",
+       "label": "onward"
+      },
+      {
+       "to": "BD01",
+       "kind": "ring",
+       "label": "ring door, west edge"
+      },
+      {
+       "to": "EG01",
+       "kind": "ring",
+       "label": "ring door, east edge"
+      }
+     ]
     },
     {
      "id": "ST02",
      "name": "The Quarry Steps",
      "zoneCount": 5,
      "bandStart": 34180000,
-     "note": "a worked cliff face, cut steps, abandoned half-blocks"
+     "note": "a worked cliff face, cut steps, abandoned half-blocks",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Cut Face",
+      "First Bench",
+      "Abandoned Block",
+      "Second Bench",
+      "The Overhang"
+     ],
+     "doors": [
+      {
+       "to": "ST01",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "ST03",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "ST03",
      "name": "Dolmen Field",
      "zoneCount": 6,
      "bandStart": 35620000,
-     "note": "hundreds of capstones; sightlines break constantly"
+     "note": "hundreds of capstones; sightlines break constantly",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "south to north",
+     "isBossMap": false,
+     "zoneNames": [
+      "Field Edge",
+      "Low Dolmens",
+      "The Crowded Rows",
+      "Collapsed Cap",
+      "Tall Dolmens",
+      "The Last Capstone"
+     ],
+     "doors": [
+      {
+       "to": "ST02",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "ST04",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "ST04",
      "name": "The Glyph Wall",
      "zoneCount": 5,
      "bandStart": 37110000,
-     "note": "one continuous carved face, walked end to end"
+     "note": "one continuous carved face, walked end to end",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Wall Foot",
+      "First Panel",
+      "The Long Register",
+      "Defaced Section",
+      "The Unread End"
+     ],
+     "doors": [
+      {
+       "to": "ST03",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "ST05",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "ST05",
      "name": "Cairn Deeps",
      "zoneCount": 6,
      "bandStart": 38670000,
-     "note": "below ground — the first interior of the region"
+     "note": "below ground — the first interior of the region",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "south to north",
+     "isBossMap": false,
+     "zoneNames": [
+      "Cairn Mouth",
+      "Upper Chamber",
+      "The Squeeze",
+      "Bone Shelf",
+      "Lower Chamber",
+      "The Keystone Vault"
+     ],
+     "doors": [
+      {
+       "to": "ST04",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "ST06",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "ST06",
      "name": "The Toppled Giant",
      "zoneCount": 5,
      "bandStart": 40300000,
-     "note": "a single fallen colossus; every zone is a body part"
+     "note": "a single fallen colossus; every zone is a body part",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Shattered Feet",
+      "The Legs",
+      "Ribcage Hollow",
+      "The Arm",
+      "The Head"
+     ],
+     "doors": [
+      {
+       "to": "ST05",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "ST07",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "ST07",
      "name": "Menhir Spine",
      "zoneCount": 6,
      "bandStart": 41990000,
-     "note": "a ridgeline of uprights along a mountain's back"
+     "note": "a ridgeline of uprights along a mountain's back",
+     "width": 30,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Spine Foot",
+      "First Vertebra",
+      "Windward Ridge",
+      "The Gap",
+      "Leeward Ridge",
+      "Spine Crown"
+     ],
+     "doors": [
+      {
+       "to": "ST06",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "ST08",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "ST08",
      "name": "The Unmoved Stone",
      "zoneCount": 5,
      "bandStart": 43750000,
-     "note": "boss map; a plain, and one stone in it"
+     "note": "boss map; a plain, and one stone in it",
+     "width": 24,
+     "height": 24,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": true,
+     "zoneNames": [
+      "Open Plain",
+      "The Approach",
+      "Trodden Ground",
+      "The Circle of Bare Earth",
+      "The Stone"
+     ],
+     "doors": [
+      {
+       "to": "ST07",
+       "kind": "back",
+       "label": "back"
+      }
+     ]
     }
    ],
    "creatures": [
@@ -518,56 +759,257 @@
      "name": "The Sand Stair",
      "zoneCount": 6,
      "bandStart": 76920000,
-     "note": "a buried staircase excavated one flight at a time"
+     "note": "a buried staircase excavated one flight at a time",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "south to north",
+     "isBossMap": false,
+     "zoneNames": [
+      "Buried Landing",
+      "First Flight",
+      "Sand Drift",
+      "Second Flight",
+      "Cleared Steps",
+      "The Stair Head"
+     ],
+     "doors": [
+      {
+       "to": "CL01",
+       "kind": "hub",
+       "label": "back to the Cloud Plaza"
+      },
+      {
+       "to": "EG02",
+       "kind": "onward",
+       "label": "onward"
+      },
+      {
+       "to": "ST01",
+       "kind": "ring",
+       "label": "ring door, west edge"
+      },
+      {
+       "to": "BD01",
+       "kind": "ring",
+       "label": "ring door, east edge"
+      }
+     ]
     },
     {
      "id": "EG02",
      "name": "Embalmer's Row",
      "zoneCount": 5,
      "bandStart": 80150000,
-     "note": "workshop after workshop, all still lit"
+     "note": "workshop after workshop, all still lit",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Row Entrance",
+      "Salt Room",
+      "The Long Bench",
+      "Resin Store",
+      "Wrapping Room"
+     ],
+     "doors": [
+      {
+       "to": "EG01",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "EG03",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "EG03",
      "name": "The Canopic Vault",
      "zoneCount": 6,
      "bandStart": 83510000,
-     "note": "shelved jars floor to ceiling; three of four are empty"
+     "note": "shelved jars floor to ceiling; three of four are empty",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "south to north",
+     "isBossMap": false,
+     "zoneNames": [
+      "Vault Door",
+      "Low Shelves",
+      "The Jar Rows",
+      "Broken Jars",
+      "High Shelves",
+      "The Fourth Niche"
+     ],
+     "doors": [
+      {
+       "to": "EG02",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "EG04",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "EG04",
      "name": "Hall of False Doors",
      "zoneCount": 5,
      "bandStart": 87020000,
-     "note": "painted doors on solid stone — one of them opens"
+     "note": "painted doors on solid stone — one of them opens",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Hall Mouth",
+      "First Doors",
+      "The Repeating Wall",
+      "Painted Corridor",
+      "The Door That Opens"
+     ],
+     "doors": [
+      {
+       "to": "EG03",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "EG05",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "EG05",
      "name": "The Sunless Barque",
      "zoneCount": 6,
      "bandStart": 90680000,
-     "note": "an underground river and a ship crewed by rowers"
+     "note": "an underground river and a ship crewed by rowers",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "south to north",
+     "isBossMap": false,
+     "zoneNames": [
+      "Landing Stage",
+      "Shallow Water",
+      "The Hull",
+      "Rowing Deck",
+      "Stern Deck",
+      "The Prow"
+     ],
+     "doors": [
+      {
+       "to": "EG04",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "EG06",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "EG06",
      "name": "Scarab Reach",
-     "zoneCount": 5,
+     "zoneCount": 6,
      "bandStart": 94480000,
-     "note": "the one open-air map; a dune sea that moves"
+     "note": "the one open-air map; a dune sea that moves",
+     "width": 30,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Dune Foot",
+      "Shifting Sand",
+      "The Reach",
+      "Scarab Hollow",
+      "High Dune",
+      "The Far Ridge"
+     ],
+     "doors": [
+      {
+       "to": "EG05",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "EG07",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "EG07",
      "name": "The Weighing Room",
-     "zoneCount": 6,
+     "zoneCount": 5,
      "bandStart": 98450000,
-     "note": "scales, feathers, and a queue that never shortened"
+     "note": "scales, feathers, and a queue that never shortened",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Antechamber",
+      "The Queue",
+      "The Scales",
+      "Behind the Scales",
+      "The Ledger Wall"
+     ],
+     "doors": [
+      {
+       "to": "EG06",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "EG08",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "EG08",
      "name": "Tomb of the Bound King",
      "zoneCount": 5,
      "bandStart": 102590000,
-     "note": "boss map; a tomb built as a prison"
+     "note": "boss map; a tomb built as a prison",
+     "width": 24,
+     "height": 24,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": true,
+     "zoneNames": [
+      "Sealed Entrance",
+      "The Descending Passage",
+      "Antechamber",
+      "The Chained Hall",
+      "The Burial Chamber"
+     ],
+     "doors": [
+      {
+       "to": "EG07",
+       "kind": "back",
+       "label": "back"
+      }
+     ]
     }
    ],
    "creatures": [
@@ -972,56 +1414,257 @@
      "name": "The Ten Thousand Steps",
      "zoneCount": 6,
      "bandStart": 342870000,
-     "note": "one climb; the whole map is the stair"
+     "note": "one climb; the whole map is the stair",
+     "width": 20,
+     "height": 28,
+     "orient": "V",
+     "axis": "south to north",
+     "isBossMap": false,
+     "zoneNames": [
+      "Mountain Gate",
+      "The First Hundred",
+      "Mist Landing",
+      "The Long Flight",
+      "Cloud Landing",
+      "The Upper Gate"
+     ],
+     "doors": [
+      {
+       "to": "CL01",
+       "kind": "hub",
+       "label": "back to the Cloud Plaza"
+      },
+      {
+       "to": "BD02",
+       "kind": "onward",
+       "label": "onward"
+      },
+      {
+       "to": "EG01",
+       "kind": "ring",
+       "label": "ring door, west edge"
+      },
+      {
+       "to": "ST01",
+       "kind": "ring",
+       "label": "ring door, east edge"
+      }
+     ]
     },
     {
      "id": "BD02",
      "name": "Lantern Hall",
      "zoneCount": 5,
      "bandStart": 357270000,
-     "note": "thousands of hanging lanterns, all lit, no one lighting them"
+     "note": "thousands of hanging lanterns, all lit, no one lighting them",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Hall Threshold",
+      "West Lanterns",
+      "The Lit Aisle",
+      "East Lanterns",
+      "Lamp Store"
+     ],
+     "doors": [
+      {
+       "to": "BD01",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "BD03",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "BD03",
      "name": "The Bell Tower",
      "zoneCount": 6,
      "bandStart": 372280000,
-     "note": "vertical map; the bell is struck once per zone"
+     "note": "vertical map; the bell is struck once per zone",
+     "width": 20,
+     "height": 28,
+     "orient": "V",
+     "axis": "south to north",
+     "isBossMap": false,
+     "zoneNames": [
+      "Tower Base",
+      "First Stair",
+      "The Rope Room",
+      "Second Stair",
+      "The Bell Deck",
+      "Above the Bell"
+     ],
+     "doors": [
+      {
+       "to": "BD02",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "BD04",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "BD04",
      "name": "Hall of a Thousand Seats",
      "zoneCount": 5,
      "bandStart": 387910000,
-     "note": "identical statues; the ninth row has a gap"
+     "note": "identical statues; the ninth row has a gap",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Hall Doors",
+      "First Rows",
+      "The Ninth Row",
+      "Middle Rows",
+      "The Far Rows"
+     ],
+     "doors": [
+      {
+       "to": "BD03",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "BD05",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "BD05",
      "name": "Prayer-Flag Span",
      "zoneCount": 6,
      "bandStart": 404210000,
-     "note": "a rope bridge in wind, flags to the horizon"
+     "note": "a rope bridge in wind, flags to the horizon",
+     "width": 30,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Near Anchor",
+      "First Span",
+      "Midspan",
+      "The Sagging Length",
+      "Second Span",
+      "Far Anchor"
+     ],
+     "doors": [
+      {
+       "to": "BD04",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "BD06",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "BD06",
      "name": "The Ash Garden",
-     "zoneCount": 5,
+     "zoneCount": 6,
      "bandStart": 421180000,
-     "note": "raked ash instead of gravel; footprints appear behind you"
+     "note": "raked ash instead of gravel; footprints appear behind you",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "south to north",
+     "isBossMap": false,
+     "zoneNames": [
+      "Garden Gate",
+      "Raked Ground",
+      "The First Print",
+      "Deep Ash",
+      "The Untouched Bed",
+      "Garden Terrace"
+     ],
+     "doors": [
+      {
+       "to": "BD05",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "BD07",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "BD07",
      "name": "The Silent Terrace",
-     "zoneCount": 6,
+     "zoneCount": 5,
      "bandStart": 438870000,
-     "note": "the map with no ambient sound at all"
+     "note": "the map with no ambient sound at all",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": false,
+     "zoneNames": [
+      "Terrace Steps",
+      "West Balustrade",
+      "The Quiet Middle",
+      "East Balustrade",
+      "Terrace End"
+     ],
+     "doors": [
+      {
+       "to": "BD06",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "BD08",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "BD08",
      "name": "The Empty Seat",
      "zoneCount": 5,
      "bandStart": 457300000,
-     "note": "boss map; one seat, unoccupied, at the top of the mountain"
+     "note": "boss map; one seat, unoccupied, at the top of the mountain",
+     "width": 24,
+     "height": 24,
+     "orient": "H",
+     "axis": "west to east",
+     "isBossMap": true,
+     "zoneNames": [
+      "Summit Path",
+      "The Last Gate",
+      "Bare Terrace",
+      "The Approach",
+      "The Seat"
+     ],
+     "doors": [
+      {
+       "to": "BD07",
+       "kind": "back",
+       "label": "back"
+      }
+     ]
     }
    ],
    "creatures": [

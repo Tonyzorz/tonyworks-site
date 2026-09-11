@@ -828,17 +828,19 @@ body { overflow-x:clip; }
 .wm-grid {
   display:grid; width:max-content; margin:0 auto; align-items:center; justify-items:center; gap:18px;
   grid-template-columns: auto 62px auto 62px auto 62px auto 62px auto 62px auto 62px auto 62px auto;
-  grid-template-rows: auto 46px auto 46px auto 46px auto 46px auto;
+  grid-template-rows: auto 62px auto 62px auto 62px auto 62px auto 62px auto;
   grid-template-areas:
-    ".  .     .  .   .    .  .    .  .      .  uw   .   .      .     ."
-    ".  .     .  .   .    .  .    .  .      .  vu   .   .      .     ."
-    ".  .     .  .   void h1 volc h2 forest h3 gl   h4  desert .     ."
-    ".  .     .  .   .    .  .    .  .      .  vd   .   .      .     ."
-    "st clbus cl hcl hcl  hcl hcl hcl hcl   hcl gate hgy gy     gybus kr"
-    ".  clbus .  .   .    .  .    .  .      .  vg   .   .      gybus ."
-    "eg clbus .  .   wg   wg wg   wg wg     wg wg   .   .      gybus ld"
-    ".  clbus .  .   .    .  .    .  .      .  .    .   .      gybus ."
-    "bd clbus .  .   .    .  .    .  .      .  .    .   .      gybus px";
+    ".    .   .  .     .    .   .    .  .      .   uw   .   .      .     ."
+    ".    .   .  .     .    .   .    .  .      .   vu   .   .      .     ."
+    ".    .   .  .     void h1  volc h2 forest h3  gl   h4  desert .     ."
+    ".    .   .  .     .    .   .    .  .      .   vd   .   .      .     ."
+    "ring rs1 st clbus cl   hcl hcl  hcl hcl   hcl gate hgy gy     gybus kr"
+    "ring .   .  clbus .    .   hwg  hwg hwg   hwg vg   .   .      gybus ."
+    "ring rs2 eg clbus .    .   .    .   wg    wg  wg   wg  wg     gybus ld"
+    "ring .   .  clbus .    .   vwg  .   .     .   .    .   .      gybus ."
+    "ring rs3 bd clbus .    .   mz   .   .     .   .    .   .      gybus px"
+    ".    .   .  .     .    .   vmz  .   .     .   .    .   .      .     ."
+    ".    .   .  .     mzk  mzk mzk  mzk mzk   .   .    .   .      .     .";
 }
 /* World Gate branch: the hub drops onto a bus that fans out to the four themed regions. */
 .wm-branch { display:flex; flex-direction:column; align-items:center; width:100%; }
@@ -848,15 +850,8 @@ body { overflow-x:clip; }
 .wm-branch-item .wm-drop { width:2px; height:26px; background:var(--border); }
 .wm-maze-trunk { width:2px; height:40px; background:var(--border); }
 .wm-subbranch { display:flex; flex-direction:column; align-items:center; width:62%; }
-/* Second group under the hub: Japan/Greek/Military/Heaven are reached from the World Gate
-   DIRECTLY, not through the Maze that is drawn above them. The gap plus the caption say so. */
-.wm-tier-gap { height:44px; }
-.wm-tier-label {
-  font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
-  background:var(--panel); border:1px solid var(--border); border-radius:999px;
-  padding:.2rem .7rem; margin-bottom:.55rem; white-space:nowrap;
-}
-.wm-tier-stem { width:2px; height:22px; background:var(--border); }
+/* Kept for a group whose feed line lands at the END of its span rather than its centre. */
+.wm-branch-bus.full { margin:0; }
 .wm-subbranch .wm-branch-bus { width:100%; margin:0; }
 /* ---- planned content (Epoch 4 wave 1) ------------------------------------------------------
    Everything the wiki shows for Stone / Egypt / The Temple is DESIGNED, NOT BUILT. It must never
@@ -878,7 +873,7 @@ body { overflow-x:clip; }
    horizontally so the layout stays connected instead of collapsing to a straight list. */
 @media (max-width:640px){
   .worldmap { padding-bottom:.75rem; }
-  .wm-grid { gap:10px; grid-template-columns: auto 34px auto 34px auto 34px auto 34px auto 34px auto 34px auto 34px auto; }
+  .wm-grid { gap:10px; grid-template-columns: auto 34px auto 34px auto 34px auto 34px auto 34px auto 34px auto 34px auto 34px auto; }
   .worldmap .wnode { width:108px; padding:.6rem .45rem; gap:.1rem; }
   .worldmap .wnode .wicon { font-size:1.5rem; }
   .worldmap .wnode .wname { font-size:.88rem; }
