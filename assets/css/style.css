@@ -835,12 +835,12 @@ body { overflow-x:clip; }
     ".    .   .  .     void h1  volc h2 forest h3  gl   h4  desert .     ."
     ".    .   .  .     .    .   .    .  .      .   vd   .   .      .     ."
     "ring rs1 st clbus cl   hcl hcl  hcl hcl   hcl gate hgy gy     gybus kr"
-    "ring .   .  clbus .    .   hwg  hwg hwg   hwg vg   .   .      gybus ."
+    "ring .   .  clbus .    .   .    .   .     .   .    .   .      gybus ."
     "ring rs2 eg clbus .    .   .    .   wg    wg  wg   wg  wg     gybus ld"
-    "ring .   .  clbus .    .   vwg  .   .     .   .    .   .      gybus ."
-    "ring rs3 bd clbus .    .   mz   .   .     .   .    .   .      gybus px"
-    ".    .   .  .     .    .   vmz  .   .     .   .    .   .      .     ."
-    ".    .   .  .     mzk  mzk mzk  mzk mzk   .   .    .   .      .     .";
+    "ring .   .  clbus .    .   .    .   .     .   .    .   .      gybus ."
+    "ring rs3 bd clbus .    .   .    .   .     .   mz   .   .      gybus px"
+    ".    .   .  .     .    .   .    .   .     .   vmz  .   .      .     ."
+    ".    .   .  .     .    .   .    .   mzk   mzk mzk  mzk mzk   .     .";
 }
 /* World Gate branch: the hub drops onto a bus that fans out to the four themed regions. */
 .wm-branch { display:flex; flex-direction:column; align-items:center; width:100%; }
@@ -865,6 +865,21 @@ body { overflow-x:clip; }
 .card.is-upcoming .thumb, .mnode.is-upcoming .thumb { opacity:.6; }
 .wnode.planned { border-style:dashed; }
 .wm-conn.v.dashed { background:repeating-linear-gradient(180deg,var(--border) 0 5px,transparent 5px 10px); }
+/* The hub trunk runs BEHIND the row of four, so cards must sit above it. */
+.wm-cell, .wm-branch { position:relative; z-index:1; }
+/* ★ THE STRAIGHT DROP from the World Gate to the Maze. Placed by numeric track rather than a
+   named area because it deliberately OVERLAPS the row of four, and grid-template-areas cannot
+   express an overlap. Column 11 is the gate column; rows 6-8 span the connector row above the
+   four, the row of four itself, and the connector row below it, stopping where the Maze begins.
+   Four centred nodes put the Greek|Military gap exactly on the group centre, i.e. on column 11,
+   so the line threads between them rather than crossing a card. ⛔ If the count in that row ever
+   becomes ODD, a card lands on the centre and this line will run underneath it — move the trunk
+   or split the row before that happens. */
+.wm-trunk {
+  grid-column:11; grid-row:6 / 9; width:2px; justify-self:center; align-self:stretch;
+  background:var(--border); z-index:0;
+}
+@media (max-width:640px){ .wm-trunk { grid-column:11; } }
 .wm-cell { display:flex; }
 .wm-conn.h { width:100%; height:2px; background:var(--border); align-self:center; }
 .wm-conn.v { height:100%; min-height:24px; width:2px; background:var(--border); justify-self:center; }
