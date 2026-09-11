@@ -865,6 +865,17 @@ body { overflow-x:clip; }
 .card.is-upcoming .thumb, .mnode.is-upcoming .thumb { opacity:.6; }
 .wnode.planned { border-style:dashed; }
 .wm-conn.v.dashed { background:repeating-linear-gradient(180deg,var(--border) 0 5px,transparent 5px 10px); }
+/* ★ THE WEST RAIL IS BUILT TO GROW (owner, 2026-09-11: "in the future there will be at least 10
+   more maps that lead from cloud"). Today it carries three planned regions at rows 5 / 7 / 9 in
+   column 3, fed by the bus in column 4, with the ring bracket in columns 1-2. Epoch 4 waves 2-5
+   stack more plazas on it — CL02 (Museum, RGB, Mexico, Candy) and CL03 — so expect roughly a dozen.
+   TO ADD MORE: append row pairs (a 62px connector, then an auto row) to grid-template-rows, put the
+   new region in column 3 on each new auto row, and EXTEND the clbus / ring spans to reach them —
+   both are single rectangles, so a span that stops short silently leaves a node unconnected.
+   ⛔ The ring bracket must only ever span the three regions that actually ring each other
+   (Stone / Egypt / The Temple); later plazas have their own rings and need their own brackets.
+   ⛔ Do NOT grow it by widening rows 5-9 — the hub tree deliberately lives in columns that are FREE
+   on those rows, which is what stopped the World Gate branch from stretching them. */
 /* The hub trunk runs BEHIND the row of four, so cards must sit above it. */
 .wm-cell, .wm-branch { position:relative; z-index:1; }
 /* ★ THE STRAIGHT DROP from the World Gate to the Maze. Placed by numeric track rather than a
