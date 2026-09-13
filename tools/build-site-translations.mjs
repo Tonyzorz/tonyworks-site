@@ -14,6 +14,7 @@ const pages = [
   "apps/infinite-loot-loop/patch.html", "apps/infinite-loot-loop/monsters.html",
   "apps/infinite-loot-loop/bosses.html", "apps/infinite-loot-loop/items.html",
   "apps/infinite-loot-loop/sets.html", "apps/infinite-loot-loop/maps.html",
+  "apps/infinite-loot-loop/fan-wiki.html",
   "apps/infinite-loot-loop/characters.html", "apps/infinite-loot-loop/achievements.html"
 ];
 const targets = {

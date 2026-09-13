@@ -1488,3 +1488,11 @@ body { overflow-x:clip; }
   .language-picker { max-width:calc(100vw - 118px); }
   .language-picker select { max-width:104px; }
 }
+
+/* Fan-made wiki contributions */
+.fan-figure { margin:0 0 1.4rem; }
+.fan-figure a { display:block; overflow:hidden; background:var(--bg-2); border:1px solid var(--border); border-radius:14px; }
+.fan-figure a:hover { border-color:var(--accent); }
+.fan-figure img { display:block; width:100%; height:auto; }
+.fan-figure figcaption { margin-top:.55rem; color:var(--muted); font-size:.8rem; }
+.fan-figure figcaption strong { color:var(--text); }
