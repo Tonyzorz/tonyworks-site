@@ -25,6 +25,7 @@
     "Characters": ["캐릭터", "キャラクター", "角色", "角色", "Charaktere", "Personnages", "Personajes", "Personagens", "Персонажи", "Karakter"],
     "Achievements": ["업적", "実績", "成就", "成就", "Erfolge", "Succès", "Logros", "Conquistas", "Достижения", "Pencapaian"],
     "Guide": ["가이드", "ガイド", "指南", "指南", "Guide", "Guide", "Guía", "Guia", "Руководство", "Panduan"],
+    "Fan Wiki": ["팬 위키", "ファンWiki", "粉丝维基", "粉絲維基", "Fan-Wiki", "Wiki des fans", "Wiki de fans", "Wiki de fãs", "Фан-вики", "Wiki penggemar"],
     "Patch Notes": ["패치 노트", "パッチノート", "更新说明", "更新說明", "Patchnotes", "Notes de mise à jour", "Notas del parche", "Notas da atualização", "Примечания к обновлению", "Catatan pembaruan"],
     "FAQ": ["자주 묻는 질문", "よくある質問", "常见问题", "常見問題", "FAQ", "FAQ", "Preguntas frecuentes", "Perguntas frequentes", "Частые вопросы", "Tanya jawab"],
     "Data Notes": ["데이터 안내", "データ説明", "数据说明", "資料說明", "Datenhinweise", "Notes sur les données", "Notas de datos", "Notas de dados", "Примечания к данным", "Catatan data"],

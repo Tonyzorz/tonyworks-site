@@ -20,6 +20,10 @@
     { id: "game-data",    label: "Data Notes",  href: "game-data.html" },
     { id: "patch",        label: "Patch Notes", href: "patch.html" },
     { id: "faq",          label: "FAQ",         href: "faq.html" },
+    // ⛔ buildChrome() REPLACES the whole header, so a hand-written <a href="fan-wiki.html"> in the
+    // page markup is discarded at runtime. Every nav entry must live HERE or it does not exist.
+    // Reported 2026-09-14: the link was in all 19 pages' HTML and rendered on none of them.
+    { id: "fan-wiki",     label: "Fan Wiki",    href: "fan-wiki.html" },
     { id: "about",        label: "About",       href: "/about.html" },
     { id: "contact",      label: "Contact",     href: "/contact.html" }
   ];
