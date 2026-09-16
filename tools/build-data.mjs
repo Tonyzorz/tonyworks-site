@@ -496,7 +496,21 @@ const MAP_VISUAL = {
   PX15: "Hollow Sun", PX16: "The Lattice", PX17: "The Pale March", PX18: "Threshold of the First",
   PX19: "The Grey Throne", PX20: "The Origin"
 };
-const mapDisplayName = (id) => MAP_VISUAL[id] || id.replace(/_Map$/, "").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
+// ⛔ MAP_VISUAL ABOVE IS HAND-WRITTEN AND WENT STALE — the fifteenth instance of the §1 class in
+// the game's docs/BUG_CHECKLIST.md, and the second time it has bitten this repo. It has no
+// CL/ST/EG/BD rows, so every Epoch 4 id resolved to ITSELF, the builder looked for "ST01 visual.png",
+// found nothing, and published 25 areas with no art. The count was right; the pages were empty.
+//
+// ★ Epoch 4 and every wave after it are DERIVED: `Tools/epoch4_blueprint/map_names.json` is emitted
+// from the same blueprint the paintings were made from, so a map that exists always has a name here.
+// MAP_VISUAL stays as the table for the older regions, which predate the blueprint pipeline.
+const BLUEPRINT_NAMES = (() => {
+  const f = path.join(GAME, "Tools/epoch4_blueprint/map_names.json");
+  try { return JSON.parse(fs.readFileSync(f, "utf8")); }
+  catch { console.warn("  ⚠ map_names.json missing — Epoch 4 areas will publish without art."); return {}; }
+})();
+const mapDisplayName = (id) => MAP_VISUAL[id] || BLUEPRINT_NAMES[id]
+  || id.replace(/_Map$/, "").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
 function copyMapVisual(id) {
   const src = path.join(SPR, "Map", "visual", mapDisplayName(id) + " visual.png");
   if (!fs.existsSync(src)) return "";
@@ -733,11 +747,25 @@ try {
     for (const m of w.maps || []) if (m.id && m.name) PLANNED_MAP_NAME.set(m.id, m.name);
 } catch { /* upcoming.json is optional — the wiki just falls back to the code */ }
 
+/// Does a MapData asset exist under this exact code? Cached — ensureArea runs per zone.
+const _mapDataCache = new Map();
+function mapDataExists(code) {
+  if (!_mapDataCache.has(code))
+    _mapDataCache.set(code, fs.existsSync(path.join(SO, "Maps", code + ".asset")));
+  return _mapDataCache.get(code);
+}
+
 const areaByCode = new Map();
 function ensureArea(code) {
   let a = areaByCode.get(code);
   if (!a) {
-    const mapId = REGION_MAP[code] || "";
+    // ⛔ REGION_MAP IS THE THIRD HAND-WRITTEN TABLE IN THIS FILE and it went stale the same way
+    // MAP_VISUAL did: no CL/ST/EG/BD rows, so every Epoch 4 area resolved mapId = "" and therefore
+    // had no name and no painting, while the COUNT looked correct. §1 of the game's bug checklist.
+    //
+    // ★ The new-batch regions name their MapData asset with the CODE itself (ST01.asset), so the
+    // filesystem already answers this — ask it instead of adding 25 more rows for someone to forget.
+    const mapId = REGION_MAP[code] || (mapDataExists(code) ? code : "");
     a = {
       code, mapId,
       name: mapId ? mapDisplayName(mapId) : (PLANNED_MAP_NAME.get(code) || code),
@@ -912,6 +940,35 @@ if (!process.env.SITE_LIVE_VERSION && publishedVersion && publishedVersion !== c
     process.exit(1);
 }
 const gameVersion = process.env.SITE_LIVE_VERSION || computedGameVersion;   // the LIVE build, when the tree is ahead of the store
+
+// ⛔ PUBLISHED IS NOT RELEASED. `SITE_LIVE_RELEASE=epoch4=1` makes Epoch 4 BROWSABLE on the wiki,
+// but `Epoch4Released` in the game is still false, so no player can walk into any of it. Owner,
+// 2026-09-16: "for map it should say upcoming".
+//
+// This used to be automatic and stopped being so the moment the maps were built: the front end got
+// its Upcoming badge from `upcoming.json`, and `mergeUpcoming` skips anything data.json already
+// carries ("real area wins"). Publishing the real assets therefore SILENTLY REMOVED the badge, and
+// the wiki would have presented 24 unreachable regions as live content.
+//
+// So the badge is stamped here, where both facts are known: published for browsing, not yet
+// reachable. It disappears on its own the day `Epoch4Released` flips in ShopManager.cs.
+const epoch4LiveInGame = /Epoch4Releaseds*=>s*trues*;/.test(_shopManagerSrcForGate);
+if (epoch4Released && !epoch4LiveInGame) {
+  const isE4 = (code) => EPOCH4_PREFIX.test(code || "");
+  let marked = 0;
+  for (const a of areas) if (isE4(a.code)) { a.upcoming = true; marked++; }
+  for (const m of maps)  if (isE4(m.id))   { m.upcoming = true; }
+  for (const b of bosses) if (isE4(b.mapId) || isE4(b.sourceRegion)) { b.upcoming = true; }
+  for (const e of liveEnemies) if (isE4(e.area) || (e.areas || []).some(isE4)) { e.upcoming = true; }
+  // ⚠ The HARD MIRRORS wear a RELEASED region's code (GY01_Accessory_H carries sourceRegion GY01),
+  // so the prefix test waves 241 of them straight through — the same blind spot `isHeldEpoch4` has
+  // its own EPOCH4_HARD_MIRROR clause for. They are Epoch 4's hard legs and are no more reachable
+  // than the rest of it, so they carry the badge on the same rule the release gate uses.
+  for (const i of publicItems)
+    if (isE4(i.sourceRegion) || (i.isHardModeItem && EPOCH4_HARD_MIRROR.test(i.sourceRegion || "")))
+      i.upcoming = true;
+  console.log(`Epoch 4 marked UPCOMING: ${marked} area(s) — browsable on the wiki, not reachable in game.`);
+}
 
 const root = {
   generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop", gameVersion,

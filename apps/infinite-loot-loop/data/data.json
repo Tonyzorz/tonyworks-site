@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-16T04:30:00Z",
+  "generatedAt": "2026-09-16T12:37:10Z",
   "game": "Infinite Loot-Loop",
-  "gameVersion": "v4.5.1",
+  "gameVersion": "4.5.1",
   "release": {
     "worldGateReleased": true,
     "mazeBatchReleased": true,
@@ -15,7 +15,7 @@
     "enemies": 1211,
     "bosses": 40,
     "items": 1600,
-    "maps": 114,
+    "maps": 139,
     "zones": 1240,
     "areas": 137,
     "characters": 25,
@@ -42769,7 +42769,8 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST01_Z1",
@@ -42811,7 +42812,8 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST01_Z2",
@@ -42853,7 +42855,8 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST01_Z3",
@@ -42895,7 +42898,8 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST01_Z4",
@@ -42937,7 +42941,8 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST01_Z5",
@@ -42979,7 +42984,8 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST02_Z0",
@@ -43021,7 +43027,8 @@
       ],
       "zoneNames": [
         "The Quarry Steps - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST02_Z1",
@@ -43063,7 +43070,8 @@
       ],
       "zoneNames": [
         "The Quarry Steps - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST02_Z2",
@@ -43105,7 +43113,8 @@
       ],
       "zoneNames": [
         "The Quarry Steps - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST02_Z3",
@@ -43147,7 +43156,8 @@
       ],
       "zoneNames": [
         "The Quarry Steps - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST02_Z4",
@@ -43189,7 +43199,8 @@
       ],
       "zoneNames": [
         "The Quarry Steps - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST03_Z0",
@@ -43231,7 +43242,8 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST03_Z1",
@@ -43273,7 +43285,8 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST03_Z2",
@@ -43315,7 +43328,8 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST03_Z3",
@@ -43357,7 +43371,8 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST03_Z4",
@@ -43399,7 +43414,8 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST03_Z5",
@@ -43441,7 +43457,8 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST04_Z0",
@@ -43483,7 +43500,8 @@
       ],
       "zoneNames": [
         "The Glyph Wall - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST04_Z1",
@@ -43525,7 +43543,8 @@
       ],
       "zoneNames": [
         "The Glyph Wall - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST04_Z2",
@@ -43567,7 +43586,8 @@
       ],
       "zoneNames": [
         "The Glyph Wall - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST04_Z3",
@@ -43609,7 +43629,8 @@
       ],
       "zoneNames": [
         "The Glyph Wall - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST04_Z4",
@@ -43651,7 +43672,8 @@
       ],
       "zoneNames": [
         "The Glyph Wall - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST05_Z0",
@@ -43693,7 +43715,8 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST05_Z1",
@@ -43735,7 +43758,8 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST05_Z2",
@@ -43777,7 +43801,8 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST05_Z3",
@@ -43819,7 +43844,8 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST05_Z4",
@@ -43861,7 +43887,8 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST05_Z5",
@@ -43903,7 +43930,8 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST06_Z0",
@@ -43945,7 +43973,8 @@
       ],
       "zoneNames": [
         "The Toppled Giant - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST06_Z1",
@@ -43987,7 +44016,8 @@
       ],
       "zoneNames": [
         "The Toppled Giant - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST06_Z2",
@@ -44029,7 +44059,8 @@
       ],
       "zoneNames": [
         "The Toppled Giant - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST06_Z3",
@@ -44071,7 +44102,8 @@
       ],
       "zoneNames": [
         "The Toppled Giant - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST06_Z4",
@@ -44113,7 +44145,8 @@
       ],
       "zoneNames": [
         "The Toppled Giant - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST07_Z0",
@@ -44155,7 +44188,8 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST07_Z1",
@@ -44197,7 +44231,8 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST07_Z2",
@@ -44239,7 +44274,8 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST07_Z3",
@@ -44281,7 +44317,8 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST07_Z4",
@@ -44323,7 +44360,8 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST07_Z5",
@@ -44365,7 +44403,8 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST08_Z0",
@@ -44407,7 +44446,8 @@
       ],
       "zoneNames": [
         "The Unmoved Stone - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST08_Z1",
@@ -44449,7 +44489,8 @@
       ],
       "zoneNames": [
         "The Unmoved Stone - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST08_Z2",
@@ -44491,7 +44532,8 @@
       ],
       "zoneNames": [
         "The Unmoved Stone - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST08_Z3",
@@ -44533,7 +44575,8 @@
       ],
       "zoneNames": [
         "The Unmoved Stone - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST08_Z4",
@@ -44575,7 +44618,8 @@
       ],
       "zoneNames": [
         "The Unmoved Stone - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD01_Z0_H",
@@ -46461,7 +46505,8 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG01_Z1",
@@ -46503,7 +46548,8 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG01_Z2",
@@ -46545,7 +46591,8 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG01_Z3",
@@ -46587,7 +46634,8 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG01_Z4",
@@ -46629,7 +46677,8 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG01_Z5",
@@ -46671,7 +46720,8 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG02_Z0",
@@ -46713,7 +46763,8 @@
       ],
       "zoneNames": [
         "Embalmer's Row - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG02_Z1",
@@ -46755,7 +46806,8 @@
       ],
       "zoneNames": [
         "Embalmer's Row - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG02_Z2",
@@ -46797,7 +46849,8 @@
       ],
       "zoneNames": [
         "Embalmer's Row - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG02_Z3",
@@ -46839,7 +46892,8 @@
       ],
       "zoneNames": [
         "Embalmer's Row - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG02_Z4",
@@ -46881,7 +46935,8 @@
       ],
       "zoneNames": [
         "Embalmer's Row - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG03_Z0",
@@ -46923,7 +46978,8 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG03_Z1",
@@ -46965,7 +47021,8 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG03_Z2",
@@ -47007,7 +47064,8 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG03_Z3",
@@ -47049,7 +47107,8 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG03_Z4",
@@ -47091,7 +47150,8 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG03_Z5",
@@ -47133,7 +47193,8 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG04_Z0",
@@ -47175,7 +47236,8 @@
       ],
       "zoneNames": [
         "Hall of False Doors - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG04_Z1",
@@ -47217,7 +47279,8 @@
       ],
       "zoneNames": [
         "Hall of False Doors - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG04_Z2",
@@ -47259,7 +47322,8 @@
       ],
       "zoneNames": [
         "Hall of False Doors - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG04_Z3",
@@ -47301,7 +47365,8 @@
       ],
       "zoneNames": [
         "Hall of False Doors - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG04_Z4",
@@ -47343,7 +47408,8 @@
       ],
       "zoneNames": [
         "Hall of False Doors - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG05_Z0",
@@ -47385,7 +47451,8 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG05_Z1",
@@ -47427,7 +47494,8 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG05_Z2",
@@ -47469,7 +47537,8 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG05_Z3",
@@ -47511,7 +47580,8 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG05_Z4",
@@ -47553,7 +47623,8 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG05_Z5",
@@ -47595,7 +47666,8 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG06_Z0",
@@ -47637,7 +47709,8 @@
       ],
       "zoneNames": [
         "Scarab Reach - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG06_Z1",
@@ -47679,7 +47752,8 @@
       ],
       "zoneNames": [
         "Scarab Reach - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG06_Z2",
@@ -47721,7 +47795,8 @@
       ],
       "zoneNames": [
         "Scarab Reach - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG06_Z3",
@@ -47763,7 +47838,8 @@
       ],
       "zoneNames": [
         "Scarab Reach - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG06_Z4",
@@ -47805,7 +47881,8 @@
       ],
       "zoneNames": [
         "Scarab Reach - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG07_Z0",
@@ -47847,7 +47924,8 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG07_Z1",
@@ -47889,7 +47967,8 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG07_Z2",
@@ -47931,7 +48010,8 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG07_Z3",
@@ -47973,7 +48053,8 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG07_Z4",
@@ -48015,7 +48096,8 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG07_Z5",
@@ -48057,7 +48139,8 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG08_Z0",
@@ -48099,7 +48182,8 @@
       ],
       "zoneNames": [
         "Tomb of the Bound King - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG08_Z1",
@@ -48141,7 +48225,8 @@
       ],
       "zoneNames": [
         "Tomb of the Bound King - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG08_Z2",
@@ -48183,7 +48268,8 @@
       ],
       "zoneNames": [
         "Tomb of the Bound King - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG08_Z3",
@@ -48225,7 +48311,8 @@
       ],
       "zoneNames": [
         "Tomb of the Bound King - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG08_Z4",
@@ -48267,7 +48354,8 @@
       ],
       "zoneNames": [
         "Tomb of the Bound King - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX01_Z0_H",
@@ -52789,7 +52877,8 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD01_Z1",
@@ -52800,8 +52889,8 @@
       "maxLevel": 345098700,
       "hpMin": 1.66979637e+48,
       "hpMax": 1.66979637e+48,
-      "atkMin": 1.5034298655915543e+43,
-      "atkMax": 1.5034298655915543e+43,
+      "atkMin": 1.514600706988235e+43,
+      "atkMax": 1.514600706988235e+43,
       "expMin": 156000000000000000,
       "expMax": 156000000000000000,
       "goldMin": 2.14e+45,
@@ -52831,7 +52920,8 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD01_Z2",
@@ -52842,8 +52932,8 @@
       "maxLevel": 347327300,
       "hpMin": 1.81840824693e+48,
       "hpMax": 1.81840824693e+48,
-      "atkMin": 2.354971203117982e+43,
-      "atkMax": 2.354971203117982e+43,
+      "atkMin": 2.390097209428278e+43,
+      "atkMax": 2.390097209428278e+43,
       "expMin": 158000000000000000,
       "expMax": 158000000000000000,
       "goldMin": 2.33e+45,
@@ -52873,7 +52963,8 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD01_Z3",
@@ -52884,8 +52975,8 @@
       "maxLevel": 349556000,
       "hpMin": 1.98024658090677e+48,
       "hpMax": 1.98024658090677e+48,
-      "atkMin": 3.688824796182171e+43,
-      "atkMax": 3.688824796182171e+43,
+      "atkMin": 3.771663808262842e+43,
+      "atkMax": 3.771663808262842e+43,
       "expMin": 160000000000000000,
       "expMax": 160000000000000000,
       "goldMin": 2.54e+45,
@@ -52915,7 +53006,8 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD01_Z4",
@@ -52926,8 +53018,8 @@
       "maxLevel": 351784600,
       "hpMin": 2.1564885266074723e+48,
       "hpMax": 2.1564885266074723e+48,
-      "atkMin": 5.778171876969111e+43,
-      "atkMax": 5.778171876969111e+43,
+      "atkMin": 5.951828162655594e+43,
+      "atkMax": 5.951828162655594e+43,
       "expMin": 162000000000000000,
       "expMax": 162000000000000000,
       "goldMin": 2.77e+45,
@@ -52957,7 +53049,8 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD01_Z5",
@@ -52968,8 +53061,8 @@
       "maxLevel": 354013300,
       "hpMin": 2.3484160054755377e+48,
       "hpMax": 2.3484160054755377e+48,
-      "atkMin": 9.050923284389007e+43,
-      "atkMax": 9.050923284389007e+43,
+      "atkMin": 9.392209984403674e+43,
+      "atkMax": 9.392209984403674e+43,
       "expMin": 164000000000000000,
       "expMax": 164000000000000000,
       "goldMin": 3.01e+45,
@@ -52999,7 +53092,8 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD02_Z0",
@@ -53041,7 +53135,8 @@
       ],
       "zoneNames": [
         "Lantern Hall - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD02_Z1",
@@ -53052,8 +53147,8 @@
       "maxLevel": 359763400,
       "hpMin": 2.6852962814610036e+48,
       "hpMax": 2.6852962814610036e+48,
-      "atkMin": 2.121585269919885e+43,
-      "atkMax": 2.121585269919885e+43,
+      "atkMin": 2.1534179373284092e+43,
+      "atkMax": 2.1534179373284092e+43,
       "expMin": 170000000000000000,
       "expMax": 170000000000000000,
       "goldMin": 3.44e+45,
@@ -53083,7 +53178,8 @@
       ],
       "zoneNames": [
         "Lantern Hall - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD02_Z2",
@@ -53094,8 +53190,8 @@
       "maxLevel": 362086700,
       "hpMin": 2.9242876505110327e+48,
       "hpMax": 2.9242876505110327e+48,
-      "atkMin": 3.2011380436507854e+43,
-      "atkMax": 3.2011380436507854e+43,
+      "atkMin": 3.2979196656803617e+43,
+      "atkMax": 3.2979196656803617e+43,
       "expMin": 172000000000000000,
       "expMax": 172000000000000000,
       "goldMin": 3.75e+45,
@@ -53125,7 +53221,8 @@
       ],
       "zoneNames": [
         "Lantern Hall - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD02_Z3",
@@ -53136,8 +53233,8 @@
       "maxLevel": 364410100,
       "hpMin": 3.184549251406515e+48,
       "hpMax": 3.184549251406515e+48,
-      "atkMin": 4.830013160345582e+43,
-      "atkMax": 4.830013160345582e+43,
+      "atkMin": 5.050702853703671e+43,
+      "atkMax": 5.050702853703671e+43,
       "expMin": 174000000000000000,
       "expMax": 174000000000000000,
       "goldMin": 4.08e+45,
@@ -53167,7 +53264,8 @@
       ],
       "zoneNames": [
         "Lantern Hall - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD02_Z4",
@@ -53178,8 +53276,8 @@
       "maxLevel": 366733400,
       "hpMin": 3.467974134781694e+48,
       "hpMax": 3.467974134781694e+48,
-      "atkMin": 7.28772917974683e+43,
-      "atkMax": 7.28772917974683e+43,
+      "atkMin": 7.735057825050984e+43,
+      "atkMax": 7.735057825050984e+43,
       "expMin": 176000000000000000,
       "expMax": 176000000000000000,
       "goldMin": 4.45e+45,
@@ -53209,7 +53307,8 @@
       ],
       "zoneNames": [
         "Lantern Hall - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD03_Z0",
@@ -53251,7 +53350,8 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD03_Z1",
@@ -53262,8 +53362,8 @@
       "maxLevel": 375052100,
       "hpMin": 3.965455024416128e+48,
       "hpMax": 3.965455024416128e+48,
-      "atkMin": 2.8545430342858517e+43,
-      "atkMax": 2.8545430342858517e+43,
+      "atkMin": 3.291111231015022e+43,
+      "atkMax": 3.291111231015022e+43,
       "expMin": 184000000000000000,
       "expMax": 184000000000000000,
       "goldMin": 5.09e+45,
@@ -53293,7 +53393,8 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD03_Z2",
@@ -53304,8 +53405,8 @@
       "maxLevel": 377474200,
       "hpMin": 4.3183805215891634e+48,
       "hpMax": 4.3183805215891634e+48,
-      "atkMin": 4.2444409575040676e+43,
-      "atkMax": 4.2444409575040676e+43,
+      "atkMin": 5.641991511787879e+43,
+      "atkMax": 5.641991511787879e+43,
       "expMin": 187000000000000000,
       "expMax": 187000000000000000,
       "goldMin": 5.54e+45,
@@ -53335,7 +53436,8 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD03_Z3",
@@ -53346,8 +53448,8 @@
       "maxLevel": 379896300,
       "hpMin": 4.7027163880105993e+48,
       "hpMax": 4.7027163880105993e+48,
-      "atkMin": 6.311090365553064e+43,
-      "atkMax": 6.311090365553064e+43,
+      "atkMin": 9.672133812769687e+43,
+      "atkMax": 9.672133812769687e+43,
       "expMin": 189000000000000000,
       "expMax": 189000000000000000,
       "goldMin": 6.03e+45,
@@ -53377,7 +53479,8 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD03_Z4",
@@ -53388,8 +53491,8 @@
       "maxLevel": 382318400,
       "hpMin": 5.121258146543543e+48,
       "hpMax": 5.121258146543543e+48,
-      "atkMin": 9.384006516042703e+43,
-      "atkMax": 9.384006516042703e+43,
+      "atkMin": 1.6581055164061708e+44,
+      "atkMax": 1.6581055164061708e+44,
       "expMin": 192000000000000000,
       "expMax": 192000000000000000,
       "goldMin": 6.57e+45,
@@ -53419,7 +53522,8 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD03_Z5",
@@ -53430,8 +53534,8 @@
       "maxLevel": 384740500,
       "hpMin": 5.577050121585918e+48,
       "hpMax": 5.577050121585918e+48,
-      "atkMin": 1.3953148060400958e+44,
-      "atkMax": 1.3953148060400958e+44,
+      "atkMin": 2.8425102017372598e+44,
+      "atkMax": 2.8425102017372598e+44,
       "expMin": 194000000000000000,
       "expMax": 194000000000000000,
       "goldMin": 7.15e+45,
@@ -53461,7 +53565,8 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD04_Z0",
@@ -53503,7 +53608,8 @@
       ],
       "zoneNames": [
         "Hall of a Thousand Seats - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD04_Z1",
@@ -53514,8 +53620,8 @@
       "maxLevel": 390995100,
       "hpMin": 6.377077961527418e+48,
       "hpMax": 6.377077961527418e+48,
-      "atkMin": 5.188790155511874e+43,
-      "atkMax": 5.188790155511874e+43,
+      "atkMin": 5.281277148474029e+43,
+      "atkMax": 5.281277148474029e+43,
       "expMin": 200000000000000000,
       "expMax": 200000000000000000,
       "goldMin": 8.18e+45,
@@ -53545,7 +53651,8 @@
       ],
       "zoneNames": [
         "Hall of a Thousand Seats - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD04_Z2",
@@ -53556,8 +53663,8 @@
       "maxLevel": 393520100,
       "hpMin": 6.944637900103359e+48,
       "hpMax": 6.944637900103359e+48,
-      "atkMin": 9.572903642621836e+43,
-      "atkMax": 9.572903642621836e+43,
+      "atkMin": 9.917207275882694e+43,
+      "atkMax": 9.917207275882694e+43,
       "expMin": 203000000000000000,
       "expMax": 203000000000000000,
       "goldMin": 8.91e+45,
@@ -53587,7 +53694,8 @@
       ],
       "zoneNames": [
         "Hall of a Thousand Seats - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD04_Z3",
@@ -53598,8 +53706,8 @@
       "maxLevel": 396045200,
       "hpMin": 7.562710673212557e+48,
       "hpMax": 7.562710673212557e+48,
-      "atkMin": 1.7661243065221255e+44,
-      "atkMax": 1.7661243065221255e+44,
+      "atkMin": 1.8622578855047994e+44,
+      "atkMax": 1.8622578855047994e+44,
       "expMin": 206000000000000000,
       "expMax": 206000000000000000,
       "goldMin": 9.7e+45,
@@ -53629,7 +53737,8 @@
       ],
       "zoneNames": [
         "Hall of a Thousand Seats - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD04_Z4",
@@ -53640,8 +53749,8 @@
       "maxLevel": 398570200,
       "hpMin": 8.235791923128474e+48,
       "hpMax": 8.235791923128474e+48,
-      "atkMin": 3.2583583649589217e+44,
-      "atkMax": 3.2583583649589217e+44,
+      "atkMin": 3.49695668916644e+44,
+      "atkMax": 3.49695668916644e+44,
       "expMin": 208000000000000000,
       "expMax": 208000000000000000,
       "goldMin": 1.0600000000000001e+46,
@@ -53671,7 +53780,8 @@
       ],
       "zoneNames": [
         "Hall of a Thousand Seats - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD05_Z0",
@@ -53713,7 +53823,8 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD05_Z1",
@@ -53724,8 +53835,8 @@
       "maxLevel": 407612400,
       "hpMin": 9.417216274501254e+48,
       "hpMax": 9.417216274501254e+48,
-      "atkMin": 6.06835541246988e+43,
-      "atkMax": 6.06835541246988e+43,
+      "atkMin": 6.802887269186314e+43,
+      "atkMax": 6.802887269186314e+43,
       "expMin": 218000000000000000,
       "expMax": 218000000000000000,
       "goldMin": 1.2100000000000001e+46,
@@ -53755,7 +53866,8 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD05_Z2",
@@ -53766,8 +53878,8 @@
       "maxLevel": 410244700,
       "hpMin": 1.0255348522931865e+49,
       "hpMax": 1.0255348522931865e+49,
-      "atkMin": 9.589972848492783e+43,
-      "atkMax": 9.589972848492783e+43,
+      "atkMin": 1.205207730901302e+44,
+      "atkMax": 1.205207730901302e+44,
       "expMin": 221000000000000000,
       "expMax": 221000000000000000,
       "goldMin": 1.32e+46,
@@ -53797,7 +53909,8 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD05_Z3",
@@ -53808,8 +53921,8 @@
       "maxLevel": 412877100,
       "hpMin": 1.11680745414728e+49,
       "hpMax": 1.11680745414728e+49,
-      "atkMin": 1.5155272389920404e+44,
-      "atkMax": 1.5155272389920404e+44,
+      "atkMin": 2.1351605827770826e+44,
+      "atkMax": 2.1351605827770826e+44,
       "expMin": 224000000000000000,
       "expMax": 224000000000000000,
       "goldMin": 1.4300000000000001e+46,
@@ -53839,7 +53952,8 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD05_Z4",
@@ -53850,8 +53964,8 @@
       "maxLevel": 415509500,
       "hpMin": 1.216203317566388e+49,
       "hpMax": 1.216203317566388e+49,
-      "atkMin": 2.395025354516848e+44,
-      "atkMax": 2.395025354516848e+44,
+      "atkMin": 3.782676295011517e+44,
+      "atkMax": 3.782676295011517e+44,
       "expMin": 226000000000000000,
       "expMax": 226000000000000000,
       "goldMin": 1.5600000000000002e+46,
@@ -53881,7 +53995,8 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD05_Z5",
@@ -53892,8 +54007,8 @@
       "maxLevel": 418141800,
       "hpMin": 1.3244454128297967e+49,
       "hpMax": 1.3244454128297967e+49,
-      "atkMin": 3.7849180807819706e+44,
-      "atkMax": 3.7849180807819706e+44,
+      "atkMin": 6.70143504346245e+44,
+      "atkMax": 6.70143504346245e+44,
       "expMin": 229000000000000000,
       "expMax": 229000000000000000,
       "goldMin": 1.7000000000000002e+46,
@@ -53923,7 +54038,8 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD06_Z0",
@@ -53965,7 +54081,8 @@
       ],
       "zoneNames": [
         "The Ash Garden - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD06_Z1",
@@ -53976,8 +54093,8 @@
       "maxLevel": 424934200,
       "hpMin": 1.514437107300231e+49,
       "hpMax": 1.514437107300231e+49,
-      "atkMin": 1.056357465475337e+44,
-      "atkMax": 1.056357465475337e+44,
+      "atkMin": 1.0437454036843434e+44,
+      "atkMax": 1.0437454036843434e+44,
       "expMin": 237000000000000000,
       "expMax": 237000000000000000,
       "goldMin": 1.94e+46,
@@ -54007,7 +54124,8 @@
       ],
       "zoneNames": [
         "The Ash Garden - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD06_Z2",
@@ -54018,8 +54136,8 @@
       "maxLevel": 427678500,
       "hpMin": 1.6492220098499515e+49,
       "hpMax": 1.6492220098499515e+49,
-      "atkMin": 1.9836330584491254e+44,
-      "atkMax": 1.9836330584491254e+44,
+      "atkMin": 1.9365498354806637e+44,
+      "atkMax": 1.9365498354806637e+44,
       "expMin": 240000000000000000,
       "expMax": 240000000000000000,
       "goldMin": 2.11e+46,
@@ -54049,7 +54167,8 @@
       ],
       "zoneNames": [
         "The Ash Garden - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD06_Z3",
@@ -54060,8 +54179,8 @@
       "maxLevel": 430422700,
       "hpMin": 1.796002768726597e+49,
       "hpMax": 1.796002768726597e+49,
-      "atkMin": 3.724875564543542e+44,
-      "atkMax": 3.724875564543542e+44,
+      "atkMin": 3.593046016837219e+44,
+      "atkMax": 3.593046016837219e+44,
       "expMin": 243000000000000000,
       "expMax": 243000000000000000,
       "goldMin": 2.3e+46,
@@ -54091,7 +54210,8 @@
       ],
       "zoneNames": [
         "The Ash Garden - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD06_Z4",
@@ -54102,8 +54222,8 @@
       "maxLevel": 433166900,
       "hpMin": 1.9558470151432642e+49,
       "hpMax": 1.9558470151432642e+49,
-      "atkMin": 6.9945890003372396e+44,
-      "atkMax": 6.9945890003372396e+44,
+      "atkMin": 6.6664846122617175e+44,
+      "atkMax": 6.6664846122617175e+44,
       "expMin": 246000000000000000,
       "expMax": 246000000000000000,
       "goldMin": 2.5100000000000005e+46,
@@ -54133,7 +54253,8 @@
       ],
       "zoneNames": [
         "The Ash Garden - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD07_Z0",
@@ -54175,7 +54296,8 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD07_Z1",
@@ -54186,8 +54308,8 @@
       "maxLevel": 442990800,
       "hpMin": 2.2364132694655653e+49,
       "hpMax": 2.2364132694655653e+49,
-      "atkMin": 1.2845584618798938e+44,
-      "atkMax": 1.2845584618798938e+44,
+      "atkMin": 1.2127356013889962e+44,
+      "atkMax": 1.2127356013889962e+44,
       "expMin": 257000000000000000,
       "expMax": 257000000000000000,
       "goldMin": 2.87e+46,
@@ -54217,7 +54339,8 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD07_Z2",
@@ -54228,8 +54351,8 @@
       "maxLevel": 445851700,
       "hpMin": 2.4354540504480005e+49,
       "hpMax": 2.4354540504480005e+49,
-      "atkMin": 2.1483803020086876e+44,
-      "atkMax": 2.1483803020086876e+44,
+      "atkMin": 1.9148540035032158e+44,
+      "atkMax": 1.9148540035032158e+44,
       "expMin": 261000000000000000,
       "expMax": 261000000000000000,
       "goldMin": 3.1200000000000005e+46,
@@ -54259,7 +54382,8 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD07_Z3",
@@ -54270,8 +54394,8 @@
       "maxLevel": 448712500,
       "hpMin": 2.652209460937872e+49,
       "hpMax": 2.652209460937872e+49,
-      "atkMin": 3.593092925723525e+44,
-      "atkMax": 3.593092925723525e+44,
+      "atkMin": 3.023466822061386e+44,
+      "atkMax": 3.023466822061386e+44,
       "expMin": 264000000000000000,
       "expMax": 264000000000000000,
       "goldMin": 3.4000000000000003e+46,
@@ -54301,7 +54425,8 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD07_Z4",
@@ -54312,8 +54437,8 @@
       "maxLevel": 451573400,
       "hpMin": 2.888256102961343e+49,
       "hpMax": 2.888256102961343e+49,
-      "atkMin": 6.009325611863777e+44,
-      "atkMax": 6.009325611863777e+44,
+      "atkMin": 4.773915717533516e+44,
+      "atkMax": 4.773915717533516e+44,
       "expMin": 267000000000000000,
       "expMax": 267000000000000000,
       "goldMin": 3.7000000000000004e+46,
@@ -54343,7 +54468,8 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 4"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD07_Z5",
@@ -54354,8 +54480,8 @@
       "maxLevel": 454434200,
       "hpMin": 3.1453108961249023e+49,
       "hpMax": 3.1453108961249023e+49,
-      "atkMin": 1.0050392532536645e+45,
-      "atkMax": 1.0050392532536645e+45,
+      "atkMin": 7.537794399402484e+44,
+      "atkMax": 7.537794399402484e+44,
       "expMin": 271000000000000000,
       "expMax": 271000000000000000,
       "goldMin": 4.0300000000000005e+46,
@@ -54385,7 +54511,8 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 5"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD08_Z0",
@@ -54427,7 +54554,8 @@
       ],
       "zoneNames": [
         "The Empty Seat - Zone 0"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD08_Z1",
@@ -54469,7 +54597,8 @@
       ],
       "zoneNames": [
         "The Empty Seat - Zone 1"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD08_Z2",
@@ -54511,7 +54640,8 @@
       ],
       "zoneNames": [
         "The Empty Seat - Zone 2"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD08_Z3",
@@ -54553,7 +54683,8 @@
       ],
       "zoneNames": [
         "The Empty Seat - Zone 3"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD08_Z4",
@@ -54595,7 +54726,8 @@
       ],
       "zoneNames": [
         "The Empty Seat - Zone 4"
-      ]
+      ],
+      "upcoming": true
     }
   ],
   "bosses": [
@@ -55927,7 +56059,8 @@
       "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 1,
-      "hardModeDropChance": 0.75
+      "hardModeDropChance": 0.75,
+      "upcoming": true
     },
     {
       "id": "EG08_TheBoundKing",
@@ -55962,7 +56095,8 @@
       "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 1,
-      "hardModeDropChance": 0.75
+      "hardModeDropChance": 0.75,
+      "upcoming": true
     },
     {
       "id": "BD08_TheEmptySeat",
@@ -55997,7 +56131,8 @@
       "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 0.5,
-      "hardModeDropChance": 0.375
+      "hardModeDropChance": 0.375,
+      "upcoming": true
     }
   ],
   "items": [
@@ -62008,7 +62143,8 @@
       "dropAreas": [
         "EG01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG01_Armor",
@@ -62040,7 +62176,8 @@
       "dropAreas": [
         "EG01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG01_Helmet",
@@ -62073,7 +62210,8 @@
       "dropAreas": [
         "EG01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG01_Shoes",
@@ -62106,7 +62244,8 @@
       "dropAreas": [
         "EG01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG01_Weapon",
@@ -62138,7 +62277,8 @@
       "dropAreas": [
         "EG01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG02_Accessory",
@@ -62172,7 +62312,8 @@
       "dropAreas": [
         "EG02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG02_Armor",
@@ -62204,7 +62345,8 @@
       "dropAreas": [
         "EG02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG02_Helmet",
@@ -62237,7 +62379,8 @@
       "dropAreas": [
         "EG02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG02_Shoes",
@@ -62270,7 +62413,8 @@
       "dropAreas": [
         "EG02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG02_Weapon",
@@ -62302,7 +62446,8 @@
       "dropAreas": [
         "EG02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG03_Accessory",
@@ -62336,7 +62481,8 @@
       "dropAreas": [
         "EG03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG03_Armor",
@@ -62368,7 +62514,8 @@
       "dropAreas": [
         "EG03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG03_Helmet",
@@ -62401,7 +62548,8 @@
       "dropAreas": [
         "EG03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG03_Shoes",
@@ -62443,7 +62591,8 @@
         "EG06",
         "EG07",
         "EG08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG03_Weapon",
@@ -62475,7 +62624,8 @@
       "dropAreas": [
         "EG03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG04_Accessory",
@@ -62509,7 +62659,8 @@
       "dropAreas": [
         "EG04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG04_Armor",
@@ -62541,7 +62692,8 @@
       "dropAreas": [
         "EG04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG04_Helmet",
@@ -62583,7 +62735,8 @@
         "EG06",
         "EG07",
         "EG08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG04_Shoes",
@@ -62616,7 +62769,8 @@
       "dropAreas": [
         "EG04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG04_Weapon",
@@ -62648,7 +62802,8 @@
       "dropAreas": [
         "EG04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG05_Accessory",
@@ -62682,7 +62837,8 @@
       "dropAreas": [
         "EG05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG05_Armor",
@@ -62714,7 +62870,8 @@
       "dropAreas": [
         "EG05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG05_Helmet",
@@ -62747,7 +62904,8 @@
       "dropAreas": [
         "EG05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG05_Shoes",
@@ -62780,7 +62938,8 @@
       "dropAreas": [
         "EG05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG05_Weapon",
@@ -62812,7 +62971,8 @@
       "dropAreas": [
         "EG05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG06_Accessory",
@@ -62846,7 +63006,8 @@
       "dropAreas": [
         "EG06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG06_Armor",
@@ -62887,7 +63048,8 @@
         "EG06",
         "EG07",
         "EG08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG06_Helmet",
@@ -62920,7 +63082,8 @@
       "dropAreas": [
         "EG06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG06_Shoes",
@@ -62953,7 +63116,8 @@
       "dropAreas": [
         "EG06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG06_Weapon",
@@ -62985,7 +63149,8 @@
       "dropAreas": [
         "EG06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG07_Accessory",
@@ -63028,7 +63193,8 @@
         "EG06",
         "EG07",
         "EG08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EG07_Armor",
@@ -63060,7 +63226,8 @@
       "dropAreas": [
         "EG07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG07_Helmet",
@@ -63093,7 +63260,8 @@
       "dropAreas": [
         "EG07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG07_Shoes",
@@ -63126,7 +63294,8 @@
       "dropAreas": [
         "EG07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG07_Weapon",
@@ -63158,7 +63327,8 @@
       "dropAreas": [
         "EG07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG08_Accessory",
@@ -63192,7 +63362,8 @@
       "dropAreas": [
         "EG08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG08_Armor",
@@ -63224,13 +63395,14 @@
       "dropAreas": [
         "EG08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG08_BossRelic",
       "name": "The Broken Seal",
       "description": "",
-      "image": "",
+      "image": "item_EG08_BossRelic.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -63255,7 +63427,8 @@
         "DEF +42%"
       ],
       "dropAreas": [],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG08_Helmet",
@@ -63288,7 +63461,8 @@
       "dropAreas": [
         "EG08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG08_Shoes",
@@ -63321,7 +63495,8 @@
       "dropAreas": [
         "EG08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "EG08_Weapon",
@@ -63362,7 +63537,8 @@
         "EG06",
         "EG07",
         "EG08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "EmberRing",
@@ -64481,7 +64657,8 @@
       ],
       "shopAreas": [
         "GY01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY01_Armor",
@@ -64547,7 +64724,8 @@
       ],
       "shopAreas": [
         "GY01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY01_Helmet",
@@ -64615,7 +64793,8 @@
       ],
       "shopAreas": [
         "GY01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY01_Shoes",
@@ -64683,7 +64862,8 @@
       ],
       "shopAreas": [
         "GY01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY01_Weapon",
@@ -64749,7 +64929,8 @@
       ],
       "shopAreas": [
         "GY01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY02_Accessory",
@@ -64819,7 +65000,8 @@
       ],
       "shopAreas": [
         "GY02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY02_Armor",
@@ -64885,7 +65067,8 @@
       ],
       "shopAreas": [
         "GY02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY02_Helmet",
@@ -64953,7 +65136,8 @@
       ],
       "shopAreas": [
         "GY02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY02_Shoes",
@@ -65021,7 +65205,8 @@
       ],
       "shopAreas": [
         "GY02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY02_Weapon",
@@ -65087,7 +65272,8 @@
       ],
       "shopAreas": [
         "GY02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY03_Accessory",
@@ -65157,7 +65343,8 @@
       ],
       "shopAreas": [
         "GY03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY03_Armor",
@@ -65223,7 +65410,8 @@
       ],
       "shopAreas": [
         "GY03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY03_Helmet",
@@ -65291,7 +65479,8 @@
       ],
       "shopAreas": [
         "GY03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY03_Shoes",
@@ -65370,7 +65559,8 @@
       ],
       "shopAreas": [
         "GY03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY03_Weapon",
@@ -65436,7 +65626,8 @@
       ],
       "shopAreas": [
         "GY03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY04_Accessory",
@@ -65506,7 +65697,8 @@
       ],
       "shopAreas": [
         "GY04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY04_Armor",
@@ -65572,7 +65764,8 @@
       ],
       "shopAreas": [
         "GY04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY04_Helmet",
@@ -65640,7 +65833,8 @@
       ],
       "shopAreas": [
         "GY04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY04_Shoes",
@@ -65708,7 +65902,8 @@
       ],
       "shopAreas": [
         "GY04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY04_Weapon",
@@ -65774,7 +65969,8 @@
       ],
       "shopAreas": [
         "GY04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY05_Accessory",
@@ -65844,7 +66040,8 @@
       ],
       "shopAreas": [
         "GY05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY05_Armor",
@@ -65910,7 +66107,8 @@
       ],
       "shopAreas": [
         "GY05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY05_Helmet",
@@ -65989,7 +66187,8 @@
       ],
       "shopAreas": [
         "GY05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY05_Shoes",
@@ -66057,7 +66256,8 @@
       ],
       "shopAreas": [
         "GY05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY05_Weapon",
@@ -66123,7 +66323,8 @@
       ],
       "shopAreas": [
         "GY05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY06_Accessory",
@@ -66193,7 +66394,8 @@
       ],
       "shopAreas": [
         "GY06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY06_Armor",
@@ -66259,7 +66461,8 @@
       ],
       "shopAreas": [
         "GY06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY06_Helmet",
@@ -66327,7 +66530,8 @@
       ],
       "shopAreas": [
         "GY06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY06_Shoes",
@@ -66395,7 +66599,8 @@
       ],
       "shopAreas": [
         "GY06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY06_Weapon",
@@ -66461,7 +66666,8 @@
       ],
       "shopAreas": [
         "GY06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY07_Accessory",
@@ -66529,7 +66735,8 @@
       "dropAreas": [],
       "shopAreas": [
         "GY07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY07_Armor",
@@ -66606,7 +66813,8 @@
       ],
       "shopAreas": [
         "GY07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY07_Helmet",
@@ -66674,7 +66882,8 @@
       ],
       "shopAreas": [
         "GY07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY07_Shoes",
@@ -66740,7 +66949,8 @@
       "dropAreas": [],
       "shopAreas": [
         "GY07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY07_Weapon",
@@ -66806,7 +67016,8 @@
       ],
       "shopAreas": [
         "GY07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY08_Accessory",
@@ -66887,7 +67098,8 @@
       ],
       "shopAreas": [
         "GY08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY08_Armor",
@@ -66953,7 +67165,8 @@
       ],
       "shopAreas": [
         "GY08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY08_Helmet",
@@ -67021,7 +67234,8 @@
       ],
       "shopAreas": [
         "GY08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY08_Shoes",
@@ -67089,7 +67303,8 @@
       ],
       "shopAreas": [
         "GY08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY08_Weapon",
@@ -67155,7 +67370,8 @@
       ],
       "shopAreas": [
         "GY08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY09_Accessory",
@@ -67225,7 +67441,8 @@
       ],
       "shopAreas": [
         "GY09"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY09_Armor",
@@ -67291,7 +67508,8 @@
       ],
       "shopAreas": [
         "GY09"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY09_Helmet",
@@ -67359,7 +67577,8 @@
       ],
       "shopAreas": [
         "GY09"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY09_Shoes",
@@ -67427,7 +67646,8 @@
       ],
       "shopAreas": [
         "GY09"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY09_Weapon",
@@ -67493,7 +67713,8 @@
       ],
       "shopAreas": [
         "GY09"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY10_Accessory",
@@ -67561,7 +67782,8 @@
       "dropAreas": [],
       "shopAreas": [
         "GY10"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY10_Armor",
@@ -67627,7 +67849,8 @@
       ],
       "shopAreas": [
         "GY10"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY10_BossRelic",
@@ -67693,7 +67916,8 @@
       "dropAreas": [
         "GY10"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "GY10_Helmet",
@@ -67761,7 +67985,8 @@
       ],
       "shopAreas": [
         "GY10"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY10_Shoes",
@@ -67829,7 +68054,8 @@
       ],
       "shopAreas": [
         "GY10"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GY10_Weapon",
@@ -67906,7 +68132,8 @@
       ],
       "shopAreas": [
         "GY10"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "GrenadeLauncher",
@@ -79218,7 +79445,8 @@
         "PX19",
         "PX20"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "Key_ClockworkKey",
@@ -79251,7 +79479,8 @@
         "LD07",
         "LD08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "Key_HollowEdge",
@@ -79283,7 +79512,8 @@
       "dropAreas": [
         "PX06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "Key_QuarryEdge",
@@ -79315,7 +79545,8 @@
       "dropAreas": [
         "KR04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "Key_SandEdge",
@@ -79347,7 +79578,8 @@
       "dropAreas": [
         "LD04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "Key_SovereignsScale",
@@ -79380,7 +79612,8 @@
         "KR07",
         "KR08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "KitsuneMask",
@@ -79643,7 +79876,8 @@
       ],
       "shopAreas": [
         "KR01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR01_Armor",
@@ -79709,7 +79943,8 @@
       ],
       "shopAreas": [
         "KR01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR01_Helmet",
@@ -79777,7 +80012,8 @@
       ],
       "shopAreas": [
         "KR01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR01_Shoes",
@@ -79845,7 +80081,8 @@
       ],
       "shopAreas": [
         "KR01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR01_Weapon",
@@ -79911,7 +80148,8 @@
       ],
       "shopAreas": [
         "KR01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR02_Accessory",
@@ -79981,7 +80219,8 @@
       ],
       "shopAreas": [
         "KR02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR02_Armor",
@@ -80047,7 +80286,8 @@
       ],
       "shopAreas": [
         "KR02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR02_Helmet",
@@ -80115,7 +80355,8 @@
       ],
       "shopAreas": [
         "KR02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR02_Shoes",
@@ -80183,7 +80424,8 @@
       ],
       "shopAreas": [
         "KR02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR02_Weapon",
@@ -80249,7 +80491,8 @@
       ],
       "shopAreas": [
         "KR02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR03_Accessory",
@@ -80319,7 +80562,8 @@
       ],
       "shopAreas": [
         "KR03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR03_Armor",
@@ -80385,7 +80629,8 @@
       ],
       "shopAreas": [
         "KR03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR03_Helmet",
@@ -80453,7 +80698,8 @@
       ],
       "shopAreas": [
         "KR03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR03_Shoes",
@@ -80530,7 +80776,8 @@
       ],
       "shopAreas": [
         "KR03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR03_Weapon",
@@ -80596,7 +80843,8 @@
       ],
       "shopAreas": [
         "KR03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR04_Accessory",
@@ -80666,7 +80914,8 @@
       ],
       "shopAreas": [
         "KR04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR04_Armor",
@@ -80732,7 +80981,8 @@
       ],
       "shopAreas": [
         "KR04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR04_Helmet",
@@ -80809,7 +81059,8 @@
       ],
       "shopAreas": [
         "KR04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR04_Shoes",
@@ -80877,7 +81128,8 @@
       ],
       "shopAreas": [
         "KR04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR04_Weapon",
@@ -80943,7 +81195,8 @@
       ],
       "shopAreas": [
         "KR04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR05_Accessory",
@@ -81013,7 +81266,8 @@
       ],
       "shopAreas": [
         "KR05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR05_Armor",
@@ -81079,7 +81333,8 @@
       ],
       "shopAreas": [
         "KR05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR05_Helmet",
@@ -81147,7 +81402,8 @@
       ],
       "shopAreas": [
         "KR05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR05_Shoes",
@@ -81215,7 +81471,8 @@
       ],
       "shopAreas": [
         "KR05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR05_Weapon",
@@ -81281,7 +81538,8 @@
       ],
       "shopAreas": [
         "KR05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR06_Accessory",
@@ -81351,7 +81609,8 @@
       ],
       "shopAreas": [
         "KR06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR06_Armor",
@@ -81426,7 +81685,8 @@
       ],
       "shopAreas": [
         "KR06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR06_Helmet",
@@ -81494,7 +81754,8 @@
       ],
       "shopAreas": [
         "KR06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR06_Shoes",
@@ -81562,7 +81823,8 @@
       ],
       "shopAreas": [
         "KR06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR06_Weapon",
@@ -81628,7 +81890,8 @@
       ],
       "shopAreas": [
         "KR06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR07_Accessory",
@@ -81707,7 +81970,8 @@
       ],
       "shopAreas": [
         "KR07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR07_Armor",
@@ -81773,7 +82037,8 @@
       ],
       "shopAreas": [
         "KR07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR07_Helmet",
@@ -81841,7 +82106,8 @@
       ],
       "shopAreas": [
         "KR07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR07_Shoes",
@@ -81909,7 +82175,8 @@
       ],
       "shopAreas": [
         "KR07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR07_Weapon",
@@ -81975,7 +82242,8 @@
       ],
       "shopAreas": [
         "KR07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR08_Accessory",
@@ -82043,7 +82311,8 @@
       "dropAreas": [],
       "shopAreas": [
         "KR08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR08_Armor",
@@ -82109,7 +82378,8 @@
       ],
       "shopAreas": [
         "KR08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR08_BossRelic",
@@ -82175,7 +82445,8 @@
       "dropAreas": [
         "KR08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "KR08_Helmet",
@@ -82243,7 +82514,8 @@
       ],
       "shopAreas": [
         "KR08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR08_Shoes",
@@ -82311,7 +82583,8 @@
       ],
       "shopAreas": [
         "KR08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "KR08_Weapon",
@@ -82386,7 +82659,8 @@
       ],
       "shopAreas": [
         "KR08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LaurelCirclet",
@@ -82784,7 +83058,8 @@
       ],
       "shopAreas": [
         "LD01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD01_Armor",
@@ -82850,7 +83125,8 @@
       ],
       "shopAreas": [
         "LD01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD01_Helmet",
@@ -82918,7 +83194,8 @@
       ],
       "shopAreas": [
         "LD01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD01_Shoes",
@@ -82986,7 +83263,8 @@
       ],
       "shopAreas": [
         "LD01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD01_Weapon",
@@ -83052,7 +83330,8 @@
       ],
       "shopAreas": [
         "LD01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD02_Accessory",
@@ -83122,7 +83401,8 @@
       ],
       "shopAreas": [
         "LD02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD02_Armor",
@@ -83188,7 +83468,8 @@
       ],
       "shopAreas": [
         "LD02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD02_Helmet",
@@ -83256,7 +83537,8 @@
       ],
       "shopAreas": [
         "LD02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD02_Shoes",
@@ -83324,7 +83606,8 @@
       ],
       "shopAreas": [
         "LD02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD02_Weapon",
@@ -83390,7 +83673,8 @@
       ],
       "shopAreas": [
         "LD02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD03_Accessory",
@@ -83460,7 +83744,8 @@
       ],
       "shopAreas": [
         "LD03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD03_Armor",
@@ -83526,7 +83811,8 @@
       ],
       "shopAreas": [
         "LD03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD03_Helmet",
@@ -83594,7 +83880,8 @@
       ],
       "shopAreas": [
         "LD03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD03_Shoes",
@@ -83671,7 +83958,8 @@
       ],
       "shopAreas": [
         "LD03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD03_Weapon",
@@ -83737,7 +84025,8 @@
       ],
       "shopAreas": [
         "LD03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD04_Accessory",
@@ -83807,7 +84096,8 @@
       ],
       "shopAreas": [
         "LD04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD04_Armor",
@@ -83873,7 +84163,8 @@
       ],
       "shopAreas": [
         "LD04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD04_Helmet",
@@ -83950,7 +84241,8 @@
       ],
       "shopAreas": [
         "LD04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD04_Shoes",
@@ -84018,7 +84310,8 @@
       ],
       "shopAreas": [
         "LD04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD04_Weapon",
@@ -84084,7 +84377,8 @@
       ],
       "shopAreas": [
         "LD04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD05_Accessory",
@@ -84154,7 +84448,8 @@
       ],
       "shopAreas": [
         "LD05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD05_Armor",
@@ -84220,7 +84515,8 @@
       ],
       "shopAreas": [
         "LD05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD05_Helmet",
@@ -84288,7 +84584,8 @@
       ],
       "shopAreas": [
         "LD05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD05_Shoes",
@@ -84356,7 +84653,8 @@
       ],
       "shopAreas": [
         "LD05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD05_Weapon",
@@ -84422,7 +84720,8 @@
       ],
       "shopAreas": [
         "LD05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD06_Accessory",
@@ -84492,7 +84791,8 @@
       ],
       "shopAreas": [
         "LD06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD06_Armor",
@@ -84567,7 +84867,8 @@
       ],
       "shopAreas": [
         "LD06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD06_Helmet",
@@ -84635,7 +84936,8 @@
       ],
       "shopAreas": [
         "LD06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD06_Shoes",
@@ -84703,7 +85005,8 @@
       ],
       "shopAreas": [
         "LD06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD06_Weapon",
@@ -84769,7 +85072,8 @@
       ],
       "shopAreas": [
         "LD06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD07_Accessory",
@@ -84848,7 +85152,8 @@
       ],
       "shopAreas": [
         "LD07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD07_Armor",
@@ -84914,7 +85219,8 @@
       ],
       "shopAreas": [
         "LD07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD07_Helmet",
@@ -84982,7 +85288,8 @@
       ],
       "shopAreas": [
         "LD07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD07_Shoes",
@@ -85050,7 +85357,8 @@
       ],
       "shopAreas": [
         "LD07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD07_Weapon",
@@ -85116,7 +85424,8 @@
       ],
       "shopAreas": [
         "LD07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD08_Accessory",
@@ -85184,7 +85493,8 @@
       "dropAreas": [],
       "shopAreas": [
         "LD08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD08_Armor",
@@ -85250,7 +85560,8 @@
       ],
       "shopAreas": [
         "LD08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD08_BossRelic",
@@ -85316,7 +85627,8 @@
       "dropAreas": [
         "LD08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "LD08_Helmet",
@@ -85384,7 +85696,8 @@
       ],
       "shopAreas": [
         "LD08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD08_Shoes",
@@ -85452,7 +85765,8 @@
       ],
       "shopAreas": [
         "LD08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LD08_Weapon",
@@ -85527,7 +85841,8 @@
       ],
       "shopAreas": [
         "LD08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "LuckyRing",
@@ -95081,7 +95396,8 @@
       ],
       "shopAreas": [
         "PX01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX01_Armor",
@@ -95147,7 +95463,8 @@
       ],
       "shopAreas": [
         "PX01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX01_Helmet",
@@ -95215,7 +95532,8 @@
       ],
       "shopAreas": [
         "PX01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX01_Shoes",
@@ -95283,7 +95601,8 @@
       ],
       "shopAreas": [
         "PX01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX01_Weapon",
@@ -95349,7 +95668,8 @@
       ],
       "shopAreas": [
         "PX01"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX02_Accessory",
@@ -95419,7 +95739,8 @@
       ],
       "shopAreas": [
         "PX02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX02_Armor",
@@ -95485,7 +95806,8 @@
       ],
       "shopAreas": [
         "PX02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX02_Helmet",
@@ -95553,7 +95875,8 @@
       ],
       "shopAreas": [
         "PX02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX02_Shoes",
@@ -95621,7 +95944,8 @@
       ],
       "shopAreas": [
         "PX02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX02_Weapon",
@@ -95687,7 +96011,8 @@
       ],
       "shopAreas": [
         "PX02"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX03_Accessory",
@@ -95757,7 +96082,8 @@
       ],
       "shopAreas": [
         "PX03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX03_Armor",
@@ -95823,7 +96149,8 @@
       ],
       "shopAreas": [
         "PX03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX03_Helmet",
@@ -95891,7 +96218,8 @@
       ],
       "shopAreas": [
         "PX03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX03_Shoes",
@@ -95959,7 +96287,8 @@
       ],
       "shopAreas": [
         "PX03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX03_Weapon",
@@ -96025,7 +96354,8 @@
       ],
       "shopAreas": [
         "PX03"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX04_Accessory",
@@ -96095,7 +96425,8 @@
       ],
       "shopAreas": [
         "PX04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX04_Armor",
@@ -96161,7 +96492,8 @@
       ],
       "shopAreas": [
         "PX04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX04_Helmet",
@@ -96229,7 +96561,8 @@
       ],
       "shopAreas": [
         "PX04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX04_Shoes",
@@ -96318,7 +96651,8 @@
       ],
       "shopAreas": [
         "PX04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX04_Weapon",
@@ -96384,7 +96718,8 @@
       ],
       "shopAreas": [
         "PX04"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX05_Accessory",
@@ -96454,7 +96789,8 @@
       ],
       "shopAreas": [
         "PX05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX05_Armor",
@@ -96520,7 +96856,8 @@
       ],
       "shopAreas": [
         "PX05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX05_Helmet",
@@ -96588,7 +96925,8 @@
       ],
       "shopAreas": [
         "PX05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX05_Shoes",
@@ -96656,7 +96994,8 @@
       ],
       "shopAreas": [
         "PX05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX05_Weapon",
@@ -96722,7 +97061,8 @@
       ],
       "shopAreas": [
         "PX05"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX06_Accessory",
@@ -96792,7 +97132,8 @@
       ],
       "shopAreas": [
         "PX06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX06_Armor",
@@ -96858,7 +97199,8 @@
       ],
       "shopAreas": [
         "PX06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX06_Helmet",
@@ -96926,7 +97268,8 @@
       ],
       "shopAreas": [
         "PX06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX06_Shoes",
@@ -96994,7 +97337,8 @@
       ],
       "shopAreas": [
         "PX06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX06_Weapon",
@@ -97060,7 +97404,8 @@
       ],
       "shopAreas": [
         "PX06"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX07_Accessory",
@@ -97130,7 +97475,8 @@
       ],
       "shopAreas": [
         "PX07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX07_Armor",
@@ -97196,7 +97542,8 @@
       ],
       "shopAreas": [
         "PX07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX07_Helmet",
@@ -97285,7 +97632,8 @@
       ],
       "shopAreas": [
         "PX07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX07_Shoes",
@@ -97353,7 +97701,8 @@
       ],
       "shopAreas": [
         "PX07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX07_Weapon",
@@ -97419,7 +97768,8 @@
       ],
       "shopAreas": [
         "PX07"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX08_Accessory",
@@ -97489,7 +97839,8 @@
       ],
       "shopAreas": [
         "PX08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX08_Armor",
@@ -97555,7 +97906,8 @@
       ],
       "shopAreas": [
         "PX08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX08_Helmet",
@@ -97623,7 +97975,8 @@
       ],
       "shopAreas": [
         "PX08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX08_Shoes",
@@ -97691,7 +98044,8 @@
       ],
       "shopAreas": [
         "PX08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX08_Weapon",
@@ -97757,7 +98111,8 @@
       ],
       "shopAreas": [
         "PX08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX09_Accessory",
@@ -97827,7 +98182,8 @@
       ],
       "shopAreas": [
         "PX09"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX09_Armor",
@@ -97893,7 +98249,8 @@
       ],
       "shopAreas": [
         "PX09"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX09_Helmet",
@@ -97961,7 +98318,8 @@
       ],
       "shopAreas": [
         "PX09"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX09_Shoes",
@@ -98029,7 +98387,8 @@
       ],
       "shopAreas": [
         "PX09"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX09_Weapon",
@@ -98095,7 +98454,8 @@
       ],
       "shopAreas": [
         "PX09"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX10_Accessory",
@@ -98163,7 +98523,8 @@
       "dropAreas": [],
       "shopAreas": [
         "PX10"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX10_Armor",
@@ -98229,7 +98590,8 @@
       ],
       "shopAreas": [
         "PX10"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX10_BossRelic",
@@ -98328,7 +98690,8 @@
       ],
       "shopAreas": [
         "PX10"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX10_Shoes",
@@ -98396,7 +98759,8 @@
       ],
       "shopAreas": [
         "PX10"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX10_Weapon",
@@ -98462,7 +98826,8 @@
       ],
       "shopAreas": [
         "PX10"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX11_Accessory",
@@ -98532,7 +98897,8 @@
       ],
       "shopAreas": [
         "PX11"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX11_Armor",
@@ -98619,7 +98985,8 @@
       ],
       "shopAreas": [
         "PX11"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX11_Helmet",
@@ -98687,7 +99054,8 @@
       ],
       "shopAreas": [
         "PX11"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX11_Shoes",
@@ -98755,7 +99123,8 @@
       ],
       "shopAreas": [
         "PX11"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX11_Weapon",
@@ -98821,7 +99190,8 @@
       ],
       "shopAreas": [
         "PX11"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX12_Accessory",
@@ -98891,7 +99261,8 @@
       ],
       "shopAreas": [
         "PX12"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX12_Armor",
@@ -98957,7 +99328,8 @@
       ],
       "shopAreas": [
         "PX12"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX12_Helmet",
@@ -99025,7 +99397,8 @@
       ],
       "shopAreas": [
         "PX12"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX12_Shoes",
@@ -99093,7 +99466,8 @@
       ],
       "shopAreas": [
         "PX12"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX12_Weapon",
@@ -99159,7 +99533,8 @@
       ],
       "shopAreas": [
         "PX12"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX13_Accessory",
@@ -99229,7 +99604,8 @@
       ],
       "shopAreas": [
         "PX13"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX13_Armor",
@@ -99295,7 +99671,8 @@
       ],
       "shopAreas": [
         "PX13"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX13_Helmet",
@@ -99363,7 +99740,8 @@
       ],
       "shopAreas": [
         "PX13"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX13_Shoes",
@@ -99431,7 +99809,8 @@
       ],
       "shopAreas": [
         "PX13"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX13_Weapon",
@@ -99497,7 +99876,8 @@
       ],
       "shopAreas": [
         "PX13"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX14_Accessory",
@@ -99567,7 +99947,8 @@
       ],
       "shopAreas": [
         "PX14"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX14_Armor",
@@ -99633,7 +100014,8 @@
       ],
       "shopAreas": [
         "PX14"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX14_Helmet",
@@ -99701,7 +100083,8 @@
       ],
       "shopAreas": [
         "PX14"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX14_Shoes",
@@ -99769,7 +100152,8 @@
       ],
       "shopAreas": [
         "PX14"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX14_Weapon",
@@ -99835,7 +100219,8 @@
       ],
       "shopAreas": [
         "PX14"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX15_Accessory",
@@ -99924,7 +100309,8 @@
       "dropAreas": [],
       "shopAreas": [
         "PX15"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX15_Armor",
@@ -99990,7 +100376,8 @@
       ],
       "shopAreas": [
         "PX15"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX15_BossRelic",
@@ -100052,7 +100439,8 @@
       "dropAreas": [
         "PX15"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "PX15_Helmet",
@@ -100120,7 +100508,8 @@
       ],
       "shopAreas": [
         "PX15"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX15_Shoes",
@@ -100188,7 +100577,8 @@
       ],
       "shopAreas": [
         "PX15"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX15_Weapon",
@@ -100254,7 +100644,8 @@
       ],
       "shopAreas": [
         "PX15"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX16_Accessory",
@@ -100324,7 +100715,8 @@
       ],
       "shopAreas": [
         "PX16"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX16_Armor",
@@ -100390,7 +100782,8 @@
       ],
       "shopAreas": [
         "PX16"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX16_Helmet",
@@ -100458,7 +100851,8 @@
       ],
       "shopAreas": [
         "PX16"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX16_Shoes",
@@ -100526,7 +100920,8 @@
       ],
       "shopAreas": [
         "PX16"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX16_Weapon",
@@ -100592,7 +100987,8 @@
       ],
       "shopAreas": [
         "PX16"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX17_Accessory",
@@ -100662,7 +101058,8 @@
       ],
       "shopAreas": [
         "PX17"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX17_Armor",
@@ -100728,7 +101125,8 @@
       ],
       "shopAreas": [
         "PX17"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX17_Helmet",
@@ -100796,7 +101194,8 @@
       ],
       "shopAreas": [
         "PX17"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX17_Shoes",
@@ -100864,7 +101263,8 @@
       ],
       "shopAreas": [
         "PX17"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX17_Weapon",
@@ -100930,7 +101330,8 @@
       ],
       "shopAreas": [
         "PX17"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX18_Accessory",
@@ -101000,7 +101401,8 @@
       ],
       "shopAreas": [
         "PX18"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX18_Armor",
@@ -101066,7 +101468,8 @@
       ],
       "shopAreas": [
         "PX18"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX18_Helmet",
@@ -101134,7 +101537,8 @@
       ],
       "shopAreas": [
         "PX18"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX18_Shoes",
@@ -101202,7 +101606,8 @@
       ],
       "shopAreas": [
         "PX18"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX18_Weapon",
@@ -101268,7 +101673,8 @@
       ],
       "shopAreas": [
         "PX18"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX19_Accessory",
@@ -101338,7 +101744,8 @@
       ],
       "shopAreas": [
         "PX19"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX19_Armor",
@@ -101404,7 +101811,8 @@
       ],
       "shopAreas": [
         "PX19"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX19_Helmet",
@@ -101472,7 +101880,8 @@
       ],
       "shopAreas": [
         "PX19"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX19_Shoes",
@@ -101540,7 +101949,8 @@
       ],
       "shopAreas": [
         "PX19"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX19_Weapon",
@@ -101606,7 +102016,8 @@
       ],
       "shopAreas": [
         "PX19"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX20_Accessory",
@@ -101674,7 +102085,8 @@
       "dropAreas": [],
       "shopAreas": [
         "PX20"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX20_Armor",
@@ -101740,7 +102152,8 @@
       ],
       "shopAreas": [
         "PX20"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX20_BossRelic",
@@ -101806,7 +102219,8 @@
       "dropAreas": [
         "PX20"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "PX20_Helmet",
@@ -101874,7 +102288,8 @@
       ],
       "shopAreas": [
         "PX20"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX20_Shoes",
@@ -101942,7 +102357,8 @@
       ],
       "shopAreas": [
         "PX20"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "PX20_Weapon",
@@ -102029,7 +102445,8 @@
       ],
       "shopAreas": [
         "PX20"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "MossyDagger",
@@ -105040,7 +105457,8 @@
       "dropAreas": [
         "ST01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST01_Armor",
@@ -105072,7 +105490,8 @@
       "dropAreas": [
         "ST01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST01_Helmet",
@@ -105105,7 +105524,8 @@
       "dropAreas": [
         "ST01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST01_Shoes",
@@ -105138,7 +105558,8 @@
       "dropAreas": [
         "ST01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST01_Weapon",
@@ -105170,7 +105591,8 @@
       "dropAreas": [
         "ST01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST02_Accessory",
@@ -105204,7 +105626,8 @@
       "dropAreas": [
         "ST02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST02_Armor",
@@ -105236,7 +105659,8 @@
       "dropAreas": [
         "ST02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST02_Helmet",
@@ -105269,7 +105693,8 @@
       "dropAreas": [
         "ST02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST02_Shoes",
@@ -105302,7 +105727,8 @@
       "dropAreas": [
         "ST02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST02_Weapon",
@@ -105334,7 +105760,8 @@
       "dropAreas": [
         "ST02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST03_Accessory",
@@ -105368,7 +105795,8 @@
       "dropAreas": [
         "ST03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST03_Armor",
@@ -105400,7 +105828,8 @@
       "dropAreas": [
         "ST03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST03_Helmet",
@@ -105433,7 +105862,8 @@
       "dropAreas": [
         "ST03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST03_Shoes",
@@ -105475,7 +105905,8 @@
         "ST06",
         "ST07",
         "ST08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST03_Weapon",
@@ -105507,7 +105938,8 @@
       "dropAreas": [
         "ST03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST04_Accessory",
@@ -105541,7 +105973,8 @@
       "dropAreas": [
         "ST04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST04_Armor",
@@ -105573,7 +106006,8 @@
       "dropAreas": [
         "ST04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST04_Helmet",
@@ -105615,7 +106049,8 @@
         "ST06",
         "ST07",
         "ST08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST04_Shoes",
@@ -105648,7 +106083,8 @@
       "dropAreas": [
         "ST04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST04_Weapon",
@@ -105680,7 +106116,8 @@
       "dropAreas": [
         "ST04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST05_Accessory",
@@ -105714,7 +106151,8 @@
       "dropAreas": [
         "ST05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST05_Armor",
@@ -105746,7 +106184,8 @@
       "dropAreas": [
         "ST05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST05_Helmet",
@@ -105779,7 +106218,8 @@
       "dropAreas": [
         "ST05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST05_Shoes",
@@ -105812,7 +106252,8 @@
       "dropAreas": [
         "ST05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST05_Weapon",
@@ -105844,7 +106285,8 @@
       "dropAreas": [
         "ST05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST06_Accessory",
@@ -105878,7 +106320,8 @@
       "dropAreas": [
         "ST06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST06_Armor",
@@ -105919,7 +106362,8 @@
         "ST06",
         "ST07",
         "ST08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST06_Helmet",
@@ -105952,7 +106396,8 @@
       "dropAreas": [
         "ST06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST06_Shoes",
@@ -105985,7 +106430,8 @@
       "dropAreas": [
         "ST06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST06_Weapon",
@@ -106017,7 +106463,8 @@
       "dropAreas": [
         "ST06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST07_Accessory",
@@ -106060,7 +106507,8 @@
         "ST06",
         "ST07",
         "ST08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "ST07_Armor",
@@ -106092,7 +106540,8 @@
       "dropAreas": [
         "ST07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST07_Helmet",
@@ -106125,7 +106574,8 @@
       "dropAreas": [
         "ST07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST07_Shoes",
@@ -106158,7 +106608,8 @@
       "dropAreas": [
         "ST07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST07_Weapon",
@@ -106190,7 +106641,8 @@
       "dropAreas": [
         "ST07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST08_Accessory",
@@ -106224,7 +106676,8 @@
       "dropAreas": [
         "ST08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST08_Armor",
@@ -106256,13 +106709,14 @@
       "dropAreas": [
         "ST08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST08_BossRelic",
       "name": "Heart of the Unmoved",
       "description": "",
-      "image": "",
+      "image": "item_ST08_BossRelic.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -106287,7 +106741,8 @@
         "DEF +37%"
       ],
       "dropAreas": [],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST08_Helmet",
@@ -106320,7 +106775,8 @@
       "dropAreas": [
         "ST08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST08_Shoes",
@@ -106353,7 +106809,8 @@
       "dropAreas": [
         "ST08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "ST08_Weapon",
@@ -106394,7 +106851,8 @@
         "ST06",
         "ST07",
         "ST08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "StrawHat",
@@ -106524,7 +106982,8 @@
       "dropAreas": [
         "BD01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD01_Armor",
@@ -106556,7 +107015,8 @@
       "dropAreas": [
         "BD01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD01_Helmet",
@@ -106589,7 +107049,8 @@
       "dropAreas": [
         "BD01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD01_Shoes",
@@ -106622,7 +107083,8 @@
       "dropAreas": [
         "BD01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD01_Weapon",
@@ -106654,7 +107116,8 @@
       "dropAreas": [
         "BD01"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD02_Accessory",
@@ -106688,7 +107151,8 @@
       "dropAreas": [
         "BD02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD02_Armor",
@@ -106720,7 +107184,8 @@
       "dropAreas": [
         "BD02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD02_Helmet",
@@ -106753,7 +107218,8 @@
       "dropAreas": [
         "BD02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD02_Shoes",
@@ -106786,7 +107252,8 @@
       "dropAreas": [
         "BD02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD02_Weapon",
@@ -106818,7 +107285,8 @@
       "dropAreas": [
         "BD02"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD03_Accessory",
@@ -106852,7 +107320,8 @@
       "dropAreas": [
         "BD03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD03_Armor",
@@ -106884,7 +107353,8 @@
       "dropAreas": [
         "BD03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD03_Helmet",
@@ -106917,7 +107387,8 @@
       "dropAreas": [
         "BD03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD03_Shoes",
@@ -106959,7 +107430,8 @@
         "BD06",
         "BD07",
         "BD08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD03_Weapon",
@@ -106991,7 +107463,8 @@
       "dropAreas": [
         "BD03"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD04_Accessory",
@@ -107025,7 +107498,8 @@
       "dropAreas": [
         "BD04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD04_Armor",
@@ -107057,7 +107531,8 @@
       "dropAreas": [
         "BD04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD04_Helmet",
@@ -107099,7 +107574,8 @@
         "BD06",
         "BD07",
         "BD08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD04_Shoes",
@@ -107132,7 +107608,8 @@
       "dropAreas": [
         "BD04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD04_Weapon",
@@ -107164,7 +107641,8 @@
       "dropAreas": [
         "BD04"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD05_Accessory",
@@ -107198,7 +107676,8 @@
       "dropAreas": [
         "BD05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD05_Armor",
@@ -107230,7 +107709,8 @@
       "dropAreas": [
         "BD05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD05_Helmet",
@@ -107263,7 +107743,8 @@
       "dropAreas": [
         "BD05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD05_Shoes",
@@ -107296,7 +107777,8 @@
       "dropAreas": [
         "BD05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD05_Weapon",
@@ -107328,7 +107810,8 @@
       "dropAreas": [
         "BD05"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD06_Accessory",
@@ -107362,7 +107845,8 @@
       "dropAreas": [
         "BD06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD06_Armor",
@@ -107403,7 +107887,8 @@
         "BD06",
         "BD07",
         "BD08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD06_Helmet",
@@ -107436,7 +107921,8 @@
       "dropAreas": [
         "BD06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD06_Shoes",
@@ -107469,7 +107955,8 @@
       "dropAreas": [
         "BD06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD06_Weapon",
@@ -107501,7 +107988,8 @@
       "dropAreas": [
         "BD06"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD07_Accessory",
@@ -107544,7 +108032,8 @@
         "BD06",
         "BD07",
         "BD08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "BD07_Armor",
@@ -107576,7 +108065,8 @@
       "dropAreas": [
         "BD07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD07_Helmet",
@@ -107609,7 +108099,8 @@
       "dropAreas": [
         "BD07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD07_Shoes",
@@ -107642,7 +108133,8 @@
       "dropAreas": [
         "BD07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD07_Weapon",
@@ -107674,7 +108166,8 @@
       "dropAreas": [
         "BD07"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD08_Accessory",
@@ -107708,7 +108201,8 @@
       "dropAreas": [
         "BD08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD08_Armor",
@@ -107740,13 +108234,14 @@
       "dropAreas": [
         "BD08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD08_BossRelic",
       "name": "The Unoccupied Crown",
       "description": "",
-      "image": "",
+      "image": "item_BD08_BossRelic.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -107772,7 +108267,8 @@
         "Lifesteal 6%"
       ],
       "dropAreas": [],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD08_Helmet",
@@ -107805,7 +108301,8 @@
       "dropAreas": [
         "BD08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD08_Shoes",
@@ -107838,7 +108335,8 @@
       "dropAreas": [
         "BD08"
       ],
-      "shopAreas": []
+      "shopAreas": [],
+      "upcoming": true
     },
     {
       "id": "BD08_Weapon",
@@ -107879,7 +108377,8 @@
         "BD06",
         "BD07",
         "BD08"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "id": "TenguFan",
@@ -109978,6 +110477,114 @@
       "blockedCells": 5987
     },
     {
+      "id": "BD01",
+      "name": "The Ten Thousand Steps",
+      "world": "Other",
+      "image": "map_BD01.png",
+      "gridWidth": 72,
+      "gridHeight": 128,
+      "dataVersion": 1,
+      "walkableCells": 1609,
+      "blockedCells": 7607,
+      "upcoming": true
+    },
+    {
+      "id": "BD02",
+      "name": "Lantern Hall",
+      "world": "Other",
+      "image": "map_BD02.png",
+      "gridWidth": 120,
+      "gridHeight": 88,
+      "dataVersion": 1,
+      "walkableCells": 3496,
+      "blockedCells": 7064,
+      "upcoming": true
+    },
+    {
+      "id": "BD03",
+      "name": "The Bell Tower",
+      "world": "Other",
+      "image": "map_BD03.png",
+      "gridWidth": 64,
+      "gridHeight": 120,
+      "dataVersion": 1,
+      "walkableCells": 1513,
+      "blockedCells": 6167,
+      "upcoming": true
+    },
+    {
+      "id": "BD04",
+      "name": "Hall of a Thousand Seats",
+      "world": "Other",
+      "image": "map_BD04.png",
+      "gridWidth": 136,
+      "gridHeight": 72,
+      "dataVersion": 1,
+      "walkableCells": 1373,
+      "blockedCells": 8419,
+      "upcoming": true
+    },
+    {
+      "id": "BD05",
+      "name": "Prayer-Flag Span",
+      "world": "Other",
+      "image": "map_BD05.png",
+      "gridWidth": 152,
+      "gridHeight": 56,
+      "dataVersion": 1,
+      "walkableCells": 948,
+      "blockedCells": 7564,
+      "upcoming": true
+    },
+    {
+      "id": "BD06",
+      "name": "The Ash Garden",
+      "world": "Other",
+      "image": "map_BD06.png",
+      "gridWidth": 96,
+      "gridHeight": 88,
+      "dataVersion": 1,
+      "walkableCells": 880,
+      "blockedCells": 7568,
+      "upcoming": true
+    },
+    {
+      "id": "BD07",
+      "name": "The Silent Terrace",
+      "world": "Other",
+      "image": "map_BD07.png",
+      "gridWidth": 128,
+      "gridHeight": 56,
+      "dataVersion": 1,
+      "walkableCells": 1408,
+      "blockedCells": 5760,
+      "upcoming": true
+    },
+    {
+      "id": "BD08",
+      "name": "The Empty Seat",
+      "world": "Other",
+      "image": "map_BD08.png",
+      "gridWidth": 104,
+      "gridHeight": 80,
+      "dataVersion": 1,
+      "walkableCells": 2909,
+      "blockedCells": 5411,
+      "upcoming": true
+    },
+    {
+      "id": "CL01",
+      "name": "Cloud Plaza",
+      "world": "Other",
+      "image": "map_CL01.png",
+      "gridWidth": 96,
+      "gridHeight": 96,
+      "dataVersion": 1,
+      "walkableCells": 5148,
+      "blockedCells": 4068,
+      "upcoming": true
+    },
+    {
       "id": "CoralMaze_Map",
       "name": "Coral Maze",
       "world": "Underwater",
@@ -110053,6 +110660,102 @@
       "dataVersion": 1,
       "walkableCells": 6130,
       "blockedCells": 3086
+    },
+    {
+      "id": "EG01",
+      "name": "The Sand Stair",
+      "world": "Other",
+      "image": "map_EG01.png",
+      "gridWidth": 88,
+      "gridHeight": 112,
+      "dataVersion": 1,
+      "walkableCells": 1641,
+      "blockedCells": 8215,
+      "upcoming": true
+    },
+    {
+      "id": "EG02",
+      "name": "Embalmer's Row",
+      "world": "Other",
+      "image": "map_EG02.png",
+      "gridWidth": 136,
+      "gridHeight": 56,
+      "dataVersion": 1,
+      "walkableCells": 1919,
+      "blockedCells": 5697,
+      "upcoming": true
+    },
+    {
+      "id": "EG03",
+      "name": "The Canopic Vault",
+      "world": "Other",
+      "image": "map_EG03.png",
+      "gridWidth": 64,
+      "gridHeight": 120,
+      "dataVersion": 1,
+      "walkableCells": 1036,
+      "blockedCells": 6644,
+      "upcoming": true
+    },
+    {
+      "id": "EG04",
+      "name": "Hall of False Doors",
+      "world": "Other",
+      "image": "map_EG04.png",
+      "gridWidth": 128,
+      "gridHeight": 64,
+      "dataVersion": 1,
+      "walkableCells": 1269,
+      "blockedCells": 6923,
+      "upcoming": true
+    },
+    {
+      "id": "EG05",
+      "name": "The Sunless Barque",
+      "world": "Other",
+      "image": "map_EG05.png",
+      "gridWidth": 72,
+      "gridHeight": 128,
+      "dataVersion": 1,
+      "walkableCells": 2251,
+      "blockedCells": 6965,
+      "upcoming": true
+    },
+    {
+      "id": "EG06",
+      "name": "Scarab Reach",
+      "world": "Other",
+      "image": "map_EG06.png",
+      "gridWidth": 136,
+      "gridHeight": 88,
+      "dataVersion": 1,
+      "walkableCells": 992,
+      "blockedCells": 10976,
+      "upcoming": true
+    },
+    {
+      "id": "EG07",
+      "name": "The Weighing Room",
+      "world": "Other",
+      "image": "map_EG07.png",
+      "gridWidth": 112,
+      "gridHeight": 88,
+      "dataVersion": 1,
+      "walkableCells": 5202,
+      "blockedCells": 4654,
+      "upcoming": true
+    },
+    {
+      "id": "EG08",
+      "name": "Tomb of the Bound King",
+      "world": "Other",
+      "image": "map_EG08.png",
+      "gridWidth": 120,
+      "gridHeight": 64,
+      "dataVersion": 1,
+      "walkableCells": 762,
+      "blockedCells": 6918,
+      "upcoming": true
     },
     {
       "id": "ForestRoad_Map",
@@ -111043,6 +111746,102 @@
       "dataVersion": 1,
       "walkableCells": 4549,
       "blockedCells": 4667
+    },
+    {
+      "id": "ST01",
+      "name": "Standing Circle",
+      "world": "Other",
+      "image": "map_ST01.png",
+      "gridWidth": 104,
+      "gridHeight": 88,
+      "dataVersion": 1,
+      "walkableCells": 4973,
+      "blockedCells": 4179,
+      "upcoming": true
+    },
+    {
+      "id": "ST02",
+      "name": "The Quarry Steps",
+      "world": "Other",
+      "image": "map_ST02.png",
+      "gridWidth": 128,
+      "gridHeight": 72,
+      "dataVersion": 1,
+      "walkableCells": 1473,
+      "blockedCells": 7743,
+      "upcoming": true
+    },
+    {
+      "id": "ST03",
+      "name": "Dolmen Field",
+      "world": "Other",
+      "image": "map_ST03.png",
+      "gridWidth": 112,
+      "gridHeight": 96,
+      "dataVersion": 1,
+      "walkableCells": 1014,
+      "blockedCells": 9738,
+      "upcoming": true
+    },
+    {
+      "id": "ST04",
+      "name": "The Glyph Wall",
+      "world": "Other",
+      "image": "map_ST04.png",
+      "gridWidth": 136,
+      "gridHeight": 64,
+      "dataVersion": 1,
+      "walkableCells": 1043,
+      "blockedCells": 7661,
+      "upcoming": true
+    },
+    {
+      "id": "ST05",
+      "name": "Cairn Deeps",
+      "world": "Other",
+      "image": "map_ST05.png",
+      "gridWidth": 72,
+      "gridHeight": 104,
+      "dataVersion": 1,
+      "walkableCells": 1035,
+      "blockedCells": 6453,
+      "upcoming": true
+    },
+    {
+      "id": "ST06",
+      "name": "The Toppled Giant",
+      "world": "Other",
+      "image": "map_ST06.png",
+      "gridWidth": 144,
+      "gridHeight": 64,
+      "dataVersion": 1,
+      "walkableCells": 276,
+      "blockedCells": 8940,
+      "upcoming": true
+    },
+    {
+      "id": "ST07",
+      "name": "Menhir Spine",
+      "world": "Other",
+      "image": "map_ST07.png",
+      "gridWidth": 120,
+      "gridHeight": 88,
+      "dataVersion": 1,
+      "walkableCells": 517,
+      "blockedCells": 10043,
+      "upcoming": true
+    },
+    {
+      "id": "ST08",
+      "name": "The Unmoved Stone",
+      "world": "Other",
+      "image": "map_ST08.png",
+      "gridWidth": 112,
+      "gridHeight": 80,
+      "dataVersion": 1,
+      "walkableCells": 8881,
+      "blockedCells": 79,
+      "upcoming": true
     },
     {
       "id": "SunBuriedCave_Map",
@@ -148650,9 +149449,9 @@
     },
     {
       "code": "ST01",
-      "mapId": "",
+      "mapId": "ST01",
       "name": "Standing Circle",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Stone",
       "minLevel": 32940000,
       "maxLevel": 34010600,
@@ -148680,13 +149479,14 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "ST02",
-      "mapId": "",
+      "mapId": "ST02",
       "name": "The Quarry Steps",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Stone",
       "minLevel": 34340000,
       "maxLevel": 35232800,
@@ -148713,13 +149513,14 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "ST03",
-      "mapId": "",
+      "mapId": "ST03",
       "name": "Dolmen Field",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Stone",
       "minLevel": 35800000,
       "maxLevel": 36963500,
@@ -148747,13 +149548,14 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "ST04",
-      "mapId": "",
+      "mapId": "ST04",
       "name": "The Glyph Wall",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Stone",
       "minLevel": 37320000,
       "maxLevel": 38290300,
@@ -148780,13 +149582,14 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "ST05",
-      "mapId": "",
+      "mapId": "ST05",
       "name": "Cairn Deeps",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Stone",
       "minLevel": 38910000,
       "maxLevel": 40174600,
@@ -148814,13 +149617,14 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "ST06",
-      "mapId": "",
+      "mapId": "ST06",
       "name": "The Toppled Giant",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Stone",
       "minLevel": 40570000,
       "maxLevel": 41624800,
@@ -148847,13 +149651,14 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "ST07",
-      "mapId": "",
+      "mapId": "ST07",
       "name": "Menhir Spine",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Stone",
       "minLevel": 42300000,
       "maxLevel": 43674800,
@@ -148881,13 +149686,14 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "ST08",
-      "mapId": "",
+      "mapId": "ST08",
       "name": "The Unmoved Stone",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Stone",
       "minLevel": 44100000,
       "maxLevel": 45246600,
@@ -148914,13 +149720,14 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "EG01",
-      "mapId": "",
+      "mapId": "EG01",
       "name": "The Sand Stair",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Egypt",
       "minLevel": 77250000,
       "maxLevel": 79760600,
@@ -148948,13 +149755,14 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "EG02",
-      "mapId": "",
+      "mapId": "EG02",
       "name": "Embalmer's Row",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Egypt",
       "minLevel": 80530000,
       "maxLevel": 82623800,
@@ -148981,13 +149789,14 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "EG03",
-      "mapId": "",
+      "mapId": "EG03",
       "name": "The Canopic Vault",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Egypt",
       "minLevel": 83950000,
       "maxLevel": 86678400,
@@ -149015,13 +149824,14 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "EG04",
-      "mapId": "",
+      "mapId": "EG04",
       "name": "Hall of False Doors",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Egypt",
       "minLevel": 87510000,
       "maxLevel": 89785300,
@@ -149048,13 +149858,14 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "EG05",
-      "mapId": "",
+      "mapId": "EG05",
       "name": "The Sunless Barque",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Egypt",
       "minLevel": 91230000,
       "maxLevel": 94195000,
@@ -149082,13 +149893,14 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "EG06",
-      "mapId": "",
+      "mapId": "EG06",
       "name": "Scarab Reach",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Egypt",
       "minLevel": 95110000,
       "maxLevel": 97582900,
@@ -149115,13 +149927,14 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "EG07",
-      "mapId": "",
+      "mapId": "EG07",
       "name": "The Weighing Room",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Egypt",
       "minLevel": 99160000,
       "maxLevel": 102382700,
@@ -149149,13 +149962,14 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "EG08",
-      "mapId": "",
+      "mapId": "EG08",
       "name": "Tomb of the Bound King",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "Egypt",
       "minLevel": 103380000,
       "maxLevel": 106067900,
@@ -149182,13 +149996,14 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "BD01",
-      "mapId": "",
+      "mapId": "BD01",
       "name": "The Ten Thousand Steps",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "The Temple",
       "minLevel": 342870000,
       "maxLevel": 354013300,
@@ -149216,13 +150031,14 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "BD02",
-      "mapId": "",
+      "mapId": "BD02",
       "name": "Lantern Hall",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "The Temple",
       "minLevel": 357440000,
       "maxLevel": 366733400,
@@ -149249,13 +150065,14 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "BD03",
-      "mapId": "",
+      "mapId": "BD03",
       "name": "The Bell Tower",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "The Temple",
       "minLevel": 372630000,
       "maxLevel": 384740500,
@@ -149283,13 +150100,14 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "BD04",
-      "mapId": "",
+      "mapId": "BD04",
       "name": "Hall of a Thousand Seats",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "The Temple",
       "minLevel": 388470000,
       "maxLevel": 398570200,
@@ -149316,13 +150134,14 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "BD05",
-      "mapId": "",
+      "mapId": "BD05",
       "name": "Prayer-Flag Span",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "The Temple",
       "minLevel": 404980000,
       "maxLevel": 418141800,
@@ -149350,13 +150169,14 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "BD06",
-      "mapId": "",
+      "mapId": "BD06",
       "name": "The Ash Garden",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "The Temple",
       "minLevel": 422190000,
       "maxLevel": 433166900,
@@ -149383,13 +150203,14 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "BD07",
-      "mapId": "",
+      "mapId": "BD07",
       "name": "The Silent Terrace",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "The Temple",
       "minLevel": 440130000,
       "maxLevel": 454434200,
@@ -149417,13 +150238,14 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ]
+      ],
+      "upcoming": true
     },
     {
       "code": "BD08",
-      "mapId": "",
+      "mapId": "BD08",
       "name": "The Empty Seat",
-      "mapUnbuilt": true,
+      "mapUnbuilt": false,
       "world": "The Temple",
       "minLevel": 458840000,
       "maxLevel": 470769800,
@@ -149450,7 +150272,8 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ]
+      ],
+      "upcoming": true
     }
   ],
   "characters": [
