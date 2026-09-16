@@ -101,6 +101,18 @@
     return (neg ? "-" : "") + s + NUM_SUFFIXES[tier];
   }
 
+  // ⚠ fmt() TRUNCATES BELOW 1000, because the game's Abbreviate does — "no 12.3 damage numbers".
+  // That is right for HP, ATK and levels and WRONG for a quantity whose interesting values are
+  // fractional: routing critMultResist through fmt() alone turned −0.50x into −0x, which is a worse
+  // bug than the one it was fixing. This keeps two decimals under 1000 and hands anything larger to
+  // fmt(), so −0.5x still reads −0.5x and −47303.51x reads −47.3Kx.
+  function fmtSmall(n) {
+    if (n == null || n === "" || isNaN(n)) return "0";
+    var v = Number(n);
+    if (Math.abs(v) >= 1000) return fmt(v);
+    return v.toFixed(2).replace(/\.?0+$/, "");
+  }
+
   // "A" if equal, else "A–B" — for level/stat ranges across an enemy's level band.
   function rng(a, b) { return a === b ? fmt(a) : fmt(a) + "&#8211;" + fmt(b); }
 
@@ -640,10 +652,13 @@
     if (!r) return "";
     return Object.keys(RESIST_LABELS).filter(function (k) { return (r[k] || 0) > 0; }).map(function (k) {
       var v = r[k];
-      // critMultResist is a flat multiplier reduction (e.g. -0.50x); the rest are percentages.
-      // ⛔ fmt(), not Math.round: an endgame crit resist is ~2,973,088 and printed as
-      // "297308850%". Every resist on the post-Gate route is in this range.
-      var disp = k === "critMultResist" ? ("−" + v.toFixed(2) + "x") : (fmt(v * 100) + "%");
+      // ⛔ fmt() on BOTH branches. The percentage one was fixed first — an endgame crit resist is
+      // ~2,973,088 and printed "297308850%" — but critMultResist was left on toFixed(2) and printed
+      // "−47303.51x" verbatim. The comment that used to sit here is why I missed it: it called
+      // critMultResist "a flat multiplier reduction (e.g. -0.50x)", which is true only on the early
+      // route. Measured across the shipped data it runs to a MEDIAN of 672 and a max of 298,125.
+      // ⚠ fmt() leaves anything under 1000 untouched, so the small early values still read -0.5x.
+      var disp = k === "critMultResist" ? ("−" + fmtSmall(v) + "x") : (fmt(v * 100) + "%");
       return sb(RESIST_LABELS[k], disp);
     }).join("");
   }
