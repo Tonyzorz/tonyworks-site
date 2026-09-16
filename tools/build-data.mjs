@@ -801,7 +801,38 @@ for (const it of items) {
 // follows ItemData.hiddenFromCollection just like the in-game collection screen.
 // ★ ALL FOUR ping-pong regions are DATA-RELEASED on the wiki (owner, 2026-09-01: "Korea London
 // and mono? Please add them as well") — art-less, shop-locked, hard-less, but the data is public.
-const publicItems = items.filter((it) => !it.hiddenFromCollection);
+// ⛔★★★★ TROLL COLLECTIBLES ARE NOT PUBLISHED AT ALL — NOT EVEN AS A CATALOGUE ENTRY.
+// `nonTroll()` above already strips them from every DROP list and boss slot, and the note there
+// states the intent outright: "a joke item stays hidden". It was only ever half true. The items
+// themselves were still emitted, so the public wiki listed 37 troll collectibles WITH THEIR ICONS
+// — the whole joke spoiled in a searchable table. Found 2026-09-16 when the owner asked.
+//
+// A troll only works if the player meets it in the game and not on a wiki page beforehand, so this
+// is the item-side twin of the drop-side rule, and it has to be here rather than in app.js: data
+// that never leaves the builder cannot be un-hidden by a front-end bug or read out of data.json by
+// someone curious.
+//
+// ⚠ Deliberately keyed on `trollItemIds`, NOT on `isTrollItem`. An item flagged troll but carrying
+// REAL stats is a data bug that the block above already reports and treats as ordinary gear — the
+// safe direction. Keying on the raw flag here would hide real loot on the strength of a bad flag.
+const publicItems = items.filter((it) => !it.hiddenFromCollection && !isTrollDrop(it.id));
+
+// ⚠ AND DELETE THE ICONS THAT WERE ALREADY COPIED. copySprite() runs while items are being mapped,
+// which is BEFORE trollItemIds can exist (it needs the stat check), so 26 troll PNGs were already
+// sitting in assets/img and served fine by direct URL even once the JSON stopped naming them.
+// Removing the row without removing the file would have looked fixed and not been.
+// ⚠ Swept by FILENAME, not by walking the items. Three `item_Troll_*.png` were left behind by
+// earlier builds with no item referencing them any more, and an orphan is still served by direct
+// URL — "no row in the JSON" is not the same as "not on the internet".
+// Anything a PUBLISHED item still points at is kept: that is the misflagged-troll case (flagged
+// troll but carrying real stats), which the block above deliberately publishes as ordinary gear.
+let trollIconsRemoved = 0;
+const publishedImages = new Set(publicItems.map((it) => it.image).filter(Boolean));
+for (const f of fs.readdirSync(IMG)) {
+  if (!/^item_Troll_/i.test(f) || publishedImages.has(f)) continue;
+  fs.unlinkSync(path.join(IMG, f));
+  trollIconsRemoved++;
+}
 
 // The Unity bundle version is intentionally not the public content version. The in-game notices
 // are the player-facing source of truth (for example, "v2.0.4 — Balance & Leaderboard Fixes").
@@ -841,4 +872,5 @@ const root = {
 };
 fs.writeFileSync(path.join(DATA, "data.json"), JSON.stringify(root, null, 2));
 console.log("Wrote data.json", root.counts, "images:", imagesWritten);
+console.log(`Troll collectibles withheld: ${trollItemIds.size} item(s), ${trollIconsRemoved} icon(s) removed from assets/img.`);
 console.log(epoch4Released ? "Epoch 4: PUBLISHED (SITE_LIVE_RELEASE=epoch4=1 or the flag flipped)" : `Epoch 4: HELD — ${heldEpoch4Count} asset(s) withheld from the public wiki.`);
