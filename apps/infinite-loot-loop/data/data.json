@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T13:44:19Z",
+  "generatedAt": "2026-09-16T13:48:18Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "5.0.0",
   "release": {
@@ -110011,7 +110011,7 @@
     {
       "id": "BD01",
       "name": "The Ten Thousand Steps",
-      "world": "Other",
+      "world": "The Temple",
       "image": "map_BD01.png",
       "gridWidth": 72,
       "gridHeight": 128,
@@ -110022,7 +110022,7 @@
     {
       "id": "BD02",
       "name": "Lantern Hall",
-      "world": "Other",
+      "world": "The Temple",
       "image": "map_BD02.png",
       "gridWidth": 120,
       "gridHeight": 88,
@@ -110033,7 +110033,7 @@
     {
       "id": "BD03",
       "name": "The Bell Tower",
-      "world": "Other",
+      "world": "The Temple",
       "image": "map_BD03.png",
       "gridWidth": 64,
       "gridHeight": 120,
@@ -110044,7 +110044,7 @@
     {
       "id": "BD04",
       "name": "Hall of a Thousand Seats",
-      "world": "Other",
+      "world": "The Temple",
       "image": "map_BD04.png",
       "gridWidth": 136,
       "gridHeight": 72,
@@ -110055,7 +110055,7 @@
     {
       "id": "BD05",
       "name": "Prayer-Flag Span",
-      "world": "Other",
+      "world": "The Temple",
       "image": "map_BD05.png",
       "gridWidth": 152,
       "gridHeight": 56,
@@ -110066,7 +110066,7 @@
     {
       "id": "BD06",
       "name": "The Ash Garden",
-      "world": "Other",
+      "world": "The Temple",
       "image": "map_BD06.png",
       "gridWidth": 96,
       "gridHeight": 88,
@@ -110077,7 +110077,7 @@
     {
       "id": "BD07",
       "name": "The Silent Terrace",
-      "world": "Other",
+      "world": "The Temple",
       "image": "map_BD07.png",
       "gridWidth": 128,
       "gridHeight": 56,
@@ -110088,7 +110088,7 @@
     {
       "id": "BD08",
       "name": "The Empty Seat",
-      "world": "Other",
+      "world": "The Temple",
       "image": "map_BD08.png",
       "gridWidth": 104,
       "gridHeight": 80,
@@ -110099,7 +110099,7 @@
     {
       "id": "CL01",
       "name": "Cloud Plaza",
-      "world": "Other",
+      "world": "Cloud Plaza",
       "image": "map_CL01.png",
       "gridWidth": 96,
       "gridHeight": 96,
@@ -110187,7 +110187,7 @@
     {
       "id": "EG01",
       "name": "The Sand Stair",
-      "world": "Other",
+      "world": "Egypt",
       "image": "map_EG01.png",
       "gridWidth": 88,
       "gridHeight": 112,
@@ -110198,7 +110198,7 @@
     {
       "id": "EG02",
       "name": "Embalmer's Row",
-      "world": "Other",
+      "world": "Egypt",
       "image": "map_EG02.png",
       "gridWidth": 136,
       "gridHeight": 56,
@@ -110209,7 +110209,7 @@
     {
       "id": "EG03",
       "name": "The Canopic Vault",
-      "world": "Other",
+      "world": "Egypt",
       "image": "map_EG03.png",
       "gridWidth": 64,
       "gridHeight": 120,
@@ -110220,7 +110220,7 @@
     {
       "id": "EG04",
       "name": "Hall of False Doors",
-      "world": "Other",
+      "world": "Egypt",
       "image": "map_EG04.png",
       "gridWidth": 128,
       "gridHeight": 64,
@@ -110231,7 +110231,7 @@
     {
       "id": "EG05",
       "name": "The Sunless Barque",
-      "world": "Other",
+      "world": "Egypt",
       "image": "map_EG05.png",
       "gridWidth": 72,
       "gridHeight": 128,
@@ -110242,7 +110242,7 @@
     {
       "id": "EG06",
       "name": "Scarab Reach",
-      "world": "Other",
+      "world": "Egypt",
       "image": "map_EG06.png",
       "gridWidth": 136,
       "gridHeight": 88,
@@ -110253,7 +110253,7 @@
     {
       "id": "EG07",
       "name": "The Weighing Room",
-      "world": "Other",
+      "world": "Egypt",
       "image": "map_EG07.png",
       "gridWidth": 112,
       "gridHeight": 88,
@@ -110264,7 +110264,7 @@
     {
       "id": "EG08",
       "name": "Tomb of the Bound King",
-      "world": "Other",
+      "world": "Egypt",
       "image": "map_EG08.png",
       "gridWidth": 120,
       "gridHeight": 64,
@@ -111265,7 +111265,7 @@
     {
       "id": "ST01",
       "name": "Standing Circle",
-      "world": "Other",
+      "world": "Stone",
       "image": "map_ST01.png",
       "gridWidth": 104,
       "gridHeight": 88,
@@ -111276,7 +111276,7 @@
     {
       "id": "ST02",
       "name": "The Quarry Steps",
-      "world": "Other",
+      "world": "Stone",
       "image": "map_ST02.png",
       "gridWidth": 128,
       "gridHeight": 72,
@@ -111287,7 +111287,7 @@
     {
       "id": "ST03",
       "name": "Dolmen Field",
-      "world": "Other",
+      "world": "Stone",
       "image": "map_ST03.png",
       "gridWidth": 112,
       "gridHeight": 96,
@@ -111298,7 +111298,7 @@
     {
       "id": "ST04",
       "name": "The Glyph Wall",
-      "world": "Other",
+      "world": "Stone",
       "image": "map_ST04.png",
       "gridWidth": 136,
       "gridHeight": 64,
@@ -111309,7 +111309,7 @@
     {
       "id": "ST05",
       "name": "Cairn Deeps",
-      "world": "Other",
+      "world": "Stone",
       "image": "map_ST05.png",
       "gridWidth": 72,
       "gridHeight": 104,
@@ -111320,7 +111320,7 @@
     {
       "id": "ST06",
       "name": "The Toppled Giant",
-      "world": "Other",
+      "world": "Stone",
       "image": "map_ST06.png",
       "gridWidth": 144,
       "gridHeight": 64,
@@ -111331,7 +111331,7 @@
     {
       "id": "ST07",
       "name": "Menhir Spine",
-      "world": "Other",
+      "world": "Stone",
       "image": "map_ST07.png",
       "gridWidth": 120,
       "gridHeight": 88,
@@ -111342,7 +111342,7 @@
     {
       "id": "ST08",
       "name": "The Unmoved Stone",
-      "world": "Other",
+      "world": "Stone",
       "image": "map_ST08.png",
       "gridWidth": 112,
       "gridHeight": 80,

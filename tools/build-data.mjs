@@ -521,6 +521,26 @@ function copyMapVisual(id) {
   return file;
 }
 // Group each map asset into its player-facing world (for the route graph on the Maps page).
+// ⛔ DECLARED BEFORE ITS CONSUMERS. `mapWorld` and `zoneWorld` both resolve through this table,
+// and `mapWorld` runs while the map list is built — which is ABOVE where this used to sit, so the
+// first derived version threw "Cannot access WORLD before initialization" at build time. A const
+// is not hoisted; the table has to come first.
+// Attach spawn worlds + zone names to each enemy (LIVE zones only: GL/FR/VO/DS/UW normal
+// {WORLD}##_Zone# + hard {WORLD}##_HM_Z#, plus VoidHunt). Legacy/duplicate zones are ignored.
+const WORLD = {
+  GL: "Grassland", FR: "Forest", VO: "Volcanic", DS: "Desert", UW: "Underwater",
+  JP: "Japan", GR: "Greek", ML: "Military", HV: "Heaven",  // World Gate branch
+  MZ: "Maze", IC: "Ice", AM: "America", AZ: "Amazon",      // Maze batch
+  GY: "Graveyard", KR: "Korea", LD: "London", PX: "Monochrome",  // endgame ping-pong (data-first: no art yet)
+  // ⛔ EPOCH 4 WAVE 1. Missing here is why the wiki showed NO Epoch 4 monsters even after the
+  // release gate was opened: zoneWorld() returns null for an unknown prefix, an unknown-world zone
+  // is dropped from liveZones, and an enemy that belongs to no live zone never reaches the page.
+  // Adding the region to the release switch was not enough — this table had to learn it too, which
+  // is BUG_CHECKLIST §1 exactly: a hand-written region table whose unknown-prefix default is
+  // "silently drop". The failure is quiet in the worst way: counts still look plausible.
+  ST: "Stone", EG: "Egypt", BD: "The Temple", CL: "Cloud Plaza"
+};
+
 function mapWorld(id) {
   if (/^Grassland/.test(id))                      return "Grassland";
   if (/WorldGate/.test(id))                       return "World Gate";
@@ -531,14 +551,18 @@ function mapWorld(id) {
   if (/^Greek/.test(id))                          return "Greek";
   if (/^Military/.test(id))                       return "Military";
   if (/^Heaven/.test(id))                         return "Heaven";
-  if (/^MZ\d{2}$/.test(id))                       return "Maze";
-  if (/^IC\d{2}$/.test(id))                       return "Ice";
-  if (/^AM\d{2}$/.test(id))                       return "America";
-  if (/^AZ\d{2}$/.test(id))                       return "Amazon";
-  if (/^GY\d{2}$/.test(id))                       return "Graveyard";
-  if (/^KR\d{2}$/.test(id))                       return "Korea";
-  if (/^LD\d{2}$/.test(id))                       return "London";
-  if (/^PX\d{2}$/.test(id))                       return "Monochrome";
+  // ⛔ CODE-NAMED MAPS RESOLVE THROUGH `WORLD`, NOT THROUGH A SECOND HAND-WRITTEN CHAIN.
+  //
+  // This listed MZ/IC/AM/AZ/GY/KR/LD/PX one line at a time and had no CL/ST/EG/BD, so every Epoch 4
+  // map fell through to "Other" — while `zoneWorld` (already derived) put their AREAS under
+  // "Stone"/"Egypt"/"The Temple"/"Cloud Plaza". The two halves of one world disagreed, and the world
+  // page rendered **"Not found."**: the areas existed under a world whose map list was empty.
+  //
+  // `zoneWorld` was fixed exactly this way after the same omission hid every Epoch 4 monster. This
+  // is the FOURTH stale table in this one file (MAP_VISUAL, REGION_MAP, zoneWorld, and this) —
+  // BUG_CHECKLIST §1b. One `WORLD` entry must be enough for all of them.
+  const coded = id.match(/^([A-Z]{2})\d{2}$/);
+  if (coded && WORLD[coded[1]])                   return WORLD[coded[1]];
   if (/Forest/.test(id))                          return "Forest";
   if (/Volcanic|Lava/.test(id))                   return "Volcanic";
   if (/Desert|Sandstone|Burial|SunBuriedCave/.test(id)) return "Desert";
@@ -564,21 +588,6 @@ for (const [prefix, world, count] of [["GY", "Graveyard", 10], ["KR", "Korea", 8
   }
 }
 
-// Attach spawn worlds + zone names to each enemy (LIVE zones only: GL/FR/VO/DS/UW normal
-// {WORLD}##_Zone# + hard {WORLD}##_HM_Z#, plus VoidHunt). Legacy/duplicate zones are ignored.
-const WORLD = {
-  GL: "Grassland", FR: "Forest", VO: "Volcanic", DS: "Desert", UW: "Underwater",
-  JP: "Japan", GR: "Greek", ML: "Military", HV: "Heaven",  // World Gate branch
-  MZ: "Maze", IC: "Ice", AM: "America", AZ: "Amazon",      // Maze batch
-  GY: "Graveyard", KR: "Korea", LD: "London", PX: "Monochrome",  // endgame ping-pong (data-first: no art yet)
-  // ⛔ EPOCH 4 WAVE 1. Missing here is why the wiki showed NO Epoch 4 monsters even after the
-  // release gate was opened: zoneWorld() returns null for an unknown prefix, an unknown-world zone
-  // is dropped from liveZones, and an enemy that belongs to no live zone never reaches the page.
-  // Adding the region to the release switch was not enough — this table had to learn it too, which
-  // is BUG_CHECKLIST §1 exactly: a hand-written region table whose unknown-prefix default is
-  // "silently drop". The failure is quiet in the worst way: counts still look plausible.
-  ST: "Stone", EG: "Egypt", BD: "The Temple", CL: "Cloud Plaza"
-};
 function zoneWorld(zid) {
   // ⚠ DERIVED FROM `WORLD`, not a second hand-typed list. These two had to agree and were written
   // twice — the alternation is now built from the table's own keys, so a region added above cannot
