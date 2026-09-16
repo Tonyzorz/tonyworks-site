@@ -797,6 +797,24 @@ const computedGameVersion = Object.entries(englishUi)
     const pa = a.slice(1).split(".").map(Number), pb = b.slice(1).split(".").map(Number);
     return pb[0] - pa[0] || pb[1] - pa[1] || pb[2] - pa[2];
   })[0] || "Development";
+// ⛔ THE TREE VERSION IS NOT THE STORE VERSION, AND PUBLISHING IT IS A SPOILER.
+// Broke this 2026-09-16: ran the builder bare, so computedGameVersion took bundleVersion 4.5.1
+// off the tree and the public site advertised 4.5.1 — which is Death Mode, held
+// (DeathModeReleased => false). The site had been on 4.0.3. A version number nobody can download
+// is the same class of leak as a wiki entry for unreleased content.
+// So: if the tree has moved ahead of what is already published, REFUSE unless the caller states
+// the live version explicitly. A build that silently picks the wrong one is how this happened.
+const publishedVersion = (() => {
+    try { return JSON.parse(fs.readFileSync(path.join(DATA, "data.json"), "utf8")).gameVersion || ""; }
+    catch { return ""; }
+})();
+if (!process.env.SITE_LIVE_VERSION && publishedVersion && publishedVersion !== computedGameVersion) {
+    console.error(`REFUSED: tree is ${computedGameVersion} but the site publishes ${publishedVersion}.`);
+    console.error(`  The tree is ahead of the store. Set the LIVE store version explicitly:`);
+    console.error(`    SITE_LIVE_VERSION=${publishedVersion} node tools/build-data.mjs`);
+    console.error(`  (or SITE_LIVE_VERSION=${computedGameVersion} if that build really is live).`);
+    process.exit(1);
+}
 const gameVersion = process.env.SITE_LIVE_VERSION || computedGameVersion;   // the LIVE build, when the tree is ahead of the store
 
 const root = {
