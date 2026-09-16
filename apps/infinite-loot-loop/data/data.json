@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T04:16:20Z",
+  "generatedAt": "2026-09-16T04:22:16Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "v4.5.1",
   "release": {
@@ -42749,32 +42749,7 @@
         {
           "itemId": "ST01_Weapon",
           "itemName": "Knapped Maul",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -42816,32 +42791,7 @@
         {
           "itemId": "ST01_Armor",
           "itemName": "Lichen Hide Vest",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -42883,32 +42833,7 @@
         {
           "itemId": "ST01_Helmet",
           "itemName": "Quarry Cap",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -42950,32 +42875,7 @@
         {
           "itemId": "ST01_Shoes",
           "itemName": "Gritstone Treads",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43017,32 +42917,7 @@
         {
           "itemId": "ST01_Accessory",
           "itemName": "Chip of the First Stone",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43084,32 +42959,7 @@
         {
           "itemId": "ST01_Weapon",
           "itemName": "Knapped Maul",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43151,32 +43001,7 @@
         {
           "itemId": "ST02_Weapon",
           "itemName": "Splitting Wedge",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43218,32 +43043,7 @@
         {
           "itemId": "ST02_Armor",
           "itemName": "Hauler's Harness",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43285,32 +43085,7 @@
         {
           "itemId": "ST02_Helmet",
           "itemName": "Wedge-Iron Helm",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43352,32 +43127,7 @@
         {
           "itemId": "ST02_Shoes",
           "itemName": "Quarrystep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43419,32 +43169,7 @@
         {
           "itemId": "ST02_Accessory",
           "itemName": "Cutter's Tally",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43486,32 +43211,7 @@
         {
           "itemId": "ST03_Weapon",
           "itemName": "Dolmen Slab-Blade",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43553,32 +43253,7 @@
         {
           "itemId": "ST03_Armor",
           "itemName": "Capstone Plate",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43620,32 +43295,7 @@
         {
           "itemId": "ST03_Helmet",
           "itemName": "Lintel Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43687,27 +43337,7 @@
         {
           "itemId": "ST03_Shoes",
           "itemName": "Dolmen Sandals",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -43749,32 +43379,7 @@
         {
           "itemId": "ST03_Accessory",
           "itemName": "Shadow Under the Slab",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43816,32 +43421,7 @@
         {
           "itemId": "ST03_Weapon",
           "itemName": "Dolmen Slab-Blade",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43883,32 +43463,7 @@
         {
           "itemId": "ST04_Weapon",
           "itemName": "Glyph-Cut Axe",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -43950,32 +43505,7 @@
         {
           "itemId": "ST04_Armor",
           "itemName": "Inscribed Cuirass",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44017,27 +43547,7 @@
         {
           "itemId": "ST04_Helmet",
           "itemName": "Reader's Circlet",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -44079,32 +43589,7 @@
         {
           "itemId": "ST04_Shoes",
           "itemName": "Glyphwalker Shoes",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44146,32 +43631,7 @@
         {
           "itemId": "ST04_Accessory",
           "itemName": "The Unread Line",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44213,32 +43673,7 @@
         {
           "itemId": "ST05_Weapon",
           "itemName": "Cairn Breaker",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44280,32 +43715,7 @@
         {
           "itemId": "ST05_Armor",
           "itemName": "Barrow-Stone Mail",
-          "chance": 0.429
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.429
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.429
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.429
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.429
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.429
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -44347,32 +43757,7 @@
         {
           "itemId": "ST05_Helmet",
           "itemName": "Cairn Keeper's Helm",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44414,32 +43799,7 @@
         {
           "itemId": "ST05_Shoes",
           "itemName": "Deepcairn Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44481,32 +43841,7 @@
         {
           "itemId": "ST05_Accessory",
           "itemName": "Cairn Keystone",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44548,32 +43883,7 @@
         {
           "itemId": "ST05_Weapon",
           "itemName": "Cairn Breaker",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44615,32 +43925,7 @@
         {
           "itemId": "ST06_Weapon",
           "itemName": "Giant's Femur Club",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44682,27 +43967,7 @@
         {
           "itemId": "ST06_Armor",
           "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -44744,32 +44009,7 @@
         {
           "itemId": "ST06_Helmet",
           "itemName": "Fallen Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44811,32 +44051,7 @@
         {
           "itemId": "ST06_Shoes",
           "itemName": "Giantstride Greaves",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44878,32 +44093,7 @@
         {
           "itemId": "ST06_Accessory",
           "itemName": "Knuckle of the Giant",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -44945,32 +44135,7 @@
         {
           "itemId": "ST07_Weapon",
           "itemName": "Menhir Pike",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -45012,32 +44177,7 @@
         {
           "itemId": "ST07_Armor",
           "itemName": "Spine-Ridge Armour",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -45079,32 +44219,7 @@
         {
           "itemId": "ST07_Helmet",
           "itemName": "Menhir Helm",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -45146,32 +44261,7 @@
         {
           "itemId": "ST07_Shoes",
           "itemName": "Ridgewalk Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -45213,27 +44303,7 @@
         {
           "itemId": "ST07_Accessory",
           "itemName": "Vertebra of the Spine",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -45275,32 +44345,7 @@
         {
           "itemId": "ST07_Weapon",
           "itemName": "Menhir Pike",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -45342,27 +44387,7 @@
         {
           "itemId": "ST08_Weapon",
           "itemName": "The Last Chisel",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.6
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -45404,32 +44429,7 @@
         {
           "itemId": "ST08_Armor",
           "itemName": "Unmoved Plate",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -45471,32 +44471,7 @@
         {
           "itemId": "ST08_Helmet",
           "itemName": "Weathered Diadem",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -45538,32 +44513,7 @@
         {
           "itemId": "ST08_Shoes",
           "itemName": "Stonefast Sabatons",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -45605,32 +44555,7 @@
         {
           "itemId": "ST08_Accessory",
           "itemName": "The Stone That Did Not Move",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST03_Shoes",
-          "itemName": "Dolmen Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST04_Helmet",
-          "itemName": "Reader's Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST06_Armor",
-          "itemName": "Toppled Giant's Pauldron",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST07_Accessory",
-          "itemName": "Vertebra of the Spine",
-          "chance": 0.5
-        },
-        {
-          "itemId": "ST08_Weapon",
-          "itemName": "The Last Chisel",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -47516,32 +46441,7 @@
         {
           "itemId": "EG01_Weapon",
           "itemName": "Sandstair Khopesh",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -47583,32 +46483,7 @@
         {
           "itemId": "EG01_Armor",
           "itemName": "Duneweave Robe",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -47650,32 +46525,7 @@
         {
           "itemId": "EG01_Helmet",
           "itemName": "Sunveil Headdress",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -47717,32 +46567,7 @@
         {
           "itemId": "EG01_Shoes",
           "itemName": "Sandstair Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -47784,32 +46609,7 @@
         {
           "itemId": "EG01_Accessory",
           "itemName": "Grain of the First Dune",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -47851,32 +46651,7 @@
         {
           "itemId": "EG01_Weapon",
           "itemName": "Sandstair Khopesh",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -47918,32 +46693,7 @@
         {
           "itemId": "EG02_Weapon",
           "itemName": "Embalmer's Hook",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -47985,32 +46735,7 @@
         {
           "itemId": "EG02_Armor",
           "itemName": "Linen-Wrapped Cuirass",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48052,32 +46777,7 @@
         {
           "itemId": "EG02_Helmet",
           "itemName": "Embalmer's Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48119,32 +46819,7 @@
         {
           "itemId": "EG02_Shoes",
           "itemName": "Row-Walker Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48186,32 +46861,7 @@
         {
           "itemId": "EG02_Accessory",
           "itemName": "Vial of Black Resin",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48253,32 +46903,7 @@
         {
           "itemId": "EG03_Weapon",
           "itemName": "Canopic Cleaver",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48320,32 +46945,7 @@
         {
           "itemId": "EG03_Armor",
           "itemName": "Vaultjar Plate",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48387,32 +46987,7 @@
         {
           "itemId": "EG03_Helmet",
           "itemName": "Canopic Lid-Helm",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48454,27 +47029,7 @@
         {
           "itemId": "EG03_Shoes",
           "itemName": "Vaultstep Boots",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -48516,32 +47071,7 @@
         {
           "itemId": "EG03_Accessory",
           "itemName": "The Fourth Jar",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48583,32 +47113,7 @@
         {
           "itemId": "EG03_Weapon",
           "itemName": "Canopic Cleaver",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48650,32 +47155,7 @@
         {
           "itemId": "EG04_Weapon",
           "itemName": "False-Door Spear",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48717,32 +47197,7 @@
         {
           "itemId": "EG04_Armor",
           "itemName": "Painted Door Panoply",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48784,27 +47239,7 @@
         {
           "itemId": "EG04_Helmet",
           "itemName": "Lintel Mask",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -48846,32 +47281,7 @@
         {
           "itemId": "EG04_Shoes",
           "itemName": "Threshold Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48913,32 +47323,7 @@
         {
           "itemId": "EG04_Accessory",
           "itemName": "Key to a Door That Isn't",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -48980,32 +47365,7 @@
         {
           "itemId": "EG05_Weapon",
           "itemName": "Oarblade of the Barque",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49047,32 +47407,7 @@
         {
           "itemId": "EG05_Armor",
           "itemName": "Sunless Hull Mail",
-          "chance": 0.429
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.429
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.429
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.429
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.429
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.429
+          "chance": 1.5
         }
       ],
       "resists": {
@@ -49114,32 +47449,7 @@
         {
           "itemId": "EG05_Helmet",
           "itemName": "Helmsman's Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49181,32 +47491,7 @@
         {
           "itemId": "EG05_Shoes",
           "itemName": "Deckwalker Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49248,32 +47533,7 @@
         {
           "itemId": "EG05_Accessory",
           "itemName": "Lamp for the Sunless Water",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49315,32 +47575,7 @@
         {
           "itemId": "EG05_Weapon",
           "itemName": "Oarblade of the Barque",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49382,32 +47617,7 @@
         {
           "itemId": "EG06_Weapon",
           "itemName": "Scarab Mandible Axe",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49449,27 +47659,7 @@
         {
           "itemId": "EG06_Armor",
           "itemName": "Carapace Scale Mail",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -49511,32 +47701,7 @@
         {
           "itemId": "EG06_Helmet",
           "itemName": "Scarab Crest Helm",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49578,32 +47743,7 @@
         {
           "itemId": "EG06_Shoes",
           "itemName": "Chitin Treads",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49645,32 +47785,7 @@
         {
           "itemId": "EG06_Accessory",
           "itemName": "Living Scarab",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49712,32 +47827,7 @@
         {
           "itemId": "EG07_Weapon",
           "itemName": "Feather-Edge Blade",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49779,32 +47869,7 @@
         {
           "itemId": "EG07_Armor",
           "itemName": "Balance-Plate Armour",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49846,32 +47911,7 @@
         {
           "itemId": "EG07_Helmet",
           "itemName": "Weighing Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49913,32 +47953,7 @@
         {
           "itemId": "EG07_Shoes",
           "itemName": "Scalewalk Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -49980,27 +47995,7 @@
         {
           "itemId": "EG07_Accessory",
           "itemName": "The Heavier Feather",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -50042,32 +48037,7 @@
         {
           "itemId": "EG07_Weapon",
           "itemName": "Feather-Edge Blade",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -50109,27 +48079,7 @@
         {
           "itemId": "EG08_Weapon",
           "itemName": "Sceptre of the Bound King",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.6
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -50171,32 +48121,7 @@
         {
           "itemId": "EG08_Armor",
           "itemName": "Bound King's Wrappings",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -50238,32 +48163,7 @@
         {
           "itemId": "EG08_Helmet",
           "itemName": "Death Mask of the Bound King",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -50305,32 +48205,7 @@
         {
           "itemId": "EG08_Shoes",
           "itemName": "Burial Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -50372,32 +48247,7 @@
         {
           "itemId": "EG08_Accessory",
           "itemName": "Cartouche of the Bound King",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG03_Shoes",
-          "itemName": "Vaultstep Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG04_Helmet",
-          "itemName": "Lintel Mask",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG06_Armor",
-          "itemName": "Carapace Scale Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG07_Accessory",
-          "itemName": "The Heavier Feather",
-          "chance": 0.5
-        },
-        {
-          "itemId": "EG08_Weapon",
-          "itemName": "Sceptre of the Bound King",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -54919,32 +52769,7 @@
         {
           "itemId": "BD01_Weapon",
           "itemName": "Pilgrim's Staff",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -54986,32 +52811,7 @@
         {
           "itemId": "BD01_Armor",
           "itemName": "Ten-Thousand-Step Robe",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55053,32 +52853,7 @@
         {
           "itemId": "BD01_Helmet",
           "itemName": "Traveller's Straw Hat",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55120,32 +52895,7 @@
         {
           "itemId": "BD01_Shoes",
           "itemName": "Step-Worn Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55187,32 +52937,7 @@
         {
           "itemId": "BD01_Accessory",
           "itemName": "Stone from the First Step",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55254,32 +52979,7 @@
         {
           "itemId": "BD01_Weapon",
           "itemName": "Pilgrim's Staff",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55321,32 +53021,7 @@
         {
           "itemId": "BD02_Weapon",
           "itemName": "Lantern Pole",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55388,32 +53063,7 @@
         {
           "itemId": "BD02_Armor",
           "itemName": "Lanternlight Robe",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55455,32 +53105,7 @@
         {
           "itemId": "BD02_Helmet",
           "itemName": "Keeper's Hood",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55522,32 +53147,7 @@
         {
           "itemId": "BD02_Shoes",
           "itemName": "Oil-Soaked Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55589,32 +53189,7 @@
         {
           "itemId": "BD02_Accessory",
           "itemName": "Wick That Will Not Die",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55656,32 +53231,7 @@
         {
           "itemId": "BD03_Weapon",
           "itemName": "Bell Clapper Maul",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55723,32 +53273,7 @@
         {
           "itemId": "BD03_Armor",
           "itemName": "Bronze Bell Plate",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55790,32 +53315,7 @@
         {
           "itemId": "BD03_Helmet",
           "itemName": "Bell-Cast Helm",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55857,27 +53357,7 @@
         {
           "itemId": "BD03_Shoes",
           "itemName": "Tower-Stair Boots",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -55919,32 +53399,7 @@
         {
           "itemId": "BD03_Accessory",
           "itemName": "Tongue of the Great Bell",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -55986,32 +53441,7 @@
         {
           "itemId": "BD03_Weapon",
           "itemName": "Bell Clapper Maul",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56053,32 +53483,7 @@
         {
           "itemId": "BD04_Weapon",
           "itemName": "Seat-Splitter Blade",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56120,32 +53525,7 @@
         {
           "itemId": "BD04_Armor",
           "itemName": "Thousand-Seat Mail",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56187,27 +53567,7 @@
         {
           "itemId": "BD04_Helmet",
           "itemName": "Effigy Crown",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -56249,32 +53609,7 @@
         {
           "itemId": "BD04_Shoes",
           "itemName": "Hall-Walker Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56316,32 +53651,7 @@
         {
           "itemId": "BD04_Accessory",
           "itemName": "The Ninth Seat",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56383,32 +53693,7 @@
         {
           "itemId": "BD05_Weapon",
           "itemName": "Flagpole Glaive",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56450,32 +53735,7 @@
         {
           "itemId": "BD05_Armor",
           "itemName": "Prayer-Flag Wrap",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56517,32 +53777,7 @@
         {
           "itemId": "BD05_Helmet",
           "itemName": "Windworn Circlet",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56584,32 +53819,7 @@
         {
           "itemId": "BD05_Shoes",
           "itemName": "Span-Walker Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56651,32 +53861,7 @@
         {
           "itemId": "BD05_Accessory",
           "itemName": "The Flag Still Flying",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56718,32 +53903,7 @@
         {
           "itemId": "BD05_Weapon",
           "itemName": "Flagpole Glaive",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56785,32 +53945,7 @@
         {
           "itemId": "BD06_Weapon",
           "itemName": "Ash Rake",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56852,27 +53987,7 @@
         {
           "itemId": "BD06_Armor",
           "itemName": "Ashfall Vestment",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -56914,32 +54029,7 @@
         {
           "itemId": "BD06_Helmet",
           "itemName": "Gardener's Wide Hat",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -56981,32 +54071,7 @@
         {
           "itemId": "BD06_Shoes",
           "itemName": "Ash-Tread Sandals",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -57048,32 +54113,7 @@
         {
           "itemId": "BD06_Accessory",
           "itemName": "Handful of Cold Ash",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -57115,32 +54155,7 @@
         {
           "itemId": "BD07_Weapon",
           "itemName": "Silent Edge",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -57182,32 +54197,7 @@
         {
           "itemId": "BD07_Armor",
           "itemName": "Terrace Stone Panoply",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -57249,32 +54239,7 @@
         {
           "itemId": "BD07_Helmet",
           "itemName": "Hush Diadem",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -57316,32 +54281,7 @@
         {
           "itemId": "BD07_Shoes",
           "itemName": "Soundless Steps",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -57383,27 +54323,7 @@
         {
           "itemId": "BD07_Accessory",
           "itemName": "The Held Breath",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -57445,32 +54365,7 @@
         {
           "itemId": "BD07_Weapon",
           "itemName": "Silent Edge",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -57512,27 +54407,7 @@
         {
           "itemId": "BD08_Weapon",
           "itemName": "Staff of the Empty Seat",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.6
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.6
+          "chance": 3
         }
       ],
       "resists": {
@@ -57574,32 +54449,7 @@
         {
           "itemId": "BD08_Armor",
           "itemName": "Vacant Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -57641,32 +54491,7 @@
         {
           "itemId": "BD08_Helmet",
           "itemName": "Crown of No One",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -57708,32 +54533,7 @@
         {
           "itemId": "BD08_Shoes",
           "itemName": "Sandals Left at the Door",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -57775,32 +54575,7 @@
         {
           "itemId": "BD08_Accessory",
           "itemName": "The Seat Nobody Took",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD03_Shoes",
-          "itemName": "Tower-Stair Boots",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD04_Helmet",
-          "itemName": "Effigy Crown",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD06_Armor",
-          "itemName": "Ashfall Vestment",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD07_Accessory",
-          "itemName": "The Held Breath",
-          "chance": 0.5
-        },
-        {
-          "itemId": "BD08_Weapon",
-          "itemName": "Staff of the Empty Seat",
-          "chance": 0.5
+          "chance": 3
         }
       ],
       "resists": {
@@ -65657,14 +62432,7 @@
         "AGI +1.8M"
       ],
       "dropAreas": [
-        "EG01",
-        "EG02",
-        "EG03",
-        "EG04",
-        "EG05",
-        "EG06",
-        "EG07",
-        "EG08"
+        "EG03"
       ],
       "shopAreas": [
         "EG01",
@@ -65804,14 +62572,7 @@
         "LUC +2.7M"
       ],
       "dropAreas": [
-        "EG01",
-        "EG02",
-        "EG03",
-        "EG04",
-        "EG05",
-        "EG06",
-        "EG07",
-        "EG08"
+        "EG04"
       ],
       "shopAreas": [
         "EG01",
@@ -66115,14 +62876,7 @@
         "DEF +245Ud"
       ],
       "dropAreas": [
-        "EG01",
-        "EG02",
-        "EG03",
-        "EG04",
-        "EG05",
-        "EG06",
-        "EG07",
-        "EG08"
+        "EG06"
       ],
       "shopAreas": [
         "EG01",
@@ -66263,14 +63017,7 @@
         "LUC +4.1M"
       ],
       "dropAreas": [
-        "EG01",
-        "EG02",
-        "EG03",
-        "EG04",
-        "EG05",
-        "EG06",
-        "EG07",
-        "EG08"
+        "EG07"
       ],
       "shopAreas": [
         "EG01",
@@ -66604,13 +63351,6 @@
         "AGI +4.6M"
       ],
       "dropAreas": [
-        "EG01",
-        "EG02",
-        "EG03",
-        "EG04",
-        "EG05",
-        "EG06",
-        "EG07",
         "EG08"
       ],
       "shopAreas": [
@@ -108724,14 +105464,7 @@
         "AGI +828K"
       ],
       "dropAreas": [
-        "ST01",
-        "ST02",
-        "ST03",
-        "ST04",
-        "ST05",
-        "ST06",
-        "ST07",
-        "ST08"
+        "ST03"
       ],
       "shopAreas": [
         "ST01",
@@ -108871,14 +105604,7 @@
         "LUC +1.2M"
       ],
       "dropAreas": [
-        "ST01",
-        "ST02",
-        "ST03",
-        "ST04",
-        "ST05",
-        "ST06",
-        "ST07",
-        "ST08"
+        "ST04"
       ],
       "shopAreas": [
         "ST01",
@@ -109182,14 +105908,7 @@
         "DEF +1.3Ud"
       ],
       "dropAreas": [
-        "ST01",
-        "ST02",
-        "ST03",
-        "ST04",
-        "ST05",
-        "ST06",
-        "ST07",
-        "ST08"
+        "ST06"
       ],
       "shopAreas": [
         "ST01",
@@ -109330,14 +106049,7 @@
         "LUC +1.9M"
       ],
       "dropAreas": [
-        "ST01",
-        "ST02",
-        "ST03",
-        "ST04",
-        "ST05",
-        "ST06",
-        "ST07",
-        "ST08"
+        "ST07"
       ],
       "shopAreas": [
         "ST01",
@@ -109671,13 +106383,6 @@
         "AGI +2.1M"
       ],
       "dropAreas": [
-        "ST01",
-        "ST02",
-        "ST03",
-        "ST04",
-        "ST05",
-        "ST06",
-        "ST07",
         "ST08"
       ],
       "shopAreas": [
@@ -110243,14 +106948,7 @@
         "AGI +7.1M"
       ],
       "dropAreas": [
-        "BD01",
-        "BD02",
-        "BD03",
-        "BD04",
-        "BD05",
-        "BD06",
-        "BD07",
-        "BD08"
+        "BD03"
       ],
       "shopAreas": [
         "BD01",
@@ -110390,14 +107088,7 @@
         "LUC +10.7M"
       ],
       "dropAreas": [
-        "BD01",
-        "BD02",
-        "BD03",
-        "BD04",
-        "BD05",
-        "BD06",
-        "BD07",
-        "BD08"
+        "BD04"
       ],
       "shopAreas": [
         "BD01",
@@ -110701,14 +107392,7 @@
         "DEF +2.3Td"
       ],
       "dropAreas": [
-        "BD01",
-        "BD02",
-        "BD03",
-        "BD04",
-        "BD05",
-        "BD06",
-        "BD07",
-        "BD08"
+        "BD06"
       ],
       "shopAreas": [
         "BD01",
@@ -110849,14 +107533,7 @@
         "LUC +16.2M"
       ],
       "dropAreas": [
-        "BD01",
-        "BD02",
-        "BD03",
-        "BD04",
-        "BD05",
-        "BD06",
-        "BD07",
-        "BD08"
+        "BD07"
       ],
       "shopAreas": [
         "BD01",
@@ -111191,13 +107868,6 @@
         "AGI +18.2M"
       ],
       "dropAreas": [
-        "BD01",
-        "BD02",
-        "BD03",
-        "BD04",
-        "BD05",
-        "BD06",
-        "BD07",
         "BD08"
       ],
       "shopAreas": [
@@ -151998,11 +148668,6 @@
       "bossIds": [],
       "dropItemIds": [
         "ST01_Weapon",
-        "ST03_Shoes",
-        "ST04_Helmet",
-        "ST06_Armor",
-        "ST07_Accessory",
-        "ST08_Weapon",
         "ST01_Armor",
         "ST01_Helmet",
         "ST01_Shoes",
@@ -152036,11 +148701,6 @@
       "bossIds": [],
       "dropItemIds": [
         "ST02_Weapon",
-        "ST03_Shoes",
-        "ST04_Helmet",
-        "ST06_Armor",
-        "ST07_Accessory",
-        "ST08_Weapon",
         "ST02_Armor",
         "ST02_Helmet",
         "ST02_Shoes",
@@ -152075,13 +148735,9 @@
       "bossIds": [],
       "dropItemIds": [
         "ST03_Weapon",
-        "ST03_Shoes",
-        "ST04_Helmet",
-        "ST06_Armor",
-        "ST07_Accessory",
-        "ST08_Weapon",
         "ST03_Armor",
         "ST03_Helmet",
+        "ST03_Shoes",
         "ST03_Accessory"
       ],
       "bossDropItemIds": [],
@@ -152112,12 +148768,8 @@
       "bossIds": [],
       "dropItemIds": [
         "ST04_Weapon",
-        "ST03_Shoes",
-        "ST04_Helmet",
-        "ST06_Armor",
-        "ST07_Accessory",
-        "ST08_Weapon",
         "ST04_Armor",
+        "ST04_Helmet",
         "ST04_Shoes",
         "ST04_Accessory"
       ],
@@ -152150,11 +148802,6 @@
       "bossIds": [],
       "dropItemIds": [
         "ST05_Weapon",
-        "ST03_Shoes",
-        "ST04_Helmet",
-        "ST06_Armor",
-        "ST07_Accessory",
-        "ST08_Weapon",
         "ST05_Armor",
         "ST05_Helmet",
         "ST05_Shoes",
@@ -152188,11 +148835,7 @@
       "bossIds": [],
       "dropItemIds": [
         "ST06_Weapon",
-        "ST03_Shoes",
-        "ST04_Helmet",
         "ST06_Armor",
-        "ST07_Accessory",
-        "ST08_Weapon",
         "ST06_Helmet",
         "ST06_Shoes",
         "ST06_Accessory"
@@ -152226,14 +148869,10 @@
       "bossIds": [],
       "dropItemIds": [
         "ST07_Weapon",
-        "ST03_Shoes",
-        "ST04_Helmet",
-        "ST06_Armor",
-        "ST07_Accessory",
-        "ST08_Weapon",
         "ST07_Armor",
         "ST07_Helmet",
-        "ST07_Shoes"
+        "ST07_Shoes",
+        "ST07_Accessory"
       ],
       "bossDropItemIds": [],
       "shopItemIds": [
@@ -152263,10 +148902,6 @@
       "bossIds": [],
       "dropItemIds": [
         "ST08_Weapon",
-        "ST03_Shoes",
-        "ST04_Helmet",
-        "ST06_Armor",
-        "ST07_Accessory",
         "ST08_Armor",
         "ST08_Helmet",
         "ST08_Shoes",
@@ -152301,11 +148936,6 @@
       "bossIds": [],
       "dropItemIds": [
         "EG01_Weapon",
-        "EG03_Shoes",
-        "EG04_Helmet",
-        "EG06_Armor",
-        "EG07_Accessory",
-        "EG08_Weapon",
         "EG01_Armor",
         "EG01_Helmet",
         "EG01_Shoes",
@@ -152339,11 +148969,6 @@
       "bossIds": [],
       "dropItemIds": [
         "EG02_Weapon",
-        "EG03_Shoes",
-        "EG04_Helmet",
-        "EG06_Armor",
-        "EG07_Accessory",
-        "EG08_Weapon",
         "EG02_Armor",
         "EG02_Helmet",
         "EG02_Shoes",
@@ -152378,13 +149003,9 @@
       "bossIds": [],
       "dropItemIds": [
         "EG03_Weapon",
-        "EG03_Shoes",
-        "EG04_Helmet",
-        "EG06_Armor",
-        "EG07_Accessory",
-        "EG08_Weapon",
         "EG03_Armor",
         "EG03_Helmet",
+        "EG03_Shoes",
         "EG03_Accessory"
       ],
       "bossDropItemIds": [],
@@ -152415,12 +149036,8 @@
       "bossIds": [],
       "dropItemIds": [
         "EG04_Weapon",
-        "EG03_Shoes",
-        "EG04_Helmet",
-        "EG06_Armor",
-        "EG07_Accessory",
-        "EG08_Weapon",
         "EG04_Armor",
+        "EG04_Helmet",
         "EG04_Shoes",
         "EG04_Accessory"
       ],
@@ -152453,11 +149070,6 @@
       "bossIds": [],
       "dropItemIds": [
         "EG05_Weapon",
-        "EG03_Shoes",
-        "EG04_Helmet",
-        "EG06_Armor",
-        "EG07_Accessory",
-        "EG08_Weapon",
         "EG05_Armor",
         "EG05_Helmet",
         "EG05_Shoes",
@@ -152491,11 +149103,7 @@
       "bossIds": [],
       "dropItemIds": [
         "EG06_Weapon",
-        "EG03_Shoes",
-        "EG04_Helmet",
         "EG06_Armor",
-        "EG07_Accessory",
-        "EG08_Weapon",
         "EG06_Helmet",
         "EG06_Shoes",
         "EG06_Accessory"
@@ -152529,14 +149137,10 @@
       "bossIds": [],
       "dropItemIds": [
         "EG07_Weapon",
-        "EG03_Shoes",
-        "EG04_Helmet",
-        "EG06_Armor",
-        "EG07_Accessory",
-        "EG08_Weapon",
         "EG07_Armor",
         "EG07_Helmet",
-        "EG07_Shoes"
+        "EG07_Shoes",
+        "EG07_Accessory"
       ],
       "bossDropItemIds": [],
       "shopItemIds": [
@@ -152566,10 +149170,6 @@
       "bossIds": [],
       "dropItemIds": [
         "EG08_Weapon",
-        "EG03_Shoes",
-        "EG04_Helmet",
-        "EG06_Armor",
-        "EG07_Accessory",
         "EG08_Armor",
         "EG08_Helmet",
         "EG08_Shoes",
@@ -152604,11 +149204,6 @@
       "bossIds": [],
       "dropItemIds": [
         "BD01_Weapon",
-        "BD03_Shoes",
-        "BD04_Helmet",
-        "BD06_Armor",
-        "BD07_Accessory",
-        "BD08_Weapon",
         "BD01_Armor",
         "BD01_Helmet",
         "BD01_Shoes",
@@ -152642,11 +149237,6 @@
       "bossIds": [],
       "dropItemIds": [
         "BD02_Weapon",
-        "BD03_Shoes",
-        "BD04_Helmet",
-        "BD06_Armor",
-        "BD07_Accessory",
-        "BD08_Weapon",
         "BD02_Armor",
         "BD02_Helmet",
         "BD02_Shoes",
@@ -152681,13 +149271,9 @@
       "bossIds": [],
       "dropItemIds": [
         "BD03_Weapon",
-        "BD03_Shoes",
-        "BD04_Helmet",
-        "BD06_Armor",
-        "BD07_Accessory",
-        "BD08_Weapon",
         "BD03_Armor",
         "BD03_Helmet",
+        "BD03_Shoes",
         "BD03_Accessory"
       ],
       "bossDropItemIds": [],
@@ -152718,12 +149304,8 @@
       "bossIds": [],
       "dropItemIds": [
         "BD04_Weapon",
-        "BD03_Shoes",
-        "BD04_Helmet",
-        "BD06_Armor",
-        "BD07_Accessory",
-        "BD08_Weapon",
         "BD04_Armor",
+        "BD04_Helmet",
         "BD04_Shoes",
         "BD04_Accessory"
       ],
@@ -152756,11 +149338,6 @@
       "bossIds": [],
       "dropItemIds": [
         "BD05_Weapon",
-        "BD03_Shoes",
-        "BD04_Helmet",
-        "BD06_Armor",
-        "BD07_Accessory",
-        "BD08_Weapon",
         "BD05_Armor",
         "BD05_Helmet",
         "BD05_Shoes",
@@ -152794,11 +149371,7 @@
       "bossIds": [],
       "dropItemIds": [
         "BD06_Weapon",
-        "BD03_Shoes",
-        "BD04_Helmet",
         "BD06_Armor",
-        "BD07_Accessory",
-        "BD08_Weapon",
         "BD06_Helmet",
         "BD06_Shoes",
         "BD06_Accessory"
@@ -152832,14 +149405,10 @@
       "bossIds": [],
       "dropItemIds": [
         "BD07_Weapon",
-        "BD03_Shoes",
-        "BD04_Helmet",
-        "BD06_Armor",
-        "BD07_Accessory",
-        "BD08_Weapon",
         "BD07_Armor",
         "BD07_Helmet",
-        "BD07_Shoes"
+        "BD07_Shoes",
+        "BD07_Accessory"
       ],
       "bossDropItemIds": [],
       "shopItemIds": [
@@ -152869,10 +149438,6 @@
       "bossIds": [],
       "dropItemIds": [
         "BD08_Weapon",
-        "BD03_Shoes",
-        "BD04_Helmet",
-        "BD06_Armor",
-        "BD07_Accessory",
         "BD08_Armor",
         "BD08_Helmet",
         "BD08_Shoes",

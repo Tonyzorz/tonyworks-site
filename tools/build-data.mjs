@@ -610,7 +610,31 @@ function areaCode(zid) {
   if (/^VoidHunt/.test(zid)) return "VoidHunt";
   return null;
 }
-const isCatalogueRegionZone = (id) => /^(MZ|IC|AM|AZ|GY|KR|LD|PX)\d\d_/.test(String(id || ""));
+// ⛔★★★★ READ THE GAME'S OWN LIST. This was a hand-typed COPY of
+// BattleManager.IsCatalogueRegionZone and it had drifted: the game added ST/EG/BD on 2026-09-15 —
+// its comment there even says "ADD A REGION HERE IN THE SAME COMMIT THAT GIVES IT A CATALOGUE" —
+// and this copy never learned them. So the GAME was right and the WIKI was lying: publishing
+// Epoch 4 fed every zone's whole REGION catalogue into each monster's drop pool, and ST05's six
+// monsters appeared to drop 15 different items. The Last Chisel, an ST08 shop piece, showed as
+// droppable off a map-five wurm.
+//
+// That is the ZONE SHOP CATALOGUE DROP LEAK (BUG_CHECKLIST §1 #5) recurring in a SECOND repo,
+// which is §1b exactly: the same rule implemented twice. The checklist entry only ever covered the
+// game's copy, because nobody knew the site kept one of its own.
+//
+// Parsed out of BattleManager.cs so the two cannot drift again — the same trick the release flags
+// already use. If the parse finds nothing it FAILS rather than falling back to a guess: the failure
+// mode of this rule is publishing loot that does not exist.
+const CATALOGUE_PREFIXES = (() => {
+  const src = read(path.join(GAME, "Assets", "Scripts", "Battle", "BattleManager.cs"));
+  const fn = src.match(/IsCatalogueRegionZone\(ZoneData zone\)[\s\S]*?\n    \}/);
+  if (!fn) { console.error("REFUSED: could not find BattleManager.IsCatalogueRegionZone"); process.exit(1); }
+  const codes = [...fn[0].matchAll(/case "([A-Z]{2})"/g)].map((m) => m[1]);
+  if (codes.length < 8) { console.error(`REFUSED: parsed only ${codes.length} catalogue prefixes`); process.exit(1); }
+  return codes;
+})();
+const isCatalogueRegionZone = (id) =>
+  new RegExp("^(" + CATALOGUE_PREFIXES.join("|") + ")\\d\\d_").test(String(id || ""));
 for (const z of zones) {
   const w = zoneWorld(z.id);
   if (!w) continue;
