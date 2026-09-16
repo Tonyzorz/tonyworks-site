@@ -356,7 +356,14 @@ const bosses = loadCategory("Bosses").map((a) => {
   const hasBonusHard = !!(assetName(guidOf(t, "hardModeBonusDropItem")) || assetName(guidOf(t, "bonusDropItem")));
   return {
     id: a.id, name: field(t, "bossName") || a.id, image: copySprite(guidOf(t, "bossSprite"), "boss", a.id),
-    mapId: assetName(guidOf(t, "activeInMap")), level: lv, hardModeLevel: num(t, "hardModeLevel"),
+    // ⛔ FALL BACK TO THE BOSS'S OWN NAME PREFIX. `activeInMap` is NULL for the three Epoch 4 region
+    // bosses because ST/EG/BD have no MapData authored, so mapId came out "" — and the site compares
+    // bosses to areas with `b.mapId === a.mapId`, where those areas ALSO have "". Empty matched
+    // empty, so all three bosses attached to all 24 Epoch 4 areas at once.
+    // The Epoch 4 bosses are named with their map code on purpose (ST08_TheUnmoved) — the same
+    // reason the release gates can see them — so the prefix is a real answer, not a guess.
+    mapId: assetName(guidOf(t, "activeInMap")) || (/^((?:CL|ST|EG|BD)\d\d)_/.exec(a.id) || ["", ""])[1],
+    level: lv, hardModeLevel: num(t, "hardModeLevel"),
     hp: num(t, "hp"), atk: num(t, "atk"),
     // BossData.GetLevelBasedEXP is linear: about ten same-level field kills.
     hardModeHp: num(t, "hardModeHp"), hardModeAtk: num(t, "hardModeAtk"), exp: Math.max(1, lv) * 125,

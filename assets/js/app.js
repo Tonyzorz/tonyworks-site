@@ -1165,6 +1165,9 @@
   function routeForMap(d, mapId) {
     var areas = (d && d.areas) || [];
     for (var i = 0; i < areas.length; i++) if (areas[i].mapId === mapId) return areas[i].code;
+    // ⛔ And an area whose MapData is not authored yet carries mapId:"" — Epoch 4 — so it can only
+    // be found by its own code. Without this its zones resolve to nothing.
+    for (var j = 0; j < areas.length; j++) if (areas[j].code === mapId) return areas[j].code;
     return MAP_ZONE_ROUTES[mapId] || null;
   }
   function zonesForMap(d, m, mode) {
@@ -1285,7 +1288,12 @@
             pf.join(" &#183; ") + '</span><b aria-hidden="true">&#8594;</b></a>';
         }
         var encounters = map ? mapEncounters(d, map, mode) : { zones: [], enemies: [] };
-        var mapBosses = d.bosses.filter(function (b) { return b.mapId === a.mapId; });
+        // ⚠ GUARD THE EMPTY CASE. An area with no authored MapData carries mapId:"" and so did the
+        // bosses standing on it, so `b.mapId === a.mapId` matched empty against empty and attached
+        // every such boss to every such area. Match the area's CODE too, and never on "".
+        var mapBosses = d.bosses.filter(function (b) {
+          return b.mapId && (b.mapId === a.mapId || b.mapId === a.code);
+        });
         var drops = mapDropItems(d, encounters).length + bossDropItems(d, mapBosses, mode).length;
         var levels = encounters.zones.map(function (z) { return [z.minEnemyLevel, z.maxEnemyLevel]; });
         var minLevel = levels.length ? Math.min.apply(null, levels.map(function (x) { return x[0]; })) : 0;
@@ -1502,10 +1510,22 @@
       // empty and the row would read "0 monsters / 0 item drops" - which reads as "this map is
       // empty", not "this map does not exist yet". Count the design doc pool instead.
       if (m.upcoming) {
-        var ar = (d.areas || []).filter(function (a) { return a.mapId === m.id; })[0] || {};
+        // ⛔ MATCH ON `code` AS WELL AS `mapId`. A REAL area whose MapData is not authored yet
+        // carries mapId:"" — Epoch 4 is exactly that — so a mapId-only lookup found nothing and
+        // every one of its maps fell through to the "Hub town" branch below. Standing Circle, a
+        // six-zone map with an arrival fight, was displayed as a hub town with no encounters.
+        // The planned entries used to carry mapId, which is why this only broke once the real
+        // areas took over from them.
+        var ar = (d.areas || []).filter(function (a) {
+          return (a.mapId && a.mapId === m.id) || a.code === m.id;
+        })[0] || {};
+        // ⚠ "planned" only when the AREA is planned too. Epoch 4's monsters are authored and real;
+        // it is the MAP that is not built, so calling its 6 real monsters "planned" would be a
+        // second lie in the same row.
+        var word = ar.upcoming ? "planned " : "";
         var pf = (ar.enemyIds || []).length
-          ? [(ar.enemyIds || []).length + " planned monsters",
-             (ar.dropItemIds || []).length + " planned drops"]
+          ? [(ar.enemyIds || []).length + " " + word + "monsters",
+             (ar.dropItemIds || []).length + " " + word + "drops"]
           : ["Hub town &#183; no encounters"];
         if ((ar.bossIds || []).length) pf.push("1 boss");
         return '<a class="mnode is-upcoming" data-mid="' + esc(m.id) + '" href="maps.html?id=' +
@@ -1582,7 +1602,12 @@
   function mapDetail(app, d, m, forcedMode) {
     if (!m) return notFound(app, "maps.html", "Maps");
     if (m.upcoming) {
-      var ar = (d.areas || []).filter(function (a) { return a.mapId === m.id; })[0] || {};
+      // ⛔ Same mapId-only lookup as the map row had: a real area whose MapData is not authored
+      // carries mapId:"", so the detail page for every Epoch 4 map found no area and reported no
+      // monsters, no drops and no boss for content that is fully authored.
+      var ar = (d.areas || []).filter(function (a) {
+        return (a.mapId && a.mapId === m.id) || a.code === m.id;
+      })[0] || {};
       var linkList = function (page, ids, lookup) {
         return (ids || []).map(function (id) {
           var o = lookup[id]; return o ? link(page, id, o.name) : esc(id);

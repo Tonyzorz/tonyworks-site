@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T04:22:16Z",
+  "generatedAt": "2026-09-16T04:30:00Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "v4.5.1",
   "release": {
@@ -55898,7 +55898,7 @@
       "id": "ST08_TheUnmoved",
       "name": "The Unmoved",
       "image": "boss_ST08_TheUnmoved.png",
-      "mapId": "",
+      "mapId": "ST08",
       "level": 45760000,
       "hardModeLevel": 0,
       "hp": 1.58e+42,
@@ -55933,7 +55933,7 @@
       "id": "EG08_TheBoundKing",
       "name": "The Bound King",
       "image": "boss_EG08_TheBoundKing.png",
-      "mapId": "",
+      "mapId": "EG08",
       "level": 107310000,
       "hardModeLevel": 0,
       "hp": 1.04e+45,
@@ -55968,7 +55968,7 @@
       "id": "BD08_TheEmptySeat",
       "name": "The Empty Seat",
       "image": "boss_BD08_TheEmptySeat.png",
-      "mapId": "",
+      "mapId": "BD08",
       "level": 478340000,
       "hardModeLevel": 0,
       "hp": 1.0200000000000001e+50,
