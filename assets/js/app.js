@@ -73,18 +73,32 @@
       .replace(/"/g, "&quot;");
   }
 
+  // ⛔ A PORT OF NumberFormat.Abbreviate — KEEP IT EXACT.
+  // The wiki and the game must print the same string for the same number, or the wiki is simply
+  // wrong. Two differences from the old version mattered and are fixed here:
+  //   • the game TRUNCATES to one decimal ("never round up across a tier edge"), it does not round
+  //     to two. 999,999 is "999.9K" in game; rounding gave "1000K", which is not even a tier.
+  //   • Log10 is not exact at tier boundaries and errs in BOTH directions — one tier high prints
+  //     "0.9M", one tier low prints "1000Qi" instead of "1Sx". The game corrects either way rather
+  //     than trusting the logarithm, so this does too.
+  var NUM_SUFFIXES = ["", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "Oc", "No", "Dc",
+    "Ud", "Dd", "Td", "Qad", "Qid", "Sxd", "Spd", "Od", "Nd", "Vg"];
   function fmt(n) {
-    if (n == null || isNaN(n)) return "0";
-    var neg = n < 0; n = Math.abs(Number(n));
-    var suffixes = ["", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "Oc", "No", "Dc",
-      "Ud", "Dd", "Td", "Qad", "Qid", "Sxd", "Spd", "Od", "Nd", "Vg"];
-    var out = String(Math.round(n));
-    if (n >= 1000) {
-      var tier = Math.floor(Math.log(n) / Math.log(1000));
-      if (tier >= suffixes.length) out = n.toExponential(2).replace(/\.00(?=e)/, "");
-      else out = (n / Math.pow(1000, tier)).toFixed(2).replace(/\.?0+$/, "") + suffixes[tier];
-    }
-    return (neg ? "-" : "") + out;
+    if (n == null || n === "" || isNaN(n)) return "0";
+    var v = Number(n);
+    if (!isFinite(v)) return v > 0 ? "∞" : "-∞";
+    var neg = v < 0; v = Math.abs(v);
+    if (v < 1000) return (neg ? "-" : "") + String(Math.floor(v));
+    var tier = Math.floor(Math.log10(v) / 3);
+    if (tier >= NUM_SUFFIXES.length)
+      return (neg ? "-" : "") + v.toExponential(2).replace(/\.?0+e/, "e");
+    var scale = Math.pow(1000, tier);
+    if (v / scale < 1 && tier > 0) { tier--; scale /= 1000; }
+    else if (v / scale >= 1000 && tier + 1 < NUM_SUFFIXES.length) { tier++; scale *= 1000; }
+    // Truncate, never round — the game's Trim().
+    var t = Math.floor((v / scale) * 10) / 10;
+    var s = (Math.round(t * 10) % 10 === 0 ? String(Math.floor(t)) : t.toFixed(1));
+    return (neg ? "-" : "") + s + NUM_SUFFIXES[tier];
   }
 
   // "A" if equal, else "A–B" — for level/stat ranges across an enemy's level band.
@@ -627,7 +641,9 @@
     return Object.keys(RESIST_LABELS).filter(function (k) { return (r[k] || 0) > 0; }).map(function (k) {
       var v = r[k];
       // critMultResist is a flat multiplier reduction (e.g. -0.50x); the rest are percentages.
-      var disp = k === "critMultResist" ? ("−" + v.toFixed(2) + "x") : (Math.round(v * 100) + "%");
+      // ⛔ fmt(), not Math.round: an endgame crit resist is ~2,973,088 and printed as
+      // "297308850%". Every resist on the post-Gate route is in this range.
+      var disp = k === "critMultResist" ? ("−" + v.toFixed(2) + "x") : (fmt(v * 100) + "%");
       return sb(RESIST_LABELS[k], disp);
     }).join("");
   }
@@ -652,7 +668,8 @@
     var selected = mode === "hard" ? hard : normal;
     rememberGameMode(mode, false);
     var worlds = selected.worlds || [], zones = selected.zoneNames || [], drops = selected.drops || [];
-    var lvLabel = selected.minLevel === selected.maxLevel ? ("Lv " + selected.minLevel) : ("Lv " + selected.minLevel + "&#8211;" + selected.maxLevel);
+    // ⛔ Levels reach 3,294,000,000 on the endgame route — abbreviate like everything else.
+    var lvLabel = "Lv " + rng(selected.minLevel, selected.maxLevel);
     var navList = monsterList(d).filter(function (x) { return isHardEnemy(x) === (mode === "hard"); });
     app.innerHTML = detailHead("monsters.html", "Monsters", navList, selected) +
       '<div class="detail">' + portrait(selected.image, selected.name) +
@@ -702,7 +719,7 @@
         var mw = d._mapById[b.mapId] ? d._mapById[b.mapId].world : null;
         return cardShell("bosses.html", b.id, b.image, b.name,
           tierBadge(mw ? [mw] : []) +
-          '<span class="badge">Lv ' + level + "</span>" +
+          '<span class="badge">Lv ' + fmt(level) + "</span>" +
           (hard ? '<span class="badge" style="color:var(--bad)">Hard</span>' : "") +
           '<span class="meta">HP ' + fmt(hp) + " &#183; ATK " + fmt(atk) + "</span>");
       }
@@ -738,7 +755,7 @@
     app.innerHTML = detailHead("bosses.html", "Bosses", bossList(d), b) +
       '<div class="detail">' + portrait(b.image, b.name) +
       "<div><h1>" + esc(b.name) + "</h1>" +
-      '<div class="tags"><span class="pill">Combat Level ' + level + "</span>" +
+      '<div class="tags"><span class="pill">Combat Level ' + fmt(level) + "</span>" +
         (b.mapId ? '<span class="pill">' + (map
           ? '<a href="maps.html?id=' + encodeURIComponent(b.mapId) + '&mode=' + mode + '">' + esc(map.name) + "</a>"
           : esc(b.mapId)) + "</span>" : "") +
