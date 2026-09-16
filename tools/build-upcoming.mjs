@@ -34,6 +34,20 @@ const GEO = path.resolve(ROOT, "../Infinite Loot-Loop/Tools/epoch4_blueprint/map
 const HUBSRC = path.resolve(ROOT, "../Infinite Loot-Loop/Tools/epoch4_blueprint/buildall.js");
 const OUT = path.resolve(ROOT, "apps/infinite-loot-loop/data/upcoming.json");
 
+// True when this region's real EnemyData assets are on disk, i.e. the content is built and the
+// live data export now supplies it. Reads the assets rather than a flag so it cannot go stale.
+const ENEMY_DIR = path.resolve(ROOT, "../Infinite Loot-Loop/Assets/ScriptableObjects/Enemies");
+const _regionBuilt = new Map();
+function regionAssetsExist(code) {
+  if (_regionBuilt.has(code)) return _regionBuilt.get(code);
+  let built = false;
+  try {
+    built = fs.readdirSync(ENEMY_DIR).some((f) => f.startsWith(code) && f.endsWith(".asset"));
+  } catch { built = false; }
+  _regionBuilt.set(code, built);
+  return built;
+}
+
 if (!fs.existsSync(DOC)) {
   console.error("FATAL: design doc not found at\n  " + DOC +
     "\nThe Unity project must sit beside this repo as ../Infinite Loot-Loop.");
@@ -195,7 +209,21 @@ for (const [idx, code] of [["3.1", "ST"], ["3.2", "EG"], ["3.3", "BD"]]) {
     code, name: WORLD_NAME[code], kind: "region", leg, anchor,
     levelFrom: num(lvs[1]), levelTo: num(lvs[2]),
     zoneCount: maps.reduce((a, m) => a + (m.zoneCount || 0), 0),
-    pitch, maps, creatures, gear, boss
+    pitch,
+    maps,
+    // ⛔ ONCE THE REAL ASSETS EXIST, STOP PUBLISHING THE PLANNED COPIES.
+    // app.js's mergeUpcoming() PUSHES without deduping, so every planned creature/gear/boss that
+    // also exists for real would be listed TWICE on the wiki. Worse, the ids do not match — the
+    // plan calls a monster ST_LichenCrawler while the asset is ST01_Z0 — so an id-based dedupe in
+    // app.js could not have caught the creatures or the boss, only the gear.
+    // Owner ruled 2026-09-16: publish Epoch 4, but MAPS stay "Upcoming". That is exactly what
+    // falls out of asking the disk: the monsters/items/bosses are built, the MapData assets are
+    // not (zero exist for ST/EG/BD), so maps keep their planned entry and nothing else does.
+    // ⚠ DERIVED, never a hand-flipped switch — the day the maps are authored they leave this file
+    // by themselves, the same way these creatures just did.
+    creatures: regionAssetsExist(code) ? [] : creatures,
+    gear:      regionAssetsExist(code) ? [] : gear,
+    boss:      regionAssetsExist(code) ? null : boss
   });
 }
 
@@ -234,7 +262,7 @@ const out = {
     maps: regions.reduce((a, r) => a + r.maps.length, 0) + hub.maps.length,
     creatures: regions.reduce((a, r) => a + r.creatures.length, 0),
     gear: regions.reduce((a, r) => a + r.gear.length, 0),
-    bosses: regions.length, relics: regions.length
+    bosses: regions.filter((r) => r.boss).length, relics: regions.filter((r) => r.boss).length
   }
 };
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
@@ -260,5 +288,5 @@ if (noExit.length) console.log("  note: boss maps with only a back door (no vict
 for (const r of ordered) {
   console.log("  leg " + r.leg + "  " + r.code + " " + r.name.padEnd(11) +
     r.maps.length + " maps · " + r.zoneCount + " zones · " + r.creatures.length + " creatures · " +
-    r.gear.length + " gear · boss " + r.boss.name + " (lv " + r.boss.level.toLocaleString("en-US") + ")");
+    r.gear.length + " gear · " + (r.boss ? "boss " + r.boss.name + " (lv " + r.boss.level.toLocaleString("en-US") + ")" : "boss/creatures/gear now BUILT — published from real assets, maps stay Upcoming"));
 }

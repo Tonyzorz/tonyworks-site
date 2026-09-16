@@ -549,10 +549,20 @@ const WORLD = {
   GL: "Grassland", FR: "Forest", VO: "Volcanic", DS: "Desert", UW: "Underwater",
   JP: "Japan", GR: "Greek", ML: "Military", HV: "Heaven",  // World Gate branch
   MZ: "Maze", IC: "Ice", AM: "America", AZ: "Amazon",      // Maze batch
-  GY: "Graveyard", KR: "Korea", LD: "London", PX: "Monochrome"  // endgame ping-pong (data-first: no art yet)
+  GY: "Graveyard", KR: "Korea", LD: "London", PX: "Monochrome",  // endgame ping-pong (data-first: no art yet)
+  // ⛔ EPOCH 4 WAVE 1. Missing here is why the wiki showed NO Epoch 4 monsters even after the
+  // release gate was opened: zoneWorld() returns null for an unknown prefix, an unknown-world zone
+  // is dropped from liveZones, and an enemy that belongs to no live zone never reaches the page.
+  // Adding the region to the release switch was not enough — this table had to learn it too, which
+  // is BUG_CHECKLIST §1 exactly: a hand-written region table whose unknown-prefix default is
+  // "silently drop". The failure is quiet in the worst way: counts still look plausible.
+  ST: "Stone", EG: "Egypt", BD: "The Temple", CL: "Cloud Plaza"
 };
 function zoneWorld(zid) {
-  const m = zid.match(/^(GL|FR|VO|DS|UW|JP|GR|ML|HV|MZ|IC|AM|AZ|GY|KR|LD|PX)\d+_(?:Zone|HM_Z)\d+/);
+  // ⚠ DERIVED FROM `WORLD`, not a second hand-typed list. These two had to agree and were written
+  // twice — the alternation is now built from the table's own keys, so a region added above cannot
+  // be forgotten here. That drift is what hid every Epoch 4 monster from the wiki.
+  const m = zid.match(new RegExp("^(" + Object.keys(WORLD).join("|") + ")\\d+_(?:Zone|HM_Z)\\d+"));
   if (m) return WORLD[m[1]];
   if (/^VoidHunt/.test(zid)) return "Void Hunt";
   return null;
@@ -733,6 +743,12 @@ const isPurchasable = (id) => {
   if (!koreaReleased      && /^KR/.test(i.sourceRegion)) return false;
   if (!londonReleased     && /^LD/.test(i.sourceRegion)) return false;
   if (!monochromeReleased && /^PX/.test(i.sourceRegion)) return false;
+  // ⛔ EPOCH 4 IS BROWSABLE BUT NOT BUYABLE. Owner ruled 2026-09-16 to publish it, and
+  // Epoch4Released is still false in the game (it is 5.0.0) — so a player cannot obtain any of it.
+  // Listing it as purchasable would be the "sells power the player cannot obtain" shape this shop
+  // has been bitten by before. Same treatment Graveyard/Korea/London/Monochrome each got: data
+  // published, shop locked.
+  if (!epoch4Released && /^(CL|ST|EG|BD)/.test(i.sourceRegion)) return false;
   if (i.isHardModeItem && i.shopRank !== 1) return false;     // hard shop is rank-1 only; rest is drop loot
   return true;
 };
