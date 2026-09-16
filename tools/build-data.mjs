@@ -85,7 +85,53 @@ function resistsOf(t, key = "resists") {
 }
 function guidOf(t, k) { const m = t.match(new RegExp("^  " + k + ":\\s*\\{[^}]*guid:\\s*([0-9a-f]+)", "m")); return m ? m[1] : null; }
 const assetName = (guid) => guid ? (guidToAsset.get(guid) || "") : "";
-const loadCategory = (sub) => walk(path.join(SO, sub), (p) => p.endsWith(".asset")).map((p) => ({ id: path.basename(p, ".asset"), text: read(p) }));
+// ⛔★★★★ THE EPOCH 4 GATE — THIS FILE HAD NONE, AND WOULD HAVE PUBLISHED THE WHOLE EXPANSION.
+//
+// The switches parsed further down (worldGate / mazeBatch / mazeHard / graveyard / korea / london /
+// monochrome) were each added when their region shipped. `Epoch4Released` was never added, and
+// `isUnreleasedRegion` only matches JP|GR|ML|HV, so Stone, Egypt and The Temple — 132 monsters,
+// 123 items, 3 bosses, 132 zones AND every sprite this script copies into assets/img — would have
+// gone onto the live public wiki on the next run. Caught 2026-09-16 during a routine refresh.
+//
+// This is the same recurring defect as the game repo's `docs/BUG_CHECKLIST.md` §1: a hand-written
+// release table that new content must be remembered into, whose unknown-prefix default is "publish".
+//
+// ⚠ This repo's model DIFFERS from the Unity-side SiteDataExportTool, which holds unreleased content
+// outright. Here an unreleased region is normally published-but-shop-locked ("Upcoming"), the way
+// Graveyard/Korea/London/Monochrome were. Epoch 4 defaults to FULLY HELD because it is an
+// unannounced expansion whose own upcoming.json still says "NO STATS exist yet". Flip it
+// deliberately with SITE_LIVE_RELEASE=epoch4=1 when the owner wants the data browsable.
+//
+// Gated at loadCategory because that is the ONE place every category is read — items, enemies,
+// bosses, zones and maps all funnel through here, so no future category can miss it.
+const _shopManagerSrcForGate = read(path.join(GAME, "Assets", "Scripts", "Core", "ShopManager.cs"));
+const epoch4Released = /Epoch4Released\s*=>\s*true\s*;/.test(_shopManagerSrcForGate)
+  || /(^|,)\s*epoch4\s*=\s*1\s*(,|$)/.test(process.env.SITE_LIVE_RELEASE || "");
+// ⚠ Prefix alone is not enough: the Epoch 4 KEYS and TROLLS are named `Key_*` / `Troll_*` with no
+// region code, so they are matched on their `sourceRegion` field instead.
+const EPOCH4_PREFIX = /^(CL|ST|EG|BD)\d/;
+let heldEpoch4Count = 0;
+// The Epoch 4 HARD legs are mirrors of ALREADY-RELEASED regions, so they carry a released
+// sourceRegion (GY/KR/LD/PX) and the prefix tests above wave them straight through. The six
+// affinity KEYS and the four hard trolls are exactly this shape — the first pass published their
+// icons. The game gates them on `isHardModeItem` + Epoch4HardMirrorPrefixes
+// (ShopManager.IsUnreleasedContentItem); this is that same rule.
+const EPOCH4_HARD_MIRROR = /^(GY|KR|LD|PX)/;
+const isHeldEpoch4 = (id, text) => {
+  if (epoch4Released) return false;
+  if (EPOCH4_PREFIX.test(id)) return true;
+  const m = text && text.match(/^\s*sourceRegion:\s*['"]?([A-Za-z0-9]+)/m);
+  if (m && EPOCH4_PREFIX.test(m[1])) return true;
+  if (m && EPOCH4_HARD_MIRROR.test(m[1]) && /^\s*isHardModeItem:\s*1\s*$/m.test(text)) return true;
+  // The hard ENEMY/ZONE mirrors of those four regions: `GY03_Z2_H`, `KR08_HM_Z1`. Endgame hard has
+  // never shipped, so a hard asset named for one of them is Epoch 4 content by construction.
+  if (EPOCH4_HARD_MIRROR.test(id)
+      && (/_H$/.test(id) || id.includes("_HM_Z"))) return true;
+  return false;
+};
+const loadCategory = (sub) => walk(path.join(SO, sub), (p) => p.endsWith(".asset"))
+  .map((p) => ({ id: path.basename(p, ".asset"), text: read(p) }))
+  .filter((a) => { const held = isHeldEpoch4(a.id, a.text); if (held) heldEpoch4Count++; return !held; });
 
 let imagesWritten = 0;
 const safe = (s) => String(s).replace(/[^A-Za-z0-9_-]/g, "_");
@@ -761,3 +807,4 @@ const root = {
 };
 fs.writeFileSync(path.join(DATA, "data.json"), JSON.stringify(root, null, 2));
 console.log("Wrote data.json", root.counts, "images:", imagesWritten);
+console.log(epoch4Released ? "Epoch 4: PUBLISHED (SITE_LIVE_RELEASE=epoch4=1 or the flag flipped)" : `Epoch 4: HELD — ${heldEpoch4Count} asset(s) withheld from the public wiki.`);
