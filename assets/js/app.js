@@ -369,6 +369,16 @@
   function mergeUpcoming(d, u) {
     d.upcoming = u;
     d.areas = d.areas || [];
+    // ⛔ NEVER SHADOW REAL CONTENT WITH A PLANNED COPY. This function PUSHES unconditionally, which
+    // was harmless while the planned regions had no assets at all. The moment Epoch 4's zones were
+    // published, every one of its maps existed TWICE — the real area (with its actual monsters) and
+    // the planned one (with none) — so the wiki listed each map as two entries, one named after a
+    // code and one after a place.
+    // A planned entry is a PLACEHOLDER for something that does not exist yet. The instant the real
+    // thing exists it must step aside, not sit beside it.
+    var haveArea = {}, haveMap = {};
+    (d.areas || []).forEach(function (a) { haveArea[a.code] = true; });
+    (d.maps || []).forEach(function (m) { haveMap[m.id] = true; });
     (u.worlds || []).forEach(function (w) {
       var world = w.name;
       var bandOf = {};
@@ -377,11 +387,12 @@
         var creatures = (w.creatures || []).filter(function (c) { return c.areas.indexOf(m.id) >= 0; });
         var gear = (w.gear || []).filter(function (g) { return g.tier === m.id; });
         var isBossMap = !!(w.boss && w.boss.mapId === m.id);
-        d.maps.push({ id: m.id, name: m.name, world: world, image: "", upcoming: true,
+        if (!haveMap[m.id]) d.maps.push({ id: m.id, name: m.name, world: world, image: "", upcoming: true,
           plannedZones: m.zoneCount, plannedLevel: m.bandStart, plannedNote: m.note,
           plannedSize: m.width && m.height ? m.width + " \u00d7 " + m.height : null,
           plannedAxis: m.axis, plannedZoneNames: m.zoneNames || [], doors: m.doors || [],
           isBossMap: !!m.isBossMap });
+        if (haveArea[m.id]) return;   // real area wins \u2014 see the note at the top of mergeUpcoming
         d.areas.push({ code: m.id, mapId: m.id, name: m.name, world: world, upcoming: true,
           minLevel: m.bandStart, maxLevel: m.bandStart, zoneCount: m.zoneCount,
           enemyIds: creatures.map(function (c) { return c.id; }),

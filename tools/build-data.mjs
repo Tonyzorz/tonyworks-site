@@ -689,13 +689,31 @@ bosses.sort((a, b) => a.level - b.level);
 // Aggregate every source of loot per area: field drops, boss rewards and shop stock.
 const MAP_TO_REGION = {};
 for (const code of Object.keys(REGION_MAP)) MAP_TO_REGION[REGION_MAP[code]] = code;
+// ⛔ A REGION WITH NO MapData WAS NAMED AFTER ITS CODE — the wiki listed "ST01" instead of
+// "Standing Circle". Worse, mergeUpcoming() then pushed the PLANNED ST01 as a SECOND area carrying
+// the real name, so every Epoch 4 map appeared TWICE: once as a bare code, once as a name.
+// The planned entries already hold the authored names (parsed from the design doc), so borrow them
+// instead of hand-typing a second REGION_MAP — that table is exactly the kind this project keeps
+// forgetting to update. `mapUnbuilt` marks an area whose MapData genuinely does not exist yet.
+const PLANNED_MAP_NAME = new Map();
+try {
+  const planned = JSON.parse(read(path.join(DATA, "upcoming.json")));
+  for (const w of planned.worlds || [])
+    for (const m of w.maps || []) if (m.id && m.name) PLANNED_MAP_NAME.set(m.id, m.name);
+} catch { /* upcoming.json is optional — the wiki just falls back to the code */ }
+
 const areaByCode = new Map();
 function ensureArea(code) {
   let a = areaByCode.get(code);
   if (!a) {
     const mapId = REGION_MAP[code] || "";
     a = {
-      code, mapId, name: mapId ? mapDisplayName(mapId) : code, world: "Other",
+      code, mapId,
+      name: mapId ? mapDisplayName(mapId) : (PLANNED_MAP_NAME.get(code) || code),
+      // No MapData asset backs this area: its monsters and zones are authored, the map is not
+      // built. Epoch 4 is exactly this today, and it is what the front end badges "Upcoming".
+      mapUnbuilt: !mapId && PLANNED_MAP_NAME.has(code),
+      world: "Other",
       minLevel: 0, maxLevel: 0, zoneCount: 0,
       enemyIds: [], bossIds: [], dropItemIds: [], bossDropItemIds: [], shopItemIds: []
     };
