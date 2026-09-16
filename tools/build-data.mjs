@@ -952,7 +952,7 @@ const gameVersion = process.env.SITE_LIVE_VERSION || computedGameVersion;   // t
 //
 // So the badge is stamped here, where both facts are known: published for browsing, not yet
 // reachable. It disappears on its own the day `Epoch4Released` flips in ShopManager.cs.
-const epoch4LiveInGame = /Epoch4Releaseds*=>s*trues*;/.test(_shopManagerSrcForGate);
+const epoch4LiveInGame = /Epoch4Released\s*=>\s*true\s*;/.test(_shopManagerSrcForGate);
 if (epoch4Released && !epoch4LiveInGame) {
   const isE4 = (code) => EPOCH4_PREFIX.test(code || "");
   let marked = 0;

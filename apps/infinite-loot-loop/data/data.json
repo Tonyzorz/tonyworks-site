@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-16T12:37:10Z",
+  "generatedAt": "2026-09-16T13:13:15Z",
   "game": "Infinite Loot-Loop",
-  "gameVersion": "4.5.1",
+  "gameVersion": "5.0.0",
   "release": {
     "worldGateReleased": true,
     "mazeBatchReleased": true,
@@ -14,10 +14,10 @@
   "counts": {
     "enemies": 1211,
     "bosses": 40,
-    "items": 1600,
+    "items": 1601,
     "maps": 139,
-    "zones": 1240,
-    "areas": 137,
+    "zones": 1241,
+    "areas": 138,
     "characters": 25,
     "achievements": 63
   },
@@ -42769,8 +42769,7 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST01_Z1",
@@ -42812,8 +42811,7 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST01_Z2",
@@ -42855,8 +42853,7 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST01_Z3",
@@ -42898,8 +42895,7 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST01_Z4",
@@ -42941,8 +42937,7 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST01_Z5",
@@ -42984,8 +42979,7 @@
       ],
       "zoneNames": [
         "Standing Circle - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST02_Z0",
@@ -43027,8 +43021,7 @@
       ],
       "zoneNames": [
         "The Quarry Steps - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST02_Z1",
@@ -43070,8 +43063,7 @@
       ],
       "zoneNames": [
         "The Quarry Steps - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST02_Z2",
@@ -43113,8 +43105,7 @@
       ],
       "zoneNames": [
         "The Quarry Steps - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST02_Z3",
@@ -43156,8 +43147,7 @@
       ],
       "zoneNames": [
         "The Quarry Steps - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST02_Z4",
@@ -43199,8 +43189,7 @@
       ],
       "zoneNames": [
         "The Quarry Steps - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST03_Z0",
@@ -43242,8 +43231,7 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST03_Z1",
@@ -43285,8 +43273,7 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST03_Z2",
@@ -43328,8 +43315,7 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST03_Z3",
@@ -43371,8 +43357,7 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST03_Z4",
@@ -43414,8 +43399,7 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST03_Z5",
@@ -43457,8 +43441,7 @@
       ],
       "zoneNames": [
         "Dolmen Field - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST04_Z0",
@@ -43500,8 +43483,7 @@
       ],
       "zoneNames": [
         "The Glyph Wall - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST04_Z1",
@@ -43543,8 +43525,7 @@
       ],
       "zoneNames": [
         "The Glyph Wall - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST04_Z2",
@@ -43586,8 +43567,7 @@
       ],
       "zoneNames": [
         "The Glyph Wall - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST04_Z3",
@@ -43629,8 +43609,7 @@
       ],
       "zoneNames": [
         "The Glyph Wall - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST04_Z4",
@@ -43672,8 +43651,7 @@
       ],
       "zoneNames": [
         "The Glyph Wall - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST05_Z0",
@@ -43715,8 +43693,7 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST05_Z1",
@@ -43758,8 +43735,7 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST05_Z2",
@@ -43801,8 +43777,7 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST05_Z3",
@@ -43844,8 +43819,7 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST05_Z4",
@@ -43887,8 +43861,7 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST05_Z5",
@@ -43930,8 +43903,7 @@
       ],
       "zoneNames": [
         "Cairn Deeps - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST06_Z0",
@@ -43973,8 +43945,7 @@
       ],
       "zoneNames": [
         "The Toppled Giant - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST06_Z1",
@@ -44016,8 +43987,7 @@
       ],
       "zoneNames": [
         "The Toppled Giant - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST06_Z2",
@@ -44059,8 +44029,7 @@
       ],
       "zoneNames": [
         "The Toppled Giant - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST06_Z3",
@@ -44102,8 +44071,7 @@
       ],
       "zoneNames": [
         "The Toppled Giant - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST06_Z4",
@@ -44145,8 +44113,7 @@
       ],
       "zoneNames": [
         "The Toppled Giant - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST07_Z0",
@@ -44188,8 +44155,7 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST07_Z1",
@@ -44231,8 +44197,7 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST07_Z2",
@@ -44274,8 +44239,7 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST07_Z3",
@@ -44317,8 +44281,7 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST07_Z4",
@@ -44360,8 +44323,7 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST07_Z5",
@@ -44403,8 +44365,7 @@
       ],
       "zoneNames": [
         "Menhir Spine - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST08_Z0",
@@ -44446,8 +44407,7 @@
       ],
       "zoneNames": [
         "The Unmoved Stone - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST08_Z1",
@@ -44489,8 +44449,7 @@
       ],
       "zoneNames": [
         "The Unmoved Stone - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST08_Z2",
@@ -44532,8 +44491,7 @@
       ],
       "zoneNames": [
         "The Unmoved Stone - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST08_Z3",
@@ -44575,8 +44533,7 @@
       ],
       "zoneNames": [
         "The Unmoved Stone - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST08_Z4",
@@ -44618,8 +44575,7 @@
       ],
       "zoneNames": [
         "The Unmoved Stone - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD01_Z0_H",
@@ -46505,8 +46461,7 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG01_Z1",
@@ -46548,8 +46503,7 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG01_Z2",
@@ -46591,8 +46545,7 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG01_Z3",
@@ -46634,8 +46587,7 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG01_Z4",
@@ -46677,8 +46629,7 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG01_Z5",
@@ -46720,8 +46671,7 @@
       ],
       "zoneNames": [
         "The Sand Stair - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG02_Z0",
@@ -46763,8 +46713,7 @@
       ],
       "zoneNames": [
         "Embalmer's Row - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG02_Z1",
@@ -46806,8 +46755,7 @@
       ],
       "zoneNames": [
         "Embalmer's Row - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG02_Z2",
@@ -46849,8 +46797,7 @@
       ],
       "zoneNames": [
         "Embalmer's Row - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG02_Z3",
@@ -46892,8 +46839,7 @@
       ],
       "zoneNames": [
         "Embalmer's Row - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG02_Z4",
@@ -46935,8 +46881,7 @@
       ],
       "zoneNames": [
         "Embalmer's Row - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG03_Z0",
@@ -46978,8 +46923,7 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG03_Z1",
@@ -47021,8 +46965,7 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG03_Z2",
@@ -47064,8 +47007,7 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG03_Z3",
@@ -47107,8 +47049,7 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG03_Z4",
@@ -47150,8 +47091,7 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG03_Z5",
@@ -47193,8 +47133,7 @@
       ],
       "zoneNames": [
         "The Canopic Vault - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG04_Z0",
@@ -47236,8 +47175,7 @@
       ],
       "zoneNames": [
         "Hall of False Doors - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG04_Z1",
@@ -47279,8 +47217,7 @@
       ],
       "zoneNames": [
         "Hall of False Doors - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG04_Z2",
@@ -47322,8 +47259,7 @@
       ],
       "zoneNames": [
         "Hall of False Doors - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG04_Z3",
@@ -47365,8 +47301,7 @@
       ],
       "zoneNames": [
         "Hall of False Doors - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG04_Z4",
@@ -47408,8 +47343,7 @@
       ],
       "zoneNames": [
         "Hall of False Doors - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG05_Z0",
@@ -47451,8 +47385,7 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG05_Z1",
@@ -47494,8 +47427,7 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG05_Z2",
@@ -47537,8 +47469,7 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG05_Z3",
@@ -47580,8 +47511,7 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG05_Z4",
@@ -47623,8 +47553,7 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG05_Z5",
@@ -47666,8 +47595,7 @@
       ],
       "zoneNames": [
         "The Sunless Barque - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG06_Z0",
@@ -47709,8 +47637,7 @@
       ],
       "zoneNames": [
         "Scarab Reach - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG06_Z1",
@@ -47752,8 +47679,7 @@
       ],
       "zoneNames": [
         "Scarab Reach - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG06_Z2",
@@ -47795,8 +47721,7 @@
       ],
       "zoneNames": [
         "Scarab Reach - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG06_Z3",
@@ -47838,8 +47763,7 @@
       ],
       "zoneNames": [
         "Scarab Reach - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG06_Z4",
@@ -47881,8 +47805,7 @@
       ],
       "zoneNames": [
         "Scarab Reach - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG07_Z0",
@@ -47924,8 +47847,7 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG07_Z1",
@@ -47967,8 +47889,7 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG07_Z2",
@@ -48010,8 +47931,7 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG07_Z3",
@@ -48053,8 +47973,7 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG07_Z4",
@@ -48096,8 +48015,7 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG07_Z5",
@@ -48139,8 +48057,7 @@
       ],
       "zoneNames": [
         "The Weighing Room - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG08_Z0",
@@ -48182,8 +48099,7 @@
       ],
       "zoneNames": [
         "Tomb of the Bound King - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG08_Z1",
@@ -48225,8 +48141,7 @@
       ],
       "zoneNames": [
         "Tomb of the Bound King - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG08_Z2",
@@ -48268,8 +48183,7 @@
       ],
       "zoneNames": [
         "Tomb of the Bound King - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG08_Z3",
@@ -48311,8 +48225,7 @@
       ],
       "zoneNames": [
         "Tomb of the Bound King - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG08_Z4",
@@ -48354,8 +48267,7 @@
       ],
       "zoneNames": [
         "Tomb of the Bound King - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX01_Z0_H",
@@ -52877,8 +52789,7 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD01_Z1",
@@ -52920,8 +52831,7 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD01_Z2",
@@ -52963,8 +52873,7 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD01_Z3",
@@ -53006,8 +52915,7 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD01_Z4",
@@ -53049,8 +52957,7 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD01_Z5",
@@ -53092,8 +52999,7 @@
       ],
       "zoneNames": [
         "The Ten Thousand Steps - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD02_Z0",
@@ -53135,8 +53041,7 @@
       ],
       "zoneNames": [
         "Lantern Hall - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD02_Z1",
@@ -53178,8 +53083,7 @@
       ],
       "zoneNames": [
         "Lantern Hall - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD02_Z2",
@@ -53221,8 +53125,7 @@
       ],
       "zoneNames": [
         "Lantern Hall - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD02_Z3",
@@ -53264,8 +53167,7 @@
       ],
       "zoneNames": [
         "Lantern Hall - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD02_Z4",
@@ -53307,8 +53209,7 @@
       ],
       "zoneNames": [
         "Lantern Hall - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD03_Z0",
@@ -53350,8 +53251,7 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD03_Z1",
@@ -53393,8 +53293,7 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD03_Z2",
@@ -53436,8 +53335,7 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD03_Z3",
@@ -53479,8 +53377,7 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD03_Z4",
@@ -53522,8 +53419,7 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD03_Z5",
@@ -53565,8 +53461,7 @@
       ],
       "zoneNames": [
         "The Bell Tower - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD04_Z0",
@@ -53608,8 +53503,7 @@
       ],
       "zoneNames": [
         "Hall of a Thousand Seats - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD04_Z1",
@@ -53651,8 +53545,7 @@
       ],
       "zoneNames": [
         "Hall of a Thousand Seats - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD04_Z2",
@@ -53694,8 +53587,7 @@
       ],
       "zoneNames": [
         "Hall of a Thousand Seats - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD04_Z3",
@@ -53737,8 +53629,7 @@
       ],
       "zoneNames": [
         "Hall of a Thousand Seats - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD04_Z4",
@@ -53780,8 +53671,7 @@
       ],
       "zoneNames": [
         "Hall of a Thousand Seats - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD05_Z0",
@@ -53823,8 +53713,7 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD05_Z1",
@@ -53866,8 +53755,7 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD05_Z2",
@@ -53909,8 +53797,7 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD05_Z3",
@@ -53952,8 +53839,7 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD05_Z4",
@@ -53995,8 +53881,7 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD05_Z5",
@@ -54038,8 +53923,7 @@
       ],
       "zoneNames": [
         "Prayer-Flag Span - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD06_Z0",
@@ -54081,8 +53965,7 @@
       ],
       "zoneNames": [
         "The Ash Garden - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD06_Z1",
@@ -54124,8 +54007,7 @@
       ],
       "zoneNames": [
         "The Ash Garden - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD06_Z2",
@@ -54167,8 +54049,7 @@
       ],
       "zoneNames": [
         "The Ash Garden - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD06_Z3",
@@ -54210,8 +54091,7 @@
       ],
       "zoneNames": [
         "The Ash Garden - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD06_Z4",
@@ -54253,8 +54133,7 @@
       ],
       "zoneNames": [
         "The Ash Garden - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD07_Z0",
@@ -54296,8 +54175,7 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD07_Z1",
@@ -54339,8 +54217,7 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD07_Z2",
@@ -54382,8 +54259,7 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD07_Z3",
@@ -54425,8 +54301,7 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD07_Z4",
@@ -54468,8 +54343,7 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 4"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD07_Z5",
@@ -54511,8 +54385,7 @@
       ],
       "zoneNames": [
         "The Silent Terrace - Zone 5"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD08_Z0",
@@ -54554,8 +54427,7 @@
       ],
       "zoneNames": [
         "The Empty Seat - Zone 0"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD08_Z1",
@@ -54597,8 +54469,7 @@
       ],
       "zoneNames": [
         "The Empty Seat - Zone 1"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD08_Z2",
@@ -54640,8 +54511,7 @@
       ],
       "zoneNames": [
         "The Empty Seat - Zone 2"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD08_Z3",
@@ -54683,8 +54553,7 @@
       ],
       "zoneNames": [
         "The Empty Seat - Zone 3"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD08_Z4",
@@ -54726,8 +54595,7 @@
       ],
       "zoneNames": [
         "The Empty Seat - Zone 4"
-      ],
-      "upcoming": true
+      ]
     }
   ],
   "bosses": [
@@ -56059,8 +55927,7 @@
       "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 1,
-      "hardModeDropChance": 0.75,
-      "upcoming": true
+      "hardModeDropChance": 0.75
     },
     {
       "id": "EG08_TheBoundKing",
@@ -56095,8 +55962,7 @@
       "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 1,
-      "hardModeDropChance": 0.75,
-      "upcoming": true
+      "hardModeDropChance": 0.75
     },
     {
       "id": "BD08_TheEmptySeat",
@@ -56131,8 +55997,7 @@
       "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 0.5,
-      "hardModeDropChance": 0.375,
-      "upcoming": true
+      "hardModeDropChance": 0.375
     }
   ],
   "items": [
@@ -62143,8 +62008,7 @@
       "dropAreas": [
         "EG01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG01_Armor",
@@ -62176,8 +62040,7 @@
       "dropAreas": [
         "EG01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG01_Helmet",
@@ -62210,8 +62073,7 @@
       "dropAreas": [
         "EG01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG01_Shoes",
@@ -62244,8 +62106,7 @@
       "dropAreas": [
         "EG01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG01_Weapon",
@@ -62277,8 +62138,7 @@
       "dropAreas": [
         "EG01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG02_Accessory",
@@ -62312,8 +62172,7 @@
       "dropAreas": [
         "EG02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG02_Armor",
@@ -62345,8 +62204,7 @@
       "dropAreas": [
         "EG02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG02_Helmet",
@@ -62379,8 +62237,7 @@
       "dropAreas": [
         "EG02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG02_Shoes",
@@ -62413,8 +62270,7 @@
       "dropAreas": [
         "EG02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG02_Weapon",
@@ -62446,8 +62302,7 @@
       "dropAreas": [
         "EG02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG03_Accessory",
@@ -62481,8 +62336,7 @@
       "dropAreas": [
         "EG03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG03_Armor",
@@ -62514,8 +62368,7 @@
       "dropAreas": [
         "EG03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG03_Helmet",
@@ -62548,8 +62401,7 @@
       "dropAreas": [
         "EG03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG03_Shoes",
@@ -62591,8 +62443,7 @@
         "EG06",
         "EG07",
         "EG08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG03_Weapon",
@@ -62624,8 +62475,7 @@
       "dropAreas": [
         "EG03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG04_Accessory",
@@ -62659,8 +62509,7 @@
       "dropAreas": [
         "EG04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG04_Armor",
@@ -62692,8 +62541,7 @@
       "dropAreas": [
         "EG04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG04_Helmet",
@@ -62735,8 +62583,7 @@
         "EG06",
         "EG07",
         "EG08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG04_Shoes",
@@ -62769,8 +62616,7 @@
       "dropAreas": [
         "EG04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG04_Weapon",
@@ -62802,8 +62648,7 @@
       "dropAreas": [
         "EG04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG05_Accessory",
@@ -62837,8 +62682,7 @@
       "dropAreas": [
         "EG05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG05_Armor",
@@ -62870,8 +62714,7 @@
       "dropAreas": [
         "EG05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG05_Helmet",
@@ -62904,8 +62747,7 @@
       "dropAreas": [
         "EG05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG05_Shoes",
@@ -62938,8 +62780,7 @@
       "dropAreas": [
         "EG05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG05_Weapon",
@@ -62971,8 +62812,7 @@
       "dropAreas": [
         "EG05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG06_Accessory",
@@ -63006,8 +62846,7 @@
       "dropAreas": [
         "EG06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG06_Armor",
@@ -63048,8 +62887,7 @@
         "EG06",
         "EG07",
         "EG08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG06_Helmet",
@@ -63082,8 +62920,7 @@
       "dropAreas": [
         "EG06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG06_Shoes",
@@ -63116,8 +62953,7 @@
       "dropAreas": [
         "EG06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG06_Weapon",
@@ -63149,8 +62985,7 @@
       "dropAreas": [
         "EG06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG07_Accessory",
@@ -63193,8 +63028,7 @@
         "EG06",
         "EG07",
         "EG08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EG07_Armor",
@@ -63226,8 +63060,7 @@
       "dropAreas": [
         "EG07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG07_Helmet",
@@ -63260,8 +63093,7 @@
       "dropAreas": [
         "EG07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG07_Shoes",
@@ -63294,8 +63126,7 @@
       "dropAreas": [
         "EG07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG07_Weapon",
@@ -63327,8 +63158,7 @@
       "dropAreas": [
         "EG07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG08_Accessory",
@@ -63362,8 +63192,7 @@
       "dropAreas": [
         "EG08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG08_Armor",
@@ -63395,8 +63224,7 @@
       "dropAreas": [
         "EG08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG08_BossRelic",
@@ -63427,8 +63255,7 @@
         "DEF +42%"
       ],
       "dropAreas": [],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG08_Helmet",
@@ -63461,8 +63288,7 @@
       "dropAreas": [
         "EG08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG08_Shoes",
@@ -63495,8 +63321,7 @@
       "dropAreas": [
         "EG08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "EG08_Weapon",
@@ -63537,8 +63362,7 @@
         "EG06",
         "EG07",
         "EG08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "EmberRing",
@@ -64627,7 +64451,7 @@
       "id": "GY01_Accessory_H",
       "name": "Mourning Ribbon [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY01_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -64657,8 +64481,7 @@
       ],
       "shopAreas": [
         "GY01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY01_Armor",
@@ -64696,7 +64519,7 @@
       "id": "GY01_Armor_H",
       "name": "Shroud Wrap [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY01_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -64724,8 +64547,7 @@
       ],
       "shopAreas": [
         "GY01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY01_Helmet",
@@ -64764,7 +64586,7 @@
       "id": "GY01_Helmet_H",
       "name": "Burial Veil [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY01_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -64793,8 +64615,7 @@
       ],
       "shopAreas": [
         "GY01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY01_Shoes",
@@ -64833,7 +64654,7 @@
       "id": "GY01_Shoes_H",
       "name": "Grave-Mud Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY01_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -64862,8 +64683,7 @@
       ],
       "shopAreas": [
         "GY01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY01_Weapon",
@@ -64901,7 +64721,7 @@
       "id": "GY01_Weapon_H",
       "name": "Sexton's Spade [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY01_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -64929,8 +64749,7 @@
       ],
       "shopAreas": [
         "GY01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY02_Accessory",
@@ -64970,7 +64789,7 @@
       "id": "GY02_Accessory_H",
       "name": "Grave Candle [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY02_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -65000,8 +64819,7 @@
       ],
       "shopAreas": [
         "GY02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY02_Armor",
@@ -65039,7 +64857,7 @@
       "id": "GY02_Armor_H",
       "name": "Gravedigger's Coat [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY02_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -65067,8 +64885,7 @@
       ],
       "shopAreas": [
         "GY02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY02_Helmet",
@@ -65107,7 +64924,7 @@
       "id": "GY02_Helmet_H",
       "name": "Sexton's Cap [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY02_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -65136,8 +64953,7 @@
       ],
       "shopAreas": [
         "GY02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY02_Shoes",
@@ -65176,7 +64992,7 @@
       "id": "GY02_Shoes_H",
       "name": "Sexton's Clogs [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY02_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -65205,8 +65021,7 @@
       ],
       "shopAreas": [
         "GY02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY02_Weapon",
@@ -65244,7 +65059,7 @@
       "id": "GY02_Weapon_H",
       "name": "Grave Iron [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY02_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -65272,8 +65087,7 @@
       ],
       "shopAreas": [
         "GY02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY03_Accessory",
@@ -65313,7 +65127,7 @@
       "id": "GY03_Accessory_H",
       "name": "Bone Rosary [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY03_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -65343,8 +65157,7 @@
       ],
       "shopAreas": [
         "GY03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY03_Armor",
@@ -65382,7 +65195,7 @@
       "id": "GY03_Armor_H",
       "name": "Bone-Plate Vest [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY03_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -65410,8 +65223,7 @@
       ],
       "shopAreas": [
         "GY03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY03_Helmet",
@@ -65450,7 +65262,7 @@
       "id": "GY03_Helmet_H",
       "name": "Skull Cowl [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY03_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -65479,8 +65291,7 @@
       ],
       "shopAreas": [
         "GY03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY03_Shoes",
@@ -65530,7 +65341,7 @@
       "id": "GY03_Shoes_H",
       "name": "Bone-Spur Sandals [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY03_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -65559,8 +65370,7 @@
       ],
       "shopAreas": [
         "GY03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY03_Weapon",
@@ -65598,7 +65408,7 @@
       "id": "GY03_Weapon_H",
       "name": "Bone Cleaver [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY03_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -65626,8 +65436,7 @@
       ],
       "shopAreas": [
         "GY03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY04_Accessory",
@@ -65667,7 +65476,7 @@
       "id": "GY04_Accessory_H",
       "name": "Coffin Nail [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY04_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -65697,8 +65506,7 @@
       ],
       "shopAreas": [
         "GY04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY04_Armor",
@@ -65736,7 +65544,7 @@
       "id": "GY04_Armor_H",
       "name": "Mourner's Mantle [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY04_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -65764,8 +65572,7 @@
       ],
       "shopAreas": [
         "GY04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY04_Helmet",
@@ -65804,7 +65611,7 @@
       "id": "GY04_Helmet_H",
       "name": "Mourning Hood [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY04_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -65833,8 +65640,7 @@
       ],
       "shopAreas": [
         "GY04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY04_Shoes",
@@ -65873,7 +65679,7 @@
       "id": "GY04_Shoes_H",
       "name": "Mourner's Slippers [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY04_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -65902,8 +65708,7 @@
       ],
       "shopAreas": [
         "GY04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY04_Weapon",
@@ -65941,7 +65746,7 @@
       "id": "GY04_Weapon_H",
       "name": "Mourning Blade [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY04_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -65969,8 +65774,7 @@
       ],
       "shopAreas": [
         "GY04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY05_Accessory",
@@ -66010,7 +65814,7 @@
       "id": "GY05_Accessory_H",
       "name": "Sexton's Keyring [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY05_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -66040,8 +65844,7 @@
       ],
       "shopAreas": [
         "GY05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY05_Armor",
@@ -66079,7 +65882,7 @@
       "id": "GY05_Armor_H",
       "name": "Iron Fence Cuirass [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY05_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -66107,8 +65910,7 @@
       ],
       "shopAreas": [
         "GY05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY05_Helmet",
@@ -66158,7 +65960,7 @@
       "id": "GY05_Helmet_H",
       "name": "Iron Grave-Crown [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY05_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -66187,8 +65989,7 @@
       ],
       "shopAreas": [
         "GY05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY05_Shoes",
@@ -66227,7 +66028,7 @@
       "id": "GY05_Shoes_H",
       "name": "Iron-Shod Treads [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY05_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -66256,8 +66057,7 @@
       ],
       "shopAreas": [
         "GY05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY05_Weapon",
@@ -66295,7 +66095,7 @@
       "id": "GY05_Weapon_H",
       "name": "Crypt Halberd [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY05_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -66323,8 +66123,7 @@
       ],
       "shopAreas": [
         "GY05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY06_Accessory",
@@ -66364,7 +66163,7 @@
       "id": "GY06_Accessory_H",
       "name": "Reliquary Locket [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY06_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -66394,8 +66193,7 @@
       ],
       "shopAreas": [
         "GY06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY06_Armor",
@@ -66433,7 +66231,7 @@
       "id": "GY06_Armor_H",
       "name": "Tombstone Harness [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY06_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -66461,8 +66259,7 @@
       ],
       "shopAreas": [
         "GY06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY06_Helmet",
@@ -66501,7 +66298,7 @@
       "id": "GY06_Helmet_H",
       "name": "Reliquary Helm [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY06_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -66530,8 +66327,7 @@
       ],
       "shopAreas": [
         "GY06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY06_Shoes",
@@ -66570,7 +66366,7 @@
       "id": "GY06_Shoes_H",
       "name": "Cryptwalker Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY06_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -66599,8 +66395,7 @@
       ],
       "shopAreas": [
         "GY06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY06_Weapon",
@@ -66638,7 +66433,7 @@
       "id": "GY06_Weapon_H",
       "name": "Yewroot Scythe [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY06_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -66666,8 +66461,7 @@
       ],
       "shopAreas": [
         "GY06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY07_Accessory",
@@ -66707,7 +66501,7 @@
       "id": "GY07_Accessory_H",
       "name": "Weeping Angel's Tear [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY07_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -66735,8 +66529,7 @@
       "dropAreas": [],
       "shopAreas": [
         "GY07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY07_Armor",
@@ -66785,7 +66578,7 @@
       "id": "GY07_Armor_H",
       "name": "Ossuary Plate [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY07_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -66813,8 +66606,7 @@
       ],
       "shopAreas": [
         "GY07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY07_Helmet",
@@ -66853,7 +66645,7 @@
       "id": "GY07_Helmet_H",
       "name": "Angel's Weeping Mask [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY07_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -66882,8 +66674,7 @@
       ],
       "shopAreas": [
         "GY07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY07_Shoes",
@@ -66922,7 +66713,7 @@
       "id": "GY07_Shoes_H",
       "name": "Rootbound Greaves [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY07_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -66949,8 +66740,7 @@
       "dropAreas": [],
       "shopAreas": [
         "GY07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY07_Weapon",
@@ -66988,7 +66778,7 @@
       "id": "GY07_Weapon_H",
       "name": "Epitaph Greatsword [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY07_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -67016,8 +66806,7 @@
       ],
       "shopAreas": [
         "GY07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY08_Accessory",
@@ -67068,7 +66857,7 @@
       "id": "GY08_Accessory_H",
       "name": "Fogcaller's Wick [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY08_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -67098,8 +66887,7 @@
       ],
       "shopAreas": [
         "GY08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY08_Armor",
@@ -67137,7 +66925,7 @@
       "id": "GY08_Armor_H",
       "name": "Catacomb Wall Plate [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY08_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -67165,8 +66953,7 @@
       ],
       "shopAreas": [
         "GY08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY08_Helmet",
@@ -67205,7 +66992,7 @@
       "id": "GY08_Helmet_H",
       "name": "Fogcaller's Lantern Head [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY08_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -67234,8 +67021,7 @@
       ],
       "shopAreas": [
         "GY08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY08_Shoes",
@@ -67274,7 +67060,7 @@
       "id": "GY08_Shoes_H",
       "name": "Fogtread Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY08_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -67303,8 +67089,7 @@
       ],
       "shopAreas": [
         "GY08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY08_Weapon",
@@ -67342,7 +67127,7 @@
       "id": "GY08_Weapon_H",
       "name": "Fogcaller's Censer [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY08_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -67370,8 +67155,7 @@
       ],
       "shopAreas": [
         "GY08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY09_Accessory",
@@ -67411,7 +67195,7 @@
       "id": "GY09_Accessory_H",
       "name": "Deep Vault Seal [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY09_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -67441,8 +67225,7 @@
       ],
       "shopAreas": [
         "GY09"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY09_Armor",
@@ -67480,7 +67263,7 @@
       "id": "GY09_Armor_H",
       "name": "Deep Vault Carapace [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY09_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -67508,8 +67291,7 @@
       ],
       "shopAreas": [
         "GY09"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY09_Helmet",
@@ -67548,7 +67330,7 @@
       "id": "GY09_Helmet_H",
       "name": "Vault Keystone Helm [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY09_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -67577,8 +67359,7 @@
       ],
       "shopAreas": [
         "GY09"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY09_Shoes",
@@ -67617,7 +67398,7 @@
       "id": "GY09_Shoes_H",
       "name": "Vaultwalker Sabatons [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY09_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -67646,8 +67427,7 @@
       ],
       "shopAreas": [
         "GY09"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY09_Weapon",
@@ -67685,7 +67465,7 @@
       "id": "GY09_Weapon_H",
       "name": "Vaultbreaker Maul [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY09_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -67713,8 +67493,7 @@
       ],
       "shopAreas": [
         "GY09"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY10_Accessory",
@@ -67754,7 +67533,7 @@
       "id": "GY10_Accessory_H",
       "name": "Seal of the First Dead [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY10_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -67782,8 +67561,7 @@
       "dropAreas": [],
       "shopAreas": [
         "GY10"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY10_Armor",
@@ -67821,7 +67599,7 @@
       "id": "GY10_Armor_H",
       "name": "Sarcophagus Shell [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY10_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -67849,8 +67627,7 @@
       ],
       "shopAreas": [
         "GY10"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY10_BossRelic",
@@ -67889,7 +67666,7 @@
       "id": "GY10_BossRelic_H",
       "name": "Relic of the First Dead [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY10_BossRelic_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -67916,8 +67693,7 @@
       "dropAreas": [
         "GY10"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "GY10_Helmet",
@@ -67956,7 +67732,7 @@
       "id": "GY10_Helmet_H",
       "name": "Crown of the Interred [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY10_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -67985,8 +67761,7 @@
       ],
       "shopAreas": [
         "GY10"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY10_Shoes",
@@ -68025,7 +67800,7 @@
       "id": "GY10_Shoes_H",
       "name": "Steps of the First Dead [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY10_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -68054,8 +67829,7 @@
       ],
       "shopAreas": [
         "GY10"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GY10_Weapon",
@@ -68104,7 +67878,7 @@
       "id": "GY10_Weapon_H",
       "name": "The Last Rite [H]",
       "description": "",
-      "image": "",
+      "image": "item_GY10_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -68132,8 +67906,7 @@
       ],
       "shopAreas": [
         "GY10"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "GrenadeLauncher",
@@ -79445,8 +79218,7 @@
         "PX19",
         "PX20"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "Key_ClockworkKey",
@@ -79479,8 +79251,7 @@
         "LD07",
         "LD08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "Key_HollowEdge",
@@ -79512,8 +79283,7 @@
       "dropAreas": [
         "PX06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "Key_QuarryEdge",
@@ -79545,8 +79315,7 @@
       "dropAreas": [
         "KR04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "Key_SandEdge",
@@ -79578,8 +79347,7 @@
       "dropAreas": [
         "LD04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "Key_SovereignsScale",
@@ -79612,8 +79380,7 @@
         "KR07",
         "KR08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "KitsuneMask",
@@ -79846,7 +79613,7 @@
       "id": "KR01_Accessory_H",
       "name": "Norigae Tassel [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR01_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -79876,8 +79643,7 @@
       ],
       "shopAreas": [
         "KR01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR01_Armor",
@@ -79915,7 +79681,7 @@
       "id": "KR01_Armor_H",
       "name": "Hemp Jeogori [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR01_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -79943,8 +79709,7 @@
       ],
       "shopAreas": [
         "KR01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR01_Helmet",
@@ -79983,7 +79748,7 @@
       "id": "KR01_Helmet_H",
       "name": "Straw Satgat [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR01_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -80012,8 +79777,7 @@
       ],
       "shopAreas": [
         "KR01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR01_Shoes",
@@ -80052,7 +79816,7 @@
       "id": "KR01_Shoes_H",
       "name": "Straw Jipsin [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR01_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -80081,8 +79845,7 @@
       ],
       "shopAreas": [
         "KR01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR01_Weapon",
@@ -80120,7 +79883,7 @@
       "id": "KR01_Weapon_H",
       "name": "Hwando Shortsword [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR01_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -80148,8 +79911,7 @@
       ],
       "shopAreas": [
         "KR01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR02_Accessory",
@@ -80189,7 +79951,7 @@
       "id": "KR02_Accessory_H",
       "name": "Celadon Bead [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR02_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -80219,8 +79981,7 @@
       ],
       "shopAreas": [
         "KR02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR02_Armor",
@@ -80258,7 +80019,7 @@
       "id": "KR02_Armor_H",
       "name": "Padded Gwaeja [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR02_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -80286,8 +80047,7 @@
       ],
       "shopAreas": [
         "KR02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR02_Helmet",
@@ -80326,7 +80086,7 @@
       "id": "KR02_Helmet_H",
       "name": "Horsehair Gat [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR02_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -80355,8 +80115,7 @@
       ],
       "shopAreas": [
         "KR02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR02_Shoes",
@@ -80395,7 +80154,7 @@
       "id": "KR02_Shoes_H",
       "name": "Hemp Beoseon [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR02_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -80424,8 +80183,7 @@
       ],
       "shopAreas": [
         "KR02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR02_Weapon",
@@ -80463,7 +80221,7 @@
       "id": "KR02_Weapon_H",
       "name": "Dokkaebi Club [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR02_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -80491,8 +80249,7 @@
       ],
       "shopAreas": [
         "KR02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR03_Accessory",
@@ -80532,7 +80289,7 @@
       "id": "KR03_Accessory_H",
       "name": "Brass Bell Charm [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR03_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -80562,8 +80319,7 @@
       ],
       "shopAreas": [
         "KR03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR03_Armor",
@@ -80601,7 +80357,7 @@
       "id": "KR03_Armor_H",
       "name": "Lacquered Scale Vest [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR03_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -80629,8 +80385,7 @@
       ],
       "shopAreas": [
         "KR03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR03_Helmet",
@@ -80669,7 +80424,7 @@
       "id": "KR03_Helmet_H",
       "name": "Iron Tugu [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR03_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -80698,8 +80453,7 @@
       ],
       "shopAreas": [
         "KR03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR03_Shoes",
@@ -80747,7 +80501,7 @@
       "id": "KR03_Shoes_H",
       "name": "Leather Hwa Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR03_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -80776,8 +80530,7 @@
       ],
       "shopAreas": [
         "KR03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR03_Weapon",
@@ -80815,7 +80568,7 @@
       "id": "KR03_Weapon_H",
       "name": "Geom of the Pine [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR03_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -80843,8 +80596,7 @@
       ],
       "shopAreas": [
         "KR03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR04_Accessory",
@@ -80884,7 +80636,7 @@
       "id": "KR04_Accessory_H",
       "name": "Jade Turtle Seal [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR04_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -80914,8 +80666,7 @@
       ],
       "shopAreas": [
         "KR04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR04_Armor",
@@ -80953,7 +80704,7 @@
       "id": "KR04_Armor_H",
       "name": "Celadon Brigandine [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR04_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -80981,8 +80732,7 @@
       ],
       "shopAreas": [
         "KR04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR04_Helmet",
@@ -81030,7 +80780,7 @@
       "id": "KR04_Helmet_H",
       "name": "Lacquered Warhelm [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR04_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -81059,8 +80809,7 @@
       ],
       "shopAreas": [
         "KR04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR04_Shoes",
@@ -81099,7 +80848,7 @@
       "id": "KR04_Shoes_H",
       "name": "Lacquered Warboots [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR04_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -81128,8 +80877,7 @@
       ],
       "shopAreas": [
         "KR04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR04_Weapon",
@@ -81167,7 +80915,7 @@
       "id": "KR04_Weapon_H",
       "name": "Jangseung Maul [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR04_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -81195,8 +80943,7 @@
       ],
       "shopAreas": [
         "KR04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR05_Accessory",
@@ -81236,7 +80983,7 @@
       "id": "KR05_Accessory_H",
       "name": "Dokkaebi Coin [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR05_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -81266,8 +81013,7 @@
       ],
       "shopAreas": [
         "KR05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR05_Armor",
@@ -81305,7 +81051,7 @@
       "id": "KR05_Armor_H",
       "name": "Dancheong Cuirass [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR05_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -81333,8 +81079,7 @@
       ],
       "shopAreas": [
         "KR05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR05_Helmet",
@@ -81373,7 +81118,7 @@
       "id": "KR05_Helmet_H",
       "name": "Haetae Horned Helm [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR05_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -81402,8 +81147,7 @@
       ],
       "shopAreas": [
         "KR05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR05_Shoes",
@@ -81442,7 +81186,7 @@
       "id": "KR05_Shoes_H",
       "name": "Paddy-Wader Greaves [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR05_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -81471,8 +81215,7 @@
       ],
       "shopAreas": [
         "KR05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR05_Weapon",
@@ -81510,7 +81253,7 @@
       "id": "KR05_Weapon_H",
       "name": "Hyeopdo Glaive [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR05_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -81538,8 +81281,7 @@
       ],
       "shopAreas": [
         "KR05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR06_Accessory",
@@ -81579,7 +81321,7 @@
       "id": "KR06_Accessory_H",
       "name": "Haetae Talisman [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR06_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -81609,8 +81351,7 @@
       ],
       "shopAreas": [
         "KR06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR06_Armor",
@@ -81657,7 +81398,7 @@
       "id": "KR06_Armor_H",
       "name": "Granite Fortress Plate [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR06_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -81685,8 +81426,7 @@
       ],
       "shopAreas": [
         "KR06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR06_Helmet",
@@ -81725,7 +81465,7 @@
       "id": "KR06_Helmet_H",
       "name": "Celadon Crown-Helm [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR06_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -81754,8 +81494,7 @@
       ],
       "shopAreas": [
         "KR06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR06_Shoes",
@@ -81794,7 +81533,7 @@
       "id": "KR06_Shoes_H",
       "name": "Basalt Treads [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR06_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -81823,8 +81562,7 @@
       ],
       "shopAreas": [
         "KR06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR06_Weapon",
@@ -81862,7 +81600,7 @@
       "id": "KR06_Weapon_H",
       "name": "Celadon Edge [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR06_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -81890,8 +81628,7 @@
       ],
       "shopAreas": [
         "KR06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR07_Accessory",
@@ -81940,7 +81677,7 @@
       "id": "KR07_Accessory_H",
       "name": "Nine-Tail Charm [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR07_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -81970,8 +81707,7 @@
       ],
       "shopAreas": [
         "KR07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR07_Armor",
@@ -82009,7 +81745,7 @@
       "id": "KR07_Armor_H",
       "name": "Haetae Scalemail [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR07_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -82037,8 +81773,7 @@
       ],
       "shopAreas": [
         "KR07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR07_Helmet",
@@ -82077,7 +81812,7 @@
       "id": "KR07_Helmet_H",
       "name": "Dancheong Warcrown [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR07_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -82106,8 +81841,7 @@
       ],
       "shopAreas": [
         "KR07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR07_Shoes",
@@ -82146,7 +81880,7 @@
       "id": "KR07_Shoes_H",
       "name": "Fortress-Wall Sabatons [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR07_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -82175,8 +81909,7 @@
       ],
       "shopAreas": [
         "KR07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR07_Weapon",
@@ -82214,7 +81947,7 @@
       "id": "KR07_Weapon_H",
       "name": "Nine-Ring Sabre [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR07_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -82242,8 +81975,7 @@
       ],
       "shopAreas": [
         "KR07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR08_Accessory",
@@ -82283,7 +82015,7 @@
       "id": "KR08_Accessory_H",
       "name": "Sovereign's Jade Seal [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR08_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -82311,8 +82043,7 @@
       "dropAreas": [],
       "shopAreas": [
         "KR08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR08_Armor",
@@ -82350,7 +82081,7 @@
       "id": "KR08_Armor_H",
       "name": "Sovereign's Nine-Dragon Plate [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR08_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -82378,8 +82109,7 @@
       ],
       "shopAreas": [
         "KR08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR08_BossRelic",
@@ -82418,7 +82148,7 @@
       "id": "KR08_BossRelic_H",
       "name": "Sovereign's Nine-Dragon Relic [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR08_BossRelic_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -82445,8 +82175,7 @@
       "dropAreas": [
         "KR08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "KR08_Helmet",
@@ -82485,7 +82214,7 @@
       "id": "KR08_Helmet_H",
       "name": "Nine-Dragon Diadem [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR08_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -82514,8 +82243,7 @@
       ],
       "shopAreas": [
         "KR08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR08_Shoes",
@@ -82554,7 +82282,7 @@
       "id": "KR08_Shoes_H",
       "name": "Dragon-Step Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR08_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -82583,8 +82311,7 @@
       ],
       "shopAreas": [
         "KR08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "KR08_Weapon",
@@ -82631,7 +82358,7 @@
       "id": "KR08_Weapon_H",
       "name": "Dragon-King's Geom [H]",
       "description": "",
-      "image": "",
+      "image": "item_KR08_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -82659,8 +82386,7 @@
       ],
       "shopAreas": [
         "KR08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LaurelCirclet",
@@ -83028,7 +82754,7 @@
       "id": "LD01_Accessory_H",
       "name": "Penny Whistle [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD01_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -83058,8 +82784,7 @@
       ],
       "shopAreas": [
         "LD01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD01_Armor",
@@ -83097,7 +82822,7 @@
       "id": "LD01_Armor_H",
       "name": "Ragged Longcoat [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD01_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -83125,8 +82850,7 @@
       ],
       "shopAreas": [
         "LD01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD01_Helmet",
@@ -83165,7 +82889,7 @@
       "id": "LD01_Helmet_H",
       "name": "Flat Cap [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD01_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -83194,8 +82918,7 @@
       ],
       "shopAreas": [
         "LD01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD01_Shoes",
@@ -83234,7 +82957,7 @@
       "id": "LD01_Shoes_H",
       "name": "Worn Workboots [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD01_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -83263,8 +82986,7 @@
       ],
       "shopAreas": [
         "LD01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD01_Weapon",
@@ -83302,7 +83024,7 @@
       "id": "LD01_Weapon_H",
       "name": "Costermonger's Cleaver [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD01_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -83330,8 +83052,7 @@
       ],
       "shopAreas": [
         "LD01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD02_Accessory",
@@ -83371,7 +83092,7 @@
       "id": "LD02_Accessory_H",
       "name": "Soot-Black Pocket Watch [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD02_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -83401,8 +83122,7 @@
       ],
       "shopAreas": [
         "LD02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD02_Armor",
@@ -83440,7 +83160,7 @@
       "id": "LD02_Armor_H",
       "name": "Dockworker's Oilskin [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD02_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -83468,8 +83188,7 @@
       ],
       "shopAreas": [
         "LD02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD02_Helmet",
@@ -83508,7 +83227,7 @@
       "id": "LD02_Helmet_H",
       "name": "Soot-Stained Bowler [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD02_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -83537,8 +83256,7 @@
       ],
       "shopAreas": [
         "LD02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD02_Shoes",
@@ -83577,7 +83295,7 @@
       "id": "LD02_Shoes_H",
       "name": "Cobblestone Treads [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD02_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -83606,8 +83324,7 @@
       ],
       "shopAreas": [
         "LD02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD02_Weapon",
@@ -83645,7 +83362,7 @@
       "id": "LD02_Weapon_H",
       "name": "Alley Razor [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD02_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -83673,8 +83390,7 @@
       ],
       "shopAreas": [
         "LD02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD03_Accessory",
@@ -83714,7 +83430,7 @@
       "id": "LD03_Accessory_H",
       "name": "Brass Compass [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD03_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -83744,8 +83460,7 @@
       ],
       "shopAreas": [
         "LD03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD03_Armor",
@@ -83783,7 +83498,7 @@
       "id": "LD03_Armor_H",
       "name": "Constable's Greatcoat [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD03_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -83811,8 +83526,7 @@
       ],
       "shopAreas": [
         "LD03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD03_Helmet",
@@ -83851,7 +83565,7 @@
       "id": "LD03_Helmet_H",
       "name": "Constable's Custodian Helm [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD03_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -83880,8 +83594,7 @@
       ],
       "shopAreas": [
         "LD03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD03_Shoes",
@@ -83929,7 +83642,7 @@
       "id": "LD03_Shoes_H",
       "name": "Constable's Marching Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD03_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -83958,8 +83671,7 @@
       ],
       "shopAreas": [
         "LD03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD03_Weapon",
@@ -83997,7 +83709,7 @@
       "id": "LD03_Weapon_H",
       "name": "Constable's Truncheon [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD03_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -84025,8 +83737,7 @@
       ],
       "shopAreas": [
         "LD03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD04_Accessory",
@@ -84066,7 +83777,7 @@
       "id": "LD04_Accessory_H",
       "name": "Gaslight Locket [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD04_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -84096,8 +83807,7 @@
       ],
       "shopAreas": [
         "LD04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD04_Armor",
@@ -84135,7 +83845,7 @@
       "id": "LD04_Armor_H",
       "name": "Brass-Buttoned Frock [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD04_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -84163,8 +83873,7 @@
       ],
       "shopAreas": [
         "LD04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD04_Helmet",
@@ -84212,7 +83921,7 @@
       "id": "LD04_Helmet_H",
       "name": "Brass Diving Hood [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD04_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -84241,8 +83950,7 @@
       ],
       "shopAreas": [
         "LD04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD04_Shoes",
@@ -84281,7 +83989,7 @@
       "id": "LD04_Shoes_H",
       "name": "Dockhand's Waders [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD04_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -84310,8 +84018,7 @@
       ],
       "shopAreas": [
         "LD04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD04_Weapon",
@@ -84349,7 +84056,7 @@
       "id": "LD04_Weapon_H",
       "name": "Gaslight Cane-Sword [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD04_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -84377,8 +84084,7 @@
       ],
       "shopAreas": [
         "LD04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD05_Accessory",
@@ -84418,7 +84124,7 @@
       "id": "LD05_Accessory_H",
       "name": "Dock Chain Pendant [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD05_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -84448,8 +84154,7 @@
       ],
       "shopAreas": [
         "LD05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD05_Armor",
@@ -84487,7 +84192,7 @@
       "id": "LD05_Armor_H",
       "name": "Riveted Iron Vest [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD05_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -84515,8 +84220,7 @@
       ],
       "shopAreas": [
         "LD05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD05_Helmet",
@@ -84555,7 +84259,7 @@
       "id": "LD05_Helmet_H",
       "name": "Gaslight Lantern Helm [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD05_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -84584,8 +84288,7 @@
       ],
       "shopAreas": [
         "LD05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD05_Shoes",
@@ -84624,7 +84327,7 @@
       "id": "LD05_Shoes_H",
       "name": "Brass-Buckled Riding Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD05_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -84653,8 +84356,7 @@
       ],
       "shopAreas": [
         "LD05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD05_Weapon",
@@ -84692,7 +84394,7 @@
       "id": "LD05_Weapon_H",
       "name": "Dock Hook Harpoon [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD05_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -84720,8 +84422,7 @@
       ],
       "shopAreas": [
         "LD05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD06_Accessory",
@@ -84761,7 +84462,7 @@
       "id": "LD06_Accessory_H",
       "name": "Escapement Cog [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD06_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -84791,8 +84492,7 @@
       ],
       "shopAreas": [
         "LD06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD06_Armor",
@@ -84839,7 +84539,7 @@
       "id": "LD06_Armor_H",
       "name": "Gearplate Cuirass [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD06_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -84867,8 +84567,7 @@
       ],
       "shopAreas": [
         "LD06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD06_Helmet",
@@ -84907,7 +84606,7 @@
       "id": "LD06_Helmet_H",
       "name": "Riveted Ironmask [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD06_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -84936,8 +84635,7 @@
       ],
       "shopAreas": [
         "LD06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD06_Shoes",
@@ -84976,7 +84674,7 @@
       "id": "LD06_Shoes_H",
       "name": "Rooftop Creepers [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD06_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -85005,8 +84703,7 @@
       ],
       "shopAreas": [
         "LD06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD06_Weapon",
@@ -85044,7 +84741,7 @@
       "id": "LD06_Weapon_H",
       "name": "Whitechapel Carbine [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD06_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -85072,8 +84769,7 @@
       ],
       "shopAreas": [
         "LD06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD07_Accessory",
@@ -85122,7 +84818,7 @@
       "id": "LD07_Accessory_H",
       "name": "Fogglass Monocle [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD07_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -85152,8 +84848,7 @@
       ],
       "shopAreas": [
         "LD07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD07_Armor",
@@ -85191,7 +84886,7 @@
       "id": "LD07_Armor_H",
       "name": "Fogweave Mantle [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD07_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -85219,8 +84914,7 @@
       ],
       "shopAreas": [
         "LD07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD07_Helmet",
@@ -85259,7 +84953,7 @@
       "id": "LD07_Helmet_H",
       "name": "Chronometer Crown [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD07_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -85288,8 +84982,7 @@
       ],
       "shopAreas": [
         "LD07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD07_Shoes",
@@ -85328,7 +85021,7 @@
       "id": "LD07_Shoes_H",
       "name": "Geartrain Sabatons [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD07_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -85357,8 +85050,7 @@
       ],
       "shopAreas": [
         "LD07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD07_Weapon",
@@ -85396,7 +85088,7 @@
       "id": "LD07_Weapon_H",
       "name": "Clockwork Greataxe [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD07_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -85424,8 +85116,7 @@
       ],
       "shopAreas": [
         "LD07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD08_Accessory",
@@ -85465,7 +85156,7 @@
       "id": "LD08_Accessory_H",
       "name": "The Mainspring [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD08_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -85493,8 +85184,7 @@
       "dropAreas": [],
       "shopAreas": [
         "LD08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD08_Armor",
@@ -85532,7 +85222,7 @@
       "id": "LD08_Armor_H",
       "name": "Clocktower Aegis [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD08_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -85560,8 +85250,7 @@
       ],
       "shopAreas": [
         "LD08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD08_BossRelic",
@@ -85600,7 +85289,7 @@
       "id": "LD08_BossRelic_H",
       "name": "Heart of the Great Clock [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD08_BossRelic_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -85627,8 +85316,7 @@
       "dropAreas": [
         "LD08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "LD08_Helmet",
@@ -85667,7 +85355,7 @@
       "id": "LD08_Helmet_H",
       "name": "Great Clock Faceplate [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD08_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -85696,8 +85384,7 @@
       ],
       "shopAreas": [
         "LD08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD08_Shoes",
@@ -85736,7 +85423,7 @@
       "id": "LD08_Shoes_H",
       "name": "Hour-Hand Striders [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD08_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -85765,8 +85452,7 @@
       ],
       "shopAreas": [
         "LD08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LD08_Weapon",
@@ -85813,7 +85499,7 @@
       "id": "LD08_Weapon_H",
       "name": "The Great Clock's Hand [H]",
       "description": "",
-      "image": "",
+      "image": "item_LD08_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -85841,8 +85527,7 @@
       ],
       "shopAreas": [
         "LD08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "LuckyRing",
@@ -95366,7 +95051,7 @@
       "id": "PX01_Accessory_H",
       "name": "Blank Token [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX01_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -95396,8 +95081,7 @@
       ],
       "shopAreas": [
         "PX01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX01_Armor",
@@ -95435,7 +95119,7 @@
       "id": "PX01_Armor_H",
       "name": "Dither Wrap [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX01_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -95463,8 +95147,7 @@
       ],
       "shopAreas": [
         "PX01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX01_Helmet",
@@ -95503,7 +95186,7 @@
       "id": "PX01_Helmet_H",
       "name": "Blank Mask [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX01_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -95532,8 +95215,7 @@
       ],
       "shopAreas": [
         "PX01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX01_Shoes",
@@ -95572,7 +95254,7 @@
       "id": "PX01_Shoes_H",
       "name": "Pale Wraps [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX01_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -95601,8 +95283,7 @@
       ],
       "shopAreas": [
         "PX01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX01_Weapon",
@@ -95640,7 +95321,7 @@
       "id": "PX01_Weapon_H",
       "name": "First Edge [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX01_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -95668,8 +95349,7 @@
       ],
       "shopAreas": [
         "PX01"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX02_Accessory",
@@ -95709,7 +95389,7 @@
       "id": "PX02_Accessory_H",
       "name": "Fading Charm [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX02_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -95739,8 +95419,7 @@
       ],
       "shopAreas": [
         "PX02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX02_Armor",
@@ -95778,7 +95457,7 @@
       "id": "PX02_Armor_H",
       "name": "Fading Tunic [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX02_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -95806,8 +95485,7 @@
       ],
       "shopAreas": [
         "PX02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX02_Helmet",
@@ -95846,7 +95524,7 @@
       "id": "PX02_Helmet_H",
       "name": "Fading Cap [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX02_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -95875,8 +95553,7 @@
       ],
       "shopAreas": [
         "PX02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX02_Shoes",
@@ -95915,7 +95592,7 @@
       "id": "PX02_Shoes_H",
       "name": "Fading Sandals [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX02_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -95944,8 +95621,7 @@
       ],
       "shopAreas": [
         "PX02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX02_Weapon",
@@ -95983,7 +95659,7 @@
       "id": "PX02_Weapon_H",
       "name": "Greyfall Dagger [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX02_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -96011,8 +95687,7 @@
       ],
       "shopAreas": [
         "PX02"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX03_Accessory",
@@ -96052,7 +95727,7 @@
       "id": "PX03_Accessory_H",
       "name": "Greyfall Phial [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX03_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -96082,8 +95757,7 @@
       ],
       "shopAreas": [
         "PX03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX03_Armor",
@@ -96121,7 +95795,7 @@
       "id": "PX03_Armor_H",
       "name": "Greyfall Jerkin [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX03_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -96149,8 +95823,7 @@
       ],
       "shopAreas": [
         "PX03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX03_Helmet",
@@ -96189,7 +95862,7 @@
       "id": "PX03_Helmet_H",
       "name": "Greyfall Hood [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX03_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -96218,8 +95891,7 @@
       ],
       "shopAreas": [
         "PX03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX03_Shoes",
@@ -96258,7 +95930,7 @@
       "id": "PX03_Shoes_H",
       "name": "Greyfall Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX03_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -96287,8 +95959,7 @@
       ],
       "shopAreas": [
         "PX03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX03_Weapon",
@@ -96326,7 +95997,7 @@
       "id": "PX03_Weapon_H",
       "name": "Draining Sabre [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX03_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -96354,8 +96025,7 @@
       ],
       "shopAreas": [
         "PX03"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX04_Accessory",
@@ -96395,7 +96065,7 @@
       "id": "PX04_Accessory_H",
       "name": "Dither Bead [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX04_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -96425,8 +96095,7 @@
       ],
       "shopAreas": [
         "PX04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX04_Armor",
@@ -96464,7 +96133,7 @@
       "id": "PX04_Armor_H",
       "name": "Ashen Carapace [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX04_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -96492,8 +96161,7 @@
       ],
       "shopAreas": [
         "PX04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX04_Helmet",
@@ -96532,7 +96200,7 @@
       "id": "PX04_Helmet_H",
       "name": "Dither Hood [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX04_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -96561,8 +96229,7 @@
       ],
       "shopAreas": [
         "PX04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX04_Shoes",
@@ -96622,7 +96289,7 @@
       "id": "PX04_Shoes_H",
       "name": "Dither Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX04_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -96651,8 +96318,7 @@
       ],
       "shopAreas": [
         "PX04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX04_Weapon",
@@ -96690,7 +96356,7 @@
       "id": "PX04_Weapon_H",
       "name": "Dither Axe [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX04_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -96718,8 +96384,7 @@
       ],
       "shopAreas": [
         "PX04"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX05_Accessory",
@@ -96759,7 +96424,7 @@
       "id": "PX05_Accessory_H",
       "name": "Bleached Sigil [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX05_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -96789,8 +96454,7 @@
       ],
       "shopAreas": [
         "PX05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX05_Armor",
@@ -96828,7 +96492,7 @@
       "id": "PX05_Armor_H",
       "name": "Bleached Plate [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX05_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -96856,8 +96520,7 @@
       ],
       "shopAreas": [
         "PX05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX05_Helmet",
@@ -96896,7 +96559,7 @@
       "id": "PX05_Helmet_H",
       "name": "Bleached Barbute [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX05_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -96925,8 +96588,7 @@
       ],
       "shopAreas": [
         "PX05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX05_Shoes",
@@ -96965,7 +96627,7 @@
       "id": "PX05_Shoes_H",
       "name": "Bleached Treads [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX05_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -96994,8 +96656,7 @@
       ],
       "shopAreas": [
         "PX05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX05_Weapon",
@@ -97033,7 +96694,7 @@
       "id": "PX05_Weapon_H",
       "name": "Bleached Warpick [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX05_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -97061,8 +96722,7 @@
       ],
       "shopAreas": [
         "PX05"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX06_Accessory",
@@ -97102,7 +96762,7 @@
       "id": "PX06_Accessory_H",
       "name": "Riverstone Charm [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX06_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -97132,8 +96792,7 @@
       ],
       "shopAreas": [
         "PX06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX06_Armor",
@@ -97171,7 +96830,7 @@
       "id": "PX06_Armor_H",
       "name": "Riverstone Vest [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX06_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -97199,8 +96858,7 @@
       ],
       "shopAreas": [
         "PX06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX06_Helmet",
@@ -97239,7 +96897,7 @@
       "id": "PX06_Helmet_H",
       "name": "Riverstone Cap [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX06_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -97268,8 +96926,7 @@
       ],
       "shopAreas": [
         "PX06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX06_Shoes",
@@ -97308,7 +96965,7 @@
       "id": "PX06_Shoes_H",
       "name": "Riverstone Sabatons [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX06_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -97337,8 +96994,7 @@
       ],
       "shopAreas": [
         "PX06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX06_Weapon",
@@ -97376,7 +97032,7 @@
       "id": "PX06_Weapon_H",
       "name": "Riverstone Club [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX06_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -97404,8 +97060,7 @@
       ],
       "shopAreas": [
         "PX06"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX07_Accessory",
@@ -97445,7 +97100,7 @@
       "id": "PX07_Accessory_H",
       "name": "Stratum Disc [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX07_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -97475,8 +97130,7 @@
       ],
       "shopAreas": [
         "PX07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX07_Armor",
@@ -97514,7 +97168,7 @@
       "id": "PX07_Armor_H",
       "name": "Stratum Hauberk [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX07_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -97542,8 +97196,7 @@
       ],
       "shopAreas": [
         "PX07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX07_Helmet",
@@ -97603,7 +97256,7 @@
       "id": "PX07_Helmet_H",
       "name": "Stratum Helm [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX07_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -97632,8 +97285,7 @@
       ],
       "shopAreas": [
         "PX07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX07_Shoes",
@@ -97672,7 +97324,7 @@
       "id": "PX07_Shoes_H",
       "name": "Stratum Greaves [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX07_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -97701,8 +97353,7 @@
       ],
       "shopAreas": [
         "PX07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX07_Weapon",
@@ -97740,7 +97391,7 @@
       "id": "PX07_Weapon_H",
       "name": "Chisel of the Unmade [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX07_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -97768,8 +97419,7 @@
       ],
       "shopAreas": [
         "PX07"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX08_Accessory",
@@ -97809,7 +97459,7 @@
       "id": "PX08_Accessory_H",
       "name": "Spiral Tablet [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX08_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -97839,8 +97489,7 @@
       ],
       "shopAreas": [
         "PX08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX08_Armor",
@@ -97878,7 +97527,7 @@
       "id": "PX08_Armor_H",
       "name": "Monolith Plate [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX08_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -97906,8 +97555,7 @@
       ],
       "shopAreas": [
         "PX08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX08_Helmet",
@@ -97946,7 +97594,7 @@
       "id": "PX08_Helmet_H",
       "name": "Stone Choir Helm [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX08_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -97975,8 +97623,7 @@
       ],
       "shopAreas": [
         "PX08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX08_Shoes",
@@ -98015,7 +97662,7 @@
       "id": "PX08_Shoes_H",
       "name": "Monolith Sabatons [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX08_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -98044,8 +97691,7 @@
       ],
       "shopAreas": [
         "PX08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX08_Weapon",
@@ -98083,7 +97729,7 @@
       "id": "PX08_Weapon_H",
       "name": "Monolith Maul [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX08_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -98111,8 +97757,7 @@
       ],
       "shopAreas": [
         "PX08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX09_Accessory",
@@ -98152,7 +97797,7 @@
       "id": "PX09_Accessory_H",
       "name": "Single Dot [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX09_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -98182,8 +97827,7 @@
       ],
       "shopAreas": [
         "PX09"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX09_Armor",
@@ -98221,7 +97865,7 @@
       "id": "PX09_Armor_H",
       "name": "Spiral-Carved Cuirass [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX09_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -98249,8 +97893,7 @@
       ],
       "shopAreas": [
         "PX09"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX09_Helmet",
@@ -98289,7 +97932,7 @@
       "id": "PX09_Helmet_H",
       "name": "Spiral Crest [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX09_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -98318,8 +97961,7 @@
       ],
       "shopAreas": [
         "PX09"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX09_Shoes",
@@ -98358,7 +98000,7 @@
       "id": "PX09_Shoes_H",
       "name": "Spiral-Cut Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX09_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -98387,8 +98029,7 @@
       ],
       "shopAreas": [
         "PX09"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX09_Weapon",
@@ -98426,7 +98067,7 @@
       "id": "PX09_Weapon_H",
       "name": "Stratum Blade [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX09_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -98454,8 +98095,7 @@
       ],
       "shopAreas": [
         "PX09"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX10_Accessory",
@@ -98495,7 +98135,7 @@
       "id": "PX10_Accessory_H",
       "name": "Lintel Amulet [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX10_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -98523,8 +98163,7 @@
       "dropAreas": [],
       "shopAreas": [
         "PX10"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX10_Armor",
@@ -98562,7 +98201,7 @@
       "id": "PX10_Armor_H",
       "name": "Standing Stone Mantle [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX10_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -98590,8 +98229,7 @@
       ],
       "shopAreas": [
         "PX10"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX10_BossRelic",
@@ -98618,6 +98256,37 @@
       "maxCopies": 3,
       "effects": [
         "HP +20%"
+      ],
+      "dropAreas": [
+        "PX10"
+      ],
+      "shopAreas": []
+    },
+    {
+      "id": "PX10_BossRelic_H",
+      "name": "Crown of Ash [H]",
+      "description": "",
+      "image": "item_PX10_BossRelic_H.png",
+      "rarity": "Legendary",
+      "type": "Accessory",
+      "setName": "",
+      "isUnique": false,
+      "shopUnavailable": true,
+      "hiddenFromCollection": false,
+      "isHardModeItem": true,
+      "isBossItem": true,
+      "isTrollItem": false,
+      "shopRank": 1,
+      "sourceRegion": "PX10",
+      "bonusHP": 0,
+      "bonusATK": 0,
+      "bonusDEF": 0,
+      "bonusAGI": 0,
+      "bonusLUC": 0,
+      "buyPrice": 0,
+      "maxCopies": 3,
+      "effects": [
+        "HP +30%"
       ],
       "dropAreas": [
         "PX10"
@@ -98661,7 +98330,7 @@
       "id": "PX10_Helmet_H",
       "name": "Lintel Crown [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX10_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -98690,8 +98359,7 @@
       ],
       "shopAreas": [
         "PX10"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX10_Shoes",
@@ -98730,7 +98398,7 @@
       "id": "PX10_Shoes_H",
       "name": "Causeway Greaves [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX10_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -98759,8 +98427,7 @@
       ],
       "shopAreas": [
         "PX10"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX10_Weapon",
@@ -98798,7 +98465,7 @@
       "id": "PX10_Weapon_H",
       "name": "Spiral Stone Glaive [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX10_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -98826,8 +98493,7 @@
       ],
       "shopAreas": [
         "PX10"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX11_Accessory",
@@ -98867,7 +98533,7 @@
       "id": "PX11_Accessory_H",
       "name": "Broken Arc [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX11_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -98897,8 +98563,7 @@
       ],
       "shopAreas": [
         "PX11"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX11_Armor",
@@ -98957,7 +98622,7 @@
       "id": "PX11_Armor_H",
       "name": "Unfinished Mail [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX11_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -98985,8 +98650,7 @@
       ],
       "shopAreas": [
         "PX11"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX11_Helmet",
@@ -99025,7 +98689,7 @@
       "id": "PX11_Helmet_H",
       "name": "Half-Made Helm [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX11_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -99054,8 +98718,7 @@
       ],
       "shopAreas": [
         "PX11"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX11_Shoes",
@@ -99094,7 +98757,7 @@
       "id": "PX11_Shoes_H",
       "name": "Outline Treads [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX11_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -99123,8 +98786,7 @@
       ],
       "shopAreas": [
         "PX11"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX11_Weapon",
@@ -99162,7 +98824,7 @@
       "id": "PX11_Weapon_H",
       "name": "Outline Blade [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX11_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -99190,8 +98852,7 @@
       ],
       "shopAreas": [
         "PX11"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX12_Accessory",
@@ -99231,7 +98892,7 @@
       "id": "PX12_Accessory_H",
       "name": "Sketch Seal [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX12_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -99261,8 +98922,7 @@
       ],
       "shopAreas": [
         "PX12"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX12_Armor",
@@ -99300,7 +98960,7 @@
       "id": "PX12_Armor_H",
       "name": "Outline Cuirass [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX12_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -99328,8 +98988,7 @@
       ],
       "shopAreas": [
         "PX12"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX12_Helmet",
@@ -99368,7 +99027,7 @@
       "id": "PX12_Helmet_H",
       "name": "Sketch Sallet [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX12_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -99397,8 +99056,7 @@
       ],
       "shopAreas": [
         "PX12"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX12_Shoes",
@@ -99437,7 +99095,7 @@
       "id": "PX12_Shoes_H",
       "name": "Sketch Striders [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX12_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -99466,8 +99124,7 @@
       ],
       "shopAreas": [
         "PX12"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX12_Weapon",
@@ -99505,7 +99162,7 @@
       "id": "PX12_Weapon_H",
       "name": "Halved Greatsword [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX12_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -99533,8 +99190,7 @@
       ],
       "shopAreas": [
         "PX12"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX13_Accessory",
@@ -99574,7 +99230,7 @@
       "id": "PX13_Accessory_H",
       "name": "Erased Emblem [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX13_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -99604,8 +99260,7 @@
       ],
       "shopAreas": [
         "PX13"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX13_Armor",
@@ -99643,7 +99298,7 @@
       "id": "PX13_Armor_H",
       "name": "Sketch Brigandine [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX13_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -99671,8 +99326,7 @@
       ],
       "shopAreas": [
         "PX13"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX13_Helmet",
@@ -99711,7 +99365,7 @@
       "id": "PX13_Helmet_H",
       "name": "Watcher's Eye Crown [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX13_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -99740,8 +99394,7 @@
       ],
       "shopAreas": [
         "PX13"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX13_Shoes",
@@ -99780,7 +99433,7 @@
       "id": "PX13_Shoes_H",
       "name": "Erased Soles [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX13_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -99809,8 +99462,7 @@
       ],
       "shopAreas": [
         "PX13"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX13_Weapon",
@@ -99848,7 +99500,7 @@
       "id": "PX13_Weapon_H",
       "name": "Sketch Falchion [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX13_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -99876,8 +99528,7 @@
       ],
       "shopAreas": [
         "PX13"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX14_Accessory",
@@ -99917,7 +99568,7 @@
       "id": "PX14_Accessory_H",
       "name": "Scaffold Locket [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX14_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -99947,8 +99598,7 @@
       ],
       "shopAreas": [
         "PX14"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX14_Armor",
@@ -99986,7 +99636,7 @@
       "id": "PX14_Armor_H",
       "name": "Erased Harness [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX14_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -100014,8 +99664,7 @@
       ],
       "shopAreas": [
         "PX14"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX14_Helmet",
@@ -100054,7 +99703,7 @@
       "id": "PX14_Helmet_H",
       "name": "Erased Visor [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX14_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -100083,8 +99732,7 @@
       ],
       "shopAreas": [
         "PX14"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX14_Shoes",
@@ -100123,7 +99771,7 @@
       "id": "PX14_Shoes_H",
       "name": "Static Striders [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX14_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -100152,8 +99800,7 @@
       ],
       "shopAreas": [
         "PX14"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX14_Weapon",
@@ -100191,7 +99838,7 @@
       "id": "PX14_Weapon_H",
       "name": "Erased Edge [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX14_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -100219,8 +99866,7 @@
       ],
       "shopAreas": [
         "PX14"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX15_Accessory",
@@ -100281,7 +99927,7 @@
       "id": "PX15_Accessory_H",
       "name": "White Circle [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX15_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -100309,8 +99955,7 @@
       "dropAreas": [],
       "shopAreas": [
         "PX15"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX15_Armor",
@@ -100348,7 +99993,7 @@
       "id": "PX15_Armor_H",
       "name": "Scaffold Plate [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX15_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -100376,8 +100021,7 @@
       ],
       "shopAreas": [
         "PX15"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX15_BossRelic",
@@ -100414,7 +100058,7 @@
       "id": "PX15_BossRelic_H",
       "name": "Corona of the Hollow Sun [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX15_BossRelic_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -100439,8 +100083,7 @@
       "dropAreas": [
         "PX15"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "PX15_Helmet",
@@ -100479,7 +100122,7 @@
       "id": "PX15_Helmet_H",
       "name": "Scaffold Casque [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX15_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -100508,8 +100151,7 @@
       ],
       "shopAreas": [
         "PX15"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX15_Shoes",
@@ -100548,7 +100190,7 @@
       "id": "PX15_Shoes_H",
       "name": "Scaffold Boots [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX15_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -100577,8 +100219,7 @@
       ],
       "shopAreas": [
         "PX15"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX15_Weapon",
@@ -100616,7 +100257,7 @@
       "id": "PX15_Weapon_H",
       "name": "Scaffold Lance [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX15_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -100644,8 +100285,7 @@
       ],
       "shopAreas": [
         "PX15"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX16_Accessory",
@@ -100685,7 +100325,7 @@
       "id": "PX16_Accessory_H",
       "name": "Black Square [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX16_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -100715,8 +100355,7 @@
       ],
       "shopAreas": [
         "PX16"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX16_Armor",
@@ -100754,7 +100393,7 @@
       "id": "PX16_Armor_H",
       "name": "Concentric Aegis [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX16_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -100782,8 +100421,7 @@
       ],
       "shopAreas": [
         "PX16"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX16_Helmet",
@@ -100822,7 +100460,7 @@
       "id": "PX16_Helmet_H",
       "name": "Ring of White Silence [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX16_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -100851,8 +100489,7 @@
       ],
       "shopAreas": [
         "PX16"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX16_Shoes",
@@ -100891,7 +100528,7 @@
       "id": "PX16_Shoes_H",
       "name": "Lattice Steps [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX16_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -100920,8 +100557,7 @@
       ],
       "shopAreas": [
         "PX16"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX16_Weapon",
@@ -100959,7 +100595,7 @@
       "id": "PX16_Weapon_H",
       "name": "The Straight Line [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX16_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -100987,8 +100623,7 @@
       ],
       "shopAreas": [
         "PX16"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX17_Accessory",
@@ -101028,7 +100663,7 @@
       "id": "PX17_Accessory_H",
       "name": "Nested Rings [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX17_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -101058,8 +100693,7 @@
       ],
       "shopAreas": [
         "PX17"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX17_Armor",
@@ -101097,7 +100731,7 @@
       "id": "PX17_Armor_H",
       "name": "Axiom Plate [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX17_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -101125,8 +100759,7 @@
       ],
       "shopAreas": [
         "PX17"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX17_Helmet",
@@ -101165,7 +100798,7 @@
       "id": "PX17_Helmet_H",
       "name": "Axiom Helm [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX17_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -101194,8 +100827,7 @@
       ],
       "shopAreas": [
         "PX17"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX17_Shoes",
@@ -101234,7 +100866,7 @@
       "id": "PX17_Shoes_H",
       "name": "Axiom Treads [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX17_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -101263,8 +100895,7 @@
       ],
       "shopAreas": [
         "PX17"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX17_Weapon",
@@ -101302,7 +100933,7 @@
       "id": "PX17_Weapon_H",
       "name": "First Angle [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX17_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -101330,8 +100961,7 @@
       ],
       "shopAreas": [
         "PX17"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX18_Accessory",
@@ -101371,7 +101001,7 @@
       "id": "PX18_Accessory_H",
       "name": "Axiom Band [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX18_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -101401,8 +101031,7 @@
       ],
       "shopAreas": [
         "PX18"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX18_Armor",
@@ -101440,7 +101069,7 @@
       "id": "PX18_Armor_H",
       "name": "Bisected Mantle [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX18_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -101468,8 +101097,7 @@
       ],
       "shopAreas": [
         "PX18"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX18_Helmet",
@@ -101508,7 +101136,7 @@
       "id": "PX18_Helmet_H",
       "name": "Bisector Crest [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX18_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -101537,8 +101165,7 @@
       ],
       "shopAreas": [
         "PX18"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX18_Shoes",
@@ -101577,7 +101204,7 @@
       "id": "PX18_Shoes_H",
       "name": "Bisector Heels [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX18_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -101606,8 +101233,7 @@
       ],
       "shopAreas": [
         "PX18"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX18_Weapon",
@@ -101645,7 +101271,7 @@
       "id": "PX18_Weapon_H",
       "name": "Axiom Blade [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX18_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -101673,8 +101299,7 @@
       ],
       "shopAreas": [
         "PX18"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX19_Accessory",
@@ -101714,7 +101339,7 @@
       "id": "PX19_Accessory_H",
       "name": "Bisector Pendant [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX19_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -101744,8 +101369,7 @@
       ],
       "shopAreas": [
         "PX19"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX19_Armor",
@@ -101783,7 +101407,7 @@
       "id": "PX19_Armor_H",
       "name": "Null Cuirass [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX19_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -101811,8 +101435,7 @@
       ],
       "shopAreas": [
         "PX19"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX19_Helmet",
@@ -101851,7 +101474,7 @@
       "id": "PX19_Helmet_H",
       "name": "Null Crown [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX19_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -101880,8 +101503,7 @@
       ],
       "shopAreas": [
         "PX19"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX19_Shoes",
@@ -101920,7 +101542,7 @@
       "id": "PX19_Shoes_H",
       "name": "Null Steps [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX19_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -101949,8 +101571,7 @@
       ],
       "shopAreas": [
         "PX19"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX19_Weapon",
@@ -101988,7 +101609,7 @@
       "id": "PX19_Weapon_H",
       "name": "Silent Bisector [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX19_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -102016,8 +101637,7 @@
       ],
       "shopAreas": [
         "PX19"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX20_Accessory",
@@ -102057,7 +101677,7 @@
       "id": "PX20_Accessory_H",
       "name": "The Point [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX20_Accessory_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -102085,8 +101705,7 @@
       "dropAreas": [],
       "shopAreas": [
         "PX20"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX20_Armor",
@@ -102124,7 +101743,7 @@
       "id": "PX20_Armor_H",
       "name": "Shell of the First [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX20_Armor_H.png",
       "rarity": "Legendary",
       "type": "Armor",
       "setName": "",
@@ -102152,8 +101771,7 @@
       ],
       "shopAreas": [
         "PX20"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX20_BossRelic",
@@ -102192,7 +101810,7 @@
       "id": "PX20_BossRelic_H",
       "name": "The Point of Origin [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX20_BossRelic_H.png",
       "rarity": "Legendary",
       "type": "Accessory",
       "setName": "",
@@ -102219,8 +101837,7 @@
       "dropAreas": [
         "PX20"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "PX20_Helmet",
@@ -102259,7 +101876,7 @@
       "id": "PX20_Helmet_H",
       "name": "Crown of Origin [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX20_Helmet_H.png",
       "rarity": "Legendary",
       "type": "Helmet",
       "setName": "",
@@ -102288,8 +101905,7 @@
       ],
       "shopAreas": [
         "PX20"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX20_Shoes",
@@ -102328,7 +101944,7 @@
       "id": "PX20_Shoes_H",
       "name": "First Footfall [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX20_Shoes_H.png",
       "rarity": "Legendary",
       "type": "Shoes",
       "setName": "",
@@ -102357,8 +101973,7 @@
       ],
       "shopAreas": [
         "PX20"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "PX20_Weapon",
@@ -102417,7 +102032,7 @@
       "id": "PX20_Weapon_H",
       "name": "Origin Point [H]",
       "description": "",
-      "image": "",
+      "image": "item_PX20_Weapon_H.png",
       "rarity": "Legendary",
       "type": "Weapon",
       "setName": "",
@@ -102445,8 +102060,7 @@
       ],
       "shopAreas": [
         "PX20"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "MossyDagger",
@@ -105457,8 +105071,7 @@
       "dropAreas": [
         "ST01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST01_Armor",
@@ -105490,8 +105103,7 @@
       "dropAreas": [
         "ST01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST01_Helmet",
@@ -105524,8 +105136,7 @@
       "dropAreas": [
         "ST01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST01_Shoes",
@@ -105558,8 +105169,7 @@
       "dropAreas": [
         "ST01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST01_Weapon",
@@ -105591,8 +105201,7 @@
       "dropAreas": [
         "ST01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST02_Accessory",
@@ -105626,8 +105235,7 @@
       "dropAreas": [
         "ST02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST02_Armor",
@@ -105659,8 +105267,7 @@
       "dropAreas": [
         "ST02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST02_Helmet",
@@ -105693,8 +105300,7 @@
       "dropAreas": [
         "ST02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST02_Shoes",
@@ -105727,8 +105333,7 @@
       "dropAreas": [
         "ST02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST02_Weapon",
@@ -105760,8 +105365,7 @@
       "dropAreas": [
         "ST02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST03_Accessory",
@@ -105795,8 +105399,7 @@
       "dropAreas": [
         "ST03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST03_Armor",
@@ -105828,8 +105431,7 @@
       "dropAreas": [
         "ST03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST03_Helmet",
@@ -105862,8 +105464,7 @@
       "dropAreas": [
         "ST03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST03_Shoes",
@@ -105905,8 +105506,7 @@
         "ST06",
         "ST07",
         "ST08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST03_Weapon",
@@ -105938,8 +105538,7 @@
       "dropAreas": [
         "ST03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST04_Accessory",
@@ -105973,8 +105572,7 @@
       "dropAreas": [
         "ST04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST04_Armor",
@@ -106006,8 +105604,7 @@
       "dropAreas": [
         "ST04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST04_Helmet",
@@ -106049,8 +105646,7 @@
         "ST06",
         "ST07",
         "ST08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST04_Shoes",
@@ -106083,8 +105679,7 @@
       "dropAreas": [
         "ST04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST04_Weapon",
@@ -106116,8 +105711,7 @@
       "dropAreas": [
         "ST04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST05_Accessory",
@@ -106151,8 +105745,7 @@
       "dropAreas": [
         "ST05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST05_Armor",
@@ -106184,8 +105777,7 @@
       "dropAreas": [
         "ST05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST05_Helmet",
@@ -106218,8 +105810,7 @@
       "dropAreas": [
         "ST05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST05_Shoes",
@@ -106252,8 +105843,7 @@
       "dropAreas": [
         "ST05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST05_Weapon",
@@ -106285,8 +105875,7 @@
       "dropAreas": [
         "ST05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST06_Accessory",
@@ -106320,8 +105909,7 @@
       "dropAreas": [
         "ST06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST06_Armor",
@@ -106362,8 +105950,7 @@
         "ST06",
         "ST07",
         "ST08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST06_Helmet",
@@ -106396,8 +105983,7 @@
       "dropAreas": [
         "ST06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST06_Shoes",
@@ -106430,8 +106016,7 @@
       "dropAreas": [
         "ST06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST06_Weapon",
@@ -106463,8 +106048,7 @@
       "dropAreas": [
         "ST06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST07_Accessory",
@@ -106507,8 +106091,7 @@
         "ST06",
         "ST07",
         "ST08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "ST07_Armor",
@@ -106540,8 +106123,7 @@
       "dropAreas": [
         "ST07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST07_Helmet",
@@ -106574,8 +106156,7 @@
       "dropAreas": [
         "ST07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST07_Shoes",
@@ -106608,8 +106189,7 @@
       "dropAreas": [
         "ST07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST07_Weapon",
@@ -106641,8 +106221,7 @@
       "dropAreas": [
         "ST07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST08_Accessory",
@@ -106676,8 +106255,7 @@
       "dropAreas": [
         "ST08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST08_Armor",
@@ -106709,8 +106287,7 @@
       "dropAreas": [
         "ST08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST08_BossRelic",
@@ -106741,8 +106318,7 @@
         "DEF +37%"
       ],
       "dropAreas": [],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST08_Helmet",
@@ -106775,8 +106351,7 @@
       "dropAreas": [
         "ST08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST08_Shoes",
@@ -106809,8 +106384,7 @@
       "dropAreas": [
         "ST08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "ST08_Weapon",
@@ -106851,8 +106425,7 @@
         "ST06",
         "ST07",
         "ST08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "StrawHat",
@@ -106982,8 +106555,7 @@
       "dropAreas": [
         "BD01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD01_Armor",
@@ -107015,8 +106587,7 @@
       "dropAreas": [
         "BD01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD01_Helmet",
@@ -107049,8 +106620,7 @@
       "dropAreas": [
         "BD01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD01_Shoes",
@@ -107083,8 +106653,7 @@
       "dropAreas": [
         "BD01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD01_Weapon",
@@ -107116,8 +106685,7 @@
       "dropAreas": [
         "BD01"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD02_Accessory",
@@ -107151,8 +106719,7 @@
       "dropAreas": [
         "BD02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD02_Armor",
@@ -107184,8 +106751,7 @@
       "dropAreas": [
         "BD02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD02_Helmet",
@@ -107218,8 +106784,7 @@
       "dropAreas": [
         "BD02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD02_Shoes",
@@ -107252,8 +106817,7 @@
       "dropAreas": [
         "BD02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD02_Weapon",
@@ -107285,8 +106849,7 @@
       "dropAreas": [
         "BD02"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD03_Accessory",
@@ -107320,8 +106883,7 @@
       "dropAreas": [
         "BD03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD03_Armor",
@@ -107353,8 +106915,7 @@
       "dropAreas": [
         "BD03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD03_Helmet",
@@ -107387,8 +106948,7 @@
       "dropAreas": [
         "BD03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD03_Shoes",
@@ -107430,8 +106990,7 @@
         "BD06",
         "BD07",
         "BD08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD03_Weapon",
@@ -107463,8 +107022,7 @@
       "dropAreas": [
         "BD03"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD04_Accessory",
@@ -107498,8 +107056,7 @@
       "dropAreas": [
         "BD04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD04_Armor",
@@ -107531,8 +107088,7 @@
       "dropAreas": [
         "BD04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD04_Helmet",
@@ -107574,8 +107130,7 @@
         "BD06",
         "BD07",
         "BD08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD04_Shoes",
@@ -107608,8 +107163,7 @@
       "dropAreas": [
         "BD04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD04_Weapon",
@@ -107641,8 +107195,7 @@
       "dropAreas": [
         "BD04"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD05_Accessory",
@@ -107676,8 +107229,7 @@
       "dropAreas": [
         "BD05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD05_Armor",
@@ -107709,8 +107261,7 @@
       "dropAreas": [
         "BD05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD05_Helmet",
@@ -107743,8 +107294,7 @@
       "dropAreas": [
         "BD05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD05_Shoes",
@@ -107777,8 +107327,7 @@
       "dropAreas": [
         "BD05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD05_Weapon",
@@ -107810,8 +107359,7 @@
       "dropAreas": [
         "BD05"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD06_Accessory",
@@ -107845,8 +107393,7 @@
       "dropAreas": [
         "BD06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD06_Armor",
@@ -107887,8 +107434,7 @@
         "BD06",
         "BD07",
         "BD08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD06_Helmet",
@@ -107921,8 +107467,7 @@
       "dropAreas": [
         "BD06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD06_Shoes",
@@ -107955,8 +107500,7 @@
       "dropAreas": [
         "BD06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD06_Weapon",
@@ -107988,8 +107532,7 @@
       "dropAreas": [
         "BD06"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD07_Accessory",
@@ -108032,8 +107575,7 @@
         "BD06",
         "BD07",
         "BD08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "BD07_Armor",
@@ -108065,8 +107607,7 @@
       "dropAreas": [
         "BD07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD07_Helmet",
@@ -108099,8 +107640,7 @@
       "dropAreas": [
         "BD07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD07_Shoes",
@@ -108133,8 +107673,7 @@
       "dropAreas": [
         "BD07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD07_Weapon",
@@ -108166,8 +107705,7 @@
       "dropAreas": [
         "BD07"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD08_Accessory",
@@ -108201,8 +107739,7 @@
       "dropAreas": [
         "BD08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD08_Armor",
@@ -108234,8 +107771,7 @@
       "dropAreas": [
         "BD08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD08_BossRelic",
@@ -108267,8 +107803,7 @@
         "Lifesteal 6%"
       ],
       "dropAreas": [],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD08_Helmet",
@@ -108301,8 +107836,7 @@
       "dropAreas": [
         "BD08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD08_Shoes",
@@ -108335,8 +107869,7 @@
       "dropAreas": [
         "BD08"
       ],
-      "shopAreas": [],
-      "upcoming": true
+      "shopAreas": []
     },
     {
       "id": "BD08_Weapon",
@@ -108377,8 +107910,7 @@
         "BD06",
         "BD07",
         "BD08"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "id": "TenguFan",
@@ -110485,8 +110017,7 @@
       "gridHeight": 128,
       "dataVersion": 1,
       "walkableCells": 1609,
-      "blockedCells": 7607,
-      "upcoming": true
+      "blockedCells": 7607
     },
     {
       "id": "BD02",
@@ -110497,8 +110028,7 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 3496,
-      "blockedCells": 7064,
-      "upcoming": true
+      "blockedCells": 7064
     },
     {
       "id": "BD03",
@@ -110509,8 +110039,7 @@
       "gridHeight": 120,
       "dataVersion": 1,
       "walkableCells": 1513,
-      "blockedCells": 6167,
-      "upcoming": true
+      "blockedCells": 6167
     },
     {
       "id": "BD04",
@@ -110521,8 +110050,7 @@
       "gridHeight": 72,
       "dataVersion": 1,
       "walkableCells": 1373,
-      "blockedCells": 8419,
-      "upcoming": true
+      "blockedCells": 8419
     },
     {
       "id": "BD05",
@@ -110533,8 +110061,7 @@
       "gridHeight": 56,
       "dataVersion": 1,
       "walkableCells": 948,
-      "blockedCells": 7564,
-      "upcoming": true
+      "blockedCells": 7564
     },
     {
       "id": "BD06",
@@ -110545,8 +110072,7 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 880,
-      "blockedCells": 7568,
-      "upcoming": true
+      "blockedCells": 7568
     },
     {
       "id": "BD07",
@@ -110557,8 +110083,7 @@
       "gridHeight": 56,
       "dataVersion": 1,
       "walkableCells": 1408,
-      "blockedCells": 5760,
-      "upcoming": true
+      "blockedCells": 5760
     },
     {
       "id": "BD08",
@@ -110569,8 +110094,7 @@
       "gridHeight": 80,
       "dataVersion": 1,
       "walkableCells": 2909,
-      "blockedCells": 5411,
-      "upcoming": true
+      "blockedCells": 5411
     },
     {
       "id": "CL01",
@@ -110581,8 +110105,7 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 5148,
-      "blockedCells": 4068,
-      "upcoming": true
+      "blockedCells": 4068
     },
     {
       "id": "CoralMaze_Map",
@@ -110670,8 +110193,7 @@
       "gridHeight": 112,
       "dataVersion": 1,
       "walkableCells": 1641,
-      "blockedCells": 8215,
-      "upcoming": true
+      "blockedCells": 8215
     },
     {
       "id": "EG02",
@@ -110682,8 +110204,7 @@
       "gridHeight": 56,
       "dataVersion": 1,
       "walkableCells": 1919,
-      "blockedCells": 5697,
-      "upcoming": true
+      "blockedCells": 5697
     },
     {
       "id": "EG03",
@@ -110694,8 +110215,7 @@
       "gridHeight": 120,
       "dataVersion": 1,
       "walkableCells": 1036,
-      "blockedCells": 6644,
-      "upcoming": true
+      "blockedCells": 6644
     },
     {
       "id": "EG04",
@@ -110706,8 +110226,7 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 1269,
-      "blockedCells": 6923,
-      "upcoming": true
+      "blockedCells": 6923
     },
     {
       "id": "EG05",
@@ -110718,8 +110237,7 @@
       "gridHeight": 128,
       "dataVersion": 1,
       "walkableCells": 2251,
-      "blockedCells": 6965,
-      "upcoming": true
+      "blockedCells": 6965
     },
     {
       "id": "EG06",
@@ -110730,8 +110248,7 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 992,
-      "blockedCells": 10976,
-      "upcoming": true
+      "blockedCells": 10976
     },
     {
       "id": "EG07",
@@ -110742,8 +110259,7 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 5202,
-      "blockedCells": 4654,
-      "upcoming": true
+      "blockedCells": 4654
     },
     {
       "id": "EG08",
@@ -110754,8 +110270,7 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 762,
-      "blockedCells": 6918,
-      "upcoming": true
+      "blockedCells": 6918
     },
     {
       "id": "ForestRoad_Map",
@@ -111756,8 +111271,7 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 4973,
-      "blockedCells": 4179,
-      "upcoming": true
+      "blockedCells": 4179
     },
     {
       "id": "ST02",
@@ -111768,8 +111282,7 @@
       "gridHeight": 72,
       "dataVersion": 1,
       "walkableCells": 1473,
-      "blockedCells": 7743,
-      "upcoming": true
+      "blockedCells": 7743
     },
     {
       "id": "ST03",
@@ -111780,8 +111293,7 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1014,
-      "blockedCells": 9738,
-      "upcoming": true
+      "blockedCells": 9738
     },
     {
       "id": "ST04",
@@ -111792,8 +111304,7 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 1043,
-      "blockedCells": 7661,
-      "upcoming": true
+      "blockedCells": 7661
     },
     {
       "id": "ST05",
@@ -111804,8 +111315,7 @@
       "gridHeight": 104,
       "dataVersion": 1,
       "walkableCells": 1035,
-      "blockedCells": 6453,
-      "upcoming": true
+      "blockedCells": 6453
     },
     {
       "id": "ST06",
@@ -111816,8 +111326,7 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 276,
-      "blockedCells": 8940,
-      "upcoming": true
+      "blockedCells": 8940
     },
     {
       "id": "ST07",
@@ -111828,8 +111337,7 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 517,
-      "blockedCells": 10043,
-      "upcoming": true
+      "blockedCells": 10043
     },
     {
       "id": "ST08",
@@ -111840,8 +111348,7 @@
       "gridHeight": 80,
       "dataVersion": 1,
       "walkableCells": 8881,
-      "blockedCells": 79,
-      "upcoming": true
+      "blockedCells": 79
     },
     {
       "id": "SunBuriedCave_Map",
@@ -114131,6 +113638,18 @@
         "BD07_Accessory",
         "BD08_Weapon"
       ]
+    },
+    {
+      "id": "CL01_Zone0",
+      "name": "The Plaza",
+      "color": "#00ff00",
+      "bossEnemyId": "",
+      "zoneTier": 0,
+      "minEnemyLevel": 1,
+      "maxEnemyLevel": 1,
+      "goldMultiplier": 1,
+      "enemies": [],
+      "shopItems": []
     },
     {
       "id": "DS01_Zone0",
@@ -143411,6 +142930,21 @@
   ],
   "areas": [
     {
+      "code": "CL01",
+      "mapId": "CL01",
+      "name": "Cloud Plaza",
+      "mapUnbuilt": false,
+      "world": "Cloud Plaza",
+      "minLevel": 1,
+      "maxLevel": 1,
+      "zoneCount": 1,
+      "enemyIds": [],
+      "bossIds": [],
+      "dropItemIds": [],
+      "bossDropItemIds": [],
+      "shopItemIds": []
+    },
+    {
       "code": "GL01",
       "mapId": "Grassland_Map",
       "name": "Grassland Plains",
@@ -149479,8 +149013,7 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "ST02",
@@ -149513,8 +149046,7 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "ST03",
@@ -149548,8 +149080,7 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "ST04",
@@ -149582,8 +149113,7 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "ST05",
@@ -149617,8 +149147,7 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "ST06",
@@ -149651,8 +149180,7 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "ST07",
@@ -149686,8 +149214,7 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "ST08",
@@ -149720,8 +149247,7 @@
         "ST06_Armor",
         "ST07_Accessory",
         "ST08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "EG01",
@@ -149755,8 +149281,7 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "EG02",
@@ -149789,8 +149314,7 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "EG03",
@@ -149824,8 +149348,7 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "EG04",
@@ -149858,8 +149381,7 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "EG05",
@@ -149893,8 +149415,7 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "EG06",
@@ -149927,8 +149448,7 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "EG07",
@@ -149962,8 +149482,7 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "EG08",
@@ -149996,8 +149515,7 @@
         "EG06_Armor",
         "EG07_Accessory",
         "EG08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "BD01",
@@ -150031,8 +149549,7 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "BD02",
@@ -150065,8 +149582,7 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "BD03",
@@ -150100,8 +149616,7 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "BD04",
@@ -150134,8 +149649,7 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "BD05",
@@ -150169,8 +149683,7 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "BD06",
@@ -150203,8 +149716,7 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "BD07",
@@ -150238,8 +149750,7 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ],
-      "upcoming": true
+      ]
     },
     {
       "code": "BD08",
@@ -150272,8 +149783,7 @@
         "BD06_Armor",
         "BD07_Accessory",
         "BD08_Weapon"
-      ],
-      "upcoming": true
+      ]
     }
   ],
   "characters": [
