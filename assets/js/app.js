@@ -1957,9 +1957,16 @@
         }).join('') + '</select>' : '') +
         '<span class="result-count" id="rc"></span>' +
       "</div></div>" +
-      '<div class="grid" id="grid"></div>';
+      '<div class="grid" id="grid"></div>' +
+      '<nav class="pager" id="pager" aria-label="' + esc(cfg.title) + ' pages"></nav>';
 
-    var grid = $("#grid", app), rc = $("#rc", app);
+    var grid = $("#grid", app), rc = $("#rc", app), pager = $("#pager", app);
+    // ⛔ PAGED. Every list rendered ALL matches into one grid — the item catalogue is 897 rows, so
+    // that is a single ~900-card innerHTML: slow to build, slow to scroll, and unusable on a phone.
+    // ⚠ The page resets to 1 on every search / filter / sort / tab change. A filter that leaves you
+    // on page 8 of a 2-page result looks exactly like an empty catalogue.
+    var PAGE_SIZE = 60, page = 0;
+    if (back && typeof saved.page === "number" && saved.page >= 0) page = saved.page;
     function apply() {
       var tab = cfg.tabs ? cfg.tabs[tabIdx] : null;
       var base = (tab && tab.test) ? cfg.items.filter(tab.test) : cfg.items;
@@ -1979,16 +1986,59 @@
         var sorter = cfg.sorts.filter(function (s) { return s.key === sortKey; })[0];
         if (sorter && sorter.compare) out = out.slice().sort(sorter.compare);
       }
-      grid.innerHTML = out.length ? out.map(function (x) { return cfg.card(x, tab); }).join("") : '<div class="empty" style="grid-column:1/-1">No matches.</div>';
-      rc.textContent = out.length + " / " + base.length;
+      var pages = Math.max(1, Math.ceil(out.length / PAGE_SIZE));
+      if (page > pages - 1) page = pages - 1;
+      if (page < 0) page = 0;
+      var from = page * PAGE_SIZE, slice = out.slice(from, from + PAGE_SIZE);
+      grid.innerHTML = slice.length
+        ? slice.map(function (x) { return cfg.card(x, tab); }).join("")
+        : '<div class="empty" style="grid-column:1/-1">No matches.</div>';
+      rc.textContent = out.length
+        ? (out.length > PAGE_SIZE
+            ? (from + 1) + "–" + (from + slice.length) + " of " + out.length + " / " + base.length
+            : out.length + " / " + base.length)
+        : "0 / " + base.length;
+
+      if (pages < 2) { pager.innerHTML = ""; return; }
+      // Window of page numbers around the current one, so 15 pages do not become 15 buttons on a
+      // phone. First and last are always reachable.
+      var nums = [], lo = Math.max(0, page - 2), hi = Math.min(pages - 1, page + 2);
+      if (lo > 0) nums.push(0);
+      if (lo > 1) nums.push(-1);                       // ellipsis
+      for (var i = lo; i <= hi; i++) nums.push(i);
+      if (hi < pages - 2) nums.push(-1);
+      if (hi < pages - 1) nums.push(pages - 1);
+      pager.innerHTML =
+        '<button type="button" class="pg-nav" data-pg="prev"' + (page === 0 ? " disabled" : "") +
+          ' aria-label="Previous page">&#8592;</button>' +
+        nums.map(function (n) {
+          return n < 0
+            ? '<span class="pg-gap" aria-hidden="true">&#8230;</span>'
+            : '<button type="button" class="pg-num' + (n === page ? " active" : "") + '" data-pg="' + n + '"' +
+              (n === page ? ' aria-current="page"' : "") + '>' + (n + 1) + "</button>";
+        }).join("") +
+        '<button type="button" class="pg-nav" data-pg="next"' + (page >= pages - 1 ? " disabled" : "") +
+          ' aria-label="Next page">&#8594;</button>';
+      Array.prototype.forEach.call(pager.querySelectorAll("button[data-pg]"), function (b) {
+        b.addEventListener("click", function () {
+          var v = b.getAttribute("data-pg");
+          page = v === "prev" ? page - 1 : v === "next" ? page + 1 : +v;
+          apply();
+          // Back to the top of the grid, not the top of the document — the filters stay in view.
+          var top = grid.getBoundingClientRect().top + window.pageYOffset - 90;
+          window.scrollTo(0, Math.max(0, top));
+        });
+      });
     }
     var qi = $("#q", app);
-    if (qi) { qi.value = q; qi.addEventListener("input", function () { q = qi.value.toLowerCase(); apply(); }); }
+    // ⚠ Every one of these resets to page 1. Narrowing a result set while sitting on page 8
+    // renders an empty grid that looks like "no results" rather than "you are past the end".
+    if (qi) { qi.value = q; qi.addEventListener("input", function () { q = qi.value.toLowerCase(); page = 0; apply(); }); }
     Array.prototype.forEach.call(app.querySelectorAll("select[data-key]"), function (sel) {
-      sel.addEventListener("change", function () { active[sel.getAttribute("data-key")] = sel.value || null; apply(); });
+      sel.addEventListener("change", function () { active[sel.getAttribute("data-key")] = sel.value || null; page = 0; apply(); });
     });
     var sortSelect = app.querySelector("select[data-sort]");
-    if (sortSelect) sortSelect.addEventListener("change", function () { sortKey = sortSelect.value; apply(); });
+    if (sortSelect) sortSelect.addEventListener("change", function () { sortKey = sortSelect.value; page = 0; apply(); });
     Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (btn) {
       btn.addEventListener("click", function () {
         tabIdx = +btn.getAttribute("data-i");
@@ -1998,12 +2048,12 @@
         btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
         var tab = cfg.tabs && cfg.tabs[tabIdx];
         if (tab && tab.mode) rememberGameMode(tab.mode, true);
-        apply(); window.scrollTo(0, 0);
+        page = 0; apply(); window.scrollTo(0, 0);
       });
     });
     // Persist the view (incl. scroll) right before navigating into a detail page.
     window.addEventListener("pagehide", function () {
-      try { sessionStorage.setItem(SKEY, JSON.stringify({ tab: tabIdx, q: q, filters: active, sort: sortKey, scrollY: window.pageYOffset || 0 })); } catch (e) {}
+      try { sessionStorage.setItem(SKEY, JSON.stringify({ tab: tabIdx, q: q, filters: active, sort: sortKey, page: page, scrollY: window.pageYOffset || 0 })); } catch (e) {}
     });
     apply();
     // Only restore scroll when returning via Back/Forward; fresh visits start at the top.

@@ -1496,3 +1496,28 @@ body { overflow-x:clip; }
 .fan-figure img { display:block; width:100%; height:auto; }
 .fan-figure figcaption { margin-top:.55rem; color:var(--muted); font-size:.8rem; }
 .fan-figure figcaption strong { color:var(--text); }
+
+/* ── Pager ──────────────────────────────────────────────────────────────────────────────────
+   Added with listView pagination (2026-09-16). The item catalogue is ~900 rows and every list
+   used to render all of them into one grid; lists are now 60 per page and this is the control.
+   ⚠ 44px minimum touch target on the buttons — the whole catalogue is browsed on a phone. */
+.pager {
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:.35rem;
+  margin:1.25rem 0 .5rem;
+}
+.pager button {
+  min-width:2.4rem; min-height:2.4rem; padding:.35rem .6rem;
+  color:var(--text); background:var(--panel-2); border:1px solid var(--border);
+  border-radius:.6rem; font-size:.85rem; font-weight:750; cursor:pointer;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.pager button:hover:not(:disabled) { background:var(--panel); border-color:var(--accent); }
+.pager button:disabled { opacity:.38; cursor:default; }
+.pager .pg-num.active {
+  background:var(--accent); border-color:var(--accent); color:#0d1117;
+}
+.pager .pg-gap { padding:0 .15rem; color:var(--muted); user-select:none; }
+@media (max-width:640px) {
+  .pager { gap:.3rem; }
+  .pager button { min-width:44px; min-height:44px; }
+}
