@@ -1001,8 +1001,16 @@ if (epoch4Released && !epoch4LiveInGame) {
     // answers "is this door leaving the region?" for both namings at once.
     const fw = mapWorld(dr.from), tw = mapWorld(dr.to);
     const ring = ["Stone", "Egypt", "The Temple"];
+    // ★ "onward" IS LOAD-BEARING, NOT DECORATION. `worldView` builds the connected CHAIN — the
+    // whole reason a region draws as a route rather than a grid — by walking doors whose kind is
+    // exactly "onward". Without it the BFS finds no edges, every map falls into the leftover tier,
+    // and the page renders a flat grid of cards under the caption "connected in travel order".
+    // Forward = same world, code-named, higher number: ST01 -> ST02 is onward, ST02 -> ST01 is back.
+    // Descriptively-named released maps do not need it — they have hand-authored WORLD_ROUTES.
+    const a = /^([A-Z]{2})(\d\d)$/.exec(dr.from), b = /^([A-Z]{2})(\d\d)$/.exec(dr.to);
+    const onward = a && b && a[1] === b[1] && +b[2] > +a[2];
     const kind = /^(WorldGate_Map|CV01)$/.test(dr.to) ? "worldgate"
-      : fw === tw ? ""                                        // ordinary door inside one region
+      : fw === tw ? (onward ? "onward" : "")                  // inside one region: forward, or back
       : (ring.includes(fw) && ring.includes(tw)) ? "ring"     // the Epoch 4 three-region ring
       : "region";
     const door = { to: dr.to, label: dr.name };

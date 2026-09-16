@@ -1504,8 +1504,15 @@
     // their real door graph, so Stone/Egypt/The Temple draw a connected chain instead of a flat
     // list. Only the within-region doors are used: ring doors leave the region and would make the
     // BFS jump worlds.
+    // ⛔ THE FALLBACK USED TO REQUIRE `upcoming`, SO IT DIED THE DAY THE CONTENT SHIPPED. Stone,
+    // Egypt and The Temple drew a proper chain while they were PLANNED; publishing them cleared
+    // `upcoming`, this branch stopped running, WORLD_ROUTES has no entry for them (it is a
+    // hand-written table, the fifth in this codebase to be caught by a new wave), and the page fell
+    // back to a flat grid of cards under the caption "connected in travel order".
+    // Keyed on `!route` now: ANY world without a hand-authored chain derives one from its own
+    // doors, so the next wave is drawn correctly without editing WORLD_ROUTES at all.
     var route = WORLD_ROUTES[w];
-    if (!route && s.maps.length && s.maps[0].upcoming) {
+    if (!route && s.maps.length) {
       var inWorld = {}; s.maps.forEach(function (m) { inWorld[m.id] = true; });
       var edges = {}, seen = {};
       s.maps.forEach(function (m) {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T13:55:30Z",
+  "generatedAt": "2026-09-16T13:58:55Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "5.0.0",
   "release": {
@@ -109889,7 +109889,8 @@
       "doors": [
         {
           "to": "AM02",
-          "label": "AM01_to_AM02"
+          "label": "AM01_to_AM02",
+          "kind": "onward"
         },
         {
           "to": "MZ08",
@@ -109915,7 +109916,8 @@
         },
         {
           "to": "AM03",
-          "label": "AM02_to_AM03"
+          "label": "AM02_to_AM03",
+          "kind": "onward"
         }
       ]
     },
@@ -109936,7 +109938,8 @@
         },
         {
           "to": "AM04",
-          "label": "AM03_to_AM04"
+          "label": "AM03_to_AM04",
+          "kind": "onward"
         }
       ]
     },
@@ -109957,7 +109960,8 @@
         },
         {
           "to": "AM05",
-          "label": "AM04_to_AM05"
+          "label": "AM04_to_AM05",
+          "kind": "onward"
         }
       ]
     },
@@ -110039,7 +110043,8 @@
       "doors": [
         {
           "to": "AZ02",
-          "label": "AZ01_to_AZ02"
+          "label": "AZ01_to_AZ02",
+          "kind": "onward"
         },
         {
           "to": "MZ09",
@@ -110065,7 +110070,8 @@
         },
         {
           "to": "AZ03",
-          "label": "AZ02_to_AZ03"
+          "label": "AZ02_to_AZ03",
+          "kind": "onward"
         }
       ]
     },
@@ -110086,7 +110092,8 @@
         },
         {
           "to": "AZ04",
-          "label": "AZ03_to_AZ04"
+          "label": "AZ03_to_AZ04",
+          "kind": "onward"
         }
       ]
     },
@@ -110107,7 +110114,8 @@
         },
         {
           "to": "AZ05",
-          "label": "AZ04_to_AZ05"
+          "label": "AZ04_to_AZ05",
+          "kind": "onward"
         }
       ]
     },
@@ -110146,7 +110154,8 @@
       "doors": [
         {
           "to": "BD02",
-          "label": "BD01_to_BD02"
+          "label": "BD01_to_BD02",
+          "kind": "onward"
         },
         {
           "to": "CL01",
@@ -110182,7 +110191,8 @@
         },
         {
           "to": "BD03",
-          "label": "BD02_to_BD03"
+          "label": "BD02_to_BD03",
+          "kind": "onward"
         }
       ]
     },
@@ -110203,7 +110213,8 @@
         },
         {
           "to": "BD04",
-          "label": "BD03_to_BD04"
+          "label": "BD03_to_BD04",
+          "kind": "onward"
         }
       ]
     },
@@ -110224,7 +110235,8 @@
         },
         {
           "to": "BD05",
-          "label": "BD04_to_BD05"
+          "label": "BD04_to_BD05",
+          "kind": "onward"
         }
       ]
     },
@@ -110245,7 +110257,8 @@
         },
         {
           "to": "BD06",
-          "label": "BD05_to_BD06"
+          "label": "BD05_to_BD06",
+          "kind": "onward"
         }
       ]
     },
@@ -110266,7 +110279,8 @@
         },
         {
           "to": "BD07",
-          "label": "BD06_to_BD07"
+          "label": "BD06_to_BD07",
+          "kind": "onward"
         }
       ]
     },
@@ -110287,7 +110301,8 @@
         },
         {
           "to": "BD08",
-          "label": "BD07_to_BD08"
+          "label": "BD07_to_BD08",
+          "kind": "onward"
         }
       ]
     },
@@ -110534,7 +110549,8 @@
         },
         {
           "to": "EG02",
-          "label": "EG01_to_EG02"
+          "label": "EG01_to_EG02",
+          "kind": "onward"
         },
         {
           "to": "ST01",
@@ -110560,7 +110576,8 @@
         },
         {
           "to": "EG03",
-          "label": "EG02_to_EG03"
+          "label": "EG02_to_EG03",
+          "kind": "onward"
         }
       ]
     },
@@ -110581,7 +110598,8 @@
         },
         {
           "to": "EG04",
-          "label": "EG03_to_EG04"
+          "label": "EG03_to_EG04",
+          "kind": "onward"
         }
       ]
     },
@@ -110602,7 +110620,8 @@
         },
         {
           "to": "EG05",
-          "label": "EG04_to_EG05"
+          "label": "EG04_to_EG05",
+          "kind": "onward"
         }
       ]
     },
@@ -110623,7 +110642,8 @@
         },
         {
           "to": "EG06",
-          "label": "EG05_to_EG06"
+          "label": "EG05_to_EG06",
+          "kind": "onward"
         }
       ]
     },
@@ -110644,7 +110664,8 @@
         },
         {
           "to": "EG07",
-          "label": "EG06_to_EG07"
+          "label": "EG06_to_EG07",
+          "kind": "onward"
         }
       ]
     },
@@ -110665,7 +110686,8 @@
         },
         {
           "to": "EG08",
-          "label": "EG07_to_EG08"
+          "label": "EG07_to_EG08",
+          "kind": "onward"
         }
       ]
     },
@@ -110920,15 +110942,18 @@
       "doors": [
         {
           "to": "GY02",
-          "label": "GY01_to_GY02"
+          "label": "GY01_to_GY02",
+          "kind": "onward"
         },
         {
           "to": "GY04",
-          "label": "GY01_to_GY04"
+          "label": "GY01_to_GY04",
+          "kind": "onward"
         },
         {
           "to": "GY09",
-          "label": "GY01_to_GY09"
+          "label": "GY01_to_GY09",
+          "kind": "onward"
         },
         {
           "to": "WorldGate_Map",
@@ -110954,11 +110979,13 @@
         },
         {
           "to": "GY03",
-          "label": "GY02_to_GY03"
+          "label": "GY02_to_GY03",
+          "kind": "onward"
         },
         {
           "to": "GY06",
-          "label": "GY02_to_GY06"
+          "label": "GY02_to_GY06",
+          "kind": "onward"
         }
       ]
     },
@@ -110979,15 +111006,18 @@
         },
         {
           "to": "GY05",
-          "label": "GY03_to_GY05"
+          "label": "GY03_to_GY05",
+          "kind": "onward"
         },
         {
           "to": "GY07",
-          "label": "GY03_to_GY07"
+          "label": "GY03_to_GY07",
+          "kind": "onward"
         },
         {
           "to": "GY08",
-          "label": "GY03_to_GY08"
+          "label": "GY03_to_GY08",
+          "kind": "onward"
         }
       ]
     },
@@ -111008,11 +111038,13 @@
         },
         {
           "to": "GY05",
-          "label": "GY04_to_GY05"
+          "label": "GY04_to_GY05",
+          "kind": "onward"
         },
         {
           "to": "GY06",
-          "label": "GY04_to_GY06"
+          "label": "GY04_to_GY06",
+          "kind": "onward"
         }
       ]
     },
@@ -111037,7 +111069,8 @@
         },
         {
           "to": "GY08",
-          "label": "GY05_to_GY08"
+          "label": "GY05_to_GY08",
+          "kind": "onward"
         },
         {
           "to": "LD01",
@@ -111067,11 +111100,13 @@
         },
         {
           "to": "GY09",
-          "label": "GY06_to_GY09"
+          "label": "GY06_to_GY09",
+          "kind": "onward"
         },
         {
           "to": "GY10",
-          "label": "GY06_to_GY10"
+          "label": "GY06_to_GY10",
+          "kind": "onward"
         }
       ]
     },
@@ -111092,7 +111127,8 @@
         },
         {
           "to": "GY08",
-          "label": "GY07_to_GY08"
+          "label": "GY07_to_GY08",
+          "kind": "onward"
         },
         {
           "to": "PX01",
@@ -111126,7 +111162,8 @@
         },
         {
           "to": "GY09",
-          "label": "GY08_to_GY09"
+          "label": "GY08_to_GY09",
+          "kind": "onward"
         }
       ]
     },
@@ -111218,7 +111255,8 @@
       "doors": [
         {
           "to": "IC02",
-          "label": "IC01_to_IC02"
+          "label": "IC01_to_IC02",
+          "kind": "onward"
         },
         {
           "to": "MZ07",
@@ -111244,7 +111282,8 @@
         },
         {
           "to": "IC03",
-          "label": "IC02_to_IC03"
+          "label": "IC02_to_IC03",
+          "kind": "onward"
         }
       ]
     },
@@ -111265,7 +111304,8 @@
         },
         {
           "to": "IC04",
-          "label": "IC03_to_IC04"
+          "label": "IC03_to_IC04",
+          "kind": "onward"
         }
       ]
     },
@@ -111286,7 +111326,8 @@
         },
         {
           "to": "IC05",
-          "label": "IC04_to_IC05"
+          "label": "IC04_to_IC05",
+          "kind": "onward"
         }
       ]
     },
@@ -111416,15 +111457,18 @@
         },
         {
           "to": "KR02",
-          "label": "KR01_to_KR02"
+          "label": "KR01_to_KR02",
+          "kind": "onward"
         },
         {
           "to": "KR03",
-          "label": "KR01_to_KR03"
+          "label": "KR01_to_KR03",
+          "kind": "onward"
         },
         {
           "to": "KR04",
-          "label": "KR01_to_KR04"
+          "label": "KR01_to_KR04",
+          "kind": "onward"
         }
       ]
     },
@@ -111445,11 +111489,13 @@
         },
         {
           "to": "KR05",
-          "label": "KR02_to_KR05"
+          "label": "KR02_to_KR05",
+          "kind": "onward"
         },
         {
           "to": "KR07",
-          "label": "KR02_to_KR07"
+          "label": "KR02_to_KR07",
+          "kind": "onward"
         }
       ]
     },
@@ -111470,15 +111516,18 @@
         },
         {
           "to": "KR04",
-          "label": "KR03_to_KR04"
+          "label": "KR03_to_KR04",
+          "kind": "onward"
         },
         {
           "to": "KR05",
-          "label": "KR03_to_KR05"
+          "label": "KR03_to_KR05",
+          "kind": "onward"
         },
         {
           "to": "KR06",
-          "label": "KR03_to_KR06"
+          "label": "KR03_to_KR06",
+          "kind": "onward"
         }
       ]
     },
@@ -111503,7 +111552,8 @@
         },
         {
           "to": "KR06",
-          "label": "KR04_to_KR06"
+          "label": "KR04_to_KR06",
+          "kind": "onward"
         }
       ]
     },
@@ -111528,11 +111578,13 @@
         },
         {
           "to": "KR07",
-          "label": "KR05_to_KR07"
+          "label": "KR05_to_KR07",
+          "kind": "onward"
         },
         {
           "to": "KR08",
-          "label": "KR05_to_KR08"
+          "label": "KR05_to_KR08",
+          "kind": "onward"
         }
       ]
     },
@@ -111557,7 +111609,8 @@
         },
         {
           "to": "KR07",
-          "label": "KR06_to_KR07"
+          "label": "KR06_to_KR07",
+          "kind": "onward"
         }
       ]
     },
@@ -111669,15 +111722,18 @@
         },
         {
           "to": "LD02",
-          "label": "LD01_to_LD02"
+          "label": "LD01_to_LD02",
+          "kind": "onward"
         },
         {
           "to": "LD03",
-          "label": "LD01_to_LD03"
+          "label": "LD01_to_LD03",
+          "kind": "onward"
         },
         {
           "to": "LD04",
-          "label": "LD01_to_LD04"
+          "label": "LD01_to_LD04",
+          "kind": "onward"
         }
       ]
     },
@@ -111698,19 +111754,23 @@
         },
         {
           "to": "LD03",
-          "label": "LD02_to_LD03"
+          "label": "LD02_to_LD03",
+          "kind": "onward"
         },
         {
           "to": "LD05",
-          "label": "LD02_to_LD05"
+          "label": "LD02_to_LD05",
+          "kind": "onward"
         },
         {
           "to": "LD06",
-          "label": "LD02_to_LD06"
+          "label": "LD02_to_LD06",
+          "kind": "onward"
         },
         {
           "to": "LD07",
-          "label": "LD02_to_LD07"
+          "label": "LD02_to_LD07",
+          "kind": "onward"
         }
       ]
     },
@@ -111735,7 +111795,8 @@
         },
         {
           "to": "LD07",
-          "label": "LD03_to_LD07"
+          "label": "LD03_to_LD07",
+          "kind": "onward"
         }
       ]
     },
@@ -111756,15 +111817,18 @@
         },
         {
           "to": "LD05",
-          "label": "LD04_to_LD05"
+          "label": "LD04_to_LD05",
+          "kind": "onward"
         },
         {
           "to": "LD06",
-          "label": "LD04_to_LD06"
+          "label": "LD04_to_LD06",
+          "kind": "onward"
         },
         {
           "to": "LD07",
-          "label": "LD04_to_LD07"
+          "label": "LD04_to_LD07",
+          "kind": "onward"
         }
       ]
     },
@@ -111789,7 +111853,8 @@
         },
         {
           "to": "LD08",
-          "label": "LD05_to_LD08"
+          "label": "LD05_to_LD08",
+          "kind": "onward"
         }
       ]
     },
@@ -111814,7 +111879,8 @@
         },
         {
           "to": "LD07",
-          "label": "LD06_to_LD07"
+          "label": "LD06_to_LD07",
+          "kind": "onward"
         }
       ]
     },
@@ -112074,15 +112140,18 @@
       "doors": [
         {
           "to": "MZ02",
-          "label": "MZ01_to_MZ02"
+          "label": "MZ01_to_MZ02",
+          "kind": "onward"
         },
         {
           "to": "MZ04",
-          "label": "MZ01_to_MZ04"
+          "label": "MZ01_to_MZ04",
+          "kind": "onward"
         },
         {
           "to": "MZ06",
-          "label": "MZ01_to_MZ06"
+          "label": "MZ01_to_MZ06",
+          "kind": "onward"
         },
         {
           "to": "WorldGate_Map",
@@ -112108,11 +112177,13 @@
         },
         {
           "to": "MZ03",
-          "label": "MZ02_to_MZ03"
+          "label": "MZ02_to_MZ03",
+          "kind": "onward"
         },
         {
           "to": "MZ10",
-          "label": "MZ02_to_MZ10"
+          "label": "MZ02_to_MZ10",
+          "kind": "onward"
         }
       ]
     },
@@ -112133,11 +112204,13 @@
         },
         {
           "to": "MZ04",
-          "label": "MZ03_to_MZ04"
+          "label": "MZ03_to_MZ04",
+          "kind": "onward"
         },
         {
           "to": "MZ05",
-          "label": "MZ03_to_MZ05"
+          "label": "MZ03_to_MZ05",
+          "kind": "onward"
         }
       ]
     },
@@ -112162,7 +112235,8 @@
         },
         {
           "to": "MZ11",
-          "label": "MZ04_to_MZ11"
+          "label": "MZ04_to_MZ11",
+          "kind": "onward"
         }
       ]
     },
@@ -112183,19 +112257,23 @@
         },
         {
           "to": "MZ06",
-          "label": "MZ05_to_MZ06"
+          "label": "MZ05_to_MZ06",
+          "kind": "onward"
         },
         {
           "to": "MZ07",
-          "label": "MZ05_to_MZ07"
+          "label": "MZ05_to_MZ07",
+          "kind": "onward"
         },
         {
           "to": "MZ08",
-          "label": "MZ05_to_MZ08"
+          "label": "MZ05_to_MZ08",
+          "kind": "onward"
         },
         {
           "to": "MZ09",
-          "label": "MZ05_to_MZ09"
+          "label": "MZ05_to_MZ09",
+          "kind": "onward"
         }
       ]
     },
@@ -112220,7 +112298,8 @@
         },
         {
           "to": "MZ12",
-          "label": "MZ06_to_MZ12"
+          "label": "MZ06_to_MZ12",
+          "kind": "onward"
         }
       ]
     },
@@ -112359,11 +112438,13 @@
         },
         {
           "to": "PX02",
-          "label": "PX01_to_PX02"
+          "label": "PX01_to_PX02",
+          "kind": "onward"
         },
         {
           "to": "PX03",
-          "label": "PX01_to_PX03"
+          "label": "PX01_to_PX03",
+          "kind": "onward"
         }
       ]
     },
@@ -112384,11 +112465,13 @@
         },
         {
           "to": "PX04",
-          "label": "PX02_to_PX04"
+          "label": "PX02_to_PX04",
+          "kind": "onward"
         },
         {
           "to": "PX05",
-          "label": "PX02_to_PX05"
+          "label": "PX02_to_PX05",
+          "kind": "onward"
         }
       ]
     },
@@ -112409,11 +112492,13 @@
         },
         {
           "to": "PX04",
-          "label": "PX03_to_PX04"
+          "label": "PX03_to_PX04",
+          "kind": "onward"
         },
         {
           "to": "PX05",
-          "label": "PX03_to_PX05"
+          "label": "PX03_to_PX05",
+          "kind": "onward"
         }
       ]
     },
@@ -112438,11 +112523,13 @@
         },
         {
           "to": "PX05",
-          "label": "PX04_to_PX05"
+          "label": "PX04_to_PX05",
+          "kind": "onward"
         },
         {
           "to": "PX06",
-          "label": "PX04_to_PX06"
+          "label": "PX04_to_PX06",
+          "kind": "onward"
         }
       ]
     },
@@ -112471,7 +112558,8 @@
         },
         {
           "to": "PX06",
-          "label": "PX05_to_PX06"
+          "label": "PX05_to_PX06",
+          "kind": "onward"
         }
       ]
     },
@@ -112496,11 +112584,13 @@
         },
         {
           "to": "PX07",
-          "label": "PX06_to_PX07"
+          "label": "PX06_to_PX07",
+          "kind": "onward"
         },
         {
           "to": "PX08",
-          "label": "PX06_to_PX08"
+          "label": "PX06_to_PX08",
+          "kind": "onward"
         }
       ]
     },
@@ -112521,11 +112611,13 @@
         },
         {
           "to": "PX08",
-          "label": "PX07_to_PX08"
+          "label": "PX07_to_PX08",
+          "kind": "onward"
         },
         {
           "to": "PX09",
-          "label": "PX07_to_PX09"
+          "label": "PX07_to_PX09",
+          "kind": "onward"
         }
       ]
     },
@@ -112550,7 +112642,8 @@
         },
         {
           "to": "PX09",
-          "label": "PX08_to_PX09"
+          "label": "PX08_to_PX09",
+          "kind": "onward"
         }
       ]
     },
@@ -112575,11 +112668,13 @@
         },
         {
           "to": "PX10",
-          "label": "PX09_to_PX10"
+          "label": "PX09_to_PX10",
+          "kind": "onward"
         },
         {
           "to": "PX11",
-          "label": "PX09_to_PX11"
+          "label": "PX09_to_PX11",
+          "kind": "onward"
         }
       ]
     },
@@ -112617,15 +112712,18 @@
         },
         {
           "to": "PX12",
-          "label": "PX11_to_PX12"
+          "label": "PX11_to_PX12",
+          "kind": "onward"
         },
         {
           "to": "PX13",
-          "label": "PX11_to_PX13"
+          "label": "PX11_to_PX13",
+          "kind": "onward"
         },
         {
           "to": "PX14",
-          "label": "PX11_to_PX14"
+          "label": "PX11_to_PX14",
+          "kind": "onward"
         }
       ]
     },
@@ -112646,11 +112744,13 @@
         },
         {
           "to": "PX13",
-          "label": "PX12_to_PX13"
+          "label": "PX12_to_PX13",
+          "kind": "onward"
         },
         {
           "to": "PX16",
-          "label": "PX12_to_PX16"
+          "label": "PX12_to_PX16",
+          "kind": "onward"
         }
       ]
     },
@@ -112675,7 +112775,8 @@
         },
         {
           "to": "PX14",
-          "label": "PX13_to_PX14"
+          "label": "PX13_to_PX14",
+          "kind": "onward"
         }
       ]
     },
@@ -112700,11 +112801,13 @@
         },
         {
           "to": "PX15",
-          "label": "PX14_to_PX15"
+          "label": "PX14_to_PX15",
+          "kind": "onward"
         },
         {
           "to": "PX16",
-          "label": "PX14_to_PX16"
+          "label": "PX14_to_PX16",
+          "kind": "onward"
         }
       ]
     },
@@ -112746,11 +112849,13 @@
         },
         {
           "to": "PX17",
-          "label": "PX16_to_PX17"
+          "label": "PX16_to_PX17",
+          "kind": "onward"
         },
         {
           "to": "PX18",
-          "label": "PX16_to_PX18"
+          "label": "PX16_to_PX18",
+          "kind": "onward"
         }
       ]
     },
@@ -112771,11 +112876,13 @@
         },
         {
           "to": "PX18",
-          "label": "PX17_to_PX18"
+          "label": "PX17_to_PX18",
+          "kind": "onward"
         },
         {
           "to": "PX19",
-          "label": "PX17_to_PX19"
+          "label": "PX17_to_PX19",
+          "kind": "onward"
         }
       ]
     },
@@ -112800,7 +112907,8 @@
         },
         {
           "to": "PX19",
-          "label": "PX18_to_PX19"
+          "label": "PX18_to_PX19",
+          "kind": "onward"
         }
       ]
     },
@@ -112825,7 +112933,8 @@
         },
         {
           "to": "PX20",
-          "label": "PX19_to_PX20"
+          "label": "PX19_to_PX20",
+          "kind": "onward"
         }
       ]
     },
@@ -112930,7 +113039,8 @@
         },
         {
           "to": "ST02",
-          "label": "ST01_to_ST02"
+          "label": "ST01_to_ST02",
+          "kind": "onward"
         }
       ]
     },
@@ -112951,7 +113061,8 @@
         },
         {
           "to": "ST03",
-          "label": "ST02_to_ST03"
+          "label": "ST02_to_ST03",
+          "kind": "onward"
         }
       ]
     },
@@ -112972,7 +113083,8 @@
         },
         {
           "to": "ST04",
-          "label": "ST03_to_ST04"
+          "label": "ST03_to_ST04",
+          "kind": "onward"
         }
       ]
     },
@@ -112993,7 +113105,8 @@
         },
         {
           "to": "ST05",
-          "label": "ST04_to_ST05"
+          "label": "ST04_to_ST05",
+          "kind": "onward"
         }
       ]
     },
@@ -113014,7 +113127,8 @@
         },
         {
           "to": "ST06",
-          "label": "ST05_to_ST06"
+          "label": "ST05_to_ST06",
+          "kind": "onward"
         }
       ]
     },
@@ -113035,7 +113149,8 @@
         },
         {
           "to": "ST07",
-          "label": "ST06_to_ST07"
+          "label": "ST06_to_ST07",
+          "kind": "onward"
         }
       ]
     },
@@ -113056,7 +113171,8 @@
         },
         {
           "to": "ST08",
-          "label": "ST07_to_ST08"
+          "label": "ST07_to_ST08",
+          "kind": "onward"
         }
       ]
     },
