@@ -9,6 +9,7 @@ import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
+import { doorGraph } from "./door-graph.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE = path.resolve(__dirname, "..");
@@ -977,6 +978,47 @@ if (epoch4Released && !epoch4LiveInGame) {
     if (isE4(i.sourceRegion) || (i.isHardModeItem && EPOCH4_HARD_MIRROR.test(i.sourceRegion || "")))
       i.upcoming = true;
   console.log(`Epoch 4 marked UPCOMING: ${marked} area(s) — browsable on the wiki, not reachable in game.`);
+}
+
+// ── MAP CONNECTIONS ────────────────────────────────────────────────────────────────────────
+// ⛔ THE WIKI LOST ITS LINKS BY SUCCEEDING. Connections were only ever rendered from
+// upcoming.json, which carried 56 doors over the 25 PLANNED Epoch 4 maps. Publishing the real
+// assets replaced those records with ones built from .asset YAML, which exports no doors — so the
+// Connections table went from 25 maps to 0 of 139. The same shape as the Upcoming badge: the
+// planned data was richer than the real data, and "real area wins" threw the difference away.
+//
+// ⚠ AND IT WAS NEVER ONLY EPOCH 4. No released map had ever carried its doors, so the Graveyard,
+// the Maze and the whole main route have been unlinked on this wiki since it launched. Reading the
+// scene fixes all 139 at once.
+{
+  const byMap = new Map();
+  for (const dr of doorGraph(GAME)) {
+    if (!byMap.has(dr.from)) byMap.set(dr.from, []);
+    // `kind` selects the icon and label in app.js DOOR_KIND, whose vocabulary is exactly
+    // worldgate / ring / region, with an unset kind falling back to a plain "Door". Classify with
+    // mapWorld() rather than by string shape: released maps are named descriptively
+    // (Grassland_Map -> ForestRoad_Map) and this batch by code (ST01 -> ST02), so only the world
+    // answers "is this door leaving the region?" for both namings at once.
+    const fw = mapWorld(dr.from), tw = mapWorld(dr.to);
+    const ring = ["Stone", "Egypt", "The Temple"];
+    const kind = /^(WorldGate_Map|CV01)$/.test(dr.to) ? "worldgate"
+      : fw === tw ? ""                                        // ordinary door inside one region
+      : (ring.includes(fw) && ring.includes(tw)) ? "ring"     // the Epoch 4 three-region ring
+      : "region";
+    const door = { to: dr.to, label: dr.name };
+    if (kind) door.kind = kind;
+    byMap.get(dr.from).push(door);
+  }
+  let linked = 0;
+  for (const m of maps) {
+    const ds = byMap.get(m.id);
+    if (!ds || !ds.length) continue;
+    // Stable order so a rebuild with no content change produces no diff.
+    m.doors = ds.sort((a, b) => (a.to + (a.label || "")).localeCompare(b.to + (b.label || "")));
+    linked++;
+  }
+  const total = [...byMap.values()].reduce((n, v) => n + v.length, 0);
+  console.log(`Map connections: ${linked}/${maps.length} maps linked, ${total} doors.`);
 }
 
 const root = {

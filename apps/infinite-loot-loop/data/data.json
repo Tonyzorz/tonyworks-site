@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T13:48:18Z",
+  "generatedAt": "2026-09-16T13:55:30Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "5.0.0",
   "release": {
@@ -109885,7 +109885,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 9216,
-      "blockedCells": 0
+      "blockedCells": 0,
+      "doors": [
+        {
+          "to": "AM02",
+          "label": "AM01_to_AM02"
+        },
+        {
+          "to": "MZ08",
+          "label": "AM01_to_MZ08",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "AM02",
@@ -109896,7 +109907,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 9216,
-      "blockedCells": 0
+      "blockedCells": 0,
+      "doors": [
+        {
+          "to": "AM01",
+          "label": "AM02_to_AM01"
+        },
+        {
+          "to": "AM03",
+          "label": "AM02_to_AM03"
+        }
+      ]
     },
     {
       "id": "AM03",
@@ -109907,7 +109928,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1310,
-      "blockedCells": 7906
+      "blockedCells": 7906,
+      "doors": [
+        {
+          "to": "AM02",
+          "label": "AM03_to_AM02"
+        },
+        {
+          "to": "AM04",
+          "label": "AM03_to_AM04"
+        }
+      ]
     },
     {
       "id": "AM04",
@@ -109918,7 +109949,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1111,
-      "blockedCells": 8105
+      "blockedCells": 8105,
+      "doors": [
+        {
+          "to": "AM03",
+          "label": "AM04_to_AM03"
+        },
+        {
+          "to": "AM05",
+          "label": "AM04_to_AM05"
+        }
+      ]
     },
     {
       "id": "AM05",
@@ -109929,7 +109970,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1110,
-      "blockedCells": 8106
+      "blockedCells": 8106,
+      "doors": [
+        {
+          "to": "AM04",
+          "label": "AM05_to_AM04"
+        },
+        {
+          "to": "MZ05",
+          "label": "AM05_to_MZ05",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "AncientBurialPassage_Map",
@@ -109940,7 +109992,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3039,
-      "blockedCells": 6177
+      "blockedCells": 6177,
+      "doors": [
+        {
+          "to": "DesertBossRoom_Map",
+          "label": "DS05_to_DS06"
+        },
+        {
+          "to": "DesertCrossroads_Map",
+          "label": "DS05_to_DS02"
+        }
+      ]
     },
     {
       "id": "AshenForest_Map",
@@ -109951,7 +110013,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 7056,
-      "blockedCells": 2160
+      "blockedCells": 2160,
+      "doors": [
+        {
+          "to": "DeepForest_Map",
+          "label": "FR04_to_FR03"
+        },
+        {
+          "to": "VolcanicApproach_Map",
+          "label": "FR04_to_VO01",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "AZ01",
@@ -109962,7 +110035,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1469,
-      "blockedCells": 7747
+      "blockedCells": 7747,
+      "doors": [
+        {
+          "to": "AZ02",
+          "label": "AZ01_to_AZ02"
+        },
+        {
+          "to": "MZ09",
+          "label": "AZ01_to_MZ09",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "AZ02",
@@ -109973,7 +110057,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2979,
-      "blockedCells": 6237
+      "blockedCells": 6237,
+      "doors": [
+        {
+          "to": "AZ01",
+          "label": "AZ02_to_AZ01"
+        },
+        {
+          "to": "AZ03",
+          "label": "AZ02_to_AZ03"
+        }
+      ]
     },
     {
       "id": "AZ03",
@@ -109984,7 +110078,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2704,
-      "blockedCells": 6512
+      "blockedCells": 6512,
+      "doors": [
+        {
+          "to": "AZ02",
+          "label": "AZ03_to_AZ02"
+        },
+        {
+          "to": "AZ04",
+          "label": "AZ03_to_AZ04"
+        }
+      ]
     },
     {
       "id": "AZ04",
@@ -109995,7 +110099,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1360,
-      "blockedCells": 7856
+      "blockedCells": 7856,
+      "doors": [
+        {
+          "to": "AZ03",
+          "label": "AZ04_to_AZ03"
+        },
+        {
+          "to": "AZ05",
+          "label": "AZ04_to_AZ05"
+        }
+      ]
     },
     {
       "id": "AZ05",
@@ -110006,7 +110120,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3229,
-      "blockedCells": 5987
+      "blockedCells": 5987,
+      "doors": [
+        {
+          "to": "AZ04",
+          "label": "AZ05_to_AZ04"
+        },
+        {
+          "to": "MZ05",
+          "label": "AZ05_to_MZ05",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "BD01",
@@ -110017,7 +110142,28 @@
       "gridHeight": 128,
       "dataVersion": 1,
       "walkableCells": 1609,
-      "blockedCells": 7607
+      "blockedCells": 7607,
+      "doors": [
+        {
+          "to": "BD02",
+          "label": "BD01_to_BD02"
+        },
+        {
+          "to": "CL01",
+          "label": "BD01_to_CL01",
+          "kind": "region"
+        },
+        {
+          "to": "EG01",
+          "label": "BD01_to_EG01",
+          "kind": "ring"
+        },
+        {
+          "to": "ST01",
+          "label": "BD01_to_ST01",
+          "kind": "ring"
+        }
+      ]
     },
     {
       "id": "BD02",
@@ -110028,7 +110174,17 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 3496,
-      "blockedCells": 7064
+      "blockedCells": 7064,
+      "doors": [
+        {
+          "to": "BD01",
+          "label": "BD02_to_BD01"
+        },
+        {
+          "to": "BD03",
+          "label": "BD02_to_BD03"
+        }
+      ]
     },
     {
       "id": "BD03",
@@ -110039,7 +110195,17 @@
       "gridHeight": 120,
       "dataVersion": 1,
       "walkableCells": 1513,
-      "blockedCells": 6167
+      "blockedCells": 6167,
+      "doors": [
+        {
+          "to": "BD02",
+          "label": "BD03_to_BD02"
+        },
+        {
+          "to": "BD04",
+          "label": "BD03_to_BD04"
+        }
+      ]
     },
     {
       "id": "BD04",
@@ -110050,7 +110216,17 @@
       "gridHeight": 72,
       "dataVersion": 1,
       "walkableCells": 1373,
-      "blockedCells": 8419
+      "blockedCells": 8419,
+      "doors": [
+        {
+          "to": "BD03",
+          "label": "BD04_to_BD03"
+        },
+        {
+          "to": "BD05",
+          "label": "BD04_to_BD05"
+        }
+      ]
     },
     {
       "id": "BD05",
@@ -110061,7 +110237,17 @@
       "gridHeight": 56,
       "dataVersion": 1,
       "walkableCells": 948,
-      "blockedCells": 7564
+      "blockedCells": 7564,
+      "doors": [
+        {
+          "to": "BD04",
+          "label": "BD05_to_BD04"
+        },
+        {
+          "to": "BD06",
+          "label": "BD05_to_BD06"
+        }
+      ]
     },
     {
       "id": "BD06",
@@ -110072,7 +110258,17 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 880,
-      "blockedCells": 7568
+      "blockedCells": 7568,
+      "doors": [
+        {
+          "to": "BD05",
+          "label": "BD06_to_BD05"
+        },
+        {
+          "to": "BD07",
+          "label": "BD06_to_BD07"
+        }
+      ]
     },
     {
       "id": "BD07",
@@ -110083,7 +110279,17 @@
       "gridHeight": 56,
       "dataVersion": 1,
       "walkableCells": 1408,
-      "blockedCells": 5760
+      "blockedCells": 5760,
+      "doors": [
+        {
+          "to": "BD06",
+          "label": "BD07_to_BD06"
+        },
+        {
+          "to": "BD08",
+          "label": "BD07_to_BD08"
+        }
+      ]
     },
     {
       "id": "BD08",
@@ -110094,7 +110300,18 @@
       "gridHeight": 80,
       "dataVersion": 1,
       "walkableCells": 2909,
-      "blockedCells": 5411
+      "blockedCells": 5411,
+      "doors": [
+        {
+          "to": "BD07",
+          "label": "BD08_to_BD07"
+        },
+        {
+          "to": "CL01",
+          "label": "BD08_Portal",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "CL01",
@@ -110105,7 +110322,29 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 5148,
-      "blockedCells": 4068
+      "blockedCells": 4068,
+      "doors": [
+        {
+          "to": "BD01",
+          "label": "CL01_to_BD01",
+          "kind": "region"
+        },
+        {
+          "to": "EG01",
+          "label": "CL01_to_EG01",
+          "kind": "region"
+        },
+        {
+          "to": "ST01",
+          "label": "CL01_to_ST01",
+          "kind": "region"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "CL01_to_CV01",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "CoralMaze_Map",
@@ -110116,7 +110355,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4916,
-      "blockedCells": 4300
+      "blockedCells": 4300,
+      "doors": [
+        {
+          "to": "GiantClamBossRoom_Map",
+          "label": "UW02_to_UW06"
+        },
+        {
+          "to": "ShallowCoralReef_Map",
+          "label": "UW02_to_UW01"
+        }
+      ]
     },
     {
       "id": "DarkForest_Map",
@@ -110127,7 +110376,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1553,
-      "blockedCells": 7663
+      "blockedCells": 7663,
+      "doors": [
+        {
+          "to": "DeepForest_Map",
+          "label": "FR02_to_FR03"
+        },
+        {
+          "to": "ForestRoad_Map",
+          "label": "FR02_to_FR01"
+        }
+      ]
     },
     {
       "id": "DeepForest_Map",
@@ -110138,7 +110397,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1762,
-      "blockedCells": 7454
+      "blockedCells": 7454,
+      "doors": [
+        {
+          "to": "AshenForest_Map",
+          "label": "FR03_to_FR04"
+        },
+        {
+          "to": "DarkForest_Map",
+          "label": "FR03_to_FR02"
+        }
+      ]
     },
     {
       "id": "DeepTrench_Map",
@@ -110149,7 +110418,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1710,
-      "blockedCells": 7506
+      "blockedCells": 7506,
+      "doors": [
+        {
+          "to": "MainUnderwaterBossRoom_Map",
+          "label": "UW04_to_UW07"
+        },
+        {
+          "to": "ShallowCoralReef_Map",
+          "label": "UW04_to_UW01"
+        }
+      ]
     },
     {
       "id": "DesertBossRoom_Map",
@@ -110160,7 +110439,26 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 7212,
-      "blockedCells": 2004
+      "blockedCells": 2004,
+      "doors": [
+        {
+          "to": "AncientBurialPassage_Map",
+          "label": "DS06_to_DS05"
+        },
+        {
+          "to": "Grassland_Map",
+          "label": "DS06_to_GL01",
+          "kind": "region"
+        },
+        {
+          "to": "SandstoneTunnel_Map",
+          "label": "DS06_to_DS04"
+        },
+        {
+          "to": "SunBuriedCave_Map",
+          "label": "DS06_to_DS03"
+        }
+      ]
     },
     {
       "id": "DesertCrossroads_Map",
@@ -110171,7 +110469,25 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 6888,
-      "blockedCells": 2328
+      "blockedCells": 2328,
+      "doors": [
+        {
+          "to": "AncientBurialPassage_Map",
+          "label": "DS02_to_DS05"
+        },
+        {
+          "to": "DesertOutskirts_Map",
+          "label": "DS02_to_DS01"
+        },
+        {
+          "to": "SandstoneTunnel_Map",
+          "label": "DS02_to_DS04"
+        },
+        {
+          "to": "SunBuriedCave_Map",
+          "label": "DS02_to_DS03"
+        }
+      ]
     },
     {
       "id": "DesertOutskirts_Map",
@@ -110182,7 +110498,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 6130,
-      "blockedCells": 3086
+      "blockedCells": 3086,
+      "doors": [
+        {
+          "to": "DesertCrossroads_Map",
+          "label": "DS01_to_DS02"
+        },
+        {
+          "to": "Grassland_Map",
+          "label": "DS01_to_GL01",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "EG01",
@@ -110193,7 +110520,28 @@
       "gridHeight": 112,
       "dataVersion": 1,
       "walkableCells": 1641,
-      "blockedCells": 8215
+      "blockedCells": 8215,
+      "doors": [
+        {
+          "to": "BD01",
+          "label": "EG01_to_BD01",
+          "kind": "ring"
+        },
+        {
+          "to": "CL01",
+          "label": "EG01_to_CL01",
+          "kind": "region"
+        },
+        {
+          "to": "EG02",
+          "label": "EG01_to_EG02"
+        },
+        {
+          "to": "ST01",
+          "label": "EG01_to_ST01",
+          "kind": "ring"
+        }
+      ]
     },
     {
       "id": "EG02",
@@ -110204,7 +110552,17 @@
       "gridHeight": 56,
       "dataVersion": 1,
       "walkableCells": 1919,
-      "blockedCells": 5697
+      "blockedCells": 5697,
+      "doors": [
+        {
+          "to": "EG01",
+          "label": "EG02_to_EG01"
+        },
+        {
+          "to": "EG03",
+          "label": "EG02_to_EG03"
+        }
+      ]
     },
     {
       "id": "EG03",
@@ -110215,7 +110573,17 @@
       "gridHeight": 120,
       "dataVersion": 1,
       "walkableCells": 1036,
-      "blockedCells": 6644
+      "blockedCells": 6644,
+      "doors": [
+        {
+          "to": "EG02",
+          "label": "EG03_to_EG02"
+        },
+        {
+          "to": "EG04",
+          "label": "EG03_to_EG04"
+        }
+      ]
     },
     {
       "id": "EG04",
@@ -110226,7 +110594,17 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 1269,
-      "blockedCells": 6923
+      "blockedCells": 6923,
+      "doors": [
+        {
+          "to": "EG03",
+          "label": "EG04_to_EG03"
+        },
+        {
+          "to": "EG05",
+          "label": "EG04_to_EG05"
+        }
+      ]
     },
     {
       "id": "EG05",
@@ -110237,7 +110615,17 @@
       "gridHeight": 128,
       "dataVersion": 1,
       "walkableCells": 2251,
-      "blockedCells": 6965
+      "blockedCells": 6965,
+      "doors": [
+        {
+          "to": "EG04",
+          "label": "EG05_to_EG04"
+        },
+        {
+          "to": "EG06",
+          "label": "EG05_to_EG06"
+        }
+      ]
     },
     {
       "id": "EG06",
@@ -110248,7 +110636,17 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 992,
-      "blockedCells": 10976
+      "blockedCells": 10976,
+      "doors": [
+        {
+          "to": "EG05",
+          "label": "EG06_to_EG05"
+        },
+        {
+          "to": "EG07",
+          "label": "EG06_to_EG07"
+        }
+      ]
     },
     {
       "id": "EG07",
@@ -110259,7 +110657,17 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 5202,
-      "blockedCells": 4654
+      "blockedCells": 4654,
+      "doors": [
+        {
+          "to": "EG06",
+          "label": "EG07_to_EG06"
+        },
+        {
+          "to": "EG08",
+          "label": "EG07_to_EG08"
+        }
+      ]
     },
     {
       "id": "EG08",
@@ -110270,7 +110678,18 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 762,
-      "blockedCells": 6918
+      "blockedCells": 6918,
+      "doors": [
+        {
+          "to": "CL01",
+          "label": "EG08_Portal",
+          "kind": "region"
+        },
+        {
+          "to": "EG07",
+          "label": "EG08_to_EG07"
+        }
+      ]
     },
     {
       "id": "ForestRoad_Map",
@@ -110281,7 +110700,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1350,
-      "blockedCells": 7866
+      "blockedCells": 7866,
+      "doors": [
+        {
+          "to": "DarkForest_Map",
+          "label": "FR01_to_FR02"
+        },
+        {
+          "to": "Grassland_Map",
+          "label": "FR01_to_GL01",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "GiantClamBossRoom_Map",
@@ -110292,7 +110722,13 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2621,
-      "blockedCells": 6595
+      "blockedCells": 6595,
+      "doors": [
+        {
+          "to": "CoralMaze_Map",
+          "label": "UW06_to_UW02"
+        }
+      ]
     },
     {
       "id": "Grassland_Map",
@@ -110303,7 +110739,29 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 6304,
-      "blockedCells": 2912
+      "blockedCells": 2912,
+      "doors": [
+        {
+          "to": "DesertOutskirts_Map",
+          "label": "GL01_to_DS01",
+          "kind": "region"
+        },
+        {
+          "to": "ForestRoad_Map",
+          "label": "GL01_to_FR01",
+          "kind": "region"
+        },
+        {
+          "to": "ShallowCoralReef_Map",
+          "label": "GL01_to_UW01",
+          "kind": "region"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "GL01_to_CV1",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "GreekAgora_Map",
@@ -110314,7 +110772,25 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3514,
-      "blockedCells": 5702
+      "blockedCells": 5702,
+      "doors": [
+        {
+          "to": "GreekAmphitheatre_Map",
+          "label": "GR02_to_GR04"
+        },
+        {
+          "to": "GreekGrotto_Map",
+          "label": "GR02_to_GR05"
+        },
+        {
+          "to": "GreekHarbor_Map",
+          "label": "GR02_to_GR01"
+        },
+        {
+          "to": "GreekLabyrinth_Map",
+          "label": "GR02_to_GR03"
+        }
+      ]
     },
     {
       "id": "GreekAmphitheatre_Map",
@@ -110325,7 +110801,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2109,
-      "blockedCells": 7107
+      "blockedCells": 7107,
+      "doors": [
+        {
+          "to": "GreekAgora_Map",
+          "label": "GR04_to_GR02"
+        },
+        {
+          "to": "GreekTemple_Map",
+          "label": "GR04_to_GR06"
+        }
+      ]
     },
     {
       "id": "GreekGrotto_Map",
@@ -110336,7 +110822,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1090,
-      "blockedCells": 8126
+      "blockedCells": 8126,
+      "doors": [
+        {
+          "to": "GreekAgora_Map",
+          "label": "GR05_to_GR02"
+        },
+        {
+          "to": "GreekTemple_Map",
+          "label": "GR05_to_GR06"
+        }
+      ]
     },
     {
       "id": "GreekHarbor_Map",
@@ -110347,7 +110843,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2117,
-      "blockedCells": 7099
+      "blockedCells": 7099,
+      "doors": [
+        {
+          "to": "GreekAgora_Map",
+          "label": "GR01_to_GR02"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "GR01_to_CV01",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "GreekLabyrinth_Map",
@@ -110358,7 +110865,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4866,
-      "blockedCells": 4350
+      "blockedCells": 4350,
+      "doors": [
+        {
+          "to": "GreekAgora_Map",
+          "label": "GR03_to_GR02"
+        },
+        {
+          "to": "GreekTemple_Map",
+          "label": "GR03_to_GR06"
+        }
+      ]
     },
     {
       "id": "GreekTemple_Map",
@@ -110369,7 +110886,26 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4281,
-      "blockedCells": 4935
+      "blockedCells": 4935,
+      "doors": [
+        {
+          "to": "GreekAmphitheatre_Map",
+          "label": "GR06_to_GR04"
+        },
+        {
+          "to": "GreekGrotto_Map",
+          "label": "GR06_to_GR05"
+        },
+        {
+          "to": "GreekLabyrinth_Map",
+          "label": "GR06_to_GR03"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "GR06_to_CV01",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "GY01",
@@ -110380,7 +110916,26 @@
       "gridHeight": 128,
       "dataVersion": 1,
       "walkableCells": 4862,
-      "blockedCells": 11522
+      "blockedCells": 11522,
+      "doors": [
+        {
+          "to": "GY02",
+          "label": "GY01_to_GY02"
+        },
+        {
+          "to": "GY04",
+          "label": "GY01_to_GY04"
+        },
+        {
+          "to": "GY09",
+          "label": "GY01_to_GY09"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "GY01_to_CV01",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "GY02",
@@ -110391,7 +110946,21 @@
       "gridHeight": 72,
       "dataVersion": 1,
       "walkableCells": 6611,
-      "blockedCells": 3757
+      "blockedCells": 3757,
+      "doors": [
+        {
+          "to": "GY01",
+          "label": "GY02_to_GY01"
+        },
+        {
+          "to": "GY03",
+          "label": "GY02_to_GY03"
+        },
+        {
+          "to": "GY06",
+          "label": "GY02_to_GY06"
+        }
+      ]
     },
     {
       "id": "GY03",
@@ -110402,7 +110971,25 @@
       "gridHeight": 112,
       "dataVersion": 1,
       "walkableCells": 7192,
-      "blockedCells": 5352
+      "blockedCells": 5352,
+      "doors": [
+        {
+          "to": "GY02",
+          "label": "GY03_to_GY02"
+        },
+        {
+          "to": "GY05",
+          "label": "GY03_to_GY05"
+        },
+        {
+          "to": "GY07",
+          "label": "GY03_to_GY07"
+        },
+        {
+          "to": "GY08",
+          "label": "GY03_to_GY08"
+        }
+      ]
     },
     {
       "id": "GY04",
@@ -110413,7 +111000,21 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4021,
-      "blockedCells": 5195
+      "blockedCells": 5195,
+      "doors": [
+        {
+          "to": "GY01",
+          "label": "GY04_to_GY01"
+        },
+        {
+          "to": "GY05",
+          "label": "GY04_to_GY05"
+        },
+        {
+          "to": "GY06",
+          "label": "GY04_to_GY06"
+        }
+      ]
     },
     {
       "id": "GY05",
@@ -110424,7 +111025,26 @@
       "gridHeight": 80,
       "dataVersion": 1,
       "walkableCells": 3577,
-      "blockedCells": 2823
+      "blockedCells": 2823,
+      "doors": [
+        {
+          "to": "GY03",
+          "label": "GY05_to_GY03"
+        },
+        {
+          "to": "GY04",
+          "label": "GY05_to_GY04"
+        },
+        {
+          "to": "GY08",
+          "label": "GY05_to_GY08"
+        },
+        {
+          "to": "LD01",
+          "label": "GY05_to_LD01",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "GY06",
@@ -110435,7 +111055,25 @@
       "gridHeight": 128,
       "dataVersion": 1,
       "walkableCells": 5330,
-      "blockedCells": 3886
+      "blockedCells": 3886,
+      "doors": [
+        {
+          "to": "GY02",
+          "label": "GY06_to_GY02"
+        },
+        {
+          "to": "GY04",
+          "label": "GY06_to_GY04"
+        },
+        {
+          "to": "GY09",
+          "label": "GY06_to_GY09"
+        },
+        {
+          "to": "GY10",
+          "label": "GY06_to_GY10"
+        }
+      ]
     },
     {
       "id": "GY07",
@@ -110446,7 +111084,22 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 2496,
-      "blockedCells": 1600
+      "blockedCells": 1600,
+      "doors": [
+        {
+          "to": "GY03",
+          "label": "GY07_to_GY03"
+        },
+        {
+          "to": "GY08",
+          "label": "GY07_to_GY08"
+        },
+        {
+          "to": "PX01",
+          "label": "GY07_to_PX01",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "GY08",
@@ -110457,7 +111110,25 @@
       "gridHeight": 80,
       "dataVersion": 1,
       "walkableCells": 6397,
-      "blockedCells": 3203
+      "blockedCells": 3203,
+      "doors": [
+        {
+          "to": "GY03",
+          "label": "GY08_to_GY03"
+        },
+        {
+          "to": "GY05",
+          "label": "GY08_to_GY05"
+        },
+        {
+          "to": "GY07",
+          "label": "GY08_to_GY07"
+        },
+        {
+          "to": "GY09",
+          "label": "GY08_to_GY09"
+        }
+      ]
     },
     {
       "id": "GY09",
@@ -110468,7 +111139,26 @@
       "gridHeight": 104,
       "dataVersion": 1,
       "walkableCells": 5416,
-      "blockedCells": 5400
+      "blockedCells": 5400,
+      "doors": [
+        {
+          "to": "GY01",
+          "label": "GY09_to_GY01"
+        },
+        {
+          "to": "GY06",
+          "label": "GY09_to_GY06"
+        },
+        {
+          "to": "GY08",
+          "label": "GY09_to_GY08"
+        },
+        {
+          "to": "KR01",
+          "label": "GY09_to_KR01",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "GY10",
@@ -110479,7 +111169,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 6015,
-      "blockedCells": 3201
+      "blockedCells": 3201,
+      "doors": [
+        {
+          "to": "GY06",
+          "label": "GY10_to_GY06"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "GY10_Portal",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "HeavenAscension_Map",
@@ -110490,7 +111191,19 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2009,
-      "blockedCells": 7207
+      "blockedCells": 7207,
+      "doors": [
+        {
+          "to": "WorldGate_Map",
+          "label": "HV01_to_CV01",
+          "kind": "worldgate"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "HV01_to_CV01_Victory",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "IC01",
@@ -110501,7 +111214,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4024,
-      "blockedCells": 5192
+      "blockedCells": 5192,
+      "doors": [
+        {
+          "to": "IC02",
+          "label": "IC01_to_IC02"
+        },
+        {
+          "to": "MZ07",
+          "label": "IC01_to_MZ07",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "IC02",
@@ -110512,7 +111236,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3237,
-      "blockedCells": 5979
+      "blockedCells": 5979,
+      "doors": [
+        {
+          "to": "IC01",
+          "label": "IC02_to_IC01"
+        },
+        {
+          "to": "IC03",
+          "label": "IC02_to_IC03"
+        }
+      ]
     },
     {
       "id": "IC03",
@@ -110523,7 +111257,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1851,
-      "blockedCells": 7365
+      "blockedCells": 7365,
+      "doors": [
+        {
+          "to": "IC02",
+          "label": "IC03_to_IC02"
+        },
+        {
+          "to": "IC04",
+          "label": "IC03_to_IC04"
+        }
+      ]
     },
     {
       "id": "IC04",
@@ -110534,7 +111278,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1359,
-      "blockedCells": 7857
+      "blockedCells": 7857,
+      "doors": [
+        {
+          "to": "IC03",
+          "label": "IC04_to_IC03"
+        },
+        {
+          "to": "IC05",
+          "label": "IC04_to_IC05"
+        }
+      ]
     },
     {
       "id": "IC05",
@@ -110545,7 +111299,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3639,
-      "blockedCells": 5577
+      "blockedCells": 5577,
+      "doors": [
+        {
+          "to": "IC04",
+          "label": "IC05_to_IC04"
+        },
+        {
+          "to": "MZ05",
+          "label": "IC05_to_MZ05",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "JapanPagoda_Map",
@@ -110556,7 +111321,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3331,
-      "blockedCells": 5885
+      "blockedCells": 5885,
+      "doors": [
+        {
+          "to": "JapanShrine_Map",
+          "label": "JP04_to_JP03"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "JP04_to_CV01",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "JapanShrine_Map",
@@ -110567,7 +111343,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1353,
-      "blockedCells": 7863
+      "blockedCells": 7863,
+      "doors": [
+        {
+          "to": "JapanPagoda_Map",
+          "label": "JP03_to_JP04"
+        },
+        {
+          "to": "JapanTerraces_Map",
+          "label": "JP03_to_JP02"
+        }
+      ]
     },
     {
       "id": "JapanTerraces_Map",
@@ -110578,7 +111364,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2329,
-      "blockedCells": 6887
+      "blockedCells": 6887,
+      "doors": [
+        {
+          "to": "JapanShrine_Map",
+          "label": "JP02_to_JP03"
+        },
+        {
+          "to": "JapanVillage_Map",
+          "label": "JP02_to_JP01"
+        }
+      ]
     },
     {
       "id": "JapanVillage_Map",
@@ -110589,7 +111385,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2076,
-      "blockedCells": 7140
+      "blockedCells": 7140,
+      "doors": [
+        {
+          "to": "JapanTerraces_Map",
+          "label": "JP01_to_JP02"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "JP01_to_CV01",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "KR01",
@@ -110600,7 +111407,26 @@
       "gridHeight": 128,
       "dataVersion": 1,
       "walkableCells": 10647,
-      "blockedCells": 5737
+      "blockedCells": 5737,
+      "doors": [
+        {
+          "to": "GY09",
+          "label": "KR01_to_GY09",
+          "kind": "region"
+        },
+        {
+          "to": "KR02",
+          "label": "KR01_to_KR02"
+        },
+        {
+          "to": "KR03",
+          "label": "KR01_to_KR03"
+        },
+        {
+          "to": "KR04",
+          "label": "KR01_to_KR04"
+        }
+      ]
     },
     {
       "id": "KR02",
@@ -110611,7 +111437,21 @@
       "gridHeight": 144,
       "dataVersion": 1,
       "walkableCells": 14560,
-      "blockedCells": 6176
+      "blockedCells": 6176,
+      "doors": [
+        {
+          "to": "KR01",
+          "label": "KR02_to_KR01"
+        },
+        {
+          "to": "KR05",
+          "label": "KR02_to_KR05"
+        },
+        {
+          "to": "KR07",
+          "label": "KR02_to_KR07"
+        }
+      ]
     },
     {
       "id": "KR03",
@@ -110622,7 +111462,25 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 3390,
-      "blockedCells": 6850
+      "blockedCells": 6850,
+      "doors": [
+        {
+          "to": "KR01",
+          "label": "KR03_to_KR01"
+        },
+        {
+          "to": "KR04",
+          "label": "KR03_to_KR04"
+        },
+        {
+          "to": "KR05",
+          "label": "KR03_to_KR05"
+        },
+        {
+          "to": "KR06",
+          "label": "KR03_to_KR06"
+        }
+      ]
     },
     {
       "id": "KR04",
@@ -110633,7 +111491,21 @@
       "gridHeight": 112,
       "dataVersion": 1,
       "walkableCells": 3760,
-      "blockedCells": 8784
+      "blockedCells": 8784,
+      "doors": [
+        {
+          "to": "KR01",
+          "label": "KR04_to_KR01"
+        },
+        {
+          "to": "KR03",
+          "label": "KR04_to_KR03"
+        },
+        {
+          "to": "KR06",
+          "label": "KR04_to_KR06"
+        }
+      ]
     },
     {
       "id": "KR05",
@@ -110644,7 +111516,25 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 7024,
-      "blockedCells": 4944
+      "blockedCells": 4944,
+      "doors": [
+        {
+          "to": "KR02",
+          "label": "KR05_to_KR02"
+        },
+        {
+          "to": "KR03",
+          "label": "KR05_to_KR03"
+        },
+        {
+          "to": "KR07",
+          "label": "KR05_to_KR07"
+        },
+        {
+          "to": "KR08",
+          "label": "KR05_to_KR08"
+        }
+      ]
     },
     {
       "id": "KR06",
@@ -110655,7 +111545,21 @@
       "gridHeight": 112,
       "dataVersion": 1,
       "walkableCells": 5103,
-      "blockedCells": 3857
+      "blockedCells": 3857,
+      "doors": [
+        {
+          "to": "KR03",
+          "label": "KR06_to_KR03"
+        },
+        {
+          "to": "KR04",
+          "label": "KR06_to_KR04"
+        },
+        {
+          "to": "KR07",
+          "label": "KR06_to_KR07"
+        }
+      ]
     },
     {
       "id": "KR07",
@@ -110666,7 +111570,21 @@
       "gridHeight": 80,
       "dataVersion": 1,
       "walkableCells": 7933,
-      "blockedCells": 3587
+      "blockedCells": 3587,
+      "doors": [
+        {
+          "to": "KR02",
+          "label": "KR07_to_KR02"
+        },
+        {
+          "to": "KR05",
+          "label": "KR07_to_KR05"
+        },
+        {
+          "to": "KR06",
+          "label": "KR07_to_KR06"
+        }
+      ]
     },
     {
       "id": "KR08",
@@ -110677,7 +111595,18 @@
       "gridHeight": 128,
       "dataVersion": 1,
       "walkableCells": 5860,
-      "blockedCells": 4380
+      "blockedCells": 4380,
+      "doors": [
+        {
+          "to": "GY09",
+          "label": "KR08_Portal",
+          "kind": "region"
+        },
+        {
+          "to": "KR05",
+          "label": "KR08_to_KR05"
+        }
+      ]
     },
     {
       "id": "LavaCore_Map",
@@ -110688,7 +111617,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 6514,
-      "blockedCells": 2702
+      "blockedCells": 2702,
+      "doors": [
+        {
+          "to": "Grassland_Map",
+          "label": "VO03_to_GL01",
+          "kind": "region"
+        },
+        {
+          "to": "LavaRiverPass_Map",
+          "label": "VO03_to_VO02"
+        }
+      ]
     },
     {
       "id": "LavaRiverPass_Map",
@@ -110699,7 +111639,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4765,
-      "blockedCells": 4451
+      "blockedCells": 4451,
+      "doors": [
+        {
+          "to": "LavaCore_Map",
+          "label": "VO02_to_VO03"
+        },
+        {
+          "to": "VolcanicApproach_Map",
+          "label": "VO02_to_VO01"
+        }
+      ]
     },
     {
       "id": "LD01",
@@ -110710,7 +111660,26 @@
       "gridHeight": 80,
       "dataVersion": 1,
       "walkableCells": 7406,
-      "blockedCells": 4114
+      "blockedCells": 4114,
+      "doors": [
+        {
+          "to": "GY05",
+          "label": "LD01_to_GY05",
+          "kind": "region"
+        },
+        {
+          "to": "LD02",
+          "label": "LD01_to_LD02"
+        },
+        {
+          "to": "LD03",
+          "label": "LD01_to_LD03"
+        },
+        {
+          "to": "LD04",
+          "label": "LD01_to_LD04"
+        }
+      ]
     },
     {
       "id": "LD02",
@@ -110721,7 +111690,29 @@
       "gridHeight": 128,
       "dataVersion": 1,
       "walkableCells": 7833,
-      "blockedCells": 8551
+      "blockedCells": 8551,
+      "doors": [
+        {
+          "to": "LD01",
+          "label": "LD02_to_LD01"
+        },
+        {
+          "to": "LD03",
+          "label": "LD02_to_LD03"
+        },
+        {
+          "to": "LD05",
+          "label": "LD02_to_LD05"
+        },
+        {
+          "to": "LD06",
+          "label": "LD02_to_LD06"
+        },
+        {
+          "to": "LD07",
+          "label": "LD02_to_LD07"
+        }
+      ]
     },
     {
       "id": "LD03",
@@ -110732,7 +111723,21 @@
       "gridHeight": 112,
       "dataVersion": 1,
       "walkableCells": 7233,
-      "blockedCells": 5311
+      "blockedCells": 5311,
+      "doors": [
+        {
+          "to": "LD01",
+          "label": "LD03_to_LD01"
+        },
+        {
+          "to": "LD02",
+          "label": "LD03_to_LD02"
+        },
+        {
+          "to": "LD07",
+          "label": "LD03_to_LD07"
+        }
+      ]
     },
     {
       "id": "LD04",
@@ -110743,7 +111748,25 @@
       "gridHeight": 72,
       "dataVersion": 1,
       "walkableCells": 2276,
-      "blockedCells": 2908
+      "blockedCells": 2908,
+      "doors": [
+        {
+          "to": "LD01",
+          "label": "LD04_to_LD01"
+        },
+        {
+          "to": "LD05",
+          "label": "LD04_to_LD05"
+        },
+        {
+          "to": "LD06",
+          "label": "LD04_to_LD06"
+        },
+        {
+          "to": "LD07",
+          "label": "LD04_to_LD07"
+        }
+      ]
     },
     {
       "id": "LD05",
@@ -110754,7 +111777,21 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4965,
-      "blockedCells": 4251
+      "blockedCells": 4251,
+      "doors": [
+        {
+          "to": "LD02",
+          "label": "LD05_to_LD02"
+        },
+        {
+          "to": "LD04",
+          "label": "LD05_to_LD04"
+        },
+        {
+          "to": "LD08",
+          "label": "LD05_to_LD08"
+        }
+      ]
     },
     {
       "id": "LD06",
@@ -110765,7 +111802,21 @@
       "gridHeight": 72,
       "dataVersion": 1,
       "walkableCells": 7102,
-      "blockedCells": 1538
+      "blockedCells": 1538,
+      "doors": [
+        {
+          "to": "LD02",
+          "label": "LD06_to_LD02"
+        },
+        {
+          "to": "LD04",
+          "label": "LD06_to_LD04"
+        },
+        {
+          "to": "LD07",
+          "label": "LD06_to_LD07"
+        }
+      ]
     },
     {
       "id": "LD07",
@@ -110776,7 +111827,25 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 7192,
-      "blockedCells": 5864
+      "blockedCells": 5864,
+      "doors": [
+        {
+          "to": "LD02",
+          "label": "LD07_to_LD02"
+        },
+        {
+          "to": "LD03",
+          "label": "LD07_to_LD03"
+        },
+        {
+          "to": "LD04",
+          "label": "LD07_to_LD04"
+        },
+        {
+          "to": "LD06",
+          "label": "LD07_to_LD06"
+        }
+      ]
     },
     {
       "id": "LD08",
@@ -110787,7 +111856,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 5775,
-      "blockedCells": 3441
+      "blockedCells": 3441,
+      "doors": [
+        {
+          "to": "GY05",
+          "label": "LD08_Portal",
+          "kind": "region"
+        },
+        {
+          "to": "LD05",
+          "label": "LD08_to_LD05"
+        }
+      ]
     },
     {
       "id": "MainUnderwaterBossRoom_Map",
@@ -110798,7 +111878,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4089,
-      "blockedCells": 5127
+      "blockedCells": 5127,
+      "doors": [
+        {
+          "to": "DeepTrench_Map",
+          "label": "UW07_to_UW04"
+        },
+        {
+          "to": "Grassland_Map",
+          "label": "UW07_to_GL01",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "MilitaryAirfield_Map",
@@ -110809,7 +111900,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4187,
-      "blockedCells": 5029
+      "blockedCells": 5029,
+      "doors": [
+        {
+          "to": "MilitaryBunker_Map",
+          "label": "ML05_to_ML06"
+        },
+        {
+          "to": "MilitaryMinefield_Map",
+          "label": "ML05_to_ML04"
+        }
+      ]
     },
     {
       "id": "MilitaryBunker_Map",
@@ -110820,7 +111921,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4330,
-      "blockedCells": 4886
+      "blockedCells": 4886,
+      "doors": [
+        {
+          "to": "MilitaryAirfield_Map",
+          "label": "ML06_to_ML05"
+        },
+        {
+          "to": "MilitaryYard_Map",
+          "label": "ML06_to_ML07"
+        }
+      ]
     },
     {
       "id": "MilitaryCheckpoint_Map",
@@ -110831,7 +111942,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1353,
-      "blockedCells": 7863
+      "blockedCells": 7863,
+      "doors": [
+        {
+          "to": "MilitaryDepot_Map",
+          "label": "ML01_to_ML02"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "ML01_to_CV01",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "MilitaryDepot_Map",
@@ -110842,7 +111964,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3841,
-      "blockedCells": 5375
+      "blockedCells": 5375,
+      "doors": [
+        {
+          "to": "MilitaryCheckpoint_Map",
+          "label": "ML02_to_ML01"
+        },
+        {
+          "to": "MilitaryTrench_Map",
+          "label": "ML02_to_ML03"
+        }
+      ]
     },
     {
       "id": "MilitaryHQ_Map",
@@ -110853,7 +111985,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 5645,
-      "blockedCells": 3571
+      "blockedCells": 3571,
+      "doors": [
+        {
+          "to": "MilitaryYard_Map",
+          "label": "ML08_to_ML07"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "ML08_to_CV01",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "MilitaryMinefield_Map",
@@ -110864,7 +112007,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1453,
-      "blockedCells": 7763
+      "blockedCells": 7763,
+      "doors": [
+        {
+          "to": "MilitaryAirfield_Map",
+          "label": "ML04_to_ML05"
+        },
+        {
+          "to": "MilitaryTrench_Map",
+          "label": "ML04_to_ML03"
+        }
+      ]
     },
     {
       "id": "MilitaryTrench_Map",
@@ -110875,7 +112028,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1873,
-      "blockedCells": 7343
+      "blockedCells": 7343,
+      "doors": [
+        {
+          "to": "MilitaryDepot_Map",
+          "label": "ML03_to_ML02"
+        },
+        {
+          "to": "MilitaryMinefield_Map",
+          "label": "ML03_to_ML04"
+        }
+      ]
     },
     {
       "id": "MilitaryYard_Map",
@@ -110886,7 +112049,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2423,
-      "blockedCells": 6793
+      "blockedCells": 6793,
+      "doors": [
+        {
+          "to": "MilitaryBunker_Map",
+          "label": "ML07_to_ML06"
+        },
+        {
+          "to": "MilitaryHQ_Map",
+          "label": "ML07_to_ML08"
+        }
+      ]
     },
     {
       "id": "MZ01",
@@ -110897,7 +112070,26 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1559,
-      "blockedCells": 7657
+      "blockedCells": 7657,
+      "doors": [
+        {
+          "to": "MZ02",
+          "label": "MZ01_to_MZ02"
+        },
+        {
+          "to": "MZ04",
+          "label": "MZ01_to_MZ04"
+        },
+        {
+          "to": "MZ06",
+          "label": "MZ01_to_MZ06"
+        },
+        {
+          "to": "WorldGate_Map",
+          "label": "MZ01_to_CV01",
+          "kind": "worldgate"
+        }
+      ]
     },
     {
       "id": "MZ02",
@@ -110908,7 +112100,21 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4261,
-      "blockedCells": 4955
+      "blockedCells": 4955,
+      "doors": [
+        {
+          "to": "MZ01",
+          "label": "MZ02_to_MZ01"
+        },
+        {
+          "to": "MZ03",
+          "label": "MZ02_to_MZ03"
+        },
+        {
+          "to": "MZ10",
+          "label": "MZ02_to_MZ10"
+        }
+      ]
     },
     {
       "id": "MZ03",
@@ -110919,7 +112125,21 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3559,
-      "blockedCells": 5657
+      "blockedCells": 5657,
+      "doors": [
+        {
+          "to": "MZ02",
+          "label": "MZ03_to_MZ02"
+        },
+        {
+          "to": "MZ04",
+          "label": "MZ03_to_MZ04"
+        },
+        {
+          "to": "MZ05",
+          "label": "MZ03_to_MZ05"
+        }
+      ]
     },
     {
       "id": "MZ04",
@@ -110930,7 +112150,21 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2496,
-      "blockedCells": 6720
+      "blockedCells": 6720,
+      "doors": [
+        {
+          "to": "MZ01",
+          "label": "MZ04_to_MZ01"
+        },
+        {
+          "to": "MZ03",
+          "label": "MZ04_to_MZ03"
+        },
+        {
+          "to": "MZ11",
+          "label": "MZ04_to_MZ11"
+        }
+      ]
     },
     {
       "id": "MZ05",
@@ -110941,7 +112175,29 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4109,
-      "blockedCells": 5107
+      "blockedCells": 5107,
+      "doors": [
+        {
+          "to": "MZ03",
+          "label": "MZ05_to_MZ03"
+        },
+        {
+          "to": "MZ06",
+          "label": "MZ05_to_MZ06"
+        },
+        {
+          "to": "MZ07",
+          "label": "MZ05_to_MZ07"
+        },
+        {
+          "to": "MZ08",
+          "label": "MZ05_to_MZ08"
+        },
+        {
+          "to": "MZ09",
+          "label": "MZ05_to_MZ09"
+        }
+      ]
     },
     {
       "id": "MZ06",
@@ -110952,7 +112208,21 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2152,
-      "blockedCells": 7064
+      "blockedCells": 7064,
+      "doors": [
+        {
+          "to": "MZ01",
+          "label": "MZ06_to_MZ01"
+        },
+        {
+          "to": "MZ05",
+          "label": "MZ06_to_MZ05"
+        },
+        {
+          "to": "MZ12",
+          "label": "MZ06_to_MZ12"
+        }
+      ]
     },
     {
       "id": "MZ07",
@@ -110963,7 +112233,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1632,
-      "blockedCells": 7584
+      "blockedCells": 7584,
+      "doors": [
+        {
+          "to": "IC01",
+          "label": "MZ07_to_IC01",
+          "kind": "region"
+        },
+        {
+          "to": "MZ05",
+          "label": "MZ07_to_MZ05"
+        }
+      ]
     },
     {
       "id": "MZ08",
@@ -110974,7 +112255,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1632,
-      "blockedCells": 7584
+      "blockedCells": 7584,
+      "doors": [
+        {
+          "to": "AM01",
+          "label": "MZ08_to_AM01",
+          "kind": "region"
+        },
+        {
+          "to": "MZ05",
+          "label": "MZ08_to_MZ05"
+        }
+      ]
     },
     {
       "id": "MZ09",
@@ -110985,7 +112277,18 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1632,
-      "blockedCells": 7584
+      "blockedCells": 7584,
+      "doors": [
+        {
+          "to": "AZ01",
+          "label": "MZ09_to_AZ01",
+          "kind": "region"
+        },
+        {
+          "to": "MZ05",
+          "label": "MZ09_to_MZ05"
+        }
+      ]
     },
     {
       "id": "MZ10",
@@ -110996,7 +112299,13 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 945,
-      "blockedCells": 8271
+      "blockedCells": 8271,
+      "doors": [
+        {
+          "to": "MZ02",
+          "label": "MZ10_to_MZ02"
+        }
+      ]
     },
     {
       "id": "MZ11",
@@ -111007,7 +112316,13 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3227,
-      "blockedCells": 5989
+      "blockedCells": 5989,
+      "doors": [
+        {
+          "to": "MZ04",
+          "label": "MZ11_to_MZ04"
+        }
+      ]
     },
     {
       "id": "MZ12",
@@ -111018,7 +112333,13 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2685,
-      "blockedCells": 6531
+      "blockedCells": 6531,
+      "doors": [
+        {
+          "to": "MZ06",
+          "label": "MZ12_to_MZ06"
+        }
+      ]
     },
     {
       "id": "PX01",
@@ -111029,7 +112350,22 @@
       "gridHeight": 112,
       "dataVersion": 1,
       "walkableCells": 4254,
-      "blockedCells": 8290
+      "blockedCells": 8290,
+      "doors": [
+        {
+          "to": "GY07",
+          "label": "PX01_to_GY07",
+          "kind": "region"
+        },
+        {
+          "to": "PX02",
+          "label": "PX01_to_PX02"
+        },
+        {
+          "to": "PX03",
+          "label": "PX01_to_PX03"
+        }
+      ]
     },
     {
       "id": "PX02",
@@ -111040,7 +112376,21 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 10332,
-      "blockedCells": 3492
+      "blockedCells": 3492,
+      "doors": [
+        {
+          "to": "PX01",
+          "label": "PX02_to_PX01"
+        },
+        {
+          "to": "PX04",
+          "label": "PX02_to_PX04"
+        },
+        {
+          "to": "PX05",
+          "label": "PX02_to_PX05"
+        }
+      ]
     },
     {
       "id": "PX03",
@@ -111051,7 +112401,21 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 7104,
-      "blockedCells": 2112
+      "blockedCells": 2112,
+      "doors": [
+        {
+          "to": "PX01",
+          "label": "PX03_to_PX01"
+        },
+        {
+          "to": "PX04",
+          "label": "PX03_to_PX04"
+        },
+        {
+          "to": "PX05",
+          "label": "PX03_to_PX05"
+        }
+      ]
     },
     {
       "id": "PX04",
@@ -111062,7 +112426,25 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 8884,
-      "blockedCells": 332
+      "blockedCells": 332,
+      "doors": [
+        {
+          "to": "PX02",
+          "label": "PX04_to_PX02"
+        },
+        {
+          "to": "PX03",
+          "label": "PX04_to_PX03"
+        },
+        {
+          "to": "PX05",
+          "label": "PX04_to_PX05"
+        },
+        {
+          "to": "PX06",
+          "label": "PX04_to_PX06"
+        }
+      ]
     },
     {
       "id": "PX05",
@@ -111073,7 +112455,25 @@
       "gridHeight": 80,
       "dataVersion": 1,
       "walkableCells": 4139,
-      "blockedCells": 5461
+      "blockedCells": 5461,
+      "doors": [
+        {
+          "to": "PX02",
+          "label": "PX05_to_PX02"
+        },
+        {
+          "to": "PX03",
+          "label": "PX05_to_PX03"
+        },
+        {
+          "to": "PX04",
+          "label": "PX05_to_PX04"
+        },
+        {
+          "to": "PX06",
+          "label": "PX05_to_PX06"
+        }
+      ]
     },
     {
       "id": "PX06",
@@ -111084,7 +112484,25 @@
       "gridHeight": 128,
       "dataVersion": 1,
       "walkableCells": 9572,
-      "blockedCells": 6812
+      "blockedCells": 6812,
+      "doors": [
+        {
+          "to": "PX04",
+          "label": "PX06_to_PX04"
+        },
+        {
+          "to": "PX05",
+          "label": "PX06_to_PX05"
+        },
+        {
+          "to": "PX07",
+          "label": "PX06_to_PX07"
+        },
+        {
+          "to": "PX08",
+          "label": "PX06_to_PX08"
+        }
+      ]
     },
     {
       "id": "PX07",
@@ -111095,7 +112513,21 @@
       "gridHeight": 136,
       "dataVersion": 1,
       "walkableCells": 10490,
-      "blockedCells": 3654
+      "blockedCells": 3654,
+      "doors": [
+        {
+          "to": "PX06",
+          "label": "PX07_to_PX06"
+        },
+        {
+          "to": "PX08",
+          "label": "PX07_to_PX08"
+        },
+        {
+          "to": "PX09",
+          "label": "PX07_to_PX09"
+        }
+      ]
     },
     {
       "id": "PX08",
@@ -111106,7 +112538,21 @@
       "gridHeight": 112,
       "dataVersion": 1,
       "walkableCells": 9445,
-      "blockedCells": 3099
+      "blockedCells": 3099,
+      "doors": [
+        {
+          "to": "PX06",
+          "label": "PX08_to_PX06"
+        },
+        {
+          "to": "PX07",
+          "label": "PX08_to_PX07"
+        },
+        {
+          "to": "PX09",
+          "label": "PX08_to_PX09"
+        }
+      ]
     },
     {
       "id": "PX09",
@@ -111117,7 +112563,25 @@
       "gridHeight": 144,
       "dataVersion": 1,
       "walkableCells": 6727,
-      "blockedCells": 3641
+      "blockedCells": 3641,
+      "doors": [
+        {
+          "to": "PX07",
+          "label": "PX09_to_PX07"
+        },
+        {
+          "to": "PX08",
+          "label": "PX09_to_PX08"
+        },
+        {
+          "to": "PX10",
+          "label": "PX09_to_PX10"
+        },
+        {
+          "to": "PX11",
+          "label": "PX09_to_PX11"
+        }
+      ]
     },
     {
       "id": "PX10",
@@ -111128,7 +112592,13 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3084,
-      "blockedCells": 6132
+      "blockedCells": 6132,
+      "doors": [
+        {
+          "to": "PX09",
+          "label": "PX10_to_PX09"
+        }
+      ]
     },
     {
       "id": "PX11",
@@ -111139,7 +112609,25 @@
       "gridHeight": 104,
       "dataVersion": 1,
       "walkableCells": 11705,
-      "blockedCells": 2439
+      "blockedCells": 2439,
+      "doors": [
+        {
+          "to": "PX09",
+          "label": "PX11_to_PX09"
+        },
+        {
+          "to": "PX12",
+          "label": "PX11_to_PX12"
+        },
+        {
+          "to": "PX13",
+          "label": "PX11_to_PX13"
+        },
+        {
+          "to": "PX14",
+          "label": "PX11_to_PX14"
+        }
+      ]
     },
     {
       "id": "PX12",
@@ -111150,7 +112638,21 @@
       "gridHeight": 120,
       "dataVersion": 1,
       "walkableCells": 8252,
-      "blockedCells": 6148
+      "blockedCells": 6148,
+      "doors": [
+        {
+          "to": "PX11",
+          "label": "PX12_to_PX11"
+        },
+        {
+          "to": "PX13",
+          "label": "PX12_to_PX13"
+        },
+        {
+          "to": "PX16",
+          "label": "PX12_to_PX16"
+        }
+      ]
     },
     {
       "id": "PX13",
@@ -111161,7 +112663,21 @@
       "gridHeight": 72,
       "dataVersion": 1,
       "walkableCells": 3106,
-      "blockedCells": 8414
+      "blockedCells": 8414,
+      "doors": [
+        {
+          "to": "PX11",
+          "label": "PX13_to_PX11"
+        },
+        {
+          "to": "PX12",
+          "label": "PX13_to_PX12"
+        },
+        {
+          "to": "PX14",
+          "label": "PX13_to_PX14"
+        }
+      ]
     },
     {
       "id": "PX14",
@@ -111172,7 +112688,25 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 7608,
-      "blockedCells": 4680
+      "blockedCells": 4680,
+      "doors": [
+        {
+          "to": "PX11",
+          "label": "PX14_to_PX11"
+        },
+        {
+          "to": "PX13",
+          "label": "PX14_to_PX13"
+        },
+        {
+          "to": "PX15",
+          "label": "PX14_to_PX15"
+        },
+        {
+          "to": "PX16",
+          "label": "PX14_to_PX16"
+        }
+      ]
     },
     {
       "id": "PX15",
@@ -111183,7 +112717,13 @@
       "gridHeight": 104,
       "dataVersion": 1,
       "walkableCells": 5364,
-      "blockedCells": 5452
+      "blockedCells": 5452,
+      "doors": [
+        {
+          "to": "PX14",
+          "label": "PX15_to_PX14"
+        }
+      ]
     },
     {
       "id": "PX16",
@@ -111194,7 +112734,25 @@
       "gridHeight": 112,
       "dataVersion": 1,
       "walkableCells": 8467,
-      "blockedCells": 4077
+      "blockedCells": 4077,
+      "doors": [
+        {
+          "to": "PX12",
+          "label": "PX16_to_PX12"
+        },
+        {
+          "to": "PX14",
+          "label": "PX16_to_PX14"
+        },
+        {
+          "to": "PX17",
+          "label": "PX16_to_PX17"
+        },
+        {
+          "to": "PX18",
+          "label": "PX16_to_PX18"
+        }
+      ]
     },
     {
       "id": "PX17",
@@ -111205,7 +112763,21 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 3352,
-      "blockedCells": 6888
+      "blockedCells": 6888,
+      "doors": [
+        {
+          "to": "PX16",
+          "label": "PX17_to_PX16"
+        },
+        {
+          "to": "PX18",
+          "label": "PX17_to_PX18"
+        },
+        {
+          "to": "PX19",
+          "label": "PX17_to_PX19"
+        }
+      ]
     },
     {
       "id": "PX18",
@@ -111216,7 +112788,21 @@
       "gridHeight": 120,
       "dataVersion": 1,
       "walkableCells": 7710,
-      "blockedCells": 3810
+      "blockedCells": 3810,
+      "doors": [
+        {
+          "to": "PX16",
+          "label": "PX18_to_PX16"
+        },
+        {
+          "to": "PX17",
+          "label": "PX18_to_PX17"
+        },
+        {
+          "to": "PX19",
+          "label": "PX18_to_PX19"
+        }
+      ]
     },
     {
       "id": "PX19",
@@ -111227,7 +112813,21 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 4080,
-      "blockedCells": 3664
+      "blockedCells": 3664,
+      "doors": [
+        {
+          "to": "PX17",
+          "label": "PX19_to_PX17"
+        },
+        {
+          "to": "PX18",
+          "label": "PX19_to_PX18"
+        },
+        {
+          "to": "PX20",
+          "label": "PX19_to_PX20"
+        }
+      ]
     },
     {
       "id": "PX20",
@@ -111238,7 +112838,18 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 1574,
-      "blockedCells": 2522
+      "blockedCells": 2522,
+      "doors": [
+        {
+          "to": "GY07",
+          "label": "PX20_Portal",
+          "kind": "region"
+        },
+        {
+          "to": "PX19",
+          "label": "PX20_to_PX19"
+        }
+      ]
     },
     {
       "id": "SandstoneTunnel_Map",
@@ -111249,7 +112860,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2681,
-      "blockedCells": 6535
+      "blockedCells": 6535,
+      "doors": [
+        {
+          "to": "DesertBossRoom_Map",
+          "label": "DS04_to_DS06"
+        },
+        {
+          "to": "DesertCrossroads_Map",
+          "label": "DS04_to_DS02"
+        }
+      ]
     },
     {
       "id": "ShallowCoralReef_Map",
@@ -111260,7 +112881,26 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 4549,
-      "blockedCells": 4667
+      "blockedCells": 4667,
+      "doors": [
+        {
+          "to": "CoralMaze_Map",
+          "label": "UW01_to_UW02"
+        },
+        {
+          "to": "DeepTrench_Map",
+          "label": "UW01_to_UW04"
+        },
+        {
+          "to": "Grassland_Map",
+          "label": "UW01_to_GL01",
+          "kind": "region"
+        },
+        {
+          "to": "SunkenTempleGate_Map",
+          "label": "UW01_to_UW03"
+        }
+      ]
     },
     {
       "id": "ST01",
@@ -111271,7 +112911,28 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 4973,
-      "blockedCells": 4179
+      "blockedCells": 4179,
+      "doors": [
+        {
+          "to": "BD01",
+          "label": "ST01_to_BD01",
+          "kind": "ring"
+        },
+        {
+          "to": "CL01",
+          "label": "ST01_to_CL01",
+          "kind": "region"
+        },
+        {
+          "to": "EG01",
+          "label": "ST01_to_EG01",
+          "kind": "ring"
+        },
+        {
+          "to": "ST02",
+          "label": "ST01_to_ST02"
+        }
+      ]
     },
     {
       "id": "ST02",
@@ -111282,7 +112943,17 @@
       "gridHeight": 72,
       "dataVersion": 1,
       "walkableCells": 1473,
-      "blockedCells": 7743
+      "blockedCells": 7743,
+      "doors": [
+        {
+          "to": "ST01",
+          "label": "ST02_to_ST01"
+        },
+        {
+          "to": "ST03",
+          "label": "ST02_to_ST03"
+        }
+      ]
     },
     {
       "id": "ST03",
@@ -111293,7 +112964,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 1014,
-      "blockedCells": 9738
+      "blockedCells": 9738,
+      "doors": [
+        {
+          "to": "ST02",
+          "label": "ST03_to_ST02"
+        },
+        {
+          "to": "ST04",
+          "label": "ST03_to_ST04"
+        }
+      ]
     },
     {
       "id": "ST04",
@@ -111304,7 +112985,17 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 1043,
-      "blockedCells": 7661
+      "blockedCells": 7661,
+      "doors": [
+        {
+          "to": "ST03",
+          "label": "ST04_to_ST03"
+        },
+        {
+          "to": "ST05",
+          "label": "ST04_to_ST05"
+        }
+      ]
     },
     {
       "id": "ST05",
@@ -111315,7 +113006,17 @@
       "gridHeight": 104,
       "dataVersion": 1,
       "walkableCells": 1035,
-      "blockedCells": 6453
+      "blockedCells": 6453,
+      "doors": [
+        {
+          "to": "ST04",
+          "label": "ST05_to_ST04"
+        },
+        {
+          "to": "ST06",
+          "label": "ST05_to_ST06"
+        }
+      ]
     },
     {
       "id": "ST06",
@@ -111326,7 +113027,17 @@
       "gridHeight": 64,
       "dataVersion": 1,
       "walkableCells": 276,
-      "blockedCells": 8940
+      "blockedCells": 8940,
+      "doors": [
+        {
+          "to": "ST05",
+          "label": "ST06_to_ST05"
+        },
+        {
+          "to": "ST07",
+          "label": "ST06_to_ST07"
+        }
+      ]
     },
     {
       "id": "ST07",
@@ -111337,7 +113048,17 @@
       "gridHeight": 88,
       "dataVersion": 1,
       "walkableCells": 517,
-      "blockedCells": 10043
+      "blockedCells": 10043,
+      "doors": [
+        {
+          "to": "ST06",
+          "label": "ST07_to_ST06"
+        },
+        {
+          "to": "ST08",
+          "label": "ST07_to_ST08"
+        }
+      ]
     },
     {
       "id": "ST08",
@@ -111348,7 +113069,18 @@
       "gridHeight": 80,
       "dataVersion": 1,
       "walkableCells": 8881,
-      "blockedCells": 79
+      "blockedCells": 79,
+      "doors": [
+        {
+          "to": "CL01",
+          "label": "ST08_Portal",
+          "kind": "region"
+        },
+        {
+          "to": "ST07",
+          "label": "ST08_to_ST07"
+        }
+      ]
     },
     {
       "id": "SunBuriedCave_Map",
@@ -111359,7 +113091,17 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 5555,
-      "blockedCells": 3661
+      "blockedCells": 3661,
+      "doors": [
+        {
+          "to": "DesertBossRoom_Map",
+          "label": "DS03_to_DS06"
+        },
+        {
+          "to": "DesertCrossroads_Map",
+          "label": "DS03_to_DS02"
+        }
+      ]
     },
     {
       "id": "SunkenTempleGate_Map",
@@ -111370,7 +113112,13 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 2636,
-      "blockedCells": 6580
+      "blockedCells": 6580,
+      "doors": [
+        {
+          "to": "ShallowCoralReef_Map",
+          "label": "UW03_to_UW01"
+        }
+      ]
     },
     {
       "id": "VoidHunt_Map",
@@ -111381,7 +113129,14 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 9216,
-      "blockedCells": 0
+      "blockedCells": 0,
+      "doors": [
+        {
+          "to": "VolcanicApproach_Map",
+          "label": "Void_to_VO01",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "VolcanicApproach_Map",
@@ -111392,7 +113147,23 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 5543,
-      "blockedCells": 3673
+      "blockedCells": 3673,
+      "doors": [
+        {
+          "to": "AshenForest_Map",
+          "label": "VO01_to_FR04",
+          "kind": "region"
+        },
+        {
+          "to": "LavaRiverPass_Map",
+          "label": "VO01_to_VO02"
+        },
+        {
+          "to": "VoidHunt_Map",
+          "label": "VO01_to_Secret",
+          "kind": "region"
+        }
+      ]
     },
     {
       "id": "WorldGate_Map",
@@ -111403,7 +113174,49 @@
       "gridHeight": 96,
       "dataVersion": 1,
       "walkableCells": 3277,
-      "blockedCells": 5939
+      "blockedCells": 5939,
+      "doors": [
+        {
+          "to": "CL01",
+          "label": "CV01_to_WestGate",
+          "kind": "region"
+        },
+        {
+          "to": "Grassland_Map",
+          "label": "CV01_to_GL01",
+          "kind": "region"
+        },
+        {
+          "to": "GreekHarbor_Map",
+          "label": "CV01_to_GR01",
+          "kind": "region"
+        },
+        {
+          "to": "GY01",
+          "label": "CV01_to_Graveyard",
+          "kind": "region"
+        },
+        {
+          "to": "HeavenAscension_Map",
+          "label": "CV01_to_HV01",
+          "kind": "region"
+        },
+        {
+          "to": "JapanVillage_Map",
+          "label": "CV01_to_JP01",
+          "kind": "region"
+        },
+        {
+          "to": "MilitaryCheckpoint_Map",
+          "label": "CV01_to_ML01",
+          "kind": "region"
+        },
+        {
+          "to": "MZ01",
+          "label": "CV01_to_MZ01",
+          "kind": "region"
+        }
+      ]
     }
   ],
   "zones": [
