@@ -105,6 +105,7 @@
     var patchPath = esc(featured.path.replace(/index\.html$/, "patch.html"));
     var designPath = esc(featured.path.replace(/index\.html$/, "design-notes.html"));
     var iosStore = featured.storeLinks && featured.storeLinks.ios ? esc(featured.storeLinks.ios) : "";
+    var androidStore = featured.storeLinks && featured.storeLinks.android ? esc(featured.storeLinks.android) : "";
 
     portal.innerHTML =
       '<header class="portal-nav"><a class="portal-brand" href="index.html"><span>TW</span><strong>Tony Works</strong></a>' +
@@ -114,18 +115,19 @@
         '<p>Tony Works creates focused games with deep progression, approachable systems, and player-friendly companion tools.</p>' +
         '<div class="portal-actions">' +
           (iosStore ? '<a class="portal-primary" data-portal-action="app_store" href="' + iosStore + '" target="_blank" rel="noopener noreferrer">Download on the App Store <span aria-hidden="true">&#8599;</span></a>' : '') +
+          (androidStore ? '<a class="portal-primary" data-portal-action="play_store" href="' + androidStore + '" target="_blank" rel="noopener noreferrer">Get it on Google Play <span aria-hidden="true">&#8599;</span></a>' : '') +
           '<a class="portal-secondary" data-portal-action="game" href="' + gamePath + '">Explore the official wiki</a></div>' +
         '<div class="social-follow social-follow--portal" aria-label="Follow Tony Works"><span class="social-follow-label">Follow Tony Works</span>' +
           '<div class="social-follow-links"><a class="social-link social-link--tiktok" data-portal-action="tiktok" href="https://www.tiktok.com/@tonyworks95?lang=en" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">&#8599;</span></a>' +
           '<a class="social-link social-link--instagram" data-portal-action="instagram" href="https://www.instagram.com/tonytworks" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">&#8599;</span></a>' +
           '<a class="social-link social-link--youtube" data-portal-action="youtube" href="https://www.youtube.com/@tonytworks" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">&#8599;</span></a></div></div>' +
-        '<div class="portal-platforms"><span><i aria-hidden="true"></i> Released on iOS</span><span>Free</span><span>Android coming soon</span></div></div>' +
+        '<div class="portal-platforms"><span><i aria-hidden="true"></i> Released on iOS and Android</span><span>Free</span><span>15 languages</span></div></div>' +
         '<a class="featured-game" data-portal-action="featured_game" href="' + gamePath + '" style="--tile-accent:' + esc(featured.accent || "#7c9cff") + '">' +
           '<div class="featured-game-art"><span class="featured-badge">Featured game</span></div><div class="featured-game-info">' + tileIcon(featured) +
           '<div><span class="featured-label">Mobile roguelike RPG</span><h2>' + esc(featured.name) + '</h2><p>' + esc(featured.tagline || "") + '</p></div>' +
           '<span class="featured-go" aria-hidden="true">&#8594;</span></div></a></section>' +
       '<section class="portal-strip" aria-label="Tony Works highlights"><div><strong>Unity</strong><span>Built for mobile</span></div>' +
-        '<div><strong>15</strong><span>Supported languages</span></div><div><strong>iOS</strong><span>Version 1.0 available now</span></div></section>' +
+        '<div><strong>15</strong><span>Supported languages</span></div><div><strong>iOS &amp; Android</strong><span>Free on both stores</span></div></section>' +
       '<section class="portal-discover" aria-labelledby="discover-title"><div class="portal-section-head"><span class="portal-kicker">More than a landing page</span>' +
         '<h2 id="discover-title">Everything for your next run</h2><p>The official companion wiki stays connected to the game data, so planning a build never becomes guesswork.</p></div>' +
         '<div class="portal-link-grid"><a href="' + gamePath + '"><span class="portal-link-num">01</span><span><strong>Explore the wiki</strong><small>Monsters, bosses, items, maps and characters</small></span><span aria-hidden="true">&#8594;</span></a>' +

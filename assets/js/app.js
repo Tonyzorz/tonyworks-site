@@ -48,9 +48,12 @@
 
   // Add the final store listing URLs here when each release is live. Empty URLs
   // intentionally render as "Coming soon" so visitors never hit a broken page.
+  // ★ BOTH ARE LIVE as of 2026-09-17. The Play URL is the CANONICAL listing form - the share
+  // sheet appends `&pcampaignid=web_share`, which is Google's own share attribution and has no
+  // business in a site link.
   var STORE_LINKS = {
     ios: "https://apps.apple.com/us/app/infinite-loot-loop/id6790783620",
-    android: ""
+    android: "https://play.google.com/store/apps/details?id=com.tonyworks.infinitelootloop"
   };
 
   /* ---------- helpers ---------- */
@@ -536,10 +539,10 @@
         '<p>Find drops, explore routes, compare gear and plan your next run with data exported directly from the game.</p>' +
         '<div class="hero-actions"><a class="hero-primary" href="guide.html">Start with the guide <span aria-hidden="true">&#8594;</span></a>' +
           '<a class="hero-secondary" href="#explore">Explore the wiki</a></div>' +
-        '<div class="download-block"><div class="download-heading"><span class="download-dot" aria-hidden="true"></span>Available on iOS</div>' +
+        '<div class="download-block"><div class="download-heading"><span class="download-dot" aria-hidden="true"></span>Available on iOS and Android</div>' +
           '<div class="store-buttons">' +
             storeButton("ios", "Available now", "Download on the App Store", STORE_LINKS.ios) +
-            storeButton("android", "Release updates", "Google Play", STORE_LINKS.android) +
+            storeButton("android", "Available now", "Get it on Google Play", STORE_LINKS.android) +
           '</div></div></div>' +
       "</section>" +
       '<section class="home-search home-search-featured" aria-labelledby="wiki-search-title"><div class="home-search-copy"><span class="section-kicker">Quick lookup</span>' +
@@ -573,7 +576,7 @@
         }).join("") + '</div></section>' +
       '<aside class="home-status" aria-label="Game and wiki status"><div><span class="status-dot" aria-hidden="true"></span><span><small>Current game build</small><strong>' + esc(d.gameVersion || "Development") + '</strong></span></div>' +
         '<div><span><small>Wiki refreshed</small><strong>' + esc(formatDate(d.generatedAt)) + '</strong></span></div>' +
-        '<div><span><small>Mobile release</small><strong>iOS available now · Android coming soon</strong></span></div>' +
+        '<div><span><small>Mobile release</small><strong>Free on iOS and Android</strong></span></div>' +
         '<a href="patch.html">Read latest patch notes &#8594;</a></aside>' +
       "";
     function stat(n, l) { return '<div class="stat"><div class="n">' + (n || 0) + '</div><div class="l">' + l + "</div></div>"; }

@@ -9,10 +9,10 @@
       "iconImage": "apps/infinite-loot-loop/assets/img/app_icon.png",
       "path": "apps/infinite-loot-loop/index.html",
       "status": "Released",
-      "platforms": ["iOS", "Android coming soon"],
+      "platforms": ["iOS", "Android"],
       "storeLinks": {
         "ios": "https://apps.apple.com/us/app/infinite-loot-loop/id6790783620",
-        "android": ""
+        "android": "https://play.google.com/store/apps/details?id=com.tonyworks.infinitelootloop"
       },
       "accent": "#7c9cff",
       "type": "game"
