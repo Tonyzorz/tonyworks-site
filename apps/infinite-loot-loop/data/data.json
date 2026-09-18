@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T13:58:55Z",
+  "generatedAt": "2026-09-18T14:46:21Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "5.0.0",
   "release": {
@@ -19,7 +19,7 @@
     "zones": 1241,
     "areas": 138,
     "characters": 25,
-    "achievements": 63
+    "achievements": 71
   },
   "enemies": [
     {
@@ -38672,7 +38672,7 @@
     {
       "id": "GY01_Z0_H",
       "name": "Grave Moth H",
-      "image": "",
+      "image": "enemy_GY01_Z0_H.png",
       "isBoss": false,
       "minLevel": 11380000,
       "maxLevel": 11380000,
@@ -38714,7 +38714,7 @@
     {
       "id": "GY01_Z1_H",
       "name": "Iron Fence Wraith H",
-      "image": "",
+      "image": "enemy_GY01_Z1_H.png",
       "isBoss": false,
       "minLevel": 11454000,
       "maxLevel": 11454000,
@@ -38756,7 +38756,7 @@
     {
       "id": "GY01_Z2_H",
       "name": "Elder Grave Moth H",
-      "image": "",
+      "image": "enemy_GY01_Z2_H.png",
       "isBoss": false,
       "minLevel": 11527900,
       "maxLevel": 11527900,
@@ -38798,7 +38798,7 @@
     {
       "id": "GY01_Z3_H",
       "name": "Elder Iron Fence Wraith H",
-      "image": "",
+      "image": "enemy_GY01_Z3_H.png",
       "isBoss": false,
       "minLevel": 11601900,
       "maxLevel": 11601900,
@@ -38840,7 +38840,7 @@
     {
       "id": "GY01_Z4_H",
       "name": "Greater Grave Moth H",
-      "image": "",
+      "image": "enemy_GY01_Z4_H.png",
       "isBoss": false,
       "minLevel": 11675900,
       "maxLevel": 11675900,
@@ -38882,7 +38882,7 @@
     {
       "id": "GY01_Z5_H",
       "name": "Greater Iron Fence Wraith H",
-      "image": "",
+      "image": "enemy_GY01_Z5_H.png",
       "isBoss": false,
       "minLevel": 11749800,
       "maxLevel": 11749800,
@@ -38924,7 +38924,7 @@
     {
       "id": "GY02_Z0_H",
       "name": "Sexton's Shade H",
-      "image": "",
+      "image": "enemy_GY02_Z0_H.png",
       "isBoss": false,
       "minLevel": 12010000,
       "maxLevel": 12010000,
@@ -38966,7 +38966,7 @@
     {
       "id": "GY02_Z1_H",
       "name": "Tomb Beetle H",
-      "image": "",
+      "image": "enemy_GY02_Z1_H.png",
       "isBoss": false,
       "minLevel": 12088100,
       "maxLevel": 12088100,
@@ -39008,7 +39008,7 @@
     {
       "id": "GY02_Z2_H",
       "name": "Elder Sexton's Shade H",
-      "image": "",
+      "image": "enemy_GY02_Z2_H.png",
       "isBoss": false,
       "minLevel": 12166100,
       "maxLevel": 12166100,
@@ -39050,7 +39050,7 @@
     {
       "id": "GY02_Z3_H",
       "name": "Elder Tomb Beetle H",
-      "image": "",
+      "image": "enemy_GY02_Z3_H.png",
       "isBoss": false,
       "minLevel": 12244200,
       "maxLevel": 12244200,
@@ -39092,7 +39092,7 @@
     {
       "id": "GY02_Z4_H",
       "name": "Greater Sexton's Shade H",
-      "image": "",
+      "image": "enemy_GY02_Z4_H.png",
       "isBoss": false,
       "minLevel": 12322300,
       "maxLevel": 12322300,
@@ -39134,7 +39134,7 @@
     {
       "id": "GY03_Z0_H",
       "name": "Ossuary Hound H",
-      "image": "",
+      "image": "enemy_GY03_Z0_H.png",
       "isBoss": false,
       "minLevel": 12680000,
       "maxLevel": 12680000,
@@ -39176,7 +39176,7 @@
     {
       "id": "GY03_Z1_H",
       "name": "Bone Chandelier H",
-      "image": "",
+      "image": "enemy_GY03_Z1_H.png",
       "isBoss": false,
       "minLevel": 12762400,
       "maxLevel": 12762400,
@@ -39218,7 +39218,7 @@
     {
       "id": "GY03_Z2_H",
       "name": "Elder Ossuary Hound H",
-      "image": "",
+      "image": "enemy_GY03_Z2_H.png",
       "isBoss": false,
       "minLevel": 12844800,
       "maxLevel": 12844800,
@@ -39260,7 +39260,7 @@
     {
       "id": "GY03_Z3_H",
       "name": "Elder Bone Chandelier H",
-      "image": "",
+      "image": "enemy_GY03_Z3_H.png",
       "isBoss": false,
       "minLevel": 12927300,
       "maxLevel": 12927300,
@@ -39302,7 +39302,7 @@
     {
       "id": "GY03_Z4_H",
       "name": "Greater Ossuary Hound H",
-      "image": "",
+      "image": "enemy_GY03_Z4_H.png",
       "isBoss": false,
       "minLevel": 13009700,
       "maxLevel": 13009700,
@@ -39344,7 +39344,7 @@
     {
       "id": "GY03_Z5_H",
       "name": "Greater Bone Chandelier H",
-      "image": "",
+      "image": "enemy_GY03_Z5_H.png",
       "isBoss": false,
       "minLevel": 13092100,
       "maxLevel": 13092100,
@@ -39386,7 +39386,7 @@
     {
       "id": "GY03_Z6_H",
       "name": "Ancient Ossuary Hound H",
-      "image": "",
+      "image": "enemy_GY03_Z6_H.png",
       "isBoss": false,
       "minLevel": 13174500,
       "maxLevel": 13174500,
@@ -39428,7 +39428,7 @@
     {
       "id": "GY04_Z0_H",
       "name": "Drowned Mourner H",
-      "image": "",
+      "image": "enemy_GY04_Z0_H.png",
       "isBoss": false,
       "minLevel": 13380000,
       "maxLevel": 13380000,
@@ -39470,7 +39470,7 @@
     {
       "id": "GY04_Z1_H",
       "name": "Weeping Statue H",
-      "image": "",
+      "image": "enemy_GY04_Z1_H.png",
       "isBoss": false,
       "minLevel": 13467000,
       "maxLevel": 13467000,
@@ -39512,7 +39512,7 @@
     {
       "id": "GY04_Z2_H",
       "name": "Elder Drowned Mourner H",
-      "image": "",
+      "image": "enemy_GY04_Z2_H.png",
       "isBoss": false,
       "minLevel": 13553900,
       "maxLevel": 13553900,
@@ -39554,7 +39554,7 @@
     {
       "id": "GY04_Z3_H",
       "name": "Elder Weeping Statue H",
-      "image": "",
+      "image": "enemy_GY04_Z3_H.png",
       "isBoss": false,
       "minLevel": 13640900,
       "maxLevel": 13640900,
@@ -39596,7 +39596,7 @@
     {
       "id": "GY04_Z4_H",
       "name": "Greater Drowned Mourner H",
-      "image": "",
+      "image": "enemy_GY04_Z4_H.png",
       "isBoss": false,
       "minLevel": 13727900,
       "maxLevel": 13727900,
@@ -39638,7 +39638,7 @@
     {
       "id": "GY05_Z0_H",
       "name": "Bone Chandelier H",
-      "image": "",
+      "image": "enemy_GY05_Z0_H.png",
       "isBoss": false,
       "minLevel": 14120000,
       "maxLevel": 14120000,
@@ -39680,7 +39680,7 @@
     {
       "id": "GY05_Z1_H",
       "name": "Ossuary Hound H",
-      "image": "",
+      "image": "enemy_GY05_Z1_H.png",
       "isBoss": false,
       "minLevel": 14211800,
       "maxLevel": 14211800,
@@ -39722,7 +39722,7 @@
     {
       "id": "GY05_Z2_H",
       "name": "Elder Bone Chandelier H",
-      "image": "",
+      "image": "enemy_GY05_Z2_H.png",
       "isBoss": false,
       "minLevel": 14303600,
       "maxLevel": 14303600,
@@ -39764,7 +39764,7 @@
     {
       "id": "GY05_Z3_H",
       "name": "Elder Ossuary Hound H",
-      "image": "",
+      "image": "enemy_GY05_Z3_H.png",
       "isBoss": false,
       "minLevel": 14395300,
       "maxLevel": 14395300,
@@ -39806,7 +39806,7 @@
     {
       "id": "GY05_Z4_H",
       "name": "Greater Bone Chandelier H",
-      "image": "",
+      "image": "enemy_GY05_Z4_H.png",
       "isBoss": false,
       "minLevel": 14487100,
       "maxLevel": 14487100,
@@ -39848,7 +39848,7 @@
     {
       "id": "GY05_Z5_H",
       "name": "Greater Ossuary Hound H",
-      "image": "",
+      "image": "enemy_GY05_Z5_H.png",
       "isBoss": false,
       "minLevel": 14578900,
       "maxLevel": 14578900,
@@ -39890,7 +39890,7 @@
     {
       "id": "GY06_Z0_H",
       "name": "Fogcaller H",
-      "image": "",
+      "image": "enemy_GY06_Z0_H.png",
       "isBoss": false,
       "minLevel": 14900000,
       "maxLevel": 14900000,
@@ -39932,7 +39932,7 @@
     {
       "id": "GY06_Z1_H",
       "name": "Sexton's Shade H",
-      "image": "",
+      "image": "enemy_GY06_Z1_H.png",
       "isBoss": false,
       "minLevel": 14996800,
       "maxLevel": 14996800,
@@ -39974,7 +39974,7 @@
     {
       "id": "GY06_Z2_H",
       "name": "Elder Fogcaller H",
-      "image": "",
+      "image": "enemy_GY06_Z2_H.png",
       "isBoss": false,
       "minLevel": 15093700,
       "maxLevel": 15093700,
@@ -40016,7 +40016,7 @@
     {
       "id": "GY06_Z3_H",
       "name": "Elder Sexton's Shade H",
-      "image": "",
+      "image": "enemy_GY06_Z3_H.png",
       "isBoss": false,
       "minLevel": 15190600,
       "maxLevel": 15190600,
@@ -40058,7 +40058,7 @@
     {
       "id": "GY06_Z4_H",
       "name": "Greater Fogcaller H",
-      "image": "",
+      "image": "enemy_GY06_Z4_H.png",
       "isBoss": false,
       "minLevel": 15287400,
       "maxLevel": 15287400,
@@ -40100,7 +40100,7 @@
     {
       "id": "GY07_Z0_H",
       "name": "Crypt Warden H",
-      "image": "",
+      "image": "enemy_GY07_Z0_H.png",
       "isBoss": false,
       "minLevel": 15730000,
       "maxLevel": 15730000,
@@ -40117,7 +40117,12 @@
         {
           "itemId": "GY07_Weapon_H",
           "itemName": "Epitaph Greatsword [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "GY07_Shoes_H",
+          "itemName": "Rootbound Greaves [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -40142,7 +40147,7 @@
     {
       "id": "GY07_Z1_H",
       "name": "Fogcaller H",
-      "image": "",
+      "image": "enemy_GY07_Z1_H.png",
       "isBoss": false,
       "minLevel": 15832200,
       "maxLevel": 15832200,
@@ -40159,7 +40164,12 @@
         {
           "itemId": "GY07_Armor_H",
           "itemName": "Ossuary Plate [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "GY07_Accessory_H",
+          "itemName": "Weeping Angel's Tear [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -40184,7 +40194,7 @@
     {
       "id": "GY07_Z2_H",
       "name": "Elder Crypt Warden H",
-      "image": "",
+      "image": "enemy_GY07_Z2_H.png",
       "isBoss": false,
       "minLevel": 15934500,
       "maxLevel": 15934500,
@@ -40226,7 +40236,7 @@
     {
       "id": "GY08_Z0_H",
       "name": "Tomb Beetle H",
-      "image": "",
+      "image": "enemy_GY08_Z0_H.png",
       "isBoss": false,
       "minLevel": 16600000,
       "maxLevel": 16600000,
@@ -40268,7 +40278,7 @@
     {
       "id": "GY08_Z1_H",
       "name": "Bone Chandelier H",
-      "image": "",
+      "image": "enemy_GY08_Z1_H.png",
       "isBoss": false,
       "minLevel": 16707900,
       "maxLevel": 16707900,
@@ -40310,7 +40320,7 @@
     {
       "id": "GY08_Z2_H",
       "name": "Elder Tomb Beetle H",
-      "image": "",
+      "image": "enemy_GY08_Z2_H.png",
       "isBoss": false,
       "minLevel": 16815800,
       "maxLevel": 16815800,
@@ -40352,7 +40362,7 @@
     {
       "id": "GY08_Z3_H",
       "name": "Elder Bone Chandelier H",
-      "image": "",
+      "image": "enemy_GY08_Z3_H.png",
       "isBoss": false,
       "minLevel": 16923700,
       "maxLevel": 16923700,
@@ -40394,7 +40404,7 @@
     {
       "id": "GY08_Z4_H",
       "name": "Greater Tomb Beetle H",
-      "image": "",
+      "image": "enemy_GY08_Z4_H.png",
       "isBoss": false,
       "minLevel": 17031600,
       "maxLevel": 17031600,
@@ -40436,7 +40446,7 @@
     {
       "id": "GY08_Z5_H",
       "name": "Greater Bone Chandelier H",
-      "image": "",
+      "image": "enemy_GY08_Z5_H.png",
       "isBoss": false,
       "minLevel": 17139500,
       "maxLevel": 17139500,
@@ -40478,7 +40488,7 @@
     {
       "id": "GY09_Z0_H",
       "name": "Rootbound Cadaver H",
-      "image": "",
+      "image": "enemy_GY09_Z0_H.png",
       "isBoss": false,
       "minLevel": 17520000,
       "maxLevel": 17520000,
@@ -40520,7 +40530,7 @@
     {
       "id": "GY09_Z1_H",
       "name": "Weeping Statue H",
-      "image": "",
+      "image": "enemy_GY09_Z1_H.png",
       "isBoss": false,
       "minLevel": 17633900,
       "maxLevel": 17633900,
@@ -40562,7 +40572,7 @@
     {
       "id": "GY09_Z2_H",
       "name": "Elder Rootbound Cadaver H",
-      "image": "",
+      "image": "enemy_GY09_Z2_H.png",
       "isBoss": false,
       "minLevel": 17747800,
       "maxLevel": 17747800,
@@ -40604,7 +40614,7 @@
     {
       "id": "GY09_Z3_H",
       "name": "Elder Weeping Statue H",
-      "image": "",
+      "image": "enemy_GY09_Z3_H.png",
       "isBoss": false,
       "minLevel": 17861600,
       "maxLevel": 17861600,
@@ -40646,7 +40656,7 @@
     {
       "id": "GY09_Z4_H",
       "name": "Greater Rootbound Cadaver H",
-      "image": "",
+      "image": "enemy_GY09_Z4_H.png",
       "isBoss": false,
       "minLevel": 17975500,
       "maxLevel": 17975500,
@@ -40688,7 +40698,7 @@
     {
       "id": "GY10_Z0_H",
       "name": "The Interred H",
-      "image": "",
+      "image": "enemy_GY10_Z0_H.png",
       "isBoss": false,
       "minLevel": 18490000,
       "maxLevel": 18490000,
@@ -40705,7 +40715,12 @@
         {
           "itemId": "GY10_Weapon_H",
           "itemName": "The Last Rite [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "GY10_Accessory_H",
+          "itemName": "Seal of the First Dead [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -40730,7 +40745,7 @@
     {
       "id": "GY10_Z1_H",
       "name": "Crypt Warden H",
-      "image": "",
+      "image": "enemy_GY10_Z1_H.png",
       "isBoss": false,
       "minLevel": 18610200,
       "maxLevel": 18610200,
@@ -40772,7 +40787,7 @@
     {
       "id": "GY10_Z2_H",
       "name": "Elder The Interred H",
-      "image": "",
+      "image": "enemy_GY10_Z2_H.png",
       "isBoss": false,
       "minLevel": 18730400,
       "maxLevel": 18730400,
@@ -40814,7 +40829,7 @@
     {
       "id": "GY10_Z3_H",
       "name": "Elder Crypt Warden H",
-      "image": "",
+      "image": "enemy_GY10_Z3_H.png",
       "isBoss": false,
       "minLevel": 18850600,
       "maxLevel": 18850600,
@@ -40856,7 +40871,7 @@
     {
       "id": "KR01_Z0_H",
       "name": "Dokkaebi Brawler H",
-      "image": "",
+      "image": "enemy_KR01_Z0_H.png",
       "isBoss": false,
       "minLevel": 20510000,
       "maxLevel": 20510000,
@@ -40898,7 +40913,7 @@
     {
       "id": "KR01_Z1_H",
       "name": "Tile Roof Serpent H",
-      "image": "",
+      "image": "enemy_KR01_Z1_H.png",
       "isBoss": false,
       "minLevel": 20643300,
       "maxLevel": 20643300,
@@ -40940,7 +40955,7 @@
     {
       "id": "KR01_Z2_H",
       "name": "Elder Dokkaebi Brawler H",
-      "image": "",
+      "image": "enemy_KR01_Z2_H.png",
       "isBoss": false,
       "minLevel": 20776600,
       "maxLevel": 20776600,
@@ -40982,7 +40997,7 @@
     {
       "id": "KR01_Z3_H",
       "name": "Elder Tile Roof Serpent H",
-      "image": "",
+      "image": "enemy_KR01_Z3_H.png",
       "isBoss": false,
       "minLevel": 20909900,
       "maxLevel": 20909900,
@@ -41024,7 +41039,7 @@
     {
       "id": "KR01_Z4_H",
       "name": "Greater Dokkaebi Brawler H",
-      "image": "",
+      "image": "enemy_KR01_Z4_H.png",
       "isBoss": false,
       "minLevel": 21043300,
       "maxLevel": 21043300,
@@ -41066,7 +41081,7 @@
     {
       "id": "KR01_Z5_H",
       "name": "Greater Tile Roof Serpent H",
-      "image": "",
+      "image": "enemy_KR01_Z5_H.png",
       "isBoss": false,
       "minLevel": 21176600,
       "maxLevel": 21176600,
@@ -41108,7 +41123,7 @@
     {
       "id": "KR02_Z0_H",
       "name": "Gumiho Stalker H",
-      "image": "",
+      "image": "enemy_KR02_Z0_H.png",
       "isBoss": false,
       "minLevel": 21650000,
       "maxLevel": 21650000,
@@ -41150,7 +41165,7 @@
     {
       "id": "KR02_Z1_H",
       "name": "Haetae Sentinel H",
-      "image": "",
+      "image": "enemy_KR02_Z1_H.png",
       "isBoss": false,
       "minLevel": 21790700,
       "maxLevel": 21790700,
@@ -41192,7 +41207,7 @@
     {
       "id": "KR02_Z2_H",
       "name": "Elder Gumiho Stalker H",
-      "image": "",
+      "image": "enemy_KR02_Z2_H.png",
       "isBoss": false,
       "minLevel": 21931400,
       "maxLevel": 21931400,
@@ -41234,7 +41249,7 @@
     {
       "id": "KR02_Z3_H",
       "name": "Elder Haetae Sentinel H",
-      "image": "",
+      "image": "enemy_KR02_Z3_H.png",
       "isBoss": false,
       "minLevel": 22072200,
       "maxLevel": 22072200,
@@ -41276,7 +41291,7 @@
     {
       "id": "KR02_Z4_H",
       "name": "Greater Gumiho Stalker H",
-      "image": "",
+      "image": "enemy_KR02_Z4_H.png",
       "isBoss": false,
       "minLevel": 22212900,
       "maxLevel": 22212900,
@@ -41318,7 +41333,7 @@
     {
       "id": "KR02_Z5_H",
       "name": "Greater Haetae Sentinel H",
-      "image": "",
+      "image": "enemy_KR02_Z5_H.png",
       "isBoss": false,
       "minLevel": 22353600,
       "maxLevel": 22353600,
@@ -41360,7 +41375,7 @@
     {
       "id": "KR02_Z6_H",
       "name": "Ancient Gumiho Stalker H",
-      "image": "",
+      "image": "enemy_KR02_Z6_H.png",
       "isBoss": false,
       "minLevel": 22494400,
       "maxLevel": 22494400,
@@ -41402,7 +41417,7 @@
     {
       "id": "KR03_Z0_H",
       "name": "Haetae Sentinel H",
-      "image": "",
+      "image": "enemy_KR03_Z0_H.png",
       "isBoss": false,
       "minLevel": 22850000,
       "maxLevel": 22850000,
@@ -41444,7 +41459,7 @@
     {
       "id": "KR03_Z1_H",
       "name": "Jangseung Totem H",
-      "image": "",
+      "image": "enemy_KR03_Z1_H.png",
       "isBoss": false,
       "minLevel": 22998500,
       "maxLevel": 22998500,
@@ -41486,7 +41501,7 @@
     {
       "id": "KR03_Z2_H",
       "name": "Elder Haetae Sentinel H",
-      "image": "",
+      "image": "enemy_KR03_Z2_H.png",
       "isBoss": false,
       "minLevel": 23147000,
       "maxLevel": 23147000,
@@ -41528,7 +41543,7 @@
     {
       "id": "KR03_Z3_H",
       "name": "Elder Jangseung Totem H",
-      "image": "",
+      "image": "enemy_KR03_Z3_H.png",
       "isBoss": false,
       "minLevel": 23295600,
       "maxLevel": 23295600,
@@ -41570,7 +41585,7 @@
     {
       "id": "KR03_Z4_H",
       "name": "Greater Haetae Sentinel H",
-      "image": "",
+      "image": "enemy_KR03_Z4_H.png",
       "isBoss": false,
       "minLevel": 23444100,
       "maxLevel": 23444100,
@@ -41612,7 +41627,7 @@
     {
       "id": "KR04_Z0_H",
       "name": "Bamboo Revenant H",
-      "image": "",
+      "image": "enemy_KR04_Z0_H.png",
       "isBoss": false,
       "minLevel": 24120000,
       "maxLevel": 24120000,
@@ -41659,7 +41674,7 @@
     {
       "id": "KR04_Z1_H",
       "name": "Gumiho Stalker H",
-      "image": "",
+      "image": "enemy_KR04_Z1_H.png",
       "isBoss": false,
       "minLevel": 24276800,
       "maxLevel": 24276800,
@@ -41706,7 +41721,7 @@
     {
       "id": "KR04_Z2_H",
       "name": "Elder Bamboo Revenant H",
-      "image": "",
+      "image": "enemy_KR04_Z2_H.png",
       "isBoss": false,
       "minLevel": 24433600,
       "maxLevel": 24433600,
@@ -41753,7 +41768,7 @@
     {
       "id": "KR04_Z3_H",
       "name": "Elder Gumiho Stalker H",
-      "image": "",
+      "image": "enemy_KR04_Z3_H.png",
       "isBoss": false,
       "minLevel": 24590300,
       "maxLevel": 24590300,
@@ -41800,7 +41815,7 @@
     {
       "id": "KR04_Z4_H",
       "name": "Greater Bamboo Revenant H",
-      "image": "",
+      "image": "enemy_KR04_Z4_H.png",
       "isBoss": false,
       "minLevel": 24747100,
       "maxLevel": 24747100,
@@ -41847,7 +41862,7 @@
     {
       "id": "KR05_Z0_H",
       "name": "Paddy Drowner H",
-      "image": "",
+      "image": "enemy_KR05_Z0_H.png",
       "isBoss": false,
       "minLevel": 25460000,
       "maxLevel": 25460000,
@@ -41889,7 +41904,7 @@
     {
       "id": "KR05_Z1_H",
       "name": "Jangseung Totem H",
-      "image": "",
+      "image": "enemy_KR05_Z1_H.png",
       "isBoss": false,
       "minLevel": 25625500,
       "maxLevel": 25625500,
@@ -41931,7 +41946,7 @@
     {
       "id": "KR05_Z2_H",
       "name": "Elder Paddy Drowner H",
-      "image": "",
+      "image": "enemy_KR05_Z2_H.png",
       "isBoss": false,
       "minLevel": 25791000,
       "maxLevel": 25791000,
@@ -41973,7 +41988,7 @@
     {
       "id": "KR05_Z3_H",
       "name": "Elder Jangseung Totem H",
-      "image": "",
+      "image": "enemy_KR05_Z3_H.png",
       "isBoss": false,
       "minLevel": 25956500,
       "maxLevel": 25956500,
@@ -42015,7 +42030,7 @@
     {
       "id": "KR05_Z4_H",
       "name": "Greater Paddy Drowner H",
-      "image": "",
+      "image": "enemy_KR05_Z4_H.png",
       "isBoss": false,
       "minLevel": 26122000,
       "maxLevel": 26122000,
@@ -42057,7 +42072,7 @@
     {
       "id": "KR05_Z5_H",
       "name": "Greater Jangseung Totem H",
-      "image": "",
+      "image": "enemy_KR05_Z5_H.png",
       "isBoss": false,
       "minLevel": 26287400,
       "maxLevel": 26287400,
@@ -42099,7 +42114,7 @@
     {
       "id": "KR06_Z0_H",
       "name": "Basalt Tumbler H",
-      "image": "",
+      "image": "enemy_KR06_Z0_H.png",
       "isBoss": false,
       "minLevel": 26870000,
       "maxLevel": 26870000,
@@ -42141,7 +42156,7 @@
     {
       "id": "KR06_Z1_H",
       "name": "Dokkaebi Brawler H",
-      "image": "",
+      "image": "enemy_KR06_Z1_H.png",
       "isBoss": false,
       "minLevel": 27044700,
       "maxLevel": 27044700,
@@ -42183,7 +42198,7 @@
     {
       "id": "KR06_Z2_H",
       "name": "Elder Basalt Tumbler H",
-      "image": "",
+      "image": "enemy_KR06_Z2_H.png",
       "isBoss": false,
       "minLevel": 27219300,
       "maxLevel": 27219300,
@@ -42225,7 +42240,7 @@
     {
       "id": "KR06_Z3_H",
       "name": "Elder Dokkaebi Brawler H",
-      "image": "",
+      "image": "enemy_KR06_Z3_H.png",
       "isBoss": false,
       "minLevel": 27394000,
       "maxLevel": 27394000,
@@ -42267,7 +42282,7 @@
     {
       "id": "KR06_Z4_H",
       "name": "Greater Basalt Tumbler H",
-      "image": "",
+      "image": "enemy_KR06_Z4_H.png",
       "isBoss": false,
       "minLevel": 27568600,
       "maxLevel": 27568600,
@@ -42309,7 +42324,7 @@
     {
       "id": "KR07_Z0_H",
       "name": "Hanji Lantern H",
-      "image": "",
+      "image": "enemy_KR07_Z0_H.png",
       "isBoss": false,
       "minLevel": 28360000,
       "maxLevel": 28360000,
@@ -42326,12 +42341,7 @@
         {
           "itemId": "KR07_Weapon_H",
           "itemName": "Nine-Ring Sabre [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_SovereignsScale",
-          "itemName": "The Sovereign's Scale",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -42356,7 +42366,7 @@
     {
       "id": "KR07_Z1_H",
       "name": "Ink Scholar H",
-      "image": "",
+      "image": "enemy_KR07_Z1_H.png",
       "isBoss": false,
       "minLevel": 28544300,
       "maxLevel": 28544300,
@@ -42373,12 +42383,7 @@
         {
           "itemId": "KR07_Armor_H",
           "itemName": "Haetae Scalemail [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_SovereignsScale",
-          "itemName": "The Sovereign's Scale",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -42403,7 +42408,7 @@
     {
       "id": "KR07_Z2_H",
       "name": "Elder Hanji Lantern H",
-      "image": "",
+      "image": "enemy_KR07_Z2_H.png",
       "isBoss": false,
       "minLevel": 28728700,
       "maxLevel": 28728700,
@@ -42420,12 +42425,7 @@
         {
           "itemId": "KR07_Helmet_H",
           "itemName": "Dancheong Warcrown [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_SovereignsScale",
-          "itemName": "The Sovereign's Scale",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -42450,7 +42450,7 @@
     {
       "id": "KR07_Z3_H",
       "name": "Elder Ink Scholar H",
-      "image": "",
+      "image": "enemy_KR07_Z3_H.png",
       "isBoss": false,
       "minLevel": 28913000,
       "maxLevel": 28913000,
@@ -42467,12 +42467,7 @@
         {
           "itemId": "KR07_Shoes_H",
           "itemName": "Fortress-Wall Sabatons [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_SovereignsScale",
-          "itemName": "The Sovereign's Scale",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -42497,7 +42492,7 @@
     {
       "id": "KR07_Z4_H",
       "name": "Greater Hanji Lantern H",
-      "image": "",
+      "image": "enemy_KR07_Z4_H.png",
       "isBoss": false,
       "minLevel": 29097400,
       "maxLevel": 29097400,
@@ -42514,12 +42509,7 @@
         {
           "itemId": "KR07_Accessory_H",
           "itemName": "Nine-Tail Charm [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_SovereignsScale",
-          "itemName": "The Sovereign's Scale",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -42544,7 +42534,7 @@
     {
       "id": "KR08_Z0_H",
       "name": "Haetae Sentinel H",
-      "image": "",
+      "image": "enemy_KR08_Z0_H.png",
       "isBoss": false,
       "minLevel": 29930000,
       "maxLevel": 29930000,
@@ -42564,8 +42554,8 @@
           "chance": 1.333
         },
         {
-          "itemId": "Key_SovereignsScale",
-          "itemName": "The Sovereign's Scale",
+          "itemId": "KR08_Accessory_H",
+          "itemName": "Sovereign's Jade Seal [H]",
           "chance": 0.667
         }
       ],
@@ -42591,7 +42581,7 @@
     {
       "id": "KR08_Z1_H",
       "name": "Gumiho Stalker H",
-      "image": "",
+      "image": "enemy_KR08_Z1_H.png",
       "isBoss": false,
       "minLevel": 30124500,
       "maxLevel": 30124500,
@@ -42608,12 +42598,7 @@
         {
           "itemId": "KR08_Armor_H",
           "itemName": "Sovereign's Nine-Dragon Plate [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_SovereignsScale",
-          "itemName": "The Sovereign's Scale",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -42638,7 +42623,7 @@
     {
       "id": "KR08_Z2_H",
       "name": "Elder Haetae Sentinel H",
-      "image": "",
+      "image": "enemy_KR08_Z2_H.png",
       "isBoss": false,
       "minLevel": 30319100,
       "maxLevel": 30319100,
@@ -42655,12 +42640,7 @@
         {
           "itemId": "KR08_Helmet_H",
           "itemName": "Nine-Dragon Diadem [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_SovereignsScale",
-          "itemName": "The Sovereign's Scale",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -42685,7 +42665,7 @@
     {
       "id": "KR08_Z3_H",
       "name": "Elder Gumiho Stalker H",
-      "image": "",
+      "image": "enemy_KR08_Z3_H.png",
       "isBoss": false,
       "minLevel": 30513600,
       "maxLevel": 30513600,
@@ -42702,12 +42682,7 @@
         {
           "itemId": "KR08_Shoes_H",
           "itemName": "Dragon-Step Boots [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_SovereignsScale",
-          "itemName": "The Sovereign's Scale",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -44580,7 +44555,7 @@
     {
       "id": "LD01_Z0_H",
       "name": "Thames Bloater H",
-      "image": "",
+      "image": "enemy_LD01_Z0_H.png",
       "isBoss": false,
       "minLevel": 48100000,
       "maxLevel": 48100000,
@@ -44622,7 +44597,7 @@
     {
       "id": "LD01_Z1_H",
       "name": "Fogfather H",
-      "image": "",
+      "image": "enemy_LD01_Z1_H.png",
       "isBoss": false,
       "minLevel": 48412600,
       "maxLevel": 48412600,
@@ -44664,7 +44639,7 @@
     {
       "id": "LD01_Z2_H",
       "name": "Elder Thames Bloater H",
-      "image": "",
+      "image": "enemy_LD01_Z2_H.png",
       "isBoss": false,
       "minLevel": 48725300,
       "maxLevel": 48725300,
@@ -44706,7 +44681,7 @@
     {
       "id": "LD01_Z3_H",
       "name": "Elder Fogfather H",
-      "image": "",
+      "image": "enemy_LD01_Z3_H.png",
       "isBoss": false,
       "minLevel": 49038000,
       "maxLevel": 49038000,
@@ -44748,7 +44723,7 @@
     {
       "id": "LD01_Z4_H",
       "name": "Greater Thames Bloater H",
-      "image": "",
+      "image": "enemy_LD01_Z4_H.png",
       "isBoss": false,
       "minLevel": 49350600,
       "maxLevel": 49350600,
@@ -44790,7 +44765,7 @@
     {
       "id": "LD02_Z0_H",
       "name": "Rail Shrieker H",
-      "image": "",
+      "image": "enemy_LD02_Z0_H.png",
       "isBoss": false,
       "minLevel": 50770000,
       "maxLevel": 50770000,
@@ -44832,7 +44807,7 @@
     {
       "id": "LD02_Z1_H",
       "name": "Soot Crawler H",
-      "image": "",
+      "image": "enemy_LD02_Z1_H.png",
       "isBoss": false,
       "minLevel": 51100000,
       "maxLevel": 51100000,
@@ -44874,7 +44849,7 @@
     {
       "id": "LD02_Z2_H",
       "name": "Elder Rail Shrieker H",
-      "image": "",
+      "image": "enemy_LD02_Z2_H.png",
       "isBoss": false,
       "minLevel": 51430000,
       "maxLevel": 51430000,
@@ -44916,7 +44891,7 @@
     {
       "id": "LD02_Z3_H",
       "name": "Elder Soot Crawler H",
-      "image": "",
+      "image": "enemy_LD02_Z3_H.png",
       "isBoss": false,
       "minLevel": 51760000,
       "maxLevel": 51760000,
@@ -44958,7 +44933,7 @@
     {
       "id": "LD02_Z4_H",
       "name": "Greater Rail Shrieker H",
-      "image": "",
+      "image": "enemy_LD02_Z4_H.png",
       "isBoss": false,
       "minLevel": 52090000,
       "maxLevel": 52090000,
@@ -45000,7 +44975,7 @@
     {
       "id": "LD02_Z5_H",
       "name": "Greater Soot Crawler H",
-      "image": "",
+      "image": "enemy_LD02_Z5_H.png",
       "isBoss": false,
       "minLevel": 52420000,
       "maxLevel": 52420000,
@@ -45042,7 +45017,7 @@
     {
       "id": "LD03_Z0_H",
       "name": "Chimney Corvid H",
-      "image": "",
+      "image": "enemy_LD03_Z0_H.png",
       "isBoss": false,
       "minLevel": 53590000,
       "maxLevel": 53590000,
@@ -45084,7 +45059,7 @@
     {
       "id": "LD03_Z1_H",
       "name": "Gaslight Sprite H",
-      "image": "",
+      "image": "enemy_LD03_Z1_H.png",
       "isBoss": false,
       "minLevel": 53938300,
       "maxLevel": 53938300,
@@ -45126,7 +45101,7 @@
     {
       "id": "LD03_Z2_H",
       "name": "Elder Chimney Corvid H",
-      "image": "",
+      "image": "enemy_LD03_Z2_H.png",
       "isBoss": false,
       "minLevel": 54286700,
       "maxLevel": 54286700,
@@ -45168,7 +45143,7 @@
     {
       "id": "LD03_Z3_H",
       "name": "Elder Gaslight Sprite H",
-      "image": "",
+      "image": "enemy_LD03_Z3_H.png",
       "isBoss": false,
       "minLevel": 54635000,
       "maxLevel": 54635000,
@@ -45210,7 +45185,7 @@
     {
       "id": "LD03_Z4_H",
       "name": "Greater Chimney Corvid H",
-      "image": "",
+      "image": "enemy_LD03_Z4_H.png",
       "isBoss": false,
       "minLevel": 54983300,
       "maxLevel": 54983300,
@@ -45252,7 +45227,7 @@
     {
       "id": "LD04_Z0_H",
       "name": "Alley Cutthroat H",
-      "image": "",
+      "image": "enemy_LD04_Z0_H.png",
       "isBoss": false,
       "minLevel": 56560000,
       "maxLevel": 56560000,
@@ -45299,7 +45274,7 @@
     {
       "id": "LD04_Z1_H",
       "name": "Soot Crawler H",
-      "image": "",
+      "image": "enemy_LD04_Z1_H.png",
       "isBoss": false,
       "minLevel": 56927600,
       "maxLevel": 56927600,
@@ -45346,7 +45321,7 @@
     {
       "id": "LD04_Z2_H",
       "name": "Elder Alley Cutthroat H",
-      "image": "",
+      "image": "enemy_LD04_Z2_H.png",
       "isBoss": false,
       "minLevel": 57295300,
       "maxLevel": 57295300,
@@ -45393,7 +45368,7 @@
     {
       "id": "LD04_Z3_H",
       "name": "Elder Soot Crawler H",
-      "image": "",
+      "image": "enemy_LD04_Z3_H.png",
       "isBoss": false,
       "minLevel": 57662900,
       "maxLevel": 57662900,
@@ -45440,7 +45415,7 @@
     {
       "id": "LD04_Z4_H",
       "name": "Greater Alley Cutthroat H",
-      "image": "",
+      "image": "enemy_LD04_Z4_H.png",
       "isBoss": false,
       "minLevel": 58030600,
       "maxLevel": 58030600,
@@ -45487,7 +45462,7 @@
     {
       "id": "LD04_Z5_H",
       "name": "Greater Soot Crawler H",
-      "image": "",
+      "image": "enemy_LD04_Z5_H.png",
       "isBoss": false,
       "minLevel": 58398200,
       "maxLevel": 58398200,
@@ -45534,7 +45509,7 @@
     {
       "id": "LD05_Z0_H",
       "name": "Clock Automaton H",
-      "image": "",
+      "image": "enemy_LD05_Z0_H.png",
       "isBoss": false,
       "minLevel": 59700000,
       "maxLevel": 59700000,
@@ -45576,7 +45551,7 @@
     {
       "id": "LD05_Z1_H",
       "name": "Gaslight Sprite H",
-      "image": "",
+      "image": "enemy_LD05_Z1_H.png",
       "isBoss": false,
       "minLevel": 60088000,
       "maxLevel": 60088000,
@@ -45618,7 +45593,7 @@
     {
       "id": "LD05_Z2_H",
       "name": "Elder Clock Automaton H",
-      "image": "",
+      "image": "enemy_LD05_Z2_H.png",
       "isBoss": false,
       "minLevel": 60476100,
       "maxLevel": 60476100,
@@ -45660,7 +45635,7 @@
     {
       "id": "LD05_Z3_H",
       "name": "Elder Gaslight Sprite H",
-      "image": "",
+      "image": "enemy_LD05_Z3_H.png",
       "isBoss": false,
       "minLevel": 60864200,
       "maxLevel": 60864200,
@@ -45702,7 +45677,7 @@
     {
       "id": "LD05_Z4_H",
       "name": "Greater Clock Automaton H",
-      "image": "",
+      "image": "enemy_LD05_Z4_H.png",
       "isBoss": false,
       "minLevel": 61252200,
       "maxLevel": 61252200,
@@ -45744,7 +45719,7 @@
     {
       "id": "LD06_Z0_H",
       "name": "Cobble Golem H",
-      "image": "",
+      "image": "enemy_LD06_Z0_H.png",
       "isBoss": false,
       "minLevel": 63010000,
       "maxLevel": 63010000,
@@ -45786,7 +45761,7 @@
     {
       "id": "LD06_Z1_H",
       "name": "Alley Cutthroat H",
-      "image": "",
+      "image": "enemy_LD06_Z1_H.png",
       "isBoss": false,
       "minLevel": 63419600,
       "maxLevel": 63419600,
@@ -45828,7 +45803,7 @@
     {
       "id": "LD06_Z2_H",
       "name": "Elder Cobble Golem H",
-      "image": "",
+      "image": "enemy_LD06_Z2_H.png",
       "isBoss": false,
       "minLevel": 63829100,
       "maxLevel": 63829100,
@@ -45870,7 +45845,7 @@
     {
       "id": "LD06_Z3_H",
       "name": "Elder Alley Cutthroat H",
-      "image": "",
+      "image": "enemy_LD06_Z3_H.png",
       "isBoss": false,
       "minLevel": 64238700,
       "maxLevel": 64238700,
@@ -45912,7 +45887,7 @@
     {
       "id": "LD06_Z4_H",
       "name": "Greater Cobble Golem H",
-      "image": "",
+      "image": "enemy_LD06_Z4_H.png",
       "isBoss": false,
       "minLevel": 64648300,
       "maxLevel": 64648300,
@@ -45954,7 +45929,7 @@
     {
       "id": "LD07_Z0_H",
       "name": "Dock Hauler H",
-      "image": "",
+      "image": "enemy_LD07_Z0_H.png",
       "isBoss": false,
       "minLevel": 66510000,
       "maxLevel": 66510000,
@@ -45971,12 +45946,7 @@
         {
           "itemId": "LD07_Weapon_H",
           "itemName": "Clockwork Greataxe [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_ClockworkKey",
-          "itemName": "The Clockwork Key",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -46001,7 +45971,7 @@
     {
       "id": "LD07_Z1_H",
       "name": "Thames Bloater H",
-      "image": "",
+      "image": "enemy_LD07_Z1_H.png",
       "isBoss": false,
       "minLevel": 66942300,
       "maxLevel": 66942300,
@@ -46018,12 +45988,7 @@
         {
           "itemId": "LD07_Armor_H",
           "itemName": "Fogweave Mantle [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_ClockworkKey",
-          "itemName": "The Clockwork Key",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -46048,7 +46013,7 @@
     {
       "id": "LD07_Z2_H",
       "name": "Elder Dock Hauler H",
-      "image": "",
+      "image": "enemy_LD07_Z2_H.png",
       "isBoss": false,
       "minLevel": 67374600,
       "maxLevel": 67374600,
@@ -46065,12 +46030,7 @@
         {
           "itemId": "LD07_Helmet_H",
           "itemName": "Chronometer Crown [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_ClockworkKey",
-          "itemName": "The Clockwork Key",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -46095,7 +46055,7 @@
     {
       "id": "LD07_Z3_H",
       "name": "Elder Thames Bloater H",
-      "image": "",
+      "image": "enemy_LD07_Z3_H.png",
       "isBoss": false,
       "minLevel": 67806900,
       "maxLevel": 67806900,
@@ -46112,12 +46072,7 @@
         {
           "itemId": "LD07_Shoes_H",
           "itemName": "Geartrain Sabatons [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_ClockworkKey",
-          "itemName": "The Clockwork Key",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -46142,7 +46097,7 @@
     {
       "id": "LD07_Z4_H",
       "name": "Greater Dock Hauler H",
-      "image": "",
+      "image": "enemy_LD07_Z4_H.png",
       "isBoss": false,
       "minLevel": 68239300,
       "maxLevel": 68239300,
@@ -46159,12 +46114,7 @@
         {
           "itemId": "LD07_Accessory_H",
           "itemName": "Fogglass Monocle [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_ClockworkKey",
-          "itemName": "The Clockwork Key",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -46189,7 +46139,7 @@
     {
       "id": "LD07_Z5_H",
       "name": "Greater Thames Bloater H",
-      "image": "",
+      "image": "enemy_LD07_Z5_H.png",
       "isBoss": false,
       "minLevel": 68671600,
       "maxLevel": 68671600,
@@ -46206,12 +46156,7 @@
         {
           "itemId": "LD07_Weapon_H",
           "itemName": "Clockwork Greataxe [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_ClockworkKey",
-          "itemName": "The Clockwork Key",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -46236,7 +46181,7 @@
     {
       "id": "LD08_Z0_H",
       "name": "Clock Automaton H",
-      "image": "",
+      "image": "enemy_LD08_Z0_H.png",
       "isBoss": false,
       "minLevel": 70200000,
       "maxLevel": 70200000,
@@ -46256,8 +46201,8 @@
           "chance": 1.333
         },
         {
-          "itemId": "Key_ClockworkKey",
-          "itemName": "The Clockwork Key",
+          "itemId": "LD08_Accessory_H",
+          "itemName": "The Mainspring [H]",
           "chance": 0.667
         }
       ],
@@ -46283,7 +46228,7 @@
     {
       "id": "LD08_Z1_H",
       "name": "Fogfather H",
-      "image": "",
+      "image": "enemy_LD08_Z1_H.png",
       "isBoss": false,
       "minLevel": 70656300,
       "maxLevel": 70656300,
@@ -46300,12 +46245,7 @@
         {
           "itemId": "LD08_Armor_H",
           "itemName": "Clocktower Aegis [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_ClockworkKey",
-          "itemName": "The Clockwork Key",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -46330,7 +46270,7 @@
     {
       "id": "LD08_Z2_H",
       "name": "Elder Clock Automaton H",
-      "image": "",
+      "image": "enemy_LD08_Z2_H.png",
       "isBoss": false,
       "minLevel": 71112600,
       "maxLevel": 71112600,
@@ -46347,12 +46287,7 @@
         {
           "itemId": "LD08_Helmet_H",
           "itemName": "Great Clock Faceplate [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_ClockworkKey",
-          "itemName": "The Clockwork Key",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -46377,7 +46312,7 @@
     {
       "id": "LD08_Z3_H",
       "name": "Elder Fogfather H",
-      "image": "",
+      "image": "enemy_LD08_Z3_H.png",
       "isBoss": false,
       "minLevel": 71568900,
       "maxLevel": 71568900,
@@ -46394,12 +46329,7 @@
         {
           "itemId": "LD08_Shoes_H",
           "itemName": "Hour-Hand Striders [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_ClockworkKey",
-          "itemName": "The Clockwork Key",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -48272,7 +48202,7 @@
     {
       "id": "PX01_Z0_H",
       "name": "Lastlight Moth H",
-      "image": "",
+      "image": "enemy_PX01_Z0_H.png",
       "isBoss": false,
       "minLevel": 112780000,
       "maxLevel": 112780000,
@@ -48314,7 +48244,7 @@
     {
       "id": "PX01_Z1_H",
       "name": "Dither Wolf H",
-      "image": "",
+      "image": "enemy_PX01_Z1_H.png",
       "isBoss": false,
       "minLevel": 113513100,
       "maxLevel": 113513100,
@@ -48356,7 +48286,7 @@
     {
       "id": "PX01_Z2_H",
       "name": "Elder Lastlight Moth H",
-      "image": "",
+      "image": "enemy_PX01_Z2_H.png",
       "isBoss": false,
       "minLevel": 114246100,
       "maxLevel": 114246100,
@@ -48398,7 +48328,7 @@
     {
       "id": "PX01_Z3_H",
       "name": "Elder Dither Wolf H",
-      "image": "",
+      "image": "enemy_PX01_Z3_H.png",
       "isBoss": false,
       "minLevel": 114979200,
       "maxLevel": 114979200,
@@ -48440,7 +48370,7 @@
     {
       "id": "PX01_Z4_H",
       "name": "Greater Lastlight Moth H",
-      "image": "",
+      "image": "enemy_PX01_Z4_H.png",
       "isBoss": false,
       "minLevel": 115712300,
       "maxLevel": 115712300,
@@ -48482,7 +48412,7 @@
     {
       "id": "PX02_Z0_H",
       "name": "Ashen Ox H",
-      "image": "",
+      "image": "enemy_PX02_Z0_H.png",
       "isBoss": false,
       "minLevel": 119040000,
       "maxLevel": 119040000,
@@ -48524,7 +48454,7 @@
     {
       "id": "PX02_Z1_H",
       "name": "Bleachbone H",
-      "image": "",
+      "image": "enemy_PX02_Z1_H.png",
       "isBoss": false,
       "minLevel": 119813800,
       "maxLevel": 119813800,
@@ -48566,7 +48496,7 @@
     {
       "id": "PX02_Z2_H",
       "name": "Elder Ashen Ox H",
-      "image": "",
+      "image": "enemy_PX02_Z2_H.png",
       "isBoss": false,
       "minLevel": 120587500,
       "maxLevel": 120587500,
@@ -48608,7 +48538,7 @@
     {
       "id": "PX02_Z3_H",
       "name": "Elder Bleachbone H",
-      "image": "",
+      "image": "enemy_PX02_Z3_H.png",
       "isBoss": false,
       "minLevel": 121361300,
       "maxLevel": 121361300,
@@ -48650,7 +48580,7 @@
     {
       "id": "PX02_Z4_H",
       "name": "Greater Ashen Ox H",
-      "image": "",
+      "image": "enemy_PX02_Z4_H.png",
       "isBoss": false,
       "minLevel": 122135000,
       "maxLevel": 122135000,
@@ -48692,7 +48622,7 @@
     {
       "id": "PX03_Z0_H",
       "name": "Grey Pilgrim H",
-      "image": "",
+      "image": "enemy_PX03_Z0_H.png",
       "isBoss": false,
       "minLevel": 125650000,
       "maxLevel": 125650000,
@@ -48734,7 +48664,7 @@
     {
       "id": "PX03_Z1_H",
       "name": "The Outline H",
-      "image": "",
+      "image": "enemy_PX03_Z1_H.png",
       "isBoss": false,
       "minLevel": 126466700,
       "maxLevel": 126466700,
@@ -48776,7 +48706,7 @@
     {
       "id": "PX03_Z2_H",
       "name": "Elder Grey Pilgrim H",
-      "image": "",
+      "image": "enemy_PX03_Z2_H.png",
       "isBoss": false,
       "minLevel": 127283400,
       "maxLevel": 127283400,
@@ -48818,7 +48748,7 @@
     {
       "id": "PX03_Z3_H",
       "name": "Elder The Outline H",
-      "image": "",
+      "image": "enemy_PX03_Z3_H.png",
       "isBoss": false,
       "minLevel": 128100200,
       "maxLevel": 128100200,
@@ -48860,7 +48790,7 @@
     {
       "id": "PX03_Z4_H",
       "name": "Greater Grey Pilgrim H",
-      "image": "",
+      "image": "enemy_PX03_Z4_H.png",
       "isBoss": false,
       "minLevel": 128916900,
       "maxLevel": 128916900,
@@ -48902,7 +48832,7 @@
     {
       "id": "PX04_Z0_H",
       "name": "The Outline H",
-      "image": "",
+      "image": "enemy_PX04_Z0_H.png",
       "isBoss": false,
       "minLevel": 132620000,
       "maxLevel": 132620000,
@@ -48944,7 +48874,7 @@
     {
       "id": "PX04_Z1_H",
       "name": "Grey Pilgrim H",
-      "image": "",
+      "image": "enemy_PX04_Z1_H.png",
       "isBoss": false,
       "minLevel": 133482000,
       "maxLevel": 133482000,
@@ -48986,7 +48916,7 @@
     {
       "id": "PX04_Z2_H",
       "name": "Elder The Outline H",
-      "image": "",
+      "image": "enemy_PX04_Z2_H.png",
       "isBoss": false,
       "minLevel": 134344100,
       "maxLevel": 134344100,
@@ -49028,7 +48958,7 @@
     {
       "id": "PX04_Z3_H",
       "name": "Elder Grey Pilgrim H",
-      "image": "",
+      "image": "enemy_PX04_Z3_H.png",
       "isBoss": false,
       "minLevel": 135206100,
       "maxLevel": 135206100,
@@ -49070,7 +49000,7 @@
     {
       "id": "PX04_Z4_H",
       "name": "Greater The Outline H",
-      "image": "",
+      "image": "enemy_PX04_Z4_H.png",
       "isBoss": false,
       "minLevel": 136068100,
       "maxLevel": 136068100,
@@ -49112,7 +49042,7 @@
     {
       "id": "PX05_Z0_H",
       "name": "Static Hound H",
-      "image": "",
+      "image": "enemy_PX05_Z0_H.png",
       "isBoss": false,
       "minLevel": 139980000,
       "maxLevel": 139980000,
@@ -49154,7 +49084,7 @@
     {
       "id": "PX05_Z1_H",
       "name": "Bleachbone H",
-      "image": "",
+      "image": "enemy_PX05_Z1_H.png",
       "isBoss": false,
       "minLevel": 140889900,
       "maxLevel": 140889900,
@@ -49196,7 +49126,7 @@
     {
       "id": "PX05_Z2_H",
       "name": "Elder Static Hound H",
-      "image": "",
+      "image": "enemy_PX05_Z2_H.png",
       "isBoss": false,
       "minLevel": 141799700,
       "maxLevel": 141799700,
@@ -49238,7 +49168,7 @@
     {
       "id": "PX05_Z3_H",
       "name": "Elder Bleachbone H",
-      "image": "",
+      "image": "enemy_PX05_Z3_H.png",
       "isBoss": false,
       "minLevel": 142709600,
       "maxLevel": 142709600,
@@ -49280,7 +49210,7 @@
     {
       "id": "PX05_Z4_H",
       "name": "Greater Static Hound H",
-      "image": "",
+      "image": "enemy_PX05_Z4_H.png",
       "isBoss": false,
       "minLevel": 143619500,
       "maxLevel": 143619500,
@@ -49322,7 +49252,7 @@
     {
       "id": "PX05_Z5_H",
       "name": "Greater Bleachbone H",
-      "image": "",
+      "image": "enemy_PX05_Z5_H.png",
       "isBoss": false,
       "minLevel": 144529400,
       "maxLevel": 144529400,
@@ -49364,7 +49294,7 @@
     {
       "id": "PX06_Z0_H",
       "name": "First Beast H",
-      "image": "",
+      "image": "enemy_PX06_Z0_H.png",
       "isBoss": false,
       "minLevel": 147750000,
       "maxLevel": 147750000,
@@ -49411,7 +49341,7 @@
     {
       "id": "PX06_Z1_H",
       "name": "Void Crab H",
-      "image": "",
+      "image": "enemy_PX06_Z1_H.png",
       "isBoss": false,
       "minLevel": 148710400,
       "maxLevel": 148710400,
@@ -49458,7 +49388,7 @@
     {
       "id": "PX06_Z2_H",
       "name": "Elder First Beast H",
-      "image": "",
+      "image": "enemy_PX06_Z2_H.png",
       "isBoss": false,
       "minLevel": 149670800,
       "maxLevel": 149670800,
@@ -49505,7 +49435,7 @@
     {
       "id": "PX06_Z3_H",
       "name": "Elder Void Crab H",
-      "image": "",
+      "image": "enemy_PX06_Z3_H.png",
       "isBoss": false,
       "minLevel": 150631100,
       "maxLevel": 150631100,
@@ -49552,7 +49482,7 @@
     {
       "id": "PX06_Z4_H",
       "name": "Greater First Beast H",
-      "image": "",
+      "image": "enemy_PX06_Z4_H.png",
       "isBoss": false,
       "minLevel": 151591500,
       "maxLevel": 151591500,
@@ -49599,7 +49529,7 @@
     {
       "id": "PX07_Z0_H",
       "name": "Stone Choir H",
-      "image": "",
+      "image": "enemy_PX07_Z0_H.png",
       "isBoss": false,
       "minLevel": 155950000,
       "maxLevel": 155950000,
@@ -49641,7 +49571,7 @@
     {
       "id": "PX07_Z1_H",
       "name": "Grey Pilgrim H",
-      "image": "",
+      "image": "enemy_PX07_Z1_H.png",
       "isBoss": false,
       "minLevel": 156963700,
       "maxLevel": 156963700,
@@ -49683,7 +49613,7 @@
     {
       "id": "PX07_Z2_H",
       "name": "Elder Stone Choir H",
-      "image": "",
+      "image": "enemy_PX07_Z2_H.png",
       "isBoss": false,
       "minLevel": 157977300,
       "maxLevel": 157977300,
@@ -49725,7 +49655,7 @@
     {
       "id": "PX07_Z3_H",
       "name": "Elder Grey Pilgrim H",
-      "image": "",
+      "image": "enemy_PX07_Z3_H.png",
       "isBoss": false,
       "minLevel": 158991000,
       "maxLevel": 158991000,
@@ -49767,7 +49697,7 @@
     {
       "id": "PX07_Z4_H",
       "name": "Greater Stone Choir H",
-      "image": "",
+      "image": "enemy_PX07_Z4_H.png",
       "isBoss": false,
       "minLevel": 160004700,
       "maxLevel": 160004700,
@@ -49809,7 +49739,7 @@
     {
       "id": "PX07_Z5_H",
       "name": "Greater Grey Pilgrim H",
-      "image": "",
+      "image": "enemy_PX07_Z5_H.png",
       "isBoss": false,
       "minLevel": 161018400,
       "maxLevel": 161018400,
@@ -49851,7 +49781,7 @@
     {
       "id": "PX08_Z0_H",
       "name": "The Repeated H",
-      "image": "",
+      "image": "enemy_PX08_Z0_H.png",
       "isBoss": false,
       "minLevel": 164610000,
       "maxLevel": 164610000,
@@ -49893,7 +49823,7 @@
     {
       "id": "PX08_Z1_H",
       "name": "Half-Made Giant H",
-      "image": "",
+      "image": "enemy_PX08_Z1_H.png",
       "isBoss": false,
       "minLevel": 165680000,
       "maxLevel": 165680000,
@@ -49935,7 +49865,7 @@
     {
       "id": "PX08_Z2_H",
       "name": "Elder The Repeated H",
-      "image": "",
+      "image": "enemy_PX08_Z2_H.png",
       "isBoss": false,
       "minLevel": 166749900,
       "maxLevel": 166749900,
@@ -49977,7 +49907,7 @@
     {
       "id": "PX08_Z3_H",
       "name": "Elder Half-Made Giant H",
-      "image": "",
+      "image": "enemy_PX08_Z3_H.png",
       "isBoss": false,
       "minLevel": 167819900,
       "maxLevel": 167819900,
@@ -50019,7 +49949,7 @@
     {
       "id": "PX08_Z4_H",
       "name": "Greater The Repeated H",
-      "image": "",
+      "image": "enemy_PX08_Z4_H.png",
       "isBoss": false,
       "minLevel": 168889900,
       "maxLevel": 168889900,
@@ -50061,7 +49991,7 @@
     {
       "id": "PX08_Z5_H",
       "name": "Greater Half-Made Giant H",
-      "image": "",
+      "image": "enemy_PX08_Z5_H.png",
       "isBoss": false,
       "minLevel": 169959800,
       "maxLevel": 169959800,
@@ -50103,7 +50033,7 @@
     {
       "id": "PX09_Z0_H",
       "name": "Monolith Walker H",
-      "image": "",
+      "image": "enemy_PX09_Z0_H.png",
       "isBoss": false,
       "minLevel": 173750000,
       "maxLevel": 173750000,
@@ -50145,7 +50075,7 @@
     {
       "id": "PX09_Z1_H",
       "name": "Pale Herald H",
-      "image": "",
+      "image": "enemy_PX09_Z1_H.png",
       "isBoss": false,
       "minLevel": 174879400,
       "maxLevel": 174879400,
@@ -50187,7 +50117,7 @@
     {
       "id": "PX09_Z2_H",
       "name": "Elder Monolith Walker H",
-      "image": "",
+      "image": "enemy_PX09_Z2_H.png",
       "isBoss": false,
       "minLevel": 176008700,
       "maxLevel": 176008700,
@@ -50229,7 +50159,7 @@
     {
       "id": "PX09_Z3_H",
       "name": "Elder Pale Herald H",
-      "image": "",
+      "image": "enemy_PX09_Z3_H.png",
       "isBoss": false,
       "minLevel": 177138100,
       "maxLevel": 177138100,
@@ -50271,7 +50201,7 @@
     {
       "id": "PX09_Z4_H",
       "name": "Greater Monolith Walker H",
-      "image": "",
+      "image": "enemy_PX09_Z4_H.png",
       "isBoss": false,
       "minLevel": 178267500,
       "maxLevel": 178267500,
@@ -50313,7 +50243,7 @@
     {
       "id": "PX10_Z0_H",
       "name": "First Beast H",
-      "image": "",
+      "image": "enemy_PX10_Z0_H.png",
       "isBoss": false,
       "minLevel": 183390000,
       "maxLevel": 183390000,
@@ -50330,7 +50260,12 @@
         {
           "itemId": "PX10_Weapon_H",
           "itemName": "Spiral Stone Glaive [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "PX10_Accessory_H",
+          "itemName": "Lintel Amulet [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -50355,7 +50290,7 @@
     {
       "id": "PX10_Z1_H",
       "name": "Ashen Ox H",
-      "image": "",
+      "image": "enemy_PX10_Z1_H.png",
       "isBoss": false,
       "minLevel": 184582000,
       "maxLevel": 184582000,
@@ -50397,7 +50332,7 @@
     {
       "id": "PX10_Z2_H",
       "name": "Elder First Beast H",
-      "image": "",
+      "image": "enemy_PX10_Z2_H.png",
       "isBoss": false,
       "minLevel": 185774100,
       "maxLevel": 185774100,
@@ -50439,7 +50374,7 @@
     {
       "id": "PX10_Z3_H",
       "name": "Elder Ashen Ox H",
-      "image": "",
+      "image": "enemy_PX10_Z3_H.png",
       "isBoss": false,
       "minLevel": 186966100,
       "maxLevel": 186966100,
@@ -50481,7 +50416,7 @@
     {
       "id": "PX11_Z0_H",
       "name": "Monolith Walker H",
-      "image": "",
+      "image": "enemy_PX11_Z0_H.png",
       "isBoss": false,
       "minLevel": 193570000,
       "maxLevel": 193570000,
@@ -50523,7 +50458,7 @@
     {
       "id": "PX11_Z1_H",
       "name": "Chisel Wretch H",
-      "image": "",
+      "image": "enemy_PX11_Z1_H.png",
       "isBoss": false,
       "minLevel": 194828200,
       "maxLevel": 194828200,
@@ -50565,7 +50500,7 @@
     {
       "id": "PX11_Z2_H",
       "name": "Elder Monolith Walker H",
-      "image": "",
+      "image": "enemy_PX11_Z2_H.png",
       "isBoss": false,
       "minLevel": 196086400,
       "maxLevel": 196086400,
@@ -50607,7 +50542,7 @@
     {
       "id": "PX11_Z3_H",
       "name": "Elder Chisel Wretch H",
-      "image": "",
+      "image": "enemy_PX11_Z3_H.png",
       "isBoss": false,
       "minLevel": 197344600,
       "maxLevel": 197344600,
@@ -50649,7 +50584,7 @@
     {
       "id": "PX11_Z4_H",
       "name": "Greater Monolith Walker H",
-      "image": "",
+      "image": "enemy_PX11_Z4_H.png",
       "isBoss": false,
       "minLevel": 198602800,
       "maxLevel": 198602800,
@@ -50691,7 +50626,7 @@
     {
       "id": "PX11_Z5_H",
       "name": "Greater Chisel Wretch H",
-      "image": "",
+      "image": "enemy_PX11_Z5_H.png",
       "isBoss": false,
       "minLevel": 199861000,
       "maxLevel": 199861000,
@@ -50733,7 +50668,7 @@
     {
       "id": "PX12_Z0_H",
       "name": "The Repeated H",
-      "image": "",
+      "image": "enemy_PX12_Z0_H.png",
       "isBoss": false,
       "minLevel": 204310000,
       "maxLevel": 204310000,
@@ -50775,7 +50710,7 @@
     {
       "id": "PX12_Z1_H",
       "name": "Grave Geometry H",
-      "image": "",
+      "image": "enemy_PX12_Z1_H.png",
       "isBoss": false,
       "minLevel": 205638000,
       "maxLevel": 205638000,
@@ -50817,7 +50752,7 @@
     {
       "id": "PX12_Z2_H",
       "name": "Elder The Repeated H",
-      "image": "",
+      "image": "enemy_PX12_Z2_H.png",
       "isBoss": false,
       "minLevel": 206966000,
       "maxLevel": 206966000,
@@ -50859,7 +50794,7 @@
     {
       "id": "PX12_Z3_H",
       "name": "Elder Grave Geometry H",
-      "image": "",
+      "image": "enemy_PX12_Z3_H.png",
       "isBoss": false,
       "minLevel": 208294000,
       "maxLevel": 208294000,
@@ -50901,7 +50836,7 @@
     {
       "id": "PX12_Z4_H",
       "name": "Greater The Repeated H",
-      "image": "",
+      "image": "enemy_PX12_Z4_H.png",
       "isBoss": false,
       "minLevel": 209622100,
       "maxLevel": 209622100,
@@ -50943,7 +50878,7 @@
     {
       "id": "PX12_Z5_H",
       "name": "Greater Grave Geometry H",
-      "image": "",
+      "image": "enemy_PX12_Z5_H.png",
       "isBoss": false,
       "minLevel": 210950100,
       "maxLevel": 210950100,
@@ -50985,7 +50920,7 @@
     {
       "id": "PX13_Z0_H",
       "name": "Unfinished Knight H",
-      "image": "",
+      "image": "enemy_PX13_Z0_H.png",
       "isBoss": false,
       "minLevel": 215650000,
       "maxLevel": 215650000,
@@ -51027,7 +50962,7 @@
     {
       "id": "PX13_Z1_H",
       "name": "Half-Made Giant H",
-      "image": "",
+      "image": "enemy_PX13_Z1_H.png",
       "isBoss": false,
       "minLevel": 217051700,
       "maxLevel": 217051700,
@@ -51069,7 +51004,7 @@
     {
       "id": "PX13_Z2_H",
       "name": "Elder Unfinished Knight H",
-      "image": "",
+      "image": "enemy_PX13_Z2_H.png",
       "isBoss": false,
       "minLevel": 218453400,
       "maxLevel": 218453400,
@@ -51111,7 +51046,7 @@
     {
       "id": "PX13_Z3_H",
       "name": "Elder Half-Made Giant H",
-      "image": "",
+      "image": "enemy_PX13_Z3_H.png",
       "isBoss": false,
       "minLevel": 219855200,
       "maxLevel": 219855200,
@@ -51153,7 +51088,7 @@
     {
       "id": "PX13_Z4_H",
       "name": "Greater Unfinished Knight H",
-      "image": "",
+      "image": "enemy_PX13_Z4_H.png",
       "isBoss": false,
       "minLevel": 221256900,
       "maxLevel": 221256900,
@@ -51195,7 +51130,7 @@
     {
       "id": "PX14_Z0_H",
       "name": "Grave Geometry H",
-      "image": "",
+      "image": "enemy_PX14_Z0_H.png",
       "isBoss": false,
       "minLevel": 227620000,
       "maxLevel": 227620000,
@@ -51237,7 +51172,7 @@
     {
       "id": "PX14_Z1_H",
       "name": "Void Crab H",
-      "image": "",
+      "image": "enemy_PX14_Z1_H.png",
       "isBoss": false,
       "minLevel": 229099500,
       "maxLevel": 229099500,
@@ -51279,7 +51214,7 @@
     {
       "id": "PX14_Z2_H",
       "name": "Elder Grave Geometry H",
-      "image": "",
+      "image": "enemy_PX14_Z2_H.png",
       "isBoss": false,
       "minLevel": 230579100,
       "maxLevel": 230579100,
@@ -51321,7 +51256,7 @@
     {
       "id": "PX14_Z3_H",
       "name": "Elder Void Crab H",
-      "image": "",
+      "image": "enemy_PX14_Z3_H.png",
       "isBoss": false,
       "minLevel": 232058600,
       "maxLevel": 232058600,
@@ -51363,7 +51298,7 @@
     {
       "id": "PX14_Z4_H",
       "name": "Greater Grave Geometry H",
-      "image": "",
+      "image": "enemy_PX14_Z4_H.png",
       "isBoss": false,
       "minLevel": 233538100,
       "maxLevel": 233538100,
@@ -51405,7 +51340,7 @@
     {
       "id": "PX14_Z5_H",
       "name": "Greater Void Crab H",
-      "image": "",
+      "image": "enemy_PX14_Z5_H.png",
       "isBoss": false,
       "minLevel": 235017600,
       "maxLevel": 235017600,
@@ -51447,7 +51382,7 @@
     {
       "id": "PX15_Z0_H",
       "name": "The Erased H",
-      "image": "",
+      "image": "enemy_PX15_Z0_H.png",
       "isBoss": false,
       "minLevel": 240250000,
       "maxLevel": 240250000,
@@ -51489,7 +51424,7 @@
     {
       "id": "PX15_Z1_H",
       "name": "Unfinished Knight H",
-      "image": "",
+      "image": "enemy_PX15_Z1_H.png",
       "isBoss": false,
       "minLevel": 241811600,
       "maxLevel": 241811600,
@@ -51531,7 +51466,7 @@
     {
       "id": "PX15_Z2_H",
       "name": "Elder The Erased H",
-      "image": "",
+      "image": "enemy_PX15_Z2_H.png",
       "isBoss": false,
       "minLevel": 243373200,
       "maxLevel": 243373200,
@@ -51573,7 +51508,7 @@
     {
       "id": "PX15_Z3_H",
       "name": "Elder Unfinished Knight H",
-      "image": "",
+      "image": "enemy_PX15_Z3_H.png",
       "isBoss": false,
       "minLevel": 244934900,
       "maxLevel": 244934900,
@@ -51590,7 +51525,12 @@
         {
           "itemId": "PX15_Shoes_H",
           "itemName": "Scaffold Boots [H]",
-          "chance": 2
+          "chance": 1
+        },
+        {
+          "itemId": "PX15_Accessory_H",
+          "itemName": "White Circle [H]",
+          "chance": 1
         }
       ],
       "resists": {
@@ -51615,7 +51555,7 @@
     {
       "id": "PX16_Z0_H",
       "name": "Grave Geometry H",
-      "image": "",
+      "image": "enemy_PX16_Z0_H.png",
       "isBoss": false,
       "minLevel": 253580000,
       "maxLevel": 253580000,
@@ -51657,7 +51597,7 @@
     {
       "id": "PX16_Z1_H",
       "name": "Rimewalker H",
-      "image": "",
+      "image": "enemy_PX16_Z1_H.png",
       "isBoss": false,
       "minLevel": 255228300,
       "maxLevel": 255228300,
@@ -51699,7 +51639,7 @@
     {
       "id": "PX16_Z2_H",
       "name": "Elder Grave Geometry H",
-      "image": "",
+      "image": "enemy_PX16_Z2_H.png",
       "isBoss": false,
       "minLevel": 256876500,
       "maxLevel": 256876500,
@@ -51741,7 +51681,7 @@
     {
       "id": "PX16_Z3_H",
       "name": "Elder Rimewalker H",
-      "image": "",
+      "image": "enemy_PX16_Z3_H.png",
       "isBoss": false,
       "minLevel": 258524800,
       "maxLevel": 258524800,
@@ -51783,7 +51723,7 @@
     {
       "id": "PX16_Z4_H",
       "name": "Greater Grave Geometry H",
-      "image": "",
+      "image": "enemy_PX16_Z4_H.png",
       "isBoss": false,
       "minLevel": 260173100,
       "maxLevel": 260173100,
@@ -51825,7 +51765,7 @@
     {
       "id": "PX16_Z5_H",
       "name": "Greater Rimewalker H",
-      "image": "",
+      "image": "enemy_PX16_Z5_H.png",
       "isBoss": false,
       "minLevel": 261821400,
       "maxLevel": 261821400,
@@ -51867,7 +51807,7 @@
     {
       "id": "PX17_Z0_H",
       "name": "Pale Herald H",
-      "image": "",
+      "image": "enemy_PX17_Z0_H.png",
       "isBoss": false,
       "minLevel": 267650000,
       "maxLevel": 267650000,
@@ -51909,7 +51849,7 @@
     {
       "id": "PX17_Z1_H",
       "name": "The Watcher H",
-      "image": "",
+      "image": "enemy_PX17_Z1_H.png",
       "isBoss": false,
       "minLevel": 269389700,
       "maxLevel": 269389700,
@@ -51951,7 +51891,7 @@
     {
       "id": "PX17_Z2_H",
       "name": "Elder Pale Herald H",
-      "image": "",
+      "image": "enemy_PX17_Z2_H.png",
       "isBoss": false,
       "minLevel": 271129400,
       "maxLevel": 271129400,
@@ -51993,7 +51933,7 @@
     {
       "id": "PX17_Z3_H",
       "name": "Elder The Watcher H",
-      "image": "",
+      "image": "enemy_PX17_Z3_H.png",
       "isBoss": false,
       "minLevel": 272869200,
       "maxLevel": 272869200,
@@ -52035,7 +51975,7 @@
     {
       "id": "PX17_Z4_H",
       "name": "Greater Pale Herald H",
-      "image": "",
+      "image": "enemy_PX17_Z4_H.png",
       "isBoss": false,
       "minLevel": 274608900,
       "maxLevel": 274608900,
@@ -52077,7 +52017,7 @@
     {
       "id": "PX18_Z0_H",
       "name": "The Watcher H",
-      "image": "",
+      "image": "enemy_PX18_Z0_H.png",
       "isBoss": false,
       "minLevel": 282500000,
       "maxLevel": 282500000,
@@ -52119,7 +52059,7 @@
     {
       "id": "PX18_Z1_H",
       "name": "Static Hound H",
-      "image": "",
+      "image": "enemy_PX18_Z1_H.png",
       "isBoss": false,
       "minLevel": 284336200,
       "maxLevel": 284336200,
@@ -52161,7 +52101,7 @@
     {
       "id": "PX18_Z2_H",
       "name": "Elder The Watcher H",
-      "image": "",
+      "image": "enemy_PX18_Z2_H.png",
       "isBoss": false,
       "minLevel": 286172500,
       "maxLevel": 286172500,
@@ -52203,7 +52143,7 @@
     {
       "id": "PX18_Z3_H",
       "name": "Elder Static Hound H",
-      "image": "",
+      "image": "enemy_PX18_Z3_H.png",
       "isBoss": false,
       "minLevel": 288008800,
       "maxLevel": 288008800,
@@ -52245,7 +52185,7 @@
     {
       "id": "PX18_Z4_H",
       "name": "Greater The Watcher H",
-      "image": "",
+      "image": "enemy_PX18_Z4_H.png",
       "isBoss": false,
       "minLevel": 289845000,
       "maxLevel": 289845000,
@@ -52287,7 +52227,7 @@
     {
       "id": "PX18_Z5_H",
       "name": "Greater Static Hound H",
-      "image": "",
+      "image": "enemy_PX18_Z5_H.png",
       "isBoss": false,
       "minLevel": 291681200,
       "maxLevel": 291681200,
@@ -52329,7 +52269,7 @@
     {
       "id": "PX19_Z0_H",
       "name": "The Unnamed H",
-      "image": "",
+      "image": "enemy_PX19_Z0_H.png",
       "isBoss": false,
       "minLevel": 298180000,
       "maxLevel": 298180000,
@@ -52346,12 +52286,7 @@
         {
           "itemId": "PX19_Weapon_H",
           "itemName": "Silent Bisector [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_AshenCrown",
-          "itemName": "The Ashen Crown",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -52376,7 +52311,7 @@
     {
       "id": "PX19_Z1_H",
       "name": "Stone Choir H",
-      "image": "",
+      "image": "enemy_PX19_Z1_H.png",
       "isBoss": false,
       "minLevel": 300118200,
       "maxLevel": 300118200,
@@ -52393,12 +52328,7 @@
         {
           "itemId": "PX19_Armor_H",
           "itemName": "Null Cuirass [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_AshenCrown",
-          "itemName": "The Ashen Crown",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -52423,7 +52353,7 @@
     {
       "id": "PX19_Z2_H",
       "name": "Elder The Unnamed H",
-      "image": "",
+      "image": "enemy_PX19_Z2_H.png",
       "isBoss": false,
       "minLevel": 302056300,
       "maxLevel": 302056300,
@@ -52440,12 +52370,7 @@
         {
           "itemId": "PX19_Helmet_H",
           "itemName": "Null Crown [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_AshenCrown",
-          "itemName": "The Ashen Crown",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -52470,7 +52395,7 @@
     {
       "id": "PX19_Z3_H",
       "name": "Elder Stone Choir H",
-      "image": "",
+      "image": "enemy_PX19_Z3_H.png",
       "isBoss": false,
       "minLevel": 303994500,
       "maxLevel": 303994500,
@@ -52487,12 +52412,7 @@
         {
           "itemId": "PX19_Shoes_H",
           "itemName": "Null Steps [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_AshenCrown",
-          "itemName": "The Ashen Crown",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -52517,7 +52437,7 @@
     {
       "id": "PX19_Z4_H",
       "name": "Greater The Unnamed H",
-      "image": "",
+      "image": "enemy_PX19_Z4_H.png",
       "isBoss": false,
       "minLevel": 305932700,
       "maxLevel": 305932700,
@@ -52534,12 +52454,7 @@
         {
           "itemId": "PX19_Accessory_H",
           "itemName": "Bisector Pendant [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_AshenCrown",
-          "itemName": "The Ashen Crown",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -52564,7 +52479,7 @@
     {
       "id": "PX20_Z0_H",
       "name": "Origin Spawn H",
-      "image": "",
+      "image": "enemy_PX20_Z0_H.png",
       "isBoss": false,
       "minLevel": 314730000,
       "maxLevel": 314730000,
@@ -52584,8 +52499,8 @@
           "chance": 1.333
         },
         {
-          "itemId": "Key_AshenCrown",
-          "itemName": "The Ashen Crown",
+          "itemId": "PX20_Accessory_H",
+          "itemName": "The Point [H]",
           "chance": 0.667
         }
       ],
@@ -52611,7 +52526,7 @@
     {
       "id": "PX20_Z1_H",
       "name": "The Unnamed H",
-      "image": "",
+      "image": "enemy_PX20_Z1_H.png",
       "isBoss": false,
       "minLevel": 316775700,
       "maxLevel": 316775700,
@@ -52628,12 +52543,7 @@
         {
           "itemId": "PX20_Armor_H",
           "itemName": "Shell of the First [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_AshenCrown",
-          "itemName": "The Ashen Crown",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -52658,7 +52568,7 @@
     {
       "id": "PX20_Z2_H",
       "name": "Elder Origin Spawn H",
-      "image": "",
+      "image": "enemy_PX20_Z2_H.png",
       "isBoss": false,
       "minLevel": 318821500,
       "maxLevel": 318821500,
@@ -52675,12 +52585,7 @@
         {
           "itemId": "PX20_Helmet_H",
           "itemName": "Crown of Origin [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_AshenCrown",
-          "itemName": "The Ashen Crown",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -52705,7 +52610,7 @@
     {
       "id": "PX20_Z3_H",
       "name": "Elder The Unnamed H",
-      "image": "",
+      "image": "enemy_PX20_Z3_H.png",
       "isBoss": false,
       "minLevel": 320867200,
       "maxLevel": 320867200,
@@ -52722,12 +52627,7 @@
         {
           "itemId": "PX20_Shoes_H",
           "itemName": "First Footfall [H]",
-          "chance": 1.333
-        },
-        {
-          "itemId": "Key_AshenCrown",
-          "itemName": "The Ashen Crown",
-          "chance": 0.667
+          "chance": 2
         }
       ],
       "resists": {
@@ -55705,12 +55605,12 @@
         "weaken": 0.86
       },
       "hardModeResists": {
-        "critResist": 10236.35,
-        "comboResist": 1717.4,
-        "dodgeResist": 184.01,
-        "critMultResist": 218.95,
-        "armorPierce": 0.66,
-        "weaken": 0.86
+        "critResist": 959643.5,
+        "comboResist": 130919.67,
+        "dodgeResist": 16625.87,
+        "critMultResist": 19824.07,
+        "armorPierce": 0.83,
+        "weaken": 0.915
       },
       "dropItemId": "GY10_BossRelic",
       "dropItemName": "Relic of the First Dead",
@@ -55740,12 +55640,12 @@
         "weaken": 0.895
       },
       "hardModeResists": {
-        "critResist": 39694.84,
-        "comboResist": 6599.27,
-        "dodgeResist": 844.23,
-        "critMultResist": 716.44,
-        "armorPierce": 0.73,
-        "weaken": 0.895
+        "critResist": 1844808.1,
+        "comboResist": 243142.94,
+        "dodgeResist": 29044.22,
+        "critMultResist": 38230,
+        "armorPierce": 0.84,
+        "weaken": 0.915
       },
       "dropItemId": "KR08_BossRelic",
       "dropItemName": "Sovereign's Nine-Dragon Relic",
@@ -55775,11 +55675,11 @@
         "weaken": 0.915
       },
       "hardModeResists": {
-        "critResist": 94088.68,
-        "comboResist": 15936.3,
-        "dodgeResist": 2175.56,
-        "critMultResist": 1503.72,
-        "armorPierce": 0.77,
+        "critResist": 2259259.5,
+        "comboResist": 350264.03,
+        "dodgeResist": 53510.92,
+        "critMultResist": 46774.41,
+        "armorPierce": 0.86,
         "weaken": 0.915
       },
       "dropItemId": "LD08_BossRelic",
@@ -55810,11 +55710,11 @@
         "weaken": 0.915
       },
       "hardModeResists": {
-        "critResist": 367252.16,
-        "comboResist": 60574.36,
-        "dodgeResist": 9043.62,
-        "critMultResist": 4587.26,
-        "armorPierce": 0.81,
+        "critResist": 6008774,
+        "comboResist": 929585,
+        "dodgeResist": 141800.4,
+        "critMultResist": 127419.16,
+        "armorPierce": 0.87,
         "weaken": 0.915
       },
       "dropItemId": "PX10_BossRelic",
@@ -55845,11 +55745,11 @@
         "weaken": 0.915
       },
       "hardModeResists": {
-        "critResist": 467961.94,
-        "comboResist": 76875.8,
-        "dodgeResist": 11618.5,
-        "critMultResist": 5648.95,
-        "armorPierce": 0.816,
+        "critResist": 7960796.5,
+        "comboResist": 1233521,
+        "dodgeResist": 188423.52,
+        "critMultResist": 167020.67,
+        "armorPierce": 0.873,
         "weaken": 0.915
       },
       "dropItemId": "PX15_BossRelic",
@@ -55880,11 +55780,11 @@
         "weaken": 0.915
       },
       "hardModeResists": {
-        "critResist": 572787,
-        "comboResist": 93761.34,
-        "dodgeResist": 14318.06,
-        "critMultResist": 6713.67,
-        "armorPierce": 0.82,
+        "critResist": 10053493,
+        "comboResist": 1559862.6,
+        "dodgeResist": 238535.7,
+        "critMultResist": 209029.27,
+        "armorPierce": 0.875,
         "weaken": 0.915
       },
       "dropItemId": "PX20_BossRelic",
@@ -66526,7 +66426,9 @@
         "AGI +388K",
         "LUC +788K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "GY07"
+      ],
       "shopAreas": [
         "GY07"
       ]
@@ -66737,7 +66639,9 @@
         "DEF +7.8Dc",
         "AGI +418K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "GY07"
+      ],
       "shopAreas": [
         "GY07"
       ]
@@ -67558,7 +67462,9 @@
         "AGI +450K",
         "LUC +912K"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "GY10"
+      ],
       "shopAreas": [
         "GY10"
       ]
@@ -79190,7 +79096,7 @@
     {
       "id": "Key_AshenCrown",
       "name": "The Ashen Crown",
-      "description": "Ash of the First. Carry it into THE TEMPLE and the hollow things there",
+      "description": "Ash of the First. Carry it into THE TEMPLE and the hollow things there resist your critical and combo hits far less. Useless anywhere else.",
       "image": "item_Key_AshenCrown.png",
       "rarity": "Epic",
       "type": "Accessory",
@@ -79214,16 +79120,13 @@
         "HP +612.5Dd",
         "ATK +2.3Qad"
       ],
-      "dropAreas": [
-        "PX19",
-        "PX20"
-      ],
+      "dropAreas": [],
       "shopAreas": []
     },
     {
       "id": "Key_ClockworkKey",
       "name": "The Clockwork Key",
-      "description": "Wound from the Great Clock. Carry it into EGYPT and the bound things",
+      "description": "Wound from the Great Clock. Carry it into EGYPT and the bound things there resist your critical and combo hits far less. Useless anywhere else.",
       "image": "item_Key_ClockworkKey.png",
       "rarity": "Epic",
       "type": "Accessory",
@@ -79247,16 +79150,13 @@
         "HP +59.8Ud",
         "ATK +25.1Dd"
       ],
-      "dropAreas": [
-        "LD07",
-        "LD08"
-      ],
+      "dropAreas": [],
       "shopAreas": []
     },
     {
       "id": "Key_HollowEdge",
       "name": "The Hollow Edge",
-      "description": "A hollow-channelled blade. Carry it into THE TEMPLE and its monsters",
+      "description": "A hollow-channelled blade. Carry it into THE TEMPLE and its monsters cut through far less of your defence, and land far fewer hits on you. Useless anywhere else.",
       "image": "item_Key_HollowEdge.png",
       "rarity": "Epic",
       "type": "Accessory",
@@ -79288,7 +79188,7 @@
     {
       "id": "Key_QuarryEdge",
       "name": "The Quarry Edge",
-      "description": "A knapped flint edge. Carry it into STONE and its monsters cut through",
+      "description": "A knapped flint edge. Carry it into STONE and its monsters cut through far less of your defence, and land far fewer hits on you. Useless anywhere else.",
       "image": "item_Key_QuarryEdge.png",
       "rarity": "Epic",
       "type": "Accessory",
@@ -79320,7 +79220,7 @@
     {
       "id": "Key_SandEdge",
       "name": "The Sand Edge",
-      "description": "A bone sliver honed by sand. Carry it into EGYPT and its monsters",
+      "description": "A bone sliver honed by sand. Carry it into EGYPT and its monsters cut through far less of your defence, and land far fewer hits on you. Useless anywhere else.",
       "image": "item_Key_SandEdge.png",
       "rarity": "Epic",
       "type": "Accessory",
@@ -79352,7 +79252,7 @@
     {
       "id": "Key_SovereignsScale",
       "name": "The Sovereign's Scale",
-      "description": "Torn from the Nine-Dragon Sovereign. Carry it into STONE and the stone-shelled",
+      "description": "Torn from the Nine-Dragon Sovereign. Carry it into STONE and the stone-shelled things there resist your critical and combo hits far less. Useless anywhere else.",
       "image": "item_Key_SovereignsScale.png",
       "rarity": "Epic",
       "type": "Accessory",
@@ -79376,10 +79276,7 @@
         "HP +348.9Dc",
         "ATK +44.8Ud"
       ],
-      "dropAreas": [
-        "KR07",
-        "KR08"
-      ],
+      "dropAreas": [],
       "shopAreas": []
     },
     {
@@ -82040,7 +81937,9 @@
         "AGI +665K",
         "LUC +1.3M"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "KR08"
+      ],
       "shopAreas": [
         "KR08"
       ]
@@ -85181,7 +85080,9 @@
         "AGI +1.4M",
         "LUC +2.9M"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "LD08"
+      ],
       "shopAreas": [
         "LD08"
       ]
@@ -94953,7 +94854,7 @@
       "rarity": "Epic",
       "type": "Accessory",
       "setName": "",
-      "isUnique": true,
+      "isUnique": false,
       "shopUnavailable": false,
       "hiddenFromCollection": false,
       "isHardModeItem": false,
@@ -98160,7 +98061,9 @@
         "AGI +3.4M",
         "LUC +7M"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "PX10"
+      ],
       "shopAreas": [
         "PX10"
       ]
@@ -99952,7 +99855,9 @@
         "AGI +4.4M",
         "LUC +9M"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "PX15"
+      ],
       "shopAreas": [
         "PX15"
       ]
@@ -101702,7 +101607,9 @@
         "AGI +5.6M",
         "LUC +11.5M"
       ],
-      "dropAreas": [],
+      "dropAreas": [
+        "PX20"
+      ],
       "shopAreas": [
         "PX20"
       ]
@@ -109003,7 +108910,7 @@
       "rarity": "Epic",
       "type": "Accessory",
       "setName": "",
-      "isUnique": true,
+      "isUnique": false,
       "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": false,
@@ -110149,18 +110056,13 @@
       "gridWidth": 72,
       "gridHeight": 128,
       "dataVersion": 1,
-      "walkableCells": 1609,
-      "blockedCells": 7607,
+      "walkableCells": 1631,
+      "blockedCells": 7585,
       "doors": [
         {
           "to": "BD02",
           "label": "BD01_to_BD02",
           "kind": "onward"
-        },
-        {
-          "to": "CL01",
-          "label": "BD01_to_CL01",
-          "kind": "region"
         },
         {
           "to": "EG01",
@@ -110270,8 +110172,8 @@
       "gridWidth": 96,
       "gridHeight": 88,
       "dataVersion": 1,
-      "walkableCells": 880,
-      "blockedCells": 7568,
+      "walkableCells": 8448,
+      "blockedCells": 0,
       "doors": [
         {
           "to": "BD05",
@@ -110339,16 +110241,6 @@
       "walkableCells": 5148,
       "blockedCells": 4068,
       "doors": [
-        {
-          "to": "BD01",
-          "label": "CL01_to_BD01",
-          "kind": "region"
-        },
-        {
-          "to": "EG01",
-          "label": "CL01_to_EG01",
-          "kind": "region"
-        },
         {
           "to": "ST01",
           "label": "CL01_to_ST01",
@@ -110534,18 +110426,13 @@
       "gridWidth": 88,
       "gridHeight": 112,
       "dataVersion": 1,
-      "walkableCells": 1641,
-      "blockedCells": 8215,
+      "walkableCells": 1674,
+      "blockedCells": 8182,
       "doors": [
         {
           "to": "BD01",
           "label": "EG01_to_BD01",
           "kind": "ring"
-        },
-        {
-          "to": "CL01",
-          "label": "EG01_to_CL01",
-          "kind": "region"
         },
         {
           "to": "EG02",
@@ -112162,7 +112049,7 @@
     },
     {
       "id": "MZ02",
-      "name": "Hall of False Doors",
+      "name": "Hall of False Doors MZ02",
       "world": "Maze",
       "image": "map_MZ02.png",
       "gridWidth": 96,
@@ -113140,8 +113027,8 @@
       "gridWidth": 144,
       "gridHeight": 64,
       "dataVersion": 1,
-      "walkableCells": 276,
-      "blockedCells": 8940,
+      "walkableCells": 9216,
+      "blockedCells": 0,
       "doors": [
         {
           "to": "ST05",
@@ -147398,7 +147285,7 @@
     {
       "code": "MZ02",
       "mapId": "MZ02",
-      "name": "Hall of False Doors",
+      "name": "Hall of False Doors MZ02",
       "mapUnbuilt": false,
       "world": "Maze",
       "minLevel": 107300,
@@ -148968,7 +148855,9 @@
         "GY07_Accessory",
         "GY07_Helmet",
         "GY07_Weapon_H",
+        "GY07_Shoes_H",
         "GY07_Armor_H",
+        "GY07_Accessory_H",
         "GY07_Helmet_H"
       ],
       "bossDropItemIds": [],
@@ -149112,6 +149001,7 @@
         "GY10_Helmet",
         "GY10_Shoes",
         "GY10_Weapon_H",
+        "GY10_Accessory_H",
         "GY10_Armor_H",
         "GY10_Helmet_H",
         "GY10_Shoes_H"
@@ -149454,7 +149344,6 @@
       "bossIds": [],
       "dropItemIds": [
         "KR07_Weapon_H",
-        "Key_SovereignsScale",
         "KR07_Armor_H",
         "KR07_Helmet_H",
         "KR07_Shoes_H",
@@ -149503,7 +149392,7 @@
       ],
       "dropItemIds": [
         "KR08_Weapon_H",
-        "Key_SovereignsScale",
+        "KR08_Accessory_H",
         "KR08_Armor_H",
         "KR08_Helmet_H",
         "KR08_Shoes_H",
@@ -149849,7 +149738,6 @@
       "bossIds": [],
       "dropItemIds": [
         "LD07_Weapon_H",
-        "Key_ClockworkKey",
         "LD07_Armor_H",
         "LD07_Helmet_H",
         "LD07_Shoes_H",
@@ -149898,7 +149786,7 @@
       ],
       "dropItemIds": [
         "LD08_Weapon_H",
-        "Key_ClockworkKey",
+        "LD08_Accessory_H",
         "LD08_Armor_H",
         "LD08_Helmet_H",
         "LD08_Shoes_H",
@@ -150388,6 +150276,7 @@
       ],
       "dropItemIds": [
         "PX10_Weapon_H",
+        "PX10_Accessory_H",
         "PX10_Armor_H",
         "PX10_Helmet_H",
         "PX10_Shoes_H",
@@ -150639,6 +150528,7 @@
         "PX15_Armor_H",
         "PX15_Helmet_H",
         "PX15_Shoes_H",
+        "PX15_Accessory_H",
         "PX15_Weapon",
         "PX15_Armor",
         "PX15_Helmet",
@@ -150834,7 +150724,6 @@
       "bossIds": [],
       "dropItemIds": [
         "PX19_Weapon_H",
-        "Key_AshenCrown",
         "PX19_Armor_H",
         "PX19_Helmet_H",
         "PX19_Shoes_H",
@@ -150883,7 +150772,7 @@
       ],
       "dropItemIds": [
         "PX20_Weapon_H",
-        "Key_AshenCrown",
+        "PX20_Accessory_H",
         "PX20_Armor_H",
         "PX20_Helmet_H",
         "PX20_Shoes_H",
@@ -152360,6 +152249,17 @@
       "statBonus": 210
     },
     {
+      "id": "cats_friend",
+      "name": "The Cat's Friend",
+      "description": "Stay perfectly still for ten minutes",
+      "type": "TotalKills",
+      "modeRequirement": "Any",
+      "rewardType": "BonusAGI",
+      "characterRewardId": "",
+      "targetValue": 1,
+      "statBonus": 100
+    },
+    {
       "id": "collector",
       "name": "Collector",
       "description": "Own 30 different items in the bank",
@@ -152424,6 +152324,17 @@
       "characterRewardId": "",
       "targetValue": 1,
       "statBonus": 29
+    },
+    {
+      "id": "dev_room",
+      "name": "The Developer's Room",
+      "description": "Tap the main-menu logo ten times",
+      "type": "TotalKills",
+      "modeRequirement": "Any",
+      "rewardType": "BonusHP",
+      "characterRewardId": "",
+      "targetValue": 1,
+      "statBonus": 100
     },
     {
       "id": "first_blood",
@@ -152591,6 +152502,17 @@
       "statBonus": 170
     },
     {
+      "id": "hidden_stats",
+      "name": "The Small Print",
+      "description": "Open the Statistics footer three times",
+      "type": "TotalKills",
+      "modeRequirement": "Any",
+      "rewardType": "BonusHP",
+      "characterRewardId": "",
+      "targetValue": 1,
+      "statBonus": 100
+    },
+    {
       "id": "high_climber",
       "name": "High Climber",
       "description": "Reach level 125 in a run",
@@ -152611,6 +152533,28 @@
       "characterRewardId": "",
       "targetValue": 75,
       "statBonus": 5
+    },
+    {
+      "id": "idle_cat",
+      "name": "The Idle Cat",
+      "description": "Stand perfectly still for three minutes",
+      "type": "TotalKills",
+      "modeRequirement": "Any",
+      "rewardType": "BonusLUC",
+      "characterRewardId": "",
+      "targetValue": 1,
+      "statBonus": 100
+    },
+    {
+      "id": "keyring",
+      "name": "The Keyring",
+      "description": "Hold all six route keys at once",
+      "type": "TotalKills",
+      "modeRequirement": "Any",
+      "rewardType": "BonusLUC",
+      "characterRewardId": "",
+      "targetValue": 1,
+      "statBonus": 100
     },
     {
       "id": "last_stand",
@@ -152655,6 +152599,17 @@
       "characterRewardId": "",
       "targetValue": 1,
       "statBonus": 7
+    },
+    {
+      "id": "midnight_plaza",
+      "name": "Midnight on the Plaza",
+      "description": "Stand in the Cloud Plaza at midnight",
+      "type": "TotalKills",
+      "modeRequirement": "Any",
+      "rewardType": "BonusDEF",
+      "characterRewardId": "",
+      "targetValue": 1,
+      "statBonus": 100
     },
     {
       "id": "normal_boss_scout",
@@ -152778,6 +152733,17 @@
       "statBonus": 71
     },
     {
+      "id": "not_found",
+      "name": "404 Not Found",
+      "description": "Meet the ghost that only appears at 04:04",
+      "type": "TotalKills",
+      "modeRequirement": "Any",
+      "rewardType": "BonusLUC",
+      "characterRewardId": "",
+      "targetValue": 1,
+      "statBonus": 100
+    },
+    {
       "id": "on_a_roll",
       "name": "On a Roll",
       "description": "Reach a 15-kill streak",
@@ -152787,6 +152753,17 @@
       "characterRewardId": "",
       "targetValue": 15,
       "statBonus": 4
+    },
+    {
+      "id": "sealed_gates",
+      "name": "The Sealed Gates",
+      "description": "Walk into a sealed Plaza gate ten times",
+      "type": "TotalKills",
+      "modeRequirement": "Any",
+      "rewardType": "BonusDEF",
+      "characterRewardId": "",
+      "targetValue": 1,
+      "statBonus": 100
     },
     {
       "id": "seasoned_runner",

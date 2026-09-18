@@ -472,7 +472,14 @@ const MAP_VISUAL = {
   MilitaryDepot_Map: "Military Supply Depot", MilitaryHQ_Map: "Military Command HQ",
   MilitaryMinefield_Map: "Military Minefield Crossing", MilitaryTrench_Map: "Military Trench Line",
   MilitaryYard_Map: "Military Blast-Wall Yard",
-  MZ01: "Threshold of Reflections", MZ02: "Hall of False Doors", MZ03: "Mirror Bend",
+  MZ01: "Threshold of Reflections",
+  // ⛔ MZ02 IS DELIBERATELY NOT "Hall of False Doors" — player-reported 2026-09-19 as "the Maze map
+  // image on the wiki is wrong": it was showing an EGYPTIAN temple. Epoch 4's EG04 was given the SAME
+  // display name, and map art is stored as "<display name> visual.png", so the Epoch 4 art import
+  // wrote EG04's painting straight over the Maze file that had shipped in 3.0.0. Both the wiki AND
+  // the game drew Egypt behind MZ02. The original was recovered from LFS and renamed with its map
+  // code so the two can never collide again; this row must point at that file, not the bare name.
+  MZ02: "Hall of False Doors MZ02", MZ03: "Mirror Bend",
   MZ04: "Collapsed Stair", MZ05: "The Rotunda", MZ06: "Sunken Gallery",
   MZ07: "Ice Gate", MZ08: "America Gate", MZ09: "Amazon Gate",
   MZ10: "Fracture Warden", MZ11: "The Hollow Twin", MZ12: "Glassmaw",
