@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T14:46:21Z",
+  "generatedAt": "2026-09-18T15:14:09Z",
   "game": "Infinite Loot-Loop",
   "gameVersion": "5.0.0",
   "release": {
@@ -112049,7 +112049,7 @@
     },
     {
       "id": "MZ02",
-      "name": "Hall of False Doors MZ02",
+      "name": "Hall of False Doors",
       "world": "Maze",
       "image": "map_MZ02.png",
       "gridWidth": 96,
@@ -147285,7 +147285,7 @@
     {
       "code": "MZ02",
       "mapId": "MZ02",
-      "name": "Hall of False Doors MZ02",
+      "name": "Hall of False Doors",
       "mapUnbuilt": false,
       "world": "Maze",
       "minLevel": 107300,

@@ -28,7 +28,10 @@
     { id: "contact",      label: "Contact",     href: "/contact.html" }
   ];
 
-  var PRIMARY_NAV = ["home", "guide", "maps", "items", "shop", "monsters"];
+  // ★ fan-wiki sits directly after maps (owner, 2026-09-19): the player-drawn charts answer the same
+  // question the atlas does — "how do these maps join up" — so they belong next to it rather than
+  // buried in the overflow menu where the first two charts sat unseen.
+  var PRIMARY_NAV = ["home", "guide", "maps", "fan-wiki", "items", "shop", "monsters"];
   var PAGE_PRESENTATION = {
     monsters:     { icon: "&#128058;", kicker: "Bestiary", accent: "#6fd08c" },
     bosses:       { icon: "&#9760;", kicker: "Boss Archive", accent: "#ff766d" },
