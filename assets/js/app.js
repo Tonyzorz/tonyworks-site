@@ -1093,16 +1093,55 @@
     "Amazon":     { icon: "&#127811;", color: "#43a66b" },
     "Graveyard":  { icon: "&#129702;", color: "#8fa38c" },
     // Graveyard-onward regions (endgame route), each entered through a door inside the Graveyard.
-    // ⛔ THE TAEGEUK IS AN S-CURVE, NOT A BISECTED DISC. It shipped as a flat red-over-blue split
-    // and the owner spotted it at once. Below is the real construction: a blue disc, then ONE path
-    // sweeping the red half across two arcs of half the radius — those two arcs are what make the
-    // comma shapes — rotated -33.69deg so red takes the upper LEFT. Trigrams omitted at this size,
-    // as with Japan's disc and Egypt's eagle; see the note in style.css.
+    // ⛔★★★ THE TAEGUKGI IS A TAEGEUK **AND FOUR TRIGRAMS**, AND BOTH HALVES SHIPPED WRONG.
+    // First it was a flat red-over-blue split — a disc cut straight across, which is a different
+    // symbol. Then the taegeuk was fixed and the four 괘 were left off, on my claim that they would
+    // "render as mud". ⚠ THAT CLAIM WAS MEASURED AGAINST THE WRONG SIZE: `.wicon` is 1.9rem, so the
+    // atlas flag draws about 41px wide, not the 13px I assumed. There was always room.
+    // Owner, twice: "the flag is wrong" / "korea still has no 3 4 5 6 black marks around the edges".
+    //
+    // ★ THE COUNT IS THE CHECK, and it is the owner's own: the four trigrams are 3, 4, 5 and 6
+    // strokes. Anything else drawn here is wrong by inspection:
+    //     건 Geon  ☰  3 strokes (solid·solid·solid)   upper LEFT
+    //     리 Ri    ☲  4 strokes (solid·broken·solid)  lower LEFT
+    //     감 Gam   ☵  5 strokes (broken·solid·broken) upper RIGHT
+    //     곤 Gon   ☷  6 strokes (broken·broken·broken) lower RIGHT
+    // ★ Each trigram's bars sit PERPENDICULAR to its line to the centre, which on a 3:2 field is
+    // ±56.31° (90° off the 33.69° diagonal) — the same geometry that sets the taegeuk's own -33.69°.
+    // They are not decoration placed by eye; get the angle wrong and it reads as a tilted barcode.
     "Korea":      { icon: '<span class="flag-kr" role="img" aria-label="South Korea flag">'
                      + '<svg viewBox="0 0 36 24" aria-hidden="true">'
                      + '<g transform="translate(18 12) rotate(-33.69)">'
                      + '<circle r="6" fill="#0047a0"/>'
                      + '<path d="M-6 0A3 3 0 0 1 0 0A3 3 0 0 0 6 0A6 6 0 0 0-6 0Z" fill="#cd2e3a"/>'
+                     + '</g>'
+                     + '<g fill="#000">'
+                     // 건 Geon — upper left — 3
+                     + '<g transform="translate(7 4.7) rotate(-56.31)">'
+                       + '<rect x="-3" y="-2.6" width="6" height="1.1"/>'
+                       + '<rect x="-3" y="-.55" width="6" height="1.1"/>'
+                       + '<rect x="-3" y="1.5" width="6" height="1.1"/></g>'
+                     // 리 Ri — lower left — 4
+                     + '<g transform="translate(7 19.3) rotate(56.31)">'
+                       + '<rect x="-3" y="-2.6" width="6" height="1.1"/>'
+                       + '<rect x="-3" y="-.55" width="2.55" height="1.1"/>'
+                       + '<rect x=".45" y="-.55" width="2.55" height="1.1"/>'
+                       + '<rect x="-3" y="1.5" width="6" height="1.1"/></g>'
+                     // 감 Gam — upper right — 5
+                     + '<g transform="translate(29 4.7) rotate(56.31)">'
+                       + '<rect x="-3" y="-2.6" width="2.55" height="1.1"/>'
+                       + '<rect x=".45" y="-2.6" width="2.55" height="1.1"/>'
+                       + '<rect x="-3" y="-.55" width="6" height="1.1"/>'
+                       + '<rect x="-3" y="1.5" width="2.55" height="1.1"/>'
+                       + '<rect x=".45" y="1.5" width="2.55" height="1.1"/></g>'
+                     // 곤 Gon — lower right — 6
+                     + '<g transform="translate(29 19.3) rotate(-56.31)">'
+                       + '<rect x="-3" y="-2.6" width="2.55" height="1.1"/>'
+                       + '<rect x=".45" y="-2.6" width="2.55" height="1.1"/>'
+                       + '<rect x="-3" y="-.55" width="2.55" height="1.1"/>'
+                       + '<rect x=".45" y="-.55" width="2.55" height="1.1"/>'
+                       + '<rect x="-3" y="1.5" width="2.55" height="1.1"/>'
+                       + '<rect x=".45" y="1.5" width="2.55" height="1.1"/></g>'
                      + '</g></svg></span>', color: "#6cc5a1" },
     "London":     { icon: '<span class="flag-gb" role="img" aria-label="United Kingdom flag"></span>', color: "#c9a15a" },
     "Monochrome": { icon: "&#128307;", color: "#9a9a9a" },
