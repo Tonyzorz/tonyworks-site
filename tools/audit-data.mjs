@@ -23,8 +23,22 @@ function imageHash(file) {
   return imageHashes.get(file);
 }
 
+// ⛔ THE TIER PREFIXES, AND THIS LIST IS THE CHECK'S WEAK POINT.
+// A zone's monster family is one creature at several tiers — "Ossuary Hound", "Elder Ossuary
+// Hound", "Ancient Ossuary Hound" — and tiers SHARE ART by design. Stripping the prefix is what
+// collapses them to one archetype so the shared-art rule below does not fire on them.
+//
+// ★ `Ancient` added 2026-09-23. It was missing, so GY03 and KR02 failed the audit on content that
+// had been published for weeks: 348 `Elder` and 200 `Greater` monsters normalised correctly while
+// the 9 `Ancient` ones did not. A hand-maintained list that new content must be remembered into —
+// the same defect shape as the release table in build-data.mjs, which is why the error message
+// below now names this list as the first thing to check.
+// ⚠ `Ancient` is ALSO part of proper names that are not tiers ("Ancient Golem" is a boss). That is
+// harmless here: this only groups FIELD enemies inside one area, and two of them would have to
+// share art before anything is reported.
+const TIER_PREFIXES = /^(?:Elder|Greater|Ancient) /;
 function archetype(name) {
-  return String(name).replace(/ H$/, "").replace(/^(?:Elder|Greater) /, "");
+  return String(name).replace(/ H$/, "").replace(TIER_PREFIXES, "");
 }
 
 for (const area of data.areas) {
@@ -48,7 +62,8 @@ for (const area of data.areas) {
     byHash.get(hash).push(name);
   }
   for (const names of byHash.values()) {
-    if (names.length > 1) errors.push(`${area.code}: distinct archetypes share art (${names.join(", ")})`);
+    if (names.length > 1) errors.push(`${area.code}: distinct archetypes share art (${names.join(", ")})`
+      + ` — if these are TIERS of one creature, the missing piece is TIER_PREFIXES above, not the art`);
   }
 }
 

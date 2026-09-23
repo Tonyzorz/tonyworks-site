@@ -1,29 +1,10 @@
 {
- "generatedAt": "2026-09-16T13:13:15Z",
- "source": "Assets/Project Information/epoch4_wave1_cloud_and_circle.md",
+ "generatedAt": "2026-09-23T05:30:59Z",
+ "source": "Assets/Project Information/epoch4_wave1_cloud_and_circle.md + Tools/epoch4_blueprint/r_mu.js (Museum, 6.0.0)",
  "epoch": 4,
  "wave": 1,
- "note": "Planned content. Nothing here is built: no assets, no art and NO STATS exist yet. Level bands are projections owned by the balance pass, not authored values.",
- "route": [
-  {
-   "leg": 3,
-   "code": "ST",
-   "name": "Stone",
-   "anchor": "Korea-hard"
-  },
-  {
-   "leg": 5,
-   "code": "EG",
-   "name": "Egypt",
-   "anchor": "London-hard"
-  },
-  {
-   "leg": 7,
-   "code": "BD",
-   "name": "The Temple",
-   "anchor": "Monochrome-hard"
-  }
- ],
+ "note": "Planned content. Nothing here is built: no assets, no art and NO STATS exist yet. Level bands are projections owned by the balance pass, not authored values. The Museum's 25 maps ARE authored in Unity, but the region is unreleased (ShopManager.MuseumReleased is false) so it is announced here rather than published as live data; it carries no levels and no stats at all.",
+ "route": [],
  "worlds": [
   {
    "code": "CL",
@@ -64,15 +45,9 @@
        "kind": "region"
       },
       {
-       "to": "EG01",
+       "to": "MU01",
        "edge": "EAST",
-       "label": "sand gate",
-       "kind": "region"
-      },
-      {
-       "to": "BD01",
-       "edge": "NORTH",
-       "label": "lantern gate",
+       "label": "the museum portico",
        "kind": "region"
       },
       {
@@ -89,831 +64,1739 @@
    "boss": null
   },
   {
-   "code": "ST",
-   "name": "Stone",
-   "kind": "region",
-   "leg": 3,
-   "anchor": "Korea-hard",
-   "levelFrom": 32800000,
-   "levelTo": 45590000,
-   "zoneCount": 44,
-   "pitch": "the oldest thing still standing. Megaliths, quarry steps, dolmens, cairns, glyph-cut monoliths — a landscape that was arranged by someone, a very long time ago, for a reason nobody recorded. Cold granite, lichen green, wet slate, standing mist.",
+   "code": "MU",
+   "name": "Museum · The Atrium",
+   "kind": "hub",
+   "leg": null,
+   "anchor": "Cloud Plaza",
+   "levelFrom": null,
+   "levelTo": null,
+   "zoneCount": 1,
+   "pitch": "a museum after closing, where every exhibit is the real thing and none of it agreed to be here",
    "maps": [
     {
-     "id": "ST01",
-     "name": "Standing Circle",
-     "zoneCount": 6,
-     "bandStart": 32800000,
-     "note": "open moor, a ring of uprights; the arrival fight is in the middle of it",
-     "width": 26,
-     "height": 22,
+     "id": "MU01",
+     "name": "The Atrium",
+     "zoneCount": 1,
+     "bandStart": null,
+     "note": "hub — no encounters",
+     "width": 30,
+     "height": 30,
      "orient": "V",
-     "axis": "south to north",
+     "axis": "V",
      "isBossMap": false,
      "zoneNames": [
-      "Outer Ring",
-      "Fallen Uprights",
-      "The Inner Ring",
-      "Lichen Terrace",
-      "The Altar Stone",
-      "Northern Gap"
+      "The Atrium Floor"
      ],
-     "doors": [
-      {
-       "to": "CL01",
-       "kind": "hub",
-       "label": "back to the Cloud Plaza"
-      },
-      {
-       "to": "ST02",
-       "kind": "onward",
-       "label": "onward"
-      },
-      {
-       "to": "BD01",
-       "kind": "ring",
-       "label": "ring door, west edge"
-      },
-      {
-       "to": "EG01",
-       "kind": "ring",
-       "label": "ring door, east edge"
-      }
-     ]
-    },
+     "doors": []
+    }
+   ],
+   "creatures": [],
+   "gear": [],
+   "boss": null
+  },
+  {
+   "code": "MU",
+   "name": "Museum · Stone Age",
+   "kind": "region",
+   "leg": 9,
+   "anchor": "Cloud Plaza",
+   "levelFrom": null,
+   "levelTo": null,
+   "zoneCount": 22,
+   "pitch": "flint, ochre, hide, antler, fire. Exhibits that predate the building and do not recognise it. Nothing here is behind glass any more.",
+   "maps": [
     {
-     "id": "ST02",
-     "name": "The Quarry Steps",
-     "zoneCount": 5,
-     "bandStart": 34180000,
-     "note": "a worked cliff face, cut steps, abandoned half-blocks",
-     "width": 32,
-     "height": 18,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Cut Face",
-      "First Bench",
-      "Abandoned Block",
-      "Second Bench",
-      "The Overhang"
-     ],
-     "doors": [
-      {
-       "to": "ST01",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "ST03",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "ST03",
-     "name": "Dolmen Field",
+     "id": "MU02",
+     "name": "The Flint Hall",
      "zoneCount": 6,
-     "bandStart": 35620000,
-     "note": "hundreds of capstones; sightlines break constantly",
-     "width": 28,
+     "bandStart": null,
+     "note": "Stone Age wing",
+     "width": 24,
      "height": 24,
      "orient": "V",
-     "axis": "south to north",
-     "isBossMap": false,
-     "zoneNames": [
-      "Field Edge",
-      "Low Dolmens",
-      "The Crowded Rows",
-      "Collapsed Cap",
-      "Tall Dolmens",
-      "The Last Capstone"
-     ],
-     "doors": [
-      {
-       "to": "ST02",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "ST04",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "ST04",
-     "name": "The Glyph Wall",
-     "zoneCount": 5,
-     "bandStart": 37110000,
-     "note": "one continuous carved face, walked end to end",
-     "width": 34,
-     "height": 16,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Wall Foot",
-      "First Panel",
-      "The Long Register",
-      "Defaced Section",
-      "The Unread End"
-     ],
-     "doors": [
-      {
-       "to": "ST03",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "ST05",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "ST05",
-     "name": "Cairn Deeps",
-     "zoneCount": 6,
-     "bandStart": 38670000,
-     "note": "below ground — the first interior of the region",
-     "width": 18,
-     "height": 26,
-     "orient": "V",
-     "axis": "south to north",
-     "isBossMap": false,
-     "zoneNames": [
-      "Cairn Mouth",
-      "Upper Chamber",
-      "The Squeeze",
-      "Bone Shelf",
-      "Lower Chamber",
-      "The Keystone Vault"
-     ],
-     "doors": [
-      {
-       "to": "ST04",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "ST06",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "ST06",
-     "name": "The Toppled Giant",
-     "zoneCount": 5,
-     "bandStart": 40300000,
-     "note": "a single fallen colossus; every zone is a body part",
-     "width": 36,
-     "height": 16,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Shattered Feet",
-      "The Legs",
-      "Ribcage Hollow",
-      "The Arm",
-      "The Head"
-     ],
-     "doors": [
-      {
-       "to": "ST05",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "ST07",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "ST07",
-     "name": "Menhir Spine",
-     "zoneCount": 6,
-     "bandStart": 41990000,
-     "note": "a ridgeline of uprights along a mountain's back",
-     "width": 30,
-     "height": 22,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Spine Foot",
-      "First Vertebra",
-      "Windward Ridge",
-      "The Gap",
-      "Leeward Ridge",
-      "Spine Crown"
-     ],
-     "doors": [
-      {
-       "to": "ST06",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "ST08",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "ST08",
-     "name": "The Unmoved Stone",
-     "zoneCount": 5,
-     "bandStart": 43750000,
-     "note": "boss map; a plain, and one stone in it",
-     "width": 28,
-     "height": 20,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": true,
-     "zoneNames": [
-      "Open Plain",
-      "The Approach",
-      "Trodden Ground",
-      "The Circle of Bare Earth",
-      "The Stone"
-     ],
-     "doors": [
-      {
-       "to": "ST07",
-       "kind": "back",
-       "label": "back"
-      }
-     ]
-    }
-   ],
-   "creatures": [],
-   "gear": [],
-   "boss": null
-  },
-  {
-   "code": "EG",
-   "name": "Egypt",
-   "kind": "region",
-   "leg": 5,
-   "anchor": "London-hard",
-   "levelFrom": 76920000,
-   "levelTo": 106900000,
-   "zoneCount": 44,
-   "pitch": "a necropolis that is still being *staffed*. Embalmers who never stopped working, jars that still have something in them, false doors that lead somewhere anyway. No god is named and no god appears — the region's horror is bureaucratic, not divine: a death-industry running long after the state that funded it collapsed.",
-   "maps": [
-    {
-     "id": "EG01",
-     "name": "The Sand Stair",
-     "zoneCount": 6,
-     "bandStart": 76920000,
-     "note": "a buried staircase excavated one flight at a time",
-     "width": 22,
-     "height": 28,
-     "orient": "V",
-     "axis": "south to north",
-     "isBossMap": false,
-     "zoneNames": [
-      "Buried Landing",
-      "First Flight",
-      "Sand Drift",
-      "Second Flight",
-      "Cleared Steps",
-      "The Stair Head"
-     ],
-     "doors": [
-      {
-       "to": "CL01",
-       "kind": "hub",
-       "label": "back to the Cloud Plaza"
-      },
-      {
-       "to": "EG02",
-       "kind": "onward",
-       "label": "onward"
-      },
-      {
-       "to": "ST01",
-       "kind": "ring",
-       "label": "ring door, west edge"
-      },
-      {
-       "to": "BD01",
-       "kind": "ring",
-       "label": "ring door, east edge"
-      }
-     ]
-    },
-    {
-     "id": "EG02",
-     "name": "Embalmer's Row",
-     "zoneCount": 5,
-     "bandStart": 80150000,
-     "note": "workshop after workshop, all still lit",
-     "width": 34,
-     "height": 14,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Row Entrance",
-      "Salt Room",
-      "The Long Bench",
-      "Resin Store",
-      "Wrapping Room"
-     ],
-     "doors": [
-      {
-       "to": "EG01",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "EG03",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "EG03",
-     "name": "The Canopic Vault",
-     "zoneCount": 6,
-     "bandStart": 83510000,
-     "note": "shelved jars floor to ceiling; three of four are empty",
-     "width": 16,
-     "height": 30,
-     "orient": "V",
-     "axis": "south to north",
-     "isBossMap": false,
-     "zoneNames": [
-      "Vault Door",
-      "Low Shelves",
-      "The Jar Rows",
-      "Broken Jars",
-      "High Shelves",
-      "The Fourth Niche"
-     ],
-     "doors": [
-      {
-       "to": "EG02",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "EG04",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "EG04",
-     "name": "Hall of False Doors",
-     "zoneCount": 5,
-     "bandStart": 87020000,
-     "note": "painted doors on solid stone — one of them opens",
-     "width": 32,
-     "height": 16,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Hall Mouth",
-      "First Doors",
-      "The Repeating Wall",
-      "Painted Corridor",
-      "The Door That Opens"
-     ],
-     "doors": [
-      {
-       "to": "EG03",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "EG05",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "EG05",
-     "name": "The Sunless Barque",
-     "zoneCount": 6,
-     "bandStart": 90680000,
-     "note": "an underground river and a ship crewed by rowers",
-     "width": 18,
-     "height": 32,
-     "orient": "V",
-     "axis": "south to north",
-     "isBossMap": false,
-     "zoneNames": [
-      "Landing Stage",
-      "Shallow Water",
-      "The Hull",
-      "Rowing Deck",
-      "Stern Deck",
-      "The Prow"
-     ],
-     "doors": [
-      {
-       "to": "EG04",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "EG06",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "EG06",
-     "name": "Scarab Reach",
-     "zoneCount": 6,
-     "bandStart": 94480000,
-     "note": "the one open-air map; a dune sea that moves",
-     "width": 34,
-     "height": 22,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Dune Foot",
-      "Shifting Sand",
-      "The Reach",
-      "Scarab Hollow",
-      "High Dune",
-      "The Far Ridge"
-     ],
-     "doors": [
-      {
-       "to": "EG05",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "EG07",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "EG07",
-     "name": "The Weighing Room",
-     "zoneCount": 5,
-     "bandStart": 98450000,
-     "note": "scales, feathers, and a queue that never shortened",
-     "width": 28,
-     "height": 22,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Antechamber",
-      "The Queue",
-      "The Scales",
-      "Behind the Scales",
-      "The Ledger Wall"
-     ],
-     "doors": [
-      {
-       "to": "EG06",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "EG08",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "EG08",
-     "name": "Tomb of the Bound King",
-     "zoneCount": 5,
-     "bandStart": 102590000,
-     "note": "boss map; a tomb built as a prison",
-     "width": 30,
-     "height": 16,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": true,
-     "zoneNames": [
-      "Sealed Entrance",
-      "The Descending Passage",
-      "Antechamber",
-      "The Chained Hall",
-      "The Burial Chamber"
-     ],
-     "doors": [
-      {
-       "to": "EG07",
-       "kind": "back",
-       "label": "back"
-      }
-     ]
-    }
-   ],
-   "creatures": [],
-   "gear": [],
-   "boss": null
-  },
-  {
-   "code": "BD",
-   "name": "The Temple",
-   "kind": "region",
-   "leg": 7,
-   "anchor": "Monochrome-hard",
-   "levelFrom": 342870000,
-   "levelTo": 476510000,
-   "zoneCount": 44,
-   "pitch": "a mountain temple with ten thousand steps, lantern halls, a bell that is still ringing from a strike nobody remembers, and a hall of a thousand identical seated statues — one of which is empty. No named figure and no deity appears anywhere in this region. Its guardians are objects: lanterns, bells, statues, flags, ash.",
-   "maps": [
-    {
-     "id": "BD01",
-     "name": "The Ten Thousand Steps",
-     "zoneCount": 6,
-     "bandStart": 342870000,
-     "note": "one climb; the whole map is the stair",
-     "width": 18,
-     "height": 32,
-     "orient": "V",
-     "axis": "south to north",
-     "isBossMap": false,
-     "zoneNames": [
-      "Mountain Gate",
-      "The First Hundred",
-      "Mist Landing",
-      "The Long Flight",
-      "Cloud Landing",
-      "The Upper Gate"
-     ],
-     "doors": [
-      {
-       "to": "CL01",
-       "kind": "hub",
-       "label": "back to the Cloud Plaza"
-      },
-      {
-       "to": "BD02",
-       "kind": "onward",
-       "label": "onward"
-      },
-      {
-       "to": "EG01",
-       "kind": "ring",
-       "label": "ring door, west edge"
-      },
-      {
-       "to": "ST01",
-       "kind": "ring",
-       "label": "ring door, east edge"
-      }
-     ]
-    },
-    {
-     "id": "BD02",
-     "name": "Lantern Hall",
-     "zoneCount": 5,
-     "bandStart": 357270000,
-     "note": "thousands of hanging lanterns, all lit, no one lighting them",
-     "width": 30,
-     "height": 22,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Hall Threshold",
-      "West Lanterns",
-      "The Lit Aisle",
-      "East Lanterns",
-      "Lamp Store"
-     ],
-     "doors": [
-      {
-       "to": "BD01",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "BD03",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "BD03",
-     "name": "The Bell Tower",
-     "zoneCount": 6,
-     "bandStart": 372280000,
-     "note": "vertical map; the bell is struck once per zone",
-     "width": 16,
-     "height": 30,
-     "orient": "V",
-     "axis": "south to north",
-     "isBossMap": false,
-     "zoneNames": [
-      "Tower Base",
-      "First Stair",
-      "The Rope Room",
-      "Second Stair",
-      "The Bell Deck",
-      "Above the Bell"
-     ],
-     "doors": [
-      {
-       "to": "BD02",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "BD04",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "BD04",
-     "name": "Hall of a Thousand Seats",
-     "zoneCount": 5,
-     "bandStart": 387910000,
-     "note": "identical statues; the ninth row has a gap",
-     "width": 34,
-     "height": 18,
-     "orient": "H",
-     "axis": "west to east",
+     "axis": "V",
      "isBossMap": false,
      "zoneNames": [
       "Hall Doors",
-      "First Rows",
-      "The Ninth Row",
-      "Middle Rows",
-      "The Far Rows"
+      "The Core Tables",
+      "Blade Cases",
+      "Hammerstones",
+      "The Knapping Floor",
+      "The Far Arch"
      ],
-     "doors": [
-      {
-       "to": "BD03",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "BD05",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
+     "doors": []
     },
     {
-     "id": "BD05",
-     "name": "Prayer-Flag Span",
-     "zoneCount": 6,
-     "bandStart": 404210000,
-     "note": "a rope bridge in wind, flags to the horizon",
-     "width": 38,
-     "height": 14,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Near Anchor",
-      "First Span",
-      "Midspan",
-      "The Sagging Length",
-      "Second Span",
-      "Far Anchor"
-     ],
-     "doors": [
-      {
-       "to": "BD04",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "BD06",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "BD06",
-     "name": "The Ash Garden",
-     "zoneCount": 6,
-     "bandStart": 421180000,
-     "note": "raked ash instead of gravel; footprints appear behind you",
-     "width": 24,
-     "height": 22,
-     "orient": "V",
-     "axis": "south to north",
-     "isBossMap": false,
-     "zoneNames": [
-      "Garden Gate",
-      "Raked Ground",
-      "The First Print",
-      "Deep Ash",
-      "The Untouched Bed",
-      "Garden Terrace"
-     ],
-     "doors": [
-      {
-       "to": "BD05",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "BD07",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "BD07",
-     "name": "The Silent Terrace",
+     "id": "MU03",
+     "name": "Ochre and Hide",
      "zoneCount": 5,
-     "bandStart": 438870000,
-     "note": "the map with no ambient sound at all",
-     "width": 32,
-     "height": 14,
-     "orient": "H",
-     "axis": "west to east",
-     "isBossMap": false,
-     "zoneNames": [
-      "Terrace Steps",
-      "West Balustrade",
-      "The Quiet Middle",
-      "East Balustrade",
-      "Terrace End"
-     ],
-     "doors": [
-      {
-       "to": "BD06",
-       "kind": "back",
-       "label": "back"
-      },
-      {
-       "to": "BD08",
-       "kind": "onward",
-       "label": "onward"
-      }
-     ]
-    },
-    {
-     "id": "BD08",
-     "name": "The Empty Seat",
-     "zoneCount": 5,
-     "bandStart": 457300000,
-     "note": "boss map; one seat, unoccupied, at the top of the mountain",
-     "width": 26,
+     "bandStart": null,
+     "note": "Stone Age wing",
+     "width": 28,
      "height": 20,
      "orient": "H",
-     "axis": "west to east",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "Threshold",
+      "The Pigment Jars",
+      "Hide Frames",
+      "The Handprint Wall",
+      "Far Door"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU04",
+     "name": "Antler and Bone",
+     "zoneCount": 5,
+     "bandStart": null,
+     "note": "Stone Age wing",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Low Door",
+      "Picks and Points",
+      "The Ribcage",
+      "Needle Cases",
+      "The Far Bay"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU05",
+     "name": "The Fire Pit Gallery",
+     "zoneCount": 6,
+     "bandStart": null,
+     "note": "Stone Age wing — boss room",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "V",
      "isBossMap": true,
      "zoneNames": [
-      "Summit Path",
-      "The Last Gate",
-      "Bare Terrace",
-      "The Approach",
-      "The Seat"
+      "Gallery Mouth",
+      "The Ash Ring",
+      "Hearth Stones",
+      "Smoke Shelf",
+      "Charcoal Floor",
+      "The First Fire"
      ],
-     "doors": [
-      {
-       "to": "BD07",
-       "kind": "back",
-       "label": "back"
-      }
+     "doors": []
+    }
+   ],
+   "creatures": [
+    {
+     "id": "MU_Flintknapper",
+     "name": "Flintknapper",
+     "areas": [
+      "MU02"
+     ]
+    },
+    {
+     "id": "MU_CoreStone",
+     "name": "Core Stone",
+     "areas": [
+      "MU02",
+      "MU03"
+     ]
+    },
+    {
+     "id": "MU_OchreHand",
+     "name": "Ochre Hand",
+     "areas": [
+      "MU03",
+      "MU05"
+     ]
+    },
+    {
+     "id": "MU_TheKeptFire",
+     "name": "The Kept Fire",
+     "areas": [
+      "MU05"
+     ]
+    },
+    {
+     "id": "MU_AntlerCrown",
+     "name": "Antler Crown",
+     "areas": [
+      "MU04"
+     ]
+    },
+    {
+     "id": "MU_TheArticulated",
+     "name": "The Articulated",
+     "areas": [
+      "MU04"
      ]
     }
    ],
-   "creatures": [],
-   "gear": [],
-   "boss": null
+   "gear": [
+    {
+     "id": "MU02_Weapon",
+     "name": "Struck Blade",
+     "type": "Weapon",
+     "tier": "MU02",
+     "tierIndex": 2
+    },
+    {
+     "id": "MU02_Armor",
+     "name": "Debitage Coat",
+     "type": "Armor",
+     "tier": "MU02",
+     "tierIndex": 2
+    },
+    {
+     "id": "MU02_Helmet",
+     "name": "Core Helm",
+     "type": "Helmet",
+     "tier": "MU02",
+     "tierIndex": 2
+    },
+    {
+     "id": "MU02_Shoes",
+     "name": "Sinew-Bound Shoes",
+     "type": "Shoes",
+     "tier": "MU02",
+     "tierIndex": 2
+    },
+    {
+     "id": "MU02_Accessory",
+     "name": "Hammerstone",
+     "type": "Accessory",
+     "tier": "MU02",
+     "tierIndex": 2
+    },
+    {
+     "id": "MU03_Weapon",
+     "name": "Ochre-Stained Spear",
+     "type": "Weapon",
+     "tier": "MU03",
+     "tierIndex": 3
+    },
+    {
+     "id": "MU03_Armor",
+     "name": "Stretched Hide",
+     "type": "Armor",
+     "tier": "MU03",
+     "tierIndex": 3
+    },
+    {
+     "id": "MU03_Helmet",
+     "name": "Pigment Mask",
+     "type": "Helmet",
+     "tier": "MU03",
+     "tierIndex": 3
+    },
+    {
+     "id": "MU03_Shoes",
+     "name": "Tread-Softened Hide Boots",
+     "type": "Shoes",
+     "tier": "MU03",
+     "tierIndex": 3
+    },
+    {
+     "id": "MU03_Accessory",
+     "name": "Left-Hand Stencil",
+     "type": "Accessory",
+     "tier": "MU03",
+     "tierIndex": 3
+    },
+    {
+     "id": "MU04_Weapon",
+     "name": "Antler Billet",
+     "type": "Weapon",
+     "tier": "MU04",
+     "tierIndex": 4
+    },
+    {
+     "id": "MU04_Armor",
+     "name": "Ribcage Harness",
+     "type": "Armor",
+     "tier": "MU04",
+     "tierIndex": 4
+    },
+    {
+     "id": "MU04_Helmet",
+     "name": "Crown of Tines",
+     "type": "Helmet",
+     "tier": "MU04",
+     "tierIndex": 4
+    },
+    {
+     "id": "MU04_Shoes",
+     "name": "Marrow-Split Sandals",
+     "type": "Shoes",
+     "tier": "MU04",
+     "tierIndex": 4
+    },
+    {
+     "id": "MU04_Accessory",
+     "name": "The Counting Notch",
+     "type": "Accessory",
+     "tier": "MU04",
+     "tierIndex": 4
+    },
+    {
+     "id": "MU05_Weapon",
+     "name": "Ember Brand",
+     "type": "Weapon",
+     "tier": "MU05",
+     "tierIndex": 5
+    },
+    {
+     "id": "MU05_Armor",
+     "name": "Ash-Banked Mantle",
+     "type": "Armor",
+     "tier": "MU05",
+     "tierIndex": 5
+    },
+    {
+     "id": "MU05_Helmet",
+     "name": "Smoke Hood",
+     "type": "Helmet",
+     "tier": "MU05",
+     "tierIndex": 5
+    },
+    {
+     "id": "MU05_Shoes",
+     "name": "Hearthstone Sandals",
+     "type": "Shoes",
+     "tier": "MU05",
+     "tierIndex": 5
+    },
+    {
+     "id": "MU05_Accessory",
+     "name": "The Banked Coal",
+     "type": "Accessory",
+     "tier": "MU05",
+     "tierIndex": 5
+    }
+   ],
+   "boss": {
+    "id": "MU05_Boss",
+    "mapId": "MU05",
+    "name": "The First Fire",
+    "level": null,
+    "blurb": "Somebody was given this fire and told not to let it go out, and then everybody who was told that died, and it did not go out. It is the oldest thing the museum owns and the only exhibit that was never acquired — the building was put up around it.  Relic: The Fire Never Let Out.",
+    "relic": null
+   }
+  },
+  {
+   "code": "MU",
+   "name": "Museum · Civilization I",
+   "kind": "region",
+   "leg": 11,
+   "anchor": "Cloud Plaza",
+   "levelFrom": null,
+   "levelTo": null,
+   "zoneCount": 33,
+   "pitch": "bronze, clay tablets, votive figures, grave goods. The first things made to be KEPT. Cases with the labels still in them, in a language the labels are wrong about.",
+   "maps": [
+    {
+     "id": "MU06",
+     "name": "The Tablet Room",
+     "zoneCount": 6,
+     "bandStart": null,
+     "note": "Civilization I wing",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Entry Bay",
+      "First Shelf Run",
+      "The Turn",
+      "Second Shelf Run",
+      "The Upper Turn",
+      "Reading Slope"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU07",
+     "name": "The Bronze Floor",
+     "zoneCount": 6,
+     "bandStart": null,
+     "note": "Civilization I wing",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Entry Step",
+      "Cauldrons",
+      "The Mirror Rank",
+      "Blades and Fittings",
+      "The Green Floor",
+      "Far Arch"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU08",
+     "name": "The Seal Room",
+     "zoneCount": 5,
+     "bandStart": null,
+     "note": "Civilization I wing",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "Drawer Mouth",
+      "The First Bank",
+      "Impressions",
+      "The Second Bank",
+      "Reading Slot"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU09",
+     "name": "Votive Cases",
+     "zoneCount": 5,
+     "bandStart": null,
+     "note": "Civilization I wing",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "Case Row One",
+      "The Bronze Figures",
+      "Offerings",
+      "The Small Gods",
+      "Far Cases"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU10",
+     "name": "The Model Town",
+     "zoneCount": 5,
+     "bandStart": null,
+     "note": "Civilization I wing",
+     "width": 26,
+     "height": 22,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Kerb",
+      "Granary Row",
+      "The Little Square",
+      "House Rows",
+      "The Model Gate"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU11",
+     "name": "The Grave Goods Hall",
+     "zoneCount": 6,
+     "bandStart": null,
+     "note": "Civilization I wing — boss room",
+     "width": 26,
+     "height": 22,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": true,
+     "zoneNames": [
+      "Hall Mouth",
+      "The Outer Goods",
+      "Grave Circle",
+      "The Inner Goods",
+      "Offering Shelf",
+      "The Interred"
+     ],
+     "doors": []
+    }
+   ],
+   "creatures": [
+    {
+     "id": "MU_TabletScribe",
+     "name": "Tablet Scribe",
+     "areas": [
+      "MU06"
+     ]
+    },
+    {
+     "id": "MU_ShelfCollapse",
+     "name": "Shelf Collapse",
+     "areas": [
+      "MU06",
+      "MU09"
+     ]
+    },
+    {
+     "id": "MU_BronzeVotive",
+     "name": "Bronze Votive",
+     "areas": [
+      "MU09",
+      "MU11"
+     ]
+    },
+    {
+     "id": "MU_GraveGood",
+     "name": "Grave Good",
+     "areas": [
+      "MU11"
+     ]
+    },
+    {
+     "id": "MU_ThePour",
+     "name": "The Pour",
+     "areas": [
+      "MU07",
+      "MU08"
+     ]
+    },
+    {
+     "id": "MU_MouldHalf",
+     "name": "Mould Half",
+     "areas": [
+      "MU07"
+     ]
+    },
+    {
+     "id": "MU_TheStamped",
+     "name": "The Stamped",
+     "areas": [
+      "MU08"
+     ]
+    },
+    {
+     "id": "MU_TheResident",
+     "name": "The Resident",
+     "areas": [
+      "MU10"
+     ]
+    },
+    {
+     "id": "MU_ScaleCreep",
+     "name": "Scale Creep",
+     "areas": [
+      "MU10"
+     ]
+    }
+   ],
+   "gear": [
+    {
+     "id": "MU06_Weapon",
+     "name": "Stylus of Reeds",
+     "type": "Weapon",
+     "tier": "MU06",
+     "tierIndex": 6
+    },
+    {
+     "id": "MU06_Armor",
+     "name": "Tablet Scale Coat",
+     "type": "Armor",
+     "tier": "MU06",
+     "tierIndex": 6
+    },
+    {
+     "id": "MU06_Helmet",
+     "name": "Numbered Circlet",
+     "type": "Helmet",
+     "tier": "MU06",
+     "tierIndex": 6
+    },
+    {
+     "id": "MU06_Shoes",
+     "name": "Storeroom Slippers",
+     "type": "Shoes",
+     "tier": "MU06",
+     "tierIndex": 6
+    },
+    {
+     "id": "MU06_Accessory",
+     "name": "The Unread Tablet",
+     "type": "Accessory",
+     "tier": "MU06",
+     "tierIndex": 6
+    },
+    {
+     "id": "MU07_Weapon",
+     "name": "Cast Socket Axe",
+     "type": "Weapon",
+     "tier": "MU07",
+     "tierIndex": 7
+    },
+    {
+     "id": "MU07_Armor",
+     "name": "Crucible Apron",
+     "type": "Armor",
+     "tier": "MU07",
+     "tierIndex": 7
+    },
+    {
+     "id": "MU07_Helmet",
+     "name": "Bronze-Poured Cap",
+     "type": "Helmet",
+     "tier": "MU07",
+     "tierIndex": 7
+    },
+    {
+     "id": "MU07_Shoes",
+     "name": "Floor-Cast Sandals",
+     "type": "Shoes",
+     "tier": "MU07",
+     "tierIndex": 7
+    },
+    {
+     "id": "MU07_Accessory",
+     "name": "The Failed Pour",
+     "type": "Accessory",
+     "tier": "MU07",
+     "tierIndex": 7
+    },
+    {
+     "id": "MU08_Weapon",
+     "name": "Cylinder Seal Mace",
+     "type": "Weapon",
+     "tier": "MU08",
+     "tierIndex": 8
+    },
+    {
+     "id": "MU08_Armor",
+     "name": "Impression Mail",
+     "type": "Armor",
+     "tier": "MU08",
+     "tierIndex": 8
+    },
+    {
+     "id": "MU08_Helmet",
+     "name": "Sealed Jar Helm",
+     "type": "Helmet",
+     "tier": "MU08",
+     "tierIndex": 8
+    },
+    {
+     "id": "MU08_Shoes",
+     "name": "Storeroom Treads",
+     "type": "Shoes",
+     "tier": "MU08",
+     "tierIndex": 8
+    },
+    {
+     "id": "MU08_Accessory",
+     "name": "The Broken Seal",
+     "type": "Accessory",
+     "tier": "MU08",
+     "tierIndex": 8
+    },
+    {
+     "id": "MU09_Weapon",
+     "name": "Votive Blade",
+     "type": "Weapon",
+     "tier": "MU09",
+     "tierIndex": 9
+    },
+    {
+     "id": "MU09_Armor",
+     "name": "Figure-Pin Harness",
+     "type": "Armor",
+     "tier": "MU09",
+     "tierIndex": 9
+    },
+    {
+     "id": "MU09_Helmet",
+     "name": "Small God Helm",
+     "type": "Helmet",
+     "tier": "MU09",
+     "tierIndex": 9
+    },
+    {
+     "id": "MU09_Shoes",
+     "name": "Offering Sandals",
+     "type": "Shoes",
+     "tier": "MU09",
+     "tierIndex": 9
+    },
+    {
+     "id": "MU09_Accessory",
+     "name": "The Facing Figure",
+     "type": "Accessory",
+     "tier": "MU09",
+     "tierIndex": 9
+    },
+    {
+     "id": "MU10_Weapon",
+     "name": "Measuring Rod",
+     "type": "Weapon",
+     "tier": "MU10",
+     "tierIndex": 10
+    },
+    {
+     "id": "MU10_Armor",
+     "name": "Scale-Model Cuirass",
+     "type": "Armor",
+     "tier": "MU10",
+     "tierIndex": 10
+    },
+    {
+     "id": "MU10_Helmet",
+     "name": "Maquette Dome",
+     "type": "Helmet",
+     "tier": "MU10",
+     "tierIndex": 10
+    },
+    {
+     "id": "MU10_Shoes",
+     "name": "Pavement Shoes",
+     "type": "Shoes",
+     "tier": "MU10",
+     "tierIndex": 10
+    },
+    {
+     "id": "MU10_Accessory",
+     "name": "The Missing Figure",
+     "type": "Accessory",
+     "tier": "MU10",
+     "tierIndex": 10
+    },
+    {
+     "id": "MU11_Weapon",
+     "name": "Bent Grave Blade",
+     "type": "Weapon",
+     "tier": "MU11",
+     "tierIndex": 11
+    },
+    {
+     "id": "MU11_Armor",
+     "name": "Interment Panoply",
+     "type": "Armor",
+     "tier": "MU11",
+     "tierIndex": 11
+    },
+    {
+     "id": "MU11_Helmet",
+     "name": "Beaded Diadem",
+     "type": "Helmet",
+     "tier": "MU11",
+     "tierIndex": 11
+    },
+    {
+     "id": "MU11_Shoes",
+     "name": "Shoes Laid Out",
+     "type": "Shoes",
+     "tier": "MU11",
+     "tierIndex": 11
+    },
+    {
+     "id": "MU11_Accessory",
+     "name": "The Uncatalogued Good",
+     "type": "Accessory",
+     "tier": "MU11",
+     "tierIndex": 11
+    }
+   ],
+   "boss": {
+    "id": "MU11_Boss",
+    "mapId": "MU11",
+    "name": "The Interred",
+    "level": null,
+    "blurb": "The burial was lifted whole and put under glass with all of it still arranged exactly as found. Every object around it is labelled. The figure in the middle is not, because a person is not an object, and the museum has never been able to decide what that makes it.  Relic: Everything It Was Given.",
+    "relic": null
+   }
+  },
+  {
+   "code": "MU",
+   "name": "Museum · Civilization II",
+   "kind": "region",
+   "leg": 13,
+   "anchor": "Cloud Plaza",
+   "levelFrom": null,
+   "levelTo": null,
+   "zoneCount": 34,
+   "pitch": "iron, coin, machinery, empire. Scale arrives: the exhibits stop being objects and start being systems. This is where the museum begins curating itself.",
+   "maps": [
+    {
+     "id": "MU12",
+     "name": "The Iron Gallery",
+     "zoneCount": 6,
+     "bandStart": null,
+     "note": "Civilization II wing",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": false,
+     "zoneNames": [
+      "Gallery Doors",
+      "The Ploughs",
+      "Edge Tools",
+      "The Anvil Bay",
+      "Rail and Rivet",
+      "The Long Girder"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU13",
+     "name": "The Loom Hall",
+     "zoneCount": 5,
+     "bandStart": null,
+     "note": "Civilization II wing",
+     "width": 30,
+     "height": 20,
+     "orient": "H",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "Warping Bay",
+      "The First Frames",
+      "Shuttle Alley",
+      "The Long Cloth",
+      "Take-up Beam"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU14",
+     "name": "The Coin Vault",
+     "zoneCount": 5,
+     "bandStart": null,
+     "note": "Civilization II wing",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "Vault Door",
+      "The Tray Racks",
+      "The Turn",
+      "The Bullion Bay",
+      "Far Grille"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU15",
+     "name": "Hall of Engines",
+     "zoneCount": 6,
+     "bandStart": null,
+     "note": "Civilization II wing",
+     "width": 30,
+     "height": 20,
+     "orient": "H",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Hall Doors",
+      "Flywheel Side",
+      "Under the Beam",
+      "Governor Side",
+      "The Far Doors",
+      "Cooling Floor"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU16",
+     "name": "The Map Room",
+     "zoneCount": 5,
+     "bandStart": null,
+     "note": "Civilization II wing",
+     "width": 26,
+     "height": 22,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Door Wall",
+      "Survey Cases",
+      "The Globe Floor",
+      "Boundary Stones",
+      "The Plan"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU17",
+     "name": "The Empire Rotunda",
+     "zoneCount": 7,
+     "bandStart": null,
+     "note": "Civilization II wing — boss room",
+     "width": 26,
+     "height": 26,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": true,
+     "zoneNames": [
+      "Rotunda Entry",
+      "The Lower Ambulatory",
+      "Map Panels",
+      "The Upper Ambulatory",
+      "Treaty Cases",
+      "The Dais Steps",
+      "Under the Dome"
+     ],
+     "doors": []
+    }
+   ],
+   "creatures": [
+    {
+     "id": "MU_PloughshareWalker",
+     "name": "Ploughshare Walker",
+     "areas": [
+      "MU12"
+     ]
+    },
+    {
+     "id": "MU_RivetSwarm",
+     "name": "Rivet Swarm",
+     "areas": [
+      "MU12",
+      "MU14"
+     ]
+    },
+    {
+     "id": "MU_CoinDrift",
+     "name": "Coin Drift",
+     "areas": [
+      "MU14",
+      "MU15"
+     ]
+    },
+    {
+     "id": "MU_TheGovernor",
+     "name": "The Governor",
+     "areas": [
+      "MU15",
+      "MU17"
+     ]
+    },
+    {
+     "id": "MU_TreatyCase",
+     "name": "Treaty Case",
+     "areas": [
+      "MU17"
+     ]
+    },
+    {
+     "id": "MU_TheWeft",
+     "name": "The Weft",
+     "areas": [
+      "MU13"
+     ]
+    },
+    {
+     "id": "MU_ThreadCount",
+     "name": "Thread Count",
+     "areas": [
+      "MU13"
+     ]
+    },
+    {
+     "id": "MU_TheCartographer",
+     "name": "The Cartographer",
+     "areas": [
+      "MU16"
+     ]
+    },
+    {
+     "id": "MU_TerraIncognita",
+     "name": "Terra Incognita",
+     "areas": [
+      "MU16"
+     ]
+    }
+   ],
+   "gear": [
+    {
+     "id": "MU12_Weapon",
+     "name": "Ploughshare Glaive",
+     "type": "Weapon",
+     "tier": "MU12",
+     "tierIndex": 12
+    },
+    {
+     "id": "MU12_Armor",
+     "name": "Riveted Plate",
+     "type": "Armor",
+     "tier": "MU12",
+     "tierIndex": 12
+    },
+    {
+     "id": "MU12_Helmet",
+     "name": "Anvil Helm",
+     "type": "Helmet",
+     "tier": "MU12",
+     "tierIndex": 12
+    },
+    {
+     "id": "MU12_Shoes",
+     "name": "Rail-Iron Sabatons",
+     "type": "Shoes",
+     "tier": "MU12",
+     "tierIndex": 12
+    },
+    {
+     "id": "MU12_Accessory",
+     "name": "The Last Rivet",
+     "type": "Accessory",
+     "tier": "MU12",
+     "tierIndex": 12
+    },
+    {
+     "id": "MU13_Weapon",
+     "name": "Shuttle Dart",
+     "type": "Weapon",
+     "tier": "MU13",
+     "tierIndex": 13
+    },
+    {
+     "id": "MU13_Armor",
+     "name": "Warp-Thread Coat",
+     "type": "Armor",
+     "tier": "MU13",
+     "tierIndex": 13
+    },
+    {
+     "id": "MU13_Helmet",
+     "name": "Heddle Frame Helm",
+     "type": "Helmet",
+     "tier": "MU13",
+     "tierIndex": 13
+    },
+    {
+     "id": "MU13_Shoes",
+     "name": "Treadle Shoes",
+     "type": "Shoes",
+     "tier": "MU13",
+     "tierIndex": 13
+    },
+    {
+     "id": "MU13_Accessory",
+     "name": "The Unfinished Bolt",
+     "type": "Accessory",
+     "tier": "MU13",
+     "tierIndex": 13
+    },
+    {
+     "id": "MU14_Weapon",
+     "name": "Assay Blade",
+     "type": "Weapon",
+     "tier": "MU14",
+     "tierIndex": 14
+    },
+    {
+     "id": "MU14_Armor",
+     "name": "Coin Scale Mail",
+     "type": "Armor",
+     "tier": "MU14",
+     "tierIndex": 14
+    },
+    {
+     "id": "MU14_Helmet",
+     "name": "Mint Mask",
+     "type": "Helmet",
+     "tier": "MU14",
+     "tierIndex": 14
+    },
+    {
+     "id": "MU14_Shoes",
+     "name": "Counting-House Shoes",
+     "type": "Shoes",
+     "tier": "MU14",
+     "tierIndex": 14
+    },
+    {
+     "id": "MU14_Accessory",
+     "name": "The Unspent Coin",
+     "type": "Accessory",
+     "tier": "MU14",
+     "tierIndex": 14
+    },
+    {
+     "id": "MU15_Weapon",
+     "name": "Connecting Rod",
+     "type": "Weapon",
+     "tier": "MU15",
+     "tierIndex": 15
+    },
+    {
+     "id": "MU15_Armor",
+     "name": "Boiler Plate",
+     "type": "Armor",
+     "tier": "MU15",
+     "tierIndex": 15
+    },
+    {
+     "id": "MU15_Helmet",
+     "name": "Governor Crown",
+     "type": "Helmet",
+     "tier": "MU15",
+     "tierIndex": 15
+    },
+    {
+     "id": "MU15_Shoes",
+     "name": "Engine-Room Boots",
+     "type": "Shoes",
+     "tier": "MU15",
+     "tierIndex": 15
+    },
+    {
+     "id": "MU15_Accessory",
+     "name": "The Turning Weight",
+     "type": "Accessory",
+     "tier": "MU15",
+     "tierIndex": 15
+    },
+    {
+     "id": "MU16_Weapon",
+     "name": "Brass Dividers",
+     "type": "Weapon",
+     "tier": "MU16",
+     "tierIndex": 16
+    },
+    {
+     "id": "MU16_Armor",
+     "name": "Gore-Panel Coat",
+     "type": "Armor",
+     "tier": "MU16",
+     "tierIndex": 16
+    },
+    {
+     "id": "MU16_Helmet",
+     "name": "Projection Helm",
+     "type": "Helmet",
+     "tier": "MU16",
+     "tierIndex": 16
+    },
+    {
+     "id": "MU16_Shoes",
+     "name": "League-Marked Boots",
+     "type": "Shoes",
+     "tier": "MU16",
+     "tierIndex": 16
+    },
+    {
+     "id": "MU16_Accessory",
+     "name": "The Blank Interior",
+     "type": "Accessory",
+     "tier": "MU16",
+     "tierIndex": 16
+    },
+    {
+     "id": "MU17_Weapon",
+     "name": "Surveyor's Blade",
+     "type": "Weapon",
+     "tier": "MU17",
+     "tierIndex": 17
+    },
+    {
+     "id": "MU17_Armor",
+     "name": "Chart-Cloth Coat",
+     "type": "Armor",
+     "tier": "MU17",
+     "tierIndex": 17
+    },
+    {
+     "id": "MU17_Helmet",
+     "name": "Theodolite Helm",
+     "type": "Helmet",
+     "tier": "MU17",
+     "tierIndex": 17
+    },
+    {
+     "id": "MU17_Shoes",
+     "name": "Boundary Treads",
+     "type": "Shoes",
+     "tier": "MU17",
+     "tierIndex": 17
+    },
+    {
+     "id": "MU17_Accessory",
+     "name": "The Worn Globe",
+     "type": "Accessory",
+     "tier": "MU17",
+     "tierIndex": 17
+    }
+   ],
+   "boss": {
+    "id": "MU17_Boss",
+    "mapId": "MU17",
+    "name": "The Survey",
+    "level": null,
+    "blurb": "It is not a conqueror. It is the instrument that came after the conqueror and wrote down what was now whose. Everything in this wing is here because it decided the thing was worth measuring, and everything not here is here in some other building for the same reason.  Relic: The Line Drawn Through.",
+    "relic": null
+   }
+  },
+  {
+   "code": "MU",
+   "name": "Museum · Modern Area of Study",
+   "kind": "region",
+   "leg": 14,
+   "anchor": "Cloud Plaza",
+   "levelFrom": null,
+   "levelTo": null,
+   "zoneCount": 48,
+   "pitch": "the working half — conservation labs, cold storage, the archive, the catalogue. Not exhibits, RESEARCH. Nothing in this wing was meant to be seen, and the thing being studied has opinions about the study.",
+   "maps": [
+    {
+     "id": "MU18",
+     "name": "Conservation",
+     "zoneCount": 6,
+     "bandStart": null,
+     "note": "Modern Area of Study wing",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Airlock",
+      "Wet Benches",
+      "The Solvent Bay",
+      "Dry Benches",
+      "The Consolidation Table",
+      "Clean End"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU19",
+     "name": "Accessions",
+     "zoneCount": 5,
+     "bandStart": null,
+     "note": "Modern Area of Study wing",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Loading Door",
+      "Numbered Crates",
+      "The Weighing Floor",
+      "Pending Shelf",
+      "Inner Door"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU20",
+     "name": "Cold Storage",
+     "zoneCount": 5,
+     "bandStart": null,
+     "note": "Modern Area of Study wing",
+     "width": 28,
+     "height": 20,
+     "orient": "H",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Cold Lock",
+      "First Aisle",
+      "The Turn",
+      "Second Aisle",
+      "The Far Lock"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU21",
+     "name": "The Imaging Suite",
+     "zoneCount": 6,
+     "bandStart": null,
+     "note": "Modern Area of Study wing",
+     "width": 24,
+     "height": 24,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": false,
+     "zoneNames": [
+      "Control Bay",
+      "The Lightboxes",
+      "Scanner Ring",
+      "Plate Store",
+      "Wash-up",
+      "The Print Wall"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU22",
+     "name": "The Archive Stacks",
+     "zoneCount": 7,
+     "bandStart": null,
+     "note": "Modern Area of Study wing",
+     "width": 24,
+     "height": 28,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": false,
+     "zoneNames": [
+      "Stack Foot",
+      "Run A",
+      "First Landing",
+      "Run B",
+      "Second Landing",
+      "Run C",
+      "The Top Shelf"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU23",
+     "name": "The Reading Room",
+     "zoneCount": 6,
+     "bandStart": null,
+     "note": "Modern Area of Study wing",
+     "width": 26,
+     "height": 22,
+     "orient": "H",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Issue Desk",
+      "West Curve",
+      "The Inner Ring",
+      "East Curve",
+      "The Return Trolley",
+      "Closed Access"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU24",
+     "name": "The Catalogue",
+     "zoneCount": 5,
+     "bandStart": null,
+     "note": "Modern Area of Study wing",
+     "width": 30,
+     "height": 20,
+     "orient": "H",
+     "axis": "H",
+     "isBossMap": false,
+     "zoneNames": [
+      "The Index Door",
+      "Card Drawers",
+      "The Terminal Bay",
+      "Cross-References",
+      "The Authority File"
+     ],
+     "doors": []
+    },
+    {
+     "id": "MU25",
+     "name": "The Study",
+     "zoneCount": 8,
+     "bandStart": null,
+     "note": "Modern Area of Study wing — boss room",
+     "width": 26,
+     "height": 26,
+     "orient": "V",
+     "axis": "V",
+     "isBossMap": true,
+     "zoneNames": [
+      "The Study Door",
+      "The Long Desk",
+      "Open Volumes",
+      "The Specimen Wall",
+      "The Working Notes",
+      "The Second Desk",
+      "The Sealed Arch",
+      "The Subject"
+     ],
+     "doors": []
+    }
+   ],
+   "creatures": [
+    {
+     "id": "MU_Consolidant",
+     "name": "Consolidant",
+     "areas": [
+      "MU18"
+     ]
+    },
+    {
+     "id": "MU_CottonGlove",
+     "name": "Cotton Glove",
+     "areas": [
+      "MU18",
+      "MU20"
+     ]
+    },
+    {
+     "id": "MU_GreyBox",
+     "name": "Grey Box",
+     "areas": [
+      "MU20",
+      "MU22"
+     ]
+    },
+    {
+     "id": "MU_CompactStack",
+     "name": "Compact Stack",
+     "areas": [
+      "MU22",
+      "MU23"
+     ]
+    },
+    {
+     "id": "MU_TheReader",
+     "name": "The Reader",
+     "areas": [
+      "MU23",
+      "MU24"
+     ]
+    },
+    {
+     "id": "MU_AuthorityRecord",
+     "name": "Authority Record",
+     "areas": [
+      "MU24",
+      "MU25"
+     ]
+    },
+    {
+     "id": "MU_TheSubject",
+     "name": "The Subject",
+     "areas": [
+      "MU25"
+     ]
+    },
+    {
+     "id": "MU_TheUnnumbered",
+     "name": "The Unnumbered",
+     "areas": [
+      "MU19"
+     ]
+    },
+    {
+     "id": "MU_IntakeBacklog",
+     "name": "Intake Backlog",
+     "areas": [
+      "MU19"
+     ]
+    },
+    {
+     "id": "MU_TheExposure",
+     "name": "The Exposure",
+     "areas": [
+      "MU21"
+     ]
+    },
+    {
+     "id": "MU_Underdrawn",
+     "name": "Underdrawn",
+     "areas": [
+      "MU21"
+     ]
+    }
+   ],
+   "gear": [
+    {
+     "id": "MU18_Weapon",
+     "name": "Conservator's Scalpel",
+     "type": "Weapon",
+     "tier": "MU18",
+     "tierIndex": 18
+    },
+    {
+     "id": "MU18_Armor",
+     "name": "Solvent Apron",
+     "type": "Armor",
+     "tier": "MU18",
+     "tierIndex": 18
+    },
+    {
+     "id": "MU18_Helmet",
+     "name": "Magnifier Visor",
+     "type": "Helmet",
+     "tier": "MU18",
+     "tierIndex": 18
+    },
+    {
+     "id": "MU18_Shoes",
+     "name": "Clean-Room Overshoes",
+     "type": "Shoes",
+     "tier": "MU18",
+     "tierIndex": 18
+    },
+    {
+     "id": "MU18_Accessory",
+     "name": "Reversible Adhesive",
+     "type": "Accessory",
+     "tier": "MU18",
+     "tierIndex": 18
+    },
+    {
+     "id": "MU19_Weapon",
+     "name": "Accession Stamp",
+     "type": "Weapon",
+     "tier": "MU19",
+     "tierIndex": 19
+    },
+    {
+     "id": "MU19_Armor",
+     "name": "Tag-and-String Vest",
+     "type": "Armor",
+     "tier": "MU19",
+     "tierIndex": 19
+    },
+    {
+     "id": "MU19_Helmet",
+     "name": "Intake Visor",
+     "type": "Helmet",
+     "tier": "MU19",
+     "tierIndex": 19
+    },
+    {
+     "id": "MU19_Shoes",
+     "name": "Trolley Shoes",
+     "type": "Shoes",
+     "tier": "MU19",
+     "tierIndex": 19
+    },
+    {
+     "id": "MU19_Accessory",
+     "name": "Lot 0000",
+     "type": "Accessory",
+     "tier": "MU19",
+     "tierIndex": 19
+    },
+    {
+     "id": "MU20_Weapon",
+     "name": "Frost-Rimed Pick",
+     "type": "Weapon",
+     "tier": "MU20",
+     "tierIndex": 20
+    },
+    {
+     "id": "MU20_Armor",
+     "name": "Cold-Store Parka",
+     "type": "Armor",
+     "tier": "MU20",
+     "tierIndex": 20
+    },
+    {
+     "id": "MU20_Helmet",
+     "name": "Breath-Fogged Visor",
+     "type": "Helmet",
+     "tier": "MU20",
+     "tierIndex": 20
+    },
+    {
+     "id": "MU20_Shoes",
+     "name": "Rail-Grip Boots",
+     "type": "Shoes",
+     "tier": "MU20",
+     "tierIndex": 20
+    },
+    {
+     "id": "MU20_Accessory",
+     "name": "Box 0041",
+     "type": "Accessory",
+     "tier": "MU20",
+     "tierIndex": 20
+    },
+    {
+     "id": "MU21_Weapon",
+     "name": "Raking Light",
+     "type": "Weapon",
+     "tier": "MU21",
+     "tierIndex": 21
+    },
+    {
+     "id": "MU21_Armor",
+     "name": "Lead Apron",
+     "type": "Armor",
+     "tier": "MU21",
+     "tierIndex": 21
+    },
+    {
+     "id": "MU21_Helmet",
+     "name": "Plate Hood",
+     "type": "Helmet",
+     "tier": "MU21",
+     "tierIndex": 21
+    },
+    {
+     "id": "MU21_Shoes",
+     "name": "Darkroom Slippers",
+     "type": "Shoes",
+     "tier": "MU21",
+     "tierIndex": 21
+    },
+    {
+     "id": "MU21_Accessory",
+     "name": "The Underdrawing",
+     "type": "Accessory",
+     "tier": "MU21",
+     "tierIndex": 21
+    },
+    {
+     "id": "MU22_Weapon",
+     "name": "Handwheel Flail",
+     "type": "Weapon",
+     "tier": "MU22",
+     "tierIndex": 22
+    },
+    {
+     "id": "MU22_Armor",
+     "name": "Box-File Brigandine",
+     "type": "Armor",
+     "tier": "MU22",
+     "tierIndex": 22
+    },
+    {
+     "id": "MU22_Helmet",
+     "name": "Stack-Light Helm",
+     "type": "Helmet",
+     "tier": "MU22",
+     "tierIndex": 22
+    },
+    {
+     "id": "MU22_Shoes",
+     "name": "Track-Runner Shoes",
+     "type": "Shoes",
+     "tier": "MU22",
+     "tierIndex": 22
+    },
+    {
+     "id": "MU22_Accessory",
+     "name": "The Misfiled Box",
+     "type": "Accessory",
+     "tier": "MU22",
+     "tierIndex": 22
+    },
+    {
+     "id": "MU23_Weapon",
+     "name": "Paper Knife",
+     "type": "Weapon",
+     "tier": "MU23",
+     "tierIndex": 23
+    },
+    {
+     "id": "MU23_Armor",
+     "name": "Reading Robe",
+     "type": "Armor",
+     "tier": "MU23",
+     "tierIndex": 23
+    },
+    {
+     "id": "MU23_Helmet",
+     "name": "Green Shade",
+     "type": "Helmet",
+     "tier": "MU23",
+     "tierIndex": 23
+    },
+    {
+     "id": "MU23_Shoes",
+     "name": "Silent Soles",
+     "type": "Shoes",
+     "tier": "MU23",
+     "tierIndex": 23
+    },
+    {
+     "id": "MU23_Accessory",
+     "name": "The Open Volume",
+     "type": "Accessory",
+     "tier": "MU23",
+     "tierIndex": 23
+    },
+    {
+     "id": "MU24_Weapon",
+     "name": "Drawer-Rod Rapier",
+     "type": "Weapon",
+     "tier": "MU24",
+     "tierIndex": 24
+    },
+    {
+     "id": "MU24_Armor",
+     "name": "Card-Index Coat",
+     "type": "Armor",
+     "tier": "MU24",
+     "tierIndex": 24
+    },
+    {
+     "id": "MU24_Helmet",
+     "name": "Terminal Glow Helm",
+     "type": "Helmet",
+     "tier": "MU24",
+     "tierIndex": 24
+    },
+    {
+     "id": "MU24_Shoes",
+     "name": "Cabinet-Row Shoes",
+     "type": "Shoes",
+     "tier": "MU24",
+     "tierIndex": 24
+    },
+    {
+     "id": "MU24_Accessory",
+     "name": "The Authority File",
+     "type": "Accessory",
+     "tier": "MU24",
+     "tierIndex": 24
+    },
+    {
+     "id": "MU25_Weapon",
+     "name": "The Steady Hand",
+     "type": "Weapon",
+     "tier": "MU25",
+     "tierIndex": 25
+    },
+    {
+     "id": "MU25_Armor",
+     "name": "Specimen-Wall Cuirass",
+     "type": "Armor",
+     "tier": "MU25",
+     "tierIndex": 25
+    },
+    {
+     "id": "MU25_Helmet",
+     "name": "Vitrine Dome",
+     "type": "Helmet",
+     "tier": "MU25",
+     "tierIndex": 25
+    },
+    {
+     "id": "MU25_Shoes",
+     "name": "The Second Desk's Shoes",
+     "type": "Shoes",
+     "tier": "MU25",
+     "tierIndex": 25
+    },
+    {
+     "id": "MU25_Accessory",
+     "name": "Working Notes",
+     "type": "Accessory",
+     "tier": "MU25",
+     "tierIndex": 25
+    }
+   ],
+   "boss": {
+    "id": "MU25_Boss",
+    "mapId": "MU25",
+    "name": "The Acquisitor",
+    "level": null,
+    "blurb": "The museum does not have a curator. It has a mechanism that decides what it owns, and it has been running unattended for a very long time. You have walked through sixteen rooms of things it decided to keep. It is now deciding about you.  Relic: The Permanent Collection.",
+    "relic": null
+   }
   }
  ],
  "counts": {
-  "regions": 3,
-  "maps": 25,
-  "creatures": 0,
-  "gear": 0,
-  "bosses": 0,
+  "regions": 4,
+  "maps": 26,
+  "creatures": 35,
+  "gear": 120,
+  "bosses": 4,
   "relics": 0
  }
 }

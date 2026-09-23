@@ -48,6 +48,22 @@ function regionAssetsExist(code) {
   return built;
 }
 
+// The other half of "has this region shipped": its MapData assets. Kept separate from the enemy
+// test because the two genuinely diverge — Stone/Egypt/Temple had monsters and no maps, and the
+// Museum is the exact inverse. Reading the disk for both is what lets a region move between this
+// file and the live export without anyone remembering to flip anything.
+const MAP_DIR = path.resolve(ROOT, "../Infinite Loot-Loop/Assets/ScriptableObjects/Maps");
+const _regionMaps = new Map();
+function regionMapsExist(code) {
+  if (_regionMaps.has(code)) return _regionMaps.get(code);
+  let built = false;
+  try {
+    built = fs.readdirSync(MAP_DIR).some((f) => f.startsWith(code) && f.endsWith(".asset"));
+  } catch { built = false; }
+  _regionMaps.set(code, built);
+  return built;
+}
+
 if (!fs.existsSync(DOC)) {
   console.error("FATAL: design doc not found at\n  " + DOC +
     "\nThe Unity project must sit beside this repo as ../Infinite Loot-Loop.");
@@ -131,6 +147,21 @@ const num = (s) => Number(String(s).replace(/[^0-9]/g, "")) || null;
 const ZONE_DRIFT = [];
 const regions = [];
 for (const [idx, code] of [["3.1", "ST"], ["3.2", "EG"], ["3.3", "BD"]]) {
+  // ⛔★★★ A REGION THAT HAS FULLY SHIPPED LEAVES THIS FILE — the rule tools/README.md already
+  // states ("drop it from the design doc parse list here and let build-data.mjs pick it up from the
+  // real assets instead — do not leave both sources live"), now actually implemented.
+  //
+  // ★ WHY IT HAD TO BE: this loop HARD-FAILS on a region whose tables it cannot parse, and on
+  // 2026-09-23 the whole generator died with "ST: boss block not found" — Stone, Egypt and The
+  // Temple had shipped, the design doc had been rewritten around them (commit 9988524a1, "6.0.0
+  // /7.0.0 replanned"), and a parser still being pointed at a doc it no longer owns took the file
+  // down with it. The planned copies were already inert anyway: `mergeUpcoming` skips any map
+  // data.json already has, and all three are published there.
+  //
+  // ⚠ DERIVED, NOT A HAND-FLIPPED SWITCH — same discipline as regionAssetsExist(). "Fully shipped"
+  // means BOTH halves exist: the monsters AND the MapData. A region with monsters but no maps (what
+  // ST/EG/BD were a week ago) still belongs here, for its maps alone.
+  if (regionAssetsExist(code) && regionMapsExist(code)) continue;
   const sec = section(new RegExp("^### " + idx.replace(".", "\\.") + " .*$", "m"));
   if (!sec) fail("section " + idx + " (" + code + ") not found in the design doc");
   const { head, body } = sec;
@@ -248,21 +279,145 @@ const hub = {
   creatures: [], gear: [], boss: null
 };
 
+// ── THE MUSEUM (6.0.0) ────────────────────────────────────────────────────────────────────────
+// ★ ADDED 2026-09-23 (owner: "update tonyworks site, the maps first").
+//
+// ⛔ IT IS THE MIRROR IMAGE OF STONE/EGYPT/TEMPLE, AND THAT IS WHY THE DERIVED RULE ABOVE DOES NOT
+// FIT IT. Those three have real monsters/items/bosses and no MapData, so `regionAssetsExist()`
+// publishes their planned MAPS and nothing else. The Museum has 25 real MapData assets and ZERO
+// enemies, items, zones or bosses. Asking the disk would therefore publish everything EXCEPT the
+// maps — the exact opposite of what is true, because the deciding question for the Museum is not
+// "does an asset exist" but "has the region been RELEASED". It has not: `ShopManager.MuseumReleased
+// => false`, and `build-data.mjs` holds all 26 of its assets for that reason.
+//
+// ⇒ While the flag is false the whole region is announced from the blueprint. When it flips, this
+// block stops emitting and `build-data.mjs` picks up whatever is authored — the README's one rule
+// holds either way: a region lives in ONE source, never both.
+//
+// ⛔ ONE LIST, SAME AS EVERYTHING ELSE HERE. Every name is require()'d out of
+// `Tools/epoch4_blueprint/r_mu.js`, the authored blueprint the Unity setup tools and the art-prompt
+// docs are both generated from. Nothing below is retyped.
+//
+// ★ FOUR WINGS = FOUR "WORLDS", because `mergeUpcoming()` in app.js takes exactly ONE boss per
+// world and the Museum has four. Splitting on the wing is not a workaround — it is the building's
+// own structure, and it is already how `parts` label themselves ("Museum · Stone Age").
+const MU_BLUEPRINT = path.resolve(ROOT, "../Infinite Loot-Loop/Tools/epoch4_blueprint/r_mu.js");
+const MU_SHOPMGR   = path.resolve(ROOT, "../Infinite Loot-Loop/Assets/Scripts/Core/ShopManager.cs");
+const museumReleased = fs.existsSync(MU_SHOPMGR)
+  && /MuseumReleased\s*=>\s*true\s*;/.test(fs.readFileSync(MU_SHOPMGR, "utf8"));
+const museumWorlds = [];
+if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
+  const mu = require(MU_BLUEPRINT);
+  const mapById = new Map(mu.maps.map((m) => [m.id, m]));
+  const bossByMap = new Map((mu.bosses || []).map((b) => [b.map, b]));
+  // Wing ranges are authored as "MU02–MU05" with an EN DASH, not a hyphen. Splitting on /-/ here
+  // returns the whole string and every map lands in wing one; match the digits instead.
+  const wingRange = (s) => {
+    const m = String(s).match(/MU(\d+)\D+MU(\d+)/);
+    return m ? [Number(m[1]), Number(m[2])] : null;
+  };
+  const num = (id) => Number(String(id).replace(/^MU/, ""));
+  const gearByMap = new Map((mu.gear || []).map((g) => [g.map, g.items || []]));
+
+  const wingWorld = (wing) => {
+    const range = wingRange(wing.maps);
+    if (!range) return null;
+    const ids = mu.maps.filter((m) => num(m.id) >= range[0] && num(m.id) <= range[1]).map((m) => m.id);
+    const name = "Museum · " + wing.n;
+    const maps = ids.map((id) => {
+      const m = mapById.get(id);
+      return {
+        id, name: m.name, zoneCount: (m.zones || []).length,
+        // ⛔ NO LEVEL. The v6 chain is the balance pass's to own and nothing is baked yet; a
+        // projected band printed here reads back later as if it had been authored.
+        bandStart: null,
+        note: wing.n + " wing" + (bossByMap.has(id) ? " — boss room" : ""),
+        width: m.W, height: m.H, orient: m.orient || null, axis: m.orient || null,
+        isBossMap: bossByMap.has(id), zoneNames: m.zones || [], doors: []
+      };
+    });
+    const creatures = (mu.creatures || [])
+      .map((c) => ({
+        id: "MU_" + String(c.n).replace(/[^A-Za-z0-9]+/g, ""), name: c.n,
+        areas: String(c.maps).split(",").map((s) => s.trim()).filter(Boolean)
+      }))
+      .filter((c) => c.areas.some((a) => ids.includes(a)));
+    const gear = [];
+    for (const id of ids) {
+      (gearByMap.get(id) || []).forEach((entry, i) => {
+        if (i >= SLOTS.length) return;
+        gear.push({ id: id + "_" + SLOTS[i], name: String(entry).split("|")[0].trim(),
+                    type: SLOTS[i], tier: id, tierIndex: num(id) });
+      });
+    }
+    const b = ids.map((id) => bossByMap.get(id)).find(Boolean);
+    const boss = b ? {
+      id: b.map + "_Boss", mapId: b.map, name: b.n,
+      // ⛔ NO LEVEL AND NO RELIC BONUS. `r_mu.js` authors the relic's NAME and nothing numeric, and
+      // app.js renders a relic as "HP / ATK / DEF <bonus> (planned)" — handing it an empty bonus
+      // publishes a blank stat line, which is worse than no relic entry at all. The name is carried
+      // in the blurb instead, where it cannot be mistaken for an authored number.
+      level: null,
+      blurb: String(b.pitch || "").replace(/\s+/g, " ").trim()
+             + (b.relic ? "  Relic: " + b.relic + "." : ""),
+      relic: null
+    } : null;
+    return {
+      code: "MU", name, kind: "region", leg: wing.leg ?? null, anchor: "Cloud Plaza",
+      levelFrom: null, levelTo: null,
+      zoneCount: maps.reduce((a, m) => a + m.zoneCount, 0),
+      pitch: String(wing.note || mu.pitch || "").replace(/\s+/g, " ").trim(),
+      maps, creatures, gear, boss
+    };
+  };
+
+  // MU01 is a MONSTERLESS HUB (the Cloud Plaza pattern), so it is its own world with no boss and
+  // no pool — listing it inside a wing would attribute the wing's monsters to the atrium.
+  const atrium = mapById.get("MU01");
+  if (atrium) museumWorlds.push({
+    code: "MU", name: "Museum · The Atrium", kind: "hub", leg: null, anchor: "Cloud Plaza",
+    levelFrom: null, levelTo: null, zoneCount: (atrium.zones || []).length,
+    pitch: String(mu.pitch || "").replace(/\s+/g, " ").trim(),
+    maps: [{ id: "MU01", name: atrium.name, zoneCount: (atrium.zones || []).length, bandStart: null,
+             note: "hub — no encounters", width: atrium.W, height: atrium.H,
+             orient: atrium.orient || null, axis: atrium.orient || null,
+             isBossMap: false, zoneNames: atrium.zones || [], doors: [] }],
+    creatures: [], gear: [], boss: null
+  });
+  for (const wing of mu.wings || []) {
+    const w = wingWorld(wing);
+    if (w) museumWorlds.push(w);
+  }
+}
+
 const ordered = regions.slice().sort((a, b) => a.leg - b.leg);
 const out = {
   generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"),
-  source: "Assets/Project Information/epoch4_wave1_cloud_and_circle.md",
+  source: "Assets/Project Information/epoch4_wave1_cloud_and_circle.md"
+          + (museumWorlds.length ? " + Tools/epoch4_blueprint/r_mu.js (Museum, 6.0.0)" : ""),
   epoch: 4, wave: 1,
-  note: "Planned content. Nothing here is built: no assets, no art and NO STATS exist yet. " +
-        "Level bands are projections owned by the balance pass, not authored values.",
+  note: "Planned content. Nothing here is built: no assets, no art and NO STATS exist yet. "
+        + "Level bands are projections owned by the balance pass, not authored values."
+        + (museumWorlds.length
+           ? " The Museum's 25 maps ARE authored in Unity, but the region is unreleased "
+             + "(ShopManager.MuseumReleased is false) so it is announced here rather than published "
+             + "as live data; it carries no levels and no stats at all."
+           : ""),
   route: ordered.map((r) => ({ leg: r.leg, code: r.code, name: r.name, anchor: r.anchor })),
-  worlds: [hub, ...ordered],
+  worlds: [hub, ...ordered, ...museumWorlds],
   counts: {
-    regions: regions.length,
-    maps: regions.reduce((a, r) => a + r.maps.length, 0) + hub.maps.length,
-    creatures: regions.reduce((a, r) => a + r.creatures.length, 0),
-    gear: regions.reduce((a, r) => a + r.gear.length, 0),
-    bosses: regions.filter((r) => r.boss).length, relics: regions.filter((r) => r.boss).length
+    // Museum wings count as regions here — they are what this file is announcing now that
+    // Stone/Egypt/Temple have shipped out of it. A "regions: 0" line while 25 maps are listed
+    // reads as a broken build.
+    regions: regions.length + museumWorlds.filter((w) => w.kind === "region").length,
+    maps: regions.reduce((a, r) => a + r.maps.length, 0) + hub.maps.length
+          + museumWorlds.reduce((a, w) => a + w.maps.length, 0),
+    creatures: regions.reduce((a, r) => a + r.creatures.length, 0)
+               + museumWorlds.reduce((a, w) => a + w.creatures.length, 0),
+    gear: regions.reduce((a, r) => a + r.gear.length, 0)
+          + museumWorlds.reduce((a, w) => a + w.gear.length, 0),
+    bosses: regions.filter((r) => r.boss).length + museumWorlds.filter((w) => w.boss).length,
+    relics: regions.filter((r) => r.boss).length
   }
 };
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
@@ -272,8 +427,20 @@ const allMaps = out.worlds.flatMap((w) => w.maps);
 const ids = new Set(allMaps.map((m) => m.id));
 // A door pointing at a map nobody defined is the failure worth catching. CV01 (the live World
 // Gate) and CL02 (a wave-2 plaza) are the two legitimate references outside this wave.
+//
+// ★ AND SO IS ANY MAP THAT HAS SHIPPED. The Cloud Plaza's doors lead to Stone, Egypt and The
+// Temple; the day those three left this file for data.json, `CL01 -> ST01` started reading as
+// dangling and took the build down — a door that had become MORE correct, not less. Resolve the
+// target against the live export as well as this file, so "shipped" and "planned" are one
+// namespace. ⚠ If data.json is missing the check simply narrows to this file rather than passing
+// vacuously: a typo'd door must still fail.
+let shippedIds = new Set();
+try {
+  const live = JSON.parse(fs.readFileSync(path.resolve(ROOT, "apps/infinite-loot-loop/data/data.json"), "utf8"));
+  shippedIds = new Set((live.maps || []).map((m) => m.id));
+} catch { /* no live export yet — fall back to this file's own ids */ }
 const dangling = allMaps.flatMap((m) => m.doors
-  .filter((dr) => !ids.has(dr.to) && dr.to !== "CV01" && dr.to !== "CL02")
+  .filter((dr) => !ids.has(dr.to) && !shippedIds.has(dr.to) && dr.to !== "CV01" && dr.to !== "CL02")
   .map((dr) => m.id + " -> " + dr.to));
 if (dangling.length) fail("doors point at maps that do not exist: " + dangling.join(", "));
 const doorCount = allMaps.reduce((a, m) => a + m.doors.length, 0);

@@ -730,9 +730,15 @@
       tabs: [ { label: "Normal Mode", mode: "normal" }, { label: "Hard Mode", mode: "hard" } ],
       search: function (b) { return b.name + " " + b.id + " " + b.mapId; },
       card: function (b, tab) {
+        // ⛔ NO LEVEL IS NOT LEVEL ZERO. fmt(null) returns "0", so a planned boss with no projected
+        // band published "Projected Lv 0" — a fabricated number on a public wiki, which this
+        // pipeline forbids everywhere else (build-upcoming.mjs: "a fabricated stat on a public wiki
+        // is worse than a blank"). The Museum's four bosses are exactly that case: designed, with no
+        // balance pass behind them, so they carry no level at all.
         if (b.upcoming) return cardShell("bosses.html", b.id, b.image, b.name,
           upcomingBadge() + '<span class="badge">' + esc(b.mapId) + "</span>" +
-          '<span class="meta">Projected Lv ' + fmt(b.level) + " &#183; stats not yet authored</span>");
+          '<span class="meta">' + (b.level ? "Projected Lv " + fmt(b.level) + " &#183; " : "")
+          + "stats not yet authored</span>");
         var hard = tab && tab.mode === "hard";
         var hp = hard && b.hardModeHp ? b.hardModeHp : b.hp;
         var atk = hard && b.hardModeAtk ? b.hardModeAtk : b.atk;
@@ -749,7 +755,8 @@
   function bossDetail(app, d, b, forcedMode) {
     if (!b) return notFound(app, "bosses.html", "Bosses");
     if (b.upcoming) return upcomingDetail(app, d, "bosses.html", "Bosses", b, plannedRows([
-      ["Boss map", b.mapId], ["Projected level", fmt(b.level)],
+      // Same rule as the card above: an absent level prints nothing, never "0".
+      ["Boss map", b.mapId], ["Projected level", b.level ? fmt(b.level) : ""],
       ["Relic", b.relic ? b.relic.name : ""],
       ["Relic bonus", b.relic ? b.relic.bonus + " (cap " + b.relic.cap + ")" : ""]]) +
       (b.blurb ? '<div class="section-title">The fight</div><p>' + esc(b.blurb) + "</p>" : ""));

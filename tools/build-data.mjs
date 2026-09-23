@@ -130,9 +130,71 @@ const isHeldEpoch4 = (id, text) => {
       && (/_H$/.test(id) || id.includes("_HM_Z"))) return true;
   return false;
 };
+// ⛔★★★★ THE MUSEUM GATE (2026-09-23) — THE EPOCH 4 GATE'S LESSON, ONE RELEASE LATER.
+//
+// The comment above says it outright: "a hand-written release table that new content must be
+// remembered into, whose unknown-prefix default is PUBLISH". `MU` was never added to it. The Museum
+// is 6.0.0's only new region, its 25 MapData assets are on disk, and the next routine refresh would
+// have rendered all 25 LAYOUTS to PNG and put them on the live wiki — the same near-miss as
+// 2026-09-16, avoided the same way: by checking the gate before running the build, not after.
+//
+// ⚠ THE GAME ALREADY KNEW. `ShopManager.MuseumReleased => false` ("⏳ 6.0.0 — MU maps exist; content
+// is NOT released") has been there all along; only this file had not been told. Read the flag, never
+// re-decide it here — which is why every other gate in this file is parsed out of ShopManager.cs.
+//
+// ★ THE MUSEUM IS MAPS AND NOTHING ELSE RIGHT NOW: 25 maps, and 0 enemies / 0 items / 0 zones /
+// 0 bosses. So this gate currently holds map geometry alone, and `build-upcoming.mjs` is what
+// announces the region — names, wings and projected levels, never a stat. When the content is
+// authored and the flag flips, drop the Museum from the upcoming list in the SAME pass: the rule in
+// tools/README.md is that a region lives in ONE source, never both.
+const museumReleased = /MuseumReleased\s*=>\s*true\s*;/.test(_shopManagerSrcForGate)
+  || /(^|,)\s*museum\s*=\s*1\s*(,|$)/.test(process.env.SITE_LIVE_RELEASE || "");
+
+// ⛔★★★★ THE EPOCH 4 *HARD* GATE (2026-09-23) — THE THIRD TIME THIS EXACT GAP HAS APPEARED.
+//
+// `isHeldEpoch4` opens with `if (epoch4Released) return false;`, so the day Epoch 4 shipped it
+// stopped holding ANYTHING with a CL/ST/EG/BD prefix — including the HARD legs, which did not ship
+// with it. `ShopManager.Epoch4HardReleased => false` says so plainly: "⏳ 6.0.0: Stone H baked but
+// unscreened; EG H / BD H unbuilt".
+//
+// Measured on this refresh before the gate existed: 44 Stone-hard monsters, 41 Stone-hard items and
+// 85 sprites were about to go onto the public wiki. "Baked but UNSCREENED" means the balance pass
+// has not looked at those numbers yet — they will move, and a wiki that published them would be
+// quoting values the game never shipped.
+//
+// ⇒ A released region can still have an unreleased HALF. The prefix answers "which region", never
+// "which mode"; the mode comes from `_H` / `_HM_Z` / `isHardModeItem`, exactly as the hard-mirror
+// rule above already does for GY/KR/LD/PX.
+const epoch4HardReleased = /Epoch4HardReleased\s*=>\s*true\s*;/.test(_shopManagerSrcForGate)
+  || /(^|,)\s*epoch4hard\s*=\s*1\s*(,|$)/.test(process.env.SITE_LIVE_RELEASE || "");
+let heldEpoch4HardCount = 0;
+const isHeldEpoch4Hard = (id, text) => {
+  if (epoch4HardReleased) return false;
+  const hardId = /_H$/.test(id) || id.includes("_HM_Z");
+  const hardItem = /^\s*isHardModeItem:\s*1\s*$/m.test(text || "");
+  if (!hardId && !hardItem) return false;
+  if (/^(ST|EG|BD)\d/.test(id)) return true;
+  const m = text && text.match(/^\s*sourceRegion:\s*['"]?([A-Za-z0-9]+)/m);
+  return !!(m && /^(ST|EG|BD)\d?/.test(m[1]));
+};
+// `MuseumCatalog` is the wing-catalogue MapData and carries no digit, so a `^MU\d` test alone would
+// wave it through — the same shape as the Epoch 4 `Key_*` / `Troll_*` miss documented above.
+const MUSEUM_PREFIX = /^(MU\d|Museum)/;
+let heldMuseumCount = 0;
+const isHeldMuseum = (id, text) => {
+  if (museumReleased) return false;
+  if (MUSEUM_PREFIX.test(id)) return true;
+  const m = text && text.match(/^\s*sourceRegion:\s*['"]?([A-Za-z0-9]+)/m);
+  return !!(m && MUSEUM_PREFIX.test(m[1]));
+};
 const loadCategory = (sub) => walk(path.join(SO, sub), (p) => p.endsWith(".asset"))
   .map((p) => ({ id: path.basename(p, ".asset"), text: read(p) }))
-  .filter((a) => { const held = isHeldEpoch4(a.id, a.text); if (held) heldEpoch4Count++; return !held; });
+  .filter((a) => {
+    if (isHeldEpoch4(a.id, a.text)) { heldEpoch4Count++; return false; }
+    if (isHeldEpoch4Hard(a.id, a.text)) { heldEpoch4HardCount++; return false; }
+    if (isHeldMuseum(a.id, a.text)) { heldMuseumCount++; return false; }
+    return true;
+  });
 
 let imagesWritten = 0;
 const safe = (s) => String(s).replace(/[^A-Za-z0-9_-]/g, "_");
@@ -1058,3 +1120,5 @@ fs.writeFileSync(path.join(DATA, "data.json"), JSON.stringify(root, null, 2));
 console.log("Wrote data.json", root.counts, "images:", imagesWritten);
 console.log(`Troll collectibles withheld: ${trollItemIds.size} item(s), ${trollIconsRemoved} icon(s) removed from assets/img.`);
 console.log(epoch4Released ? "Epoch 4: PUBLISHED (SITE_LIVE_RELEASE=epoch4=1 or the flag flipped)" : `Epoch 4: HELD — ${heldEpoch4Count} asset(s) withheld from the public wiki.`);
+console.log(epoch4HardReleased ? "Epoch 4 HARD: PUBLISHED (SITE_LIVE_RELEASE=epoch4hard=1 or the flag flipped)" : `Epoch 4 HARD: HELD — ${heldEpoch4HardCount} asset(s) withheld from the public wiki.`);
+console.log(museumReleased ? "Museum: PUBLISHED (SITE_LIVE_RELEASE=museum=1 or the flag flipped)" : `Museum: HELD — ${heldMuseumCount} asset(s) withheld from the public wiki.`);
