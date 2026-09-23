@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-23T05:30:59Z",
+ "generatedAt": "2026-09-23T05:45:13Z",
  "source": "Assets/Project Information/epoch4_wave1_cloud_and_circle.md + Tools/epoch4_blueprint/r_mu.js (Museum, 6.0.0)",
  "epoch": 4,
  "wave": 1,
@@ -65,7 +65,7 @@
   },
   {
    "code": "MU",
-   "name": "Museum · The Atrium",
+   "name": "Museum",
    "kind": "hub",
    "leg": null,
    "anchor": "Cloud Plaza",
@@ -97,7 +97,7 @@
   },
   {
    "code": "MU",
-   "name": "Museum · Stone Age",
+   "name": "Museum",
    "kind": "region",
    "leg": 9,
    "anchor": "Cloud Plaza",
@@ -388,7 +388,7 @@
   },
   {
    "code": "MU",
-   "name": "Museum · Civilization I",
+   "name": "Museum",
    "kind": "region",
    "leg": 11,
    "anchor": "Cloud Plaza",
@@ -812,7 +812,7 @@
   },
   {
    "code": "MU",
-   "name": "Museum · Civilization II",
+   "name": "Museum",
    "kind": "region",
    "leg": 13,
    "anchor": "Cloud Plaza",
@@ -1237,7 +1237,7 @@
   },
   {
    "code": "MU",
-   "name": "Museum · Modern Area of Study",
+   "name": "Museum",
    "kind": "region",
    "leg": 14,
    "anchor": "Cloud Plaza",

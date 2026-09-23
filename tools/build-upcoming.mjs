@@ -323,7 +323,17 @@ if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
     const range = wingRange(wing.maps);
     if (!range) return null;
     const ids = mu.maps.filter((m) => num(m.id) >= range[0] && num(m.id) <= range[1]).map((m) => m.id);
-    const name = "Museum · " + wing.n;
+    // ⛔ EVERY WING IS NAMED "Museum", AND THAT IS LOAD-BEARING — it is not a lost opportunity to
+    // label them. `mergeUpcoming` copies `w.name` onto each map as its `world`, and the atlas draws
+    // a world with a HAND-WRITTEN `wnode(d, "<name>")` cell in app.js whose maps are found by
+    // `m.world === w`. Five worlds called "Museum · <wing>" therefore rendered NOWHERE: the data was
+    // correct, the merge was correct, and the atlas had no cell for any of those names.
+    // ⇒ One name, one atlas cell, 25 maps found. The wing survives where it belongs — on each map's
+    // note ("Stone Age wing") — and splitting the record four ways is still what gives each wing its
+    // own boss, because `mergeUpcoming` takes exactly one per world.
+    // ⚠ Same family as [[site_nav_is_js_built_from_one_array]]: anything the site builds from a
+    // hard-coded list must be ADDED to that list; publishing the data is not enough.
+    const name = "Museum";
     const maps = ids.map((id) => {
       const m = mapById.get(id);
       return {
@@ -375,7 +385,7 @@ if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
   // no pool — listing it inside a wing would attribute the wing's monsters to the atrium.
   const atrium = mapById.get("MU01");
   if (atrium) museumWorlds.push({
-    code: "MU", name: "Museum · The Atrium", kind: "hub", leg: null, anchor: "Cloud Plaza",
+    code: "MU", name: "Museum", kind: "hub", leg: null, anchor: "Cloud Plaza",
     levelFrom: null, levelTo: null, zoneCount: (atrium.zones || []).length,
     pitch: String(mu.pitch || "").replace(/\s+/g, " ").trim(),
     maps: [{ id: "MU01", name: atrium.name, zoneCount: (atrium.zones || []).length, bandStart: null,

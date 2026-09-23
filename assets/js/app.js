@@ -1401,6 +1401,14 @@
         '<div class="wm-cell" style="grid-area:st">'     + wnode(d, "Stone", { upcoming: true }) + '</div>' +
         '<div class="wm-cell" style="grid-area:eg">'     + wnode(d, "Egypt", { upcoming: true }) + '</div>' +
         '<div class="wm-cell" style="grid-area:bd">'     + wnode(d, "The Temple", { upcoming: true }) + '</div>' +
+        // ★ THE MUSEUM (6.0.0) hangs off the SAME Cloud Plaza bus as the ring — its entry is CL01
+        // (Tools/epoch4_blueprint/r_mu.js: `plaza: 'CL01'`), so the bus is where it honestly belongs.
+        // ⛔ THIS CELL IS THE WHOLE REASON IT APPEARS. The atlas is a hand-written grid of
+        // `wnode(d, "<world>")` calls; a world the data knows about and this list does not renders on
+        // NO page, which is exactly how the Museum shipped invisible on 2026-09-23. Adding a world to
+        // upcoming.json is never enough — add the cell here and its `grid-area` in style.css.
+        '<div class="wm-conn h dashed" style="grid-area:rs4"></div>' +
+        '<div class="wm-cell" style="grid-area:mu">'     + wnode(d, "Museum", { upcoming: true }) + '</div>' +
         // ★ THE RING. Stone, Egypt and The Temple are not just three spurs off the plaza — each
         // has two-way doors to the other two, so the circle can be walked in either direction
         // (ST01 west->BD01 / east->EG01, EG01 west->ST01 / east->BD01, BD01 west->EG01 /
