@@ -1296,7 +1296,18 @@
     var s = worldStats(d, w);
     var inventory = s.maps.length + " map" + (s.maps.length !== 1 ? "s" : "") +
          (s.bosses ? " &#183; " + s.bosses + " boss" + (s.bosses > 1 ? "es" : "") : "");
-    var sub = opts.locked ? "Coming soon" : (opts.upcoming ? "Upcoming &#183; " : "") + inventory;
+    // ⛔★★★★ "UPCOMING" IS DERIVED FROM THE MAPS, NEVER HAND-PASSED (2026-09-23).
+    // It used to be a literal `{ upcoming: true }` typed into the atlas call for each world — so
+    // Cloud Plaza, Stone, Egypt and The Temple were still badged Upcoming weeks after they SHIPPED
+    // in 5.0.0, because nobody went back to delete four flags. Owner: "Why is stone Egypt and temple
+    // still upcoming???? They are already deployed on 5.0.0."
+    // A world is upcoming when its maps are: planned maps carry `upcoming: true` from
+    // mergeUpcoming, real ones never do. The badge now falls out of the data and cannot go stale —
+    // a region stops being "upcoming" on the wiki the moment its maps are published, with no edit
+    // here at all. Callers may still force it, but nothing does.
+    var derivedUpcoming = s.maps.length > 0 && s.maps.every(function (m) { return m.upcoming; });
+    var isUpcoming = opts.upcoming === undefined ? derivedUpcoming : opts.upcoming;
+    var sub = opts.locked ? "Coming soon" : (isUpcoming ? "Upcoming &#183; " : "") + inventory;
     var inner = '<span class="wicon">' + meta.icon + "</span>" +
       '<span class="wname">' + esc(w) + "</span><span class=\"wmeta\">" + sub + "</span>";
     if (opts.locked) return '<div class="wnode locked" style="--wc:' + meta.color + '">' + inner + "</div>";
@@ -1396,11 +1407,11 @@
         // compass draws the hub rail only; the ring edges are walls in one direction and a
         // walk-back in the other, so a rail reads truer here than a triangle would.
         '<div class="wm-conn h dashed" style="grid-area:hcl"></div>' +
-        '<div class="wm-cell" style="grid-area:cl">'     + wnode(d, "Cloud Plaza", { upcoming: true }) + '</div>' +
+        '<div class="wm-cell" style="grid-area:cl">'     + wnode(d, "Cloud Plaza") + '</div>' +
         '<div class="wm-conn v dashed" style="grid-area:clbus"></div>' +
-        '<div class="wm-cell" style="grid-area:st">'     + wnode(d, "Stone", { upcoming: true }) + '</div>' +
-        '<div class="wm-cell" style="grid-area:eg">'     + wnode(d, "Egypt", { upcoming: true }) + '</div>' +
-        '<div class="wm-cell" style="grid-area:bd">'     + wnode(d, "The Temple", { upcoming: true }) + '</div>' +
+        '<div class="wm-cell" style="grid-area:st">'     + wnode(d, "Stone") + '</div>' +
+        '<div class="wm-cell" style="grid-area:eg">'     + wnode(d, "Egypt") + '</div>' +
+        '<div class="wm-cell" style="grid-area:bd">'     + wnode(d, "The Temple") + '</div>' +
         // ★ THE MUSEUM (6.0.0) HANGS STRAIGHT DOWN OFF THE CLOUD PLAZA, and the line says so.
         // Its entry is CL01 (`r_mu.js: plaza: 'CL01'`), NOT the ring — MU01's own south door goes to
         // the Cloud Plaza and nowhere else. A first cut put it at the bottom of the ring's bus with a
@@ -1411,7 +1422,7 @@
         // NO page, which is exactly how the Museum shipped invisible on 2026-09-23. Adding a world to
         // upcoming.json is never enough — add the cell here and its `grid-area` in style.css.
         '<div class="wm-conn v dashed" style="grid-area:clmu"></div>' +
-        '<div class="wm-cell" style="grid-area:mu">'     + wnode(d, "Museum", { upcoming: true }) + '</div>' +
+        '<div class="wm-cell" style="grid-area:mu">'     + wnode(d, "Museum") + '</div>' +
         // ★ THE RING. Stone, Egypt and The Temple are not just three spurs off the plaza — each
         // has two-way doors to the other two, so the circle can be walked in either direction
         // (ST01 west->BD01 / east->EG01, EG01 west->ST01 / east->BD01, BD01 west->EG01 /

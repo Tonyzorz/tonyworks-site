@@ -689,7 +689,11 @@ body[data-page="portal"] .wrap { padding-top:0; }
   margin: .4rem 0 1.3rem; background: var(--bg-2); border: 1px solid var(--border);
   border-radius: var(--radius); overflow: hidden; display: grid; place-items: center;
 }
-.map-art img { width: 100%; max-height: 72vh; object-fit: contain; display: block; }
+/* ★ ZOOMED OUT 30% (owner, 2026-09-23: "the maps are way too zoomed in"). The art used to fill the
+   container edge to edge, which cropped the reading of a map's SHAPE — the thing the atlas exists to
+   show. 100% -> 70% width and 72vh -> 50vh; the container is `place-items:center`, so the smaller
+   image stays centred with breathing room instead of being pinned to the frame. */
+.map-art img { width: 70%; max-height: 50vh; object-fit: contain; display: block; }
 
 @media (max-width: 640px) {
   .detail { grid-template-columns: 1fr; }
@@ -929,7 +933,7 @@ body { overflow-x:clip; }
 .map-detail-hero h1 { margin:.2rem 0 .45rem; font-size:clamp(1.8rem,4vw,2.8rem); line-height:1.08; }
 .map-detail-hero p { max-width:580px; margin:.8rem 0 0; color:var(--muted); line-height:1.65; }
 .map-detail-hero .map-art { margin:0; box-shadow:none; }
-.map-detail-hero .map-art img { max-height:440px; }
+.map-detail-hero .map-art img { max-height:308px; }   /* 440 * 0.7 — same 30% zoom-out as above */
 .map-overview { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:.65rem; margin:1rem 0 2rem; }
 .map-overview .statbox { margin:0; }
 .map-detail-section { margin:2.1rem 0 0; scroll-margin-top:90px; }
