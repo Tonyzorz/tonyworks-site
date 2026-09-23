@@ -774,11 +774,17 @@ body[data-page="portal"] .wrap { padding-top:0; }
 .flag-jp { background:#fff; }
 .flag-jp::before { content:""; position:absolute; inset:0; margin:auto; width:.42em; height:.42em;
   border-radius:50%; background:#bc002d; }
-/* Korea: white field, red-over-blue taegeuk. The four trigrams are deliberately omitted - at
-   13px tall they render as mud; the taegeuk alone is unambiguous at this size. */
+/* Korea: white field, taegeuk. ⛔ THE TAEGEUK IS NOT A HORIZONTAL SPLIT, and it shipped as one -
+   `linear-gradient(180deg, red 0 50%, blue 50% 100%)`, a disc cut straight across the middle.
+   Owner, 2026-09-23: "i am looking at korea at the wiki.. the flag is wrong". They were right: the
+   real taegeuk is divided by an S-CURVE and ROTATED, so red sits upper-LEFT and blue lower-RIGHT.
+   A flat bisected circle is a different symbol entirely.
+   ⇒ Drawn as inline SVG now (see WORLD_META in app.js). Two arcs make the S; the disc is rotated
+   -33.69deg, which is the flag's own angle (atan 1/1.5 across its 3:2 field), not an eyeballed one.
+   The four trigrams stay omitted: at 13px tall they render as mud, and the taegeuk alone is
+   unambiguous. Same reasoning as Japan's disc and Egypt's missing eagle. */
 .flag-kr { background:#fff; }
-.flag-kr::before { content:""; position:absolute; inset:0; margin:auto; width:.44em; height:.44em;
-  border-radius:50%; background:linear-gradient(180deg,#cd2e3a 0 50%,#0047a0 50% 100%); }
+.flag-kr svg { width:100%; height:100%; display:block; }
 /* Greece: nine blue/white stripes with a blue canton. */
 .flag-gr { background:repeating-linear-gradient(to bottom,#0d5eaf 0 22.2%,#fff 22.2% 44.4%); }
 .flag-gr::before { content:""; position:absolute; inset:0 auto auto 0; width:44%; height:55%;

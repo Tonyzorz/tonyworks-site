@@ -1093,7 +1093,17 @@
     "Amazon":     { icon: "&#127811;", color: "#43a66b" },
     "Graveyard":  { icon: "&#129702;", color: "#8fa38c" },
     // Graveyard-onward regions (endgame route), each entered through a door inside the Graveyard.
-    "Korea":      { icon: '<span class="flag-kr" role="img" aria-label="South Korea flag"></span>', color: "#6cc5a1" },
+    // ⛔ THE TAEGEUK IS AN S-CURVE, NOT A BISECTED DISC. It shipped as a flat red-over-blue split
+    // and the owner spotted it at once. Below is the real construction: a blue disc, then ONE path
+    // sweeping the red half across two arcs of half the radius — those two arcs are what make the
+    // comma shapes — rotated -33.69deg so red takes the upper LEFT. Trigrams omitted at this size,
+    // as with Japan's disc and Egypt's eagle; see the note in style.css.
+    "Korea":      { icon: '<span class="flag-kr" role="img" aria-label="South Korea flag">'
+                     + '<svg viewBox="0 0 36 24" aria-hidden="true">'
+                     + '<g transform="translate(18 12) rotate(-33.69)">'
+                     + '<circle r="6" fill="#0047a0"/>'
+                     + '<path d="M-6 0A3 3 0 0 1 0 0A3 3 0 0 0 6 0A6 6 0 0 0-6 0Z" fill="#cd2e3a"/>'
+                     + '</g></svg></span>', color: "#6cc5a1" },
     "London":     { icon: '<span class="flag-gb" role="img" aria-label="United Kingdom flag"></span>', color: "#c9a15a" },
     "Monochrome": { icon: "&#128307;", color: "#9a9a9a" },
     // Epoch 4 wave 1 - PLANNED, not built. Reached by the stair on the WEST side of the World
