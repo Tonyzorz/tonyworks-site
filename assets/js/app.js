@@ -419,7 +419,12 @@
         var creatures = (w.creatures || []).filter(function (c) { return c.areas.indexOf(m.id) >= 0; });
         var gear = (w.gear || []).filter(function (g) { return g.tier === m.id; });
         var isBossMap = !!(w.boss && w.boss.mapId === m.id);
-        if (!haveMap[m.id]) d.maps.push({ id: m.id, name: m.name, world: world, image: "", upcoming: true,
+        // ★ A PLANNED MAP MAY HAVE REAL ART. This was hard-coded to "" on the assumption that
+        // nothing planned is drawn yet — true for Stone/Egypt/Temple, false for the Museum, whose
+        // 25 rooms are painted and sitting in the project. Owner: "why are there no images for the
+        // map????? They already exist". Carry what the generator gives us; it is still "" when a
+        // region genuinely has no art.
+        if (!haveMap[m.id]) d.maps.push({ id: m.id, name: m.name, world: world, image: m.image || "", upcoming: true,
           plannedZones: m.zoneCount, plannedLevel: m.bandStart, plannedNote: m.note,
           plannedSize: m.width && m.height ? m.width + " \u00d7 " + m.height : null,
           plannedAxis: m.axis, plannedZoneNames: m.zoneNames || [], doors: m.doors || [],

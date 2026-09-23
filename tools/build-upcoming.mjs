@@ -346,6 +346,32 @@ if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
   const num = (id) => Number(String(id).replace(/^MU/, ""));
   const gearByMap = new Map((mu.gear || []).map((g) => [g.map, g.items || []]));
 
+  // ★★ THE MUSEUM'S MAP ART IS REAL AND PAINTED, AND IT WAS MISSING ONLY BECAUSE NOTHING COPIED IT.
+  // Owner, more than once: "why are there no images for the map????? They already exist". They do —
+  // `Assets/Sprites/Map/visual/The Flint Hall visual.png` and 24 more, ~3 MB each. `build-data.mjs`
+  // copies a map's visual via `copyMapVisual`, but the Museum is HELD there (MuseumReleased false),
+  // so nothing ever reached the site. The region is announced, so its art is published the same way
+  // its names and levels are — from here, on the same one source.
+  // ⚠ Named `map_<ID>.png` to match build-data's convention exactly, so a released Museum overwrites
+  // these rather than doubling them, and `resize-images.ps1` downscales them with everything else.
+  const IMG = path.resolve(ROOT, 'apps/infinite-loot-loop/assets/img');
+  const VISUAL = path.resolve(ROOT, '../Infinite Loot-Loop/Assets/Sprites/Map/visual');
+  let copied = 0;
+  function museumArt(m) {
+    const src = path.join(VISUAL, m.name + ' visual.png');
+    if (!fs.existsSync(src)) return '';
+    const file = 'map_' + m.id + '.png';
+    const dest = path.join(IMG, file);
+    // Same staleness rule build-data uses: a redrawn visual must actually reach the site, and an
+    // already-downscaled file (newer than its source) must not be clobbered back to 3 MB.
+    try {
+      if (!fs.existsSync(dest) || fs.statSync(src).mtimeMs > fs.statSync(dest).mtimeMs) {
+        fs.copyFileSync(src, dest); copied++;
+      }
+    } catch { return ''; }
+    return file;
+  }
+
   // ⛔★★★ THE DOOR GRAPH IS AUTHORED TOO, AND OMITTING IT MADE THE MUSEUM READ AS A FLAT LIST.
   // The first cut published `doors: []` for all 25 rooms on the theory that an unreleased region
   // should show less. That was wrong twice over: every other region on the wiki shows its
@@ -365,7 +391,15 @@ if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
         to, edge: EDGE_LABEL[edge] || String(edge).toLowerCase(),
         // Strip the arrow glyphs the blueprint uses for its own prose — the wiki draws its own.
         label: String(label).replace(/^[⟵⟶⟷]\s*/, ""),
-        kind: to === "CL01" ? "hub" : to === "MU25" ? "ring" : "region"
+        // ⛔★★★★ THE WING DOORS MUST BE "onward", AND THIS IS WHY THE MUSEUM DREW AS A LIST.
+        // `worldView` builds a region's chart by BFS over `kind === "onward"` doors only. These four
+        // shipped as "region", so MU01 had NO outgoing edge the graph could follow: each wing became
+        // an unreachable island, root detection found one of them, and the other 20 maps fell into
+        // the untiered "everything else" bucket — a flat grid of cards, exactly what the owner saw
+        // ("their linking is terrible"). The doors were right in the data and wrong in their KIND.
+        // ★ MU25 stays "ring": the grand stair is a two-way shortcut back to the hub, and making it
+        // onward would give MU25 depth 1 and tear the Modern wing's chain in half.
+        kind: to === "CL01" ? "hub" : to === "MU25" ? "ring" : "onward"
       }));
     }
     const doors = [];
@@ -397,7 +431,7 @@ if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
         bandStart: muLevel.get(id) ?? null,
         note: wing.n + " wing" + (bossByMap.has(id) ? " — boss room" : ""),
         width: m.W, height: m.H, orient: m.orient || null, axis: m.orient || null,
-        isBossMap: bossByMap.has(id), zoneNames: m.zones || [], doors: museumDoors(m)
+        isBossMap: bossByMap.has(id), zoneNames: m.zones || [], doors: museumDoors(m), image: museumArt(m)
       };
     });
     const creatures = (mu.creatures || [])
@@ -448,9 +482,11 @@ if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
              note: "the Museum's own hub — four wings lead off it",
              width: atrium.W, height: atrium.H,
              orient: atrium.orient || null, axis: atrium.orient || null,
-             isBossMap: false, zoneNames: atrium.zones || [], doors: museumDoors(atrium) }],
+             isBossMap: false, zoneNames: atrium.zones || [], doors: museumDoors(atrium),
+             image: museumArt(atrium) }],
     creatures: [], gear: [], boss: null
   });
+  if (copied) console.log("  museum art: copied " + copied + " map visual(s)");
   for (const wing of mu.wings || []) {
     const w = wingWorld(wing);
     if (w) museumWorlds.push(w);

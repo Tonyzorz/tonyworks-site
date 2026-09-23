@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-23T06:00:40Z",
+ "generatedAt": "2026-09-23T08:02:38Z",
  "source": "Assets/Project Information/epoch4_wave1_cloud_and_circle.md + Tools/epoch4_blueprint/r_mu.js (Museum, 6.0.0)",
  "epoch": 4,
  "wave": 1,
@@ -99,25 +99,25 @@
        "to": "MU02",
        "edge": "north edge",
        "label": "the Stone Age wing",
-       "kind": "region"
+       "kind": "onward"
       },
       {
        "to": "MU06",
        "edge": "north edge",
        "label": "the Civilization I wing",
-       "kind": "region"
+       "kind": "onward"
       },
       {
        "to": "MU12",
        "edge": "west edge",
        "label": "the Civilization II wing",
-       "kind": "region"
+       "kind": "onward"
       },
       {
        "to": "MU18",
        "edge": "east edge",
        "label": "the Modern Area of Study",
-       "kind": "region"
+       "kind": "onward"
       },
       {
        "to": "MU25",
@@ -125,7 +125,8 @@
        "label": "the grand stair",
        "kind": "ring"
       }
-     ]
+     ],
+     "image": "map_MU01.png"
     }
    ],
    "creatures": [],
@@ -173,7 +174,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU02.png"
     },
     {
      "id": "MU03",
@@ -204,7 +206,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU03.png"
     },
     {
      "id": "MU04",
@@ -235,7 +238,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU04.png"
     },
     {
      "id": "MU05",
@@ -262,7 +266,8 @@
        "kind": "back",
        "label": "back"
       }
-     ]
+     ],
+     "image": "map_MU05.png"
     }
    ],
    "creatures": [
@@ -503,7 +508,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU06.png"
     },
     {
      "id": "MU07",
@@ -535,7 +541,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU07.png"
     },
     {
      "id": "MU08",
@@ -566,7 +573,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU08.png"
     },
     {
      "id": "MU09",
@@ -597,7 +605,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU09.png"
     },
     {
      "id": "MU10",
@@ -628,7 +637,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU10.png"
     },
     {
      "id": "MU11",
@@ -655,7 +665,8 @@
        "kind": "back",
        "label": "back"
       }
-     ]
+     ],
+     "image": "map_MU11.png"
     }
    ],
    "creatures": [
@@ -988,7 +999,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU12.png"
     },
     {
      "id": "MU13",
@@ -1019,7 +1031,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU13.png"
     },
     {
      "id": "MU14",
@@ -1050,7 +1063,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU14.png"
     },
     {
      "id": "MU15",
@@ -1082,7 +1096,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU15.png"
     },
     {
      "id": "MU16",
@@ -1113,7 +1128,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU16.png"
     },
     {
      "id": "MU17",
@@ -1141,7 +1157,8 @@
        "kind": "back",
        "label": "back"
       }
-     ]
+     ],
+     "image": "map_MU17.png"
     }
    ],
    "creatures": [
@@ -1474,7 +1491,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU18.png"
     },
     {
      "id": "MU19",
@@ -1505,7 +1523,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU19.png"
     },
     {
      "id": "MU20",
@@ -1536,7 +1555,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU20.png"
     },
     {
      "id": "MU21",
@@ -1568,7 +1588,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU21.png"
     },
     {
      "id": "MU22",
@@ -1601,7 +1622,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU22.png"
     },
     {
      "id": "MU23",
@@ -1633,7 +1655,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU23.png"
     },
     {
      "id": "MU24",
@@ -1664,7 +1687,8 @@
        "kind": "onward",
        "label": "onward"
       }
-     ]
+     ],
+     "image": "map_MU24.png"
     },
     {
      "id": "MU25",
@@ -1693,7 +1717,8 @@
        "kind": "back",
        "label": "back"
       }
-     ]
+     ],
+     "image": "map_MU25.png"
     }
    ],
    "creatures": [
