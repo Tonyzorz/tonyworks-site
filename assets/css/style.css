@@ -835,12 +835,12 @@ body { overflow-x:clip; }
     ".    .   .  .     void h1  volc h2 forest h3  gl   h4  desert .     ."
     ".    .   .  .     .    .   .    .  .      .   vd   .   .      .     ."
     "ring rs1 st clbus cl   hcl hcl  hcl hcl   hcl gate hgy gy     gybus kr"
-    "ring .   .  clbus .    .   .    .   .     .   .    .   .      gybus ."
-    "ring rs2 eg clbus .    .   .    .   wg    wg  wg   wg  wg     gybus ld"
+    "ring .   .  clbus clmu .   .    .   .     .   .    .   .      gybus ."
+    "ring rs2 eg clbus mu   .   .    .   wg    wg  wg   wg  wg     gybus ld"
     "ring .   .  clbus .    .   .    .   .     .   .    .   .      gybus ."
     "ring rs3 bd clbus .    .   .    .   .     .   mz   .   .      gybus px"
-    ".    .   .  clbus .    .   .    .   .     .   vmz  .   .      .     ."
-    ".    rs4 mu clbus .    .   .    .   mzk   mzk mzk  mzk mzk   .     .";
+    ".    .   .  .     .    .   .    .   .     .   vmz  .   .      .     ."
+    ".    .   .  .     .    .   .    .   mzk   mzk mzk  mzk mzk   .     .";
 }
 /* World Gate branch: the hub drops onto a bus that fans out to the four themed regions. */
 .wm-branch { display:flex; flex-direction:column; align-items:center; width:100%; }

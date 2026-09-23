@@ -309,6 +309,33 @@ const museumWorlds = [];
 if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
   const mu = require(MU_BLUEPRINT);
   const mapById = new Map(mu.maps.map((m) => [m.id, m]));
+
+  // ★★★ THE LEVELS ARE AUTHORED, AND THE FIRST CUT OF THIS FILE WRONGLY SAID THEY WERE NOT.
+  // `v6_0_0_stat_ladder_2026_09_21.md` carries a per-ZONE level for all four Museum legs. Its own
+  // leg headers draw the line exactly: *"Levels authored; HP/ATK await this leg's entry-fight
+  // solve."* So the level is real design output and belongs on the wiki — it is what makes the
+  // route readable — while HP/ATK/resists genuinely do not exist and must stay absent.
+  // ⛔ PARSED, NEVER RETYPED, like every other number in this file. A map's band start is its FIRST
+  // zone row; the rows are in route order.
+  const LADDER = path.resolve(ROOT,
+    "../Infinite Loot-Loop/Assets/Project Information/v6_0_0_stat_ladder_2026_09_21.md");
+  const muLevel = new Map();
+  // ★ The four Museum bosses have levels too, one `| **BOSS** |` row per leg — listed as "(unnamed)"
+  // there because the ladder is a BALANCE document and r_mu.js is where the names live. Keyed on the
+  // leg's wing, which is the one thing both files agree on.
+  const muBossLevel = new Map();
+  try {
+    let wing = null;
+    for (const line of fs.readFileSync(LADDER, "utf8").split("\n")) {
+      const h = line.match(/^##\s*Leg\s*\d+\s*—\s*Museum\s*·\s*(.+?)\s*\(/);
+      if (h) { wing = h[1].trim(); continue; }
+      if (/^##\s*Leg\s/.test(line)) { wing = null; continue; }
+      const r = line.match(/^\|\s*(MU\d\d)\s*\|\s*Z\d+\s*\|\s*([\d,]+)\s*\|/);
+      if (r && !muLevel.has(r[1])) { muLevel.set(r[1], Number(r[2].replace(/,/g, ""))); continue; }
+      const b = line.match(/^\|\s*\*\*BOSS\*\*\s*\|[^|]*\|\s*\*\*([\d,]+)\*\*\s*\|/);
+      if (b && wing) muBossLevel.set(wing, Number(b[1].replace(/,/g, "")));
+    }
+  } catch { /* ladder not on disk — publish the Museum without levels rather than inventing them */ }
   const bossByMap = new Map((mu.bosses || []).map((b) => [b.map, b]));
   // Wing ranges are authored as "MU02–MU05" with an EN DASH, not a hyphen. Splitting on /-/ here
   // returns the whole string and every map lands in wing one; match the digits instead.
@@ -318,6 +345,35 @@ if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
   };
   const num = (id) => Number(String(id).replace(/^MU/, ""));
   const gearByMap = new Map((mu.gear || []).map((g) => [g.map, g.items || []]));
+
+  // ⛔★★★ THE DOOR GRAPH IS AUTHORED TOO, AND OMITTING IT MADE THE MUSEUM READ AS A FLAT LIST.
+  // The first cut published `doors: []` for all 25 rooms on the theory that an unreleased region
+  // should show less. That was wrong twice over: every other region on the wiki shows its
+  // connections, and the Museum's are fully designed — every map carries `back`/`next`, and MU01
+  // carries all six of its own doors (four wings, the Cloud Plaza, and the grand stair to MU25).
+  // A region drawn without its routes is not "less spoilery", it is just unreadable.
+  // ★ `next` IS DERIVABLE and must not be trusted blindly — r_mu.js's own note says a renumber
+  // fixes `id`/`back` and leaves `next` pointing past an inserted map. So `back` is the authority:
+  // the onward door is the map whose `back` points at me, and `next` is only the fallback.
+  const backTo = new Map();
+  for (const m of mu.maps) if (m.back) backTo.set(m.back, m.id);
+  const EDGE_LABEL = { SOUTH: "south edge", NORTH: "north edge", WEST: "west edge",
+                       EAST: "east edge", INT: "interior stair" };
+  function museumDoors(m) {
+    if (m.customDoors && m.customDoors.length) {
+      return m.customDoors.map(([edge, to, label]) => ({
+        to, edge: EDGE_LABEL[edge] || String(edge).toLowerCase(),
+        // Strip the arrow glyphs the blueprint uses for its own prose — the wiki draws its own.
+        label: String(label).replace(/^[⟵⟶⟷]\s*/, ""),
+        kind: to === "CL01" ? "hub" : to === "MU25" ? "ring" : "region"
+      }));
+    }
+    const doors = [];
+    if (m.back) doors.push({ to: m.back, kind: "back", label: "back" });
+    const onward = backTo.get(m.id) || m.next;
+    if (onward) doors.push({ to: onward, kind: "onward", label: "onward" });
+    return doors;
+  }
 
   const wingWorld = (wing) => {
     const range = wingRange(wing.maps);
@@ -338,12 +394,10 @@ if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
       const m = mapById.get(id);
       return {
         id, name: m.name, zoneCount: (m.zones || []).length,
-        // ⛔ NO LEVEL. The v6 chain is the balance pass's to own and nothing is baked yet; a
-        // projected band printed here reads back later as if it had been authored.
-        bandStart: null,
+        bandStart: muLevel.get(id) ?? null,
         note: wing.n + " wing" + (bossByMap.has(id) ? " — boss room" : ""),
         width: m.W, height: m.H, orient: m.orient || null, axis: m.orient || null,
-        isBossMap: bossByMap.has(id), zoneNames: m.zones || [], doors: []
+        isBossMap: bossByMap.has(id), zoneNames: m.zones || [], doors: museumDoors(m)
       };
     });
     const creatures = (mu.creatures || [])
@@ -366,8 +420,9 @@ if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
       // ⛔ NO LEVEL AND NO RELIC BONUS. `r_mu.js` authors the relic's NAME and nothing numeric, and
       // app.js renders a relic as "HP / ATK / DEF <bonus> (planned)" — handing it an empty bonus
       // publishes a blank stat line, which is worse than no relic entry at all. The name is carried
-      // in the blurb instead, where it cannot be mistaken for an authored number.
-      level: null,
+      // in the blurb instead, where it cannot be mistaken for an authored number. The LEVEL is a
+      // different matter — it is authored, so it is published.
+      level: muBossLevel.get(wing.n) ?? null,
       blurb: String(b.pitch || "").replace(/\s+/g, " ").trim()
              + (b.relic ? "  Relic: " + b.relic + "." : ""),
       relic: null
@@ -388,10 +443,12 @@ if (!museumReleased && fs.existsSync(MU_BLUEPRINT)) {
     code: "MU", name: "Museum", kind: "hub", leg: null, anchor: "Cloud Plaza",
     levelFrom: null, levelTo: null, zoneCount: (atrium.zones || []).length,
     pitch: String(mu.pitch || "").replace(/\s+/g, " ").trim(),
-    maps: [{ id: "MU01", name: atrium.name, zoneCount: (atrium.zones || []).length, bandStart: null,
-             note: "hub — no encounters", width: atrium.W, height: atrium.H,
+    maps: [{ id: "MU01", name: atrium.name, zoneCount: (atrium.zones || []).length,
+             bandStart: muLevel.get("MU01") ?? null,
+             note: "the Museum's own hub — four wings lead off it",
+             width: atrium.W, height: atrium.H,
              orient: atrium.orient || null, axis: atrium.orient || null,
-             isBossMap: false, zoneNames: atrium.zones || [], doors: [] }],
+             isBossMap: false, zoneNames: atrium.zones || [], doors: museumDoors(atrium) }],
     creatures: [], gear: [], boss: null
   });
   for (const wing of mu.wings || []) {

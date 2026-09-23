@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-23T05:45:13Z",
+ "generatedAt": "2026-09-23T06:00:40Z",
  "source": "Assets/Project Information/epoch4_wave1_cloud_and_circle.md + Tools/epoch4_blueprint/r_mu.js (Museum, 6.0.0)",
  "epoch": 4,
  "wave": 1,
@@ -79,7 +79,7 @@
      "name": "The Atrium",
      "zoneCount": 1,
      "bandStart": null,
-     "note": "hub — no encounters",
+     "note": "the Museum's own hub — four wings lead off it",
      "width": 30,
      "height": 30,
      "orient": "V",
@@ -88,7 +88,44 @@
      "zoneNames": [
       "The Atrium Floor"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "CL01",
+       "edge": "south edge",
+       "label": "back to the Cloud Plaza",
+       "kind": "hub"
+      },
+      {
+       "to": "MU02",
+       "edge": "north edge",
+       "label": "the Stone Age wing",
+       "kind": "region"
+      },
+      {
+       "to": "MU06",
+       "edge": "north edge",
+       "label": "the Civilization I wing",
+       "kind": "region"
+      },
+      {
+       "to": "MU12",
+       "edge": "west edge",
+       "label": "the Civilization II wing",
+       "kind": "region"
+      },
+      {
+       "to": "MU18",
+       "edge": "east edge",
+       "label": "the Modern Area of Study",
+       "kind": "region"
+      },
+      {
+       "to": "MU25",
+       "edge": "interior stair",
+       "label": "the grand stair",
+       "kind": "ring"
+      }
+     ]
     }
    ],
    "creatures": [],
@@ -110,7 +147,7 @@
      "id": "MU02",
      "name": "The Flint Hall",
      "zoneCount": 6,
-     "bandStart": null,
+     "bandStart": 794620000,
      "note": "Stone Age wing",
      "width": 24,
      "height": 24,
@@ -125,13 +162,24 @@
       "The Knapping Floor",
       "The Far Arch"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU01",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU03",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU03",
      "name": "Ochre and Hide",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 828390000,
      "note": "Stone Age wing",
      "width": 28,
      "height": 20,
@@ -145,13 +193,24 @@
       "The Handprint Wall",
       "Far Door"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU02",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU04",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU04",
      "name": "Antler and Bone",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 863600000,
      "note": "Stone Age wing",
      "width": 28,
      "height": 20,
@@ -165,13 +224,24 @@
       "Needle Cases",
       "The Far Bay"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU03",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU05",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU05",
      "name": "The Fire Pit Gallery",
      "zoneCount": 6,
-     "bandStart": null,
+     "bandStart": 900300000,
      "note": "Stone Age wing — boss room",
      "width": 24,
      "height": 24,
@@ -186,7 +256,13 @@
       "Charcoal Floor",
       "The First Fire"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU04",
+       "kind": "back",
+       "label": "back"
+      }
+     ]
     }
    ],
    "creatures": [
@@ -381,7 +457,7 @@
     "id": "MU05_Boss",
     "mapId": "MU05",
     "name": "The First Fire",
-    "level": null,
+    "level": 940720000,
     "blurb": "Somebody was given this fire and told not to let it go out, and then everybody who was told that died, and it did not go out. It is the oldest thing the museum owns and the only exhibit that was never acquired — the building was put up around it.  Relic: The Fire Never Let Out.",
     "relic": null
    }
@@ -401,7 +477,7 @@
      "id": "MU06",
      "name": "The Tablet Room",
      "zoneCount": 6,
-     "bandStart": null,
+     "bandStart": 1562760000,
      "note": "Civilization I wing",
      "width": 24,
      "height": 24,
@@ -416,13 +492,24 @@
       "The Upper Turn",
       "Reading Slope"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU01",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU07",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU07",
      "name": "The Bronze Floor",
      "zoneCount": 6,
-     "bandStart": null,
+     "bandStart": 1629180000,
      "note": "Civilization I wing",
      "width": 24,
      "height": 24,
@@ -437,13 +524,24 @@
       "The Green Floor",
       "Far Arch"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU06",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU08",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU08",
      "name": "The Seal Room",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 1698420000,
      "note": "Civilization I wing",
      "width": 28,
      "height": 20,
@@ -457,13 +555,24 @@
       "The Second Bank",
       "Reading Slot"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU07",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU09",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU09",
      "name": "Votive Cases",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 1770600000,
      "note": "Civilization I wing",
      "width": 28,
      "height": 20,
@@ -477,13 +586,24 @@
       "The Small Gods",
       "Far Cases"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU08",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU10",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU10",
      "name": "The Model Town",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 1845850000,
      "note": "Civilization I wing",
      "width": 26,
      "height": 22,
@@ -497,13 +617,24 @@
       "House Rows",
       "The Model Gate"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU09",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU11",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU11",
      "name": "The Grave Goods Hall",
      "zoneCount": 6,
-     "bandStart": null,
+     "bandStart": 1924300000,
      "note": "Civilization I wing — boss room",
      "width": 26,
      "height": 22,
@@ -518,7 +649,13 @@
       "Offering Shelf",
       "The Interred"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU10",
+       "kind": "back",
+       "label": "back"
+      }
+     ]
     }
    ],
    "creatures": [
@@ -805,7 +942,7 @@
     "id": "MU11_Boss",
     "mapId": "MU11",
     "name": "The Interred",
-    "level": null,
+    "level": 2010690000,
     "blurb": "The burial was lifted whole and put under glass with all of it still arranged exactly as found. Every object around it is labelled. The figure in the middle is not, because a person is not an object, and the museum has never been able to decide what that makes it.  Relic: Everything It Was Given.",
     "relic": null
    }
@@ -825,7 +962,7 @@
      "id": "MU12",
      "name": "The Iron Gallery",
      "zoneCount": 6,
-     "bandStart": null,
+     "bandStart": 3340180000,
      "note": "Civilization II wing",
      "width": 24,
      "height": 24,
@@ -840,13 +977,24 @@
       "Rail and Rivet",
       "The Long Girder"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU01",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU13",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU13",
      "name": "The Loom Hall",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 3482140000,
      "note": "Civilization II wing",
      "width": 30,
      "height": 20,
@@ -860,13 +1008,24 @@
       "The Long Cloth",
       "Take-up Beam"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU12",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU14",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU14",
      "name": "The Coin Vault",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 3630130000,
      "note": "Civilization II wing",
      "width": 28,
      "height": 20,
@@ -880,13 +1039,24 @@
       "The Bullion Bay",
       "Far Grille"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU13",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU15",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU15",
      "name": "Hall of Engines",
      "zoneCount": 6,
-     "bandStart": null,
+     "bandStart": 3784410000,
      "note": "Civilization II wing",
      "width": 30,
      "height": 20,
@@ -901,13 +1071,24 @@
       "The Far Doors",
       "Cooling Floor"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU14",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU16",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU16",
      "name": "The Map Room",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 3945250000,
      "note": "Civilization II wing",
      "width": 26,
      "height": 22,
@@ -921,13 +1102,24 @@
       "Boundary Stones",
       "The Plan"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU15",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU17",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU17",
      "name": "The Empire Rotunda",
      "zoneCount": 7,
-     "bandStart": null,
+     "bandStart": 4112920000,
      "note": "Civilization II wing — boss room",
      "width": 26,
      "height": 26,
@@ -943,7 +1135,13 @@
       "The Dais Steps",
       "Under the Dome"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU16",
+       "kind": "back",
+       "label": "back"
+      }
+     ]
     }
    ],
    "creatures": [
@@ -1230,7 +1428,7 @@
     "id": "MU17_Boss",
     "mapId": "MU17",
     "name": "The Survey",
-    "level": null,
+    "level": 4324610000,
     "blurb": "It is not a conqueror. It is the instrument that came after the conqueror and wrote down what was now whose. Everything in this wing is here because it decided the thing was worth measuring, and everything not here is here in some other building for the same reason.  Relic: The Line Drawn Through.",
     "relic": null
    }
@@ -1250,7 +1448,7 @@
      "id": "MU18",
      "name": "Conservation",
      "zoneCount": 6,
-     "bandStart": null,
+     "bandStart": 4508410000,
      "note": "Modern Area of Study wing",
      "width": 24,
      "height": 24,
@@ -1265,13 +1463,24 @@
       "The Consolidation Table",
       "Clean End"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU01",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU19",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU19",
      "name": "Accessions",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 4700020000,
      "note": "Modern Area of Study wing",
      "width": 28,
      "height": 20,
@@ -1285,13 +1494,24 @@
       "Pending Shelf",
       "Inner Door"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU18",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU20",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU20",
      "name": "Cold Storage",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 4899770000,
      "note": "Modern Area of Study wing",
      "width": 28,
      "height": 20,
@@ -1305,13 +1525,24 @@
       "Second Aisle",
       "The Far Lock"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU19",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU21",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU21",
      "name": "The Imaging Suite",
      "zoneCount": 6,
-     "bandStart": null,
+     "bandStart": 5108010000,
      "note": "Modern Area of Study wing",
      "width": 24,
      "height": 24,
@@ -1326,13 +1557,24 @@
       "Wash-up",
       "The Print Wall"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU20",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU22",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU22",
      "name": "The Archive Stacks",
      "zoneCount": 7,
-     "bandStart": null,
+     "bandStart": 5325100000,
      "note": "Modern Area of Study wing",
      "width": 24,
      "height": 28,
@@ -1348,13 +1590,24 @@
       "Run C",
       "The Top Shelf"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU21",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU23",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU23",
      "name": "The Reading Room",
      "zoneCount": 6,
-     "bandStart": null,
+     "bandStart": 5551420000,
      "note": "Modern Area of Study wing",
      "width": 26,
      "height": 22,
@@ -1369,13 +1622,24 @@
       "The Return Trolley",
       "Closed Access"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU22",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU24",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU24",
      "name": "The Catalogue",
      "zoneCount": 5,
-     "bandStart": null,
+     "bandStart": 5787360000,
      "note": "Modern Area of Study wing",
      "width": 30,
      "height": 20,
@@ -1389,13 +1653,24 @@
       "Cross-References",
       "The Authority File"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU23",
+       "kind": "back",
+       "label": "back"
+      },
+      {
+       "to": "MU25",
+       "kind": "onward",
+       "label": "onward"
+      }
+     ]
     },
     {
      "id": "MU25",
      "name": "The Study",
      "zoneCount": 8,
-     "bandStart": null,
+     "bandStart": 6033320000,
      "note": "Modern Area of Study wing — boss room",
      "width": 26,
      "height": 26,
@@ -1412,7 +1687,13 @@
       "The Sealed Arch",
       "The Subject"
      ],
-     "doors": []
+     "doors": [
+      {
+       "to": "MU24",
+       "kind": "back",
+       "label": "back"
+      }
+     ]
     }
    ],
    "creatures": [
@@ -1785,7 +2066,7 @@
     "id": "MU25_Boss",
     "mapId": "MU25",
     "name": "The Acquisitor",
-    "level": null,
+    "level": 6383540000,
     "blurb": "The museum does not have a curator. It has a mechanism that decides what it owns, and it has been running unattended for a very long time. You have walked through sixteen rooms of things it decided to keep. It is now deciding about you.  Relic: The Permanent Collection.",
     "relic": null
    }
