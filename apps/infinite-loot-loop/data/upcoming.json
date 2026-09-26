@@ -657,7 +657,7 @@
       "Grave Circle",
       "The Inner Goods",
       "Offering Shelf",
-      "The Interred"
+      "The Entombed"
      ],
      "doors": [
       {
@@ -952,7 +952,7 @@
    "boss": {
     "id": "MU11_Boss",
     "mapId": "MU11",
-    "name": "The Interred",
+    "name": "The Entombed",
     "level": 2010690000,
     "blurb": "The burial was lifted whole and put under glass with all of it still arranged exactly as found. Every object around it is labelled. The figure in the middle is not, because a person is not an object, and the museum has never been able to decide what that makes it.  Relic: Everything It Was Given.",
     "relic": null
