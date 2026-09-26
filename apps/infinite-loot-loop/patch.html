@@ -50,21 +50,23 @@
     <article class="prose patch-page">
       <div class="release-note">
         <strong>Current status</strong>
-        <span>The player-facing update is v5.5.0, live on the App Store and Google Play; a store rollout can trail one platform by a version. Historical project notes remain below for context; nothing unreleased is listed as live.</span>
+        <span>The player-facing update is v5.5.2, live on the App Store and Google Play; a store rollout can trail one platform by a version. Historical project notes remain below for context; nothing unreleased is listed as live.</span>
       </div>
 
       <div class="editorial-links" style="margin:0 0 1rem">
-        <a href="#v550"><strong>Live now &#183; v5.5.0</strong><span>Fast Travel, and a loot pass that lifts every drop rate in the game.</span></a>
-        <a href="#v500"><strong>Previously &#183; v5.0.0</strong><span>The Cloud Plaza opens, and Stone, Egypt and The Temple form a ring.</span></a>
+        <a href="#v552"><strong>Live now &#183; v5.5.2</strong><span>Stat allocation Confirm works again, and Android subscriptions stay on.</span></a>
+        <a href="#v550"><strong>Previously &#183; v5.5.0</strong><span>Fast Travel, and a loot pass that lifts every drop rate in the game.</span></a>
         <a href="#v500"><strong>Latest chapter &#183; The Circle</strong><span>Stone, Egypt and The Temple, walked as a loop from the Cloud Plaza.</span></a>
         <a href="#current-catalog"><strong>Current companion data</strong><span>1,255 monsters, 1,642 items, 40 bosses, and 139 maps.</span></a>
       </div>
 
       <div class="patch">
         <div class="rel" id="current-release">
-          <span class="date">Current live notice &#183; v5.5.0</span>
-          <h3>Fast Travel, and better loot everywhere</h3>
+          <span class="date">Live now &#183; v5.5.2</span>
+          <h3>Fast Travel, better loot, and two fixes you will feel</h3>
           <ul>
+            <li><strong>v5.5.2:</strong> the Confirm button on stat allocation commits your points again, and on Android a Battle Speed x2 or Remove Ads subscription is no longer switched off by a single failed store check.</li>
+            <li><strong>v5.5.1:</strong> keys work against the Stone, Egypt and Temple boss echoes in the Void, the Gold Draw favours gear you have never had, and a secret you already found now grants its achievement.</li>
             <li>Fast Travel: jump to any region you have already opened, straight from the menu. It unlocks when Death Mode does, and is not available during a Death run.</li>
             <li>Base drop rates are up across the board &#8212; field 3% &#8594; 5% (hard 2% &#8594; 3%), bosses 1% &#8594; 3% (hard 0.75% &#8594; 2%).</li>
             <li>Duplicates no longer choke a collection: the penalty for copies you already own is halved, and LUC pays far more for drops than it used to.</li>
@@ -87,8 +89,37 @@
           <h3>The Museum</h3>
           <ul>
             <li>One building, four wings, entered three times and left twice: <strong>The Atrium</strong> opens off the Cloud Plaza, and the Stone Age, Civilization I, Civilization II and the Modern Area of Study run off it as 25 rooms with a boss at the end of each wing.</li>
-            <li>The rooms are drawn; the monsters, gear and bosses are designed and not yet built. The atlas, monster, boss and item pages list them marked <em>Upcoming</em> so you can read what is coming, but none of it exists in the game yet.</li>
-            <li>No level or combat number is published for it, because none has been written &#8212; not a projection, not a placeholder.</li>
+            <li>The rooms are drawn and the monsters, gear and bosses are designed. The atlas, monster, boss and item pages list them marked <em>Upcoming</em> so you can read what is coming, but none of it is in the game yet.</li>
+            <li>The only numbers shown for it are the four wing bosses&#8217; levels, each marked <em>projected</em>. No combat number &#8212; HP, attack, drop rate &#8212; is published until the region ships.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="patch" id="v552">
+        <div class="rel">
+          <span class="date">2026-09-26 &#183; Version 5.5.2</span>
+          <h3>Stat points and subscriptions, fixed</h3>
+          <ul>
+            <li><strong>Fixed: stat allocation.</strong> Since v5.5.0 the Confirm button on the stat screen did nothing, so points you placed were never committed. It works again on both platforms.</li>
+            <li><strong>Fixed (Android): subscriptions switching themselves off.</strong> A Battle Speed x2 or Remove Ads subscription could be cancelled in the game by one failed check with Google Play &#8212; often the one that runs the moment the purchase sheet closes. A paid subscription now stays active through a failed check and ends only once the store has stopped confirming it.</li>
+            <li><strong>Settings &#8250; Data</strong> now shows each subscription&#8217;s status, so if a purchase ever does not apply, you can see where it stopped.</li>
+            <li>Android shipped 26 September; the iPhone and iPad update followed on 27 September.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="patch" id="v551">
+        <div class="rel">
+          <span class="date">2026-09-24 &#183; Version 5.5.1</span>
+          <h3>Void echoes, a fairer Gold Draw, and boss rewards corrected</h3>
+          <ul>
+            <li><strong>Fixed: keys in the Void.</strong> The Void&#8217;s echoes of The Unmoved, The Bound King and The Empty Seat had lost their monster type, so the Stone, Egypt and Temple keys did nothing against them. They count again.</li>
+            <li><strong>The Gold Draw prefers what you have never had.</strong> Gear you do not own yet is drawn about ten times as often as gear you already hold. Duplicates still turn up, just far less often.</li>
+            <li><strong>Boss rewards corrected.</strong> From the Graveyard onward, hard-mode bosses were paying gold and EXP far beyond what they were meant to &#8212; one kill could buy a later region&#8217;s shop. Every boss now pays in line with the zone it stands in; a handful of normal-mode bosses are trimmed too.</li>
+            <li><strong>Egypt and The Temple re-priced.</strong> Their gear costs more &#8212; about twice as much in Egypt and about ten times as much in The Temple &#8212; to match the pace of the ring.</li>
+            <li><strong>Fixed: secrets and their achievements.</strong> If you found a secret before its achievement existed, it now unlocks the next time you open the game.</li>
+            <li>The Cloud Plaza is shown by name in travel and leaderboard lists instead of as &#8220;CL01&#8221;.</li>
+            <li>Android: the game now also installs on older 32-bit (ARMv7) phones.</li>
           </ul>
         </div>
       </div>

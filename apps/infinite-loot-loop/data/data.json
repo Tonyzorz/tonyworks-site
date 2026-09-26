@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-23T05:30:20Z",
+  "generatedAt": "2026-09-26T18:43:32Z",
   "game": "Infinite Loot-Loop",
-  "gameVersion": "5.5.0",
+  "gameVersion": "5.5.2",
   "release": {
     "worldGateReleased": true,
     "mazeBatchReleased": true,
@@ -43269,7 +43269,7 @@
       "drops": [
         {
           "itemId": "ST03_Helmet",
-          "itemName": "Lintel Crown",
+          "itemName": "Dolmen Crown",
           "chance": 5
         }
       ],
@@ -55800,11 +55800,11 @@
       "image": "boss_ST08_TheUnmoved.png",
       "mapId": "ST08",
       "level": 45760000,
-      "hardModeLevel": 762230000,
+      "hardModeLevel": 0,
       "hp": 1.58e+42,
       "atk": 1.3000000000000001e+38,
-      "hardModeHp": 2.3699999999999997e+51,
-      "hardModeAtk": 4.82e+45,
+      "hardModeHp": 0,
+      "hardModeAtk": 0,
       "exp": 5720000000,
       "resists": {
         "critResist": 4131307.2,
@@ -55814,17 +55814,10 @@
         "armorPierce": 0.85,
         "weaken": 0.915
       },
-      "hardModeResists": {
-        "critResist": 41770410,
-        "comboResist": 6610527,
-        "dodgeResist": 549421.8,
-        "critMultResist": 480165.1,
-        "armorPierce": 0.885,
-        "weaken": 0.915
-      },
+      "hardModeResists": null,
       "dropItemId": "ST08_BossRelic",
       "dropItemName": "Heart of the Unmoved",
-      "hardModeDropItemId": "ST08_BossRelic_H",
+      "hardModeDropItemId": "",
       "bonusDropItemId": "",
       "dropChance": 1,
       "hardModeDropChance": 0.75
@@ -55849,14 +55842,7 @@
         "armorPierce": 0.865,
         "weaken": 0.915
       },
-      "hardModeResists": {
-        "critResist": 6010773,
-        "comboResist": 949844.6,
-        "dodgeResist": 78800.17,
-        "critMultResist": 68834.19,
-        "armorPierce": 0.865,
-        "weaken": 0.915
-      },
+      "hardModeResists": null,
       "dropItemId": "EG08_BossRelic",
       "dropItemName": "The Broken Seal",
       "hardModeDropItemId": "",
@@ -55884,14 +55870,7 @@
         "armorPierce": 0.88,
         "weaken": 0.915
       },
-      "hardModeResists": {
-        "critResist": 25945330,
-        "comboResist": 4103824.2,
-        "dodgeResist": 340851.9,
-        "critMultResist": 298125.03,
-        "armorPierce": 0.88,
-        "weaken": 0.915
-      },
+      "hardModeResists": null,
       "dropItemId": "BD08_BossRelic",
       "dropItemName": "The Unoccupied Crown",
       "hardModeDropItemId": "",
@@ -57367,7 +57346,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": false,
       "isBossItem": true,
@@ -57427,7 +57406,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": false,
       "isBossItem": true,
@@ -57487,7 +57466,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": false,
       "isBossItem": true,
@@ -57547,7 +57526,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": false,
       "isBossItem": true,
@@ -57609,7 +57588,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": false,
       "isBossItem": true,
@@ -67577,7 +67556,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": true,
       "isBossItem": true,
@@ -67589,7 +67568,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 100,
+      "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
         "HP +30%",
@@ -82052,7 +82031,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": true,
       "isBossItem": true,
@@ -82064,7 +82043,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 100,
+      "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
         "HP +35%",
@@ -85195,7 +85174,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": true,
       "isBossItem": true,
@@ -85207,7 +85186,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 100,
+      "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
         "HP +40%",
@@ -99968,7 +99947,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": true,
       "isBossItem": true,
@@ -99980,7 +99959,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 100,
+      "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
         "ATK +30%"
@@ -101722,7 +101701,7 @@
       "type": "Accessory",
       "setName": "",
       "isUnique": false,
-      "shopUnavailable": false,
+      "shopUnavailable": true,
       "hiddenFromCollection": false,
       "isHardModeItem": true,
       "isBossItem": true,
@@ -101734,7 +101713,7 @@
       "bonusDEF": 0,
       "bonusAGI": 0,
       "bonusLUC": 0,
-      "buyPrice": 100,
+      "buyPrice": 0,
       "maxCopies": 3,
       "effects": [
         "HP +45%",
@@ -105342,7 +105321,7 @@
     },
     {
       "id": "ST03_Helmet",
-      "name": "Lintel Crown",
+      "name": "Dolmen Crown",
       "description": "",
       "image": "item_ST03_Helmet.png",
       "rarity": "Legendary",
@@ -110241,6 +110220,11 @@
       "walkableCells": 5148,
       "blockedCells": 4068,
       "doors": [
+        {
+          "to": "MU01",
+          "label": "CL01_to_MU01",
+          "kind": "region"
+        },
         {
           "to": "ST01",
           "label": "CL01_to_ST01",

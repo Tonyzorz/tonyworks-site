@@ -187,12 +187,15 @@ const isHeldMuseum = (id, text) => {
   const m = text && text.match(/^\s*sourceRegion:\s*['"]?([A-Za-z0-9]+)/m);
   return !!(m && MUSEUM_PREFIX.test(m[1]));
 };
+// Every asset id a gate withheld. Anything PUBLISHED that points at one of these (an achievement's
+// requiredItems, a character's unlockAchievementID) is itself unreleased — see the achievement gate.
+const heldAssetIds = new Set();
 const loadCategory = (sub) => walk(path.join(SO, sub), (p) => p.endsWith(".asset"))
   .map((p) => ({ id: path.basename(p, ".asset"), text: read(p) }))
   .filter((a) => {
-    if (isHeldEpoch4(a.id, a.text)) { heldEpoch4Count++; return false; }
-    if (isHeldEpoch4Hard(a.id, a.text)) { heldEpoch4HardCount++; return false; }
-    if (isHeldMuseum(a.id, a.text)) { heldMuseumCount++; return false; }
+    if (isHeldEpoch4(a.id, a.text)) { heldEpoch4Count++; heldAssetIds.add(a.id); return false; }
+    if (isHeldEpoch4Hard(a.id, a.text)) { heldEpoch4HardCount++; heldAssetIds.add(a.id); return false; }
+    if (isHeldMuseum(a.id, a.text)) { heldMuseumCount++; heldAssetIds.add(a.id); return false; }
     return true;
   });
 
@@ -453,6 +456,14 @@ const bosses = loadCategory("Bosses").map((a) => {
 // (2026-09-01). While MazeHardReleased is false the wiki must keep showing "no hard data" for
 // them rather than leak the future numbers — mirror the runtime switch, as the shop guard does.
 function suppressUnreleasedHard(b) {
+  // ⛔ SAME SHAPE, EPOCH 4 (2026-09-27): the Stone / Egypt / Temple bosses are LIVE, but their
+  // hardMode* fields are the unreleased 6.0.0 hard legs — ST08 had already published its hard
+  // HP/ATK/level and its [H] relic id. The boss row stays; the hard half waits for Epoch4HardReleased.
+  if (!epoch4HardReleased && /^(ST|EG|BD)\d{2}$/.test(b.mapId || "")) {
+    b.hardModeLevel = 0; b.hardModeHp = 0; b.hardModeAtk = 0;
+    b.hardModeResists = null; b.hardModeDropItemId = "";
+    return b;
+  }
   if (mazeHardReleased) return b;
   if (!/^(MZ|IC|AM|AZ)\d{2}$/.test(b.mapId || "")) return b;
   b.hardModeLevel = 0; b.hardModeHp = 0; b.hardModeAtk = 0;
@@ -484,7 +495,22 @@ const characters = loadCategory("Characters").map((a) => {
   };
 });
 
-const achievements = loadCategory("Achievements").map((a) => {
+// ⛔★★★★ THE ACHIEVEMENT GATE (2026-09-27) — A HELD REGION'S ACHIEVEMENT WEARS NO REGION PREFIX.
+// `museum_circle_stones` ("The Four Circles": collect the four Museum circle stones -> Summoner) is
+// lower-case and region-less, so none of the prefix gates above can see it; the refresh would have
+// published a 6.0.0 achievement AND re-labelled the live Summoner as unlocked by it. The game's own
+// rule is `AchievementManager.IsHeld`: an achievement is held while ANY of its requiredItems is
+// unreleased content. This is that rule, keyed on what the gates above actually withheld.
+const requiredItemIds = (t) => {
+  const b = t.match(/^  requiredItems:\s*\n((?:  - .*\n?)+)/m);
+  return b ? [...b[1].matchAll(/guid:\s*([0-9a-f]+)/g)].map((m) => assetName(m[1])).filter(Boolean) : [];
+};
+const heldAchievementIds = new Set();
+const achievements = loadCategory("Achievements").filter((a) => {
+  if (!requiredItemIds(a.text).some((id) => heldAssetIds.has(id))) return true;
+  heldAchievementIds.add(field(a.text, "achievementID") || a.id);
+  return false;
+}).map((a) => {
   const t = a.text;
   return {
     id: field(t, "achievementID") || a.id, name: field(t, "displayName") || a.id, description: field(t, "description"),
@@ -493,6 +519,9 @@ const achievements = loadCategory("Achievements").map((a) => {
     targetValue: num(t, "targetValue"), statBonus: num(t, "statBonus")
   };
 });
+// A live character whose unlock now points at a held achievement shows its LIVE unlock (none) —
+// the game hides that row too while the achievement is held.
+for (const c of characters) if (heldAchievementIds.has(c.unlockAchievementID)) c.unlockAchievementID = "";
 
 function block(t, key, endKeys) {
   const start = t.indexOf("\n  " + key + ":"); if (start < 0) return "";
@@ -1121,4 +1150,5 @@ console.log("Wrote data.json", root.counts, "images:", imagesWritten);
 console.log(`Troll collectibles withheld: ${trollItemIds.size} item(s), ${trollIconsRemoved} icon(s) removed from assets/img.`);
 console.log(epoch4Released ? "Epoch 4: PUBLISHED (SITE_LIVE_RELEASE=epoch4=1 or the flag flipped)" : `Epoch 4: HELD — ${heldEpoch4Count} asset(s) withheld from the public wiki.`);
 console.log(epoch4HardReleased ? "Epoch 4 HARD: PUBLISHED (SITE_LIVE_RELEASE=epoch4hard=1 or the flag flipped)" : `Epoch 4 HARD: HELD — ${heldEpoch4HardCount} asset(s) withheld from the public wiki.`);
+console.log(`Achievements: HELD — ${heldAchievementIds.size} require unreleased items${heldAchievementIds.size ? " (" + [...heldAchievementIds].join(", ") + ")" : ""}.`);
 console.log(museumReleased ? "Museum: PUBLISHED (SITE_LIVE_RELEASE=museum=1 or the flag flipped)" : `Museum: HELD — ${heldMuseumCount} asset(s) withheld from the public wiki.`);
