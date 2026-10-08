@@ -240,12 +240,10 @@
 
   /* ---------- canonical ordered lists (shared by list + detail prev/next) ---------- */
   function monsterList(d) {
-    var seen = {};
     // Only real, in-game monsters: spawn in a live zone (have a world) and not an HM_T* tier
     // stat-template (the real hard monsters are the "_H" mirrors). Drops legacy/orphan junk too.
     return d.enemies.filter(function (e) { return e.worlds && e.worlds.length && !/^HM_T/.test(e.id); })
-      .sort(function (a, b) { return (a.minLevel - b.minLevel) || String(a.name).localeCompare(String(b.name)); })
-      .filter(function (e) { var k = e.name; if (seen[k]) return false; seen[k] = 1; return true; });
+      .sort(function (a, b) { return (a.minLevel - b.minLevel) || String(a.name).localeCompare(String(b.name)) || a.id.localeCompare(b.id); });
   }
   function bossList(d) { return d.bosses.slice().sort(function (a, b) { return a.level - b.level; }); }
   function itemPrimaryStat(i) {
@@ -625,6 +623,27 @@
     }
   };
 
+  function catalogCodes(item) { return Array.from(new Set((item.dropAreas || []).concat(item.shopAreas || [],item.sourceRegion || []))); }
+  function catalogAreaFilters(d,codes) {
+    var areas = {}; (d.areas || []).forEach(function(a) { areas[a.code]=a; });
+    return [
+      {key:"world",label:"Region",values:Array.from(new Set((d.areas || []).map(function(a) { return a.world; }))),get:function(x) { return Array.from(new Set(codes(x).map(function(c) { return areas[c] && areas[c].world; }).filter(Boolean))); }},
+      {key:"area",label:"Map",dependsOn:"world",options:(d.areas || []).map(function(a) { return {value:a.code,label:a.name+" ("+a.code+")",group:a.world}; }),get:codes}
+    ];
+  }
+  function catalogLocation(d,codes) {
+    var names=areaNames(d,codes), text=names.slice(0,2).join(", ");
+    if(names.length>2) text+=" +"+(names.length-2);
+    return '<span class="catalog-location" title="'+esc(names.join(', '))+'">'+esc(text || "\u2014")+'</span>';
+  }
+  function catalogNameCell(page,x) { return '<a class="catalog-name" href="'+page+'?id='+encodeURIComponent(x.id)+'">'+thumb(x.image,x.name)+'<strong>'+esc(x.name)+'</strong></a>'; }
+  function catalogNumeric(field) { return function(a,b) { return (Number(a[field]) || 0)-(Number(b[field]) || 0) || String(a.name).localeCompare(String(b.name)); }; }
+  function catalogRouteCompare(d,codes) {
+    var rank={}; (d.areas || []).forEach(function(a,i) { rank[a.code]=i; });
+    function first(x) { return Math.min.apply(Math,codes(x).map(function(c) { return rank[c] == null ? 9999 : rank[c]; }).concat(9999)); }
+    return function(a,b) { return first(a)-first(b) || String(a.name).localeCompare(String(b.name)); };
+  }
+
   /* ---- Monsters ---- */
   PAGES.monsters = function (app, d) {
     var id = param("id");
@@ -641,12 +660,25 @@
         { label: "Hard Mode", mode: "hard", test: function (e) { return isHardEnemy(e); } }
       ],
       search: function (e) { return e.name + " " + e.id + " " + (e.worlds || []).join(" ") + " " + areaNames(d, e.areas).join(" "); },
-      filters: [
-        { key: "area", label: "Area",
-          options: (d.areas || []).map(function (a) {
-            return { value: a.code, label: a.name + " (" + a.code + ")", group: a.world };
-          }),
-          get: function (e) { return e.areas || []; } }
+      filters: catalogAreaFilters(d,function(e) { return e.areas || []; }),
+      defaultSort: "level",
+      sorts: [
+        {key:"level",label:"Level",compare:catalogNumeric("minLevel")},
+        {key:"name",label:"Name",compare:function(a,b) { return a.name.localeCompare(b.name); }},
+        {key:"route",label:"Route order",compare:catalogRouteCompare(d,function(e) { return e.areas || []; })},
+        {key:"hp",label:"HP",compare:catalogNumeric("hpMin")},
+        {key:"atk",label:"ATK",compare:catalogNumeric("atkMin")},
+        {key:"exp",label:"EXP",compare:catalogNumeric("expMin")},
+        {key:"gold",label:"Gold",compare:catalogNumeric("goldMin")}
+      ],
+      columns: [
+        {label:"Monster",sort:"name",render:function(e) { return catalogNameCell("monsters.html",e); }},
+        {label:"Map",sort:"route",render:function(e) { return catalogLocation(d,e.areas || []); }},
+        {label:"Level",sort:"level",numeric:true,render:function(e) { return rng(e.minLevel,e.maxLevel); }},
+        {label:"HP",sort:"hp",numeric:true,render:function(e) { return rng(e.hpMin,e.hpMax); }},
+        {label:"ATK",sort:"atk",numeric:true,render:function(e) { return rng(e.atkMin,e.atkMax); }},
+        {label:"EXP",sort:"exp",numeric:true,render:function(e) { return rng(e.expMin,e.expMax); }},
+        {label:"Gold",sort:"gold",numeric:true,render:function(e) { return rng(e.goldMin,e.goldMax); }}
       ],
       card: function (e) {
         // Show the exact maps it spawns on (Dark Forest), not just the world (Forest).
@@ -826,24 +858,36 @@
         { label: "Normal Mode", mode: "normal", test: function (i) { return !i.isHardModeItem; } },
         { label: "Hard Mode", mode: "hard", test: function (i) { return i.isHardModeItem; } }
       ],
-      search: function (i) { return i.name + " " + i.id + " " + (i.setName || ""); },
+      search: function(i) { return i.name+" "+i.id+" "+(i.setName || "")+" "+(i.effects || []).join(" ")+" "+areaNames(d,catalogCodes(i)).join(" "); },
       filters: [
-        { key: "type",   label: "Type",   values: types,              get: function (i) { return i.type; } },
-        { key: "rarity", label: "Rarity", values: rarities,           get: function (i) { return i.rarity; } },
-        // Where can I get this? Matches field drops, boss rewards AND shop stock for the area.
-        { key: "area", label: "Area",
-          options: (d.areas || []).map(function (a) {
-            return { value: a.code, label: a.name + " (" + a.code + ")", group: a.world };
-          }),
-          get: function (i) { return (i.dropAreas || []).concat(i.shopAreas || []); } }
-      ],
-      defaultSort: "primary-asc",
+        {key:"type",label:"Type",values:types,get:function(i) { return i.type; }},
+        {key:"rarity",label:"Rarity",values:rarities,get:function(i) { return i.rarity; }}
+      ].concat(catalogAreaFilters(d,catalogCodes)),
+      defaultSort: "route",
       sorts: [
-        { key: "primary-asc", label: "Main stat: Low to high", compare: itemStatCompare("primary", 1) },
-        { key: "atk-asc", label: "ATK: Low to high", compare: itemStatCompare("bonusATK", 1) },
-        { key: "atk-desc", label: "ATK: High to low", compare: itemStatCompare("bonusATK", -1) },
-        { key: "hp-asc", label: "HP: Low to high", compare: itemStatCompare("bonusHP", 1) },
-        { key: "hp-desc", label: "HP: High to low", compare: itemStatCompare("bonusHP", -1) }
+        {key:"route",label:"Route order",compare:catalogRouteCompare(d,catalogCodes)},
+        {key:"name",label:"Name",compare:function(a,b) { return a.name.localeCompare(b.name); }},
+        {key:"type",label:"Type",compare:function(a,b) { return types.indexOf(a.type)-types.indexOf(b.type); }},
+        {key:"rarity",label:"Rarity",compare:function(a,b) { return rarities.indexOf(a.rarity)-rarities.indexOf(b.rarity); }},
+        {key:"primary",label:"Main stat",compare:itemStatCompare("primary",1)},
+        {key:"hp",label:"HP",compare:catalogNumeric("bonusHP")},
+        {key:"atk",label:"ATK",compare:catalogNumeric("bonusATK")},
+        {key:"def",label:"DEF",compare:catalogNumeric("bonusDEF")},
+        {key:"agi",label:"AGI",compare:catalogNumeric("bonusAGI")},
+        {key:"luc",label:"LUC",compare:catalogNumeric("bonusLUC")},
+        {key:"price",label:"Price",compare:catalogNumeric("buyPrice")}
+      ],
+      columns: [
+        {label:"Item",sort:"name",render:function(i) { return catalogNameCell("items.html",i); }},
+        {label:"Type",sort:"type",render:function(i) { return esc(i.type); }},
+        {label:"Rarity",sort:"rarity",render:function(i) { return '<span style="color:'+rarColor(i.rarity)+'">'+esc(i.rarity)+'</span>'; }},
+        {label:"Map",sort:"route",render:function(i) { return catalogLocation(d,catalogCodes(i)); }},
+        {label:"HP",sort:"hp",numeric:true,render:function(i) { return fmt(i.bonusHP); }},
+        {label:"ATK",sort:"atk",numeric:true,render:function(i) { return fmt(i.bonusATK); }},
+        {label:"DEF",sort:"def",numeric:true,render:function(i) { return fmt(i.bonusDEF); }},
+        {label:"AGI",sort:"agi",numeric:true,render:function(i) { return fmt(i.bonusAGI); }},
+        {label:"LUC",sort:"luc",numeric:true,render:function(i) { return fmt(i.bonusLUC); }},
+        {label:"Price",sort:"price",numeric:true,render:function(i) { return (i.shopAreas || []).length && !i.shopUnavailable ? fmt(i.buyPrice) : "\u2014"; }}
       ],
       card: function (i) {
         var mainLabel = itemPrimaryLabel(i), mainValue = itemPrimaryStat(i);
@@ -1382,7 +1426,7 @@
       '<span class="wname">' + esc(w) + "</span><span class=\"wmeta\">" + sub + "</span>";
     if (opts.locked) return '<div class="wnode locked" style="--wc:' + meta.color + '">' + inner + "</div>";
     var cls = "wnode" + (opts.secret ? " secret" : "") + (opts.upcoming ? " planned" : "");
-    return '<a class="' + cls + '" style="--wc:' + meta.color + '" href="maps.html?world=' + encodeURIComponent(w) + '&mode=' + mode + '">' + inner + "</a>";
+    return '<a data-world="' + esc(w) + '" class="' + cls + '" style="--wc:' + meta.color + '" href="maps.html?world=' + encodeURIComponent(w) + '&mode=' + mode + '">' + inner + "</a>";
   }
   // Region codes -> their map names ("FR02" -> "Dark Forest").
   function areaNames(d, codes) {
@@ -1444,104 +1488,26 @@
                   "Korea", "London", "Monochrome",
                   // Epoch 4 wave 1 - planned, behind the WEST door of the World Gate.
                   "Cloud Plaza", "Stone", "Egypt", "The Temple", "Museum", "Mexico", "Candy", "SuperMarket"];
-    var worldGateUpcoming = !(d.release && d.release.worldGateReleased);
-    var mazeBatchUpcoming = !(d.release && d.release.mazeBatchReleased);
-    var graveyardUpcoming = !(d.release && d.release.graveyardReleased);
-    var koreaUpcoming = !(d.release && d.release.koreaReleased);
-    var londonUpcoming = !(d.release && d.release.londonReleased);
-    var monochromeUpcoming = !(d.release && d.release.monochromeReleased);
-    app.innerHTML =
-      pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", live(d.maps).length) +
-      modeTabsHtml(mode, null, "Map data mode") +
-      '<div class="view-switch" role="group" aria-label="World view"><button type="button" data-view="map">Map</button><button type="button" data-view="list">List</button></div>' +
-      '<div class="world-view" data-panel="map"><div class="worldmap"><div class="wm-grid">' +
-        '<div class="wm-cell" style="grid-area:uw">'     + wnode(d, "Underwater") + '</div>' +
-        '<div class="wm-conn v" style="grid-area:vu"></div>' +
-        '<div class="wm-cell" style="grid-area:volc">'   + wnode(d, "Volcanic") + '</div>' +
-        '<div class="wm-conn h" style="grid-area:h2"></div>' +
-        '<div class="wm-cell" style="grid-area:forest">' + wnode(d, "Forest") + '</div>' +
-        '<div class="wm-conn h" style="grid-area:h3"></div>' +
-        '<div class="wm-cell" style="grid-area:gl">'     + wnode(d, "Grassland") + '</div>' +
-        '<div class="wm-conn h" style="grid-area:h4"></div>' +
-        '<div class="wm-cell" style="grid-area:desert">' + wnode(d, "Desert") + '</div>' +
-        '<div class="wm-conn v" style="grid-area:vd"></div>' +
-        '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate", { upcoming: worldGateUpcoming }) + '</div>' +
-        // ★ THE WEST DOOR. The hub already has a "Coming Soon" stub on its LEFT side
-        // (CV01_to_WestGate), directly opposite the Graveyard door on its right. Epoch 4 wave 1
-        // claims it: a stair up to the Cloud Plaza, a second hub town, which then opens onto
-        // Stone, Egypt and The Temple. Drawn dashed because NONE of it is built yet - the whole
-        // rail is planned content, and the nodes say Upcoming.
-        // ⚠ Stone/Egypt/Temple also ring to EACH OTHER in the design (three two-way doors). The
-        // compass draws the hub rail only; the ring edges are walls in one direction and a
-        // walk-back in the other, so a rail reads truer here than a triangle would.
-        '<div class="wm-conn h dashed" style="grid-area:hcl"></div>' +
-        '<div class="wm-cell" style="grid-area:cl">'     + wnode(d, "Cloud Plaza") + '</div>' +
-        '<div class="wm-conn v dashed" style="grid-area:clbus"></div>' +
-        '<div class="wm-cell" style="grid-area:st">'     + wnode(d, "Stone") + '</div>' +
-        '<div class="wm-cell" style="grid-area:eg">'     + wnode(d, "Egypt") + '</div>' +
-        '<div class="wm-cell" style="grid-area:bd">'     + wnode(d, "The Temple") + '</div>' +
-        // ★ THE MUSEUM (6.0.0) HANGS STRAIGHT DOWN OFF THE CLOUD PLAZA, and the line says so.
-        // Its entry is CL01 (`r_mu.js: plaza: 'CL01'`), NOT the ring — MU01's own south door goes to
-        // the Cloud Plaza and nowhere else. A first cut put it at the bottom of the ring's bus with a
-        // horizontal stub, which drew a line that read "Temple → Museum" and placed it far below
-        // where it belongs. Own connector, own column, directly under the plaza.
-        // ⛔ THIS CELL IS THE WHOLE REASON IT APPEARS AT ALL. The atlas is a hand-written grid of
-        // `wnode(d, "<world>")` calls; a world the data knows about and this list does not renders on
-        // NO page, which is exactly how the Museum shipped invisible on 2026-09-23. Adding a world to
-        // upcoming.json is never enough — add the cell here and its `grid-area` in style.css.
-        '<div class="wm-conn v dashed" style="grid-area:clmu"></div>' +
-        '<div class="wm-cell" style="grid-area:mu">'     + wnode(d, "Museum") + '</div>' +
-        // ★ THE RING. Stone, Egypt and The Temple are not just three spurs off the plaza — each
-        // has two-way doors to the other two, so the circle can be walked in either direction
-        // (ST01 west->BD01 / east->EG01, EG01 west->ST01 / east->BD01, BD01 west->EG01 /
-        // east->ST01, straight out of Tools/epoch4_blueprint/maps.js). A bracket joining all
-        // three says that without pretending a vertical rail is a triangle.
-        '<div class="wm-conn v dashed" style="grid-area:ring" role="img" aria-label="Stone, Egypt and The Temple also connect directly to one another"' +
-          ' title="Ring doors: Stone, Egypt and The Temple each connect directly to the other two"></div>' +
-        '<div class="wm-conn h dashed" style="grid-area:rs1"></div>' +
-        '<div class="wm-conn h dashed" style="grid-area:rs2"></div>' +
-        '<div class="wm-conn h dashed" style="grid-area:rs3"></div>' +
-        // ★ The Graveyard sits LITERALLY to the World Gate's right — the hub's right-hand side
-        // opens into it in the game, so the atlas draws it that way (owner, 2026-09-01).
-        // ⚠ NOT A CORRIDOR — Korea, London and Monochrome are NOT entered through one another.
-        // Each has its OWN door inside the Graveyard (Korea from GY09 on the surface loop,
-        // London from GY05 in the catacombs, Monochrome from GY07 in the deep vault), so the
-        // atlas hangs all three off ONE rail from the Graveyard node. Only the monster-level
-        // ladder makes Korea the practical first stop (964K -> 1.86M -> 4.8M); difficulty is
-        // the only gate. The per-world pages show the exact doors.
-        '<div class="wm-conn h" style="grid-area:hgy"></div>' +
-        '<div class="wm-cell" style="grid-area:gy">'     + wnode(d, "Graveyard", { upcoming: graveyardUpcoming }) + '</div>' +
-        '<div class="wm-conn v" style="grid-area:gybus"></div>' +
-        '<div class="wm-cell" style="grid-area:kr">'     + wnode(d, "Korea", { upcoming: koreaUpcoming }) + '</div>' +
-        '<div class="wm-cell" style="grid-area:ld">'     + wnode(d, "London", { upcoming: londonUpcoming }) + '</div>' +
-        '<div class="wm-cell" style="grid-area:px">'     + wnode(d, "Monochrome", { upcoming: monochromeUpcoming }) + '</div>' +
-        // The World Gate fans out to its four live regions and the Maze. The Maze then
-        // opens the Ice, America and Amazon routes through its three gate halls.
-        // ★ THE HUB TREE. `vg` runs straight down the World Gate's own column past both rails;
-        // the Maze sits on the end of it, with Ice / America / Amazon under the Maze. `hwg` turns
-        // left off the SAME trunk and `vwg` carries on down to the four themed regions, so their
-        // line visibly starts at the World Gate and passes BESIDE the Maze cluster rather than
-        // through it — no caption needed, and it cannot be misread as hanging off the Amazon.
-        '<div class="wm-trunk" aria-hidden="true"></div>' +
-        '<div class="wm-cell" style="grid-area:mz">' + wnode(d, "Maze", { upcoming: mazeBatchUpcoming }) + '</div>' +
-        '<div class="wm-conn v" style="grid-area:vmz"></div>' +
-        '<div class="wm-branch" style="grid-area:mzk"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
-          ["Ice", "America", "Amazon"].map(function (w) {
-            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: mazeBatchUpcoming }) + "</div>";
-          }).join("") +
-        '</div></div>' +
-
-        '<div class="wm-branch" style="grid-area:wg"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
-          ["Japan", "Greek", "Military", "Heaven"].map(function (w) {
-            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: worldGateUpcoming }) + "</div>";
-          }).join("") +
-        '</div></div>' +
-      '</div></div><section class="editorial-links" aria-label="Cloud Plaza routes">' + ["Museum", "Mexico", "Candy", "SuperMarket"].map(function(w) { var routeMode = w === "Museum" ? mode : "normal"; return '<a href="maps.html?world=' + encodeURIComponent(w) + '&mode=' + routeMode + '"><strong>' + w + '</strong><span>From Cloud Plaza &middot; ' + (routeMode === "hard" ? "Hard" : "Normal") + ' Mode</span></a>'; }).join("") + '</section><p class="route-note">Cloud Plaza connects to Stone, Egypt, The Temple, the Museum, Mexico, Candy and SuperMarket. Switch modes to see the available maps and routes. Museum Hard has four different wings. Drag the map to look around.</p></div>' +
-      // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
-      // grouped under its world. The compass graph above stays world-level.
-      '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {
-        return areaRows(d, w, mode);
-      }).join("") + '</div>';
+    d.maps.forEach(function(m) { if (worlds.indexOf(m.world)<0) worlds.push(m.world); });
+    worlds = worlds.filter(function(w) { return worldStats(d,w,mode).maps.length; });
+    var positions = {"Underwater":[11,1],"Volcanic":[7,3],"Forest":[9,3],"Grassland":[11,3],"Desert":[13,3],"World Gate":[11,5],"Cloud Plaza":[5,5],"Stone":[3,5],"Egypt":[3,7],"The Temple":[3,9],"Museum":[5,7],"Mexico":[7,7],"Candy":[5,9],"SuperMarket":[7,9],"Graveyard":[13,5],"Korea":[15,5],"London":[15,7],"Monochrome":[15,9],"Maze":[11,9]};
+    var branches = {wg:["Japan","Greek","Military","Heaven"],mzk:["Ice","America","Amazon"]};
+    var nodes = worlds.filter(function(w) { return positions[w]; }).map(function(w) {
+      var pos = positions[w];
+      return '<div class="wm-cell" style="grid-column:'+pos[0]+';grid-row:'+pos[1]+'">'+wnode(d,w,{mode:mode})+'</div>';
+    }).join('');
+    Object.keys(branches).forEach(function(key) {
+      nodes += '<div class="wm-branch-row" style="grid-column:9 / 14;grid-row:'+(key === 'wg' ? 7 : 11)+'">'+branches[key].filter(function(w) { return worlds.indexOf(w)>=0; }).map(function(w) { return wnode(d,w,{mode:mode}); }).join('')+'</div>';
+    });
+    var placed = Object.keys(positions).concat(branches.wg,branches.mzk);
+    worlds.filter(function(w) { return placed.indexOf(w)<0; }).forEach(function(w,i) {
+      nodes += '<div class="wm-cell" style="grid-column:'+(3+i%3*2)+';grid-row:'+(13+Math.floor(i/3)*2)+'">'+wnode(d,w,{mode:mode})+'</div>';
+    });
+    app.innerHTML = pageHero("maps.html","World Map","Every region, connected. Choose a world to trace its maps and bosses.",d.maps.filter(function(m) { return availableIn(m,mode); }).length) +
+      modeTabsHtml(mode,null,"Map data mode") +
+      '<div class="atlas-tools"><div class="view-switch" role="group" aria-label="World view"><button type="button" data-view="map">Map</button><button type="button" data-view="list">List</button></div><label class="atlas-focus"><span>Focus region</span><select data-atlas-focus aria-label="Focus region">'+worlds.map(function(w) { return '<option value="'+esc(w)+'"'+(w==='World Gate'?' selected':'')+'>'+esc(w)+'</option>'; }).join('')+'</select></label><button type="button" class="atlas-jump" data-focus="Cloud Plaza">Cloud Plaza routes</button></div>' +
+      '<div class="world-view" data-panel="map"><div class="worldmap"><div class="wm-grid"><svg class="world-connections" aria-hidden="true"></svg>'+nodes+'</div></div><p class="route-note">Lines follow the public in-game doors for the selected mode. Arrows mark one-way travel. Drag to explore or choose a region above.</p></div>' +
+      '<div class="world-view region-list" data-panel="list">'+worlds.map(function(w) { return areaRows(d,w,mode); }).join('')+'</div>';
     var stored; try { stored = localStorage.getItem("tw-map-view"); } catch (_) {}
     var view = stored || (window.innerWidth <= 640 ? "list" : "map");
     function setView(v) {
@@ -1555,6 +1521,7 @@
       // First time the map panel becomes visible, open it centered (centering while the panel
       // is display:none is a no-op because scrollWidth reads 0).
       if (v === "map") {
+        window.TWAtlas.drawWorld(app,d,mode);
         var wmc = app.querySelector(".worldmap");
         if (wmc && !wmc._centered && wmc.clientWidth > 0) {
           wmc.scrollLeft = (wmc.scrollWidth - wmc.clientWidth) / 2;
@@ -1563,6 +1530,18 @@
       }
     }
     Array.prototype.forEach.call(app.querySelectorAll("[data-view]"), function (b) { b.onclick = function () { setView(b.getAttribute("data-view")); }; }); setView(view);
+
+    function focusWorld(world) {
+      setView("map");
+      var wm = app.querySelector(".worldmap"), node = Array.prototype.find.call(app.querySelectorAll("[data-world]"),function(el) { return el.getAttribute("data-world")===world; });
+      if (!wm || !node) return;
+      var r = node.getBoundingClientRect(), viewport = wm.getBoundingClientRect();
+      wm.scrollTo({left:wm.scrollLeft+r.left-viewport.left-(wm.clientWidth-r.width)/2,top:wm.scrollTop+r.top-viewport.top-50,behavior:"smooth"});
+      wm.scrollIntoView({block:"start",behavior:"smooth"});
+      app.querySelector("[data-atlas-focus]").value=world;
+    }
+    app.querySelector("[data-atlas-focus]").addEventListener("change",function(e) { focusWorld(e.target.value); });
+    app.querySelector("[data-focus]").addEventListener("click",function() { focusWorld("Cloud Plaza"); });
     // Grab-to-pan (owner, 2026-09-01: "make the maps moveable maybe by dragging"). The atlas is
     // wider than the page on purpose; the viewport pans with a mouse grab, the scrollbar is
     // hidden, and the view opens centered. A grab that actually moved swallows the next click
@@ -1707,42 +1686,7 @@
       (w === "Museum" ? museumGuide(mode) : "") +
       '<div class="mchain' + (horizontal ? " h" : "") + '" style="--wc:' + meta.color + '"><svg class="mconn-svg" aria-hidden="true"></svg>' + html + '</div>';
     wireModeTabs(app, mode, function (next) { worldView(app, d, w, next); });
-    drawRouteConnectors(app, route);
-  }
-  // Draw one line per route edge, from parent node centre to child node centre, on an SVG
-  // overlay behind the (opaque) map cards. Uses offset coords so it survives horizontal scroll,
-  // and redraws on resize / after thumbnails load. This is what makes every branch visible
-  // (e.g. Shallow Coral Reef -> Coral Maze / Sunken Temple Gate / Deep Trench), not just a chain.
-  function drawRouteConnectors(app, route) {
-    var chain = app.querySelector(".mchain");
-    if (!chain || !route) return;
-    var svg = chain.querySelector(".mconn-svg");
-    if (!svg) return;
-    function centre(id) {
-      var el = chain.querySelector('[data-mid="' + id + '"]');
-      return el ? { x: el.offsetLeft + el.offsetWidth / 2, y: el.offsetTop + el.offsetHeight / 2 } : null;
-    }
-    function draw() {
-      var W = chain.scrollWidth, H = chain.scrollHeight;
-      svg.setAttribute("viewBox", "0 0 " + W + " " + H);
-      svg.style.width = W + "px"; svg.style.height = H + "px";
-      var lines = "";
-      Object.keys(route.edges || {}).forEach(function (p) {
-        var pc = centre(p); if (!pc) return;
-        (route.edges[p] || []).forEach(function (c) {
-          var cc = centre(c); if (!cc) return;
-          lines += '<line x1="' + pc.x + '" y1="' + pc.y + '" x2="' + cc.x + '" y2="' + cc.y + '"/>';
-        });
-      });
-      svg.innerHTML = lines;
-    }
-    requestAnimationFrame(draw);
-    Array.prototype.forEach.call(chain.querySelectorAll("img"), function (im) {
-      if (!im.complete) im.addEventListener("load", function () { requestAnimationFrame(draw); }, { once: true });
-    });
-    if (drawRouteConnectors._rz) window.removeEventListener("resize", drawRouteConnectors._rz);
-    var t; drawRouteConnectors._rz = function () { clearTimeout(t); t = setTimeout(draw, 120); };
-    window.addEventListener("resize", drawRouteConnectors._rz);
+    window.TWAtlas.drawMaps(app,s.maps,mode);
   }
   var RELEASE_COPY = {
   "museumNormal": "The Atrium leads through Stone Age, Civilization I, Civilization II and the Modern Area of Study. Bring Burn Resist against burning exhibits and Slow Heal against regenerating exhibits. Hard Mode uses four different wings.",
@@ -1761,7 +1705,27 @@
   "future2": "Future 2",
   "mexico": "Mexico",
   "candy": "Candy",
-  "market": "SuperMarket"
+  "market": "SuperMarket",
+  "focusRegion": "Focus region",
+  "cloudRoutes": "Cloud Plaza routes",
+  "doorLines": "Lines follow the public in-game doors for the selected mode. Arrows mark one-way travel. Drag to explore or choose a region above.",
+  "sortBy": "Sort by",
+  "routeOrder": "Route order",
+  "mainStat": "Main stat",
+  "sortAscending": "Sort ascending",
+  "sortDescending": "Sort descending",
+  "ascending": "Ascending",
+  "descending": "Descending",
+  "table": "Table",
+  "cards": "Cards",
+  "resetFilters": "Reset filters",
+  "catalogView": "Catalog view",
+  "monster": "Monster",
+  "price": "Price",
+  "type": "Type",
+  "map": "Map",
+  "region": "Region",
+  "name": "Name"
 };
   function museumGuide(mode) {
     return '<div class="notice"><strong>Museum ' + (mode === "hard" ? 'Hard' : 'Normal') + '</strong><p>' +
@@ -2053,166 +2017,103 @@
   }
 
   function listView(app, d, cfg) {
-    var active = {}; (cfg.filters || []).forEach(function (f) { active[f.key] = null; });
-    var q = "", tabIdx = 0;
-    var preferredMode = selectedGameMode("normal");
-    if (cfg.tabs) {
-      var preferredTab = cfg.tabs.findIndex(function (t) { return t.mode === preferredMode; });
-      if (preferredTab >= 0) tabIdx = preferredTab;
-    }
-    var sortKey = cfg.defaultSort || (cfg.sorts && cfg.sorts.length ? cfg.sorts[0].key : "");
-    // Remember tab / search / filters / scroll per page so Back returns to the same view.
-    var SKEY = "tw-list:" + cfg.page;
-    var saved = {}, back = isBackNav();
-    try { saved = JSON.parse(sessionStorage.getItem(SKEY) || "{}") || {}; } catch (e) {}
-    // Only restore the saved view (tab / search / filters / scroll) on Back/Forward. A fresh nav
-    // click (e.g. Items -> Monsters) starts clean: default tab, no filters, top of page.
+    var active = {}, q = "", tabIdx = 0, preferredMode = selectedGameMode("normal");
+    (cfg.filters || []).forEach(function(f) { active[f.key] = null; });
+    if (cfg.tabs) { var preferred = cfg.tabs.findIndex(function(t) { return t.mode === preferredMode; }); if (preferred >= 0) tabIdx = preferred; }
+    var sortKey = cfg.defaultSort || (cfg.sorts && cfg.sorts.length ? cfg.sorts[0].key : ""), direction = 1;
+    var layout = cfg.columns && window.innerWidth > 640 ? "table" : "cards";
+    var SKEY = "tw-list:" + cfg.page, saved = {}, back = isBackNav();
+    try { saved = JSON.parse(sessionStorage.getItem(SKEY) || "{}") || {}; layout = cfg.columns && localStorage.getItem(SKEY+":layout") || layout; } catch(e) {}
+    if (layout !== "table" || !cfg.columns) layout = "cards";
     if (back) {
-      if (cfg.tabs && typeof saved.tab === "number" && saved.tab >= 0 && saved.tab < cfg.tabs.length) tabIdx = saved.tab;
+      if (cfg.tabs && saved.tab >= 0 && saved.tab < cfg.tabs.length) tabIdx = saved.tab;
       if (typeof saved.q === "string") q = saved.q;
-      if (saved.filters) for (var fk in saved.filters) if (fk in active) active[fk] = saved.filters[fk];
-      if (cfg.sorts && cfg.sorts.some(function (s) { return s.key === saved.sort; })) sortKey = saved.sort;
+      if (saved.filters) Object.keys(active).forEach(function(k) { active[k] = saved.filters[k] || null; });
+      if (cfg.sorts && cfg.sorts.some(function(sort) { return sort.key === saved.sort; })) sortKey = saved.sort;
+      if (saved.direction === -1) direction = -1;
     }
-    var modeTabSet = cfg.tabs && cfg.tabs.some(function (t) { return !!t.mode; });
-    var tabsHtml = cfg.tabs ? '<div class="tabs' + (modeTabSet ? ' mode-tabs' : '') + '" id="tabs" role="tablist" aria-label="' +
-      esc(modeTabSet ? "Game mode" : cfg.title + " categories") + '">' + cfg.tabs.map(function (t, i) {
-      return '<button type="button" class="tab' + (modeTabSet ? ' mode-tab' : '') + (i === tabIdx ? " active" : "") +
-        '" data-i="' + i + '"' + (t.mode ? ' data-game-mode="' + esc(t.mode) + '"' : '') + ' role="tab" aria-selected="' +
-        (i === tabIdx ? "true" : "false") + '">' + esc(t.label) + "</button>";
-    }).join("") + "</div>" : "";
-    app.innerHTML = pageHero(cfg.page, cfg.title, cfg.subtitle, cfg.items.length) +
-      '<div class="catalog-controls">' + tabsHtml +
-      '<div class="toolbar">' +
-        (cfg.search ? '<label class="search-field"><span aria-hidden="true">&#128269;</span><input type="search" id="q" placeholder="Search ' + esc(cfg.title.toLowerCase()) + '&#8230;" aria-label="Search ' + esc(cfg.title.toLowerCase()) + '"></label>' : "") +
-        (cfg.filters || []).map(function (f) {
-          var opts;
-          if (f.options) {
-            // Grouped form: [{value,label,group}] — used by the Area filter so 40 regions stay
-            // readable, grouped under their world.
-            var order = [], byGroup = {};
-            f.options.forEach(function (o) {
-              var g = o.group || "";
-              if (!byGroup[g]) { byGroup[g] = []; order.push(g); }
-              byGroup[g].push(o);
-            });
-            opts = order.map(function (g) {
-              var inner = byGroup[g].map(function (o) {
-                return '<option value="' + esc(o.value) + '"' + (active[f.key] === o.value ? " selected" : "") + ">" + esc(o.label) + "</option>";
-              }).join("");
-              return g ? '<optgroup label="' + esc(g) + '">' + inner + "</optgroup>" : inner;
-            }).join("");
-          } else {
-            opts = f.values.map(function (v) { return '<option value="' + esc(v) + '"' + (active[f.key] === v ? " selected" : "") + ">" + esc(v) + "</option>"; }).join("");
-          }
-          return '<select data-key="' + f.key + '"><option value="">' + f.label + ': All</option>' + opts + "</select>";
-        }).join("") +
-        (cfg.sorts ? '<select data-sort aria-label="Sort ' + esc(cfg.title.toLowerCase()) + '">' + cfg.sorts.map(function (s) {
-          return '<option value="' + esc(s.key) + '"' + (s.key === sortKey ? ' selected' : '') + '>Sort: ' + esc(s.label) + '</option>';
-        }).join('') + '</select>' : '') +
-        '<span class="result-count" id="rc"></span>' +
-      "</div></div>" +
-      '<div class="grid" id="grid"></div>' +
-      '<nav class="pager" id="pager" aria-label="' + esc(cfg.title) + ' pages"></nav>';
-
-    var grid = $("#grid", app), rc = $("#rc", app), pager = $("#pager", app);
-    // ⛔ PAGED. Every list rendered ALL matches into one grid — the item catalogue is 897 rows, so
-    // that is a single ~900-card innerHTML: slow to build, slow to scroll, and unusable on a phone.
-    // ⚠ The page resets to 1 on every search / filter / sort / tab change. A filter that leaves you
-    // on page 8 of a 2-page result looks exactly like an empty catalogue.
-    var PAGE_SIZE = 60, page = 0;
-    if (back && typeof saved.page === "number" && saved.page >= 0) page = saved.page;
+    var modeTabs = cfg.tabs && cfg.tabs.some(function(t) { return t.mode; });
+    var tabs = cfg.tabs ? '<div class="tabs'+(modeTabs?' mode-tabs':'')+'" id="tabs" role="tablist" aria-label="Game mode">'+cfg.tabs.map(function(t,i) {
+      return '<button type="button" class="tab'+(modeTabs?' mode-tab':'')+(i===tabIdx?' active':'')+'" data-i="'+i+'"'+(t.mode?' data-game-mode="'+t.mode+'"':'')+' role="tab" aria-selected="'+(i===tabIdx)+'">'+esc(t.label)+'</button>';
+    }).join('')+'</div>' : '';
+    function optionsFor(f) {
+      var options = f.options || f.values.map(function(value) { return {value:value,label:value}; }), groups = {}, order = [];
+      options.forEach(function(o) { var group=o.group || ''; if(!groups[group]) { groups[group]=[]; order.push(group); } groups[group].push(o); });
+      return order.map(function(group) {
+        var html=groups[group].map(function(o) { return '<option value="'+esc(o.value)+'"'+(active[f.key]===o.value?' selected':'')+'>'+esc(o.label)+'</option>'; }).join('');
+        return group ? '<optgroup label="'+esc(group)+'">'+html+'</optgroup>' : html;
+      }).join('');
+    }
+    app.innerHTML = pageHero(cfg.page,cfg.title,cfg.subtitle,cfg.items.length)+'<div class="catalog-controls">'+tabs+
+      '<div class="toolbar">'+(cfg.search?'<label class="search-field"><span aria-hidden="true">&#128269;</span><input type="search" id="q" placeholder="Search '+esc(cfg.title.toLowerCase())+'&#8230;" aria-label="Search '+esc(cfg.title.toLowerCase())+'"></label>':'')+
+      (cfg.filters || []).map(function(f) { return '<label class="catalog-control"><span>'+esc(f.label)+'</span><select data-key="'+f.key+'" aria-label="'+esc(f.label)+'"><option value="">All</option>'+optionsFor(f)+'</select></label>'; }).join('')+
+      (cfg.sorts?'<label class="catalog-control catalog-sort"><span>Sort by</span><select data-sort aria-label="Sort '+esc(cfg.title.toLowerCase())+'">'+cfg.sorts.map(function(sort) { return '<option value="'+sort.key+'"'+(sort.key===sortKey?' selected':'')+'>'+esc(sort.label)+'</option>'; }).join('')+'</select></label>':'')+
+      (cfg.columns?'<button type="button" class="catalog-direction" data-direction></button>':'')+'</div>'+
+      '<div class="catalog-summary"><span class="result-count" id="rc" role="status" aria-live="polite"></span><button type="button" class="catalog-reset" data-reset>Reset filters</button>'+
+      (cfg.columns?'<div class="view-switch catalog-layout" role="group" aria-label="Catalog view"><button type="button" data-layout="table">Table</button><button type="button" data-layout="cards">Cards</button></div>':'')+'</div></div>'+
+      '<div id="grid"></div><nav class="pager" id="pager" aria-label="'+esc(cfg.title)+' pages"></nav>';
+    var grid=$("#grid",app), rc=$("#rc",app), pager=$("#pager",app), qi=$("#q",app), PAGE_SIZE=60, page=back && saved.page >= 0 ? saved.page : 0;
+    function matches(value, selected) { return Array.isArray(value) ? value.indexOf(selected)>=0 : value===selected; }
+    function refreshFilters(base) {
+      (cfg.filters || []).forEach(function(f) {
+        var candidates=base, parent=f.dependsOn && active[f.dependsOn];
+        if(parent) { var parentFilter=cfg.filters.find(function(p) { return p.key===f.dependsOn; }); candidates=candidates.filter(function(x) { return matches(parentFilter.get(x),parent); }); }
+        var values=new Set(); candidates.forEach(function(x) { var v=f.get(x); (Array.isArray(v)?v:[v]).forEach(function(v) { values.add(String(v)); }); });
+        var select=app.querySelector('select[data-key="'+f.key+'"]');
+        Array.prototype.forEach.call(select.options,function(o) { o.hidden=!!o.value && !values.has(o.value); o.disabled=o.hidden; });
+        select.querySelectorAll('optgroup').forEach(function(g) { g.hidden=Array.prototype.every.call(g.children,function(o) { return o.hidden; }); });
+        if(active[f.key] && !values.has(String(active[f.key]))) active[f.key]=null;
+        select.value=active[f.key] || '';
+      });
+    }
+    function table(rows) {
+      return '<table class="catalog-table"><thead><tr>'+cfg.columns.map(function(c) {
+        var selected=c.sort===sortKey, state=selected?(direction===1?'ascending':'descending'):'none';
+        return '<th scope="col"'+(c.numeric?' class="numeric"':'')+' aria-sort="'+state+'">'+(c.sort?'<button type="button" data-column-sort="'+c.sort+'"><span>'+esc(c.label)+'</span><span aria-hidden="true">'+(selected?(direction===1?'&#8593;':'&#8595;'):'&#8597;')+'</span></button>':esc(c.label))+'</th>';
+      }).join('')+'</tr></thead><tbody>'+rows.map(function(x) {
+        return '<tr data-entry-id="'+esc(x.id)+'">'+cfg.columns.map(function(c) { return '<td'+(c.numeric?' class="numeric"':'')+'>'+c.render(x)+'</td>'; }).join('')+'</tr>';
+      }).join('')+'</tbody></table>';
+    }
     function apply() {
-      var tab = cfg.tabs ? cfg.tabs[tabIdx] : null;
-      var base = (tab && tab.test) ? cfg.items.filter(tab.test) : cfg.items;
-      var out = base.filter(function (x) {
-        if (q && cfg.search(x).toLowerCase().indexOf(q) < 0) return false;
-        for (var key in active) if (active[key] && cfg.filters) {
-          var f = cfg.filters.filter(function (ff) { return ff.key === key; })[0];
-          if (!f) continue;
-          var got = f.get(x);
-          // get() may return a LIST (an item drops in several areas) — match if any entry hits.
-          if (Object.prototype.toString.call(got) === "[object Array]") { if (got.indexOf(active[key]) < 0) return false; }
-          else if (got !== active[key]) return false;
-        }
-        return true;
+      var tab=cfg.tabs ? cfg.tabs[tabIdx] : null, base=tab && tab.test ? cfg.items.filter(tab.test) : cfg.items;
+      refreshFilters(base);
+      var out=base.filter(function(x) {
+        if(q && cfg.search(x).toLowerCase().indexOf(q)<0) return false;
+        return (cfg.filters || []).every(function(f) { return !active[f.key] || matches(f.get(x),active[f.key]); });
       });
-      if (cfg.sorts && sortKey) {
-        var sorter = cfg.sorts.filter(function (s) { return s.key === sortKey; })[0];
-        if (sorter && sorter.compare) out = out.slice().sort(sorter.compare);
-      }
-      var pages = Math.max(1, Math.ceil(out.length / PAGE_SIZE));
-      if (page > pages - 1) page = pages - 1;
-      if (page < 0) page = 0;
-      var from = page * PAGE_SIZE, slice = out.slice(from, from + PAGE_SIZE);
-      grid.innerHTML = slice.length
-        ? slice.map(function (x) { return cfg.card(x, tab); }).join("")
-        : '<div class="empty" style="grid-column:1/-1">No matches.</div>';
-      rc.textContent = out.length
-        ? (out.length > PAGE_SIZE
-            ? (from + 1) + "–" + (from + slice.length) + " of " + out.length + " / " + base.length
-            : out.length + " / " + base.length)
-        : "0 / " + base.length;
-
-      if (pages < 2) { pager.innerHTML = ""; return; }
-      // Window of page numbers around the current one, so 15 pages do not become 15 buttons on a
-      // phone. First and last are always reachable.
-      var nums = [], lo = Math.max(0, page - 2), hi = Math.min(pages - 1, page + 2);
-      if (lo > 0) nums.push(0);
-      if (lo > 1) nums.push(-1);                       // ellipsis
-      for (var i = lo; i <= hi; i++) nums.push(i);
-      if (hi < pages - 2) nums.push(-1);
-      if (hi < pages - 1) nums.push(pages - 1);
-      pager.innerHTML =
-        '<button type="button" class="pg-nav" data-pg="prev"' + (page === 0 ? " disabled" : "") +
-          ' aria-label="Previous page">&#8592;</button>' +
-        nums.map(function (n) {
-          return n < 0
-            ? '<span class="pg-gap" aria-hidden="true">&#8230;</span>'
-            : '<button type="button" class="pg-num' + (n === page ? " active" : "") + '" data-pg="' + n + '"' +
-              (n === page ? ' aria-current="page"' : "") + '>' + (n + 1) + "</button>";
-        }).join("") +
-        '<button type="button" class="pg-nav" data-pg="next"' + (page >= pages - 1 ? " disabled" : "") +
-          ' aria-label="Next page">&#8594;</button>';
-      Array.prototype.forEach.call(pager.querySelectorAll("button[data-pg]"), function (b) {
-        b.addEventListener("click", function () {
-          var v = b.getAttribute("data-pg");
-          page = v === "prev" ? page - 1 : v === "next" ? page + 1 : +v;
-          apply();
-          // Back to the top of the grid, not the top of the document — the filters stay in view.
-          var top = grid.getBoundingClientRect().top + window.pageYOffset - 90;
-          window.scrollTo(0, Math.max(0, top));
-        });
-      });
+      var sorter=(cfg.sorts || []).find(function(sort) { return sort.key===sortKey; });
+      if(sorter) out=out.slice().sort(function(a,b) { return sorter.compare(a,b)*direction || String(a.id).localeCompare(String(b.id)); });
+      var pages=Math.max(1,Math.ceil(out.length/PAGE_SIZE)); page=Math.max(0,Math.min(page,pages-1));
+      var from=page*PAGE_SIZE, rows=out.slice(from,from+PAGE_SIZE);
+      grid.className=layout==='table'?'catalog-table-wrap':'grid';
+      grid.innerHTML=rows.length?(layout==='table'?table(rows):rows.map(function(x) { return cfg.card(x,tab); }).join('')):'<div class="empty">No matches.</div>';
+      grid.scrollTop=0;
+      rc.textContent=out.length+' / '+base.length+(out.length>PAGE_SIZE?' ('+(from+1)+'\u2013'+(from+rows.length)+')':'');
+      var sortSelect=app.querySelector('[data-sort]'); if(sortSelect) sortSelect.value=sortKey;
+      var directionButton=app.querySelector('[data-direction]');
+      if(directionButton) { directionButton.innerHTML=(direction===1?'&#8593; <span>Ascending</span>':'&#8595; <span>Descending</span>'); directionButton.setAttribute('aria-label',direction===1?'Sort descending':'Sort ascending'); }
+      app.querySelector('[data-reset]').disabled=!q && !Object.keys(active).some(function(k) { return active[k]; });
+      app.querySelectorAll('[data-layout]').forEach(function(b) { var on=b.getAttribute('data-layout')===layout; b.classList.toggle('active',on); b.setAttribute('aria-pressed',String(on)); });
+      grid.querySelectorAll('[data-column-sort]').forEach(function(b) { b.onclick=function() { var key=b.getAttribute('data-column-sort'); direction=key===sortKey?-direction:1; sortKey=key; page=0; apply(); }; });
+      if(pages<2) { pager.innerHTML=''; return; }
+      var nums=[],lo=Math.max(0,page-2),hi=Math.min(pages-1,page+2);
+      if(lo>0) nums.push(0); if(lo>1) nums.push(-1);
+      for(var i=lo;i<=hi;i++) nums.push(i);
+      if(hi<pages-2) nums.push(-1); if(hi<pages-1) nums.push(pages-1);
+      pager.innerHTML='<button type="button" class="pg-nav" data-pg="prev"'+(page===0?' disabled':'')+' aria-label="Previous page">&#8592;</button>'+nums.map(function(n) { return n<0?'<span class="pg-gap">&#8230;</span>':'<button type="button" class="pg-num'+(n===page?' active':'')+'" data-pg="'+n+'"'+(n===page?' aria-current="page"':'')+'>'+(n+1)+'</button>'; }).join('')+'<button type="button" class="pg-nav" data-pg="next"'+(page===pages-1?' disabled':'')+' aria-label="Next page">&#8594;</button>';
+      pager.querySelectorAll('[data-pg]').forEach(function(b) { b.onclick=function() { var v=b.getAttribute('data-pg'); page=v==='prev'?page-1:v==='next'?page+1:+v; apply(); window.scrollTo(0,Math.max(0,grid.getBoundingClientRect().top+window.pageYOffset-100)); }; });
     }
-    var qi = $("#q", app);
-    // ⚠ Every one of these resets to page 1. Narrowing a result set while sitting on page 8
-    // renders an empty grid that looks like "no results" rather than "you are past the end".
-    if (qi) { qi.value = q; qi.addEventListener("input", function () { q = qi.value.toLowerCase(); page = 0; apply(); }); }
-    Array.prototype.forEach.call(app.querySelectorAll("select[data-key]"), function (sel) {
-      sel.addEventListener("change", function () { active[sel.getAttribute("data-key")] = sel.value || null; page = 0; apply(); });
-    });
-    var sortSelect = app.querySelector("select[data-sort]");
-    if (sortSelect) sortSelect.addEventListener("change", function () { sortKey = sortSelect.value; page = 0; apply(); });
-    Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (btn) {
-      btn.addEventListener("click", function () {
-        tabIdx = +btn.getAttribute("data-i");
-        Array.prototype.forEach.call(app.querySelectorAll("#tabs .tab"), function (b) {
-          b.classList.remove("active"); b.setAttribute("aria-selected", "false");
-        });
-        btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
-        var tab = cfg.tabs && cfg.tabs[tabIdx];
-        if (tab && tab.mode) rememberGameMode(tab.mode, true);
-        page = 0; apply(); window.scrollTo(0, 0);
-      });
-    });
-    // Persist the view (incl. scroll) right before navigating into a detail page.
-    window.addEventListener("pagehide", function () {
-      try { sessionStorage.setItem(SKEY, JSON.stringify({ tab: tabIdx, q: q, filters: active, sort: sortKey, page: page, scrollY: window.pageYOffset || 0 })); } catch (e) {}
-    });
+    if(qi) { qi.value=q; qi.oninput=function() { q=qi.value.trim().toLowerCase(); page=0; apply(); }; }
+    app.querySelectorAll('select[data-key]').forEach(function(select) { select.onchange=function() { active[select.getAttribute('data-key')]=select.value || null; page=0; apply(); }; });
+    var sortSelect=app.querySelector('[data-sort]'); if(sortSelect) sortSelect.onchange=function() { sortKey=sortSelect.value; direction=1; page=0; apply(); };
+    var reverse=app.querySelector('[data-direction]'); if(reverse) reverse.onclick=function() { direction*=-1; page=0; apply(); };
+    app.querySelector('[data-reset]').onclick=function() { q=''; if(qi) qi.value=''; Object.keys(active).forEach(function(k) { active[k]=null; }); page=0; apply(); };
+    app.querySelectorAll('[data-layout]').forEach(function(b) { b.onclick=function() { layout=b.getAttribute('data-layout'); try { localStorage.setItem(SKEY+':layout',layout); } catch(e) {} apply(); }; });
+    app.querySelectorAll('#tabs .tab').forEach(function(b) { b.onclick=function() { tabIdx=+b.getAttribute('data-i'); app.querySelectorAll('#tabs .tab').forEach(function(btn) { var on=btn===b; btn.classList.toggle('active',on); btn.setAttribute('aria-selected',String(on)); }); var tab=cfg.tabs[tabIdx]; if(tab.mode) rememberGameMode(tab.mode,true); page=0; apply(); }; });
+    window.addEventListener('pagehide',function() { try { sessionStorage.setItem(SKEY,JSON.stringify({tab:tabIdx,q:q,filters:active,sort:sortKey,direction:direction,page:page,scrollY:window.pageYOffset || 0})); } catch(e) {} });
     apply();
-    // Only restore scroll when returning via Back/Forward; fresh visits start at the top.
-    if (back && saved.scrollY) { var y = saved.scrollY; requestAnimationFrame(function () { window.scrollTo(0, y); }); }
-    else window.scrollTo(0, 0);
+    if(back && saved.scrollY) requestAnimationFrame(function() { window.scrollTo(0,saved.scrollY); });
+    else window.scrollTo(0,0);
   }
 
   /* ---------- advertising policy ----------

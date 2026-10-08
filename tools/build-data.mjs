@@ -12,6 +12,7 @@ import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import { doorGraph } from "./door-graph.mjs";
 import { publicationPolicy, modesForMap } from "./public-content.mjs";
+import { writePublicMapLayout } from "./public-map-layouts.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE = path.resolve(__dirname, "..");
@@ -653,7 +654,7 @@ const MAP_VISUAL_FILE = {
 };
 const mapVisualFile = (id) => MAP_VISUAL_FILE[id] || mapDisplayName(id);
 function copyMapVisual(id) {
-  if (privacy.withheldMapArt.has(id)) return "";
+  if (privacy.withheldMapArt.has(id)) return writePublicMapLayout(GAME, IMG, id);
   const src = path.join(SPR, "Map", "visual", mapVisualFile(id) + " visual.png");
   if (!fs.existsSync(src)) return "";
   const file = "map_" + safe(id) + ".png";

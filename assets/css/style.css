@@ -838,22 +838,12 @@ body { overflow-x:clip; }
 .worldmap::-webkit-scrollbar { display:none; }
 .worldmap.panning { cursor:grabbing; }
 .wm-grid {
-  display:grid; width:max-content; margin:0 auto; align-items:center; justify-items:center; gap:18px;
-  grid-template-columns: auto 62px auto 62px auto 62px auto 62px auto 62px auto 62px auto 62px auto;
-  grid-template-rows: auto 62px auto 62px auto 62px auto 62px auto 62px auto;
-  grid-template-areas:
-    ".    .   .  .     .    .   .    .  .      .   uw   .   .      .     ."
-    ".    .   .  .     .    .   .    .  .      .   vu   .   .      .     ."
-    ".    .   .  .     void h1  volc h2 forest h3  gl   h4  desert .     ."
-    ".    .   .  .     .    .   .    .  .      .   vd   .   .      .     ."
-    "ring rs1 st clbus cl   hcl hcl  hcl hcl   hcl gate hgy gy     gybus kr"
-    "ring .   .  clbus clmu .   .    .   .     .   .    .   .      gybus ."
-    "ring rs2 eg clbus mu   .   .    .   wg    wg  wg   wg  wg     gybus ld"
-    "ring .   .  clbus .    .   .    .   .     .   .    .   .      gybus ."
-    "ring rs3 bd clbus .    .   .    .   .     .   mz   .   .      gybus px"
-    ".    .   .  .     .    .   .    .   .     .   vmz  .   .      .     ."
-    ".    .   .  .     .    .   .    .   mzk   mzk mzk  mzk mzk   .     .";
+  position:relative; isolation:isolate; display:grid; width:max-content; margin:0 auto;
+  padding:36px; align-items:center; justify-items:center; gap:22px;
+  grid-template-columns:repeat(7,auto 42px) auto;
+  grid-template-rows:repeat(5,auto 44px) auto;
 }
+
 /* World Gate branch: the hub drops onto a bus that fans out to the four themed regions. */
 .wm-branch { display:flex; flex-direction:column; align-items:center; width:100%; }
 .wm-branch-bus { align-self:stretch; height:2px; margin:0 12%; background:var(--border); }
@@ -911,7 +901,7 @@ body { overflow-x:clip; }
    horizontally so the layout stays connected instead of collapsing to a straight list. */
 @media (max-width:640px){
   .worldmap { padding-bottom:.75rem; }
-  .wm-grid { gap:10px; grid-template-columns: auto 34px auto 34px auto 34px auto 34px auto 34px auto 34px auto 34px auto 34px auto; }
+  .wm-grid { gap:20px; grid-template-columns:repeat(7,auto 24px) auto; }
   .worldmap .wnode { width:108px; padding:.6rem .45rem; gap:.1rem; }
   .worldmap .wnode .wicon { font-size:1.5rem; }
   .worldmap .wnode .wname { font-size:.88rem; }
@@ -1532,4 +1522,65 @@ body { overflow-x:clip; }
 @media (max-width:640px) {
   .pager { gap:.3rem; }
   .pager button { min-width:44px; min-height:44px; }
+}
+
+/* Door-derived atlas connections. Cards sit above routes and keep every endpoint visible. */
+.world-connections { position:absolute; inset:0; z-index:0; overflow:visible; pointer-events:none; color:var(--accent); }
+.world-connections > path, .mconn-svg > path { fill:none; stroke:currentColor; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+.mconn-svg { color:var(--wc,var(--accent)); }
+.wm-grid .wnode, .wm-grid .wm-branch-row { position:relative; z-index:1; }
+.wm-grid .wm-branch-row { flex-wrap:nowrap; gap:28px; }
+.mchain { padding:26px; gap:60px; isolation:isolate; }
+.mtier { gap:28px; }
+.atlas-tools { display:flex; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:.6rem; }
+.worldmap { scroll-margin-top:76px; }
+.atlas-tools .view-switch { margin:0; }
+.atlas-focus { display:flex; align-items:center; gap:.65rem; font-size:.82rem; color:var(--muted); }
+.atlas-focus select,.atlas-jump { font:inherit; color:var(--text); background:var(--panel); border:1px solid var(--border); border-radius:9px; padding:.6rem .8rem; }
+.atlas-jump { margin-left:auto; color:var(--accent); cursor:pointer; }
+/* Searchable, comparable catalogs. Table and cards share the same filters and ordering. */
+.catalog-controls { padding:1rem; }
+.catalog-controls .toolbar { align-items:flex-end; gap:.75rem; }
+.catalog-controls .search-field { min-height:44px; flex-basis:240px; }
+.catalog-control { display:flex; flex-direction:column; gap:.3rem; min-width:125px; max-width:240px; flex:1; }
+.catalog-control > span { font-size:.68rem; color:var(--muted); font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
+.catalog-control select { width:100%; min-width:0; height:44px; }
+.catalog-direction,.catalog-reset { font:inherit; border:1px solid var(--border); background:var(--panel); color:var(--text); border-radius:9px; padding:.55rem .75rem; cursor:pointer; white-space:nowrap; }
+.catalog-direction { height:44px; font-size:.8rem; }
+.catalog-reset { font-size:.75rem; }
+.catalog-reset:disabled { opacity:.4; cursor:default; }
+.catalog-summary { display:flex; flex-wrap:wrap; align-items:center; gap:.7rem; margin-top:.9rem; padding-top:.75rem; border-top:1px solid var(--border); }
+.catalog-summary .result-count { margin:0; }
+.catalog-layout { margin:0 0 0 auto; }
+.catalog-table-wrap { overflow:auto; max-height:72vh; border:1px solid var(--border); border-radius:13px; background:var(--panel); }
+.catalog-table { border-collapse:separate; border-spacing:0; width:100%; font-size:.8rem; }
+.catalog-table th { position:sticky; top:0; z-index:2; background:var(--panel-2); padding:0; text-align:left; white-space:nowrap; border-bottom:1px solid var(--border); }
+.catalog-table th button { display:flex; gap:.55rem; align-items:center; justify-content:space-between; width:100%; border:0; padding:.85rem .75rem; color:var(--muted); background:transparent; font:inherit; font-size:.73rem; font-weight:700; cursor:pointer; }
+.catalog-table th[aria-sort="ascending"] button,.catalog-table th[aria-sort="descending"] button { color:var(--accent); background:color-mix(in srgb,var(--accent) 8%,transparent); }
+.catalog-table td { padding:.55rem .75rem; border-bottom:1px solid var(--border); background:var(--panel); }
+.catalog-table tr:last-child td { border-bottom:0; }
+.catalog-table tr:nth-child(even) td { background:var(--bg-2); }
+.catalog-table tr:hover td { background:var(--panel-2); }
+.catalog-table .numeric { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+.catalog-table th:first-child { left:0; z-index:4; }
+.catalog-table td:first-child { position:sticky; left:0; z-index:1; min-width:220px; border-right:1px solid var(--border); }
+.catalog-name { display:flex; align-items:center; gap:.65rem; color:var(--text); text-decoration:none; }
+.catalog-name:hover { color:var(--accent); }
+.catalog-name .thumb { width:42px; height:42px; flex:0 0 42px; border-radius:8px; }
+.catalog-name strong { font-size:.8rem; line-height:1.3; max-width:190px; }
+.catalog-location { display:block; min-width:140px; max-width:220px; font-size:.75rem; line-height:1.45; color:var(--muted); }
+@media (max-width:640px) {
+  .catalog-controls { padding:.75rem; }
+  .catalog-control { flex-basis:calc(50% - .5rem); min-width:0; max-width:none; }
+  .catalog-direction { flex:1; }
+  .catalog-layout { margin-left:auto; }
+  .catalog-table td:first-child { min-width:170px; max-width:190px; }
+  .catalog-name .thumb { width:32px; height:32px; flex-basis:32px; }
+  .atlas-tools { gap:.6rem; }
+  .atlas-focus { flex:1; }
+  .atlas-focus > span { display:none; }
+  .atlas-focus select { width:100%; min-width:0; }
+  .atlas-jump { width:100%; }
+  .mchain { padding:24px 10px; }
+  .mtier { gap:28px; }
 }

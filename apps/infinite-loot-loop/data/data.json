@@ -167372,7 +167372,7 @@
       "modes": [
         "hard"
       ],
-      "image": "",
+      "image": "map_MH02_layout.svg",
       "gridWidth": 240,
       "gridHeight": 240,
       "dataVersion": 2,
@@ -168520,7 +168520,7 @@
       "modes": [
         "normal"
       ],
-      "image": "",
+      "image": "map_MX03_layout.svg",
       "gridWidth": 240,
       "gridHeight": 240,
       "dataVersion": 2,
@@ -169922,7 +169922,7 @@
       "modes": [
         "normal"
       ],
-      "image": "",
+      "image": "map_SM03_layout.svg",
       "gridWidth": 240,
       "gridHeight": 240,
       "dataVersion": 2,

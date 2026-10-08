@@ -4,6 +4,7 @@ import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { publicationPolicy, walkFiles } from "./public-content.mjs";
+import { publicMapLayout } from "./public-map-layouts.mjs";
 
 const site = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const app = path.join(site, "apps/infinite-loot-loop");
@@ -48,7 +49,11 @@ for (const m of data.maps) {
     assert(door.modes.length > 0, "Door with no playable mode");
     for (const mode of door.modes) assert(m.modes.includes(mode) && maps.get(door.to).modes.includes(mode), "Wrong-mode door");
   }
-  if (policy.withheldMapArt.has(m.id)) assert.equal(m.image, "", "Map illustration reveals hidden geometry");
+  if (policy.withheldMapArt.has(m.id)) {
+    assert.equal(m.image, "map_" + m.id + "_layout.svg", "Use the route-only map layout");
+    assert.equal(fs.readFileSync(path.join(app, "assets/img", m.image), "utf8"), publicMapLayout(path.resolve(site, "../Infinite Loot-Loop"), m.id), "Map layout must contain only public route geometry");
+    assert(!fs.existsSync(path.join(app, "assets/img", "map_" + m.id + ".png")), "Original map painting must remain withheld");
+  }
 }
 const museum = data.maps.filter(m => m.world === "Museum");
 assert.equal(museum.filter(m => m.modes.includes("normal")).length, 25, "Normal Museum map count");
