@@ -13,6 +13,7 @@ import { fileURLToPath } from "node:url";
 import { doorGraph } from "./door-graph.mjs";
 import { publicationPolicy, modesForMap } from "./public-content.mjs";
 import { writePublicMapLayout } from "./public-map-layouts.mjs";
+import { museumMapDetails } from "./museum-display.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE = path.resolve(__dirname, "..");
@@ -719,7 +720,7 @@ const maps = loadCategory("Maps").filter(a => num(a.text, "gridWidth") > 0).map(
   if (hex && hex.length === gw * gh * 2) {
     for (let i = 0; i < gw * gh; i++) { const v = parseInt(hex.substr(i * 2, 2), 16); if (v === 0) blocked++; else walkable++; }
   }
-  return { id: a.id, name: mapDisplayName(a.id), world: mapWorld(a.id), modes: modesForMap(a.id), image: copyMapVisual(a.id), gridWidth: gw, gridHeight: gh, dataVersion: num(t, "dataVersion"), walkableCells: walkable, blockedCells: blocked };
+  return { id: a.id, name: mapDisplayName(a.id), world: mapWorld(a.id), modes: modesForMap(a.id), image: copyMapVisual(a.id), gridWidth: gw, gridHeight: gh, dataVersion: num(t, "dataVersion"), walkableCells: walkable, blockedCells: blocked, ...museumMapDetails(GAME, a.id) };
 });
 // ★ GRAVEYARD IS DATA-FIRST (owner, 2026-09-01): the balance shipped before the art, so no MapData
 // assets exist yet. Synthesize atlas records for GY01-GY10 — no image, no grid — so the world shows

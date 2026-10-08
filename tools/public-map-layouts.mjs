@@ -1,10 +1,23 @@
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 
 const require = createRequire(import.meta.url);
 const escape = value => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+const reviewedArt = JSON.parse(fs.readFileSync(new URL("./public-map-art.json", import.meta.url), "utf8"));
+
+// Reviewed public artwork contains no concealed rooms. Never copy the private original
+// when its source changes; require a new reviewed export instead.
+export function approvedPublicMapArt(game, imageDir, id) {
+  const art = reviewedArt[id];
+  if (!art) return "";
+  const hash = file => crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
+  if (hash(path.join(game, art.source)) !== art.sourceSha256) throw new Error("Public map art needs source review: " + id);
+  if (hash(path.join(imageDir, art.file)) !== art.sha256) throw new Error("Public map art changed after review: " + id);
+  return art.file;
+}
 
 // Draw only the blueprint's ordinary route zones. The separate secrets collection,
 // NPCs, portals and original painting never enter this public SVG.
@@ -27,6 +40,8 @@ export function publicMapLayout(game, id) {
 }
 
 export function writePublicMapLayout(game, imageDir, id) {
+  const approved = approvedPublicMapArt(game, imageDir, id);
+  if (approved) return approved;
   const image = "map_" + id + "_layout.svg";
   fs.writeFileSync(path.join(imageDir, image), publicMapLayout(game, id));
   return image;

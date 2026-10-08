@@ -98,6 +98,7 @@ export function sourceStrings() {
   if (releaseCopy) Object.values(JSON.parse(releaseCopy[1])).forEach(value => strings.add(value));
   const catalog = JSON.parse(fs.readFileSync(path.join(root, "apps/infinite-loot-loop/data/data.json"), "utf8"));
   catalog.maps.filter(map => /^(MU|MH|MX|CY|SM)\d/.test(map.id)).forEach(map => strings.add(map.name));
+  catalog.maps.forEach(map => (map.sectors || []).forEach(sector => strings.add(sector.name)));
   for (const page of pages) {
     const html = fs.readFileSync(path.join(root, page), "utf8");
     extractStrings(html).forEach(value => strings.add(value));

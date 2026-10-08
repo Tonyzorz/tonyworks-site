@@ -34,11 +34,15 @@ node tools/audit-site.mjs
 - `public-content.mjs` derives permanent exclusions from the game's secret registry,
   item visibility flags, secret encounters and hidden map definitions. Release switches
   never override these exclusions. Hidden content is omitted from data, translations,
-  doors and images; map paintings that reveal hidden geometry are replaced with SVG
-  layouts drawn only from ordinary route zones by `public-map-layouts.mjs`.
+  doors and images. `public-map-layouts.mjs` uses reviewed public artwork registered in
+  `public-map-art.json`, or a layout drawn only from ordinary route zones. Reviewed art
+  and its game source are pinned by hashes; source changes require another review.
 - Museum Normal and Hard are distinct map sets, with a shared Atrium. Exported mode
   availability controls the atlas, doors, boss catalogs and reward lists. Museum runtime
   stat adjustments and the game's boss drop budgets are read from their source files.
+  `museum-display.mjs` exports Hard Museum section names and public zone membership;
+  each wing is one continuous map. Its CLI refreshes that display metadata without
+  rebuilding unrelated game balance data.
 - `audit-publication.mjs` checks privacy, dangling references, mode-specific loot and
   doors, orphaned art, retired previews and both Museum map sets before publishing.
 

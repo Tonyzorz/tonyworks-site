@@ -167363,6 +167363,41 @@
             "hard"
           ]
         }
+      ],
+      "worldWidth": 60,
+      "worldHeight": 60,
+      "sectors": [
+        {
+          "name": "The Assembly Hall",
+          "zoneIds": [
+            "MH01_HM_Z0",
+            "MH01_HM_Z1",
+            "MH01_HM_Z2",
+            "MH01_HM_Z3",
+            "MH01_HM_Z4"
+          ]
+        },
+        {
+          "name": "The Newsreel Room",
+          "zoneIds": [
+            "MH01_HM_Z5",
+            "MH01_HM_Z6",
+            "MH01_HM_Z7",
+            "MH01_HM_Z8",
+            "MH01_HM_Z9"
+          ]
+        },
+        {
+          "name": "The Munitions Cases",
+          "zoneIds": [
+            "MH01_HM_Z10",
+            "MH01_HM_Z11",
+            "MH01_HM_Z12",
+            "MH01_HM_Z13",
+            "MH01_HM_Z14",
+            "MH01_HM_Z15"
+          ]
+        }
       ]
     },
     {
@@ -167372,7 +167407,7 @@
       "modes": [
         "hard"
       ],
-      "image": "map_MH02_layout.svg",
+      "image": "map_MH02_public.png",
       "gridWidth": 240,
       "gridHeight": 240,
       "dataVersion": 2,
@@ -167383,6 +167418,43 @@
           "to": "MU01",
           "modes": [
             "hard"
+          ]
+        }
+      ],
+      "worldWidth": 60,
+      "worldHeight": 60,
+      "sectors": [
+        {
+          "name": "The Screen Wall",
+          "zoneIds": [
+            "MH02_HM_Z0",
+            "MH02_HM_Z1",
+            "MH02_HM_Z2",
+            "MH02_HM_Z3",
+            "MH02_HM_Z4",
+            "MH02_HM_Z5"
+          ]
+        },
+        {
+          "name": "The Packaging Gallery",
+          "zoneIds": [
+            "MH02_HM_Z6",
+            "MH02_HM_Z7",
+            "MH02_HM_Z8",
+            "MH02_HM_Z9",
+            "MH02_HM_Z10",
+            "MH02_HM_Z11"
+          ]
+        },
+        {
+          "name": "The Cold Aisle of Servers",
+          "zoneIds": [
+            "MH02_HM_Z12",
+            "MH02_HM_Z13",
+            "MH02_HM_Z14",
+            "MH02_HM_Z15",
+            "MH02_HM_Z16",
+            "MH02_HM_Z17"
           ]
         }
       ]
@@ -167407,6 +167479,43 @@
             "hard"
           ]
         }
+      ],
+      "worldWidth": 60,
+      "worldHeight": 60,
+      "sectors": [
+        {
+          "name": "The Forward Gallery",
+          "zoneIds": [
+            "MH03_HM_Z0",
+            "MH03_HM_Z1",
+            "MH03_HM_Z2",
+            "MH03_HM_Z3",
+            "MH03_HM_Z4",
+            "MH03_HM_Z5"
+          ]
+        },
+        {
+          "name": "The Dated Cases",
+          "zoneIds": [
+            "MH03_HM_Z6",
+            "MH03_HM_Z7",
+            "MH03_HM_Z8",
+            "MH03_HM_Z9",
+            "MH03_HM_Z10",
+            "MH03_HM_Z11"
+          ]
+        },
+        {
+          "name": "The Countdown Room",
+          "zoneIds": [
+            "MH03_HM_Z12",
+            "MH03_HM_Z13",
+            "MH03_HM_Z14",
+            "MH03_HM_Z15",
+            "MH03_HM_Z16",
+            "MH03_HM_Z17"
+          ]
+        }
       ]
     },
     {
@@ -167427,6 +167536,54 @@
           "to": "MU01",
           "modes": [
             "hard"
+          ]
+        }
+      ],
+      "worldWidth": 60,
+      "worldHeight": 60,
+      "sectors": [
+        {
+          "name": "The Unlabelled Hall",
+          "zoneIds": [
+            "MH04_HM_Z0",
+            "MH04_HM_Z1",
+            "MH04_HM_Z2",
+            "MH04_HM_Z3",
+            "MH04_HM_Z4",
+            "MH04_HM_Z5"
+          ]
+        },
+        {
+          "name": "The Empty Cases",
+          "zoneIds": [
+            "MH04_HM_Z6",
+            "MH04_HM_Z7",
+            "MH04_HM_Z8",
+            "MH04_HM_Z9",
+            "MH04_HM_Z10",
+            "MH04_HM_Z11"
+          ]
+        },
+        {
+          "name": "The Right Shapes",
+          "zoneIds": [
+            "MH04_HM_Z12",
+            "MH04_HM_Z13",
+            "MH04_HM_Z14",
+            "MH04_HM_Z15",
+            "MH04_HM_Z16",
+            "MH04_HM_Z17"
+          ]
+        },
+        {
+          "name": "The Last Room",
+          "zoneIds": [
+            "MH04_HM_Z18",
+            "MH04_HM_Z19",
+            "MH04_HM_Z20",
+            "MH04_HM_Z21",
+            "MH04_HM_Z22",
+            "MH04_HM_Z23"
           ]
         }
       ]

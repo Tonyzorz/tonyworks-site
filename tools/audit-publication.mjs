@@ -4,7 +4,8 @@ import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { publicationPolicy, walkFiles } from "./public-content.mjs";
-import { publicMapLayout } from "./public-map-layouts.mjs";
+import { publicMapLayout, approvedPublicMapArt } from "./public-map-layouts.mjs";
+import { museumMapDetails } from "./museum-display.mjs";
 
 const site = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const app = path.join(site, "apps/infinite-loot-loop");
@@ -50,9 +51,20 @@ for (const m of data.maps) {
     for (const mode of door.modes) assert(m.modes.includes(mode) && maps.get(door.to).modes.includes(mode), "Wrong-mode door");
   }
   if (policy.withheldMapArt.has(m.id)) {
-    assert.equal(m.image, "map_" + m.id + "_layout.svg", "Use the route-only map layout");
-    assert.equal(fs.readFileSync(path.join(app, "assets/img", m.image), "utf8"), publicMapLayout(path.resolve(site, "../Infinite Loot-Loop"), m.id), "Map layout must contain only public route geometry");
+    const approved = approvedPublicMapArt(path.resolve(site, "../Infinite Loot-Loop"), path.join(app, "assets/img"), m.id);
+    if (approved) assert.equal(m.image, approved, "Use the reviewed public map artwork");
+    else {
+      assert.equal(m.image, "map_" + m.id + "_layout.svg", "Use the route-only map layout");
+      assert.equal(fs.readFileSync(path.join(app, "assets/img", m.image), "utf8"), publicMapLayout(path.resolve(site, "../Infinite Loot-Loop"), m.id), "Map layout must contain only public route geometry");
+    }
     assert(!fs.existsSync(path.join(app, "assets/img", "map_" + m.id + ".png")), "Original map painting must remain withheld");
+  }
+  if (/^MH\d{2}$/.test(m.id)) {
+    const details = museumMapDetails(path.resolve(site, "../Infinite Loot-Loop"), m.id);
+    assert.deepEqual(m.sectors, details.sectors, "Museum sections must match the game");
+    const zoneIds = m.sectors.flatMap(s => s.zoneIds);
+    assert.equal(new Set(zoneIds).size, zoneIds.length, "Museum zone belongs to one section");
+    assert.deepEqual(zoneIds.slice().sort(), data.zones.filter(z => z.id.startsWith(m.id + "_HM_Z")).map(z => z.id).sort(), "Museum sections cover every public zone");
   }
 }
 const museum = data.maps.filter(m => m.world === "Museum");

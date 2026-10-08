@@ -221,7 +221,7 @@
   var scriptUrl = document.currentScript && document.currentScript.src ? document.currentScript.src : window.location.href;
   var dataBase = new URL("../../apps/infinite-loot-loop/data/localization/", scriptUrl).href;
   var siteContentBase = new URL("../i18n/site-content/", scriptUrl).href;
-  var localizationVersion = "702";
+  var localizationVersion = "703";
   var ready = code === "en" ? Promise.resolve() : Promise.all([
     fetchJSON(dataBase + "en.json?v=" + localizationVersion), fetchJSON(dataBase + "en_content.json?v=" + localizationVersion),
     fetchJSON(dataBase + code + ".json?v=" + localizationVersion), fetchJSON(dataBase + code + "_content.json?v=" + localizationVersion),
@@ -352,6 +352,7 @@
     (data.maps || []).forEach(function (map) {
       var area = areaByMap[map.id];
       map.name = area ? area.name : (translatePhrase(map.world || "") || translatePhrase(map.name));
+      (map.sectors || []).forEach(function(sector) { sector.name = translatePhrase(sector.name); });
     });
     (data.zones || []).forEach(function (zone) {
       var translated = translatePhrase(zone.name);

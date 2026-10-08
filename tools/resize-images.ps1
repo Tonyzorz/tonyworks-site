@@ -3,6 +3,7 @@
 #   powershell -ExecutionPolicy Bypass -File tools\resize-images.ps1
 Add-Type -AssemblyName System.Drawing
 $dir = Join-Path $PSScriptRoot "..\apps\infinite-loot-loop\assets\img"
+$reviewedMaps = (Get-Content -LiteralPath (Join-Path $PSScriptRoot "public-map-art.json") -Raw | ConvertFrom-Json).PSObject.Properties.Value.file
 
 function Resize-Png($path, $max) {
   $img = [System.Drawing.Image]::FromFile($path)
@@ -22,6 +23,8 @@ function Resize-Png($path, $max) {
 
 $n = 0
 Get-ChildItem $dir -Filter *.png | ForEach-Object {
+  # Preserve reviewed public artwork, including its readable full-size view and audited hash.
+  if ($reviewedMaps -contains $_.Name) { return }
   $max = if ($_.Name -eq 'app_icon.png' -or $_.Name -like 'map_*') { 512 } else { 256 }
   if (Resize-Png $_.FullName $max) { $n++ }
 }

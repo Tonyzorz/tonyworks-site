@@ -1743,11 +1743,12 @@
       }
       var me = mapEncounters(d, m, mode), drops = mapDropItems(d, me);
       var facts = [me.enemies.length + " monster" + (me.enemies.length !== 1 ? "s" : ""), drops.length + " item drop" + (drops.length !== 1 ? "s" : "")];
+      var structure = m.sectors && m.sectors.length ? '<div class="mnode-structure"><span>1 map</span> &#183; '+m.sectors.length+' <span>sections</span> &#183; '+me.zones.length+' <span>zones</span></div>' : '';
       if (mb.length) facts.push(mb.length + " boss" + (mb.length !== 1 ? "es" : ""));
       var sub = facts.join(" &#183; ");
       return '<a class="mnode" data-mid="' + esc(m.id) + '" href="maps.html?id=' + encodeURIComponent(m.id) + '&mode=' + mode + '" style="--wc:' + meta.color + '">' +
         thumb(m.image, m.name) +
-        '<div class="mnode-body"><h4>' + esc(m.name) + '</h4><div class="meta">' + sub + '</div></div></a>';
+        '<div class="mnode-body"><h4>' + esc(m.name) + '</h4>'+structure+'<div class="meta">' + sub + '</div></div></a>';
     }
     // Orient each world's chain to match how you ENTER it from Grassland (compass):
     //   Desert is east  -> enter from the left, flow left->right (horizontal)
@@ -1805,7 +1806,7 @@
   }
   var RELEASE_COPY = {
   "museumNormal": "The Atrium leads through Stone Age, Civilization I, Civilization II and the Modern Area of Study. Bring Burn Resist against burning exhibits and Slow Heal against regenerating exhibits. Hard Mode uses four different wings.",
-  "museumHard": "The Atrium opens into Modern 1, Modern 2, Future 1 and Future 2. Modern wings use Stress; Future 1 regenerates; Future 2 combines both. Bring Stress Resist and Slow Heal as needed. The grand stair is unavailable in Hard Mode.",
+  "museumHard": "Hard Museum has four large maps, one per wing, plus the shared Atrium. Modern 1 has 16 zones, Modern 2 has 18, Future 1 has 18, and Future 2 has 24. Each wing contains several sections within the same continuous map. Modern wings use Stress; Future 1 regenerates; Future 2 combines both. Bring Stress Resist and Slow Heal as needed. The grand stair is unavailable in Hard Mode.",
   "masteryIntro": "Route victories grant this character 1 mastery XP, or 2 for an elite and 10 for a boss. Fighting far behind your progression reduces credit. The first level costs 500 XP; each following level costs 5% more. Growth per mastery level:",
   "masteryTitle": "Character Mastery",
   "effectsTitle": "Combat effects",
@@ -1840,7 +1841,14 @@
   "type": "Type",
   "map": "Map",
   "region": "Region",
-  "name": "Name"
+  "name": "Name",
+  "oneMap": "1 map",
+  "sections": "sections",
+  "section": "Section",
+  "zones": "zones",
+  "mapSections": "Map sections",
+  "oneContinuousMap": "This wing is one continuous map. Its sections group the encounter zones below.",
+  "fullSizeMap": "Open full-size map"
 };
   function museumGuide(mode) {
     return '<div class="notice"><strong>Museum ' + (mode === "hard" ? 'Hard' : 'Normal') + '</strong><p>' +
@@ -1896,6 +1904,11 @@
     var maxLevel = levelZones.length ? Math.max.apply(null, levelZones.map(function (z) { return z.maxEnemyLevel; })) : 0;
     var totalCells = m.walkableCells + m.blockedCells;
     var walkPct = totalCells ? Math.round(m.walkableCells / totalCells * 100) + "%" : "--";
+    var sectors = (m.sectors || []).map(function(sector,index) {
+      return {name:sector.name,anchor:"sector-"+m.id+"-"+index,zones:sector.zoneIds.map(function(id) {
+        return zones.find(function(zone) { return zone.id===id; });
+      }).filter(Boolean)};
+    }).filter(function(sector) { return sector.zones.length; });
     function sectionHead(kicker, title, count, copy) {
       return '<header class="map-section-head"><div><span class="section-kicker">' + esc(kicker) + '</span><h2>' + esc(title) + '</h2></div>' +
         (count != null ? '<span class="map-section-count">' + fmt(count) + '</span>' : '') +
@@ -1903,8 +1916,9 @@
     }
     function zoneCard(z) {
       var hard = /_HM_Z/.test(z.id), names = (z.enemies || []).map(function (ze) { return ze.enemyName || ze.enemyId; });
+      var heading = sectors.length ? "h4" : "h3";
       return '<article class="map-zone-card" style="--zone-color:' + esc(z.color || "var(--accent)") + '">' +
-        '<div class="map-zone-top"><div><h3>' + esc(z.name) + '</h3><span>Level ' + fmt(z.minEnemyLevel) + '&#8211;' + fmt(z.maxEnemyLevel) + '</span></div>' +
+        '<div class="map-zone-top"><div><'+heading+'>' + esc(z.name) + '</'+heading+'><span>Level ' + fmt(z.minEnemyLevel) + '&#8211;' + fmt(z.maxEnemyLevel) + '</span></div>' +
         '<span class="pill">' + (hard ? 'Hard' : 'Normal') + '</span></div>' +
         '<p>' + (names.length ? esc(names.join(", ")) : 'No regular encounters') + '</p></article>';
     }
@@ -1948,14 +1962,18 @@
         '<div class="tags">' + (m.world ? '<span class="pill">' + esc(m.world) + '</span>' : '') +
         (minLevel ? '<span class="pill">Level ' + fmt(minLevel) + '&#8211;' + fmt(maxLevel) + '</span>' : '') + '</div>' +
         '<p>Review this map\'s zones, encounters, regular item drops, bosses, and exclusive boss rewards before choosing your route.</p></div>' +
-        '<div class="map-art">' + (m.image ? '<img src="' + IMG_BASE + esc(m.image) + '" alt="' + esc(m.name) + '">' : '<div class="empty">No map art available.</div>') + '</div></section>' +
+        '<div class="map-art">' + (m.image ? (sectors.length ? '<a class="map-art-link" href="'+IMG_BASE+esc(m.image)+'" target="_blank" rel="noopener">' : '')+'<img src="' + IMG_BASE + esc(m.image) + '" alt="' + esc(m.name) + '">'+(sectors.length ? '<span>Open full-size map</span></a>' : '') : '<div class="empty">No map art available.</div>') + '</div></section>' +
       modeTabsHtml(mode, modeAvailability([m]), "Map data mode") +
       (m.world === "Museum" ? museumGuide(mode) : "") + doorSection(d, m, mode) +
       '<section class="map-overview" aria-label="Map overview">' +
         sb("Zones", zones.length) + sb("Monsters", encounters.enemies.length) + sb("Item drops", drops.length) + sb("Bosses", bosses.length) +
         sb("Walkable", walkPct) + sb("Grid", m.gridWidth + "&#215;" + m.gridHeight) + '</section>' +
       (zones.length ? '<section class="map-detail-section">' + sectionHead("Local areas", "Zones", zones.length, mode === "hard" ? "Hard Mode zones only" : "Normal Mode zones only") +
-        '<div class="map-zone-grid">' + zones.map(zoneCard).join('') + '</div></section>' : '') +
+        (sectors.length ? '<p class="map-section-note">'+RELEASE_COPY.oneContinuousMap+'</p><nav class="map-sector-nav" aria-label="Map sections">'+sectors.map(function(sector,index) {
+          return '<a href="#'+sector.anchor+'"><small><span>Section</span> '+(index+1)+'</small><strong>'+esc(sector.name)+'</strong><span>'+sector.zones.length+' <span>zones</span></span></a>';
+        }).join('')+'</nav>'+sectors.map(function(sector) {
+          return '<section class="map-zone-sector" id="'+sector.anchor+'"><h3>'+esc(sector.name)+'</h3><div class="map-zone-grid">'+sector.zones.map(zoneCard).join('')+'</div></section>';
+        }).join('') : '<div class="map-zone-grid">' + zones.map(zoneCard).join('') + '</div>')+'</section>' : '') +
       (encounters.enemies.length ? '<section class="map-detail-section">' + sectionHead("Encounters", "Monsters", encounters.enemies.length, "Regular enemies in " + (mode === "hard" ? "Hard Mode" : "Normal Mode")) +
         '<div class="map-entity-grid">' + encounters.enemies.map(enemyCard).join('') + '</div></section>' : '') +
       (drops.length ? '<section class="map-detail-section monster-drops">' + sectionHead("Regular loot", "Monster item drops", drops.length, "Items earned from regular encounters on this map") +
