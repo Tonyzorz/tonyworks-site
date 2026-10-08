@@ -1496,7 +1496,7 @@
     var londonUpcoming = !(d.release && d.release.londonReleased);
     var monochromeUpcoming = !(d.release && d.release.monochromeReleased);
     app.innerHTML =
-      pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", live(d.maps).length) +
+      pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", d.maps.filter(function(m) { return availableIn(m,mode); }).length) +
       modeTabsHtml(mode, null, "Map data mode") +
       '<div class="atlas-tools"><div class="view-switch" role="group" aria-label="World view"><button type="button" data-view="map">Map</button><button type="button" data-view="list">List</button></div><label class="atlas-focus"><span>Focus region</span><select data-atlas-focus aria-label="Focus region">'+worlds.map(function(w) { return '<option value="'+esc(w)+'"'+(w==='World Gate'?' selected':'')+'>'+esc(w)+'</option>'; }).join('')+'</select></label><button type="button" class="atlas-jump" data-focus="Cloud Plaza">Cloud Plaza routes</button></div>' +
       '<div class="world-view" data-panel="map"><div class="worldmap"><div class="wm-grid">' +
