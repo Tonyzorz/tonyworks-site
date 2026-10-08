@@ -14,6 +14,7 @@ import { doorGraph } from "./door-graph.mjs";
 import { publicationPolicy, modesForMap } from "./public-content.mjs";
 import { writePublicMapLayout } from "./public-map-layouts.mjs";
 import { museumMapDetails } from "./museum-display.mjs";
+import { itemEffects } from "./item-effects.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE = path.resolve(__dirname, "..");
@@ -261,31 +262,6 @@ const ITYPE  = ["Weapon","Armor","Helmet","Shoes","Accessory"];
 const ATYPE  = ["TotalKills","BossKills","GoldEarned","RunsCompleted","LevelReached","TotalGoldSpent","UniqueBossesDefeated","HighestKillStreak","NoPenaltyRun","UntouchableWin","AllSlotsEquipped","ItemMaxUpgrade","SpeedClearBoss","ItemBankSize","AllRevivesUsed","RegionBossesCleared"];
 const AMODE   = ["Any","Normal","Hard"];
 const AREWARD = ["BonusATK","BonusHP","BonusDEF","BonusAGI","BonusLUC","UnlockCharacter"];
-const nz = (n) => n && n !== 0;
-// Mirrors Core/NumberFormat.Abbreviate, including the double-backed World Gate suffix ladder.
-// Floors (never rounds up across a tier edge) and drops a trailing ".0", like the game's Trim().
-const SUFFIXES = ["", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "Oc", "No", "Dc",
-  "Ud", "Dd", "Td", "Qad", "Qid", "Sxd", "Spd", "Od", "Nd", "Vg",
-  "Uvg", "Dvg", "Tvg", "Qavg", "Qivg", "Sxvg", "Spvg", "Ovg", "Nvg", "Tg"];
-const abbr = (n) => {
-  const neg = n < 0;
-  const v = Math.abs(Number(n) || 0);
-  const trim = (x) => String(Math.floor(x * 10) / 10);
-  let s = String(Math.floor(v));
-  if (v >= 1000) {
-    let tier = Math.floor(Math.log10(v) / 3);
-    if (tier >= SUFFIXES.length) s = v.toExponential(2).replace(/\.0+(?=e)/, "");
-    else {
-      let scale = Math.pow(1000, tier);
-      if (v / scale < 1 && tier > 0) { tier--; scale /= 1000; }
-      else if (v / scale >= 1000 && tier + 1 < SUFFIXES.length) { tier++; scale *= 1000; }
-      s = trim(v / scale) + SUFFIXES[tier];
-    }
-  }
-  return (neg ? "-" : "") + s;
-};
-const d1 = (n) => { const r = Math.round(n * 10) / 10; return Number.isInteger(r) ? r.toFixed(0) : r.toFixed(1); };
-
 const itemById = new Map();
 const items = loadCategory("Items").map((a) => {
   const t = a.text;
@@ -303,31 +279,8 @@ const items = loadCategory("Items").map((a) => {
     affinityType: num(t, "affinityType"),
     buyPrice: num(t, "buyPrice"), maxCopies: num(t, "maxCopies"), effects: []
   };
-  const e = [];
-  // Abbreviated, mirroring Core/NumberFormat.Abbreviate in the game so the wiki reads identically
-  // ("HP +3.3M", not "HP +3300000"). The raw bonus* fields above stay exact for tooling/compare.
-  if (nz(o.bonusHP)) e.push("HP +" + abbr(o.bonusHP));
-  if (nz(o.bonusATK)) e.push("ATK +" + abbr(o.bonusATK));
-  if (nz(o.bonusDEF)) e.push("DEF +" + abbr(o.bonusDEF));
-  if (nz(o.bonusAGI)) e.push("AGI +" + abbr(o.bonusAGI));
-  if (nz(o.bonusLUC)) e.push("LUC +" + abbr(o.bonusLUC));
-  const P = (k) => num(t, k);
-  if (P("bonusHPPercent") > 0) e.push("HP +" + Math.round(P("bonusHPPercent")) + "%");
-  if (P("bonusATKPercent") > 0) e.push("ATK +" + Math.round(P("bonusATKPercent")) + "%");
-  if (P("bonusDEFPercent") > 0) e.push("DEF +" + Math.round(P("bonusDEFPercent")) + "%");
-  if (P("bonusAGIPercent") > 0) e.push("AGI +" + Math.round(P("bonusAGIPercent")) + "%");
-  if (P("bonusLUCPercent") > 0) e.push("LUC +" + Math.round(P("bonusLUCPercent")) + "%");
-  if (P("lifestealPct") > 0) e.push("Lifesteal " + d1(P("lifestealPct") * 100) + "%");
-  if (P("gaugeSlowPct") > 0) e.push("Gauge Slow " + d1(P("gaugeSlowPct") * 100) + "%");
-  if (P("bonusMoveSpdPct") > 0) e.push("Move Spd +" + d1(P("bonusMoveSpdPct") * 100) + "%");
-  if (P("bonusGoldPct") > 0) e.push("Gold +" + d1(P("bonusGoldPct") * 100) + "%");
-  if (P("bonusExpPct") > 0) e.push("EXP +" + d1(P("bonusExpPct") * 100) + "%");
-  if (bool(t, "hasHPAbsorb")) e.push("Absorb " + num(t, "hpAbsorbPercent") + "%");
-  if (bool(t, "hasAutoRevive")) e.push("Auto Revive");
-  if (bool(t, "hasBPBonus")) e.push("AP +" + num(t, "bpBonus"));
-  if (P("burnResistPct") > 0) e.push((bool(t, "burnResistIsStress") ? "Stress Resist " : "Burn Resist ") + d1(P("burnResistPct") * 100) + "%");
-  if (P("slowHealTurns") > 0) e.push("Slow Heal +" + P("slowHealTurns"));
-  o.effects = e; itemById.set(a.id, o); return o;
+  Object.assign(o, itemEffects(t, o));
+  itemById.set(a.id, o); return o;
 });
 const itemName = (id) => itemById.has(id) ? itemById.get(id).name : id;
 

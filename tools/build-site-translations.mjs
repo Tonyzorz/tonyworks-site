@@ -99,6 +99,7 @@ export function sourceStrings() {
   const catalog = JSON.parse(fs.readFileSync(path.join(root, "apps/infinite-loot-loop/data/data.json"), "utf8"));
   catalog.maps.filter(map => /^(MU|MH|MX|CY|SM)\d/.test(map.id)).forEach(map => strings.add(map.name));
   catalog.maps.forEach(map => (map.sectors || []).forEach(sector => strings.add(sector.name)));
+  catalog.items.forEach(item => (item.specialEffects || []).forEach(effect => strings.add(effect)));
   for (const page of pages) {
     const html = fs.readFileSync(path.join(root, page), "utf8");
     extractStrings(html).forEach(value => strings.add(value));
@@ -244,6 +245,8 @@ async function main() {
   const sourceSet = new Set(sources);
   const gameLocales = path.join(root, "apps/infinite-loot-loop/data/localization");
   const gameEnglish = JSON.parse(fs.readFileSync(path.join(gameLocales, "en.json"), "utf8"));
+  const effectSources = new Set(JSON.parse(fs.readFileSync(path.join(root, "apps/infinite-loot-loop/data/data.json"), "utf8"))
+    .items.flatMap(item => item.specialEffects || []));
   fs.mkdirSync(outputDir, { recursive: true });
   const english = Object.fromEntries(sources.map(source => [source, source]));
   fs.writeFileSync(path.join(outputDir, "en.json"), JSON.stringify(english, null, 2) + "\n", "utf8");
@@ -259,6 +262,18 @@ async function main() {
     const gameLocale = JSON.parse(fs.readFileSync(path.join(gameLocales, `${locale}.json`), "utf8"));
     for (const [key, source] of Object.entries(gameEnglish)) {
       if (key.startsWith("map_") && sourceSet.has(source) && gameLocale[key]) existing[source] = gameLocale[key];
+    }
+    // Use the game's approved effect labels and keep authored values unchanged.
+    // Only full regional-affinity sentences need ordinary prose translation.
+    for (const effect of effectSources) {
+      if (/^(HP|ATK|DEF|AGI|LUC|EXP|AP) [+-][\d.]+[%A-Za-z]*$/.test(effect)) existing[effect] = effect;
+      for (const [key, label] of Object.entries(gameEnglish)) {
+        if (!key.startsWith("stat_") || !gameLocale[key]) continue;
+        if (effect !== label && !(effect.startsWith(label + " ") && /^ [+-]?\d/.test(effect.slice(label.length)))) continue;
+        existing[effect] = (gameLocale[key] + effect.slice(label.length))
+          .replace(gameEnglish.stat_lifesteal_no_stack, gameLocale.stat_lifesteal_no_stack);
+        break;
+      }
     }
     const missing = sources.filter(source => typeof existing[source] !== "string" || !existing[source].trim());
     console.log(`${locale}: translating ${missing.length} missing strings...`);

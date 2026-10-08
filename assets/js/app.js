@@ -761,8 +761,8 @@
             worlds.map(function (w) { return '<a class="fx region-link" data-region="' + esc(w) + '" href="maps.html?world=' + encodeURIComponent(w) + '&mode=' + mode + '">' + esc(w) + "</a>"; }).join("") + "</div>" +
             (zones.length ? '<p style="color:var(--faint);font-size:.85rem;margin-top:.5rem">' + esc(zones.join(" · ")) + "</p>" : "")
         : "") +
-      (drops.length ? '<div class="section-title">Drops</div><table class="data"><tr><th>Item</th><th>Chance</th></tr>' +
-        drops.map(function (x) { return "<tr><td>" + link("items.html", x.itemId, x.itemName || x.itemId) + "</td><td>" + x.chance + "%</td></tr>"; }).join("") + "</table>" +
+      (drops.length ? '<div class="section-title">Drops</div><table class="data"><tr><th>Item</th><th>Effects</th><th>Chance</th></tr>' +
+        drops.map(function (x) { return "<tr><td>" + link("items.html", x.itemId, x.itemName || x.itemId) + "</td><td>" + itemEffectList(d._itemById[x.itemId]) + "</td><td>" + x.chance + "%</td></tr>"; }).join("") + "</table>" +
         '<p style="color:var(--faint);font-size:.8rem;margin-top:.4rem">One shared drop roll per kill — these are each item’s share of it. In game, copies you already own shift the odds toward items you still need, and drop-rate bonuses raise the total.</p>' : "") +
       "</div></div>";
     wireModeTabs(app, mode, function (next) { monsterDetail(app, d, selected, next); });
@@ -825,8 +825,8 @@
       var res = hard ? b.hardModeResists : b.resists;
       return '<div class="statgrid">' + sb("HP", fmt(hp)) + sb("ATK", fmt(atk)) + "</div>" +
         resistSection(res, "Resistances") + affixSection(hard ? b.hardAffixes : b.affixes) +
-        '<div class="section-title">Drops</div><table class="data"><tr><th>Item</th><th>Base chance</th></tr>' +
-        bossDropItems(d, [b], mode).map(function(row) { return '<tr><td>' + itemLink(row.id) + '</td><td>' + row.chance + '%</td></tr>'; }).join('') + '</table>';
+        '<div class="section-title">Drops</div><table class="data"><tr><th>Item</th><th>Effects</th><th>Base chance</th></tr>' +
+        bossDropItems(d, [b], mode).map(function(row) { return '<tr><td>' + itemLink(row.id) + '</td><td>' + itemEffectList(row.item) + '</td><td>' + row.chance + '%</td></tr>'; }).join('') + '</table>';
 
     }
     app.innerHTML = detailHead("bosses.html", "Bosses", bossList(d).filter(function(x) { return availableIn(x, mode); }), b) +
@@ -844,6 +844,12 @@
   }
 
   /* ---- Items ---- */
+  function itemEffectList(item, onlySpecial) {
+    var effects = item && (onlySpecial ? item.specialEffects : item.effects) || [];
+    return effects.length ? '<ul class="item-effects" aria-label="Effects">' + effects.map(function(effect) {
+      return '<li>' + esc(effect) + '</li>';
+    }).join('') + '</ul>' : '';
+  }
   PAGES.items = function (app, d) {
     var id = param("id");
     if (id) return itemDetail(app, d, d._itemById[id]);
@@ -887,11 +893,11 @@
         {label:"DEF",sort:"def",numeric:true,render:function(i) { return fmt(i.bonusDEF); }},
         {label:"AGI",sort:"agi",numeric:true,render:function(i) { return fmt(i.bonusAGI); }},
         {label:"LUC",sort:"luc",numeric:true,render:function(i) { return fmt(i.bonusLUC); }},
+        {label:"Effects",render:function(i) { return itemEffectList(i,true) || "&#8212;"; }},
         {label:"Price",sort:"price",numeric:true,render:function(i) { return (i.shopAreas || []).length && !i.shopUnavailable ? fmt(i.buyPrice) : "\u2014"; }}
       ],
       card: function (i) {
         var mainLabel = itemPrimaryLabel(i), mainValue = itemPrimaryStat(i);
-        var eff = (i.effects || []).slice(0, 2).join(" · ");
         // Planned gear has no rarity and no stat yet; itemPrimaryStat() would print a flat 0.
         if (i.upcoming) return '<a class="card rar item-card is-upcoming" href="items.html?id=' +
           encodeURIComponent(i.id) + '">' + thumb(i.image, i.name) +
@@ -903,7 +909,7 @@
           thumb(i.image, i.name) + '<div class="body"><h4>' + esc(i.name) + "</h4>" +
           '<div class="meta"><span style="color:' + rarColor(i.rarity) + '">' + esc(i.rarity) + "</span> &#183; " + esc(i.type) + "</div>" +
           '<div class="item-main-stat"><span>' + esc(mainLabel) + '</span><strong>' + fmt(mainValue) + '</strong></div>' +
-          (eff ? '<div class="meta" style="margin-top:.25rem">' + esc(eff) + "</div>" : "") + "</div></a>";
+          itemEffectList(i) + "</div></a>";
       }
     });
   };
@@ -930,7 +936,7 @@
         { label: "Hard Mode", mode: "hard", test: function (i) { return i.isHardModeItem; } }
       ],
       search: function (i) {
-        return i.name + " " + i.id + " " + i.type + " " + (i.shopAreas || []).map(areaLabel).join(" ");
+        return i.name + " " + i.id + " " + i.type + " " + (i.effects || []).join(" ") + " " + (i.shopAreas || []).map(areaLabel).join(" ");
       },
       filters: [
         { key: "type", label: "Equipment", values: types, get: function (i) { return i.type; } },
@@ -964,6 +970,7 @@
           '<div class="shop-stat-grid" aria-label="Full equipment stats">' + stats.map(function (stat) {
             return '<span><small>' + esc(stat[0]) + '</small><strong>' + fmt(stat[1]) + '</strong></span>';
           }).join("") + '</div>' +
+          itemEffectList(i,true) +
           '<div class="shop-card-location"><span>Shop</span> ' + esc(firstArea) + esc(extraAreas) + '</div>' +
           '<span class="shop-card-action">View equipment details &#8594;</span></div></a>';
       }
@@ -1112,7 +1119,8 @@
         compareRow("Rarity", items, function (x) { return x.rarity; }) + compareRow("Type", items, function (x) { return x.type; }) +
         compareRow("HP", items, function (x) { return fmt(x.bonusHP); }) + compareRow("ATK", items, function (x) { return fmt(x.bonusATK); }) +
         compareRow("DEF", items, function (x) { return fmt(x.bonusDEF); }) + compareRow("AGI", items, function (x) { return fmt(x.bonusAGI); }) +
-        compareRow("LUC", items, function (x) { return fmt(x.bonusLUC); }) + '</table></div>' : '<p>Select up to four items to compare.</p>');
+        compareRow("LUC", items, function (x) { return fmt(x.bonusLUC); }) +
+        '<tr><th>Effects</th>' + items.map(function(x) { return '<td>' + (itemEffectList(x,true) || '&#8212;') + '</td>'; }).join('') + '</tr></table></div>' : '<p>Select up to four items to compare.</p>');
       tray.classList.toggle("open", items.length > 0);
       tray.classList.toggle("collapsed", collapsed);
       if (add) { add.disabled = ids.indexOf(currentId) >= 0 || ids.length >= 4; add.textContent = ids.indexOf(currentId) >= 0 ? "Added to comparison" : "⇄ Add to comparison"; }
@@ -1933,6 +1941,7 @@
       return '<article class="map-drop-card">' + thumb(item && item.image, row.name) + '<div><h3>' +
         (item ? link("items.html", item.id, item.name) : esc(row.name)) + '</h3>' +
         (item ? '<p><span style="color:' + rarColor(item.rarity) + '">' + esc(item.rarity) + '</span> &#183; ' + esc(item.type) + '</p>' : '') +
+        itemEffectList(item) +
         '<div class="map-drop-sources">' + row.sources.map(function (s) {
           return '<span>' + link("monsters.html", s.enemy.id, s.enemy.name) + ' <strong>' + esc(s.chance) + '%</strong>' + (s.hard ? ' <small>Hard</small>' : '') + '</span>';
         }).join('') + '</div></div></article>';
@@ -1952,6 +1961,7 @@
       return '<article class="map-drop-card boss-drop">' + thumb(item && item.image, row.name) + '<div><h3>' +
         (item ? link("items.html", item.id, item.name) : esc(row.name)) + '</h3>' +
         (item ? '<p><span style="color:' + rarColor(item.rarity) + '">' + esc(item.rarity) + '</span> &#183; ' + esc(item.type) + '</p>' : '') +
+        itemEffectList(item) +
         '<div class="map-drop-sources"><span><a href="bosses.html?id=' + encodeURIComponent(row.boss.id) + '&mode=' + mode + '">' + esc(row.boss.name) + '</a>' +
           ' <strong>' + esc(row.chance) + '%</strong> <small>' + esc(row.mode) + '</small></span></div>' +
         '</div></article>';

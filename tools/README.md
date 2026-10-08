@@ -17,6 +17,7 @@ node tools/sync-localization.mjs     # public catalog text only
 node tools/build-site-translations.mjs
 node tools/audit-publication.mjs
 node tools/audit-ui.mjs
+node tools/audit-item-effects.mjs
 node tools/audit-site.mjs
 ```
 
@@ -31,6 +32,10 @@ node tools/audit-site.mjs
   Unity at full art resolution, which is far too large for the web).
 - `audit-data.mjs` verifies every exported image reference and rejects maps where
   differently named monster archetypes accidentally resolve to identical art.
+- `item-effects.mjs` exports every stat, resistance, utility, combat and affinity
+  effect from ItemData. Its CLI refreshes effects on existing public items only.
+  `audit-item-effects.mjs` checks source coverage, numeric units, real boss rewards
+  and complete rendering in the catalog, drops and comparison views.
 - `public-content.mjs` derives permanent exclusions from the game's secret registry,
   item visibility flags, secret encounters and hidden map definitions. Release switches
   never override these exclusions. Hidden content is omitted from data, translations,

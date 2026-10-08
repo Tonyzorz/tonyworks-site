@@ -221,7 +221,7 @@
   var scriptUrl = document.currentScript && document.currentScript.src ? document.currentScript.src : window.location.href;
   var dataBase = new URL("../../apps/infinite-loot-loop/data/localization/", scriptUrl).href;
   var siteContentBase = new URL("../i18n/site-content/", scriptUrl).href;
-  var localizationVersion = "703";
+  var localizationVersion = "704";
   var ready = code === "en" ? Promise.resolve() : Promise.all([
     fetchJSON(dataBase + "en.json?v=" + localizationVersion), fetchJSON(dataBase + "en_content.json?v=" + localizationVersion),
     fetchJSON(dataBase + code + ".json?v=" + localizationVersion), fetchJSON(dataBase + code + "_content.json?v=" + localizationVersion),
@@ -328,7 +328,7 @@
         ["name", "description", "effect", "unlockCondition", "reward", "dropItemName", "hardModeDropItemName", "bonusDropItemName"].forEach(function (field) {
           if (typeof entry[field] === "string") entry[field] = translatePhrase(entry[field]);
         });
-        ["zoneNames", "effects"].forEach(function (field) {
+        ["zoneNames", "effects", "specialEffects"].forEach(function (field) {
           if (Array.isArray(entry[field])) entry[field] = entry[field].map(translatePhrase);
         });
         var drops = Array.isArray(entry.drops) ? entry.drops : Object.keys(entry.drops || {}).reduce(function(rows, mode) { return rows.concat(entry.drops[mode]); }, []);
