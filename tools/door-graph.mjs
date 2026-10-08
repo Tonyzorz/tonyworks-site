@@ -51,6 +51,7 @@ export function doorGraph(GAME) {
   const doors = [];
   for (const doc of text.split(/^--- !u!/m)) {
     if (!/m_EditorClassIdentifier:.*MapTransitionTrigger/.test(doc)) continue;
+    if (/^\s*secretPortal:\s*1\s*$/m.test(doc)) continue;
     const go = doc.match(/m_GameObject:\s*\{fileID:\s*(\d+)\}/);
     const tgt = doc.match(/^\s*targetMap:\s*\{fileID:\s*\d+,\s*guid:\s*([0-9a-f]{32})/m);
     const host = doc.match(/^\s*activeOnlyInMap:\s*\{fileID:\s*\d+,\s*guid:\s*([0-9a-f]{32})/m);

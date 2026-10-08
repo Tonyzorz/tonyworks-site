@@ -93,6 +93,11 @@ export function sourceStrings() {
   const phraseMatch = i18nSource.match(/var PHRASES = (\{[\s\S]*?\});\s*function canonicalLanguage/);
   if (!phraseMatch) throw new Error("assets/js/i18n.js: PHRASES dictionary not found");
   const strings = new Set([...extraStrings, ...Object.keys(JSON.parse(phraseMatch[1]))]);
+  const appSource = fs.readFileSync(path.join(root, "assets/js/app.js"), "utf8");
+  const releaseCopy = appSource.match(/var RELEASE_COPY = (\{[\s\S]*?\});/);
+  if (releaseCopy) Object.values(JSON.parse(releaseCopy[1])).forEach(value => strings.add(value));
+  const catalog = JSON.parse(fs.readFileSync(path.join(root, "apps/infinite-loot-loop/data/data.json"), "utf8"));
+  catalog.maps.filter(map => /^(MU|MH|MX|CY|SM)\d/.test(map.id)).forEach(map => strings.add(map.name));
   for (const page of pages) {
     const html = fs.readFileSync(path.join(root, page), "utf8");
     extractStrings(html).forEach(value => strings.add(value));
@@ -235,6 +240,9 @@ async function mapConcurrent(values, concurrency, mapper) {
 
 async function main() {
   const sources = sourceStrings();
+  const sourceSet = new Set(sources);
+  const gameLocales = path.join(root, "apps/infinite-loot-loop/data/localization");
+  const gameEnglish = JSON.parse(fs.readFileSync(path.join(gameLocales, "en.json"), "utf8"));
   fs.mkdirSync(outputDir, { recursive: true });
   const english = Object.fromEntries(sources.map(source => [source, source]));
   fs.writeFileSync(path.join(outputDir, "en.json"), JSON.stringify(english, null, 2) + "\n", "utf8");
@@ -245,6 +253,11 @@ async function main() {
     let existing = {};
     if (fs.existsSync(file)) {
       try { existing = JSON.parse(fs.readFileSync(file, "utf8")); } catch {}
+    }
+    // Keep public map labels identical to the game's approved translations.
+    const gameLocale = JSON.parse(fs.readFileSync(path.join(gameLocales, `${locale}.json`), "utf8"));
+    for (const [key, source] of Object.entries(gameEnglish)) {
+      if (key.startsWith("map_") && sourceSet.has(source) && gameLocale[key]) existing[source] = gameLocale[key];
     }
     const missing = sources.filter(source => typeof existing[source] !== "string" || !existing[source].trim());
     console.log(`${locale}: translating ${missing.length} missing strings...`);

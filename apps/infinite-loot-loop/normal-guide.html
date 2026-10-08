@@ -30,7 +30,7 @@
     "@type": "Article",
     "headline": "Infinite Loot-Loop Normal Mode Guide",
     "description": "A complete Normal Mode route, stat, AP, equipment, boss and Hard Mode unlock guide.",
-    "dateModified": "2026-08-27",
+    "dateModified": "2026-10-08",
     "author": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/about.html" },
     "mainEntityOfPage": "https://tonyworks.co.kr/apps/infinite-loot-loop/normal-guide.html"
   }
@@ -132,23 +132,23 @@
             <tr><td>ATK</td><td>Normal, critical, and combo damage</td><td>Receives the level-power percentage bonus</td></tr>
             <tr><td>DEF</td><td>Flat damage reduction</td><td>Receives level power; enemies may ignore a share</td></tr>
             <tr><td>AGI</td><td>Critical chance/damage, combo, dodge</td><td>Does not receive the level-power percentage</td></tr>
-            <tr><td>LUC</td><td>Gold, combo, dodge, small drop nudge</td><td>Does not receive the level-power percentage</td></tr>
+            <tr><td>LUC</td><td>Gold, drop chance, and Lucky Drop</td><td>Does not receive the level-power percentage</td></tr>
           </tbody>
         </table>
-        <div class="callout guide-note"><strong>Level power</strong><span>Full HP, ATK, and DEF now gain <code>2.35 &times; ln(1 + level / 100)%</code>. This includes base, equipment, permanent, achievement, and character stats. Item percentage bonuses also apply to the full stat total. AGI and LUC stay outside this multiplier.</span></div>
+        <div class="callout guide-note"><strong>Level power</strong><span>Level power is allocated by your stat-point shares. Its total ceiling is <code>2.35 &times; ln(1 + level / 100)%</code>: each of HP, ATK and DEF receives that percentage multiplied by its share of points across all five stats. It scales the full stat foundation, including equipment and permanent bonuses. AGI and LUC do not receive level power.</span></div>
         <ul>
           <li>Critical chance starts from <code>AGI &times; 0.0015</code>; critical damage starts at 1.5&#215; and gains <code>AGI &times; 0.00075</code>, before enemy resistance.</li>
           <li>Combo chance is driven by your allocated <strong>ATK</strong> points. Overflow becomes combo tiers, but combat allows at most 3 extra hits.</li>
           <li>Dodge comes from <strong>AGI</strong> (about 0.035% per point) and is capped at 20% after resistance.</li>
-          <li>LUC adds 0.1% gold per point. Its direct drop nudge is much smaller: +0.0004 percentage points per LUC, capped at +0.6 percentage points.</li>
+          <li>LUC adds 0.1% gold per point. Its direct drop bonus grows with investment, capped at +3 percentage points.</li>
         </ul>
         <div class="callout guide-tip"><strong>Allocation</strong><span>There is no universal ratio. Add ATK when fights are safe but slow, HP/DEF when bosses can end the fight, and AGI/LUC when their offensive and economy effects remain effective after the current enemy's resistance.</span></div>
 
         <h2 id="loot">Loot, shop, and permanent growth</h2>
         <ul>
-          <li>A regular Normal kill usually has one <strong>3% shared drop budget</strong>, distributed among all eligible items. It is not a separate 3% roll for every item.</li>
+          <li>A regular Normal kill has one <strong>5% shared drop budget</strong>, distributed among eligible items before bonuses. It is not a separate 5% roll for every item.</li>
           <li>Duplicate decay makes additional copies progressively less likely. Capped items leave the pool and their weight is redistributed.</li>
-          <li>Boss item chance begins around <strong>1%</strong> before character, equipment, hunt, and LUC bonuses.</li>
+          <li>Normal boss uniques share a <strong>3% drop budget</strong> before bonuses. Each item's displayed chance is its share of that budget.</li>
           <li>The Normal shop is global and uses curated live-route equipment. You cannot buy a shop item you already own; additional copies come from drops.</li>
           <li>You start with 6 equipment slots. Normal Mode can unlock slot 7 for 10,000 gold and slot 8 for 50,000 gold.</li>
           <li>There are five saved equipment loadouts. Set 1 is free; Sets 2&#8211;5 cost 8,000, 250,000, 8,000,000, and 200,000,000 gold. They are loadouts, not matching-set combat bonuses.</li>
@@ -223,8 +223,7 @@
           <li><strong>AGI &#8211; Crit and Dodge.</strong> Crit damage starts at 1.5&times; and caps at 4&times;. Dodge is
           about 0.035% per point and caps at 20%. Crit chance above 100% becomes crit tiers, each multiplying
           again, up to 5.</li>
-          <li><strong>LUC &#8211; Gold and drops.</strong> Gold rises 0.1% per point. Drop rate climbs toward +0.5%
-          and then very slowly to +0.75%.</li>
+          <li><strong>LUC &#8211; Gold and drops.</strong> Gold rises 0.1% per point. The drop-rate bonus grows with investment, capped at +3 percentage points.</li>
         </ul>
         <p>Going all-in on one stat is a real build: every all-in build is measured to land within 25% of a
         balanced one.</p>
@@ -240,11 +239,12 @@
           <div><span>All 20 bosses cleared?</span><strong>Continue with the Hard Mode field plan.</strong></div>
           <div class="guide-finish-links"><a href="hard-mode-guide.html">Open Hard Guide</a><a href="bosses.html">Check bosses</a><a href="run-planner.html">Budget AP</a><a href="items.html">Compare gear</a></div>
         </div>
-      </article>
+      <section id="museum-normal"><h2>The Museum and the new Normal regions</h2><p>The original Museum has 25 maps: the Atrium and four wings covering Stone Age, Civilization I, Civilization II and the Modern Area of Study. Burn Resist counters Burn, while Slow Heal delays enemy regeneration. Mexico, Candy and SuperMarket are Normal Mode regions reached from Cloud Plaza, each with three maps. Compare the current monsters and loot before advancing.</p><p><a href="maps.html?world=Museum&amp;mode=normal">Open the Normal Museum route</a></p></section>
+    </article>
     </div>
   </main>
   <footer class="footer" id="site-footer">Tony Works — official companion wiki for <strong>Infinite Loot-Loop</strong>. <a href="../../about.html">About</a> &#183; <a href="../../contact.html">Contact</a> &#183; <a href="game-data.html">Data notes</a> &#183; <a href="../../privacy-policy.html">Privacy</a> &#183; <a href="../../terms.html">Terms</a></footer>
-  <script src="../../assets/js/i18n.js?v=7"></script>
-  <script src="../../assets/js/app.js?v=72"></script>
+  <script src="../../assets/js/i18n.js?v=700"></script>
+  <script src="../../assets/js/app.js?v=700"></script>
 </body>
 </html>

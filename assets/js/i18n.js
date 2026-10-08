@@ -221,7 +221,7 @@
   var scriptUrl = document.currentScript && document.currentScript.src ? document.currentScript.src : window.location.href;
   var dataBase = new URL("../../apps/infinite-loot-loop/data/localization/", scriptUrl).href;
   var siteContentBase = new URL("../i18n/site-content/", scriptUrl).href;
-  var localizationVersion = "7";
+  var localizationVersion = "700-1";
   var ready = code === "en" ? Promise.resolve() : Promise.all([
     fetchJSON(dataBase + "en.json?v=" + localizationVersion), fetchJSON(dataBase + "en_content.json?v=" + localizationVersion),
     fetchJSON(dataBase + code + ".json?v=" + localizationVersion), fetchJSON(dataBase + code + "_content.json?v=" + localizationVersion),
@@ -331,20 +331,21 @@
         ["zoneNames", "effects"].forEach(function (field) {
           if (Array.isArray(entry[field])) entry[field] = entry[field].map(translatePhrase);
         });
-        (entry.drops || []).forEach(function (drop) {
+        var drops = Array.isArray(entry.drops) ? entry.drops : Object.keys(entry.drops || {}).reduce(function(rows, mode) { return rows.concat(entry.drops[mode]); }, []);
+        drops.forEach(function (drop) {
           if (drop && typeof drop.itemName === "string") drop.itemName = translatePhrase(drop.itemName);
         });
       });
     });
 
-    // Area and map display names are exported from Unity but do not have
-    // dedicated content keys. Use the localized world plus the stable route
-    // code so new routes never fall back to an English asset name.
+    // Prefer translated map names, with the localized world and stable route
+    // code as a fallback for names without a translation.
     var areaByMap = {};
     var areaByCode = {};
     (data.areas || []).forEach(function (area) {
       var localizedWorld = translatePhrase(area.world || "");
-      area.name = localizedWorld + (area.code ? " " + area.code : "");
+      var localizedName = translatePhrase(area.name || "");
+      area.name = localizedName !== area.name ? localizedName : localizedWorld + (area.code ? " " + area.code : "");
       if (area.mapId) areaByMap[area.mapId] = area;
       if (area.code) areaByCode[area.code] = area;
     });
@@ -358,7 +359,7 @@
         zone.name = translated;
         return;
       }
-      var route = String(zone.id || "").match(/^([A-Z]{2}\d+|VoidHunt)/i);
+      var route = String(zone.id || "").match(/^([A-Z]{2}\d+)/i);
       var area = route && areaByCode[route[1]];
       if (!area) return;
       var number = String(zone.id || "").match(/(?:Zone|_Z)(\d+)$/i);

@@ -33,6 +33,16 @@ const DOC = path.resolve(ROOT, "../Infinite Loot-Loop/Assets/Project Information
 const GEO = path.resolve(ROOT, "../Infinite Loot-Loop/Tools/epoch4_blueprint/maps.js");
 const HUBSRC = path.resolve(ROOT, "../Infinite Loot-Loop/Tools/epoch4_blueprint/buildall.js");
 const OUT = path.resolve(ROOT, "apps/infinite-loot-loop/data/upcoming.json");
+// Retire previews as soon as the real catalog supplies all announced regions.
+const live = JSON.parse(fs.readFileSync(path.join(ROOT, "apps/infinite-loot-loop/data/data.json"), "utf8"));
+if (live.release?.epoch4Released && live.release?.museumReleased) {
+  fs.writeFileSync(OUT, JSON.stringify({
+    worlds: [], route: [], counts: { regions: 0, maps: 0, creatures: 0, gear: 0, bosses: 0, relics: 0 },
+    note: "Released regions are supplied by the current game catalog."
+  }, null, 2) + "\n");
+  console.log("Retired released previews; no announced upcoming content remains.");
+  process.exit(0);
+}
 
 // True when this region's real EnemyData assets are on disk, i.e. the content is built and the
 // live data export now supplies it. Reads the assets rather than a flag so it cannot go stale.

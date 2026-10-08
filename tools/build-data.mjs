@@ -8,8 +8,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
+import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import { doorGraph } from "./door-graph.mjs";
+import { publicationPolicy, modesForMap } from "./public-content.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE = path.resolve(__dirname, "..");
@@ -33,6 +35,7 @@ function walk(dir, filter, out = []) {
   return out;
 }
 const read = (p) => fs.readFileSync(p, "utf8");
+const privacy = publicationPolicy(GAME);
 
 const guidToAsset = new Map();
 const guidToPng = new Map();
@@ -187,15 +190,40 @@ const isHeldMuseum = (id, text) => {
   const m = text && text.match(/^\s*sourceRegion:\s*['"]?([A-Za-z0-9]+)/m);
   return !!(m && MUSEUM_PREFIX.test(m[1]));
 };
+// ⛔★★★★ THE 7.0.0 GATES (2026-10-02) — THE SAME GAP A FOURTH TIME, CLOSED BEFORE THE REFRESH.
+// Mexico / Candy / SuperMarket (`ShopManager.Epoch4LateReleased`) and the Museum's four HARD wings
+// (`ShopManager.MuseumHardReleased`) are baked on disk — 213 assets carry their sourceRegion — and
+// nothing here named MX/CY/SM/MH, so the next run would have published all of it. Two switches, as in
+// the game: neither reuses `museum`, because a gate keyed on last release's switch stopped gating the
+// day it flipped (the Epoch 4 HARD lesson above). Region-less assets (Troll_Souvenir*, SecretTicket)
+// are caught by their sourceRegion, like the Epoch 4 keys and trolls.
+const epoch4LateReleased = /Epoch4LateReleased\s*=>\s*true\s*;/.test(_shopManagerSrcForGate)
+  || /(^|,)\s*epoch4late\s*=\s*1\s*(,|$)/.test(process.env.SITE_LIVE_RELEASE || "");
+const museumHardReleased = /MuseumHardReleased\s*=>\s*true\s*;/.test(_shopManagerSrcForGate)
+  || /(^|,)\s*museumhard\s*=\s*1\s*(,|$)/.test(process.env.SITE_LIVE_RELEASE || "");
+const EPOCH4LATE_PREFIX = /^(MX|CY|SM)\d/;
+const MUSEUMHARD_PREFIX = /^MH\d/;
+let heldEpoch4LateCount = 0, heldMuseumHardCount = 0;
+const heldByPrefix = (released, prefix) => (id, text) => {
+  if (released) return false;
+  if (prefix.test(id)) return true;
+  const m = text && text.match(/^\s*sourceRegion:\s*['"]?([A-Za-z0-9]+)/m);
+  return !!(m && prefix.test(m[1]));
+};
+const isHeldEpoch4Late = heldByPrefix(epoch4LateReleased, EPOCH4LATE_PREFIX);
+const isHeldMuseumHard = heldByPrefix(museumHardReleased, MUSEUMHARD_PREFIX);
 // Every asset id a gate withheld. Anything PUBLISHED that points at one of these (an achievement's
 // requiredItems, a character's unlockAchievementID) is itself unreleased — see the achievement gate.
 const heldAssetIds = new Set();
 const loadCategory = (sub) => walk(path.join(SO, sub), (p) => p.endsWith(".asset"))
   .map((p) => ({ id: path.basename(p, ".asset"), text: read(p) }))
   .filter((a) => {
+    if (sub !== "Items" && privacy.privateIds.has(a.id)) return false;
     if (isHeldEpoch4(a.id, a.text)) { heldEpoch4Count++; heldAssetIds.add(a.id); return false; }
     if (isHeldEpoch4Hard(a.id, a.text)) { heldEpoch4HardCount++; heldAssetIds.add(a.id); return false; }
     if (isHeldMuseum(a.id, a.text)) { heldMuseumCount++; heldAssetIds.add(a.id); return false; }
+    if (isHeldEpoch4Late(a.id, a.text)) { heldEpoch4LateCount++; heldAssetIds.add(a.id); return false; }
+    if (isHeldMuseumHard(a.id, a.text)) { heldMuseumHardCount++; heldAssetIds.add(a.id); return false; }
     return true;
   });
 
@@ -235,7 +263,8 @@ const nz = (n) => n && n !== 0;
 // Mirrors Core/NumberFormat.Abbreviate, including the double-backed World Gate suffix ladder.
 // Floors (never rounds up across a tier edge) and drops a trailing ".0", like the game's Trim().
 const SUFFIXES = ["", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "Oc", "No", "Dc",
-  "Ud", "Dd", "Td", "Qad", "Qid", "Sxd", "Spd", "Od", "Nd", "Vg"];
+  "Ud", "Dd", "Td", "Qad", "Qid", "Sxd", "Spd", "Od", "Nd", "Vg",
+  "Uvg", "Dvg", "Tvg", "Qavg", "Qivg", "Sxvg", "Spvg", "Ovg", "Nvg", "Tg"];
 const abbr = (n) => {
   const neg = n < 0;
   const v = Math.abs(Number(n) || 0);
@@ -260,7 +289,7 @@ const items = loadCategory("Items").map((a) => {
   const t = a.text;
   const o = {
     id: a.id, name: field(t, "itemName") || a.id, description: field(t, "description"),
-    image: copySprite(guidOf(t, "icon"), "item", a.id),
+    image: privacy.privateIds.has(a.id) ? "" : copySprite(guidOf(t, "icon"), "item", a.id),
     rarity: RARITY[num(t, "rarity")] || "Common", type: ITYPE[num(t, "itemType")] || "Weapon",
     setName: field(t, "setName"), isUnique: bool(t, "isUnique"), shopUnavailable: bool(t, "shopUnavailable"),
     hiddenFromCollection: bool(t, "hiddenFromCollection"),
@@ -269,6 +298,7 @@ const items = loadCategory("Items").map((a) => {
     // Carried so shopAreas below can reproduce ShopManager's purchasability rules exactly.
     shopRank: num(t, "shopRank"), sourceRegion: field(t, "sourceRegion"),
     bonusHP: num(t, "bonusHP"), bonusATK: num(t, "bonusATK"), bonusDEF: num(t, "bonusDEF"), bonusAGI: num(t, "bonusAGI"), bonusLUC: num(t, "bonusLUC"),
+    affinityType: num(t, "affinityType"),
     buyPrice: num(t, "buyPrice"), maxCopies: num(t, "maxCopies"), effects: []
   };
   const e = [];
@@ -293,62 +323,28 @@ const items = loadCategory("Items").map((a) => {
   if (bool(t, "hasHPAbsorb")) e.push("Absorb " + num(t, "hpAbsorbPercent") + "%");
   if (bool(t, "hasAutoRevive")) e.push("Auto Revive");
   if (bool(t, "hasBPBonus")) e.push("AP +" + num(t, "bpBonus"));
+  if (P("burnResistPct") > 0) e.push((bool(t, "burnResistIsStress") ? "Stress Resist " : "Burn Resist ") + d1(P("burnResistPct") * 100) + "%");
+  if (P("slowHealTurns") > 0) e.push("Slow Heal +" + P("slowHealTurns"));
   o.effects = e; itemById.set(a.id, o); return o;
 });
 const itemName = (id) => itemById.has(id) ? itemById.get(id).name : id;
 
-// ★★★ PERMANENT RULE (owner, 2026-08-29): NEVER publish a troll collectible's FIELD drop source.
-//
-// A troll item is a joke reward — a Rat King's Whisker, a Dud Grenade, a Cooled Ember. Finding out
-// which monster coughs one up IS the joke, and a wiki that lists "Shadow Rat -> Rat King's Whisker 3%"
-// spoils it before the player ever meets it. SIX of the nine collectibles are ordinary field-enemy
-// drops — Rat King's Whisker (GL01), Mantis Husk (FR04), Cooled Ember (VO03), Broken Torii Charm
-// (JP03), Frayed Thread (GR03), Dud Grenade (ML06) — so without this filter the site gives them away.
-//
-// BOSS drops are deliberately EXEMPT and stay published: a boss reward is already announced content,
-// the player knows exactly who they beat to get it, and there is nothing to spoil. That is the other
-// THREE, each with its [H] mirror: Iron Fortress (DS02, Cursed Armor), War Crest (UW02, Thunder Oni)
-// and Moulted Feather (HV01, Archangel Sovereign). ⚠ The first two are named `BossItem_*` rather than
-// `Troll_*` — older naming — so a glob over `Items/Troll/` alone MISCOUNTS this split.
-//
-// ⚠ Filtered at the ENEMY drop table, which is the single upstream source. Everything downstream —
-// each monster page's drop list, `areas[].dropItemIds`, and the `dropAreas` tag on the item itself —
-// derives from `e.drops`, so one filter closes all three. Do NOT "helpfully" re-add troll ids to any
-// of those; they are omitted on purpose.
-//
-// The items themselves REMAIN in the public catalog (that is `hiddenFromCollection`'s job, and troll
-// items do not set it) — a player who owns one can still look up what it does. Only the field source
-// is withheld.
-// ⚠ FAIL-SAFE, because `isTrollItem` is currently over-set in the game data. `TrollDropSetupTool`
-// owns exactly 9 collectibles (GL01 FR04 VO03 DS02 UW02 JP03 GR03 ML06 HV01) x2 for the [H] mirrors =
-// 18 assets, and it CLEARS the flag on anything else it does not own. But 12 Maze accessories
-// (MZ01/07/08/10/11/12 + _H) currently carry `isTrollItem: 1` while holding real endgame stats —
-// MZ12_Accessory "Glassmaw Sigil" is HP 8.48e22. Hiding those would withhold genuine gear.
-//
-// So the flag alone is not trusted. A troll piece is defined by the invariant ItemData states outright
-// — "THE STATS ARE A TOKEN +1 ON PURPOSE" — and anything flagged but carrying real stats is a data bug
-// that gets REPORTED and treated as ordinary gear, which is the safe direction: a joke item stays
-// hidden, real loot stays published. Once the flag is corrected upstream this check simply goes quiet.
-const TROLL_TOKEN_STAT_MAX = 1;
-const trollItemIds = new Set();
-const misflaggedTroll = [];
-for (const i of items) {
-  if (!i.isTrollItem) continue;
-  const biggest = Math.max(i.bonusHP || 0, i.bonusATK || 0, i.bonusDEF || 0, i.bonusAGI || 0, i.bonusLUC || 0);
-  if (biggest > TROLL_TOKEN_STAT_MAX) { misflaggedTroll.push(`${i.id} (${i.name}, max stat ${biggest})`); continue; }
-  trollItemIds.add(i.id);
-}
-if (misflaggedTroll.length) {
-  console.warn(`\n⚠ ${misflaggedTroll.length} item(s) are flagged isTrollItem but carry REAL stats — `
-    + `publishing them as ordinary gear. Fix the flag in the game (TrollDropSetupTool clears it):`);
-  misflaggedTroll.forEach((s) => console.warn("    " + s));
-  console.warn("");
-}
-const isTrollDrop = (id) => trollItemIds.has(id);
+// Withhold every troll and secret, including drops, shop references and copied art.
+const trollItemIds = new Set(items.filter(i => i.isTrollItem).map(i => i.id));
+const isPrivateItem = (id) => privacy.privateIds.has(id) || !itemById.has(id);
+const publicItemId = (id) => isPrivateItem(id) ? "" : id;
 
-// Returns the id, or "" when it names a troll collectible. Used on the BOSS drop slots so a boss
-// page can never reveal one either — see the absolute-rule note at the boss builder below.
-const nonTroll = (id) => (isTrollDrop(id) ? "" : id);
+// Runtime modifiers are part of the played stats, not just the serialized base values.
+const scaleSource = read(path.join(GAME, "Assets/Scripts/Enemy/MuseumScale.cs"));
+const scales = new Map([...scaleSource.matchAll(/\["([^"]+)"\]\s*=\s*\(([\d.]+),\s*([\d.]+),\s*([\d.]+)\)/g)]
+  .map(m => [m[1], m.slice(2).map(Number)]));
+if (!scales.size) throw new Error("Cannot read Museum runtime scaling");
+const scaleOf = (id, hard = false) => scales.get(id.slice(0, 4) + (hard ? "_H" : "")) || [1, 1, 1];
+const affixesOf = (t, factor = 1) => ({
+  burnOpenPct: num(t, "burnOpenPct"), burnStepPct: num(t, "burnStepPct"), burnCapPct: num(t, "burnCapPct"),
+  burnIsStress: bool(t, "burnIsStress"), regenFraction: num(t, "regenFraction") / factor,
+  regenBaseInterval: num(t, "regenBaseInterval")
+});
 
 // Enemy stat at a level: base * (1 + scaling * levelsAboveMin) — matches EnemyData.GetHP/ATK/EXP/Gold.
 // Hard-mode enemies (_H) have scaling 0, so min == max (fixed stats).
@@ -377,6 +373,7 @@ const enemies = loadCategory("Enemies").map((a) => {
   const bHP = num(t, "baseHP"), bATK = num(t, "baseATK"), bEXP = num(t, "baseEXP"), bGold = num(t, "baseGold");
   const sHP = num(t, "hpScaling"), sATK = num(t, "atkScaling"), sEXP = num(t, "expScaling"), sGold = num(t, "goldScaling");
   const drops = [];
+  const factor = scaleOf(a.id, bool(t, "isHardMode"))[0];
   const re = /- item: \{fileID: \d+, guid: ([0-9a-f]+), type: \d+\}\s*\n\s*dropChance:\s*([\d.]+)/g;
   // Troll collectibles are withheld here — see the trollItemIds note above. This is the only place a
   // field drop enters the data, so skipping it here keeps it out of monster pages, area loot lists
@@ -387,15 +384,17 @@ const enemies = loadCategory("Enemies").map((a) => {
   const tableIds = [];
   let m; while ((m = re.exec(t))) {
     const iid = assetName(m[1]);
+    if (!itemById.has(iid) || itemById.get(iid).isHardModeItem !== bool(t, "isHardMode")) continue;
     tableIds.push(iid);
-    if (isTrollDrop(iid)) { hiddenChances.push(Number(m[2])); continue; }
+    if (isPrivateItem(iid)) { hiddenChances.push(Number(m[2])); continue; }
     drops.push({ itemId: iid, itemName: itemName(iid), chance: Number(m[2]) });
   }
   const o = {
     id: a.id, name: field(t, "enemyName") || a.id, image: "", imageGuid: guidOf(t, "enemySprite"),
     isBoss: bool(t, "isBoss"), minLevel: minLv, maxLevel: maxLv,
-    hpMin:  atLevel(bHP,  sHP,  minLv, minLv), hpMax:  atLevel(bHP,  sHP,  maxLv, minLv),
-    atkMin: atLevel(bATK, sATK, minLv, minLv), atkMax: atLevel(bATK, sATK, maxLv, minLv),
+    hpMin: factor * atLevel(bHP, sHP, minLv, minLv), hpMax: factor * atLevel(bHP, sHP, maxLv, minLv),
+    atkMin: factor * atLevel(bATK, sATK, minLv, minLv), atkMax: factor * atLevel(bATK, sATK, maxLv, minLv),
+    affixes: affixesOf(t, factor),
     expMin: atLevel(bEXP, sEXP, minLv, minLv), expMax: atLevel(bEXP, sEXP, maxLv, minLv),
     goldMin: atLevel(bGold, sGold, minLv, minLv), goldMax: atLevel(bGold, sGold, maxLv, minLv),
     permanentBPReward: num(t, "permanentBPReward"), drops,
@@ -414,12 +413,28 @@ const enemyName = (id) => enemyById.has(id) ? enemyById.get(id).name : id;
 // state, and in game a capped item hands its whole share to the sibling. The bonus presence check
 // uses the RAW asset field (before the troll withhold): a hidden troll bonus still takes its share
 // of the budget, and the published main-drop share stays TRUE rather than renormalized.
-const BOSS_DROP_CHANCE = 1;        // Normal mode, %
-const BOSS_DROP_CHANCE_HARD = 0.75; // Hard mode, %
+const bossSource = read(path.join(GAME, "Assets/Scripts/Enemy/BossData.cs"));
+const bossConstant = name => {
+  const value = bossSource.match(new RegExp("const float " + name + "\\s*=\\s*([\\d.]+)f"));
+  if (!value) throw new Error("Cannot read boss drop budget: " + name);
+  return Number(value[1]);
+};
+const BOSS_DROP_CHANCE = bossConstant("NormalBossBudgetPercent");
+const BOSS_DROP_CHANCE_HARD = bossConstant("HardBossBudgetPercent");
 const bosses = loadCategory("Bosses").map((a) => {
   const t = a.text; const lv = num(t, "level");
-  const hasBonusNormal = !!assetName(guidOf(t, "bonusDropItem"));
-  const hasBonusHard = !!(assetName(guidOf(t, "hardModeBonusDropItem")) || assetName(guidOf(t, "bonusDropItem")));
+  const mapId = assetName(guidOf(t, "activeInMap")) || (/^([A-Z]{2}\d\d)_/.exec(a.id) || ["", ""])[1];
+  const slots = hard => [assetName(guidOf(t, hard && guidOf(t, "hardModeDropItem") ? "hardModeDropItem" : "dropItem")),
+    assetName(guidOf(t, hard && guidOf(t, "hardModeBonusDropItem") ? "hardModeBonusDropItem" : "bonusDropItem")),
+    assetName(guidOf(t, "extraDropItem"))].filter(id => id && itemById.has(id) && itemById.get(id).isHardModeItem === hard);
+  const rewards = hard => {
+    const ids = slots(hard), budget = hard ? BOSS_DROP_CHANCE_HARD : BOSS_DROP_CHANCE;
+    const rows = ids.filter(id => !isPrivateItem(id)).map(itemId => ({ itemId, chance: Math.round(budget / ids.length * 1000) / 1000 }));
+    const key = assetName(guidOf(t, "keyDropItem"));
+    if (key && !isPrivateItem(key) && itemById.get(key).isHardModeItem === hard) rows.push({itemId: key, chance: 10});
+    return rows;
+  };
+  const modes = modesForMap(mapId);
   return {
     id: a.id, name: field(t, "bossName") || a.id, image: copySprite(guidOf(t, "bossSprite"), "boss", a.id),
     // ⛔ FALL BACK TO THE BOSS'S OWN NAME PREFIX. `activeInMap` is NULL for the three Epoch 4 region
@@ -428,11 +443,13 @@ const bosses = loadCategory("Bosses").map((a) => {
     // empty, so all three bosses attached to all 24 Epoch 4 areas at once.
     // The Epoch 4 bosses are named with their map code on purpose (ST08_TheUnmoved) — the same
     // reason the release gates can see them — so the prefix is a real answer, not a guess.
-    mapId: assetName(guidOf(t, "activeInMap")) || (/^((?:CL|ST|EG|BD)\d\d)_/.exec(a.id) || ["", ""])[1],
+    mapId, modes,
+    drops: { normal: modes.includes("normal") ? rewards(false) : [], hard: modes.includes("hard") ? rewards(true) : [] },
+    affixes: affixesOf(t, scaleOf(mapId)[1]), hardAffixes: affixesOf(t, scaleOf(mapId, true)[1]),
     level: lv, hardModeLevel: num(t, "hardModeLevel"),
-    hp: num(t, "hp"), atk: num(t, "atk"),
+    hp: num(t, "hp") * scaleOf(mapId)[1], atk: num(t, "atk") * scaleOf(mapId)[2],
     // BossData.GetLevelBasedEXP is linear: about ten same-level field kills.
-    hardModeHp: num(t, "hardModeHp"), hardModeAtk: num(t, "hardModeAtk"), exp: Math.max(1, lv) * 125,
+    hardModeHp: num(t, "hardModeHp") * scaleOf(mapId, true)[1], hardModeAtk: num(t, "hardModeAtk") * scaleOf(mapId, true)[2], exp: Math.max(1, lv) * 125,
     resists: resistsOf(t, "resists"), hardModeResists: resistsOf(t, "hardModeResists"),
     // ⛔★★★ BOSS TROLL DROPS ARE WITHHELD TOO (owner, 2026-08-31: "Monsters, drops, areas, map
     // info, never post troll related. Never. For all regions."). This OVERRIDES the boss-drops-are-
@@ -440,16 +457,16 @@ const bosses = loadCategory("Bosses").map((a) => {
     // and Thunder Oni -> War Crest, and after the 3.0.1 Maze pass it would also have published
     // The Verdant Mother -> Glassmaw Sigil. The rule is now ABSOLUTE — no troll collectible's
     // source appears anywhere, field or boss, in any region.
-    dropItemId: nonTroll(assetName(guidOf(t, "dropItem"))),
-    dropItemName: itemName(nonTroll(assetName(guidOf(t, "dropItem")))),
-    hardModeDropItemId: nonTroll(assetName(guidOf(t, "hardModeDropItem"))),
-    bonusDropItemId: nonTroll(assetName(guidOf(t, "bonusDropItem"))),
+    dropItemId: publicItemId(assetName(guidOf(t, "dropItem"))),
+    dropItemName: itemName(publicItemId(assetName(guidOf(t, "dropItem")))),
+    hardModeDropItemId: publicItemId(assetName(guidOf(t, "hardModeDropItem"))),
+    bonusDropItemId: publicItemId(assetName(guidOf(t, "bonusDropItem"))),
     // Boss drop odds are a CODE constant, not a field on the asset — mirrored from
-    // BossData.RollDrops' shared budget: 1% Normal / 0.75% Hard PER KILL, split evenly across the
+    // BossData.RollDrops' shared budget: 3% Normal / 2% Hard PER KILL, split evenly across the
     // boss's uniques at base state (bonus item present = half each). Before luck/collection
     // bonuses and the duplicate-falloff share shifts that apply once you own copies.
-    dropChance: hasBonusNormal ? BOSS_DROP_CHANCE / 2 : BOSS_DROP_CHANCE,
-    hardModeDropChance: hasBonusHard ? BOSS_DROP_CHANCE_HARD / 2 : BOSS_DROP_CHANCE_HARD
+    dropChance: BOSS_DROP_CHANCE / Math.max(1, slots(false).length),
+    hardModeDropChance: BOSS_DROP_CHANCE_HARD / Math.max(1, slots(true).length)
   };
 });
 // ⛔ THE MAZE-BATCH BOSSES' hardMode* FIELDS NOW CARRY THE UNRELEASED PING-PONG RE-DERIVATION
@@ -481,10 +498,15 @@ function suppressUnreleasedHard(b) {
   items.forEach((it) => { if (bossDropIds.has(it.id)) it.type = "Accessory"; });
 }
 
+const masterySource = read(path.join(GAME, "Assets/Scripts/Core/CharacterMastery.cs"));
+const masteryShares = new Map([...masterySource.matchAll(/\["([^"]+)"\]\s*=\s*new\[\]\s*\{([^}]+)\}/g)].map(m => [m[1], m[2].split(",").map(Number)]));
+const masteryPerLevel = Number(masterySource.match(/PerLevelTotal\s*=\s*([\d.]+)/)?.[1]);
+if (!masteryShares.size || !masteryPerLevel) throw new Error("Cannot read character mastery");
 const characters = loadCategory("Characters").map((a) => {
   const t = a.text;
   return {
     id: field(t, "characterID") || a.id, name: field(t, "characterName") || a.id, description: field(t, "description"),
+    masteryGrowthPercent: (masteryShares.get(field(t, "characterID")) || [0.2,0.2,0.2,0.2,0.2]).map(n => Math.round(n * masteryPerLevel * 10000) / 100),
     image: copySprite(guidOf(t, "icon"), "char", a.id), iapProductId: field(t, "iapProductId"), unlockAchievementID: field(t, "unlockAchievementID"),
     hpMultiplier: num(t, "hpMultiplier"), atkMultiplier: num(t, "atkMultiplier"), defMultiplier: num(t, "defMultiplier"),
     agiMultiplier: num(t, "agiMultiplier"), lucMultiplier: num(t, "lucMultiplier"),
@@ -506,8 +528,13 @@ const requiredItemIds = (t) => {
   return b ? [...b[1].matchAll(/guid:\s*([0-9a-f]+)/g)].map((m) => assetName(m[1])).filter(Boolean) : [];
 };
 const heldAchievementIds = new Set();
+// ★ 7.0.0's HIDDEN GROUNDS achievements ("Find the hidden ground") require no item and wear the region only in
+// lower case (hidden_ground_mx03, hidden_ground_mh02), so neither rule above sees them: held by their region's switch.
+const heldHiddenGround = (id) => (!epoch4LateReleased && /^hidden_ground_(mx|cy|sm)\d/.test(id))
+  || (!museumHardReleased && /^hidden_ground_mh\d/.test(id));
 const achievements = loadCategory("Achievements").filter((a) => {
-  if (!requiredItemIds(a.text).some((id) => heldAssetIds.has(id))) return true;
+  if (privacy.privateAchievements.has(field(a.text, "achievementID") || a.id) || heldHiddenGround(field(a.text, "achievementID") || a.id)) { heldAchievementIds.add(field(a.text, "achievementID") || a.id); return false; }
+  if (!requiredItemIds(a.text).some((id) => heldAssetIds.has(id) || privacy.privateIds.has(id))) return true;
   heldAchievementIds.add(field(a.text, "achievementID") || a.id);
   return false;
 }).map((a) => {
@@ -544,7 +571,7 @@ const zones = loadCategory("Zones").map((a) => {
   return {
     id: a.id, name: field(t, "zoneName") || a.id, color, bossEnemyId: assetName(guidOf(t, "bossEnemy")),
     zoneTier: num(t, "zoneTier"), minEnemyLevel: num(t, "minEnemyLevel"), maxEnemyLevel: num(t, "maxEnemyLevel"),
-    goldMultiplier: num(t, "goldMultiplier"), enemies: ens, shopItems: shop
+    goldMultiplier: num(t, "goldMultiplier"), enemies: ens.filter(e => enemyById.has(e.enemyId)), shopItems: shop.filter(id => !isPrivateItem(id))
   };
 });
 
@@ -601,7 +628,10 @@ const BLUEPRINT_NAMES = (() => {
   try { return JSON.parse(fs.readFileSync(f, "utf8")); }
   catch { console.warn("  ⚠ map_names.json missing — Epoch 4 areas will publish without art."); return {}; }
 })();
-const mapDisplayName = (id) => MAP_VISUAL[id] || BLUEPRINT_NAMES[id]
+const museumBlueprint = createRequire(import.meta.url)(path.join(GAME, "Tools/epoch4_blueprint/r_mu.js"));
+const currentMapNames = Object.fromEntries(museumBlueprint.maps.map(m => [m.id, m.name]));
+for (const m of read(path.join(GAME, "Assets/Scripts/Editor/V7ContentTable.cs")).matchAll(/Key = "([A-Z]{2}\d{2})", Name = "([^"]+)"/g)) currentMapNames[m[1]] = m[2];
+const mapDisplayName = (id) => currentMapNames[id] || MAP_VISUAL[id] || BLUEPRINT_NAMES[id]
   || id.replace(/_Map$/, "").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
 // ⛔★★★ THE ART FILE IS NOT THE DISPLAY NAME, and conflating them cost a shipped map.
 //
@@ -623,6 +653,7 @@ const MAP_VISUAL_FILE = {
 };
 const mapVisualFile = (id) => MAP_VISUAL_FILE[id] || mapDisplayName(id);
 function copyMapVisual(id) {
+  if (privacy.withheldMapArt.has(id)) return "";
   const src = path.join(SPR, "Map", "visual", mapVisualFile(id) + " visual.png");
   if (!fs.existsSync(src)) return "";
   const file = "map_" + safe(id) + ".png";
@@ -649,7 +680,8 @@ const WORLD = {
   // Adding the region to the release switch was not enough — this table had to learn it too, which
   // is BUG_CHECKLIST §1 exactly: a hand-written region table whose unknown-prefix default is
   // "silently drop". The failure is quiet in the worst way: counts still look plausible.
-  ST: "Stone", EG: "Egypt", BD: "The Temple", CL: "Cloud Plaza"
+  ST: "Stone", EG: "Egypt", BD: "The Temple", CL: "Cloud Plaza",
+  MU: "Museum", MH: "Museum", MX: "Mexico", CY: "Candy", SM: "SuperMarket"
 };
 
 function mapWorld(id) {
@@ -680,13 +712,13 @@ function mapWorld(id) {
   if (/Coral|Trench|Temple|Clam|Underwater/.test(id))   return "Underwater";
   return "Other";
 }
-const maps = loadCategory("Maps").map((a) => {
+const maps = loadCategory("Maps").filter(a => num(a.text, "gridWidth") > 0).map((a) => {
   const t = a.text; const gw = num(t, "gridWidth"), gh = num(t, "gridHeight"); const hex = field(t, "cells");
   let walkable = 0, blocked = 0;
   if (hex && hex.length === gw * gh * 2) {
     for (let i = 0; i < gw * gh; i++) { const v = parseInt(hex.substr(i * 2, 2), 16); if (v === 0) blocked++; else walkable++; }
   }
-  return { id: a.id, name: mapDisplayName(a.id), world: mapWorld(a.id), image: copyMapVisual(a.id), gridWidth: gw, gridHeight: gh, dataVersion: num(t, "dataVersion"), walkableCells: walkable, blockedCells: blocked };
+  return { id: a.id, name: mapDisplayName(a.id), world: mapWorld(a.id), modes: modesForMap(a.id), image: copyMapVisual(a.id), gridWidth: gw, gridHeight: gh, dataVersion: num(t, "dataVersion"), walkableCells: walkable, blockedCells: blocked };
 });
 // ★ GRAVEYARD IS DATA-FIRST (owner, 2026-09-01): the balance shipped before the art, so no MapData
 // assets exist yet. Synthesize atlas records for GY01-GY10 — no image, no grid — so the world shows
@@ -811,6 +843,8 @@ for (const z of zones) {
 // the item's chance — that mislabel is what made the wiki and the in-game panel disagree.
 const ZONE_SHOP_DROP_CHANCE = 3; // BattleManager.ZoneShopDropChance — one constant there, one here
 for (const e of enemies) {
+  const keys = e.drops.filter(d => itemById.get(d.itemId)?.affinityType > 0);
+  e.drops = e.drops.filter(d => !(itemById.get(d.itemId)?.affinityType > 0));
   const entries = e.drops.map((d) => ({ d, w: d.chance }));
   const hidden = (e._hiddenChances || []).slice();
   if (!e.isHard) {
@@ -818,7 +852,7 @@ for (const e of enemies) {
       if (e._tableIds.indexOf(id) >= 0) continue;                 // DropTableContains
       const i = itemById.get(id);
       if (!i || i.shopUnavailable || !(i.buyPrice > 0)) continue; // BuildEligiblePool's filter
-      if (isTrollDrop(id)) { hidden.push(ZONE_SHOP_DROP_CHANCE); continue; }
+      if (isPrivateItem(id)) { hidden.push(ZONE_SHOP_DROP_CHANCE); continue; }
       const d = { itemId: id, itemName: itemName(id), chance: ZONE_SHOP_DROP_CHANCE };
       e.drops.push(d); entries.push({ d, w: ZONE_SHOP_DROP_CHANCE });
     }
@@ -829,6 +863,7 @@ for (const e of enemies) {
     const totalW = weights.reduce((s, w) => s + w, 0);
     for (const x of entries) x.d.chance = Math.round(budget * (x.w / totalW) * 1000) / 1000;
   }
+  for (const key of keys) { key.chance = 10; e.drops.push(key); }
   delete e._tableIds; delete e._hiddenChances; delete e._shopExtraIds;
 }
 // Gold shown = per-enemy base gold (the game no longer applies the per-zone gold multiplier, so
@@ -854,6 +889,7 @@ bosses.sort((a, b) => a.level - b.level);
 // Aggregate every source of loot per area: field drops, boss rewards and shop stock.
 const MAP_TO_REGION = {};
 for (const code of Object.keys(REGION_MAP)) MAP_TO_REGION[REGION_MAP[code]] = code;
+for (const m of maps) if (/^[A-Z]{2}\d{2}$/.test(m.id)) MAP_TO_REGION[m.id] = m.id;
 // ⛔ A REGION WITH NO MapData WAS NAMED AFTER ITS CODE — the wiki listed "ST01" instead of
 // "Standing Circle". Worse, mergeUpcoming() then pushed the PLANNED ST01 as a SECOND area carrying
 // the real name, so every Epoch 4 map appeared TWICE: once as a bare code, once as a name.
@@ -933,7 +969,7 @@ const isUnreleasedMazeRegion = (r) => !mazeBatchReleased && !!r && /^(MZ|IC|AM|A
 const isPurchasable = (id) => {
   const i = itemById.get(id);
   if (!i) return false;
-  if (i.shopUnavailable || !(i.buyPrice > 0)) return false;
+  if (isPrivateItem(id) || i.shopUnavailable || !(i.buyPrice > 0)) return false;
   if (isUnreleasedRegion(i.sourceRegion)) return false;      // World Gate is locked for this release
   if (isUnreleasedMazeRegion(i.sourceRegion)) return false;  // Maze batch is cataloged but not yet purchasable
   if (!graveyardReleased && /^GY/.test(i.sourceRegion)) return false;  // data published, shop locked
@@ -971,7 +1007,12 @@ for (const b of bosses) {
   if (!code) continue;
   const a = ensureArea(code);
   push(a.bossIds, b.id);
-  [b.dropItemId, b.hardModeDropItemId, b.bonusDropItemId].forEach((id) => push(a.bossDropItemIds, id));
+  Object.values(b.drops).flat().forEach(row => push(a.bossDropItemIds, row.itemId));
+}
+for (const m of maps) {
+  if (/^[A-Z]{2}\d{2}$/.test(m.id)) {
+    const a = ensureArea(m.id); a.world = m.world; a.modes = m.modes;
+  }
 }
 const areas = Array.from(areaByCode.values())
   .sort((x, y) => (x.minLevel || 1e9) - (y.minLevel || 1e9) || x.code.localeCompare(y.code));
@@ -994,41 +1035,16 @@ for (const it of items) {
   it.shopAreas = shopIn.get(it.id) || [];
 }
 
-// Internal/template items remain available above for resolving references, but the public catalog
-// follows ItemData.hiddenFromCollection just like the in-game collection screen.
-// ★ ALL FOUR ping-pong regions are DATA-RELEASED on the wiki (owner, 2026-09-01: "Korea London
-// and mono? Please add them as well") — art-less, shop-locked, hard-less, but the data is public.
-// ⛔★★★★ TROLL COLLECTIBLES ARE NOT PUBLISHED AT ALL — NOT EVEN AS A CATALOGUE ENTRY.
-// `nonTroll()` above already strips them from every DROP list and boss slot, and the note there
-// states the intent outright: "a joke item stays hidden". It was only ever half true. The items
-// themselves were still emitted, so the public wiki listed 37 troll collectibles WITH THEIR ICONS
-// — the whole joke spoiled in a searchable table. Found 2026-09-16 when the owner asked.
-//
-// A troll only works if the player meets it in the game and not on a wiki page beforehand, so this
-// is the item-side twin of the drop-side rule, and it has to be here rather than in app.js: data
-// that never leaves the builder cannot be un-hidden by a front-end bug or read out of data.json by
-// someone curious.
-//
-// ⚠ Deliberately keyed on `trollItemIds`, NOT on `isTrollItem`. An item flagged troll but carrying
-// REAL stats is a data bug that the block above already reports and treats as ordinary gear — the
-// safe direction. Keying on the raw flag here would hide real loot on the strength of a bad flag.
-const publicItems = items.filter((it) => !it.hiddenFromCollection && !isTrollDrop(it.id));
+// Publication excludes secrets and troll collectibles even after their region ships.
+const publicItems = items.filter((it) => !it.hiddenFromCollection && !isPrivateItem(it.id));
 
-// ⚠ AND DELETE THE ICONS THAT WERE ALREADY COPIED. copySprite() runs while items are being mapped,
-// which is BEFORE trollItemIds can exist (it needs the stat check), so 26 troll PNGs were already
-// sitting in assets/img and served fine by direct URL even once the JSON stopped naming them.
-// Removing the row without removing the file would have looked fixed and not been.
-// ⚠ Swept by FILENAME, not by walking the items. Three `item_Troll_*.png` were left behind by
-// earlier builds with no item referencing them any more, and an orphan is still served by direct
-// URL — "no row in the JSON" is not the same as "not on the internet".
-// Anything a PUBLISHED item still points at is kept: that is the misflagged-troll case (flagged
-// troll but carrying real stats), which the block above deliberately publishes as ordinary gear.
-let trollIconsRemoved = 0;
-const publishedImages = new Set(publicItems.map((it) => it.image).filter(Boolean));
+// Sweep all generated art, including files orphaned by earlier exports.
+let privateImagesRemoved = 0;
+const publishedImages = new Set([...publicItems, ...liveEnemies, ...bosses, ...maps, ...characters].map(it => it.image).filter(Boolean));
 for (const f of fs.readdirSync(IMG)) {
-  if (!/^item_Troll_/i.test(f) || publishedImages.has(f)) continue;
+  if (!/^(item|enemy|boss|map|char)_/i.test(f) || publishedImages.has(f) || f === "map_legend.png") continue;
   fs.unlinkSync(path.join(IMG, f));
-  trollIconsRemoved++;
+  privateImagesRemoved++;
 }
 
 // The Unity bundle version is intentionally not the public content version. The in-game notices
@@ -1103,6 +1119,9 @@ if (epoch4Released && !epoch4LiveInGame) {
 {
   const byMap = new Map();
   for (const dr of doorGraph(GAME)) {
+    // ⛔ A door INTO a held map names unreleased content (Cloud Plaza → MX01/CY01/SM01, the Atrium → MH01..MH04,
+    // 2026-10-02): the scene has the doors before the release switch flips. Held while the destination is held.
+    if (heldAssetIds.has(dr.to) || heldAssetIds.has(dr.from) || !maps.some(m => m.id === dr.to) || !maps.some(m => m.id === dr.from)) continue;
     if (!byMap.has(dr.from)) byMap.set(dr.from, []);
     // `kind` selects the icon and label in app.js DOOR_KIND, whose vocabulary is exactly
     // worldgate / ring / region, with an unset kind falling back to a plain "Door". Classify with
@@ -1118,14 +1137,16 @@ if (epoch4Released && !epoch4LiveInGame) {
     // Forward = same world, code-named, higher number: ST01 -> ST02 is onward, ST02 -> ST01 is back.
     // Descriptively-named released maps do not need it — they have hand-authored WORLD_ROUTES.
     const a = /^([A-Z]{2})(\d\d)$/.exec(dr.from), b = /^([A-Z]{2})(\d\d)$/.exec(dr.to);
-    const onward = a && b && a[1] === b[1] && +b[2] > +a[2];
+    const onward = (a && b && a[1] === b[1] && +b[2] > +a[2]) || (dr.from === "MU01" && /^MH/.test(dr.to));
     const kind = /^(WorldGate_Map|CV01)$/.test(dr.to) ? "worldgate"
       : fw === tw ? (onward ? "onward" : "")                  // inside one region: forward, or back
       : (ring.includes(fw) && ring.includes(tw)) ? "ring"     // the Epoch 4 three-region ring
       : "region";
-    const door = { to: dr.to, label: dr.name };
+    const modes = modesForMap(dr.from).filter(mode => modesForMap(dr.to).includes(mode) && (!dr.modes || dr.modes.includes(mode)));
+    if (!modes.length) continue;
+    const door = { to: dr.to, modes };
     if (kind) door.kind = kind;
-    byMap.get(dr.from).push(door);
+    if (!byMap.get(dr.from).some(d => d.to === door.to && JSON.stringify(d.modes) === JSON.stringify(door.modes))) byMap.get(dr.from).push(door);
   }
   let linked = 0;
   for (const m of maps) {
@@ -1141,14 +1162,16 @@ if (epoch4Released && !epoch4LiveInGame) {
 
 const root = {
   generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"), game: "Infinite Loot-Loop", gameVersion,
-  release: { worldGateReleased, mazeBatchReleased, mazeHardReleased, graveyardReleased, koreaReleased, londonReleased, monochromeReleased },
+  release: { worldGateReleased, mazeBatchReleased, mazeHardReleased, graveyardReleased, koreaReleased, londonReleased, monochromeReleased, epoch4Released, epoch4HardReleased, museumReleased, epoch4LateReleased, museumHardReleased },
   counts: { enemies: liveEnemies.length, bosses: bosses.length, items: publicItems.length, maps: maps.length, zones: liveZones.length, areas: areas.length, characters: characters.length, achievements: achievements.length },
   enemies: liveEnemies, bosses, items: publicItems, maps, zones: liveZones, areas, characters, achievements
 };
 fs.writeFileSync(path.join(DATA, "data.json"), JSON.stringify(root, null, 2));
 console.log("Wrote data.json", root.counts, "images:", imagesWritten);
-console.log(`Troll collectibles withheld: ${trollItemIds.size} item(s), ${trollIconsRemoved} icon(s) removed from assets/img.`);
+console.log(`Troll collectibles withheld: ${trollItemIds.size} item(s), ${privateImagesRemoved} icon(s) removed from assets/img.`);
 console.log(epoch4Released ? "Epoch 4: PUBLISHED (SITE_LIVE_RELEASE=epoch4=1 or the flag flipped)" : `Epoch 4: HELD — ${heldEpoch4Count} asset(s) withheld from the public wiki.`);
 console.log(epoch4HardReleased ? "Epoch 4 HARD: PUBLISHED (SITE_LIVE_RELEASE=epoch4hard=1 or the flag flipped)" : `Epoch 4 HARD: HELD — ${heldEpoch4HardCount} asset(s) withheld from the public wiki.`);
 console.log(`Achievements: HELD — ${heldAchievementIds.size} require unreleased items${heldAchievementIds.size ? " (" + [...heldAchievementIds].join(", ") + ")" : ""}.`);
 console.log(museumReleased ? "Museum: PUBLISHED (SITE_LIVE_RELEASE=museum=1 or the flag flipped)" : `Museum: HELD — ${heldMuseumCount} asset(s) withheld from the public wiki.`);
+console.log(epoch4LateReleased ? "Mexico/Candy/SuperMarket: PUBLISHED (SITE_LIVE_RELEASE=epoch4late=1 or the flag flipped)" : `Mexico/Candy/SuperMarket: HELD — ${heldEpoch4LateCount} asset(s) withheld from the public wiki.`);
+console.log(museumHardReleased ? "Museum HARD: PUBLISHED (SITE_LIVE_RELEASE=museumhard=1 or the flag flipped)" : `Museum HARD: HELD — ${heldMuseumHardCount} asset(s) withheld from the public wiki.`);

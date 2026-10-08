@@ -2,7 +2,7 @@
 
 Companion site / wiki for **Infinite Loot-Loop** — maps, monsters, bosses, items, guides, patch notes, and FAQ.
 
-The site is a static, data-driven web app hosted on GitHub Pages. Game data is exported from the Unity project via **Dev → Export Site Data** into `data.json`, with sprites/icons copied alongside.
+The site is a static, data-driven web app hosted on GitHub Pages. The headless builder in `tools/build-data.mjs` reads the adjacent Unity project into `apps/infinite-loot-loop/data/data.json`, with public sprites copied alongside. See `tools/README.md` for the supported refresh and privacy checks.
 
 ## Structure
 

@@ -28,7 +28,7 @@
     "@type": "Article",
     "headline": "How the Infinite Loot-Loop Wiki Is Produced",
     "description": "How the official wiki exports, checks, explains, and updates game values.",
-    "dateModified": "2026-07-18",
+    "dateModified": "2026-10-08",
     "author": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/about.html" },
     "publisher": { "@type": "Organization", "name": "Tony Works", "url": "https://tonyworks.co.kr/" },
     "mainEntityOfPage": "https://tonyworks.co.kr/apps/infinite-loot-loop/game-data.html"
@@ -61,7 +61,7 @@
 
     <div class="article-meta" aria-label="Page information">
       <span>Maintained by Tony Works</span>
-      <span>Last reviewed 7 August 2026</span>
+      <span>Last reviewed 8 October 2026</span>
       <span>Applies to the official companion wiki</span>
     </div>
 
@@ -79,7 +79,7 @@
         <section>
           <h3>Information that is not published</h3>
           <p>The export is intentionally limited to player-facing reference information. It does not publish player save data, purchase receipts, advertising identifiers, cloud credentials, private service keys, source code, or internal account records. Website analytics and game privacy practices are described separately in the <a href="/privacy-policy.html">privacy policy</a>.</p>
-          <p>Some internal development records are excluded when they are templates, duplicates, unused assets, or explicitly hidden from the in-game collection. The public bestiary represents enemies assigned to active route zones. Implemented but locked expansion content may be included as a clearly marked preview.</p>
+          <p>The public catalog excludes troll collectibles, secret encounters and rewards, hidden achievements, and hidden routes. Images and translations follow the same publication rules. Maps that would reveal hidden areas do not include an illustration. Normal and Hard data are separated by availability, including the Museum's different wings. Combat stats include the game's runtime Museum balance adjustments; displayed drop rates are base rates before player bonuses and owned-copy effects.</p>
         </section>
       </div>
 
@@ -90,7 +90,7 @@
       <div class="editorial-grid">
         <section>
           <h3>Current level-power calculation</h3>
-          <p>HP, ATK, and DEF use the logarithmic level-power formula <code>2.35 &times; ln(1 + level / 100)%</code>. It applies to the complete stat foundation, including equipment and permanent bonuses. Item percentage bonuses also apply to that complete total. AGI and LUC remain outside the level multiplier.</p>
+          <p>Level power is allocated by your stat-point shares. Its total ceiling is <code>2.35 &times; ln(1 + level / 100)%</code>: each of HP, ATK and DEF receives that percentage multiplied by its share of points across all five stats. It scales the full stat foundation, including equipment and permanent bonuses. AGI and LUC do not receive level power.</p>
         </section>
         <section>
           <h3>Catalog values versus final battle values</h3>
@@ -149,7 +149,7 @@
     </article>
   </main>
   <footer class="footer" id="site-footer">Tony Works — official companion wiki for <strong>Infinite Loot-Loop</strong>. <a href="../../about.html">About</a> &#183; <a href="../../contact.html">Contact</a> &#183; <a href="game-data.html">Data notes</a> &#183; <a href="../../privacy-policy.html">Privacy</a> &#183; <a href="../../terms.html">Terms</a></footer>
-  <script src="../../assets/js/i18n.js?v=7"></script>
-  <script src="../../assets/js/app.js?v=72"></script>
+  <script src="../../assets/js/i18n.js?v=700"></script>
+  <script src="../../assets/js/app.js?v=700"></script>
 </body>
 </html>

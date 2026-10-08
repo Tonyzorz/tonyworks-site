@@ -88,7 +88,8 @@
   //     "0.9M", one tier low prints "1000Qi" instead of "1Sx". The game corrects either way rather
   //     than trusting the logarithm, so this does too.
   var NUM_SUFFIXES = ["", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "Oc", "No", "Dc",
-    "Ud", "Dd", "Td", "Qad", "Qid", "Sxd", "Spd", "Od", "Nd", "Vg"];
+    "Ud", "Dd", "Td", "Qad", "Qid", "Sxd", "Spd", "Od", "Nd", "Vg",
+    "Uvg", "Dvg", "Tvg", "Qavg", "Qivg", "Sxvg", "Spvg", "Ovg", "Nvg", "Tg"];
   function fmt(n) {
     if (n == null || n === "" || isNaN(n)) return "0";
     var v = Number(n);
@@ -478,15 +479,27 @@
     worldgate: { icon: "&#8595;", label: "To the World Gate" },
     wave2:     { icon: "&#8593;", label: "Stair up (a later wave)" }
   };
-  function doorSection(d, m) {
-    var doors = m.doors || [];
+  function availableIn(record, mode) { return !record.modes || record.modes.indexOf(mode) >= 0; }
+  function modeAvailability(records) {
+    return {normal: records.some(function(r) { return availableIn(r, "normal"); }), hard: records.some(function(r) { return availableIn(r, "hard"); })};
+  }
+  function affixSection(a) {
+    if (!a) return "";
+    var parts = [];
+    if (a.burnOpenPct > 0) parts.push((a.burnIsStress ? "Stress" : "Burn") + ": " + (a.burnOpenPct * 100).toFixed(1) + "% initially, +" + (a.burnStepPct * 100).toFixed(1) + "% per round, up to " + (a.burnCapPct * 100).toFixed(1) + "%.");
+    if (a.regenFraction > 0) parts.push("Regenerates " + (a.regenFraction * 100).toFixed(2) + "% HP every " + a.regenBaseInterval + " round(s). Slow Heal delays regeneration.");
+    return parts.length ? '<div class="section-title">Combat effects</div><p>' + parts.map(esc).join("<br>") + '</p>' : "";
+  }
+  function doorSection(d, m, mode) {
+    mode = mode || selectedGameMode("normal");
+    var doors = (m.doors || []).filter(function(dr) { return availableIn(dr, mode); });
     if (!doors.length) return "";
     var rows = doors.map(function (dr) {
       var k = DOOR_KIND[dr.kind] || { icon: "&#8596;", label: "Door" };
       var target = d._mapById[dr.to];
       var name = target ? target.name : (dr.to === "CV01" ? "World Gate" : dr.to);
       var cell = target
-        ? '<a href="maps.html?id=' + encodeURIComponent(dr.to) + '">' + esc(name) + "</a>"
+        ? '<a href="maps.html?id=' + encodeURIComponent(dr.to) + '&mode=' + mode + '">' + esc(name) + "</a>"
         : esc(name);
       var place = (dr.edge ? dr.edge.toLowerCase() + " edge · " : "") + (dr.label || "");
       return "<tr><td>" + k.icon + " " + esc(k.label) + "</td><td>" + cell +
@@ -710,7 +723,7 @@
         sb("HP", rng(selected.hpMin, selected.hpMax)) + sb("ATK", rng(selected.atkMin, selected.atkMax)) +
         sb("EXP", rng(selected.expMin, selected.expMax)) + sb("Gold", rng(selected.goldMin, selected.goldMax)) +
       "</div>" +
-      resistSection(selected.resists, "Resistances") +
+      resistSection(selected.resists, "Resistances") + affixSection(selected.affixes) +
       (worlds.length
         ? '<div class="section-title">Appears in</div><div class="effect-list">' +
             worlds.map(function (w) { return '<a class="fx region-link" data-region="' + esc(w) + '" href="maps.html?world=' + encodeURIComponent(w) + '&mode=' + mode + '">' + esc(w) + "</a>"; }).join("") + "</div>" +
@@ -732,7 +745,7 @@
       items: list, page: "bosses.html", title: "Bosses",
       subtitle: live(d.bosses).length + " bosses" +
         (d.bosses.length - live(d.bosses).length ? " + " + (d.bosses.length - live(d.bosses).length) + " upcoming" : ""),
-      tabs: [ { label: "Normal Mode", mode: "normal" }, { label: "Hard Mode", mode: "hard" } ],
+      tabs: [ { label: "Normal Mode", mode: "normal", test: function(b) { return availableIn(b, "normal"); } }, { label: "Hard Mode", mode: "hard", test: function(b) { return availableIn(b, "hard"); } } ],
       search: function (b) { return b.name + " " + b.id + " " + b.mapId; },
       card: function (b, tab) {
         // ⛔ NO LEVEL IS NOT LEVEL ZERO. fmt(null) returns "0", so a planned boss with no projected
@@ -769,6 +782,7 @@
     function itemLink(id) { var it = d._itemById[id]; return it ? link("items.html", id, it.name) : esc(id); }
     var hasHard = b.hardModeHp || b.hardModeAtk || b.hardModeDropItemId;
     var mode = forcedMode || selectedGameMode("normal");
+    if (!availableIn(b, mode)) { mode = b.modes[0]; rememberGameMode(mode, true); }
     if (mode === "hard" && !hasHard) mode = "normal";
     rememberGameMode(mode, false);
     var level = mode === "hard" && b.hardModeLevel ? b.hardModeLevel : b.level;
@@ -776,24 +790,22 @@
       var hard = mode === "hard";
       var hp = hard && b.hardModeHp ? b.hardModeHp : b.hp;
       var atk = hard && b.hardModeAtk ? b.hardModeAtk : b.atk;
-      var dropId = (hard && b.hardModeDropItemId) ? b.hardModeDropItemId : b.dropItemId;
       var res = hard ? b.hardModeResists : b.resists;
       return '<div class="statgrid">' + sb("HP", fmt(hp)) + sb("ATK", fmt(atk)) + "</div>" +
-        resistSection(res, "Resistances") +
-        '<div class="section-title">Drops</div><table class="data"><tr><th>Type</th><th>Item</th><th>Base chance</th></tr>' +
-          (dropId ? "<tr><td>" + (hard ? "Hard" : "Normal") + "</td><td>" + itemLink(dropId) + "</td><td>" + bossDropChance(b, hard ? "Hard" : "Normal") + "%</td></tr>" : "") +
-          (b.bonusDropItemId ? "<tr><td>Bonus</td><td>" + itemLink(b.bonusDropItemId) + "</td><td>" + bossDropChance(b, hard ? "Hard" : "Normal") + "%</td></tr>" : "") +
-        "</table>";
+        resistSection(res, "Resistances") + affixSection(hard ? b.hardAffixes : b.affixes) +
+        '<div class="section-title">Drops</div><table class="data"><tr><th>Item</th><th>Base chance</th></tr>' +
+        bossDropItems(d, [b], mode).map(function(row) { return '<tr><td>' + itemLink(row.id) + '</td><td>' + row.chance + '%</td></tr>'; }).join('') + '</table>';
+
     }
-    app.innerHTML = detailHead("bosses.html", "Bosses", bossList(d), b) +
+    app.innerHTML = detailHead("bosses.html", "Bosses", bossList(d).filter(function(x) { return availableIn(x, mode); }), b) +
       '<div class="detail">' + portrait(b.image, b.name) +
       "<div><h1>" + esc(b.name) + "</h1>" +
       '<div class="tags"><span class="pill">Combat Level ' + fmt(level) + "</span>" +
         (b.mapId ? '<span class="pill">' + (map
           ? '<a href="maps.html?id=' + encodeURIComponent(b.mapId) + '&mode=' + mode + '">' + esc(map.name) + "</a>"
           : esc(b.mapId)) + "</span>" : "") +
-        '<span class="pill">EXP ' + fmt(b.exp) + "</span></div>" +
-      modeTabsHtml(mode, { normal: true, hard: !!hasHard }, "Boss mode") +
+        '<span class="pill">EXP ' + fmt(Math.max(1, level) * 125) + "</span></div>" +
+      modeTabsHtml(mode, { normal: availableIn(b, "normal"), hard: availableIn(b, "hard") && !!hasHard }, "Boss mode") +
       '<div id="bstats">' + stats(mode) + "</div>" +
       "</div></div>";
     wireModeTabs(app, mode, function (next) { bossDetail(app, d, b, next); });
@@ -932,14 +944,14 @@
   }
 
   // Permanent collection bonus — TWO ladders (mirrors PermanentProgressManager, 2026-08-30 rule):
-  // 10-copy equipment families pay a flat +1% per copy (+10% at a full stack); 3-copy accessories
+  // 10-copy equipment grows from 1% to 20% across the stack; 3-copy accessories
   // pay 0% / 2% / 5% — the FIRST accessory copy deliberately grants nothing, because boss
   // accessories carry far larger base stats (5% of one outweighs 10% of a common weapon).
   var ACCESSORY_PERM_LADDER = [0, 2, 5];
   function permRate(c, isAccessory) {
     if (c <= 0) return 0;
     if (isAccessory) return ACCESSORY_PERM_LADDER[Math.min(c, 3) - 1] / 100;
-    return Math.min(c, 10) * 0.01;
+    return 0.01 + (Math.min(c, 10) - 1) * (0.20 - 0.01) / 9;
   }
   // Copy-count tier colors (mirror ItemTierBorder, re-cut for the 10-copy cap):
   // 1 plain, 2 green, 3-4 blue, 5-6 red, 7-9 purple, rainbow at 10.
@@ -951,12 +963,12 @@
       return '<div class="section-title">Permanent Collection Bonus</div>' +
         '<p style="color:var(--muted);font-size:.85rem">Percentage / utility effects only (see Effects) — no flat stats to bank, so this item earns no permanent collection bonus.</p>';
     var isAcc = i.type === "Accessory";
-    var maxC = isAcc ? 3 : 10;   // accessories cap at 3 copies, everything else at 10
+    var maxC = i.maxCopies || (isAcc ? 3 : 10);   // accessories cap at 3 copies, everything else at 10
     var head = "<tr><th>Copies</th><th>Permanent</th>" + flats.map(function (f) { return "<th>" + f[0] + "</th>"; }).join("") + "</tr>";
     var rows = "";
     for (var c = 1; c <= maxC; c++) {
       var r = permRate(c, isAcc);
-      rows += '<tr class="pb-' + permBand(c) + '"><td>' + c + "</td><td>+" + Math.round(r * 100) + "%</td>" +
+      rows += '<tr class="pb-' + permBand(c) + '"><td>' + c + "</td><td>+" + Number((r * 100).toFixed(2)) + "%</td>" +
         flats.map(function (f) { return "<td>+" + fmt(Math.round(f[1] * r)) + "</td>"; }).join("") + "</tr>";
     }
     var table = '<div class="perm-body" style="overflow-x:auto"><table class="data">' + head + rows + "</table></div>";
@@ -965,7 +977,7 @@
     var cap = "+" + Math.round(permRate(maxC, isAcc) * 100) + "% at " + maxC + " owned";
     var intro = isAcc
       ? "Owning copies grants a permanent, every-run bonus of this item’s stats. The first copy grants nothing - the ladder starts paying on the second: +2% at 2 copies, " + cap + "."
-      : "Owning copies grants a permanent, every-run bonus of this item’s stats - +1% per copy, up to " + cap + ".";
+      : "Owning copies grants a permanent, every-run bonus of this item’s stats - 1% for the first copy, increasing evenly to " + cap + ".";
     return '<div class="section-title">Permanent Collection Bonus</div>' +
       '<p style="color:var(--muted);font-size:.85rem;margin:.2rem 0 .5rem">' + intro + '</p>' +
       '<details class="perm-details"' + (wide ? " open" : "") + '><summary>Show all ' + maxC + ' levels</summary>' + table + '</details>';
@@ -998,9 +1010,7 @@
       if (/^HM_T/.test(e.id)) return false;
       return (e.drops || []).some(function (dr) { return dr.itemId === i.id; });
     });
-    var bossDrops = d.bosses.filter(function (b) {
-      return b.dropItemId === i.id || b.hardModeDropItemId === i.id || b.bonusDropItemId === i.id;
-    });
+    var bossDrops = bossDropItems(d, d.bosses, mode).filter(function (row) { return row.id === i.id; });
     var navList = itemList(d).filter(function (x) { return !!x.isHardModeItem === (mode === "hard"); });
     app.innerHTML = detailHead("items.html", "Items", navList, i) +
       '<div class="detail">' + portrait(i.image, i.name) +
@@ -1031,10 +1041,8 @@
           return '<span class="fx">' + link("monsters.html", e.id, e.name) + esc(ch) + "</span>";
         }).join("") + "</div>" : "") +
       (bossDrops.length ? '<div class="section-title">Boss rewards</div><div class="effect-list">' +
-        bossDrops.map(function (b) {
-          var dropMode = b.hardModeDropItemId === i.id ? "Hard" : b.bonusDropItemId === i.id ? "Bonus" : "Normal";
-          return '<span class="fx"><a href="bosses.html?id=' + encodeURIComponent(b.id) + '&mode=' + mode + '">' + esc(b.name) + "</a>" +
-            " (" + bossDropChance(b, dropMode === "Hard" ? "Hard" : (mode === "hard" ? "Hard" : "Normal")) + "%) <small>" + dropMode + "</small></span>";
+        bossDrops.map(function (row) {
+          return '<span class="fx"><a href="bosses.html?id=' + encodeURIComponent(row.boss.id) + '&mode=' + mode + '">' + esc(row.boss.name) + '</a> (' + row.chance + '%) <small>' + row.mode + '</small></span>';
         }).join("") + "</div>" : "") +
       "</div></div>";
     wireModeTabs(app, mode, function (next) { itemDetail(app, d, i, next); });
@@ -1080,7 +1088,6 @@
     "Volcanic":   { icon: "&#127755;", color: "#e0603a" },
     "Desert":     { icon: "&#127964;", color: "#d9a441" },
     "Underwater": { icon: "&#127754;", color: "#3aa0e0" },
-    "Void Hunt":  { icon: "&#128371;",  color: "#8a5cf0" },
     "World Gate": { icon: "&#128682;", color: "#8a8f98" },
     // World Gate branch regions, reached through the hub south of Grassland.
     // ⛔ A COUNTRY GETS ITS FLAG, NEVER A BUILDING (owner, 2026-09-11: "building might cause
@@ -1157,7 +1164,11 @@
     "Cloud Plaza":{ icon: "&#9729;",   color: "#b9cfe3" },
     "Stone":      { icon: "&#129704;", color: "#98a39a" },
     "Egypt":      { icon: '<span class="flag-eg" role="img" aria-label="Egypt flag"></span>', color: "#d8b25f" },
-    "The Temple": { icon: "&#127982;", color: "#c96b5a" }
+    "The Temple": { icon: "&#127982;", color: "#c96b5a" },
+    "Museum": { icon: "&#127963;", color: "#d1b382" },
+    "Mexico": { icon: "&#127474;&#127485;", color: "#e2a34f" },
+    "Candy": { icon: "&#127852;", color: "#dc9ab8" },
+    "SuperMarket": { icon: "&#128722;", color: "#83c3d5" }
   };
   // Real in-game connections per world (documented route). Maps to MapData asset ids.
   var WORLD_ROUTES = {
@@ -1255,8 +1266,7 @@
     "PX01": "PX01", "PX02": "PX02", "PX03": "PX03", "PX04": "PX04", "PX05": "PX05",
     "PX06": "PX06", "PX07": "PX07", "PX08": "PX08", "PX09": "PX09", "PX10": "PX10",
     "PX11": "PX11", "PX12": "PX12", "PX13": "PX13", "PX14": "PX14", "PX15": "PX15",
-    "PX16": "PX16", "PX17": "PX17", "PX18": "PX18", "PX19": "PX19", "PX20": "PX20",
-    "VoidHunt_Map": "VoidHunt"
+    "PX16": "PX16", "PX17": "PX17", "PX18": "PX18", "PX19": "PX19", "PX20": "PX20"
   };
   // data.json ships an `areas` table (region code + its map) built from the setup tools, so prefer
   // it — a new region added there flows straight through to the site with no second table to
@@ -1273,9 +1283,7 @@
     var route = m && routeForMap(d, m.id);
     if (!route) return [];
     return (d.zones || []).filter(function (z) {
-      var onRoute = route === "VoidHunt"
-        ? z.id === "VoidHunt_Zone" || z.id.indexOf("VoidHunt_") === 0
-        : z.id.indexOf(route + "_Zone") === 0 || z.id.indexOf(route + "_HM_Z") === 0;
+      var onRoute = z.id.indexOf(route + "_Zone") === 0 || z.id.indexOf(route + "_HM_Z") === 0;
       if (!onRoute) return false;
       if (mode === "hard") return isHardZone(z);
       if (mode === "normal") return !isHardZone(z);
@@ -1315,15 +1323,23 @@
     });
     return rows.sort(function (a, b) { return a.name.localeCompare(b.name); });
   }
-  // Base boss drop odds (BossData.RollDrop): 1% Normal, 0.75% Hard. A "Bonus" item rolls on the
-  // same chance as the mode it belongs to. Falls back to the constants if data.json predates them.
+  // Legacy data fallback; current exports supply each reward's share of the boss budget.
   function bossDropChance(b, mode) {
-    if (mode === "Hard") return b.hardModeDropChance != null ? b.hardModeDropChance : 0.75;
-    return b.dropChance != null ? b.dropChance : 1;
+    if (mode === "Hard") return b.hardModeDropChance != null ? b.hardModeDropChance : 2;
+    return b.dropChance != null ? b.dropChance : 3;
   }
   function bossDropItems(d, bosses, selectedMode) {
     var rows = [];
     bosses.forEach(function (b) {
+      if (b.drops) {
+        (selectedMode ? [selectedMode] : ["normal", "hard"]).forEach(function(mode) {
+          (b.drops[mode] || []).forEach(function(drop) {
+            var item = d._itemById[drop.itemId]; if (!item) return;
+            rows.push({item:item, id:item.id, name:item.name, boss:b, mode:mode === "hard" ? "Hard" : "Normal", chance:drop.chance});
+          });
+        });
+        return;
+      }
       var hard = selectedMode === "hard";
       var entries = selectedMode
         ? [[hard ? b.hardModeDropItemId : b.dropItemId, hard ? "Hard" : "Normal"], [b.bonusDropItemId, "Bonus"]]
@@ -1337,8 +1353,8 @@
     });
     return rows;
   }
-  function worldStats(d, w) {
-    var ms = d.maps.filter(function (m) { return m.world === w; });
+  function worldStats(d, w, mode) {
+    var ms = d.maps.filter(function (m) { return m.world === w && availableIn(m, mode || selectedGameMode("normal")); });
     var ids = ms.map(function (m) { return m.id; });
     var bc = d.bosses.filter(function (b) { return ids.indexOf(b.mapId) >= 0; }).length;
     return { maps: ms, bosses: bc };
@@ -1347,7 +1363,7 @@
     opts = opts || {};
     var mode = opts.mode || selectedGameMode("normal");
     var meta = WORLD_META[w] || { icon: "&#128506;", color: "var(--accent)" };
-    var s = worldStats(d, w);
+    var s = worldStats(d, w, mode);
     var inventory = s.maps.length + " map" + (s.maps.length !== 1 ? "s" : "") +
          (s.bosses ? " &#183; " + s.bosses + " boss" + (s.bosses > 1 ? "es" : "") : "");
     // ⛔★★★★ "UPCOMING" IS DERIVED FROM THE MAPS, NEVER HAND-PASSED (2026-09-23).
@@ -1378,7 +1394,7 @@
   // Forest Pass are each listed and reachable rather than hidden behind a single "Forest" node.
   function areaRows(d, w, mode) {
     var meta = WORLD_META[w] || { icon: "&#128506;", color: "var(--accent)" };
-    var list = (d.areas || []).filter(function (a) { return a.world === w; });
+    var list = (d.areas || []).filter(function (a) { return a.world === w && availableIn(a, mode); });
     if (!list.length) return "";
     return '<section class="area-group" style="--wc:' + meta.color + '">' +
       '<h3 class="area-group-head"><span class="wicon">' + meta.icon + '</span>' + esc(w) +
@@ -1423,11 +1439,11 @@
     var world = param("world"); if (world) return worldView(app, d, world, forcedMode);
     var mode = forcedMode || selectedGameMode("normal");
     rememberGameMode(mode, false);
-    var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "Void Hunt", "World Gate",
+    var worlds = ["Grassland", "Forest", "Volcanic", "Desert", "Underwater", "World Gate",
                   "Japan", "Greek", "Military", "Heaven", "Maze", "Ice", "America", "Amazon", "Graveyard",
                   "Korea", "London", "Monochrome",
                   // Epoch 4 wave 1 - planned, behind the WEST door of the World Gate.
-                  "Cloud Plaza", "Stone", "Egypt", "The Temple"];
+                  "Cloud Plaza", "Stone", "Egypt", "The Temple", "Museum", "Mexico", "Candy", "SuperMarket"];
     var worldGateUpcoming = !(d.release && d.release.worldGateReleased);
     var mazeBatchUpcoming = !(d.release && d.release.mazeBatchReleased);
     var graveyardUpcoming = !(d.release && d.release.graveyardReleased);
@@ -1441,8 +1457,6 @@
       '<div class="world-view" data-panel="map"><div class="worldmap"><div class="wm-grid">' +
         '<div class="wm-cell" style="grid-area:uw">'     + wnode(d, "Underwater") + '</div>' +
         '<div class="wm-conn v" style="grid-area:vu"></div>' +
-        '<div class="wm-cell" style="grid-area:void">'   + wnode(d, "Void Hunt", { secret: true }) + '</div>' +
-        '<div class="wm-conn h dashed" style="grid-area:h1"></div>' +
         '<div class="wm-cell" style="grid-area:volc">'   + wnode(d, "Volcanic") + '</div>' +
         '<div class="wm-conn h" style="grid-area:h2"></div>' +
         '<div class="wm-cell" style="grid-area:forest">' + wnode(d, "Forest") + '</div>' +
@@ -1522,7 +1536,7 @@
             return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: worldGateUpcoming }) + "</div>";
           }).join("") +
         '</div></div>' +
-      '</div></div><p class="route-note">Drag the map in any direction to look around. Grassland connects south to the World Gate. One line runs straight down from the hub: Japan, Greek, Military and Heaven sit directly beneath it, and the line carries on between them to the Maze on the second row. All five are entered from the World Gate itself &#8212; the Maze is simply the only one that leads onward, to Ice, America and Amazon. The door on the right of the hub opens into the Graveyard. Korea, London and Monochrome hang from one rail beside the Graveyard: none is entered through another — each has its own door inside the Graveyard, and rising monster levels are what make Korea the first stop, London the second and Monochrome the finale. Void Hunt remains the secret arena reached from Volcanic. The dashed rail on the left is <strong>not in the game yet</strong>: the hub&#8217;s west door opens onto the planned Cloud Plaza, a second hub town, whose three gateways lead to Stone, Egypt and The Temple. The bracket down the far left is the <strong>ring</strong> &#8212; each of those three also has two-way doors to the other two, so the circle can be walked in either direction rather than only out and back through the plaza. Open any of their maps to see its exact doors. Nothing there is built, and no combat data for it exists.</p></div>' +
+      '</div></div><section class="editorial-links" aria-label="Cloud Plaza routes">' + ["Museum", "Mexico", "Candy", "SuperMarket"].map(function(w) { var routeMode = w === "Museum" ? mode : "normal"; return '<a href="maps.html?world=' + encodeURIComponent(w) + '&mode=' + routeMode + '"><strong>' + w + '</strong><span>From Cloud Plaza &middot; ' + (routeMode === "hard" ? "Hard" : "Normal") + ' Mode</span></a>'; }).join("") + '</section><p class="route-note">Cloud Plaza connects to Stone, Egypt, The Temple, the Museum, Mexico, Candy and SuperMarket. Switch modes to see the available maps and routes. Museum Hard has four different wings. Drag the map to look around.</p></div>' +
       // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
       // grouped under its world. The compass graph above stays world-level.
       '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {
@@ -1584,9 +1598,11 @@
     wireModeTabs(app, mode, function (next) { PAGES.maps(app, d, next); });
   };
   function worldView(app, d, w, forcedMode) {
+    var availability = modeAvailability(d.maps.filter(function(m) { return m.world === w; }));
     var mode = forcedMode || selectedGameMode("normal");
+    if (!availability[mode]) mode = availability.normal ? "normal" : "hard";
     rememberGameMode(mode, false);
-    var s = worldStats(d, w);
+    var s = worldStats(d, w, mode);
     if (!s.maps.length) return notFound(app, "maps.html", "Worlds");
     var meta = WORLD_META[w] || { color: "var(--accent)" };
     // Live regions get their chain from WORLD_ROUTES. Planned regions build the same shape from
@@ -1606,7 +1622,7 @@
       var edges = {}, seen = {};
       s.maps.forEach(function (m) {
         (m.doors || []).forEach(function (dr) {
-          if (dr.kind !== "onward" || !inWorld[dr.to]) return;
+          if (dr.kind !== "onward" || !inWorld[dr.to] || !availableIn(dr, mode)) return;
           (edges[m.id] = edges[m.id] || []).push(dr.to);
           seen[dr.to] = true;
         });
@@ -1687,7 +1703,8 @@
     app.innerHTML =
       '<a class="back" href="maps.html">&#8592; World Map</a>' +
       '<div class="page-head"><h1>' + esc(w) + '</h1><p>' + s.maps.length + ' map' + (s.maps.length !== 1 ? 's' : '') + ' &#183; connected in travel order</p></div>' +
-      modeTabsHtml(mode, null, "World data mode") +
+      modeTabsHtml(mode, availability, "World data mode") +
+      (w === "Museum" ? museumGuide(mode) : "") +
       '<div class="mchain' + (horizontal ? " h" : "") + '" style="--wc:' + meta.color + '"><svg class="mconn-svg" aria-hidden="true"></svg>' + html + '</div>';
     wireModeTabs(app, mode, function (next) { worldView(app, d, w, next); });
     drawRouteConnectors(app, route);
@@ -1727,6 +1744,29 @@
     var t; drawRouteConnectors._rz = function () { clearTimeout(t); t = setTimeout(draw, 120); };
     window.addEventListener("resize", drawRouteConnectors._rz);
   }
+  var RELEASE_COPY = {
+  "museumNormal": "The Atrium leads through Stone Age, Civilization I, Civilization II and the Modern Area of Study. Bring Burn Resist against burning exhibits and Slow Heal against regenerating exhibits. Hard Mode uses four different wings.",
+  "museumHard": "The Atrium opens into Modern 1, Modern 2, Future 1 and Future 2. Modern wings use Stress; Future 1 regenerates; Future 2 combines both. Bring Stress Resist and Slow Heal as needed. The grand stair is unavailable in Hard Mode.",
+  "masteryIntro": "Route victories grant this character 1 mastery XP, or 2 for an elite and 10 for a boss. Fighting far behind your progression reduces credit. The first level costs 500 XP; each following level costs 5% more. Growth per mastery level:",
+  "masteryTitle": "Character Mastery",
+  "effectsTitle": "Combat effects",
+  "museum": "Museum",
+  "museumNormalTitle": "Museum Normal",
+  "museumHardTitle": "Museum Hard",
+  "stress": "Stress Resist",
+  "slowHeal": "Slow Heal",
+  "modern1": "Modern 1",
+  "modern2": "Modern 2",
+  "future1": "Future 1",
+  "future2": "Future 2",
+  "mexico": "Mexico",
+  "candy": "Candy",
+  "market": "SuperMarket"
+};
+  function museumGuide(mode) {
+    return '<div class="notice"><strong>Museum ' + (mode === "hard" ? 'Hard' : 'Normal') + '</strong><p>' +
+      (mode === "hard" ? RELEASE_COPY.museumHard : RELEASE_COPY.museumNormal) + '</p></div>';
+  }
   function mapDetail(app, d, m, forcedMode) {
     if (!m) return notFound(app, "maps.html", "Maps");
     if (m.upcoming) {
@@ -1765,7 +1805,8 @@
     }
     var mode = forcedMode || selectedGameMode("normal");
     rememberGameMode(mode, false);
-    var bosses = d.bosses.filter(function (b) { return b.mapId === m.id; });
+    if (!availableIn(m, mode)) { mode = m.modes[0]; rememberGameMode(mode, true); }
+    var bosses = d.bosses.filter(function (b) { return b.mapId === m.id && availableIn(b, mode); });
     var allZones = zonesForMap(d, m);
     var normalZones = allZones.filter(function (z) { return !isHardZone(z); });
     var hardZones = allZones.filter(function (z) { return isHardZone(z); });
@@ -1810,7 +1851,7 @@
       var rewardId = hard && b.hardModeDropItemId ? b.hardModeDropItemId : b.dropItemId;
       var reward = d._itemById[rewardId];
       return '<a class="map-entity-card boss" href="bosses.html?id=' + encodeURIComponent(b.id) + '&mode=' + mode + '">' + thumb(b.image, b.name) +
-        '<div><h3>' + esc(b.name) + '</h3><p>Level ' + fmt(b.level) + ' &#183; ' + fmt(hp) + ' HP &#183; ' + fmt(atk) + ' ATK</p>' +
+        '<div><h3>' + esc(b.name) + '</h3><p>Level ' + fmt(hard && b.hardModeLevel ? b.hardModeLevel : b.level) + ' &#183; ' + fmt(hp) + ' HP &#183; ' + fmt(atk) + ' ATK</p>' +
         '<span>' + (reward ? 'Reward: ' + esc(reward.name) : 'Open boss details') + '</span></div><b aria-hidden="true">&#8594;</b></a>';
     }
     function bossDropCard(row) {
@@ -1829,7 +1870,8 @@
         (minLevel ? '<span class="pill">Level ' + fmt(minLevel) + '&#8211;' + fmt(maxLevel) + '</span>' : '') + '</div>' +
         '<p>Review this map\'s zones, encounters, regular item drops, bosses, and exclusive boss rewards before choosing your route.</p></div>' +
         '<div class="map-art">' + (m.image ? '<img src="' + IMG_BASE + esc(m.image) + '" alt="' + esc(m.name) + '">' : '<div class="empty">No map art available.</div>') + '</div></section>' +
-      modeTabsHtml(mode, { normal: normalZones.length > 0 || bosses.length > 0, hard: hardZones.length > 0 || bosses.length > 0 }, "Map data mode") +
+      modeTabsHtml(mode, modeAvailability([m]), "Map data mode") +
+      (m.world === "Museum" ? museumGuide(mode) : "") + doorSection(d, m, mode) +
       '<section class="map-overview" aria-label="Map overview">' +
         sb("Zones", zones.length) + sb("Monsters", encounters.enemies.length) + sb("Item drops", drops.length) + sb("Bosses", bosses.length) +
         sb("Walkable", walkPct) + sb("Grid", m.gridWidth + "&#215;" + m.gridHeight) + '</section>' +
@@ -1891,6 +1933,7 @@
         sb("HP", mult(c.hpMultiplier)) + sb("ATK", mult(c.atkMultiplier)) + sb("DEF", mult(c.defMultiplier)) +
         sb("AGI", mult(c.agiMultiplier)) + sb("LUC", mult(c.lucMultiplier)) +
       "</div>" +
+      (c.masteryGrowthPercent ? '<div class="section-title">Character Mastery</div><p>' + RELEASE_COPY.masteryIntro + '</p><div class="effect-list">' + c.masteryGrowthPercent.map(function(n, i) { return n ? '<span class="fx">' + ["HP", "ATK", "DEF", "AGI", "LUC"][i] + ' +' + n + '%</span>' : ''; }).join('') + '</div>' : '') +
       (owned.length ? '<div class="section-title">Owned bonus (always active)</div><div class="effect-list">' +
         owned.map(function (o) { return '<span class="fx">' + esc(o) + "</span>"; }).join("") + "</div>" : "") +
       "</div></div>";

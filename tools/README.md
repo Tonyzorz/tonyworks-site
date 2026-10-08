@@ -8,10 +8,15 @@ Regenerate the Infinite Loot-Loop app data from the Unity project.
 project to sit next to this repo as `../Infinite Loot-Loop`.
 
 ```
+$env:SITE_LIVE_VERSION = 'v7.0.0'     # explicitly choose the version being published
 node tools/build-data.mjs
 powershell -ExecutionPolicy Bypass -File tools/resize-images.ps1
 node tools/audit-data.mjs
-node tools/build-upcoming.mjs        # planned content -> data/upcoming.json
+node tools/build-upcoming.mjs        # retire previews for released regions
+node tools/sync-localization.mjs     # public catalog text only
+node tools/build-site-translations.mjs
+node tools/audit-publication.mjs
+node tools/audit-site.mjs
 ```
 
 - `build-data.mjs` parses the `.asset` YAML, resolves `guid` references via the
@@ -25,6 +30,15 @@ node tools/build-upcoming.mjs        # planned content -> data/upcoming.json
   Unity at full art resolution, which is far too large for the web).
 - `audit-data.mjs` verifies every exported image reference and rejects maps where
   differently named monster archetypes accidentally resolve to identical art.
+- `public-content.mjs` derives permanent exclusions from the game's secret registry,
+  item visibility flags, secret encounters and hidden map definitions. Release switches
+  never override these exclusions. Hidden content is omitted from data, translations,
+  doors and images; map paintings that reveal hidden geometry are withheld entirely.
+- Museum Normal and Hard are distinct map sets, with a shared Atrium. Exported mode
+  availability controls the atlas, doors, boss catalogs and reward lists. Museum runtime
+  stat adjustments and the game's boss drop budgets are read from their source files.
+- `audit-publication.mjs` checks privacy, dangling references, mode-specific loot and
+  doors, orphaned art, retired previews and both Museum map sets before publishing.
 
 Then commit and push:
 ```
@@ -33,8 +47,9 @@ git add -A && git commit -m "Refresh game data" && git push
 
 ## Planned content — `data/upcoming.json`
 
-`build-upcoming.mjs` emits the Epoch 4 / wave 1 regions (Cloud Plaza, Stone, Egypt, The Temple)
-that are **designed but not built**: no Unity assets, no art, no authored stats. `app.js` merges
+The Epoch 4 and Museum previews have shipped. `build-upcoming.mjs` now emits an empty
+preview catalog when those release flags are enabled. Its legacy preview path describes
+regions with no Unity assets, art or authored stats. `app.js` merges
 the file into `data.json` at load time and every record carries `upcoming: true`, so the Maps,
 Monsters, Bosses and Items pages list them behind an **Upcoming** badge.
 
