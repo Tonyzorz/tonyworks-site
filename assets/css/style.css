@@ -838,12 +838,22 @@ body { overflow-x:clip; }
 .worldmap::-webkit-scrollbar { display:none; }
 .worldmap.panning { cursor:grabbing; }
 .wm-grid {
-  position:relative; isolation:isolate; display:grid; width:max-content; margin:0 auto;
-  padding:36px; align-items:center; justify-items:center; gap:22px;
-  grid-template-columns:repeat(7,auto 42px) auto;
-  grid-template-rows:repeat(5,auto 44px) auto;
+  display:grid; width:max-content; margin:0 auto; align-items:center; justify-items:center; gap:18px;
+  grid-template-columns: auto 62px auto 62px auto 62px auto 62px auto 62px auto 62px auto 62px auto;
+  grid-template-rows: auto 62px auto 62px auto 62px auto 62px auto 62px auto;
+  grid-template-areas:
+    ".    .   .  .     .    .   .    .  .      .   uw   .   .      .     ."
+    ".    .   .  .     .    .   .    .  .      .   vu   .   .      .     ."
+    ".    .   .  .     void h1  volc h2 forest h3  gl   h4  desert .     ."
+    ".    .   .  .     .    .   .    .  .      .   vd   .   .      .     ."
+    "ring rs1 st clbus cl   hcl hcl  hcl hcl   hcl gate hgy gy     gybus kr"
+    "ring .   .  clbus clmu .   .    .   .     .   .    .   .      gybus ."
+    "ring rs2 eg clbus mu   .   .    .   wg    wg  wg   wg  wg     gybus ld"
+    "ring .   .  clbus .    .   .    .   .     .   .    .   .      gybus ."
+    "ring rs3 bd clbus .    .   .    .   .     .   mz   .   .      gybus px"
+    ".    .   .  .     .    .   .    .   .     .   vmz  .   .      .     ."
+    ".    .   .  .     .    .   .    .   mzk   mzk mzk  mzk mzk   .     .";
 }
-
 /* World Gate branch: the hub drops onto a bus that fans out to the four themed regions. */
 .wm-branch { display:flex; flex-direction:column; align-items:center; width:100%; }
 .wm-branch-bus { align-self:stretch; height:2px; margin:0 12%; background:var(--border); }
@@ -901,7 +911,7 @@ body { overflow-x:clip; }
    horizontally so the layout stays connected instead of collapsing to a straight list. */
 @media (max-width:640px){
   .worldmap { padding-bottom:.75rem; }
-  .wm-grid { gap:20px; grid-template-columns:repeat(7,auto 24px) auto; }
+  .wm-grid { gap:10px; grid-template-columns:repeat(7,auto 34px) auto; }
   .worldmap .wnode { width:108px; padding:.6rem .45rem; gap:.1rem; }
   .worldmap .wnode .wicon { font-size:1.5rem; }
   .worldmap .wnode .wname { font-size:.88rem; }
@@ -1524,14 +1534,7 @@ body { overflow-x:clip; }
   .pager button { min-width:44px; min-height:44px; }
 }
 
-/* Door-derived atlas connections. Cards sit above routes and keep every endpoint visible. */
-.world-connections { position:absolute; inset:0; z-index:0; overflow:visible; pointer-events:none; color:var(--accent); }
-.world-connections > path, .mconn-svg > path { fill:none; stroke:currentColor; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
-.mconn-svg { color:var(--wc,var(--accent)); }
-.wm-grid .wnode, .wm-grid .wm-branch-row { position:relative; z-index:1; }
-.wm-grid .wm-branch-row { flex-wrap:nowrap; gap:28px; }
-.mchain { padding:26px; gap:60px; isolation:isolate; }
-.mtier { gap:28px; }
+.wm-late-spur { width:50% !important; justify-self:end; }
 .atlas-tools { display:flex; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:.6rem; }
 .worldmap { scroll-margin-top:76px; }
 .atlas-tools .view-switch { margin:0; }
@@ -1581,6 +1584,4 @@ body { overflow-x:clip; }
   .atlas-focus > span { display:none; }
   .atlas-focus select { width:100%; min-width:0; }
   .atlas-jump { width:100%; }
-  .mchain { padding:24px 10px; }
-  .mtier { gap:28px; }
 }

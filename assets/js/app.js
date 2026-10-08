@@ -1488,26 +1488,112 @@
                   "Korea", "London", "Monochrome",
                   // Epoch 4 wave 1 - planned, behind the WEST door of the World Gate.
                   "Cloud Plaza", "Stone", "Egypt", "The Temple", "Museum", "Mexico", "Candy", "SuperMarket"];
-    d.maps.forEach(function(m) { if (worlds.indexOf(m.world)<0) worlds.push(m.world); });
     worlds = worlds.filter(function(w) { return worldStats(d,w,mode).maps.length; });
-    var positions = {"Underwater":[11,1],"Volcanic":[7,3],"Forest":[9,3],"Grassland":[11,3],"Desert":[13,3],"World Gate":[11,5],"Cloud Plaza":[5,5],"Stone":[3,5],"Egypt":[3,7],"The Temple":[3,9],"Museum":[5,7],"Mexico":[7,7],"Candy":[5,9],"SuperMarket":[7,9],"Graveyard":[13,5],"Korea":[15,5],"London":[15,7],"Monochrome":[15,9],"Maze":[11,9]};
-    var branches = {wg:["Japan","Greek","Military","Heaven"],mzk:["Ice","America","Amazon"]};
-    var nodes = worlds.filter(function(w) { return positions[w]; }).map(function(w) {
-      var pos = positions[w];
-      return '<div class="wm-cell" style="grid-column:'+pos[0]+';grid-row:'+pos[1]+'">'+wnode(d,w,{mode:mode})+'</div>';
-    }).join('');
-    Object.keys(branches).forEach(function(key) {
-      nodes += '<div class="wm-branch-row" style="grid-column:9 / 14;grid-row:'+(key === 'wg' ? 7 : 11)+'">'+branches[key].filter(function(w) { return worlds.indexOf(w)>=0; }).map(function(w) { return wnode(d,w,{mode:mode}); }).join('')+'</div>';
-    });
-    var placed = Object.keys(positions).concat(branches.wg,branches.mzk);
-    worlds.filter(function(w) { return placed.indexOf(w)<0; }).forEach(function(w,i) {
-      nodes += '<div class="wm-cell" style="grid-column:'+(3+i%3*2)+';grid-row:'+(13+Math.floor(i/3)*2)+'">'+wnode(d,w,{mode:mode})+'</div>';
-    });
-    app.innerHTML = pageHero("maps.html","World Map","Every region, connected. Choose a world to trace its maps and bosses.",d.maps.filter(function(m) { return availableIn(m,mode); }).length) +
-      modeTabsHtml(mode,null,"Map data mode") +
+    var worldGateUpcoming = !(d.release && d.release.worldGateReleased);
+    var mazeBatchUpcoming = !(d.release && d.release.mazeBatchReleased);
+    var graveyardUpcoming = !(d.release && d.release.graveyardReleased);
+    var koreaUpcoming = !(d.release && d.release.koreaReleased);
+    var londonUpcoming = !(d.release && d.release.londonReleased);
+    var monochromeUpcoming = !(d.release && d.release.monochromeReleased);
+    app.innerHTML =
+      pageHero("maps.html", "World Map", "Every region, connected. Choose a world to trace its maps and bosses.", live(d.maps).length) +
+      modeTabsHtml(mode, null, "Map data mode") +
       '<div class="atlas-tools"><div class="view-switch" role="group" aria-label="World view"><button type="button" data-view="map">Map</button><button type="button" data-view="list">List</button></div><label class="atlas-focus"><span>Focus region</span><select data-atlas-focus aria-label="Focus region">'+worlds.map(function(w) { return '<option value="'+esc(w)+'"'+(w==='World Gate'?' selected':'')+'>'+esc(w)+'</option>'; }).join('')+'</select></label><button type="button" class="atlas-jump" data-focus="Cloud Plaza">Cloud Plaza routes</button></div>' +
-      '<div class="world-view" data-panel="map"><div class="worldmap"><div class="wm-grid"><svg class="world-connections" aria-hidden="true"></svg>'+nodes+'</div></div><p class="route-note">Lines follow the public in-game doors for the selected mode. Arrows mark one-way travel. Drag to explore or choose a region above.</p></div>' +
-      '<div class="world-view region-list" data-panel="list">'+worlds.map(function(w) { return areaRows(d,w,mode); }).join('')+'</div>';
+      '<div class="world-view" data-panel="map"><div class="worldmap"><div class="wm-grid">' +
+        '<div class="wm-cell" style="grid-area:uw">'     + wnode(d, "Underwater") + '</div>' +
+        '<div class="wm-conn v" style="grid-area:vu"></div>' +
+        '<div class="wm-cell" style="grid-area:volc">'   + wnode(d, "Volcanic") + '</div>' +
+        '<div class="wm-conn h" style="grid-area:h2"></div>' +
+        '<div class="wm-cell" style="grid-area:forest">' + wnode(d, "Forest") + '</div>' +
+        '<div class="wm-conn h" style="grid-area:h3"></div>' +
+        '<div class="wm-cell" style="grid-area:gl">'     + wnode(d, "Grassland") + '</div>' +
+        '<div class="wm-conn h" style="grid-area:h4"></div>' +
+        '<div class="wm-cell" style="grid-area:desert">' + wnode(d, "Desert") + '</div>' +
+        '<div class="wm-conn v" style="grid-area:vd"></div>' +
+        '<div class="wm-cell" style="grid-area:gate">'   + wnode(d, "World Gate", { upcoming: worldGateUpcoming }) + '</div>' +
+        // ★ THE WEST DOOR. The hub already has a "Coming Soon" stub on its LEFT side
+        // (CV01_to_WestGate), directly opposite the Graveyard door on its right. Epoch 4 wave 1
+        // claims it: a stair up to the Cloud Plaza, a second hub town, which then opens onto
+        // Stone, Egypt and The Temple. Drawn dashed because NONE of it is built yet - the whole
+        // rail is planned content, and the nodes say Upcoming.
+        // ⚠ Stone/Egypt/Temple also ring to EACH OTHER in the design (three two-way doors). The
+        // compass draws the hub rail only; the ring edges are walls in one direction and a
+        // walk-back in the other, so a rail reads truer here than a triangle would.
+        '<div class="wm-conn h dashed" style="grid-area:hcl"></div>' +
+        '<div class="wm-cell" style="grid-area:cl">'     + wnode(d, "Cloud Plaza") + '</div>' +
+        '<div class="wm-conn v dashed" style="grid-area:clbus"></div>' +
+        '<div class="wm-cell" style="grid-area:st">'     + wnode(d, "Stone") + '</div>' +
+        '<div class="wm-cell" style="grid-area:eg">'     + wnode(d, "Egypt") + '</div>' +
+        '<div class="wm-cell" style="grid-area:bd">'     + wnode(d, "The Temple") + '</div>' +
+        // ★ THE MUSEUM (6.0.0) HANGS STRAIGHT DOWN OFF THE CLOUD PLAZA, and the line says so.
+        // Its entry is CL01 (`r_mu.js: plaza: 'CL01'`), NOT the ring — MU01's own south door goes to
+        // the Cloud Plaza and nowhere else. A first cut put it at the bottom of the ring's bus with a
+        // horizontal stub, which drew a line that read "Temple → Museum" and placed it far below
+        // where it belongs. Own connector, own column, directly under the plaza.
+        // ⛔ THIS CELL IS THE WHOLE REASON IT APPEARS AT ALL. The atlas is a hand-written grid of
+        // `wnode(d, "<world>")` calls; a world the data knows about and this list does not renders on
+        // NO page, which is exactly how the Museum shipped invisible on 2026-09-23. Adding a world to
+        // upcoming.json is never enough — add the cell here and its `grid-area` in style.css.
+        '<div class="wm-conn v dashed" style="grid-area:clmu"></div>' +
+        '<div class="wm-cell" style="grid-area:mu">'     + wnode(d, "Museum") + '</div>' +
+        // ★ THE RING. Stone, Egypt and The Temple are not just three spurs off the plaza — each
+        // has two-way doors to the other two, so the circle can be walked in either direction
+        // (ST01 west->BD01 / east->EG01, EG01 west->ST01 / east->BD01, BD01 west->EG01 /
+        // east->ST01, straight out of Tools/epoch4_blueprint/maps.js). A bracket joining all
+        // three says that without pretending a vertical rail is a triangle.
+        '<div class="wm-conn v dashed" style="grid-area:ring" role="img" aria-label="Stone, Egypt and The Temple also connect directly to one another"' +
+          ' title="Ring doors: Stone, Egypt and The Temple each connect directly to the other two"></div>' +
+        '<div class="wm-conn h dashed" style="grid-area:rs1"></div>' +
+        '<div class="wm-conn h dashed" style="grid-area:rs2"></div>' +
+        '<div class="wm-conn h dashed" style="grid-area:rs3"></div>' +
+        // ★ The Graveyard sits LITERALLY to the World Gate's right — the hub's right-hand side
+        // opens into it in the game, so the atlas draws it that way (owner, 2026-09-01).
+        // ⚠ NOT A CORRIDOR — Korea, London and Monochrome are NOT entered through one another.
+        // Each has its OWN door inside the Graveyard (Korea from GY09 on the surface loop,
+        // London from GY05 in the catacombs, Monochrome from GY07 in the deep vault), so the
+        // atlas hangs all three off ONE rail from the Graveyard node. Only the monster-level
+        // ladder makes Korea the practical first stop (964K -> 1.86M -> 4.8M); difficulty is
+        // the only gate. The per-world pages show the exact doors.
+        '<div class="wm-conn h" style="grid-area:hgy"></div>' +
+        '<div class="wm-cell" style="grid-area:gy">'     + wnode(d, "Graveyard", { upcoming: graveyardUpcoming }) + '</div>' +
+        '<div class="wm-conn v" style="grid-area:gybus"></div>' +
+        '<div class="wm-cell" style="grid-area:kr">'     + wnode(d, "Korea", { upcoming: koreaUpcoming }) + '</div>' +
+        '<div class="wm-cell" style="grid-area:ld">'     + wnode(d, "London", { upcoming: londonUpcoming }) + '</div>' +
+        '<div class="wm-cell" style="grid-area:px">'     + wnode(d, "Monochrome", { upcoming: monochromeUpcoming }) + '</div>' +
+        // The World Gate fans out to its four live regions and the Maze. The Maze then
+        // opens the Ice, America and Amazon routes through its three gate halls.
+        // ★ THE HUB TREE. `vg` runs straight down the World Gate's own column past both rails;
+        // the Maze sits on the end of it, with Ice / America / Amazon under the Maze. `hwg` turns
+        // left off the SAME trunk and `vwg` carries on down to the four themed regions, so their
+        // line visibly starts at the World Gate and passes BESIDE the Maze cluster rather than
+        // through it — no caption needed, and it cannot be misread as hanging off the Amazon.
+        '<div class="wm-trunk" aria-hidden="true"></div>' +
+        '<div class="wm-cell" style="grid-area:mz">' + wnode(d, "Maze", { upcoming: mazeBatchUpcoming }) + '</div>' +
+        '<div class="wm-conn v" style="grid-area:vmz"></div>' +
+        '<div class="wm-branch" style="grid-area:mzk"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
+          ["Ice", "America", "Amazon"].map(function (w) {
+            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: mazeBatchUpcoming }) + "</div>";
+          }).join("") +
+        '</div></div>' +
+
+        '<div class="wm-branch" style="grid-area:wg"><div class="wm-branch-bus"></div><div class="wm-branch-row">' +
+          ["Japan", "Greek", "Military", "Heaven"].map(function (w) {
+            return '<div class="wm-branch-item"><span class="wm-drop"></span>' + wnode(d, w, { upcoming: worldGateUpcoming }) + "</div>";
+          }).join("") +
+        '</div></div>' +
+      // Released Cloud Plaza regions use the same plain branch rail as the original atlas.
+      (mode === "normal" ?
+        '<div class="wm-conn v" style="grid-column:6;grid-row:5 / 12" aria-hidden="true"></div>' +
+        ["Mexico", "Candy", "SuperMarket"].map(function(w,i) {
+          return '<div class="wm-conn h wm-late-spur" style="grid-column:6;grid-row:'+(7+i*2)+'" aria-hidden="true"></div>' +
+            '<div class="wm-cell" style="grid-column:7;grid-row:'+(7+i*2)+'">'+wnode(d,w,{mode:mode})+'</div>';
+        }).join('') : '') +
+      '</div></div><p class="route-note">Drag the map to look around.</p></div>' +
+      // List view = every MAP on its own row (Forest Road, Dark Forest, Deep Dark Forest …),
+      // grouped under its world. The compass graph above stays world-level.
+      '<div class="world-view region-list" data-panel="list">' + worlds.map(function (w) {
+        return areaRows(d, w, mode);
+      }).join("") + '</div>';
     var stored; try { stored = localStorage.getItem("tw-map-view"); } catch (_) {}
     var view = stored || (window.innerWidth <= 640 ? "list" : "map");
     function setView(v) {
@@ -1521,7 +1607,6 @@
       // First time the map panel becomes visible, open it centered (centering while the panel
       // is display:none is a no-op because scrollWidth reads 0).
       if (v === "map") {
-        window.TWAtlas.drawWorld(app,d,mode);
         var wmc = app.querySelector(".worldmap");
         if (wmc && !wmc._centered && wmc.clientWidth > 0) {
           wmc.scrollLeft = (wmc.scrollWidth - wmc.clientWidth) / 2;
@@ -1530,7 +1615,6 @@
       }
     }
     Array.prototype.forEach.call(app.querySelectorAll("[data-view]"), function (b) { b.onclick = function () { setView(b.getAttribute("data-view")); }; }); setView(view);
-
     function focusWorld(world) {
       setView("map");
       var wm = app.querySelector(".worldmap"), node = Array.prototype.find.call(app.querySelectorAll("[data-world]"),function(el) { return el.getAttribute("data-world")===world; });
@@ -1686,7 +1770,38 @@
       (w === "Museum" ? museumGuide(mode) : "") +
       '<div class="mchain' + (horizontal ? " h" : "") + '" style="--wc:' + meta.color + '"><svg class="mconn-svg" aria-hidden="true"></svg>' + html + '</div>';
     wireModeTabs(app, mode, function (next) { worldView(app, d, w, next); });
-    window.TWAtlas.drawMaps(app,s.maps,mode);
+    drawRouteConnectors(app, route);
+  }
+  function drawRouteConnectors(app, route) {
+    var chain = app.querySelector(".mchain");
+    if (!chain || !route) return;
+    var svg = chain.querySelector(".mconn-svg");
+    if (!svg) return;
+    function centre(id) {
+      var el = chain.querySelector('[data-mid="' + id + '"]');
+      return el ? { x: el.offsetLeft + el.offsetWidth / 2, y: el.offsetTop + el.offsetHeight / 2 } : null;
+    }
+    function draw() {
+      var W = chain.scrollWidth, H = chain.scrollHeight;
+      svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+      svg.style.width = W + "px"; svg.style.height = H + "px";
+      var lines = "";
+      Object.keys(route.edges || {}).forEach(function (p) {
+        var pc = centre(p); if (!pc) return;
+        (route.edges[p] || []).forEach(function (c) {
+          var cc = centre(c); if (!cc) return;
+          lines += '<line x1="' + pc.x + '" y1="' + pc.y + '" x2="' + cc.x + '" y2="' + cc.y + '"/>';
+        });
+      });
+      svg.innerHTML = lines;
+    }
+    requestAnimationFrame(draw);
+    Array.prototype.forEach.call(chain.querySelectorAll("img"), function (im) {
+      if (!im.complete) im.addEventListener("load", function () { requestAnimationFrame(draw); }, { once: true });
+    });
+    if (drawRouteConnectors._rz) window.removeEventListener("resize", drawRouteConnectors._rz);
+    var t; drawRouteConnectors._rz = function () { clearTimeout(t); t = setTimeout(draw, 120); };
+    window.addEventListener("resize", drawRouteConnectors._rz);
   }
   var RELEASE_COPY = {
   "museumNormal": "The Atrium leads through Stone Age, Civilization I, Civilization II and the Modern Area of Study. Bring Burn Resist against burning exhibits and Slow Heal against regenerating exhibits. Hard Mode uses four different wings.",
@@ -1708,7 +1823,7 @@
   "market": "SuperMarket",
   "focusRegion": "Focus region",
   "cloudRoutes": "Cloud Plaza routes",
-  "doorLines": "Lines follow the public in-game doors for the selected mode. Arrows mark one-way travel. Drag to explore or choose a region above.",
+  "doorLines": "Drag the map to look around.",
   "sortBy": "Sort by",
   "routeOrder": "Route order",
   "mainStat": "Main stat",
