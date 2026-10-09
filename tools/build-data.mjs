@@ -215,6 +215,14 @@ const heldByPrefix = (released, prefix) => (id, text) => {
 };
 const isHeldEpoch4Late = heldByPrefix(epoch4LateReleased, EPOCH4LATE_PREFIX);
 const isHeldMuseumHard = heldByPrefix(museumHardReleased, MUSEUMHARD_PREFIX);
+// ⛔★★★★ 8.0.0 — THE DARK (BK) and its Death twin (DK), `ShopManager.BlackMapReleased`. Baked on disk from 2026-10-09 (maps,
+// zones, 40 enemies, 11 bosses, 21 items) and held in the game — nothing here named BK/DK, so the next run would have
+// published all of it. Item assets are named BK_S1_* / BK_Ticket (no digit after the prefix) — the sourceRegion catches them.
+const blackMapReleased = /BlackMapReleased\s*=>\s*true\s*;/.test(_shopManagerSrcForGate)
+  || /(^|,)\s*blackmap\s*=\s*1\s*(,|$)/.test(process.env.SITE_LIVE_RELEASE || "");
+const BLACKMAP_PREFIX = /^(BK|DK)(\d|_)/;
+let heldBlackMapCount = 0;
+const isHeldBlackMap = heldByPrefix(blackMapReleased, BLACKMAP_PREFIX);
 // Every asset id a gate withheld. Anything PUBLISHED that points at one of these (an achievement's
 // requiredItems, a character's unlockAchievementID) is itself unreleased — see the achievement gate.
 const heldAssetIds = new Set();
@@ -227,6 +235,7 @@ const loadCategory = (sub) => walk(path.join(SO, sub), (p) => p.endsWith(".asset
     if (isHeldMuseum(a.id, a.text)) { heldMuseumCount++; heldAssetIds.add(a.id); return false; }
     if (isHeldEpoch4Late(a.id, a.text)) { heldEpoch4LateCount++; heldAssetIds.add(a.id); return false; }
     if (isHeldMuseumHard(a.id, a.text)) { heldMuseumHardCount++; heldAssetIds.add(a.id); return false; }
+    if (isHeldBlackMap(a.id, a.text)) { heldBlackMapCount++; heldAssetIds.add(a.id); return false; }
     return true;
   });
 
@@ -1130,3 +1139,4 @@ console.log(`Achievements: HELD — ${heldAchievementIds.size} require unrelease
 console.log(museumReleased ? "Museum: PUBLISHED (SITE_LIVE_RELEASE=museum=1 or the flag flipped)" : `Museum: HELD — ${heldMuseumCount} asset(s) withheld from the public wiki.`);
 console.log(epoch4LateReleased ? "Mexico/Candy/SuperMarket: PUBLISHED (SITE_LIVE_RELEASE=epoch4late=1 or the flag flipped)" : `Mexico/Candy/SuperMarket: HELD — ${heldEpoch4LateCount} asset(s) withheld from the public wiki.`);
 console.log(museumHardReleased ? "Museum HARD: PUBLISHED (SITE_LIVE_RELEASE=museumhard=1 or the flag flipped)" : `Museum HARD: HELD — ${heldMuseumHardCount} asset(s) withheld from the public wiki.`);
+console.log(blackMapReleased ? "The Dark: PUBLISHED (SITE_LIVE_RELEASE=blackmap=1 or the flag flipped)" : `The Dark: HELD — ${heldBlackMapCount} asset(s) withheld from the public wiki.`);
