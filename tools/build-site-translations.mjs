@@ -108,7 +108,7 @@ export function sourceStrings() {
 }
 
 const protectedTerms = [
-  "Infinite Loot-Loop", "Infinite Loot Loop", "Infinite Growth RPG", "lutti", "Tony Works", "Show Me the Saju",
+  "Infinite Loot-Loop", "Infinite Loot Loop", "Infinite Growth RPG", "Mossy Tale", "Sign in with Apple", "App Tracking Transparency", "Ad Skip Forever", "lutti", "Tony Works", "Show Me the Saju",
   "Amazon Web Services", "Apple App Store", "Firebase Crashlytics", "Firebase Analytics",
   "Google Analytics", "Google AdMob", "Google User Messaging Platform", "Google Play",
   "AppLovin MAX", "AppLovin", "Unity Ads", "Game Center", "Android", "Unity", "iOS", "AWS"
