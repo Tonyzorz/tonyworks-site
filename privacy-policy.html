@@ -38,13 +38,14 @@
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
   .translation-notice { display: flex; gap: 10px; margin-bottom: 20px; padding: 12px 14px; border: 1px solid #c7d7f5; border-radius: 10px; background: #f3f7ff; }
   .translation-notice p { margin: 2px 0 0; }
+  code.plain { font: inherit; background: none; padding: 0; }
   @media (max-width: 480px) { body { padding: 18px; } h1 { font-size: 1.45rem; } .language-picker { right: 10px; bottom: 10px; max-width: calc(100vw - 20px); } }
 </style>
 </head>
 <body data-page="privacy">
 
 <h1>Privacy Policy - Infinite Loot Loop and Mossy Tale</h1>
-<p class="muted">Last updated: 28 October 2026</p>
+<p class="muted">Last updated: 1 November 2026</p>
 
 <p>This Privacy Policy explains how the mobile game <strong>Infinite Loot Loop</strong>
 ("the Game", "we", "us") handles information when you play. The Game is operated by
@@ -204,7 +205,7 @@ policies.</p>
 <ul>
   <li><strong>Sign in with Apple (optional):</strong> you can link your account to your Apple Account to recover your progress on another device. Apple sends us a signed token. We check it and store only a one-way hash of Apple's user identifier for this app. We do not store your name or email address, even if Apple shares them.</li>
   <li><strong>Game Center:</strong> accounts that were linked to Game Center in test versions can still be recovered with it. For those, we store only a one-way hash of the Game Center player identifier.</li>
-  <li>Deleting your data in the Game also removes the Sign in with Apple link and asks Apple to revoke the Game's Sign in with Apple access (see 11.8).</li>
+  <li>Deleting your account in the Game also removes the Sign in with Apple link and asks Apple to revoke the Game's Sign in with Apple access (see 11.8).</li>
 </ul>
 
 <h3>11.3 Leaderboards and public profiles</h3>
@@ -245,13 +246,32 @@ policies.</p>
   <li>The Game does not use Firebase Crashlytics or any other crash-reporting service.</li>
 </ul>
 
-<h3>11.8 Deleting your data</h3>
+<h3 id="mossy-tale-delete-account">11.8 Deleting your account</h3>
 <ul>
-  <li><strong>In the Game:</strong> open Settings &rarr; Data &rarr; Delete all data and confirm. This deletes your cloud backup and every local save on the device, removes the Sign in with Apple link and asks Apple to revoke the Game's access.</li>
-  <li>Your purchase records, lutti balance and owned purchases are kept so that they can be restored and so refunds can be handled. Leaderboard entries are also kept.</li>
-  <li><strong>By email:</strong> to delete your whole server account, including purchase records and leaderboard entries, email tonyzorz@naver.com from the email address you want us to reply to, with your display name. We delete it, typically within 30 days, except records we must keep by law (for example purchase records under Korean e-commerce law).</li>
+  <li><strong>In the Game:</strong> open Settings &rarr; Data &rarr; Delete account and confirm. You need an internet connection. Deletion is permanent and cannot be undone. It removes, from our servers and from your device:
+    <ul>
+      <li>your characters, progress and cloud save;</li>
+      <li>your player names, which become free for other players;</li>
+      <li>your leaderboard entries and public profile, including party quest and jump quest records;</li>
+      <li>the links to your devices, Game Center and Sign in with Apple. We also ask Apple to revoke the Game's Sign in with Apple access.</li>
+    </ul>
+  </li>
+  <li>Your lutti and anything bought on the account are lost, and lutti is not refunded. App Store purchases that were not used up, such as permanent items, can be restored on a new account with Restore purchases, as Apple allows.</li>
+  <li><strong>What we keep, and why:</strong> the law requires us to keep records of payments (in Korea, 5 years under the Act on the Consumer Protection in Electronic Commerce), and we need them to handle refunds that Apple reports after you delete your account. So we keep the store transaction records (store transaction ID, product, date) and the lutti ledger (amounts and items bought). Your name is removed from these records; they are linked only to a random account number, which no longer connects to your name, device, Game Center or Apple ID.</li>
+  <li>We also keep security records about banned accounts, stored only as one-way hashes, to stop ban evasion. Short-lived technical records, such as link codes and request nonces, expire on their own within minutes.</li>
+  <li><strong>By email:</strong> if you cannot use the Game, email tonyzorz@naver.com with your display name and we will delete the account in the same way, typically within 30 days.</li>
   <li>Data held by Apple or Google is managed through their own privacy tools.</li>
 </ul>
+<div lang="ko">
+<p><strong>계정 삭제</strong></p>
+<ul>
+  <li>게임에서 설정 &rarr; 데이터 &rarr; 계정 삭제를 눌러 확인하면 계정을 삭제할 수 있습니다. 인터넷 연결이 필요하며, 삭제는 영구적이고 되돌릴 수 없습니다. 서버와 기기에서 다음이 삭제됩니다: 캐릭터, 진행 상황과 클라우드 저장, 플레이어 이름(다른 플레이어가 쓸 수 있게 됩니다), 순위표 기록과 공개 프로필(파티 퀘스트·점프 퀘스트 기록 포함), 기기·<code class="plain">Game Center</code>·<code class="plain">Apple</code>로 로그인 연결. <code class="plain">Apple</code>에 게임의 로그인 권한 해제도 요청합니다.</li>
+  <li>계정의 루띠와 계정에서 구매한 것은 모두 사라지며, 루띠는 환불되지 않습니다. 소모되지 않는 <code class="plain">App Store</code> 구매(영구 아이템 등)는 <code class="plain">Apple</code>이 허용하는 범위에서 새 계정의 구매 복원으로 되찾을 수 있습니다.</li>
+  <li>보관하는 정보와 이유: 법에 따라 결제 기록을 보관해야 하며(전자상거래 등에서의 소비자보호에 관한 법률에 따라 5년), 계정 삭제 후 <code class="plain">Apple</code>이 알려 주는 환불을 처리하는 데도 필요합니다. 따라서 스토어 거래 기록(거래 <code class="plain">ID</code>, 상품, 날짜)과 루띠 내역(금액과 구매 항목)을 보관합니다. 이 기록에서 이름은 지워지며, 이름·기기·<code class="plain">Game Center</code>·<code class="plain">Apple ID</code>와 더 이상 연결되지 않는 무작위 계정 번호에만 연결됩니다.</li>
+  <li>이용 제한 회피를 막기 위해 이용 제한된 계정의 보안 기록을 일방향 해시로만 보관합니다. 연결 코드 같은 짧은 기술 기록은 몇 분 안에 자동으로 만료됩니다.</li>
+  <li>게임을 이용할 수 없다면 표시 이름을 적어 <code class="plain">tonyzorz@naver.com</code>으로 메일을 보내 주세요. 같은 방식으로 보통 30일 이내에 삭제합니다.</li>
+</ul>
+</div>
 
 <h3>11.9 Where data is stored and how long</h3>
 <ul>
@@ -270,6 +290,14 @@ policies.</p>
 </ul>
 <p>Mossy Tale does not use Unity Ads, Firebase Crashlytics or Google Analytics.</p>
 
+<h3 id="mossy-tale-children">11.11 Children</h3>
+<ul>
+  <li>Mossy Tale is not directed to children under 13 (under 14 in the Republic of Korea), and we do not knowingly collect their personal information without a parent's or guardian's consent.</li>
+  <li>In the Republic of Korea, the Personal Information Protection Act requires the consent of a legal guardian before the personal information of a child under 14 is processed. If you are under 14, ask your parent or guardian to agree before you use the Game's online features (cloud backup, leaderboards, purchases and Sign in with Apple).</li>
+  <li>A parent or guardian can ask us to show, correct or delete a child's data, or to stop processing it, by emailing tonyzorz@naver.com with the child's display name. If we learn that we hold the data of a child under 14 without a guardian's consent, we delete it without delay.</li>
+  <li>Purchases by minors need a parent's or guardian's permission (see the Terms).</li>
+</ul>
+
 <h2 id="korea">12. Notice for players in the Republic of Korea</h2>
 <p>For Mossy Tale, Tony Works handles personal information under the Personal Information Protection Act as follows.</p>
 <ul>
@@ -280,7 +308,18 @@ policies.</p>
   <li><strong>Your rights:</strong> you may ask us to show, correct, delete or stop processing your personal information by email. We answer without delay.</li>
   <li><strong>Destruction:</strong> data whose retention period has ended is deleted from our servers so that it cannot be restored.</li>
   <li><strong>Privacy officer:</strong> Taewon Yoon (윤태원), Tony Works, tonyzorz@naver.com</li>
+  <li><strong>Children under 14:</strong> a legal guardian's consent is required before a child under 14 uses the Game's online features; see 11.11.</li>
 </ul>
+<div lang="ko">
+<p><strong>만 14세 미만 아동의 개인정보</strong></p>
+<ul>
+  <li>모시 테일은 만 14세 미만 아동을 대상으로 하지 않으며, 법정대리인의 동의 없이 아동의 개인정보를 알면서 수집하지 않습니다.</li>
+  <li>개인정보 보호법에 따라 만 14세 미만 아동의 개인정보를 처리하려면 법정대리인의 동의가 필요합니다. 만 14세 미만이라면 게임의 온라인 기능(클라우드 백업, 순위표, 구매, <code class="plain">Apple</code>로 로그인)을 이용하기 전에 부모님 등 법정대리인의 동의를 받아 주세요.</li>
+  <li>법정대리인은 아동의 표시 이름을 적어 <code class="plain">tonyzorz@naver.com</code>으로 연락하면 아동 개인정보의 열람, 정정, 삭제, 처리정지를 요청할 수 있습니다.</li>
+  <li>법정대리인의 동의 없이 만 14세 미만 아동의 개인정보를 보유하고 있음을 알게 되면 지체 없이 파기합니다.</li>
+  <li>미성년자의 구매에는 법정대리인의 동의가 필요합니다(이용약관 참고).</li>
+</ul>
+</div>
 
 <h2 id="japan">13. Notice for players in Japan</h2>
 <ul>
