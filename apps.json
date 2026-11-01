@@ -16,28 +16,6 @@
       },
       "accent": "#7c9cff",
       "type": "game"
-    },
-    {
-      "id": "show-me-the-saju",
-      "name": "Show Me the Saju",
-      "tagline": "Discover your Korean Four Pillars chart in seconds — free, private, and with no sign-up.",
-      "icon": "쇼미",
-      "coverImage": "https://showmethesaju.com/og/og-default.png",
-      "coverAlt": "Show Me the Saju Korean Four Pillars reading",
-      "path": "https://showmethesaju.com/en/",
-      "status": "Live",
-      "category": "Korean Four Pillars",
-      "features": ["Free", "No sign-up", "11 languages"],
-      "domain": "showmethesaju.com",
-      "about": "A privacy-first, multilingual introduction to Saju. Enter birth details to reveal a Korean Four Pillars chart, then explore clear explanations of the elements and symbols behind the reading.",
-      "details": [
-        { "label": "Experience", "value": "Four Pillars chart and learning guides" },
-        { "label": "Privacy", "value": "Birth data stays in your browser" },
-        { "label": "Languages", "value": "11 supported languages" }
-      ],
-      "accent": "#b44a3f",
-      "type": "web",
-      "external": true
     }
   ]
 }
