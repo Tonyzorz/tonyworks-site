@@ -4,6 +4,10 @@
 // files, so the page cannot drift from what the game rolls:
 //   ../Infinite-Growth-RPG/Backend/src/box-catalog.json + boxes.mjs  (Festival Box prizes, grade rates, pity, 10-roll floor)
 //   ../Infinite-Growth-RPG/Backend/src/odds-history.json               (newest Rune Stone odds record: grade-up chances, every line)
+//   ../Infinite-Growth-RPG/Assets/Code/Core/Glyphs.cs                  (Glyph success chances, Mending, which Glyph drops and where; Q5051)
+//   ../Infinite-Growth-RPG/Backend/src/glyphs.mjs                      (the server's Glyph rates and kinds, checked against Glyphs.cs)
+// Q5051 (owner 2026-11-03): every chance is shown with exactly four decimals (10.0000%); a chance above zero that would read 0.0000% keeps its
+// significant digits, as in the game (RuneOddsText.Percent).
 // Usage (site root): node tools/build-mossy-tale-odds.mjs [path to the game repo]   -> writes mossy-tale-odds.html
 // Re-run whenever the box season or the rune odds change (the game's odds-history test forces a new record then).
 import fs from "node:fs";
@@ -19,7 +23,10 @@ const rune = history.entries.filter(e => e.kind === "rune").at(-1);
 const boxRecord = history.entries.filter(e => e.kind === "box").at(-1);
 
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-const pct = v => (Math.round(v * 1e6) / 1e4).toLocaleString("en-US", { maximumFractionDigits: 4 }) + "%";
+const pct = v => {
+  const p = v * 100, text = p.toFixed(4);
+  return (p > 0 && text === "0.0000" ? p.toFixed(12).replace(/0+$/, "") : text) + "%";
+};
 // Display names follow the game (legal-fix Q4831: "Damage Skin" is shown as "Hit Numbers").
 const shown = s => String(s).replace(/Damage Skin/g, "Hit Numbers").replace(/대미지 스킨/g, "타격 숫자");
 const BOX_GRADES = [["Common", "일반"], ["Rare", "레어"], ["Epic", "에픽"], ["Legendary", "전설"]];
@@ -39,7 +46,9 @@ const STATS = { atkPct: ["ATK", "공격력"], atkSpeed: ["Attack speed", "공격
   guardChance: ["Block 40% on hit", "피격 시 40% 방어"], agi: ["AGI", "AGI"], critChance: ["Crit chance", "치명타 확률"], healOnAttack: ["On hit: heal 2% HP", "공격 시 HP 2% 회복"],
   critDmg: ["Crit damage", "치명타 피해"], moveSpeed: ["Move speed", "이동 속도"], dodge: ["Dodge", "회피"], lukFlat: ["LUK", "LUK"],
   atkPerLevel: ["ATK / 10 levels (max 200)", "10레벨당 공격력 (최대 200)"], hpPerLevel: ["HP / 10 levels (max 200)", "10레벨당 HP (최대 200)"],
-  gpGain: ["GP gain", "GP 획득"], dropRate: ["Drop rate", "드롭률"], allPct: ["ATK/HP/DEF", "공격력/HP/방어력"] };
+  gpGain: ["GP gain", "GP 획득"], dropRate: ["Drop rate", "드롭률"], allPct: ["ATK/HP/DEF", "공격력/HP/방어력"],
+  // Q4968 / Q4976 lines (the game's names: stat.str / stat.dex / stat.int, GearSecondText "accuracy")
+  str: ["STR", "힘"], dex: ["DEX", "재주"], int: ["INT", "지능"], accuracy: ["Accuracy", "명중치"] };
 const stat = id => STATS[id] || [id, id];
 
 // ---- Festival Box
@@ -65,7 +74,7 @@ const runeUp = rune.odds.runes.map(r => {
 ${steps}
 </tbody></table>`;
 }).join("\n");
-const same = Math.round(rune.odds.sameGradeLineChance * 100);
+const same = pct(rune.odds.sameGradeLineChance);
 const lineTables = Object.keys(SLOTS).map(slot => {
   const blocks = [false, true].map(bonus => [1, 2, 3, 4].map(g => {
     const t = rune.odds.lines.find(l => l.slot === slot && l.bonus === bonus && l.grade === g);
@@ -76,6 +85,58 @@ const lineTables = Object.keys(SLOTS).map(slot => {
   }).join("\n")).join("\n");
   return `<details><summary>${SLOTS[slot][0]} / ${SLOTS[slot][1]}</summary>\n${blocks}\n</details>`;
 }).join("\n");
+
+// ---- Glyphs (Q5051): read from the game's own rules file, Glyphs.cs. Every pattern must match exactly once, or the build stops
+// (a changed file means this reader needs a look, never a silent guess). The server's glyphs.mjs must agree on rates and kinds.
+const glyphFile = fs.readFileSync(path.join(game, "Assets", "Code", "Core", "Glyphs.cs"), "utf8");
+const one = (re, what) => { const all = [...glyphFile.matchAll(new RegExp(re.source, "g"))];
+  if (all.length !== 1) throw new Error(`Glyphs.cs: expected one ${what}, found ${all.length}`); return all[0]; };
+const glyphRates = one(/static readonly int\[\] Rates=\{([\d,\s]+)\};/, "Rates")[1].split(",").map(Number);
+const mendLine = one(/MendMax=(\d+), MendRatePercent=(\d+);/, "MendMax / MendRatePercent");
+const mendMax = Number(mendLine[1]), mendRate = Number(mendLine[2]) / 100;
+const tableBlock = one(/static readonly \(string slot,string stat,GlyphGain\[\] gains\)\[\] Table=\s*\{([\s\S]*?)\n\s*\};/, "gains table")[1];
+const glyphKinds = [...tableBlock.matchAll(/\("(\w+)","(\w+)",new\[\]\{/g)].map(m => ({ slot: m[1], stat: m[2] }));
+const monster = one(/MonsterChance=(\d+(?:\.\d+)?)\/(\d+(?:\.\d+)?), EliteChance=MonsterChance\*(\d+(?:\.\d+)?);/, "MonsterChance / EliteChance");
+const named = { MonsterChance: Number(monster[1]) / Number(monster[2]) }; named.EliteChance = named.MonsterChance * Number(monster[3]);
+const sources = [...glyphFile.matchAll(/case GlyphSource\.(\w+):return \(([\w.]+),(\d+),new\[\]\{([\d.,]+)\},([\d.]+)\);/g)].map(m => ({
+  id: m[1], chance: m[2] in named ? named[m[2]] : Number(m[2]), count: Number(m[3]), mix: m[4].split(",").map(n => Number(n) / 100), mend: Number(m[5]) }));
+const sourceEnum = one(/public enum GlyphSource \{([^}]*)\}/, "GlyphSource")[1].split(",").map(x => x.trim());
+const kindBands = [...glyphFile.matchAll(/if\(u<(\.\d+)\)return "(\w+)";/g)].map(m => ({ upTo: Number(m[1]), key: m[2] }));
+const others = one(/var others=new\[\]\{([^}]*)\};/, "RandomKind slots")[1].split(",").map(x => x.trim().replace(/"/g, ""));
+if (kindBands.length !== 2 || sources.length !== sourceEnum.length || sources.some((x, i) => x.id !== sourceEnum[i]) || sources.some(x => Number.isNaN(x.chance)
+  || Math.abs(x.mix.reduce((a, b) => a + b, 0) - 1) > 1e-9) || !glyphKinds.length || !(mendRate > 0) || glyphRates.join() !== "100,60,10")
+  throw new Error("Glyphs.cs: the Glyph rules changed shape; update this reader");
+{
+  const { GLYPH_RATES, GLYPH_SLOTS } = await import(pathToFileURL(path.join(src, "glyphs.mjs")).href);
+  const serverKinds = Object.entries(GLYPH_SLOTS).flatMap(([slot, stats]) => stats.map(stat => slot + "_" + stat)).sort().join();
+  if (GLYPH_RATES.join() !== glyphRates.join() || serverKinds !== glyphKinds.map(k => k.slot + "_" + k.stat).sort().join())
+    throw new Error("Glyphs.cs and Backend/src/glyphs.mjs disagree on Glyph rates or kinds");
+}
+// Which Glyph a drop is (GlyphDrops.RandomKind): the first kinds by their bands; the other slots share the rest evenly; a slot with several kinds splits its share.
+const kindChance = new Map();
+{
+  let from = 0;
+  for (const b of kindBands) { kindChance.set(b.key, b.upTo - from); from = b.upTo; }
+  for (const slot of others) { const ks = glyphKinds.filter(k => k.slot === slot); if (!ks.length) throw new Error("Glyphs.cs: no kinds for " + slot);
+    for (const k of ks) kindChance.set(k.slot + "_" + k.stat, (1 - from) / others.length / ks.length); }
+  if (glyphKinds.some(k => !kindChance.has(k.slot + "_" + k.stat)) || Math.abs([...kindChance.values()].reduce((a, b) => a + b, 0) - 1) > 1e-9)
+    throw new Error("Glyphs.cs: Glyph kind chances do not cover every kind");
+}
+const GLYPH_SLOTS_SHOWN = { WEAPON: ["Weapon", "무기"], GLOVES: ["Gloves", "장갑"], HELMET: ["Helmet", "투구"], ARMOR: ["Armor", "갑옷"], CAPE: ["Cape", "망토"],
+  SHOES: ["Shoes", "신발"], RING: ["Ring", "반지"], NECKLACE: ["Necklace", "목걸이"], FACE: ["Face", "얼굴"] };
+const GLYPH_STATS_SHOWN = Object.fromEntries(["ATK", "DEF", "HP", "MP", "AGI", "LUK", "DEX", "INT"].map(k => [k, [k, k]]));   // as the game names Glyphs in every language (GlyphText.Stat)
+const SOURCES_SHOWN = { Monster: ["Monster (journeys and hunting grounds), each defeat", "몬스터 (여정·사냥터), 처치마다"], Elite: ["Elite monster, each defeat", "엘리트 몬스터, 처치마다"],
+  JourneyBoss: ["Journey boss, each defeat", "여정 보스, 처치마다"], FieldBossHourly: ["Field boss (hourly), each defeat", "필드 보스 (매시), 처치마다"],
+  FieldBoss3h: ["Field boss (every 3 hours), each defeat", "필드 보스 (3시간마다), 처치마다"], FieldBossDaily: ["Field boss (daily), each defeat", "필드 보스 (매일), 처치마다"],
+  PqNormal: ["Party quest Normal, each clear reward", "파티 퀘스트 노멀, 클리어 보상마다"], PqHard: ["Party quest Hard, each clear reward", "파티 퀘스트 하드, 클리어 보상마다"],
+  PqInsane: ["Party quest Insane, each clear reward", "파티 퀘스트 인세인, 클리어 보상마다"], WeeklyQuest: ["Weekly town quest (also gives a 60% Glyph of your pick)", "마을 주간 퀘스트 (60% 선택 문양도 지급)"] };
+for (const x of sources) if (!SOURCES_SHOWN[x.id]) throw new Error("No label for Glyph source " + x.id);
+const kindName = k => [`${GLYPH_SLOTS_SHOWN[k.slot][0]} Glyph: ${GLYPH_STATS_SHOWN[k.stat][0]}`, `${GLYPH_SLOTS_SHOWN[k.slot][1]} 문양: ${GLYPH_STATS_SHOWN[k.stat][1]}`];
+const glyphSuccessRows = glyphRates.map(r => `<tr><td>${r}% Glyph<br><span class="ko">${r}% 문양</span></td><td>${pct(r / 100)}</td><td>${pct(1 - r / 100)}</td></tr>`).join("\n")
+  + `\n<tr><td>Mending Glyph<br><span class="ko">복원 문양</span></td><td>${pct(mendRate)}</td><td>${pct(1 - mendRate)}</td></tr>`;
+const glyphSourceRows = sources.map(x => `<tr><td>${esc(SOURCES_SHOWN[x.id][0])}<br><span class="ko">${esc(SOURCES_SHOWN[x.id][1])}</span></td><td>${x.count > 0 ? pct(x.chance) + (x.count > 1 ? ` (x${x.count})` : "") : "-"}</td>`
+  + x.mix.map(m => `<td>${x.count > 0 ? pct(m) : "-"}</td>`).join("") + `<td>${pct(x.mend)}</td></tr>`).join("\n");
+const glyphKindRows = glyphKinds.map(k => { const [en, ko] = kindName(k); return `<tr><td>${esc(en)}<br><span class="ko">${esc(ko)}</span></td><td>${pct(kindChance.get(k.slot + "_" + k.stat))}</td></tr>`; }).join("\n");
 
 const html = `<!DOCTYPE html>
 <html lang="en">
@@ -122,11 +183,27 @@ ${prizeRows}
 </tbody></table>
 
 <h2>Rune Stones <span class="ko">/ 룬 스톤</span></h2>
-<p>A rune re-awakens an item: it rolls new lines and may raise the item's awakening grade. Line 1 is always at the item's grade; lines 2 and 3 are at the item's grade ${same}% of the time, otherwise one grade lower (Rare at least). Each line is drawn separately, so a stat can appear on more than one line. Lutti runes are not sold on the Belgian and Brazilian storefronts.<br>
-<span class="ko">룬은 아이템을 다시 각성시켜 새 줄을 뽑고, 각성 등급이 오를 수 있습니다. 1번째 줄은 항상 아이템 등급이며, 2·3번째 줄은 ${same}% 확률로 아이템 등급, 그 외에는 한 등급 아래(최소 레어)입니다. 각 줄은 따로 뽑히므로 같은 능력치가 여러 줄에 나올 수 있습니다.</span></p>
+<p>A rune re-awakens an item: it rolls new lines and may raise the item's awakening grade. Line 1 is always at the item's grade; lines 2 and 3 are at the item's grade ${same} of the time, otherwise one grade lower (Rare at least). Each line is drawn separately, so a stat can appear on more than one line. Lutti runes are not sold on the Belgian and Brazilian storefronts.<br>
+<span class="ko">룬은 아이템을 다시 각성시켜 새 줄을 뽑고, 각성 등급이 오를 수 있습니다. 1번째 줄은 항상 아이템 등급이며, 2·3번째 줄은 ${same} 확률로 아이템 등급, 그 외에는 한 등급 아래(최소 레어)입니다. 각 줄은 따로 뽑히므로 같은 능력치가 여러 줄에 나올 수 있습니다.</span></p>
 ${runeUp}
 <h3>Line odds by slot and item grade <span class="ko">/ 부위·아이템 등급별 줄 확률</span></h3>
 ${lineTables}
+
+<h2>Glyphs <span class="ko">/ 문양</span></h2>
+<p>Glyphs upgrade a permanent item. They are earned in play, and the Glyph shop sells 100% Glyphs for Stone; they are not sold for lutti. Each use takes one upgrade slot whether it succeeds or fails, and the item is never destroyed. A Mending Glyph gives back one failed slot (at most ${mendMax} per item); a failed Mending Glyph only uses the Glyph.<br>
+<span class="ko">문양은 영구 장비를 강화합니다. 게임 플레이로 얻으며, 문양 상점은 100% 문양만 스톤으로 판매합니다(lutti로는 판매하지 않습니다). 성공·실패와 관계없이 사용할 때마다 강화 슬롯 1개를 쓰며, 아이템이 파괴되지는 않습니다. 복원 문양은 실패한 슬롯 1개를 되돌립니다(아이템당 최대 ${mendMax}회). 복원 문양이 실패하면 문양만 소모됩니다.</span></p>
+<table><thead><tr><th>Glyph / 문양</th><th>Success / 성공</th><th>Fail / 실패</th></tr></thead><tbody>
+${glyphSuccessRows}
+</tbody></table>
+<h3>Where Glyphs drop <span class="ko">/ 문양 획득처</span></h3>
+<table><thead><tr><th>Source / 획득처</th><th>Glyph / 문양</th><th>100%</th><th>60%</th><th>10%</th><th>Mending Glyph / 복원 문양</th></tr></thead><tbody>
+${glyphSourceRows}
+</tbody></table>
+<p class="muted">The 100% / 60% / 10% columns are the chance of each Glyph's rate when one drops. A Mending Glyph is rolled separately.<br><span class="ko">100% / 60% / 10% 열은 문양이 나왔을 때 그 성공률일 확률입니다. 복원 문양은 따로 판정합니다.</span></p>
+<h3>Which Glyph drops <span class="ko">/ 나오는 문양 종류</span></h3>
+<table><thead><tr><th>Glyph / 문양</th><th>Chance / 확률</th></tr></thead><tbody>
+${glyphKindRows}
+</tbody></table>
 
 <p class="muted">Tony Works &middot; <a href="terms.html#mossy-tale">Terms</a> &middot; <a href="privacy-policy.html#mossy-tale">Privacy Policy</a> &middot; <a href="contact.html">Contact</a> &middot; tonyzorz@naver.com</p>
 </body>
