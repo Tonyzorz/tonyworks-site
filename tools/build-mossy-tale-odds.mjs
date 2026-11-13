@@ -19,7 +19,10 @@ const game = path.resolve(process.argv[2] || path.join(site, "..", "Infinite-Gro
 const src = path.join(game, "Backend", "src");
 const { BOX_CATALOG: catalog, gradeRates, itemRates, PITY_LIMIT } = await import(pathToFileURL(path.join(src, "boxes.mjs")).href);
 const history = JSON.parse(fs.readFileSync(path.join(src, "odds-history.json"), "utf8"));
-const rune = history.entries.filter(e => e.kind === "rune").at(-1);
+// Compliance 2026-11-14: publish what is live. A record with a "pending" line is staged for the next release (odds-history.json says to
+// remove the line on the deploy day), so it is skipped unless --include-pending is given (preview of the next release's page only).
+const includePending = process.argv.includes("--include-pending");
+const rune = history.entries.filter(e => e.kind === "rune" && (includePending || !e.pending)).at(-1);
 const boxRecord = history.entries.filter(e => e.kind === "box").at(-1);
 
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -36,7 +39,9 @@ const RUNES = { Ember: ["Ember Rune (lutti)", "엠버 룬 (lutti)", "Re-awakens 
   Moon: ["Moon Rune (lutti)", "문 룬 (lutti)", "Re-awakens the Bonus set (3 lines).", "보너스 각성(3줄)을 다시 각성합니다."],
   Crude: ["Crude Rune (Stone, earned in play)", "크루드 룬 (스톤, 게임 플레이로 획득)", "Re-awakens all 3 lines, up to Unique.", "3줄을 모두 다시 각성합니다 (최고 유니크)."] };
 const SLOTS = { Weapon: ["Weapon", "무기"], Helmet: ["Helmet", "투구"], Armor: ["Armor", "갑옷"], Gloves: ["Gloves", "장갑"], Shoes: ["Shoes", "신발"],
-  Cape: ["Cape", "망토"], Ring1: ["Ring 1", "반지 1"], Ring2: ["Ring 2", "반지 2"], Necklace: ["Necklace", "목걸이"], FaceAccessory: ["Face", "얼굴 장식"] };
+  Cape: ["Cape", "망토"], Ring1: ["Ring 1", "반지 1"], Ring2: ["Ring 2", "반지 2"], Necklace: ["Necklace", "목걸이"], FaceAccessory: ["Face", "얼굴 장식"],
+  // 1.1 (runes-v5 Belt / Earring, runes-v6 the Warrior's shield in slot "Secondary"; the game's names gear.slot.Belt / Earring / Shield)
+  Belt: ["Belt", "벨트"], Earring: ["Earring", "귀걸이"], Secondary: ["Shield", "방패"] };
 const STATS = { atkPct: ["ATK", "공격력"], atkSpeed: ["Attack speed", "공격 속도"], basicDmg: ["Basic damage", "기본 공격 피해"], monsterDmg: ["Monster dmg", "몬스터 피해"],
   skillDmg: ["Skill damage", "스킬 피해"], atkFlat: ["ATK (flat)", "공격력 (고정)"], bossDmg: ["Boss damage", "보스 피해"], pierce: ["Ignore DEF", "방어율 무시"],
   stunOnHit: ["On hit: stun 1s", "공격 시 1초 기절"], hpFlat: ["HP (flat)", "HP (고정)"], defFlat: ["DEF (flat)", "방어력 (고정)"], mpFlat: ["MP (flat)", "MP (고정)"],
@@ -75,7 +80,11 @@ ${steps}
 </tbody></table>`;
 }).join("\n");
 const same = pct(rune.odds.sameGradeLineChance);
-const lineTables = Object.keys(SLOTS).map(slot => {
+// Compliance 2026-11-14: every slot and stat the record has must be shown - an unknown one stops the build (it used to be dropped silently).
+const unknownSlots = [...new Set(rune.odds.lines.map(l => l.slot))].filter(s => !SLOTS[s]);
+const unknownStats = [...new Set(rune.odds.lines.flatMap(l => l.chances.map(c => c[0])))].filter(s => !STATS[s]);
+if (unknownSlots.length || unknownStats.length) throw new Error(`odds record ${rune.revision}: no page names for slots [${unknownSlots}] / stats [${unknownStats}]`);
+const lineTables = Object.keys(SLOTS).filter(slot => rune.odds.lines.some(l => l.slot === slot)).map(slot => {   // only the slots this record has
   const blocks = [false, true].map(bonus => [1, 2, 3, 4].map(g => {
     const t = rune.odds.lines.find(l => l.slot === slot && l.bonus === bonus && l.grade === g);
     if (!t) return "";
