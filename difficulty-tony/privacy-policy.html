@@ -25,8 +25,10 @@
 information when you play it on iPhone, iPad, Android or Steam. The Game is made by <strong>Tony Works</strong>
 (<a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a>).</p>
 
-<p>The short version: the Game has <strong>no ads, no analytics, no tracking and no crash reporter</strong>. You do not
-create an account. The only data that leaves your device is what the online leaderboards need, and only when you use them.</p>
+<p>The short version: the Game has <strong>no ads, no tracking and no crash reporter</strong>. You do not create an
+account. Only three things can leave your device: what the online leaderboards need (only when you use them), play
+statistics without your name or player ID through Google Analytics for Firebase on iPhone and iPad (you can turn them off), and an optional copy of
+your saved climb in your own iCloud, which we cannot see.</p>
 
 <h2>1. What stays on your device</h2>
 <p>The climb itself runs on your device and needs no internet connection. These files stay on your device and are never
@@ -38,6 +40,9 @@ sent to us:</p>
   <li>Whether you have unlocked the full climb (a copy of the store's answer, so the unlock also works offline).</li>
   <li>Finished climbs waiting to be sent to the leaderboard while you are offline.</li>
 </ul>
+<p>On iPhone and iPad, an optional copy of your saved climb is kept in your own iCloud (Apple's iCloud key-value storage),
+so a new device or a reinstall keeps your climb. It goes to your iCloud account, never to us, and we cannot see it.
+iCloud is run by Apple under Apple's privacy policy.</p>
 
 <h2>2. The leaderboards (optional)</h2>
 <p>The leaderboards are run by us on Amazon Web Services. They are used only when you sign in with your platform account
@@ -57,18 +62,46 @@ When you do, we store:</p>
 <p>If you open the <em>Friends</em> view, the Game sends your friends' platform player IDs so we can show their times.
 We hash them to find matches and <strong>do not store them</strong>. On iPhone and iPad, iOS asks you first before the Game
 can read your Game Center friends.</p>
-<p>We do <strong>not</strong> collect your email, real name, phone number, contacts, location, photos, advertising ID or
-device ID. Our database does not store your IP address. Our server logs keep only fixed error codes (never your name, IDs
+<p>For the leaderboards we do <strong>not</strong> collect your email, real name, phone number, contacts, location, photos,
+advertising ID or device ID. Our database does not store your IP address. Our server logs keep only fixed error codes (never your name, IDs
 or times) and are deleted after 30 days. Like any website, Amazon Web Services sees your IP address while it delivers a
 request; we do not keep it.</p>
 
-<h2>3. Purchases</h2>
+<h2>3. Play statistics (Google Analytics for Firebase, iPhone and iPad)</h2>
+<p>On iPhone and iPad the Game uses <strong>Google Analytics for Firebase</strong>, a service of Google, to count how
+players get on, so we can find the spots that are too hard (or, Tony fears, too easy). It is not used on Steam or Android.</p>
+<p><strong>What is sent:</strong></p>
+<ul>
+  <li>Game moments: the prologue watched or skipped, a new map or part reached, Dash or the double jump unlocked, the
+      paywall shown, the full climb bought or restored, an ending reached, the rating prompt asked, the leaderboard
+      opened, and which setting was changed (never its value).</li>
+  <li>With these: the map and part number, your climb time in seconds and your fall count.</li>
+  <li>What Google Analytics adds by itself: a random app-instance ID made by the Firebase SDK, the first open, sessions,
+      the app version, the device model, the iOS version, the language, and an approximate region (country or city)
+      that Google works out from your IP address. Google does not give us your IP address.</li>
+</ul>
+<p><strong>What is never sent:</strong> your name, your Game Center or other player IDs, your leaderboard name, any text,
+your saved climb, the advertising ID (IDFA) or Apple's vendor ID (IDFV). We set no user ID. Google Analytics is set up with
+advertising features turned off: no ad personalization, no Google signals, no sharing for advertising, and no tracking
+across other companies' apps or websites. We do not ask for, and the Game does not use, Apple's tracking permission.</p>
+<p><strong>Why:</strong> to see where players stop, how long a climb takes and which settings are used, so we can fix and
+balance the Game. We only look at totals; we cannot tell who you are from these statistics.</p>
+<p><strong>Your choice:</strong> <em>Settings &rarr; Account &rarr; Analytics</em> turns it on or off at any time. In the
+European Economic Area, the United Kingdom and Switzerland it starts <strong>off</strong> and is only sent after you turn it
+on. Everywhere else it starts on, and Off stops it at once.</p>
+<p><strong>How long:</strong> Google Analytics keeps these event statistics for 2 months (the shortest setting), then
+deletes them; only totals without any ID remain in reports. See
+<a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
+<a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its
+services</a>.</p>
+
+<h2>4. Purchases</h2>
 <p>On iPhone, iPad and Android the Game is free to start, and one in-app purchase ("Full Climb") unlocks the rest.
 Payments are handled by the Apple App Store or Google Play. We never see your payment details. The Game checks the store's
 signed receipt on your device; we do not run a purchase server and do not store your purchases. On Steam, purchases are
 handled by Valve.</p>
 
-<h2>4. Platform services</h2>
+<h2>5. Platform services</h2>
 <p>The Game uses these services. Each has its own privacy policy:</p>
 <ul>
   <li>Apple App Store and Game Center (sign-in, achievements, the review prompt):
@@ -77,54 +110,68 @@ handled by Valve.</p>
       <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
   <li>Steam (Valve): <a href="https://store.steampowered.com/privacy_agreement/">store.steampowered.com/privacy_agreement</a></li>
   <li>Amazon Web Services (hosts the leaderboards): <a href="https://aws.amazon.com/privacy/">aws.amazon.com/privacy</a></li>
+  <li>Google Analytics for Firebase (play statistics on iPhone and iPad, section 3):
+      <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>Apple iCloud (the optional copy of your saved climb): <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
 </ul>
 <p>The Game may ask once for a store rating, using Apple's or Google's own rating popup. We receive nothing from it.</p>
 
-<h2>5. How we use the leaderboard data</h2>
+<h2>6. How we use the leaderboard data and the play statistics</h2>
 <ul>
   <li>To show the leaderboards, your rank and your friends' times.</li>
   <li>To keep the leaderboards fair (checking times that are faster than the maps allow).</li>
   <li>To answer your requests about your data.</li>
+  <li>The play statistics (section 3): only to fix and balance the Game.</li>
 </ul>
 <p>We do not sell your data, share it with advertisers, or use it to track you across other apps or websites.</p>
 
-<h2>6. Your choices and data deletion</h2>
+<h2>7. Your choices and data deletion</h2>
 <ul>
-  <li><strong>Play offline:</strong> you can play the whole climb without signing in. Then nothing is sent to us.</li>
+  <li><strong>Play offline:</strong> you can play the whole climb without signing in. Then nothing is sent to our
+      leaderboards.</li>
+  <li><strong>Turn off play statistics:</strong> <em>Settings &rarr; Account &rarr; Analytics &rarr; Off</em> (iPhone and
+      iPad). Nothing more is sent to Google Analytics; what was sent is deleted after 2 months.</li>
   <li><strong>Delete your leaderboard data in the Game:</strong> open <em>Settings &rarr; Account &rarr; Delete data</em>
       and confirm. This deletes everything listed in section 2 from our servers: your entries on every leaderboard, your
       review flags, your sessions and your player record. Your climb on the device stays. If you sign in again later, you
       start as a new, empty player.</li>
   <li><strong>Delete your local data:</strong> uninstalling the Game deletes everything in section 1 from your device.
       (Settings &rarr; Account &rarr; Reset all resets only your settings; New climb resets only your climb.)</li>
+  <li><strong>Delete the iCloud copy:</strong> the copy of your saved climb in your iCloud survives an uninstall (that is
+      what lets a reinstall continue). To remove it, turn off iCloud for the Game, or delete the Game's data in your
+      iPhone or iPad settings: <em>Settings &rarr; [your name] &rarr; iCloud &rarr; Manage Storage</em>.</li>
   <li><strong>By email:</strong> if you cannot open the Game, or want a copy of what we store about you, write to
       <a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a> with your leaderboard name and platform. We answer within
       30 days.</li>
 </ul>
 <p>Step-by-step instructions are also on our <a href="deletion.html">Data Deletion page</a>.</p>
 
-<h2>7. Data retention</h2>
+<h2>8. Data retention</h2>
 <ul>
   <li>Leaderboard data: until you delete it, or until the leaderboards are closed.</li>
   <li>Sessions: 30 days at most.</li>
   <li>Server error logs: 30 days.</li>
+  <li>Play statistics in Google Analytics: 2 months.</li>
   <li>Data on your device: until you uninstall the Game.</li>
+  <li>The iCloud copy of your saved climb: in your iCloud until you delete it there (we cannot see or delete it).</li>
 </ul>
 
-<h2>8. Children</h2>
-<p>The Game has no ads, no chat and no tracking, and is suitable for all ages. The leaderboards use your platform account
+<h2>9. Children</h2>
+<p>The Game has no ads, no chat and no tracking, and is suitable for all ages. The play statistics (section 3) carry no
+name or player ID and can be turned off in Settings. The leaderboards use your platform account
 (Game Center, Google Play Games or Steam), which follows that platform's own age rules and parental controls. We do not
 knowingly collect personal information from children under 13 beyond the leaderboard data above. If you believe a child's
 data should be removed, use <em>Delete data</em> in the Game or contact us.</p>
 
-<h2>9. Where the data is kept</h2>
-<p>The leaderboard data is stored with Amazon Web Services. It may be processed outside your country. It is protected in
+<h2>10. Where the data is kept</h2>
+<p>The leaderboard data is stored with Amazon Web Services; the play statistics with Google. Both may be processed outside
+your country. It is protected in
 transit by HTTPS, and every request that changes your data is signed with a session key.</p>
 
-<h2>10. Changes to this policy</h2>
+<h2>11. Changes to this policy</h2>
 <p>We may update this policy. Changes are posted on this page with a new effective date.</p>
 
-<h2>11. Contact</h2>
+<h2>12. Contact</h2>
 <p>Questions about this policy or your data: <a href="mailto:tonyzorz@naver.com">tonyzorz@naver.com</a></p>
 
 <p class="muted">See also: <a href="terms.html">Terms of Service</a> &middot;
