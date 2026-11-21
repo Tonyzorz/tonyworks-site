@@ -51,7 +51,7 @@ const STATS = { atkPct: ["ATK", "공격력"], atkSpeed: ["Attack speed", "공격
   guardChance: ["Block 40% on hit", "피격 시 40% 방어"], agi: ["AGI", "AGI"], critChance: ["Crit chance", "치명타 확률"], healOnAttack: ["On hit: heal 2% HP", "공격 시 HP 2% 회복"],
   critDmg: ["Crit damage", "치명타 피해"], moveSpeed: ["Move speed", "이동 속도"], dodge: ["Dodge", "회피"], lukFlat: ["LUK", "LUK"],
   atkPerLevel: ["ATK / 10 levels (max 200)", "10레벨당 공격력 (최대 200)"], hpPerLevel: ["HP / 10 levels (max 200)", "10레벨당 HP (최대 200)"],
-  gpGain: ["GP gain", "GP 획득"], dropRate: ["Drop rate", "드롭률"], allPct: ["ATK/HP/DEF", "공격력/HP/방어력"],
+  gpGain: ["GP gain", "GP 획득"], dropRate: ["Drop rate", "드롭률"], allPct: ["ATK/HP/DEF", "공격력/HP/방어력"], mainStat: ["Main stat (STR for Warriors)", "주 능력치 (전사는 STR)"],
   // Q4968 / Q4976 lines (the game's names: stat.str / stat.dex / stat.int, GearSecondText "accuracy")
   str: ["STR", "힘"], dex: ["DEX", "재주"], int: ["INT", "지능"], accuracy: ["Accuracy", "명중치"] };
 const stat = id => STATS[id] || [id, id];
