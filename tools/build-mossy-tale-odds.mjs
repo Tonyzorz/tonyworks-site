@@ -38,6 +38,8 @@ const RUNES = { Ember: ["Ember Rune (lutti)", "엠버 룬 (lutti)", "Re-awakens 
   Void: ["Void Rune (lutti)", "보이드 룬 (lutti)", "Re-awakens all 3 lines; you keep either the old or the new lines.", "3줄을 다시 각성하고, 이전 줄과 새 줄 중 하나를 고릅니다."],
   Moon: ["Moon Rune (lutti)", "문 룬 (lutti)", "Re-awakens the Bonus set (3 lines).", "보너스 각성(3줄)을 다시 각성합니다."],
   Crude: ["Crude Rune (Stone, earned in play)", "크루드 룬 (스톤, 게임 플레이로 획득)", "Re-awakens all 3 lines, up to Unique.", "3줄을 모두 다시 각성합니다 (최고 유니크)."] };
+// runes-v8 (Q5679, 1.2.1): the Crude Rune reaches Legendary; the "up to Unique" note is shown only while a record's Crude highest grade is Unique.
+const RUNES_TO_LEGENDARY = { Crude: ["Crude Rune (Stone, earned in play)", "크루드 룬 (스톤, 게임 플레이로 획득)", "Re-awakens all 3 lines, up to Legendary.", "3줄을 모두 다시 각성합니다 (최고 레전드리)."] };
 const SLOTS = { Weapon: ["Weapon", "무기"], Helmet: ["Helmet", "투구"], Armor: ["Armor", "갑옷"], Gloves: ["Gloves", "장갑"], Shoes: ["Shoes", "신발"],
   Cape: ["Cape", "망토"], Ring1: ["Ring 1", "반지 1"], Ring2: ["Ring 2", "반지 2"], Necklace: ["Necklace", "목걸이"], FaceAccessory: ["Face", "얼굴 장식"],
   // 1.1 (runes-v5 Belt / Earring, runes-v6 the Warrior's shield in slot "Secondary"; the game's names gear.slot.Belt / Earring / Shield)
@@ -71,7 +73,7 @@ const ex = catalog.exchange;
 
 // ---- Rune Stones
 const runeUp = rune.odds.runes.map(r => {
-  const [en, ko, aboutEn, aboutKo] = RUNES[r.rune] || [r.rune, r.rune, "", ""];
+  const [en, ko, aboutEn, aboutKo] = (r.highestGrade >= 4 && RUNES_TO_LEGENDARY[r.rune]) || RUNES[r.rune] || [r.rune, r.rune, "", ""];
   const steps = r.gradeUp.filter(s => s.from < r.highestGrade).map(s =>
     `<tr><td>${AWAKEN[s.from][0]} → ${AWAKEN[s.from + 1][0]}<br><span class="ko">${AWAKEN[s.from][1]} → ${AWAKEN[s.from + 1][1]}</span></td><td>${pct(s.chance)}</td><td>${s.guaranteedAfter > 0 ? `${s.guaranteedAfter} uses / ${s.guaranteedAfter}회` : "- (none / 없음)"}</td></tr>`).join("\n");
   return `<h3>${esc(en)} <span class="ko">/ ${esc(ko)}</span></h3><p>${esc(aboutEn)}<br><span class="ko">${esc(aboutKo)}</span></p>
